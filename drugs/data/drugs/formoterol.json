@@ -1,36 +1,128 @@
 {
   "slug": "formoterol",
   "name": "Formoterol",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Eformoterol (former BAN)",
+    "Formoterol fumarate"
+  ],
+  "brands": [
+    "Foradil",
+    "Oxis",
+    "Atock",
+    "Symbicort (with budesonide)",
+    "Fostair (with beclometasone)",
+    "Breztri/Trixeo (triple)"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Long-acting beta2-adrenergic agonist (LABA)",
+  "modality": "small-molecule",
+  "routes": [
+    "inhaled"
+  ],
+  "route_note": "Dry-powder, metered-dose or nebulised inhalation, typically twice daily; often in combination inhalers",
+  "targets": [
+    "ADRB2"
+  ],
+  "origin": "synthetic",
+  "originator": "Yamanouchi Pharmaceutical (Japan)",
+  "owner": "generic (many); combination products by AstraZeneca, Chiesi and others",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "discovery": {
+    "year": null,
+    "by": "Yamanouchi Pharmaceutical",
+    "note": "A formanilide-substituted phenylethanolamine developed in Japan in the 1970s."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Fast-onset long-acting bronchodilator used in maintenance-and-reliever inhalers",
+  "summary": "Formoterol is a long-acting beta2-agonist with an onset of action within minutes, comparable to salbutamol, and a duration of about 12 hours. Combined with budesonide it can be used both as maintenance and as an as-needed reliever in asthma, an approach now preferred in GINA guidance.",
+  "mechanism": [
+    "Formoterol is a potent, full agonist at the beta2-adrenergic receptor. Activation increases cAMP and relaxes airway smooth muscle.",
+    "Its moderate lipophilicity lets it reach the receptor quickly from the aqueous phase (fast onset) while also forming a membrane depot that sustains activity for around 12 hours."
+  ],
+  "uses": [
+    "Maintenance treatment of asthma in combination with an inhaled corticosteroid",
+    "Maintenance and reliever therapy (budesonide/formoterol) in asthma",
+    "Maintenance treatment of COPD"
+  ],
+  "history": [
+    {
+      "year": 2000,
+      "title": "Symbicort",
+      "detail": "Budesonide/formoterol (Symbicort) is first approved in Europe."
+    },
+    {
+      "year": 2001,
+      "title": "US approval",
+      "detail": "FDA approves Foradil Aerolizer dry-powder inhaler."
+    },
+    {
+      "year": 2006,
+      "title": "Symbicort in the US; arformoterol",
+      "detail": "FDA approves Symbicort for asthma and the (R,R)-enantiomer arformoterol (Brovana) for COPD."
+    },
+    {
+      "year": 2018,
+      "title": "As-needed budesonide/formoterol",
+      "detail": "SYGMA trials published supporting as-needed budesonide/formoterol in mild asthma."
+    },
+    {
+      "year": 2019,
+      "title": "GINA guidance change",
+      "detail": "GINA stops recommending SABA-only treatment in adults and adolescents, favouring as-needed low-dose ICS/formoterol."
+    },
+    {
+      "year": 2020,
+      "title": "Triple therapy",
+      "detail": "FDA approves Breztri Aerosphere (budesonide/glycopyrrolate/formoterol) for COPD."
+    }
+  ],
+  "pk": {
+    "half_life": "~10 h",
+    "bioavailability": "Inhaled: rapidly absorbed; much of the dose swallowed",
+    "metabolism": "Direct glucuronidation and O-demethylation (CYP2D6, CYP2C19, CYP2C9, CYP2A6)",
+    "excretion": "Urine and faeces"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Tremor",
+      "Headache",
+      "Palpitations",
+      "Muscle cramps",
+      "Throat irritation"
+    ],
+    "serious": [
+      "Asthma-related death if used without an inhaled corticosteroid",
+      "Paradoxical bronchospasm",
+      "Tachyarrhythmias",
+      "Hypokalaemia",
+      "Hyperglycaemia"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Because of its rapid onset, formoterol is the only LABA used in combination inhalers as a reliever.",
+    "Arformoterol is the (R,R)-enantiomer of formoterol, marketed separately for nebulisation in COPD."
+  ],
+  "related": [
+    "budesonide",
+    "beclometasone",
+    "salmeterol",
+    "salbutamol",
+    "tiotropium",
+    "fluticasone-propionate"
+  ],
+  "references": [
+    {
+      "title": "Formoterol – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Formoterol"
+    },
+    {
+      "title": "DailyMed – formoterol labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=formoterol"
+    }
+  ],
+  "stage": "written"
 }

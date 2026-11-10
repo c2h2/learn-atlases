@@ -1,36 +1,141 @@
 {
   "slug": "ranitidine",
   "name": "Ranitidine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "AH 19065"
+  ],
+  "brands": [
+    "Zantac",
+    "Zantac 75"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Histamine H2-receptor antagonist",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "im"
+  ],
+  "route_note": "Oral tablets or syrup once or twice daily; injection (formerly)",
+  "targets": [
+    "HRH2"
+  ],
+  "origin": "synthetic",
+  "originator": "Glaxo (Allen & Hanburys)",
+  "owner": "Withdrawn in the US and EU (2020); generics remain in some countries",
+  "first_approval": {
+    "year": 1981,
+    "agency": null,
+    "country": "UK",
+    "brand": "Zantac"
+  },
+  "discovery": {
+    "year": 1976,
+    "by": "John Bradshaw and colleagues at Allen & Hanburys (Glaxo), under David Jack",
+    "note": "Designed with a furan ring in place of cimetidine's imidazole, giving greater potency and fewer drug interactions."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "withdrawn from US and EU markets (2020); OTC/prescription elsewhere",
+  "tagline": "Former blockbuster H2 blocker withdrawn in 2020 over NDMA contamination",
+  "summary": "Ranitidine is an H2-receptor antagonist that reduces gastric acid secretion. As Zantac it was the world's best-selling medicine in the 1980s, but it was withdrawn from the US and European markets in 2020 after the probable carcinogen NDMA was found to form in the product.",
+  "mechanism": [
+    "Histamine released from enterochromaffin-like cells stimulates H2 receptors on parietal cells, raising cAMP and activating the proton pump. Ranitidine competitively blocks the H2 receptor, reducing basal, nocturnal and food-stimulated acid secretion.",
+    "It suppresses acid less completely than proton pump inhibitors. Unlike cimetidine it has little effect on cytochrome P450 enzymes or androgen receptors."
+  ],
+  "uses": [
+    "Duodenal and gastric ulcers",
+    "Gastro-oesophageal reflux disease",
+    "Zollinger–Ellison syndrome",
+    "Heartburn and dyspepsia (OTC)",
+    "Prevention of stress ulcers and aspiration pneumonitis (historical)"
+  ],
+  "history": [
+    {
+      "year": 1976,
+      "title": "Discovery",
+      "detail": "Glaxo chemists synthesise ranitidine."
+    },
+    {
+      "year": 1981,
+      "title": "UK launch",
+      "detail": "Zantac is launched in the United Kingdom."
+    },
+    {
+      "year": 1983,
+      "title": "US approval",
+      "detail": "FDA approves Zantac."
+    },
+    {
+      "year": 1988,
+      "title": "Best-selling drug",
+      "detail": "By 1988 Zantac is the world's best-selling prescription medicine."
+    },
+    {
+      "year": 1995,
+      "title": "OTC",
+      "detail": "FDA approves Zantac 75 for non-prescription use."
+    },
+    {
+      "year": 2019,
+      "title": "NDMA detected",
+      "detail": "Testing finds N-nitrosodimethylamine (NDMA) in ranitidine products; recalls begin worldwide."
+    },
+    {
+      "year": 2020,
+      "title": "Withdrawal",
+      "detail": "In April FDA requests removal of all ranitidine from the US market, and EMA recommends suspension in the EU."
+    },
+    {
+      "year": 2021,
+      "title": "Brand repurposed",
+      "detail": "The Zantac 360 brand is relaunched in the US containing famotidine."
+    }
+  ],
+  "pk": {
+    "half_life": "2–3 h",
+    "bioavailability": "~50% (oral)",
+    "metabolism": "Hepatic (minor), to N-oxide, S-oxide and desmethyl metabolites",
+    "excretion": "Urine (~30% of oral dose unchanged; ~70% of IV)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Headache",
+      "Constipation or diarrhoea",
+      "Nausea",
+      "Dizziness"
+    ],
+    "serious": [
+      "NDMA impurity formation (reason for withdrawal)",
+      "Hepatitis (rare)",
+      "Blood dyscrasias (rare)",
+      "Bradycardia with rapid IV injection",
+      "Confusion in older or renally impaired patients"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Zantac was among the first drugs to exceed US$1 billion in annual sales.",
+    "NDMA levels in ranitidine were found to rise with storage time and heat."
+  ],
+  "related": [
+    "cimetidine",
+    "omeprazole",
+    "esomeprazole",
+    "pantoprazole",
+    "sucralfate",
+    "misoprostol"
+  ],
+  "references": [
+    {
+      "title": "Ranitidine – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ranitidine"
+    },
+    {
+      "title": "DailyMed – ranitidine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ranitidine"
+    }
+  ],
+  "stage": "written"
 }

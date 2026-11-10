@@ -1,36 +1,136 @@
 {
   "slug": "nintedanib",
   "name": "Nintedanib",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BIBF 1120",
+    "Nintedanib esilate"
+  ],
+  "brands": [
+    "Ofev",
+    "Vargatef"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Multi-targeted tyrosine kinase inhibitor (antifibrotic)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral capsules twice daily with food",
+  "targets": [
+    "FLT1",
+    "KDR",
+    "FLT4",
+    "FGFR1",
+    "FGFR2",
+    "FGFR3",
+    "PDGFRA",
+    "PDGFRB"
+  ],
+  "origin": "synthetic",
+  "originator": "Boehringer Ingelheim",
+  "owner": "Boehringer Ingelheim",
+  "first_approval": {
+    "year": 2014,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Ofev"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Boehringer Ingelheim",
+    "note": "An indolinone angiokinase inhibitor first developed as an anticancer agent."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Kinase inhibitor that slows progressive fibrosing lung disease",
+  "summary": "Nintedanib is an oral inhibitor of VEGF, FGF and PDGF receptor tyrosine kinases. It slows lung-function decline in idiopathic pulmonary fibrosis, systemic sclerosis-associated interstitial lung disease and other progressive fibrosing ILDs, and is used with docetaxel in some lung cancers in the EU.",
+  "mechanism": [
+    "Nintedanib binds the ATP pocket of VEGFR1–3, FGFR1–3 and PDGFRα/β, as well as Src-family kinases and others, blocking downstream signalling.",
+    "In fibrotic lung disease this reduces fibroblast proliferation, migration and differentiation into myofibroblasts and extracellular matrix deposition. In tumours, the same receptors drive angiogenesis."
+  ],
+  "uses": [
+    "Idiopathic pulmonary fibrosis",
+    "Chronic fibrosing interstitial lung diseases with a progressive phenotype",
+    "Systemic sclerosis-associated interstitial lung disease",
+    "Advanced adenocarcinoma non-small-cell lung cancer with docetaxel (Vargatef, EU)"
+  ],
+  "history": [
+    {
+      "year": 2014,
+      "title": "INPULSIS trials",
+      "detail": "Two phase 3 trials show nintedanib reduces the annual decline in FVC in IPF."
+    },
+    {
+      "year": 2014,
+      "title": "US approval",
+      "detail": "FDA approves Ofev for IPF in October; EMA approves Vargatef for NSCLC in November."
+    },
+    {
+      "year": 2015,
+      "title": "EU approval for IPF",
+      "detail": "Ofev is approved in the European Union."
+    },
+    {
+      "year": 2019,
+      "title": "Systemic sclerosis ILD",
+      "detail": "FDA approves nintedanib for SSc-ILD based on the SENSCIS trial."
+    },
+    {
+      "year": 2020,
+      "title": "Progressive fibrosing ILD",
+      "detail": "Approved for chronic fibrosing ILDs with a progressive phenotype after the INBUILD trial."
+    },
+    {
+      "year": 2023,
+      "title": "Paediatric use",
+      "detail": "FDA approves Ofev for children aged 6 years and older with fibrosing ILD."
+    }
+  ],
+  "pk": {
+    "half_life": "10–15 h",
+    "bioavailability": "~4.7%",
+    "metabolism": "Esterase hydrolysis to BIBF 1202, then UGT glucuronidation; minor CYP3A4; P-gp substrate",
+    "excretion": "Faeces (~93%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Diarrhoea",
+      "Nausea",
+      "Abdominal pain",
+      "Vomiting",
+      "Raised liver enzymes",
+      "Decreased appetite and weight loss"
+    ],
+    "serious": [
+      "Hepatotoxicity",
+      "Embryo-fetal toxicity",
+      "Arterial thromboembolic events",
+      "Bleeding",
+      "Gastrointestinal perforation"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Nintedanib is sold under two brands: Ofev for lung fibrosis and Vargatef for lung cancer.",
+    "It was approved for IPF on the same day as pirfenidone."
+  ],
+  "related": [
+    "pirfenidone",
+    "docetaxel",
+    "sorafenib",
+    "sunitinib"
+  ],
+  "references": [
+    {
+      "title": "Nintedanib – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nintedanib"
+    },
+    {
+      "title": "DailyMed – nintedanib labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=nintedanib"
+    }
+  ],
+  "stage": "written"
 }

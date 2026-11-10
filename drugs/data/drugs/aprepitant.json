@@ -1,36 +1,131 @@
 {
   "slug": "aprepitant",
   "name": "Aprepitant",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "MK-0869",
+    "L-754,030",
+    "Fosaprepitant (IV prodrug)"
+  ],
+  "brands": [
+    "Emend",
+    "Cinvanti",
+    "Aponvie",
+    "Ivemend (fosaprepitant)"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Neurokinin-1 (NK1) receptor antagonist",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "Oral capsules or suspension over three days with chemotherapy; IV emulsion; fosaprepitant IV prodrug",
+  "targets": [
+    "TACR1"
+  ],
+  "origin": "synthetic",
+  "originator": "Merck & Co.",
+  "owner": "Merck & Co. (Emend); Heron Therapeutics (Cinvanti, Aponvie); generic",
+  "first_approval": {
+    "year": 2003,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Emend"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Merck Research Laboratories (UK and US)",
+    "note": "A morpholine NK1 antagonist that crosses the blood–brain barrier, first explored as an antidepressant."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First NK1 antagonist, preventing delayed chemotherapy-induced vomiting",
+  "summary": "Aprepitant blocks the neurokinin-1 receptor for substance P. Added to a 5-HT3 antagonist and dexamethasone, it reduces both acute and delayed chemotherapy-induced nausea and vomiting, and an IV form is used for postoperative nausea.",
+  "mechanism": [
+    "Substance P released in the brainstem's emetic centres acts on NK1 receptors to drive vomiting, especially in the delayed phase after chemotherapy that 5-HT3 antagonists control poorly.",
+    "Aprepitant crosses into the central nervous system and occupies NK1 receptors with high selectivity. It is a moderate CYP3A4 inhibitor and an inducer of CYP2C9, creating interactions with dexamethasone, warfarin and hormonal contraceptives."
+  ],
+  "uses": [
+    "Prevention of acute and delayed nausea and vomiting with highly and moderately emetogenic chemotherapy",
+    "Prevention of postoperative nausea and vomiting"
+  ],
+  "history": [
+    {
+      "year": 1998,
+      "title": "Antidepressant study",
+      "detail": "Merck reports antidepressant activity of an NK1 antagonist in Science; later phase 3 depression trials fail."
+    },
+    {
+      "year": 2003,
+      "title": "FDA approval",
+      "detail": "FDA approves Emend for chemotherapy-induced nausea and vomiting."
+    },
+    {
+      "year": 2006,
+      "title": "Postoperative nausea",
+      "detail": "Oral aprepitant is approved for postoperative nausea and vomiting."
+    },
+    {
+      "year": 2008,
+      "title": "Fosaprepitant",
+      "detail": "FDA approves the IV prodrug fosaprepitant (Emend for injection)."
+    },
+    {
+      "year": 2017,
+      "title": "IV emulsion",
+      "detail": "FDA approves Cinvanti, a polysorbate-free IV aprepitant emulsion."
+    },
+    {
+      "year": 2022,
+      "title": "Aponvie",
+      "detail": "FDA approves Aponvie IV aprepitant for postoperative nausea and vomiting."
+    }
+  ],
+  "pk": {
+    "half_life": "9–13 h",
+    "bioavailability": "~60–65% (oral)",
+    "metabolism": "Hepatic, mainly CYP3A4 (minor CYP1A2, 2C19)",
+    "excretion": "Urine and faeces as metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Fatigue",
+      "Hiccups",
+      "Constipation",
+      "Anorexia",
+      "Headache",
+      "Raised ALT"
+    ],
+    "serious": [
+      "Reduced efficacy of hormonal contraceptives",
+      "Reduced INR with warfarin",
+      "Hypersensitivity and infusion-site reactions (fosaprepitant)",
+      "Stevens–Johnson syndrome (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Aprepitant began as a candidate antidepressant before being developed as an antiemetic.",
+    "Dexamethasone doses are reduced when given with aprepitant because of CYP3A4 inhibition."
+  ],
+  "related": [
+    "ondansetron",
+    "dexamethasone",
+    "metoclopramide",
+    "cisplatin",
+    "warfarin"
+  ],
+  "references": [
+    {
+      "title": "Aprepitant – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aprepitant"
+    },
+    {
+      "title": "DailyMed – aprepitant labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=aprepitant"
+    }
+  ],
+  "stage": "written"
 }

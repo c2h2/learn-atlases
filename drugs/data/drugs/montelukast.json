@@ -1,36 +1,127 @@
 {
   "slug": "montelukast",
   "name": "Montelukast",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "MK-0476",
+    "Montelukast sodium"
+  ],
+  "brands": [
+    "Singulair"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Leukotriene receptor antagonist",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablet, chewable tablet or granules once daily",
+  "targets": [
+    "CYSLTR1"
+  ],
+  "origin": "synthetic",
+  "originator": "Merck Frosst (Merck & Co.), Canada",
+  "owner": "generic (many); Singulair brand: Organon",
+  "first_approval": {
+    "year": 1998,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Singulair"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1991,
+    "by": "Merck Frosst Centre for Therapeutic Research, Montreal",
+    "note": "Optimised from earlier leukotriene D4 antagonists to allow once-daily oral dosing."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Once-daily oral leukotriene blocker for asthma and allergic rhinitis",
+  "summary": "Montelukast is an oral antagonist of the cysteinyl leukotriene type 1 receptor. It is used as add-on or alternative controller therapy in asthma, for exercise-induced bronchoconstriction and for allergic rhinitis, and carries an FDA boxed warning about neuropsychiatric events.",
+  "mechanism": [
+    "Cysteinyl leukotrienes (LTC4, LTD4, LTE4), released by mast cells and eosinophils, constrict airway smooth muscle, increase vascular permeability and mucus secretion, and recruit eosinophils.",
+    "Montelukast binds the CysLT1 receptor with high affinity and selectivity, blocking these effects. It is less effective than inhaled corticosteroids as a sole controller but works orally and is useful in aspirin-exacerbated and exercise-induced disease."
+  ],
+  "uses": [
+    "Prophylaxis and chronic treatment of asthma",
+    "Prevention of exercise-induced bronchoconstriction",
+    "Seasonal and perennial allergic rhinitis (when other treatments are unsuitable)"
+  ],
+  "history": [
+    {
+      "year": 1991,
+      "title": "Discovery",
+      "detail": "Montelukast is identified at Merck Frosst in Canada."
+    },
+    {
+      "year": 1998,
+      "title": "FDA approval",
+      "detail": "Singulair is approved for asthma in adults and children aged 6 and older."
+    },
+    {
+      "year": 2002,
+      "title": "Allergic rhinitis",
+      "detail": "Approval extended to seasonal allergic rhinitis."
+    },
+    {
+      "year": 2012,
+      "title": "Generics",
+      "detail": "US patent exclusivity ends and generic montelukast launches."
+    },
+    {
+      "year": 2020,
+      "title": "Boxed warning",
+      "detail": "FDA adds a boxed warning on serious neuropsychiatric events, including suicidal thoughts and actions, and advises against use for mild allergic rhinitis."
+    },
+    {
+      "year": 2021,
+      "title": "Organon spin-off",
+      "detail": "Singulair moves to Organon when Merck spins off its established brands."
+    }
+  ],
+  "pk": {
+    "half_life": "2.7–5.5 h",
+    "bioavailability": "~64% (10 mg tablet)",
+    "metabolism": "Hepatic, mainly CYP2C8, with CYP3A4 and CYP2C9",
+    "excretion": "Bile (faeces)"
+  },
+  "safety": {
+    "common": [
+      "Headache",
+      "Upper respiratory infection",
+      "Abdominal pain",
+      "Fever (children)",
+      "Rash"
+    ],
+    "serious": [
+      "Neuropsychiatric events (agitation, depression, sleep disturbance, suicidal thinking and behaviour)",
+      "Eosinophilic granulomatosis with polyangiitis (often on steroid withdrawal)",
+      "Hypersensitivity reactions",
+      "Hepatic injury (rare)"
+    ],
+    "boxed_warning": "Serious neuropsychiatric events, including suicidal thoughts or actions; reserve for allergic rhinitis patients who respond inadequately to or cannot tolerate other therapies."
+  },
+  "facts": [
+    "Montelukast was among the world's best-selling asthma drugs before its patent expired in 2012.",
+    "Zafirlukast and pranlukast are related CysLT1 antagonists; zileuton instead inhibits 5-lipoxygenase."
+  ],
+  "related": [
+    "budesonide",
+    "fluticasone-propionate",
+    "salbutamol",
+    "cetirizine",
+    "loratadine",
+    "omalizumab"
+  ],
+  "references": [
+    {
+      "title": "Montelukast – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Montelukast"
+    },
+    {
+      "title": "DailyMed – montelukast labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=montelukast"
+    }
+  ],
+  "stage": "written"
 }

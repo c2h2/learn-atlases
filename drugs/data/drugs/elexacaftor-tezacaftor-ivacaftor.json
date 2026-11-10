@@ -1,36 +1,131 @@
 {
   "slug": "elexacaftor-tezacaftor-ivacaftor",
-  "name": "Elexacaftor tezacaftor ivacaftor",
-  "aliases": [],
-  "brands": [],
+  "name": "Elexacaftor/tezacaftor/ivacaftor",
+  "aliases": [
+    "VX-445/VX-661/VX-770",
+    "ELX/TEZ/IVA"
+  ],
+  "brands": [
+    "Trikafta",
+    "Kaftrio (with Kalydeco)"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "CFTR modulator combination (correctors plus potentiator)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Morning tablets of elexacaftor/tezacaftor/ivacaftor plus an evening ivacaftor tablet, with fat-containing food; granules for young children",
+  "targets": [
+    "CFTR"
+  ],
+  "origin": "synthetic",
+  "originator": "Vertex Pharmaceuticals",
+  "owner": "Vertex Pharmaceuticals",
+  "first_approval": {
+    "year": 2019,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Trikafta"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Vertex Pharmaceuticals",
+    "note": "Next-generation corrector elexacaftor (VX-445) added to tezacaftor and ivacaftor to rescue F508del-CFTR."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Triple CFTR modulator that treats about 90% of people with cystic fibrosis",
+  "summary": "Elexacaftor/tezacaftor/ivacaftor is a triple combination of two CFTR correctors and a potentiator. It treats cystic fibrosis in people with at least one F508del mutation or another responsive mutation, roughly 90% of patients, and has produced large improvements in lung function.",
+  "mechanism": [
+    "The F508del mutation causes CFTR chloride channel protein to misfold and be degraded before reaching the cell surface. Elexacaftor and tezacaftor bind different sites on CFTR and act as correctors, improving its folding, processing and trafficking to the membrane.",
+    "Ivacaftor is a potentiator that increases the open probability of CFTR channels at the cell surface. Together they increase chloride and bicarbonate transport, lowering sweat chloride and improving airway surface hydration."
+  ],
+  "uses": [
+    "Cystic fibrosis in patients aged 2 years and older with at least one F508del mutation or another responsive CFTR mutation"
+  ],
+  "history": [
+    {
+      "year": 2018,
+      "title": "Phase 2 results",
+      "detail": "Triple combinations including VX-445 (elexacaftor) show large lung-function gains in F508del patients."
+    },
+    {
+      "year": 2019,
+      "title": "Phase 3 trials",
+      "detail": "Trials in F508del/minimal-function and F508del homozygous patients show ~10–14 point ppFEV1 improvements."
+    },
+    {
+      "year": 2019,
+      "title": "FDA approval",
+      "detail": "FDA approves Trikafta in October, months ahead of its target date, for patients aged 12 and older."
+    },
+    {
+      "year": 2020,
+      "title": "EU approval",
+      "detail": "EMA approves Kaftrio in combination with ivacaftor."
+    },
+    {
+      "year": 2021,
+      "title": "Children 6–11",
+      "detail": "FDA extends approval to children aged 6 to 11."
+    },
+    {
+      "year": 2023,
+      "title": "Children 2–5",
+      "detail": "FDA approves oral granules for children aged 2 to 5."
+    },
+    {
+      "year": 2024,
+      "title": "Expanded mutations",
+      "detail": "FDA expands the label to additional rare non-F508del mutations responsive in vitro."
+    }
+  ],
+  "pk": {
+    "half_life": "Elexacaftor ~25 h; tezacaftor ~16–24 h; ivacaftor ~12–15 h",
+    "bioavailability": "Increased several-fold with fat-containing food",
+    "metabolism": "Hepatic, mainly CYP3A4/5",
+    "excretion": "Mainly faeces"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Headache",
+      "Upper respiratory tract infection",
+      "Abdominal pain",
+      "Diarrhoea",
+      "Rash",
+      "Raised transaminases and bilirubin",
+      "Raised creatine kinase"
+    ],
+    "serious": [
+      "Drug-induced liver injury and liver failure",
+      "Hypersensitivity reactions",
+      "Cataracts in children",
+      "Interactions with strong CYP3A inducers and inhibitors"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Before CFTR modulators, cystic fibrosis treatment addressed only symptoms and complications.",
+    "The Cystic Fibrosis Foundation funded early Vertex research through 'venture philanthropy'."
+  ],
+  "related": [
+    "ivacaftor",
+    "acetylcysteine",
+    "tobramycin",
+    "azithromycin"
+  ],
+  "references": [
+    {
+      "title": "Elexacaftor/tezacaftor/ivacaftor – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Elexacaftor/tezacaftor/ivacaftor"
+    },
+    {
+      "title": "DailyMed – elexacaftor labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=elexacaftor"
+    }
+  ],
+  "stage": "written"
 }

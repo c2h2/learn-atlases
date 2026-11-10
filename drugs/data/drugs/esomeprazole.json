@@ -1,36 +1,131 @@
 {
   "slug": "esomeprazole",
   "name": "Esomeprazole",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "H 199/18",
+    "Perprazole"
+  ],
+  "brands": [
+    "Nexium",
+    "Nexium 24HR",
+    "Vimovo (with naproxen)"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Proton pump inhibitor (PPI)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "Oral delayed-release capsules, tablets or granules once daily; IV injection or infusion",
+  "targets": [
+    "ATP4A"
+  ],
+  "origin": "synthetic",
+  "originator": "Astra (AstraZeneca)",
+  "owner": "generic (many); AstraZeneca (Rx), Haleon (OTC, US)",
+  "first_approval": {
+    "year": 2000,
+    "agency": null,
+    "country": "Sweden",
+    "brand": "Nexium"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Astra",
+    "note": "Single S-enantiomer of omeprazole, which is metabolised more slowly by CYP2C19 and gives higher exposure."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription; OTC for heartburn in many countries",
+  "tagline": "S-enantiomer of omeprazole, the 'purple pill' for acid reflux",
+  "summary": "Esomeprazole is the S-isomer of omeprazole and works the same way, irreversibly inhibiting the gastric proton pump. Marketed as Nexium, it became one of the best-selling drugs of the 2000s and is often cited as an example of a chiral switch.",
+  "mechanism": [
+    "Like omeprazole, esomeprazole is activated in the acidic parietal-cell canaliculus to a sulfenamide that covalently binds the H+/K+ ATPase, blocking the final step of acid secretion.",
+    "The S-enantiomer is less dependent on CYP2C19 for clearance than the R-enantiomer, giving higher and less variable plasma exposure at a given dose."
+  ],
+  "uses": [
+    "Gastro-oesophageal reflux disease and erosive oesophagitis",
+    "Helicobacter pylori eradication (with antibiotics)",
+    "Prevention of NSAID-associated gastric ulcers",
+    "Zollinger–Ellison syndrome",
+    "Prevention of rebleeding after endoscopic treatment of peptic ulcers (IV)",
+    "Heartburn (OTC)"
+  ],
+  "history": [
+    {
+      "year": 2000,
+      "title": "First approval",
+      "detail": "Nexium is approved in Sweden and then in the EU."
+    },
+    {
+      "year": 2001,
+      "title": "US approval",
+      "detail": "FDA approves Nexium in February as Prilosec's patent nears expiry."
+    },
+    {
+      "year": 2005,
+      "title": "IV formulation",
+      "detail": "FDA approves Nexium IV."
+    },
+    {
+      "year": 2014,
+      "title": "OTC",
+      "detail": "Nexium 24HR is approved for over-the-counter use in the US."
+    },
+    {
+      "year": 2015,
+      "title": "US generics",
+      "detail": "Generic esomeprazole becomes available in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "~1–1.5 h",
+    "bioavailability": "~64% single dose, ~89% with repeated dosing",
+    "metabolism": "Hepatic CYP2C19 and CYP3A4",
+    "excretion": "Urine (~80% as metabolites); faeces"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Headache",
+      "Diarrhoea",
+      "Nausea",
+      "Abdominal pain",
+      "Flatulence",
+      "Dry mouth"
+    ],
+    "serious": [
+      "Clostridioides difficile–associated diarrhoea",
+      "Bone fractures with long-term use",
+      "Hypomagnesaemia",
+      "Vitamin B12 deficiency",
+      "Acute interstitial nephritis",
+      "Cutaneous and systemic lupus erythematosus"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Nexium's launch is frequently cited as an example of 'evergreening' through a single-enantiomer switch.",
+    "Esomeprazole is combined with naproxen in Vimovo to reduce NSAID ulcer risk."
+  ],
+  "related": [
+    "omeprazole",
+    "pantoprazole",
+    "ranitidine",
+    "cimetidine",
+    "naproxen",
+    "clarithromycin"
+  ],
+  "references": [
+    {
+      "title": "Esomeprazole – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Esomeprazole"
+    },
+    {
+      "title": "DailyMed – esomeprazole labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=esomeprazole"
+    }
+  ],
+  "stage": "written"
 }

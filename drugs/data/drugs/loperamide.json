@@ -1,36 +1,123 @@
 {
   "slug": "loperamide",
   "name": "Loperamide",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "R 18553"
+  ],
+  "brands": [
+    "Imodium",
+    "Imodium A-D",
+    "Arret"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Peripherally acting mu-opioid receptor agonist (antidiarrhoeal)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral capsules, tablets or liquid after loose stools, up to a labelled maximum daily dose",
+  "targets": [
+    "OPRM1"
+  ],
+  "origin": "synthetic",
+  "originator": "Janssen Pharmaceutica (Belgium)",
+  "owner": "generic (many); Imodium brand: Kenvue (Johnson & Johnson heritage)",
+  "first_approval": {
+    "year": 1976,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Imodium"
+  },
+  "discovery": {
+    "year": 1969,
+    "by": "Paul Janssen and colleagues at Janssen Pharmaceutica",
+    "note": "A phenylpiperidine opioid designed to act on the gut with minimal central effects."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "OTC in most countries",
+  "tagline": "Gut-selective opioid that slows intestinal transit to treat diarrhoea",
+  "summary": "Loperamide is an opioid agonist that acts on mu receptors in the intestinal wall to slow gut motility. At recommended doses it barely enters the brain, so it is sold over the counter for diarrhoea, but very high doses taken for misuse can cause fatal heart-rhythm disturbances.",
+  "mechanism": [
+    "Loperamide activates mu-opioid receptors on myenteric plexus neurons, reducing acetylcholine and prostaglandin release, decreasing propulsive peristalsis and increasing transit time, which allows more fluid and electrolyte absorption.",
+    "It also increases anal sphincter tone. P-glycoprotein efflux at the blood–brain barrier and extensive first-pass metabolism keep central opioid effects minimal at normal doses."
+  ],
+  "uses": [
+    "Acute non-specific diarrhoea",
+    "Chronic diarrhoea associated with inflammatory bowel disease",
+    "Reducing output from ileostomies",
+    "Traveller's diarrhoea (symptomatic)"
+  ],
+  "history": [
+    {
+      "year": 1969,
+      "title": "Discovery",
+      "detail": "Synthesised at Janssen Pharmaceutica."
+    },
+    {
+      "year": 1976,
+      "title": "US approval",
+      "detail": "FDA approves loperamide as a prescription drug."
+    },
+    {
+      "year": 1988,
+      "title": "OTC",
+      "detail": "Loperamide becomes available over the counter in the US."
+    },
+    {
+      "year": 2016,
+      "title": "Cardiac warning",
+      "detail": "FDA warns that taking much higher than recommended doses, including for misuse, can cause serious heart problems and death."
+    },
+    {
+      "year": 2018,
+      "title": "Packaging limits",
+      "detail": "FDA asks makers to sell OTC loperamide in limited quantities in blister packs to deter misuse."
+    }
+  ],
+  "pk": {
+    "half_life": "9–14 h",
+    "bioavailability": "<1% (extensive first-pass)",
+    "metabolism": "Hepatic CYP3A4 and CYP2C8 (oxidative N-demethylation); P-gp substrate",
+    "excretion": "Faeces"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Constipation",
+      "Abdominal cramps",
+      "Nausea",
+      "Dizziness",
+      "Flatulence"
+    ],
+    "serious": [
+      "QT prolongation, torsades de pointes and cardiac arrest at high doses",
+      "Paralytic ileus and toxic megacolon (especially in colitis or children)",
+      "CNS depression in young children",
+      "Hypersensitivity reactions"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Loperamide is structurally related to haloperidol and diphenoxylate.",
+    "It should not be used when diarrhoea is accompanied by high fever or bloody stools."
+  ],
+  "related": [
+    "morphine",
+    "lactulose",
+    "macrogol-3350",
+    "mesalazine",
+    "rifaximin"
+  ],
+  "references": [
+    {
+      "title": "Loperamide – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Loperamide"
+    },
+    {
+      "title": "DailyMed – loperamide labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=loperamide"
+    }
+  ],
+  "stage": "written"
 }

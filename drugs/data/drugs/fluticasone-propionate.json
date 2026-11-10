@@ -1,36 +1,143 @@
 {
   "slug": "fluticasone-propionate",
   "name": "Fluticasone propionate",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "CCI 18781"
+  ],
+  "brands": [
+    "Flovent",
+    "Flixotide",
+    "Flonase",
+    "Flixonase",
+    "Cutivate",
+    "Advair/Seretide (with salmeterol)"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Glucocorticoid (inhaled, nasal and topical)",
+  "modality": "small-molecule",
+  "routes": [
+    "inhaled",
+    "intranasal",
+    "topical"
+  ],
+  "route_note": "Inhaled twice daily for asthma/COPD; nasal spray once daily; cream or ointment for skin",
+  "targets": [
+    "NR3C1"
+  ],
+  "origin": "synthetic",
+  "originator": "Glaxo (Allen & Hanburys)",
+  "owner": "GSK (brands); generic (many)",
+  "first_approval": {
+    "year": 1990,
+    "agency": null,
+    "country": null,
+    "brand": null
+  },
+  "discovery": {
+    "year": 1980,
+    "by": "Glaxo",
+    "note": "A trifluorinated androstane carbothioate designed for high receptor affinity and near-complete first-pass inactivation."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription; nasal spray OTC in the US and elsewhere",
+  "tagline": "High-potency inhaled and nasal corticosteroid with very low oral bioavailability",
+  "summary": "Fluticasone propionate is a potent synthetic glucocorticoid used as an inhaled controller for asthma and COPD, as a nasal spray for allergic rhinitis and topically for inflammatory skin disease. Swallowed drug is almost entirely inactivated in the liver.",
+  "mechanism": [
+    "Fluticasone binds the glucocorticoid receptor with high affinity; the activated receptor suppresses transcription of inflammatory cytokines, chemokines and adhesion molecules and induces anti-inflammatory proteins.",
+    "Locally this reduces eosinophilic airway inflammation and mucosal oedema. Oral bioavailability is below 1% because CYP3A4 converts it to an inactive 17β-carboxylic acid, so systemic effects arise mainly from drug absorbed through the lungs."
+  ],
+  "uses": [
+    "Maintenance treatment of asthma",
+    "COPD (with salmeterol)",
+    "Allergic and non-allergic rhinitis",
+    "Nasal polyps",
+    "Eczema and other corticosteroid-responsive dermatoses",
+    "Eosinophilic oesophagitis (swallowed, off-label)"
+  ],
+  "history": [
+    {
+      "year": 1980,
+      "title": "Discovery",
+      "detail": "Fluticasone propionate is synthesised at Glaxo."
+    },
+    {
+      "year": 1990,
+      "title": "First approval",
+      "detail": "Introduced for medical use, initially in the UK."
+    },
+    {
+      "year": 1994,
+      "title": "Flonase",
+      "detail": "FDA approves Flonase nasal spray."
+    },
+    {
+      "year": 1996,
+      "title": "Flovent",
+      "detail": "FDA approves Flovent inhalation aerosol for asthma."
+    },
+    {
+      "year": 2000,
+      "title": "Advair",
+      "detail": "FDA approves fluticasone/salmeterol (Advair Diskus)."
+    },
+    {
+      "year": 2014,
+      "title": "OTC nasal spray",
+      "detail": "FDA approves Flonase Allergy Relief for non-prescription use."
+    },
+    {
+      "year": 2019,
+      "title": "Generic combination",
+      "detail": "First generic fluticasone/salmeterol inhaler (Wixela Inhub) approved in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "~7.8 h (IV)",
+    "bioavailability": "Oral <1%; nasal <2%; inhaled roughly 10–30% depending on device",
+    "metabolism": "Hepatic CYP3A4 to inactive 17β-carboxylic acid",
+    "excretion": "Mainly faeces"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Oral candidiasis and dysphonia (inhaled)",
+      "Headache",
+      "Epistaxis and nasal irritation (nasal)",
+      "Upper respiratory infection",
+      "Cough"
+    ],
+    "serious": [
+      "Cushing's syndrome and adrenal suppression with ritonavir or other strong CYP3A4 inhibitors",
+      "Pneumonia in COPD",
+      "Reduced growth velocity in children",
+      "Reduced bone mineral density",
+      "Cataract and glaucoma"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Co-administration with ritonavir has caused iatrogenic Cushing's syndrome from inhaled or nasal fluticasone.",
+    "Fluticasone furoate is a different ester with distinct pharmacology, used in once-daily products."
+  ],
+  "related": [
+    "salmeterol",
+    "budesonide",
+    "beclometasone",
+    "montelukast",
+    "salbutamol",
+    "cetirizine",
+    "loratadine"
+  ],
+  "references": [
+    {
+      "title": "Fluticasone propionate – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fluticasone_propionate"
+    },
+    {
+      "title": "DailyMed – fluticasone propionate labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=fluticasone+propionate"
+    }
+  ],
+  "stage": "written"
 }

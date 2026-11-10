@@ -1,36 +1,124 @@
 {
   "slug": "epoprostenol",
   "name": "Epoprostenol",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Prostacyclin",
+    "PGI2",
+    "Prostaglandin I2"
+  ],
+  "brands": [
+    "Flolan",
+    "Veletri"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Prostacyclin (prostanoid IP receptor agonist)",
+  "modality": "small-molecule",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "Continuous intravenous infusion via a central venous catheter and portable pump",
+  "targets": [
+    "PTGIR"
+  ],
+  "origin": "endogenous",
+  "originator": "Wellcome Research Laboratories (discovery); Burroughs Wellcome (development)",
+  "owner": "GSK (Flolan); Johnson & Johnson (Veletri); generic",
+  "first_approval": {
+    "year": 1995,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Flolan"
+  },
+  "discovery": {
+    "year": 1976,
+    "by": "Salvador Moncada, John Vane and colleagues at the Wellcome Research Laboratories",
+    "note": "Identified as an unstable arachidonic-acid metabolite produced by blood-vessel walls that inhibits platelet aggregation and dilates vessels."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription (specialist use)",
+  "tagline": "Continuously infused prostacyclin, the first drug shown to prolong survival in PAH",
+  "summary": "Epoprostenol is synthetic prostacyclin, a natural vasodilator and inhibitor of platelet aggregation. Given by continuous intravenous infusion, it was the first therapy approved for pulmonary arterial hypertension and the first shown in a randomised trial to improve survival.",
+  "mechanism": [
+    "Epoprostenol activates the prostacyclin (IP) receptor on vascular smooth muscle and platelets. The Gs-coupled receptor raises cAMP, causing vasodilation of pulmonary and systemic arteries and inhibiting platelet aggregation.",
+    "It may also have antiproliferative effects on vascular smooth muscle. Its half-life is only a few minutes, so it must be given continuously; interruption can cause dangerous rebound pulmonary hypertension."
+  ],
+  "uses": [
+    "Pulmonary arterial hypertension (WHO group I, NYHA class III–IV)",
+    "Anticoagulation in dialysis circuits (some countries)"
+  ],
+  "history": [
+    {
+      "year": 1976,
+      "title": "Discovery",
+      "detail": "Moncada, Vane and co-workers describe prostacyclin in Nature."
+    },
+    {
+      "year": 1982,
+      "title": "Nobel Prize",
+      "detail": "John Vane shares the Nobel Prize in Physiology or Medicine for prostaglandin research."
+    },
+    {
+      "year": 1995,
+      "title": "FDA approval",
+      "detail": "FDA approves Flolan for primary pulmonary hypertension."
+    },
+    {
+      "year": 1996,
+      "title": "Survival benefit",
+      "detail": "A randomised trial (Barst et al., NEJM) shows improved exercise capacity and survival in primary pulmonary hypertension."
+    },
+    {
+      "year": 2008,
+      "title": "Room-temperature formulation",
+      "detail": "FDA approves Veletri, a more stable formulation, and the first generic epoprostenol."
+    }
+  ],
+  "pk": {
+    "half_life": "~3–6 min",
+    "bioavailability": "Not applicable (IV)",
+    "metabolism": "Rapid hydrolysis at neutral pH and enzymatic degradation to 6-keto-PGF1α and other metabolites",
+    "excretion": "Urine (metabolites)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Flushing",
+      "Headache",
+      "Jaw pain",
+      "Nausea and diarrhoea",
+      "Musculoskeletal pain",
+      "Hypotension"
+    ],
+    "serious": [
+      "Catheter-related bloodstream infection and sepsis",
+      "Rebound pulmonary hypertension on abrupt interruption",
+      "Pulmonary oedema in veno-occlusive disease",
+      "Bleeding"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Epoprostenol is chemically identical to prostacyclin made by vascular endothelium.",
+    "Patients typically carry a battery-powered infusion pump around the clock."
+  ],
+  "related": [
+    "bosentan",
+    "ambrisentan",
+    "sildenafil",
+    "tadalafil",
+    "sotatercept",
+    "aspirin"
+  ],
+  "references": [
+    {
+      "title": "Epoprostenol – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Epoprostenol"
+    },
+    {
+      "title": "DailyMed – epoprostenol labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=epoprostenol"
+    }
+  ],
+  "stage": "written"
 }

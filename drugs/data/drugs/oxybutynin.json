@@ -1,36 +1,131 @@
 {
   "slug": "oxybutynin",
   "name": "Oxybutynin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Oxybutynin chloride"
+  ],
+  "brands": [
+    "Ditropan",
+    "Ditropan XL",
+    "Lyrinel",
+    "Oxytrol",
+    "Gelnique",
+    "Kentera"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
+  "drug_class": "Antimuscarinic (bladder antispasmodic)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "transdermal",
+    "topical"
+  ],
+  "route_note": "Oral immediate- or extended-release tablets; twice-weekly transdermal patch; daily topical gel",
+  "targets": [
+    "CHRM1",
+    "CHRM3"
+  ],
+  "origin": "synthetic",
+  "originator": "Marion Laboratories (Ditropan)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1975,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Ditropan"
+  },
   "discovery": null,
-  "generic": null,
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription; patch OTC for women in the US",
+  "tagline": "Classic antimuscarinic for overactive bladder, now in patches and gels",
+  "summary": "Oxybutynin is an antimuscarinic drug that relaxes the bladder detrusor muscle, reducing urgency, frequency and urge incontinence. It is effective and inexpensive but its anticholinergic effects, especially dry mouth and possible cognitive harm in older adults, limit use.",
+  "mechanism": [
+    "Bladder contraction is triggered by acetylcholine acting mainly on M3 muscarinic receptors in the detrusor. Oxybutynin competitively blocks these receptors (with M1 activity), increasing bladder capacity and reducing involuntary contractions.",
+    "It also has direct smooth-muscle relaxant and local anaesthetic properties. Its active metabolite N-desethyloxybutynin, formed by gut and liver CYP3A4, contributes to dry mouth; transdermal delivery bypasses first-pass metabolism and produces less of it."
+  ],
+  "uses": [
+    "Overactive bladder with urge incontinence, urgency and frequency",
+    "Detrusor overactivity in neurological conditions such as spina bifida (children)",
+    "Hyperhidrosis (off-label)"
+  ],
+  "history": [
+    {
+      "year": 1975,
+      "title": "US approval",
+      "detail": "FDA approves Ditropan tablets."
+    },
+    {
+      "year": 1998,
+      "title": "Extended release",
+      "detail": "FDA approves Ditropan XL once-daily tablets."
+    },
+    {
+      "year": 2003,
+      "title": "Transdermal patch",
+      "detail": "FDA approves Oxytrol, a twice-weekly oxybutynin patch."
+    },
+    {
+      "year": 2009,
+      "title": "Gel",
+      "detail": "FDA approves Gelnique topical gel."
+    },
+    {
+      "year": 2013,
+      "title": "First OTC bladder drug",
+      "detail": "Oxytrol for Women becomes the first over-the-counter treatment for overactive bladder in the US."
+    },
+    {
+      "year": 2015,
+      "title": "Dementia association",
+      "detail": "A large cohort study links cumulative anticholinergic use, including bladder antimuscarinics, with increased dementia risk."
+    }
+  ],
+  "pk": {
+    "half_life": "2–3 h (immediate release)",
+    "bioavailability": "~6% (oral, first-pass)",
+    "metabolism": "Hepatic and gut-wall CYP3A4 to active N-desethyloxybutynin",
+    "excretion": "Urine (<0.1% unchanged)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Dry mouth",
+      "Constipation",
+      "Blurred vision",
+      "Drowsiness",
+      "Dizziness",
+      "Application-site reactions (patch, gel)"
+    ],
+    "serious": [
+      "Urinary retention",
+      "Cognitive impairment and confusion in older adults",
+      "Heat prostration from reduced sweating",
+      "Angioedema",
+      "Worsening of narrow-angle glaucoma"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Oxybutynin is listed in the Beers Criteria among strongly anticholinergic drugs best avoided in older adults.",
+    "Transdermal and gel formulations produce less N-desethyloxybutynin than oral tablets, which reduces dry mouth."
+  ],
+  "related": [
+    "mirabegron",
+    "tamsulosin",
+    "ipratropium",
+    "tiotropium",
+    "diphenhydramine"
+  ],
+  "references": [
+    {
+      "title": "Oxybutynin – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Oxybutynin"
+    },
+    {
+      "title": "DailyMed – oxybutynin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=oxybutynin"
+    }
+  ],
+  "stage": "written"
 }

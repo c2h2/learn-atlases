@@ -1,36 +1,136 @@
 {
   "slug": "misoprostol",
   "name": "Misoprostol",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "SC-29333"
+  ],
+  "brands": [
+    "Cytotec",
+    "Arthrotec (with diclofenac)",
+    "Angusta",
+    "Mysodelle"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Prostaglandin E1 analogue",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "sublingual",
+    "vaginal",
+    "other"
+  ],
+  "route_note": "Oral tablets; also used buccally, sublingually or vaginally in obstetric and gynaecological regimens",
+  "targets": [
+    "PTGER2",
+    "PTGER3",
+    "PTGER4"
+  ],
+  "origin": "synthetic",
+  "originator": "G. D. Searle & Company",
+  "owner": "Pfizer (Cytotec); generic (many)",
+  "first_approval": {
+    "year": 1988,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Cytotec"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1973,
+    "by": "G. D. Searle",
+    "note": "A synthetic, orally active and more stable analogue of prostaglandin E1."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription (access restricted in some countries)",
+  "tagline": "Prostaglandin analogue for NSAID ulcers, obstetric haemorrhage and abortion care",
+  "summary": "Misoprostol is a synthetic prostaglandin E1 analogue approved to prevent NSAID-induced gastric ulcers. Its uterotonic and cervical-ripening effects make it central to medical abortion, management of miscarriage, labour induction and postpartum haemorrhage, uses endorsed by WHO.",
+  "mechanism": [
+    "In the stomach, misoprostol acid binds prostaglandin EP3 receptors on parietal cells, reducing acid secretion, and stimulates mucus and bicarbonate secretion and mucosal blood flow, protecting against NSAID injury.",
+    "In the uterus, activation of EP receptors increases myometrial contractions and softens the cervix. Combined with mifepristone, which blocks progesterone, it terminates early pregnancy with high efficacy."
+  ],
+  "uses": [
+    "Prevention of NSAID-induced gastric ulcers (labelled US indication)",
+    "Medical abortion with mifepristone (labelled in many countries)",
+    "Labour induction (approved formulations in some countries)",
+    "Prevention and treatment of postpartum haemorrhage",
+    "Management of incomplete abortion and miscarriage"
+  ],
+  "history": [
+    {
+      "year": 1973,
+      "title": "Patented",
+      "detail": "Searle patents misoprostol."
+    },
+    {
+      "year": 1988,
+      "title": "FDA approval",
+      "detail": "FDA approves Cytotec to prevent NSAID-induced gastric ulcers."
+    },
+    {
+      "year": 2000,
+      "title": "Medical abortion",
+      "detail": "FDA approves mifepristone, with labelled regimen including misoprostol."
+    },
+    {
+      "year": 2011,
+      "title": "Postpartum haemorrhage",
+      "detail": "WHO adds misoprostol to the Model List for prevention of postpartum haemorrhage."
+    },
+    {
+      "year": 2016,
+      "title": "US regimen update",
+      "detail": "FDA updates the mifepristone label to a regimen using buccal misoprostol up to 70 days' gestation."
+    },
+    {
+      "year": 2022,
+      "title": "WHO guidance",
+      "detail": "WHO abortion care guideline includes misoprostol-only regimens where mifepristone is unavailable."
+    }
+  ],
+  "pk": {
+    "half_life": "20–40 min (misoprostol acid)",
+    "bioavailability": "Rapidly absorbed and de-esterified; extensive first pass",
+    "metabolism": "De-esterification to active misoprostol acid, then fatty-acid oxidation",
+    "excretion": "Urine (~80%)"
+  },
+  "safety": {
+    "common": [
+      "Diarrhoea",
+      "Abdominal pain",
+      "Nausea",
+      "Flatulence",
+      "Fever and chills (obstetric doses)"
+    ],
+    "serious": [
+      "Uterine rupture, particularly with prior caesarean scar",
+      "Abortion, premature birth or birth defects if taken in pregnancy for ulcer prevention",
+      "Severe bleeding",
+      "Hypersensitivity reactions"
+    ],
+    "boxed_warning": "Can cause abortion, premature birth or birth defects; uterine rupture reported when used in pregnancy; not to be used by pregnant women to reduce NSAID ulcer risk."
+  },
+  "facts": [
+    "Misoprostol is heat-stable, which makes it practical for obstetric use in low-resource settings.",
+    "It is listed on the WHO Model List of Essential Medicines for reproductive health uses."
+  ],
+  "related": [
+    "mifepristone",
+    "diclofenac",
+    "omeprazole",
+    "ranitidine",
+    "oxytocin",
+    "tranexamic-acid"
+  ],
+  "references": [
+    {
+      "title": "Misoprostol – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Misoprostol"
+    },
+    {
+      "title": "DailyMed – misoprostol labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=misoprostol"
+    }
+  ],
+  "stage": "written"
 }

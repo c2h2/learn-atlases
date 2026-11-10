@@ -1,36 +1,128 @@
 {
   "slug": "roflumilast",
   "name": "Roflumilast",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BY217",
+    "B9302-107"
+  ],
+  "brands": [
+    "Daliresp",
+    "Daxas",
+    "Zoryve (topical)"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Selective phosphodiesterase-4 (PDE4) inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "topical"
+  ],
+  "route_note": "Oral tablet once daily for COPD; cream or foam once daily for psoriasis, atopic dermatitis and seborrhoeic dermatitis",
+  "targets": [
+    "PDE4A",
+    "PDE4B",
+    "PDE4C",
+    "PDE4D"
+  ],
+  "origin": "synthetic",
+  "originator": "Byk Gulden (Altana Pharma, later Nycomed/Takeda)",
+  "owner": "AstraZeneca (oral, US); Arcutis (topical Zoryve); generics available",
+  "first_approval": {
+    "year": 2010,
+    "agency": "EMA",
+    "country": "EU",
+    "brand": "Daxas"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Byk Gulden, Konstanz, Germany",
+    "note": "A benzamide PDE4 inhibitor optimised for oral once-daily dosing."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Oral PDE4 inhibitor that cuts COPD exacerbations; topical form for psoriasis",
+  "summary": "Roflumilast is a selective PDE4 inhibitor with anti-inflammatory effects. Orally it reduces exacerbations in severe COPD with chronic bronchitis, and topical formulations are approved for plaque psoriasis, atopic dermatitis and seborrhoeic dermatitis.",
+  "mechanism": [
+    "PDE4 is the main enzyme that degrades cyclic AMP in neutrophils, macrophages, T cells and airway epithelial cells. Roflumilast and its active N-oxide metabolite inhibit PDE4, raising intracellular cAMP.",
+    "Higher cAMP suppresses release of inflammatory mediators such as TNF-α and IL-17 and reduces neutrophilic inflammation. Roflumilast has no direct bronchodilator effect."
+  ],
+  "uses": [
+    "Reduction of exacerbations in severe COPD associated with chronic bronchitis and a history of exacerbations",
+    "Plaque psoriasis (topical)",
+    "Atopic dermatitis (topical cream)",
+    "Seborrhoeic dermatitis (topical foam)"
+  ],
+  "history": [
+    {
+      "year": 2010,
+      "title": "EU approval",
+      "detail": "Daxas is approved in the European Union for severe COPD."
+    },
+    {
+      "year": 2011,
+      "title": "US approval",
+      "detail": "FDA approves Daliresp for reducing COPD exacerbations."
+    },
+    {
+      "year": 2022,
+      "title": "Topical psoriasis",
+      "detail": "FDA approves Zoryve (roflumilast) cream 0.3% for plaque psoriasis."
+    },
+    {
+      "year": 2023,
+      "title": "Seborrhoeic dermatitis",
+      "detail": "FDA approves Zoryve foam 0.3% for seborrhoeic dermatitis."
+    },
+    {
+      "year": 2024,
+      "title": "Atopic dermatitis",
+      "detail": "FDA approves Zoryve cream 0.15% for mild to moderate atopic dermatitis."
+    }
+  ],
+  "pk": {
+    "half_life": "~17 h (roflumilast); ~30 h (N-oxide)",
+    "bioavailability": "~80% (oral)",
+    "metabolism": "CYP3A4 and CYP1A2 to active roflumilast N-oxide",
+    "excretion": "Urine (~70% as metabolites)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Diarrhoea",
+      "Weight loss",
+      "Nausea",
+      "Headache",
+      "Insomnia",
+      "Decreased appetite"
+    ],
+    "serious": [
+      "Psychiatric events including suicidality",
+      "Clinically significant weight loss",
+      "Interactions with strong CYP inducers or inhibitors"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Roflumilast N-oxide accounts for most of the PDE4 inhibition in vivo.",
+    "Apremilast, another PDE4 inhibitor, is used orally for psoriasis and psoriatic arthritis."
+  ],
+  "related": [
+    "apremilast",
+    "tiotropium",
+    "theophylline",
+    "salmeterol",
+    "formoterol"
+  ],
+  "references": [
+    {
+      "title": "Roflumilast – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Roflumilast"
+    },
+    {
+      "title": "DailyMed – roflumilast labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=roflumilast"
+    }
+  ],
+  "stage": "written"
 }

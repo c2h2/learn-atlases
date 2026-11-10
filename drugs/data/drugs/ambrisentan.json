@@ -1,36 +1,126 @@
 {
   "slug": "ambrisentan",
   "name": "Ambrisentan",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "LU-208075",
+    "BSF 208075"
+  ],
+  "brands": [
+    "Letairis",
+    "Volibris"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Selective endothelin type A receptor antagonist",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablet once daily, alone or with tadalafil",
+  "targets": [
+    "EDNRA"
+  ],
+  "origin": "synthetic",
+  "originator": "Knoll (BASF Pharma, later Abbott); developed by Myogen",
+  "owner": "Gilead (US), GSK (ex-US); generic (many)",
+  "first_approval": {
+    "year": 2007,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Letairis"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "BASF/Knoll",
+    "note": "A propanoic acid ETA-selective antagonist later licensed to Myogen, which Gilead acquired in 2006."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription (restricted programme for pregnancy risk in the US)",
+  "tagline": "Once-daily ETA-selective endothelin antagonist for pulmonary arterial hypertension",
+  "summary": "Ambrisentan is a selective endothelin type A receptor antagonist taken once daily for pulmonary arterial hypertension. Started together with tadalafil, it reduces clinical failure compared with either drug alone.",
+  "mechanism": [
+    "Ambrisentan blocks the ETA receptor on pulmonary vascular smooth muscle, preventing endothelin-1-induced vasoconstriction and proliferation.",
+    "Sparing ETB receptors may preserve endothelin clearance and endothelial nitric oxide and prostacyclin release, although the clinical importance of selectivity is debated."
+  ],
+  "uses": [
+    "Pulmonary arterial hypertension (WHO group I), alone or in combination with tadalafil"
+  ],
+  "history": [
+    {
+      "year": 2006,
+      "title": "Gilead acquires Myogen",
+      "detail": "Gilead gains ambrisentan through its acquisition of Myogen."
+    },
+    {
+      "year": 2007,
+      "title": "FDA approval",
+      "detail": "FDA approves Letairis in June."
+    },
+    {
+      "year": 2008,
+      "title": "EU approval",
+      "detail": "EMA approves Volibris (GSK)."
+    },
+    {
+      "year": 2011,
+      "title": "Liver warning removed",
+      "detail": "FDA removes the boxed warning on liver injury; embryo-fetal toxicity warning remains."
+    },
+    {
+      "year": 2015,
+      "title": "AMBITION",
+      "detail": "Initial ambrisentan plus tadalafil is shown to reduce clinical failure; FDA approves the combination use."
+    },
+    {
+      "year": 2019,
+      "title": "US generics",
+      "detail": "Generic ambrisentan becomes available in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "~15 h (terminal); ~9 h effective",
+    "bioavailability": "Not determined; rapidly absorbed",
+    "metabolism": "Glucuronidation (UGTs) and CYP3A4/CYP2C19 oxidation",
+    "excretion": "Mainly non-renal (bile)"
+  },
+  "safety": {
+    "common": [
+      "Peripheral oedema",
+      "Nasal congestion",
+      "Headache",
+      "Flushing",
+      "Anaemia"
+    ],
+    "serious": [
+      "Embryo-fetal toxicity",
+      "Fluid retention and heart failure",
+      "Pulmonary oedema in veno-occlusive disease",
+      "Decreased sperm counts",
+      "Contraindicated in idiopathic pulmonary fibrosis"
+    ],
+    "boxed_warning": "Embryo-fetal toxicity; do not use in pregnancy; available in the US only through a restricted programme."
+  },
+  "facts": [
+    "Ambrisentan is contraindicated in idiopathic pulmonary fibrosis after a trial (ARTEMIS-IPF) was stopped for harm.",
+    "It was one of Gilead's first non-antiviral products."
+  ],
+  "related": [
+    "bosentan",
+    "tadalafil",
+    "sildenafil",
+    "epoprostenol",
+    "sotatercept"
+  ],
+  "references": [
+    {
+      "title": "Ambrisentan – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ambrisentan"
+    },
+    {
+      "title": "DailyMed – ambrisentan labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ambrisentan"
+    }
+  ],
+  "stage": "written"
 }

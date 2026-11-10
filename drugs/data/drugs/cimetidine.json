@@ -1,36 +1,130 @@
 {
   "slug": "cimetidine",
   "name": "Cimetidine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "SK&F 92334"
+  ],
+  "brands": [
+    "Tagamet",
+    "Tagamet HB"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Histamine H2-receptor antagonist",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "im"
+  ],
+  "route_note": "Oral tablets or solution; injection in some markets",
+  "targets": [
+    "HRH2"
+  ],
+  "origin": "synthetic",
+  "originator": "Smith, Kline & French (Welwyn Garden City, UK)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1976,
+    "agency": null,
+    "country": "UK",
+    "brand": "Tagamet"
+  },
+  "discovery": {
+    "year": 1972,
+    "by": "James Black, Robin Ganellin, Graham Durant and colleagues at SK&F",
+    "note": "A product of rational drug design, developed from histamine via burimamide and metiamide."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "OTC and prescription",
+  "tagline": "First H2 blocker and first 'blockbuster', born of rational drug design",
+  "summary": "Cimetidine was the first histamine H2-receptor antagonist and transformed peptic ulcer treatment in the late 1970s. A landmark of rational drug design, it became the first drug to reach US$1 billion in annual sales, but its inhibition of liver enzymes causes many drug interactions.",
+  "mechanism": [
+    "Cimetidine competitively blocks H2 receptors on gastric parietal cells, reducing histamine-stimulated acid secretion, especially at night.",
+    "Its imidazole ring binds the haem iron of several cytochrome P450 enzymes (CYP1A2, 2C9, 2D6, 3A4), inhibiting metabolism of warfarin, theophylline, phenytoin and others. It also has weak anti-androgenic activity, which can cause gynaecomastia."
+  ],
+  "uses": [
+    "Duodenal and gastric ulcers",
+    "Gastro-oesophageal reflux disease",
+    "Zollinger–Ellison syndrome",
+    "Heartburn and acid indigestion (OTC)"
+  ],
+  "history": [
+    {
+      "year": 1964,
+      "title": "H2 receptor programme",
+      "detail": "James Black's team at SK&F begins searching for antagonists of histamine's acid-stimulating effect."
+    },
+    {
+      "year": 1972,
+      "title": "H2 receptor defined",
+      "detail": "The team reports burimamide and the existence of H2 receptors; cimetidine is synthesised the same year."
+    },
+    {
+      "year": 1976,
+      "title": "UK launch",
+      "detail": "Tagamet is launched in the United Kingdom."
+    },
+    {
+      "year": 1977,
+      "title": "US approval",
+      "detail": "FDA approves Tagamet."
+    },
+    {
+      "year": 1988,
+      "title": "Nobel Prize",
+      "detail": "James Black shares the Nobel Prize in Physiology or Medicine, partly for the discovery of cimetidine and propranolol."
+    },
+    {
+      "year": 1995,
+      "title": "OTC",
+      "detail": "Tagamet HB is approved for non-prescription use in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "~2 h",
+    "bioavailability": "~60–70%",
+    "metabolism": "Hepatic (sulfoxide and hydroxymethyl metabolites); inhibits several CYPs",
+    "excretion": "Urine (mostly unchanged)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Headache",
+      "Diarrhoea",
+      "Dizziness",
+      "Rash"
+    ],
+    "serious": [
+      "Drug interactions through CYP inhibition (warfarin, theophylline, phenytoin)",
+      "Gynaecomastia and impotence at high doses",
+      "Confusion in older patients",
+      "Blood dyscrasias (rare)",
+      "Hepatitis (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Cimetidine is often cited as the first 'blockbuster' drug.",
+    "The 1972 Nature paper describing H2 receptors was based on burimamide, cimetidine's predecessor."
+  ],
+  "related": [
+    "ranitidine",
+    "omeprazole",
+    "propranolol",
+    "warfarin",
+    "theophylline",
+    "sucralfate"
+  ],
+  "references": [
+    {
+      "title": "Cimetidine – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cimetidine"
+    },
+    {
+      "title": "DailyMed – cimetidine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=cimetidine"
+    }
+  ],
+  "stage": "written"
 }

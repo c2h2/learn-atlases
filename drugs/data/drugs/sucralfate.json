@@ -1,36 +1,123 @@
 {
   "slug": "sucralfate",
   "name": "Sucralfate",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Aluminium sucrose octasulfate"
+  ],
+  "brands": [
+    "Carafate",
+    "Ulcerlmin",
+    "Antepsin",
+    "Sulcrate"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Mucosal protective agent",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets or suspension, usually before meals and at bedtime",
+  "targets": [
+    "None (local action on ulcer base)"
+  ],
+  "origin": "synthetic",
+  "originator": "Chugai Pharmaceutical (Japan)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1968,
+    "agency": null,
+    "country": "Japan",
+    "brand": "Ulcerlmin"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Chugai Pharmaceutical",
+    "note": "A basic aluminium salt of sucrose octasulfate developed as a non-systemic ulcer-healing agent."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Non-absorbed aluminium-sucrose complex that coats and protects ulcers",
+  "summary": "Sucralfate is an aluminium complex of sulfated sucrose that forms a protective barrier over ulcer craters. It acts locally with minimal absorption and is used for duodenal ulcers and, in some settings, stress-ulcer prophylaxis.",
+  "mechanism": [
+    "In acid, sucralfate polymerises into a viscous paste that binds positively charged proteins exposed in the ulcer base, forming a barrier against acid, pepsin and bile salts.",
+    "It also adsorbs pepsin and bile acids, stimulates local prostaglandin and bicarbonate production, and binds epidermal growth factor at the ulcer site. It does not substantially change gastric acid output."
+  ],
+  "uses": [
+    "Active duodenal ulcer",
+    "Maintenance therapy after healing of duodenal ulcer",
+    "Stress-ulcer prophylaxis in critically ill patients (some settings)"
+  ],
+  "history": [
+    {
+      "year": 1968,
+      "title": "Introduced in Japan",
+      "detail": "Chugai launches sucralfate in Japan."
+    },
+    {
+      "year": 1981,
+      "title": "US approval",
+      "detail": "FDA approves Carafate tablets for duodenal ulcer."
+    },
+    {
+      "year": 1993,
+      "title": "Suspension",
+      "detail": "FDA approves Carafate oral suspension."
+    },
+    {
+      "year": 1994,
+      "title": "Stress ulcer risk factors",
+      "detail": "Large Canadian study defines risk factors for ICU stress-ulcer bleeding, informing prophylaxis choices."
+    },
+    {
+      "year": 1998,
+      "title": "ICU trial",
+      "detail": "A randomised trial (Cook et al., NEJM) finds ranitidine more effective than sucralfate in preventing GI bleeding in ventilated patients."
+    }
+  ],
+  "pk": {
+    "half_life": "Not applicable (minimally absorbed)",
+    "bioavailability": "<5% (sucrose sulfate); small amounts of aluminium absorbed",
+    "metabolism": "Not metabolised",
+    "excretion": "Mostly faeces; absorbed fraction in urine"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Constipation",
+      "Dry mouth",
+      "Nausea",
+      "Flatulence"
+    ],
+    "serious": [
+      "Aluminium accumulation in renal failure",
+      "Bezoar formation",
+      "Hyperglycaemia in diabetes (suspension)",
+      "Aspiration of tablets",
+      "Reduced absorption of other drugs (e.g. fluoroquinolones, warfarin, digoxin, levothyroxine)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Other medicines are usually taken at least two hours apart from sucralfate because it binds them in the gut.",
+    "Sucralfate requires an acidic environment to polymerise and adhere to the mucosa."
+  ],
+  "related": [
+    "ranitidine",
+    "cimetidine",
+    "omeprazole",
+    "misoprostol",
+    "ciprofloxacin"
+  ],
+  "references": [
+    {
+      "title": "Sucralfate – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sucralfate"
+    },
+    {
+      "title": "DailyMed – sucralfate labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=sucralfate"
+    }
+  ],
+  "stage": "written"
 }

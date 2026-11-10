@@ -1,36 +1,130 @@
 {
   "slug": "theophylline",
   "name": "Theophylline",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "1,3-Dimethylxanthine",
+    "Aminophylline (ethylenediamine salt)"
+  ],
+  "brands": [
+    "Theo-24",
+    "Uniphyllin",
+    "Theo-Dur",
+    "Elixophyllin",
+    "Nuelin"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Methylxanthine bronchodilator (non-selective phosphodiesterase inhibitor)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "Modified-release oral tablets/capsules; IV as aminophylline for acute severe disease; dosing guided by serum levels",
+  "targets": [
+    "PDE3A",
+    "PDE4",
+    "ADORA1",
+    "ADORA2A"
+  ],
+  "origin": "natural",
+  "originator": "Natural product (tea); first synthesised by Wilhelm Traube",
+  "owner": "generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "discovery": {
+    "year": 1888,
+    "by": "Albrecht Kossel",
+    "note": "Isolated from tea leaves; chemically synthesised by Traube in 1900; bronchodilator effect recognised in the 1920s."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Old methylxanthine bronchodilator with a narrow therapeutic window",
+  "summary": "Theophylline is a methylxanthine related to caffeine that relaxes bronchial smooth muscle and has modest anti-inflammatory effects. Once a first-line asthma drug, it is now reserved as add-on therapy because of its narrow therapeutic range and many drug interactions.",
+  "mechanism": [
+    "Theophylline non-selectively inhibits phosphodiesterases (notably PDE3 and PDE4), raising cAMP and cGMP in airway smooth muscle and inflammatory cells, which relaxes the bronchi.",
+    "It also antagonises adenosine A1 and A2 receptors, which underlies stimulant, diuretic and some toxic effects such as seizures and arrhythmias. At low concentrations it may activate histone deacetylase-2, restoring corticosteroid responsiveness."
+  ],
+  "uses": [
+    "Add-on maintenance therapy for asthma",
+    "COPD (add-on)",
+    "Acute severe asthma (IV aminophylline, limited role)",
+    "Apnoea of prematurity (largely replaced by caffeine)"
+  ],
+  "history": [
+    {
+      "year": 1888,
+      "title": "Isolation",
+      "detail": "Albrecht Kossel isolates theophylline from tea."
+    },
+    {
+      "year": 1900,
+      "title": "Synthesis",
+      "detail": "Wilhelm Traube reports a chemical synthesis."
+    },
+    {
+      "year": 1922,
+      "title": "Bronchodilator",
+      "detail": "Its effect in asthma is first reported."
+    },
+    {
+      "year": 1937,
+      "title": "IV aminophylline",
+      "detail": "Intravenous aminophylline is shown to relieve acute asthma."
+    },
+    {
+      "year": 1975,
+      "title": "Therapeutic drug monitoring",
+      "detail": "During the 1970s serum-level-guided dosing becomes standard, improving safety."
+    },
+    {
+      "year": 1990,
+      "title": "Declining role",
+      "detail": "From the 1990s inhaled corticosteroids and beta2-agonists displace theophylline as first-line asthma therapy."
+    }
+  ],
+  "pk": {
+    "half_life": "~8 h in non-smoking adults (highly variable; shorter in smokers, longer in neonates, liver disease, heart failure)",
+    "bioavailability": "~100% (oral)",
+    "metabolism": "Hepatic, mainly CYP1A2 (also CYP2E1, CYP3A4)",
+    "excretion": "Urine (about 10% unchanged in adults)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nausea and vomiting",
+      "Headache",
+      "Insomnia",
+      "Tremor",
+      "Gastro-oesophageal reflux"
+    ],
+    "serious": [
+      "Seizures",
+      "Cardiac arrhythmias",
+      "Hypokalaemia and hyperglycaemia in toxicity",
+      "Toxicity from interactions (e.g. ciprofloxacin, fluvoxamine, erythromycin, smoking cessation)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Theophylline is one of the methylxanthines in tea, alongside caffeine and theobromine.",
+    "Smoking induces CYP1A2, so stopping smoking can raise theophylline levels into the toxic range."
+  ],
+  "related": [
+    "salbutamol",
+    "roflumilast",
+    "budesonide",
+    "ciprofloxacin",
+    "montelukast"
+  ],
+  "references": [
+    {
+      "title": "Theophylline – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Theophylline"
+    },
+    {
+      "title": "DailyMed – theophylline labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=theophylline"
+    }
+  ],
+  "stage": "written"
 }

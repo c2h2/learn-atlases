@@ -1,36 +1,118 @@
 {
   "slug": "pirfenidone",
   "name": "Pirfenidone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "AMR-69"
+  ],
+  "brands": [
+    "Esbriet",
+    "Pirespa"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Antifibrotic agent",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral capsules or tablets three times daily with food, titrated over two weeks",
+  "targets": [
+    "TGF-β signalling (indirect; molecular target not defined)"
+  ],
+  "origin": "synthetic",
+  "originator": "Marnac Inc.; developed by Shionogi (Japan) and InterMune",
+  "owner": "Roche (Genentech); generic (many)",
+  "first_approval": {
+    "year": 2008,
+    "agency": null,
+    "country": "Japan",
+    "brand": "Pirespa"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Marnac Inc. (Solomon Margolin)",
+    "note": "A simple pyridone found to have antifibrotic activity in animal models of lung fibrosis."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Oral antifibrotic that slows lung-function decline in idiopathic pulmonary fibrosis",
+  "summary": "Pirfenidone is an oral antifibrotic drug that slows the decline in lung function in idiopathic pulmonary fibrosis (IPF). With nintedanib, it was one of the first two drugs approved for IPF in the US, on the same day in 2014.",
+  "mechanism": [
+    "Pirfenidone's precise molecular target is unknown. In models it reduces fibroblast proliferation and collagen synthesis and down-regulates profibrotic and inflammatory mediators, notably transforming growth factor-β (TGF-β) and TNF-α.",
+    "It also has antioxidant activity. The net effect in IPF is slower loss of forced vital capacity, not reversal of established fibrosis."
+  ],
+  "uses": [
+    "Idiopathic pulmonary fibrosis"
+  ],
+  "history": [
+    {
+      "year": 2008,
+      "title": "First approval",
+      "detail": "Approved in Japan (Pirespa, Shionogi) for IPF."
+    },
+    {
+      "year": 2011,
+      "title": "EU approval",
+      "detail": "EMA approves Esbriet (InterMune) for mild to moderate IPF."
+    },
+    {
+      "year": 2014,
+      "title": "ASCEND trial",
+      "detail": "Phase 3 ASCEND trial shows reduced FVC decline in IPF."
+    },
+    {
+      "year": 2014,
+      "title": "US approval and Roche deal",
+      "detail": "FDA approves Esbriet in October, the same day as nintedanib; Roche completes its acquisition of InterMune."
+    },
+    {
+      "year": 2022,
+      "title": "US generics",
+      "detail": "Generic pirfenidone becomes available in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "~3 h",
+    "bioavailability": "Food reduces Cmax; absolute value not well defined",
+    "metabolism": "Hepatic, mainly CYP1A2 to 5-carboxy-pirfenidone",
+    "excretion": "Urine (~80% as 5-carboxy metabolite)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nausea",
+      "Rash",
+      "Photosensitivity",
+      "Fatigue",
+      "Diarrhoea",
+      "Dyspepsia",
+      "Anorexia and weight loss"
+    ],
+    "serious": [
+      "Drug-induced liver injury",
+      "Severe photosensitivity and rash",
+      "Interaction with strong CYP1A2 inhibitors such as fluvoxamine"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "FDA approved pirfenidone and nintedanib for IPF on the same day, 15 October 2014.",
+    "Smoking induces CYP1A2 and lowers pirfenidone exposure."
+  ],
+  "related": [
+    "nintedanib",
+    "acetylcysteine",
+    "prednisolone"
+  ],
+  "references": [
+    {
+      "title": "Pirfenidone – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pirfenidone"
+    },
+    {
+      "title": "DailyMed – pirfenidone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=pirfenidone"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,130 @@
 {
   "slug": "ivacaftor",
   "name": "Ivacaftor",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "VX-770"
+  ],
+  "brands": [
+    "Kalydeco"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "CFTR potentiator",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets or granules twice daily with fat-containing food; also a component of combination CFTR modulators",
+  "targets": [
+    "CFTR"
+  ],
+  "origin": "synthetic",
+  "originator": "Vertex Pharmaceuticals (with Cystic Fibrosis Foundation funding)",
+  "owner": "Vertex Pharmaceuticals",
+  "first_approval": {
+    "year": 2012,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Kalydeco"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Vertex Pharmaceuticals (high-throughput screening programme begun at Aurora Biosciences)",
+    "note": "Identified by cell-based screening for compounds that increase CFTR channel opening."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First drug to treat the underlying defect in cystic fibrosis",
+  "summary": "Ivacaftor is a CFTR potentiator that increases the open probability of defective chloride channels at the cell surface. Approved in 2012 for patients with the G551D gating mutation, it was the first therapy to target the cause of cystic fibrosis and is a backbone of later combination modulators.",
+  "mechanism": [
+    "Gating mutations such as G551D produce CFTR protein that reaches the cell membrane but rarely opens. Ivacaftor binds CFTR and stabilises its open state, increasing chloride transport independently of ATP-driven gating.",
+    "Restored ion transport lowers sweat chloride, improves airway surface liquid and mucociliary clearance, and improves lung function and weight."
+  ],
+  "uses": [
+    "Cystic fibrosis in patients with at least one gating or other ivacaftor-responsive CFTR mutation (from 1 month of age)",
+    "Component of lumacaftor/ivacaftor, tezacaftor/ivacaftor and elexacaftor/tezacaftor/ivacaftor"
+  ],
+  "history": [
+    {
+      "year": 2011,
+      "title": "STRIVE trial",
+      "detail": "Phase 3 trial in G551D patients shows ~10-point ppFEV1 improvement and large falls in sweat chloride."
+    },
+    {
+      "year": 2012,
+      "title": "FDA approval",
+      "detail": "FDA approves Kalydeco in January for patients aged 6 and older with G551D."
+    },
+    {
+      "year": 2015,
+      "title": "Lumacaftor/ivacaftor",
+      "detail": "FDA approves Orkambi for F508del homozygous patients."
+    },
+    {
+      "year": 2017,
+      "title": "Mutation expansion",
+      "detail": "FDA expands the label using in vitro response data, an unusual regulatory approach."
+    },
+    {
+      "year": 2018,
+      "title": "Tezacaftor/ivacaftor",
+      "detail": "FDA approves Symdeko."
+    },
+    {
+      "year": 2019,
+      "title": "Triple combination",
+      "detail": "Ivacaftor becomes part of elexacaftor/tezacaftor/ivacaftor (Trikafta)."
+    },
+    {
+      "year": 2023,
+      "title": "Infants",
+      "detail": "FDA extends Kalydeco to infants aged 1 month and older."
+    }
+  ],
+  "pk": {
+    "half_life": "~12 h",
+    "bioavailability": "Increased 2–4-fold with fat-containing food",
+    "metabolism": "Hepatic CYP3A to active M1 and inactive M6 metabolites",
+    "excretion": "Faeces (~88%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Headache",
+      "Oropharyngeal pain",
+      "Upper respiratory infection",
+      "Nasal congestion",
+      "Abdominal pain",
+      "Rash",
+      "Dizziness"
+    ],
+    "serious": [
+      "Raised transaminases",
+      "Cataracts in children",
+      "Hypersensitivity",
+      "Interactions with strong CYP3A inducers and inhibitors"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Ivacaftor's development was partly funded by the Cystic Fibrosis Foundation, which later sold its royalty rights for $3.3 billion.",
+    "Ivacaftor is also the potentiator in Vertex's combination products."
+  ],
+  "related": [
+    "elexacaftor-tezacaftor-ivacaftor",
+    "acetylcysteine",
+    "tobramycin",
+    "azithromycin"
+  ],
+  "references": [
+    {
+      "title": "Ivacaftor – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ivacaftor"
+    },
+    {
+      "title": "DailyMed – ivacaftor labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ivacaftor"
+    }
+  ],
+  "stage": "written"
 }

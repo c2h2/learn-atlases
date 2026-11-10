@@ -1,36 +1,135 @@
 {
   "slug": "ondansetron",
   "name": "Ondansetron",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "GR38032F"
+  ],
+  "brands": [
+    "Zofran",
+    "Zuplenz"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "5-HT3 receptor antagonist (antiemetic)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "im",
+    "rectal"
+  ],
+  "route_note": "Oral tablets, orally disintegrating tablets, film or solution; IV or IM injection; suppositories in some countries",
+  "targets": [
+    "HTR3A"
+  ],
+  "origin": "synthetic",
+  "originator": "Glaxo (Ware, UK)",
+  "owner": "generic (many); Zofran brand: Novartis/Sandoz",
+  "first_approval": {
+    "year": 1990,
+    "agency": null,
+    "country": "UK",
+    "brand": "Zofran"
+  },
+  "discovery": {
+    "year": 1984,
+    "by": "Glaxo team under David Jack",
+    "note": "A carbazolone 5-HT3 antagonist selected after the role of serotonin in cisplatin-induced emesis was recognised."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "First 5-HT3 antagonist, a mainstay for chemotherapy and postoperative nausea",
+  "summary": "Ondansetron blocks serotonin 5-HT3 receptors and was the first drug of its class. It revolutionised prevention of chemotherapy-induced nausea and vomiting and is widely used for postoperative and radiotherapy-induced nausea.",
+  "mechanism": [
+    "Chemotherapy and radiation damage enterochromaffin cells in the gut, releasing serotonin, which activates 5-HT3 receptors on vagal afferent nerves and triggers vomiting via the brainstem.",
+    "Ondansetron blocks 5-HT3 receptors both peripherally on vagal terminals and centrally in the chemoreceptor trigger zone and nucleus tractus solitarius. It has no meaningful dopamine-blocking action, so it lacks extrapyramidal effects."
+  ],
+  "uses": [
+    "Prevention of chemotherapy-induced nausea and vomiting",
+    "Prevention of radiotherapy-induced nausea and vomiting",
+    "Prevention and treatment of postoperative nausea and vomiting"
+  ],
+  "history": [
+    {
+      "year": 1984,
+      "title": "Discovery",
+      "detail": "Glaxo scientists identify ondansetron."
+    },
+    {
+      "year": 1990,
+      "title": "UK approval",
+      "detail": "Zofran is launched in the UK."
+    },
+    {
+      "year": 1991,
+      "title": "US approval",
+      "detail": "FDA approves Zofran injection."
+    },
+    {
+      "year": 2006,
+      "title": "US generics",
+      "detail": "Generic ondansetron becomes available in the US."
+    },
+    {
+      "year": 2011,
+      "title": "QT warning",
+      "detail": "FDA warns of dose-dependent QT prolongation."
+    },
+    {
+      "year": 2012,
+      "title": "High IV dose removed",
+      "detail": "The 32 mg single IV dose is withdrawn because of QT risk."
+    },
+    {
+      "year": 2015,
+      "title": "Novartis",
+      "detail": "Zofran rights pass to Novartis in the GSK–Novartis asset swap."
+    }
+  ],
+  "pk": {
+    "half_life": "3–6 h",
+    "bioavailability": "~60% (oral)",
+    "metabolism": "Hepatic CYP3A4, CYP1A2 and CYP2D6",
+    "excretion": "Urine (mostly metabolites)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Headache",
+      "Constipation",
+      "Fatigue",
+      "Dizziness",
+      "Diarrhoea"
+    ],
+    "serious": [
+      "QT prolongation and torsades de pointes",
+      "Serotonin syndrome with other serotonergic drugs",
+      "Masking of ileus",
+      "Hypersensitivity reactions",
+      "Myocardial ischaemia (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Ondansetron was one of several major drugs, with salbutamol and ranitidine, to come from David Jack's Glaxo research group.",
+    "It is often combined with dexamethasone and an NK1 antagonist such as aprepitant for highly emetogenic chemotherapy."
+  ],
+  "related": [
+    "aprepitant",
+    "metoclopramide",
+    "domperidone",
+    "dexamethasone",
+    "cisplatin"
+  ],
+  "references": [
+    {
+      "title": "Ondansetron – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ondansetron"
+    },
+    {
+      "title": "DailyMed – ondansetron labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ondansetron"
+    }
+  ],
+  "stage": "written"
 }

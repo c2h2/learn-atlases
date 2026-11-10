@@ -1,36 +1,125 @@
 {
   "slug": "domperidone",
   "name": "Domperidone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "R 33812"
+  ],
+  "brands": [
+    "Motilium",
+    "Motilium Instants"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Peripheral dopamine D2/D3 antagonist (antiemetic, prokinetic)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "rectal"
+  ],
+  "route_note": "Oral tablets or suspension for short courses; suppositories in some countries",
+  "targets": [
+    "DRD2",
+    "DRD3"
+  ],
+  "origin": "synthetic",
+  "originator": "Janssen Pharmaceutica (Belgium)",
+  "owner": "generic (many); Motilium brand: Janssen and others",
+  "first_approval": {
+    "year": 1979,
+    "agency": null,
+    "country": null,
+    "brand": "Motilium"
+  },
+  "discovery": {
+    "year": 1974,
+    "by": "Janssen Pharmaceutica",
+    "note": "A benzimidazole derivative that blocks dopamine receptors but penetrates the blood–brain barrier poorly."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription in many countries; pharmacy-available in some; not approved in the US",
+  "tagline": "Peripherally acting antiemetic used widely outside the US; cardiac risk limits use",
+  "summary": "Domperidone is a dopamine D2 antagonist that relieves nausea and vomiting and speeds gastric emptying. It acts mainly outside the brain, so it rarely causes movement disorders, but its association with QT prolongation and sudden cardiac death led to restrictions; it is not approved in the US.",
+  "mechanism": [
+    "Domperidone blocks D2 and D3 receptors in the chemoreceptor trigger zone, which lies outside the blood–brain barrier, and in the upper gastrointestinal tract, increasing antral contractions and gastric emptying.",
+    "As a P-glycoprotein substrate it is excluded from most of the brain, giving few extrapyramidal effects. Pituitary D2 blockade raises prolactin, and high concentrations block cardiac hERG channels."
+  ],
+  "uses": [
+    "Relief of nausea and vomiting (short-term)",
+    "Gastroparesis (off-label or restricted access in some countries)",
+    "Nausea with dopaminergic drugs in Parkinson's disease"
+  ],
+  "history": [
+    {
+      "year": 1974,
+      "title": "Discovery",
+      "detail": "Domperidone is synthesised at Janssen."
+    },
+    {
+      "year": 1979,
+      "title": "Introduced",
+      "detail": "Motilium enters medical use."
+    },
+    {
+      "year": 2004,
+      "title": "US import warning",
+      "detail": "FDA warns against obtaining domperidone to increase breast-milk production, citing cardiac risks."
+    },
+    {
+      "year": 2012,
+      "title": "Canadian warning",
+      "detail": "Health Canada warns of serious ventricular arrhythmias and sudden cardiac death with domperidone."
+    },
+    {
+      "year": 2014,
+      "title": "EU restrictions",
+      "detail": "EMA restricts domperidone to nausea and vomiting at the lowest dose for up to one week, citing cardiac risk."
+    },
+    {
+      "year": 2014,
+      "title": "Access in the US",
+      "detail": "Domperidone remains available in the US only through an FDA expanded-access programme for refractory gastrointestinal disorders."
+    }
+  ],
+  "pk": {
+    "half_life": "7–9 h",
+    "bioavailability": "~13–17% (oral, first-pass)",
+    "metabolism": "Hepatic CYP3A4 (N-dealkylation and hydroxylation)",
+    "excretion": "Faeces (~66%); urine (~31%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Dry mouth",
+      "Headache",
+      "Abdominal cramps",
+      "Raised prolactin with galactorrhoea or menstrual disturbance"
+    ],
+    "serious": [
+      "QT prolongation, ventricular arrhythmias and sudden cardiac death",
+      "Interactions with strong CYP3A4 inhibitors",
+      "Extrapyramidal reactions (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Domperidone has never been approved for marketing in the United States.",
+    "It is often used to counter nausea caused by levodopa because it does not block dopamine in the brain."
+  ],
+  "related": [
+    "metoclopramide",
+    "ondansetron",
+    "levodopa-carbidopa",
+    "aprepitant"
+  ],
+  "references": [
+    {
+      "title": "Domperidone – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Domperidone"
+    },
+    {
+      "title": "DailyMed – domperidone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=domperidone"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,125 @@
 {
   "slug": "ipratropium",
-  "name": "Ipratropium",
-  "aliases": [],
-  "brands": [],
+  "name": "Ipratropium bromide",
+  "aliases": [
+    "Sch 1000"
+  ],
+  "brands": [
+    "Atrovent",
+    "Combivent (with salbutamol)",
+    "DuoNeb (with salbutamol)"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Short-acting muscarinic antagonist (SAMA)",
+  "modality": "small-molecule",
+  "routes": [
+    "inhaled",
+    "intranasal"
+  ],
+  "route_note": "Inhaler or nebuliser 3–4 times daily; nasal spray for rhinorrhoea",
+  "targets": [
+    "CHRM1",
+    "CHRM2",
+    "CHRM3"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Boehringer Ingelheim",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1974,
+    "agency": null,
+    "country": "Germany",
+    "brand": "Atrovent"
+  },
+  "discovery": {
+    "year": 1966,
+    "by": "Boehringer Ingelheim",
+    "note": "An N-isopropyl quaternary derivative of atropine, designed to keep anticholinergic bronchodilation while minimising systemic absorption."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Short-acting inhaled anticholinergic for COPD, acute asthma and runny nose",
+  "summary": "Ipratropium bromide is a quaternary atropine derivative that blocks muscarinic receptors in the airways. It is used by inhalation for COPD and, together with salbutamol, in acute severe asthma, and as a nasal spray for rhinorrhoea.",
+  "mechanism": [
+    "Ipratropium competitively antagonises acetylcholine at muscarinic receptors on airway smooth muscle and submucosal glands, reducing vagally mediated bronchoconstriction and secretions.",
+    "It is non-selective across M1–M3 subtypes and acts for 4–6 hours. Its quaternary nitrogen keeps it charged, so little crosses mucosal membranes or the blood–brain barrier."
+  ],
+  "uses": [
+    "Bronchospasm in COPD",
+    "Acute severe asthma (with a beta2-agonist)",
+    "Rhinorrhoea of allergic and non-allergic rhinitis and the common cold (nasal spray)"
+  ],
+  "history": [
+    {
+      "year": 1966,
+      "title": "Patented",
+      "detail": "Boehringer Ingelheim patents ipratropium."
+    },
+    {
+      "year": 1974,
+      "title": "Introduced",
+      "detail": "Atrovent enters medical use in Germany."
+    },
+    {
+      "year": 1986,
+      "title": "US approval",
+      "detail": "FDA approves Atrovent inhalation aerosol."
+    },
+    {
+      "year": 1996,
+      "title": "Combivent",
+      "detail": "FDA approves the ipratropium/albuterol combination inhaler Combivent."
+    },
+    {
+      "year": 2011,
+      "title": "Soft-mist inhaler",
+      "detail": "Combivent Respimat is approved in the US, replacing the CFC aerosol."
+    }
+  ],
+  "pk": {
+    "half_life": "~2 h",
+    "bioavailability": "Inhaled <10% systemically; oral ~2%",
+    "metabolism": "Partial ester hydrolysis",
+    "excretion": "Urine and faeces"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Dry mouth",
+      "Cough",
+      "Headache",
+      "Nausea",
+      "Nasal dryness or epistaxis (nasal spray)"
+    ],
+    "serious": [
+      "Paradoxical bronchospasm",
+      "Acute angle-closure glaucoma if nebulised into the eyes",
+      "Urinary retention",
+      "Hypersensitivity reactions"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Ipratropium is derived from atropine, the alkaloid of Atropa belladonna, whose smoke was once inhaled for asthma.",
+    "Its successor tiotropium, also from Boehringer Ingelheim, allows once-daily dosing."
+  ],
+  "related": [
+    "tiotropium",
+    "salbutamol",
+    "formoterol",
+    "salmeterol",
+    "oxybutynin"
+  ],
+  "references": [
+    {
+      "title": "Ipratropium bromide – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ipratropium_bromide"
+    },
+    {
+      "title": "DailyMed – ipratropium labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ipratropium"
+    }
+  ],
+  "stage": "written"
 }

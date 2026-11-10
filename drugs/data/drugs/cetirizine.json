@@ -1,36 +1,126 @@
 {
   "slug": "cetirizine",
   "name": "Cetirizine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "P071"
+  ],
+  "brands": [
+    "Zyrtec",
+    "Reactine",
+    "Virlix"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Second-generation H1 antihistamine",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "ophthalmic",
+    "iv"
+  ],
+  "route_note": "Oral tablet or syrup once daily; eye drops for allergic conjunctivitis; IV formulation (US) for acute urticaria",
+  "targets": [
+    "HRH1"
+  ],
+  "origin": "synthetic",
+  "originator": "UCB (Belgium)",
+  "owner": "generic (many); Zyrtec brand: Kenvue (US) and others",
+  "first_approval": {
+    "year": 1987,
+    "agency": null,
+    "country": null,
+    "brand": "Zyrtec"
+  },
+  "discovery": {
+    "year": null,
+    "by": "UCB",
+    "note": "The carboxylic-acid metabolite of the first-generation antihistamine hydroxyzine, with less penetration into the brain."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "OTC in most countries",
+  "tagline": "Widely used once-daily non-sedating antihistamine for hay fever and hives",
+  "summary": "Cetirizine is a second-generation H1 antihistamine derived from hydroxyzine. Taken once daily, it relieves allergic rhinitis and urticaria with less sedation than older antihistamines, though somewhat more than loratadine or fexofenadine.",
+  "mechanism": [
+    "Cetirizine is a selective inverse agonist at peripheral histamine H1 receptors, stabilising the receptor in its inactive state and preventing histamine-induced vasodilation, vascular leak, itch and sneezing.",
+    "Its zwitterionic structure and P-glycoprotein efflux limit penetration into the central nervous system. It also has some anti-inflammatory effects, such as reduced eosinophil migration."
+  ],
+  "uses": [
+    "Seasonal and perennial allergic rhinitis",
+    "Chronic spontaneous urticaria",
+    "Allergic conjunctivitis (ophthalmic)",
+    "Acute urticaria (IV)"
+  ],
+  "history": [
+    {
+      "year": 1987,
+      "title": "Introduced",
+      "detail": "UCB launches cetirizine in Europe."
+    },
+    {
+      "year": 1995,
+      "title": "US approval",
+      "detail": "FDA approves Zyrtec (marketed with Pfizer) as a prescription drug."
+    },
+    {
+      "year": 2001,
+      "title": "Levocetirizine",
+      "detail": "The active R-enantiomer levocetirizine (Xyzal) is launched in Europe."
+    },
+    {
+      "year": 2007,
+      "title": "OTC in the US",
+      "detail": "Zyrtec switches to over-the-counter status in the US."
+    },
+    {
+      "year": 2019,
+      "title": "IV cetirizine",
+      "detail": "FDA approves Quzyttir, an intravenous cetirizine injection for acute urticaria."
+    }
+  ],
+  "pk": {
+    "half_life": "~8 h",
+    "bioavailability": ">70%",
+    "metabolism": "Minimal (limited O-dealkylation)",
+    "excretion": "Urine (~70%, mostly unchanged)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Somnolence",
+      "Fatigue",
+      "Dry mouth",
+      "Headache",
+      "Pharyngitis"
+    ],
+    "serious": [
+      "Pruritus after stopping long-term use",
+      "Urinary retention (rare)",
+      "Hypersensitivity reactions",
+      "Hepatitis (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Cetirizine is the major active metabolite of hydroxyzine.",
+    "Because it is cleared by the kidneys, cetirizine doses are reduced in renal impairment."
+  ],
+  "related": [
+    "loratadine",
+    "fexofenadine",
+    "diphenhydramine",
+    "montelukast",
+    "fluticasone-propionate",
+    "epinephrine"
+  ],
+  "references": [
+    {
+      "title": "Cetirizine – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cetirizine"
+    },
+    {
+      "title": "DailyMed – cetirizine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=cetirizine"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,117 @@
 {
   "slug": "fexofenadine",
   "name": "Fexofenadine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "MDL 16,455",
+    "Terfenadine carboxylate"
+  ],
+  "brands": [
+    "Allegra",
+    "Telfast"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Second-generation H1 antihistamine",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablet or suspension once or twice daily, with water rather than fruit juice",
+  "targets": [
+    "HRH1"
+  ],
+  "origin": "synthetic",
+  "originator": "Hoechst Marion Roussel (from work at Georgetown University and Sepracor)",
+  "owner": "generic (many); Allegra brand: Opella (Sanofi consumer health)",
+  "first_approval": {
+    "year": 1996,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Allegra"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Researchers including Raymond Woosley at Georgetown University",
+    "note": "Identified as the active, non-cardiotoxic carboxylic-acid metabolite of terfenadine."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "OTC in the US and many other countries",
+  "tagline": "Non-sedating antihistamine developed as the safe metabolite of terfenadine",
+  "summary": "Fexofenadine is the active metabolite of terfenadine, an antihistamine withdrawn because of fatal heart-rhythm problems. It provides the antihistamine effect without terfenadine's QT liability and causes very little sedation.",
+  "mechanism": [
+    "Fexofenadine is a selective inverse agonist at peripheral H1 receptors, inhibiting histamine-induced sneezing, rhinorrhoea, itch and wheal-and-flare responses.",
+    "It is a P-glycoprotein substrate and is effectively excluded from the brain, explaining its lack of sedation. Unlike terfenadine, it does not block cardiac hERG potassium channels at therapeutic concentrations."
+  ],
+  "uses": [
+    "Seasonal allergic rhinitis",
+    "Chronic idiopathic urticaria"
+  ],
+  "history": [
+    {
+      "year": 1985,
+      "title": "Terfenadine",
+      "detail": "Terfenadine (Seldane) is approved in the US; reports of torsades de pointes with interacting drugs follow."
+    },
+    {
+      "year": 1996,
+      "title": "FDA approval",
+      "detail": "FDA approves fexofenadine (Allegra) in July."
+    },
+    {
+      "year": 1997,
+      "title": "Terfenadine withdrawal",
+      "detail": "FDA proposes withdrawal of terfenadine, citing fexofenadine as a safer alternative; it leaves the US market in 1998."
+    },
+    {
+      "year": 2005,
+      "title": "US generics",
+      "detail": "Generic fexofenadine becomes available in the US."
+    },
+    {
+      "year": 2011,
+      "title": "OTC",
+      "detail": "Allegra switches to over-the-counter status in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "~14 h",
+    "bioavailability": "~33%",
+    "metabolism": "Minimal (~5%); transported by P-gp and OATP",
+    "excretion": "Faeces (~80%); urine (~11%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Headache",
+      "Nausea",
+      "Dizziness",
+      "Drowsiness (uncommon)",
+      "Upper respiratory infection"
+    ],
+    "serious": [
+      "Hypersensitivity reactions including anaphylaxis (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Grapefruit, orange and apple juice can reduce fexofenadine absorption by inhibiting OATP transporters.",
+    "Fexofenadine is a textbook example of developing an active metabolite to avoid the toxicity of a parent drug."
+  ],
+  "related": [
+    "cetirizine",
+    "loratadine",
+    "diphenhydramine",
+    "montelukast"
+  ],
+  "references": [
+    {
+      "title": "Fexofenadine – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fexofenadine"
+    },
+    {
+      "title": "DailyMed – fexofenadine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=fexofenadine"
+    }
+  ],
+  "stage": "written"
 }

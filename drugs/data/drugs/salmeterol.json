@@ -1,36 +1,136 @@
 {
   "slug": "salmeterol",
   "name": "Salmeterol",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Salmeterol xinafoate",
+    "GR 33343X"
+  ],
+  "brands": [
+    "Serevent",
+    "Advair (with fluticasone)",
+    "Seretide (with fluticasone)",
+    "Wixela Inhub"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Long-acting beta2-adrenergic agonist (LABA)",
+  "modality": "small-molecule",
+  "routes": [
+    "inhaled"
+  ],
+  "route_note": "Dry-powder or metered-dose inhaler twice daily, usually combined with an inhaled corticosteroid",
+  "targets": [
+    "ADRB2"
+  ],
+  "origin": "synthetic",
+  "originator": "Glaxo (Allen & Hanburys)",
+  "owner": "GSK; generic combinations available",
+  "first_approval": {
+    "year": 1990,
+    "agency": null,
+    "country": "UK",
+    "brand": "Serevent"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Glaxo team led by David Jack",
+    "note": "A salbutamol derivative with a long lipophilic side chain intended to anchor the molecule near the beta2 receptor for prolonged action."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Twice-daily long-acting bronchodilator, mainly used with fluticasone",
+  "summary": "Salmeterol is a long-acting beta2-agonist that keeps airways open for about 12 hours. It is used for maintenance treatment of asthma (only together with an inhaled corticosteroid) and COPD, most often in the fluticasone/salmeterol combination inhaler.",
+  "mechanism": [
+    "Like salbutamol, salmeterol activates airway beta2-adrenergic receptors, increasing cAMP and relaxing bronchial smooth muscle.",
+    "Its long lipophilic tail partitions into the cell membrane and interacts with an exosite near the receptor, allowing repeated activation and a duration of about 12 hours. The onset is slower (10–20 minutes) than that of salbutamol or formoterol, so it is not used for acute relief."
+  ],
+  "uses": [
+    "Maintenance treatment of asthma in combination with an inhaled corticosteroid",
+    "Maintenance treatment of COPD",
+    "Prevention of exercise-induced bronchospasm"
+  ],
+  "history": [
+    {
+      "year": 1990,
+      "title": "UK launch",
+      "detail": "Glaxo launches Serevent in the UK."
+    },
+    {
+      "year": 1994,
+      "title": "US approval",
+      "detail": "FDA approves Serevent inhalation aerosol."
+    },
+    {
+      "year": 2000,
+      "title": "Advair",
+      "detail": "FDA approves fluticasone propionate/salmeterol (Advair Diskus); marketed as Seretide outside the US."
+    },
+    {
+      "year": 2006,
+      "title": "SMART trial and boxed warning",
+      "detail": "The Salmeterol Multicenter Asthma Research Trial reports excess asthma-related deaths with salmeterol, reinforcing an FDA boxed warning for LABAs."
+    },
+    {
+      "year": 2010,
+      "title": "LABA restrictions",
+      "detail": "FDA requires that LABAs in asthma be used only with an asthma controller such as an inhaled corticosteroid."
+    },
+    {
+      "year": 2017,
+      "title": "Boxed warning removed for combinations",
+      "detail": "After large safety trials of ICS/LABA combinations, FDA removes the boxed warning from ICS/LABA combination labels."
+    },
+    {
+      "year": 2019,
+      "title": "First generic Advair",
+      "detail": "FDA approves Wixela Inhub (Mylan), the first generic fluticasone/salmeterol inhaler."
+    }
+  ],
+  "pk": {
+    "half_life": "~5.5 h",
+    "bioavailability": "Low systemic exposure after inhalation",
+    "metabolism": "Hepatic, CYP3A4 (aliphatic hydroxylation to α-hydroxysalmeterol)",
+    "excretion": "Mainly faeces; some urine"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Headache",
+      "Throat irritation",
+      "Nasopharyngitis",
+      "Tremor",
+      "Palpitations"
+    ],
+    "serious": [
+      "Asthma-related death when used without an inhaled corticosteroid",
+      "Paradoxical bronchospasm",
+      "Arrhythmias and QT prolongation",
+      "Hypokalaemia",
+      "Interaction with strong CYP3A4 inhibitors"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Salmeterol monotherapy is not recommended in asthma; it should be combined with an inhaled corticosteroid.",
+    "Fluticasone/salmeterol (Advair/Seretide) was for years one of GSK's best-selling medicines."
+  ],
+  "related": [
+    "fluticasone-propionate",
+    "salbutamol",
+    "formoterol",
+    "tiotropium",
+    "budesonide",
+    "beclometasone"
+  ],
+  "references": [
+    {
+      "title": "Salmeterol – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Salmeterol"
+    },
+    {
+      "title": "DailyMed – salmeterol labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=salmeterol"
+    }
+  ],
+  "stage": "written"
 }

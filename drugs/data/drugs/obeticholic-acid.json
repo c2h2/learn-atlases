@@ -1,36 +1,122 @@
 {
   "slug": "obeticholic-acid",
   "name": "Obeticholic acid",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "INT-747",
+    "6α-ethyl-chenodeoxycholic acid",
+    "6-ECDCA"
+  ],
+  "brands": [
+    "Ocaliva"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Farnesoid X receptor (FXR) agonist",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablet once daily, titrated; avoided in decompensated cirrhosis",
+  "targets": [
+    "NR1H4"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Roberto Pellicciari (University of Perugia) and Intercept Pharmaceuticals",
+  "owner": "Intercept Pharmaceuticals (Alfasigma)",
+  "first_approval": {
+    "year": 2016,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Ocaliva"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 2002,
+    "by": "Roberto Pellicciari and colleagues (Perugia), with Intercept",
+    "note": "A 6α-ethyl derivative of chenodeoxycholic acid about 100 times more potent at FXR."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription (EU marketing authorisation revoked in 2024)",
+  "tagline": "Semi-synthetic bile acid FXR agonist for primary biliary cholangitis",
+  "summary": "Obeticholic acid is a potent agonist of the bile acid receptor FXR. It received accelerated approval in 2016 as second-line therapy for primary biliary cholangitis, but serious liver injury in patients with cirrhosis led to restrictions, and its EU authorisation was revoked in 2024 when confirmatory benefit was not shown.",
+  "mechanism": [
+    "FXR is a nuclear receptor that senses bile acids in the liver and intestine. Activation suppresses CYP7A1, the rate-limiting enzyme of bile acid synthesis, and increases bile acid export via transporters such as BSEP.",
+    "This reduces hepatic bile acid load, and FXR signalling also has anti-inflammatory and antifibrotic effects. Alkaline phosphatase and bilirubin fall in PBC, surrogate markers used for approval."
+  ],
+  "uses": [
+    "Primary biliary cholangitis without cirrhosis or with compensated cirrhosis lacking portal hypertension, with or after ursodeoxycholic acid"
+  ],
+  "history": [
+    {
+      "year": 2002,
+      "title": "Discovery",
+      "detail": "Pellicciari's group reports 6-ECDCA as a potent FXR agonist."
+    },
+    {
+      "year": 2016,
+      "title": "Accelerated approval",
+      "detail": "FDA approves Ocaliva in May for PBC; EU conditional approval follows in December."
+    },
+    {
+      "year": 2018,
+      "title": "Boxed warning",
+      "detail": "FDA adds a boxed warning after reports of liver decompensation and death, often with incorrect dosing in cirrhosis."
+    },
+    {
+      "year": 2021,
+      "title": "Cirrhosis contraindication",
+      "detail": "FDA restricts use in PBC patients with advanced cirrhosis."
+    },
+    {
+      "year": 2023,
+      "title": "NASH rejected; acquisition",
+      "detail": "FDA declines approval for NASH fibrosis; Alfasigma acquires Intercept."
+    },
+    {
+      "year": 2024,
+      "title": "EU revocation",
+      "detail": "The European Commission revokes the conditional marketing authorisation after confirmatory trials fail to show clinical benefit."
+    }
+  ],
+  "pk": {
+    "half_life": "Not well defined; extensive enterohepatic recirculation",
+    "bioavailability": "Absorbed; peak of active conjugates delayed by enterohepatic cycling",
+    "metabolism": "Hepatic conjugation with glycine and taurine",
+    "excretion": "Faeces (~87%); urine <3%"
+  },
+  "safety": {
+    "common": [
+      "Pruritus",
+      "Fatigue",
+      "Abdominal pain",
+      "Rash",
+      "Arthralgia",
+      "Oropharyngeal pain"
+    ],
+    "serious": [
+      "Hepatic decompensation and failure",
+      "Severe pruritus",
+      "Reduced HDL cholesterol"
+    ],
+    "boxed_warning": "Hepatic decompensation and failure in PBC patients with cirrhosis; contraindicated in decompensated cirrhosis or compensated cirrhosis with portal hypertension."
+  },
+  "facts": [
+    "Obeticholic acid was the first new PBC drug in about two decades after ursodeoxycholic acid.",
+    "Its development in NASH was halted after FDA rejected it in 2023; resmetirom became the first NASH/MASH drug in 2024."
+  ],
+  "related": [
+    "ursodeoxycholic-acid",
+    "resmetirom"
+  ],
+  "references": [
+    {
+      "title": "Obeticholic acid – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Obeticholic_acid"
+    },
+    {
+      "title": "DailyMed – obeticholic acid labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=obeticholic+acid"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,125 @@
 {
   "slug": "tamsulosin",
   "name": "Tamsulosin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "YM617",
+    "LY253351"
+  ],
+  "brands": [
+    "Flomax",
+    "Flomaxtra",
+    "Harnal",
+    "Omnic",
+    "Jalyn (with dutasteride)"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Alpha1A-adrenergic receptor antagonist (uroselective alpha blocker)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral modified-release capsule or tablet once daily",
+  "targets": [
+    "ADRA1A",
+    "ADRA1D"
+  ],
+  "origin": "synthetic",
+  "originator": "Yamanouchi Pharmaceutical (now Astellas)",
+  "owner": "generic (many); Boehringer Ingelheim (Flomax, US) and Astellas",
+  "first_approval": {
+    "year": 1993,
+    "agency": null,
+    "country": "Japan",
+    "brand": "Harnal"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Yamanouchi Pharmaceutical",
+    "note": "A sulfonamide alpha-blocker selective for the alpha1A subtype that predominates in prostate smooth muscle."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription; pharmacy (OTC) in the UK",
+  "tagline": "Uroselective alpha blocker that eases urinary symptoms of prostate enlargement",
+  "summary": "Tamsulosin selectively blocks alpha1A and alpha1D adrenoceptors in the prostate and bladder neck, relaxing smooth muscle and improving urine flow. It is one of the most prescribed drugs for lower urinary tract symptoms of benign prostatic hyperplasia.",
+  "mechanism": [
+    "Noradrenaline acting on alpha1A receptors contracts smooth muscle in the prostate, prostatic urethra and bladder neck. Tamsulosin blocks these receptors, reducing outlet resistance and improving flow and symptoms.",
+    "Its relative selectivity over alpha1B receptors in blood vessels causes less hypotension than older alpha blockers such as prazosin, so it does not need dose titration. Blockade of alpha1A receptors in the iris dilator muscle causes intraoperative floppy iris syndrome."
+  ],
+  "uses": [
+    "Lower urinary tract symptoms of benign prostatic hyperplasia",
+    "Facilitating passage of distal ureteric stones (off-label)"
+  ],
+  "history": [
+    {
+      "year": 1993,
+      "title": "Japanese approval",
+      "detail": "Tamsulosin is approved in Japan as Harnal."
+    },
+    {
+      "year": 1997,
+      "title": "US approval",
+      "detail": "FDA approves Flomax."
+    },
+    {
+      "year": 2005,
+      "title": "Floppy iris syndrome",
+      "detail": "Intraoperative floppy iris syndrome during cataract surgery is described in tamsulosin users."
+    },
+    {
+      "year": 2010,
+      "title": "Generics and combination",
+      "detail": "Generic tamsulosin launches in the US; dutasteride/tamsulosin (Jalyn) is approved; Flomax Relief becomes available from UK pharmacies."
+    },
+    {
+      "year": 2015,
+      "title": "Ureteric stones trial",
+      "detail": "The SUSPEND trial finds no benefit of tamsulosin for passage of ureteric stones overall."
+    }
+  ],
+  "pk": {
+    "half_life": "9–13 h (modified-release ~14–15 h)",
+    "bioavailability": ">90% (fasting)",
+    "metabolism": "Hepatic CYP3A4 and CYP2D6",
+    "excretion": "Urine (~76%, mostly metabolites)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Dizziness",
+      "Abnormal or retrograde ejaculation",
+      "Rhinitis",
+      "Headache",
+      "Asthenia"
+    ],
+    "serious": [
+      "Orthostatic hypotension and syncope",
+      "Intraoperative floppy iris syndrome",
+      "Priapism (rare)",
+      "Angioedema (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Patients planning cataract surgery are advised to tell their eye surgeon about tamsulosin use.",
+    "Tamsulosin is often combined with a 5α-reductase inhibitor such as dutasteride or finasteride."
+  ],
+  "related": [
+    "finasteride",
+    "tadalafil",
+    "oxybutynin",
+    "mirabegron",
+    "sildenafil"
+  ],
+  "references": [
+    {
+      "title": "Tamsulosin – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tamsulosin"
+    },
+    {
+      "title": "DailyMed – tamsulosin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=tamsulosin"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,136 @@
 {
   "slug": "finasteride",
   "name": "Finasteride",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "MK-906"
+  ],
+  "brands": [
+    "Proscar",
+    "Propecia"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "5α-reductase inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "topical"
+  ],
+  "route_note": "Oral tablet once daily (5 mg for BPH, 1 mg for hair loss); topical spray approved in some countries",
+  "targets": [
+    "SRD5A2",
+    "SRD5A3"
+  ],
+  "origin": "synthetic",
+  "originator": "Merck & Co.",
+  "owner": "Organon (Proscar, Propecia); generic (many)",
+  "first_approval": {
+    "year": 1992,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Proscar"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Merck Research Laboratories (team including Gary Rasmusson)",
+    "note": "Inspired by Julianne Imperato-McGinley's 1974 study of men with inherited 5α-reductase deficiency, who had small prostates and no male-pattern baldness."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "5α-reductase inhibitor for prostate enlargement and male-pattern hair loss",
+  "summary": "Finasteride inhibits the enzyme that converts testosterone to the more potent androgen dihydrotestosterone (DHT). It shrinks the enlarged prostate in benign prostatic hyperplasia and slows male-pattern hair loss, and has been the subject of safety debates about persistent sexual and psychiatric effects.",
+  "mechanism": [
+    "Finasteride is a competitive, mechanism-based inhibitor of type II 5α-reductase (and type III), forming a stable complex with the enzyme and reducing serum DHT by about 70%.",
+    "Lower DHT shrinks prostate tissue over months, improving urinary symptoms and reducing the risk of urinary retention and surgery. In the scalp, lower DHT slows follicle miniaturisation."
+  ],
+  "uses": [
+    "Symptomatic benign prostatic hyperplasia (alone or with an alpha blocker)",
+    "Male-pattern hair loss (androgenetic alopecia)"
+  ],
+  "history": [
+    {
+      "year": 1974,
+      "title": "Inspiration",
+      "detail": "Imperato-McGinley describes men in the Dominican Republic with 5α-reductase deficiency."
+    },
+    {
+      "year": 1992,
+      "title": "BPH approval",
+      "detail": "FDA approves Proscar for benign prostatic hyperplasia."
+    },
+    {
+      "year": 1997,
+      "title": "Hair loss",
+      "detail": "FDA approves Propecia 1 mg for male-pattern hair loss."
+    },
+    {
+      "year": 2003,
+      "title": "Prostate Cancer Prevention Trial",
+      "detail": "PCPT shows a 25% reduction in prostate cancer prevalence but more high-grade tumours."
+    },
+    {
+      "year": 2011,
+      "title": "High-grade cancer warning",
+      "detail": "FDA adds a warning about increased risk of high-grade prostate cancer to 5α-reductase inhibitor labels."
+    },
+    {
+      "year": 2012,
+      "title": "Persistent sexual effects",
+      "detail": "FDA updates labels to note sexual adverse effects that may continue after stopping."
+    },
+    {
+      "year": 2022,
+      "title": "Suicidality",
+      "detail": "FDA adds suicidal ideation and behaviour to the Propecia label."
+    },
+    {
+      "year": 2025,
+      "title": "EU review",
+      "detail": "EMA's safety committee confirms suicidal ideation as a side effect of oral and topical finasteride."
+    }
+  ],
+  "pk": {
+    "half_life": "5–6 h (adults); ~8 h (over 70)",
+    "bioavailability": "~65%",
+    "metabolism": "Hepatic CYP3A4",
+    "excretion": "Faeces (~57%) and urine (~39%) as metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Decreased libido",
+      "Erectile dysfunction",
+      "Ejaculation disorders",
+      "Breast tenderness or enlargement"
+    ],
+    "serious": [
+      "High-grade prostate cancer (possible increased risk)",
+      "Depression and suicidal ideation",
+      "Persistent sexual dysfunction after discontinuation",
+      "Male breast cancer (rare reports)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Finasteride lowers PSA by about half, so PSA values are adjusted during treatment.",
+    "Women who are or may become pregnant should not handle crushed or broken tablets because of the risk to a male fetus."
+  ],
+  "related": [
+    "tamsulosin",
+    "tadalafil",
+    "testosterone",
+    "enzalutamide",
+    "abiraterone"
+  ],
+  "references": [
+    {
+      "title": "Finasteride – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Finasteride"
+    },
+    {
+      "title": "DailyMed – finasteride labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=finasteride"
+    }
+  ],
+  "stage": "written"
 }

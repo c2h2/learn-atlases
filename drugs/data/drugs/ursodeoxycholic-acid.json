@@ -1,36 +1,127 @@
 {
   "slug": "ursodeoxycholic-acid",
   "name": "Ursodeoxycholic acid",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Ursodiol (USAN)",
+    "UDCA"
+  ],
+  "brands": [
+    "Urso",
+    "Actigall",
+    "Ursofalk",
+    "Destolit",
+    "Urdox"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Hydrophilic bile acid",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets, capsules or suspension, once to several times daily depending on indication",
+  "targets": [
+    "Bile acid pool (hydrophilic replacement)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Tokyo Tanabe (Japan)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1957,
+    "agency": null,
+    "country": "Japan",
+    "brand": "Urso"
+  },
+  "discovery": {
+    "year": 1927,
+    "by": "Masato Shoda (Japan)",
+    "note": "Crystallised from the bile of the Japanese black bear, long used in traditional medicine; later synthesised from cholic acid."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Bear-bile acid used to dissolve gallstones and treat primary biliary cholangitis",
+  "summary": "Ursodeoxycholic acid is a hydrophilic secondary bile acid originally found in bear bile. It dissolves cholesterol gallstones in selected patients and is first-line therapy for primary biliary cholangitis, where it improves liver tests and transplant-free survival.",
+  "mechanism": [
+    "UDCA reduces cholesterol secretion into bile and intestinal cholesterol absorption, making bile less saturated and allowing gradual dissolution of cholesterol stones.",
+    "In cholestatic liver disease it replaces more toxic hydrophobic bile acids in the bile acid pool, stimulates bile flow and bicarbonate secretion from cholangiocytes, and protects liver cells from bile-acid-induced apoptosis."
+  ],
+  "uses": [
+    "Primary biliary cholangitis",
+    "Dissolution of radiolucent cholesterol gallstones",
+    "Prevention of gallstones during rapid weight loss",
+    "Intrahepatic cholestasis of pregnancy and other cholestatic conditions (off-label in some countries)"
+  ],
+  "history": [
+    {
+      "year": 1927,
+      "title": "Isolation",
+      "detail": "Shoda crystallises ursodeoxycholic acid from black bear bile."
+    },
+    {
+      "year": 1954,
+      "title": "Synthesis",
+      "detail": "Japanese chemists report a chemical synthesis, enabling production without bear bile."
+    },
+    {
+      "year": 1957,
+      "title": "Japanese launch",
+      "detail": "Tokyo Tanabe markets UDCA (Urso) in Japan."
+    },
+    {
+      "year": 1987,
+      "title": "US approval for gallstones",
+      "detail": "FDA approves Actigall for dissolving gallstones."
+    },
+    {
+      "year": 1997,
+      "title": "Primary biliary cirrhosis",
+      "detail": "FDA approves Urso for primary biliary cirrhosis (now cholangitis)."
+    },
+    {
+      "year": 2019,
+      "title": "Pregnancy cholestasis trial",
+      "detail": "The PITCHES trial finds UDCA does not reduce adverse perinatal outcomes in intrahepatic cholestasis of pregnancy."
+    }
+  ],
+  "pk": {
+    "half_life": "Biological half-life in bile acid pool ~3.5–5.8 days",
+    "bioavailability": "Well absorbed; extensive enterohepatic circulation",
+    "metabolism": "Hepatic conjugation with glycine and taurine; bacterial 7-dehydroxylation in colon",
+    "excretion": "Faeces"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Diarrhoea",
+      "Abdominal discomfort",
+      "Pruritus",
+      "Nausea"
+    ],
+    "serious": [
+      "Gallstone calcification",
+      "Hepatic decompensation in advanced cirrhosis (rare)",
+      "Hypersensitivity reactions"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Ursodeoxycholic acid's name comes from Ursus, the Latin for bear.",
+    "It is the 7β-epimer of chenodeoxycholic acid."
+  ],
+  "related": [
+    "obeticholic-acid",
+    "lactulose",
+    "rifaximin"
+  ],
+  "references": [
+    {
+      "title": "Ursodeoxycholic acid – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ursodeoxycholic_acid"
+    },
+    {
+      "title": "DailyMed – ursodeoxycholic acid labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ursodeoxycholic+acid"
+    }
+  ],
+  "stage": "written"
 }

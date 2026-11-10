@@ -1,36 +1,123 @@
 {
   "slug": "macrogol-3350",
   "name": "Macrogol 3350",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Polyethylene glycol 3350",
+    "PEG 3350"
+  ],
+  "brands": [
+    "MiraLAX",
+    "Movicol",
+    "Laxido",
+    "GoLYTELY (with electrolytes)",
+    "Moviprep"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Osmotic laxative (polyethylene glycol)",
+  "modality": "other",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Powder dissolved in water once daily for constipation; large-volume electrolyte solutions for bowel preparation",
+  "targets": [
+    "None (osmotic action in the gut lumen)"
+  ],
+  "origin": "synthetic",
+  "originator": "Braintree Laboratories (lavage and MiraLAX); Norgine (Movicol)",
+  "owner": "generic (many); MiraLAX brand: Bayer",
+  "first_approval": {
+    "year": 1984,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "GoLYTELY"
+  },
+  "discovery": {
+    "year": 1980,
+    "by": "Gordon Davis, John Fordtran and colleagues (Dallas)",
+    "note": "Developed a non-absorbable polyethylene glycol–electrolyte lavage solution that cleanses the colon without net fluid or salt shifts."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "OTC (laxative); bowel-preparation kits prescription in many countries",
+  "tagline": "Osmotic polymer laxative and basis of most bowel-preparation solutions",
+  "summary": "Macrogol 3350 is a polyethylene glycol of average molecular weight 3350 that is not absorbed or metabolised. It holds water in the bowel by osmosis, softening stool, and in large volumes with electrolytes is used to clear the colon before colonoscopy.",
+  "mechanism": [
+    "Macrogol molecules form hydrogen bonds with water and remain in the intestinal lumen, increasing stool water content and volume. Larger, softer stools stimulate colonic motility.",
+    "Because it is not fermented by colonic bacteria, it causes less gas than lactulose. Electrolytes in lavage and some laxative formulations prevent net sodium and water loss."
+  ],
+  "uses": [
+    "Chronic and occasional constipation in adults and children",
+    "Faecal impaction",
+    "Bowel cleansing before colonoscopy or surgery (with electrolytes)"
+  ],
+  "history": [
+    {
+      "year": 1980,
+      "title": "Lavage solution",
+      "detail": "Davis and colleagues describe a PEG–electrolyte lavage solution for colon cleansing."
+    },
+    {
+      "year": 1984,
+      "title": "Bowel preparation",
+      "detail": "FDA approves GoLYTELY for bowel cleansing."
+    },
+    {
+      "year": 1995,
+      "title": "Movicol",
+      "detail": "Norgine launches Movicol, a macrogol–electrolyte laxative, in the UK."
+    },
+    {
+      "year": 1999,
+      "title": "MiraLAX",
+      "detail": "FDA approves MiraLAX (prescription) for occasional constipation."
+    },
+    {
+      "year": 2006,
+      "title": "OTC switch",
+      "detail": "MiraLAX becomes available over the counter in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "Not applicable",
+    "bioavailability": "Negligible (<0.3%)",
+    "metabolism": "Not metabolised",
+    "excretion": "Faeces"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Bloating",
+      "Abdominal cramping",
+      "Nausea",
+      "Diarrhoea",
+      "Flatulence"
+    ],
+    "serious": [
+      "Fluid and electrolyte disturbance with bowel-prep volumes",
+      "Aspiration in patients with impaired swallowing",
+      "Hypersensitivity reactions (rare)",
+      "Bowel perforation if obstruction is present"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Polyethylene glycols are also used as excipients and to PEGylate proteins such as pegfilgrastim.",
+    "The number 3350 refers to the polymer's average molecular weight."
+  ],
+  "related": [
+    "lactulose",
+    "loperamide",
+    "pegfilgrastim"
+  ],
+  "references": [
+    {
+      "title": "Macrogol 3350 – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Polyethylene_glycol"
+    },
+    {
+      "title": "DailyMed – polyethylene glycol 3350 labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=polyethylene+glycol+3350"
+    }
+  ],
+  "stage": "written"
 }

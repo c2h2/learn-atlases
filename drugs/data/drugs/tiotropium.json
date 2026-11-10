@@ -1,36 +1,134 @@
 {
   "slug": "tiotropium",
   "name": "Tiotropium",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Tiotropium bromide",
+    "Ba 679 BR"
+  ],
+  "brands": [
+    "Spiriva HandiHaler",
+    "Spiriva Respimat",
+    "Stiolto/Spiolto Respimat (with olodaterol)"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Long-acting muscarinic antagonist (LAMA)",
+  "modality": "small-molecule",
+  "routes": [
+    "inhaled"
+  ],
+  "route_note": "Once-daily dry-powder capsule (HandiHaler) or soft-mist inhaler (Respimat)",
+  "targets": [
+    "CHRM3",
+    "CHRM1"
+  ],
+  "origin": "synthetic",
+  "originator": "Boehringer Ingelheim",
+  "owner": "Boehringer Ingelheim; generics in some markets",
+  "first_approval": {
+    "year": 2002,
+    "agency": null,
+    "country": null,
+    "brand": "Spiriva"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Boehringer Ingelheim",
+    "note": "A quaternary ammonium anticholinergic designed for slow dissociation from M3 receptors, allowing once-daily dosing."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Once-daily inhaled anticholinergic, a cornerstone of COPD maintenance therapy",
+  "summary": "Tiotropium is a long-acting muscarinic antagonist taken once daily by inhalation. It was the first once-daily bronchodilator for COPD, reduces exacerbations, and is also approved as add-on maintenance therapy in asthma.",
+  "mechanism": [
+    "Acetylcholine released from vagal nerves contracts airway smooth muscle and stimulates mucus secretion via M3 muscarinic receptors. Tiotropium competitively blocks these receptors, producing bronchodilation.",
+    "It dissociates very slowly from M1 and M3 receptors but faster from M2 (the presynaptic autoreceptor), giving kinetic selectivity and a bronchodilator effect lasting more than 24 hours. As a quaternary amine it is poorly absorbed, limiting systemic anticholinergic effects."
+  ],
+  "uses": [
+    "Maintenance treatment of COPD and reduction of exacerbations",
+    "Add-on maintenance treatment of asthma (Respimat)"
+  ],
+  "history": [
+    {
+      "year": 2002,
+      "title": "First approval",
+      "detail": "Spiriva HandiHaler is first approved for COPD, initially in Europe."
+    },
+    {
+      "year": 2004,
+      "title": "US approval",
+      "detail": "FDA approves Spiriva HandiHaler for COPD in January."
+    },
+    {
+      "year": 2008,
+      "title": "UPLIFT trial",
+      "detail": "Four-year UPLIFT trial shows improved lung function, quality of life and fewer exacerbations, without slowing FEV1 decline."
+    },
+    {
+      "year": 2014,
+      "title": "Respimat in the US",
+      "detail": "FDA approves Spiriva Respimat for COPD after the TIOSPIR safety trial."
+    },
+    {
+      "year": 2015,
+      "title": "Asthma and combination",
+      "detail": "Respimat is approved for asthma in the US, and tiotropium/olodaterol (Stiolto Respimat) for COPD."
+    },
+    {
+      "year": 2021,
+      "title": "WHO essential medicine",
+      "detail": "Tiotropium is added to the WHO Model List of Essential Medicines for COPD."
+    },
+    {
+      "year": 2023,
+      "title": "US generic",
+      "detail": "FDA approves a generic tiotropium inhalation powder (Lupin)."
+    }
+  ],
+  "pk": {
+    "half_life": "5–6 days (terminal, inhaled)",
+    "bioavailability": "~19.5% (inhaled dry powder); oral <2%",
+    "metabolism": "Minimal; non-enzymatic ester cleavage, minor CYP2D6 and CYP3A4",
+    "excretion": "Urine (renal clearance) and faeces"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Dry mouth",
+      "Upper respiratory tract infection",
+      "Pharyngitis",
+      "Constipation",
+      "Sinusitis"
+    ],
+    "serious": [
+      "Paradoxical bronchospasm",
+      "Urinary retention",
+      "Worsening of narrow-angle glaucoma",
+      "Hypersensitivity and angioedema"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Tiotropium was the first once-daily inhaled bronchodilator approved for COPD.",
+    "The HandiHaler capsules must not be swallowed; they are pierced in the device and the powder is inhaled."
+  ],
+  "related": [
+    "ipratropium",
+    "salmeterol",
+    "formoterol",
+    "salbutamol",
+    "roflumilast",
+    "budesonide"
+  ],
+  "references": [
+    {
+      "title": "Tiotropium – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tiotropium"
+    },
+    {
+      "title": "DailyMed – tiotropium labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=tiotropium"
+    }
+  ],
+  "stage": "written"
 }

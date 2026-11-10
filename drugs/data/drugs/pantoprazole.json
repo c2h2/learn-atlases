@@ -1,36 +1,137 @@
 {
   "slug": "pantoprazole",
   "name": "Pantoprazole",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BY1023",
+    "SK&F 96022"
+  ],
+  "brands": [
+    "Protonix",
+    "Pantozol",
+    "Pantoloc",
+    "Somac",
+    "Controloc"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Proton pump inhibitor (PPI)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "Oral delayed-release tablets or granules once daily; IV injection or infusion",
+  "targets": [
+    "ATP4A"
+  ],
+  "origin": "synthetic",
+  "originator": "Byk Gulden (Konstanz, Germany), with Smith Kline & French",
+  "owner": "generic (many); Takeda (Europe), Pfizer (Protonix, US)",
+  "first_approval": {
+    "year": 1994,
+    "agency": null,
+    "country": "Germany",
+    "brand": "Pantozol"
+  },
+  "discovery": {
+    "year": 1985,
+    "by": "Byk Gulden",
+    "note": "A difluoromethoxy benzimidazole PPI designed for greater chemical stability at near-neutral pH."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription; OTC in some countries",
+  "tagline": "Proton pump inhibitor with an IV form and fewer CYP interactions",
+  "summary": "Pantoprazole is a proton pump inhibitor used orally and intravenously to suppress gastric acid. Compared with omeprazole it has a lower potential for CYP-mediated drug interactions and is widely used in hospitals for stress-ulcer prophylaxis and upper GI bleeding.",
+  "mechanism": [
+    "Pantoprazole is activated in the acid environment of parietal cells to a cyclic sulfenamide, which binds covalently to cysteine residues (including Cys813 and Cys822) on the H+/K+ ATPase.",
+    "Its greater stability at mildly acidic pH means activation is more confined to the parietal cell, and acid secretion resumes only as new pumps are made."
+  ],
+  "uses": [
+    "Gastro-oesophageal reflux disease and erosive oesophagitis",
+    "Duodenal and gastric ulcers",
+    "Helicobacter pylori eradication",
+    "Zollinger–Ellison syndrome",
+    "Prevention of NSAID-associated ulcers",
+    "Upper gastrointestinal bleeding and stress-ulcer prophylaxis (IV)"
+  ],
+  "history": [
+    {
+      "year": 1985,
+      "title": "Discovery",
+      "detail": "Byk Gulden synthesises pantoprazole."
+    },
+    {
+      "year": 1994,
+      "title": "Launch",
+      "detail": "Pantozol is launched in Germany."
+    },
+    {
+      "year": 2000,
+      "title": "US approval",
+      "detail": "FDA approves Protonix delayed-release tablets (Wyeth)."
+    },
+    {
+      "year": 2001,
+      "title": "IV formulation",
+      "detail": "FDA approves Protonix IV, the first IV PPI in the US."
+    },
+    {
+      "year": 2008,
+      "title": "US generics",
+      "detail": "Generic pantoprazole enters the US market after at-risk launches and patent litigation."
+    },
+    {
+      "year": 2013,
+      "title": "Patent settlement",
+      "detail": "Teva and Sun agree to pay Pfizer and Takeda $2.15 billion over at-risk generic launches."
+    }
+  ],
+  "pk": {
+    "half_life": "~1 h",
+    "bioavailability": "~77%",
+    "metabolism": "Hepatic CYP2C19 demethylation followed by sulfation; minor CYP3A4",
+    "excretion": "Urine (~71% as metabolites); faeces"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Headache",
+      "Diarrhoea",
+      "Nausea",
+      "Abdominal pain",
+      "Flatulence"
+    ],
+    "serious": [
+      "Clostridioides difficile–associated diarrhoea",
+      "Bone fractures with long-term use",
+      "Hypomagnesaemia",
+      "Vitamin B12 deficiency",
+      "Acute interstitial nephritis",
+      "Cutaneous and systemic lupus erythematosus"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Pantoprazole was the first PPI available as an intravenous formulation in the US.",
+    "Pantoprazole can cause false-positive urine screening tests for THC."
+  ],
+  "related": [
+    "omeprazole",
+    "esomeprazole",
+    "ranitidine",
+    "cimetidine",
+    "clarithromycin",
+    "amoxicillin"
+  ],
+  "references": [
+    {
+      "title": "Pantoprazole – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pantoprazole"
+    },
+    {
+      "title": "DailyMed – pantoprazole labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=pantoprazole"
+    }
+  ],
+  "stage": "written"
 }

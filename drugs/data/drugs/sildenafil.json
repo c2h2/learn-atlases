@@ -1,36 +1,137 @@
 {
   "slug": "sildenafil",
   "name": "Sildenafil",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "UK-92,480",
+    "Sildenafil citrate"
+  ],
+  "brands": [
+    "Viagra",
+    "Revatio",
+    "Viagra Connect"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Phosphodiesterase-5 (PDE5) inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "Oral tablet taken about an hour before sexual activity for ED; three times daily (oral or IV) for PAH",
+  "targets": [
+    "PDE5A"
+  ],
+  "origin": "synthetic",
+  "originator": "Pfizer (Sandwich, UK)",
+  "owner": "Viatris (Viagra); generic (many)",
+  "first_approval": {
+    "year": 1998,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Viagra"
+  },
+  "discovery": {
+    "year": 1989,
+    "by": "Pfizer chemists at Sandwich, Kent (including Andrew Bell, David Brown and Nicholas Terrett)",
+    "note": "Developed as a treatment for angina; penile erections noted in early trials redirected development."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription; pharmacy (OTC) in the UK since 2018",
+  "tagline": "PDE5 inhibitor for erectile dysfunction and pulmonary arterial hypertension",
+  "summary": "Sildenafil is a selective inhibitor of phosphodiesterase type 5 that enhances nitric oxide–cGMP signalling. Originally studied for angina, it became the first oral treatment for erectile dysfunction in 1998 and is also used for pulmonary arterial hypertension.",
+  "mechanism": [
+    "Sexual stimulation releases nitric oxide in the corpus cavernosum, which activates guanylate cyclase and raises cGMP, relaxing smooth muscle and allowing blood inflow. PDE5 breaks down cGMP; sildenafil inhibits it, amplifying and prolonging the response. It has no effect without sexual stimulation.",
+    "PDE5 is also abundant in pulmonary vascular smooth muscle, so sildenafil dilates pulmonary arteries and reduces pulmonary vascular resistance in PAH. Weak inhibition of retinal PDE6 can cause blue-tinged vision."
+  ],
+  "uses": [
+    "Erectile dysfunction",
+    "Pulmonary arterial hypertension (WHO group I) in adults and children"
+  ],
+  "history": [
+    {
+      "year": 1989,
+      "title": "Synthesis",
+      "detail": "Pfizer chemists in Sandwich synthesise UK-92,480 as a potential antianginal."
+    },
+    {
+      "year": 1992,
+      "title": "Unexpected effect",
+      "detail": "Early volunteer studies note penile erections; development shifts to erectile dysfunction."
+    },
+    {
+      "year": 1998,
+      "title": "Viagra approved",
+      "detail": "FDA approves Viagra in March, the first oral treatment for erectile dysfunction."
+    },
+    {
+      "year": 2005,
+      "title": "PAH",
+      "detail": "FDA approves Revatio for pulmonary arterial hypertension."
+    },
+    {
+      "year": 2013,
+      "title": "European generics",
+      "detail": "Generic sildenafil launches in Europe after patent expiry."
+    },
+    {
+      "year": 2017,
+      "title": "US generics",
+      "detail": "Generic sildenafil for ED becomes available in the US in December."
+    },
+    {
+      "year": 2018,
+      "title": "UK pharmacy sale",
+      "detail": "Viagra Connect becomes available without prescription from UK pharmacies."
+    }
+  ],
+  "pk": {
+    "half_life": "3–4 h",
+    "bioavailability": "~41%",
+    "metabolism": "Hepatic CYP3A4 (major) and CYP2C9 to active N-desmethyl metabolite",
+    "excretion": "Faeces (~80%); urine (~13%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Headache",
+      "Flushing",
+      "Dyspepsia",
+      "Nasal congestion",
+      "Abnormal vision (blue tinge, photosensitivity)",
+      "Back pain and myalgia"
+    ],
+    "serious": [
+      "Severe hypotension with nitrates or riociguat (contraindicated)",
+      "Non-arteritic anterior ischaemic optic neuropathy",
+      "Sudden hearing loss",
+      "Priapism",
+      "Cardiovascular events in men with heart disease"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Sildenafil was originally investigated as a treatment for angina.",
+    "Pfizer marketed sildenafil under different brand names and doses for erectile dysfunction (Viagra) and PAH (Revatio)."
+  ],
+  "related": [
+    "tadalafil",
+    "bosentan",
+    "ambrisentan",
+    "epoprostenol",
+    "nitroglycerin",
+    "isosorbide-mononitrate",
+    "tamsulosin"
+  ],
+  "references": [
+    {
+      "title": "Sildenafil – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sildenafil"
+    },
+    {
+      "title": "DailyMed – sildenafil labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=sildenafil"
+    }
+  ],
+  "stage": "written"
 }

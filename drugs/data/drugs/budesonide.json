@@ -1,36 +1,160 @@
 {
   "slug": "budesonide",
   "name": "Budesonide",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "S 1320"
+  ],
+  "brands": [
+    "Pulmicort",
+    "Rhinocort",
+    "Entocort",
+    "Uceris",
+    "Cortiment",
+    "Tarpeyo/Kinpeygo",
+    "Eohilia",
+    "Jorveza",
+    "Symbicort (with formoterol)"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Glucocorticoid (inhaled, nasal and locally acting oral)",
+  "modality": "small-molecule",
+  "routes": [
+    "inhaled",
+    "intranasal",
+    "oral",
+    "rectal"
+  ],
+  "route_note": "Inhaled for asthma/COPD; nasal spray; modified-release oral capsules/tablets or orodispersible tablets and rectal foam for gut disease",
+  "targets": [
+    "NR3C1"
+  ],
+  "origin": "synthetic",
+  "originator": "AB Draco (Astra), Lund, Sweden",
+  "owner": "AstraZeneca and others; widely generic",
+  "first_approval": {
+    "year": 1981,
+    "agency": null,
+    "country": null,
+    "brand": "Pulmicort"
+  },
+  "discovery": {
+    "year": 1973,
+    "by": "Draco (Astra) chemists in Sweden",
+    "note": "A non-halogenated glucocorticoid with high topical potency and extensive first-pass hepatic inactivation."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription; nasal spray OTC in some countries",
+  "tagline": "Topically potent corticosteroid for asthma, rhinitis, IBD and IgA nephropathy",
+  "summary": "Budesonide is a glucocorticoid with strong local anti-inflammatory activity but about 85–90% first-pass liver metabolism, limiting systemic effects. It is a mainstay inhaled corticosteroid in asthma and COPD and is also formulated for rhinitis, Crohn's disease, ulcerative colitis, eosinophilic oesophagitis and IgA nephropathy.",
+  "mechanism": [
+    "Budesonide binds the cytoplasmic glucocorticoid receptor; the complex moves to the nucleus, where it represses pro-inflammatory transcription factors such as NF-κB and AP-1 and induces anti-inflammatory genes.",
+    "The result is reduced airway eosinophilia, mucosal oedema and cytokine production. Inhaled or gut-targeted formulations deliver it where needed, and rapid CYP3A4 metabolism in the liver limits systemic exposure from the swallowed fraction."
+  ],
+  "uses": [
+    "Maintenance treatment of asthma (alone or with formoterol)",
+    "COPD (in combination inhalers)",
+    "Allergic rhinitis and nasal polyps",
+    "Croup (nebulised)",
+    "Mild to moderate Crohn's disease and ulcerative colitis",
+    "Eosinophilic oesophagitis",
+    "Primary IgA nephropathy (targeted-release capsules)"
+  ],
+  "history": [
+    {
+      "year": 1973,
+      "title": "Patented",
+      "detail": "Budesonide is patented by Draco."
+    },
+    {
+      "year": 1981,
+      "title": "First marketed",
+      "detail": "Introduced as an inhaled asthma treatment (Pulmicort)."
+    },
+    {
+      "year": 2000,
+      "title": "Nebulised steroid",
+      "detail": "Pulmicort Respules becomes the first nebulised corticosteroid approved in the US, for young children."
+    },
+    {
+      "year": 2001,
+      "title": "Crohn's disease",
+      "detail": "FDA approves Entocort EC capsules for Crohn's disease."
+    },
+    {
+      "year": 2013,
+      "title": "Ulcerative colitis",
+      "detail": "FDA approves Uceris extended-release tablets for ulcerative colitis."
+    },
+    {
+      "year": 2018,
+      "title": "Eosinophilic oesophagitis (EU)",
+      "detail": "EMA approves Jorveza orodispersible tablets for eosinophilic oesophagitis."
+    },
+    {
+      "year": 2021,
+      "title": "IgA nephropathy",
+      "detail": "FDA grants accelerated approval to Tarpeyo (Calliditas) to reduce proteinuria in IgA nephropathy."
+    },
+    {
+      "year": 2023,
+      "title": "Reliever combination",
+      "detail": "FDA approves Airsupra (albuterol/budesonide) as an as-needed asthma inhaler."
+    },
+    {
+      "year": 2024,
+      "title": "Eohilia",
+      "detail": "FDA approves Eohilia oral suspension, the first oral treatment for eosinophilic oesophagitis in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "2–3.6 h",
+    "bioavailability": "Oral ~10–15% (extensive first pass); inhaled ~ one third of nominal dose reaches circulation via lungs",
+    "metabolism": "Hepatic CYP3A4 to 6β-hydroxybudesonide and 16α-hydroxyprednisolone (low activity)",
+    "excretion": "Urine and faeces as metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Oral candidiasis (inhaled)",
+      "Hoarseness",
+      "Nasal irritation and epistaxis (nasal)",
+      "Headache",
+      "Nausea and dyspepsia (oral)"
+    ],
+    "serious": [
+      "Adrenal suppression",
+      "Cushingoid effects, particularly with CYP3A4 inhibitors",
+      "Reduced bone mineral density",
+      "Growth slowing in children",
+      "Increased infection risk",
+      "Cataract and glaucoma"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Inhaled budesonide is one of the few inhaled corticosteroids with substantial pregnancy safety data.",
+    "In 2023 FDA approved Airsupra, pairing budesonide with albuterol in an as-needed reliever."
+  ],
+  "related": [
+    "formoterol",
+    "fluticasone-propionate",
+    "beclometasone",
+    "salbutamol",
+    "montelukast",
+    "mesalazine",
+    "prednisolone",
+    "omalizumab"
+  ],
+  "references": [
+    {
+      "title": "Budesonide – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Budesonide"
+    },
+    {
+      "title": "DailyMed – budesonide labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=budesonide"
+    }
+  ],
+  "stage": "written"
 }

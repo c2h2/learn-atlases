@@ -1,36 +1,134 @@
 {
   "slug": "mesalazine",
   "name": "Mesalazine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Mesalamine (USAN)",
+    "5-aminosalicylic acid",
+    "5-ASA"
+  ],
+  "brands": [
+    "Asacol",
+    "Pentasa",
+    "Lialda/Mezavant",
+    "Salofalk",
+    "Apriso",
+    "Rowasa",
+    "Octasa"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Aminosalicylate",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "rectal"
+  ],
+  "route_note": "Delayed- or extended-release oral tablets, capsules or granules; enemas, foams and suppositories for distal colitis",
+  "targets": [
+    "PPARG",
+    "Inflammatory mediator pathways (local, multiple)"
+  ],
+  "origin": "synthetic",
+  "originator": "Identified as the active moiety of sulfasalazine by Azad Khan, Piris and Truelove (Oxford)",
+  "owner": "generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "discovery": {
+    "year": 1977,
+    "by": "A. K. Azad Khan, J. Piris and S. C. Truelove",
+    "note": "Showed that 5-ASA, not sulfapyridine, is the therapeutically active part of sulfasalazine in ulcerative colitis."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Gut-targeted 5-ASA, first-line therapy for mild to moderate ulcerative colitis",
+  "summary": "Mesalazine (mesalamine) is 5-aminosalicylic acid, the active component of sulfasalazine, formulated for release in the small bowel or colon. It is first-line therapy to induce and maintain remission in mild to moderate ulcerative colitis.",
+  "mechanism": [
+    "Mesalazine acts topically on the inflamed colonic mucosa. Proposed mechanisms include activation of PPAR-γ, inhibition of NF-κB, reduced production of prostaglandins and leukotrienes via cyclo-oxygenase and lipoxygenase, and scavenging of reactive oxygen species.",
+    "Its effect depends on mucosal concentration, so formulations use pH-dependent coatings, time-release granules or rectal delivery to reach the affected bowel."
+  ],
+  "uses": [
+    "Induction and maintenance of remission in mild to moderate ulcerative colitis",
+    "Distal ulcerative colitis and proctitis (rectal)",
+    "Mild Crohn's disease (some formulations and regions)"
+  ],
+  "history": [
+    {
+      "year": 1977,
+      "title": "Active moiety identified",
+      "detail": "An Oxford study shows 5-ASA is the active component of sulfasalazine."
+    },
+    {
+      "year": 1987,
+      "title": "US rectal formulation",
+      "detail": "FDA approves Rowasa mesalamine enema."
+    },
+    {
+      "year": 1992,
+      "title": "Oral delayed-release",
+      "detail": "FDA approves Asacol delayed-release tablets."
+    },
+    {
+      "year": 1993,
+      "title": "Pentasa",
+      "detail": "FDA approves Pentasa controlled-release capsules."
+    },
+    {
+      "year": 2007,
+      "title": "Once-daily MMX",
+      "detail": "FDA approves Lialda, a once-daily multi-matrix formulation."
+    },
+    {
+      "year": 2008,
+      "title": "Apriso",
+      "detail": "FDA approves Apriso extended-release capsules."
+    }
+  ],
+  "pk": {
+    "half_life": "0.5–1.5 h (5-ASA); 5–10 h (N-acetyl-5-ASA)",
+    "bioavailability": "Varies by formulation (~20–30% oral absorbed)",
+    "metabolism": "N-acetylation (NAT1) in intestinal mucosa and liver",
+    "excretion": "Urine (N-acetyl-5-ASA) and faeces"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Headache",
+      "Abdominal pain",
+      "Nausea",
+      "Diarrhoea",
+      "Rash"
+    ],
+    "serious": [
+      "Renal impairment including interstitial nephritis",
+      "Mesalazine-induced acute intolerance syndrome",
+      "Myocarditis and pericarditis",
+      "Pancreatitis",
+      "Severe cutaneous reactions including DRESS",
+      "Nephrolithiasis",
+      "Blood dyscrasias"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Renal function is monitored during long-term mesalazine treatment.",
+    "Without a protective formulation, oral 5-ASA would be absorbed in the upper small bowel before reaching the colon."
+  ],
+  "related": [
+    "sulfasalazine",
+    "budesonide",
+    "infliximab",
+    "vedolizumab",
+    "azathioprine",
+    "prednisolone"
+  ],
+  "references": [
+    {
+      "title": "Mesalazine – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mesalazine"
+    },
+    {
+      "title": "DailyMed – mesalazine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=mesalazine"
+    }
+  ],
+  "stage": "written"
 }

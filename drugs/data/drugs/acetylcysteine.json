@@ -1,36 +1,124 @@
 {
   "slug": "acetylcysteine",
   "name": "Acetylcysteine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "N-acetylcysteine",
+    "NAC"
+  ],
+  "brands": [
+    "Mucomyst",
+    "Acetadote",
+    "Parvolex",
+    "Fluimucil",
+    "Cetylev"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Mucolytic; antidote for paracetamol poisoning",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "inhaled"
+  ],
+  "route_note": "IV infusion or oral for paracetamol overdose; nebulised or oral as a mucolytic",
+  "targets": [
+    "Glutathione synthesis (cysteine donor)",
+    "Mucin disulfide bonds"
+  ],
+  "origin": "synthetic",
+  "originator": "Mead Johnson",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1963,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Mucomyst"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Mead Johnson researchers",
+    "note": "N-acetyl derivative of the amino acid cysteine introduced as an inhaled mucolytic in the early 1960s."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription (antidote); OTC as mucolytic or supplement in many countries",
+  "tagline": "Glutathione-restoring antidote for paracetamol overdose and a mucolytic",
+  "summary": "Acetylcysteine is the N-acetyl derivative of cysteine. Its main use is as the antidote for paracetamol (acetaminophen) poisoning, where it prevents liver failure if given early; it is also used to thin mucus in respiratory disease.",
+  "mechanism": [
+    "In paracetamol overdose, the toxic metabolite NAPQI depletes hepatic glutathione and binds liver proteins. Acetylcysteine supplies cysteine for glutathione synthesis, restoring the capacity to detoxify NAPQI, and may also act directly as a reducing agent and antioxidant.",
+    "As a mucolytic, its free sulfhydryl group cleaves disulfide bonds that cross-link mucin glycoproteins, lowering mucus viscosity."
+  ],
+  "uses": [
+    "Paracetamol (acetaminophen) overdose",
+    "Mucolytic adjunct in bronchopulmonary disorders with viscous mucus",
+    "Meconium ileus equivalent and other uses in some countries"
+  ],
+  "history": [
+    {
+      "year": 1963,
+      "title": "Mucolytic approval",
+      "detail": "Mucomyst is approved in the US as an inhaled mucolytic."
+    },
+    {
+      "year": 1977,
+      "title": "Paracetamol antidote",
+      "detail": "Laurie Prescott and colleagues in Edinburgh report IV acetylcysteine for paracetamol poisoning."
+    },
+    {
+      "year": 1985,
+      "title": "US antidote approval",
+      "detail": "FDA approves oral acetylcysteine for acetaminophen overdose."
+    },
+    {
+      "year": 2004,
+      "title": "IV formulation in the US",
+      "detail": "FDA approves Acetadote for intravenous treatment of acetaminophen overdose."
+    },
+    {
+      "year": 2016,
+      "title": "Effervescent tablets",
+      "detail": "FDA approves Cetylev effervescent tablets as an oral antidote."
+    }
+  ],
+  "pk": {
+    "half_life": "~5.6 h (IV, adults)",
+    "bioavailability": "Oral ~6–10%",
+    "metabolism": "Deacetylation and incorporation into glutathione and other metabolites in the liver",
+    "excretion": "Urine (~30% renal clearance)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nausea and vomiting",
+      "Rash and flushing",
+      "Unpleasant sulfurous taste or odour",
+      "Bronchospasm or rhinorrhoea (inhaled)"
+    ],
+    "serious": [
+      "Anaphylactoid reactions with IV infusion",
+      "Bronchospasm in asthma (inhaled)",
+      "Fluid overload in children with IV regimens"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Acetylcysteine is most effective against paracetamol hepatotoxicity when started within 8–10 hours of ingestion.",
+    "The rotten-egg smell of acetylcysteine solutions comes from its sulfur group."
+  ],
+  "related": [
+    "paracetamol",
+    "naloxone",
+    "salbutamol"
+  ],
+  "references": [
+    {
+      "title": "Acetylcysteine – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Acetylcysteine"
+    },
+    {
+      "title": "DailyMed – acetylcysteine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=acetylcysteine"
+    }
+  ],
+  "stage": "written"
 }

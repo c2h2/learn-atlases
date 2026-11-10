@@ -1,36 +1,148 @@
 {
   "slug": "salbutamol",
   "name": "Salbutamol",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Albuterol (USAN)",
+    "AH 3365"
+  ],
+  "brands": [
+    "Ventolin",
+    "Proventil",
+    "ProAir",
+    "Airomir",
+    "Asmasal"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Short-acting beta2-adrenergic agonist (SABA)",
+  "modality": "small-molecule",
+  "routes": [
+    "inhaled",
+    "oral",
+    "iv"
+  ],
+  "route_note": "Metered-dose or dry-powder inhaler, or nebuliser, as needed for relief; oral tablets/syrup and IV in some countries",
+  "targets": [
+    "ADRB2"
+  ],
+  "origin": "synthetic",
+  "originator": "Allen & Hanburys (Glaxo), Ware, UK",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1969,
+    "agency": null,
+    "country": "UK",
+    "brand": "Ventolin"
+  },
+  "discovery": {
+    "year": 1966,
+    "by": "David Jack and colleagues at Allen & Hanburys",
+    "note": "Designed as a beta2-selective analogue of isoprenaline resistant to catechol-O-methyltransferase, giving a longer and more selective bronchodilator effect."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription (pharmacy-available in some countries)",
+  "tagline": "The standard short-acting 'reliever' bronchodilator for asthma and COPD",
+  "summary": "Salbutamol (albuterol in the US) is a short-acting beta2-adrenergic agonist that relaxes airway smooth muscle within minutes. Introduced in 1969, it became the archetypal blue reliever inhaler and remains one of the most widely used medicines in the world.",
+  "mechanism": [
+    "Salbutamol stimulates beta2-adrenergic receptors on airway smooth muscle. Receptor activation couples to Gs, raising cyclic AMP through adenylyl cyclase and activating protein kinase A, which lowers intracellular calcium and relaxes the muscle, opening the airways.",
+    "Its saligenin structure makes it a poor substrate for catechol-O-methyltransferase, so it acts for 4–6 hours. Beta2 selectivity is relative: at higher doses it stimulates cardiac beta receptors and drives potassium into cells, causing tachycardia and hypokalaemia."
+  ],
+  "uses": [
+    "Relief of acute bronchospasm in asthma",
+    "Prevention of exercise-induced bronchoconstriction",
+    "Symptom relief in COPD",
+    "Acute severe asthma (nebulised or IV)",
+    "Hyperkalaemia (off-label adjunct)"
+  ],
+  "history": [
+    {
+      "year": 1966,
+      "title": "Synthesis",
+      "detail": "Allen & Hanburys chemists led by David Jack produce salbutamol."
+    },
+    {
+      "year": 1969,
+      "title": "UK launch",
+      "detail": "Marketed as Ventolin in the United Kingdom."
+    },
+    {
+      "year": 1981,
+      "title": "US approval",
+      "detail": "FDA approves albuterol inhalers (Proventil and Ventolin)."
+    },
+    {
+      "year": 1996,
+      "title": "CFC-free inhaler",
+      "detail": "FDA approves Proventil HFA, the first US inhaler using an HFA propellant instead of CFCs."
+    },
+    {
+      "year": 1999,
+      "title": "Levalbuterol",
+      "detail": "The single (R)-enantiomer levalbuterol (Xopenex) is approved in the US."
+    },
+    {
+      "year": 2008,
+      "title": "CFC phase-out",
+      "detail": "CFC-propelled albuterol inhalers can no longer be sold in the US after 31 December 2008."
+    },
+    {
+      "year": 2020,
+      "title": "Generic HFA inhalers",
+      "detail": "FDA approves the first generic albuterol HFA inhalers amid COVID-19-related demand."
+    },
+    {
+      "year": 2023,
+      "title": "Combination reliever",
+      "detail": "FDA approves Airsupra, an albuterol/budesonide inhaler for as-needed use in asthma."
+    }
+  ],
+  "pk": {
+    "half_life": "3.8–6 h",
+    "bioavailability": "Inhaled: small fraction absorbed systemically; oral ~50% (presystemic sulfation)",
+    "metabolism": "Sulfate conjugation (SULT1A3) in gut wall and liver",
+    "excretion": "Urine, as unchanged drug and sulfate"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Tremor",
+      "Palpitations and tachycardia",
+      "Headache",
+      "Nervousness",
+      "Muscle cramps"
+    ],
+    "serious": [
+      "Paradoxical bronchospasm",
+      "Hypokalaemia",
+      "Cardiac arrhythmias",
+      "Lactic acidosis at high IV/nebulised doses",
+      "Hypersensitivity reactions"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Salbutamol is the INN; albuterol is the US adopted name for the same molecule.",
+    "Its development is credited to David Jack, who also led work on salmeterol, ranitidine and ondansetron at Glaxo."
+  ],
+  "related": [
+    "salmeterol",
+    "formoterol",
+    "ipratropium",
+    "budesonide",
+    "beclometasone",
+    "fluticasone-propionate",
+    "theophylline",
+    "epinephrine"
+  ],
+  "references": [
+    {
+      "title": "Salbutamol – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Salbutamol"
+    },
+    {
+      "title": "DailyMed – salbutamol labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=salbutamol"
+    }
+  ],
+  "stage": "written"
 }

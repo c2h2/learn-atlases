@@ -1,36 +1,122 @@
 {
   "slug": "rifaximin",
   "name": "Rifaximin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "L/105"
+  ],
+  "brands": [
+    "Xifaxan",
+    "Normix",
+    "Targaxan",
+    "Zaxine"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Rifamycin antibiotic (gut-selective)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets two or three times daily; minimal systemic absorption",
+  "targets": [
+    "rpoB (bacterial DNA-dependent RNA polymerase β subunit)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Alfa Wassermann (Italy)",
+  "owner": "Bausch Health/Salix (US); Alfasigma (elsewhere)",
+  "first_approval": {
+    "year": 1987,
+    "agency": null,
+    "country": "Italy",
+    "brand": "Normix"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Alfa Wassermann, Bologna",
+    "note": "A pyrido-imidazole derivative of rifamycin SV designed to be essentially non-absorbed from the gut."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Non-absorbed antibiotic for hepatic encephalopathy, IBS-D and traveller's diarrhoea",
+  "summary": "Rifaximin is a rifamycin antibiotic that stays almost entirely in the gut. It reduces recurrence of hepatic encephalopathy, treats irritable bowel syndrome with diarrhoea and treats traveller's diarrhoea caused by non-invasive E. coli.",
+  "mechanism": [
+    "Rifaximin binds the β subunit of bacterial DNA-dependent RNA polymerase, blocking transcription. Because less than 0.4% is absorbed, high concentrations are achieved in the intestinal lumen.",
+    "In hepatic encephalopathy it reduces ammonia-producing gut bacteria; in IBS-D it may alter the microbiome and bacterial virulence and reduce low-grade inflammation."
+  ],
+  "uses": [
+    "Reduction in risk of overt hepatic encephalopathy recurrence",
+    "Irritable bowel syndrome with diarrhoea",
+    "Traveller's diarrhoea caused by non-invasive Escherichia coli"
+  ],
+  "history": [
+    {
+      "year": 1987,
+      "title": "Italian approval",
+      "detail": "Rifaximin (Normix) is approved in Italy."
+    },
+    {
+      "year": 2004,
+      "title": "US approval",
+      "detail": "FDA approves Xifaxan (Salix) for traveller's diarrhoea."
+    },
+    {
+      "year": 2010,
+      "title": "Hepatic encephalopathy",
+      "detail": "FDA approves rifaximin to reduce recurrence of overt hepatic encephalopathy after a pivotal NEJM trial."
+    },
+    {
+      "year": 2015,
+      "title": "IBS-D",
+      "detail": "FDA approves Xifaxan for irritable bowel syndrome with diarrhoea; Valeant (now Bausch Health) acquires Salix."
+    },
+    {
+      "year": 2018,
+      "title": "US generic settlement",
+      "detail": "A patent settlement with Teva sets US generic entry for 2028."
+    }
+  ],
+  "pk": {
+    "half_life": "~6 h (absorbed fraction)",
+    "bioavailability": "<0.4%",
+    "metabolism": "Minimal; absorbed drug metabolised by CYP3A4",
+    "excretion": "Faeces (~97%, unchanged)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Peripheral oedema (in liver disease)",
+      "Nausea",
+      "Dizziness",
+      "Fatigue",
+      "Ascites",
+      "Raised ALT"
+    ],
+    "serious": [
+      "Clostridioides difficile–associated diarrhoea",
+      "Hypersensitivity reactions",
+      "Increased systemic exposure in severe hepatic impairment"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Rifaximin is not effective for diarrhoea caused by invasive pathogens such as Campylobacter, Shigella or Salmonella.",
+    "It is typically combined with lactulose in hepatic encephalopathy."
+  ],
+  "related": [
+    "lactulose",
+    "rifampicin",
+    "loperamide",
+    "fidaxomicin"
+  ],
+  "references": [
+    {
+      "title": "Rifaximin – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rifaximin"
+    },
+    {
+      "title": "DailyMed – rifaximin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=rifaximin"
+    }
+  ],
+  "stage": "written"
 }

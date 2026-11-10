@@ -1,36 +1,126 @@
 {
   "slug": "sotatercept",
   "name": "Sotatercept",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "ACE-011",
+    "MK-7962",
+    "Sotatercept-csrk"
+  ],
+  "brands": [
+    "Winrevair"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Activin signalling inhibitor (ActRIIA-Fc fusion protein)",
+  "modality": "protein",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "Subcutaneous injection every 3 weeks; dose titrated by weight with haemoglobin and platelet monitoring",
+  "targets": [
+    "INHBA",
+    "GDF11",
+    "MSTN"
+  ],
+  "origin": "biotech",
+  "originator": "Acceleron Pharma",
+  "owner": "Merck & Co. (MSD)",
+  "first_approval": {
+    "year": 2024,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Winrevair"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Acceleron Pharma",
+    "note": "A ligand trap made of the extracellular domain of activin receptor type IIA fused to human IgG1 Fc, first studied for bone loss and anaemia."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First-in-class activin signalling inhibitor for pulmonary arterial hypertension",
+  "summary": "Sotatercept is a fusion protein that traps activins and related TGF-β superfamily ligands. Approved in 2024, it is the first PAH therapy designed to target the vascular remodelling underlying the disease rather than only dilating vessels.",
+  "mechanism": [
+    "In PAH, signalling via the BMPR2 pathway, which restrains proliferation, is reduced, while pro-proliferative activin/GDF signalling through ActRIIA–SMAD2/3 is increased.",
+    "Sotatercept binds activin A, GDF8, GDF11 and other ligands, rebalancing these pathways. In models and patients this reduces pulmonary vascular wall thickening and lowers pulmonary vascular resistance."
+  ],
+  "uses": [
+    "Pulmonary arterial hypertension (WHO group I) in adults, added to background therapy"
+  ],
+  "history": [
+    {
+      "year": 2021,
+      "title": "Merck acquires Acceleron",
+      "detail": "Merck completes its acquisition of Acceleron, gaining sotatercept."
+    },
+    {
+      "year": 2023,
+      "title": "STELLAR trial",
+      "detail": "Phase 3 STELLAR (NEJM) shows improved 6-minute walk distance and fewer clinical worsening events."
+    },
+    {
+      "year": 2024,
+      "title": "FDA approval",
+      "detail": "FDA approves Winrevair in March."
+    },
+    {
+      "year": 2024,
+      "title": "EU approval",
+      "detail": "European Commission approves Winrevair in August."
+    },
+    {
+      "year": 2025,
+      "title": "Outcome trials",
+      "detail": "ZENITH results in high-risk PAH (stopped early for efficacy) show fewer deaths, lung transplants or PAH hospitalisations."
+    }
+  ],
+  "pk": {
+    "half_life": "~24 days",
+    "bioavailability": "~66% (SC)",
+    "metabolism": "Catabolism to peptides and amino acids",
+    "excretion": "Not renally excreted intact"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Headache",
+      "Epistaxis",
+      "Telangiectasia",
+      "Diarrhoea",
+      "Dizziness",
+      "Rash",
+      "Increased haemoglobin"
+    ],
+    "serious": [
+      "Erythrocytosis",
+      "Severe thrombocytopenia",
+      "Serious bleeding",
+      "Embryo-fetal toxicity",
+      "Impaired fertility"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Sotatercept was originally developed as a treatment for anaemia and bone loss before its effect on pulmonary vessels was explored.",
+    "Luspatercept, a related ActRIIB-Fc ligand trap, is used for anaemia."
+  ],
+  "related": [
+    "luspatercept",
+    "bosentan",
+    "ambrisentan",
+    "sildenafil",
+    "tadalafil",
+    "epoprostenol"
+  ],
+  "references": [
+    {
+      "title": "Sotatercept – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sotatercept"
+    },
+    {
+      "title": "DailyMed – sotatercept labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=sotatercept"
+    }
+  ],
+  "stage": "written"
 }

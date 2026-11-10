@@ -1,36 +1,139 @@
 {
   "slug": "epinephrine",
   "name": "Epinephrine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Adrenaline",
+    "Adrenalin"
+  ],
+  "brands": [
+    "EpiPen",
+    "Auvi-Q",
+    "Jext",
+    "Emerade",
+    "neffy/EURneffy",
+    "Adrenalin"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Adrenergic agonist (catecholamine; alpha and beta)",
+  "modality": "small-molecule",
+  "routes": [
+    "im",
+    "iv",
+    "sc",
+    "intranasal",
+    "inhaled",
+    "other"
+  ],
+  "route_note": "IM auto-injector or nasal spray for anaphylaxis; IV or intraosseous in cardiac arrest and shock; nebulised for croup; combined with local anaesthetics",
+  "targets": [
+    "ADRA1A",
+    "ADRA2A",
+    "ADRB1",
+    "ADRB2"
+  ],
+  "origin": "endogenous",
+  "originator": "Isolated by Jokichi Takamine (marketed by Parke-Davis)",
+  "owner": "generic (many); Viatris (EpiPen), ARS Pharmaceuticals (neffy)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "discovery": {
+    "year": 1901,
+    "by": "Jokichi Takamine and Keizo Uenaka",
+    "note": "Crystallised from adrenal glands; the hormone was also studied by John Jacob Abel and Napoleon Cybulski; first synthesised in 1904 by Friedrich Stolz and Henry Dakin."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "First-line emergency treatment for anaphylaxis and a key drug in cardiac arrest",
+  "summary": "Epinephrine (adrenaline) is the adrenal medullary hormone and neurotransmitter, used as a drug since the early 1900s. It is the first-line treatment for anaphylaxis, given intramuscularly or nasally, and is used intravenously in cardiac arrest and shock.",
+  "mechanism": [
+    "Epinephrine stimulates alpha1 receptors, causing vasoconstriction that raises blood pressure and reduces mucosal oedema, and beta1 receptors, increasing heart rate and contractility.",
+    "Through beta2 receptors it relaxes bronchial smooth muscle and inhibits mediator release from mast cells and basophils. This combination reverses the hypotension, airway swelling and bronchospasm of anaphylaxis."
+  ],
+  "uses": [
+    "Anaphylaxis and severe allergic reactions",
+    "Cardiac arrest",
+    "Septic or other shock (infusion)",
+    "Croup (nebulised)",
+    "Prolonging local anaesthesia and reducing bleeding",
+    "Hypotension during anaesthesia"
+  ],
+  "history": [
+    {
+      "year": 1901,
+      "title": "Isolation",
+      "detail": "Jokichi Takamine isolates crystalline adrenaline; Parke-Davis markets it as Adrenalin."
+    },
+    {
+      "year": 1904,
+      "title": "Synthesis",
+      "detail": "Friedrich Stolz and Henry Dakin independently synthesise epinephrine, the first hormone made synthetically."
+    },
+    {
+      "year": 1987,
+      "title": "EpiPen approved",
+      "detail": "FDA approves the EpiPen auto-injector for anaphylaxis, adapted from military auto-injector technology."
+    },
+    {
+      "year": 2016,
+      "title": "EpiPen pricing controversy",
+      "detail": "Steep US list-price rises for EpiPen prompt congressional hearings."
+    },
+    {
+      "year": 2018,
+      "title": "First generic EpiPen",
+      "detail": "FDA approves Teva's generic version of EpiPen."
+    },
+    {
+      "year": 2024,
+      "title": "Nasal spray",
+      "detail": "FDA approves neffy, the first needle-free epinephrine nasal spray for anaphylaxis; EU approves it as EURneffy."
+    }
+  ],
+  "pk": {
+    "half_life": "~2–3 min (IV)",
+    "bioavailability": "Oral negligible; rapid IM absorption (thigh)",
+    "metabolism": "COMT and MAO in liver, nerve endings and other tissues",
+    "excretion": "Urine as metanephrine and vanillylmandelic acid"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Tachycardia and palpitations",
+      "Anxiety and tremor",
+      "Headache",
+      "Pallor",
+      "Sweating",
+      "Nausea"
+    ],
+    "serious": [
+      "Ventricular arrhythmias",
+      "Severe hypertension and cerebral haemorrhage (overdose or IV bolus error)",
+      "Myocardial ischaemia",
+      "Tissue necrosis after accidental injection into fingers or extravasation",
+      "Pulmonary oedema"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Adrenalin was among the first hormones isolated in pure form and the first to be chemically synthesised.",
+    "'Adrenaline' is the INN and the usual name in Europe; 'epinephrine' is the US adopted name."
+  ],
+  "related": [
+    "salbutamol",
+    "diphenhydramine",
+    "cetirizine",
+    "lidocaine",
+    "omalizumab"
+  ],
+  "references": [
+    {
+      "title": "Epinephrine – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Epinephrine"
+    },
+    {
+      "title": "DailyMed – epinephrine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=epinephrine"
+    }
+  ],
+  "stage": "written"
 }

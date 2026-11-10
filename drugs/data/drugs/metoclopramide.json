@@ -2,35 +2,128 @@
   "slug": "metoclopramide",
   "name": "Metoclopramide",
   "aliases": [],
-  "brands": [],
+  "brands": [
+    "Reglan",
+    "Maxolon",
+    "Primperan",
+    "Gimoti"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Dopamine D2 antagonist and 5-HT4 agonist (prokinetic antiemetic)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "im",
+    "intranasal"
+  ],
+  "route_note": "Oral tablets or solution, IV or IM injection, nasal spray; short-term use",
+  "targets": [
+    "DRD2",
+    "HTR4",
+    "HTR3A"
+  ],
+  "origin": "synthetic",
+  "originator": "Laboratoires Delagrange (France)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1979,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Reglan"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1964,
+    "by": "Louis Justin-Besançon and Charles Laville (Laboratoires Delagrange)",
+    "note": "Derived from procainamide during work on antiarrhythmic and local anaesthetic agents."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Dopamine-blocking prokinetic antiemetic limited by risk of tardive dyskinesia",
+  "summary": "Metoclopramide is an antiemetic and prokinetic that blocks dopamine D2 receptors and stimulates 5-HT4 receptors. It is used for nausea and vomiting and diabetic gastroparesis, but long-term use is restricted because it can cause tardive dyskinesia.",
+  "mechanism": [
+    "Blockade of D2 receptors in the chemoreceptor trigger zone reduces nausea and vomiting. In the gut, D2 blockade and 5-HT4 agonism enhance acetylcholine release from myenteric neurons, increasing oesophageal sphincter tone, gastric emptying and small-bowel transit.",
+    "At high doses it also blocks 5-HT3 receptors. Because it crosses the blood–brain barrier, it can cause extrapyramidal reactions and raise prolactin."
+  ],
+  "uses": [
+    "Diabetic gastroparesis",
+    "Nausea and vomiting (including chemotherapy and postoperative)",
+    "Gastro-oesophageal reflux refractory to other therapy (US)",
+    "Facilitating small-bowel intubation and radiological examination",
+    "Migraine-associated nausea"
+  ],
+  "history": [
+    {
+      "year": 1964,
+      "title": "Discovery",
+      "detail": "Metoclopramide is first described by Delagrange researchers in France."
+    },
+    {
+      "year": 1979,
+      "title": "US approval",
+      "detail": "FDA approves Reglan."
+    },
+    {
+      "year": 2009,
+      "title": "Boxed warning",
+      "detail": "FDA adds a boxed warning on tardive dyskinesia with long-term or high-dose use."
+    },
+    {
+      "year": 2013,
+      "title": "EU restrictions",
+      "detail": "EMA restricts metoclopramide to short-term use (up to 5 days) at lower doses and removes several indications."
+    },
+    {
+      "year": 2020,
+      "title": "Nasal spray",
+      "detail": "FDA approves Gimoti nasal spray for diabetic gastroparesis."
+    }
+  ],
+  "pk": {
+    "half_life": "5–6 h",
+    "bioavailability": "~80% (oral)",
+    "metabolism": "Hepatic: conjugation and N-dealkylation; CYP2D6 contributes",
+    "excretion": "Urine (~85%)"
+  },
+  "safety": {
+    "common": [
+      "Restlessness and drowsiness",
+      "Fatigue",
+      "Diarrhoea",
+      "Akathisia",
+      "Raised prolactin"
+    ],
+    "serious": [
+      "Tardive dyskinesia",
+      "Acute dystonic reactions, especially in young people",
+      "Neuroleptic malignant syndrome",
+      "Depression and suicidal ideation",
+      "Methaemoglobinaemia in neonates and NADH-cytochrome b5 reductase deficiency"
+    ],
+    "boxed_warning": "Tardive dyskinesia, often irreversible; avoid treatment longer than 12 weeks."
+  },
+  "facts": [
+    "Metoclopramide was developed from the antiarrhythmic procainamide.",
+    "CYP2D6 poor metabolisers need lower doses because exposure is higher."
+  ],
+  "related": [
+    "domperidone",
+    "ondansetron",
+    "aprepitant",
+    "haloperidol",
+    "chlorpromazine"
+  ],
+  "references": [
+    {
+      "title": "Metoclopramide – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Metoclopramide"
+    },
+    {
+      "title": "DailyMed – metoclopramide labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=metoclopramide"
+    }
+  ],
+  "stage": "written"
 }

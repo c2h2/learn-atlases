@@ -1,36 +1,127 @@
 {
   "slug": "bosentan",
   "name": "Bosentan",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Ro 47-0203"
+  ],
+  "brands": [
+    "Tracleer"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Dual endothelin receptor antagonist",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablet twice daily; dispersible tablets for children",
+  "targets": [
+    "EDNRA",
+    "EDNRB"
+  ],
+  "origin": "synthetic",
+  "originator": "F. Hoffmann-La Roche; developed by Actelion",
+  "owner": "Actelion (Johnson & Johnson); generic (many)",
+  "first_approval": {
+    "year": 2001,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Tracleer"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Roche scientists including Martine Clozel",
+    "note": "Non-peptide endothelin receptor antagonist; its developers founded Actelion to bring it to market."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription (restricted programme for liver and pregnancy risk)",
+  "tagline": "First oral endothelin receptor antagonist for pulmonary arterial hypertension",
+  "summary": "Bosentan is an oral antagonist of both endothelin ETA and ETB receptors. It was the first oral therapy approved for pulmonary arterial hypertension and is also used in the EU to reduce new digital ulcers in systemic sclerosis.",
+  "mechanism": [
+    "Endothelin-1 is a potent vasoconstrictor and smooth-muscle mitogen that is overproduced in PAH. Bosentan competitively blocks its binding to ETA and ETB receptors.",
+    "This lowers pulmonary vascular resistance, and may limit vascular remodelling, improving exercise capacity and haemodynamics."
+  ],
+  "uses": [
+    "Pulmonary arterial hypertension (WHO group I)",
+    "Reduction of new digital ulcers in systemic sclerosis (EU)"
+  ],
+  "history": [
+    {
+      "year": 1997,
+      "title": "Actelion founded",
+      "detail": "Former Roche scientists found Actelion and license bosentan."
+    },
+    {
+      "year": 2001,
+      "title": "FDA approval",
+      "detail": "FDA approves Tracleer in November, the first oral PAH therapy."
+    },
+    {
+      "year": 2002,
+      "title": "EU approval",
+      "detail": "EMA approves Tracleer for PAH."
+    },
+    {
+      "year": 2007,
+      "title": "Digital ulcers",
+      "detail": "EU approval extended to prevention of digital ulcers in systemic sclerosis."
+    },
+    {
+      "year": 2017,
+      "title": "J&J acquisition",
+      "detail": "Johnson & Johnson acquires Actelion."
+    },
+    {
+      "year": 2019,
+      "title": "US generics",
+      "detail": "Generic bosentan becomes available in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "~5 h",
+    "bioavailability": "~50%",
+    "metabolism": "Hepatic CYP2C9 and CYP3A4; induces both enzymes",
+    "excretion": "Bile"
+  },
+  "safety": {
+    "common": [
+      "Headache",
+      "Flushing",
+      "Oedema",
+      "Nasopharyngitis",
+      "Abnormal liver function tests",
+      "Anaemia"
+    ],
+    "serious": [
+      "Hepatotoxicity",
+      "Embryo-fetal toxicity",
+      "Decreased haemoglobin",
+      "Pulmonary oedema in veno-occlusive disease",
+      "Reduced efficacy of hormonal contraceptives"
+    ],
+    "boxed_warning": "Risks of hepatotoxicity and embryo-fetal toxicity; available only through a restricted programme (REMS)."
+  },
+  "facts": [
+    "Bosentan's development led to the founding of Actelion, later one of Europe's largest biotech companies.",
+    "Monthly liver function testing is required during bosentan treatment."
+  ],
+  "related": [
+    "ambrisentan",
+    "sildenafil",
+    "tadalafil",
+    "epoprostenol",
+    "sotatercept"
+  ],
+  "references": [
+    {
+      "title": "Bosentan – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bosentan"
+    },
+    {
+      "title": "DailyMed – bosentan labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=bosentan"
+    }
+  ],
+  "stage": "written"
 }

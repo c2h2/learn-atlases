@@ -1,36 +1,134 @@
 {
   "slug": "diphenhydramine",
   "name": "Diphenhydramine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Dimenhydrinate (8-chlorotheophyllinate salt)"
+  ],
+  "brands": [
+    "Benadryl",
+    "Nytol",
+    "Unisom SleepGels",
+    "ZzzQuil"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "First-generation H1 antihistamine (ethanolamine)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "im",
+    "topical"
+  ],
+  "route_note": "Oral tablets, capsules or liquid; IV or IM injection; topical cream",
+  "targets": [
+    "HRH1",
+    "CHRM1",
+    "SCN5A"
+  ],
+  "origin": "synthetic",
+  "originator": "George Rieveschl (University of Cincinnati); Parke-Davis",
+  "owner": "generic (many); Benadryl brand: Kenvue (US)",
+  "first_approval": {
+    "year": 1946,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Benadryl"
+  },
+  "discovery": {
+    "year": 1943,
+    "by": "George Rieveschl and Fred Huber, University of Cincinnati",
+    "note": "Synthesised while searching for muscle relaxants; found to have potent antihistamine activity."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "OTC (injection prescription-only)",
+  "tagline": "Classic sedating antihistamine used for allergy, sleep and motion sickness",
+  "summary": "Diphenhydramine is one of the earliest antihistamines and remains widely sold without prescription. It relieves allergic symptoms but readily enters the brain, causing sedation, and is used as a sleep aid, an antiemetic and for drug-induced dystonia.",
+  "mechanism": [
+    "Diphenhydramine is an inverse agonist at H1 receptors in the periphery and the brain. Blocking central histaminergic arousal pathways causes drowsiness.",
+    "It also blocks muscarinic acetylcholine receptors (dry mouth, urinary retention, confusion) and, at high doses, voltage-gated sodium channels, which accounts for local-anaesthetic activity and cardiac toxicity in overdose."
+  ],
+  "uses": [
+    "Allergic rhinitis, urticaria and pruritus",
+    "Adjunct in anaphylaxis (after epinephrine)",
+    "Short-term insomnia",
+    "Motion sickness and nausea",
+    "Drug-induced extrapyramidal reactions",
+    "Cough (in some combination products)"
+  ],
+  "history": [
+    {
+      "year": 1943,
+      "title": "Synthesis",
+      "detail": "George Rieveschl synthesises diphenhydramine at the University of Cincinnati."
+    },
+    {
+      "year": 1946,
+      "title": "FDA approval",
+      "detail": "Benadryl becomes the first prescription antihistamine approved by FDA."
+    },
+    {
+      "year": 1949,
+      "title": "Dimenhydrinate",
+      "detail": "Dimenhydrinate (Dramamine), a diphenhydramine salt, is introduced for motion sickness."
+    },
+    {
+      "year": 1972,
+      "title": "Fluoxetine precursor",
+      "detail": "Lilly chemists, starting from diphenhydramine-like structures, synthesise fluoxetine."
+    },
+    {
+      "year": 2020,
+      "title": "Online challenge warning",
+      "detail": "FDA warns that taking high doses of diphenhydramine for social-media challenges can cause seizures, heart problems and death."
+    }
+  ],
+  "pk": {
+    "half_life": "~2.4–9.3 h (longer in older adults)",
+    "bioavailability": "~40–60%",
+    "metabolism": "Hepatic, mainly CYP2D6 (N-demethylation); inhibits CYP2D6",
+    "excretion": "Urine as metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Drowsiness",
+      "Dry mouth",
+      "Dizziness",
+      "Impaired coordination",
+      "Constipation",
+      "Blurred vision"
+    ],
+    "serious": [
+      "Delirium and confusion in older adults",
+      "Urinary retention",
+      "Seizures and cardiac arrhythmias in overdose",
+      "Paradoxical excitation in children",
+      "Anticholinergic toxicity"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Diphenhydramine is on the Beers Criteria list of medicines best avoided in older adults.",
+    "Research starting from diphenhydramine's structure led to the discovery of fluoxetine."
+  ],
+  "related": [
+    "cetirizine",
+    "loratadine",
+    "fexofenadine",
+    "epinephrine",
+    "fluoxetine",
+    "ondansetron"
+  ],
+  "references": [
+    {
+      "title": "Diphenhydramine – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Diphenhydramine"
+    },
+    {
+      "title": "DailyMed – diphenhydramine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=diphenhydramine"
+    }
+  ],
+  "stage": "written"
 }

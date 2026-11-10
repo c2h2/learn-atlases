@@ -1,36 +1,116 @@
 {
   "slug": "lactulose",
   "name": "Lactulose",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "4-O-β-D-galactopyranosyl-D-fructose"
+  ],
+  "brands": [
+    "Duphalac",
+    "Kristalose",
+    "Enulose",
+    "Constulose",
+    "Generlac"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Osmotic laxative (non-absorbable disaccharide)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "rectal"
+  ],
+  "route_note": "Oral solution or powder; retention enema in hepatic encephalopathy",
+  "targets": [
+    "None (acts on colonic contents and microbiota)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Synthesised by Edward Montgomery and Claude Hudson; developed as a medicine by Philips-Duphar",
+  "owner": "generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "discovery": {
+    "year": 1929,
+    "by": "Edward Montgomery and Claude Hudson",
+    "note": "Prepared by isomerising lactose; its laxative and 'bifidus factor' effects were described by Ferdinand Petuely in 1957."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription; OTC in some countries",
+  "tagline": "Synthetic sugar laxative and first-line treatment for hepatic encephalopathy",
+  "summary": "Lactulose is a synthetic disaccharide of galactose and fructose that humans cannot digest. Colonic bacteria ferment it, drawing water into the bowel and acidifying the colon, which makes it useful both as a laxative and to lower ammonia in hepatic encephalopathy.",
+  "mechanism": [
+    "Lactulose reaches the colon unchanged because the small intestine lacks an enzyme to split it. There bacteria ferment it to lactic, acetic and formic acids, increasing osmotic pressure and stool water and stimulating peristalsis.",
+    "The fall in colonic pH converts ammonia (NH3) to non-absorbable ammonium (NH4+), traps it in the gut and alters bacterial metabolism, reducing blood ammonia in hepatic encephalopathy."
+  ],
+  "uses": [
+    "Chronic constipation",
+    "Prevention and treatment of hepatic encephalopathy",
+    "Bowel regimen with opioids"
+  ],
+  "history": [
+    {
+      "year": 1929,
+      "title": "Synthesis",
+      "detail": "Montgomery and Hudson prepare lactulose by alkaline isomerisation of lactose."
+    },
+    {
+      "year": 1957,
+      "title": "Laxative and bifidus effects",
+      "detail": "Ferdinand Petuely describes its laxative action and promotion of bifidobacteria."
+    },
+    {
+      "year": 1966,
+      "title": "Hepatic encephalopathy",
+      "detail": "Johannes Bircher and colleagues report lactulose treatment of portal-systemic encephalopathy."
+    },
+    {
+      "year": 2009,
+      "title": "Secondary prevention",
+      "detail": "A randomised trial from India shows lactulose prevents recurrence of overt hepatic encephalopathy."
+    },
+    {
+      "year": 2010,
+      "title": "Combination with rifaximin",
+      "detail": "FDA approves rifaximin to reduce recurrence of hepatic encephalopathy; most trial patients also took lactulose."
+    }
+  ],
+  "pk": {
+    "half_life": "Not applicable (minimally absorbed)",
+    "bioavailability": "<3%",
+    "metabolism": "Fermentation by colonic bacteria",
+    "excretion": "Faeces; absorbed fraction in urine unchanged"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Flatulence and bloating",
+      "Abdominal cramps",
+      "Diarrhoea",
+      "Nausea"
+    ],
+    "serious": [
+      "Dehydration and electrolyte imbalance (hypernatraemia, hypokalaemia) with excessive use",
+      "Risk of hydrogen gas explosion during electrocautery if colon not cleansed"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Lactulose is also used as a test sugar in breath-hydrogen and gut-permeability tests.",
+    "Its sweet taste comes partly from small amounts of galactose and lactose in the syrup."
+  ],
+  "related": [
+    "macrogol-3350",
+    "rifaximin",
+    "loperamide",
+    "ursodeoxycholic-acid"
+  ],
+  "references": [
+    {
+      "title": "Lactulose – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lactulose"
+    },
+    {
+      "title": "DailyMed – lactulose labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=lactulose"
+    }
+  ],
+  "stage": "written"
 }

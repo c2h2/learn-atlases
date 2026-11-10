@@ -1,36 +1,120 @@
 {
   "slug": "mirabegron",
   "name": "Mirabegron",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "YM178"
+  ],
+  "brands": [
+    "Myrbetriq",
+    "Betmiga",
+    "Betanis"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Beta3-adrenergic receptor agonist",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral extended-release tablet or granules once daily",
+  "targets": [
+    "ADRB3"
+  ],
+  "origin": "synthetic",
+  "originator": "Astellas Pharma",
+  "owner": "Astellas Pharma; generic in the US",
+  "first_approval": {
+    "year": 2011,
+    "agency": null,
+    "country": "Japan",
+    "brand": "Betanis"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Astellas Pharma (Yamanouchi heritage)",
+    "note": "A selective beta3-agonist developed for bladder relaxation without antimuscarinic side effects."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First beta3-agonist for overactive bladder, avoiding anticholinergic effects",
+  "summary": "Mirabegron is a beta3-adrenergic receptor agonist that relaxes the bladder detrusor during filling. It treats overactive bladder in adults and neurogenic detrusor overactivity in children, with less dry mouth and constipation than antimuscarinics, but can raise blood pressure.",
+  "mechanism": [
+    "Beta3-adrenergic receptors are the predominant beta subtype in detrusor smooth muscle. Mirabegron activates them, increasing cAMP and relaxing the bladder during the storage phase, which increases capacity and reduces urgency episodes.",
+    "Because it does not block muscarinic receptors, it lacks typical anticholinergic effects. It is a moderate CYP2D6 inhibitor, raising levels of drugs such as metoprolol and desipramine."
+  ],
+  "uses": [
+    "Overactive bladder with urge incontinence, urgency and frequency (alone or with solifenacin)",
+    "Neurogenic detrusor overactivity in children aged 3 years and older"
+  ],
+  "history": [
+    {
+      "year": 2011,
+      "title": "Japanese approval",
+      "detail": "Mirabegron (Betanis) is first approved in Japan."
+    },
+    {
+      "year": 2012,
+      "title": "US and EU approval",
+      "detail": "FDA approves Myrbetriq in June; the European Commission approves Betmiga in December."
+    },
+    {
+      "year": 2018,
+      "title": "Combination therapy",
+      "detail": "FDA approves use with solifenacin based on the SYNERGY trials."
+    },
+    {
+      "year": 2021,
+      "title": "Paediatric use",
+      "detail": "FDA approves mirabegron for neurogenic detrusor overactivity in children."
+    },
+    {
+      "year": 2024,
+      "title": "US generics",
+      "detail": "Generic extended-release mirabegron launches in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "~50 h",
+    "bioavailability": "29–35%",
+    "metabolism": "Multiple pathways: glucuronidation, amide hydrolysis, CYP3A4 and CYP2D6 oxidation, butyrylcholinesterase",
+    "excretion": "Urine (~55%) and faeces (~34%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Hypertension",
+      "Nasopharyngitis",
+      "Urinary tract infection",
+      "Headache",
+      "Constipation"
+    ],
+    "serious": [
+      "Increased blood pressure",
+      "Urinary retention (with bladder outlet obstruction or antimuscarinics)",
+      "Angioedema",
+      "Interactions with CYP2D6 substrates"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Mirabegron was the first drug of a new class for overactive bladder in about 30 years.",
+    "Vibegron, a second beta3-agonist, was approved in the US in 2020."
+  ],
+  "related": [
+    "oxybutynin",
+    "tamsulosin",
+    "metoprolol",
+    "finasteride"
+  ],
+  "references": [
+    {
+      "title": "Mirabegron – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mirabegron"
+    },
+    {
+      "title": "DailyMed – mirabegron labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=mirabegron"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,129 @@
 {
   "slug": "sulfasalazine",
   "name": "Sulfasalazine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Sulphasalazine (former BAN)",
+    "Salazosulfapyridine"
+  ],
+  "brands": [
+    "Salazopyrin",
+    "Azulfidine",
+    "Azulfidine EN-tabs"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Aminosalicylate; conventional synthetic DMARD",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "rectal"
+  ],
+  "route_note": "Oral tablets or enteric-coated tablets in divided doses; suppositories or enemas in some countries",
+  "targets": [
+    "Prodrug (5-ASA and sulfapyridine)",
+    "NF-κB pathway"
+  ],
+  "origin": "synthetic",
+  "originator": "Nanna Svartz (Karolinska Institute) with Pharmacia",
+  "owner": "Pfizer (Azulfidine/Salazopyrin); generic (many)",
+  "first_approval": {
+    "year": 1942,
+    "agency": null,
+    "country": "Sweden",
+    "brand": "Salazopyrin"
+  },
+  "discovery": {
+    "year": 1940,
+    "by": "Nanna Svartz, Karolinska Institute, with Pharmacia",
+    "note": "Designed by linking a sulfonamide antibacterial to an anti-inflammatory salicylate, on the theory that rheumatoid arthritis had an infectious cause."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Sulfonamide–salicylate prodrug for ulcerative colitis and rheumatoid arthritis",
+  "summary": "Sulfasalazine is an azo-linked combination of sulfapyridine and 5-aminosalicylic acid, split by colonic bacteria. Designed in Sweden for rheumatoid arthritis, it became a long-standing treatment for ulcerative colitis and remains a conventional DMARD for inflammatory arthritis.",
+  "mechanism": [
+    "Little sulfasalazine is absorbed intact. Colonic bacterial azoreductases cleave it into 5-ASA, which acts locally on the colonic mucosa, and sulfapyridine, which is absorbed.",
+    "In arthritis, benefit is attributed to sulfasalazine itself and sulfapyridine, which inhibit NF-κB activation, cytokine production and lymphocyte and neutrophil function, and increase adenosine release."
+  ],
+  "uses": [
+    "Ulcerative colitis (induction and maintenance)",
+    "Rheumatoid arthritis",
+    "Polyarticular juvenile idiopathic arthritis",
+    "Psoriatic arthritis and axial spondyloarthritis (off-label in some regions)"
+  ],
+  "history": [
+    {
+      "year": 1940,
+      "title": "Development",
+      "detail": "Nanna Svartz develops salicylazosulfapyridine with Pharmacia."
+    },
+    {
+      "year": 1942,
+      "title": "Introduced",
+      "detail": "Salazopyrin is introduced in Sweden for rheumatoid arthritis and ulcerative colitis."
+    },
+    {
+      "year": 1950,
+      "title": "US approval",
+      "detail": "Sulfasalazine (Azulfidine) is approved in the US."
+    },
+    {
+      "year": 1977,
+      "title": "5-ASA identified",
+      "detail": "Oxford researchers show that 5-ASA is its active moiety in colitis, leading to mesalazine products."
+    },
+    {
+      "year": 1996,
+      "title": "Rheumatoid arthritis in the US",
+      "detail": "Azulfidine EN-tabs gain US approval for rheumatoid arthritis."
+    }
+  ],
+  "pk": {
+    "half_life": "~7.6 h (parent); sulfapyridine 6–14 h depending on acetylator status",
+    "bioavailability": "<15% of parent absorbed",
+    "metabolism": "Colonic azoreduction; sulfapyridine acetylated by NAT2 and hydroxylated",
+    "excretion": "Urine (sulfapyridine metabolites); faeces (5-ASA)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nausea and anorexia",
+      "Headache",
+      "Rash",
+      "Orange-yellow discolouration of urine and skin",
+      "Reversible oligospermia"
+    ],
+    "serious": [
+      "Agranulocytosis and other blood dyscrasias",
+      "Hepatotoxicity",
+      "Stevens–Johnson syndrome and DRESS",
+      "Haemolysis in G6PD deficiency",
+      "Folate deficiency",
+      "Pulmonary hypersensitivity reactions"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Sulfasalazine was one of the first drugs deliberately designed for rheumatoid arthritis.",
+    "Slow acetylators have higher sulfapyridine levels and more adverse effects."
+  ],
+  "related": [
+    "mesalazine",
+    "methotrexate",
+    "hydroxychloroquine",
+    "leflunomide",
+    "co-trimoxazole",
+    "folic-acid"
+  ],
+  "references": [
+    {
+      "title": "Sulfasalazine – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sulfasalazine"
+    },
+    {
+      "title": "DailyMed – sulfasalazine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=sulfasalazine"
+    }
+  ],
+  "stage": "written"
 }

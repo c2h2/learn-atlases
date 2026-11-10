@@ -1,36 +1,147 @@
 {
   "slug": "omeprazole",
   "name": "Omeprazole",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "H 168/68"
+  ],
+  "brands": [
+    "Losec",
+    "Prilosec",
+    "Prilosec OTC"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Proton pump inhibitor (PPI)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "Oral delayed-release capsules or tablets once or twice daily before a meal; IV in some countries",
+  "targets": [
+    "ATP4A"
+  ],
+  "origin": "synthetic",
+  "originator": "Astra Hässle (Mölndal, Sweden)",
+  "owner": "generic (many); AstraZeneca (Rx brand), Procter & Gamble (Prilosec OTC)",
+  "first_approval": {
+    "year": 1988,
+    "agency": null,
+    "country": "Sweden",
+    "brand": "Losec"
+  },
+  "discovery": {
+    "year": 1979,
+    "by": "Astra Hässle (team including Ivan Östholm, Lars Olbe and Enar Carlsson)",
+    "note": "A substituted benzimidazole optimised from timoprazole to inhibit the gastric H+/K+ ATPase."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription; OTC for heartburn in many countries",
+  "tagline": "The first proton pump inhibitor, transforming treatment of ulcers and reflux",
+  "summary": "Omeprazole is the first proton pump inhibitor, a class that irreversibly blocks the final step of gastric acid secretion. It is used for peptic ulcers, gastro-oesophageal reflux disease and Helicobacter pylori eradication, and in the late 1990s it was the world's best-selling drug.",
+  "mechanism": [
+    "Omeprazole is a prodrug that accumulates in the acidic secretory canaliculi of parietal cells, where it is converted to a reactive sulfenamide.",
+    "The sulfenamide forms covalent disulfide bonds with cysteine residues of the H+/K+ ATPase (proton pump), irreversibly inhibiting it. Acid secretion recovers only as new pumps are synthesised, so a single daily dose suppresses acid for longer than the drug's short plasma half-life."
+  ],
+  "uses": [
+    "Gastro-oesophageal reflux disease and erosive oesophagitis",
+    "Duodenal and gastric ulcers",
+    "Helicobacter pylori eradication (with antibiotics)",
+    "Prevention of NSAID-associated ulcers",
+    "Zollinger–Ellison syndrome",
+    "Heartburn (OTC)"
+  ],
+  "history": [
+    {
+      "year": 1979,
+      "title": "Synthesis",
+      "detail": "Astra Hässle synthesises omeprazole."
+    },
+    {
+      "year": 1988,
+      "title": "Launch",
+      "detail": "Losec is launched in Sweden and Europe."
+    },
+    {
+      "year": 1989,
+      "title": "US approval",
+      "detail": "FDA approves omeprazole; the US name changes from Losec to Prilosec in 1990 to avoid confusion with Lasix."
+    },
+    {
+      "year": 1998,
+      "title": "Top-selling drug",
+      "detail": "By the late 1990s Losec is the world's best-selling medicine."
+    },
+    {
+      "year": 2003,
+      "title": "OTC in the US",
+      "detail": "Prilosec OTC is approved for frequent heartburn."
+    },
+    {
+      "year": 2010,
+      "title": "Fracture warning",
+      "detail": "FDA warns of possible hip, wrist and spine fractures with high-dose or long-term PPIs."
+    },
+    {
+      "year": 2011,
+      "title": "Hypomagnesaemia",
+      "detail": "FDA warns that long-term PPI use can cause low magnesium."
+    },
+    {
+      "year": 2012,
+      "title": "C. difficile",
+      "detail": "FDA warns of an increased risk of Clostridioides difficile diarrhoea with PPIs."
+    }
+  ],
+  "pk": {
+    "half_life": "0.5–1 h (acid suppression lasts >24 h)",
+    "bioavailability": "~30–40%, rising with repeated dosing",
+    "metabolism": "Hepatic CYP2C19 (major) and CYP3A4",
+    "excretion": "Urine (~77% as metabolites); faeces"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Headache",
+      "Abdominal pain",
+      "Diarrhoea",
+      "Nausea",
+      "Flatulence"
+    ],
+    "serious": [
+      "Clostridioides difficile–associated diarrhoea",
+      "Bone fractures with long-term use",
+      "Hypomagnesaemia",
+      "Vitamin B12 deficiency",
+      "Acute interstitial nephritis",
+      "Cutaneous and systemic lupus erythematosus",
+      "Reduced clopidogrel activation via CYP2C19"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Esomeprazole is the S-enantiomer of omeprazole.",
+    "CYP2C19 poor metabolisers have several-fold higher omeprazole exposure."
+  ],
+  "related": [
+    "esomeprazole",
+    "pantoprazole",
+    "ranitidine",
+    "cimetidine",
+    "clarithromycin",
+    "amoxicillin",
+    "clopidogrel",
+    "misoprostol"
+  ],
+  "references": [
+    {
+      "title": "Omeprazole – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Omeprazole"
+    },
+    {
+      "title": "DailyMed – omeprazole labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=omeprazole"
+    }
+  ],
+  "stage": "written"
 }

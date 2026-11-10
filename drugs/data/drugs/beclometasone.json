@@ -1,36 +1,133 @@
 {
   "slug": "beclometasone",
-  "name": "Beclometasone",
-  "aliases": [],
-  "brands": [],
+  "name": "Beclometasone dipropionate",
+  "aliases": [
+    "Beclomethasone (USAN)",
+    "BDP"
+  ],
+  "brands": [
+    "Becotide",
+    "Qvar",
+    "Clenil",
+    "Beconase",
+    "Fostair/Foster (with formoterol)",
+    "Trimbow (triple)"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Glucocorticoid (inhaled, nasal and topical)",
+  "modality": "small-molecule",
+  "routes": [
+    "inhaled",
+    "intranasal",
+    "topical",
+    "oral"
+  ],
+  "route_note": "Inhaled (including extra-fine HFA aerosols) for asthma/COPD; nasal spray; topical; gastro-resistant oral tablets in some countries for ulcerative colitis",
+  "targets": [
+    "NR3C1"
+  ],
+  "origin": "synthetic",
+  "originator": "Schering Corporation; inhaled use developed by Glaxo",
+  "owner": "generic (many); Chiesi, Teva and others",
+  "first_approval": {
+    "year": 1972,
+    "agency": null,
+    "country": "UK",
+    "brand": "Becotide"
+  },
+  "discovery": {
+    "year": 1962,
+    "by": "Schering Corporation",
+    "note": "Chlorinated prednisolone-type diester patented as a topical steroid; Glaxo showed its value by inhalation."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription; nasal spray OTC in some countries",
+  "tagline": "The first widely used inhaled corticosteroid for asthma",
+  "summary": "Beclometasone dipropionate is a prodrug glucocorticoid whose introduction as an aerosol in 1972 established inhaled corticosteroids as the basis of asthma treatment. It is used by inhalation, nasally and on the skin, and in fixed combinations with formoterol.",
+  "mechanism": [
+    "Esterases in the lung and other tissues convert beclometasone dipropionate to beclometasone 17-monopropionate, which has much higher affinity for the glucocorticoid receptor.",
+    "The activated receptor represses inflammatory gene transcription and induces anti-inflammatory mediators, reducing airway inflammation and hyperresponsiveness."
+  ],
+  "uses": [
+    "Maintenance treatment of asthma",
+    "COPD (with formoterol, with or without glycopyrronium)",
+    "Allergic rhinitis and nasal polyps",
+    "Corticosteroid-responsive dermatoses",
+    "Mild to moderate ulcerative colitis (oral, some countries)"
+  ],
+  "history": [
+    {
+      "year": 1962,
+      "title": "Patented",
+      "detail": "Beclometasone dipropionate is patented by Schering."
+    },
+    {
+      "year": 1972,
+      "title": "Inhaled asthma therapy",
+      "detail": "Glaxo launches Becotide in the UK, the first widely used inhaled corticosteroid."
+    },
+    {
+      "year": 1976,
+      "title": "US approval",
+      "detail": "Inhaled beclomethasone (Vanceril, Schering) is approved in the US."
+    },
+    {
+      "year": 2000,
+      "title": "Extra-fine HFA aerosol",
+      "detail": "Qvar, an HFA solution aerosol with smaller particles, is approved in the US."
+    },
+    {
+      "year": 2017,
+      "title": "Triple inhaler",
+      "detail": "EMA approves Trimbow (beclometasone/formoterol/glycopyrronium) for COPD."
+    }
+  ],
+  "pk": {
+    "half_life": "~0.5 h (BDP); ~2.7 h (17-monopropionate)",
+    "bioavailability": "Inhaled active metabolite largely lung-absorbed; oral contribution small",
+    "metabolism": "Esterase hydrolysis to 17-monopropionate, then CYP3A4",
+    "excretion": "Mainly faeces"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Oral candidiasis",
+      "Hoarseness",
+      "Sore throat",
+      "Nasal irritation and epistaxis (nasal)",
+      "Headache"
+    ],
+    "serious": [
+      "Adrenal suppression at high doses",
+      "Growth slowing in children",
+      "Reduced bone mineral density",
+      "Cataract and glaucoma",
+      "Paradoxical bronchospasm"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "The 1972 launch of Becotide is generally regarded as the start of inhaled corticosteroid therapy for asthma.",
+    "Extra-fine beclometasone aerosols are dosed lower than older CFC formulations because more drug reaches the small airways."
+  ],
+  "related": [
+    "budesonide",
+    "fluticasone-propionate",
+    "formoterol",
+    "salbutamol",
+    "salmeterol",
+    "prednisolone"
+  ],
+  "references": [
+    {
+      "title": "Beclometasone dipropionate – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Beclometasone_dipropionate"
+    },
+    {
+      "title": "DailyMed – beclomethasone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=beclomethasone"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,125 @@
 {
   "slug": "loratadine",
   "name": "Loratadine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Sch 29851"
+  ],
+  "brands": [
+    "Claritin",
+    "Clarityn",
+    "Claritine"
+  ],
   "area": "respiratory-gastro-urology",
   "batch": "09",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Second-generation H1 antihistamine",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablet, orodispersible tablet or syrup once daily",
+  "targets": [
+    "HRH1"
+  ],
+  "origin": "synthetic",
+  "originator": "Schering-Plough",
+  "owner": "generic (many); Claritin brand: Bayer",
+  "first_approval": {
+    "year": 1988,
+    "agency": null,
+    "country": null,
+    "brand": null
+  },
+  "discovery": {
+    "year": null,
+    "by": "Schering-Plough (Frank Villani and colleagues)",
+    "note": "A tricyclic piperidine antihistamine derived from azatadine with little affinity for central H1 receptors."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "OTC in most countries",
+  "tagline": "Non-sedating antihistamine that became a landmark prescription-to-OTC switch",
+  "summary": "Loratadine is a long-acting, second-generation H1 antihistamine with minimal sedation at standard doses. It is used for allergic rhinitis and chronic urticaria and is converted in the liver to an active metabolite, desloratadine.",
+  "mechanism": [
+    "Loratadine and desloratadine are inverse agonists at peripheral H1 receptors, blocking histamine-mediated sneezing, rhinorrhoea, itch and wheal formation.",
+    "They penetrate the brain poorly, so sedation and anticholinergic effects are uncommon at usual doses."
+  ],
+  "uses": [
+    "Seasonal and perennial allergic rhinitis",
+    "Chronic spontaneous urticaria",
+    "Other histamine-mediated allergic symptoms"
+  ],
+  "history": [
+    {
+      "year": 1988,
+      "title": "First approval",
+      "detail": "Loratadine first comes to market."
+    },
+    {
+      "year": 1993,
+      "title": "US approval",
+      "detail": "FDA approves Claritin as a prescription antihistamine."
+    },
+    {
+      "year": 1998,
+      "title": "Insurer petition",
+      "detail": "A US health insurer petitions FDA to switch Claritin and other non-sedating antihistamines to OTC status."
+    },
+    {
+      "year": 2001,
+      "title": "Desloratadine",
+      "detail": "Its active metabolite desloratadine (Clarinex/Aerius) is approved."
+    },
+    {
+      "year": 2002,
+      "title": "OTC switch",
+      "detail": "Claritin becomes available over the counter in the US, as generics enter."
+    },
+    {
+      "year": 2014,
+      "title": "Bayer",
+      "detail": "Bayer acquires Merck's consumer care business, including Claritin."
+    }
+  ],
+  "pk": {
+    "half_life": "~8 h (loratadine); ~28 h (desloratadine)",
+    "bioavailability": "Extensive first-pass metabolism",
+    "metabolism": "Hepatic CYP3A4 and CYP2D6 to desloratadine",
+    "excretion": "Urine and faeces as metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Headache",
+      "Somnolence",
+      "Fatigue",
+      "Dry mouth"
+    ],
+    "serious": [
+      "Hypersensitivity reactions including anaphylaxis (rare)",
+      "Tachycardia and palpitations (rare)",
+      "Hepatic dysfunction (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "The 1998 insurer petition to make Claritin OTC was the first time a third party, not the manufacturer, sought such a switch.",
+    "Desloratadine, the active metabolite, was later marketed as a separate drug."
+  ],
+  "related": [
+    "cetirizine",
+    "fexofenadine",
+    "diphenhydramine",
+    "montelukast",
+    "fluticasone-propionate"
+  ],
+  "references": [
+    {
+      "title": "Loratadine – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Loratadine"
+    },
+    {
+      "title": "DailyMed – loratadine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=loratadine"
+    }
+  ],
+  "stage": "written"
 }
