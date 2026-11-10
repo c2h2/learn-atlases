@@ -1,36 +1,137 @@
 {
   "slug": "ketamine",
   "name": "Ketamine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "CI-581",
+    "Ketamine hydrochloride"
+  ],
+  "brands": [
+    "Ketalar",
+    "Ketanest"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Dissociative anaesthetic; NMDA receptor antagonist (arylcyclohexylamine)",
+  "modality": "small-molecule",
+  "routes": [
+    "iv",
+    "im"
+  ],
+  "route_note": "IV or IM injection for anaesthesia and procedural sedation; subanaesthetic infusions used in pain and depression settings.",
+  "targets": [
+    "GRIN1/GRIN2 (NMDA receptor, channel blocker)",
+    "Opioid receptors (weak)",
+    "HCN1"
+  ],
+  "origin": "synthetic",
+  "originator": "Parke-Davis",
+  "owner": "generic (many); Par Pharmaceutical (Ketalar, US), Pfizer (Ketalar, some markets)",
+  "first_approval": {
+    "year": 1970,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Ketalar"
+  },
+  "discovery": {
+    "year": 1962,
+    "by": "Calvin Stevens (Parke-Davis)",
+    "note": "Developed as a shorter-acting, less hallucinogenic alternative to phencyclidine (PCP); first human studies by Edward Domino and Guenter Corssen in 1964."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription; controlled (US Schedule III)",
+  "tagline": "Dissociative anaesthetic that preserves breathing, now also a rapid antidepressant",
+  "summary": "Ketamine is a dissociative anaesthetic that blocks NMDA receptors. Because it maintains airway reflexes, breathing and blood pressure, it is widely used in emergency, battlefield and low-resource anaesthesia. Since the 2000s, subanaesthetic doses have been studied for rapid relief of depression, leading to the development of esketamine. It is also used recreationally and is a controlled substance.",
+  "mechanism": [
+    "Ketamine is a non-competitive NMDA receptor antagonist that binds within the open ion channel (the PCP site). Disrupted thalamocortical and limbic signalling produces a 'dissociative' state of analgesia, amnesia and unconsciousness with preserved reflexes.",
+    "It stimulates the sympathetic nervous system, generally raising heart rate and blood pressure and causing bronchodilation. Its antidepressant effects are thought to involve a glutamate surge, AMPA receptor activation, BDNF release and synaptogenesis; analgesic effects relate to reduced central sensitisation."
+  ],
+  "uses": [
+    "Induction and maintenance of general anaesthesia",
+    "Procedural sedation and analgesia (including in children)",
+    "Anaesthesia in haemodynamically unstable or asthmatic patients",
+    "Off-label: acute and chronic pain, treatment-resistant depression"
+  ],
+  "history": [
+    {
+      "year": 1962,
+      "title": "Synthesis",
+      "detail": "Calvin Stevens synthesises CI-581 at Parke-Davis."
+    },
+    {
+      "year": 1964,
+      "title": "First human use",
+      "detail": "Domino and Corssen test ketamine in prisoner volunteers and coin the term 'dissociative anaesthesia'."
+    },
+    {
+      "year": 1970,
+      "title": "FDA approval",
+      "detail": "Ketalar is approved in the US; it is used widely by US forces in the Vietnam War."
+    },
+    {
+      "year": 1999,
+      "title": "Scheduling",
+      "detail": "Ketamine is placed in US Schedule III."
+    },
+    {
+      "year": 2000,
+      "title": "Antidepressant signal",
+      "detail": "Berman and colleagues report rapid antidepressant effects of a single subanaesthetic infusion."
+    },
+    {
+      "year": 2006,
+      "title": "NIMH trial",
+      "detail": "Zarate and colleagues confirm rapid antidepressant effects in treatment-resistant depression."
+    },
+    {
+      "year": 2019,
+      "title": "Esketamine",
+      "detail": "The S-enantiomer is approved as Spravato nasal spray for treatment-resistant depression."
+    }
+  ],
+  "pk": {
+    "half_life": "2.5–3 hours",
+    "bioavailability": "About 93% IM; about 20% oral",
+    "metabolism": "Hepatic CYP3A4 and CYP2B6 to active norketamine",
+    "excretion": "Renal as metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Emergence reactions (vivid dreams, hallucinations, confusion)",
+      "Hypertension and tachycardia",
+      "Nausea and vomiting",
+      "Increased salivation",
+      "Nystagmus"
+    ],
+    "serious": [
+      "Laryngospasm",
+      "Respiratory depression with rapid injection or other depressants",
+      "Ketamine-induced uropathy (cystitis) with chronic misuse",
+      "Hepatobiliary toxicity with repeated use",
+      "Abuse and dependence"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Ketamine's preservation of breathing makes it a key anaesthetic where ventilators are scarce.",
+    "Chronic recreational use can cause severe ulcerative cystitis."
+  ],
+  "related": [
+    "esketamine",
+    "propofol",
+    "midazolam",
+    "sevoflurane",
+    "nitrous-oxide"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Ketamine",
+      "url": "https://en.wikipedia.org/wiki/Ketamine"
+    },
+    {
+      "title": "DailyMed: ketamine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ketamine"
+    }
+  ],
+  "stage": "written"
 }

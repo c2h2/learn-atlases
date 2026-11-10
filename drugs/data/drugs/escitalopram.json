@@ -1,36 +1,132 @@
 {
   "slug": "escitalopram",
   "name": "Escitalopram",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "S-citalopram",
+    "Lu 26-054",
+    "Escitalopram oxalate"
+  ],
+  "brands": [
+    "Lexapro",
+    "Cipralex"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Selective serotonin reuptake inhibitor (SSRI)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets or solution once daily.",
+  "targets": [
+    "SLC6A4 (serotonin transporter)"
+  ],
+  "origin": "synthetic",
+  "originator": "H. Lundbeck A/S, with Forest Laboratories",
+  "owner": "generic (many); Lundbeck (Cipralex), AbbVie (Lexapro)",
+  "first_approval": {
+    "year": 2001,
+    "agency": "Swedish MPA (EU mutual recognition)",
+    "country": "Sweden",
+    "brand": "Cipralex"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1997,
+    "by": "H. Lundbeck A/S",
+    "note": "Lundbeck resolved racemic citalopram and developed the active S-enantiomer as a separate drug as citalopram patents neared expiry."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Single-enantiomer SSRI derived from citalopram, used for depression and anxiety",
+  "summary": "Escitalopram is the S-enantiomer of citalopram and one of the most widely used SSRIs. It is approved for major depression and generalised anxiety disorder and, in Europe, for several other anxiety disorders.",
+  "mechanism": [
+    "Escitalopram binds the primary (orthosteric) site of the serotonin transporter with high selectivity and also interacts with an allosteric site that slows its own dissociation, producing potent and sustained reuptake inhibition.",
+    "It has negligible affinity for adrenergic, muscarinic, histamine and dopamine receptors. Like citalopram it prolongs the QT interval in a dose-dependent way, though less at equivalent doses."
+  ],
+  "uses": [
+    "Major depressive disorder (adults and adolescents)",
+    "Generalised anxiety disorder",
+    "Panic disorder, social anxiety disorder and OCD (EU labelling)"
+  ],
+  "history": [
+    {
+      "year": 1997,
+      "title": "Development",
+      "detail": "Lundbeck begins developing the S-enantiomer of citalopram."
+    },
+    {
+      "year": 2001,
+      "title": "EU approval",
+      "detail": "Escitalopram is approved in Europe as Cipralex."
+    },
+    {
+      "year": 2002,
+      "title": "FDA approval",
+      "detail": "The FDA approves Lexapro (Forest) for depression in August 2002."
+    },
+    {
+      "year": 2003,
+      "title": "GAD",
+      "detail": "Escitalopram is approved in the US for generalised anxiety disorder."
+    },
+    {
+      "year": 2009,
+      "title": "Adolescents",
+      "detail": "The FDA approves escitalopram for depression in adolescents aged 12–17."
+    },
+    {
+      "year": 2012,
+      "title": "Generics",
+      "detail": "Generic escitalopram launches in the US."
+    },
+    {
+      "year": 2023,
+      "title": "Paediatric GAD",
+      "detail": "The FDA extends the GAD indication to children aged 7 and older."
+    }
+  ],
+  "pk": {
+    "half_life": "27–32 hours",
+    "bioavailability": "About 80%",
+    "metabolism": "Hepatic CYP2C19, CYP3A4 and CYP2D6 to S-desmethylcitalopram",
+    "excretion": "Renal and hepatic"
+  },
+  "safety": {
+    "common": [
+      "Nausea",
+      "Insomnia",
+      "Fatigue",
+      "Sweating",
+      "Sexual dysfunction"
+    ],
+    "serious": [
+      "QT prolongation",
+      "Serotonin syndrome",
+      "Suicidal thoughts in young people",
+      "Hyponatraemia",
+      "Bleeding risk"
+    ],
+    "boxed_warning": "Increased risk of suicidal thoughts and behaviours in children, adolescents and young adults (under 25) taking antidepressants; monitor for clinical worsening."
+  },
+  "facts": [
+    "Escitalopram is a classic example of a 'chiral switch' from a racemic drug."
+  ],
+  "related": [
+    "citalopram",
+    "sertraline",
+    "fluoxetine",
+    "paroxetine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Escitalopram",
+      "url": "https://en.wikipedia.org/wiki/Escitalopram"
+    },
+    {
+      "title": "DailyMed: escitalopram labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=escitalopram"
+    }
+  ],
+  "stage": "written"
 }

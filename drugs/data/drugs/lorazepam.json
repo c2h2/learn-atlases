@@ -1,36 +1,131 @@
 {
   "slug": "lorazepam",
   "name": "Lorazepam",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Wy-4036"
+  ],
+  "brands": [
+    "Ativan",
+    "Temesta",
+    "Loraz"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Benzodiazepine (intermediate-acting)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "sublingual",
+    "iv",
+    "im"
+  ],
+  "route_note": "Oral or sublingual tablets; IV or IM injection for status epilepticus and sedation; an extended-release capsule exists in the US.",
+  "targets": [
+    "GABA-A receptors (benzodiazepine site, positive allosteric modulator)"
+  ],
+  "origin": "synthetic",
+  "originator": "Wyeth",
+  "owner": "generic (many); Bausch Health (Ativan, US), Pfizer (Temesta, some markets)",
+  "first_approval": {
+    "year": 1977,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Ativan"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Wyeth Laboratories",
+    "note": "A 3-hydroxy benzodiazepine developed at Wyeth in the 1960s, closely related to oxazepam."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription; controlled (US Schedule IV)",
+  "tagline": "High-potency benzodiazepine and a first-line drug for status epilepticus",
+  "summary": "Lorazepam is a high-potency, intermediate-acting benzodiazepine used for anxiety, insomnia related to anxiety, premedication and as a first-line treatment for status epilepticus. It is metabolised by glucuronidation without active metabolites, which makes it useful in liver disease and in older people.",
+  "mechanism": [
+    "Lorazepam enhances GABA-A receptor function at the benzodiazepine site, increasing chloride channel opening frequency and neuronal inhibition, which produces anxiolytic, sedative, amnesic, anticonvulsant and muscle-relaxant effects.",
+    "Compared with diazepam it is less lipophilic, so redistribution out of the brain is slower and anticonvulsant action after IV dosing lasts longer."
+  ],
+  "uses": [
+    "Anxiety disorders (short-term)",
+    "Status epilepticus",
+    "Preanaesthetic sedation and amnesia",
+    "Alcohol withdrawal (off-label in some countries)",
+    "Chemotherapy-induced nausea (adjunct, off-label)"
+  ],
+  "history": [
+    {
+      "year": 1977,
+      "title": "FDA approval",
+      "detail": "Ativan is approved in the US."
+    },
+    {
+      "year": 1983,
+      "title": "Status epilepticus trial",
+      "detail": "Leppik and colleagues report a double-blind comparison of IV lorazepam and diazepam in status epilepticus (JAMA)."
+    },
+    {
+      "year": 2001,
+      "title": "Pre-hospital trial",
+      "detail": "A NEJM trial shows paramedic-administered lorazepam or diazepam is effective for out-of-hospital status epilepticus."
+    },
+    {
+      "year": 2016,
+      "title": "Opioid boxed warning",
+      "detail": "The FDA adds a boxed warning on combined use with opioids."
+    },
+    {
+      "year": 2020,
+      "title": "Class boxed warning",
+      "detail": "The benzodiazepine boxed warning is expanded to abuse, dependence and withdrawal reactions."
+    },
+    {
+      "year": 2021,
+      "title": "Loreev XR",
+      "detail": "An extended-release once-daily capsule is approved in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "About 12 hours (10–20)",
+    "bioavailability": "About 90% oral",
+    "metabolism": "Hepatic glucuronidation to inactive lorazepam glucuronide (no CYP)",
+    "excretion": "Renal"
+  },
+  "safety": {
+    "common": [
+      "Sedation",
+      "Dizziness",
+      "Weakness",
+      "Unsteadiness"
+    ],
+    "serious": [
+      "Respiratory depression",
+      "Dependence and withdrawal",
+      "Anterograde amnesia",
+      "Paradoxical reactions",
+      "Propylene glycol toxicity with high-dose infusions"
+    ],
+    "boxed_warning": "Concomitant use with opioids may cause profound sedation, respiratory depression, coma and death. Risks of abuse, misuse and addiction; continued use may lead to clinically significant physical dependence, and abrupt discontinuation or rapid dose reduction may cause life-threatening withdrawal reactions."
+  },
+  "facts": [
+    "The 2001 NEJM pre-hospital trial (Alldredge et al.) is a landmark in out-of-hospital seizure care."
+  ],
+  "related": [
+    "diazepam",
+    "alprazolam",
+    "midazolam",
+    "phenobarbital",
+    "levetiracetam"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Lorazepam",
+      "url": "https://en.wikipedia.org/wiki/Lorazepam"
+    },
+    {
+      "title": "DailyMed: lorazepam labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=lorazepam"
+    }
+  ],
+  "stage": "written"
 }

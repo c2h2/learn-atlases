@@ -1,36 +1,127 @@
 {
   "slug": "suvorexant",
   "name": "Suvorexant",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "MK-4305"
+  ],
+  "brands": [
+    "Belsomra"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Dual orexin receptor antagonist (DORA)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablet within 30 minutes of bedtime, with at least 7 hours remaining before waking.",
+  "targets": [
+    "HCRTR1 (OX1R)",
+    "HCRTR2 (OX2R)"
+  ],
+  "origin": "synthetic",
+  "originator": "Merck & Co.",
+  "owner": "Merck & Co. (MSD)",
+  "first_approval": {
+    "year": 2014,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Belsomra"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Merck Research Laboratories (Cox, Coleman and colleagues)",
+    "note": "Developed after the 1998 discovery of the orexin (hypocretin) neuropeptides and their role in wakefulness, via high-throughput screening and optimisation of a diazepane series."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription; controlled (US Schedule IV)",
+  "tagline": "First orexin receptor antagonist for insomnia, switching off a wake-promoting signal",
+  "summary": "Suvorexant is the first approved dual orexin receptor antagonist, used for insomnia characterised by difficulty falling or staying asleep. Rather than enhancing GABA-mediated sedation, it blocks the wake-promoting orexin system.",
+  "mechanism": [
+    "Orexin A and B, made by neurons in the lateral hypothalamus, stabilise wakefulness by activating OX1 and OX2 receptors on monoaminergic and cholinergic arousal centres. Loss of orexin neurons causes narcolepsy.",
+    "Suvorexant reversibly blocks both orexin receptors, reducing the drive for wakefulness and allowing sleep to occur, with less disruption of sleep architecture than GABA-A modulators."
+  ],
+  "uses": [
+    "Insomnia with difficulty in sleep onset and/or sleep maintenance in adults"
+  ],
+  "history": [
+    {
+      "year": 1998,
+      "title": "Orexins discovered",
+      "detail": "Two groups (de Lecea/Sutcliffe and Sakurai/Yanagisawa) independently identify the hypocretin/orexin neuropeptides."
+    },
+    {
+      "year": 1999,
+      "title": "Link to narcolepsy",
+      "detail": "Orexin receptor mutations cause canine narcolepsy and knockout mice show narcolepsy."
+    },
+    {
+      "year": 2010,
+      "title": "Compound reported",
+      "detail": "Merck publishes the discovery of MK-4305 (suvorexant)."
+    },
+    {
+      "year": 2013,
+      "title": "FDA review",
+      "detail": "An advisory committee and FDA request lower starting doses than Merck proposed."
+    },
+    {
+      "year": 2014,
+      "title": "Approvals",
+      "detail": "Suvorexant is approved in Japan and, in August 2014, by the FDA as Belsomra."
+    },
+    {
+      "year": 2020,
+      "title": "Alzheimer's insomnia",
+      "detail": "Labelling is updated to include efficacy in insomnia in people with mild-to-moderate Alzheimer's disease."
+    }
+  ],
+  "pk": {
+    "half_life": "About 12 hours",
+    "bioavailability": "About 82% (10 mg)",
+    "metabolism": "Hepatic CYP3A (minor CYP2C19)",
+    "excretion": "Mainly faeces"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Somnolence",
+      "Headache",
+      "Dizziness",
+      "Abnormal dreams"
+    ],
+    "serious": [
+      "Next-day impairment",
+      "Complex sleep behaviours",
+      "Sleep paralysis and hypnagogic hallucinations",
+      "Cataplexy-like symptoms",
+      "Worsening depression or suicidal thoughts"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Suvorexant is contraindicated in narcolepsy.",
+    "Lemborexant and daridorexant are later dual orexin receptor antagonists."
+  ],
+  "related": [
+    "zolpidem",
+    "melatonin",
+    "trazodone",
+    "modafinil"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Suvorexant",
+      "url": "https://en.wikipedia.org/wiki/Suvorexant"
+    },
+    {
+      "title": "DailyMed: belsomra labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=belsomra"
+    },
+    {
+      "title": "Wikipedia: Orexin",
+      "url": "https://en.wikipedia.org/wiki/Orexin"
+    }
+  ],
+  "stage": "written"
 }

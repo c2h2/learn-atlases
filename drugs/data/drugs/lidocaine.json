@@ -1,36 +1,132 @@
 {
   "slug": "lidocaine",
   "name": "Lidocaine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Lignocaine",
+    "Lidocaine hydrochloride"
+  ],
+  "brands": [
+    "Xylocaine",
+    "Lidoderm",
+    "EMLA (with prilocaine)",
+    "Versatis"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Amide local anaesthetic; class Ib antiarrhythmic",
+  "modality": "small-molecule",
+  "routes": [
+    "topical",
+    "transdermal",
+    "iv",
+    "other"
+  ],
+  "route_note": "Local infiltration, nerve blocks and epidural use; topical gels, sprays and creams; medicated plasters; IV for ventricular arrhythmias.",
+  "targets": [
+    "SCN5A, SCN9A and other voltage-gated sodium channels (blocker)"
+  ],
+  "origin": "synthetic",
+  "originator": "Astra (Nils Löfgren and Bengt Lundqvist)",
+  "owner": "generic (many); Aspen and Fresenius Kabi (Xylocaine, by region)",
+  "first_approval": {
+    "year": 1948,
+    "agency": "Swedish authorities",
+    "country": "Sweden",
+    "brand": "Xylocaine"
+  },
+  "discovery": {
+    "year": 1943,
+    "by": "Nils Löfgren and Bengt Lundqvist (Stockholm University)",
+    "note": "Synthesised as part of research into compounds related to the alkaloid gramine; it was the first amino amide local anaesthetic."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription; some topical forms OTC",
+  "tagline": "The first amide local anaesthetic, also used as an antiarrhythmic",
+  "summary": "Lidocaine is the most widely used local anaesthetic, given by infiltration, nerve block, epidural and topical application. Discovered in Sweden in 1943, it is more stable and less allergenic than older ester anaesthetics. It is also used intravenously as a class Ib antiarrhythmic and as a patch for post-herpetic neuralgia.",
+  "mechanism": [
+    "Lidocaine diffuses in its uncharged form through the nerve membrane and, once protonated inside the cell, blocks voltage-gated sodium channels from the inside. This prevents generation and conduction of action potentials, blocking pain and other sensations; small, unmyelinated fibres are most sensitive.",
+    "In the heart it preferentially blocks inactivated sodium channels in depolarised, ischaemic tissue (use-dependent class Ib action), shortening the action potential and suppressing ventricular arrhythmias with little effect on normal conduction."
+  ],
+  "uses": [
+    "Local and regional anaesthesia (infiltration, nerve blocks, epidural)",
+    "Topical anaesthesia of skin and mucous membranes",
+    "Post-herpetic neuralgia (5% plaster)",
+    "Ventricular arrhythmias (IV)",
+    "Attenuating propofol injection pain and airway reflexes"
+  ],
+  "history": [
+    {
+      "year": 1943,
+      "title": "Synthesis",
+      "detail": "Löfgren and Lundqvist synthesise lidocaine (then called LL30) in Stockholm."
+    },
+    {
+      "year": 1948,
+      "title": "Launch",
+      "detail": "Astra markets lidocaine as Xylocaine in Sweden; it is approved in the US the same year."
+    },
+    {
+      "year": 1963,
+      "title": "Antiarrhythmic use",
+      "detail": "During the 1960s IV lidocaine becomes established for ventricular arrhythmias after myocardial infarction."
+    },
+    {
+      "year": 1984,
+      "title": "EMLA",
+      "detail": "A eutectic lidocaine–prilocaine cream for skin anaesthesia is introduced by Astra in the mid-1980s."
+    },
+    {
+      "year": 1999,
+      "title": "Lidoderm",
+      "detail": "The FDA approves the 5% lidocaine patch for post-herpetic neuralgia."
+    },
+    {
+      "year": 2016,
+      "title": "Aspen",
+      "detail": "AstraZeneca agrees to sell its global anaesthetics portfolio, including Xylocaine (outside the US), to Aspen."
+    }
+  ],
+  "pk": {
+    "half_life": "1.5–2 hours",
+    "bioavailability": "About 35% oral (high first-pass); patch systemic absorption ~3%",
+    "metabolism": "Hepatic CYP1A2 and CYP3A4 to active MEGX and glycinexylidide",
+    "excretion": "Renal as metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Local irritation",
+      "Numbness",
+      "Dizziness",
+      "Drowsiness"
+    ],
+    "serious": [
+      "Local anaesthetic systemic toxicity (seizures, cardiac arrest)",
+      "Methaemoglobinaemia (especially topical in infants)",
+      "Allergic reactions (rare)",
+      "Chondrolysis with intra-articular infusion"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Intravenous lipid emulsion is used to treat severe local anaesthetic systemic toxicity.",
+    "Adding adrenaline to lidocaine prolongs its action and reduces bleeding by vasoconstriction."
+  ],
+  "related": [
+    "bupivacaine",
+    "amiodarone",
+    "propofol",
+    "sevoflurane"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Lidocaine",
+      "url": "https://en.wikipedia.org/wiki/Lidocaine"
+    },
+    {
+      "title": "DailyMed: lidocaine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=lidocaine"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,131 @@
 {
   "slug": "venlafaxine",
   "name": "Venlafaxine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Wy-45030",
+    "Venlafaxine hydrochloride"
+  ],
+  "brands": [
+    "Effexor",
+    "Effexor XR",
+    "Efexor"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Serotonin–noradrenaline reuptake inhibitor (SNRI)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral immediate-release tablets two to three times daily or extended-release capsules/tablets once daily.",
+  "targets": [
+    "SLC6A4 (serotonin transporter)",
+    "SLC6A2 (noradrenaline transporter)"
+  ],
+  "origin": "synthetic",
+  "originator": "Wyeth",
+  "owner": "generic (many); Viatris (Effexor)",
+  "first_approval": {
+    "year": 1993,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Effexor"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Wyeth",
+    "note": "A phenethylamine bicyclic derivative developed at Wyeth in the 1980s as a dual reuptake inhibitor without tricyclic receptor effects."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "The first widely used SNRI, with dose-dependent noradrenergic effects",
+  "summary": "Venlafaxine is a serotonin–noradrenaline reuptake inhibitor used for depression and anxiety disorders. At low doses it acts mainly on serotonin reuptake, adding noradrenaline reuptake inhibition at higher doses. Its main active metabolite, desvenlafaxine, is marketed separately.",
+  "mechanism": [
+    "Venlafaxine and its active metabolite O-desmethylvenlafaxine inhibit reuptake of serotonin and, more weakly, noradrenaline; dopamine reuptake is inhibited only slightly. Serotonergic effects predominate at lower doses, with noradrenergic effects contributing at higher doses, which can raise blood pressure.",
+    "It has little affinity for muscarinic, histaminergic or alpha-adrenergic receptors, distinguishing it from tricyclic antidepressants."
+  ],
+  "uses": [
+    "Major depressive disorder",
+    "Generalised anxiety disorder",
+    "Social anxiety disorder",
+    "Panic disorder"
+  ],
+  "history": [
+    {
+      "year": 1993,
+      "title": "FDA approval",
+      "detail": "The FDA approves Effexor for depression."
+    },
+    {
+      "year": 1997,
+      "title": "Extended release",
+      "detail": "Effexor XR once-daily capsules are approved."
+    },
+    {
+      "year": 1999,
+      "title": "GAD",
+      "detail": "Effexor XR becomes approved for generalised anxiety disorder."
+    },
+    {
+      "year": 2004,
+      "title": "Suicidality warning",
+      "detail": "Class boxed warning on antidepressant suicidality in young people."
+    },
+    {
+      "year": 2006,
+      "title": "Generics",
+      "detail": "Generic immediate-release venlafaxine is available; XR generics follow in 2010."
+    },
+    {
+      "year": 2008,
+      "title": "Desvenlafaxine",
+      "detail": "Its metabolite desvenlafaxine is approved as Pristiq."
+    }
+  ],
+  "pk": {
+    "half_life": "About 5 hours; O-desmethylvenlafaxine about 11 hours",
+    "bioavailability": "About 45% (extensive first-pass)",
+    "metabolism": "Hepatic CYP2D6 to active O-desmethylvenlafaxine",
+    "excretion": "Renal (~87% as parent and metabolites)"
+  },
+  "safety": {
+    "common": [
+      "Nausea",
+      "Dizziness",
+      "Insomnia or somnolence",
+      "Sweating",
+      "Sexual dysfunction",
+      "Dry mouth"
+    ],
+    "serious": [
+      "Sustained hypertension",
+      "Discontinuation syndrome",
+      "Serotonin syndrome",
+      "Suicidal thoughts in young people",
+      "Hyponatraemia",
+      "Toxicity in overdose (seizures, arrhythmia)"
+    ],
+    "boxed_warning": "Increased risk of suicidal thoughts and behaviours in children, adolescents and young adults (under 25) taking antidepressants; monitor for clinical worsening."
+  },
+  "facts": [
+    "Venlafaxine is more toxic in overdose than SSRIs, though less than tricyclics."
+  ],
+  "related": [
+    "duloxetine",
+    "fluoxetine",
+    "sertraline",
+    "mirtazapine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Venlafaxine",
+      "url": "https://en.wikipedia.org/wiki/Venlafaxine"
+    },
+    {
+      "title": "DailyMed: venlafaxine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=venlafaxine"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,139 @@
 {
   "slug": "esketamine",
   "name": "Esketamine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "S-ketamine",
+    "Esketamine hydrochloride",
+    "JNJ-54135419"
+  ],
+  "brands": [
+    "Spravato",
+    "Ketanest S"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "NMDA receptor antagonist; rapid-acting antidepressant",
+  "modality": "small-molecule",
+  "routes": [
+    "intranasal",
+    "iv"
+  ],
+  "route_note": "Nasal spray self-administered under direct supervision in a certified healthcare setting with 2 hours' monitoring; IV as an anaesthetic in some countries.",
+  "targets": [
+    "GRIN1/GRIN2 (NMDA receptor)"
+  ],
+  "origin": "synthetic",
+  "originator": "Janssen Pharmaceuticals (antidepressant development)",
+  "owner": "Johnson & Johnson (Janssen)",
+  "first_approval": {
+    "year": 2019,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Spravato"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 2000,
+    "by": "Berman, Krystal and colleagues (Yale), later Zarate (NIMH)",
+    "note": "Small trials of IV racemic ketamine showed rapid antidepressant effects (2000, 2006), prompting Janssen to develop the S-enantiomer as a nasal spray."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription; controlled (US Schedule III); restricted (REMS)",
+  "tagline": "Nasal-spray S-ketamine for treatment-resistant depression, given under supervision",
+  "summary": "Esketamine is the S-enantiomer of ketamine, developed by Janssen as a nasal spray for treatment-resistant depression and for depressive symptoms with acute suicidal ideation. It acts within hours to days rather than weeks, but must be given under medical supervision because of sedation, dissociation and abuse potential.",
+  "mechanism": [
+    "Esketamine is a non-competitive NMDA receptor channel blocker with about twice the affinity of racemic ketamine. Blockade of NMDA receptors on GABAergic interneurons is thought to cause a surge of glutamate release, AMPA receptor activation, BDNF release and mTOR-dependent synaptogenesis in the prefrontal cortex.",
+    "These rapid changes in synaptic connectivity are proposed to underlie its fast antidepressant onset, although the exact mechanism, including possible roles of metabolites and opioid systems, is still debated."
+  ],
+  "uses": [
+    "Treatment-resistant depression in adults (with or without an oral antidepressant)",
+    "Depressive symptoms in adults with major depressive disorder with acute suicidal ideation or behaviour (with an oral antidepressant)",
+    "Anaesthesia and analgesia (IV, some European countries)"
+  ],
+  "history": [
+    {
+      "year": 1997,
+      "title": "Anaesthetic",
+      "detail": "Esketamine is marketed as an anaesthetic (Ketanest S) in Germany."
+    },
+    {
+      "year": 2000,
+      "title": "Ketamine signal",
+      "detail": "Berman and colleagues report rapid antidepressant effects of IV ketamine."
+    },
+    {
+      "year": 2006,
+      "title": "NIMH trial",
+      "detail": "Zarate and colleagues confirm rapid response in treatment-resistant depression."
+    },
+    {
+      "year": 2013,
+      "title": "Breakthrough designation",
+      "detail": "The FDA grants breakthrough therapy designation to intranasal esketamine."
+    },
+    {
+      "year": 2019,
+      "title": "FDA approval",
+      "detail": "Spravato is approved in March 2019 for treatment-resistant depression with an oral antidepressant; EU approval follows in December."
+    },
+    {
+      "year": 2020,
+      "title": "Suicidal ideation",
+      "detail": "The FDA approves use for depressive symptoms with acute suicidal ideation or behaviour."
+    },
+    {
+      "year": 2025,
+      "title": "Monotherapy",
+      "detail": "The FDA approves Spravato as monotherapy for treatment-resistant depression in January 2025."
+    }
+  ],
+  "pk": {
+    "half_life": "7–12 hours (terminal)",
+    "bioavailability": "About 48% intranasal",
+    "metabolism": "Hepatic CYP2B6 and CYP3A4 to noresketamine",
+    "excretion": "Mainly renal as metabolites"
+  },
+  "safety": {
+    "common": [
+      "Dissociation",
+      "Dizziness",
+      "Nausea",
+      "Sedation",
+      "Vertigo",
+      "Increased blood pressure"
+    ],
+    "serious": [
+      "Respiratory depression",
+      "Abuse and misuse",
+      "Severe sedation",
+      "Suicidal thoughts in young people",
+      "Bladder toxicity (with misuse)"
+    ],
+    "boxed_warning": "Risks of sedation, dissociation, respiratory depression, abuse and misuse; available only through a restricted REMS programme; suicidal thoughts and behaviours."
+  },
+  "facts": [
+    "Spravato was the first antidepressant with a novel mechanism approved by the FDA in decades.",
+    "Patients may not drive until the next day after a dose."
+  ],
+  "related": [
+    "ketamine",
+    "zuranolone",
+    "sertraline",
+    "lithium"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Esketamine",
+      "url": "https://en.wikipedia.org/wiki/Esketamine"
+    },
+    {
+      "title": "DailyMed: spravato labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=spravato"
+    },
+    {
+      "title": "EMA: Spravato EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/spravato"
+    }
+  ],
+  "stage": "written"
 }

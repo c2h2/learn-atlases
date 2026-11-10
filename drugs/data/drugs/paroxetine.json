@@ -1,36 +1,157 @@
 {
   "slug": "paroxetine",
   "name": "Paroxetine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BRL-29060",
+    "FG-7051",
+    "Paroxetine hydrochloride",
+    "Paroxetine mesylate"
+  ],
+  "brands": [
+    "Paxil",
+    "Seroxat",
+    "Paxil CR",
+    "Pexeva",
+    "Brisdelle"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Selective serotonin reuptake inhibitor (SSRI)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets, controlled-release tablets, suspension; low-dose capsule for vasomotor symptoms.",
+  "targets": [
+    "SLC6A4 (serotonin transporter)"
+  ],
+  "origin": "synthetic",
+  "originator": "Ferrosan (Denmark), developed with Beecham",
+  "owner": "generic (many); GSK and Apotex (Paxil, by region)",
+  "first_approval": {
+    "year": 1991,
+    "agency": "MHRA",
+    "country": "United Kingdom",
+    "brand": "Seroxat"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Ferrosan, Denmark",
+    "note": "Synthesised in the 1970s at Ferrosan and licensed to Beecham (later SmithKline Beecham/GSK)."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Potent SSRI with anticholinergic effects and a marked discontinuation syndrome",
+  "summary": "Paroxetine is a potent SSRI used for depression and a range of anxiety disorders. It is notable among SSRIs for its anticholinergic effects, strong CYP2D6 inhibition, short half-life with pronounced withdrawal symptoms, and controversies over its paediatric trials.",
+  "mechanism": [
+    "Paroxetine is the most potent inhibitor of the serotonin transporter among the SSRIs, blocking serotonin reuptake into presynaptic neurons. It also has measurable affinity for muscarinic acetylcholine receptors and inhibits noradrenaline reuptake at higher doses.",
+    "It is a mechanism-based inhibitor of CYP2D6, which inhibits its own metabolism (non-linear kinetics) and raises levels of many co-administered drugs such as tamoxifen's activation pathway, codeine conversion and tricyclics."
+  ],
+  "uses": [
+    "Major depressive disorder",
+    "Obsessive-compulsive disorder",
+    "Panic disorder",
+    "Social anxiety disorder",
+    "Generalised anxiety disorder",
+    "Post-traumatic stress disorder",
+    "Moderate-to-severe vasomotor symptoms of menopause (7.5 mg, Brisdelle)"
+  ],
+  "history": [
+    {
+      "year": 1975,
+      "title": "Development",
+      "detail": "Paroxetine is developed at Ferrosan in Denmark in the 1970s and licensed to Beecham."
+    },
+    {
+      "year": 1991,
+      "title": "UK launch",
+      "detail": "Paroxetine is launched in the UK as Seroxat."
+    },
+    {
+      "year": 1992,
+      "title": "FDA approval",
+      "detail": "The FDA approves Paxil for depression in December 1992."
+    },
+    {
+      "year": 2001,
+      "title": "Study 329",
+      "detail": "A GSK-sponsored trial of paroxetine in adolescent depression is published, later criticised for its reporting."
+    },
+    {
+      "year": 2003,
+      "title": "UK paediatric warning",
+      "detail": "UK regulators advise against use in under-18s for depression after review of suicidality data."
+    },
+    {
+      "year": 2005,
+      "title": "Pregnancy warning",
+      "detail": "The FDA warns of a possible increased risk of congenital cardiac malformations with first-trimester exposure."
+    },
+    {
+      "year": 2012,
+      "title": "GSK settlement",
+      "detail": "GSK pleads guilty and pays $3 billion in a US settlement that includes unlawful promotion of Paxil for paediatric use."
+    },
+    {
+      "year": 2013,
+      "title": "Brisdelle",
+      "detail": "Low-dose paroxetine mesylate becomes the first non-hormonal treatment approved for menopausal hot flushes."
+    },
+    {
+      "year": 2015,
+      "title": "Study 329 reanalysis",
+      "detail": "A BMJ restoration reanalysis concludes paroxetine was neither effective nor safe in adolescents in that trial."
+    }
+  ],
+  "pk": {
+    "half_life": "About 21 hours (non-linear)",
+    "bioavailability": "Well absorbed; extensive first-pass metabolism",
+    "metabolism": "Hepatic CYP2D6 (saturable) to inactive metabolites",
+    "excretion": "About 64% in urine, 36% in faeces"
+  },
+  "safety": {
+    "common": [
+      "Nausea",
+      "Somnolence",
+      "Sweating",
+      "Sexual dysfunction",
+      "Weight gain",
+      "Dry mouth"
+    ],
+    "serious": [
+      "Discontinuation syndrome",
+      "Serotonin syndrome",
+      "Suicidal thoughts in young people",
+      "Hyponatraemia",
+      "Bleeding risk",
+      "Possible teratogenicity (cardiac)"
+    ],
+    "boxed_warning": "Increased risk of suicidal thoughts and behaviours in children, adolescents and young adults (under 25) taking antidepressants; monitor for clinical worsening."
+  },
+  "facts": [
+    "Paroxetine is one of the strongest clinical inhibitors of CYP2D6.",
+    "Study 329 became a landmark case in debates about selective reporting of clinical trials."
+  ],
+  "related": [
+    "fluoxetine",
+    "sertraline",
+    "citalopram",
+    "escitalopram"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Paroxetine",
+      "url": "https://en.wikipedia.org/wiki/Paroxetine"
+    },
+    {
+      "title": "DailyMed: paroxetine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=paroxetine"
+    },
+    {
+      "title": "Wikipedia: Study 329",
+      "url": "https://en.wikipedia.org/wiki/Study_329"
+    }
+  ],
+  "stage": "written"
 }

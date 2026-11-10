@@ -1,36 +1,156 @@
 {
   "slug": "fluoxetine",
   "name": "Fluoxetine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "LY110140",
+    "Fluoxetine hydrochloride"
+  ],
+  "brands": [
+    "Prozac",
+    "Sarafem",
+    "Prozac Weekly",
+    "Symbyax (with olanzapine)"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Selective serotonin reuptake inhibitor (SSRI)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral capsules, tablets or solution once daily; a once-weekly delayed-release capsule exists.",
+  "targets": [
+    "SLC6A4 (serotonin transporter)"
+  ],
+  "origin": "synthetic",
+  "originator": "Eli Lilly and Company",
+  "owner": "generic (many); Eli Lilly (Prozac)",
+  "first_approval": {
+    "year": 1987,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Prozac"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1972,
+    "by": "David T. Wong, Bryan Molloy and Ray Fuller (Eli Lilly)",
+    "note": "Identified from a series of phenoxyphenylpropylamines derived from diphenhydramine, screened for selective inhibition of serotonin uptake in rat brain synaptosomes."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "The first blockbuster SSRI, whose long half-life sets it apart from its class",
+  "summary": "Fluoxetine is a selective serotonin reuptake inhibitor used for depression, obsessive-compulsive disorder, bulimia nervosa and panic disorder. Launched by Eli Lilly as Prozac in 1988, it reshaped the treatment of depression and became a cultural phenomenon. Its active metabolite norfluoxetine gives it a very long elimination half-life.",
+  "mechanism": [
+    "Fluoxetine binds the presynaptic serotonin transporter (SERT) and blocks reuptake of serotonin from the synaptic cleft, raising extracellular serotonin. Its affinity for noradrenaline and dopamine transporters and for muscarinic, histaminergic and adrenergic receptors is low, which gives it fewer anticholinergic and cardiovascular effects than tricyclic antidepressants.",
+    "Reuptake blockade is immediate, but the antidepressant effect develops over weeks, which is attributed to downstream adaptations such as desensitisation of 5-HT1A autoreceptors and changes in neuroplasticity. Fluoxetine also has weak 5-HT2C antagonist activity, which may contribute to its activating profile."
+  ],
+  "uses": [
+    "Major depressive disorder (adults and children aged 8 and over)",
+    "Obsessive-compulsive disorder",
+    "Bulimia nervosa",
+    "Panic disorder",
+    "Premenstrual dysphoric disorder (as Sarafem)",
+    "Bipolar depression and treatment-resistant depression (with olanzapine)"
+  ],
+  "history": [
+    {
+      "year": 1972,
+      "title": "Discovery",
+      "detail": "Lilly scientists identify LY110140 as a selective serotonin uptake inhibitor; it is described in the literature in 1974."
+    },
+    {
+      "year": 1986,
+      "title": "First approval",
+      "detail": "Fluoxetine is first approved in Belgium."
+    },
+    {
+      "year": 1987,
+      "title": "FDA approval",
+      "detail": "The FDA approves Prozac for depression in December 1987; it launches in the US in January 1988."
+    },
+    {
+      "year": 1993,
+      "title": "Listening to Prozac",
+      "detail": "Peter Kramer's bestseller popularises debate about 'cosmetic psychopharmacology'."
+    },
+    {
+      "year": 2000,
+      "title": "Sarafem",
+      "detail": "Fluoxetine is approved for premenstrual dysphoric disorder under the Sarafem brand."
+    },
+    {
+      "year": 2001,
+      "title": "Generics",
+      "detail": "US market exclusivity ends in August 2001 and generic fluoxetine launches."
+    },
+    {
+      "year": 2003,
+      "title": "Paediatric depression",
+      "detail": "Fluoxetine becomes the first SSRI approved by the FDA for depression in children and adolescents."
+    },
+    {
+      "year": 2003,
+      "title": "Symbyax",
+      "detail": "An olanzapine/fluoxetine combination is approved for bipolar depression."
+    },
+    {
+      "year": 2004,
+      "title": "Suicidality warning",
+      "detail": "The FDA adds a class-wide boxed warning on suicidality in young people to all antidepressants; it is extended to young adults in 2007."
+    }
+  ],
+  "pk": {
+    "half_life": "1–3 days after a single dose, 4–6 days with chronic use; norfluoxetine 4–16 days",
+    "bioavailability": "Well absorbed (~70% or more)",
+    "metabolism": "Hepatic, CYP2D6 (and others) to active norfluoxetine; potent CYP2D6 inhibitor",
+    "excretion": "Mainly renal as metabolites"
+  },
+  "safety": {
+    "common": [
+      "Nausea",
+      "Insomnia",
+      "Anxiety and nervousness",
+      "Headache",
+      "Sexual dysfunction",
+      "Diarrhoea"
+    ],
+    "serious": [
+      "Serotonin syndrome (especially with MAOIs)",
+      "Suicidal thoughts in young people",
+      "Hyponatraemia",
+      "Bleeding risk with anticoagulants or NSAIDs",
+      "Mania in bipolar disorder",
+      "QT prolongation"
+    ],
+    "boxed_warning": "Increased risk of suicidal thoughts and behaviours in children, adolescents and young adults (under 25) taking antidepressants; monitor for clinical worsening."
+  },
+  "facts": [
+    "Its long half-life means a washout of at least 5 weeks is needed before starting an MAOI.",
+    "Prozac was one of the most widely prescribed drugs in the world in the 1990s.",
+    "The brand name Prozac was created by a branding company and has no chemical meaning."
+  ],
+  "related": [
+    "sertraline",
+    "paroxetine",
+    "citalopram",
+    "escitalopram",
+    "olanzapine",
+    "phenelzine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Fluoxetine",
+      "url": "https://en.wikipedia.org/wiki/Fluoxetine"
+    },
+    {
+      "title": "DailyMed: fluoxetine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=fluoxetine"
+    },
+    {
+      "title": "PubMed: Wong DT et al. The discovery of fluoxetine hydrochloride (Prozac). Nat Rev Drug Discov 2005",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/?term=discovery+of+fluoxetine+hydrochloride+Prozac+Wong"
+    }
+  ],
+  "stage": "written"
 }

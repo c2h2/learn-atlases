@@ -1,36 +1,124 @@
 {
   "slug": "lurasidone",
   "name": "Lurasidone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "SM-13496",
+    "Lurasidone hydrochloride"
+  ],
+  "brands": [
+    "Latuda"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Atypical (second-generation) antipsychotic; benzisothiazole",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets once daily with food (at least 350 kcal).",
+  "targets": [
+    "DRD2",
+    "HTR2A",
+    "HTR7 (antagonist)",
+    "HTR1A (partial agonist)",
+    "ADRA2C"
+  ],
+  "origin": "synthetic",
+  "originator": "Dainippon Sumitomo Pharma (now Sumitomo Pharma)",
+  "owner": "generic (many); Sumitomo Pharma (Latuda)",
+  "first_approval": {
+    "year": 2010,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Latuda"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Dainippon Sumitomo Pharma (Japan)",
+    "note": "Developed in Japan as a D2/5-HT2A antagonist with potent 5-HT7 antagonism."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Low-metabolic-risk antipsychotic approved for schizophrenia and bipolar depression",
+  "summary": "Lurasidone is a second-generation antipsychotic approved for schizophrenia and for depressive episodes of bipolar I disorder, alone or with lithium or valproate. It has a favourable metabolic profile but must be taken with food and is sensitive to strong CYP3A4 interactions.",
+  "mechanism": [
+    "Lurasidone antagonises D2 and 5-HT2A receptors and has very high affinity for 5-HT7 receptors, where antagonism has been linked to antidepressant and pro-cognitive effects in animal models. It is also a 5-HT1A partial agonist.",
+    "It has negligible affinity for histamine H1 and muscarinic receptors, which explains its low sedation, weight gain and anticholinergic burden."
+  ],
+  "uses": [
+    "Schizophrenia (adults and adolescents 13–17)",
+    "Depressive episodes of bipolar I disorder (monotherapy in ages 10 and over; adjunct to lithium or valproate in adults)"
+  ],
+  "history": [
+    {
+      "year": 2010,
+      "title": "FDA approval",
+      "detail": "Latuda is approved for schizophrenia in October 2010."
+    },
+    {
+      "year": 2013,
+      "title": "Bipolar depression",
+      "detail": "Lurasidone is approved for bipolar depression as monotherapy and adjunct."
+    },
+    {
+      "year": 2014,
+      "title": "EU approval",
+      "detail": "Latuda is approved in the EU for schizophrenia."
+    },
+    {
+      "year": 2018,
+      "title": "Paediatric bipolar depression",
+      "detail": "Approval is extended to children and adolescents aged 10–17 with bipolar depression."
+    },
+    {
+      "year": 2023,
+      "title": "Generics",
+      "detail": "Generic lurasidone launches in the US in February 2023."
+    }
+  ],
+  "pk": {
+    "half_life": "About 18 hours",
+    "bioavailability": "9–19% (doubled with food)",
+    "metabolism": "Hepatic CYP3A4",
+    "excretion": "Faeces (~80%) and urine"
+  },
+  "safety": {
+    "common": [
+      "Akathisia",
+      "Somnolence",
+      "Nausea",
+      "Parkinsonism",
+      "Restlessness"
+    ],
+    "serious": [
+      "Neuroleptic malignant syndrome",
+      "Tardive dyskinesia",
+      "Suicidal thoughts in young people",
+      "Hyperprolactinaemia",
+      "Seizures"
+    ],
+    "boxed_warning": "Increased mortality in elderly patients with dementia-related psychosis; not approved for this use. Suicidal thoughts and behaviours with antidepressant use in young people (where approved for depression)."
+  },
+  "facts": [
+    "Lurasidone is contraindicated with strong CYP3A4 inhibitors (such as ketoconazole) or inducers (such as rifampicin)."
+  ],
+  "related": [
+    "quetiapine",
+    "ziprasidone",
+    "aripiprazole",
+    "lithium",
+    "valproate"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Lurasidone",
+      "url": "https://en.wikipedia.org/wiki/Lurasidone"
+    },
+    {
+      "title": "DailyMed: lurasidone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=lurasidone"
+    }
+  ],
+  "stage": "written"
 }

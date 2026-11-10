@@ -1,36 +1,143 @@
 {
   "slug": "naltrexone",
   "name": "Naltrexone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "EN-1639A",
+    "Naltrexone hydrochloride"
+  ],
+  "brands": [
+    "ReVia",
+    "Vivitrol",
+    "Adepend",
+    "Contrave/Mysimba (with bupropion)"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Opioid receptor antagonist",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "im"
+  ],
+  "route_note": "Oral tablets daily; extended-release IM microsphere injection every 4 weeks.",
+  "targets": [
+    "OPRM1 (mu-opioid receptor, antagonist)",
+    "OPRK1",
+    "OPRD1"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Endo Laboratories",
+  "owner": "generic (many); Alkermes (Vivitrol)",
+  "first_approval": {
+    "year": 1984,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Trexan"
+  },
+  "discovery": {
+    "year": 1963,
+    "by": "Endo Laboratories",
+    "note": "Synthesised from thebaine/oxymorphone as a longer-acting, orally active successor to naloxone; development was later supported by the US National Institute on Drug Abuse."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Long-acting opioid antagonist for alcohol and opioid use disorders",
+  "summary": "Naltrexone is a long-acting opioid receptor antagonist used to support abstinence in opioid use disorder after detoxification and to reduce heavy drinking in alcohol use disorder. It is available as a daily tablet and a monthly injection, and in combination with bupropion for weight management.",
+  "mechanism": [
+    "Naltrexone competitively blocks mu-opioid receptors (and, to a lesser extent, kappa and delta receptors), preventing the euphoric and respiratory effects of opioids taken afterwards. Because it can precipitate acute withdrawal, patients must be opioid-free before starting.",
+    "In alcohol use disorder, blocking endogenous opioid signalling is thought to reduce alcohol-induced dopamine release in the mesolimbic reward pathway, diminishing the rewarding effects of drinking and craving."
+  ],
+  "uses": [
+    "Alcohol use disorder",
+    "Prevention of relapse to opioid dependence after detoxification",
+    "Chronic weight management (with bupropion)"
+  ],
+  "history": [
+    {
+      "year": 1963,
+      "title": "Synthesis",
+      "detail": "Endo Laboratories synthesises naltrexone."
+    },
+    {
+      "year": 1984,
+      "title": "FDA approval",
+      "detail": "Naltrexone is approved for opioid dependence (Trexan, DuPont)."
+    },
+    {
+      "year": 1992,
+      "title": "Alcohol trials",
+      "detail": "Volpicelli and O'Malley publish trials showing naltrexone reduces relapse in alcohol dependence."
+    },
+    {
+      "year": 1994,
+      "title": "Alcohol indication",
+      "detail": "The FDA approves naltrexone (ReVia) for alcohol dependence."
+    },
+    {
+      "year": 2006,
+      "title": "Vivitrol",
+      "detail": "Monthly extended-release injectable naltrexone is approved for alcohol dependence."
+    },
+    {
+      "year": 2010,
+      "title": "Opioid indication",
+      "detail": "Vivitrol is approved for prevention of relapse to opioid dependence."
+    },
+    {
+      "year": 2013,
+      "title": "Boxed warning removed",
+      "detail": "The FDA removes the hepatotoxicity boxed warning from naltrexone labelling."
+    },
+    {
+      "year": 2014,
+      "title": "Contrave",
+      "detail": "Naltrexone–bupropion is approved for chronic weight management."
+    }
+  ],
+  "pk": {
+    "half_life": "About 4 hours; 6-beta-naltrexol about 13 hours",
+    "bioavailability": "5–40% (extensive first-pass)",
+    "metabolism": "Hepatic dihydrodiol dehydrogenase to active 6-beta-naltrexol (not CYP)",
+    "excretion": "Mainly renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nausea",
+      "Headache",
+      "Dizziness",
+      "Fatigue",
+      "Injection-site reactions (IM)"
+    ],
+    "serious": [
+      "Precipitated opioid withdrawal",
+      "Opioid overdose after stopping (loss of tolerance)",
+      "Hepatotoxicity at high doses",
+      "Injection-site necrosis",
+      "Depression and suicidality"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "The X:BOT trial (2017) found that once started, extended-release naltrexone and buprenorphine–naloxone had similar effectiveness for opioid use disorder."
+  ],
+  "related": [
+    "naloxone",
+    "buprenorphine",
+    "methadone",
+    "acamprosate",
+    "disulfiram",
+    "bupropion"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Naltrexone",
+      "url": "https://en.wikipedia.org/wiki/Naltrexone"
+    },
+    {
+      "title": "DailyMed: naltrexone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=naltrexone"
+    }
+  ],
+  "stage": "written"
 }

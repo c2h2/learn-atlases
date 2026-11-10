@@ -1,36 +1,137 @@
 {
   "slug": "xanomeline-trospium",
-  "name": "Xanomeline trospium",
-  "aliases": [],
-  "brands": [],
+  "name": "Xanomeline and trospium chloride",
+  "aliases": [
+    "KarXT",
+    "Xanomeline-trospium"
+  ],
+  "brands": [
+    "Cobenfy"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Muscarinic M1/M4 receptor agonist combined with a peripheral muscarinic antagonist",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral capsules twice daily, at least 1 hour before or 2 hours after a meal.",
+  "targets": [
+    "CHRM1 (agonist)",
+    "CHRM4 (agonist)",
+    "Peripheral muscarinic receptors (trospium, antagonist)"
+  ],
+  "origin": "synthetic",
+  "originator": "Karuna Therapeutics (xanomeline originally from Eli Lilly and Novo Nordisk)",
+  "owner": "Bristol Myers Squibb",
+  "first_approval": {
+    "year": 2024,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Cobenfy"
+  },
+  "discovery": {
+    "year": 1990,
+    "by": "Novo Nordisk and Eli Lilly (xanomeline); Karuna Therapeutics (combination)",
+    "note": "Xanomeline was developed for Alzheimer's disease in the 1990s; antipsychotic-like effects were seen but cholinergic side effects halted it. Karuna paired it with trospium, which does not cross the blood–brain barrier, to block peripheral effects."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First schizophrenia drug in decades that does not act by blocking dopamine receptors",
+  "summary": "Cobenfy combines xanomeline, a muscarinic M1/M4 agonist, with trospium chloride, a peripherally restricted muscarinic antagonist. Approved in 2024 for schizophrenia, it is the first antipsychotic in decades with a mechanism not based on dopamine D2 receptor blockade.",
+  "mechanism": [
+    "Xanomeline stimulates M4 receptors in the striatum and midbrain, which indirectly reduces dopamine release in pathways implicated in psychosis, and M1 receptors in the cortex, which may affect cognition and glutamate signalling.",
+    "Trospium is a quaternary ammonium muscarinic antagonist that barely enters the brain; it counteracts xanomeline's peripheral cholinergic effects such as nausea, vomiting, sweating and salivation. The combination avoids the motor and prolactin effects of D2 blockade."
+  ],
+  "uses": [
+    "Schizophrenia in adults"
+  ],
+  "history": [
+    {
+      "year": 1997,
+      "title": "Alzheimer's trial",
+      "detail": "A trial of xanomeline in Alzheimer's disease reports reduced psychotic symptoms, but cholinergic side effects limit tolerability."
+    },
+    {
+      "year": 2008,
+      "title": "Schizophrenia pilot",
+      "detail": "A small study by Shekhar and colleagues shows antipsychotic effects in schizophrenia."
+    },
+    {
+      "year": 2009,
+      "title": "Karuna founded",
+      "detail": "Karuna Therapeutics is founded to combine xanomeline with trospium."
+    },
+    {
+      "year": 2021,
+      "title": "EMERGENT-1",
+      "detail": "The phase 2 EMERGENT-1 trial is published in the New England Journal of Medicine."
+    },
+    {
+      "year": 2024,
+      "title": "BMS acquisition",
+      "detail": "Bristol Myers Squibb completes its roughly $14 billion acquisition of Karuna in March 2024."
+    },
+    {
+      "year": 2024,
+      "title": "FDA approval",
+      "detail": "The FDA approves Cobenfy for schizophrenia in September 2024."
+    },
+    {
+      "year": 2025,
+      "title": "ARISE trial",
+      "detail": "The adjunctive ARISE trial fails to meet its primary endpoint."
+    }
+  ],
+  "pk": {
+    "half_life": "Xanomeline about 5 hours; trospium about 6 hours",
+    "bioavailability": "Reduced by food (particularly trospium)",
+    "metabolism": "Xanomeline: hepatic CYP2D6 and CYP2B6; trospium: ester hydrolysis and conjugation",
+    "excretion": "Xanomeline renal as metabolites; trospium largely renal unchanged"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nausea",
+      "Vomiting",
+      "Constipation",
+      "Dyspepsia",
+      "Abdominal pain",
+      "Hypertension",
+      "Tachycardia"
+    ],
+    "serious": [
+      "Urinary retention",
+      "Angioedema",
+      "Increased heart rate",
+      "Angle-closure glaucoma",
+      "Hepatic impairment-related exposure increase"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "It carries no boxed warning, unlike all dopamine-blocking antipsychotics.",
+    "It is contraindicated in urinary retention, moderate or severe hepatic impairment, gastric retention and untreated narrow-angle glaucoma."
+  ],
+  "related": [
+    "clozapine",
+    "olanzapine",
+    "risperidone",
+    "aripiprazole"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Xanomeline/trospium chloride",
+      "url": "https://en.wikipedia.org/wiki/Xanomeline/trospium_chloride"
+    },
+    {
+      "title": "DailyMed: cobenfy labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=cobenfy"
+    },
+    {
+      "title": "Wikipedia: Xanomeline",
+      "url": "https://en.wikipedia.org/wiki/Xanomeline"
+    }
+  ],
+  "stage": "written"
 }

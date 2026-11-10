@@ -1,36 +1,133 @@
 {
   "slug": "ziprasidone",
   "name": "Ziprasidone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "CP-88059",
+    "Ziprasidone hydrochloride",
+    "Ziprasidone mesylate"
+  ],
+  "brands": [
+    "Geodon",
+    "Zeldox"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Atypical (second-generation) antipsychotic; benzisothiazolyl piperazine",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "im"
+  ],
+  "route_note": "Oral capsules twice daily with food; IM injection for acute agitation.",
+  "targets": [
+    "DRD2",
+    "HTR2A",
+    "HTR1A (agonist)",
+    "HTR2C",
+    "SLC6A4/SLC6A2 (weak)"
+  ],
+  "origin": "synthetic",
+  "originator": "Pfizer",
+  "owner": "generic (many); Pfizer (Geodon)",
+  "first_approval": {
+    "year": 2001,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Geodon"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Pfizer",
+    "note": "Developed in the 1980s–90s as a serotonin–dopamine antagonist with additional 5-HT1A agonism."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Weight-neutral atypical antipsychotic that must be taken with food",
+  "summary": "Ziprasidone is a second-generation antipsychotic used for schizophrenia and bipolar mania. It causes little weight gain or metabolic change, but prolongs the QT interval more than many alternatives and needs to be taken with a meal for adequate absorption.",
+  "mechanism": [
+    "Ziprasidone antagonises D2 and 5-HT2A receptors, with a high 5-HT2A:D2 affinity ratio, and is a 5-HT1A agonist and 5-HT2C/5-HT1D antagonist. It also moderately inhibits serotonin and noradrenaline reuptake.",
+    "Its low affinity for histamine H1 and muscarinic receptors explains its relatively low weight gain and anticholinergic burden."
+  ],
+  "uses": [
+    "Schizophrenia",
+    "Acute manic or mixed episodes of bipolar I disorder",
+    "Maintenance of bipolar I disorder (adjunct to lithium or valproate)",
+    "Acute agitation in schizophrenia (IM)"
+  ],
+  "history": [
+    {
+      "year": 1998,
+      "title": "Approval delayed",
+      "detail": "An FDA advisory process requires further QT studies before approval."
+    },
+    {
+      "year": 2001,
+      "title": "FDA approval",
+      "detail": "Geodon is approved for schizophrenia in February 2001."
+    },
+    {
+      "year": 2002,
+      "title": "IM formulation",
+      "detail": "Ziprasidone becomes the first atypical antipsychotic available as an IM injection for agitation in the US."
+    },
+    {
+      "year": 2004,
+      "title": "Bipolar mania",
+      "detail": "Ziprasidone is approved for acute mania."
+    },
+    {
+      "year": 2012,
+      "title": "Generics",
+      "detail": "Generic ziprasidone launches in the US."
+    },
+    {
+      "year": 2014,
+      "title": "DRESS warning",
+      "detail": "The FDA warns of drug reaction with eosinophilia and systemic symptoms."
+    }
+  ],
+  "pk": {
+    "half_life": "About 7 hours oral",
+    "bioavailability": "About 60% with food (roughly half without food)",
+    "metabolism": "Hepatic, mainly aldehyde oxidase; minor CYP3A4",
+    "excretion": "Faeces (~66%) and urine"
+  },
+  "safety": {
+    "common": [
+      "Somnolence",
+      "Nausea",
+      "Dizziness",
+      "Extrapyramidal symptoms",
+      "Akathisia"
+    ],
+    "serious": [
+      "QT prolongation",
+      "DRESS",
+      "Neuroleptic malignant syndrome",
+      "Tardive dyskinesia",
+      "Seizures"
+    ],
+    "boxed_warning": "Increased mortality in elderly patients with dementia-related psychosis; not approved for this use."
+  },
+  "facts": [
+    "Ziprasidone is contraindicated with other QT-prolonging drugs and in recent myocardial infarction or uncompensated heart failure."
+  ],
+  "related": [
+    "risperidone",
+    "lurasidone",
+    "aripiprazole",
+    "olanzapine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Ziprasidone",
+      "url": "https://en.wikipedia.org/wiki/Ziprasidone"
+    },
+    {
+      "title": "DailyMed: ziprasidone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ziprasidone"
+    }
+  ],
+  "stage": "written"
 }

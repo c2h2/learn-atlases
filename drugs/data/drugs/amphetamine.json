@@ -1,36 +1,159 @@
 {
   "slug": "amphetamine",
   "name": "Amphetamine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Alpha-methylphenethylamine",
+    "Dextroamphetamine (dexamfetamine)",
+    "Mixed amphetamine salts"
+  ],
+  "brands": [
+    "Adderall",
+    "Adderall XR",
+    "Dexedrine",
+    "Evekeo",
+    "Mydayis",
+    "Adzenys"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Central nervous system stimulant; monoamine releasing agent (phenethylamine)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "transdermal"
+  ],
+  "route_note": "Oral tablets, extended-release capsules, ODT or suspension; a dextroamphetamine transdermal system is approved in the US.",
+  "targets": [
+    "SLC6A3 (dopamine transporter)",
+    "SLC6A2 (noradrenaline transporter)",
+    "SLC18A2 (VMAT2)",
+    "TAAR1 (agonist)"
+  ],
+  "origin": "synthetic",
+  "originator": "Lazăr Edeleanu (first synthesis); Smith, Kline & French (first medical product)",
+  "owner": "generic (many); Takeda (Adderall XR)",
+  "first_approval": {
+    "year": 1937,
+    "agency": "AMA Council on Pharmacy and Chemistry",
+    "country": "United States",
+    "brand": "Benzedrine"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1887,
+    "by": "Lazăr Edeleanu (University of Berlin)",
+    "note": "First synthesised as phenylisopropylamine; Gordon Alles independently resynthesised it in 1927 and characterised its stimulant effects."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription; controlled (US Schedule II)",
+  "tagline": "Century-old stimulant that releases dopamine and noradrenaline; used for ADHD, narcolepsy",
+  "summary": "Amphetamine is a CNS stimulant that releases dopamine and noradrenaline from nerve terminals. First marketed as the Benzedrine inhaler in the 1930s, it is now used, mainly as dextroamphetamine or mixed salts such as Adderall, for ADHD and narcolepsy. It is a Schedule II controlled substance because of its potential for misuse and addiction.",
+  "mechanism": [
+    "Amphetamine enters monoamine neurons via the dopamine and noradrenaline transporters, disrupts vesicular storage by acting on VMAT2, and activates the intracellular receptor TAAR1. These actions cause the transporters to run in reverse, releasing dopamine and noradrenaline into the synapse, and also inhibit reuptake.",
+    "The dextro-enantiomer is more potent centrally, while the levo-enantiomer has relatively more peripheral noradrenergic activity. Increased catecholamine signalling in prefrontal and striatal circuits improves attention and wakefulness."
+  ],
+  "uses": [
+    "Attention-deficit/hyperactivity disorder",
+    "Narcolepsy",
+    "Exogenous obesity (short-term, some amphetamine products in the US)"
+  ],
+  "history": [
+    {
+      "year": 1887,
+      "title": "Synthesis",
+      "detail": "Lazăr Edeleanu first synthesises amphetamine in Berlin."
+    },
+    {
+      "year": 1927,
+      "title": "Alles",
+      "detail": "Gordon Alles resynthesises it and describes its sympathomimetic and stimulant effects."
+    },
+    {
+      "year": 1933,
+      "title": "Benzedrine inhaler",
+      "detail": "Smith, Kline & French markets an over-the-counter amphetamine inhaler for nasal congestion."
+    },
+    {
+      "year": 1937,
+      "title": "Medical uses",
+      "detail": "Amphetamine sulfate tablets are accepted for narcolepsy; Charles Bradley reports calming effects in children with behavioural problems."
+    },
+    {
+      "year": 1959,
+      "title": "Inhaler restricted",
+      "detail": "The FDA makes Benzedrine inhalers prescription-only amid widespread misuse."
+    },
+    {
+      "year": 1971,
+      "title": "Schedule II",
+      "detail": "Amphetamines are placed in Schedule II in the US and controlled internationally under the 1971 Convention on Psychotropic Substances."
+    },
+    {
+      "year": 1996,
+      "title": "Adderall",
+      "detail": "Mixed amphetamine salts are marketed as Adderall for ADHD."
+    },
+    {
+      "year": 2001,
+      "title": "Adderall XR",
+      "detail": "Once-daily extended-release mixed salts are approved."
+    },
+    {
+      "year": 2022,
+      "title": "Shortage",
+      "detail": "The FDA announces a shortage of Adderall immediate-release tablets, which extends into 2023–2024."
+    }
+  ],
+  "pk": {
+    "half_life": "9–14 hours (shorter with acidic urine)",
+    "bioavailability": "Over 75%",
+    "metabolism": "Hepatic CYP2D6 hydroxylation and oxidative deamination",
+    "excretion": "Renal; unchanged fraction depends on urinary pH"
+  },
+  "safety": {
+    "common": [
+      "Decreased appetite and weight loss",
+      "Insomnia",
+      "Dry mouth",
+      "Headache",
+      "Irritability",
+      "Increased heart rate"
+    ],
+    "serious": [
+      "Abuse, misuse and addiction",
+      "Sudden death and serious cardiovascular events in people with heart disease",
+      "Hypertension and tachycardia",
+      "Psychosis or mania",
+      "Growth suppression in children",
+      "Peripheral vasculopathy including Raynaud's phenomenon",
+      "Serotonin syndrome with serotonergic drugs"
+    ],
+    "boxed_warning": "High potential for abuse and misuse, which can lead to substance use disorder, including addiction; misuse and abuse can result in overdose and death. Assess risk before prescribing and monitor throughout treatment."
+  },
+  "facts": [
+    "Urinary acidification shortens and alkalinisation prolongs amphetamine's half-life.",
+    "Amphetamine was widely issued to military personnel during the Second World War."
+  ],
+  "related": [
+    "lisdexamfetamine",
+    "methylphenidate",
+    "atomoxetine",
+    "modafinil",
+    "phentermine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Amphetamine",
+      "url": "https://en.wikipedia.org/wiki/Amphetamine"
+    },
+    {
+      "title": "DailyMed: amphetamine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=amphetamine"
+    },
+    {
+      "title": "Wikipedia: Adderall",
+      "url": "https://en.wikipedia.org/wiki/Adderall"
+    }
+  ],
+  "stage": "written"
 }

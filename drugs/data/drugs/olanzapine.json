@@ -1,36 +1,152 @@
 {
   "slug": "olanzapine",
   "name": "Olanzapine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "LY170053",
+    "Olanzapine pamoate"
+  ],
+  "brands": [
+    "Zyprexa",
+    "Zyprexa Zydis",
+    "Zyprexa Relprevv",
+    "Symbyax (with fluoxetine)",
+    "Lybalvi (with samidorphan)"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Atypical (second-generation) antipsychotic; thienobenzodiazepine",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "im"
+  ],
+  "route_note": "Oral tablets or orally disintegrating tablets once daily; short-acting IM for agitation; long-acting pamoate depot every 2–4 weeks.",
+  "targets": [
+    "DRD2",
+    "HTR2A",
+    "HTR2C",
+    "HRH1",
+    "CHRM1–5",
+    "ADRA1A"
+  ],
+  "origin": "synthetic",
+  "originator": "Eli Lilly and Company (Erl Wood, UK)",
+  "owner": "generic (many); Cheplapharm and Eli Lilly (Zyprexa, by region)",
+  "first_approval": {
+    "year": 1996,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Zyprexa"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1982,
+    "by": "Jiban Chakrabarti, David Tupper and colleagues (Lilly Research Centre, Erl Wood)",
+    "note": "Designed as a clozapine-like thienobenzodiazepine intended to avoid clozapine's haematological toxicity."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Clozapine-like atypical antipsychotic, effective but with marked metabolic effects",
+  "summary": "Olanzapine is a second-generation antipsychotic structurally related to clozapine, used for schizophrenia and bipolar disorder. It is among the more effective antipsychotics but causes substantial weight gain and metabolic disturbance. It is also used off-label for chemotherapy-induced nausea.",
+  "mechanism": [
+    "Olanzapine antagonises dopamine D2 and serotonin 5-HT2A receptors, with higher 5-HT2A than D2 affinity, which is associated with antipsychotic efficacy and fewer extrapyramidal effects than typical antipsychotics.",
+    "Potent antagonism of histamine H1 and 5-HT2C receptors contributes to sedation, appetite increase and weight gain; muscarinic blockade causes anticholinergic effects."
+  ],
+  "uses": [
+    "Schizophrenia",
+    "Acute mania and maintenance in bipolar I disorder",
+    "Agitation in schizophrenia or mania (IM)",
+    "Bipolar depression and treatment-resistant depression (with fluoxetine)",
+    "Chemotherapy-induced nausea and vomiting (off-label, guideline-recommended)"
+  ],
+  "history": [
+    {
+      "year": 1982,
+      "title": "Synthesis",
+      "detail": "Olanzapine is synthesised at Lilly's UK research centre."
+    },
+    {
+      "year": 1996,
+      "title": "FDA approval",
+      "detail": "The FDA approves Zyprexa for schizophrenia in September 1996."
+    },
+    {
+      "year": 2000,
+      "title": "Bipolar mania",
+      "detail": "Olanzapine is approved for acute mania."
+    },
+    {
+      "year": 2003,
+      "title": "Symbyax",
+      "detail": "Olanzapine/fluoxetine is approved for bipolar depression."
+    },
+    {
+      "year": 2005,
+      "title": "CATIE",
+      "detail": "The NIMH CATIE trial finds olanzapine had the lowest discontinuation rate but the greatest weight gain."
+    },
+    {
+      "year": 2009,
+      "title": "Relprevv and settlement",
+      "detail": "The long-acting pamoate injection is approved with a REMS for post-injection delirium sedation syndrome; Lilly pays $1.415 billion over off-label promotion."
+    },
+    {
+      "year": 2011,
+      "title": "Generics",
+      "detail": "Generic olanzapine launches in the US."
+    },
+    {
+      "year": 2021,
+      "title": "Lybalvi",
+      "detail": "The olanzapine/samidorphan combination, intended to limit weight gain, is approved."
+    }
+  ],
+  "pk": {
+    "half_life": "21–54 hours",
+    "bioavailability": "About 60% (first-pass)",
+    "metabolism": "Hepatic glucuronidation and CYP1A2 (smoking increases clearance)",
+    "excretion": "Urine (~57%) and faeces"
+  },
+  "safety": {
+    "common": [
+      "Weight gain",
+      "Sedation",
+      "Akathisia",
+      "Increased appetite",
+      "Dry mouth",
+      "Constipation",
+      "Dizziness"
+    ],
+    "serious": [
+      "Neuroleptic malignant syndrome",
+      "Tardive dyskinesia",
+      "Metabolic changes (hyperglycaemia, dyslipidaemia)",
+      "Seizures",
+      "Post-injection delirium/sedation syndrome (pamoate)",
+      "DRESS"
+    ],
+    "boxed_warning": "Increased mortality in elderly patients with dementia-related psychosis; not approved for this use."
+  },
+  "facts": [
+    "Olanzapine pamoate must be followed by 3 hours of observation after each injection because of PDSS.",
+    "In CATIE (2005), olanzapine had the longest time to discontinuation among the drugs studied."
+  ],
+  "related": [
+    "clozapine",
+    "quetiapine",
+    "risperidone",
+    "fluoxetine",
+    "aripiprazole"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Olanzapine",
+      "url": "https://en.wikipedia.org/wiki/Olanzapine"
+    },
+    {
+      "title": "DailyMed: olanzapine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=olanzapine"
+    }
+  ],
+  "stage": "written"
 }

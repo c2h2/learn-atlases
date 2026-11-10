@@ -1,36 +1,131 @@
 {
   "slug": "lisdexamfetamine",
   "name": "Lisdexamfetamine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "NRP104",
+    "SPD489",
+    "Lisdexamfetamine dimesylate"
+  ],
+  "brands": [
+    "Vyvanse",
+    "Elvanse",
+    "Tyvense"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Central nervous system stimulant; prodrug of dextroamphetamine",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral capsules or chewable tablets once daily in the morning.",
+  "targets": [
+    "SLC6A3 (dopamine transporter)",
+    "SLC6A2 (noradrenaline transporter)",
+    "SLC18A2 (VMAT2)",
+    "TAAR1"
+  ],
+  "origin": "synthetic",
+  "originator": "New River Pharmaceuticals",
+  "owner": "generic (many); Takeda (Vyvanse/Elvanse)",
+  "first_approval": {
+    "year": 2007,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Vyvanse"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "New River Pharmaceuticals (Virginia)",
+    "note": "Dextroamphetamine was covalently linked to the amino acid L-lysine to create an inactive prodrug intended to give smooth, long-lasting release and reduce misuse by injection or snorting."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription; controlled (US Schedule II)",
+  "tagline": "Lysine-linked amphetamine prodrug for ADHD and binge eating disorder",
+  "summary": "Lisdexamfetamine is an inactive prodrug in which dextroamphetamine is bonded to L-lysine. After absorption, red blood cells cleave it to release dextroamphetamine gradually, giving a long, smooth effect. It is approved for ADHD and was the first drug approved for moderate-to-severe binge eating disorder.",
+  "mechanism": [
+    "Lisdexamfetamine itself is pharmacologically inactive. Peptidases in red blood cells hydrolyse the amide bond to release L-lysine and dextroamphetamine, whose rate of formation limits the speed of onset.",
+    "The released dextroamphetamine increases synaptic dopamine and noradrenaline through transporter-mediated release, VMAT2 disruption and TAAR1 activation. Rate-limited conversion is thought to blunt euphoria and reduce misuse by non-oral routes, though it remains controlled."
+  ],
+  "uses": [
+    "Attention-deficit/hyperactivity disorder (ages 6 and over)",
+    "Moderate-to-severe binge eating disorder in adults (US)"
+  ],
+  "history": [
+    {
+      "year": 2007,
+      "title": "FDA approval",
+      "detail": "Vyvanse is approved for ADHD in children in February 2007; Shire acquires New River for about $2.6 billion."
+    },
+    {
+      "year": 2008,
+      "title": "Adults",
+      "detail": "Approval is extended to adults with ADHD."
+    },
+    {
+      "year": 2012,
+      "title": "Europe",
+      "detail": "Lisdexamfetamine is authorised as Elvanse in the UK and other European countries via a decentralised procedure (2012–2013)."
+    },
+    {
+      "year": 2015,
+      "title": "Binge eating disorder",
+      "detail": "It becomes the first drug approved by the FDA for binge eating disorder."
+    },
+    {
+      "year": 2019,
+      "title": "Takeda",
+      "detail": "Takeda acquires Shire, taking over Vyvanse."
+    },
+    {
+      "year": 2023,
+      "title": "Generics",
+      "detail": "Generic lisdexamfetamine launches in the US in August 2023."
+    }
+  ],
+  "pk": {
+    "half_life": "Prodrug under 1 hour; dextroamphetamine about 10–12 hours",
+    "bioavailability": "High (about 96% oral)",
+    "metabolism": "Hydrolysis in red blood cells to dextroamphetamine and L-lysine",
+    "excretion": "Renal, mainly as amphetamine and metabolites"
+  },
+  "safety": {
+    "common": [
+      "Decreased appetite",
+      "Insomnia",
+      "Dry mouth",
+      "Upper abdominal pain",
+      "Irritability",
+      "Weight loss"
+    ],
+    "serious": [
+      "Abuse, misuse and addiction",
+      "Sudden death and serious cardiovascular events in people with heart disease",
+      "Hypertension and tachycardia",
+      "Psychosis or mania",
+      "Growth suppression in children",
+      "Peripheral vasculopathy including Raynaud's phenomenon"
+    ],
+    "boxed_warning": "High potential for abuse and misuse, which can lead to substance use disorder, including addiction; misuse and abuse can result in overdose and death. Assess risk before prescribing and monitor throughout treatment."
+  },
+  "facts": [
+    "The prodrug design means taking it intravenously does not produce the rapid peak of dextroamphetamine."
+  ],
+  "related": [
+    "amphetamine",
+    "methylphenidate",
+    "atomoxetine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Lisdexamfetamine",
+      "url": "https://en.wikipedia.org/wiki/Lisdexamfetamine"
+    },
+    {
+      "title": "DailyMed: lisdexamfetamine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=lisdexamfetamine"
+    }
+  ],
+  "stage": "written"
 }

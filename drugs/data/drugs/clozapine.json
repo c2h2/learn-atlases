@@ -1,36 +1,147 @@
 {
   "slug": "clozapine",
   "name": "Clozapine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "HF-1854"
+  ],
+  "brands": [
+    "Clozaril",
+    "Leponex",
+    "FazaClo",
+    "Versacloz",
+    "Denzapine"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Atypical (second-generation) antipsychotic; dibenzodiazepine",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets, orally disintegrating tablets or suspension, titrated slowly with blood count monitoring.",
+  "targets": [
+    "DRD4",
+    "DRD2 (low occupancy)",
+    "HTR2A",
+    "HTR2C",
+    "HRH1",
+    "CHRM1–5",
+    "ADRA1A"
+  ],
+  "origin": "synthetic",
+  "originator": "Wander AG (Bern), later Sandoz",
+  "owner": "generic (many); HLS Therapeutics (Clozaril, US/Canada), Viatris (Leponex)",
+  "first_approval": {
+    "year": 1972,
+    "agency": "Swiss/Austrian authorities",
+    "country": "Switzerland/Austria",
+    "brand": "Leponex"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1958,
+    "by": "Wander AG (Bern)",
+    "note": "Synthesised in 1958–59 as a tricyclic dibenzodiazepine; it was unusual in having antipsychotic effects without catalepsy in animals."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription (with blood monitoring)",
+  "tagline": "Uniquely effective antipsychotic for treatment-resistant schizophrenia",
+  "summary": "Clozapine is the prototype atypical antipsychotic and the only drug with proven superiority in treatment-resistant schizophrenia; it also reduces suicidal behaviour. It was withdrawn in the 1970s after deaths from agranulocytosis and reintroduced in 1989 with mandatory blood monitoring.",
+  "mechanism": [
+    "Clozapine has relatively weak and transient dopamine D2 receptor occupancy combined with potent 5-HT2A antagonism, a profile linked to its very low risk of extrapyramidal effects and tardive dyskinesia. It also binds D4, 5-HT2C, muscarinic, histamine and adrenergic receptors.",
+    "Its metabolite N-desmethylclozapine is a muscarinic M1 partial agonist. Why clozapine works where other antipsychotics fail is not fully understood."
+  ],
+  "uses": [
+    "Treatment-resistant schizophrenia",
+    "Reducing risk of recurrent suicidal behaviour in schizophrenia or schizoaffective disorder",
+    "Psychosis in Parkinson's disease (EU)"
+  ],
+  "history": [
+    {
+      "year": 1958,
+      "title": "Synthesis",
+      "detail": "Wander AG chemists synthesise clozapine."
+    },
+    {
+      "year": 1972,
+      "title": "Launch",
+      "detail": "Clozapine is marketed in Europe as Leponex."
+    },
+    {
+      "year": 1975,
+      "title": "Finnish deaths",
+      "detail": "Agranulocytosis deaths in Finland lead to withdrawal or restriction in many countries."
+    },
+    {
+      "year": 1988,
+      "title": "Kane trial",
+      "detail": "John Kane's multicentre trial shows superiority over chlorpromazine in treatment-resistant schizophrenia."
+    },
+    {
+      "year": 1989,
+      "title": "FDA approval",
+      "detail": "Clozaril (Sandoz) is approved in the US with mandatory white blood cell monitoring."
+    },
+    {
+      "year": 2002,
+      "title": "Suicide indication",
+      "detail": "Based on the InterSePT trial, the FDA approves clozapine for reducing suicidal behaviour."
+    },
+    {
+      "year": 2015,
+      "title": "Clozapine REMS",
+      "detail": "The FDA consolidates monitoring registries into a single Clozapine REMS using absolute neutrophil count."
+    },
+    {
+      "year": 2025,
+      "title": "REMS ended",
+      "detail": "The FDA eliminates the Clozapine REMS, no longer requiring pharmacies to verify blood test results before dispensing."
+    }
+  ],
+  "pk": {
+    "half_life": "About 12 hours (range 4–66)",
+    "bioavailability": "50–60%",
+    "metabolism": "Hepatic, mainly CYP1A2 (also 2D6, 3A4); levels fall with smoking",
+    "excretion": "Urine (~50%) and faeces as metabolites"
+  },
+  "safety": {
+    "common": [
+      "Sedation",
+      "Hypersalivation",
+      "Constipation",
+      "Weight gain",
+      "Tachycardia",
+      "Orthostatic hypotension"
+    ],
+    "serious": [
+      "Severe neutropenia/agranulocytosis",
+      "Myocarditis and cardiomyopathy",
+      "Seizures",
+      "Gastrointestinal hypomotility and ileus",
+      "Metabolic syndrome and diabetes"
+    ],
+    "boxed_warning": "Severe neutropenia; orthostatic hypotension, bradycardia and syncope; seizures; myocarditis and cardiomyopathy; increased mortality in elderly patients with dementia-related psychosis."
+  },
+  "facts": [
+    "Stopping smoking can raise clozapine levels markedly because tobacco smoke induces CYP1A2.",
+    "Clozapine is the only antipsychotic approved specifically to reduce suicidal behaviour."
+  ],
+  "related": [
+    "olanzapine",
+    "quetiapine",
+    "risperidone",
+    "haloperidol",
+    "chlorpromazine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Clozapine",
+      "url": "https://en.wikipedia.org/wiki/Clozapine"
+    },
+    {
+      "title": "DailyMed: clozapine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=clozapine"
+    }
+  ],
+  "stage": "written"
 }

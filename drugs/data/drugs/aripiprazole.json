@@ -1,36 +1,154 @@
 {
   "slug": "aripiprazole",
   "name": "Aripiprazole",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "OPC-14597",
+    "Aripiprazole lauroxil"
+  ],
+  "brands": [
+    "Abilify",
+    "Abilify Maintena",
+    "Abilify Asimtufii",
+    "Abilify MyCite",
+    "Aristada"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Atypical antipsychotic; dopamine D2 partial agonist",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "im"
+  ],
+  "route_note": "Oral tablets, ODT or solution once daily; IM long-acting injections monthly or every 2 months (aripiprazole lauroxil every 1–2 months).",
+  "targets": [
+    "DRD2 (partial agonist)",
+    "DRD3",
+    "HTR1A (partial agonist)",
+    "HTR2A (antagonist)"
+  ],
+  "origin": "synthetic",
+  "originator": "Otsuka Pharmaceutical",
+  "owner": "Otsuka (Abilify); generic (many) for oral forms",
+  "first_approval": {
+    "year": 2002,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Abilify"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1988,
+    "by": "Yasuo Oshiro, Tetsuro Kikuchi and colleagues (Otsuka)",
+    "note": "Developed from a programme seeking dopamine autoreceptor agonists, yielding a quinolinone with partial D2 agonism."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "First dopamine partial agonist antipsychotic, with a low metabolic burden",
+  "summary": "Aripiprazole is a dopamine D2 partial agonist antipsychotic, discovered by Otsuka. It stabilises dopamine signalling rather than blocking it fully, and is used for schizophrenia, bipolar disorder, adjunctive treatment of depression, irritability in autism and Tourette syndrome. It became one of the best-selling drugs in the US.",
+  "mechanism": [
+    "As a partial agonist at D2 receptors, aripiprazole reduces signalling where dopamine is excessive (mesolimbic pathway) and provides some stimulation where it is deficient, acting as a 'dopamine system stabiliser'. It is also a 5-HT1A partial agonist and 5-HT2A antagonist.",
+    "This profile is associated with little prolactin elevation and relatively low metabolic risk, but akathisia is common, and the dopamine agonism is linked to impulse-control problems."
+  ],
+  "uses": [
+    "Schizophrenia (adults and adolescents)",
+    "Acute and maintenance treatment of bipolar I disorder",
+    "Adjunctive treatment of major depressive disorder",
+    "Irritability associated with autistic disorder",
+    "Tourette's disorder",
+    "Agitation in schizophrenia or bipolar mania (IM)"
+  ],
+  "history": [
+    {
+      "year": 1988,
+      "title": "Discovery",
+      "detail": "Otsuka scientists synthesise OPC-14597."
+    },
+    {
+      "year": 2002,
+      "title": "FDA approval",
+      "detail": "Abilify (Otsuka/Bristol-Myers Squibb) is approved for schizophrenia in November 2002."
+    },
+    {
+      "year": 2004,
+      "title": "Bipolar mania",
+      "detail": "Aripiprazole is approved for acute mania."
+    },
+    {
+      "year": 2007,
+      "title": "Adjunctive depression",
+      "detail": "It becomes the first antipsychotic approved as an add-on for major depression."
+    },
+    {
+      "year": 2013,
+      "title": "Abilify Maintena",
+      "detail": "The monthly long-acting injection is approved."
+    },
+    {
+      "year": 2015,
+      "title": "Generics and Aristada",
+      "detail": "Generic aripiprazole launches in the US; Alkermes' aripiprazole lauroxil is approved."
+    },
+    {
+      "year": 2016,
+      "title": "Impulse-control warning",
+      "detail": "The FDA warns of compulsive gambling, shopping, eating and sexual behaviour."
+    },
+    {
+      "year": 2017,
+      "title": "Abilify MyCite",
+      "detail": "The first drug with an ingestible sensor to track ingestion is approved."
+    },
+    {
+      "year": 2023,
+      "title": "Abilify Asimtufii",
+      "detail": "A two-monthly long-acting injection is approved."
+    }
+  ],
+  "pk": {
+    "half_life": "About 75 hours; dehydro-aripiprazole about 94 hours",
+    "bioavailability": "About 87%",
+    "metabolism": "Hepatic CYP2D6 and CYP3A4",
+    "excretion": "Faeces (~55%) and urine (~25%)"
+  },
+  "safety": {
+    "common": [
+      "Akathisia",
+      "Nausea",
+      "Headache",
+      "Insomnia",
+      "Restlessness",
+      "Anxiety"
+    ],
+    "serious": [
+      "Neuroleptic malignant syndrome",
+      "Tardive dyskinesia",
+      "Metabolic changes (hyperglycaemia, dyslipidaemia)",
+      "Seizures",
+      "Pathological gambling and impulse-control disorders",
+      "Suicidal thoughts in young people"
+    ],
+    "boxed_warning": "Increased mortality in elderly patients with dementia-related psychosis; not approved for this use. Suicidal thoughts and behaviours with antidepressant use in young people (where approved for depression)."
+  },
+  "facts": [
+    "Aripiprazole was the first marketed dopamine partial agonist antipsychotic; brexpiprazole and cariprazine followed."
+  ],
+  "related": [
+    "risperidone",
+    "olanzapine",
+    "quetiapine",
+    "haloperidol",
+    "paliperidone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Aripiprazole",
+      "url": "https://en.wikipedia.org/wiki/Aripiprazole"
+    },
+    {
+      "title": "DailyMed: aripiprazole labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=aripiprazole"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,131 @@
 {
   "slug": "mirtazapine",
   "name": "Mirtazapine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Org 3770",
+    "6-azamianserin"
+  ],
+  "brands": [
+    "Remeron",
+    "RemeronSolTab",
+    "Zispin"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Noradrenergic and specific serotonergic antidepressant (NaSSA); tetracyclic",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets or orally disintegrating tablets once daily, usually at bedtime.",
+  "targets": [
+    "ADRA2A (alpha-2 adrenoceptor, antagonist)",
+    "HTR2A",
+    "HTR2C",
+    "HTR3A",
+    "HRH1"
+  ],
+  "origin": "synthetic",
+  "originator": "Organon",
+  "owner": "generic (many); Organon (Remeron)",
+  "first_approval": {
+    "year": 1994,
+    "agency": "Medicines Evaluation Board",
+    "country": "Netherlands",
+    "brand": "Remeron"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Organon",
+    "note": "An aza-analogue of the tetracyclic antidepressant mianserin, developed at Organon in the Netherlands."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Sedating tetracyclic antidepressant that blocks alpha-2 and several serotonin receptors",
+  "summary": "Mirtazapine is a tetracyclic antidepressant that increases noradrenaline and serotonin release by blocking presynaptic alpha-2 receptors. Its potent antihistamine effect makes it sedating and appetite-stimulating, and it causes little sexual dysfunction or nausea.",
+  "mechanism": [
+    "Mirtazapine antagonises presynaptic alpha-2 adrenergic autoreceptors and heteroreceptors, disinhibiting the release of noradrenaline and serotonin. Concurrent blockade of 5-HT2 and 5-HT3 receptors channels the serotonergic effect towards 5-HT1A receptors.",
+    "Potent histamine H1 antagonism causes sedation, particularly at lower doses, and increased appetite and weight gain."
+  ],
+  "uses": [
+    "Major depressive disorder"
+  ],
+  "history": [
+    {
+      "year": 1994,
+      "title": "First approval",
+      "detail": "Mirtazapine is approved in the Netherlands."
+    },
+    {
+      "year": 1996,
+      "title": "FDA approval",
+      "detail": "The FDA approves Remeron for depression."
+    },
+    {
+      "year": 2001,
+      "title": "Orally disintegrating tablets",
+      "detail": "RemeronSolTab is approved."
+    },
+    {
+      "year": 2003,
+      "title": "Generics",
+      "detail": "Generic mirtazapine becomes available in the US."
+    },
+    {
+      "year": 2004,
+      "title": "Suicidality warning",
+      "detail": "Class boxed warning on suicidality in young people."
+    },
+    {
+      "year": 2021,
+      "title": "Organon spin-off",
+      "detail": "Remeron moves to Organon & Co. when it is spun off from Merck."
+    }
+  ],
+  "pk": {
+    "half_life": "20–40 hours",
+    "bioavailability": "About 50%",
+    "metabolism": "Hepatic CYP2D6, CYP1A2 and CYP3A4",
+    "excretion": "About 75% in urine, 15% in faeces"
+  },
+  "safety": {
+    "common": [
+      "Somnolence",
+      "Increased appetite",
+      "Weight gain",
+      "Dry mouth",
+      "Dizziness",
+      "Constipation"
+    ],
+    "serious": [
+      "Agranulocytosis (rare)",
+      "Serotonin syndrome",
+      "Suicidal thoughts in young people",
+      "Hyponatraemia",
+      "QT prolongation",
+      "Severe cutaneous reactions (DRESS)"
+    ],
+    "boxed_warning": "Increased risk of suicidal thoughts and behaviours in children, adolescents and young adults (under 25) taking antidepressants; monitor for clinical worsening."
+  },
+  "facts": [
+    "Mirtazapine is often chosen where insomnia, poor appetite or SSRI-induced sexual dysfunction are concerns."
+  ],
+  "related": [
+    "trazodone",
+    "venlafaxine",
+    "sertraline",
+    "amitriptyline"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Mirtazapine",
+      "url": "https://en.wikipedia.org/wiki/Mirtazapine"
+    },
+    {
+      "title": "DailyMed: mirtazapine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=mirtazapine"
+    }
+  ],
+  "stage": "written"
 }

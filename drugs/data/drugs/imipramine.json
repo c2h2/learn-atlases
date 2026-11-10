@@ -1,36 +1,131 @@
 {
   "slug": "imipramine",
   "name": "Imipramine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "G 22355",
+    "Imipramine hydrochloride",
+    "Imipramine pamoate"
+  ],
+  "brands": [
+    "Tofranil",
+    "Tofranil-PM"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Tricyclic antidepressant (tertiary amine)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets or capsules; IM formulation historically available.",
+  "targets": [
+    "SLC6A4 (serotonin transporter)",
+    "SLC6A2 (noradrenaline transporter)",
+    "HRH1",
+    "CHRM1–5",
+    "ADRA1A"
+  ],
+  "origin": "synthetic",
+  "originator": "J. R. Geigy AG",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1958,
+    "agency": "Swissmedic (IKS)",
+    "country": "Switzerland",
+    "brand": "Tofranil"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1956,
+    "by": "Roland Kuhn (Münsterlingen) with Geigy",
+    "note": "Synthesised by Geigy in 1951 as a chlorpromazine-like antihistamine; Kuhn observed its antidepressant effect in 1956 and reported it in 1957."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "The first tricyclic antidepressant, discovered by chance in a Swiss hospital",
+  "summary": "Imipramine was the first tricyclic antidepressant. Its mood-elevating effect was discovered by psychiatrist Roland Kuhn in 1956 while testing a chlorpromazine analogue, and it helped launch the monoamine theory of depression. It is still used for depression and childhood nocturnal enuresis.",
+  "mechanism": [
+    "Imipramine inhibits reuptake of serotonin and noradrenaline; its metabolite desipramine is a potent and selective noradrenaline reuptake inhibitor. It also blocks muscarinic, histamine H1 and alpha-1 adrenergic receptors.",
+    "The action in enuresis is thought to involve anticholinergic effects on the bladder and changes in sleep architecture and arousal."
+  ],
+  "uses": [
+    "Depression",
+    "Childhood nocturnal enuresis (age 6 and over)"
+  ],
+  "history": [
+    {
+      "year": 1951,
+      "title": "Synthesis",
+      "detail": "Geigy synthesises imipramine (G 22355) as an iminodibenzyl analogue of phenothiazines."
+    },
+    {
+      "year": 1956,
+      "title": "Antidepressant effect",
+      "detail": "Roland Kuhn observes striking improvement in depressed patients at the Münsterlingen hospital."
+    },
+    {
+      "year": 1957,
+      "title": "Publication",
+      "detail": "Kuhn reports his findings in the Schweizerische Medizinische Wochenschrift and at a congress in Zurich."
+    },
+    {
+      "year": 1958,
+      "title": "Launch",
+      "detail": "Geigy markets imipramine as Tofranil in Switzerland."
+    },
+    {
+      "year": 1959,
+      "title": "United States",
+      "detail": "Imipramine becomes available in the US."
+    },
+    {
+      "year": 1965,
+      "title": "Monoamine hypothesis",
+      "detail": "Joseph Schildkraut's catecholamine hypothesis of depression builds on tricyclic and MAOI pharmacology."
+    }
+  ],
+  "pk": {
+    "half_life": "About 8–20 hours; desipramine longer",
+    "bioavailability": "29–77% (first-pass)",
+    "metabolism": "Hepatic CYP2C19/1A2/3A4 (to desipramine) and CYP2D6",
+    "excretion": "Mainly renal as metabolites"
+  },
+  "safety": {
+    "common": [
+      "Dry mouth",
+      "Constipation",
+      "Drowsiness",
+      "Blurred vision",
+      "Orthostatic hypotension",
+      "Sweating"
+    ],
+    "serious": [
+      "Arrhythmias and conduction block",
+      "Fatal toxicity in overdose",
+      "Seizures",
+      "Urinary retention",
+      "Suicidal thoughts in young people"
+    ],
+    "boxed_warning": "Increased risk of suicidal thoughts and behaviours in children, adolescents and young adults (under 25) taking antidepressants; monitor for clinical worsening."
+  },
+  "facts": [
+    "Kuhn's discovery came from clinical observation in a few dozen patients rather than an animal model."
+  ],
+  "related": [
+    "amitriptyline",
+    "clomipramine",
+    "chlorpromazine",
+    "phenelzine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Imipramine",
+      "url": "https://en.wikipedia.org/wiki/Imipramine"
+    },
+    {
+      "title": "DailyMed: imipramine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=imipramine"
+    }
+  ],
+  "stage": "written"
 }

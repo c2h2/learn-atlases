@@ -1,36 +1,133 @@
 {
   "slug": "paliperidone",
   "name": "Paliperidone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "9-hydroxyrisperidone",
+    "R 76477",
+    "Paliperidone palmitate"
+  ],
+  "brands": [
+    "Invega",
+    "Invega Sustenna",
+    "Invega Trinza",
+    "Invega Hafyera",
+    "Xeplion",
+    "Trevicta",
+    "Byannli"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Atypical (second-generation) antipsychotic; benzisoxazole (active metabolite of risperidone)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "im"
+  ],
+  "route_note": "Oral extended-release (OROS) tablets once daily; IM palmitate depot monthly, every 3 months or every 6 months.",
+  "targets": [
+    "DRD2",
+    "HTR2A",
+    "ADRA1A",
+    "ADRA2A",
+    "HRH1"
+  ],
+  "origin": "synthetic",
+  "originator": "Janssen Pharmaceutica",
+  "owner": "Johnson & Johnson (Janssen); oral generics available",
+  "first_approval": {
+    "year": 2006,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Invega"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Janssen",
+    "note": "Developed as the principal active metabolite of risperidone, formulated for once-daily osmotic release and as long-acting palmitate ester."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Risperidone's active metabolite, best known as monthly to six-monthly injections",
+  "summary": "Paliperidone is 9-hydroxyrisperidone, the major active metabolite of risperidone. It is used for schizophrenia and schizoaffective disorder, and its palmitate ester formulations allow injections as infrequently as twice a year, which can help adherence.",
+  "mechanism": [
+    "Paliperidone antagonises dopamine D2 and serotonin 5-HT2A receptors, as well as alpha-1, alpha-2 and H1 receptors. Its pharmacology closely mirrors risperidone's.",
+    "Because it is largely excreted unchanged by the kidneys, it has fewer hepatic drug interactions but requires dose adjustment in renal impairment. The palmitate ester dissolves slowly from the muscle depot and is hydrolysed to paliperidone."
+  ],
+  "uses": [
+    "Schizophrenia (adults and adolescents, oral)",
+    "Schizoaffective disorder",
+    "Maintenance treatment of schizophrenia (long-acting injections)"
+  ],
+  "history": [
+    {
+      "year": 2006,
+      "title": "FDA approval",
+      "detail": "Oral Invega extended-release tablets are approved in December 2006."
+    },
+    {
+      "year": 2009,
+      "title": "Invega Sustenna",
+      "detail": "Monthly paliperidone palmitate injection is approved; schizoaffective disorder indication follows."
+    },
+    {
+      "year": 2013,
+      "title": "DOJ settlement",
+      "detail": "J&J's $2.2 billion settlement includes allegations of off-label promotion of Invega."
+    },
+    {
+      "year": 2015,
+      "title": "Invega Trinza",
+      "detail": "A three-monthly injection is approved."
+    },
+    {
+      "year": 2021,
+      "title": "Invega Hafyera",
+      "detail": "A six-monthly injection becomes the first twice-yearly antipsychotic."
+    }
+  ],
+  "pk": {
+    "half_life": "About 23 hours oral; weeks to months for palmitate depots",
+    "bioavailability": "About 28% oral",
+    "metabolism": "Limited hepatic metabolism",
+    "excretion": "Renal, about 59% unchanged"
+  },
+  "safety": {
+    "common": [
+      "Extrapyramidal symptoms",
+      "Akathisia",
+      "Hyperprolactinaemia",
+      "Tachycardia",
+      "Injection-site reactions",
+      "Weight gain"
+    ],
+    "serious": [
+      "Neuroleptic malignant syndrome",
+      "Tardive dyskinesia",
+      "QT prolongation",
+      "Orthostatic hypotension",
+      "Seizures"
+    ],
+    "boxed_warning": "Increased mortality in elderly patients with dementia-related psychosis; not approved for this use."
+  },
+  "facts": [
+    "Invega Hafyera is given only twice a year after stabilisation on monthly or three-monthly injections."
+  ],
+  "related": [
+    "risperidone",
+    "haloperidol",
+    "aripiprazole",
+    "olanzapine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Paliperidone",
+      "url": "https://en.wikipedia.org/wiki/Paliperidone"
+    },
+    {
+      "title": "DailyMed: paliperidone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=paliperidone"
+    }
+  ],
+  "stage": "written"
 }

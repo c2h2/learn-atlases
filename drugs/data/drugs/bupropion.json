@@ -1,36 +1,156 @@
 {
   "slug": "bupropion",
   "name": "Bupropion",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Amfebutamone",
+    "Bupropion hydrochloride",
+    "Bupropion hydrobromide"
+  ],
+  "brands": [
+    "Wellbutrin",
+    "Wellbutrin SR",
+    "Wellbutrin XL",
+    "Zyban",
+    "Aplenzin"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Noradrenaline–dopamine reuptake inhibitor (NDRI); aminoketone antidepressant",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral immediate-, sustained- or extended-release tablets; also in fixed combinations with naltrexone and dextromethorphan.",
+  "targets": [
+    "SLC6A3 (dopamine transporter)",
+    "SLC6A2 (noradrenaline transporter)",
+    "Nicotinic acetylcholine receptors (antagonist)"
+  ],
+  "origin": "synthetic",
+  "originator": "Burroughs Wellcome",
+  "owner": "generic (many); Bausch Health (Wellbutrin XL)",
+  "first_approval": {
+    "year": 1985,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Wellbutrin"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1969,
+    "by": "Nariman Mehta (Burroughs Wellcome)",
+    "note": "A cathinone-related aminoketone synthesised during a search for antidepressants without tricyclic side effects."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Atypical antidepressant and smoking-cessation aid without sexual side effects",
+  "summary": "Bupropion is an aminoketone antidepressant that inhibits noradrenaline and dopamine reuptake and antagonises nicotinic receptors. It is used for depression, seasonal affective disorder and smoking cessation, and in combinations for obesity and depression. It is notable for not causing sexual dysfunction or weight gain, but it lowers the seizure threshold.",
+  "mechanism": [
+    "Bupropion and its major active metabolite hydroxybupropion weakly inhibit the dopamine and noradrenaline transporters, increasing catecholamine signalling; it has no meaningful serotonergic activity.",
+    "Both compounds are non-competitive antagonists of neuronal nicotinic acetylcholine receptors, which is thought to contribute to reduced craving and withdrawal during smoking cessation."
+  ],
+  "uses": [
+    "Major depressive disorder",
+    "Prevention of seasonal affective disorder",
+    "Smoking cessation (Zyban)",
+    "Chronic weight management (with naltrexone)",
+    "Major depressive disorder (with dextromethorphan, Auvelity)"
+  ],
+  "history": [
+    {
+      "year": 1969,
+      "title": "Synthesis",
+      "detail": "Nariman Mehta synthesises bupropion at Burroughs Wellcome."
+    },
+    {
+      "year": 1985,
+      "title": "FDA approval",
+      "detail": "The FDA approves Wellbutrin for depression."
+    },
+    {
+      "year": 1986,
+      "title": "Withdrawal",
+      "detail": "Launch is halted after seizures in bulimic patients at high doses."
+    },
+    {
+      "year": 1989,
+      "title": "Reintroduction",
+      "detail": "Bupropion returns with lower maximum doses."
+    },
+    {
+      "year": 1997,
+      "title": "Zyban",
+      "detail": "Sustained-release bupropion is approved for smoking cessation."
+    },
+    {
+      "year": 2003,
+      "title": "Wellbutrin XL",
+      "detail": "Once-daily extended-release bupropion is approved; seasonal affective disorder follows in 2006."
+    },
+    {
+      "year": 2009,
+      "title": "Neuropsychiatric boxed warning",
+      "detail": "The FDA adds a boxed warning on neuropsychiatric events for smoking-cessation use."
+    },
+    {
+      "year": 2014,
+      "title": "Contrave",
+      "detail": "The naltrexone–bupropion combination is approved for weight management."
+    },
+    {
+      "year": 2016,
+      "title": "Warning removed",
+      "detail": "After the EAGLES trial the neuropsychiatric boxed warning for smoking cessation is removed."
+    },
+    {
+      "year": 2022,
+      "title": "Auvelity",
+      "detail": "Dextromethorphan–bupropion is approved for major depressive disorder."
+    }
+  ],
+  "pk": {
+    "half_life": "About 21 hours; hydroxybupropion about 20 hours",
+    "bioavailability": "Not established in humans (extensive first-pass)",
+    "metabolism": "Hepatic CYP2B6 to hydroxybupropion; strong CYP2D6 inhibitor",
+    "excretion": "Mainly renal as metabolites"
+  },
+  "safety": {
+    "common": [
+      "Insomnia",
+      "Dry mouth",
+      "Headache",
+      "Nausea",
+      "Agitation",
+      "Weight loss"
+    ],
+    "serious": [
+      "Dose-related seizures",
+      "Neuropsychiatric symptoms",
+      "Hypertension",
+      "Suicidal thoughts in young people",
+      "Angle-closure glaucoma"
+    ],
+    "boxed_warning": "Increased risk of suicidal thoughts and behaviours in children, adolescents and young adults (under 25) taking antidepressants; monitor for clinical worsening."
+  },
+  "facts": [
+    "Bupropion is contraindicated in seizure disorders and in bulimia or anorexia nervosa because of seizure risk.",
+    "It inhibits CYP2D6 strongly enough to alter doses of many other drugs."
+  ],
+  "related": [
+    "naltrexone",
+    "varenicline",
+    "nicotine",
+    "fluoxetine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Bupropion",
+      "url": "https://en.wikipedia.org/wiki/Bupropion"
+    },
+    {
+      "title": "DailyMed: bupropion labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=bupropion"
+    }
+  ],
+  "stage": "written"
 }

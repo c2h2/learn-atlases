@@ -1,36 +1,138 @@
 {
   "slug": "modafinil",
   "name": "Modafinil",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "CRL-40476",
+    "Armodafinil (R-enantiomer)"
+  ],
+  "brands": [
+    "Provigil",
+    "Modiodal",
+    "Modalert",
+    "Nuvigil (armodafinil)"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Wakefulness-promoting agent (eugeroic); atypical dopamine reuptake inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets once daily in the morning (or before a work shift for shift work disorder).",
+  "targets": [
+    "SLC6A3 (dopamine transporter)"
+  ],
+  "origin": "synthetic",
+  "originator": "Laboratoire L. Lafon (France)",
+  "owner": "generic (many); Teva (Provigil, via Cephalon)",
+  "first_approval": {
+    "year": 1994,
+    "agency": "French authorities",
+    "country": "France",
+    "brand": "Modiodal"
+  },
+  "discovery": {
+    "year": 1976,
+    "by": "Laboratoire L. Lafon; clinical work by Michel Jouvet (Lyon)",
+    "note": "Identified as the active metabolite of adrafinil, a Lafon compound found to promote wakefulness in animals in the 1970s."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription; controlled (US Schedule IV)",
+  "tagline": "Wake-promoting drug for narcolepsy, sleep apnoea and shift work sleepiness",
+  "summary": "Modafinil is a wakefulness-promoting drug used for excessive sleepiness due to narcolepsy and, in the US, obstructive sleep apnoea and shift work disorder. Its main action is weak dopamine transporter inhibition; it is less euphoriant than amphetamines but still carries some misuse potential and is widely used off-label as a 'smart drug'.",
+  "mechanism": [
+    "Modafinil binds the dopamine transporter and inhibits dopamine reuptake, increasing extracellular dopamine, which is required for its wake-promoting effect in animal studies. It also increases histamine, noradrenaline, serotonin, glutamate and orexin activity and reduces GABA in arousal-related brain regions, probably downstream of dopamine.",
+    "Unlike amphetamine it does not cause transporter-mediated monoamine release, which may contribute to its lower abuse liability."
+  ],
+  "uses": [
+    "Excessive sleepiness associated with narcolepsy",
+    "Residual excessive sleepiness in obstructive sleep apnoea (US, adjunct to CPAP)",
+    "Shift work disorder (US)"
+  ],
+  "history": [
+    {
+      "year": 1976,
+      "title": "Discovery",
+      "detail": "Lafon chemists identify modafinil as a metabolite of adrafinil."
+    },
+    {
+      "year": 1994,
+      "title": "French approval",
+      "detail": "Modafinil is approved in France as Modiodal for narcolepsy."
+    },
+    {
+      "year": 1998,
+      "title": "FDA approval",
+      "detail": "Provigil (Cephalon) is approved for narcolepsy in December 1998."
+    },
+    {
+      "year": 2004,
+      "title": "New indications",
+      "detail": "The FDA approves modafinil for obstructive sleep apnoea and shift work disorder."
+    },
+    {
+      "year": 2007,
+      "title": "Armodafinil",
+      "detail": "The R-enantiomer armodafinil (Nuvigil) is approved."
+    },
+    {
+      "year": 2008,
+      "title": "Settlement",
+      "detail": "Cephalon pays $425 million to settle allegations of off-label promotion of Provigil and other drugs."
+    },
+    {
+      "year": 2010,
+      "title": "EU restriction",
+      "detail": "The EMA restricts modafinil to narcolepsy because of skin, psychiatric and cardiovascular risks."
+    },
+    {
+      "year": 2015,
+      "title": "FTC settlement",
+      "detail": "Teva pays $1.2 billion to settle FTC claims that Cephalon delayed generic Provigil through pay-for-delay deals."
+    }
+  ],
+  "pk": {
+    "half_life": "About 15 hours",
+    "bioavailability": "Well absorbed (absolute value not determined)",
+    "metabolism": "Hepatic amide hydrolysis and CYP3A4; induces CYP3A4 and inhibits CYP2C19",
+    "excretion": "Renal as metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Headache",
+      "Nausea",
+      "Nervousness",
+      "Insomnia",
+      "Anxiety",
+      "Back pain"
+    ],
+    "serious": [
+      "Serious rash including Stevens–Johnson syndrome",
+      "DRESS and angioedema",
+      "Psychiatric symptoms (mania, psychosis)",
+      "Cardiovascular events",
+      "Reduced efficacy of hormonal contraceptives"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Modafinil induces CYP3A4 and can make hormonal contraceptives less effective during and for a month after use."
+  ],
+  "related": [
+    "methylphenidate",
+    "amphetamine",
+    "suvorexant"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Modafinil",
+      "url": "https://en.wikipedia.org/wiki/Modafinil"
+    },
+    {
+      "title": "DailyMed: modafinil labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=modafinil"
+    }
+  ],
+  "stage": "written"
 }

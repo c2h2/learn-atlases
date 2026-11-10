@@ -1,36 +1,130 @@
 {
   "slug": "melatonin",
   "name": "Melatonin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "N-acetyl-5-methoxytryptamine"
+  ],
+  "brands": [
+    "Circadin",
+    "Slenyto"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Melatonin receptor agonist (endogenous pineal hormone)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral prolonged-release tablets 1–2 hours before bedtime (medicinal products); many immediate-release supplements.",
+  "targets": [
+    "MTNR1A (MT1)",
+    "MTNR1B (MT2)"
+  ],
+  "origin": "endogenous",
+  "originator": "Neurim Pharmaceuticals (Circadin); hormone discovered at Yale",
+  "owner": "Neurim Pharmaceuticals (Circadin, Slenyto); supplements (many)",
+  "first_approval": {
+    "year": 2007,
+    "agency": "EMA",
+    "country": "European Union",
+    "brand": "Circadin"
+  },
+  "discovery": {
+    "year": 1958,
+    "by": "Aaron B. Lerner and colleagues (Yale University)",
+    "note": "Isolated from bovine pineal glands as the factor that lightens frog skin melanophores, hence the name."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription in the EU/UK; dietary supplement (OTC) in the US",
+  "tagline": "Pineal hormone of darkness, used as a sleep aid and for circadian rhythm disorders",
+  "summary": "Melatonin is a hormone secreted by the pineal gland at night that signals darkness to the body's circadian system. Prolonged-release melatonin is a licensed medicine in Europe for insomnia in older adults and children with autism or Smith–Magenis syndrome, while in the US it is sold as a dietary supplement.",
+  "mechanism": [
+    "Melatonin activates MT1 and MT2 G-protein-coupled receptors. MT1 activation in the suprachiasmatic nucleus reduces neuronal firing and promotes sleep onset, while MT2 activation shifts the phase of the circadian clock.",
+    "Its secretion is suppressed by light via the retinohypothalamic tract; exogenous melatonin can therefore both promote sleepiness and, with timing, advance or delay circadian rhythms."
+  ],
+  "uses": [
+    "Primary insomnia in patients aged 55 and over (prolonged-release, EU)",
+    "Insomnia in children with autism spectrum disorder or Smith–Magenis syndrome (Slenyto, EU)",
+    "Jet lag and circadian rhythm sleep disorders (off-label or supplement use)"
+  ],
+  "history": [
+    {
+      "year": 1958,
+      "title": "Isolation",
+      "detail": "Aaron Lerner's group isolates melatonin from bovine pineal glands."
+    },
+    {
+      "year": 1959,
+      "title": "Structure",
+      "detail": "Lerner and colleagues identify the structure as N-acetyl-5-methoxytryptamine."
+    },
+    {
+      "year": 1994,
+      "title": "US supplement status",
+      "detail": "Under the Dietary Supplement Health and Education Act, melatonin is sold in the US as a supplement."
+    },
+    {
+      "year": 2005,
+      "title": "Ramelteon",
+      "detail": "The FDA approves ramelteon, a synthetic melatonin receptor agonist, for insomnia."
+    },
+    {
+      "year": 2007,
+      "title": "Circadin",
+      "detail": "The EMA authorises prolonged-release melatonin for primary insomnia in people aged 55 and over."
+    },
+    {
+      "year": 2018,
+      "title": "Slenyto",
+      "detail": "A paediatric prolonged-release melatonin is authorised in the EU for children with autism or Smith–Magenis syndrome."
+    },
+    {
+      "year": 2023,
+      "title": "Supplement content study",
+      "detail": "A JAMA study finds US melatonin gummies often contain amounts differing widely from labels."
+    }
+  ],
+  "pk": {
+    "half_life": "About 40–50 minutes (immediate release); prolonged-release formulations extend exposure",
+    "bioavailability": "About 15% (high first-pass)",
+    "metabolism": "Hepatic CYP1A2 to 6-hydroxymelatonin",
+    "excretion": "Renal as 6-sulphatoxymelatonin"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Headache",
+      "Daytime drowsiness",
+      "Dizziness",
+      "Nausea"
+    ],
+    "serious": [
+      "Accidental ingestion by children (supplements)",
+      "Interactions with fluvoxamine (CYP1A2 inhibition)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Paediatric melatonin poisonings reported to US poison centres rose sharply between 2012 and 2021, according to the CDC."
+  ],
+  "related": [
+    "zolpidem",
+    "suvorexant",
+    "trazodone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Melatonin",
+      "url": "https://en.wikipedia.org/wiki/Melatonin"
+    },
+    {
+      "title": "EMA: Circadin EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/circadin"
+    },
+    {
+      "title": "Wikipedia: Melatonin as a medication and supplement",
+      "url": "https://en.wikipedia.org/wiki/Melatonin_as_a_medication_and_supplement"
+    }
+  ],
+  "stage": "written"
 }

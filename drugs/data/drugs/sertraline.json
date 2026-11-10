@@ -1,36 +1,137 @@
 {
   "slug": "sertraline",
   "name": "Sertraline",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "CP-51974-1",
+    "Sertraline hydrochloride"
+  ],
+  "brands": [
+    "Zoloft",
+    "Lustral"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Selective serotonin reuptake inhibitor (SSRI)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets or oral concentrate once daily.",
+  "targets": [
+    "SLC6A4 (serotonin transporter)"
+  ],
+  "origin": "synthetic",
+  "originator": "Pfizer",
+  "owner": "generic (many); Viatris (Zoloft)",
+  "first_approval": {
+    "year": 1991,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Zoloft"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1977,
+    "by": "Kenneth Koe and Willard Welch (Pfizer)",
+    "note": "Developed from tametraline, an earlier Pfizer noradrenaline/dopamine uptake inhibitor; the cis-(1S,4S) enantiomer proved highly serotonin-selective."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Widely prescribed SSRI licensed for depression and a broad range of anxiety disorders",
+  "summary": "Sertraline is an SSRI used for major depression and several anxiety disorders, including OCD, panic disorder, PTSD and social anxiety disorder. Introduced by Pfizer as Zoloft in 1991, it became one of the most prescribed antidepressants in the world.",
+  "mechanism": [
+    "Sertraline potently and selectively inhibits the serotonin transporter, increasing synaptic serotonin. Compared with other SSRIs it has relatively greater affinity for the dopamine transporter and for sigma-1 receptors, although the clinical significance is uncertain.",
+    "As with other SSRIs, therapeutic effects emerge over several weeks, reflecting adaptive changes in serotonergic signalling rather than the acute increase in serotonin."
+  ],
+  "uses": [
+    "Major depressive disorder",
+    "Obsessive-compulsive disorder (adults and children aged 6 and over)",
+    "Panic disorder",
+    "Post-traumatic stress disorder",
+    "Social anxiety disorder",
+    "Premenstrual dysphoric disorder"
+  ],
+  "history": [
+    {
+      "year": 1977,
+      "title": "Synthesis",
+      "detail": "Pfizer chemists Kenneth Koe and Willard Welch identify sertraline."
+    },
+    {
+      "year": 1991,
+      "title": "FDA approval",
+      "detail": "The FDA approves Zoloft for depression in December 1991."
+    },
+    {
+      "year": 1996,
+      "title": "OCD in children",
+      "detail": "Sertraline is approved for paediatric OCD, among the first SSRIs with a paediatric indication."
+    },
+    {
+      "year": 1999,
+      "title": "PTSD",
+      "detail": "Sertraline becomes the first drug approved by the FDA for post-traumatic stress disorder."
+    },
+    {
+      "year": 2004,
+      "title": "Suicidality warning",
+      "detail": "Class boxed warning on suicidality in young people is added to all antidepressants."
+    },
+    {
+      "year": 2006,
+      "title": "Generics",
+      "detail": "US generic sertraline launches after patent expiry."
+    },
+    {
+      "year": 2020,
+      "title": "Viatris",
+      "detail": "Zoloft passes to Viatris when Pfizer's Upjohn business merges with Mylan."
+    }
+  ],
+  "pk": {
+    "half_life": "About 26 hours; desmethylsertraline 62–104 hours",
+    "bioavailability": "About 44%; increased with food",
+    "metabolism": "Hepatic N-demethylation via several CYPs (CYP2B6, 2C19, 3A4 and others)",
+    "excretion": "Urine and faeces as metabolites"
+  },
+  "safety": {
+    "common": [
+      "Nausea",
+      "Diarrhoea",
+      "Insomnia or somnolence",
+      "Dizziness",
+      "Sexual dysfunction",
+      "Tremor"
+    ],
+    "serious": [
+      "Serotonin syndrome",
+      "Suicidal thoughts in young people",
+      "Hyponatraemia",
+      "Bleeding risk",
+      "Activation of mania",
+      "Angle-closure glaucoma"
+    ],
+    "boxed_warning": "Increased risk of suicidal thoughts and behaviours in children, adolescents and young adults (under 25) taking antidepressants; monitor for clinical worsening."
+  },
+  "facts": [
+    "Sertraline was the first medicine approved by the FDA for PTSD.",
+    "It is consistently among the most prescribed psychiatric drugs in the United States."
+  ],
+  "related": [
+    "fluoxetine",
+    "escitalopram",
+    "paroxetine",
+    "citalopram"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Sertraline",
+      "url": "https://en.wikipedia.org/wiki/Sertraline"
+    },
+    {
+      "title": "DailyMed: sertraline labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=sertraline"
+    }
+  ],
+  "stage": "written"
 }

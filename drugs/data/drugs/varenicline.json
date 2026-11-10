@@ -1,36 +1,130 @@
 {
   "slug": "varenicline",
   "name": "Varenicline",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "CP-526555",
+    "Varenicline tartrate"
+  ],
+  "brands": [
+    "Chantix",
+    "Champix",
+    "Tyrvaya (nasal spray)"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Nicotinic acetylcholine receptor partial agonist (smoking-cessation aid)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "intranasal"
+  ],
+  "route_note": "Oral tablets twice daily for 12 weeks after a 1-week titration; a nasal spray (Tyrvaya) is approved for dry eye disease.",
+  "targets": [
+    "CHRNA4/CHRNB2 (alpha4beta2 nAChR, partial agonist)",
+    "CHRNA7 (full agonist)"
+  ],
+  "origin": "synthetic",
+  "originator": "Pfizer",
+  "owner": "generic (many); Pfizer (Chantix/Champix)",
+  "first_approval": {
+    "year": 2006,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Chantix"
+  },
+  "discovery": {
+    "year": 1997,
+    "by": "Jotham Coe and colleagues (Pfizer, Groton)",
+    "note": "Designed using the plant alkaloid cytisine, a nicotinic partial agonist used for smoking cessation in Eastern Europe, as a structural starting point."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "The most effective single smoking-cessation drug, a nicotinic partial agonist",
+  "summary": "Varenicline is a partial agonist at alpha4beta2 nicotinic receptors used to help people stop smoking. It reduces craving and withdrawal while blocking the rewarding effects of nicotine, and in head-to-head trials it is more effective than nicotine patch or bupropion.",
+  "mechanism": [
+    "Varenicline binds alpha4beta2 nicotinic acetylcholine receptors with high affinity. As a partial agonist it produces moderate, sustained dopamine release in the mesolimbic system, relieving craving and withdrawal.",
+    "At the same time it occupies the receptors and prevents nicotine from smoking from fully activating them, reducing the reward of a cigarette. Nasal varenicline stimulates trigeminal parasympathetic pathways to increase tear production."
+  ],
+  "uses": [
+    "Aid to smoking cessation in adults",
+    "Signs and symptoms of dry eye disease (nasal spray, US)"
+  ],
+  "history": [
+    {
+      "year": 1997,
+      "title": "Discovery",
+      "detail": "Pfizer chemists synthesise varenicline, inspired by cytisine."
+    },
+    {
+      "year": 2006,
+      "title": "Approvals",
+      "detail": "The FDA approves Chantix in May 2006 and the EU approves Champix in September."
+    },
+    {
+      "year": 2009,
+      "title": "Boxed warning",
+      "detail": "The FDA adds a boxed warning on serious neuropsychiatric events."
+    },
+    {
+      "year": 2016,
+      "title": "EAGLES and warning removal",
+      "detail": "The EAGLES trial finds no significant increase in neuropsychiatric events; the FDA removes the boxed warning in December 2016."
+    },
+    {
+      "year": 2021,
+      "title": "Nitrosamine recall",
+      "detail": "Pfizer pauses distribution and recalls Chantix lots for N-nitroso-varenicline impurity; generic varenicline is approved in the US."
+    },
+    {
+      "year": 2021,
+      "title": "WHO EML and Tyrvaya",
+      "detail": "Varenicline is added to the WHO Model List of Essential Medicines; varenicline nasal spray is approved for dry eye disease."
+    }
+  ],
+  "pk": {
+    "half_life": "About 24 hours",
+    "bioavailability": "About 90%",
+    "metabolism": "Minimal (<10%)",
+    "excretion": "Renal, about 92% unchanged"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nausea",
+      "Insomnia",
+      "Abnormal dreams",
+      "Headache",
+      "Flatulence"
+    ],
+    "serious": [
+      "Neuropsychiatric events (mood change, agitation, suicidal thoughts)",
+      "Seizures",
+      "Cardiovascular events in people with heart disease",
+      "Angioedema and severe skin reactions",
+      "Interaction with alcohol (reduced tolerance)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "EAGLES (2016), with over 8,000 participants, was one of the largest smoking-cessation trials ever conducted."
+  ],
+  "related": [
+    "nicotine",
+    "bupropion"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Varenicline",
+      "url": "https://en.wikipedia.org/wiki/Varenicline"
+    },
+    {
+      "title": "DailyMed: varenicline labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=varenicline"
+    },
+    {
+      "title": "EMA: Champix EPAR",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/champix"
+    }
+  ],
+  "stage": "written"
 }

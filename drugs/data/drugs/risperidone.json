@@ -1,36 +1,145 @@
 {
   "slug": "risperidone",
   "name": "Risperidone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "R 64766"
+  ],
+  "brands": [
+    "Risperdal",
+    "Risperdal Consta",
+    "Perseris",
+    "Uzedy",
+    "Rykindo",
+    "Okedi"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Atypical (second-generation) antipsychotic; benzisoxazole",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "im",
+    "sc"
+  ],
+  "route_note": "Oral tablets, ODT or solution; long-acting IM microspheres every 2 weeks; monthly or 2-monthly SC depot formulations.",
+  "targets": [
+    "DRD2",
+    "HTR2A",
+    "ADRA1A",
+    "ADRA2A",
+    "HRH1"
+  ],
+  "origin": "synthetic",
+  "originator": "Janssen Pharmaceutica",
+  "owner": "generic (many); Johnson & Johnson (Risperdal)",
+  "first_approval": {
+    "year": 1993,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Risperdal"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1984,
+    "by": "Janssen Pharmaceutica",
+    "note": "Developed in the 1980s by combining D2 and potent 5-HT2A antagonism, building on the serotonin–dopamine antagonist concept."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Serotonin–dopamine antagonist for schizophrenia, bipolar mania and autism irritability",
+  "summary": "Risperidone is a second-generation antipsychotic with potent 5-HT2A and D2 antagonism. It is used for schizophrenia, bipolar mania and irritability associated with autism, and is available in several long-acting injectable forms. Its active metabolite is marketed as paliperidone.",
+  "mechanism": [
+    "Risperidone has very high 5-HT2A affinity and high D2 affinity. At lower doses the 5-HT2A blockade mitigates extrapyramidal effects, but at higher doses D2 occupancy approaches that of typical antipsychotics.",
+    "It is the antipsychotic most associated with hyperprolactinaemia, because it and 9-hydroxyrisperidone penetrate the blood–brain barrier relatively poorly and act on the pituitary outside it."
+  ],
+  "uses": [
+    "Schizophrenia (adults and adolescents)",
+    "Acute mania or mixed episodes in bipolar I disorder",
+    "Irritability associated with autistic disorder (children 5–16)",
+    "Persistent aggression in Alzheimer's dementia (short-term, EU)"
+  ],
+  "history": [
+    {
+      "year": 1993,
+      "title": "FDA approval",
+      "detail": "The FDA approves Risperdal for schizophrenia in December 1993."
+    },
+    {
+      "year": 2003,
+      "title": "Risperdal Consta",
+      "detail": "The first long-acting injectable atypical antipsychotic is approved in the US."
+    },
+    {
+      "year": 2003,
+      "title": "Bipolar mania",
+      "detail": "Risperidone is approved for acute mania."
+    },
+    {
+      "year": 2006,
+      "title": "Autism",
+      "detail": "Risperidone becomes the first drug approved for irritability associated with autism."
+    },
+    {
+      "year": 2008,
+      "title": "Generics",
+      "detail": "Generic oral risperidone launches in the US."
+    },
+    {
+      "year": 2013,
+      "title": "DOJ settlement",
+      "detail": "Johnson & Johnson agrees to pay over $2.2 billion to resolve allegations including off-label promotion of Risperdal."
+    },
+    {
+      "year": 2023,
+      "title": "Uzedy",
+      "detail": "Teva's subcutaneous risperidone extended-release injection is approved."
+    }
+  ],
+  "pk": {
+    "half_life": "About 3 hours (extensive metabolisers); 9-hydroxyrisperidone about 21 hours",
+    "bioavailability": "About 70%",
+    "metabolism": "Hepatic CYP2D6 to active 9-hydroxyrisperidone (paliperidone)",
+    "excretion": "Mainly renal"
+  },
+  "safety": {
+    "common": [
+      "Weight gain",
+      "Sedation",
+      "Akathisia",
+      "Hyperprolactinaemia",
+      "Extrapyramidal symptoms",
+      "Somnolence"
+    ],
+    "serious": [
+      "Neuroleptic malignant syndrome",
+      "Tardive dyskinesia",
+      "Metabolic changes (hyperglycaemia, dyslipidaemia)",
+      "Seizures",
+      "Gynaecomastia and galactorrhoea",
+      "Orthostatic hypotension",
+      "Cerebrovascular events in elderly dementia patients"
+    ],
+    "boxed_warning": "Increased mortality in elderly patients with dementia-related psychosis; not approved for this use."
+  },
+  "facts": [
+    "Risperidone was the first second-generation antipsychotic available as a long-acting injection."
+  ],
+  "related": [
+    "paliperidone",
+    "haloperidol",
+    "olanzapine",
+    "aripiprazole",
+    "quetiapine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Risperidone",
+      "url": "https://en.wikipedia.org/wiki/Risperidone"
+    },
+    {
+      "title": "DailyMed: risperidone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=risperidone"
+    }
+  ],
+  "stage": "written"
 }

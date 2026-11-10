@@ -1,36 +1,140 @@
 {
   "slug": "propofol",
   "name": "Propofol",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "2,6-diisopropylphenol",
+    "ICI 35868",
+    "Fospropofol (prodrug)"
+  ],
+  "brands": [
+    "Diprivan",
+    "Propoven"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "General anaesthetic (intravenous, alkylphenol)",
+  "modality": "small-molecule",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV bolus for induction and continuous infusion (including target-controlled infusion) for maintenance and sedation.",
+  "targets": [
+    "GABA-A receptors (positive allosteric modulator, beta subunits)"
+  ],
+  "origin": "synthetic",
+  "originator": "Imperial Chemical Industries (ICI)",
+  "owner": "generic (many); Fresenius Kabi (Diprivan)",
+  "first_approval": {
+    "year": 1986,
+    "agency": "UK licensing authority",
+    "country": "United Kingdom",
+    "brand": "Diprivan"
+  },
+  "discovery": {
+    "year": 1973,
+    "by": "John B. Glen and Roger James (ICI Pharmaceuticals)",
+    "note": "Identified among alkylphenols screened for hypnotic activity in animals; first human trial in 1977 in Cremophor EL, later reformulated in a soybean oil emulsion."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription (hospital use)",
+  "tagline": "Milky white IV anaesthetic with rapid onset and clear-headed recovery",
+  "summary": "Propofol is the most widely used intravenous anaesthetic, given to induce and maintain general anaesthesia and for sedation in intensive care and procedures. It acts within a minute, wears off quickly with little hangover and reduces nausea, but it causes dose-dependent respiratory depression and hypotension and requires airway expertise.",
+  "mechanism": [
+    "Propofol potentiates GABA-A receptors by binding at sites involving the beta subunits, prolonging chloride channel opening; at higher concentrations it directly activates the receptor. Enhanced inhibition in cortical, thalamic and brainstem arousal networks produces unconsciousness.",
+    "Its high lipid solubility allows rapid entry into the brain and quick redistribution, explaining fast onset and recovery. It is formulated as a lipid emulsion because it is nearly insoluble in water."
+  ],
+  "uses": [
+    "Induction and maintenance of general anaesthesia",
+    "Sedation of ventilated adults in intensive care",
+    "Procedural (monitored anaesthesia care) sedation",
+    "Total intravenous anaesthesia (TIVA)"
+  ],
+  "history": [
+    {
+      "year": 1973,
+      "title": "Discovery",
+      "detail": "John Glen and Roger James identify propofol at ICI."
+    },
+    {
+      "year": 1977,
+      "title": "First human trial",
+      "detail": "Kay and Rolly report clinical use in a Cremophor EL formulation, later withdrawn because of anaphylactoid reactions."
+    },
+    {
+      "year": 1986,
+      "title": "Launch",
+      "detail": "The reformulated lipid emulsion is launched in the UK as Diprivan."
+    },
+    {
+      "year": 1989,
+      "title": "FDA approval",
+      "detail": "Diprivan is approved in the US."
+    },
+    {
+      "year": 1992,
+      "title": "Propofol infusion syndrome",
+      "detail": "Reports describe deaths in children sedated with prolonged propofol infusions."
+    },
+    {
+      "year": 1996,
+      "title": "Additive",
+      "detail": "Disodium edetate is added to the US formulation to limit microbial growth."
+    },
+    {
+      "year": 2009,
+      "title": "Michael Jackson",
+      "detail": "The singer's death from propofol intoxication outside a medical setting draws attention to its misuse."
+    },
+    {
+      "year": 2018,
+      "title": "Lasker Award",
+      "detail": "John Glen receives the Lasker–DeBakey Clinical Medical Research Award for discovering propofol."
+    }
+  ],
+  "pk": {
+    "half_life": "Distribution 2–8 minutes; terminal 4–7 hours (context-sensitive half-time short)",
+    "bioavailability": "IV only",
+    "metabolism": "Hepatic glucuronidation and CYP2B6 hydroxylation; extrahepatic metabolism",
+    "excretion": "Renal as metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Pain on injection",
+      "Hypotension",
+      "Apnoea and respiratory depression",
+      "Bradycardia",
+      "Involuntary movements"
+    ],
+    "serious": [
+      "Propofol infusion syndrome (metabolic acidosis, rhabdomyolysis, cardiac failure)",
+      "Severe cardiorespiratory depression",
+      "Infection from contaminated emulsion",
+      "Pancreatitis and hypertriglyceridaemia",
+      "Misuse and abuse"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Propofol emulsion supports bacterial growth, so strict aseptic handling and limits on open time are required."
+  ],
+  "related": [
+    "midazolam",
+    "ketamine",
+    "sevoflurane",
+    "rocuronium",
+    "fentanyl",
+    "sugammadex"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Propofol",
+      "url": "https://en.wikipedia.org/wiki/Propofol"
+    },
+    {
+      "title": "DailyMed: propofol labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=propofol"
+    }
+  ],
+  "stage": "written"
 }

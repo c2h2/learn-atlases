@@ -1,36 +1,128 @@
 {
   "slug": "clomipramine",
   "name": "Clomipramine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Chlorimipramine",
+    "G 34586",
+    "Clomipramine hydrochloride"
+  ],
+  "brands": [
+    "Anafranil"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Tricyclic antidepressant (tertiary amine), serotonergic",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "Oral capsules; IV infusion available in some countries.",
+  "targets": [
+    "SLC6A4 (serotonin transporter)",
+    "SLC6A2 (noradrenaline transporter)",
+    "HRH1",
+    "CHRM1–5",
+    "ADRA1A"
+  ],
+  "origin": "synthetic",
+  "originator": "J. R. Geigy AG (later Ciba-Geigy/Novartis)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": null,
+    "agency": "Various (European countries)",
+    "country": "Switzerland/Europe",
+    "brand": "Anafranil"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "J. R. Geigy AG",
+    "note": "A 3-chloro analogue of imipramine with much stronger serotonin reuptake inhibition."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "The most serotonergic tricyclic, long the reference drug for OCD",
+  "summary": "Clomipramine is a chlorinated analogue of imipramine and the most serotonergic tricyclic antidepressant. It was used in Europe from the 1960s and became the first drug approved by the FDA specifically for obsessive-compulsive disorder in 1989.",
+  "mechanism": [
+    "Clomipramine is a potent inhibitor of serotonin reuptake; its metabolite desmethylclomipramine mainly inhibits noradrenaline reuptake. The strong serotonergic action is thought to underlie its efficacy in OCD.",
+    "Like other tricyclics it blocks muscarinic, H1 and alpha-1 receptors and cardiac sodium channels, producing anticholinergic, sedative and cardiovascular effects."
+  ],
+  "uses": [
+    "Obsessive-compulsive disorder",
+    "Depression (outside the US)",
+    "Cataplexy associated with narcolepsy (some countries)",
+    "Panic disorder and phobias (some countries)"
+  ],
+  "history": [
+    {
+      "year": 1966,
+      "title": "European use",
+      "detail": "Clomipramine is introduced in Europe as Anafranil in the mid-1960s."
+    },
+    {
+      "year": 1967,
+      "title": "OCD reports",
+      "detail": "Spanish psychiatrists Fernández-Córdoba and López-Ibor report benefit in obsessional symptoms."
+    },
+    {
+      "year": 1989,
+      "title": "FDA approval",
+      "detail": "The FDA approves Anafranil for OCD, the first drug licensed for that indication in the US."
+    },
+    {
+      "year": 1992,
+      "title": "Paediatric OCD",
+      "detail": "A multicentre controlled trial supports use in children and adolescents with OCD (labelled from age 10)."
+    },
+    {
+      "year": 2004,
+      "title": "Suicidality warning",
+      "detail": "Class boxed warning on suicidality in young people."
+    }
+  ],
+  "pk": {
+    "half_life": "About 32 hours; desmethylclomipramine about 69 hours",
+    "bioavailability": "About 50% (first-pass)",
+    "metabolism": "Hepatic CYP2C19, CYP1A2, CYP3A4 and CYP2D6",
+    "excretion": "Renal (~2/3) and faecal as metabolites"
+  },
+  "safety": {
+    "common": [
+      "Dry mouth",
+      "Constipation",
+      "Somnolence",
+      "Tremor",
+      "Sweating",
+      "Sexual dysfunction"
+    ],
+    "serious": [
+      "Seizures (dose-related)",
+      "Arrhythmias",
+      "Serotonin syndrome",
+      "Fatal toxicity in overdose",
+      "Suicidal thoughts in young people"
+    ],
+    "boxed_warning": "Increased risk of suicidal thoughts and behaviours in children, adolescents and young adults (under 25) taking antidepressants; monitor for clinical worsening."
+  },
+  "facts": [
+    "Clomipramine is listed on the WHO Model List of Essential Medicines for obsessive-compulsive disorder."
+  ],
+  "related": [
+    "imipramine",
+    "amitriptyline",
+    "fluoxetine",
+    "sertraline"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Clomipramine",
+      "url": "https://en.wikipedia.org/wiki/Clomipramine"
+    },
+    {
+      "title": "DailyMed: clomipramine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=clomipramine"
+    }
+  ],
+  "stage": "written"
 }

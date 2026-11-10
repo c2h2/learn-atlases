@@ -1,36 +1,144 @@
 {
   "slug": "methylphenidate",
   "name": "Methylphenidate",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Methylphenidate hydrochloride",
+    "Dexmethylphenidate (d-enantiomer)"
+  ],
+  "brands": [
+    "Ritalin",
+    "Concerta",
+    "Medikinet",
+    "Daytrana",
+    "Equasym",
+    "Jornay PM"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Central nervous system stimulant; dopamine–noradrenaline reuptake inhibitor (piperidine)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "transdermal"
+  ],
+  "route_note": "Oral immediate-release tablets two to three times daily or once-daily extended-release (e.g. OROS) formulations; transdermal patch.",
+  "targets": [
+    "SLC6A3 (dopamine transporter)",
+    "SLC6A2 (noradrenaline transporter)"
+  ],
+  "origin": "synthetic",
+  "originator": "Ciba (now Novartis)",
+  "owner": "generic (many); Novartis (Ritalin), Johnson & Johnson (Concerta)",
+  "first_approval": {
+    "year": 1955,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Ritalin"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1944,
+    "by": "Leandro Panizzon (Ciba, Basel)",
+    "note": "Synthesised in 1944; Panizzon named it Ritalin after his wife Marguerite ('Rita'), who reportedly used it to boost her tennis performance."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription; controlled (US Schedule II)",
+  "tagline": "The most widely used ADHD stimulant, blocking dopamine and noradrenaline reuptake",
+  "summary": "Methylphenidate is a CNS stimulant used for attention-deficit/hyperactivity disorder and narcolepsy. It blocks dopamine and noradrenaline reuptake and is available in many immediate- and extended-release formulations. It is a controlled substance because of its potential for misuse.",
+  "mechanism": [
+    "Methylphenidate binds and blocks the dopamine and noradrenaline transporters, increasing extracellular levels of these neurotransmitters, notably in the prefrontal cortex and striatum. Unlike amphetamine, it does not cause substantial transporter-mediated release.",
+    "The d-threo enantiomer (dexmethylphenidate) accounts for most of the activity. Improved catecholamine signalling in prefrontal circuits is thought to enhance attention and impulse control in ADHD."
+  ],
+  "uses": [
+    "Attention-deficit/hyperactivity disorder (children 6 and over, adolescents and adults)",
+    "Narcolepsy (some formulations)"
+  ],
+  "history": [
+    {
+      "year": 1944,
+      "title": "Synthesis",
+      "detail": "Leandro Panizzon synthesises methylphenidate at Ciba."
+    },
+    {
+      "year": 1954,
+      "title": "Launch",
+      "detail": "Ciba introduces Ritalin as a mild stimulant."
+    },
+    {
+      "year": 1955,
+      "title": "FDA approval",
+      "detail": "Methylphenidate is approved in the US."
+    },
+    {
+      "year": 1971,
+      "title": "Schedule II",
+      "detail": "Methylphenidate is placed in Schedule II under the US Controlled Substances Act."
+    },
+    {
+      "year": 2000,
+      "title": "Concerta",
+      "detail": "The OROS once-daily formulation is approved."
+    },
+    {
+      "year": 2006,
+      "title": "Daytrana patch",
+      "detail": "The first transdermal ADHD medication is approved."
+    },
+    {
+      "year": 2019,
+      "title": "WHO EML",
+      "detail": "Methylphenidate is added to the WHO Model List of Essential Medicines for ADHD."
+    },
+    {
+      "year": 2023,
+      "title": "Boxed warning update",
+      "detail": "The FDA updates the stimulant boxed warning to emphasise abuse, misuse and addiction; supply shortages of ADHD stimulants persist."
+    }
+  ],
+  "pk": {
+    "half_life": "2–3 hours",
+    "bioavailability": "About 30% (11–52%)",
+    "metabolism": "De-esterification by carboxylesterase CES1 to inactive ritalinic acid",
+    "excretion": "Renal (~90%) as ritalinic acid"
+  },
+  "safety": {
+    "common": [
+      "Decreased appetite",
+      "Insomnia",
+      "Headache",
+      "Abdominal pain",
+      "Nervousness",
+      "Increased heart rate"
+    ],
+    "serious": [
+      "Abuse, misuse and addiction",
+      "Sudden death and serious cardiovascular events in people with heart disease",
+      "Hypertension and tachycardia",
+      "Psychosis or mania",
+      "Growth suppression in children",
+      "Peripheral vasculopathy including Raynaud's phenomenon",
+      "Priapism"
+    ],
+    "boxed_warning": "High potential for abuse and misuse, which can lead to substance use disorder, including addiction; misuse and abuse can result in overdose and death. Assess risk before prescribing and monitor throughout treatment."
+  },
+  "facts": [
+    "Methylphenidate is not metabolised by CYP enzymes but by carboxylesterase 1."
+  ],
+  "related": [
+    "amphetamine",
+    "lisdexamfetamine",
+    "atomoxetine",
+    "modafinil"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Methylphenidate",
+      "url": "https://en.wikipedia.org/wiki/Methylphenidate"
+    },
+    {
+      "title": "DailyMed: methylphenidate labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=methylphenidate"
+    }
+  ],
+  "stage": "written"
 }

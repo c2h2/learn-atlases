@@ -1,36 +1,131 @@
 {
   "slug": "amitriptyline",
   "name": "Amitriptyline",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Amitriptyline hydrochloride"
+  ],
+  "brands": [
+    "Elavil",
+    "Tryptizol",
+    "Laroxyl"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Tricyclic antidepressant (tertiary amine)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets or solution, often once daily at night; low doses for pain and migraine prevention.",
+  "targets": [
+    "SLC6A4 (serotonin transporter)",
+    "SLC6A2 (noradrenaline transporter)",
+    "HRH1",
+    "CHRM1–5 (muscarinic)",
+    "ADRA1A",
+    "Voltage-gated sodium channels"
+  ],
+  "origin": "synthetic",
+  "originator": "Merck & Co. (also Hoffmann-La Roche and Lundbeck independently)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1961,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Elavil"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1960,
+    "by": "Merck & Co.",
+    "note": "Developed as a dibenzocycloheptadiene analogue of imipramine; several companies patented it around 1960."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Classic tricyclic antidepressant now used mostly at low doses for chronic pain",
+  "summary": "Amitriptyline is a tricyclic antidepressant that inhibits serotonin and noradrenaline reuptake and blocks histamine, muscarinic and alpha-adrenergic receptors. Once a mainstay for depression, it is now widely used at low doses for neuropathic pain, migraine prophylaxis and other chronic pain syndromes.",
+  "mechanism": [
+    "Amitriptyline inhibits reuptake of serotonin and noradrenaline; its main metabolite nortriptyline is a more noradrenaline-selective reuptake inhibitor. Analgesic effects at low doses are attributed to enhanced descending inhibitory pathways and sodium-channel blockade.",
+    "Strong antagonism of H1, muscarinic and alpha-1 receptors causes sedation, anticholinergic effects and orthostatic hypotension. Sodium-channel blockade in the heart underlies QRS widening and arrhythmias in overdose."
+  ],
+  "uses": [
+    "Major depressive disorder",
+    "Neuropathic pain (off-label in some countries, licensed in others)",
+    "Migraine prophylaxis",
+    "Tension-type headache prophylaxis",
+    "Nocturnal enuresis (some countries)"
+  ],
+  "history": [
+    {
+      "year": 1960,
+      "title": "Development",
+      "detail": "Merck develops amitriptyline as a follow-up to imipramine."
+    },
+    {
+      "year": 1961,
+      "title": "FDA approval",
+      "detail": "Amitriptyline is approved in the US as Elavil."
+    },
+    {
+      "year": 2004,
+      "title": "Suicidality warning",
+      "detail": "Class boxed warning on suicidality in young people."
+    },
+    {
+      "year": 2013,
+      "title": "NICE guidance",
+      "detail": "NICE neuropathic pain guidance lists amitriptyline among first-line options with duloxetine, gabapentin and pregabalin."
+    },
+    {
+      "year": 2023,
+      "title": "ATLANTIS trial",
+      "detail": "The UK ATLANTIS trial reports benefit of low-dose amitriptyline in irritable bowel syndrome."
+    }
+  ],
+  "pk": {
+    "half_life": "10–28 hours; nortriptyline 18–44 hours",
+    "bioavailability": "30–60%",
+    "metabolism": "Hepatic CYP2C19 (to nortriptyline) and CYP2D6 (hydroxylation)",
+    "excretion": "Renal as metabolites"
+  },
+  "safety": {
+    "common": [
+      "Drowsiness",
+      "Dry mouth",
+      "Constipation",
+      "Weight gain",
+      "Blurred vision",
+      "Dizziness"
+    ],
+    "serious": [
+      "Cardiac arrhythmias and conduction block",
+      "Severe toxicity in overdose",
+      "Urinary retention",
+      "Serotonin syndrome",
+      "Seizures",
+      "Suicidal thoughts in young people"
+    ],
+    "boxed_warning": "Increased risk of suicidal thoughts and behaviours in children, adolescents and young adults (under 25) taking antidepressants; monitor for clinical worsening."
+  },
+  "facts": [
+    "Tricyclic overdose is a leading cause of fatal antidepressant poisoning; sodium bicarbonate is used to treat QRS widening."
+  ],
+  "related": [
+    "imipramine",
+    "clomipramine",
+    "duloxetine",
+    "gabapentin",
+    "pregabalin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Amitriptyline",
+      "url": "https://en.wikipedia.org/wiki/Amitriptyline"
+    },
+    {
+      "title": "DailyMed: amitriptyline labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=amitriptyline"
+    }
+  ],
+  "stage": "written"
 }

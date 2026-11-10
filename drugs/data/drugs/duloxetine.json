@@ -1,36 +1,128 @@
 {
   "slug": "duloxetine",
   "name": "Duloxetine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "LY248686",
+    "Duloxetine hydrochloride"
+  ],
+  "brands": [
+    "Cymbalta",
+    "Yentreve",
+    "Drizalma Sprinkle"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Serotonin–noradrenaline reuptake inhibitor (SNRI)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral delayed-release (enteric-coated) capsules once or twice daily.",
+  "targets": [
+    "SLC6A4 (serotonin transporter)",
+    "SLC6A2 (noradrenaline transporter)"
+  ],
+  "origin": "synthetic",
+  "originator": "Eli Lilly and Company",
+  "owner": "generic (many); Eli Lilly (Cymbalta)",
+  "first_approval": {
+    "year": 2004,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Cymbalta"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Eli Lilly (David Robertson, David Wong and colleagues)",
+    "note": "A thiophene naphthyloxy propylamine developed at Lilly in the late 1980s as a balanced serotonin and noradrenaline reuptake inhibitor."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "SNRI approved for depression, anxiety and several chronic pain conditions",
+  "summary": "Duloxetine is a balanced serotonin–noradrenaline reuptake inhibitor approved for depression, generalised anxiety disorder and chronic pain conditions including diabetic neuropathic pain and fibromyalgia. In Europe it is also licensed for stress urinary incontinence.",
+  "mechanism": [
+    "Duloxetine potently inhibits both serotonin and noradrenaline reuptake. Enhancement of descending inhibitory serotonergic and noradrenergic pain pathways in the spinal cord is thought to underlie its analgesic effect, independent of mood improvement.",
+    "In the sacral spinal cord (Onuf's nucleus) increased serotonin and noradrenaline enhance pudendal nerve activity and urethral sphincter tone, the basis of its use in stress urinary incontinence."
+  ],
+  "uses": [
+    "Major depressive disorder",
+    "Generalised anxiety disorder",
+    "Diabetic peripheral neuropathic pain",
+    "Fibromyalgia",
+    "Chronic musculoskeletal pain (osteoarthritis, low back pain)",
+    "Stress urinary incontinence in women (EU, Yentreve)"
+  ],
+  "history": [
+    {
+      "year": 2004,
+      "title": "Approvals",
+      "detail": "The FDA approves Cymbalta for depression and diabetic neuropathic pain; the EU approves Yentreve for stress urinary incontinence."
+    },
+    {
+      "year": 2007,
+      "title": "GAD",
+      "detail": "Duloxetine is approved in the US for generalised anxiety disorder."
+    },
+    {
+      "year": 2008,
+      "title": "Fibromyalgia",
+      "detail": "The FDA approves duloxetine for fibromyalgia."
+    },
+    {
+      "year": 2010,
+      "title": "Musculoskeletal pain",
+      "detail": "Approval for chronic musculoskeletal pain, including osteoarthritis and chronic low back pain."
+    },
+    {
+      "year": 2013,
+      "title": "Generics",
+      "detail": "US generic duloxetine launches in December 2013."
+    }
+  ],
+  "pk": {
+    "half_life": "About 12 hours",
+    "bioavailability": "About 50%",
+    "metabolism": "Hepatic CYP1A2 and CYP2D6; moderate CYP2D6 inhibitor",
+    "excretion": "Mainly renal as metabolites"
+  },
+  "safety": {
+    "common": [
+      "Nausea",
+      "Dry mouth",
+      "Somnolence",
+      "Constipation",
+      "Fatigue",
+      "Decreased appetite"
+    ],
+    "serious": [
+      "Hepatotoxicity",
+      "Serotonin syndrome",
+      "Suicidal thoughts in young people",
+      "Orthostatic hypotension",
+      "Hyponatraemia",
+      "Discontinuation syndrome"
+    ],
+    "boxed_warning": "Increased risk of suicidal thoughts and behaviours in children, adolescents and young adults (under 25) taking antidepressants; monitor for clinical worsening."
+  },
+  "facts": [
+    "Duloxetine was one of the first antidepressants approved specifically for a neuropathic pain indication."
+  ],
+  "related": [
+    "venlafaxine",
+    "pregabalin",
+    "gabapentin",
+    "amitriptyline"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Duloxetine",
+      "url": "https://en.wikipedia.org/wiki/Duloxetine"
+    },
+    {
+      "title": "DailyMed: duloxetine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=duloxetine"
+    }
+  ],
+  "stage": "written"
 }

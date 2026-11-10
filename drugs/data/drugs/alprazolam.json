@@ -1,36 +1,130 @@
 {
   "slug": "alprazolam",
   "name": "Alprazolam",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "U-31889"
+  ],
+  "brands": [
+    "Xanax",
+    "Xanax XR",
+    "Niravam"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Benzodiazepine (triazolobenzodiazepine, short-to-intermediate acting)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets two to four times daily, extended-release tablets once daily, or orally disintegrating tablets.",
+  "targets": [
+    "GABA-A receptors (benzodiazepine site, positive allosteric modulator)"
+  ],
+  "origin": "synthetic",
+  "originator": "Upjohn Company",
+  "owner": "generic (many); Viatris (Xanax)",
+  "first_approval": {
+    "year": 1981,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Xanax"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Jackson B. Hester (Upjohn)",
+    "note": "A triazolo-fused benzodiazepine developed at Upjohn in the late 1960s and 1970s."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription; controlled (US Schedule IV)",
+  "tagline": "Fast-acting triazolobenzodiazepine for anxiety and panic, with high misuse potential",
+  "summary": "Alprazolam is a high-potency triazolobenzodiazepine used for generalised anxiety disorder and panic disorder. It became one of the most prescribed psychiatric drugs in the US, and its rapid onset and short half-life are associated with interdose rebound, dependence and difficult withdrawal.",
+  "mechanism": [
+    "Alprazolam binds the benzodiazepine site of GABA-A receptors and enhances GABA-induced chloride currents, producing anxiolytic, sedative and anticonvulsant effects.",
+    "Its rapid absorption and relatively short half-life produce fast relief but marked fluctuations in plasma levels, which contribute to rebound anxiety and its reinforcing properties."
+  ],
+  "uses": [
+    "Generalised anxiety disorder",
+    "Panic disorder with or without agoraphobia"
+  ],
+  "history": [
+    {
+      "year": 1981,
+      "title": "FDA approval",
+      "detail": "Xanax is approved for anxiety in October 1981."
+    },
+    {
+      "year": 1990,
+      "title": "Panic disorder",
+      "detail": "Alprazolam becomes the first drug approved by the FDA for panic disorder."
+    },
+    {
+      "year": 1993,
+      "title": "Generics",
+      "detail": "Generic alprazolam becomes available in the US."
+    },
+    {
+      "year": 2003,
+      "title": "Xanax XR",
+      "detail": "Extended-release alprazolam is approved for panic disorder."
+    },
+    {
+      "year": 2016,
+      "title": "Opioid boxed warning",
+      "detail": "The FDA adds a boxed warning on combined use with opioids."
+    },
+    {
+      "year": 2020,
+      "title": "Class boxed warning",
+      "detail": "The benzodiazepine boxed warning is expanded to abuse, dependence and withdrawal reactions."
+    },
+    {
+      "year": 2020,
+      "title": "Viatris",
+      "detail": "Xanax passes to Viatris with the merger of Pfizer's Upjohn unit and Mylan."
+    }
+  ],
+  "pk": {
+    "half_life": "About 11 hours (6–27)",
+    "bioavailability": "About 80–90%",
+    "metabolism": "Hepatic CYP3A4 to alpha-hydroxyalprazolam (weakly active)",
+    "excretion": "Renal"
+  },
+  "safety": {
+    "common": [
+      "Drowsiness",
+      "Light-headedness",
+      "Impaired coordination",
+      "Memory impairment",
+      "Dry mouth"
+    ],
+    "serious": [
+      "Dependence and withdrawal seizures",
+      "Respiratory depression with opioids or alcohol",
+      "Interdose rebound anxiety",
+      "Falls in older adults"
+    ],
+    "boxed_warning": "Concomitant use with opioids may cause profound sedation, respiratory depression, coma and death. Risks of abuse, misuse and addiction; continued use may lead to clinically significant physical dependence, and abrupt discontinuation or rapid dose reduction may cause life-threatening withdrawal reactions."
+  },
+  "facts": [
+    "Alprazolam is contraindicated with strong CYP3A4 inhibitors such as ketoconazole and itraconazole.",
+    "Counterfeit alprazolam tablets containing fentanyl or novel benzodiazepines have been reported by drug regulators."
+  ],
+  "related": [
+    "diazepam",
+    "lorazepam",
+    "midazolam",
+    "buspirone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Alprazolam",
+      "url": "https://en.wikipedia.org/wiki/Alprazolam"
+    },
+    {
+      "title": "DailyMed: alprazolam labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=alprazolam"
+    }
+  ],
+  "stage": "written"
 }

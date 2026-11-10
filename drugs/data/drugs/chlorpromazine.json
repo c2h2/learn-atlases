@@ -1,36 +1,139 @@
 {
   "slug": "chlorpromazine",
   "name": "Chlorpromazine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "RP 4560",
+    "Chlorpromazine hydrochloride"
+  ],
+  "brands": [
+    "Largactil",
+    "Thorazine"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Typical (first-generation) antipsychotic; phenothiazine",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "im",
+    "iv",
+    "rectal"
+  ],
+  "route_note": "Oral tablets or syrup; IM/IV injection for acute agitation; suppositories in some countries.",
+  "targets": [
+    "DRD2 (antagonist)",
+    "HTR2A",
+    "HRH1",
+    "ADRA1A",
+    "CHRM1"
+  ],
+  "origin": "synthetic",
+  "originator": "Rhône-Poulenc",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1952,
+    "agency": "French authorities",
+    "country": "France",
+    "brand": "Largactil"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1950,
+    "by": "Paul Charpentier (Rhône-Poulenc); clinical use by Henri Laborit, Jean Delay and Pierre Deniker",
+    "note": "Synthesised in December 1950 during antihistamine research; surgeon Laborit noted its calming 'artificial hibernation' effect, and Delay and Deniker reported its antipsychotic effect in 1952."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "The first antipsychotic, which launched modern psychopharmacology in 1952",
+  "summary": "Chlorpromazine was the first antipsychotic drug. Its introduction in 1952 transformed the treatment of schizophrenia, contributed to deinstitutionalisation and led to the dopamine hypothesis of psychosis. It remains in use for psychosis, agitation, nausea and intractable hiccups.",
+  "mechanism": [
+    "Chlorpromazine blocks dopamine D2 receptors in mesolimbic pathways, reducing positive psychotic symptoms; blockade in nigrostriatal and tuberoinfundibular pathways causes extrapyramidal effects and hyperprolactinaemia.",
+    "It is a 'low-potency' typical antipsychotic with strong antagonism of histamine H1, alpha-1 adrenergic and muscarinic receptors, explaining sedation, hypotension and anticholinergic effects. D2 blockade in the chemoreceptor trigger zone gives antiemetic activity."
+  ],
+  "uses": [
+    "Schizophrenia and other psychotic disorders",
+    "Acute mania",
+    "Severe agitation",
+    "Nausea and vomiting",
+    "Intractable hiccups",
+    "Tetanus (adjunct) and acute intermittent porphyria"
+  ],
+  "history": [
+    {
+      "year": 1950,
+      "title": "Synthesis",
+      "detail": "Paul Charpentier synthesises chlorpromazine at Rhône-Poulenc."
+    },
+    {
+      "year": 1951,
+      "title": "Anaesthesia",
+      "detail": "Henri Laborit uses it to potentiate anaesthesia and notes marked indifference in patients."
+    },
+    {
+      "year": 1952,
+      "title": "Psychiatry",
+      "detail": "Delay and Deniker at Sainte-Anne Hospital, Paris, report its effect in psychosis; it is marketed as Largactil."
+    },
+    {
+      "year": 1954,
+      "title": "FDA approval",
+      "detail": "Smith, Kline & French launch Thorazine in the US."
+    },
+    {
+      "year": 1963,
+      "title": "Dopamine theory",
+      "detail": "Arvid Carlsson proposes that antipsychotics act on monoamine (dopamine) receptors."
+    },
+    {
+      "year": 1976,
+      "title": "D2 correlation",
+      "detail": "Seeman and Creese independently show antipsychotic potency correlates with D2 receptor binding."
+    }
+  ],
+  "pk": {
+    "half_life": "About 30 hours (highly variable)",
+    "bioavailability": "10–80% (extensive first-pass)",
+    "metabolism": "Hepatic, CYP2D6 and others; many metabolites",
+    "excretion": "Renal and biliary"
+  },
+  "safety": {
+    "common": [
+      "Sedation",
+      "Dry mouth",
+      "Orthostatic hypotension",
+      "Weight gain",
+      "Photosensitivity",
+      "Extrapyramidal symptoms"
+    ],
+    "serious": [
+      "Tardive dyskinesia",
+      "Neuroleptic malignant syndrome",
+      "Agranulocytosis",
+      "Cholestatic jaundice",
+      "Seizures",
+      "QT prolongation"
+    ],
+    "boxed_warning": "Increased mortality in elderly patients with dementia-related psychosis; not approved for this use."
+  },
+  "facts": [
+    "By 1964 an estimated 50 million people worldwide had taken chlorpromazine.",
+    "It is used as a reference for 'chlorpromazine equivalent' antipsychotic doses."
+  ],
+  "related": [
+    "haloperidol",
+    "clozapine",
+    "imipramine",
+    "olanzapine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Chlorpromazine",
+      "url": "https://en.wikipedia.org/wiki/Chlorpromazine"
+    },
+    {
+      "title": "DailyMed: chlorpromazine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=chlorpromazine"
+    }
+  ],
+  "stage": "written"
 }

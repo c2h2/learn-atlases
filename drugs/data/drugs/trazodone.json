@@ -1,36 +1,130 @@
 {
   "slug": "trazodone",
   "name": "Trazodone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "AF-1161",
+    "Trazodone hydrochloride"
+  ],
+  "brands": [
+    "Desyrel",
+    "Oleptro",
+    "Trittico",
+    "Molipaxin"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Serotonin antagonist and reuptake inhibitor (SARI); triazolopyridine",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets, usually in divided doses or at bedtime; extended-release forms in some countries.",
+  "targets": [
+    "HTR2A (antagonist)",
+    "SLC6A4 (weak inhibitor)",
+    "ADRA1A (antagonist)",
+    "HRH1"
+  ],
+  "origin": "synthetic",
+  "originator": "Angelini (Italy)",
+  "owner": "generic (many); Angelini Pharma (Trittico)",
+  "first_approval": {
+    "year": 1981,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Desyrel"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1966,
+    "by": "Angelini Research Laboratories (Bruno Silvestrini and colleagues)",
+    "note": "Developed in Italy in the 1960s from a hypothesis linking depression to altered pain thresholds."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Sedating antidepressant widely used at low doses for insomnia",
+  "summary": "Trazodone is a triazolopyridine antidepressant that blocks 5-HT2A receptors and weakly inhibits serotonin reuptake. Developed in Italy in the 1960s, it is licensed for depression but is very widely used off-label at low doses as a hypnotic.",
+  "mechanism": [
+    "At low doses trazodone acts mainly as an antagonist at 5-HT2A, histamine H1 and alpha-1 adrenergic receptors, producing sedation. At higher antidepressant doses, serotonin transporter inhibition adds a serotonergic effect while 5-HT2A blockade limits insomnia, anxiety and sexual side effects.",
+    "Its metabolite m-chlorophenylpiperazine (mCPP) is a serotonin receptor agonist. Alpha-1 blockade underlies orthostatic hypotension and the rare risk of priapism."
+  ],
+  "uses": [
+    "Major depressive disorder",
+    "Insomnia (off-label in many countries)"
+  ],
+  "history": [
+    {
+      "year": 1966,
+      "title": "Discovery",
+      "detail": "Angelini develops trazodone in Italy."
+    },
+    {
+      "year": 1972,
+      "title": "Italian launch",
+      "detail": "Trazodone is marketed in Italy as Trittico."
+    },
+    {
+      "year": 1981,
+      "title": "FDA approval",
+      "detail": "The FDA approves Desyrel (Mead Johnson) for depression."
+    },
+    {
+      "year": 1986,
+      "title": "Generics",
+      "detail": "Generic trazodone becomes available in the US."
+    },
+    {
+      "year": 2004,
+      "title": "Suicidality warning",
+      "detail": "Class boxed warning on suicidality in young people."
+    },
+    {
+      "year": 2010,
+      "title": "Oleptro",
+      "detail": "A once-daily extended-release form is approved in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "Biphasic; terminal 5–9 hours",
+    "bioavailability": "High (~65% or more)",
+    "metabolism": "Hepatic CYP3A4 to active mCPP (further via CYP2D6)",
+    "excretion": "Mainly renal"
+  },
+  "safety": {
+    "common": [
+      "Somnolence",
+      "Dizziness",
+      "Dry mouth",
+      "Headache",
+      "Orthostatic hypotension"
+    ],
+    "serious": [
+      "Priapism",
+      "QT prolongation and arrhythmia",
+      "Serotonin syndrome",
+      "Suicidal thoughts in young people",
+      "Hyponatraemia"
+    ],
+    "boxed_warning": "Increased risk of suicidal thoughts and behaviours in children, adolescents and young adults (under 25) taking antidepressants; monitor for clinical worsening."
+  },
+  "facts": [
+    "Trazodone is among the most prescribed sleep aids in the US despite lacking an insomnia indication."
+  ],
+  "related": [
+    "mirtazapine",
+    "zolpidem",
+    "suvorexant",
+    "sertraline"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Trazodone",
+      "url": "https://en.wikipedia.org/wiki/Trazodone"
+    },
+    {
+      "title": "DailyMed: trazodone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=trazodone"
+    }
+  ],
+  "stage": "written"
 }

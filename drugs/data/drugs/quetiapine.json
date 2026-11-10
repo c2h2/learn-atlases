@@ -1,36 +1,144 @@
 {
   "slug": "quetiapine",
   "name": "Quetiapine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "ICI-204636",
+    "Quetiapine fumarate"
+  ],
+  "brands": [
+    "Seroquel",
+    "Seroquel XR",
+    "Seroquel XL"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Atypical (second-generation) antipsychotic; dibenzothiazepine",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral immediate-release tablets in divided doses or extended-release tablets once daily.",
+  "targets": [
+    "DRD2 (low affinity)",
+    "HTR2A",
+    "HRH1",
+    "ADRA1A",
+    "SLC6A2 (via norquetiapine)",
+    "HTR1A (partial agonist)"
+  ],
+  "origin": "synthetic",
+  "originator": "ICI Pharmaceuticals (later Zeneca/AstraZeneca)",
+  "owner": "generic (many); AstraZeneca (Seroquel)",
+  "first_approval": {
+    "year": 1997,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Seroquel"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "ICI Pharmaceuticals (UK)",
+    "note": "Developed in the 1980s as a clozapine-like dibenzothiazepine with low D2 affinity."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Sedating atypical antipsychotic licensed across schizophrenia, bipolar and depression",
+  "summary": "Quetiapine is a second-generation antipsychotic with low dopamine D2 affinity and strong antihistamine effects. It is approved for schizophrenia, bipolar mania and bipolar depression and, in extended-release form, as an add-on for major depression. Its low extrapyramidal liability makes it common in Parkinson's-related psychosis.",
+  "mechanism": [
+    "Quetiapine binds D2 receptors with low affinity and dissociates rapidly, producing transient occupancy and very few extrapyramidal effects; it also blocks 5-HT2A receptors.",
+    "Its active metabolite norquetiapine inhibits the noradrenaline transporter and is a 5-HT1A partial agonist, which is thought to contribute to antidepressant effects. Strong H1 antagonism makes low doses markedly sedating."
+  ],
+  "uses": [
+    "Schizophrenia",
+    "Acute mania and maintenance in bipolar I disorder",
+    "Bipolar depression",
+    "Adjunctive treatment of major depressive disorder (XR)",
+    "Generalised anxiety disorder (some countries, XR)"
+  ],
+  "history": [
+    {
+      "year": 1997,
+      "title": "FDA approval",
+      "detail": "The FDA approves Seroquel for schizophrenia in September 1997."
+    },
+    {
+      "year": 2004,
+      "title": "Bipolar mania",
+      "detail": "Quetiapine is approved for acute mania."
+    },
+    {
+      "year": 2006,
+      "title": "Bipolar depression",
+      "detail": "Quetiapine becomes approved for depressive episodes of bipolar disorder."
+    },
+    {
+      "year": 2007,
+      "title": "Seroquel XR",
+      "detail": "Extended-release quetiapine is approved."
+    },
+    {
+      "year": 2009,
+      "title": "Adjunctive MDD",
+      "detail": "Seroquel XR is approved as add-on treatment for major depression."
+    },
+    {
+      "year": 2010,
+      "title": "Settlement",
+      "detail": "AstraZeneca pays $520 million to resolve allegations of off-label promotion."
+    },
+    {
+      "year": 2012,
+      "title": "Generics",
+      "detail": "Generic quetiapine launches in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "About 6–7 hours; norquetiapine about 12 hours",
+    "bioavailability": "About 100% relative (high first-pass)",
+    "metabolism": "Hepatic CYP3A4 to norquetiapine and others",
+    "excretion": "Urine (~73%) and faeces"
+  },
+  "safety": {
+    "common": [
+      "Weight gain",
+      "Sedation",
+      "Akathisia",
+      "Somnolence",
+      "Dizziness",
+      "Dry mouth",
+      "Orthostatic hypotension"
+    ],
+    "serious": [
+      "Neuroleptic malignant syndrome",
+      "Tardive dyskinesia",
+      "Metabolic changes (hyperglycaemia, dyslipidaemia)",
+      "Seizures",
+      "QT prolongation",
+      "Cataracts (in animal studies; eye exams advised)",
+      "Suicidal thoughts in young people"
+    ],
+    "boxed_warning": "Increased mortality in elderly patients with dementia-related psychosis; not approved for this use. Suicidal thoughts and behaviours with antidepressant use in young people (where approved for depression)."
+  },
+  "facts": [
+    "Low-dose quetiapine is widely used off-label for insomnia, a practice discouraged by many guidelines."
+  ],
+  "related": [
+    "olanzapine",
+    "clozapine",
+    "risperidone",
+    "lithium",
+    "lurasidone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Quetiapine",
+      "url": "https://en.wikipedia.org/wiki/Quetiapine"
+    },
+    {
+      "title": "DailyMed: quetiapine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=quetiapine"
+    }
+  ],
+  "stage": "written"
 }

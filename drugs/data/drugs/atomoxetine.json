@@ -1,36 +1,120 @@
 {
   "slug": "atomoxetine",
   "name": "Atomoxetine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Tomoxetine",
+    "LY139603",
+    "Atomoxetine hydrochloride"
+  ],
+  "brands": [
+    "Strattera"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Selective noradrenaline reuptake inhibitor (non-stimulant ADHD medicine)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral capsules or solution once or twice daily; full effect develops over several weeks.",
+  "targets": [
+    "SLC6A2 (noradrenaline transporter)"
+  ],
+  "origin": "synthetic",
+  "originator": "Eli Lilly and Company",
+  "owner": "generic (many); Eli Lilly (Strattera)",
+  "first_approval": {
+    "year": 2002,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Strattera"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Eli Lilly",
+    "note": "Originally developed as tomoxetine, an antidepressant candidate, in the late 1970s and 1980s; renamed atomoxetine to avoid confusion with tamoxifen."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription (not a controlled substance)",
+  "tagline": "The first non-stimulant ADHD medicine, a selective noradrenaline reuptake inhibitor",
+  "summary": "Atomoxetine is a selective noradrenaline reuptake inhibitor and the first non-stimulant approved for ADHD. It is not a controlled substance and has low misuse potential, making it an option when stimulants are unsuitable, although its onset is slower and effect size somewhat smaller.",
+  "mechanism": [
+    "Atomoxetine selectively inhibits the presynaptic noradrenaline transporter. In the prefrontal cortex, where dopamine is also cleared by the noradrenaline transporter, this raises both noradrenaline and dopamine levels, improving attention and executive function.",
+    "It does not increase dopamine in the nucleus accumbens or striatum, which explains its lack of reinforcing effects and low abuse potential."
+  ],
+  "uses": [
+    "Attention-deficit/hyperactivity disorder (children 6 and over, adolescents and adults)"
+  ],
+  "history": [
+    {
+      "year": 1985,
+      "title": "Tomoxetine",
+      "detail": "During the 1980s Lilly studies tomoxetine as an antidepressant but does not develop it for that use."
+    },
+    {
+      "year": 2002,
+      "title": "FDA approval",
+      "detail": "Strattera is approved for ADHD in November 2002."
+    },
+    {
+      "year": 2004,
+      "title": "Liver warning",
+      "detail": "Labelling adds a warning on rare severe liver injury."
+    },
+    {
+      "year": 2005,
+      "title": "Suicidality boxed warning",
+      "detail": "The FDA adds a boxed warning on suicidal ideation in children and adolescents."
+    },
+    {
+      "year": 2017,
+      "title": "Generics",
+      "detail": "Generic atomoxetine launches in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "About 5 hours (CYP2D6 extensive metabolisers); about 24 hours in poor metabolisers",
+    "bioavailability": "63% (extensive) to 94% (poor metabolisers)",
+    "metabolism": "Hepatic CYP2D6 to 4-hydroxyatomoxetine",
+    "excretion": "Renal (>80%) as glucuronides"
+  },
+  "safety": {
+    "common": [
+      "Decreased appetite",
+      "Nausea and abdominal pain",
+      "Somnolence",
+      "Headache",
+      "Increased heart rate and blood pressure"
+    ],
+    "serious": [
+      "Suicidal ideation in children and adolescents",
+      "Severe liver injury",
+      "Cardiovascular events",
+      "Psychosis or mania",
+      "Urinary retention",
+      "Priapism"
+    ],
+    "boxed_warning": "Increased risk of suicidal ideation in children and adolescents; monitor for suicidality, clinical worsening and unusual changes in behaviour."
+  },
+  "facts": [
+    "Atomoxetine was renamed from tomoxetine to avoid prescribing errors with tamoxifen."
+  ],
+  "related": [
+    "methylphenidate",
+    "amphetamine",
+    "lisdexamfetamine",
+    "bupropion"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Atomoxetine",
+      "url": "https://en.wikipedia.org/wiki/Atomoxetine"
+    },
+    {
+      "title": "DailyMed: atomoxetine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=atomoxetine"
+    }
+  ],
+  "stage": "written"
 }

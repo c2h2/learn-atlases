@@ -1,36 +1,114 @@
 {
   "slug": "acamprosate",
   "name": "Acamprosate",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Calcium acetylhomotaurinate",
+    "Acamprosate calcium"
+  ],
+  "brands": [
+    "Campral",
+    "Aotal"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Glutamatergic modulator for alcohol dependence (taurine analogue)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral delayed-release tablets three times daily, started after withdrawal.",
+  "targets": [
+    "NMDA receptor (modulator, mechanism uncertain)",
+    "mGluR5"
+  ],
+  "origin": "synthetic",
+  "originator": "Lipha (Merck KGaA, France)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1989,
+    "agency": "French authorities",
+    "country": "France",
+    "brand": "Aotal"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Laboratoires Meram / Lipha (France)",
+    "note": "Developed as a structural analogue of the amino acids taurine and GABA."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Glutamate-modulating drug to help maintain abstinence from alcohol",
+  "summary": "Acamprosate is used to help maintain abstinence in people with alcohol dependence after withdrawal. It is thought to restore the balance between glutamatergic excitation and GABAergic inhibition that is disrupted by chronic drinking. It is renally excreted and not metabolised by the liver.",
+  "mechanism": [
+    "Chronic alcohol use upregulates glutamatergic NMDA signalling; when drinking stops, this leads to a hyperexcitable state that is thought to drive craving and relapse. Acamprosate is believed to dampen this hyperglutamatergic state, possibly by modulating NMDA and metabotropic glutamate (mGluR5) receptors.",
+    "Some research suggests that the calcium in the formulation contributes to its effects. The precise mechanism remains unclear."
+  ],
+  "uses": [
+    "Maintenance of abstinence from alcohol in patients with alcohol dependence who are abstinent at treatment initiation"
+  ],
+  "history": [
+    {
+      "year": 1989,
+      "title": "French approval",
+      "detail": "Acamprosate is introduced in France as Aotal."
+    },
+    {
+      "year": 1996,
+      "title": "European trials",
+      "detail": "Placebo-controlled European trials, including Sass and colleagues in Germany, report improved abstinence rates."
+    },
+    {
+      "year": 2004,
+      "title": "FDA approval",
+      "detail": "Campral (Forest) is approved in the US in July 2004."
+    },
+    {
+      "year": 2006,
+      "title": "COMBINE study",
+      "detail": "The US COMBINE trial finds no benefit of acamprosate over placebo, in contrast to European trials."
+    },
+    {
+      "year": 2014,
+      "title": "Meta-analysis",
+      "detail": "A JAMA systematic review (Jonas and colleagues) finds acamprosate and oral naltrexone both reduce return to drinking."
+    }
+  ],
+  "pk": {
+    "half_life": "20–33 hours",
+    "bioavailability": "About 11%",
+    "metabolism": "Not metabolised",
+    "excretion": "Renal, unchanged"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Diarrhoea",
+      "Nausea",
+      "Flatulence",
+      "Pruritus"
+    ],
+    "serious": [
+      "Suicidal ideation (reported in trials)",
+      "Accumulation in renal impairment (contraindicated if CrCl ≤30 mL/min)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Because it is not metabolised by the liver, acamprosate can be used in people with alcohol-related liver disease."
+  ],
+  "related": [
+    "naltrexone",
+    "disulfiram"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Acamprosate",
+      "url": "https://en.wikipedia.org/wiki/Acamprosate"
+    },
+    {
+      "title": "DailyMed: acamprosate labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=acamprosate"
+    }
+  ],
+  "stage": "written"
 }

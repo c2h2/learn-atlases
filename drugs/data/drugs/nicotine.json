@@ -1,36 +1,140 @@
 {
   "slug": "nicotine",
   "name": "Nicotine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Nicotine polacrilex",
+    "Nicotine bitartrate"
+  ],
+  "brands": [
+    "Nicorette",
+    "NicoDerm CQ",
+    "Nicotinell",
+    "Niquitin",
+    "Nicotrol"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Nicotinic acetylcholine receptor agonist (nicotine replacement therapy)",
+  "modality": "small-molecule",
+  "routes": [
+    "transdermal",
+    "oral",
+    "intranasal",
+    "inhaled",
+    "sublingual"
+  ],
+  "route_note": "Nicotine replacement therapy as patches, gum, lozenges, sublingual tablets, nasal spray, oral spray and inhalator.",
+  "targets": [
+    "CHRNA4/CHRNB2 (alpha4beta2 nAChR)",
+    "Other neuronal and ganglionic nicotinic receptors"
+  ],
+  "origin": "natural",
+  "originator": "Leo AB (Sweden; Nicorette gum, Ove Fernö)",
+  "owner": "generic (many); Haleon and Kenvue (Nicorette, by region)",
+  "first_approval": {
+    "year": 1978,
+    "agency": null,
+    "country": "Switzerland",
+    "brand": "Nicorette"
+  },
+  "discovery": {
+    "year": 1828,
+    "by": "Wilhelm Posselt and Karl Ludwig Reimann (Heidelberg)",
+    "note": "Isolated from tobacco (Nicotiana tabacum), named after Jean Nicot, who introduced tobacco to the French court in 1560."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "OTC in most countries (some forms prescription)",
+  "tagline": "Tobacco alkaloid used medicinally as replacement therapy to help people quit smoking",
+  "summary": "Nicotine is the principal addictive alkaloid in tobacco. As a medicine it is used in nicotine replacement therapy (NRT), which delivers nicotine without the tar and carbon monoxide of smoke, easing withdrawal and roughly doubling quit rates compared with placebo.",
+  "mechanism": [
+    "Nicotine activates nicotinic acetylcholine receptors, especially alpha4beta2 receptors on dopaminergic neurons in the ventral tegmental area, triggering dopamine release in the nucleus accumbens that underlies its reinforcing effect. Chronic exposure upregulates and desensitises these receptors.",
+    "NRT products deliver nicotine more slowly and at lower peak concentrations than cigarettes, relieving withdrawal and craving while being far less reinforcing. Combining a patch with a fast-acting form is more effective than a single product."
+  ],
+  "uses": [
+    "Smoking cessation (nicotine replacement therapy)",
+    "Reduction of smoking prior to quitting (some products)",
+    "Temporary abstinence and relief of withdrawal symptoms"
+  ],
+  "history": [
+    {
+      "year": 1828,
+      "title": "Isolation",
+      "detail": "Posselt and Reimann isolate nicotine from tobacco leaves."
+    },
+    {
+      "year": 1893,
+      "title": "Structure",
+      "detail": "Adolf Pinner proposes nicotine's structure."
+    },
+    {
+      "year": 1904,
+      "title": "Synthesis",
+      "detail": "Amé Pictet and A. Rotschy achieve the first synthesis."
+    },
+    {
+      "year": 1978,
+      "title": "Nicorette",
+      "detail": "Nicotine chewing gum developed by Leo AB of Sweden is first marketed, in Switzerland."
+    },
+    {
+      "year": 1984,
+      "title": "FDA approval",
+      "detail": "Nicorette gum is approved in the US as a prescription product."
+    },
+    {
+      "year": 1988,
+      "title": "Surgeon General",
+      "detail": "The US Surgeon General's report concludes that nicotine is addictive."
+    },
+    {
+      "year": 1991,
+      "title": "Patches",
+      "detail": "Transdermal nicotine patches are approved in the US."
+    },
+    {
+      "year": 1996,
+      "title": "OTC switch",
+      "detail": "Nicotine gum and patches become available over the counter in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "About 2 hours; cotinine about 16–20 hours",
+    "bioavailability": "Varies by product (low oral due to first-pass; good transdermal and buccal)",
+    "metabolism": "Hepatic, mainly CYP2A6 to cotinine",
+    "excretion": "Renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Skin irritation (patch)",
+      "Hiccups and jaw discomfort (gum)",
+      "Nasal irritation (spray)",
+      "Nausea",
+      "Sleep disturbance and vivid dreams (patch)"
+    ],
+    "serious": [
+      "Nicotine poisoning, especially in children who ingest products or e-liquids",
+      "Palpitations and arrhythmia (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Nicotine replacement therapy is on the WHO Model List of Essential Medicines.",
+    "The rate of CYP2A6 metabolism varies genetically and affects how much people smoke."
+  ],
+  "related": [
+    "varenicline",
+    "bupropion"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Nicotine",
+      "url": "https://en.wikipedia.org/wiki/Nicotine"
+    },
+    {
+      "title": "Wikipedia: Nicotine replacement therapy",
+      "url": "https://en.wikipedia.org/wiki/Nicotine_replacement_therapy"
+    }
+  ],
+  "stage": "written"
 }

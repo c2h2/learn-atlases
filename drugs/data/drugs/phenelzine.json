@@ -1,36 +1,122 @@
 {
   "slug": "phenelzine",
   "name": "Phenelzine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Phenelzine sulfate",
+    "β-phenylethylhydrazine"
+  ],
+  "brands": [
+    "Nardil"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Monoamine oxidase inhibitor (MAOI), irreversible non-selective hydrazine",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets in divided doses, with dietary tyramine restriction.",
+  "targets": [
+    "MAOA",
+    "MAOB",
+    "GABA transaminase (ABAT)"
+  ],
+  "origin": "synthetic",
+  "originator": "Warner-Lambert (Parke-Davis)",
+  "owner": "generic (many); Pfizer (Nardil)",
+  "first_approval": {
+    "year": 1961,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Nardil"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Warner-Lambert",
+    "note": "A hydrazine MAO inhibitor developed after iproniazid revealed the antidepressant potential of MAO inhibition in the 1950s."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Irreversible MAO inhibitor kept for atypical and treatment-resistant depression",
+  "summary": "Phenelzine is an irreversible, non-selective monoamine oxidase inhibitor of the hydrazine class. It is effective in atypical and treatment-resistant depression but requires dietary restrictions and careful drug-interaction management because of the risk of hypertensive crisis and serotonin syndrome.",
+  "mechanism": [
+    "Phenelzine irreversibly inhibits MAO-A and MAO-B, preventing breakdown of serotonin, noradrenaline and dopamine and increasing their stores and release. Recovery requires synthesis of new enzyme over about two weeks.",
+    "Inhibition of intestinal and hepatic MAO-A allows dietary tyramine to reach the circulation and release noradrenaline, causing hypertensive reactions (the 'cheese reaction'). Phenelzine also raises brain GABA by inhibiting GABA transaminase."
+  ],
+  "uses": [
+    "Depression, especially atypical, non-endogenous or treatment-resistant depression"
+  ],
+  "history": [
+    {
+      "year": 1952,
+      "title": "Iproniazid",
+      "detail": "The tuberculosis drug iproniazid is observed to elevate mood, leading to the MAOI class."
+    },
+    {
+      "year": 1957,
+      "title": "Psychic energiser",
+      "detail": "Nathan Kline reports iproniazid as an antidepressant."
+    },
+    {
+      "year": 1961,
+      "title": "FDA approval",
+      "detail": "Phenelzine is approved in the US as Nardil."
+    },
+    {
+      "year": 1963,
+      "title": "Cheese reaction",
+      "detail": "Hypertensive crises linked to tyramine-rich foods are described with MAOIs."
+    },
+    {
+      "year": 2004,
+      "title": "Suicidality warning",
+      "detail": "Class boxed warning on suicidality in young people."
+    }
+  ],
+  "pk": {
+    "half_life": "About 11–12 hours (effect lasts weeks owing to irreversible inhibition)",
+    "bioavailability": "Well absorbed",
+    "metabolism": "Hepatic oxidation and acetylation",
+    "excretion": "Renal as metabolites"
+  },
+  "safety": {
+    "common": [
+      "Dizziness and orthostatic hypotension",
+      "Insomnia or sedation",
+      "Weight gain",
+      "Sexual dysfunction",
+      "Oedema"
+    ],
+    "serious": [
+      "Hypertensive crisis with tyramine or sympathomimetics",
+      "Serotonin syndrome with serotonergic drugs",
+      "Hepatotoxicity",
+      "Suicidal thoughts in young people"
+    ],
+    "boxed_warning": "Increased risk of suicidal thoughts and behaviours in children, adolescents and young adults (under 25) taking antidepressants; monitor for clinical worsening."
+  },
+  "facts": [
+    "A washout of at least two weeks is required when switching between phenelzine and most other antidepressants (five weeks after fluoxetine)."
+  ],
+  "related": [
+    "imipramine",
+    "fluoxetine",
+    "amitriptyline"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Phenelzine",
+      "url": "https://en.wikipedia.org/wiki/Phenelzine"
+    },
+    {
+      "title": "DailyMed: phenelzine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=phenelzine"
+    },
+    {
+      "title": "Wikipedia: Iproniazid",
+      "url": "https://en.wikipedia.org/wiki/Iproniazid"
+    }
+  ],
+  "stage": "written"
 }

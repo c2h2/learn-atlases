@@ -1,36 +1,118 @@
 {
   "slug": "buspirone",
   "name": "Buspirone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "MJ 9022",
+    "Buspirone hydrochloride"
+  ],
+  "brands": [
+    "BuSpar",
+    "Buspar"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Anxiolytic; azapirone (5-HT1A partial agonist)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets two or three times daily; effect develops over 2–4 weeks.",
+  "targets": [
+    "HTR1A (partial agonist)",
+    "DRD2 (weak antagonist)"
+  ],
+  "origin": "synthetic",
+  "originator": "Mead Johnson (Bristol-Myers)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1986,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "BuSpar"
+  },
+  "discovery": {
+    "year": 1968,
+    "by": "Mead Johnson (Michael Eison, Yao Wu and colleagues)",
+    "note": "Synthesised as a potential antipsychotic; it proved ineffective for psychosis but had anxiolytic activity."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Non-sedating, non-addictive anxiolytic acting on serotonin 5-HT1A receptors",
+  "summary": "Buspirone is an azapirone anxiolytic used for generalised anxiety disorder. Unlike benzodiazepines it does not cause significant sedation, dependence or interaction with alcohol, but it takes weeks to work and is ineffective for acute anxiety or panic.",
+  "mechanism": [
+    "Buspirone is a partial agonist at serotonin 5-HT1A receptors, acting as a near full agonist at presynaptic somatodendritic autoreceptors and a partial agonist at postsynaptic receptors. Gradual autoreceptor desensitisation increases serotonergic transmission.",
+    "It has weak dopamine D2 antagonist activity, and its metabolite 1-(2-pyrimidinyl)piperazine is an alpha-2 adrenergic antagonist. It does not act on GABA-A receptors."
+  ],
+  "uses": [
+    "Generalised anxiety disorder",
+    "Short-term relief of anxiety symptoms"
+  ],
+  "history": [
+    {
+      "year": 1968,
+      "title": "Synthesis",
+      "detail": "Buspirone is synthesised at Mead Johnson."
+    },
+    {
+      "year": 1986,
+      "title": "FDA approval",
+      "detail": "BuSpar is approved for anxiety."
+    },
+    {
+      "year": 2001,
+      "title": "Generics",
+      "detail": "Generic buspirone launches in the US after patent litigation."
+    },
+    {
+      "year": 2006,
+      "title": "STAR*D",
+      "detail": "In the STAR*D trial, buspirone is studied as an augmentation strategy for depression."
+    },
+    {
+      "year": 2023,
+      "title": "Gepirone",
+      "detail": "The related azapirone gepirone (Exxua) is approved by the FDA for major depressive disorder."
+    }
+  ],
+  "pk": {
+    "half_life": "2–3 hours",
+    "bioavailability": "About 4% (extensive first-pass)",
+    "metabolism": "Hepatic CYP3A4 to 1-PP and hydroxylated metabolites",
+    "excretion": "Renal (~29–63%) and faecal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Dizziness",
+      "Nausea",
+      "Headache",
+      "Nervousness",
+      "Light-headedness"
+    ],
+    "serious": [
+      "Serotonin syndrome (with other serotonergic drugs)",
+      "Hypertensive reactions with MAOIs"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Grapefruit juice markedly increases buspirone levels by inhibiting intestinal CYP3A4."
+  ],
+  "related": [
+    "alprazolam",
+    "diazepam",
+    "sertraline",
+    "escitalopram"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Buspirone",
+      "url": "https://en.wikipedia.org/wiki/Buspirone"
+    },
+    {
+      "title": "DailyMed: buspirone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=buspirone"
+    }
+  ],
+  "stage": "written"
 }

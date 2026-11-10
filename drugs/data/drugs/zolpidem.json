@@ -1,36 +1,130 @@
 {
   "slug": "zolpidem",
   "name": "Zolpidem",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "SL 80.0750",
+    "Zolpidem tartrate"
+  ],
+  "brands": [
+    "Ambien",
+    "Ambien CR",
+    "Stilnox",
+    "Edluar",
+    "Intermezzo"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Non-benzodiazepine hypnotic ('Z-drug'); imidazopyridine",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "sublingual"
+  ],
+  "route_note": "Oral tablets immediately before bedtime; extended-release and sublingual forms exist.",
+  "targets": [
+    "GABA-A receptors containing alpha-1 subunits (benzodiazepine site)"
+  ],
+  "origin": "synthetic",
+  "originator": "Synthélabo (now Sanofi)",
+  "owner": "generic (many); Sanofi (Ambien/Stilnox)",
+  "first_approval": {
+    "year": 1988,
+    "agency": "French authorities",
+    "country": "France",
+    "brand": "Stilnox"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Synthélabo Recherche",
+    "note": "An imidazopyridine developed in France as a hypnotic with relative selectivity for alpha-1-containing GABA-A receptors."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription; controlled (US Schedule IV)",
+  "tagline": "The most prescribed 'Z-drug' hypnotic, linked to complex sleep behaviours",
+  "summary": "Zolpidem is a short-acting non-benzodiazepine hypnotic for short-term treatment of insomnia. It acts at the benzodiazepine site of GABA-A receptors with selectivity for alpha-1 subunits. Next-day impairment and complex sleep behaviours such as sleep-driving led to dose reductions and a boxed warning.",
+  "mechanism": [
+    "Zolpidem binds the benzodiazepine site of GABA-A receptors, preferentially those containing the alpha-1 subunit, enhancing GABA-mediated inhibition. This selectivity produces sedation with relatively weak anxiolytic, muscle-relaxant and anticonvulsant effects.",
+    "Its rapid absorption and short half-life aim to shorten sleep latency while limiting residual effects, although morning impairment occurs, particularly in women and with extended-release forms."
+  ],
+  "uses": [
+    "Short-term treatment of insomnia (sleep-onset difficulty)",
+    "Sleep-maintenance insomnia (extended-release)",
+    "Middle-of-the-night awakening (low-dose sublingual)"
+  ],
+  "history": [
+    {
+      "year": 1988,
+      "title": "First launch",
+      "detail": "Zolpidem is introduced in France as Stilnox."
+    },
+    {
+      "year": 1992,
+      "title": "FDA approval",
+      "detail": "Ambien is approved in the US in December 1992."
+    },
+    {
+      "year": 2005,
+      "title": "Ambien CR",
+      "detail": "An extended-release formulation is approved."
+    },
+    {
+      "year": 2007,
+      "title": "Generics and warnings",
+      "detail": "Generic zolpidem launches in the US; the FDA requires stronger labelling on complex sleep behaviours and anaphylaxis for all hypnotics."
+    },
+    {
+      "year": 2013,
+      "title": "Dose for women",
+      "detail": "The FDA lowers the recommended dose for women to 5 mg because of next-morning impairment."
+    },
+    {
+      "year": 2019,
+      "title": "Boxed warning",
+      "detail": "The FDA adds a boxed warning about complex sleep behaviours, including sleep-walking and sleep-driving, causing serious injury or death."
+    }
+  ],
+  "pk": {
+    "half_life": "About 2.5 hours",
+    "bioavailability": "About 70%",
+    "metabolism": "Hepatic, mainly CYP3A4 (also CYP2C9, 1A2)",
+    "excretion": "Renal as inactive metabolites"
+  },
+  "safety": {
+    "common": [
+      "Drowsiness",
+      "Dizziness",
+      "Headache",
+      "Diarrhoea",
+      "Next-day impairment"
+    ],
+    "serious": [
+      "Complex sleep behaviours (sleep-driving, sleep-walking)",
+      "Respiratory depression with other depressants",
+      "Dependence and withdrawal",
+      "Anaphylaxis and angioedema",
+      "Worsening depression"
+    ],
+    "boxed_warning": "Complex sleep behaviours including sleep-walking, sleep-driving and engaging in other activities while not fully awake may occur, sometimes causing serious injuries including death. Discontinue if a complex sleep behaviour occurs."
+  },
+  "facts": [
+    "Women eliminate zolpidem more slowly than men, the basis of the FDA's sex-specific dosing in 2013."
+  ],
+  "related": [
+    "suvorexant",
+    "melatonin",
+    "diazepam",
+    "trazodone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Zolpidem",
+      "url": "https://en.wikipedia.org/wiki/Zolpidem"
+    },
+    {
+      "title": "DailyMed: zolpidem labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=zolpidem"
+    }
+  ],
+  "stage": "written"
 }

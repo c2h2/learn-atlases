@@ -1,36 +1,126 @@
 {
   "slug": "citalopram",
   "name": "Citalopram",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Lu 10-171",
+    "Citalopram hydrobromide"
+  ],
+  "brands": [
+    "Celexa",
+    "Cipramil"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Selective serotonin reuptake inhibitor (SSRI)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets or solution once daily; IV formulation available in some countries.",
+  "targets": [
+    "SLC6A4 (serotonin transporter)"
+  ],
+  "origin": "synthetic",
+  "originator": "H. Lundbeck A/S",
+  "owner": "generic (many); Lundbeck (Cipramil)",
+  "first_approval": {
+    "year": 1989,
+    "agency": "Danish Medicines Agency",
+    "country": "Denmark",
+    "brand": "Cipramil"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1972,
+    "by": "Lundbeck chemists (including Klaus Bøgesø's group)",
+    "note": "A racemic bicyclic phthalane derivative; its S-enantiomer was later developed as escitalopram."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Racemic SSRI from Lundbeck, limited by dose-dependent QT prolongation",
+  "summary": "Citalopram is a racemic SSRI used for depression. Developed by Lundbeck and marketed in the US by Forest Laboratories as Celexa, it is among the most selective SSRIs. Its S-enantiomer, escitalopram, carries most of the therapeutic activity.",
+  "mechanism": [
+    "Citalopram is a highly selective inhibitor of the serotonin transporter with minimal effects on noradrenaline and dopamine uptake and low affinity for other receptors. The S-enantiomer is responsible for SERT inhibition; the R-enantiomer is much weaker and may counteract S-citalopram binding via an allosteric site.",
+    "Dose-dependent prolongation of the QT interval led regulators to limit the maximum daily dose."
+  ],
+  "uses": [
+    "Major depressive disorder",
+    "Panic disorder (in some countries)"
+  ],
+  "history": [
+    {
+      "year": 1972,
+      "title": "Synthesis",
+      "detail": "Citalopram is synthesised at Lundbeck in Copenhagen."
+    },
+    {
+      "year": 1989,
+      "title": "First approval",
+      "detail": "Citalopram is launched in Denmark as Cipramil."
+    },
+    {
+      "year": 1998,
+      "title": "FDA approval",
+      "detail": "The FDA approves Celexa (Forest Laboratories) for depression."
+    },
+    {
+      "year": 2004,
+      "title": "Generics",
+      "detail": "Generic citalopram becomes available in the US."
+    },
+    {
+      "year": 2011,
+      "title": "QT warning",
+      "detail": "The FDA warns of dose-dependent QT prolongation and limits the maximum dose to 40 mg/day (20 mg in older people)."
+    },
+    {
+      "year": 2011,
+      "title": "EU restriction",
+      "detail": "European regulators similarly restrict the maximum dose after QT review."
+    }
+  ],
+  "pk": {
+    "half_life": "About 35 hours",
+    "bioavailability": "About 80%",
+    "metabolism": "Hepatic CYP2C19, CYP3A4 and CYP2D6 to desmethylcitalopram",
+    "excretion": "Renal and hepatic; ~12% unchanged in urine"
+  },
+  "safety": {
+    "common": [
+      "Nausea",
+      "Dry mouth",
+      "Somnolence",
+      "Sweating",
+      "Sexual dysfunction"
+    ],
+    "serious": [
+      "QT prolongation and torsade de pointes",
+      "Serotonin syndrome",
+      "Suicidal thoughts in young people",
+      "Hyponatraemia",
+      "Bleeding risk"
+    ],
+    "boxed_warning": "Increased risk of suicidal thoughts and behaviours in children, adolescents and young adults (under 25) taking antidepressants; monitor for clinical worsening."
+  },
+  "facts": [
+    "Citalopram is one of the most selective SSRIs for SERT over other transporters.",
+    "Its development led directly to the single-enantiomer escitalopram."
+  ],
+  "related": [
+    "escitalopram",
+    "sertraline",
+    "fluoxetine",
+    "paroxetine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Citalopram",
+      "url": "https://en.wikipedia.org/wiki/Citalopram"
+    },
+    {
+      "title": "DailyMed: citalopram labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=citalopram"
+    }
+  ],
+  "stage": "written"
 }

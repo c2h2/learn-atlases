@@ -1,36 +1,134 @@
 {
   "slug": "lithium",
-  "name": "Lithium",
-  "aliases": [],
-  "brands": [],
+  "name": "Lithium carbonate",
+  "aliases": [
+    "Lithium",
+    "Lithium citrate",
+    "Li2CO3"
+  ],
+  "brands": [
+    "Priadel",
+    "Camcolit",
+    "Lithobid",
+    "Eskalith",
+    "Quilonum"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Mood stabiliser (alkali metal salt)",
+  "modality": "other",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets, capsules or liquid; dosed to a target serum level with regular monitoring.",
+  "targets": [
+    "IMPA1 (inositol monophosphatase)",
+    "GSK3B (glycogen synthase kinase-3)"
+  ],
+  "origin": "natural",
+  "originator": "John Cade (Australia); no single company",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1970,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1949,
+    "by": "John Cade (Bundoora Repatriation Hospital, Melbourne)",
+    "note": "Cade observed calming effects of lithium urate in guinea pigs and then treated ten manic patients, publishing in the Medical Journal of Australia."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Simple ion that remains the gold standard for bipolar disorder and suicide prevention",
+  "summary": "Lithium salts are the oldest and best-established mood stabilisers, used for acute mania and long-term prevention of episodes in bipolar disorder. Lithium reduces suicide risk, but its narrow therapeutic index requires regular blood-level, kidney and thyroid monitoring.",
+  "mechanism": [
+    "The exact mechanism is unknown. Lithium inhibits inositol monophosphatase and inositol polyphosphate 1-phosphatase, depleting inositol and dampening phosphoinositide signalling in overactive neurons (the inositol depletion hypothesis).",
+    "It also directly and indirectly inhibits glycogen synthase kinase-3β, influencing circadian rhythm, neuroplasticity and neuroprotection, and modulates glutamatergic, dopaminergic and serotonergic transmission."
+  ],
+  "uses": [
+    "Acute mania in bipolar disorder",
+    "Maintenance treatment of bipolar disorder",
+    "Augmentation in treatment-resistant depression (some countries)"
+  ],
+  "history": [
+    {
+      "year": 1871,
+      "title": "Early use",
+      "detail": "William Hammond uses lithium bromide for mania; lithium also features in 19th-century 'uric acid diathesis' treatments."
+    },
+    {
+      "year": 1949,
+      "title": "Cade's report",
+      "detail": "John Cade reports lithium's effect in mania in the Medical Journal of Australia."
+    },
+    {
+      "year": 1949,
+      "title": "US salt substitute deaths",
+      "detail": "Deaths from lithium chloride sold as a salt substitute lead to its US withdrawal."
+    },
+    {
+      "year": 1954,
+      "title": "Schou's trial",
+      "detail": "Mogens Schou in Denmark conducts one of the first placebo-controlled trials in psychiatry with lithium."
+    },
+    {
+      "year": 1970,
+      "title": "FDA approval",
+      "detail": "The FDA approves lithium for mania; maintenance use follows in 1974."
+    },
+    {
+      "year": 2013,
+      "title": "Suicide meta-analysis",
+      "detail": "A BMJ meta-analysis confirms lithium reduces suicide in mood disorders."
+    }
+  ],
+  "pk": {
+    "half_life": "About 18–36 hours (longer in elderly and renal impairment)",
+    "bioavailability": "Nearly 100%",
+    "metabolism": "Not metabolised",
+    "excretion": "Renal (~95%), reabsorbed with sodium in the proximal tubule"
+  },
+  "safety": {
+    "common": [
+      "Tremor",
+      "Polyuria and thirst",
+      "Weight gain",
+      "Nausea",
+      "Hypothyroidism"
+    ],
+    "serious": [
+      "Lithium toxicity (confusion, ataxia, seizures)",
+      "Nephrogenic diabetes insipidus",
+      "Chronic kidney disease",
+      "Hyperparathyroidism and hypercalcaemia",
+      "Cardiac conduction abnormalities",
+      "Ebstein's anomaly risk in pregnancy"
+    ],
+    "boxed_warning": "Lithium toxicity is closely related to serum concentrations and can occur at doses close to therapeutic levels; serum monitoring is required."
+  },
+  "facts": [
+    "NSAIDs, ACE inhibitors and thiazide diuretics raise lithium levels.",
+    "Lithium is one of the few psychiatric drugs with consistent evidence of reducing suicide."
+  ],
+  "related": [
+    "valproate",
+    "lamotrigine",
+    "olanzapine",
+    "quetiapine",
+    "carbamazepine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Lithium (medication)",
+      "url": "https://en.wikipedia.org/wiki/Lithium_(medication)"
+    },
+    {
+      "title": "DailyMed: lithium carbonate labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=lithium+carbonate"
+    }
+  ],
+  "stage": "written"
 }

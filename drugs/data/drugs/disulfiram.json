@@ -1,36 +1,123 @@
 {
   "slug": "disulfiram",
   "name": "Disulfiram",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Tetraethylthiuram disulfide",
+    "TETD"
+  ],
+  "brands": [
+    "Antabuse",
+    "Esperal"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Aldehyde dehydrogenase inhibitor (alcohol-sensitising agent)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral tablets once daily, started at least 12 hours after the last drink.",
+  "targets": [
+    "ALDH2 (aldehyde dehydrogenase)",
+    "ALDH1A1",
+    "DBH (dopamine beta-hydroxylase)"
+  ],
+  "origin": "synthetic",
+  "originator": "Medicinalco (Copenhagen)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1951,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Antabuse"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1945,
+    "by": "Jens Hald and Erik Jacobsen (Medicinalco, Copenhagen)",
+    "note": "While testing disulfiram as an anthelmintic, the researchers became ill after drinking alcohol; they published the alcohol reaction in 1948."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Aversive treatment for alcohol dependence that makes drinking cause acute illness",
+  "summary": "Disulfiram is an aversive treatment for alcohol dependence. By blocking aldehyde dehydrogenase, it causes acetaldehyde to accumulate after drinking, producing flushing, nausea, palpitations and hypotension. It works best when taking it is supervised, as adherence is a major limitation.",
+  "mechanism": [
+    "Disulfiram and its metabolites irreversibly inhibit aldehyde dehydrogenase, particularly the mitochondrial ALDH2 isoform, preventing oxidation of acetaldehyde to acetate. Even small amounts of alcohol then raise acetaldehyde levels, causing the disulfiram–ethanol reaction.",
+    "The effect lasts up to two weeks after stopping, because new enzyme must be synthesised. Disulfiram also inhibits dopamine beta-hydroxylase, which has been studied in cocaine dependence."
+  ],
+  "uses": [
+    "Adjunct in the management of chronic alcohol dependence to support abstinence"
+  ],
+  "history": [
+    {
+      "year": 1937,
+      "title": "Industrial observation",
+      "detail": "Workers in the rubber industry exposed to thiuram compounds are noted to become intolerant of alcohol."
+    },
+    {
+      "year": 1945,
+      "title": "Discovery",
+      "detail": "Hald and Jacobsen in Copenhagen discover the alcohol reaction during anthelmintic research."
+    },
+    {
+      "year": 1948,
+      "title": "Publication",
+      "detail": "The disulfiram–ethanol reaction is reported in the Lancet."
+    },
+    {
+      "year": 1949,
+      "title": "Clinical use",
+      "detail": "Antabuse is introduced in Denmark for alcoholism."
+    },
+    {
+      "year": 1951,
+      "title": "FDA approval",
+      "detail": "Disulfiram becomes the first medicine approved by the FDA for alcohol dependence."
+    },
+    {
+      "year": 1986,
+      "title": "VA cooperative trial",
+      "detail": "Fuller and colleagues' multicentre trial (JAMA) finds no advantage in continuous abstinence for unsupervised disulfiram, highlighting adherence."
+    }
+  ],
+  "pk": {
+    "half_life": "Parent and metabolites short-lived; enzyme inhibition persists up to 2 weeks",
+    "bioavailability": "About 80–90%",
+    "metabolism": "Reduced to diethyldithiocarbamate, then to further metabolites including carbon disulfide",
+    "excretion": "Lungs (carbon disulfide), urine and faeces"
+  },
+  "safety": {
+    "common": [
+      "Drowsiness",
+      "Metallic or garlic-like taste",
+      "Headache",
+      "Skin rash"
+    ],
+    "serious": [
+      "Severe disulfiram–alcohol reaction (hypotension, arrhythmia)",
+      "Hepatotoxicity including fulminant hepatitis",
+      "Peripheral and optic neuropathy",
+      "Psychosis"
+    ],
+    "boxed_warning": "Disulfiram should never be administered to a patient when he or she is in a state of alcohol intoxication or without his or her full knowledge."
+  },
+  "facts": [
+    "Alcohol in foods, mouthwashes and some topical products can trigger the reaction."
+  ],
+  "related": [
+    "acamprosate",
+    "naltrexone",
+    "metronidazole"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Disulfiram",
+      "url": "https://en.wikipedia.org/wiki/Disulfiram"
+    },
+    {
+      "title": "DailyMed: disulfiram labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=disulfiram"
+    }
+  ],
+  "stage": "written"
 }

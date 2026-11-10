@@ -1,36 +1,153 @@
 {
   "slug": "midazolam",
   "name": "Midazolam",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Ro 21-3981",
+    "Midazolam hydrochloride",
+    "Midazolam maleate"
+  ],
+  "brands": [
+    "Versed",
+    "Dormicum",
+    "Hypnovel",
+    "Buccolam",
+    "Nayzilam",
+    "Seizalam"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Benzodiazepine (imidazobenzodiazepine, short-acting)",
+  "modality": "small-molecule",
+  "routes": [
+    "iv",
+    "im",
+    "intranasal",
+    "oral",
+    "other"
+  ],
+  "route_note": "IV or IM injection for sedation and anaesthesia; oral syrup for children; buccal (oromucosal) solution and nasal spray for seizures.",
+  "targets": [
+    "GABA-A receptors (benzodiazepine site, positive allosteric modulator)"
+  ],
+  "origin": "synthetic",
+  "originator": "Hoffmann-La Roche",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1985,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Versed"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1975,
+    "by": "Armin Walser and Rodney Fryer (Hoffmann-La Roche)",
+    "note": "A water-soluble imidazobenzodiazepine: at acidic pH the ring opens to a water-soluble form, avoiding the painful solvents needed for diazepam injection."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription; controlled (US Schedule IV)",
+  "tagline": "Short-acting water-soluble benzodiazepine for procedural sedation and seizure emergencies",
+  "summary": "Midazolam is a short-acting, water-soluble benzodiazepine widely used for procedural sedation, anaesthetic induction and premedication, ICU sedation and emergency treatment of prolonged seizures. Buccal and intranasal forms allow seizure treatment outside hospital.",
+  "mechanism": [
+    "Midazolam potentiates GABA-A receptor-mediated inhibition at the benzodiazepine site, producing sedation, anxiolysis, anterograde amnesia and anticonvulsant effects.",
+    "Its imidazole ring opens at acidic pH, making it water-soluble in solution; at physiological pH the ring closes, making it highly lipophilic so it crosses the blood–brain barrier rapidly. It is the standard probe substrate for CYP3A4 activity."
+  ],
+  "uses": [
+    "Procedural sedation and preoperative sedation/amnesia",
+    "Induction of general anaesthesia",
+    "Sedation of intubated patients in intensive care",
+    "Status epilepticus and prolonged acute convulsive seizures (IM, buccal, intranasal)",
+    "Seizure clusters (nasal spray)",
+    "Palliative sedation"
+  ],
+  "history": [
+    {
+      "year": 1975,
+      "title": "Synthesis",
+      "detail": "Walser and Fryer synthesise midazolam at Roche."
+    },
+    {
+      "year": 1982,
+      "title": "European introduction",
+      "detail": "Midazolam is introduced in Europe in the early 1980s as Dormicum."
+    },
+    {
+      "year": 1985,
+      "title": "FDA approval",
+      "detail": "Versed injection is approved in the US."
+    },
+    {
+      "year": 1988,
+      "title": "Dose warning",
+      "detail": "The FDA strengthens labelling after respiratory deaths with conscious sedation; a boxed warning on monitoring follows."
+    },
+    {
+      "year": 2011,
+      "title": "Buccolam",
+      "detail": "The EU approves buccal midazolam for prolonged seizures in children."
+    },
+    {
+      "year": 2012,
+      "title": "RAMPART",
+      "detail": "The RAMPART trial (NEJM) shows IM midazolam by paramedics is at least as effective as IV lorazepam for status epilepticus."
+    },
+    {
+      "year": 2015,
+      "title": "Glossip v. Gross",
+      "detail": "The US Supreme Court rules on the use of midazolam in lethal-injection protocols."
+    },
+    {
+      "year": 2019,
+      "title": "Nayzilam",
+      "detail": "Midazolam nasal spray is approved for seizure clusters."
+    }
+  ],
+  "pk": {
+    "half_life": "1.5–2.5 hours (longer in elderly, obese, critically ill)",
+    "bioavailability": "About 40% oral; ~90% IM",
+    "metabolism": "Hepatic and intestinal CYP3A4 to active alpha-hydroxymidazolam",
+    "excretion": "Renal as glucuronides"
+  },
+  "safety": {
+    "common": [
+      "Drowsiness",
+      "Hiccups",
+      "Nausea and vomiting",
+      "Injection-site pain",
+      "Amnesia"
+    ],
+    "serious": [
+      "Respiratory depression and apnoea",
+      "Hypotension",
+      "Paradoxical agitation",
+      "Dependence and withdrawal after prolonged infusion",
+      "Neonatal toxicity (benzyl alcohol in some products)"
+    ],
+    "boxed_warning": "Associated with respiratory depression and arrest, especially when used for sedation in non-critical-care settings; use only where continuous monitoring and resuscitation are available. Risks with opioids, abuse, dependence and withdrawal; neonates: avoid rapid injection."
+  },
+  "facts": [
+    "Midazolam is the reference substrate used to measure CYP3A4 activity in drug-interaction studies."
+  ],
+  "related": [
+    "diazepam",
+    "lorazepam",
+    "propofol",
+    "ketamine",
+    "fentanyl"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Midazolam",
+      "url": "https://en.wikipedia.org/wiki/Midazolam"
+    },
+    {
+      "title": "DailyMed: midazolam labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=midazolam"
+    },
+    {
+      "title": "Wikipedia: Glossip v. Gross",
+      "url": "https://en.wikipedia.org/wiki/Glossip_v._Gross"
+    }
+  ],
+  "stage": "written"
 }

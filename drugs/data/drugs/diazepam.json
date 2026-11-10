@@ -1,36 +1,145 @@
 {
   "slug": "diazepam",
   "name": "Diazepam",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Ro 5-2807"
+  ],
+  "brands": [
+    "Valium",
+    "Diastat",
+    "Valtoco",
+    "Stesolid"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Benzodiazepine (long-acting)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "im",
+    "rectal",
+    "intranasal"
+  ],
+  "route_note": "Oral tablets or solution; IV/IM injection; rectal gel or tubes and nasal spray for seizure clusters.",
+  "targets": [
+    "GABA-A receptors (benzodiazepine site, positive allosteric modulator)"
+  ],
+  "origin": "synthetic",
+  "originator": "Hoffmann-La Roche",
+  "owner": "generic (many); Roche (Valium)",
+  "first_approval": {
+    "year": 1963,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Valium"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1959,
+    "by": "Leo Sternbach (Hoffmann-La Roche, Nutley)",
+    "note": "Developed as an improved successor to chlordiazepoxide (Librium), the first benzodiazepine."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription; controlled (US Schedule IV)",
+  "tagline": "The archetypal benzodiazepine, once the most prescribed drug in the United States",
+  "summary": "Diazepam is a long-acting benzodiazepine used for anxiety, alcohol withdrawal, muscle spasm and seizures, including status epilepticus. Introduced by Roche as Valium in 1963, it was the most prescribed medicine in the US for over a decade, and its use declined as dependence and withdrawal problems were recognised.",
+  "mechanism": [
+    "Diazepam binds the benzodiazepine site at the interface of alpha and gamma subunits of GABA-A receptors and increases the frequency of chloride channel opening in response to GABA, enhancing neuronal inhibition.",
+    "Actions at receptors containing different alpha subunits mediate sedation and anticonvulsant effects (alpha-1), anxiolysis (alpha-2/3) and muscle relaxation (alpha-2/3/5). Its active metabolites, especially desmethyldiazepam, prolong its effects."
+  ],
+  "uses": [
+    "Anxiety disorders (short-term)",
+    "Acute alcohol withdrawal",
+    "Skeletal muscle spasm and spasticity",
+    "Status epilepticus and seizure clusters",
+    "Premedication and sedation for procedures"
+  ],
+  "history": [
+    {
+      "year": 1955,
+      "title": "Benzodiazepines discovered",
+      "detail": "Leo Sternbach synthesises the compound that becomes chlordiazepoxide; it is identified as active in 1957."
+    },
+    {
+      "year": 1959,
+      "title": "Diazepam synthesised",
+      "detail": "Sternbach makes diazepam, a more potent analogue."
+    },
+    {
+      "year": 1963,
+      "title": "Valium launch",
+      "detail": "Roche launches Valium."
+    },
+    {
+      "year": 1969,
+      "title": "Best-selling drug",
+      "detail": "Valium becomes the most prescribed drug in the US, a position held until 1982."
+    },
+    {
+      "year": 1975,
+      "title": "Scheduling",
+      "detail": "Benzodiazepines are placed in US Schedule IV."
+    },
+    {
+      "year": 1988,
+      "title": "UK guidance",
+      "detail": "The UK Committee on Safety of Medicines advises limiting benzodiazepines to 2–4 weeks."
+    },
+    {
+      "year": 2016,
+      "title": "Opioid boxed warning",
+      "detail": "The FDA adds a boxed warning on combined use with opioids."
+    },
+    {
+      "year": 2020,
+      "title": "Valtoco and class warning",
+      "detail": "Diazepam nasal spray is approved for seizure clusters; the FDA expands the benzodiazepine boxed warning to abuse, dependence and withdrawal."
+    }
+  ],
+  "pk": {
+    "half_life": "20–50 hours; desmethyldiazepam up to 100 hours",
+    "bioavailability": "Over 90% oral",
+    "metabolism": "Hepatic CYP2C19 and CYP3A4 to active desmethyldiazepam, temazepam and oxazepam",
+    "excretion": "Renal as glucuronides"
+  },
+  "safety": {
+    "common": [
+      "Drowsiness",
+      "Fatigue",
+      "Ataxia",
+      "Muscle weakness",
+      "Confusion (especially in elderly)"
+    ],
+    "serious": [
+      "Respiratory depression (especially with opioids or alcohol)",
+      "Dependence and withdrawal seizures",
+      "Falls and fractures in elderly",
+      "Anterograde amnesia",
+      "Paradoxical agitation"
+    ],
+    "boxed_warning": "Concomitant use with opioids may cause profound sedation, respiratory depression, coma and death. Risks of abuse, misuse and addiction; continued use may lead to clinically significant physical dependence, and abrupt discontinuation or rapid dose reduction may cause life-threatening withdrawal reactions."
+  },
+  "facts": [
+    "The Rolling Stones' 1966 song 'Mother's Little Helper' is widely taken to refer to Valium-type tranquillisers.",
+    "Flumazenil reverses benzodiazepine effects at the GABA-A benzodiazepine site."
+  ],
+  "related": [
+    "lorazepam",
+    "alprazolam",
+    "midazolam",
+    "zolpidem",
+    "phenobarbital"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Diazepam",
+      "url": "https://en.wikipedia.org/wiki/Diazepam"
+    },
+    {
+      "title": "DailyMed: diazepam labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=diazepam"
+    }
+  ],
+  "stage": "written"
 }

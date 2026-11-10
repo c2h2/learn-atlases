@@ -1,36 +1,129 @@
 {
   "slug": "sevoflurane",
   "name": "Sevoflurane",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Fluoromethyl hexafluoroisopropyl ether"
+  ],
+  "brands": [
+    "Ultane",
+    "Sevorane",
+    "SevoFlo (veterinary)"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Volatile inhalational general anaesthetic (halogenated ether)",
+  "modality": "gas",
+  "routes": [
+    "inhaled"
+  ],
+  "route_note": "Inhaled via a calibrated vaporiser in oxygen with or without nitrous oxide or air.",
+  "targets": [
+    "GABA-A receptors",
+    "Glycine receptors",
+    "K2P (two-pore potassium) channels",
+    "NMDA receptors (inhibition)"
+  ],
+  "origin": "synthetic",
+  "originator": "Travenol Laboratories (Ross Terrell, Bernard Regan); developed by Maruishi (Japan)",
+  "owner": "generic (many); AbbVie (Ultane), Baxter",
+  "first_approval": {
+    "year": 1990,
+    "agency": "Japanese MHW",
+    "country": "Japan",
+    "brand": "Sevofrane"
+  },
+  "discovery": {
+    "year": 1968,
+    "by": "Ross Terrell and colleagues (Travenol Laboratories)",
+    "note": "Synthesised in the late 1960s–early 1970s among fluorinated ethers; development stalled in the US until Maruishi took it forward in Japan."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription (hospital use)",
+  "tagline": "Sweet-smelling volatile anaesthetic ideal for gas induction in children",
+  "summary": "Sevoflurane is a fluorinated ether volatile anaesthetic used for induction and maintenance of general anaesthesia. Because it is non-pungent and has low blood solubility, it allows smooth, rapid inhalational induction, particularly in children, and fast emergence.",
+  "mechanism": [
+    "Like other volatile anaesthetics, sevoflurane enhances inhibitory GABA-A and glycine receptor function, activates two-pore-domain potassium channels and inhibits excitatory NMDA and nicotinic receptors. Immobility is mediated mainly at the spinal cord and unconsciousness at supraspinal networks.",
+    "Its low blood:gas partition coefficient (about 0.65) means alveolar and brain concentrations change quickly, giving rapid onset and offset. The minimum alveolar concentration in adults is about 2%."
+  ],
+  "uses": [
+    "Induction of general anaesthesia (especially inhalational induction in children)",
+    "Maintenance of general anaesthesia in adults and children"
+  ],
+  "history": [
+    {
+      "year": 1968,
+      "title": "Synthesis",
+      "detail": "Sevoflurane is synthesised among fluorinated ethers at Travenol Laboratories."
+    },
+    {
+      "year": 1975,
+      "title": "First report",
+      "detail": "Wallin and colleagues publish its anaesthetic properties."
+    },
+    {
+      "year": 1990,
+      "title": "Japan",
+      "detail": "Maruishi gains approval in Japan, where it is widely used first."
+    },
+    {
+      "year": 1995,
+      "title": "FDA approval",
+      "detail": "Abbott's Ultane is approved in the US."
+    },
+    {
+      "year": 1997,
+      "title": "Compound A",
+      "detail": "Studies examine nephrotoxic Compound A formed by reaction with carbon dioxide absorbents, leading to fresh gas flow recommendations."
+    },
+    {
+      "year": 2024,
+      "title": "Climate focus",
+      "detail": "The EU's revised F-gas regulation restricts desflurane from 2026 because of its far higher global warming potential, favouring agents such as sevoflurane."
+    }
+  ],
+  "pk": {
+    "half_life": "Elimination mainly by exhalation; rapid washout (low blood:gas coefficient ~0.65)",
+    "bioavailability": "Inhaled",
+    "metabolism": "About 2–5% hepatic CYP2E1 metabolism to hexafluoroisopropanol and inorganic fluoride",
+    "excretion": "Lungs (mostly unchanged)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Postoperative nausea and vomiting",
+      "Emergence delirium in children",
+      "Hypotension",
+      "Cough",
+      "Bradycardia"
+    ],
+    "serious": [
+      "Malignant hyperthermia in susceptible patients",
+      "Respiratory depression",
+      "QT prolongation",
+      "Perioperative hyperkalaemia",
+      "Hepatic injury (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Its low pungency makes it the standard agent for gas induction in children.",
+    "Sevoflurane's global warming potential is much lower than desflurane's."
+  ],
+  "related": [
+    "propofol",
+    "nitrous-oxide",
+    "ketamine",
+    "rocuronium"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Sevoflurane",
+      "url": "https://en.wikipedia.org/wiki/Sevoflurane"
+    },
+    {
+      "title": "DailyMed: sevoflurane labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=sevoflurane"
+    }
+  ],
+  "stage": "written"
 }

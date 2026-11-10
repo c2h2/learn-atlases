@@ -1,36 +1,121 @@
 {
   "slug": "zuranolone",
   "name": "Zuranolone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "SAGE-217",
+    "BIIB125"
+  ],
+  "brands": [
+    "Zurzuvae"
+  ],
   "area": "psychiatry-anaesthesia",
   "batch": "08",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Neuroactive steroid; GABA-A receptor positive allosteric modulator",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "Oral capsules once daily in the evening with fat-containing food for a 14-day course.",
+  "targets": [
+    "GABA-A receptors (synaptic and extrasynaptic)"
+  ],
+  "origin": "synthetic",
+  "originator": "Sage Therapeutics",
+  "owner": "Biogen and Supernus Pharmaceuticals (Sage Therapeutics)",
+  "first_approval": {
+    "year": 2023,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Zurzuvae"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Sage Therapeutics",
+    "note": "Designed as an orally bioavailable analogue of the endogenous neurosteroid allopregnanolone, following the IV allopregnanolone formulation brexanolone."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription; controlled (US Schedule IV)",
+  "tagline": "First oral drug approved for postpartum depression, taken as a two-week course",
+  "summary": "Zuranolone is an oral neuroactive steroid that positively modulates GABA-A receptors. In 2023 it became the first oral medicine approved specifically for postpartum depression, given as a 14-day course; an application for major depressive disorder was not approved.",
+  "mechanism": [
+    "Zuranolone binds a neurosteroid site on GABA-A receptors and enhances chloride currents at both synaptic and extrasynaptic (delta-subunit-containing) receptors, increasing tonic and phasic inhibition.",
+    "Allopregnanolone levels rise in pregnancy and fall abruptly after delivery; restoring neurosteroid signalling is proposed to rebalance brain networks implicated in postpartum depression."
+  ],
+  "uses": [
+    "Postpartum depression in adults"
+  ],
+  "history": [
+    {
+      "year": 2019,
+      "title": "Brexanolone",
+      "detail": "IV allopregnanolone (Zulresso) is approved for postpartum depression, establishing the mechanism."
+    },
+    {
+      "year": 2020,
+      "title": "Biogen collaboration",
+      "detail": "Biogen and Sage agree to co-develop and co-commercialise zuranolone."
+    },
+    {
+      "year": 2021,
+      "title": "ROBIN trial",
+      "detail": "The phase 3 ROBIN trial in postpartum depression is published in JAMA Psychiatry."
+    },
+    {
+      "year": 2023,
+      "title": "SKYLARK",
+      "detail": "The phase 3 SKYLARK trial in postpartum depression is published in the American Journal of Psychiatry."
+    },
+    {
+      "year": 2023,
+      "title": "FDA approval",
+      "detail": "In August 2023 the FDA approves Zurzuvae for postpartum depression but issues a complete response letter for MDD."
+    },
+    {
+      "year": 2025,
+      "title": "Sage acquired",
+      "detail": "Supernus Pharmaceuticals acquires Sage Therapeutics."
+    }
+  ],
+  "pk": {
+    "half_life": "About 20–25 hours",
+    "bioavailability": "Increased with fatty food",
+    "metabolism": "Hepatic, mainly CYP3A4",
+    "excretion": "Urine and faeces as metabolites"
+  },
+  "safety": {
+    "common": [
+      "Somnolence",
+      "Dizziness",
+      "Diarrhoea",
+      "Fatigue",
+      "Nasopharyngitis",
+      "Urinary tract infection"
+    ],
+    "serious": [
+      "Impaired ability to drive and CNS depression",
+      "Suicidal thoughts in young people",
+      "Embryo-fetal toxicity"
+    ],
+    "boxed_warning": "Impaired ability to drive or engage in other potentially hazardous activities; patients should not drive for at least 12 hours after each dose. Suicidal thoughts and behaviours."
+  },
+  "facts": [
+    "Unlike conventional antidepressants it is taken for only 14 days rather than continuously."
+  ],
+  "related": [
+    "esketamine",
+    "sertraline",
+    "diazepam"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Zuranolone",
+      "url": "https://en.wikipedia.org/wiki/Zuranolone"
+    },
+    {
+      "title": "DailyMed: zurzuvae labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=zurzuvae"
+    }
+  ],
+  "stage": "written"
 }
