@@ -29,9 +29,9 @@
     "brand": "Exjade"
   },
   "discovery": {
-    "year": null,
+    "year": 1996,
     "by": "Novartis (René Lattmann, Hans Peter Schnebli and colleagues)",
-    "note": "A tridentate bis-hydroxyphenyl-triazole selected from screening for an orally active iron chelator with a long half-life."
+    "note": "A tridentate bis-hydroxyphenyl-triazole selected from screening for an orally active iron chelator with a long half-life. Year is the priority date of the Novartis compound patent (US 6,465,504)."
   },
   "generic": true,
   "who_essential": true,
@@ -104,7 +104,11 @@
     ],
     "boxed_warning": "Deferasirox may cause renal toxicity including failure, hepatic toxicity including failure, and gastrointestinal haemorrhage, which can be fatal, especially in elderly patients with advanced haematological malignancies or low platelets."
   },
-  "facts": [],
+  "facts": [
+    "When the FDA approved it in November 2005, deferasirox became the first oral iron chelator available in the United States.",
+    "A film-coated tablet (Jadenu) that can be swallowed whole was approved in the US in 2015, after the original dispersible tablet (Exjade).",
+    "Its US label carries a boxed warning for kidney failure, liver failure and gastrointestinal haemorrhage."
+  ],
   "related": [
     "hydroxyurea",
     "luspatercept",
@@ -122,6 +126,10 @@
     {
       "title": "EMA EPAR: Exjade",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/exjade"
+    },
+    {
+      "title": "Google Patents – US6465504B1",
+      "url": "https://patents.google.com/patent/US6465504B1/en"
     }
   ],
   "stage": "written"

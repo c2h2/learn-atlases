@@ -35,11 +35,16 @@
   "origin": "endogenous",
   "originator": "Isolated by Jokichi Takamine (marketed by Parke-Davis)",
   "owner": "generic (many); Viatris (EpiPen), ARS Pharmaceuticals (neffy)",
-  "first_approval": null,
+  "first_approval": {
+    "year": 1901,
+    "agency": null,
+    "country": "United States",
+    "brand": "Adrenalin"
+  },
   "discovery": {
     "year": 1901,
     "by": "Jokichi Takamine and Keizo Uenaka",
-    "note": "Crystallised from adrenal glands; the hormone was also studied by John Jacob Abel and Napoleon Cybulski; first synthesised in 1904 by Friedrich Stolz and Henry Dakin."
+    "note": "Crystallised from adrenal glands; the hormone was also studied by John Jacob Abel and Napoleon Cybulski; first synthesised in 1904 by Friedrich Stolz and Henry Dakin. Parke, Davis & Co. trademarked and sold the purified extract as Adrenalin from 1901, before drug regulation."
   },
   "generic": true,
   "who_essential": true,

@@ -29,11 +29,16 @@
   "origin": "synthetic",
   "originator": "Schering AG and Wyeth",
   "owner": "generic (many); Bayer and others",
-  "first_approval": null,
+  "first_approval": {
+    "year": 1970,
+    "agency": null,
+    "country": "West Germany",
+    "brand": "Neogynon"
+  },
   "discovery": {
-    "year": null,
+    "year": 1963,
     "by": "Schering AG and Wyeth",
-    "note": "Combination of ethinylestradiol, the first orally active synthetic oestrogen (1938), with levonorgestrel."
+    "note": "Combination of ethinylestradiol, the first orally active synthetic oestrogen (1938), with levonorgestrel. Year norgestrel, the racemate containing levonorgestrel, was discovered by Hughes and colleagues at Wyeth; Schering later identified levonorgestrel as the active isomer. The first levonorgestrel pill, Neogynon, was introduced in Germany in August 1970; the lower-dose Microgynon followed by 1973."
   },
   "generic": true,
   "who_essential": true,
@@ -104,7 +109,11 @@
     ],
     "boxed_warning": "Cigarette smoking increases the risk of serious cardiovascular events from combined hormonal contraceptives; this risk rises with age and number of cigarettes, and use is contraindicated in women over 35 who smoke."
   },
-  "facts": [],
+  "facts": [
+    "Levonorgestrel is the active enantiomer of norgestrel; the racemate was the first progestogen made by total chemical synthesis.",
+    "Neogynon, the first levonorgestrel-containing pill, was introduced in Germany in August 1970.",
+    "The lower-dose formulation, Microgynon (30 µg ethinylestradiol, 150 µg levonorgestrel), was introduced by 1973."
+  ],
   "related": [
     "levonorgestrel",
     "estradiol",
@@ -124,6 +133,10 @@
     {
       "title": "Wikipedia: Combined oral contraceptive pill",
       "url": "https://en.wikipedia.org/wiki/Combined_oral_contraceptive_pill"
+    },
+    {
+      "title": "Levonorgestrel – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Levonorgestrel"
     }
   ],
   "stage": "written"

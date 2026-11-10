@@ -28,9 +28,9 @@
     "brand": "Repatha"
   },
   "discovery": {
-    "year": null,
+    "year": 2007,
     "by": "Amgen",
-    "note": "A fully human IgG2 antibody developed after genetics linked PCSK9 to LDL cholesterol levels."
+    "note": "A fully human IgG2 antibody developed after genetics linked PCSK9 to LDL cholesterol levels. Year is the priority date of the Amgen PCSK9 antigen-binding protein patent (US 8,030,457)."
   },
   "generic": false,
   "who_essential": false,
@@ -122,6 +122,10 @@
     {
       "title": "Sabatine MS et al. Evolocumab and clinical outcomes in patients with cardiovascular disease (FOURIER). N Engl J Med 2017",
       "url": "https://pubmed.ncbi.nlm.nih.gov/28304224/"
+    },
+    {
+      "title": "Google Patents – US8030457B2",
+      "url": "https://patents.google.com/patent/US8030457B2/en"
     }
   ],
   "stage": "written"

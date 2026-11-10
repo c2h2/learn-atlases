@@ -32,9 +32,9 @@
     "brand": "Darzalex"
   },
   "discovery": {
-    "year": null,
+    "year": 2005,
     "by": "Genmab",
-    "note": "Fully human IgG1κ antibody raised in transgenic mice; licensed to Janssen in 2012."
+    "note": "Fully human IgG1κ antibody raised in transgenic mice; licensed to Janssen in 2012. Year is the priority date of the Genmab anti-CD38 antibody patent (US 7,829,673)."
   },
   "generic": false,
   "who_essential": false,
@@ -136,6 +136,10 @@
     {
       "title": "EMA – Darzalex EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/darzalex"
+    },
+    {
+      "title": "Google Patents – US7829673B2",
+      "url": "https://patents.google.com/patent/US7829673B2/en"
     }
   ],
   "stage": "written"

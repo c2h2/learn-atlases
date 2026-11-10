@@ -34,9 +34,9 @@
     "brand": "Vibramycin"
   },
   "discovery": {
-    "year": null,
+    "year": 1957,
     "by": "Pfizer (Charles Stephens and colleagues)",
-    "note": "A semi-synthetic tetracycline derived from oxytetracycline, with better absorption and a longer half-life."
+    "note": "A semi-synthetic tetracycline derived from oxytetracycline, with better absorption and a longer half-life. Year of the patent; it entered commercial use in 1967."
   },
   "generic": true,
   "who_essential": true,

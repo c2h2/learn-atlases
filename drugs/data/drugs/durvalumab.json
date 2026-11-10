@@ -28,9 +28,9 @@
     "brand": "Imfinzi"
   },
   "discovery": {
-    "year": null,
+    "year": 2009,
     "by": "MedImmune",
-    "note": "Fully human IgG1κ anti-PD-L1 antibody with a triple Fc mutation that reduces effector function."
+    "note": "Fully human IgG1κ anti-PD-L1 antibody with a triple Fc mutation that reduces effector function. Year is the priority date of the MedImmune anti-B7-H1 antibody patent (US 8,779,108)."
   },
   "generic": false,
   "who_essential": false,
@@ -135,6 +135,10 @@
     {
       "title": "EMA – Imfinzi EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/imfinzi"
+    },
+    {
+      "title": "Google Patents – US8779108B2",
+      "url": "https://patents.google.com/patent/US8779108B2/en"
     }
   ],
   "stage": "written"

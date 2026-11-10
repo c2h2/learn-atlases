@@ -33,9 +33,9 @@
     "brand": "Tivicay"
   },
   "discovery": {
-    "year": null,
+    "year": 2005,
     "by": "Shionogi–GlaxoSmithKline research collaboration",
-    "note": "Second-generation INSTI with a high genetic barrier to resistance."
+    "note": "Second-generation INSTI with a high genetic barrier to resistance. Year is the priority date of the Shionogi/GSK compound patent (US 8,129,385)."
   },
   "generic": true,
   "who_essential": true,
@@ -135,6 +135,10 @@
     {
       "title": "Zash R et al. Neural-tube defects with dolutegravir treatment from the time of conception. NEJM 2018",
       "url": "https://www.nejm.org/doi/full/10.1056/NEJMc1807653"
+    },
+    {
+      "title": "Google Patents – US8129385B2",
+      "url": "https://patents.google.com/patent/US8129385B2/en"
     }
   ],
   "stage": "written"

@@ -25,11 +25,16 @@
   "origin": "semi-synthetic",
   "originator": "Beecham Research Laboratories",
   "owner": "generic (many)",
-  "first_approval": null,
+  "first_approval": {
+    "year": 1970,
+    "agency": null,
+    "country": "United Kingdom",
+    "brand": "Floxapen"
+  },
   "discovery": {
-    "year": null,
+    "year": 1961,
     "by": "Beecham Research Laboratories",
-    "note": "One of the isoxazolyl penicillins (with oxacillin, cloxacillin and dicloxacillin) designed to resist staphylococcal penicillinase."
+    "note": "One of the isoxazolyl penicillins (with oxacillin, cloxacillin and dicloxacillin) designed to resist staphylococcal penicillinase. Year of the patent. Introduced by Beecham as Floxapen in the UK in 1970."
   },
   "generic": true,
   "who_essential": true,

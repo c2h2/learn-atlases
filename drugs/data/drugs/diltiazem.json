@@ -33,9 +33,9 @@
     "brand": "Cardizem"
   },
   "discovery": {
-    "year": null,
+    "year": 1967,
     "by": "Tanabe Seiyaku",
-    "note": "A benzothiazepine developed in Japan in the late 1960s–70s and first marketed there as Herbesser."
+    "note": "A benzothiazepine developed in Japan in the late 1960s–70s and first marketed there as Herbesser. Year is the priority date of the Tanabe benzothiazepine patent (US 3,562,257)."
   },
   "generic": true,
   "who_essential": false,
@@ -118,6 +118,10 @@
     {
       "title": "DailyMed – diltiazem labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=diltiazem"
+    },
+    {
+      "title": "Google Patents – US3562257A",
+      "url": "https://patents.google.com/patent/US3562257A/en"
     }
   ],
   "stage": "written"

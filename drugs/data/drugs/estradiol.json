@@ -37,11 +37,16 @@
   "origin": "semi-synthetic",
   "originator": "Schering AG (1930s)",
   "owner": "generic (many)",
-  "first_approval": null,
+  "first_approval": {
+    "year": 1933,
+    "agency": null,
+    "country": "Germany",
+    "brand": "Progynon B"
+  },
   "discovery": {
     "year": 1935,
     "by": "Edward Doisy and colleagues (Saint Louis University)",
-    "note": "Isolated from sow ovaries in 1935; estrone had been isolated by Doisy and Butenandt in 1929."
+    "note": "Isolated from sow ovaries in 1935; estrone had been isolated by Doisy and Butenandt in 1929. First introduced for medical use in 1933 as estradiol benzoate (Progynon B, Schering), an intramuscular ester prodrug."
   },
   "generic": true,
   "who_essential": false,

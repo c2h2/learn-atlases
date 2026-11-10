@@ -30,9 +30,9 @@
     "brand": "Procoralan"
   },
   "discovery": {
-    "year": null,
+    "year": 1991,
     "by": "Servier",
-    "note": "Developed as a pure heart-rate-lowering agent acting on the sinoatrial node funny current."
+    "note": "Developed as a pure heart-rate-lowering agent acting on the sinoatrial node funny current. Year is the priority date of the ADIR (Servier) benzocycloalkyl-alkylamine patent (US 5,296,482)."
   },
   "generic": true,
   "who_essential": false,
@@ -127,6 +127,10 @@
     {
       "title": "Swedberg K et al. Ivabradine and outcomes in chronic heart failure (SHIFT). Lancet 2010",
       "url": "https://pubmed.ncbi.nlm.nih.gov/20801500/"
+    },
+    {
+      "title": "Google Patents – US5296482A",
+      "url": "https://patents.google.com/patent/US5296482A/en"
     }
   ],
   "stage": "written"

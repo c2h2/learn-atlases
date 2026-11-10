@@ -29,9 +29,9 @@
     "brand": "Dupixent"
   },
   "discovery": {
-    "year": null,
+    "year": 2006,
     "by": "Regeneron",
-    "note": "Fully human IgG4 antibody against IL-4Rα, generated with Regeneron's VelocImmune mice; co-developed with Sanofi."
+    "note": "Fully human IgG4 antibody against IL-4Rα, generated with Regeneron's VelocImmune mice; co-developed with Sanofi. Year is the priority date of the Regeneron IL-4R antibody patent (US 7,608,693)."
   },
   "generic": false,
   "who_essential": false,
@@ -136,6 +136,10 @@
     {
       "title": "EMA – Dupixent EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/dupixent"
+    },
+    {
+      "title": "Google Patents – US7608693B2",
+      "url": "https://patents.google.com/patent/US7608693B2/en"
     }
   ],
   "stage": "written"

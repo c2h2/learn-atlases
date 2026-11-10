@@ -27,11 +27,16 @@
   "origin": "natural",
   "originator": "Johns Hopkins University (Jay McLean, William Howell)",
   "owner": "generic (many)",
-  "first_approval": null,
+  "first_approval": {
+    "year": 1936,
+    "agency": null,
+    "country": "Sweden",
+    "brand": null
+  },
   "discovery": {
     "year": 1916,
     "by": "Jay McLean, working with William Howell at Johns Hopkins",
-    "note": "An anticoagulant found in liver extracts; Howell named it heparin in 1918."
+    "note": "An anticoagulant found in liver extracts; Howell named it heparin in 1918. The Swedish company Vitrum launched the first heparin product for intravenous use in 1936, building on Erik Jorpes's purification work."
   },
   "generic": true,
   "who_essential": true,
@@ -121,6 +126,10 @@
     {
       "title": "DailyMed – heparin sodium labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=heparin+sodium"
+    },
+    {
+      "title": "Erik Jorpes (1894–1973) – Karolinska Institutet",
+      "url": "https://ki.se/en/node/4871"
     }
   ],
   "stage": "written"

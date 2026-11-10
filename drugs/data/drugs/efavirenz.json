@@ -32,9 +32,9 @@
     "brand": "Sustiva"
   },
   "discovery": {
-    "year": null,
+    "year": 1992,
     "by": "Merck Research Laboratories",
-    "note": "Benzoxazinone NNRTI licensed to DuPont Merck for development."
+    "note": "Benzoxazinone NNRTI licensed to DuPont Merck for development. Year is the priority date of the Merck benzoxazinone patent (US 5,519,021)."
   },
   "generic": true,
   "who_essential": true,
@@ -122,6 +122,10 @@
     {
       "title": "EMA EPAR: Sustiva",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/sustiva"
+    },
+    {
+      "title": "Google Patents – US5519021A",
+      "url": "https://patents.google.com/patent/US5519021A/en"
     }
   ],
   "stage": "written"

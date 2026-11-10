@@ -34,9 +34,9 @@
     "brand": "Vasotec"
   },
   "discovery": {
-    "year": null,
+    "year": 1978,
     "by": "Arthur Patchett and colleagues, Merck",
-    "note": "A carboxyalkyl dipeptide designed to avoid captopril's thiol group; given as an ethyl-ester prodrug."
+    "note": "A carboxyalkyl dipeptide designed to avoid captopril's thiol group; given as an ethyl-ester prodrug. Year of the patent; it came into medical use in 1984 (first marketed by Merck in 1981 per some sources)."
   },
   "generic": true,
   "who_essential": true,

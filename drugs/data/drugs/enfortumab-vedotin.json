@@ -30,9 +30,9 @@
     "brand": "Padcev"
   },
   "discovery": {
-    "year": null,
+    "year": 2010,
     "by": "Agensys/Astellas and Seattle Genetics",
-    "note": "Fully human anti-Nectin-4 IgG1 linked by a protease-cleavable linker to monomethyl auristatin E (MMAE)."
+    "note": "Fully human anti-Nectin-4 IgG1 linked by a protease-cleavable linker to monomethyl auristatin E (MMAE). Year is the priority date of the Agensys/Seattle Genetics patent on antibody–drug conjugates binding 191P4D12 (Nectin-4) (US 8,637,642)."
   },
   "generic": false,
   "who_essential": false,
@@ -130,6 +130,10 @@
     {
       "title": "EMA – Padcev EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/padcev"
+    },
+    {
+      "title": "Google Patents – US8637642B2",
+      "url": "https://patents.google.com/patent/US8637642B2/en"
     }
   ],
   "stage": "written"

@@ -27,11 +27,16 @@
   "origin": "natural",
   "originator": "Schering Corporation",
   "owner": "generic (many)",
-  "first_approval": null,
+  "first_approval": {
+    "year": 1964,
+    "agency": null,
+    "country": "United States",
+    "brand": "Garamycin"
+  },
   "discovery": {
     "year": 1963,
     "by": "Marvin Weinstein, Gerald Wagman and George Luedemann (Schering Corporation)",
-    "note": "Isolated from the actinomycete Micromonospora purpurea; the '-micin' spelling reflects its Micromonospora origin."
+    "note": "Isolated from the actinomycete Micromonospora purpurea; the '-micin' spelling reflects its Micromonospora origin. Patented in 1962 and approved for medical use in 1964, initially as a topical treatment; IV use followed in 1971."
   },
   "generic": true,
   "who_essential": true,

@@ -30,9 +30,9 @@
   "owner": "GSK (brands); generic (many)",
   "first_approval": {
     "year": 1990,
-    "agency": null,
-    "country": null,
-    "brand": null
+    "agency": "MCA",
+    "country": "United Kingdom",
+    "brand": "Flixonase"
   },
   "discovery": {
     "year": 1980,
@@ -138,6 +138,10 @@
     {
       "title": "DailyMed – fluticasone propionate labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=fluticasone+propionate"
+    },
+    {
+      "title": "MHRA – Flixonase reclassification public assessment report",
+      "url": "https://assets.publishing.service.gov.uk/media/69d3837540178298997ef02a/Reclass_PAR_final_clean_Feb16.pdf"
     }
   ],
   "stage": "written"

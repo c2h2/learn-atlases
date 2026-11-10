@@ -30,9 +30,9 @@
     "brand": "Vabysmo"
   },
   "discovery": {
-    "year": null,
+    "year": 2010,
     "by": "Roche",
-    "note": "A CrossMAb bispecific IgG1 with one arm against VEGF-A and one against angiopoietin-2, and an engineered Fc that does not bind FcRn or Fc-gamma receptors."
+    "note": "A CrossMAb bispecific IgG1 with one arm against VEGF-A and one against angiopoietin-2, and an engineered Fc that does not bind FcRn or Fc-gamma receptors. Year is the priority date of the Roche bispecific anti-VEGF/anti-ANG-2 antibody patent (US 8,945,552)."
   },
   "generic": false,
   "who_essential": false,
@@ -98,7 +98,11 @@
     ],
     "boxed_warning": null
   },
-  "facts": [],
+  "facts": [
+    "Faricimab was the first bispecific antibody approved for injection into the eye.",
+    "After loading doses, the label allows intervals of up to 16 weeks between injections in wet AMD and DME.",
+    "It was developed under the code name RG7716."
+  ],
   "related": [
     "aflibercept",
     "ranibizumab",
@@ -116,6 +120,10 @@
     {
       "title": "EMA EPAR: Vabysmo",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/vabysmo"
+    },
+    {
+      "title": "Google Patents – US8945552B2",
+      "url": "https://patents.google.com/patent/US8945552B2/en"
     }
   ],
   "stage": "written"

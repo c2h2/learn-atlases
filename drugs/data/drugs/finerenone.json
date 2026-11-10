@@ -29,9 +29,9 @@
     "brand": "Kerendia"
   },
   "discovery": {
-    "year": null,
+    "year": 2007,
     "by": "Bayer",
-    "note": "A dihydronaphthyridine discovered by high-throughput screening, designed to be more selective than spironolactone and more potent than eplerenone."
+    "note": "A dihydronaphthyridine discovered by high-throughput screening, designed to be more selective than spironolactone and more potent than eplerenone. Year is the priority date of the Bayer dihydronaphthyridine patent (US 8,436,180)."
   },
   "generic": false,
   "who_essential": false,
@@ -117,6 +117,10 @@
     {
       "title": "Bakris GL et al. FIDELIO-DKD (NEJM 2020)",
       "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2025845"
+    },
+    {
+      "title": "Google Patents – US8436180B2",
+      "url": "https://patents.google.com/patent/US8436180B2/en"
     }
   ],
   "stage": "written"

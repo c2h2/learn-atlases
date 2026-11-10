@@ -31,9 +31,9 @@
     "brand": "Tresiba"
   },
   "discovery": {
-    "year": null,
+    "year": 2003,
     "by": "Novo Nordisk researchers",
-    "note": "B30 threonine removed and a hexadecanedioic acid side chain attached to B29 lysine via a glutamic acid linker."
+    "note": "B30 threonine removed and a hexadecanedioic acid side chain attached to B29 lysine via a glutamic acid linker. Year is the priority date of the Novo Nordisk insulin-derivative patent (US 7,615,532)."
   },
   "generic": false,
   "who_essential": true,
@@ -123,6 +123,10 @@
     {
       "title": "Marso SP et al. DEVOTE: degludec vs glargine cardiovascular safety (NEJM 2017)",
       "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1615692"
+    },
+    {
+      "title": "Google Patents – US7615532B2",
+      "url": "https://patents.google.com/patent/US7615532B2/en"
     }
   ],
   "stage": "written"

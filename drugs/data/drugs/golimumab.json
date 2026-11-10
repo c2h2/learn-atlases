@@ -30,14 +30,14 @@
     "brand": "Simponi"
   },
   "discovery": {
-    "year": null,
+    "year": 2000,
     "by": "Centocor",
-    "note": "Fully human IgG1κ antibody against TNF-α generated in transgenic mice (Medarex technology)."
+    "note": "Fully human IgG1κ antibody against TNF-α generated in transgenic mice (Medarex technology). Year is the priority date of the Centocor human anti-TNF antibody patent (US 7,250,165)."
   },
-  "generic": null,
+  "generic": true,
   "who_essential": false,
   "who_status": "not-listed",
-  "rx_status": "prescription",
+  "rx_status": "prescription; first biosimilar (Gobivaz) approved in Japan in September 2025 and the EU in November 2025",
   "tagline": "Once-monthly human anti-TNF antibody for arthritis and ulcerative colitis",
   "summary": "Golimumab is a fully human anti-TNF-α monoclonal antibody given subcutaneously once a month or intravenously every eight weeks. It is used in rheumatoid arthritis, psoriatic arthritis, ankylosing spondylitis, non-radiographic axial spondyloarthritis and ulcerative colitis.",
   "mechanism": [
@@ -127,6 +127,10 @@
     {
       "title": "EMA – Simponi EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/simponi"
+    },
+    {
+      "title": "Google Patents – US7250165B2",
+      "url": "https://patents.google.com/patent/US7250165B2/en"
     }
   ],
   "stage": "written"

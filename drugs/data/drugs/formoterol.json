@@ -27,11 +27,16 @@
   "origin": "synthetic",
   "originator": "Yamanouchi Pharmaceutical (Japan)",
   "owner": "generic (many); combination products by AstraZeneca, Chiesi and others",
-  "first_approval": null,
+  "first_approval": {
+    "year": 1986,
+    "agency": "MHW",
+    "country": "Japan",
+    "brand": "Atock"
+  },
   "discovery": {
-    "year": null,
+    "year": 1972,
     "by": "Yamanouchi Pharmaceutical",
-    "note": "A formanilide-substituted phenylethanolamine developed in Japan in the 1970s."
+    "note": "A formanilide-substituted phenylethanolamine developed in Japan in the 1970s. Year is the priority date of the Yamanouchi patent (US 3,994,974). First registered in Japan in 1986 as an oral formulation (Atock, Yamanouchi); inhaled forms came later."
   },
   "generic": true,
   "who_essential": true,
@@ -123,6 +128,10 @@
     {
       "title": "DailyMed – formoterol labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=formoterol"
+    },
+    {
+      "title": "Google Patents – US3994974A",
+      "url": "https://patents.google.com/patent/US3994974A/en"
     }
   ],
   "stage": "written"

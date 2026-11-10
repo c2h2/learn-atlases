@@ -27,14 +27,14 @@
   "owner": "generic (many); AstraZeneca (Rx), Haleon (OTC, US)",
   "first_approval": {
     "year": 2000,
-    "agency": null,
+    "agency": "MPA",
     "country": "Sweden",
     "brand": "Nexium"
   },
   "discovery": {
-    "year": null,
+    "year": 1993,
     "by": "Astra",
-    "note": "Single S-enantiomer of omeprazole, which is metabolised more slowly by CYP2C19 and gives higher exposure."
+    "note": "Single S-enantiomer of omeprazole, which is metabolised more slowly by CYP2C19 and gives higher exposure. Year of the patent; approved in 2000."
   },
   "generic": true,
   "who_essential": true,
@@ -126,6 +126,10 @@
     {
       "title": "DailyMed – esomeprazole labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=esomeprazole"
+    },
+    {
+      "title": "AstraZeneca – Nexium receives fast first approval in Sweden (2000)",
+      "url": "https://news.cision.com/astrazeneca/r/astrazeneca-s-nexium-receives-fast-first-approval,c19333"
     }
   ],
   "stage": "written"

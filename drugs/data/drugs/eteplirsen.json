@@ -28,9 +28,9 @@
     "brand": "Exondys 51"
   },
   "discovery": {
-    "year": null,
+    "year": 2004,
     "by": "Steve Wilton and Sue Fletcher, University of Western Australia",
-    "note": "Designed antisense oligomers that make the splicing machinery skip exon 51, restoring the reading frame for some DMD deletions."
+    "note": "Designed antisense oligomers that make the splicing machinery skip exon 51, restoring the reading frame for some DMD deletions. Year is the priority date of the University of Western Australia exon-skipping oligonucleotide patent (US 7,807,816)."
   },
   "generic": false,
   "who_essential": false,
@@ -110,6 +110,10 @@
     {
       "title": "FDA: Exondys 51 approval information",
       "url": "https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm?event=overview.process&ApplNo=206488"
+    },
+    {
+      "title": "Google Patents – US7807816B2",
+      "url": "https://patents.google.com/patent/US7807816B2/en"
     }
   ],
   "stage": "written"

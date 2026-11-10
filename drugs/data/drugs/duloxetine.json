@@ -32,9 +32,9 @@
     "brand": "Cymbalta"
   },
   "discovery": {
-    "year": null,
+    "year": 1986,
     "by": "Eli Lilly (David Robertson, David Wong and colleagues)",
-    "note": "A thiophene naphthyloxy propylamine developed at Lilly in the late 1980s as a balanced serotonin and noradrenaline reuptake inhibitor."
+    "note": "A thiophene naphthyloxy propylamine developed at Lilly in the late 1980s as a balanced serotonin and noradrenaline reuptake inhibitor. Year the patent application naming Robertson, Wong and Krushinski was filed (granted 1990)."
   },
   "generic": true,
   "who_essential": false,

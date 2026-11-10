@@ -31,14 +31,14 @@
     "brand": "Promacta"
   },
   "discovery": {
-    "year": null,
+    "year": 2000,
     "by": "Ligand Pharmaceuticals and SmithKline Beecham",
-    "note": "A non-peptide hydrazone compound found to activate the thrombopoietin receptor through its transmembrane domain."
+    "note": "A non-peptide hydrazone compound found to activate the thrombopoietin receptor through its transmembrane domain. Year is the priority date of the SmithKline Beecham thrombopoietin-mimetic patent (US 7,160,870)."
   },
-  "generic": null,
+  "generic": true,
   "who_essential": false,
   "who_status": "not-listed",
-  "rx_status": "prescription",
+  "rx_status": "prescription; US generics since May 2025",
   "tagline": "Oral thrombopoietin-mimetic for immune thrombocytopenia and aplastic anaemia",
   "summary": "Eltrombopag is an orally active small-molecule agonist of the thrombopoietin receptor that increases platelet production. It is used in chronic immune thrombocytopenia, thrombocytopenia of chronic hepatitis C and severe aplastic anaemia. Its labelling warns of hepatotoxicity.",
   "mechanism": [
@@ -133,6 +133,10 @@
     {
       "title": "EMA EPAR: Revolade",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/revolade"
+    },
+    {
+      "title": "Google Patents – US7160870B2",
+      "url": "https://patents.google.com/patent/US7160870B2/en"
     }
   ],
   "stage": "written"

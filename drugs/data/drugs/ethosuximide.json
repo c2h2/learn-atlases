@@ -31,9 +31,9 @@
     "brand": "Zarontin"
   },
   "discovery": {
-    "year": null,
+    "year": 1958,
     "by": "Parke-Davis",
-    "note": "Developed in the 1950s among succinimide compounds screened for activity against pentylenetetrazol-induced seizures."
+    "note": "Developed in the 1950s among succinimide compounds screened for activity against pentylenetetrazol-induced seizures. Year is the priority date of the Parke-Davis patent (Miller and Long) claiming alpha-ethyl-alpha-methylsuccinimide for epilepsy (US 2,993,835)."
   },
   "generic": true,
   "who_essential": true,
@@ -116,6 +116,10 @@
     {
       "title": "NEJM: Ethosuximide, Valproic Acid, and Lamotrigine in Childhood Absence Epilepsy (2010)",
       "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa0902014"
+    },
+    {
+      "title": "Google Patents – US2993835A",
+      "url": "https://patents.google.com/patent/US2993835A/en"
     }
   ],
   "stage": "written"

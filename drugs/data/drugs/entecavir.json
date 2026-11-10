@@ -30,9 +30,9 @@
     "brand": "Baraclude"
   },
   "discovery": {
-    "year": null,
+    "year": 1990,
     "by": "Bristol-Myers Squibb",
-    "note": "Carbocyclic deoxyguanosine analogue originally investigated against herpesviruses, found to be highly potent against HBV."
+    "note": "Carbocyclic deoxyguanosine analogue originally investigated against herpesviruses, found to be highly potent against HBV. Year is the priority date of the Squibb carbocyclic nucleoside patent (US 5,206,244), invalidated for obviousness in 2014."
   },
   "generic": true,
   "who_essential": true,
@@ -116,6 +116,10 @@
     {
       "title": "EMA EPAR: Baraclude",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/baraclude"
+    },
+    {
+      "title": "Google Patents – US5206244A",
+      "url": "https://patents.google.com/patent/US5206244A/en"
     }
   ],
   "stage": "written"

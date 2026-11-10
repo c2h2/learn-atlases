@@ -28,9 +28,9 @@
     "brand": "Kalydeco"
   },
   "discovery": {
-    "year": null,
+    "year": 2004,
     "by": "Vertex Pharmaceuticals (high-throughput screening programme begun at Aurora Biosciences)",
-    "note": "Identified by cell-based screening for compounds that increase CFTR channel opening."
+    "note": "Identified by cell-based screening for compounds that increase CFTR channel opening. Year is the priority date of the Vertex ABC-transporter modulator patent (US 7,495,103)."
   },
   "generic": false,
   "who_essential": true,
@@ -125,6 +125,10 @@
     {
       "title": "DailyMed – ivacaftor labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ivacaftor"
+    },
+    {
+      "title": "Google Patents – US7495103B2",
+      "url": "https://patents.google.com/patent/US7495103B2/en"
     }
   ],
   "stage": "written"

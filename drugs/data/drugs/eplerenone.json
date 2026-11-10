@@ -28,9 +28,9 @@
     "brand": "Inspra"
   },
   "discovery": {
-    "year": null,
+    "year": 1983,
     "by": "Searle/Pharmacia",
-    "note": "A spironolactone derivative with a 9,11-epoxy group giving greater receptor selectivity."
+    "note": "A spironolactone derivative with a 9,11-epoxy group giving greater receptor selectivity. Year is the priority date of the Ciba-Geigy 20-spiroxane patent (US 4,559,332); approved in the US in 2002."
   },
   "generic": true,
   "who_essential": false,
@@ -118,6 +118,10 @@
     {
       "title": "Pitt B et al. Eplerenone, a selective aldosterone blocker, in patients with left ventricular dysfunction after myocardial infarction (EPHESUS). N Engl J Med 2003",
       "url": "https://pubmed.ncbi.nlm.nih.gov/12668699/"
+    },
+    {
+      "title": "Google Patents – US4559332A",
+      "url": "https://patents.google.com/patent/US4559332A/en"
     }
   ],
   "stage": "written"

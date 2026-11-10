@@ -32,9 +32,9 @@
     "brand": "Neurontin"
   },
   "discovery": {
-    "year": null,
+    "year": 1974,
     "by": "Gödecke AG / Parke-Davis",
-    "note": "Designed in the 1970s as a lipophilic, brain-penetrant analogue of GABA; it was later found not to act on GABA receptors."
+    "note": "Designed in the 1970s as a lipophilic, brain-penetrant analogue of GABA; it was later found not to act on GABA receptors. Year is the priority date of the Gödecke cyclic amino acid patent (US 4,024,175); first described by Satzinger and Hartenstein in 1975."
   },
   "generic": true,
   "who_essential": false,
@@ -126,6 +126,10 @@
     {
       "title": "DailyMed: gabapentin labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=gabapentin"
+    },
+    {
+      "title": "Google Patents – US4024175A",
+      "url": "https://patents.google.com/patent/US4024175A/en"
     }
   ],
   "stage": "written"

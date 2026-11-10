@@ -26,11 +26,16 @@
   "origin": "synthetic",
   "originator": "no single originator (traditional remedy)",
   "owner": "generic (many)",
-  "first_approval": null,
+  "first_approval": {
+    "year": 1832,
+    "agency": null,
+    "country": "France",
+    "brand": "Blaud's pills"
+  },
   "discovery": {
     "year": 1832,
     "by": "Pierre Blaud",
-    "note": "Blaud's pills, combining ferrous sulfate with potassium carbonate, became a standard treatment for chlorosis (iron-deficiency anaemia in young women)."
+    "note": "Blaud's pills, combining ferrous sulfate with potassium carbonate, became a standard treatment for chlorosis (iron-deficiency anaemia in young women). Pre-regulation: the year is the clinical introduction of Blaud's pills."
   },
   "generic": true,
   "who_essential": true,
@@ -74,7 +79,7 @@
     }
   ],
   "pk": {
-    "half_life": null,
+    "half_life": "not meaningful: absorbed iron is retained and recycled rather than eliminated",
     "bioavailability": "about 10–35% of iron absorbed, higher in deficiency",
     "metabolism": "incorporated into haemoglobin, myoglobin and ferritin; not metabolised",
     "excretion": "no active excretion pathway; lost via shed cells and bleeding"

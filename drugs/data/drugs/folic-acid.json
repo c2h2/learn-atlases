@@ -25,11 +25,16 @@
   "origin": "synthetic",
   "originator": "Lederle Laboratories (Robert Angier, Yellapragada SubbaRow and colleagues)",
   "owner": "generic (many)",
-  "first_approval": null,
+  "first_approval": {
+    "year": 1946,
+    "agency": null,
+    "country": "United States",
+    "brand": "Folvite"
+  },
   "discovery": {
     "year": 1945,
     "by": "Lederle Laboratories team led by Yellapragada SubbaRow",
-    "note": "Synthesis of pteroylglutamic acid followed Lucy Wills's 1931 discovery of a dietary factor that cured macrocytic anaemia of pregnancy."
+    "note": "Synthesis of pteroylglutamic acid followed Lucy Wills's 1931 discovery of a dietary factor that cured macrocytic anaemia of pregnancy. Lederle began commercial production of 5 mg folic acid tablets (Folvite) in 1946."
   },
   "generic": true,
   "who_essential": true,
@@ -85,7 +90,7 @@
     }
   ],
   "pk": {
-    "half_life": null,
+    "half_life": "about 1.5 hours in plasma after an intramuscular dose",
     "bioavailability": "high (about 85% or more) when taken fasting",
     "metabolism": "reduced and methylated in liver and intestine",
     "excretion": "urine; enterohepatic circulation"
@@ -125,6 +130,10 @@
     {
       "title": "PubMed: MRC Vitamin Study (Lancet 1991)",
       "url": "https://pubmed.ncbi.nlm.nih.gov/1677062/"
+    },
+    {
+      "title": "Folic acid in the 20th century – review (PMC6785032)",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6785032/"
     }
   ],
   "stage": "written"

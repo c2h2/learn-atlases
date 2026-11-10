@@ -27,11 +27,16 @@
   "origin": "synthetic",
   "originator": "Multiple companies (developed as the active metabolite of isosorbide dinitrate)",
   "owner": "generic (many)",
-  "first_approval": null,
+  "first_approval": {
+    "year": 1981,
+    "agency": null,
+    "country": "West Germany",
+    "brand": "Elantan"
+  },
   "discovery": {
-    "year": null,
+    "year": 1971,
     "by": null,
-    "note": "Identified as the main active metabolite of isosorbide dinitrate and developed as a drug that avoids first-pass metabolism."
+    "note": "Identified as the main active metabolite of isosorbide dinitrate and developed as a drug that avoids first-pass metabolism. Year of the patent; approved for medical use in 1981. Elantan 40 mg tablets were authorised in Germany on 22 November 1981."
   },
   "generic": true,
   "who_essential": false,

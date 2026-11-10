@@ -29,9 +29,9 @@
     "brand": "Zetia"
   },
   "discovery": {
-    "year": null,
+    "year": 1993,
     "by": "Schering-Plough",
-    "note": "Found by optimising azetidinone compounds in an animal screen before its molecular target was known."
+    "note": "Found by optimising azetidinone compounds in an animal screen before its molecular target was known. Year is the priority date of the Schering hydroxy-substituted azetidinone patent (US 5,767,115)."
   },
   "generic": true,
   "who_essential": false,
@@ -121,6 +121,10 @@
     {
       "title": "Cannon CP et al. Ezetimibe added to statin therapy after acute coronary syndromes (IMPROVE-IT). N Engl J Med 2015",
       "url": "https://pubmed.ncbi.nlm.nih.gov/26039521/"
+    },
+    {
+      "title": "Google Patents – US5767115A",
+      "url": "https://patents.google.com/patent/US5767115A/en"
     }
   ],
   "stage": "written"

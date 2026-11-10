@@ -29,9 +29,9 @@
     "brand": "Tremfya"
   },
   "discovery": {
-    "year": null,
+    "year": 2005,
     "by": "MorphoSys and Janssen",
-    "note": "Fully human IgG1λ antibody against IL-23 p19 selected from MorphoSys's HuCAL phage library."
+    "note": "Fully human IgG1λ antibody against IL-23 p19 selected from MorphoSys's HuCAL phage library. Year is the priority date of the Centocor human anti-IL-23 antibody patent (US 7,935,344)."
   },
   "generic": false,
   "who_essential": false,
@@ -122,6 +122,10 @@
     {
       "title": "EMA – Tremfya EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/tremfya"
+    },
+    {
+      "title": "Google Patents – US7935344B2",
+      "url": "https://patents.google.com/patent/US7935344B2/en"
     }
   ],
   "stage": "written"

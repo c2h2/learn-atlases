@@ -28,11 +28,16 @@
   "origin": "synthetic",
   "originator": "Hoffmann-La Roche, E. R. Squibb & Sons and Bayer (independently)",
   "owner": "generic (many)",
-  "first_approval": null,
+  "first_approval": {
+    "year": 1952,
+    "agency": null,
+    "country": null,
+    "brand": "Rimifon / Nydrazid"
+  },
   "discovery": {
     "year": 1951,
     "by": "Hoffmann-La Roche, Squibb and Bayer research groups",
-    "note": "First synthesised in 1912 by Hans Meyer and Josef Mally in Prague; its anti-tuberculosis activity was discovered independently by three companies in 1951 and announced in 1952."
+    "note": "First synthesised in 1912 by Hans Meyer and Josef Mally in Prague; its anti-tuberculosis activity was discovered independently by three companies in 1951 and announced in 1952. Launched in 1952 by Roche (Rimifon) and Squibb (Nydrazid)."
   },
   "generic": true,
   "who_essential": true,

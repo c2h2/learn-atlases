@@ -33,9 +33,9 @@
     "brand": "Humalog"
   },
   "discovery": {
-    "year": null,
+    "year": 1989,
     "by": "Eli Lilly researchers",
-    "note": "Reversing proline B28 and lysine B29 (the sequence found in IGF-1) weakens hexamer formation so the analogue is absorbed quickly."
+    "note": "Reversing proline B28 and lysine B29 (the sequence found in IGF-1) weakens hexamer formation so the analogue is absorbed quickly. Year is the priority date of the Lilly B28/B29 insulin analogue patent (US 5,514,646)."
   },
   "generic": true,
   "who_essential": true,
@@ -119,6 +119,10 @@
     {
       "title": "EMA EPAR: Humalog",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/humalog"
+    },
+    {
+      "title": "Google Patents – US5514646A",
+      "url": "https://patents.google.com/patent/US5514646A/en"
     }
   ],
   "stage": "written"

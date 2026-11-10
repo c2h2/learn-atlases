@@ -31,7 +31,12 @@
   "origin": "natural",
   "originator": "Eli Lilly and Company",
   "owner": "generic (many)",
-  "first_approval": null,
+  "first_approval": {
+    "year": 1952,
+    "agency": null,
+    "country": "United States",
+    "brand": "Ilosone"
+  },
   "discovery": {
     "year": 1949,
     "by": "Abelardo Aguilar; developed by Eli Lilly",

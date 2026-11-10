@@ -35,9 +35,9 @@
     "brand": "Lantus"
   },
   "discovery": {
-    "year": null,
+    "year": 1988,
     "by": "Hoechst AG researchers",
-    "note": "Engineered in the 1990s by substituting glycine at A21 and adding two arginines to the B-chain C-terminus, shifting the isoelectric point."
+    "note": "Engineered in the 1990s by substituting glycine at A21 and adding two arginines to the B-chain C-terminus, shifting the isoelectric point. Year is the priority date of the Hoechst A21/B30-modified insulin patent (US 5,656,722)."
   },
   "generic": true,
   "who_essential": true,
@@ -131,6 +131,10 @@
     {
       "title": "ORIGIN Trial Investigators. Basal insulin and cardiovascular outcomes (NEJM 2012)",
       "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1203858"
+    },
+    {
+      "title": "Google Patents – US5656722A",
+      "url": "https://patents.google.com/patent/US5656722A/en"
     }
   ],
   "stage": "written"

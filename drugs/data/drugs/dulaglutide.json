@@ -28,9 +28,9 @@
     "brand": "Trulicity"
   },
   "discovery": {
-    "year": null,
+    "year": 2003,
     "by": "Eli Lilly",
-    "note": "Two DPP-4-resistant GLP-1 analogue chains fused through a peptide linker to a modified human IgG4 Fc fragment."
+    "note": "Two DPP-4-resistant GLP-1 analogue chains fused through a peptide linker to a modified human IgG4 Fc fragment. Year is the priority date of the Lilly GLP-1–Fc fusion protein patent (US 7,452,966)."
   },
   "generic": false,
   "who_essential": true,
@@ -117,6 +117,10 @@
     {
       "title": "EMA EPAR: Trulicity",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/trulicity"
+    },
+    {
+      "title": "Google Patents – US7452966B2",
+      "url": "https://patents.google.com/patent/US7452966B2/en"
     }
   ],
   "stage": "written"

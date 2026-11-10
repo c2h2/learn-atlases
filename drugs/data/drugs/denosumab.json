@@ -32,9 +32,9 @@
     "brand": "Prolia"
   },
   "discovery": {
-    "year": null,
+    "year": 2001,
     "by": "Amgen",
-    "note": "A fully human IgG2 antibody developed after the discovery of the RANK–RANKL–osteoprotegerin system in the late 1990s, in which Amgen scientists identified osteoprotegerin."
+    "note": "A fully human IgG2 antibody developed after the discovery of the RANK–RANKL–osteoprotegerin system in the late 1990s, in which Amgen scientists identified osteoprotegerin. Year is the priority date of the Amgen/Abgenix \"Antibodies to OPGL\" patent (US 7,364,736)."
   },
   "generic": true,
   "who_essential": false,
@@ -131,6 +131,10 @@
     {
       "title": "Cummings SR et al. FREEDOM trial (NEJM 2009)",
       "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa0809493"
+    },
+    {
+      "title": "Google Patents – US7364736B2",
+      "url": "https://patents.google.com/patent/US7364736B2/en"
     }
   ],
   "stage": "written"

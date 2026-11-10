@@ -30,9 +30,9 @@
     "brand": "Jardiance"
   },
   "discovery": {
-    "year": null,
+    "year": 2004,
     "by": "Boehringer Ingelheim",
-    "note": "A C-glucoside SGLT2 inhibitor in the gliflozin class descended from the natural product phlorizin."
+    "note": "A C-glucoside SGLT2 inhibitor in the gliflozin class descended from the natural product phlorizin. Year is the priority date of the Boehringer Ingelheim compound patent (US 7,579,449); Wikipedia gives 2005."
   },
   "generic": false,
   "who_essential": true,
@@ -133,6 +133,10 @@
     {
       "title": "Zinman B et al. EMPA-REG OUTCOME (NEJM 2015)",
       "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1504720"
+    },
+    {
+      "title": "Google Patents – US7579449B2",
+      "url": "https://patents.google.com/patent/US7579449B2/en"
     }
   ],
   "stage": "written"

@@ -32,9 +32,9 @@
     "brand": "Soliris"
   },
   "discovery": {
-    "year": null,
+    "year": 1994,
     "by": "Alexion Pharmaceuticals",
-    "note": "Humanised antibody with a hybrid IgG2/IgG4 constant region that binds complement component C5."
+    "note": "Humanised antibody with a hybrid IgG2/IgG4 constant region that binds complement component C5. Year is the priority date of the Alexion C5-specific antibody patent (US 6,355,245)."
   },
   "generic": true,
   "who_essential": false,
@@ -138,6 +138,10 @@
     {
       "title": "EMA – Soliris EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/soliris"
+    },
+    {
+      "title": "Google Patents – US6355245B1",
+      "url": "https://patents.google.com/patent/US6355245B1/en"
     }
   ],
   "stage": "written"

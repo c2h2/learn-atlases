@@ -29,9 +29,9 @@
     "brand": "Invanz"
   },
   "discovery": {
-    "year": null,
+    "year": 1992,
     "by": "Zeneca and Merck & Co.",
-    "note": "A 1-beta-methyl carbapenem with a benzoic-acid side chain that increases protein binding and prolongs half-life."
+    "note": "A 1-beta-methyl carbapenem with a benzoic-acid side chain that increases protein binding and prolongs half-life. Year is the priority date of the Zeneca carbapenem patent (US 5,478,820)."
   },
   "generic": true,
   "who_essential": false,
@@ -117,6 +117,10 @@
     {
       "title": "DailyMed: ertapenem labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ertapenem"
+    },
+    {
+      "title": "Google Patents – US5478820A",
+      "url": "https://patents.google.com/patent/US5478820A/en"
     }
   ],
   "stage": "written"

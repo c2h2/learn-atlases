@@ -30,9 +30,9 @@
     "brand": "Comtess/Comtan"
   },
   "discovery": {
-    "year": null,
+    "year": 1986,
     "by": "Orion Corporation, Espoo",
-    "note": "A nitrocatechol designed to inhibit peripheral COMT and so extend the effect of levodopa."
+    "note": "A nitrocatechol designed to inhibit peripheral COMT and so extend the effect of levodopa. Year is the priority date of the Orion catechol-derivative patent (US 5,446,194)."
   },
   "generic": true,
   "who_essential": false,
@@ -116,6 +116,10 @@
     {
       "title": "EMA EPAR: Comtan",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/comtan"
+    },
+    {
+      "title": "Google Patents – US5446194A",
+      "url": "https://patents.google.com/patent/US5446194A/en"
     }
   ],
   "stage": "written"

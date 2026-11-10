@@ -31,9 +31,9 @@
     "brand": "Adenuric"
   },
   "discovery": {
-    "year": null,
+    "year": 1990,
     "by": "Teijin Pharma, Japan",
-    "note": "A thiazolecarboxylic acid that inhibits both oxidised and reduced forms of xanthine oxidase."
+    "note": "A thiazolecarboxylic acid that inhibits both oxidised and reduced forms of xanthine oxidase. Year is the priority date of the Teijin 2-arylthiazole patent (US 5,614,520)."
   },
   "generic": true,
   "who_essential": false,
@@ -121,6 +121,10 @@
     {
       "title": "White WB et al. CARES trial (NEJM 2018)",
       "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1710895"
+    },
+    {
+      "title": "Google Patents – US5614520A",
+      "url": "https://patents.google.com/patent/US5614520A/en"
     }
   ],
   "stage": "written"

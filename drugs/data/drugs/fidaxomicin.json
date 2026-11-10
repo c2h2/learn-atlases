@@ -32,14 +32,14 @@
     "brand": "Dificid"
   },
   "discovery": {
-    "year": null,
+    "year": 1986,
     "by": "Abbott Laboratories (tiacumicins); developed by Optimer Pharmaceuticals",
-    "note": "A fermentation product of the actinomycete Dactylosporangium aurantiacum."
+    "note": "A fermentation product of the actinomycete Dactylosporangium aurantiacum. Year is the priority date of the Abbott tiacumicin patent (US 4,918,174)."
   },
-  "generic": null,
+  "generic": true,
   "who_essential": false,
   "who_status": "not-listed",
-  "rx_status": "prescription",
+  "rx_status": "prescription; US generics approved from 2024, launched 2025",
   "tagline": "Narrow-spectrum gut-acting antibiotic for C. difficile with fewer recurrences",
   "summary": "Fidaxomicin is a narrow-spectrum macrocyclic antibiotic that acts within the gut against Clostridioides difficile while largely sparing the normal microbiota. Approved in 2011, it lowers recurrence compared with vancomycin and is preferred in several guidelines for initial and recurrent C. difficile infection.",
   "mechanism": [
@@ -122,6 +122,10 @@
     {
       "title": "EMA: Dificlir EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/dificlir"
+    },
+    {
+      "title": "Google Patents – US4918174A",
+      "url": "https://patents.google.com/patent/US4918174A/en"
     }
   ],
   "stage": "written"

@@ -29,9 +29,9 @@
     "brand": "Aimovig"
   },
   "discovery": {
-    "year": null,
+    "year": 2008,
     "by": "Amgen",
-    "note": "A fully human IgG2 antibody developed in transgenic mice against the canonical CGRP receptor; co-developed with Novartis."
+    "note": "A fully human IgG2 antibody developed in transgenic mice against the canonical CGRP receptor; co-developed with Novartis. Year is the priority date of the Amgen CGRP receptor antibody patent (US 9,102,731)."
   },
   "generic": false,
   "who_essential": false,
@@ -115,6 +115,10 @@
     {
       "title": "EMA EPAR: Aimovig",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/aimovig"
+    },
+    {
+      "title": "Google Patents – US9102731B2",
+      "url": "https://patents.google.com/patent/US9102731B2/en"
     }
   ],
   "stage": "written"
