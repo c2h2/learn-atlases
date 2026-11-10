@@ -34,9 +34,9 @@
     "brand": "Sunlenca"
   },
   "discovery": {
-    "year": null,
+    "year": 2020,
     "by": "Gilead Sciences",
-    "note": "Developed from Gilead's capsid-targeting programme; extremely high potency and low solubility allow a twice-yearly depot."
+    "note": "Developed from Gilead's capsid-targeting programme; extremely high potency and low solubility allow a twice-yearly depot. Year of the first published description (GS-6207; Link et al., Nature 2020)."
   },
   "generic": false,
   "who_essential": false,
@@ -128,6 +128,10 @@
     {
       "title": "Bekker LG et al. Twice-yearly lenacapavir or daily F/TAF for HIV prevention in cisgender women (PURPOSE 1). NEJM 2024",
       "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2407001"
+    },
+    {
+      "title": "Gilead: European Commission authorizes Yeytuo for HIV prevention (August 2025)",
+      "url": "https://www.businesswire.com/news/home/20250825698635/en/European-Commission-Authorizes-Twice-Yearly-Yeytuo-Lenacapavir-for-HIV-Prevention"
     }
   ],
   "stage": "written"

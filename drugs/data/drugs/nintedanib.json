@@ -37,9 +37,9 @@
     "brand": "Ofev"
   },
   "discovery": {
-    "year": null,
+    "year": 2008,
     "by": "Boehringer Ingelheim",
-    "note": "An indolinone angiokinase inhibitor first developed as an anticancer agent."
+    "note": "An indolinone angiokinase inhibitor first developed as an anticancer agent. Year of the first published description (BIBF 1120; Hilberg et al., Cancer Res 2008)."
   },
   "generic": false,
   "who_essential": false,

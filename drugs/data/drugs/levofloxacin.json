@@ -31,14 +31,14 @@
   "owner": "generic (many)",
   "first_approval": {
     "year": 1993,
-    "agency": null,
+    "agency": "MHW",
     "country": "Japan",
     "brand": "Cravit"
   },
   "discovery": {
-    "year": null,
+    "year": 1985,
     "by": "Daiichi Pharmaceutical",
-    "note": "The pure levorotatory (S)-enantiomer of the racemate ofloxacin, accounting for most of its antibacterial activity."
+    "note": "The pure levorotatory (S)-enantiomer of the racemate ofloxacin, accounting for most of its antibacterial activity. Year Daiichi scientists first synthesised the pure levo isomer."
   },
   "generic": true,
   "who_essential": true,

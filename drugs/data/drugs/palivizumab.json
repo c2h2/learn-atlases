@@ -28,9 +28,9 @@
     "brand": "Synagis"
   },
   "discovery": {
-    "year": null,
+    "year": 1997,
     "by": "MedImmune",
-    "note": "Humanised version of a murine antibody against a conserved epitope (site II) of the RSV F protein."
+    "note": "Humanised version of a murine antibody against a conserved epitope (site II) of the RSV F protein. Year of the first published description (MEDI-493; Johnson et al., J Infect Dis 1997)."
   },
   "generic": false,
   "who_essential": false,

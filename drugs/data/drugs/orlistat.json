@@ -31,9 +31,9 @@
     "brand": "Xenical"
   },
   "discovery": {
-    "year": null,
+    "year": 1987,
     "by": "Hoffmann-La Roche",
-    "note": "A hydrogenated derivative of lipstatin, a natural lipase inhibitor produced by Streptomyces toxytricini."
+    "note": "A hydrogenated derivative of lipstatin, a natural lipase inhibitor produced by Streptomyces toxytricini. Year lipstatin and its hydrogenated derivative were first reported (Weibel et al.; Hochuli et al., J Antibiot 1987)."
   },
   "generic": true,
   "who_essential": false,

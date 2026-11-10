@@ -31,9 +31,9 @@
     "brand": "Xalatan"
   },
   "discovery": {
-    "year": null,
+    "year": 1993,
     "by": "Laszlo Bito (Columbia University) and Pharmacia researchers",
-    "note": "Bito showed that topical prostaglandins lower intraocular pressure; Pharmacia designed a selective, better-tolerated isopropyl ester prodrug of a PGF2-alpha analogue."
+    "note": "Bito showed that topical prostaglandins lower intraocular pressure; Pharmacia designed a selective, better-tolerated isopropyl ester prodrug of a PGF2-alpha analogue. Year is the first publication of the compound (PhXA41; Resul et al., J Med Chem 1993)."
   },
   "generic": true,
   "who_essential": true,

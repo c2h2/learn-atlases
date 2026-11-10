@@ -32,9 +32,9 @@
     "brand": "Kaletra"
   },
   "discovery": {
-    "year": null,
+    "year": 1998,
     "by": "Abbott Laboratories (Dale Kempf and colleagues)",
-    "note": "Lopinavir was designed with ritonavir boosting in mind, as it is almost entirely metabolised by CYP3A4 when given alone."
+    "note": "Lopinavir was designed with ritonavir boosting in mind, as it is almost entirely metabolised by CYP3A4 when given alone. Year of the first published description of lopinavir (ABT-378; Sham et al., Antimicrob Agents Chemother 1998)."
   },
   "generic": true,
   "who_essential": true,
@@ -123,6 +123,10 @@
     {
       "title": "RECOVERY Collaborative Group. Lopinavir–ritonavir in patients admitted to hospital with COVID-19. Lancet 2020",
       "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)32013-4/fulltext"
+    },
+    {
+      "title": "PubMed: Sham et al. 1998, ABT-378, a highly potent inhibitor of the HIV protease",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9835517/"
     }
   ],
   "stage": "written"

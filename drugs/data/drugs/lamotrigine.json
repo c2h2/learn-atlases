@@ -31,9 +31,9 @@
     "brand": "Lamictal"
   },
   "discovery": {
-    "year": null,
+    "year": 1980,
     "by": "Wellcome Research Laboratories",
-    "note": "Developed from a hypothesis linking antifolate activity to anticonvulsant effects; lamotrigine turned out to be only a weak antifolate."
+    "note": "Developed from a hypothesis linking antifolate activity to anticonvulsant effects; lamotrigine turned out to be only a weak antifolate. Year is the first patent filing by the Wellcome Foundation, which disclosed the synthesis."
   },
   "generic": true,
   "who_essential": true,

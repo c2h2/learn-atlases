@@ -33,9 +33,9 @@
     "brand": "Lopressor"
   },
   "discovery": {
-    "year": null,
+    "year": 1969,
     "by": "AB Hässle (Astra)",
-    "note": "Developed as a β1-selective blocker."
+    "note": "Developed as a β1-selective blocker. Year first synthesised and its activity discovered."
   },
   "generic": true,
   "who_essential": true,

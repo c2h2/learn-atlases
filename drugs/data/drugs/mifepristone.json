@@ -117,7 +117,11 @@
     ],
     "boxed_warning": "Mifeprex: serious and sometimes fatal infections or bleeding can occur after abortion, and it is available only through a restricted REMS programme. Korlym: termination of pregnancy; pregnancy must be excluded before use."
   },
-  "facts": [],
+  "facts": [
+    "Mifepristone was compound RU-38486, synthesised at Roussel Uclaf in April 1980.",
+    "The FDA approved mifepristone (Mifeprex) for medical abortion in September 2000.",
+    "In 2012 the FDA approved a higher-dose formulation (Korlym) to control hyperglycaemia in Cushing's syndrome."
+  ],
   "related": [
     "misoprostol",
     "levonorgestrel",

@@ -34,9 +34,9 @@
     "brand": "Avelox"
   },
   "discovery": {
-    "year": null,
+    "year": 1988,
     "by": "Bayer",
-    "note": "An 8-methoxy fluoroquinolone with a bicyclic C-7 substituent, improving Gram-positive and anaerobic activity and reducing resistance selection."
+    "note": "An 8-methoxy fluoroquinolone with a bicyclic C-7 substituent, improving Gram-positive and anaerobic activity and reducing resistance selection. Year is the first patent filing."
   },
   "generic": true,
   "who_essential": true,

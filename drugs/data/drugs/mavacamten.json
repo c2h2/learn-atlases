@@ -29,9 +29,9 @@
     "brand": "Camzyos"
   },
   "discovery": {
-    "year": null,
+    "year": 2016,
     "by": "MyoKardia",
-    "note": "Found by screening for compounds that reduce actin-activated myosin ATPase; BMS acquired MyoKardia in 2020."
+    "note": "Found by screening for compounds that reduce actin-activated myosin ATPase; BMS acquired MyoKardia in 2020. Year of the first published description (MYK-461; Green et al., Science 2016)."
   },
   "generic": false,
   "who_essential": false,

@@ -31,9 +31,9 @@
     "brand": "Victoza"
   },
   "discovery": {
-    "year": null,
+    "year": 2000,
     "by": "Novo Nordisk (team including Lotte Bjerre Knudsen)",
-    "note": "Human GLP-1 analogue with Arg34 substitution and a C16 palmitic acid attached at Lys26, enabling albumin binding."
+    "note": "Human GLP-1 analogue with Arg34 substitution and a C16 palmitic acid attached at Lys26, enabling albumin binding. Year of the first published description (NN2211; Knudsen et al., J Med Chem 2000)."
   },
   "generic": true,
   "who_essential": true,

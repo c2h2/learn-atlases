@@ -29,9 +29,9 @@
     "brand": "Beyfortus"
   },
   "discovery": {
-    "year": null,
+    "year": 2017,
     "by": "MedImmune/AstraZeneca, from a human antibody (D25) isolated by AIMM Therapeutics",
-    "note": "Optimised human IgG1 with the YTE Fc mutation (M252Y/S254T/T256E) that extends half-life through FcRn binding."
+    "note": "Optimised human IgG1 with the YTE Fc mutation (M252Y/S254T/T256E) that extends half-life through FcRn binding. Year of the first published description (MEDI8897; Zhu et al., Sci Transl Med 2017)."
   },
   "generic": false,
   "who_essential": false,
@@ -76,7 +76,7 @@
     {
       "year": 2024,
       "title": "Real-world impact",
-      "detail": "The HARMONIE trial and national programmes in Spain, France and elsewhere report large reductions in infant RSV hospitalisations."
+      "detail": "After the HARMONIE trial (published December 2023), first-season national programmes in Spain, France and elsewhere report large reductions in infant RSV hospitalisations."
     }
   ],
   "pk": {

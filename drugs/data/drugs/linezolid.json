@@ -31,9 +31,9 @@
     "brand": "Zyvox"
   },
   "discovery": {
-    "year": null,
+    "year": 1996,
     "by": "Pharmacia & Upjohn",
-    "note": "Developed in the 1990s from earlier DuPont oxazolidinones; the first marketed member of a new antibiotic class in decades."
+    "note": "Developed in the 1990s from earlier DuPont oxazolidinones; the first marketed member of a new antibiotic class in decades. Year of the first published description (U-100766; Brickner et al., J Med Chem 1996)."
   },
   "generic": true,
   "who_essential": true,
@@ -123,6 +123,10 @@
     {
       "title": "DailyMed: linezolid labels",
       "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=linezolid"
+    },
+    {
+      "title": "J Med Chem: Brickner et al. 1996, Synthesis and antibacterial activity of U-100592 and U-100766",
+      "url": "https://doi.org/10.1021/jm9509556"
     }
   ],
   "stage": "written"

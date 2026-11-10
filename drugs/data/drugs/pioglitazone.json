@@ -33,9 +33,9 @@
     "brand": "Actos"
   },
   "discovery": {
-    "year": null,
+    "year": 1985,
     "by": "Takeda Chemical Industries",
-    "note": "Part of Takeda's thiazolidinedione programme that began with ciglitazone."
+    "note": "Part of Takeda's thiazolidinedione programme that began with ciglitazone. Year is the first patent filing."
   },
   "generic": true,
   "who_essential": false,

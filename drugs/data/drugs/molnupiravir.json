@@ -29,9 +29,9 @@
     "brand": "Lagevrio"
   },
   "discovery": {
-    "year": null,
+    "year": 2018,
     "by": "George Painter and colleagues, Emory University (DRIVE)",
-    "note": "Isopropyl-ester prodrug of β-D-N4-hydroxycytidine (NHC), developed for influenza and other RNA viruses before COVID-19."
+    "note": "Isopropyl-ester prodrug of β-D-N4-hydroxycytidine (NHC), developed for influenza and other RNA viruses before COVID-19. Year of the first patent filing disclosing its synthesis (Emory University)."
   },
   "generic": false,
   "who_essential": false,

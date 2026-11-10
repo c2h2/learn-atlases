@@ -101,7 +101,10 @@
     ],
     "boxed_warning": null
   },
-  "facts": [],
+  "facts": [
+    "Fulphila (pegfilgrastim-jmdb), approved by the FDA in June 2018, was the first pegfilgrastim biosimilar in the US.",
+    "The Neulasta Onpro on-body injector is applied on the day of chemotherapy and delivers the dose about 27 hours later."
+  ],
   "related": [
     "filgrastim",
     "cyclophosphamide",

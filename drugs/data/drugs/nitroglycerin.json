@@ -33,7 +33,12 @@
   "origin": "synthetic",
   "originator": "Ascanio Sobrero (first synthesis)",
   "owner": "generic (many)",
-  "first_approval": null,
+  "first_approval": {
+    "year": 1878,
+    "agency": null,
+    "country": "United Kingdom",
+    "brand": null
+  },
   "discovery": {
     "year": 1847,
     "by": "Ascanio Sobrero, University of Turin",

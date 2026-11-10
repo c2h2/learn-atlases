@@ -108,7 +108,10 @@
     ],
     "boxed_warning": "Embryofetal toxicity (first-trimester pregnancy loss and congenital malformations), malignancies such as lymphoma, and serious infections."
   },
-  "facts": [],
+  "facts": [
+    "An enteric-coated salt, mycophenolate sodium (Myfortic, Novartis), was approved in the US in 2004.",
+    "Because of embryofetal toxicity, US prescribing has been governed by a single mycophenolate REMS programme since 2012."
+  ],
   "related": [
     "tacrolimus",
     "ciclosporin",

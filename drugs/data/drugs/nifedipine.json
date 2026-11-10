@@ -26,14 +26,14 @@
   "owner": "generic (many)",
   "first_approval": {
     "year": 1975,
-    "agency": null,
+    "agency": "BGA (West Germany)",
     "country": "Germany",
     "brand": "Adalat"
   },
   "discovery": {
-    "year": null,
+    "year": 1967,
     "by": "Bayer (Friedrich Bossert, Wulf Vater)",
-    "note": "The prototype dihydropyridine calcium antagonist, discovered in the 1960s."
+    "note": "The prototype dihydropyridine calcium antagonist, discovered in the 1960s. Year is the first patent filing."
   },
   "generic": true,
   "who_essential": true,

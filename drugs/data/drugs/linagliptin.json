@@ -31,14 +31,14 @@
     "brand": "Tradjenta"
   },
   "discovery": {
-    "year": null,
+    "year": 2002,
     "by": "Boehringer Ingelheim",
-    "note": "A xanthine-based DPP-4 inhibitor."
+    "note": "A xanthine-based DPP-4 inhibitor. Year is the priority date of the first patent filing (21 August 2002)."
   },
-  "generic": null,
+  "generic": true,
   "who_essential": false,
   "who_status": "not-listed",
-  "rx_status": "prescription",
+  "rx_status": "prescription; generic linagliptin approved in China from 2020",
   "tagline": "A gliptin cleared mainly through bile, so one dose fits all levels of kidney function",
   "summary": "Linagliptin is a DPP-4 inhibitor used for type 2 diabetes that, unlike most gliptins, is eliminated mainly via the bile and gut, so it needs no dose adjustment in kidney disease. Large outcome trials (CARMELINA and CAROLINA) showed cardiovascular and renal safety.",
   "mechanism": [
@@ -118,6 +118,14 @@
     {
       "title": "EMA EPAR: Trajenta",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/trajenta"
+    },
+    {
+      "title": "Jiemian: first Chinese generic linagliptin approved (2020)",
+      "url": "https://m.jiemian.com/article/8119521.html"
+    },
+    {
+      "title": "Medical Dialogues: Macleods wins legal battle over linagliptin patent",
+      "url": "https://medicaldialogues.in/news/industry/pharma/macleods-pharma-wins-legal-battle-over-linagliptin-patent-141928"
     }
   ],
   "stage": "written"

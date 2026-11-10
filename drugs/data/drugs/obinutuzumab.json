@@ -31,9 +31,9 @@
     "brand": "Gazyva"
   },
   "discovery": {
-    "year": null,
+    "year": 2010,
     "by": "GlycArt Biotechnology",
-    "note": "Humanised type II anti-CD20 IgG1 with a glycoengineered, low-fucose Fc that increases binding to FcγRIIIa."
+    "note": "Humanised type II anti-CD20 IgG1 with a glycoengineered, low-fucose Fc that increases binding to FcγRIIIa. Year of the first published description (GA101; Mössner et al., Blood 2010)."
   },
   "generic": false,
   "who_essential": false,
@@ -135,6 +135,10 @@
     {
       "title": "EMA – Gazyvaro EPAR",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/gazyvaro"
+    },
+    {
+      "title": "Roche: FDA approves Gazyva for lupus nephritis (October 2025)",
+      "url": "https://www.roche.com/media/releases/med-cor-2025-10-20"
     }
   ],
   "stage": "written"

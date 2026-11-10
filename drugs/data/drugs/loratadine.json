@@ -30,9 +30,9 @@
     "brand": null
   },
   "discovery": {
-    "year": null,
+    "year": 1980,
     "by": "Schering-Plough (Frank Villani and colleagues)",
-    "note": "A tricyclic piperidine antihistamine derived from azatadine with little affinity for central H1 receptors."
+    "note": "A tricyclic piperidine antihistamine derived from azatadine with little affinity for central H1 receptors. Year is the first patent filing."
   },
   "generic": true,
   "who_essential": true,

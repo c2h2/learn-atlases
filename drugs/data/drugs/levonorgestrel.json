@@ -29,7 +29,12 @@
   "origin": "synthetic",
   "originator": "Wyeth (norgestrel synthesised by Herchel Smith); Schering AG developed many levonorgestrel products",
   "owner": "generic (many); Bayer (Mirena, Kyleena)",
-  "first_approval": null,
+  "first_approval": {
+    "year": 1970,
+    "agency": null,
+    "country": "West Germany",
+    "brand": "Neogynon"
+  },
   "discovery": {
     "year": 1963,
     "by": "Herchel Smith and colleagues",

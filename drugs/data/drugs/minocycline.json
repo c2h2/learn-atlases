@@ -33,9 +33,9 @@
     "brand": "Minocin"
   },
   "discovery": {
-    "year": null,
+    "year": 1961,
     "by": "Lederle Laboratories",
-    "note": "A lipophilic semi-synthetic tetracycline with a dimethylamino substituent, giving good tissue and CNS penetration."
+    "note": "A lipophilic semi-synthetic tetracycline with a dimethylamino substituent, giving good tissue and CNS penetration. Year is the first patent filing."
   },
   "generic": true,
   "who_essential": false,

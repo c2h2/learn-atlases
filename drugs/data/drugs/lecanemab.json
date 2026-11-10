@@ -32,9 +32,9 @@
     "brand": "Leqembi"
   },
   "discovery": {
-    "year": null,
+    "year": 2007,
     "by": "Lars Lannfelt and colleagues, Uppsala University / BioArctic",
-    "note": "Derived from the murine antibody mAb158, raised against amyloid-beta protofibrils after study of the 'Arctic' APP mutation; humanised and developed with Eisai."
+    "note": "Derived from the murine antibody mAb158, raised against amyloid-beta protofibrils after study of the 'Arctic' APP mutation; humanised and developed with Eisai. Year is the first description of the parent murine antibody mAb158 (Englund et al., J Neurochem 2007)."
   },
   "generic": false,
   "who_essential": false,
@@ -72,8 +72,8 @@
     },
     {
       "year": 2024,
-      "title": "UK and China",
-      "detail": "The MHRA approves lecanemab for APOE ε4 non-carriers and heterozygotes; NICE does not recommend it for NHS funding."
+      "title": "UK approval",
+      "detail": "In August the MHRA approves lecanemab for APOE ε4 non-carriers and heterozygotes; NICE draft guidance published the same day does not recommend it for NHS funding."
     },
     {
       "year": 2025,

@@ -31,9 +31,9 @@
     "brand": "Cozaar"
   },
   "discovery": {
-    "year": null,
+    "year": 1986,
     "by": "DuPont (David Carini, John Duncia and colleagues)",
-    "note": "Designed from imidazole leads; developed with Merck."
+    "note": "Designed from imidazole leads; developed with Merck. Year is the first patent filing."
   },
   "generic": true,
   "who_essential": true,

@@ -32,9 +32,9 @@
     "brand": "Zolgensma"
   },
   "discovery": {
-    "year": null,
+    "year": 2010,
     "by": "Brian Kaspar and Jerry Mendell, Nationwide Children's Hospital, Columbus, Ohio",
-    "note": "Uses a self-complementary AAV9 vector able to cross the blood–brain barrier to deliver a functional SMN1 gene to motor neurons."
+    "note": "Uses a self-complementary AAV9 vector able to cross the blood–brain barrier to deliver a functional SMN1 gene to motor neurons. Year of the first report of the scAAV9-SMN vector rescuing SMA mice (Foust et al., Nat Biotechnol 2010)."
   },
   "generic": false,
   "who_essential": false,

@@ -34,10 +34,10 @@
     "by": "Sven Lindstedt and colleagues, Sahlgrenska University Hospital",
     "note": "A triketone developed as an herbicide was found to inhibit HPPD in mammals and was repurposed to block toxic metabolite formation in tyrosinaemia type 1."
   },
-  "generic": null,
+  "generic": true,
   "who_essential": false,
   "who_status": "not-listed",
-  "rx_status": "prescription",
+  "rx_status": "prescription; generic versions authorised in the EU",
   "tagline": "Herbicide-derived enzyme inhibitor that transformed hereditary tyrosinaemia type 1",
   "summary": "Nitisinone inhibits 4-hydroxyphenylpyruvate dioxygenase, an early step in tyrosine breakdown. In hereditary tyrosinaemia type 1 it prevents formation of toxic downstream metabolites such as succinylacetone, dramatically reducing liver failure and liver cancer in children. It is also approved in Europe for alkaptonuria.",
   "mechanism": [
@@ -115,6 +115,10 @@
     {
       "title": "EMA EPAR: Orfadin",
       "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/orfadin"
+    },
+    {
+      "title": "EMA: Nitisinone MDK (generic of Orfadin)",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/nitisinone-mdk"
     }
   ],
   "stage": "written"

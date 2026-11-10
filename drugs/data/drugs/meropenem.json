@@ -26,9 +26,9 @@
   "owner": "generic (many)",
   "first_approval": null,
   "discovery": {
-    "year": null,
+    "year": 1983,
     "by": "Sumitomo Pharmaceuticals",
-    "note": "A 1-beta-methyl carbapenem that is stable to renal dehydropeptidase-I, so it does not need cilastatin."
+    "note": "A 1-beta-methyl carbapenem that is stable to renal dehydropeptidase-I, so it does not need cilastatin. Year is the first patent filing."
   },
   "generic": true,
   "who_essential": true,

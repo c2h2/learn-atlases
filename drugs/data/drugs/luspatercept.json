@@ -102,7 +102,10 @@
     ],
     "boxed_warning": null
   },
-  "facts": [],
+  "facts": [
+    "The FDA first approved luspatercept in November 2019 for anaemia in transfusion-dependent beta-thalassaemia; anaemia in lower-risk myelodysplastic syndromes followed in April 2020.",
+    "Bristol Myers Squibb acquired the originator, Acceleron Pharma, in 2021 for about $11.5 billion."
+  ],
   "related": [
     "epoetin-alfa",
     "darbepoetin-alfa",

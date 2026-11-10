@@ -31,9 +31,9 @@
     "brand": "Prinivil and Zestril"
   },
   "discovery": {
-    "year": null,
+    "year": 1978,
     "by": "Merck & Co.",
-    "note": "The lysine analogue of enalaprilat, active without metabolic conversion; co-marketed by Merck and ICI (now AstraZeneca)."
+    "note": "The lysine analogue of enalaprilat, active without metabolic conversion; co-marketed by Merck and ICI (now AstraZeneca). Year is the first patent filing."
   },
   "generic": true,
   "who_essential": true,

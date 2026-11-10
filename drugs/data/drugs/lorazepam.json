@@ -33,9 +33,9 @@
     "brand": "Ativan"
   },
   "discovery": {
-    "year": null,
+    "year": 1963,
     "by": "Wyeth Laboratories",
-    "note": "A 3-hydroxy benzodiazepine developed at Wyeth in the 1960s, closely related to oxazepam."
+    "note": "A 3-hydroxy benzodiazepine developed at Wyeth in the 1960s, closely related to oxazepam. Year is the first patent filing."
   },
   "generic": true,
   "who_essential": true,

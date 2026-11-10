@@ -31,9 +31,9 @@
     "brand": "Nardil"
   },
   "discovery": {
-    "year": null,
+    "year": 1932,
     "by": "Warner-Lambert",
-    "note": "A hydrazine MAO inhibitor developed after iproniazid revealed the antidepressant potential of MAO inhibition in the 1950s."
+    "note": "A hydrazine MAO inhibitor developed after iproniazid revealed the antidepressant potential of MAO inhibition in the 1950s. Year its synthesis was first described, by Emil Votoček and Otakar Leminger."
   },
   "generic": true,
   "who_essential": false,

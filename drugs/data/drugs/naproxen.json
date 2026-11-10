@@ -36,9 +36,9 @@
     "brand": "Naprosyn"
   },
   "discovery": {
-    "year": null,
+    "year": 1967,
     "by": "Syntex, Palo Alto",
-    "note": "Developed by Syntex in the late 1960s; marketed as the single S-enantiomer."
+    "note": "Developed by Syntex in the late 1960s; marketed as the single S-enantiomer. Year is the first patent filing."
   },
   "generic": true,
   "who_essential": true,
