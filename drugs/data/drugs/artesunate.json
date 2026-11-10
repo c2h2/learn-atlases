@@ -1,36 +1,135 @@
 {
   "slug": "artesunate",
   "name": "Artesunate",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "artesunic acid",
+    "dihydroartemisinin hemisuccinate"
+  ],
+  "brands": [
+    "Artesunate for Injection (Amivas, US)",
+    "Artesun",
+    "Rectocaps"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Artemisinin derivative antimalarial (water-soluble hemisuccinate ester)",
+  "modality": "small-molecule",
+  "routes": [
+    "iv",
+    "im",
+    "rectal",
+    "oral"
+  ],
+  "route_note": "IV or IM injection at 0, 12 and 24 h then daily for severe malaria; rectal capsules as pre-referral treatment; oral tablets in combinations",
+  "targets": [
+    "Haem-activated endoperoxide (multiple parasite proteins)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Guilin Pharmaceutical Factory, China (Liu Xu and colleagues)",
+  "owner": "generic (many); Guilin Pharmaceutical (Fosun Pharma) leading supplier; Amivas in the US",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "discovery": {
+    "year": 1977,
+    "by": "Liu Xu and colleagues, Guilin Pharmaceutical Factory",
+    "note": "Hemisuccinate ester of dihydroartemisinin made to give a water-soluble artemisinin for injection."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription (hospital use for injection)",
+  "tagline": "Injectable artemisinin that cut deaths from severe malaria compared with quinine",
+  "summary": "Artesunate is a water-soluble semi-synthetic derivative of artemisinin that can be given intravenously, intramuscularly, rectally or by mouth. Two large trials showed it reduces death from severe malaria by about a third in Asian adults and about a fifth in African children compared with quinine, making it the WHO-recommended treatment for severe malaria. It is also a component of oral combinations such as artesunate/amodiaquine and artesunate/mefloquine.",
+  "mechanism": [
+    "Artemisinins contain an endoperoxide bridge that is activated by ferrous iron and haem released when the parasite digests haemoglobin. Activation generates carbon-centred free radicals that alkylate haem and many parasite proteins, causing widespread damage and very rapid killing of blood-stage parasites, including young ring stages.",
+    "Artesunate is rapidly hydrolysed to dihydroartemisinin, the main active metabolite. By killing circulating ring-stage parasites before they mature and sequester in small blood vessels, it limits the microvascular damage behind severe malaria. Dead infected cells are removed by the spleen ('pitting'), which can be followed by delayed haemolysis."
+  ],
+  "uses": [
+    "Initial treatment of severe malaria in adults and children (IV or IM)",
+    "Pre-referral treatment of severe malaria in young children (rectal)",
+    "Uncomplicated malaria as part of oral ACTs (with amodiaquine, mefloquine, pyronaridine or sulfadoxine–pyrimethamine)"
+  ],
+  "history": [
+    {
+      "year": 1977,
+      "title": "Synthesis",
+      "detail": "Artesunate is synthesised at Guilin Pharmaceutical Factory in China."
+    },
+    {
+      "year": 2005,
+      "title": "SEAQUAMAT",
+      "detail": "In Asian patients, mainly adults, artesunate reduces mortality from severe malaria by about 35% compared with quinine (Lancet)."
+    },
+    {
+      "year": 2006,
+      "title": "WHO guideline",
+      "detail": "WHO recommends IV artesunate for severe malaria in adults in low-transmission areas."
+    },
+    {
+      "year": 2010,
+      "title": "AQUAMAT and prequalification",
+      "detail": "In African children, artesunate reduces mortality by about 22% compared with quinine; Guilin's injectable artesunate becomes the first WHO-prequalified version."
+    },
+    {
+      "year": 2011,
+      "title": "Preferred for all",
+      "detail": "WHO recommends parenteral artesunate as first-line treatment for severe malaria in all age groups."
+    },
+    {
+      "year": 2020,
+      "title": "FDA approval",
+      "detail": "The FDA approves artesunate for injection (Amivas) in May 2020, replacing quinidine, which had been the only US option."
+    },
+    {
+      "year": 2022,
+      "title": "Rectal artesunate warning",
+      "detail": "WHO advises that rectal artesunate be used only as part of a full referral pathway after a multi-country study found poor outcomes without follow-on care."
+    }
+  ],
+  "pk": {
+    "half_life": "artesunate under 15 min; dihydroartemisinin about 0.5–1 h",
+    "bioavailability": "IM well absorbed; oral and rectal variable",
+    "metabolism": "esterase hydrolysis to dihydroartemisinin, then glucuronidation (UGT1A9, UGT2B7)",
+    "excretion": "urine as glucuronides"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "dizziness",
+      "nausea",
+      "anaemia",
+      "raised liver enzymes"
+    ],
+    "serious": [
+      "post-artesunate delayed haemolysis (1–4 weeks after treatment)",
+      "hypersensitivity reactions",
+      "reticulocytopenia"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Because it is water-soluble, artesunate is the only artemisinin suitable for intravenous use.",
+    "The US approval in 2020 ended reliance on IV quinidine, which had become hard to obtain."
+  ],
+  "related": [
+    "artemether-lumefantrine",
+    "quinine",
+    "primaquine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Artesunate",
+      "url": "https://en.wikipedia.org/wiki/Artesunate"
+    },
+    {
+      "title": "DailyMed label search: Artesunate for injection",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=artesunate"
+    },
+    {
+      "title": "WHO Guidelines for malaria",
+      "url": "https://www.who.int/publications/i/item/guidelines-for-malaria"
+    },
+    {
+      "title": "Dondorp AM et al. Artesunate versus quinine in the treatment of severe falciparum malaria in African children (AQUAMAT). Lancet 2010",
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(10)61924-1/fulltext"
+    }
+  ],
+  "stage": "written"
 }

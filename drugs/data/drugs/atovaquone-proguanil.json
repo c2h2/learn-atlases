@@ -1,36 +1,115 @@
 {
   "slug": "atovaquone-proguanil",
-  "name": "Atovaquone proguanil",
-  "aliases": [],
-  "brands": [],
+  "name": "Atovaquone/proguanil",
+  "aliases": [
+    "atovaquone and proguanil hydrochloride"
+  ],
+  "brands": [
+    "Malarone"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Antimalarial combination: hydroxynaphthoquinone (mitochondrial electron transport inhibitor) plus biguanide (DHFR inhibitor prodrug)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once daily with food or a milky drink; for prophylaxis started 1–2 days before travel and continued 7 days after",
+  "targets": [
+    "Plasmodium cytochrome bc1 complex (cytochrome b, Qo site) — atovaquone",
+    "Plasmodium dihydrofolate reductase (via cycloguanil) — proguanil"
+  ],
+  "origin": "synthetic",
+  "originator": "Wellcome Foundation / Glaxo Wellcome (atovaquone); Imperial Chemical Industries (proguanil, 1945)",
+  "owner": "GSK (Malarone); generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "discovery": {
+    "year": null,
+    "by": "Wellcome Research Laboratories (atovaquone); Frank Curd, David Davey and Francis Rose at ICI (proguanil)",
+    "note": "Atovaquone alone led to rapid resistance; proguanil was found to act synergistically with it."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription; available from pharmacists without prescription in the UK for prophylaxis",
+  "tagline": "Well-tolerated travellers' malaria pill that acts on both liver and blood stages",
+  "summary": "Atovaquone/proguanil combines atovaquone, which blocks the parasite's mitochondrial electron transport, with proguanil, which enhances that effect and inhibits folate synthesis through its metabolite cycloguanil. It is widely used for malaria prophylaxis in travellers because it is well tolerated and needs to be continued for only 7 days after leaving a malarious area. It is also used to treat uncomplicated falciparum malaria.",
+  "mechanism": [
+    "Atovaquone is a structural analogue of ubiquinone that binds the Qo site of cytochrome b in the parasite's cytochrome bc1 complex. This collapses the mitochondrial membrane potential and stops regeneration of ubiquinone needed by dihydroorotate dehydrogenase for pyrimidine synthesis.",
+    "Proguanil itself sensitises the mitochondrion to atovaquone, and its metabolite cycloguanil inhibits parasite dihydrofolate reductase. The combination acts on liver-stage parasites (causal prophylaxis) as well as blood stages. Resistance arises through cytochrome b mutations such as Y268S."
+  ],
+  "uses": [
+    "Prevention of P. falciparum malaria, including in areas with chloroquine resistance",
+    "Treatment of acute uncomplicated P. falciparum malaria"
+  ],
+  "history": [
+    {
+      "year": 1945,
+      "title": "Proguanil",
+      "detail": "ICI chemists in Britain discover proguanil (Paludrine)."
+    },
+    {
+      "year": 1949,
+      "title": "Proguanil resistance",
+      "detail": "Resistance to proguanil used alone appears within a few years of its introduction."
+    },
+    {
+      "year": 1992,
+      "title": "Atovaquone alone",
+      "detail": "Atovaquone is approved in the US (Mepron) for Pneumocystis pneumonia; as monotherapy for malaria it selects resistance rapidly."
+    },
+    {
+      "year": 2000,
+      "title": "FDA approval",
+      "detail": "Malarone is approved in the US for prophylaxis and treatment of falciparum malaria, after earlier approvals in other countries."
+    },
+    {
+      "year": 2002,
+      "title": "Resistance to the combination",
+      "detail": "Treatment failures with cytochrome b mutations (such as Y268S) are reported in travellers, though resistance remains uncommon."
+    }
+  ],
+  "pk": {
+    "half_life": "atovaquone about 2–3 days; proguanil about 12–21 h",
+    "bioavailability": "atovaquone low and highly variable, increased several-fold by fatty food; proguanil well absorbed",
+    "metabolism": "atovaquone not significantly metabolised; proguanil CYP2C19 to cycloguanil",
+    "excretion": "atovaquone faeces; proguanil urine"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "abdominal pain, nausea, vomiting, diarrhoea",
+      "headache",
+      "mouth ulcers"
+    ],
+    "serious": [
+      "hepatitis (rare)",
+      "severe skin reactions (rare)",
+      "reduced efficacy with poor absorption (vomiting, fasting)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Because it acts on liver-stage parasites, atovaquone/proguanil is continued for only 7 days after leaving a malarious area, compared with 4 weeks for doxycycline or mefloquine.",
+    "Rifampicin, rifabutin and metoclopramide reduce atovaquone levels."
+  ],
+  "related": [
+    "artemether-lumefantrine",
+    "chloroquine",
+    "doxycycline",
+    "primaquine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Atovaquone/proguanil",
+      "url": "https://en.wikipedia.org/wiki/Atovaquone/proguanil"
+    },
+    {
+      "title": "DailyMed label search: Malarone",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=malarone"
+    },
+    {
+      "title": "CDC Yellow Book: Malaria",
+      "url": "https://www.cdc.gov/yellow-book/hcp/travel-associated-infections-diseases/malaria.html"
+    }
+  ],
+  "stage": "written"
 }

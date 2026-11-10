@@ -1,36 +1,114 @@
 {
   "slug": "palivizumab",
   "name": "Palivizumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "MEDI-493"
+  ],
+  "brands": [
+    "Synagis"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Humanised monoclonal antibody against RSV fusion (F) protein",
+  "modality": "antibody",
+  "routes": [
+    "im"
+  ],
+  "route_note": "intramuscular injection once a month throughout the RSV season (usually five doses)",
+  "targets": [
+    "RSV fusion glycoprotein (antigenic site II)"
+  ],
+  "origin": "biotech",
+  "originator": "MedImmune",
+  "owner": "Sobi (Swedish Orphan Biovitrum) for US rights; other regions vary",
+  "first_approval": {
+    "year": 1998,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Synagis"
+  },
+  "discovery": {
+    "year": null,
+    "by": "MedImmune",
+    "note": "Humanised version of a murine antibody against a conserved epitope (site II) of the RSV F protein."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription (restricted to high-risk infants)",
+  "tagline": "First antibody licensed against an infection, shielding high-risk babies from RSV",
+  "summary": "Palivizumab is a humanised monoclonal antibody that neutralises respiratory syncytial virus by binding its F protein. Approved in 1998, it was the first monoclonal antibody licensed for an infectious disease. Given monthly during the RSV season, it reduces RSV hospitalisation in premature infants and in children with chronic lung or congenital heart disease, but it is being replaced by the single-dose nirsevimab.",
+  "mechanism": [
+    "Palivizumab binds antigenic site II on the RSV fusion (F) glycoprotein, a site present on both prefusion and postfusion F. This blocks the conformational change that merges viral and cell membranes, neutralising virus and preventing cell-to-cell fusion (syncytium formation).",
+    "It is used only for prevention; it does not treat established RSV disease. Its half-life of about three weeks requires monthly dosing through the season."
+  ],
+  "uses": [
+    "Prevention of serious RSV lower respiratory tract disease in children at high risk: premature infants, children with bronchopulmonary dysplasia, and children with haemodynamically significant congenital heart disease"
+  ],
+  "history": [
+    {
+      "year": 1998,
+      "title": "IMpact-RSV",
+      "detail": "A trial in 1,502 high-risk infants shows about 55% reduction in RSV hospitalisation."
+    },
+    {
+      "year": 1998,
+      "title": "FDA approval",
+      "detail": "Synagis is approved in June 1998, the first monoclonal antibody for an infectious disease; EU approval follows in 1999."
+    },
+    {
+      "year": 2003,
+      "title": "Congenital heart disease",
+      "detail": "Approval is extended to children with haemodynamically significant congenital heart disease."
+    },
+    {
+      "year": 2014,
+      "title": "Narrower guidance",
+      "detail": "The American Academy of Pediatrics narrows recommendations to infants at the highest risk."
+    },
+    {
+      "year": 2023,
+      "title": "Successor",
+      "detail": "Nirsevimab, a single-dose long-acting antibody for all infants, is approved in the US and begins to replace palivizumab."
+    }
+  ],
+  "pk": {
+    "half_life": "about 18–20 days in children",
+    "bioavailability": "IM (absorption complete)",
+    "metabolism": "catabolised like endogenous IgG",
+    "excretion": "not renally excreted"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "fever",
+      "rash",
+      "injection-site reactions"
+    ],
+    "serious": [
+      "anaphylaxis and severe hypersensitivity (rare)",
+      "thrombocytopenia (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Palivizumab's high cost (thousands of dollars per season) limited its use to high-risk groups.",
+    "It was the first monoclonal antibody approved to prevent an infectious disease."
+  ],
+  "related": [
+    "nirsevimab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Palivizumab",
+      "url": "https://en.wikipedia.org/wiki/Palivizumab"
+    },
+    {
+      "title": "DailyMed label search: Synagis",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=synagis"
+    },
+    {
+      "title": "EMA EPAR: Synagis",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/synagis"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,130 @@
 {
   "slug": "cabotegravir",
   "name": "Cabotegravir",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "GSK1265744",
+    "CAB",
+    "CAB-LA (long-acting)"
+  ],
+  "brands": [
+    "Vocabria (oral and injection)",
+    "Apretude (PrEP injection)",
+    "Cabenuva (co-pack with rilpivirine)"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Integrase strand transfer inhibitor (INSTI; long-acting)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "im"
+  ],
+  "route_note": "gluteal IM injection monthly or every 2 months (treatment, with rilpivirine) or every 2 months (PrEP); optional oral lead-in tablets",
+  "targets": [
+    "HIV-1 integrase"
+  ],
+  "origin": "synthetic",
+  "originator": "ViiV Healthcare (GSK) with Shionogi",
+  "owner": "ViiV Healthcare",
+  "first_approval": {
+    "year": 2020,
+    "agency": "Health Canada",
+    "country": "Canada",
+    "brand": "Vocabria (with Cabenuva co-pack)"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Shionogi–ViiV Healthcare",
+    "note": "Dolutegravir analogue whose low aqueous solubility and long half-life suit a nanosuspension depot injection."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Long-acting integrase inhibitor: HIV treatment or prevention injected every two months",
+  "summary": "Cabotegravir is an integrase strand transfer inhibitor formulated as a long-acting intramuscular injection. Given every two months it is used alone for HIV pre-exposure prophylaxis, where it outperformed daily oral tenofovir/emtricitabine, and with rilpivirine as a complete long-acting HIV treatment. Oral tablets can be used as a lead-in or bridge.",
+  "mechanism": [
+    "Like other INSTIs, cabotegravir binds the HIV integrase–viral DNA complex and blocks strand transfer, preventing integration of viral DNA into host chromosomes.",
+    "The injectable form is a nanosuspension that dissolves slowly from the gluteal muscle, giving a half-life of weeks. Low drug levels can persist for a year or more after the last injection (the 'tail'), which raises the risk of resistance if HIV is acquired during that time."
+  ],
+  "uses": [
+    "HIV-1 pre-exposure prophylaxis in adults and adolescents weighing at least 35 kg (Apretude)",
+    "HIV-1 maintenance treatment with rilpivirine in virologically suppressed patients (Cabenuva, Vocabria + Rekambys)"
+  ],
+  "history": [
+    {
+      "year": 2020,
+      "title": "HPTN 083 and 084",
+      "detail": "Both PrEP trials are stopped early after injectable cabotegravir proves superior to daily oral TDF/FTC in men and transgender women (083) and in African women (084)."
+    },
+    {
+      "year": 2020,
+      "title": "First approval",
+      "detail": "Health Canada approves cabotegravir/rilpivirine for HIV treatment in March 2020; the EU follows in December."
+    },
+    {
+      "year": 2021,
+      "title": "Cabenuva and Apretude",
+      "detail": "The FDA approves monthly Cabenuva in January and Apretude, the first long-acting injectable PrEP, in December 2021."
+    },
+    {
+      "year": 2022,
+      "title": "WHO guidance",
+      "detail": "WHO recommends long-acting cabotegravir as an additional PrEP option and the Medicines Patent Pool signs a licence for generic production."
+    },
+    {
+      "year": 2023,
+      "title": "EU PrEP approval",
+      "detail": "The EU approves Apretude for PrEP in September 2023."
+    }
+  ],
+  "pk": {
+    "half_life": "oral about 41 h; IM apparent half-life about 5.6–11.5 weeks",
+    "bioavailability": "oral not established; IM depot releases slowly",
+    "metabolism": "UGT1A1 (main) and UGT1A9",
+    "excretion": "mainly faeces, some urine"
+  },
+  "safety": {
+    "common": [
+      "injection-site pain and nodules",
+      "pyrexia",
+      "headache",
+      "fatigue"
+    ],
+    "serious": [
+      "hypersensitivity reactions",
+      "hepatotoxicity",
+      "depressive disorders",
+      "development of INSTI resistance if HIV is acquired while on or after PrEP"
+    ],
+    "boxed_warning": "Apretude: risk of drug resistance if used for PrEP in undiagnosed HIV-1 infection; test negative before each injection (US label)."
+  },
+  "facts": [
+    "In HPTN 084, injectable cabotegravir reduced HIV incidence by about 89% compared with oral PrEP among women in sub-Saharan Africa.",
+    "It was the first long-acting injectable approved for HIV prevention."
+  ],
+  "related": [
+    "rilpivirine",
+    "dolutegravir",
+    "lenacapavir",
+    "raltegravir"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Cabotegravir",
+      "url": "https://en.wikipedia.org/wiki/Cabotegravir"
+    },
+    {
+      "title": "DailyMed label search: Apretude",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=apretude"
+    },
+    {
+      "title": "DailyMed label search: Cabenuva",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=cabenuva"
+    },
+    {
+      "title": "Landovitz RJ et al. Cabotegravir for HIV prevention in cisgender men and transgender women (HPTN 083). NEJM 2021",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2101016"
+    }
+  ],
+  "stage": "written"
 }

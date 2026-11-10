@@ -1,36 +1,128 @@
 {
   "slug": "lopinavir-ritonavir",
-  "name": "Lopinavir ritonavir",
-  "aliases": [],
-  "brands": [],
+  "name": "Lopinavir/ritonavir",
+  "aliases": [
+    "LPV/r",
+    "ABT-378/r",
+    "lopinavir and ritonavir"
+  ],
+  "brands": [
+    "Kaletra",
+    "Aluvia"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "HIV protease inhibitor, boosted with ritonavir (CYP3A inhibitor)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablets, oral solution or pellets for children, once or twice daily",
+  "targets": [
+    "HIV-1 protease",
+    "CYP3A4 (ritonavir)"
+  ],
+  "origin": "synthetic",
+  "originator": "Abbott Laboratories",
+  "owner": "AbbVie (Kaletra); generic (many)",
+  "first_approval": {
+    "year": 2000,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Kaletra"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Abbott Laboratories (Dale Kempf and colleagues)",
+    "note": "Lopinavir was designed with ritonavir boosting in mind, as it is almost entirely metabolised by CYP3A4 when given alone."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "First co-formulated boosted protease inhibitor, long a second-line and paediatric mainstay",
+  "summary": "Lopinavir/ritonavir combines the protease inhibitor lopinavir with low-dose ritonavir, which blocks CYP3A4 and raises lopinavir levels. It was the first co-formulated boosted protease inhibitor and was long a standard second-line and paediatric HIV regimen in low-income countries. Trials in COVID-19 found no benefit.",
+  "mechanism": [
+    "Lopinavir binds the active site of HIV-1 protease and blocks cleavage of the Gag-Pol polyprotein, so virus particles remain immature and non-infectious.",
+    "Ritonavir, itself a protease inhibitor, is used here at a low dose mainly to inhibit CYP3A4-mediated metabolism of lopinavir, raising its concentrations many-fold. This boosting also causes numerous drug interactions."
+  ],
+  "uses": [
+    "HIV-1 infection in adults and children aged 14 days and older, in combination with other antiretrovirals"
+  ],
+  "history": [
+    {
+      "year": 2000,
+      "title": "FDA approval",
+      "detail": "Kaletra capsules and solution are approved in September 2000."
+    },
+    {
+      "year": 2005,
+      "title": "Tablet formulation",
+      "detail": "A heat-stable melt-extrusion tablet is approved, removing the need for refrigeration."
+    },
+    {
+      "year": 2006,
+      "title": "Access pricing",
+      "detail": "Abbott introduces the tablet as Aluvia at reduced prices for low-income countries; generic versions follow."
+    },
+    {
+      "year": 2015,
+      "title": "Paediatric pellets",
+      "detail": "Oral pellets for young children receive FDA tentative approval, for use in low-resource settings."
+    },
+    {
+      "year": 2020,
+      "title": "COVID-19 trials",
+      "detail": "Randomised trials including RECOVERY and WHO Solidarity show no benefit of lopinavir/ritonavir in hospitalised COVID-19."
+    }
+  ],
+  "pk": {
+    "half_life": "lopinavir about 5–6 h",
+    "bioavailability": "not established; solution taken with food",
+    "metabolism": "hepatic CYP3A4 (inhibited by ritonavir)",
+    "excretion": "mainly faeces"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "diarrhoea",
+      "nausea",
+      "vomiting",
+      "hyperlipidaemia (especially triglycerides)"
+    ],
+    "serious": [
+      "pancreatitis",
+      "hepatotoxicity",
+      "PR and QT prolongation",
+      "serious drug interactions",
+      "toxicity of oral solution (ethanol and propylene glycol) in preterm neonates"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "The oral solution contains about 42% ethanol and should not be used in premature babies.",
+    "Lopinavir was one of the earliest drugs repurposed and tested against COVID-19."
+  ],
+  "related": [
+    "darunavir",
+    "atazanavir",
+    "nirmatrelvir-ritonavir"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Lopinavir/ritonavir",
+      "url": "https://en.wikipedia.org/wiki/Lopinavir/ritonavir"
+    },
+    {
+      "title": "DailyMed label search: Kaletra",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=kaletra"
+    },
+    {
+      "title": "EMA EPAR: Kaletra",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/kaletra"
+    },
+    {
+      "title": "RECOVERY Collaborative Group. Lopinavir–ritonavir in patients admitted to hospital with COVID-19. Lancet 2020",
+      "url": "https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(20)32013-4/fulltext"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,121 @@
 {
   "slug": "raltegravir",
   "name": "Raltegravir",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "MK-0518",
+    "RAL",
+    "raltegravir potassium"
+  ],
+  "brands": [
+    "Isentress",
+    "Isentress HD"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Integrase strand transfer inhibitor (INSTI; first generation)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet 400 mg twice daily or 1200 mg (HD) once daily; chewable tablets and granules for children",
+  "targets": [
+    "HIV-1 integrase"
+  ],
+  "origin": "synthetic",
+  "originator": "Merck & Co. (building on IRBM, Rome, integrase research)",
+  "owner": "Merck & Co. (MSD)",
+  "first_approval": {
+    "year": 2007,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Isentress"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Merck & Co. / IRBM P. Angeletti",
+    "note": "Hydroxypyrimidinone carboxamide derived from earlier diketo-acid integrase inhibitors."
+  },
+  "generic": false,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "The first HIV integrase inhibitor, which opened a whole new drug class",
+  "summary": "Raltegravir was the first integrase strand transfer inhibitor, approved in 2007. It blocks the step at which HIV inserts its DNA into the host genome and has few drug interactions because it is not metabolised by cytochrome P450 enzymes. It remains used in pregnancy, in neonates and in second-line regimens, though dolutegravir and bictegravir have largely replaced it.",
+  "mechanism": [
+    "Raltegravir binds the integrase–viral DNA complex and chelates the catalytic magnesium ions, blocking strand transfer of viral DNA into host DNA.",
+    "Its genetic barrier to resistance is lower than that of second-generation INSTIs; mutations at N155, Q148 and Y143 reduce susceptibility."
+  ],
+  "uses": [
+    "HIV-1 infection in adults, children and neonates in combination with other antiretrovirals"
+  ],
+  "history": [
+    {
+      "year": 2007,
+      "title": "First INSTI",
+      "detail": "Isentress receives FDA accelerated approval in October 2007 for treatment-experienced patients after the BENCHMRK trials."
+    },
+    {
+      "year": 2007,
+      "title": "EU approval",
+      "detail": "The European Commission approves Isentress in December 2007."
+    },
+    {
+      "year": 2009,
+      "title": "Treatment-naive use",
+      "detail": "Approval is extended to treatment-naive adults after the STARTMRK trial against efavirenz."
+    },
+    {
+      "year": 2011,
+      "title": "Paediatric use",
+      "detail": "Chewable tablets and later granules extend use to children and, in 2017, to neonates."
+    },
+    {
+      "year": 2017,
+      "title": "Once daily",
+      "detail": "Isentress HD (1200 mg once daily) is approved for treatment-naive or suppressed adults."
+    }
+  ],
+  "pk": {
+    "half_life": "about 9 h (terminal)",
+    "bioavailability": "not established; variable absorption",
+    "metabolism": "UGT1A1 glucuronidation; not a CYP substrate",
+    "excretion": "faeces and urine"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "insomnia",
+      "headache",
+      "nausea",
+      "dizziness"
+    ],
+    "serious": [
+      "severe skin and hypersensitivity reactions, including Stevens–Johnson syndrome",
+      "myopathy and rhabdomyolysis, raised creatine kinase",
+      "depression and suicidal ideation"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Raltegravir's lack of CYP metabolism makes it useful with interacting drugs such as rifampicin (at an increased dose).",
+    "It was the first antiretroviral to target the integrase enzyme."
+  ],
+  "related": [
+    "dolutegravir",
+    "bictegravir",
+    "cabotegravir"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Raltegravir",
+      "url": "https://en.wikipedia.org/wiki/Raltegravir"
+    },
+    {
+      "title": "DailyMed label search: Isentress",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=isentress"
+    },
+    {
+      "title": "EMA EPAR: Isentress",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/isentress"
+    }
+  ],
+  "stage": "written"
 }

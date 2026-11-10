@@ -1,36 +1,119 @@
 {
   "slug": "albendazole",
   "name": "Albendazole",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "SKF 62979"
+  ],
+  "brands": [
+    "Albenza",
+    "Zentel",
+    "Eskazole"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Benzimidazole anthelmintic (β-tubulin inhibitor)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "single chewable 400 mg dose for intestinal worms; twice daily with a fatty meal for tissue infections such as neurocysticercosis and hydatid disease",
+  "targets": [
+    "Helminth β-tubulin"
+  ],
+  "origin": "synthetic",
+  "originator": "SmithKline Animal Health (Robert Gyurik and Vassilios Theodorides)",
+  "owner": "generic (many); GSK (Zentel, donated for mass drug administration)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "discovery": {
+    "year": 1972,
+    "by": "Robert J. Gyurik and Vassilios J. Theodorides, SmithKline",
+    "note": "Broad-spectrum benzimidazole carbamate first developed as a veterinary anthelmintic."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription; OTC in many countries",
+  "tagline": "Single-dose deworming tablet given to hundreds of millions of children each year",
+  "summary": "Albendazole is a broad-spectrum benzimidazole anthelmintic that binds worm tubulin and blocks glucose uptake. A single dose treats common intestinal worms and is used in school-based deworming and lymphatic filariasis elimination programmes worldwide, supported by GSK donations. Longer courses treat tissue infections such as neurocysticercosis and hydatid disease.",
+  "mechanism": [
+    "Albendazole is converted in the liver to albendazole sulfoxide, the main active metabolite. It binds the colchicine-sensitive site of helminth β-tubulin and prevents polymerisation into microtubules.",
+    "Loss of cytoplasmic microtubules impairs glucose uptake and transport of secretory vesicles in intestinal cells of the worm, depleting glycogen and ATP and leading to immobilisation and death. It binds parasite tubulin far more strongly than mammalian tubulin."
+  ],
+  "uses": [
+    "Soil-transmitted helminths (roundworm, hookworm, whipworm) and pinworm",
+    "Neurocysticercosis (Taenia solium)",
+    "Cystic and alveolar echinococcosis (hydatid disease)",
+    "Lymphatic filariasis (with ivermectin or diethylcarbamazine in mass drug administration)",
+    "Giardiasis, strongyloidiasis and cutaneous larva migrans (some regimens)"
+  ],
+  "history": [
+    {
+      "year": 1972,
+      "title": "Discovery",
+      "detail": "Albendazole is discovered at SmithKline Animal Health in Philadelphia."
+    },
+    {
+      "year": 1982,
+      "title": "Human use",
+      "detail": "Albendazole is introduced for human use (Zentel)."
+    },
+    {
+      "year": 1996,
+      "title": "FDA approval",
+      "detail": "Albenza is approved in the US for neurocysticercosis and hydatid disease."
+    },
+    {
+      "year": 1998,
+      "title": "Donation programme",
+      "detail": "SmithKline Beecham (later GSK) commits to donate albendazole for the Global Programme to Eliminate Lymphatic Filariasis, later expanded to school deworming."
+    },
+    {
+      "year": 2017,
+      "title": "Triple therapy",
+      "detail": "WHO recommends ivermectin, diethylcarbamazine and albendazole (IDA) for lymphatic filariasis in selected settings."
+    }
+  ],
+  "pk": {
+    "half_life": "albendazole sulfoxide about 8–12 h",
+    "bioavailability": "poor (under 5%), increased up to fivefold with a fatty meal",
+    "metabolism": "rapid first-pass oxidation to albendazole sulfoxide (active), then to the sulfone",
+    "excretion": "mainly biliary; small amounts in urine"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "abdominal pain",
+      "nausea",
+      "headache",
+      "transient raised liver enzymes"
+    ],
+    "serious": [
+      "bone-marrow suppression, agranulocytosis and pancytopenia",
+      "hepatotoxicity",
+      "neurological symptoms from dying cysts in neurocysticercosis (seizures, raised intracranial pressure)",
+      "embryotoxicity"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "GSK has donated billions of albendazole tablets for neglected tropical disease programmes.",
+    "In the US, the price of albendazole rose sharply in the 2010s, illustrating the high cost of old drugs with few suppliers."
+  ],
+  "related": [
+    "ivermectin",
+    "praziquantel"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Albendazole",
+      "url": "https://en.wikipedia.org/wiki/Albendazole"
+    },
+    {
+      "title": "DailyMed label search: Albenza",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=albenza"
+    },
+    {
+      "title": "WHO: Soil-transmitted helminth infections",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/soil-transmitted-helminth-infections"
+    }
+  ],
+  "stage": "written"
 }

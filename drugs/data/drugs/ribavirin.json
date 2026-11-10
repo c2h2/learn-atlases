@@ -1,36 +1,136 @@
 {
   "slug": "ribavirin",
   "name": "Ribavirin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "tribavirin (BAN)",
+    "ICN 1229",
+    "RBV"
+  ],
+  "brands": [
+    "Virazole",
+    "Rebetol",
+    "Copegus",
+    "Ribasphere"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Guanosine nucleoside analogue (broad-spectrum antiviral)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "inhaled",
+    "iv"
+  ],
+  "route_note": "oral tablets or capsules twice daily (hepatitis C); aerosol via nebuliser for RSV; IV in some countries for viral haemorrhagic fevers",
+  "targets": [
+    "Inosine monophosphate dehydrogenase (IMPDH1/2)",
+    "Viral RNA-dependent RNA polymerases (mutagenesis)"
+  ],
+  "origin": "synthetic",
+  "originator": "ICN Pharmaceuticals (Joseph Witkowski and Roland Robins)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1985,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Virazole (aerosol)"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1970,
+    "by": "Joseph T. Witkowski and Roland K. Robins, ICN Pharmaceuticals",
+    "note": "Synthetic triazole carboxamide nucleoside found to have activity against a wide range of RNA and DNA viruses."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Broad-spectrum antiviral used for hepatitis C, RSV and Lassa fever",
+  "summary": "Ribavirin is a guanosine analogue with activity against many RNA and DNA viruses. For about two decades it was combined with interferon as standard treatment for hepatitis C, and it is still used with some direct-acting antivirals, for severe RSV in infants by aerosol, and for Lassa fever and other haemorrhagic fevers. Haemolytic anaemia and teratogenicity limit its use.",
+  "mechanism": [
+    "Ribavirin acts in several ways. Its monophosphate inhibits inosine monophosphate dehydrogenase, depleting cellular GTP pools needed for viral RNA synthesis.",
+    "Its triphosphate can be incorporated by viral RNA polymerases, causing mutations that push the virus towards error catastrophe, and it may directly inhibit some viral polymerases and capping enzymes. It also modulates immune responses towards a Th1 profile.",
+    "Ribavirin accumulates in red blood cells as phosphorylated forms, which lowers ATP and causes dose-dependent haemolytic anaemia."
+  ],
+  "uses": [
+    "Chronic hepatitis C in combination with interferon or direct-acting antivirals",
+    "Severe RSV lower respiratory infection in hospitalised infants (aerosol)",
+    "Lassa fever and some other viral haemorrhagic fevers (off-label or national guidance)",
+    "Chronic hepatitis E in transplant recipients (off-label)"
+  ],
+  "history": [
+    {
+      "year": 1970,
+      "title": "Synthesis",
+      "detail": "Witkowski and Robins synthesise ribavirin at ICN Pharmaceuticals; broad antiviral activity is reported in 1972."
+    },
+    {
+      "year": 1985,
+      "title": "RSV aerosol",
+      "detail": "The FDA approves Virazole aerosol for severe RSV infection in infants."
+    },
+    {
+      "year": 1986,
+      "title": "Lassa fever",
+      "detail": "McCormick and colleagues report that early ribavirin reduces mortality from Lassa fever in Sierra Leone."
+    },
+    {
+      "year": 1998,
+      "title": "Hepatitis C",
+      "detail": "Ribavirin with interferon alfa-2b (Rebetron) is approved for chronic hepatitis C, greatly improving cure rates."
+    },
+    {
+      "year": 2001,
+      "title": "Peginterferon combinations",
+      "detail": "Combinations with peginterferon become the standard of care for hepatitis C until direct-acting antivirals arrive."
+    },
+    {
+      "year": 2014,
+      "title": "Declining use",
+      "detail": "Interferon-free direct-acting antiviral regimens make ribavirin unnecessary for most hepatitis C patients."
+    }
+  ],
+  "pk": {
+    "half_life": "about 120–170 h after a single dose; much longer at steady state",
+    "bioavailability": "about 64% (oral), increased by high-fat meals",
+    "metabolism": "phosphorylation in cells; deribosylation and amide hydrolysis",
+    "excretion": "mainly renal"
+  },
+  "safety": {
+    "common": [
+      "fatigue",
+      "haemolytic anaemia",
+      "nausea",
+      "rash and pruritus",
+      "cough and dyspnoea"
+    ],
+    "serious": [
+      "haemolytic anaemia that may worsen cardiac disease",
+      "teratogenicity and embryocidal effects (in both sexes, for months after stopping)",
+      "deterioration of respiratory function with aerosol"
+    ],
+    "boxed_warning": "Not effective as monotherapy for hepatitis C; haemolytic anaemia that may worsen cardiac disease; significant teratogenic and embryocidal effects — avoid pregnancy in patients and partners (US label)."
+  },
+  "facts": [
+    "Ribavirin persists in red blood cells for weeks, so contraception is required for six months after stopping in both women and male partners.",
+    "Aerosolised ribavirin can precipitate in ventilator circuits, requiring special equipment."
+  ],
+  "related": [
+    "peginterferon-alfa-2a",
+    "sofosbuvir",
+    "molnupiravir"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Ribavirin",
+      "url": "https://en.wikipedia.org/wiki/Ribavirin"
+    },
+    {
+      "title": "DailyMed label search: ribavirin",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=ribavirin"
+    },
+    {
+      "title": "Wikipedia: Lassa fever",
+      "url": "https://en.wikipedia.org/wiki/Lassa_fever"
+    }
+  ],
+  "stage": "written"
 }

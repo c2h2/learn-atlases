@@ -1,36 +1,127 @@
 {
   "slug": "efavirenz",
   "name": "Efavirenz",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "EFV",
+    "DMP 266",
+    "L-743,726"
+  ],
+  "brands": [
+    "Sustiva",
+    "Stocrin",
+    "Atripla (combination)"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Non-nucleoside reverse transcriptase inhibitor (NNRTI)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once daily, usually at bedtime on an empty stomach",
+  "targets": [
+    "HIV-1 reverse transcriptase (allosteric NNRTI pocket)"
+  ],
+  "origin": "synthetic",
+  "originator": "Merck & Co.; developed and marketed in the US by DuPont Pharmaceuticals",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1998,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Sustiva"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Merck Research Laboratories",
+    "note": "Benzoxazinone NNRTI licensed to DuPont Merck for development."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Once-daily NNRTI that anchored first-line HIV therapy worldwide for over a decade",
+  "summary": "Efavirenz is a non-nucleoside reverse transcriptase inhibitor that was a preferred first-line HIV drug worldwide for more than a decade, most famously in the single-tablet Atripla. Its central nervous system side effects (vivid dreams, dizziness, mood changes) and a low genetic barrier to resistance led to its replacement by dolutegravir in most guidelines.",
+  "mechanism": [
+    "Efavirenz binds a hydrophobic pocket near, but not at, the active site of HIV-1 reverse transcriptase. This non-competitive binding distorts the enzyme and blocks DNA polymerisation.",
+    "It has no activity against HIV-2 or against reverse transcriptase from other organisms. A single mutation such as K103N gives high-level resistance and cross-resistance to nevirapine."
+  ],
+  "uses": [
+    "HIV-1 infection in adults and children in combination with other antiretrovirals"
+  ],
+  "history": [
+    {
+      "year": 1998,
+      "title": "FDA approval",
+      "detail": "Sustiva is approved in September 1998, the first antiretroviral approved for once-daily dosing in combination therapy."
+    },
+    {
+      "year": 2006,
+      "title": "Atripla",
+      "detail": "Efavirenz/emtricitabine/tenofovir disoproxil becomes the first complete HIV regimen in a single daily pill."
+    },
+    {
+      "year": 2013,
+      "title": "WHO first line",
+      "detail": "WHO guidelines recommend efavirenz-based fixed-dose combinations as preferred first-line therapy."
+    },
+    {
+      "year": 2018,
+      "title": "Lower dose",
+      "detail": "WHO endorses efavirenz 400 mg as an alternative based on the ENCORE1 trial."
+    },
+    {
+      "year": 2019,
+      "title": "Shift to dolutegravir",
+      "detail": "WHO recommends dolutegravir-based regimens as preferred first line, and efavirenz use declines."
+    }
+  ],
+  "pk": {
+    "half_life": "about 52–76 h after a single dose, 40–55 h at steady state",
+    "bioavailability": "increased by food (taken fasting to reduce side effects)",
+    "metabolism": "hepatic, mainly CYP2B6 (also CYP3A4); induces its own metabolism and CYP3A",
+    "excretion": "faeces (largely unchanged) and urine (metabolites)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "dizziness",
+      "abnormal dreams",
+      "insomnia",
+      "rash",
+      "nausea"
+    ],
+    "serious": [
+      "psychiatric symptoms including depression and suicidal ideation",
+      "QT prolongation",
+      "hepatotoxicity",
+      "late-onset neurotoxicity including ataxia and encephalopathy",
+      "teratogenicity concerns in early pregnancy (largely set aside by later data)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "People with slow-metaboliser CYP2B6 variants, more common in some African populations, have higher blood levels and more CNS effects.",
+    "Efavirenz can cause false-positive urine cannabinoid tests."
+  ],
+  "related": [
+    "tenofovir-disoproxil",
+    "emtricitabine",
+    "lamivudine",
+    "rilpivirine",
+    "dolutegravir"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Efavirenz",
+      "url": "https://en.wikipedia.org/wiki/Efavirenz"
+    },
+    {
+      "title": "DailyMed label search: Sustiva",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=sustiva"
+    },
+    {
+      "title": "EMA EPAR: Sustiva",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/sustiva"
+    }
+  ],
+  "stage": "written"
 }

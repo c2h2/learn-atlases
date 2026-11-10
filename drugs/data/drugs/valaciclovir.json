@@ -1,36 +1,124 @@
 {
   "slug": "valaciclovir",
   "name": "Valaciclovir",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "valacyclovir (USAN)",
+    "valaciclovir hydrochloride",
+    "BW256U87"
+  ],
+  "brands": [
+    "Valtrex",
+    "Zelitrex"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Nucleoside analogue antiviral (L-valyl ester prodrug of aciclovir)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablets, typically once to three times daily depending on indication",
+  "targets": [
+    "HSV/VZV thymidine kinase (activation)",
+    "Herpesvirus DNA polymerase (UL30)"
+  ],
+  "origin": "synthetic",
+  "originator": "Burroughs Wellcome (later Glaxo Wellcome)",
+  "owner": "generic (many); Valtrex by GSK",
+  "first_approval": {
+    "year": 1995,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Valtrex"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Burroughs Wellcome",
+    "note": "Amino-acid ester designed to be absorbed by intestinal peptide transporters and converted to aciclovir by first-pass hydrolysis."
+  },
+  "generic": true,
+  "who_essential": false,
+  "rx_status": "prescription",
+  "tagline": "Oral prodrug that delivers three to five times more aciclovir to the blood",
+  "summary": "Valaciclovir is the L-valine ester of aciclovir. After absorption it is rapidly converted to aciclovir, giving blood levels several times higher than oral aciclovir itself and allowing less frequent dosing. It is used for herpes zoster, genital herpes, cold sores and CMV prophylaxis after transplantation.",
+  "mechanism": [
+    "Valaciclovir is absorbed from the gut by peptide transporters (such as PEPT1) and hydrolysed by valaciclovir hydrolase in the intestine and liver to aciclovir and L-valine.",
+    "The resulting aciclovir is phosphorylated by viral thymidine kinase and then by cellular kinases to aciclovir triphosphate, which inhibits the viral DNA polymerase and terminates DNA chains."
+  ],
+  "uses": [
+    "Herpes zoster (shingles)",
+    "Genital herpes: treatment, suppression and reduction of transmission",
+    "Herpes labialis (cold sores)",
+    "Varicella in children (US label)",
+    "Prophylaxis of cytomegalovirus disease after organ transplantation (some countries)"
+  ],
+  "history": [
+    {
+      "year": 1995,
+      "title": "FDA approval",
+      "detail": "Valtrex is approved in the US for herpes zoster, later expanded to genital herpes."
+    },
+    {
+      "year": 2002,
+      "title": "Cold sores",
+      "detail": "A one-day regimen for herpes labialis is approved in the US."
+    },
+    {
+      "year": 2003,
+      "title": "Transmission",
+      "detail": "Once-daily suppressive valaciclovir becomes the first therapy approved to reduce transmission of genital herpes to partners, after a large trial in discordant couples."
+    },
+    {
+      "year": 2008,
+      "title": "Children",
+      "detail": "The US label is extended to children: cold sores from age 12 and chickenpox from age 2."
+    },
+    {
+      "year": 2009,
+      "title": "Generics",
+      "detail": "Generic valaciclovir enters the US market after patent expiry."
+    }
+  ],
+  "pk": {
+    "half_life": "aciclovir about 2.5–3.3 h",
+    "bioavailability": "about 54% (as aciclovir)",
+    "metabolism": "rapid, nearly complete first-pass conversion to aciclovir",
+    "excretion": "renal, as aciclovir"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "headache",
+      "nausea",
+      "abdominal pain"
+    ],
+    "serious": [
+      "acute kidney injury",
+      "neurotoxicity (confusion, hallucinations), especially in older patients or renal impairment",
+      "TTP/HUS in advanced HIV or transplant patients at high doses"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Valaciclovir gives aciclovir blood levels roughly three to five times those of oral aciclovir.",
+    "Its trial in serodiscordant couples (Corey et al., NEJM 2004) showed reduced HSV-2 transmission with daily suppression."
+  ],
+  "related": [
+    "aciclovir",
+    "ganciclovir"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Valaciclovir",
+      "url": "https://en.wikipedia.org/wiki/Valaciclovir"
+    },
+    {
+      "title": "DailyMed label search: valacyclovir",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=valacyclovir"
+    },
+    {
+      "title": "Corey L et al. Once-daily valacyclovir to reduce the risk of transmission of genital herpes. NEJM 2004",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa035144"
+    }
+  ],
+  "stage": "written"
 }

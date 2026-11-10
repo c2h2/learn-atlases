@@ -1,36 +1,132 @@
 {
   "slug": "emtricitabine",
   "name": "Emtricitabine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "FTC",
+    "BW524W91",
+    "(–)-FTC"
+  ],
+  "brands": [
+    "Emtriva",
+    "Truvada (with tenofovir disoproxil)",
+    "Descovy (with tenofovir alafenamide)"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Nucleoside reverse transcriptase inhibitor (NRTI; fluorinated cytidine analogue)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral capsule or solution once daily; mostly given in fixed-dose combinations",
+  "targets": [
+    "HIV-1 reverse transcriptase",
+    "Hepatitis B virus polymerase (activity; not licensed for HBV)"
+  ],
+  "origin": "synthetic",
+  "originator": "Emory University (Dennis Liotta, Raymond Schinazi, Woo-Baeg Choi); developed by Triangle Pharmaceuticals and Gilead Sciences",
+  "owner": "generic (many); Gilead Sciences for Emtriva and combinations",
+  "first_approval": {
+    "year": 2003,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Emtriva"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1990,
+    "by": "Dennis Liotta, Raymond Schinazi and Woo-Baeg Choi, Emory University",
+    "note": "5-fluoro analogue of the oxathiolane nucleoside lamivudine, resolved as the (–)-enantiomer."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "The 'F' in many HIV pills: a once-daily partner for tenofovir in treatment and PrEP",
+  "summary": "Emtricitabine is a fluorinated cytidine analogue closely related to lamivudine. It inhibits HIV reverse transcriptase and is almost always combined with tenofovir, including in the PrEP pills Truvada and Descovy. It is well tolerated and has a long intracellular half-life suited to once-daily dosing.",
+  "mechanism": [
+    "Emtricitabine is phosphorylated by cellular kinases to emtricitabine 5'-triphosphate, which competes with deoxycytidine triphosphate for HIV reverse transcriptase and terminates the growing DNA chain.",
+    "As with lamivudine, the M184V/I mutation confers high-level resistance; the two drugs are therefore not combined with each other."
+  ],
+  "uses": [
+    "HIV-1 infection in combination with other antiretrovirals",
+    "HIV-1 pre-exposure prophylaxis with tenofovir disoproxil or tenofovir alafenamide"
+  ],
+  "history": [
+    {
+      "year": 1990,
+      "title": "Discovery",
+      "detail": "Emory University chemists synthesise and patent emtricitabine."
+    },
+    {
+      "year": 2003,
+      "title": "FDA approval",
+      "detail": "Emtriva is approved in July 2003; Gilead acquires its developer Triangle Pharmaceuticals the same year."
+    },
+    {
+      "year": 2004,
+      "title": "Truvada",
+      "detail": "Tenofovir disoproxil/emtricitabine is approved."
+    },
+    {
+      "year": 2005,
+      "title": "Royalty sale",
+      "detail": "Emory sells its emtricitabine royalty interest to Gilead and Royalty Pharma for about $525 million."
+    },
+    {
+      "year": 2012,
+      "title": "PrEP",
+      "detail": "Truvada is approved for HIV pre-exposure prophylaxis."
+    },
+    {
+      "year": 2016,
+      "title": "Descovy",
+      "detail": "Emtricitabine/tenofovir alafenamide is approved."
+    }
+  ],
+  "pk": {
+    "half_life": "plasma about 10 h; intracellular triphosphate about 39 h",
+    "bioavailability": "about 93% (capsule)",
+    "metabolism": "minimal (about 13% as sulfoxide and glucuronide metabolites)",
+    "excretion": "renal, mostly unchanged"
+  },
+  "safety": {
+    "common": [
+      "headache",
+      "diarrhoea",
+      "nausea",
+      "rash",
+      "skin hyperpigmentation (palms and soles)"
+    ],
+    "serious": [
+      "severe exacerbation of hepatitis B after discontinuation",
+      "lactic acidosis and hepatomegaly (rare)",
+      "immune reconstitution syndrome"
+    ],
+    "boxed_warning": "Severe acute exacerbations of hepatitis B in patients co-infected with HBV who discontinue the drug (US label)."
+  },
+  "facts": [
+    "Hyperpigmentation of the palms and soles is a characteristic side effect, reported more often in children and people of African descent.",
+    "The Emory royalty sale was one of the largest single payments to a US university for a drug invention."
+  ],
+  "related": [
+    "lamivudine",
+    "tenofovir-disoproxil",
+    "tenofovir-alafenamide",
+    "bictegravir",
+    "efavirenz"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Emtricitabine",
+      "url": "https://en.wikipedia.org/wiki/Emtricitabine"
+    },
+    {
+      "title": "DailyMed label search: Emtriva",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=emtriva"
+    },
+    {
+      "title": "EMA EPAR: Emtriva",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/emtriva"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,143 @@
 {
   "slug": "ivermectin",
   "name": "Ivermectin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "22,23-dihydroavermectin B1",
+    "MK-933"
+  ],
+  "brands": [
+    "Stromectol",
+    "Mectizan",
+    "Soolantra (topical)",
+    "Sklice (lotion)"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Macrocyclic lactone anthelmintic and ectoparasiticide (avermectin)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "topical"
+  ],
+  "route_note": "single or repeated oral weight-based doses; cream for rosacea, lotion for head lice",
+  "targets": [
+    "Invertebrate glutamate-gated chloride channels (GluCl)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Merck & Co. (William C. Campbell) from Streptomyces avermitilis cultures discovered by Satoshi Ōmura (Kitasato Institute)",
+  "owner": "generic (many); Merck & Co. (Stromectol, Mectizan donation)",
+  "first_approval": {
+    "year": 1987,
+    "agency": "French regulator",
+    "country": "France",
+    "brand": "Mectizan"
+  },
+  "discovery": {
+    "year": 1975,
+    "by": "Satoshi Ōmura (Kitasato Institute) and William C. Campbell (Merck)",
+    "note": "Avermectins were found in a Streptomyces strain from a Japanese soil sample; ivermectin is a chemically reduced avermectin B1 mixture."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription; veterinary products widely available",
+  "tagline": "Nobel-winning antiparasitic donated to hundreds of millions to fight river blindness",
+  "summary": "Ivermectin is a semi-synthetic avermectin that paralyses many nematodes and arthropods. Donated by Merck since 1987 through the Mectizan Donation Program, it has been central to controlling onchocerciasis (river blindness) and lymphatic filariasis, and it also treats strongyloidiasis, scabies and lice. Its discoverers shared the 2015 Nobel Prize; trials found no benefit in COVID-19 despite widespread use.",
+  "mechanism": [
+    "Ivermectin binds glutamate-gated chloride channels found in the nerve and muscle cells of invertebrates, locking them open. The resulting chloride influx hyperpolarises the cells and causes flaccid paralysis and death of the parasite; in microfilariae it also reduces the parasites' ability to evade host immunity.",
+    "Mammals lack these channels, and the drug is largely kept out of the brain by P-glycoprotein at the blood–brain barrier, which explains its wide safety margin. In people with very high Loa loa microfilarial loads, rapid killing can trigger encephalopathy."
+  ],
+  "uses": [
+    "Onchocerciasis (river blindness)",
+    "Strongyloidiasis",
+    "Lymphatic filariasis (mass drug administration with albendazole, with or without diethylcarbamazine)",
+    "Scabies, including crusted scabies (oral)",
+    "Head lice (topical lotion)",
+    "Papulopustular rosacea (topical cream)"
+  ],
+  "history": [
+    {
+      "year": 1975,
+      "title": "Discovery",
+      "detail": "Ōmura sends Streptomyces cultures to Merck, where Campbell's team identifies anthelmintic avermectins; ivermectin is developed by 1979."
+    },
+    {
+      "year": 1981,
+      "title": "Veterinary launch",
+      "detail": "Ivermectin is introduced for livestock and becomes one of the best-selling veterinary drugs."
+    },
+    {
+      "year": 1987,
+      "title": "Human approval and donation",
+      "detail": "Mectizan is approved in France for onchocerciasis, and Merck pledges to donate it for as long as needed."
+    },
+    {
+      "year": 1996,
+      "title": "US approval",
+      "detail": "Stromectol is approved by the FDA for strongyloidiasis and onchocerciasis."
+    },
+    {
+      "year": 2012,
+      "title": "Topical forms",
+      "detail": "Sklice lotion for head lice is approved in the US; Soolantra cream for rosacea follows in 2014."
+    },
+    {
+      "year": 2015,
+      "title": "Nobel Prize",
+      "detail": "Satoshi Ōmura and William Campbell share the Nobel Prize in Physiology or Medicine with Tu Youyou."
+    },
+    {
+      "year": 2021,
+      "title": "COVID-19 trials",
+      "detail": "Despite widespread off-label use, randomised trials (TOGETHER, ACTIV-6, PRINCIPLE) show no clinically meaningful benefit for COVID-19; poison centres report toxicity from veterinary products."
+    }
+  ],
+  "pk": {
+    "half_life": "about 18 h (plasma)",
+    "bioavailability": "well absorbed; higher with food",
+    "metabolism": "hepatic CYP3A4",
+    "excretion": "mainly faeces"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "dizziness",
+      "pruritus",
+      "Mazzotti reaction in onchocerciasis (fever, rash, itching, lymphadenopathy)",
+      "nausea"
+    ],
+    "serious": [
+      "encephalopathy in patients with high Loa loa microfilarial loads",
+      "neurotoxicity in overdose (e.g. from veterinary products)",
+      "hypotension",
+      "severe skin reactions (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "The Mectizan Donation Program has provided billions of treatments, making it one of the longest-running drug donation programmes.",
+    "Colombia was the first country verified by WHO as having eliminated onchocerciasis transmission, in 2013.",
+    "The original Streptomyces strain came from soil near a golf course in Ito, Shizuoka Prefecture, Japan."
+  ],
+  "related": [
+    "albendazole",
+    "praziquantel"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Ivermectin",
+      "url": "https://en.wikipedia.org/wiki/Ivermectin"
+    },
+    {
+      "title": "DailyMed label search: Stromectol",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=stromectol"
+    },
+    {
+      "title": "Nobel Prize in Physiology or Medicine 2015",
+      "url": "https://www.nobelprize.org/prizes/medicine/2015/summary/"
+    },
+    {
+      "title": "Mectizan Donation Program",
+      "url": "https://mectizan.org/"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,139 @@
 {
   "slug": "sofosbuvir",
   "name": "Sofosbuvir",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "PSI-7977",
+    "GS-7977"
+  ],
+  "brands": [
+    "Sovaldi",
+    "Harvoni (with ledipasvir)",
+    "Epclusa (with velpatasvir)",
+    "Vosevi (with velpatasvir and voxilaprevir)"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "HCV NS5B polymerase inhibitor (nucleotide analogue prodrug)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet (or pellets) once daily for 8–24 weeks, alone or in fixed-dose combinations",
+  "targets": [
+    "Hepatitis C virus NS5B RNA-dependent RNA polymerase"
+  ],
+  "origin": "synthetic",
+  "originator": "Pharmasset (Michael Sofia and colleagues); developed by Gilead Sciences",
+  "owner": "Gilead Sciences; generics in many low- and middle-income countries",
+  "first_approval": {
+    "year": 2013,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Sovaldi"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 2007,
+    "by": "Michael Sofia and colleagues, Pharmasset",
+    "note": "Phosphoramidate ProTide prodrug of a 2'-fluoro-2'-C-methyluridine monophosphate, designed to be activated in the liver."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Pangenotypic backbone of hepatitis C cures, famous for its $84,000 price",
+  "summary": "Sofosbuvir is a nucleotide analogue that inhibits the hepatitis C virus polymerase and is active against all genotypes. In combinations such as ledipasvir/sofosbuvir and sofosbuvir/velpatasvir it cures more than 95% of patients with a short, interferon-free oral course. Its US launch price of $84,000 for 12 weeks set off a global debate about drug pricing.",
+  "mechanism": [
+    "Sofosbuvir is a ProTide prodrug taken up by the liver, where cathepsin A or carboxylesterase 1 and histidine triad nucleotide-binding protein 1 release the monophosphate. Cellular kinases form the active uridine triphosphate analogue (GS-461203).",
+    "The active triphosphate is incorporated by the HCV NS5B polymerase and acts as a chain terminator. Because the NS5B active site is highly conserved, sofosbuvir works against all HCV genotypes and has a very high barrier to resistance (S282T confers reduced susceptibility but is rare)."
+  ],
+  "uses": [
+    "Chronic hepatitis C (all genotypes) in adults and children aged 3 years and older, in combination with other antivirals",
+    "Hepatitis C in compensated and, with some combinations, decompensated cirrhosis",
+    "Hepatitis C before and after liver transplantation"
+  ],
+  "history": [
+    {
+      "year": 2007,
+      "title": "Discovery",
+      "detail": "Pharmasset chemists synthesise PSI-7977."
+    },
+    {
+      "year": 2012,
+      "title": "Acquisition",
+      "detail": "Gilead acquires Pharmasset for about $11 billion."
+    },
+    {
+      "year": 2013,
+      "title": "FDA approval",
+      "detail": "Sovaldi is approved in December 2013 at a list price of $84,000 for a 12-week course."
+    },
+    {
+      "year": 2014,
+      "title": "Harvoni and access deals",
+      "detail": "Ledipasvir/sofosbuvir becomes the first all-oral, interferon-free single tablet for genotype 1; Gilead signs licences with Indian generic makers for low-income countries."
+    },
+    {
+      "year": 2016,
+      "title": "Pangenotypic",
+      "detail": "Sofosbuvir/velpatasvir (Epclusa) is approved as the first pangenotypic single-tablet regimen."
+    },
+    {
+      "year": 2016,
+      "title": "Class boxed warning",
+      "detail": "The FDA adds a boxed warning on hepatitis B reactivation to all direct-acting HCV antivirals."
+    },
+    {
+      "year": 2019,
+      "title": "Authorised generics",
+      "detail": "Gilead's subsidiary Asegua launches lower-priced authorised generics of Epclusa and Harvoni in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "sofosbuvir about 0.4 h; main circulating metabolite GS-331007 about 27 h",
+    "bioavailability": "well absorbed; not affected meaningfully by food",
+    "metabolism": "hepatic activation to the triphosphate; dephosphorylation to inactive GS-331007",
+    "excretion": "mainly renal (as GS-331007)"
+  },
+  "safety": {
+    "common": [
+      "fatigue",
+      "headache",
+      "nausea",
+      "insomnia"
+    ],
+    "serious": [
+      "hepatitis B reactivation in co-infected patients",
+      "symptomatic bradycardia when combined with amiodarone"
+    ],
+    "boxed_warning": "Risk of hepatitis B virus reactivation, sometimes fulminant, in patients co-infected with HCV and HBV; test for HBV before starting (US label)."
+  },
+  "facts": [
+    "The price of Sovaldi (often quoted as $1,000 per pill) prompted a US Senate investigation in 2015.",
+    "Egypt used generic sofosbuvir-based regimens in a national programme that treated millions of people.",
+    "WHO's goal of eliminating hepatitis C as a public health threat by 2030 relies heavily on sofosbuvir-based regimens."
+  ],
+  "related": [
+    "glecaprevir-pibrentasvir",
+    "ribavirin",
+    "peginterferon-alfa-2a",
+    "amiodarone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Sofosbuvir",
+      "url": "https://en.wikipedia.org/wiki/Sofosbuvir"
+    },
+    {
+      "title": "DailyMed label search: Sovaldi",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=sovaldi"
+    },
+    {
+      "title": "EMA EPAR: Sovaldi",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/sovaldi"
+    },
+    {
+      "title": "DailyMed label search: Epclusa",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=epclusa"
+    }
+  ],
+  "stage": "written"
 }

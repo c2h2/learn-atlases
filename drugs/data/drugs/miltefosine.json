@@ -1,36 +1,123 @@
 {
   "slug": "miltefosine",
   "name": "Miltefosine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "hexadecylphosphocholine",
+    "HePC"
+  ],
+  "brands": [
+    "Impavido",
+    "Miltex (topical, discontinued)"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Alkylphosphocholine antiparasitic (antileishmanial)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral capsules once to three times daily with food for 28 days",
+  "targets": [
+    "Parasite membrane phospholipid metabolism and mitochondrial function (multiple)"
+  ],
+  "origin": "synthetic",
+  "originator": "Max Planck Institute for Biophysical Chemistry, Göttingen (Hansjörg Eibl) and Clemens Unger; developed for leishmaniasis by Asta Medica/Zentaris with WHO/TDR",
+  "owner": "Profounda (US) and Knight Therapeutics (other regions)",
+  "first_approval": {
+    "year": 2002,
+    "agency": "DCGI",
+    "country": "India",
+    "brand": "Impavido"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Hansjörg Eibl and Clemens Unger, Göttingen",
+    "note": "Developed in the 1980s as an anticancer phospholipid; antileishmanial activity was later discovered and developed with WHO/TDR."
+  },
+  "generic": false,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "First oral drug for leishmaniasis, repurposed from cancer research",
+  "summary": "Miltefosine is an alkylphosphocholine first developed as an anticancer agent and later found to kill Leishmania parasites. Approved in India in 2002, it was the first oral treatment for visceral leishmaniasis (kala-azar), and it is also used for cutaneous and mucosal leishmaniasis. It is teratogenic, so contraception is required during and after treatment.",
+  "mechanism": [
+    "Miltefosine is a phospholipid analogue that inserts into cell membranes. In Leishmania it disrupts phospholipid and sterol metabolism, impairs mitochondrial cytochrome c oxidase, and disturbs intracellular calcium homeostasis, leading to apoptosis-like death of the parasite.",
+    "It also has immunomodulatory effects on host macrophages. Its long half-life and relatively low barrier to resistance (for example through mutations in the LdMT/LdRos3 transporter) are concerns for its use as monotherapy."
+  ],
+  "uses": [
+    "Visceral leishmaniasis (Leishmania donovani)",
+    "Cutaneous leishmaniasis (L. braziliensis, L. guyanensis, L. panamensis)",
+    "Mucosal leishmaniasis (L. braziliensis)",
+    "Primary amoebic meningoencephalitis and other free-living amoeba infections (off-label, CDC-supported)"
+  ],
+  "history": [
+    {
+      "year": 1992,
+      "title": "Cancer use",
+      "detail": "Topical miltefosine (Miltex) is introduced in Germany for skin metastases of breast cancer."
+    },
+    {
+      "year": 2002,
+      "title": "India approval",
+      "detail": "After a phase III trial in India shows about 94% cure of visceral leishmaniasis (Sundar et al., NEJM 2002), Impavido is approved in India as the first oral treatment for the disease."
+    },
+    {
+      "year": 2005,
+      "title": "Elimination programme",
+      "detail": "India, Nepal and Bangladesh launch a kala-azar elimination initiative using miltefosine as first-line therapy."
+    },
+    {
+      "year": 2013,
+      "title": "Naegleria",
+      "detail": "The CDC makes miltefosine available for free-living amoeba infections after survivors of primary amoebic meningoencephalitis received it."
+    },
+    {
+      "year": 2014,
+      "title": "FDA approval",
+      "detail": "Impavido is approved by the FDA in March 2014 for visceral, cutaneous and mucosal leishmaniasis."
+    }
+  ],
+  "pk": {
+    "half_life": "initial about 7 days, terminal about 31 days",
+    "bioavailability": "well absorbed (oral)",
+    "metabolism": "phospholipase D-mediated cleavage to choline and hexadecanol; not CYP",
+    "excretion": "very slow; small amounts in urine"
+  },
+  "safety": {
+    "common": [
+      "nausea and vomiting",
+      "diarrhoea",
+      "motion sickness-like symptoms",
+      "raised liver enzymes and creatinine"
+    ],
+    "serious": [
+      "embryo-fetal toxicity",
+      "impaired fertility",
+      "acute kidney injury",
+      "Stevens–Johnson syndrome (rare)",
+      "thrombocytopenia"
+    ],
+    "boxed_warning": "Embryo-fetal toxicity: may cause fetal harm; exclude pregnancy before starting and use effective contraception during and for 5 months after treatment (US label)."
+  },
+  "facts": [
+    "Miltefosine was the first oral drug for visceral leishmaniasis and was developed with the WHO Special Programme for Research and Training in Tropical Diseases.",
+    "Declining efficacy in India led to a shift towards single-dose liposomal amphotericin B in kala-azar elimination programmes."
+  ],
+  "related": [
+    "amphotericin-b"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Miltefosine",
+      "url": "https://en.wikipedia.org/wiki/Miltefosine"
+    },
+    {
+      "title": "DailyMed label search: Impavido",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=impavido"
+    },
+    {
+      "title": "Sundar S et al. Oral miltefosine for Indian visceral leishmaniasis. NEJM 2002",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa020556"
+    }
+  ],
+  "stage": "written"
 }

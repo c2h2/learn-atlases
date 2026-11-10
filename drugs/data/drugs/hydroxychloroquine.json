@@ -1,36 +1,127 @@
 {
   "slug": "hydroxychloroquine",
   "name": "Hydroxychloroquine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "HCQ",
+    "hydroxychloroquine sulfate"
+  ],
+  "brands": [
+    "Plaquenil",
+    "Quensyl"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "4-Aminoquinoline antimalarial and disease-modifying antirheumatic drug (DMARD)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablets once or twice daily; long-term use for autoimmune disease with retinal screening",
+  "targets": [
+    "Endosomal Toll-like receptors (TLR7, TLR9) and lysosomal acidification",
+    "Haem detoxification in Plasmodium"
+  ],
+  "origin": "synthetic",
+  "originator": "Sterling-Winthrop (Alexander Surrey and Henry Hammer)",
+  "owner": "generic (many); Plaquenil by Sanofi/Concordia (varies by region)",
+  "first_approval": {
+    "year": 1955,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Plaquenil"
+  },
+  "discovery": {
+    "year": 1946,
+    "by": "Alexander Surrey and Henry Hammer, Sterling-Winthrop",
+    "note": "Hydroxylated analogue of chloroquine designed to be less toxic."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Antimalarial turned lupus mainstay, briefly at the centre of the COVID-19 storm",
+  "summary": "Hydroxychloroquine is a less toxic hydroxylated analogue of chloroquine. Although developed as an antimalarial, it is used mainly as a long-term treatment for systemic lupus erythematosus, rheumatoid arthritis and other autoimmune diseases. In 2020 it was widely promoted for COVID-19, but large randomised trials showed no benefit.",
+  "mechanism": [
+    "Hydroxychloroquine is a weak base that accumulates in acidic compartments such as lysosomes and endosomes, raising their pH. This interferes with antigen processing and presentation on MHC class II and inhibits signalling by endosomal Toll-like receptors (TLR7 and TLR9) that sense nucleic acids, reducing production of type I interferon and other cytokines that drive lupus.",
+    "Against malaria it acts like chloroquine, accumulating in the parasite's food vacuole and blocking conversion of toxic haem to haemozoin."
+  ],
+  "uses": [
+    "Systemic and chronic discoid lupus erythematosus",
+    "Rheumatoid arthritis",
+    "Malaria treatment and prophylaxis where chloroquine-sensitive",
+    "Other rheumatological and dermatological conditions (e.g. Sjögren's disease, antiphospholipid syndrome; off-label)"
+  ],
+  "history": [
+    {
+      "year": 1946,
+      "title": "Synthesis",
+      "detail": "Hydroxychloroquine is synthesised at Sterling-Winthrop."
+    },
+    {
+      "year": 1955,
+      "title": "FDA approval",
+      "detail": "Plaquenil is approved in the US."
+    },
+    {
+      "year": 1991,
+      "title": "Lupus evidence",
+      "detail": "The Canadian Hydroxychloroquine Study Group shows that stopping the drug increases lupus flares (NEJM)."
+    },
+    {
+      "year": 2016,
+      "title": "Retinal screening",
+      "detail": "The American Academy of Ophthalmology revises screening guidance, recommending a dose of at most 5 mg/kg real body weight per day."
+    },
+    {
+      "year": 2020,
+      "title": "COVID-19",
+      "detail": "The FDA grants emergency use authorisation in March and revokes it in June; the RECOVERY and WHO Solidarity trials show no mortality benefit, and shortages affect lupus patients."
+    }
+  ],
+  "pk": {
+    "half_life": "about 40–50 days (terminal)",
+    "bioavailability": "about 74% (variable)",
+    "metabolism": "hepatic CYP2C8, CYP3A4 and CYP2D6 to active desethyl metabolites",
+    "excretion": "renal, partly unchanged"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "nausea and diarrhoea",
+      "headache",
+      "skin rash and pigmentation",
+      "dizziness"
+    ],
+    "serious": [
+      "irreversible retinopathy (risk rises with dose and duration)",
+      "cardiomyopathy and QT prolongation",
+      "severe hypoglycaemia",
+      "neuropsychiatric effects",
+      "severe skin reactions"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Hydroxychloroquine is a foundation therapy for systemic lupus erythematosus and is generally continued during pregnancy.",
+    "Its very long half-life means steady state is reached only after several months."
+  ],
+  "related": [
+    "chloroquine",
+    "methotrexate",
+    "anifrolumab",
+    "belimumab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Hydroxychloroquine",
+      "url": "https://en.wikipedia.org/wiki/Hydroxychloroquine"
+    },
+    {
+      "title": "DailyMed label search: Plaquenil",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=plaquenil"
+    },
+    {
+      "title": "RECOVERY Collaborative Group. Effect of hydroxychloroquine in hospitalized patients with Covid-19. NEJM 2020",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2022926"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,121 @@
 {
   "slug": "glecaprevir-pibrentasvir",
-  "name": "Glecaprevir pibrentasvir",
-  "aliases": [],
-  "brands": [],
+  "name": "Glecaprevir/pibrentasvir",
+  "aliases": [
+    "ABT-493 (glecaprevir)",
+    "ABT-530 (pibrentasvir)",
+    "G/P"
+  ],
+  "brands": [
+    "Mavyret (US)",
+    "Maviret (EU and elsewhere)"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "HCV NS3/4A protease inhibitor plus NS5A inhibitor (fixed-dose combination)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "three tablets once daily with food (or pellets for children) for 8 weeks in most patients",
+  "targets": [
+    "HCV NS3/4A protease (glecaprevir)",
+    "HCV NS5A replication complex protein (pibrentasvir)"
+  ],
+  "origin": "synthetic",
+  "originator": "AbbVie (glecaprevir co-discovered with Enanta Pharmaceuticals)",
+  "owner": "AbbVie",
+  "first_approval": {
+    "year": 2017,
+    "agency": "EMA",
+    "country": "European Union",
+    "brand": "Maviret"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "AbbVie and Enanta Pharmaceuticals",
+    "note": "Second-generation pangenotypic protease and NS5A inhibitors with activity against common resistance variants."
+  },
+  "generic": false,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Eight-week, pangenotypic hepatitis C cure that is safe in kidney disease",
+  "summary": "Glecaprevir/pibrentasvir is a fixed-dose combination of an NS3/4A protease inhibitor and an NS5A inhibitor that cures hepatitis C of all genotypes, usually in 8 weeks. It is not cleared by the kidneys, so it can be used in severe kidney disease and dialysis. Like other protease-inhibitor regimens, it is not used in decompensated cirrhosis.",
+  "mechanism": [
+    "Glecaprevir inhibits the NS3/4A serine protease, which cleaves the HCV polyprotein into the non-structural proteins needed for replication.",
+    "Pibrentasvir binds NS5A, a phosphoprotein essential for forming the viral replication complex and assembling virions. Combining two targets with high potency against resistant variants gives cure rates around 95–99% in clinical trials."
+  ],
+  "uses": [
+    "Chronic hepatitis C, all genotypes, in adults and children aged 3 years and older without cirrhosis or with compensated cirrhosis",
+    "Retreatment of patients previously treated with an NS5A or NS3/4A inhibitor (but not both)",
+    "Acute hepatitis C (US label since 2024)"
+  ],
+  "history": [
+    {
+      "year": 2017,
+      "title": "EU approval",
+      "detail": "The European Commission approves Maviret in July 2017."
+    },
+    {
+      "year": 2017,
+      "title": "FDA approval",
+      "detail": "The FDA approves Mavyret in August 2017 as the first 8-week pangenotypic regimen for treatment-naive patients without cirrhosis."
+    },
+    {
+      "year": 2019,
+      "title": "Compensated cirrhosis",
+      "detail": "The 8-week course is extended to treatment-naive patients with compensated cirrhosis; paediatric approval follows."
+    },
+    {
+      "year": 2021,
+      "title": "Young children",
+      "detail": "Oral pellets are approved in the US for children aged 3 years and older."
+    },
+    {
+      "year": 2024,
+      "title": "Acute hepatitis C",
+      "detail": "The FDA approves Mavyret for acute HCV infection, the first DAA labelled for that use."
+    }
+  ],
+  "pk": {
+    "half_life": "glecaprevir about 6 h; pibrentasvir about 13 h",
+    "bioavailability": "increased with food",
+    "metabolism": "glecaprevir partly by CYP3A; pibrentasvir minimal; both biliary",
+    "excretion": "mainly faeces (biliary); renal excretion negligible"
+  },
+  "safety": {
+    "common": [
+      "headache",
+      "fatigue",
+      "nausea"
+    ],
+    "serious": [
+      "hepatitis B reactivation in co-infected patients",
+      "hepatic decompensation in patients with moderate or severe hepatic impairment or prior decompensation"
+    ],
+    "boxed_warning": "Risk of hepatitis B virus reactivation, sometimes fulminant, in patients co-infected with HCV and HBV; test for HBV before starting (US label)."
+  },
+  "facts": [
+    "Because it is not renally cleared, no dose adjustment is needed in any stage of chronic kidney disease, including dialysis.",
+    "It is contraindicated with atazanavir and rifampicin."
+  ],
+  "related": [
+    "sofosbuvir",
+    "ribavirin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Glecaprevir/pibrentasvir",
+      "url": "https://en.wikipedia.org/wiki/Glecaprevir/pibrentasvir"
+    },
+    {
+      "title": "DailyMed label search: Mavyret",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=mavyret"
+    },
+    {
+      "title": "EMA EPAR: Maviret",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/maviret"
+    }
+  ],
+  "stage": "written"
 }

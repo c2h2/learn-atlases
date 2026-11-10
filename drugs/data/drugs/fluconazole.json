@@ -1,36 +1,127 @@
 {
   "slug": "fluconazole",
   "name": "Fluconazole",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "UK-49,858"
+  ],
+  "brands": [
+    "Diflucan",
+    "Canesten Oral"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Triazole antifungal (CYP51 inhibitor)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "oral capsules, tablets or suspension once daily (single dose for vaginal candidiasis); IV infusion",
+  "targets": [
+    "Fungal lanosterol 14α-demethylase (CYP51/ERG11)"
+  ],
+  "origin": "synthetic",
+  "originator": "Pfizer (Ken Richardson and colleagues, Sandwich, UK)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1988,
+    "agency": "MCA (UK)",
+    "country": "United Kingdom",
+    "brand": "Diflucan"
+  },
+  "discovery": {
+    "year": 1981,
+    "by": "Ken Richardson and colleagues, Pfizer UK",
+    "note": "Water-soluble bis-triazole designed for good oral absorption, metabolic stability and penetration into cerebrospinal fluid."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription; single-dose vaginal thrush capsule OTC in some countries",
+  "tagline": "Well-absorbed triazole for candidiasis and cryptococcal meningitis",
+  "summary": "Fluconazole is a triazole antifungal that is almost completely absorbed orally and penetrates well into body fluids including cerebrospinal fluid. It is a mainstay for Candida infections, from vaginal thrush to candidaemia, and for cryptococcal meningitis, especially in people with HIV. It has no useful activity against moulds such as Aspergillus.",
+  "mechanism": [
+    "Azoles inhibit lanosterol 14α-demethylase (CYP51, encoded by ERG11 in yeasts and cyp51A in Aspergillus), a fungal cytochrome P450 enzyme needed to make ergosterol, the main sterol of fungal cell membranes. Ergosterol depletion and accumulation of toxic 14α-methylated sterols disrupt membrane structure and the function of membrane-bound enzymes, stopping fungal growth.",
+    "Fluconazole is fungistatic against most Candida species. Candida krusei is intrinsically resistant, C. glabrata is often less susceptible, and resistance in C. albicans and Candida auris involves ERG11 mutations and efflux pumps (CDR1, MDR1)."
+  ],
+  "uses": [
+    "Vaginal, oropharyngeal and oesophageal candidiasis",
+    "Candidaemia and other invasive Candida infections",
+    "Cryptococcal meningitis (with amphotericin B/flucytosine induction and as consolidation and maintenance)",
+    "Antifungal prophylaxis in bone-marrow transplantation and other high-risk patients",
+    "Coccidioidomycosis (guideline use)"
+  ],
+  "history": [
+    {
+      "year": 1981,
+      "title": "Discovery",
+      "detail": "Pfizer chemists in Sandwich, UK, identify fluconazole."
+    },
+    {
+      "year": 1988,
+      "title": "First approval",
+      "detail": "Fluconazole is approved in the UK."
+    },
+    {
+      "year": 1990,
+      "title": "FDA approval",
+      "detail": "Diflucan is approved in the US in January 1990 and becomes widely used for AIDS-related cryptococcal meningitis and candidiasis."
+    },
+    {
+      "year": 1994,
+      "title": "Single-dose vaginal therapy",
+      "detail": "A single 150 mg oral dose is approved for vaginal candidiasis."
+    },
+    {
+      "year": 2004,
+      "title": "US generics",
+      "detail": "Generic fluconazole becomes available in the US."
+    },
+    {
+      "year": 2016,
+      "title": "Candida auris",
+      "detail": "Health agencies warn about Candida auris, a multidrug-resistant yeast usually resistant to fluconazole."
+    }
+  ],
+  "pk": {
+    "half_life": "about 30 h",
+    "bioavailability": "over 90%",
+    "metabolism": "minimal hepatic metabolism; inhibits CYP2C9, CYP2C19 and CYP3A4",
+    "excretion": "renal, about 80% unchanged"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "headache",
+      "nausea",
+      "abdominal pain",
+      "rash"
+    ],
+    "serious": [
+      "hepatotoxicity",
+      "QT prolongation and torsades de pointes",
+      "exfoliative skin reactions and anaphylaxis",
+      "possible birth defects with high-dose prolonged use in early pregnancy"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Fluconazole reaches cerebrospinal fluid concentrations of about 70–80% of plasma levels.",
+    "Pfizer's donation programme, starting in 2000, supplied fluconazole free for HIV-related cryptococcal meningitis in many low-income countries."
+  ],
+  "related": [
+    "itraconazole",
+    "voriconazole",
+    "posaconazole",
+    "amphotericin-b"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Fluconazole",
+      "url": "https://en.wikipedia.org/wiki/Fluconazole"
+    },
+    {
+      "title": "DailyMed label search: Diflucan",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=diflucan"
+    }
+  ],
+  "stage": "written"
 }

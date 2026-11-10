@@ -1,36 +1,146 @@
 {
   "slug": "tenofovir-disoproxil",
   "name": "Tenofovir disoproxil",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "tenofovir disoproxil fumarate",
+    "TDF",
+    "PMPA prodrug",
+    "GS-4331"
+  ],
+  "brands": [
+    "Viread",
+    "Truvada (with emtricitabine)",
+    "Atripla (with emtricitabine and efavirenz)"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Nucleotide reverse transcriptase inhibitor (NtRTI; acyclic adenosine phosphonate prodrug)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once daily, alone or in fixed-dose combinations",
+  "targets": [
+    "HIV-1 reverse transcriptase",
+    "Hepatitis B virus polymerase"
+  ],
+  "origin": "synthetic",
+  "originator": "Antonín Holý (IOCB Prague) and Erik De Clercq (Rega Institute, Leuven); developed by Gilead Sciences",
+  "owner": "generic (many); Viread by Gilead Sciences",
+  "first_approval": {
+    "year": 2001,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Viread"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1993,
+    "by": "Antonín Holý and Erik De Clercq, with Gilead Sciences",
+    "note": "Tenofovir (PMPA) is an acyclic nucleoside phosphonate; the disoproxil ester prodrug was made to allow oral absorption."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Backbone of HIV treatment and prevention, and first-line therapy for hepatitis B",
+  "summary": "Tenofovir disoproxil is an oral prodrug of tenofovir, a nucleotide analogue that blocks HIV reverse transcriptase and the hepatitis B virus polymerase. Combined with emtricitabine or lamivudine it forms the backbone of many HIV regimens and of oral pre-exposure prophylaxis (PrEP). Long-term use can affect kidney function and bone density.",
+  "mechanism": [
+    "Tenofovir disoproxil is hydrolysed in the gut and blood to tenofovir, which already carries a phosphonate group and so needs only two phosphorylation steps by cellular kinases to form tenofovir diphosphate.",
+    "Tenofovir diphosphate competes with deoxyadenosine triphosphate for HIV reverse transcriptase and HBV polymerase and terminates the DNA chain after incorporation. The K65R mutation in HIV reverse transcriptase reduces susceptibility; HBV resistance to tenofovir is very rare."
+  ],
+  "uses": [
+    "HIV-1 infection in combination with other antiretrovirals",
+    "HIV-1 pre-exposure prophylaxis (with emtricitabine)",
+    "Chronic hepatitis B in adults and children",
+    "Prevention of mother-to-child HBV transmission (guideline use in pregnancy)"
+  ],
+  "history": [
+    {
+      "year": 1993,
+      "title": "Antiviral activity",
+      "detail": "Holý and De Clercq report the activity of PMPA against retroviruses; Gilead has licensed their phosphonate compounds."
+    },
+    {
+      "year": 2001,
+      "title": "FDA approval",
+      "detail": "Viread is approved for HIV-1 infection."
+    },
+    {
+      "year": 2004,
+      "title": "Truvada",
+      "detail": "The fixed-dose combination with emtricitabine (Truvada) is approved."
+    },
+    {
+      "year": 2006,
+      "title": "Atripla",
+      "detail": "Efavirenz/emtricitabine/tenofovir disoproxil becomes the first once-daily single-tablet HIV regimen."
+    },
+    {
+      "year": 2008,
+      "title": "Hepatitis B",
+      "detail": "Viread is approved for chronic hepatitis B."
+    },
+    {
+      "year": 2012,
+      "title": "PrEP",
+      "detail": "Truvada becomes the first drug approved for HIV pre-exposure prophylaxis, after the iPrEx and Partners PrEP trials."
+    },
+    {
+      "year": 2017,
+      "title": "US generics",
+      "detail": "Generic tenofovir disoproxil enters the US market; generic Truvada follows in 2020."
+    }
+  ],
+  "pk": {
+    "half_life": "plasma tenofovir about 17 h; intracellular diphosphate much longer",
+    "bioavailability": "about 25% fasting, higher with a high-fat meal",
+    "metabolism": "esterase hydrolysis to tenofovir; not a CYP substrate",
+    "excretion": "renal (glomerular filtration and active tubular secretion via OAT1/OAT3)"
+  },
+  "safety": {
+    "common": [
+      "nausea",
+      "diarrhoea",
+      "rash",
+      "asthenia"
+    ],
+    "serious": [
+      "new or worsening renal impairment, including Fanconi syndrome",
+      "decreased bone mineral density",
+      "lactic acidosis and severe hepatomegaly (rare)",
+      "HBV flare after stopping"
+    ],
+    "boxed_warning": "Severe acute exacerbations of hepatitis B in patients co-infected with HBV who discontinue the drug (US label)."
+  },
+  "facts": [
+    "Tenofovir royalties made the Institute of Organic Chemistry and Biochemistry in Prague one of the best-funded research institutes in central Europe.",
+    "Tenofovir/emtricitabine was the first approved HIV PrEP regimen.",
+    "Tenofovir disoproxil is part of the WHO-preferred TLD regimen (tenofovir/lamivudine/dolutegravir)."
+  ],
+  "related": [
+    "tenofovir-alafenamide",
+    "emtricitabine",
+    "lamivudine",
+    "efavirenz",
+    "dolutegravir",
+    "entecavir"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Tenofovir disoproxil",
+      "url": "https://en.wikipedia.org/wiki/Tenofovir_disoproxil"
+    },
+    {
+      "title": "DailyMed label search: Viread",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=viread"
+    },
+    {
+      "title": "EMA EPAR: Viread",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/viread"
+    },
+    {
+      "title": "Grant RM et al. Preexposure chemoprophylaxis for HIV prevention in men who have sex with men (iPrEx). NEJM 2010",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1011205"
+    }
+  ],
+  "stage": "written"
 }

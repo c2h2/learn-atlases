@@ -1,36 +1,123 @@
 {
   "slug": "molnupiravir",
   "name": "Molnupiravir",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "EIDD-2801",
+    "MK-4482"
+  ],
+  "brands": [
+    "Lagevrio"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Ribonucleoside analogue (viral lethal mutagenesis agent)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral capsules twice daily for 5 days, started within 5 days of symptoms",
+  "targets": [
+    "SARS-CoV-2 RNA-dependent RNA polymerase (nsp12; mutagenic substrate)"
+  ],
+  "origin": "synthetic",
+  "originator": "Emory University / Drug Innovation Ventures at Emory (DRIVE); developed by Ridgeback Biotherapeutics and Merck",
+  "owner": "Merck & Co. (MSD), with Ridgeback Biotherapeutics",
+  "first_approval": {
+    "year": 2021,
+    "agency": "MHRA",
+    "country": "United Kingdom",
+    "brand": "Lagevrio"
+  },
+  "discovery": {
+    "year": null,
+    "by": "George Painter and colleagues, Emory University (DRIVE)",
+    "note": "Isopropyl-ester prodrug of β-D-N4-hydroxycytidine (NHC), developed for influenza and other RNA viruses before COVID-19."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription (emergency use in the US)",
+  "tagline": "Oral COVID-19 antiviral that riddles the viral genome with copying errors",
+  "summary": "Molnupiravir is an oral prodrug of the nucleoside analogue N4-hydroxycytidine, which causes so many errors in viral RNA that the virus can no longer replicate. It was the first oral COVID-19 antiviral authorised anywhere, in the UK in November 2021. Its benefit in vaccinated populations proved modest, and the EU declined to approve it.",
+  "mechanism": [
+    "Molnupiravir is hydrolysed to N4-hydroxycytidine (NHC), which cells phosphorylate to NHC triphosphate. The viral RNA polymerase incorporates it in place of cytidine or uridine triphosphate.",
+    "Because NHC can switch between tautomeric forms, it pairs with either guanine or adenine when the RNA is copied. This spreads G-to-A and C-to-U mutations across the viral genome until it collapses ('error catastrophe'). Concerns about possible mutagenicity in host cells led to restrictions in pregnancy and in children."
+  ],
+  "uses": [
+    "Mild to moderate COVID-19 in adults at high risk of progression for whom other authorised treatments are not accessible or appropriate (US emergency use; approved in the UK, Japan and some other countries)"
+  ],
+  "history": [
+    {
+      "year": 2020,
+      "title": "Licensing",
+      "detail": "Ridgeback Biotherapeutics licenses EIDD-2801 from Emory and partners with Merck."
+    },
+    {
+      "year": 2021,
+      "title": "MOVe-OUT",
+      "detail": "Interim results show roughly halved hospitalisation or death; the final analysis gives about a 30% relative reduction."
+    },
+    {
+      "year": 2021,
+      "title": "First authorisation",
+      "detail": "The UK MHRA approves Lagevrio on 4 November 2021, the first oral COVID-19 antiviral authorised."
+    },
+    {
+      "year": 2021,
+      "title": "US emergency use",
+      "detail": "The FDA issues an emergency use authorisation on 23 December 2021, limited to adults without suitable alternatives."
+    },
+    {
+      "year": 2022,
+      "title": "PANORAMIC",
+      "detail": "The large UK PANORAMIC trial in mostly vaccinated adults finds no reduction in hospitalisation or death, though recovery is faster."
+    },
+    {
+      "year": 2023,
+      "title": "EU refusal",
+      "detail": "The EMA's CHMP gives a negative opinion in February 2023; Merck withdraws the EU application in June 2023."
+    }
+  ],
+  "pk": {
+    "half_life": "NHC effective half-life about 3.3 h",
+    "bioavailability": "not determined (rapidly converted to NHC)",
+    "metabolism": "hydrolysis to NHC, then intracellular phosphorylation; NHC is broken down like endogenous pyrimidines",
+    "excretion": "mostly metabolised; little renal excretion of NHC"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "diarrhoea",
+      "nausea",
+      "dizziness"
+    ],
+    "serious": [
+      "hypersensitivity reactions",
+      "possible embryo-fetal toxicity (not recommended in pregnancy)",
+      "theoretical bone and cartilage toxicity (not authorised for under-18s in the US)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Molnupiravir was developed at Emory University with funding from US government programmes before COVID-19.",
+    "Sequencing studies have found molnupiravir-associated mutation signatures in circulating SARS-CoV-2 lineages."
+  ],
+  "related": [
+    "nirmatrelvir-ritonavir",
+    "remdesivir",
+    "ribavirin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Molnupiravir",
+      "url": "https://en.wikipedia.org/wiki/Molnupiravir"
+    },
+    {
+      "title": "FDA: Molnupiravir emergency use authorization",
+      "url": "https://www.fda.gov/media/155053/download"
+    },
+    {
+      "title": "Jayk Bernal A et al. Molnupiravir for oral treatment of Covid-19 in nonhospitalized patients. NEJM 2022",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2116044"
+    }
+  ],
+  "stage": "written"
 }

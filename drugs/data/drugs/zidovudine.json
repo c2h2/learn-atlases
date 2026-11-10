@@ -1,36 +1,132 @@
 {
   "slug": "zidovudine",
   "name": "Zidovudine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "azidothymidine",
+    "AZT",
+    "ZDV",
+    "BW A509U"
+  ],
+  "brands": [
+    "Retrovir"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Nucleoside reverse transcriptase inhibitor (NRTI; thymidine analogue)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "oral tablets, capsules or syrup twice daily, usually in combination; IV during labour to prevent mother-to-child transmission",
+  "targets": [
+    "HIV-1 reverse transcriptase"
+  ],
+  "origin": "synthetic",
+  "originator": "Jerome Horwitz (Michigan Cancer Foundation); developed as an HIV drug by Burroughs Wellcome with the US National Cancer Institute",
+  "owner": "ViiV Healthcare (Retrovir); generic (many)",
+  "first_approval": {
+    "year": 1987,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Retrovir"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1964,
+    "by": "Jerome Horwitz, Michigan Cancer Foundation",
+    "note": "Synthesised as a potential anticancer agent; anti-HIV activity was identified in 1985 by Hiroaki Mitsuya, Samuel Broder and colleagues at the NCI with Burroughs Wellcome."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "AZT, the first approved HIV drug and the first to cut mother-to-child transmission",
+  "summary": "Zidovudine (AZT) was the first drug approved to treat HIV, in 1987. It is a thymidine analogue that blocks HIV reverse transcriptase after activation inside cells. Its use alone was limited by resistance and toxicity, but it remains part of combination regimens and of programmes to prevent mother-to-child transmission.",
+  "mechanism": [
+    "Zidovudine is phosphorylated by cellular kinases (thymidine kinase, then thymidylate kinase and nucleoside diphosphate kinase) to zidovudine triphosphate.",
+    "The triphosphate competes with thymidine triphosphate for HIV reverse transcriptase and, once incorporated into viral DNA, terminates the chain because its 3'-azido group replaces the 3'-hydroxyl needed for the next bond. It inhibits human DNA polymerase gamma to a lesser extent, which explains mitochondrial toxicity such as myopathy and lactic acidosis."
+  ],
+  "uses": [
+    "HIV-1 infection in combination with other antiretrovirals",
+    "Prevention of perinatal (mother-to-child) HIV transmission",
+    "Post-exposure prophylaxis (historically)"
+  ],
+  "history": [
+    {
+      "year": 1964,
+      "title": "Synthesis",
+      "detail": "Jerome Horwitz synthesises 3'-azido-3'-deoxythymidine as a potential cancer drug; it proves ineffective."
+    },
+    {
+      "year": 1985,
+      "title": "Anti-HIV activity",
+      "detail": "NCI and Burroughs Wellcome scientists show AZT inhibits HIV in the laboratory; clinical trials start the same year."
+    },
+    {
+      "year": 1987,
+      "title": "First HIV drug",
+      "detail": "The FDA approves Retrovir in March 1987 after a placebo-controlled trial is stopped early for benefit; its high price draws protests."
+    },
+    {
+      "year": 1994,
+      "title": "ACTG 076",
+      "detail": "The ACTG 076 trial shows zidovudine reduces mother-to-child transmission by about two-thirds."
+    },
+    {
+      "year": 1997,
+      "title": "Combivir",
+      "detail": "A fixed-dose combination with lamivudine (Combivir) is approved."
+    },
+    {
+      "year": 2005,
+      "title": "Generics",
+      "detail": "Generic zidovudine becomes available in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "about 0.5–3 h in plasma; intracellular triphosphate longer",
+    "bioavailability": "about 64%",
+    "metabolism": "hepatic glucuronidation (UGT2B7) to inactive GZDV",
+    "excretion": "renal (as glucuronide and unchanged drug)"
+  },
+  "safety": {
+    "common": [
+      "headache",
+      "nausea",
+      "malaise",
+      "anorexia",
+      "nail and skin hyperpigmentation"
+    ],
+    "serious": [
+      "anaemia and neutropenia",
+      "symptomatic myopathy",
+      "lactic acidosis and severe hepatomegaly with steatosis",
+      "lipoatrophy"
+    ],
+    "boxed_warning": "Haematological toxicity (neutropenia and severe anaemia), symptomatic myopathy with prolonged use, and lactic acidosis with severe hepatomegaly with steatosis (US label)."
+  },
+  "facts": [
+    "AZT was the first drug approved for HIV, about four years after the virus was identified.",
+    "The approval process for AZT was one of the fastest in FDA history at the time.",
+    "Zidovudine and stavudine antagonise each other and should not be combined."
+  ],
+  "related": [
+    "lamivudine",
+    "abacavir",
+    "efavirenz"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Zidovudine",
+      "url": "https://en.wikipedia.org/wiki/Zidovudine"
+    },
+    {
+      "title": "DailyMed label search: Retrovir",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=retrovir"
+    },
+    {
+      "title": "Connor EM et al. Reduction of maternal-infant transmission of HIV type 1 with zidovudine treatment. NEJM 1994",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJM199411033311801"
+    }
+  ],
+  "stage": "written"
 }

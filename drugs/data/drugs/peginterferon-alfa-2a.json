@@ -1,36 +1,127 @@
 {
   "slug": "peginterferon-alfa-2a",
-  "name": "Peginterferon alfa 2a",
-  "aliases": [],
-  "brands": [],
+  "name": "Peginterferon alfa-2a",
+  "aliases": [
+    "pegylated interferon alfa-2a",
+    "PEG-IFN alfa-2a",
+    "Ro 25-8310"
+  ],
+  "brands": [
+    "Pegasys"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Pegylated type I interferon (immunomodulator and antiviral cytokine)",
+  "modality": "protein",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "subcutaneous injection once weekly",
+  "targets": [
+    "Interferon-alpha/beta receptor (IFNAR1/IFNAR2)"
+  ],
+  "origin": "biotech",
+  "originator": "Hoffmann-La Roche",
+  "owner": "pharma& (pharmaand GmbH; rights acquired from Roche)",
+  "first_approval": {
+    "year": 2002,
+    "agency": "EMA",
+    "country": "European Union",
+    "brand": "Pegasys"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Hoffmann-La Roche",
+    "note": "Recombinant interferon alfa-2a attached to a branched 40 kDa polyethylene glycol, slowing clearance to allow weekly dosing."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Weekly long-acting interferon, once the backbone of hepatitis C and B treatment",
+  "summary": "Peginterferon alfa-2a is recombinant interferon alfa-2a linked to a large branched polyethylene glycol molecule, which prolongs its action so it can be injected weekly. With ribavirin it was standard treatment for chronic hepatitis C for over a decade until interferon-free direct-acting antivirals replaced it. It is still used for a finite course in chronic hepatitis B and hepatitis D.",
+  "mechanism": [
+    "Interferon alfa binds the type I interferon receptor (IFNAR1/IFNAR2) and activates JAK1 and TYK2, which phosphorylate STAT1 and STAT2. These form the ISGF3 complex with IRF9 and switch on hundreds of interferon-stimulated genes that inhibit viral replication, such as protein kinase R, OAS/RNase L and Mx proteins.",
+    "Interferon also enhances antigen presentation and the activity of natural killer cells and cytotoxic T cells. Pegylation increases molecular size, reducing renal clearance and giving sustained blood levels."
+  ],
+  "uses": [
+    "Chronic hepatitis B (HBeAg-positive and negative) in adults and children",
+    "Chronic hepatitis C in combination with ribavirin or other antivirals (now rarely used)",
+    "Chronic hepatitis D (off-label in many countries)"
+  ],
+  "history": [
+    {
+      "year": 2002,
+      "title": "Approval",
+      "detail": "Pegasys is approved in the EU in June 2002 and by the FDA in October 2002 for chronic hepatitis C."
+    },
+    {
+      "year": 2004,
+      "title": "Combination with ribavirin",
+      "detail": "Pegasys plus ribavirin becomes a standard regimen for hepatitis C; approval for hepatitis B follows in 2005."
+    },
+    {
+      "year": 2005,
+      "title": "Hepatitis B",
+      "detail": "Pegasys is approved in the US for chronic hepatitis B."
+    },
+    {
+      "year": 2011,
+      "title": "Triple therapy",
+      "detail": "First-generation HCV protease inhibitors (telaprevir, boceprevir) are approved for use with peginterferon and ribavirin."
+    },
+    {
+      "year": 2014,
+      "title": "Decline in HCV",
+      "detail": "Interferon-free regimens largely end peginterferon use for hepatitis C."
+    }
+  ],
+  "pk": {
+    "half_life": "about 80 h (range 50–140 h) after subcutaneous injection",
+    "bioavailability": "about 84% after subcutaneous injection",
+    "metabolism": "proteolysis; the large PEG reduces renal clearance",
+    "excretion": "mainly hepatic; minor renal"
+  },
+  "safety": {
+    "common": [
+      "flu-like symptoms (fever, myalgia, headache, fatigue)",
+      "injection-site reactions",
+      "alopecia",
+      "depression and irritability",
+      "neutropenia and thrombocytopenia"
+    ],
+    "serious": [
+      "severe depression and suicidal ideation",
+      "autoimmune disorders including thyroiditis",
+      "ischaemic events",
+      "serious infections",
+      "hepatic decompensation in cirrhosis",
+      "ophthalmological disorders"
+    ],
+    "boxed_warning": "May cause or aggravate fatal or life-threatening neuropsychiatric, autoimmune, ischaemic and infectious disorders; monitor closely and withdraw for persistently severe or worsening signs (US label)."
+  },
+  "facts": [
+    "Peginterferon alfa-2a uses a 40 kDa branched PEG, whereas peginterferon alfa-2b uses a 12 kDa linear PEG.",
+    "A 48-week course of peginterferon is the only finite therapy for hepatitis B that can lead to HBsAg loss in a minority of patients."
+  ],
+  "related": [
+    "ribavirin",
+    "sofosbuvir",
+    "entecavir",
+    "interferon-beta-1a"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Peginterferon alfa-2a",
+      "url": "https://en.wikipedia.org/wiki/Peginterferon_alfa-2a"
+    },
+    {
+      "title": "DailyMed label search: Pegasys",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=pegasys"
+    },
+    {
+      "title": "EMA EPAR: Pegasys",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/pegasys"
+    }
+  ],
+  "stage": "written"
 }

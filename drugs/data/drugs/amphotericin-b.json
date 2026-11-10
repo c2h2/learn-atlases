@@ -1,36 +1,136 @@
 {
   "slug": "amphotericin-b",
-  "name": "Amphotericin b",
-  "aliases": [],
-  "brands": [],
+  "name": "Amphotericin B",
+  "aliases": [
+    "AmB",
+    "amphotericin B deoxycholate",
+    "liposomal amphotericin B (L-AmB)",
+    "amphotericin B lipid complex (ABLC)"
+  ],
+  "brands": [
+    "Fungizone",
+    "AmBisome",
+    "Abelcet"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Polyene antifungal (macrolide; ergosterol-binding)",
+  "modality": "small-molecule",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "slow IV infusion once daily (conventional deoxycholate or lipid formulations); single high-dose liposomal regimens for some indications",
+  "targets": [
+    "Ergosterol (fungal cell membrane)"
+  ],
+  "origin": "natural",
+  "originator": "Squibb Institute for Medical Research (from Streptomyces nodosus)",
+  "owner": "generic (many); AmBisome by Gilead Sciences",
+  "first_approval": {
+    "year": 1958,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Fungizone"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1955,
+    "by": "William Gold, Hugh Stout, John Pagano and Richard Donovick, Squibb Institute",
+    "note": "Isolated from Streptomyces nodosus in a soil sample from the Orinoco River region of Venezuela."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription (hospital use)",
+  "tagline": "Old, toxic but powerful polyene still central to life-threatening fungal infections",
+  "summary": "Amphotericin B is a polyene antifungal produced by the soil bacterium Streptomyces nodosus. It binds ergosterol in fungal membranes and kills a very broad range of fungi, and it is also active against Leishmania. Kidney toxicity and infusion reactions limit the conventional form; lipid formulations such as liposomal amphotericin B are much better tolerated.",
+  "mechanism": [
+    "Amphotericin B binds ergosterol, the main sterol of fungal membranes, much more strongly than cholesterol. Its molecules assemble into pores or 'sponge-like' extramembranous aggregates that extract ergosterol, causing leakage of ions such as potassium and cell death.",
+    "Binding to cholesterol in human cell membranes, particularly in the kidney, explains its toxicity. Lipid formulations deliver the drug preferentially to infected tissues and reduce exposure of the kidneys. Acquired resistance is rare, though some species (e.g. Aspergillus terreus, Candida lusitaniae) are intrinsically less susceptible."
+  ],
+  "uses": [
+    "Cryptococcal meningitis (induction, often with flucytosine)",
+    "Invasive candidiasis, aspergillosis and mucormycosis",
+    "Endemic mycoses such as histoplasmosis and blastomycosis (severe disease)",
+    "Empirical therapy of presumed fungal infection in febrile neutropenia (liposomal)",
+    "Visceral leishmaniasis (liposomal)"
+  ],
+  "history": [
+    {
+      "year": 1955,
+      "title": "Discovery",
+      "detail": "Squibb scientists isolate amphotericins A and B from Streptomyces nodosus."
+    },
+    {
+      "year": 1958,
+      "title": "First approval",
+      "detail": "Conventional amphotericin B deoxycholate (Fungizone) enters clinical use."
+    },
+    {
+      "year": 1990,
+      "title": "Liposomal formulation",
+      "detail": "AmBisome is approved in Europe; Abelcet (lipid complex) follows in the US in 1995 and AmBisome in 1997."
+    },
+    {
+      "year": 2010,
+      "title": "Leishmaniasis",
+      "detail": "A single dose of liposomal amphotericin B is shown to cure Indian visceral leishmaniasis; WHO recommends it for the Indian subcontinent."
+    },
+    {
+      "year": 2022,
+      "title": "AMBITION-cm",
+      "detail": "A single high dose of liposomal amphotericin B plus flucytosine and fluconazole proves non-inferior to standard therapy for HIV-associated cryptococcal meningitis, with fewer side effects; WHO adopts it."
+    }
+  ],
+  "pk": {
+    "half_life": "initial about 24 h; terminal elimination about 15 days (conventional)",
+    "bioavailability": "negligible oral absorption",
+    "metabolism": "not significantly metabolised",
+    "excretion": "slow; renal and biliary excretion of unchanged drug"
+  },
+  "safety": {
+    "common": [
+      "infusion reactions (fever, rigors, nausea, hypotension)",
+      "hypokalaemia and hypomagnesaemia",
+      "rising creatinine",
+      "anaemia",
+      "phlebitis"
+    ],
+    "serious": [
+      "acute kidney injury and renal tubular acidosis",
+      "cardiac arrhythmias from electrolyte loss or overdose",
+      "anaphylaxis",
+      "cardiac arrest with accidental overdose of conventional formulation"
+    ],
+    "boxed_warning": "Conventional amphotericin B: use primarily for progressive, potentially life-threatening fungal infections; verify product name and dose, as doses above 1.5 mg/kg can cause cardiopulmonary arrest (US label)."
+  },
+  "facts": [
+    "Conventional and lipid formulations have very different doses, and confusion between them has caused fatal overdoses.",
+    "Liposomal amphotericin B is donated by Gilead to WHO for visceral leishmaniasis programmes."
+  ],
+  "related": [
+    "nystatin",
+    "fluconazole",
+    "voriconazole",
+    "posaconazole",
+    "caspofungin",
+    "miltefosine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Amphotericin B",
+      "url": "https://en.wikipedia.org/wiki/Amphotericin_B"
+    },
+    {
+      "title": "DailyMed label search: amphotericin B",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=amphotericin+b"
+    },
+    {
+      "title": "DailyMed label search: AmBisome",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=ambisome"
+    },
+    {
+      "title": "Jarvis JN et al. Single-dose liposomal amphotericin B treatment for cryptococcal meningitis (AMBITION-cm). NEJM 2022",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2111904"
+    }
+  ],
+  "stage": "written"
 }

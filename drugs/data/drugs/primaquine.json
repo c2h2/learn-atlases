@@ -1,36 +1,121 @@
 {
   "slug": "primaquine",
   "name": "Primaquine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "SN-13272",
+    "primaquine phosphate"
+  ],
+  "brands": [
+    "Primaquine phosphate (Sanofi)",
+    "Primacin"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "8-Aminoquinoline antimalarial (tissue schizonticide and gametocytocide)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablets once daily for 7 or 14 days for radical cure; a single low dose to block falciparum transmission",
+  "targets": [
+    "Plasmodium liver-stage hypnozoites and gametocytes (via reactive oxygen species from metabolites)"
+  ],
+  "origin": "synthetic",
+  "originator": "US wartime antimalarial programme (Robert Elderfield and colleagues, Columbia University)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1952,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Primaquine phosphate"
+  },
+  "discovery": {
+    "year": 1946,
+    "by": "Robert C. Elderfield and colleagues, Columbia University",
+    "note": "8-Aminoquinoline developed as a less toxic successor to pamaquine."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Clears dormant vivax parasites from the liver, but dangerous in G6PD deficiency",
+  "summary": "Primaquine is an 8-aminoquinoline antimalarial that kills the dormant liver forms (hypnozoites) of Plasmodium vivax and P. ovale, preventing relapses, and the gametocytes of P. falciparum, blocking transmission to mosquitoes. It can cause severe haemolysis in people with G6PD deficiency, and research into this reaction led to the discovery of G6PD deficiency itself.",
+  "mechanism": [
+    "Primaquine is a prodrug. In the liver, CYP2D6 converts it to hydroxylated metabolites that redox-cycle and generate hydrogen peroxide and other reactive oxygen species, which kill hypnozoites and mature gametocytes.",
+    "The same oxidative stress damages red cells with low G6PD activity, which cannot regenerate enough NADPH to protect themselves. People with low CYP2D6 activity may respond poorly and relapse."
+  ],
+  "uses": [
+    "Radical cure (relapse prevention) of P. vivax and P. ovale malaria, after blood-stage treatment",
+    "Single low-dose primaquine to reduce P. falciparum transmission (WHO)",
+    "Pneumocystis pneumonia (with clindamycin; off-label)",
+    "Terminal prophylaxis after travel (some guidelines)"
+  ],
+  "history": [
+    {
+      "year": 1946,
+      "title": "Synthesis",
+      "detail": "Primaquine is synthesised in the US wartime antimalarial programme."
+    },
+    {
+      "year": 1952,
+      "title": "FDA approval",
+      "detail": "Primaquine phosphate is approved in the US for radical cure of vivax malaria."
+    },
+    {
+      "year": 1956,
+      "title": "G6PD discovery",
+      "detail": "Carson and colleagues identify glucose-6-phosphate dehydrogenase deficiency as the cause of primaquine-sensitive haemolysis."
+    },
+    {
+      "year": 2012,
+      "title": "Low-dose transmission blocking",
+      "detail": "WHO recommends a single low dose (0.25 mg/kg) of primaquine to block P. falciparum transmission."
+    },
+    {
+      "year": 2018,
+      "title": "Tafenoquine",
+      "detail": "Tafenoquine, a single-dose 8-aminoquinoline relative, is approved in the US as an alternative for radical cure."
+    }
+  ],
+  "pk": {
+    "half_life": "about 6 h",
+    "bioavailability": "about 96%",
+    "metabolism": "hepatic: CYP2D6 (active metabolites) and monoamine oxidase A (carboxyprimaquine)",
+    "excretion": "renal, mainly as metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "abdominal cramps and nausea (reduced with food)",
+      "mild methaemoglobinaemia"
+    ],
+    "serious": [
+      "acute haemolytic anaemia in G6PD deficiency",
+      "methaemoglobinaemia",
+      "leucopenia and agranulocytosis (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Primaquine-sensitivity studies in prison volunteers at Stateville, Illinois led to the identification of G6PD deficiency, one of the most common enzyme deficiencies in humans.",
+    "G6PD testing is recommended before standard radical-cure regimens."
+  ],
+  "related": [
+    "chloroquine",
+    "artemether-lumefantrine",
+    "clindamycin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Primaquine",
+      "url": "https://en.wikipedia.org/wiki/Primaquine"
+    },
+    {
+      "title": "DailyMed label search: primaquine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=primaquine"
+    },
+    {
+      "title": "WHO Guidelines for malaria",
+      "url": "https://www.who.int/publications/i/item/guidelines-for-malaria"
+    }
+  ],
+  "stage": "written"
 }

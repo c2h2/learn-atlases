@@ -1,36 +1,140 @@
 {
   "slug": "chloroquine",
   "name": "Chloroquine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Resochin",
+    "SN-7618",
+    "chloroquine phosphate"
+  ],
+  "brands": [
+    "Aralen",
+    "Nivaquine",
+    "Avloclor"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "4-Aminoquinoline antimalarial",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "im"
+  ],
+  "route_note": "oral tablets over 3 days for treatment; weekly tablets for prophylaxis; injection in some countries",
+  "targets": [
+    "Haem detoxification (haemozoin formation) in the Plasmodium digestive vacuole"
+  ],
+  "origin": "synthetic",
+  "originator": "Hans Andersag, Bayer (IG Farben)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1949,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Aralen"
+  },
+  "discovery": {
+    "year": 1934,
+    "by": "Hans Andersag and colleagues, Bayer (Elberfeld)",
+    "note": "Synthesised as 'Resochin' but initially judged too toxic; re-evaluated by US researchers during the Second World War as SN-7618."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Cheap antimalarial that transformed malaria control, until resistance spread",
+  "summary": "Chloroquine is a 4-aminoquinoline antimalarial that was the cornerstone of malaria treatment and of the WHO eradication campaign from the late 1940s. Widespread resistance in Plasmodium falciparum has ended its use for falciparum malaria in most regions, but it is still used for P. vivax, P. ovale and P. malariae in many areas. Tests of chloroquine and hydroxychloroquine for COVID-19 in 2020 found no benefit.",
+  "mechanism": [
+    "Inside red blood cells, malaria parasites digest haemoglobin in an acidic food vacuole and convert the toxic haem released into inert crystalline haemozoin. Chloroquine, a weak base, accumulates to high concentrations in the vacuole and binds haem, blocking its crystallisation.",
+    "Free haem and haem–chloroquine complexes damage parasite membranes and kill the blood-stage parasite. Resistance is mainly due to mutations in the P. falciparum chloroquine resistance transporter (PfCRT, especially K76T), which pumps the drug out of the vacuole."
+  ],
+  "uses": [
+    "Treatment of malaria caused by P. vivax, P. ovale, P. malariae and chloroquine-sensitive P. falciparum",
+    "Malaria prophylaxis in areas without chloroquine resistance",
+    "Extraintestinal amoebiasis",
+    "Rheumatoid arthritis and lupus (some countries; hydroxychloroquine is usually preferred)"
+  ],
+  "history": [
+    {
+      "year": 1934,
+      "title": "Synthesis",
+      "detail": "Andersag at Bayer synthesises Resochin, which is set aside as too toxic."
+    },
+    {
+      "year": 1946,
+      "title": "Wartime rediscovery",
+      "detail": "US wartime antimalarial research identifies SN-7618 as highly effective; it is named chloroquine and introduced after the war."
+    },
+    {
+      "year": 1949,
+      "title": "US approval",
+      "detail": "Chloroquine is approved in the US as Aralen."
+    },
+    {
+      "year": 1955,
+      "title": "Eradication campaign",
+      "detail": "WHO launches the Global Malaria Eradication Programme, relying on DDT and chloroquine."
+    },
+    {
+      "year": 1957,
+      "title": "Resistance",
+      "detail": "Chloroquine-resistant P. falciparum appears on the Thai–Cambodian border and, around 1960, in South America, later spreading to Africa."
+    },
+    {
+      "year": 2000,
+      "title": "PfCRT identified",
+      "detail": "Fidock and colleagues show that mutations in PfCRT cause chloroquine resistance."
+    },
+    {
+      "year": 2020,
+      "title": "COVID-19",
+      "detail": "The FDA issues an emergency use authorisation for COVID-19 in March and revokes it in June after evidence of no benefit and safety risks."
+    }
+  ],
+  "pk": {
+    "half_life": "very long, about 1–2 months (extensive tissue binding)",
+    "bioavailability": "about 89% (oral)",
+    "metabolism": "hepatic CYP2C8 and CYP3A4 to desethylchloroquine (active)",
+    "excretion": "renal (about half unchanged)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "nausea and abdominal cramps",
+      "headache",
+      "pruritus (especially in people of African descent)",
+      "blurred vision"
+    ],
+    "serious": [
+      "retinopathy with long-term use",
+      "QT prolongation and cardiomyopathy",
+      "severe hypoglycaemia",
+      "haemolysis in G6PD deficiency (rare)",
+      "potentially fatal toxicity in overdose, especially in children"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Small amounts of chloroquine can be fatal to young children; overdose causes rapid cardiovascular collapse.",
+    "Chloroquine-induced itching, common in Africa, was a frequent reason patients stopped treatment."
+  ],
+  "related": [
+    "hydroxychloroquine",
+    "primaquine",
+    "quinine",
+    "artemether-lumefantrine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Chloroquine",
+      "url": "https://en.wikipedia.org/wiki/Chloroquine"
+    },
+    {
+      "title": "DailyMed label search: chloroquine",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=chloroquine+phosphate"
+    },
+    {
+      "title": "WHO Guidelines for malaria",
+      "url": "https://www.who.int/publications/i/item/guidelines-for-malaria"
+    }
+  ],
+  "stage": "written"
 }

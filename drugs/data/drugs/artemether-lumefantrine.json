@@ -1,36 +1,138 @@
 {
   "slug": "artemether-lumefantrine",
-  "name": "Artemether lumefantrine",
-  "aliases": [],
-  "brands": [],
+  "name": "Artemether/lumefantrine",
+  "aliases": [
+    "co-artemether",
+    "AL",
+    "CGP 56697"
+  ],
+  "brands": [
+    "Coartem",
+    "Riamet",
+    "Coartem Dispersible"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Artemisinin-based combination therapy (ACT): artemisinin derivative plus aryl-amino alcohol",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "six doses over 3 days, taken with fat-containing food or milk; dispersible tablets for children",
+  "targets": [
+    "Haem-activated endoperoxide (artemether)",
+    "Haem detoxification in the parasite food vacuole (lumefantrine)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Academy of Military Medical Sciences, Beijing (Zhou Yiqing and colleagues); developed with Novartis",
+  "owner": "Novartis (Coartem); WHO-prequalified generics from several manufacturers",
+  "first_approval": {
+    "year": 1999,
+    "agency": "Swissmedic (IKS)",
+    "country": "Switzerland",
+    "brand": "Coartem/Riamet"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Zhou Yiqing and colleagues, Academy of Military Medical Sciences, Beijing",
+    "note": "Lumefantrine (benflumetol) was synthesised in China in the 1970s and combined with artemether into a fixed-dose tablet in the 1990s."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "World's most used malaria treatment: a fast artemisinin with a long-acting partner",
+  "summary": "Artemether/lumefantrine is a fixed-dose artemisinin-based combination therapy (ACT) for uncomplicated malaria. Artemether kills parasites very quickly, while the longer-lived lumefantrine eliminates those that remain. It is the most widely used malaria treatment in Africa, and Novartis supplies it at cost in malaria-endemic countries.",
+  "mechanism": [
+    "Artemisinins contain an endoperoxide bridge that is activated by ferrous iron and haem released when the parasite digests haemoglobin. Activation generates carbon-centred free radicals that alkylate haem and many parasite proteins, causing widespread damage and very rapid killing of blood-stage parasites, including young ring stages. Artemether is converted to dihydroartemisinin, which has a half-life of only an hour or two.",
+    "Lumefantrine, a lipophilic aryl-amino alcohol related to mefloquine and halofantrine, is thought to bind haem and block haemozoin formation. Its long half-life clears residual parasites and protects artemether from resistance. Partial artemisinin resistance linked to PfKelch13 mutations, first seen in Southeast Asia, has emerged in East Africa."
+  ],
+  "uses": [
+    "Treatment of acute uncomplicated Plasmodium falciparum malaria in adults and children weighing at least 5 kg (with newer formulations for smaller infants)",
+    "Uncomplicated mixed infections including P. falciparum",
+    "Completion of treatment after parenteral therapy for severe malaria"
+  ],
+  "history": [
+    {
+      "year": 1972,
+      "title": "Artemisinin isolated",
+      "detail": "Tu Youyou's team in Project 523 isolates artemisinin from sweet wormwood (Artemisia annua)."
+    },
+    {
+      "year": 1999,
+      "title": "First registration",
+      "detail": "Novartis registers the fixed-dose combination as Coartem/Riamet."
+    },
+    {
+      "year": 2001,
+      "title": "WHO agreement",
+      "detail": "Novartis agrees to supply Coartem at cost to the public sector in endemic countries; it is added to the WHO Model List in 2002."
+    },
+    {
+      "year": 2009,
+      "title": "Dispersible form and US approval",
+      "detail": "Coartem Dispersible for children is approved by Swissmedic, and the FDA approves Coartem as the first artemisinin-based drug in the US."
+    },
+    {
+      "year": 2015,
+      "title": "Nobel Prize",
+      "detail": "Tu Youyou receives the Nobel Prize in Physiology or Medicine for the discovery of artemisinin."
+    },
+    {
+      "year": 2021,
+      "title": "African resistance",
+      "detail": "Studies confirm PfKelch13 mutations associated with partial artemisinin resistance in Rwanda and Uganda."
+    },
+    {
+      "year": 2025,
+      "title": "Neonatal formulation",
+      "detail": "Swissmedic approves Coartem Baby, the first malaria treatment for newborns and young infants under 5 kg."
+    }
+  ],
+  "pk": {
+    "half_life": "artemether and dihydroartemisinin about 1–2 h; lumefantrine about 3–6 days",
+    "bioavailability": "variable; lumefantrine absorption greatly increased by dietary fat",
+    "metabolism": "artemether CYP3A4 to dihydroartemisinin; lumefantrine CYP3A4",
+    "excretion": "mainly faeces (lumefantrine)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "headache",
+      "dizziness",
+      "anorexia",
+      "nausea and vomiting",
+      "asthenia and arthralgia"
+    ],
+    "serious": [
+      "QT prolongation (lumefantrine)",
+      "hypersensitivity reactions",
+      "reduced efficacy if not taken with food"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Coartem was the first fixed-dose ACT to be prequalified by WHO.",
+    "Hundreds of millions of treatment courses have been delivered to endemic countries without profit since 2001."
+  ],
+  "related": [
+    "artesunate",
+    "chloroquine",
+    "quinine",
+    "primaquine",
+    "atovaquone-proguanil"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Artemether/lumefantrine",
+      "url": "https://en.wikipedia.org/wiki/Artemether/lumefantrine"
+    },
+    {
+      "title": "DailyMed label search: Coartem",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=coartem"
+    },
+    {
+      "title": "WHO Guidelines for malaria",
+      "url": "https://www.who.int/publications/i/item/guidelines-for-malaria"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,128 @@
 {
   "slug": "baloxavir-marboxil",
   "name": "Baloxavir marboxil",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "S-033188",
+    "RG6152",
+    "baloxavir acid (active form, S-033447)"
+  ],
+  "brands": [
+    "Xofluza"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Cap-dependent endonuclease inhibitor (influenza antiviral)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "single oral dose (tablets or granules for suspension), weight-based",
+  "targets": [
+    "Influenza polymerase acidic (PA) protein cap-dependent endonuclease"
+  ],
+  "origin": "synthetic",
+  "originator": "Shionogi",
+  "owner": "Shionogi; Roche/Genentech outside Japan and Taiwan",
+  "first_approval": {
+    "year": 2018,
+    "agency": "PMDA/MHLW",
+    "country": "Japan",
+    "brand": "Xofluza"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Shionogi",
+    "note": "Discovered from Shionogi's research on metal-chelating inhibitors of the influenza PA endonuclease, building on earlier HIV integrase work."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Single-dose flu antiviral that blocks the virus's cap-snatching step",
+  "summary": "Baloxavir marboxil is a prodrug of baloxavir acid, which inhibits the cap-dependent endonuclease of the influenza virus polymerase. It is taken as a single oral dose to treat uncomplicated influenza and to prevent it after exposure. It was the first influenza antiviral with a new mechanism in about two decades.",
+  "mechanism": [
+    "Influenza viruses make their mRNA by 'cap-snatching': the PA subunit of the viral polymerase cleaves the 5' cap and a short stretch of nucleotides from host pre-mRNAs to prime viral transcription.",
+    "Baloxavir acid chelates the two metal ions in the PA endonuclease active site and blocks this cleavage, shutting down viral mRNA synthesis and replication. It acts earlier in the virus life cycle than neuraminidase inhibitors and reduces viral shedding quickly. Reduced susceptibility is linked to PA substitutions such as I38T."
+  ],
+  "uses": [
+    "Treatment of acute uncomplicated influenza in patients aged 5 years and older with symptoms for no more than 48 hours (US)",
+    "Treatment of influenza in otherwise healthy or high-risk patients",
+    "Post-exposure prophylaxis of influenza"
+  ],
+  "history": [
+    {
+      "year": 2018,
+      "title": "Japanese approval",
+      "detail": "Xofluza is approved in Japan in February 2018 under the SAKIGAKE fast-track scheme."
+    },
+    {
+      "year": 2018,
+      "title": "FDA approval",
+      "detail": "The FDA approves Xofluza in October 2018 for uncomplicated influenza in people 12 years and older."
+    },
+    {
+      "year": 2019,
+      "title": "High-risk patients",
+      "detail": "The US label is extended to people at high risk of influenza complications."
+    },
+    {
+      "year": 2020,
+      "title": "Prophylaxis",
+      "detail": "The FDA approves post-exposure prophylaxis; the EU approves Xofluza in January 2021."
+    },
+    {
+      "year": 2022,
+      "title": "Children",
+      "detail": "US approval is extended to children aged 5 years and older."
+    },
+    {
+      "year": 2024,
+      "title": "Transmission trial",
+      "detail": "Roche reports that the phase III CENTERSTONE trial met its primary endpoint of reducing household transmission of influenza."
+    }
+  ],
+  "pk": {
+    "half_life": "about 79 h (baloxavir acid)",
+    "bioavailability": "not established in humans; absorption reduced by dairy, calcium, iron and other polyvalent cations",
+    "metabolism": "prodrug hydrolysed to baloxavir acid; mainly UGT1A3 glucuronidation, some CYP3A4",
+    "excretion": "mainly faeces"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "diarrhoea",
+      "bronchitis",
+      "nausea",
+      "headache"
+    ],
+    "serious": [
+      "anaphylaxis and hypersensitivity",
+      "emergence of resistant virus (PA I38T), especially in children"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "A single dose is a complete course of treatment.",
+    "It should not be taken with dairy products, calcium-fortified drinks or polyvalent-cation laxatives, antacids or supplements, which reduce its absorption."
+  ],
+  "related": [
+    "oseltamivir"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Baloxavir marboxil",
+      "url": "https://en.wikipedia.org/wiki/Baloxavir_marboxil"
+    },
+    {
+      "title": "DailyMed label search: Xofluza",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=xofluza"
+    },
+    {
+      "title": "EMA EPAR: Xofluza",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/xofluza"
+    },
+    {
+      "title": "Hayden FG et al. Baloxavir marboxil for uncomplicated influenza in adults and adolescents. NEJM 2018",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1716197"
+    }
+  ],
+  "stage": "written"
 }

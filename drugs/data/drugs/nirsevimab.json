@@ -1,36 +1,124 @@
 {
   "slug": "nirsevimab",
   "name": "Nirsevimab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "MEDI8897",
+    "nirsevimab-alip"
+  ],
+  "brands": [
+    "Beyfortus"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Long-acting monoclonal antibody against RSV fusion (F) protein",
+  "modality": "antibody",
+  "routes": [
+    "im"
+  ],
+  "route_note": "single intramuscular injection for infants before or during their first RSV season; second-season dose for some high-risk children",
+  "targets": [
+    "RSV fusion glycoprotein (prefusion F, site Ø)"
+  ],
+  "origin": "biotech",
+  "originator": "AstraZeneca (MedImmune), developed with Sanofi",
+  "owner": "Sanofi and AstraZeneca (Sanofi leads commercialisation)",
+  "first_approval": {
+    "year": 2022,
+    "agency": "EMA",
+    "country": "European Union",
+    "brand": "Beyfortus"
+  },
+  "discovery": {
+    "year": null,
+    "by": "MedImmune/AstraZeneca, from a human antibody (D25) isolated by AIMM Therapeutics",
+    "note": "Optimised human IgG1 with the YTE Fc mutation (M252Y/S254T/T256E) that extends half-life through FcRn binding."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "One-dose antibody that protects babies from RSV for a whole season",
+  "summary": "Nirsevimab is a long-acting human monoclonal antibody that binds the prefusion form of the respiratory syncytial virus (RSV) F protein. A single intramuscular dose protects infants through their first RSV season, cutting medically attended RSV lower respiratory infection by about three-quarters in trials. Unlike palivizumab, it is intended for all infants, not just those at high risk.",
+  "mechanism": [
+    "RSV enters cells when its fusion (F) glycoprotein switches from a metastable prefusion shape to a postfusion shape, merging viral and cell membranes. Nirsevimab binds site Ø at the apex of prefusion F, locking it and neutralising the virus.",
+    "Three amino-acid substitutions (YTE) in the Fc region increase binding to the neonatal Fc receptor at acidic pH, recycling the antibody and extending its half-life to about 2–3 months, enough to cover a typical RSV season with one dose."
+  ],
+  "uses": [
+    "Prevention of RSV lower respiratory tract disease in neonates and infants entering or born during their first RSV season",
+    "Prevention in children up to 24 months who remain vulnerable during their second RSV season"
+  ],
+  "history": [
+    {
+      "year": 2020,
+      "title": "Phase IIb",
+      "detail": "A trial in healthy preterm infants shows about 70% reduction in medically attended RSV infection (NEJM 2020)."
+    },
+    {
+      "year": 2022,
+      "title": "MELODY",
+      "detail": "The phase III MELODY trial in healthy late-preterm and term infants reports about 75% efficacy."
+    },
+    {
+      "year": 2022,
+      "title": "EU approval",
+      "detail": "The European Commission approves Beyfortus in October 2022, the first RSV prophylaxis for all infants."
+    },
+    {
+      "year": 2023,
+      "title": "FDA approval",
+      "detail": "The FDA approves Beyfortus in July 2023, and the US CDC recommends it for all infants under 8 months entering their first season."
+    },
+    {
+      "year": 2023,
+      "title": "Supply shortage",
+      "detail": "High demand during the 2023–24 US season leads to supply constraints and temporary prioritisation guidance."
+    },
+    {
+      "year": 2024,
+      "title": "Real-world impact",
+      "detail": "The HARMONIE trial and national programmes in Spain, France and elsewhere report large reductions in infant RSV hospitalisations."
+    }
+  ],
+  "pk": {
+    "half_life": "about 71 days",
+    "bioavailability": "IM bioavailability about 84%",
+    "metabolism": "catabolised like endogenous IgG",
+    "excretion": "not renally excreted"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "rash",
+      "injection-site reactions",
+      "fever"
+    ],
+    "serious": [
+      "hypersensitivity reactions including anaphylaxis (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Nirsevimab is one of the first antibodies used as population-wide passive immunisation for all healthy infants.",
+    "It is an alternative to maternal RSV vaccination during pregnancy; most infants need only one of the two."
+  ],
+  "related": [
+    "palivizumab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Nirsevimab",
+      "url": "https://en.wikipedia.org/wiki/Nirsevimab"
+    },
+    {
+      "title": "DailyMed label search: Beyfortus",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=beyfortus"
+    },
+    {
+      "title": "EMA EPAR: Beyfortus",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/beyfortus"
+    },
+    {
+      "title": "Hammitt LL et al. Nirsevimab for prevention of RSV in healthy late-preterm and term infants (MELODY). NEJM 2022",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2110275"
+    }
+  ],
+  "stage": "written"
 }

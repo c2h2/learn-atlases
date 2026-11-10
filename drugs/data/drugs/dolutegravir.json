@@ -1,36 +1,140 @@
 {
   "slug": "dolutegravir",
   "name": "Dolutegravir",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "DTG",
+    "S/GSK1349572",
+    "GSK1349572"
+  ],
+  "brands": [
+    "Tivicay",
+    "Triumeq (with abacavir and lamivudine)",
+    "Dovato (with lamivudine)",
+    "Juluca (with rilpivirine)"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Integrase strand transfer inhibitor (INSTI)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once daily (twice daily with some resistance or interacting drugs); dispersible tablets for children",
+  "targets": [
+    "HIV-1 integrase"
+  ],
+  "origin": "synthetic",
+  "originator": "Shionogi and ViiV Healthcare (Shionogi–ViiV joint venture)",
+  "owner": "ViiV Healthcare (GSK, Pfizer, Shionogi); generics in low- and middle-income countries",
+  "first_approval": {
+    "year": 2013,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Tivicay"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Shionogi–GlaxoSmithKline research collaboration",
+    "note": "Second-generation INSTI with a high genetic barrier to resistance."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "High-barrier integrase inhibitor at the heart of the WHO-preferred TLD regimen",
+  "summary": "Dolutegravir is a second-generation integrase strand transfer inhibitor taken once daily, with potent activity and a high barrier to resistance. Combined with tenofovir and lamivudine as the generic TLD tablet, it became WHO's preferred first-line HIV treatment and is taken by many millions of people. A 2018 neural tube defect signal was later found to be much smaller than first feared.",
+  "mechanism": [
+    "HIV integrase inserts the reverse-transcribed viral DNA into the host genome. Dolutegravir binds the integrase–viral DNA complex (intasome) and chelates the two magnesium ions in the active site, blocking the strand transfer step.",
+    "Its long dissociation half-life from the integrase–DNA complex contributes to its high barrier to resistance; emergent resistance in first-line use is rare, though mutations such as R263K, G118R and Q148 pathways can reduce susceptibility."
+  ],
+  "uses": [
+    "HIV-1 infection in adults and children (from 4 weeks and 3 kg in some labels) in combination with other antiretrovirals",
+    "Two-drug regimens with lamivudine (Dovato) or rilpivirine (Juluca)"
+  ],
+  "history": [
+    {
+      "year": 2013,
+      "title": "FDA approval",
+      "detail": "Tivicay is approved in August 2013; EU approval follows in 2014."
+    },
+    {
+      "year": 2014,
+      "title": "Triumeq",
+      "detail": "Dolutegravir/abacavir/lamivudine is approved."
+    },
+    {
+      "year": 2017,
+      "title": "Generic TLD",
+      "detail": "Licensing through the Medicines Patent Pool and pricing deals allow generic tenofovir/lamivudine/dolutegravir (TLD) at under $75 per year in many countries."
+    },
+    {
+      "year": 2018,
+      "title": "Neural tube defect signal",
+      "detail": "The Tsepamo study in Botswana reports a possible excess of neural tube defects with conception on dolutegravir; regulators issue warnings."
+    },
+    {
+      "year": 2019,
+      "title": "WHO preferred",
+      "detail": "With more data showing a much smaller risk, WHO recommends dolutegravir as preferred first- and second-line therapy for all populations, including women of child-bearing potential."
+    },
+    {
+      "year": 2020,
+      "title": "Paediatric dispersible",
+      "detail": "Dispersible 10 mg dolutegravir tablets for young children are approved in the US, and soon after in low-income countries."
+    }
+  ],
+  "pk": {
+    "half_life": "about 14 h",
+    "bioavailability": "not established; taken with or without food",
+    "metabolism": "UGT1A1 (main) and CYP3A4",
+    "excretion": "mainly faeces, some urine"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "insomnia",
+      "headache",
+      "nausea",
+      "diarrhoea",
+      "weight gain"
+    ],
+    "serious": [
+      "hypersensitivity reactions",
+      "hepatotoxicity, particularly with hepatitis B or C co-infection",
+      "neuropsychiatric effects including depression",
+      "possible small increase in neural tube defects with periconception exposure"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Dolutegravir slightly raises serum creatinine by inhibiting the renal transporter OCT2, without affecting true glomerular filtration.",
+    "It must be separated in time from antacids and supplements containing polyvalent cations, which bind it.",
+    "By the early 2020s more than 20 million people were receiving dolutegravir-based treatment, mostly as generic TLD."
+  ],
+  "related": [
+    "lamivudine",
+    "abacavir",
+    "tenofovir-disoproxil",
+    "bictegravir",
+    "raltegravir",
+    "cabotegravir",
+    "rilpivirine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Dolutegravir",
+      "url": "https://en.wikipedia.org/wiki/Dolutegravir"
+    },
+    {
+      "title": "DailyMed label search: Tivicay",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=tivicay"
+    },
+    {
+      "title": "EMA EPAR: Tivicay",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/tivicay"
+    },
+    {
+      "title": "Zash R et al. Neural-tube defects with dolutegravir treatment from the time of conception. NEJM 2018",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMc1807653"
+    }
+  ],
+  "stage": "written"
 }

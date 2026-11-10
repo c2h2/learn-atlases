@@ -1,36 +1,125 @@
 {
   "slug": "caspofungin",
   "name": "Caspofungin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "L-743,872",
+    "MK-0991",
+    "caspofungin acetate"
+  ],
+  "brands": [
+    "Cancidas"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Echinocandin antifungal (β-1,3-glucan synthase inhibitor)",
+  "modality": "peptide",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion once daily after a loading dose",
+  "targets": [
+    "Fungal β-(1,3)-D-glucan synthase (FKS1 catalytic subunit)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Merck & Co.",
+  "owner": "generic (many); Cancidas by Merck & Co. (MSD)",
+  "first_approval": {
+    "year": 2001,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Cancidas"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Merck Research Laboratories",
+    "note": "Semi-synthetic derivative of pneumocandin B0, a lipopeptide produced by the fungus Glarea lozoyensis."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription (hospital use)",
+  "tagline": "First echinocandin, attacking the fungal cell wall rather than its membrane",
+  "summary": "Caspofungin was the first echinocandin antifungal, approved in 2001. It inhibits synthesis of β-1,3-glucan, an essential component of the fungal cell wall that human cells lack, making it well tolerated. It is used for candidaemia and invasive candidiasis, as empirical therapy in febrile neutropenia and as salvage therapy for aspergillosis.",
+  "mechanism": [
+    "Caspofungin is a cyclic lipopeptide that non-competitively inhibits the β-(1,3)-D-glucan synthase complex (catalytic subunit Fks1p) in the fungal plasma membrane. Without glucan the cell wall becomes osmotically fragile.",
+    "It is fungicidal against most Candida species and fungistatic against Aspergillus, where it damages the growing hyphal tips. It has no useful activity against Cryptococcus or Mucorales. Resistance arises from mutations in hot-spot regions of FKS genes, increasingly seen in Candida glabrata and Candida auris."
+  ],
+  "uses": [
+    "Candidaemia and invasive candidiasis (intra-abdominal abscess, peritonitis, pleural infection)",
+    "Oesophageal candidiasis",
+    "Invasive aspergillosis in patients refractory to or intolerant of other therapies",
+    "Empirical therapy for presumed fungal infection in febrile neutropenic patients"
+  ],
+  "history": [
+    {
+      "year": 1974,
+      "title": "Echinocandin class",
+      "detail": "Echinocandin B, the first natural echinocandin, is described from Aspergillus species."
+    },
+    {
+      "year": 2001,
+      "title": "FDA approval",
+      "detail": "Cancidas is approved in January 2001 as salvage therapy for invasive aspergillosis; EU approval follows the same year."
+    },
+    {
+      "year": 2002,
+      "title": "Candidiasis",
+      "detail": "A trial against amphotericin B (Mora-Duarte et al., NEJM) supports approval for invasive candidiasis."
+    },
+    {
+      "year": 2004,
+      "title": "Febrile neutropenia",
+      "detail": "A trial against liposomal amphotericin B (Walsh et al., NEJM) supports approval for empirical therapy of presumed fungal infection in febrile neutropenia."
+    },
+    {
+      "year": 2008,
+      "title": "Children",
+      "detail": "Approval is extended to paediatric patients aged 3 months and older."
+    }
+  ],
+  "pk": {
+    "half_life": "β-phase about 9–11 h; terminal phase longer",
+    "bioavailability": "IV only (not absorbed orally)",
+    "metabolism": "slow peptide hydrolysis and N-acetylation; not a CYP substrate",
+    "excretion": "urine and faeces as metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "fever",
+      "phlebitis",
+      "raised liver enzymes",
+      "rash",
+      "hypokalaemia"
+    ],
+    "serious": [
+      "histamine-mediated infusion reactions",
+      "anaphylaxis",
+      "hepatic dysfunction",
+      "severe skin reactions (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Echinocandins target a structure found in fungal cell walls but not in human cells, which explains their good tolerability.",
+    "Ciclosporin increases caspofungin exposure, and inducers such as rifampicin lower it."
+  ],
+  "related": [
+    "amphotericin-b",
+    "fluconazole",
+    "voriconazole"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Caspofungin",
+      "url": "https://en.wikipedia.org/wiki/Caspofungin"
+    },
+    {
+      "title": "DailyMed label search: Cancidas",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=cancidas"
+    },
+    {
+      "title": "EMA EPAR: Cancidas",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/cancidas"
+    }
+  ],
+  "stage": "written"
 }

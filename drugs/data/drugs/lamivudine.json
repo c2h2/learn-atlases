@@ -1,36 +1,133 @@
 {
   "slug": "lamivudine",
   "name": "Lamivudine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "3TC",
+    "BCH-189 (racemate)",
+    "GR109714X"
+  ],
+  "brands": [
+    "Epivir",
+    "Epivir-HBV",
+    "Zeffix"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Nucleoside reverse transcriptase inhibitor (NRTI; cytidine analogue)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablets or solution once or twice daily; usually in fixed-dose combinations",
+  "targets": [
+    "HIV-1/HIV-2 reverse transcriptase",
+    "Hepatitis B virus polymerase"
+  ],
+  "origin": "synthetic",
+  "originator": "IAF BioChem International (Bernard Belleau), developed with Glaxo",
+  "owner": "ViiV Healthcare (Epivir); generic (many)",
+  "first_approval": {
+    "year": 1995,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Epivir"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1989,
+    "by": "Bernard Belleau and Paul Nguyen-Ba, IAF BioChem International (Montreal)",
+    "note": "Oxathiolane cytidine analogue; the (–)-enantiomer was found to be both more active and less toxic than the racemate."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "3TC, a well-tolerated cornerstone of HIV combinations worldwide",
+  "summary": "Lamivudine (3TC) is a cytidine analogue that inhibits the reverse transcriptase of HIV and the polymerase of hepatitis B virus. It is well tolerated and forms part of many first-line HIV regimens, including the dolutegravir-based combinations used worldwide. It was also the first oral drug for chronic hepatitis B.",
+  "mechanism": [
+    "Lamivudine is phosphorylated in cells to lamivudine triphosphate, which competes with deoxycytidine triphosphate for HIV reverse transcriptase and HBV polymerase. Incorporation into viral DNA causes chain termination because the oxathiolane ring lacks a 3'-hydroxyl group.",
+    "A single mutation, M184V/I in HIV reverse transcriptase (or YMDD-motif mutations in HBV), confers high-level resistance; M184V also reduces viral fitness and increases susceptibility to zidovudine and tenofovir."
+  ],
+  "uses": [
+    "HIV-1 infection in combination with other antiretrovirals",
+    "Chronic hepatitis B (lower dose; now largely replaced by entecavir or tenofovir)",
+    "HIV pre- and post-exposure prophylaxis as part of combinations (some guidelines)"
+  ],
+  "history": [
+    {
+      "year": 1989,
+      "title": "Discovery",
+      "detail": "BCH-189 is synthesised at IAF BioChem in Montreal; its (–)-enantiomer becomes lamivudine."
+    },
+    {
+      "year": 1995,
+      "title": "FDA approval",
+      "detail": "Epivir is approved for HIV in combination with zidovudine."
+    },
+    {
+      "year": 1997,
+      "title": "Combivir",
+      "detail": "The lamivudine/zidovudine fixed-dose combination is approved."
+    },
+    {
+      "year": 1998,
+      "title": "Hepatitis B",
+      "detail": "Epivir-HBV becomes the first oral therapy approved for chronic hepatitis B in the US."
+    },
+    {
+      "year": 2004,
+      "title": "Combinations",
+      "detail": "Lamivudine/abacavir (Epzicom/Kivexa) is approved; later combinations include Triumeq (2014) and Dovato (2019)."
+    },
+    {
+      "year": 2019,
+      "title": "Two-drug regimen",
+      "detail": "Dolutegravir/lamivudine (Dovato) is approved as a complete two-drug regimen."
+    }
+  ],
+  "pk": {
+    "half_life": "plasma 5–7 h; intracellular triphosphate 10–15 h or longer",
+    "bioavailability": "about 86% in adults",
+    "metabolism": "minimal (small amount to trans-sulfoxide)",
+    "excretion": "renal, mostly unchanged"
+  },
+  "safety": {
+    "common": [
+      "headache",
+      "nausea",
+      "fatigue",
+      "diarrhoea",
+      "cough"
+    ],
+    "serious": [
+      "severe acute exacerbation of hepatitis B on discontinuation in HBV co-infection",
+      "pancreatitis (mainly paediatric reports)",
+      "lactic acidosis (rare)"
+    ],
+    "boxed_warning": "Exacerbations of hepatitis B on discontinuation; and, for Epivir-HBV, risk of HIV-1 resistance if used in unrecognised or untreated HIV (US label)."
+  },
+  "facts": [
+    "Lamivudine is one of the most widely used antiretrovirals worldwide, included in the WHO-preferred TLD regimen (tenofovir/lamivudine/dolutegravir).",
+    "Emtricitabine is a close fluorinated analogue, and the two are not used together."
+  ],
+  "related": [
+    "zidovudine",
+    "abacavir",
+    "dolutegravir",
+    "emtricitabine",
+    "entecavir"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Lamivudine",
+      "url": "https://en.wikipedia.org/wiki/Lamivudine"
+    },
+    {
+      "title": "DailyMed label search: Epivir",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=epivir"
+    },
+    {
+      "title": "EMA EPAR: Epivir",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/epivir"
+    }
+  ],
+  "stage": "written"
 }

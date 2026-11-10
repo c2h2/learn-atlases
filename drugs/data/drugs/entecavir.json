@@ -1,36 +1,121 @@
 {
   "slug": "entecavir",
   "name": "Entecavir",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BMS-200475",
+    "ETV",
+    "entecavir monohydrate"
+  ],
+  "brands": [
+    "Baraclude"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Nucleoside analogue HBV polymerase inhibitor (carbocyclic guanosine analogue)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet or solution once daily on an empty stomach",
+  "targets": [
+    "Hepatitis B virus polymerase (reverse transcriptase)"
+  ],
+  "origin": "synthetic",
+  "originator": "Bristol-Myers Squibb",
+  "owner": "generic (many); Baraclude by Bristol-Myers Squibb",
+  "first_approval": {
+    "year": 2005,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Baraclude"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Bristol-Myers Squibb",
+    "note": "Carbocyclic deoxyguanosine analogue originally investigated against herpesviruses, found to be highly potent against HBV."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Potent, high-barrier first-line oral drug for chronic hepatitis B",
+  "summary": "Entecavir is a guanosine nucleoside analogue that strongly suppresses hepatitis B virus replication. Together with tenofovir it is a first-line treatment for chronic hepatitis B, with a very low rate of resistance in previously untreated patients. Long-term use reduces liver inflammation and fibrosis and lowers the risk of cirrhosis complications.",
+  "mechanism": [
+    "Entecavir is phosphorylated in cells to entecavir triphosphate, which competes with deoxyguanosine triphosphate and inhibits all three activities of the HBV polymerase: priming, reverse transcription of pregenomic RNA and synthesis of positive-strand DNA.",
+    "Resistance in treatment-naive patients is rare (about 1% after 5 years), but prior lamivudine resistance (rtM204V/I) lowers the barrier. Entecavir has weak anti-HIV activity and can select the M184V mutation in untreated HIV."
+  ],
+  "uses": [
+    "Chronic hepatitis B in adults and children aged 2 years and older with active viral replication and liver inflammation",
+    "Chronic hepatitis B with decompensated liver disease"
+  ],
+  "history": [
+    {
+      "year": 2005,
+      "title": "FDA approval",
+      "detail": "Baraclude is approved in March 2005; EU approval follows in 2006."
+    },
+    {
+      "year": 2006,
+      "title": "EU approval",
+      "detail": "Baraclude is approved in the EU in June 2006."
+    },
+    {
+      "year": 2007,
+      "title": "HIV warning",
+      "detail": "Reports that entecavir can select M184V in HIV co-infection lead to recommendations against use without effective HIV therapy."
+    },
+    {
+      "year": 2014,
+      "title": "US generics",
+      "detail": "Generic entecavir becomes available in the US."
+    },
+    {
+      "year": 2015,
+      "title": "WHO guidelines",
+      "detail": "WHO's first hepatitis B guidelines recommend entecavir or tenofovir as first-line therapy."
+    }
+  ],
+  "pk": {
+    "half_life": "terminal about 128–149 h; intracellular triphosphate about 15 h",
+    "bioavailability": "at least 70%; taken on an empty stomach",
+    "metabolism": "not a CYP substrate; minor glucuronidation",
+    "excretion": "renal, mostly unchanged"
+  },
+  "safety": {
+    "common": [
+      "headache",
+      "fatigue",
+      "dizziness",
+      "nausea"
+    ],
+    "serious": [
+      "severe acute exacerbation of hepatitis B on discontinuation",
+      "lactic acidosis and hepatomegaly, particularly in decompensated disease",
+      "selection of HIV resistance in untreated co-infection"
+    ],
+    "boxed_warning": "Severe acute exacerbations of hepatitis B on discontinuation; HIV/HBV co-infection (risk of HIV resistance); lactic acidosis and hepatomegaly (US label)."
+  },
+  "facts": [
+    "Entecavir is one of the most potent anti-HBV drugs, with a daily dose of only 0.5–1 mg.",
+    "In China, where generic entecavir is inexpensive, it is one of the most widely used hepatitis B treatments."
+  ],
+  "related": [
+    "tenofovir-disoproxil",
+    "tenofovir-alafenamide",
+    "lamivudine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Entecavir",
+      "url": "https://en.wikipedia.org/wiki/Entecavir"
+    },
+    {
+      "title": "DailyMed label search: Baraclude",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=baraclude"
+    },
+    {
+      "title": "EMA EPAR: Baraclude",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/baraclude"
+    }
+  ],
+  "stage": "written"
 }

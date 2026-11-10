@@ -1,36 +1,125 @@
 {
   "slug": "remdesivir",
   "name": "Remdesivir",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "GS-5734"
+  ],
+  "brands": [
+    "Veklury"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Nucleotide analogue RNA polymerase inhibitor (adenosine analogue prodrug)",
+  "modality": "small-molecule",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion once daily; 3-day course in non-hospitalised high-risk patients, 5–10 days in hospital",
+  "targets": [
+    "SARS-CoV-2 RNA-dependent RNA polymerase (nsp12)"
+  ],
+  "origin": "synthetic",
+  "originator": "Gilead Sciences",
+  "owner": "Gilead Sciences",
+  "first_approval": {
+    "year": 2020,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Veklury"
+  },
+  "discovery": {
+    "year": 2009,
+    "by": "Gilead Sciences",
+    "note": "Emerged from Gilead's programme of 1'-cyano C-nucleoside analogues against RNA viruses (hepatitis C, RSV); broad activity against Ebola and coronaviruses was later found."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription (hospital and infusion settings)",
+  "tagline": "The first antiviral fully approved for COVID-19, given by infusion",
+  "summary": "Remdesivir is an intravenous phosphoramidate prodrug of an adenosine nucleotide analogue that inhibits viral RNA-dependent RNA polymerase. Tested first against Ebola, it became the first drug approved by the FDA for COVID-19 in October 2020. It shortens recovery in hospitalised patients and reduces hospitalisation when given early to high-risk outpatients.",
+  "mechanism": [
+    "Remdesivir enters cells and is converted to its active triphosphate form (GS-443902), which competes with ATP for incorporation by the viral RNA-dependent RNA polymerase.",
+    "Once incorporated, it causes delayed chain termination: the polymerase adds a few more nucleotides and then stalls, because the 1'-cyano group clashes with the enzyme. Its relative resistance to the coronavirus proofreading exonuclease contributes to its activity."
+  ],
+  "uses": [
+    "COVID-19 in hospitalised adults and children",
+    "COVID-19 in non-hospitalised patients at high risk of progression (3-day course)"
+  ],
+  "history": [
+    {
+      "year": 2016,
+      "title": "Ebola activity",
+      "detail": "Gilead and US Army researchers report that GS-5734 protects rhesus monkeys from Ebola virus."
+    },
+    {
+      "year": 2019,
+      "title": "PALM trial",
+      "detail": "In the Democratic Republic of Congo Ebola trial, remdesivir is less effective than the antibody treatments and that arm is stopped."
+    },
+    {
+      "year": 2020,
+      "title": "Emergency use",
+      "detail": "After the ACTT-1 trial shows faster recovery, the FDA issues an emergency use authorisation on 1 May 2020; Japan and the EU (conditional) approve it soon after."
+    },
+    {
+      "year": 2020,
+      "title": "WHO Solidarity",
+      "detail": "Interim results of the WHO Solidarity trial show little or no effect on mortality, and WHO briefly advises against routine use."
+    },
+    {
+      "year": 2020,
+      "title": "FDA approval",
+      "detail": "Veklury becomes the first FDA-approved COVID-19 treatment on 22 October 2020."
+    },
+    {
+      "year": 2022,
+      "title": "Outpatients",
+      "detail": "Based on the PINETREE trial, the FDA extends approval to a 3-day course for high-risk non-hospitalised patients."
+    }
+  ],
+  "pk": {
+    "half_life": "remdesivir about 1 h; nucleoside metabolite GS-441524 about 27 h",
+    "bioavailability": "IV only (poor oral bioavailability)",
+    "metabolism": "hydrolases (carboxylesterase 1, cathepsin A) and phosphorylation to the active triphosphate",
+    "excretion": "mainly renal, as GS-441524"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "nausea",
+      "raised liver transaminases"
+    ],
+    "serious": [
+      "infusion-related and hypersensitivity reactions",
+      "transaminase elevations",
+      "bradycardia"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Remdesivir was originally investigated for hepatitis C and respiratory syncytial virus before being tested against Ebola.",
+    "Its sulfobutylether-beta-cyclodextrin excipient was a reason for initial caution in severe kidney disease; the US label no longer requires dose adjustment."
+  ],
+  "related": [
+    "nirmatrelvir-ritonavir",
+    "molnupiravir"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Remdesivir",
+      "url": "https://en.wikipedia.org/wiki/Remdesivir"
+    },
+    {
+      "title": "DailyMed label search: Veklury",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=veklury"
+    },
+    {
+      "title": "EMA EPAR: Veklury",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/veklury"
+    },
+    {
+      "title": "Beigel JH et al. Remdesivir for the treatment of Covid-19 — final report. NEJM 2020",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2007764"
+    }
+  ],
+  "stage": "written"
 }

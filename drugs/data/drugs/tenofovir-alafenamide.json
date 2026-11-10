@@ -1,36 +1,133 @@
 {
   "slug": "tenofovir-alafenamide",
   "name": "Tenofovir alafenamide",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "TAF",
+    "GS-7340",
+    "tenofovir alafenamide fumarate"
+  ],
+  "brands": [
+    "Vemlidy",
+    "Descovy (with emtricitabine)",
+    "Genvoya, Odefsey, Biktarvy (combinations)"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Nucleotide reverse transcriptase inhibitor (NtRTI; phosphonamidate prodrug of tenofovir)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once daily, alone for hepatitis B or in HIV fixed-dose combinations",
+  "targets": [
+    "HIV-1 reverse transcriptase",
+    "Hepatitis B virus polymerase"
+  ],
+  "origin": "synthetic",
+  "originator": "Gilead Sciences",
+  "owner": "Gilead Sciences",
+  "first_approval": {
+    "year": 2015,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Genvoya (elvitegravir/cobicistat/emtricitabine/TAF)"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Gilead Sciences",
+    "note": "Phosphonamidate prodrug designed to stay stable in plasma and release tenofovir inside lymphocytes and hepatocytes, mainly via cathepsin A."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Newer tenofovir prodrug: a fraction of the dose, gentler on kidneys and bone",
+  "summary": "Tenofovir alafenamide (TAF) is a prodrug of tenofovir that is more stable in plasma than tenofovir disoproxil and is converted to the active drug mainly inside cells. This gives high intracellular levels with about 90% lower plasma tenofovir, reducing effects on kidneys and bone. It is used in HIV combinations, for HIV PrEP and for chronic hepatitis B.",
+  "mechanism": [
+    "TAF enters lymphocytes, macrophages and hepatocytes (via OATP1B1/1B3 uptake in the liver) and is hydrolysed by cathepsin A, and in the liver by carboxylesterase 1, to tenofovir. Cellular kinases then form tenofovir diphosphate.",
+    "Tenofovir diphosphate inhibits HIV reverse transcriptase and HBV polymerase as a chain terminator, exactly as with tenofovir disoproxil; the difference lies in where the active drug is generated."
+  ],
+  "uses": [
+    "HIV-1 infection, as part of combination tablets (Genvoya, Descovy, Odefsey, Biktarvy, Symtuza)",
+    "HIV-1 pre-exposure prophylaxis with emtricitabine (Descovy; not for receptive vaginal sex in the US label)",
+    "Chronic hepatitis B with compensated liver disease (Vemlidy)"
+  ],
+  "history": [
+    {
+      "year": 2015,
+      "title": "First approval",
+      "detail": "TAF is first approved in the four-drug single tablet Genvoya in November 2015."
+    },
+    {
+      "year": 2016,
+      "title": "Descovy and Vemlidy",
+      "detail": "Emtricitabine/TAF (Descovy) is approved for HIV, and TAF alone (Vemlidy) for chronic hepatitis B."
+    },
+    {
+      "year": 2018,
+      "title": "Biktarvy",
+      "detail": "Bictegravir/emtricitabine/TAF is approved and becomes the most prescribed HIV regimen in the US."
+    },
+    {
+      "year": 2019,
+      "title": "PrEP",
+      "detail": "Descovy is approved for PrEP after the DISCOVER trial in men who have sex with men and transgender women."
+    },
+    {
+      "year": 2022,
+      "title": "HBV in adolescents",
+      "detail": "Vemlidy is approved in the US for adolescents with chronic hepatitis B, later extended to younger children."
+    }
+  ],
+  "pk": {
+    "half_life": "plasma TAF about 0.5 h; intracellular tenofovir diphosphate very long",
+    "bioavailability": "not established; high-fat meal increases exposure",
+    "metabolism": "cathepsin A (lymphocytes) and carboxylesterase 1 (hepatocytes) to tenofovir; weak CYP3A substrate",
+    "excretion": "mainly as tenofovir in urine and faeces"
+  },
+  "safety": {
+    "common": [
+      "headache",
+      "nausea",
+      "fatigue",
+      "abdominal pain"
+    ],
+    "serious": [
+      "new-onset or worsening renal impairment (less frequent than with tenofovir disoproxil)",
+      "lactic acidosis (rare)",
+      "HBV flare after stopping",
+      "weight gain and lipid increases compared with TDF"
+    ],
+    "boxed_warning": "Severe acute exacerbations of hepatitis B in patients co-infected with HBV who discontinue the drug (US label)."
+  },
+  "facts": [
+    "The daily dose of TAF (10–25 mg) is about a tenth of the 300 mg dose of tenofovir disoproxil.",
+    "Generic versions are made in India under Gilead's voluntary licences for low- and middle-income countries, while patents remain in the US and Europe."
+  ],
+  "related": [
+    "tenofovir-disoproxil",
+    "emtricitabine",
+    "bictegravir",
+    "rilpivirine",
+    "darunavir",
+    "entecavir"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Tenofovir alafenamide",
+      "url": "https://en.wikipedia.org/wiki/Tenofovir_alafenamide"
+    },
+    {
+      "title": "DailyMed label search: Vemlidy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=vemlidy"
+    },
+    {
+      "title": "EMA EPAR: Vemlidy",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/vemlidy"
+    },
+    {
+      "title": "DailyMed label search: Descovy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=descovy"
+    }
+  ],
+  "stage": "written"
 }

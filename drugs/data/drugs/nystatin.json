@@ -1,36 +1,120 @@
 {
   "slug": "nystatin",
   "name": "Nystatin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "fungicidin"
+  ],
+  "brands": [
+    "Mycostatin",
+    "Nystan"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Polyene antifungal (ergosterol-binding)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "topical",
+    "vaginal"
+  ],
+  "route_note": "oral suspension or pastilles held in the mouth (not systemically absorbed); creams, ointments and powders; vaginal tablets",
+  "targets": [
+    "Ergosterol (fungal cell membrane)"
+  ],
+  "origin": "natural",
+  "originator": "New York State Department of Health (Elizabeth Lee Hazen and Rachel Fuller Brown); licensed to E. R. Squibb & Sons",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1954,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Mycostatin"
+  },
+  "discovery": {
+    "year": 1950,
+    "by": "Elizabeth Lee Hazen and Rachel Fuller Brown",
+    "note": "Isolated from Streptomyces noursei found in soil from a farm in Virginia; named after the New York State Department of Health."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription; some topical forms OTC",
+  "tagline": "First useful polyene antifungal, still used for oral thrush and skin candidiasis",
+  "summary": "Nystatin is a polyene antifungal produced by Streptomyces noursei and was the first antifungal of its class to be used clinically. It is too toxic for injection and is not absorbed from the gut, so it is used only on the skin and mucous membranes. Its main uses are oral thrush, candidiasis of the skin and vaginal candidiasis.",
+  "mechanism": [
+    "Like amphotericin B, nystatin binds ergosterol in fungal membranes and forms channels that let potassium and other small molecules leak out, killing the cell.",
+    "Because almost none is absorbed from the gastrointestinal tract or intact skin, it acts locally and causes few systemic effects. Resistance in Candida is uncommon."
+  ],
+  "uses": [
+    "Oral and oesophageal candidiasis (oral suspension)",
+    "Cutaneous and mucocutaneous Candida infections (topical)",
+    "Vaginal candidiasis",
+    "Prevention of oral candidiasis in some immunocompromised or neonatal patients"
+  ],
+  "history": [
+    {
+      "year": 1948,
+      "title": "Collaboration",
+      "detail": "Hazen, in New York City, and Brown, in Albany, begin screening soil actinomycetes for antifungal activity."
+    },
+    {
+      "year": 1950,
+      "title": "Discovery",
+      "detail": "Hazen and Brown, working by mail between New York City and Albany, report the antifungal 'fungicidin', renamed nystatin."
+    },
+    {
+      "year": 1954,
+      "title": "Clinical use",
+      "detail": "Squibb markets nystatin as Mycostatin."
+    },
+    {
+      "year": 1955,
+      "title": "Amphotericin B",
+      "detail": "A second polyene, amphotericin B, is discovered; it becomes the systemic polyene of choice while nystatin remains topical and oral."
+    },
+    {
+      "year": 1994,
+      "title": "Inventors' Hall of Fame",
+      "detail": "Hazen and Brown are inducted into the National Inventors Hall of Fame."
+    }
+  ],
+  "pk": {
+    "half_life": "not applicable (not absorbed)",
+    "bioavailability": "negligible from gut, skin and mucosa",
+    "metabolism": "none systemically",
+    "excretion": "faeces, unchanged"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "nausea, vomiting and diarrhoea at high oral doses",
+      "local irritation"
+    ],
+    "serious": [
+      "hypersensitivity reactions and Stevens–Johnson syndrome (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "The name nystatin comes from 'New York State', where its discoverers worked.",
+    "Hazen and Brown gave their royalties to the non-profit Research Corporation to fund scientific research.",
+    "Nystatin was also used to treat fungal damage to art and historic buildings, including after the 1966 Florence flood."
+  ],
+  "related": [
+    "amphotericin-b",
+    "fluconazole"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Nystatin",
+      "url": "https://en.wikipedia.org/wiki/Nystatin"
+    },
+    {
+      "title": "Wikipedia: Elizabeth Lee Hazen",
+      "url": "https://en.wikipedia.org/wiki/Elizabeth_Lee_Hazen"
+    },
+    {
+      "title": "DailyMed label search: nystatin",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=nystatin"
+    }
+  ],
+  "stage": "written"
 }

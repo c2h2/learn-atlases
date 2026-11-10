@@ -1,36 +1,120 @@
 {
   "slug": "terbinafine",
   "name": "Terbinafine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "SF 86-327",
+    "terbinafine hydrochloride"
+  ],
+  "brands": [
+    "Lamisil"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Allylamine antifungal (squalene epoxidase inhibitor)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "topical"
+  ],
+  "route_note": "oral tablet once daily for 6–12 weeks (nail infections); cream, gel, spray or film-forming solution for skin infections",
+  "targets": [
+    "Fungal squalene epoxidase (ERG1)"
+  ],
+  "origin": "synthetic",
+  "originator": "Sandoz Research Institute, Vienna (Anton Stütz and colleagues)",
+  "owner": "generic (many); Lamisil by Novartis/Haleon (topical OTC)",
+  "first_approval": {
+    "year": 1991,
+    "agency": "MCA (UK)",
+    "country": "United Kingdom",
+    "brand": "Lamisil"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Anton Stütz and colleagues, Sandoz Research Institute, Vienna",
+    "note": "Developed from naftifine, an allylamine discovered by chance in the 1970s, to give a more potent oral agent."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription (oral); topical forms OTC in many countries",
+  "tagline": "Allylamine antifungal for fungal nails and athlete's foot, blocking squalene epoxidase",
+  "summary": "Terbinafine is an allylamine antifungal that blocks squalene epoxidase, an early step in ergosterol synthesis. It is highly active against dermatophytes and accumulates in skin, hair and nails, making it a first-line oral treatment for fungal nail infections and tinea capitis and a widely used topical treatment for athlete's foot. The spread of resistant Trichophyton indotineae is a growing concern.",
+  "mechanism": [
+    "Terbinafine non-competitively inhibits fungal squalene epoxidase, which converts squalene to 2,3-oxidosqualene on the way to ergosterol. Ergosterol depletion weakens the membrane, and accumulated squalene is directly toxic, so terbinafine is fungicidal against dermatophytes.",
+    "It is far more selective for the fungal enzyme than for its mammalian counterpart. Resistance in Trichophyton is caused by point mutations in the squalene epoxidase (SQLE) gene, as in the epidemic T. indotineae strains first reported from India."
+  ],
+  "uses": [
+    "Onychomycosis of toenails and fingernails caused by dermatophytes (oral)",
+    "Tinea capitis (oral; granules in children in the US)",
+    "Tinea pedis, cruris and corporis (topical or oral)",
+    "Pityriasis versicolor (topical)"
+  ],
+  "history": [
+    {
+      "year": 1991,
+      "title": "First approval",
+      "detail": "Oral and topical terbinafine are introduced in Europe."
+    },
+    {
+      "year": 1992,
+      "title": "US topical approval",
+      "detail": "Lamisil cream is approved by the FDA."
+    },
+    {
+      "year": 1996,
+      "title": "US oral approval",
+      "detail": "Lamisil tablets are approved for onychomycosis."
+    },
+    {
+      "year": 2007,
+      "title": "US generics",
+      "detail": "Generic oral terbinafine becomes available in the US."
+    },
+    {
+      "year": 2020,
+      "title": "Resistant dermatophytes",
+      "detail": "Reports describe an epidemic of terbinafine-resistant Trichophyton (later named T. indotineae) spreading from South Asia, with US cases reported by CDC in 2023."
+    }
+  ],
+  "pk": {
+    "half_life": "about 36 h; terminal half-life 200–400 h from slow release from skin and fat",
+    "bioavailability": "about 40% (first-pass metabolism)",
+    "metabolism": "hepatic, several CYPs; inhibits CYP2D6",
+    "excretion": "mainly renal as metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "headache",
+      "diarrhoea and dyspepsia",
+      "rash",
+      "taste disturbance"
+    ],
+    "serious": [
+      "hepatotoxicity, including liver failure (rare)",
+      "prolonged taste and smell loss",
+      "severe skin reactions (Stevens–Johnson syndrome, DRESS)",
+      "neutropenia",
+      "induction or worsening of lupus erythematosus"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Terbinafine persists in nails for months after treatment ends, so nails continue to clear as they grow out.",
+    "Oral terbinafine inhibits CYP2D6 and can raise levels of drugs such as tricyclic antidepressants and some beta-blockers."
+  ],
+  "related": [
+    "itraconazole",
+    "fluconazole"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Terbinafine",
+      "url": "https://en.wikipedia.org/wiki/Terbinafine"
+    },
+    {
+      "title": "DailyMed label search: Lamisil",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=lamisil"
+    }
+  ],
+  "stage": "written"
 }

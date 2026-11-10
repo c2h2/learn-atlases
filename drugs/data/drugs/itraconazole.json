@@ -1,36 +1,129 @@
 {
   "slug": "itraconazole",
   "name": "Itraconazole",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "R51211",
+    "SUBA-itraconazole"
+  ],
+  "brands": [
+    "Sporanox",
+    "Tolsura",
+    "Lozanoc"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Triazole antifungal (CYP51 inhibitor)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral capsules with food or oral solution on an empty stomach, once or twice daily; IV form discontinued in many countries",
+  "targets": [
+    "Fungal lanosterol 14α-demethylase (CYP51)"
+  ],
+  "origin": "synthetic",
+  "originator": "Janssen Pharmaceutica",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1992,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Sporanox"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1980,
+    "by": "Janssen Pharmaceutica",
+    "note": "Lipophilic triazole developed from ketoconazole with broader spectrum, including Aspergillus and dimorphic fungi."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Broad-spectrum triazole for histoplasmosis, nail fungus and chronic aspergillosis",
+  "summary": "Itraconazole is a broad-spectrum triazole active against yeasts, dermatophytes, Aspergillus and the endemic dimorphic fungi. It is a first-line treatment for histoplasmosis, blastomycosis, sporotrichosis and chronic pulmonary aspergillosis and is also used for fungal nail infections. Its absorption is variable and it interacts with many drugs through strong CYP3A4 inhibition.",
+  "mechanism": [
+    "Azoles inhibit lanosterol 14α-demethylase (CYP51, encoded by ERG11 in yeasts and cyp51A in Aspergillus), a fungal cytochrome P450 enzyme needed to make ergosterol, the main sterol of fungal cell membranes. Ergosterol depletion and accumulation of toxic 14α-methylated sterols disrupt membrane structure and the function of membrane-bound enzymes, stopping fungal growth.",
+    "Itraconazole is highly lipophilic and concentrates in skin, nails and fatty tissues, which suits it to dermatophyte and nail infections. Its poor and variable absorption led to formulations with cyclodextrin (oral solution) and 'super-bioavailable' (SUBA) capsules."
+  ],
+  "uses": [
+    "Histoplasmosis, blastomycosis and sporotrichosis",
+    "Chronic pulmonary aspergillosis and allergic bronchopulmonary aspergillosis (adjunct)",
+    "Onychomycosis of toenails and fingernails",
+    "Oropharyngeal and oesophageal candidiasis",
+    "Talaromycosis (penicilliosis) treatment and prophylaxis in HIV"
+  ],
+  "history": [
+    {
+      "year": 1980,
+      "title": "Discovery",
+      "detail": "Itraconazole is synthesised at Janssen in Belgium."
+    },
+    {
+      "year": 1992,
+      "title": "FDA approval",
+      "detail": "Sporanox capsules are approved in the US."
+    },
+    {
+      "year": 2001,
+      "title": "Heart failure warning",
+      "detail": "The FDA adds a boxed warning on congestive heart failure after reports in patients treated for onychomycosis."
+    },
+    {
+      "year": 2017,
+      "title": "WHO essential medicine",
+      "detail": "Itraconazole is added to the WHO Model List, notably for histoplasmosis and chronic pulmonary aspergillosis."
+    },
+    {
+      "year": 2018,
+      "title": "SUBA formulation",
+      "detail": "Tolsura (SUBA-itraconazole) is approved in the US for systemic fungal infections."
+    }
+  ],
+  "pk": {
+    "half_life": "about 21–64 h at steady state",
+    "bioavailability": "about 55% with food (capsules); higher and more consistent with solution or SUBA",
+    "metabolism": "hepatic CYP3A4 to hydroxy-itraconazole (active); strong CYP3A4 inhibitor",
+    "excretion": "faeces and urine as metabolites"
+  },
+  "safety": {
+    "common": [
+      "nausea",
+      "diarrhoea",
+      "rash",
+      "headache",
+      "raised liver enzymes"
+    ],
+    "serious": [
+      "congestive heart failure (negative inotropy)",
+      "serious hepatotoxicity",
+      "QT prolongation with interacting drugs",
+      "peripheral neuropathy",
+      "hypokalaemia and hypertension (pseudo-hyperaldosteronism)"
+    ],
+    "boxed_warning": "Congestive heart failure (do not use for onychomycosis in patients with ventricular dysfunction) and serious drug interactions with CYP3A4 substrates that can cause QT prolongation and fatal arrhythmias (US label)."
+  },
+  "facts": [
+    "Capsules need stomach acid and food for absorption, while the oral solution is better absorbed fasting.",
+    "Itraconazole remains in nails for months after a course ends, allowing 'pulse' dosing for onychomycosis."
+  ],
+  "related": [
+    "fluconazole",
+    "voriconazole",
+    "posaconazole",
+    "terbinafine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Itraconazole",
+      "url": "https://en.wikipedia.org/wiki/Itraconazole"
+    },
+    {
+      "title": "DailyMed label search: Sporanox",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=sporanox"
+    },
+    {
+      "title": "DailyMed label search: Tolsura",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=tolsura"
+    }
+  ],
+  "stage": "written"
 }

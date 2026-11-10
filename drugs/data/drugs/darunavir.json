@@ -1,36 +1,128 @@
 {
   "slug": "darunavir",
   "name": "Darunavir",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "TMC114",
+    "DRV",
+    "UIC-94017",
+    "darunavir ethanolate"
+  ],
+  "brands": [
+    "Prezista",
+    "Prezcobix / Rezolsta (with cobicistat)",
+    "Symtuza (with cobicistat, emtricitabine and TAF)"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "HIV protease inhibitor (boosted with ritonavir or cobicistat)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once or twice daily with food, always with a booster (ritonavir or cobicistat)",
+  "targets": [
+    "HIV-1 protease",
+    "CYP3A4 (via booster)"
+  ],
+  "origin": "synthetic",
+  "originator": "Arun Ghosh (University of Illinois Chicago) and colleagues; developed by Tibotec (Janssen)",
+  "owner": "Janssen (Johnson & Johnson); generics in many countries",
+  "first_approval": {
+    "year": 2006,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Prezista"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Arun K. Ghosh and Hiroaki Mitsuya with colleagues",
+    "note": "Designed to form extensive hydrogen bonds with the protease backbone via a bis-tetrahydrofuran group, making it robust to resistance mutations."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "High-barrier protease inhibitor, the preferred PI when resistance is a concern",
+  "summary": "Darunavir is a second-generation HIV protease inhibitor that is always given with a pharmacokinetic booster. Its tight binding to the protease backbone gives it a very high barrier to resistance, making it the preferred protease inhibitor in many guidelines, especially for second-line and treatment-experienced patients and in pregnancy.",
+  "mechanism": [
+    "HIV protease cleaves the viral Gag and Gag-Pol polyproteins into functional proteins during virus maturation. Darunavir binds the active site of the protease dimer and blocks this cleavage, so new virus particles are immature and non-infectious.",
+    "Its bis-tetrahydrofuranyl urethane forms hydrogen bonds with conserved backbone atoms of the enzyme, so mutations in side chains affect it less than older protease inhibitors. Boosters (ritonavir or cobicistat) inhibit CYP3A4 and raise darunavir levels."
+  ],
+  "uses": [
+    "HIV-1 infection in adults and children aged 3 years and older, in combination with other antiretrovirals",
+    "Second-line therapy after failure of NNRTI- or INSTI-based regimens (guidelines)"
+  ],
+  "history": [
+    {
+      "year": 2006,
+      "title": "FDA approval",
+      "detail": "Prezista receives accelerated approval for treatment-experienced adults in June 2006."
+    },
+    {
+      "year": 2007,
+      "title": "EU approval",
+      "detail": "Prezista is approved in the EU in February 2007."
+    },
+    {
+      "year": 2008,
+      "title": "Treatment-naive use",
+      "detail": "Approval extends to treatment-naive adults and, later, children."
+    },
+    {
+      "year": 2015,
+      "title": "Cobicistat co-formulation",
+      "detail": "Darunavir/cobicistat (Prezcobix) is approved."
+    },
+    {
+      "year": 2018,
+      "title": "Symtuza",
+      "detail": "Darunavir/cobicistat/emtricitabine/TAF becomes the first protease-inhibitor-based single-tablet regimen."
+    }
+  ],
+  "pk": {
+    "half_life": "about 15 h with ritonavir",
+    "bioavailability": "about 82% with ritonavir (37% alone); taken with food",
+    "metabolism": "hepatic CYP3A4 (inhibited by booster)",
+    "excretion": "mainly faeces"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "diarrhoea",
+      "nausea",
+      "rash",
+      "headache",
+      "hyperlipidaemia"
+    ],
+    "serious": [
+      "severe skin reactions (Stevens–Johnson syndrome, toxic epidermal necrolysis)",
+      "drug-induced hepatitis",
+      "many drug–drug interactions through CYP3A inhibition"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Darunavir contains a sulfonamide group, so caution is advised in sulfonamide allergy.",
+    "Darunavir/ritonavir is a WHO-recommended second-line protease inhibitor option."
+  ],
+  "related": [
+    "atazanavir",
+    "lopinavir-ritonavir",
+    "tenofovir-alafenamide",
+    "emtricitabine",
+    "dolutegravir"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Darunavir",
+      "url": "https://en.wikipedia.org/wiki/Darunavir"
+    },
+    {
+      "title": "DailyMed label search: Prezista",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=prezista"
+    },
+    {
+      "title": "EMA EPAR: Prezista",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/prezista"
+    }
+  ],
+  "stage": "written"
 }

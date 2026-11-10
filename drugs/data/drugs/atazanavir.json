@@ -1,36 +1,122 @@
 {
   "slug": "atazanavir",
   "name": "Atazanavir",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BMS-232632",
+    "CGP 73547",
+    "ATV",
+    "atazanavir sulfate"
+  ],
+  "brands": [
+    "Reyataz",
+    "Evotaz (with cobicistat)"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "HIV protease inhibitor (azapeptide)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral capsule once daily with food, usually boosted with ritonavir or cobicistat",
+  "targets": [
+    "HIV-1 protease"
+  ],
+  "origin": "synthetic",
+  "originator": "Ciba-Geigy/Novartis; developed by Bristol-Myers Squibb",
+  "owner": "generic (many); Reyataz by Bristol-Myers Squibb",
+  "first_approval": {
+    "year": 2003,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Reyataz"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Ciba-Geigy (Novartis), licensed to Bristol-Myers Squibb",
+    "note": "Azapeptide protease inhibitor with a favourable lipid profile and once-daily dosing."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Once-daily protease inhibitor known for causing harmless jaundice",
+  "summary": "Atazanavir is an HIV protease inhibitor that was the first in its class to be taken once daily. It has less effect on blood lipids than older protease inhibitors but frequently raises unconjugated bilirubin, causing jaundice that is usually harmless. Ritonavir-boosted atazanavir has been a WHO-recommended second-line option.",
+  "mechanism": [
+    "Atazanavir binds the active site of HIV-1 protease and prevents cleavage of Gag and Gag-Pol polyproteins, producing immature, non-infectious virions.",
+    "It also inhibits the liver enzyme UGT1A1, which conjugates bilirubin; this causes the characteristic indirect hyperbilirubinaemia, particularly in people with Gilbert-type UGT1A1 variants. Its solubility, and therefore absorption, depends on stomach acid."
+  ],
+  "uses": [
+    "HIV-1 infection in adults and children (from 3 months in some labels) in combination with other antiretrovirals"
+  ],
+  "history": [
+    {
+      "year": 2003,
+      "title": "FDA approval",
+      "detail": "Reyataz is approved in June 2003 as the first once-daily protease inhibitor; EU approval follows in 2004."
+    },
+    {
+      "year": 2004,
+      "title": "EU approval",
+      "detail": "Reyataz is approved in the EU in March 2004."
+    },
+    {
+      "year": 2008,
+      "title": "WHO second line",
+      "detail": "Ritonavir-boosted atazanavir becomes a recommended second-line option in many treatment programmes."
+    },
+    {
+      "year": 2015,
+      "title": "Evotaz",
+      "detail": "Atazanavir/cobicistat is approved in the US."
+    },
+    {
+      "year": 2017,
+      "title": "US generics",
+      "detail": "Generic atazanavir capsules are launched in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "about 7 h (about 8.6 h with ritonavir)",
+    "bioavailability": "increased by food; reduced by antacids, H2 blockers and proton-pump inhibitors",
+    "metabolism": "hepatic CYP3A4; inhibits CYP3A4 and UGT1A1",
+    "excretion": "mainly faeces, some urine"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "jaundice and scleral icterus",
+      "nausea",
+      "rash",
+      "headache"
+    ],
+    "serious": [
+      "PR-interval prolongation and conduction abnormalities",
+      "nephrolithiasis and cholelithiasis",
+      "chronic kidney disease",
+      "severe skin reactions"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "The jaundice caused by atazanavir reflects unconjugated bilirubin and is not by itself a sign of liver damage.",
+    "Proton-pump inhibitors greatly reduce atazanavir absorption and are restricted or avoided."
+  ],
+  "related": [
+    "darunavir",
+    "lopinavir-ritonavir"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Atazanavir",
+      "url": "https://en.wikipedia.org/wiki/Atazanavir"
+    },
+    {
+      "title": "DailyMed label search: Reyataz",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=reyataz"
+    },
+    {
+      "title": "EMA EPAR: Reyataz",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/reyataz"
+    }
+  ],
+  "stage": "written"
 }

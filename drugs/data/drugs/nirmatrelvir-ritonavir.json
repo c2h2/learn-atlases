@@ -1,36 +1,137 @@
 {
   "slug": "nirmatrelvir-ritonavir",
-  "name": "Nirmatrelvir ritonavir",
-  "aliases": [],
-  "brands": [],
+  "name": "Nirmatrelvir/ritonavir",
+  "aliases": [
+    "PF-07321332 (nirmatrelvir)",
+    "nirmatrelvir and ritonavir"
+  ],
+  "brands": [
+    "Paxlovid"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "SARS-CoV-2 main protease (3CL protease) inhibitor, boosted with ritonavir (CYP3A inhibitor)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "co-packaged oral tablets taken twice daily for 5 days, started within 5 days of symptoms",
+  "targets": [
+    "SARS-CoV-2 main protease (Mpro, 3CLpro, nsp5)",
+    "CYP3A4 (ritonavir, pharmacokinetic booster)"
+  ],
+  "origin": "synthetic",
+  "originator": "Pfizer",
+  "owner": "Pfizer",
+  "first_approval": {
+    "year": 2021,
+    "agency": "FDA (EUA)",
+    "country": "United States",
+    "brand": "Paxlovid"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 2020,
+    "by": "Pfizer",
+    "note": "Designed in 2020 from Pfizer's earlier SARS-CoV-1 protease inhibitor lufotrelvir as an orally available covalent nitrile inhibitor."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Oral COVID-19 antiviral pairing a protease blocker with a ritonavir booster",
+  "summary": "Nirmatrelvir/ritonavir is an oral COVID-19 treatment that combines nirmatrelvir, an inhibitor of the SARS-CoV-2 main protease, with low-dose ritonavir to slow its breakdown. In unvaccinated high-risk adults it cut hospitalisation or death by about 89% when started early. Its many drug interactions through CYP3A inhibition are a major practical issue.",
+  "mechanism": [
+    "SARS-CoV-2 translates its genome into long polyproteins that the main protease (Mpro, also called 3C-like protease) must cut into functional replication proteins. Nirmatrelvir is a peptidomimetic whose nitrile warhead forms a reversible covalent bond with the catalytic cysteine (Cys145) of Mpro, stopping polyprotein processing and viral replication.",
+    "Nirmatrelvir is rapidly metabolised by CYP3A4. Ritonavir, an HIV protease inhibitor used here at a low dose, strongly inhibits CYP3A4 and raises nirmatrelvir concentrations, but it also raises levels of many other CYP3A-cleared drugs."
+  ],
+  "uses": [
+    "Mild to moderate COVID-19 in adults at high risk of progression to severe disease",
+    "Mild to moderate COVID-19 in high-risk adolescents aged 12 years and older weighing at least 40 kg (US emergency use)"
+  ],
+  "history": [
+    {
+      "year": 2020,
+      "title": "Design",
+      "detail": "Pfizer chemists design PF-07321332 and begin a fast-tracked development programme."
+    },
+    {
+      "year": 2021,
+      "title": "EPIC-HR",
+      "detail": "Interim results show about 89% reduction in COVID-19 hospitalisation or death among high-risk unvaccinated adults treated within 3 days."
+    },
+    {
+      "year": 2021,
+      "title": "Emergency use",
+      "detail": "The FDA issues an emergency use authorisation on 22 December 2021; the UK approves it on 31 December."
+    },
+    {
+      "year": 2022,
+      "title": "EU and WHO",
+      "detail": "The EU grants conditional authorisation in January 2022; WHO strongly recommends it for high-risk non-severe patients in April 2022."
+    },
+    {
+      "year": 2022,
+      "title": "Rebound",
+      "detail": "Reports of symptom and viral rebound after treatment draw attention; studies find rebound also occurs without treatment."
+    },
+    {
+      "year": 2023,
+      "title": "Full FDA approval",
+      "detail": "The FDA approves Paxlovid for high-risk adults on 25 May 2023."
+    },
+    {
+      "year": 2024,
+      "title": "Long COVID trials",
+      "detail": "Randomised trials (including STOP-PASC) find no clear benefit of extended courses for long COVID."
+    }
+  ],
+  "pk": {
+    "half_life": "nirmatrelvir about 6 h when boosted with ritonavir",
+    "bioavailability": "not determined; food has little effect",
+    "metabolism": "nirmatrelvir by CYP3A4 (largely blocked by ritonavir); ritonavir by CYP3A4 and CYP2D6",
+    "excretion": "nirmatrelvir mainly renal when boosted; ritonavir mainly faeces"
+  },
+  "safety": {
+    "common": [
+      "dysgeusia (altered taste)",
+      "diarrhoea",
+      "hypertension",
+      "myalgia"
+    ],
+    "serious": [
+      "serious drug–drug interactions via CYP3A inhibition",
+      "hypersensitivity reactions, including toxic epidermal necrolysis and Stevens–Johnson syndrome (rare)",
+      "hepatotoxicity",
+      "risk of HIV-1 protease inhibitor resistance in uncontrolled or undiagnosed HIV"
+    ],
+    "boxed_warning": "Significant drug interactions: co-administration with certain CYP3A-dependent or CYP3A-inducing drugs may cause serious or life-threatening reactions or loss of virological response (US label)."
+  },
+  "facts": [
+    "Paxlovid went from first synthesis to emergency authorisation in under two years.",
+    "Dose reduction is needed in moderate renal impairment, and it is not recommended in severe renal impairment in many labels.",
+    "A bitter or metallic taste ('Paxlovid mouth') is one of the commonest side effects."
+  ],
+  "related": [
+    "remdesivir",
+    "molnupiravir",
+    "lopinavir-ritonavir"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Nirmatrelvir/ritonavir",
+      "url": "https://en.wikipedia.org/wiki/Nirmatrelvir/ritonavir"
+    },
+    {
+      "title": "DailyMed label search: Paxlovid",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=paxlovid"
+    },
+    {
+      "title": "EMA EPAR: Paxlovid",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/paxlovid"
+    },
+    {
+      "title": "Hammond J et al. Oral nirmatrelvir for high-risk, nonhospitalized adults with Covid-19. NEJM 2022",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2118542"
+    }
+  ],
+  "stage": "written"
 }

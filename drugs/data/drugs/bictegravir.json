@@ -1,36 +1,120 @@
 {
   "slug": "bictegravir",
   "name": "Bictegravir",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "GS-9883",
+    "BIC"
+  ],
+  "brands": [
+    "Biktarvy (bictegravir/emtricitabine/tenofovir alafenamide)"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Integrase strand transfer inhibitor (INSTI)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "available only in the single-tablet Biktarvy, taken once daily",
+  "targets": [
+    "HIV-1 integrase"
+  ],
+  "origin": "synthetic",
+  "originator": "Gilead Sciences",
+  "owner": "Gilead Sciences",
+  "first_approval": {
+    "year": 2018,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Biktarvy"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Gilead Sciences",
+    "note": "Unboosted second-generation INSTI structurally related to dolutegravir."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Integrase inhibitor in Biktarvy, the world's top-selling HIV pill",
+  "summary": "Bictegravir is a second-generation integrase strand transfer inhibitor that does not need a pharmacokinetic booster. It is available only within Biktarvy, a once-daily single tablet with emtricitabine and tenofovir alafenamide that became the most prescribed HIV regimen in the United States. Like dolutegravir, it has a high barrier to resistance.",
+  "mechanism": [
+    "Bictegravir binds the HIV integrase–viral DNA complex and chelates the active-site magnesium ions, preventing strand transfer of viral DNA into the host chromosome.",
+    "It shares much of its resistance profile with dolutegravir, and emergent resistance in clinical trials has been very rare."
+  ],
+  "uses": [
+    "HIV-1 infection in adults and children weighing at least 14 kg, as a complete regimen",
+    "Switch therapy in virologically suppressed patients, including those with M184V/I"
+  ],
+  "history": [
+    {
+      "year": 2017,
+      "title": "Phase III results",
+      "detail": "Two phase III trials published in The Lancet show bictegravir/emtricitabine/TAF is non-inferior to dolutegravir-based regimens in treatment-naive adults."
+    },
+    {
+      "year": 2018,
+      "title": "FDA approval",
+      "detail": "Biktarvy is approved in February 2018 after phase III trials against dolutegravir-based regimens; EU approval follows in June."
+    },
+    {
+      "year": 2019,
+      "title": "Paediatric use",
+      "detail": "The US label is extended to children weighing at least 25 kg."
+    },
+    {
+      "year": 2021,
+      "title": "Low-dose tablet",
+      "detail": "A low-dose Biktarvy tablet is approved for children weighing 14–25 kg."
+    },
+    {
+      "year": 2024,
+      "title": "Expanded label",
+      "detail": "The FDA extends the label to people with known or suspected M184V/I resistance."
+    }
+  ],
+  "pk": {
+    "half_life": "about 17 h",
+    "bioavailability": "not established; taken with or without food",
+    "metabolism": "CYP3A and UGT1A1",
+    "excretion": "mainly faeces, some urine"
+  },
+  "safety": {
+    "common": [
+      "diarrhoea",
+      "nausea",
+      "headache"
+    ],
+    "serious": [
+      "post-treatment HBV exacerbation (from emtricitabine/TAF components)",
+      "immune reconstitution syndrome",
+      "renal effects (TAF component)"
+    ],
+    "boxed_warning": "Severe acute exacerbations of hepatitis B in patients co-infected with HBV who discontinue the drug (US label)."
+  },
+  "facts": [
+    "Biktarvy was the best-selling HIV medicine worldwide in the mid-2020s, with annual sales above $13 billion in 2024.",
+    "Bictegravir is contraindicated with dofetilide and rifampicin."
+  ],
+  "related": [
+    "dolutegravir",
+    "emtricitabine",
+    "tenofovir-alafenamide",
+    "raltegravir"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Bictegravir",
+      "url": "https://en.wikipedia.org/wiki/Bictegravir"
+    },
+    {
+      "title": "DailyMed label search: Biktarvy",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=biktarvy"
+    },
+    {
+      "title": "EMA EPAR: Biktarvy",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/biktarvy"
+    }
+  ],
+  "stage": "written"
 }

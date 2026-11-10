@@ -1,36 +1,123 @@
 {
   "slug": "abacavir",
   "name": "Abacavir",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "ABC",
+    "1592U89",
+    "abacavir sulfate"
+  ],
+  "brands": [
+    "Ziagen",
+    "Kivexa / Epzicom (with lamivudine)",
+    "Triumeq (with dolutegravir and lamivudine)"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Nucleoside reverse transcriptase inhibitor (NRTI; carbocyclic guanosine analogue)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet or solution once or twice daily; HLA-B*57:01 screening required before starting",
+  "targets": [
+    "HIV-1 reverse transcriptase"
+  ],
+  "origin": "synthetic",
+  "originator": "Glaxo Wellcome (building on carbocyclic nucleosides from Robert Vince, University of Minnesota)",
+  "owner": "ViiV Healthcare (Ziagen, Triumeq); generic (many)",
+  "first_approval": {
+    "year": 1998,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Ziagen"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Glaxo Wellcome, from carbovir work by Robert Vince (University of Minnesota)",
+    "note": "Prodrug-like analogue of carbovir with better oral absorption and brain penetration."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "HIV drug that made pharmacogenetic screening (HLA-B*57:01) routine",
+  "summary": "Abacavir is a carbocyclic nucleoside analogue that is converted inside cells to carbovir triphosphate, a blocker of HIV reverse transcriptase. A serious hypersensitivity reaction strongly linked to the HLA-B*57:01 allele made it one of the first drugs for which genetic testing became standard before use. It is widely used in children and in combination tablets such as Triumeq.",
+  "mechanism": [
+    "Abacavir is converted by adenosine phosphotransferase and a cytosolic deaminase to carbovir monophosphate, then by cellular kinases to carbovir triphosphate, a guanosine analogue.",
+    "Carbovir triphosphate competes with deoxyguanosine triphosphate for HIV reverse transcriptase and terminates the DNA chain. Resistance involves mutations such as K65R, L74V, Y115F and M184V.",
+    "The hypersensitivity reaction occurs because abacavir binds within the peptide-binding groove of the HLA-B*57:01 molecule, changing the self-peptides presented and triggering a T-cell response."
+  ],
+  "uses": [
+    "HIV-1 infection in adults and children in combination with other antiretrovirals"
+  ],
+  "history": [
+    {
+      "year": 1998,
+      "title": "FDA approval",
+      "detail": "Ziagen is approved in December 1998."
+    },
+    {
+      "year": 2002,
+      "title": "HLA link",
+      "detail": "Two groups (Mallal et al. and Hetherington et al.) report the strong association between HLA-B*57:01 and abacavir hypersensitivity."
+    },
+    {
+      "year": 2004,
+      "title": "Combination",
+      "detail": "Abacavir/lamivudine (Kivexa/Epzicom) is approved as a once-daily tablet."
+    },
+    {
+      "year": 2008,
+      "title": "PREDICT-1",
+      "detail": "A randomised trial shows prospective HLA-B*57:01 screening eliminates immunologically confirmed hypersensitivity; the same year the D:A:D cohort reports an association with myocardial infarction."
+    },
+    {
+      "year": 2014,
+      "title": "Triumeq",
+      "detail": "Abacavir/dolutegravir/lamivudine is approved as a single-tablet regimen."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1.5 h in plasma; intracellular carbovir triphosphate about 21 h",
+    "bioavailability": "about 83%",
+    "metabolism": "alcohol dehydrogenase and glucuronyl transferase to inactive metabolites (not CYP)",
+    "excretion": "mainly renal as metabolites"
+  },
+  "safety": {
+    "common": [
+      "nausea",
+      "headache",
+      "fatigue",
+      "insomnia"
+    ],
+    "serious": [
+      "multi-organ hypersensitivity reaction (fever, rash, gastrointestinal and respiratory symptoms), which can be fatal on rechallenge",
+      "possible increased risk of myocardial infarction",
+      "lactic acidosis (rare)"
+    ],
+    "boxed_warning": "Serious and sometimes fatal hypersensitivity reactions, more common in patients with HLA-B*57:01; screen before starting and never restart after a suspected reaction (US label)."
+  },
+  "facts": [
+    "Abacavir was among the first drugs where routine pharmacogenetic testing prevented a serious adverse reaction.",
+    "HLA-B*57:01 is carried by roughly 5–8% of people of European descent and is less common in many African populations."
+  ],
+  "related": [
+    "lamivudine",
+    "dolutegravir",
+    "zidovudine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Abacavir",
+      "url": "https://en.wikipedia.org/wiki/Abacavir"
+    },
+    {
+      "title": "DailyMed label search: Ziagen",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=ziagen"
+    },
+    {
+      "title": "Mallal S et al. HLA-B*5701 screening for hypersensitivity to abacavir (PREDICT-1). NEJM 2008",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa0706135"
+    }
+  ],
+  "stage": "written"
 }

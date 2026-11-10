@@ -1,36 +1,124 @@
 {
   "slug": "ganciclovir",
   "name": "Ganciclovir",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "DHPG",
+    "BW759U",
+    "ganciclovir sodium"
+  ],
+  "brands": [
+    "Cytovene",
+    "Cymevene",
+    "Zirgan",
+    "Virgan"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Nucleoside analogue antiviral (guanosine analogue; CMV DNA polymerase inhibitor)",
+  "modality": "small-molecule",
+  "routes": [
+    "iv",
+    "ophthalmic"
+  ],
+  "route_note": "IV infusion; ophthalmic gel for herpetic keratitis; oral prodrug valganciclovir is used for maintenance and prophylaxis",
+  "targets": [
+    "CMV UL97 protein kinase (activation)",
+    "CMV DNA polymerase (UL54)"
+  ],
+  "origin": "synthetic",
+  "originator": "Syntex (independently also synthesised at Burroughs Wellcome and Astra)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1989,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Cytovene"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1980,
+    "by": "Syntex, Burroughs Wellcome and Astra (independently)",
+    "note": "Aciclovir analogue with an extra hydroxymethyl group that makes it a substrate for the cytomegalovirus UL97 kinase."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "First drug for cytomegalovirus, vital in transplant and AIDS medicine",
+  "summary": "Ganciclovir is a guanosine analogue that was the first antiviral approved for cytomegalovirus (CMV). It is used intravenously to treat CMV retinitis and other CMV disease in immunocompromised people and to prevent CMV after transplantation. Bone-marrow suppression limits its use.",
+  "mechanism": [
+    "In CMV-infected cells ganciclovir is monophosphorylated by the viral UL97 phosphotransferase; cellular kinases complete conversion to ganciclovir triphosphate, which accumulates in infected cells.",
+    "Ganciclovir triphosphate competitively inhibits the viral DNA polymerase (UL54) and is incorporated into viral DNA, slowing and eventually stopping chain elongation. Resistance usually involves UL97 mutations, and sometimes UL54 mutations that may confer cross-resistance to cidofovir or foscarnet."
+  ],
+  "uses": [
+    "CMV retinitis in immunocompromised patients, including AIDS",
+    "Prevention of CMV disease in transplant recipients at risk",
+    "Treatment of CMV disease after transplantation",
+    "Acute herpetic keratitis (ophthalmic gel)"
+  ],
+  "history": [
+    {
+      "year": 1980,
+      "title": "Synthesis",
+      "detail": "Ganciclovir is synthesised in several laboratories as an acyclic nucleoside analogue."
+    },
+    {
+      "year": 1989,
+      "title": "FDA approval",
+      "detail": "Cytovene IV is approved for CMV retinitis in immunocompromised patients, the first anti-CMV drug."
+    },
+    {
+      "year": 1996,
+      "title": "Intraocular implant",
+      "detail": "The Vitrasert ganciclovir intravitreal implant is approved for CMV retinitis (later discontinued)."
+    },
+    {
+      "year": 2001,
+      "title": "Oral prodrug",
+      "detail": "Valganciclovir is approved in the US, largely replacing oral ganciclovir."
+    },
+    {
+      "year": 2009,
+      "title": "Eye gel",
+      "detail": "Zirgan ophthalmic gel is approved in the US for herpetic keratitis."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2.5–3.6 h (IV), prolonged in renal impairment",
+    "bioavailability": "oral ganciclovir about 5–9% (formulation discontinued)",
+    "metabolism": "not significantly metabolised",
+    "excretion": "renal, unchanged"
+  },
+  "safety": {
+    "common": [
+      "fever",
+      "diarrhoea",
+      "nausea",
+      "anaemia"
+    ],
+    "serious": [
+      "neutropenia, thrombocytopenia and anaemia",
+      "acute kidney injury",
+      "seizures",
+      "infertility"
+    ],
+    "boxed_warning": "Haematological toxicity, impairment of fertility, fetal toxicity, mutagenesis and carcinogenesis (US label)."
+  },
+  "facts": [
+    "Ganciclovir is handled as a potential carcinogen and teratogen; special precautions apply to preparing infusions.",
+    "Its oral prodrug valganciclovir gives blood levels close to those of IV ganciclovir."
+  ],
+  "related": [
+    "aciclovir",
+    "valaciclovir"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Ganciclovir",
+      "url": "https://en.wikipedia.org/wiki/Ganciclovir"
+    },
+    {
+      "title": "DailyMed label search: ganciclovir",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=ganciclovir"
+    }
+  ],
+  "stage": "written"
 }

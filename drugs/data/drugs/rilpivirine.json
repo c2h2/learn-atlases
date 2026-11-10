@@ -1,36 +1,134 @@
 {
   "slug": "rilpivirine",
   "name": "Rilpivirine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "TMC278",
+    "RPV",
+    "rilpivirine hydrochloride"
+  ],
+  "brands": [
+    "Edurant",
+    "Rekambys (long-acting injection)",
+    "Complera / Eviplera, Odefsey, Juluca (combinations)",
+    "Cabenuva (co-pack with cabotegravir)"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Non-nucleoside reverse transcriptase inhibitor (NNRTI; diarylpyrimidine)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "im"
+  ],
+  "route_note": "oral tablet once daily with a meal; long-acting IM injection monthly or every 2 months with cabotegravir",
+  "targets": [
+    "HIV-1 reverse transcriptase (allosteric NNRTI pocket)"
+  ],
+  "origin": "synthetic",
+  "originator": "Tibotec / Janssen (Paul Janssen's team)",
+  "owner": "Janssen (Johnson & Johnson)",
+  "first_approval": {
+    "year": 2011,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Edurant"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Janssen Research Foundation / Tibotec",
+    "note": "Flexible diarylpyrimidine designed to bind the NNRTI pocket in several conformations, retaining activity against some resistant strains."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Low-dose NNRTI in single tablets and in the first long-acting injectable HIV regimen",
+  "summary": "Rilpivirine is a second-generation non-nucleoside reverse transcriptase inhibitor taken orally once daily with food or given as a long-acting intramuscular injection. Combined with cabotegravir, it forms the first complete long-acting injectable HIV treatment, given monthly or every two months. Oral absorption requires stomach acid, so proton-pump inhibitors are contraindicated.",
+  "mechanism": [
+    "Rilpivirine binds the allosteric NNRTI pocket of HIV-1 reverse transcriptase and blocks DNA synthesis non-competitively. Its flexible structure lets it adapt to mutations in the pocket, so it keeps activity against some K103N viruses.",
+    "Resistance mutations such as E138K and Y181C reduce susceptibility and give cross-resistance with other NNRTIs. The long-acting injection is a nanosuspension that releases drug slowly from muscle over weeks."
+  ],
+  "uses": [
+    "HIV-1 infection in treatment-naive patients with viral load at or below 100,000 copies/mL (oral, in combination)",
+    "Switch therapy in virologically suppressed patients (Odefsey, Juluca)",
+    "Long-acting injectable maintenance therapy with cabotegravir in suppressed patients"
+  ],
+  "history": [
+    {
+      "year": 2011,
+      "title": "FDA approval",
+      "detail": "Edurant is approved in May 2011, followed by the single tablet Complera (with emtricitabine and tenofovir disoproxil) in August."
+    },
+    {
+      "year": 2016,
+      "title": "Odefsey",
+      "detail": "Rilpivirine/emtricitabine/tenofovir alafenamide is approved."
+    },
+    {
+      "year": 2017,
+      "title": "Juluca",
+      "detail": "Dolutegravir/rilpivirine becomes the first two-drug complete regimen approved for HIV maintenance."
+    },
+    {
+      "year": 2020,
+      "title": "EU long-acting approval",
+      "detail": "The EU approves Rekambys injection with cabotegravir (Vocabria) in December 2020."
+    },
+    {
+      "year": 2021,
+      "title": "Cabenuva",
+      "detail": "The FDA approves monthly cabotegravir/rilpivirine injections in January 2021, and every-2-month dosing in 2022."
+    }
+  ],
+  "pk": {
+    "half_life": "oral about 45–50 h; long-acting injection apparent half-life of months",
+    "bioavailability": "must be taken with a meal; absorption depends on stomach acid",
+    "metabolism": "hepatic CYP3A4",
+    "excretion": "mainly faeces"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "insomnia",
+      "headache",
+      "depressive disorders",
+      "injection-site reactions (long-acting)"
+    ],
+    "serious": [
+      "QT prolongation at supratherapeutic doses",
+      "severe skin and hypersensitivity reactions (DRESS)",
+      "hepatotoxicity",
+      "depression and suicidal ideation",
+      "post-injection reactions"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Proton-pump inhibitors are contraindicated with oral rilpivirine because they reduce its absorption.",
+    "Cabotegravir plus rilpivirine was the first long-acting injectable regimen for HIV treatment."
+  ],
+  "related": [
+    "cabotegravir",
+    "efavirenz",
+    "dolutegravir",
+    "emtricitabine",
+    "tenofovir-alafenamide"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Rilpivirine",
+      "url": "https://en.wikipedia.org/wiki/Rilpivirine"
+    },
+    {
+      "title": "DailyMed label search: Edurant",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=edurant"
+    },
+    {
+      "title": "DailyMed label search: Cabenuva",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=cabenuva"
+    },
+    {
+      "title": "EMA EPAR: Edurant",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/edurant"
+    }
+  ],
+  "stage": "written"
 }

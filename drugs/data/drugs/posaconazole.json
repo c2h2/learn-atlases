@@ -1,36 +1,130 @@
 {
   "slug": "posaconazole",
   "name": "Posaconazole",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "SCH 56592"
+  ],
+  "brands": [
+    "Noxafil",
+    "Posanol"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Triazole antifungal (CYP51 inhibitor; extended spectrum)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "delayed-release tablets once daily with food after a loading day; oral suspension; IV infusion via central line",
+  "targets": [
+    "Fungal lanosterol 14α-demethylase (CYP51)"
+  ],
+  "origin": "synthetic",
+  "originator": "Schering-Plough",
+  "owner": "Merck & Co. (MSD); generics available",
+  "first_approval": {
+    "year": 2005,
+    "agency": "EMA",
+    "country": "European Union",
+    "brand": "Noxafil"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Schering-Plough Research Institute",
+    "note": "Hydroxylated analogue of itraconazole with broad activity including the Mucorales."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Broad-spectrum azole used to prevent mould infections in leukaemia and transplant patients",
+  "summary": "Posaconazole is an extended-spectrum triazole related to itraconazole, active against Candida, Aspergillus and, unusually among azoles, many Mucorales. It is widely used as prophylaxis against invasive fungal infections in patients with acute myeloid leukaemia or graft-versus-host disease, and to treat invasive aspergillosis and mucormycosis. Newer tablet and IV forms overcame the erratic absorption of the original suspension.",
+  "mechanism": [
+    "Azoles inhibit lanosterol 14α-demethylase (CYP51, encoded by ERG11 in yeasts and cyp51A in Aspergillus), a fungal cytochrome P450 enzyme needed to make ergosterol, the main sterol of fungal cell membranes. Ergosterol depletion and accumulation of toxic 14α-methylated sterols disrupt membrane structure and the function of membrane-bound enzymes, stopping fungal growth.",
+    "Its long side chain makes additional contacts with the CYP51 enzyme, which helps retain activity against some isolates resistant to fluconazole and voriconazole and gives it activity against Mucorales such as Rhizopus and Mucor."
+  ],
+  "uses": [
+    "Prophylaxis of invasive Aspergillus and Candida infections in high-risk patients (neutropenia from AML/MDS chemotherapy, haematopoietic stem-cell transplant with GVHD)",
+    "Treatment of invasive aspergillosis",
+    "Oropharyngeal candidiasis, including azole-refractory disease",
+    "Mucormycosis (step-down or salvage therapy; EU and guideline use)"
+  ],
+  "history": [
+    {
+      "year": 2005,
+      "title": "EU approval",
+      "detail": "Noxafil oral suspension is approved in the EU in October 2005 for refractory fungal infections."
+    },
+    {
+      "year": 2006,
+      "title": "FDA approval",
+      "detail": "The FDA approves posaconazole for prophylaxis in high-risk patients."
+    },
+    {
+      "year": 2007,
+      "title": "Prophylaxis trials",
+      "detail": "Two NEJM trials (Cornely et al.; Ullmann et al.) show posaconazole prophylaxis reduces invasive fungal infections, and in AML/MDS improves survival."
+    },
+    {
+      "year": 2013,
+      "title": "Tablets",
+      "detail": "Delayed-release tablets with more reliable absorption are approved; an IV formulation follows in 2014."
+    },
+    {
+      "year": 2021,
+      "title": "Aspergillosis treatment",
+      "detail": "Based on a trial versus voriconazole, the FDA approves posaconazole for primary treatment of invasive aspergillosis."
+    }
+  ],
+  "pk": {
+    "half_life": "about 26–35 h",
+    "bioavailability": "suspension variable and food-dependent; tablets about 54% and more consistent",
+    "metabolism": "mainly UGT1A4 glucuronidation; strong CYP3A4 inhibitor",
+    "excretion": "mainly faeces (unchanged)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "nausea",
+      "diarrhoea",
+      "vomiting",
+      "headache",
+      "fever"
+    ],
+    "serious": [
+      "hepatotoxicity",
+      "QT prolongation and torsades de pointes",
+      "pseudo-hyperaldosteronism (hypertension, hypokalaemia)",
+      "serious drug interactions (e.g. with sirolimus, ciclosporin, tacrolimus, vincristine)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "The original oral suspension had to be taken with a fatty meal; delayed-release tablets largely solved this.",
+    "Posaconazole is one of the few azoles with reliable activity against Mucorales, along with isavuconazole."
+  ],
+  "related": [
+    "voriconazole",
+    "itraconazole",
+    "fluconazole",
+    "amphotericin-b"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Posaconazole",
+      "url": "https://en.wikipedia.org/wiki/Posaconazole"
+    },
+    {
+      "title": "DailyMed label search: Noxafil",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=noxafil"
+    },
+    {
+      "title": "EMA EPAR: Noxafil",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/noxafil"
+    },
+    {
+      "title": "Cornely OA et al. Posaconazole vs. fluconazole or itraconazole prophylaxis in patients with neutropenia. NEJM 2007",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa061098"
+    }
+  ],
+  "stage": "written"
 }

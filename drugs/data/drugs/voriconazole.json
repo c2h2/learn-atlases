@@ -1,36 +1,133 @@
 {
   "slug": "voriconazole",
   "name": "Voriconazole",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "UK-109,496",
+    "VRC"
+  ],
+  "brands": [
+    "Vfend"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Triazole antifungal (CYP51 inhibitor; second generation)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "IV infusion or oral tablets/suspension twice daily after a loading dose; therapeutic drug monitoring often used",
+  "targets": [
+    "Fungal lanosterol 14α-demethylase (CYP51)"
+  ],
+  "origin": "synthetic",
+  "originator": "Pfizer",
+  "owner": "generic (many); Vfend by Pfizer",
+  "first_approval": {
+    "year": 2002,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Vfend"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Pfizer (Sandwich, UK)",
+    "note": "Fluconazole derivative with a fluoropyrimidine ring that extends the spectrum to Aspergillus and other moulds."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "First-line drug for invasive aspergillosis, with notable visual and skin side effects",
+  "summary": "Voriconazole is a second-generation triazole derived from fluconazole with activity against Aspergillus, Fusarium, Scedosporium and resistant Candida. It became the standard first-line treatment for invasive aspergillosis after it outperformed amphotericin B in a landmark 2002 trial. Its nonlinear pharmacokinetics and CYP2C19 polymorphisms make blood-level monitoring important.",
+  "mechanism": [
+    "Azoles inhibit lanosterol 14α-demethylase (CYP51, encoded by ERG11 in yeasts and cyp51A in Aspergillus), a fungal cytochrome P450 enzyme needed to make ergosterol, the main sterol of fungal cell membranes. Ergosterol depletion and accumulation of toxic 14α-methylated sterols disrupt membrane structure and the function of membrane-bound enzymes, stopping fungal growth.",
+    "Voriconazole is fungicidal against Aspergillus species but generally fungistatic against Candida. It has no meaningful activity against the Mucorales, and breakthrough mucormycosis has been reported during voriconazole prophylaxis."
+  ],
+  "uses": [
+    "Invasive aspergillosis",
+    "Candidaemia in non-neutropenic patients and other deep Candida infections",
+    "Oesophageal candidiasis",
+    "Serious infections caused by Scedosporium and Fusarium species",
+    "Prophylaxis in high-risk haematopoietic stem-cell transplant recipients (EU)"
+  ],
+  "history": [
+    {
+      "year": 2002,
+      "title": "Landmark trial",
+      "detail": "Herbrecht and colleagues report better response and survival with voriconazole than conventional amphotericin B for invasive aspergillosis (NEJM)."
+    },
+    {
+      "year": 2002,
+      "title": "Approval",
+      "detail": "Vfend is approved by the EU in March and the FDA in May 2002."
+    },
+    {
+      "year": 2008,
+      "title": "Guidelines",
+      "detail": "IDSA aspergillosis guidelines recommend voriconazole as primary therapy."
+    },
+    {
+      "year": 2010,
+      "title": "Skin cancer signal",
+      "detail": "Reports link long-term voriconazole with phototoxicity and cutaneous squamous cell carcinoma, especially in transplant recipients."
+    },
+    {
+      "year": 2017,
+      "title": "WHO essential medicine",
+      "detail": "Voriconazole is added to the WHO Model List of Essential Medicines."
+    }
+  ],
+  "pk": {
+    "half_life": "dose-dependent, about 6 h at standard doses (nonlinear)",
+    "bioavailability": "about 96% (oral)",
+    "metabolism": "hepatic CYP2C19 (main), CYP2C9 and CYP3A4; inhibits these enzymes",
+    "excretion": "mainly renal as metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "transient visual disturbances (blurred vision, altered colour perception, photophobia)",
+      "rash and photosensitivity",
+      "raised liver enzymes",
+      "hallucinations"
+    ],
+    "serious": [
+      "hepatotoxicity",
+      "QT prolongation and torsades de pointes",
+      "cutaneous squamous cell carcinoma and melanoma with long-term use",
+      "periostitis and fluorosis with prolonged use",
+      "severe skin reactions"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "About 30% of patients notice transient visual changes, typically shortly after a dose.",
+    "Each voriconazole molecule contains three fluorine atoms; prolonged use can cause fluoride excess and painful periostitis.",
+    "IV voriconazole contains a cyclodextrin that can accumulate in renal failure."
+  ],
+  "related": [
+    "fluconazole",
+    "posaconazole",
+    "itraconazole",
+    "amphotericin-b",
+    "caspofungin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Voriconazole",
+      "url": "https://en.wikipedia.org/wiki/Voriconazole"
+    },
+    {
+      "title": "DailyMed label search: Vfend",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=vfend"
+    },
+    {
+      "title": "EMA EPAR: Vfend",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/vfend"
+    },
+    {
+      "title": "Herbrecht R et al. Voriconazole versus amphotericin B for primary therapy of invasive aspergillosis. NEJM 2002",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa020191"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,133 @@
 {
   "slug": "lenacapavir",
   "name": "Lenacapavir",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "GS-6207",
+    "GS-CA2",
+    "LEN",
+    "lenacapavir sodium"
+  ],
+  "brands": [
+    "Sunlenca (treatment)",
+    "Yeztugo (PrEP, US)",
+    "Yeytuo (PrEP, EU)"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "HIV-1 capsid inhibitor (first in class)",
+  "modality": "small-molecule",
+  "routes": [
+    "sc",
+    "oral"
+  ],
+  "route_note": "subcutaneous injection every 6 months, after an oral tablet loading phase",
+  "targets": [
+    "HIV-1 capsid protein (p24, CA)"
+  ],
+  "origin": "synthetic",
+  "originator": "Gilead Sciences",
+  "owner": "Gilead Sciences",
+  "first_approval": {
+    "year": 2022,
+    "agency": "EMA",
+    "country": "European Union",
+    "brand": "Sunlenca"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Gilead Sciences",
+    "note": "Developed from Gilead's capsid-targeting programme; extremely high potency and low solubility allow a twice-yearly depot."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "First HIV capsid inhibitor; two injections a year prevent HIV almost completely",
+  "summary": "Lenacapavir is the first HIV-1 capsid inhibitor, potent enough to be given as a subcutaneous injection only twice a year. It was first approved for multidrug-resistant HIV and in 2025 for pre-exposure prophylaxis, after trials in which it prevented nearly all infections. Science named it the 2024 Breakthrough of the Year.",
+  "mechanism": [
+    "The HIV capsid is a cone-shaped shell of p24 protein that protects the viral genome, guides it to the nucleus and then comes apart in a controlled way. Lenacapavir binds the interface between adjacent capsid subunits, where host factors such as CPSF6 and Nup153 also bind.",
+    "By hyper-stabilising and distorting the capsid, it disrupts nuclear import of viral DNA, virus assembly and formation of a normal capsid in new particles, so it acts at several stages of the life cycle. Resistance mutations such as M66I and Q67H reduce susceptibility; there is no cross-resistance with other drug classes."
+  ],
+  "uses": [
+    "Multidrug-resistant HIV-1 infection in heavily treatment-experienced adults, with an optimised background regimen (Sunlenca)",
+    "HIV-1 pre-exposure prophylaxis in adults and adolescents weighing at least 35 kg (Yeztugo/Yeytuo)"
+  ],
+  "history": [
+    {
+      "year": 2020,
+      "title": "First clinical data",
+      "detail": "Gilead describes GS-6207 and its sustained antiviral activity after a single injection (Nature 2020)."
+    },
+    {
+      "year": 2022,
+      "title": "First approval",
+      "detail": "The EU approves Sunlenca in August 2022 and the FDA in December 2022 for multidrug-resistant HIV."
+    },
+    {
+      "year": 2024,
+      "title": "PURPOSE 1",
+      "detail": "The PrEP trial in young women in South Africa and Uganda reports zero HIV infections among those receiving lenacapavir; PURPOSE 2 in men and gender-diverse people also shows very high efficacy."
+    },
+    {
+      "year": 2024,
+      "title": "Generic licences",
+      "detail": "Gilead signs royalty-free voluntary licences with six generic manufacturers to supply 120 low- and middle-income countries; Science names lenacapavir its Breakthrough of the Year."
+    },
+    {
+      "year": 2025,
+      "title": "PrEP approval",
+      "detail": "The FDA approves Yeztugo for PrEP in June 2025; WHO recommends lenacapavir PrEP in July, and the EU approves it in August."
+    }
+  ],
+  "pk": {
+    "half_life": "oral about 10–12 days; subcutaneous apparent half-life about 8–12 weeks",
+    "bioavailability": "oral about 6–10%",
+    "metabolism": "CYP3A, UGT1A1 and P-glycoprotein substrate; moderate CYP3A inhibitor",
+    "excretion": "mainly faeces (largely unchanged)"
+  },
+  "safety": {
+    "common": [
+      "injection-site reactions (swelling, pain, nodules, induration)",
+      "nausea",
+      "headache"
+    ],
+    "serious": [
+      "immune reconstitution syndrome",
+      "persistent injection-site nodules",
+      "emergence of resistance if HIV is acquired while drug levels decline"
+    ],
+    "boxed_warning": "Yeztugo: risk of drug resistance if used for PrEP in undiagnosed HIV-1 infection (US label)."
+  },
+  "facts": [
+    "Lenacapavir's twice-yearly dosing is the longest dosing interval of any approved HIV medicine.",
+    "Injected drug forms a depot under the skin from which it is released slowly over months.",
+    "Drug levels can persist for a year or more after the last injection."
+  ],
+  "related": [
+    "cabotegravir",
+    "tenofovir-alafenamide",
+    "emtricitabine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Lenacapavir",
+      "url": "https://en.wikipedia.org/wiki/Lenacapavir"
+    },
+    {
+      "title": "DailyMed label search: Sunlenca",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=sunlenca"
+    },
+    {
+      "title": "DailyMed label search: Yeztugo",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=yeztugo"
+    },
+    {
+      "title": "EMA EPAR: Sunlenca",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/sunlenca"
+    },
+    {
+      "title": "Bekker LG et al. Twice-yearly lenacapavir or daily F/TAF for HIV prevention in cisgender women (PURPOSE 1). NEJM 2024",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2407001"
+    }
+  ],
+  "stage": "written"
 }

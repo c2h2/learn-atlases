@@ -1,36 +1,135 @@
 {
   "slug": "oseltamivir",
   "name": "Oseltamivir",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "GS-4104",
+    "Ro 64-0796",
+    "oseltamivir phosphate"
+  ],
+  "brands": [
+    "Tamiflu"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Neuraminidase inhibitor (influenza antiviral)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral capsules or suspension twice daily for 5 days for treatment; once daily for prophylaxis",
+  "targets": [
+    "Influenza A and B neuraminidase"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Gilead Sciences (licensed to Roche)",
+  "owner": "Roche (Tamiflu); generics widely available",
+  "first_approval": {
+    "year": 1999,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Tamiflu"
+  },
+  "discovery": {
+    "year": 1996,
+    "by": "Choung Kim, Norbert Bischofberger and colleagues, Gilead Sciences",
+    "note": "Structure-based design of a carbocyclic sialic-acid mimic; the ethyl-ester prodrug made oral dosing possible."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Oral flu pill that stops new virus particles escaping from infected cells",
+  "summary": "Oseltamivir is an oral prodrug of oseltamivir carboxylate, a neuraminidase inhibitor active against influenza A and B. Started within 48 hours of symptoms it shortens illness by about a day, and it is also used for post-exposure prophylaxis. Governments have stockpiled it for pandemic preparedness.",
+  "mechanism": [
+    "Influenza neuraminidase cleaves sialic acid from cell-surface glycoproteins so that newly formed virus particles can leave the infected cell and spread. Oseltamivir carboxylate is a transition-state analogue of sialic acid that binds tightly in the enzyme's active site.",
+    "With neuraminidase blocked, progeny virions stay clumped on the cell surface and spread through the respiratory tract is limited. The drug does not act on virus entry or replication inside the cell, which is why early treatment matters. Resistance arises mainly through the H275Y neuraminidase mutation in N1 viruses."
+  ],
+  "uses": [
+    "Treatment of uncomplicated influenza A and B in patients aged 2 weeks and older who have had symptoms for no more than 48 hours",
+    "Prophylaxis of influenza in people aged 1 year and older",
+    "Treatment of severe or hospitalised influenza (guideline use)"
+  ],
+  "history": [
+    {
+      "year": 1996,
+      "title": "Discovery",
+      "detail": "Gilead scientists report GS-4104, an orally bioavailable neuraminidase inhibitor; Roche licenses it the same year."
+    },
+    {
+      "year": 1999,
+      "title": "FDA approval",
+      "detail": "Tamiflu is approved in the US for treatment of influenza in adults."
+    },
+    {
+      "year": 2005,
+      "title": "Pandemic stockpiling",
+      "detail": "Fears of H5N1 avian influenza lead many governments to stockpile oseltamivir; supply of shikimic acid from star anise becomes a bottleneck."
+    },
+    {
+      "year": 2007,
+      "title": "Neuropsychiatric warning",
+      "detail": "After reports of abnormal behaviour in Japanese adolescents, labels add warnings on neuropsychiatric events."
+    },
+    {
+      "year": 2009,
+      "title": "H1N1 pandemic",
+      "detail": "Oseltamivir is widely used during the H1N1 pandemic; resistant seasonal H1N1 strains had spread in 2007–2008."
+    },
+    {
+      "year": 2014,
+      "title": "Cochrane review",
+      "detail": "A Cochrane review with full clinical study reports finds modest symptom benefit and questions effects on complications, fuelling debate over stockpiling."
+    },
+    {
+      "year": 2016,
+      "title": "US generics",
+      "detail": "The first generic oseltamivir capsules are approved by the FDA."
+    }
+  ],
+  "pk": {
+    "half_life": "prodrug 1–3 h; oseltamivir carboxylate 6–10 h",
+    "bioavailability": "at least 75% reaches circulation as oseltamivir carboxylate",
+    "metabolism": "hepatic carboxylesterase 1 (CES1) converts prodrug to active carboxylate",
+    "excretion": "renal (glomerular filtration and tubular secretion)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "nausea",
+      "vomiting",
+      "headache"
+    ],
+    "serious": [
+      "serious skin reactions (Stevens–Johnson syndrome, toxic epidermal necrolysis; rare)",
+      "anaphylaxis",
+      "neuropsychiatric events such as delirium and abnormal behaviour (mainly reported in children)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Industrial synthesis traditionally started from shikimic acid extracted from Chinese star anise, later supplemented by fermentation.",
+    "Oseltamivir is on the WHO Model List of Essential Medicines.",
+    "Its benefit is greatest when started within 48 hours of symptom onset."
+  ],
+  "related": [
+    "baloxavir-marboxil",
+    "amantadine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Oseltamivir",
+      "url": "https://en.wikipedia.org/wiki/Oseltamivir"
+    },
+    {
+      "title": "DailyMed label search: Tamiflu",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=tamiflu"
+    },
+    {
+      "title": "EMA EPAR: Tamiflu",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/tamiflu"
+    },
+    {
+      "title": "Kim CU et al. Influenza neuraminidase inhibitors possessing a novel hydrophobic interaction in the enzyme active site. J Am Chem Soc 1997",
+      "url": "https://pubs.acs.org/doi/10.1021/ja963036t"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,135 @@
 {
   "slug": "quinine",
   "name": "Quinine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "quinine sulfate",
+    "quinine dihydrochloride"
+  ],
+  "brands": [
+    "Qualaquin"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Cinchona alkaloid antimalarial (aryl-amino alcohol)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "im"
+  ],
+  "route_note": "oral tablets three times daily for 7 days, usually with doxycycline or clindamycin; IV infusion or IM injection where artesunate is unavailable",
+  "targets": [
+    "Haem detoxification in the Plasmodium food vacuole"
+  ],
+  "origin": "natural",
+  "originator": "Isolated from cinchona bark by Pierre-Joseph Pelletier and Joseph Bienaimé Caventou",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 2005,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Qualaquin (first formally approved US product)"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1820,
+    "by": "Pierre-Joseph Pelletier and Joseph Bienaimé Caventou, Paris",
+    "note": "Alkaloid purified from the bark of South American Cinchona trees, used against fevers since at least the 17th century."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "The original antimalarial from cinchona bark, now a backup for severe malaria",
+  "summary": "Quinine is an alkaloid from the bark of the cinchona tree and was the first effective chemical treatment for malaria. It has largely been replaced by artemisinin derivatives, but it remains an alternative for severe malaria when artesunate is not available and for uncomplicated malaria in some settings. Cinchonism and serious blood disorders limit its use; it is no longer recommended for leg cramps.",
+  "mechanism": [
+    "Quinine acts on the blood stages of malaria parasites. Like other quinoline antimalarials it is thought to accumulate in the parasite's food vacuole and inhibit polymerisation of haem into haemozoin, so toxic haem builds up.",
+    "It also has effects on muscle membranes and sodium channels, which underlie its former use for cramps and its cardiac toxicity. Its stereoisomer quinidine was used as an antiarrhythmic and as IV antimalarial."
+  ],
+  "uses": [
+    "Uncomplicated P. falciparum malaria (oral, with doxycycline, tetracycline or clindamycin)",
+    "Severe malaria when parenteral artesunate is unavailable",
+    "Malaria in the first trimester of pregnancy (with clindamycin; some guidelines)"
+  ],
+  "history": [
+    {
+      "year": 1630,
+      "title": "Jesuit's bark",
+      "detail": "By the 1630s cinchona bark from Peru is in use against fevers; Jesuits bring it to Europe in the following decades."
+    },
+    {
+      "year": 1820,
+      "title": "Isolation",
+      "detail": "Pelletier and Caventou isolate quinine from cinchona bark in Paris."
+    },
+    {
+      "year": 1854,
+      "title": "Plantations",
+      "detail": "Dutch and British efforts to cultivate cinchona in Java and India begin, eventually giving Java a near-monopoly on supply."
+    },
+    {
+      "year": 1944,
+      "title": "Synthesis",
+      "detail": "Robert Woodward and William Doering report a formal total synthesis of quinine."
+    },
+    {
+      "year": 2005,
+      "title": "US approval",
+      "detail": "Qualaquin becomes the first FDA-approved quinine product, for uncomplicated falciparum malaria."
+    },
+    {
+      "year": 2006,
+      "title": "Leg cramps ban",
+      "detail": "The FDA orders unapproved quinine products off the market, citing serious and fatal adverse events with use for nocturnal leg cramps."
+    },
+    {
+      "year": 2010,
+      "title": "Replaced by artesunate",
+      "detail": "The AQUAMAT trial leads WHO to prefer artesunate over quinine for severe malaria in children."
+    }
+  ],
+  "pk": {
+    "half_life": "about 11–18 h (longer in severe malaria)",
+    "bioavailability": "about 76–88% (oral)",
+    "metabolism": "hepatic CYP3A4 (main) to 3-hydroxyquinine",
+    "excretion": "renal (about 20% unchanged)"
+  },
+  "safety": {
+    "common": [
+      "cinchonism (tinnitus, hearing loss, headache, nausea, visual disturbance)",
+      "hypoglycaemia",
+      "abdominal pain"
+    ],
+    "serious": [
+      "thrombocytopenia, haemolytic uraemic syndrome/TTP and disseminated intravascular coagulation",
+      "QT prolongation and arrhythmias",
+      "haemolysis in G6PD deficiency",
+      "blindness and cardiotoxicity in overdose"
+    ],
+    "boxed_warning": "Use for nocturnal leg cramps may cause serious and life-threatening haematological reactions, including thrombocytopenia and HUS/TTP; not approved for that use (US label)."
+  },
+  "facts": [
+    "Quinine is responsible for the bitter taste of tonic water, which contains much lower amounts than medicinal doses.",
+    "Its scarcity during the Second World War spurred programmes that produced chloroquine and other synthetic antimalarials."
+  ],
+  "related": [
+    "chloroquine",
+    "artesunate",
+    "artemether-lumefantrine",
+    "doxycycline",
+    "clindamycin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Quinine",
+      "url": "https://en.wikipedia.org/wiki/Quinine"
+    },
+    {
+      "title": "DailyMed label search: Qualaquin",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=qualaquin"
+    },
+    {
+      "title": "WHO Guidelines for malaria",
+      "url": "https://www.who.int/publications/i/item/guidelines-for-malaria"
+    }
+  ],
+  "stage": "written"
 }

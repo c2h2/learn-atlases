@@ -1,36 +1,121 @@
 {
   "slug": "praziquantel",
   "name": "Praziquantel",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "EMBAY 8440",
+    "PZQ",
+    "arpraziquantel (R-enantiomer, paediatric)"
+  ],
+  "brands": [
+    "Biltricide",
+    "Cesol",
+    "Cysticide",
+    "Distocide"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Pyrazinoisoquinoline anthelmintic (schistosomicide and cestocide)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablets, often as a single dose (or one day's doses) with food; dispersible arpraziquantel for young children",
+  "targets": [
+    "Schistosome TRPM channel (TRPM_PZQ)"
+  ],
+  "origin": "synthetic",
+  "originator": "Bayer and E. Merck (Merck KGaA), Germany",
+  "owner": "generic (many); Merck KGaA donates tablets to WHO",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "discovery": {
+    "year": 1972,
+    "by": "Bayer and E. Merck research laboratories",
+    "note": "Discovered in a joint programme on pyrazinoisoquinolines; its anthelmintic activity was established in the mid-1970s, first in veterinary medicine."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "The single drug behind schistosomiasis control across Africa",
+  "summary": "Praziquantel is the main drug against schistosomiasis and is also used for liver flukes and tapeworm infections. A single day's treatment causes rapid paralysis and damage to the worms' outer surface. Merck KGaA donates hundreds of millions of tablets a year for mass treatment of school-age children, and a child-friendly formulation of its active enantiomer (arpraziquantel) was approved in 2023–2024.",
+  "mechanism": [
+    "Praziquantel activates a transient receptor potential channel of the melastatin family in schistosomes and other flatworms (TRPM_PZQ), which was identified as its target around 2019–2021. The resulting rapid calcium influx causes spastic muscle paralysis.",
+    "It also damages the worm's tegument (outer surface), exposing parasite antigens to the immune system. The (R)-enantiomer carries the activity; immature schistosomes are relatively insensitive, which is one reason for repeat treatment."
+  ],
+  "uses": [
+    "Schistosomiasis (all species)",
+    "Liver fluke infections: clonorchiasis and opisthorchiasis",
+    "Intestinal tapeworm infections (taeniasis, diphyllobothriasis, hymenolepiasis)",
+    "Neurocysticercosis (often with albendazole)"
+  ],
+  "history": [
+    {
+      "year": 1972,
+      "title": "Discovery",
+      "detail": "Praziquantel is synthesised in the Bayer–Merck collaboration."
+    },
+    {
+      "year": 1982,
+      "title": "Human schistosomiasis",
+      "detail": "Praziquantel enters human use for schistosomiasis in the early 1980s, replacing more toxic drugs."
+    },
+    {
+      "year": 2007,
+      "title": "Donation",
+      "detail": "Merck KGaA begins donating praziquantel to WHO, later expanding to up to 250 million tablets per year."
+    },
+    {
+      "year": 2021,
+      "title": "Target identified",
+      "detail": "Studies by Marchant and colleagues show that praziquantel activates the schistosome TRPM_PZQ channel."
+    },
+    {
+      "year": 2023,
+      "title": "Paediatric arpraziquantel",
+      "detail": "The EMA gives a positive scientific opinion on arpraziquantel dispersible tablets for children aged 3 months to 6 years, developed by the Pediatric Praziquantel Consortium; WHO prequalification follows in 2024."
+    }
+  ],
+  "pk": {
+    "half_life": "about 0.8–1.5 h (metabolites 4–5 h)",
+    "bioavailability": "well absorbed but extensive first-pass metabolism; increased by food",
+    "metabolism": "hepatic CYP3A4, CYP1A2 and CYP2C19",
+    "excretion": "mainly renal as metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "abdominal pain",
+      "headache",
+      "dizziness",
+      "nausea",
+      "malaise"
+    ],
+    "serious": [
+      "neurological reactions in neurocysticercosis due to inflammation around dying cysts",
+      "worsening of ocular cysticercosis",
+      "arrhythmias (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Rifampicin is contraindicated with praziquantel because it can reduce praziquantel levels to ineffective concentrations.",
+    "Its bitter taste and large tablets prompted the development of the paediatric arpraziquantel formulation."
+  ],
+  "related": [
+    "albendazole",
+    "ivermectin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Praziquantel",
+      "url": "https://en.wikipedia.org/wiki/Praziquantel"
+    },
+    {
+      "title": "DailyMed label search: Biltricide",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=biltricide"
+    },
+    {
+      "title": "WHO: Schistosomiasis fact sheet",
+      "url": "https://www.who.int/news-room/fact-sheets/detail/schistosomiasis"
+    }
+  ],
+  "stage": "written"
 }

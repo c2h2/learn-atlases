@@ -1,36 +1,141 @@
 {
   "slug": "aciclovir",
   "name": "Aciclovir",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "acyclovir (USAN)",
+    "acycloguanosine",
+    "ACV"
+  ],
+  "brands": [
+    "Zovirax",
+    "Sitavig"
+  ],
   "area": "anti-infective-other",
   "batch": "04",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Nucleoside analogue antiviral (guanosine analogue; herpesvirus DNA polymerase inhibitor)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "topical",
+    "ophthalmic"
+  ],
+  "route_note": "oral tablets/suspension several times daily; IV infusion for encephalitis and severe or immunocompromised infection; cream and eye ointment",
+  "targets": [
+    "HSV/VZV thymidine kinase (activation)",
+    "Herpesvirus DNA polymerase (UL30)"
+  ],
+  "origin": "synthetic",
+  "originator": "Burroughs Wellcome (Gertrude Elion, Howard Schaeffer and colleagues)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1982,
+    "agency": "FDA",
+    "country": "United States",
+    "brand": "Zovirax (topical ointment)"
+  },
+  "discovery": {
+    "year": 1974,
+    "by": "Howard Schaeffer, Gertrude Elion and colleagues, Burroughs Wellcome",
+    "note": "Acyclic guanosine analogue whose selective antiviral activity was reported in 1977; it is phosphorylated almost only in virus-infected cells."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription; low-strength cold-sore cream OTC in many countries",
+  "tagline": "The first truly selective antiviral, still the backbone of herpes simplex and zoster care",
+  "summary": "Aciclovir is a guanosine analogue active against herpes simplex virus (HSV) and varicella-zoster virus (VZV). It needs a viral thymidine kinase to become active, so it hits infected cells and largely spares healthy ones. That selectivity made it a landmark in antiviral chemotherapy.",
+  "mechanism": [
+    "Aciclovir is taken up by cells and first phosphorylated to aciclovir monophosphate by the virus-encoded thymidine kinase of HSV or VZV; uninfected cells do this very poorly. Cellular kinases then convert it to aciclovir triphosphate.",
+    "Aciclovir triphosphate competes with deoxyguanosine triphosphate for the viral DNA polymerase, which it inhibits much more strongly than host polymerases. When it is built into the growing DNA strand it acts as an obligate chain terminator, because it has no 3'-hydroxyl group.",
+    "Resistance arises mainly through thymidine kinase–deficient or altered mutants (seen mostly in immunocompromised patients) and, less often, through DNA polymerase mutations."
+  ],
+  "uses": [
+    "Genital herpes (first episode, recurrences, suppression)",
+    "Herpes labialis (cold sores)",
+    "Herpes zoster (shingles) and varicella (chickenpox)",
+    "Herpes simplex encephalitis and neonatal HSV (IV)",
+    "Herpetic keratitis (eye ointment)",
+    "Prophylaxis of HSV/VZV in immunocompromised patients"
+  ],
+  "history": [
+    {
+      "year": 1974,
+      "title": "Synthesis",
+      "detail": "Acycloguanosine is synthesised at Burroughs Wellcome in a programme on purine analogues."
+    },
+    {
+      "year": 1977,
+      "title": "Selectivity reported",
+      "detail": "Elion, Schaeffer and colleagues publish the mechanism of selective activation by herpes thymidine kinase in PNAS."
+    },
+    {
+      "year": 1982,
+      "title": "First approval",
+      "detail": "Topical Zovirax ointment is approved by the FDA, followed the same year by the IV formulation."
+    },
+    {
+      "year": 1985,
+      "title": "Oral formulation",
+      "detail": "Oral aciclovir is approved in the US, allowing outpatient treatment and suppression of genital herpes."
+    },
+    {
+      "year": 1988,
+      "title": "Nobel Prize",
+      "detail": "Gertrude Elion shares the Nobel Prize in Physiology or Medicine with George Hitchings and James Black, with aciclovir among the drugs cited."
+    },
+    {
+      "year": 1995,
+      "title": "Prodrug successor",
+      "detail": "Valaciclovir, an oral prodrug with higher bioavailability, is approved."
+    },
+    {
+      "year": 1997,
+      "title": "Generics",
+      "detail": "US patent protection ends and generic aciclovir becomes widely available."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2.5–3 h in adults with normal renal function (much longer in renal failure)",
+    "bioavailability": "oral about 10–20%, falling with higher doses",
+    "metabolism": "minimal; small fraction to 9-carboxymethoxymethylguanine",
+    "excretion": "renal, mostly unchanged, by glomerular filtration and tubular secretion"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "nausea, vomiting, diarrhoea",
+      "headache",
+      "local irritation with topical use",
+      "phlebitis at IV site"
+    ],
+    "serious": [
+      "acute kidney injury from crystal nephropathy (high-dose IV, dehydration)",
+      "neurotoxicity (confusion, hallucinations, seizures), especially in renal impairment",
+      "thrombotic thrombocytopenic purpura/haemolytic uraemic syndrome in immunocompromised patients (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Aciclovir was one of the first antivirals shown to be selectively activated inside virus-infected cells.",
+    "The INN is spelled aciclovir; the US adopted name is acyclovir.",
+    "Doses must be adjusted for kidney function because the drug is cleared almost entirely by the kidneys."
+  ],
+  "related": [
+    "valaciclovir",
+    "ganciclovir"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Aciclovir",
+      "url": "https://en.wikipedia.org/wiki/Aciclovir"
+    },
+    {
+      "title": "DailyMed label search: acyclovir",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?labeltype=all&query=acyclovir"
+    },
+    {
+      "title": "Elion GB et al. Selectivity of action of an antiherpetic agent, 9-(2-hydroxyethoxymethyl)guanine. PNAS 1977",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.74.12.5716"
+    }
+  ],
+  "stage": "written"
 }
