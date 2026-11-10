@@ -36,7 +36,8 @@
     "note": "A benzimidazole derivative that blocks dopamine receptors but penetrates the blood–brain barrier poorly."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription in many countries; pharmacy-available in some; not approved in the US",
   "tagline": "Peripherally acting antiemetic used widely outside the US; cardiac risk limits use",
   "summary": "Domperidone is a dopamine D2 antagonist that relieves nausea and vomiting and speeds gastric emptying. It acts mainly outside the brain, so it rarely causes movement disorders, but its association with QT prolongation and sudden cardiac death led to restrictions; it is not approved in the US.",

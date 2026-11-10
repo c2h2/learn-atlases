@@ -35,7 +35,8 @@
     "note": "Developed as a pure heart-rate-lowering agent acting on the sinoatrial node funny current."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Pure heart-rate lowering via the sinus node funny current",
   "summary": "Ivabradine slows the heart rate by selectively blocking the funny current (If) in the sinoatrial node, without affecting contractility or blood pressure. It is used in chronic heart failure with reduced ejection fraction and elevated resting heart rate and, in Europe, for stable angina.",

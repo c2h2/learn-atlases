@@ -34,7 +34,8 @@
     "note": "Found by screening for compounds that reduce actin-activated myosin ATPase; BMS acquired MyoKardia in 2020."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (restricted REMS programme in the US)",
   "tagline": "First-in-class cardiac myosin inhibitor for obstructive hypertrophic cardiomyopathy",
   "summary": "Mavacamten is a first-in-class allosteric inhibitor of cardiac myosin that reduces excessive contractility in hypertrophic cardiomyopathy. In symptomatic obstructive HCM it lowers the outflow-tract gradient and improves symptoms and exercise capacity, but requires echocardiographic monitoring because it can reduce ejection fraction.",

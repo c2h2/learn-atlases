@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Pacific-yew taxane that freezes microtubules; mainstay for breast, ovarian and lung cancer",
   "summary": "Paclitaxel is a taxane diterpenoid that stabilises microtubules and arrests cells in mitosis. Originally extracted from Pacific yew bark and now produced by semisynthesis or plant-cell fermentation, it is a standard treatment for ovarian, breast, lung and many other cancers.",

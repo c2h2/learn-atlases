@@ -36,7 +36,8 @@
     "note": "A humanised, Fc-engineered (non-FcR-binding) version of the anti-CD3 antibody OKT3, designed to reduce cytokine release."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "The first drug to delay the onset of type 1 diabetes",
   "summary": "Teplizumab is a humanised anti-CD3 monoclonal antibody given as a 14-day infusion course. In November 2022 it became the first therapy approved to delay the onset of clinical (stage 3) type 1 diabetes in people aged 8 and older who already have stage 2 disease, delaying diagnosis by about two years in the pivotal trial.",

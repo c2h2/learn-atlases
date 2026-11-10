@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription (hospital)",
   "tagline": "Old polymyxin revived as a last-resort drug against carbapenem-resistant Gram-negatives",
   "summary": "Colistin (polymyxin E) is a cationic lipopeptide antibiotic discovered in Japan in the late 1940s. Abandoned in the 1970s for nephro- and neurotoxicity, it returned as a last-line treatment for carbapenem-resistant Acinetobacter, Pseudomonas and Enterobacterales, and plasmid mcr resistance genes discovered in 2015 have made it a symbol of the antimicrobial resistance crisis.",

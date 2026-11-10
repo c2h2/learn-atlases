@@ -42,7 +42,8 @@
     "note": "An eight-amino-acid cyclic peptide retaining the active core of somatostatin, with a half-life of hours rather than minutes."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "A stable somatostatin mimic for acromegaly, carcinoid syndrome and variceal bleeding",
   "summary": "Octreotide is a synthetic eight-amino-acid analogue of somatostatin that inhibits secretion of growth hormone and many gut hormones. It treats acromegaly and the symptoms of neuroendocrine tumours, slows their growth, and is widely used to control bleeding from oesophageal varices.",

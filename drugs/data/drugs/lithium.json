@@ -41,6 +41,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Simple ion that remains the gold standard for bipolar disorder and suicide prevention",
   "summary": "Lithium salts are the oldest and best-established mood stabilisers, used for acute mania and long-term prevention of episodes in bipolar disorder. Lithium reduces suicide risk, but its narrow therapeutic index requires regular blood-level, kidney and thyroid monitoring.",

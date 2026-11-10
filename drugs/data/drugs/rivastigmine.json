@@ -37,7 +37,8 @@
     "note": "A carbamate derived from the physostigmine pharmacophore, licensed to Sandoz (later Novartis)."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Cholinesterase inhibitor for Alzheimer's and Parkinson's disease dementia, also as a patch",
   "summary": "Rivastigmine is a carbamate cholinesterase inhibitor used for mild-to-moderate Alzheimer's disease and dementia associated with Parkinson's disease. Its transdermal patch reduces the gastrointestinal effects seen with capsules.",

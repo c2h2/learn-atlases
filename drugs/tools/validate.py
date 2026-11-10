@@ -20,6 +20,7 @@ for slug, p in sorted(files.items()):
     if d.get("area") not in AREAS: e(f"area {d.get('area')!r}")
     if d.get("modality") not in MOD: e(f"modality {d.get('modality')!r}")
     if d.get("origin") not in ORIG: e(f"origin {d.get('origin')!r}")
+    if d.get("who_status") not in ("listed","alternative","not-listed"): e(f"who_status {d.get('who_status')!r}")
     for r in d.get("routes", []):
         if r not in ROUTES: e(f"route {r!r}")
     for r in d.get("related", []):

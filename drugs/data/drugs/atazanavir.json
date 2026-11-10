@@ -38,6 +38,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Once-daily protease inhibitor known for causing harmless jaundice",
   "summary": "Atazanavir is an HIV protease inhibitor that was the first in its class to be taken once daily. It has less effect on blood lipids than older protease inhibitors but frequently raises unconjugated bilirubin, causing jaundice that is usually harmless. Ritonavir-boosted atazanavir has been a WHO-recommended second-line option.",

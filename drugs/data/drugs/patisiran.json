@@ -33,7 +33,8 @@
     "note": "A double-stranded siRNA against a conserved sequence in the transthyretin mRNA 3' untranslated region, encapsulated in lipid nanoparticles that deliver it to the liver."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First approved RNA interference drug, silencing transthyretin in hereditary amyloidosis",
   "summary": "Patisiran is a lipid nanoparticle-formulated small interfering RNA that silences transthyretin production in the liver. In 2018 it became the first RNA interference therapeutic to be approved, for polyneuropathy of hereditary transthyretin-mediated amyloidosis.",

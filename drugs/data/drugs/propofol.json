@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription (hospital use)",
   "tagline": "Milky white IV anaesthetic with rapid onset and clear-headed recovery",
   "summary": "Propofol is the most widely used intravenous anaesthetic, given to induce and maintain general anaesthesia and for sedation in intensive care and procedures. It acts within a minute, wears off quickly with little hangover and reduces nausea, but it causes dose-dependent respiratory depression and hypotension and requires airway expertise.",

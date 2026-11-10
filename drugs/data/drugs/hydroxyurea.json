@@ -38,6 +38,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Old antimetabolite that became the backbone of sickle cell disease treatment",
   "summary": "Hydroxycarbamide (hydroxyurea) inhibits ribonucleotide reductase, slowing DNA synthesis. It is used for myeloproliferative neoplasms and some cancers, and since the 1990s it has been the main disease-modifying therapy for sickle cell anaemia, where it raises fetal haemoglobin and reduces painful crises.",

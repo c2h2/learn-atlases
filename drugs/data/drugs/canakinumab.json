@@ -33,7 +33,8 @@
     "note": "Fully human IgG1κ antibody against IL-1β, generated in transgenic mice."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Long-acting anti-IL-1β antibody for periodic fever syndromes and Still's disease",
   "summary": "Canakinumab is a human monoclonal antibody that neutralises interleukin-1β. It is used for rare autoinflammatory periodic fever syndromes, Still's disease and gout flares, and was the subject of CANTOS, the first trial to show that targeting inflammation reduces cardiovascular events.",

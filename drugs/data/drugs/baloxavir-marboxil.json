@@ -35,7 +35,8 @@
     "note": "Discovered from Shionogi's research on metal-chelating inhibitors of the influenza PA endonuclease, building on earlier HIV integrase work."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Single-dose flu antiviral that blocks the virus's cap-snatching step",
   "summary": "Baloxavir marboxil is a prodrug of baloxavir acid, which inhibits the cap-dependent endonuclease of the influenza virus polymerase. It is taken as a single oral dose to treat uncomplicated influenza and to prevent it after exposure. It was the first influenza antiviral with a new mechanism in about two decades.",

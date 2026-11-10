@@ -36,7 +36,8 @@
     "note": "Humanised form of the murine antibody 2C4 binding the HER2 dimerisation domain."
   },
   "generic": null,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "HER2 dimerisation blocker used with trastuzumab for dual HER2 blockade",
   "summary": "Pertuzumab is a humanised monoclonal antibody that binds a different epitope of HER2 from trastuzumab and blocks receptor dimerisation. Given with trastuzumab and chemotherapy, it improves outcomes in HER2-positive metastatic and early breast cancer.",

@@ -35,7 +35,8 @@
     "note": "Developed after rare high-bone-mass disorders (sclerosteosis, van Buchem disease) were traced to loss of sclerostin (SOST gene, 2001)."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "An antibody against sclerostin that builds bone and curbs resorption at once",
   "summary": "Romosozumab is a humanised monoclonal antibody against sclerostin, a natural brake on bone formation. A year of monthly injections both increases bone formation and decreases resorption, rapidly raising bone density and reducing fractures, but it carries a boxed warning for heart attack and stroke.",

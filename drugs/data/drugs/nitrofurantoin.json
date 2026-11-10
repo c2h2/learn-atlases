@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Urine-concentrated nitrofuran, a first-line treatment for cystitis",
   "summary": "Nitrofurantoin is a synthetic nitrofuran used since 1953 to treat and prevent uncomplicated lower urinary tract infections. It reaches therapeutic concentrations only in urine, so it is unsuitable for pyelonephritis or systemic infections, and resistance has remained low despite decades of use.",

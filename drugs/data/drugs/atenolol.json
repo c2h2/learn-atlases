@@ -35,7 +35,8 @@
     "note": "A hydrophilic β1-selective blocker developed as a successor to propranolol."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Hydrophilic, renally cleared once-daily β1 blocker",
   "summary": "Atenolol is a hydrophilic, β1-selective beta-blocker excreted unchanged by the kidneys. Once a leading antihypertensive, it lost favour after trials suggested weaker stroke protection than other drug classes, but it remains used for angina, arrhythmias and after myocardial infarction.",

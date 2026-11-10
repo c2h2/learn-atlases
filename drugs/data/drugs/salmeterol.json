@@ -37,7 +37,8 @@
     "note": "A salbutamol derivative with a long lipophilic side chain intended to anchor the molecule near the beta2 receptor for prolonged action."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Twice-daily long-acting bronchodilator, mainly used with fluticasone",
   "summary": "Salmeterol is a long-acting beta2-agonist that keeps airways open for about 12 hours. It is used for maintenance treatment of asthma (only together with an inhaled corticosteroid) and COPD, most often in the fluticasone/salmeterol combination inhaler.",

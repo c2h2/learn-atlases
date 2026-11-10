@@ -36,6 +36,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Clears dormant vivax parasites from the liver, but dangerous in G6PD deficiency",
   "summary": "Primaquine is an 8-aminoquinoline antimalarial that kills the dormant liver forms (hypnozoites) of Plasmodium vivax and P. ovale, preventing relapses, and the gametocytes of P. falciparum, blocking transmission to mosquitoes. It can cause severe haemolysis in people with G6PD deficiency, and research into this reaction led to the discovery of G6PD deficiency itself.",

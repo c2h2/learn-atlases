@@ -34,7 +34,8 @@
     "note": "Humanised afucosylated IgG1κ antibody against IL-5Rα made with BioWa's Potelligent technology, enhancing ADCC."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Afucosylated IL-5 receptor antibody that depletes eosinophils, dosed every 8 weeks",
   "summary": "Benralizumab is a humanised monoclonal antibody against the IL-5 receptor α chain that rapidly and almost completely depletes eosinophils. It is used for severe eosinophilic asthma and, since 2024, eosinophilic granulomatosis with polyangiitis.",

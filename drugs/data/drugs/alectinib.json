@@ -36,7 +36,8 @@
     "note": "A benzo[b]carbazolone ALK inhibitor active against crizotinib-resistant mutations and not a P-glycoprotein substrate, giving good brain penetration."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Brain-penetrant second-generation ALK inhibitor and first-line standard for ALK+ NSCLC",
   "summary": "Alectinib is a highly selective, brain-penetrant ALK inhibitor. It outperformed crizotinib as first-line therapy for ALK-positive non-small-cell lung cancer, notably reducing brain progression, and in 2024 became the first ALK inhibitor approved as adjuvant therapy after surgery.",

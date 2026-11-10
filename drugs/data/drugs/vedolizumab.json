@@ -37,7 +37,8 @@
     "note": "Humanised IgG1 version of the murine antibody Act-1, which recognises the α4β7 integrin heterodimer."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Gut-selective α4β7 integrin blocker for ulcerative colitis and Crohn's disease",
   "summary": "Vedolizumab is a humanised monoclonal antibody that blocks the α4β7 integrin on gut-homing lymphocytes. By preventing these cells from entering intestinal tissue, it treats ulcerative colitis and Crohn's disease with little systemic immunosuppression.",

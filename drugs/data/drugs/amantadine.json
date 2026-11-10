@@ -36,7 +36,8 @@
     "note": "Antiviral activity against influenza A was reported in 1964; anti-parkinsonian effect was noticed by chance in 1969."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Old flu antiviral repurposed for Parkinson's disease and levodopa-induced dyskinesia",
   "summary": "Amantadine was introduced in the 1960s as an influenza A antiviral and was serendipitously found to relieve Parkinson's disease symptoms. Viral resistance has ended its antiviral role, but it remains the main oral drug for levodopa-induced dyskinesia.",

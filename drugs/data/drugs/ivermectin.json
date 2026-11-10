@@ -39,6 +39,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription; veterinary products widely available",
   "tagline": "Nobel-winning antiparasitic donated to hundreds of millions to fight river blindness",
   "summary": "Ivermectin is a semi-synthetic avermectin that paralyses many nematodes and arthropods. Donated by Merck since 1987 through the Mectizan Donation Program, it has been central to controlling onchocerciasis (river blindness) and lymphatic filariasis, and it also treats strongyloidiasis, scabies and lice. Its discoverers shared the 2015 Nobel Prize; trials found no benefit in COVID-19 despite widespread use.",

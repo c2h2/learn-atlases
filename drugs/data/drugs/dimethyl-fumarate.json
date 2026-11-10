@@ -37,7 +37,8 @@
     "note": "A German chemist with psoriasis proposed fumaric acid esters as treatment; a mixture (Fumaderm) was approved in Germany in 1994 before Biogen developed DMF for MS."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Oral fumarate for relapsing multiple sclerosis that grew out of a psoriasis remedy",
   "summary": "Dimethyl fumarate is an oral immunomodulator used for relapsing multiple sclerosis and psoriasis. Its active metabolite monomethyl fumarate activates the Nrf2 antioxidant pathway and shifts immune responses.",

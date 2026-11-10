@@ -41,6 +41,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Nitroimidazole for anaerobic bacteria, trichomoniasis, giardiasis and amoebiasis",
   "summary": "Metronidazole is a nitroimidazole introduced by Rhône-Poulenc in 1960 for trichomoniasis and later found to be highly active against anaerobic bacteria. It is a standard drug for anaerobic infections, bacterial vaginosis, protozoal infections and Helicobacter pylori regimens.",

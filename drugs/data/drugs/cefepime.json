@@ -29,7 +29,8 @@
     "note": "A zwitterionic cephalosporin whose N-methylpyrrolidinium group speeds penetration of Gram-negative outer membranes."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (hospital)",
   "tagline": "Fourth-generation cephalosporin with anti-pseudomonal and AmpC-stable activity",
   "summary": "Cefepime is a broad-spectrum injectable cephalosporin active against Pseudomonas aeruginosa, Enterobacterales (including many AmpC producers) and methicillin-susceptible staphylococci and streptococci. It is used for febrile neutropenia and serious hospital infections.",

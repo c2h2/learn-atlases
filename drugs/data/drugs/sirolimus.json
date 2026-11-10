@@ -40,7 +40,8 @@
     "note": "Isolated from Streptomyces hygroscopicus in soil collected on Easter Island (Rapa Nui) in 1964; first studied as an antifungal."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Easter Island macrolide that founded mTOR biology",
   "summary": "Sirolimus, also called rapamycin, is a macrolide from an Easter Island soil bacterium that inhibits the kinase mTOR. It prevents kidney transplant rejection, treats lymphangioleiomyomatosis, and is used on drug-eluting stents. Studies of its mechanism led to the discovery of the mTOR growth-signalling pathway.",

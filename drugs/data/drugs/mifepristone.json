@@ -39,6 +39,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription; restricted distribution (REMS in the US)",
   "tagline": "Progesterone receptor blocker used with misoprostol for medical abortion",
   "summary": "Mifepristone blocks progesterone receptors and, at higher doses, glucocorticoid receptors. Combined with misoprostol it is the standard regimen for medical termination of early pregnancy and management of miscarriage; at daily doses it controls hyperglycaemia in Cushing's syndrome. It has been one of the most politically contested medicines in many countries.",

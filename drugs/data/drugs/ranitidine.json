@@ -36,7 +36,8 @@
     "note": "Designed with a furan ring in place of cimetidine's imidazole, giving greater potency and fewer drug interactions."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "withdrawn from US and EU markets (2020); OTC/prescription elsewhere",
   "tagline": "Former blockbuster H2 blocker withdrawn in 2020 over NDMA contamination",
   "summary": "Ranitidine is an H2-receptor antagonist that reduces gastric acid secretion. As Zantac it was the world's best-selling medicine in the 1980s, but it was withdrawn from the US and European markets in 2020 after the probable carcinogen NDMA was found to form in the product.",

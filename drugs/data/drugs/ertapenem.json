@@ -34,7 +34,8 @@
     "note": "A 1-beta-methyl carbapenem with a benzoic-acid side chain that increases protein binding and prolongs half-life."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Once-daily carbapenem for ESBL infections, without anti-pseudomonal activity",
   "summary": "Ertapenem is a long-acting carbapenem given once daily. It covers ESBL-producing Enterobacterales, streptococci, methicillin-susceptible staphylococci and anaerobes, but not Pseudomonas aeruginosa, Acinetobacter or enterococci, which makes it a narrower carbapenem option.",

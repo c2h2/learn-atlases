@@ -36,7 +36,8 @@
     "note": "The lysine analogue of enalaprilat, active without metabolic conversion; co-marketed by Merck and ICI (now AstraZeneca)."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Once-daily non-prodrug ACE inhibitor, among the most prescribed US drugs",
   "summary": "Lisinopril is a long-acting ACE inhibitor that, unlike most of its class, is not a prodrug and is excreted unchanged by the kidneys. It is used for hypertension, heart failure and acute myocardial infarction and is one of the most commonly prescribed medicines in the United States.",

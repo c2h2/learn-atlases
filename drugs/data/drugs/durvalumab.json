@@ -33,7 +33,8 @@
     "note": "Fully human IgG1κ anti-PD-L1 antibody with a triple Fc mutation that reduces effector function."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "PD-L1 inhibitor that set the standard after chemoradiation in stage III lung cancer",
   "summary": "Durvalumab is a human monoclonal antibody against PD-L1. Its PACIFIC trial established consolidation immunotherapy after chemoradiotherapy for unresectable stage III non-small cell lung cancer, and it is also used in small cell lung cancer, biliary tract cancer, liver cancer and endometrial cancer.",

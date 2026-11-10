@@ -43,6 +43,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "OTC (pack-size limits in many countries); IV prescription",
   "tagline": "The world's most widely used painkiller and fever reducer",
   "summary": "Paracetamol (acetaminophen) is a non-opioid analgesic and antipyretic used by hundreds of millions of people for pain and fever. Safe at labelled doses, it is a leading cause of acute liver failure in overdose, for which acetylcysteine is an effective antidote.",

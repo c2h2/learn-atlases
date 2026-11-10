@@ -37,6 +37,7 @@
   },
   "generic": false,
   "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "Basal insulin that forms multi-hexamer chains under the skin, lasting over 42 hours",
   "summary": "Insulin degludec is an ultra-long-acting basal insulin with a half-life of about 25 hours and a duration of action beyond 42 hours. Its flat, stable profile allows flexible once-daily dosing, and the DEVOTE trial showed less severe hypoglycaemia than insulin glargine with similar cardiovascular safety.",

@@ -39,6 +39,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "The first successful beta-blocker, from angina to migraine and infant haemangiomas",
   "summary": "Propranolol is a non-selective beta-blocker developed by James Black, who received a Nobel Prize partly for this work. It is used for hypertension, angina, arrhythmias, migraine prevention, essential tremor, thyrotoxicosis symptoms and, in a paediatric formulation, infantile haemangioma.",

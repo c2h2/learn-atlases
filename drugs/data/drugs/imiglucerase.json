@@ -35,7 +35,8 @@
     "note": "Brady's group showed that glucocerebrosidase modified to expose mannose residues was taken up by macrophages; the placental enzyme alglucerase was replaced by recombinant imiglucerase made in CHO cells."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Recombinant enzyme that established replacement therapy for Gaucher disease",
   "summary": "Imiglucerase is a recombinant form of human acid beta-glucosidase with mannose-terminated glycans that target it to macrophages. It replaces the deficient enzyme in type 1 Gaucher disease, reducing spleen and liver enlargement, anaemia, thrombocytopenia and bone disease. It made Genzyme a leading rare-disease company.",

@@ -35,7 +35,8 @@
     "note": "A non-heterocyclic sartan developed in Basel."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Blockbuster ARB at the centre of the 2018 nitrosamine contamination recall",
   "summary": "Valsartan is an angiotensin II receptor blocker used for hypertension, heart failure and left ventricular dysfunction after myocardial infarction. It is also a component of sacubitril/valsartan, and in 2018 contaminated generic supplies triggered a global recall.",

@@ -38,6 +38,7 @@
   },
   "generic": false,
   "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (specialist centres)",
   "tagline": "One-time gene therapy for spinal muscular atrophy, once the world's costliest drug",
   "summary": "Onasemnogene abeparvovec is a one-time gene therapy that delivers a working copy of the SMN1 gene using an adeno-associated virus serotype 9 vector. Approved in 2019 for young children with spinal muscular atrophy, its $2.1 million price made it the most expensive drug at the time.",

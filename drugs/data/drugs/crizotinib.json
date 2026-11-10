@@ -35,7 +35,8 @@
     "note": "Designed as a MET inhibitor; activity against ALK became the focus after EML4-ALK fusions were discovered in lung cancer in 2007."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First ALK inhibitor, approved four years after ALK fusions were found in lung cancer",
   "summary": "Crizotinib is an oral inhibitor of the ALK, ROS1 and MET kinases. It was the first targeted therapy for ALK-rearranged non-small-cell lung cancer and is also used for ROS1-positive lung cancer, ALK-positive anaplastic large-cell lymphoma and inflammatory myofibroblastic tumours.",

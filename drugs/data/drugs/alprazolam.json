@@ -35,7 +35,8 @@
     "note": "A triazolo-fused benzodiazepine developed at Upjohn in the late 1960s and 1970s."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription; controlled (US Schedule IV)",
   "tagline": "Fast-acting triazolobenzodiazepine for anxiety and panic, with high misuse potential",
   "summary": "Alprazolam is a high-potency triazolobenzodiazepine used for generalised anxiety disorder and panic disorder. It became one of the most prescribed psychiatric drugs in the US, and its rapid onset and short half-life are associated with interdose rebound, dependence and difficult withdrawal.",

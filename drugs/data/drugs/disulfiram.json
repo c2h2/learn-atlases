@@ -37,7 +37,8 @@
     "note": "While testing disulfiram as an anthelmintic, the researchers became ill after drinking alcohol; they published the alcohol reaction in 1948."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Aversive treatment for alcohol dependence that makes drinking cause acute illness",
   "summary": "Disulfiram is an aversive treatment for alcohol dependence. By blocking aldehyde dehydrogenase, it causes acetaldehyde to accumulate after drinking, producing flushing, nausea, palpitations and hypotension. It works best when taking it is supervised, as adherence is a major limitation.",

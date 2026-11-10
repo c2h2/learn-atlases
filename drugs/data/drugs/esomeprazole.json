@@ -37,7 +37,8 @@
     "note": "Single S-enantiomer of omeprazole, which is metabolised more slowly by CYP2C19 and gives higher exposure."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription; OTC for heartburn in many countries",
   "tagline": "S-enantiomer of omeprazole, the 'purple pill' for acid reflux",
   "summary": "Esomeprazole is the S-isomer of omeprazole and works the same way, irreversibly inhibiting the gastric proton pump. Marketed as Nexium, it became one of the best-selling drugs of the 2000s and is often cited as an example of a chiral switch.",

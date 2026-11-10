@@ -29,6 +29,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "The first antibiotic effective against tuberculosis and the first aminoglycoside",
   "summary": "Streptomycin, isolated from Streptomyces griseus in 1943, was the first effective drug against tuberculosis and the first aminoglycoside. The 1948 Medical Research Council trial of streptomycin is widely regarded as the first modern randomised controlled trial. It remains in use for plague, tularaemia and some drug-resistant TB regimens.",

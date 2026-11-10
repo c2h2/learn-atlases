@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription (hospital)",
   "tagline": "Broad-spectrum anti-pseudomonal penicillin combination, a hospital mainstay",
   "summary": "Piperacillin/tazobactam pairs an extended-spectrum penicillin with the beta-lactamase inhibitor tazobactam. It covers Pseudomonas aeruginosa, many Enterobacterales, streptococci, methicillin-susceptible staphylococci and anaerobes, and is among the most used empirical antibiotics in hospitals.",

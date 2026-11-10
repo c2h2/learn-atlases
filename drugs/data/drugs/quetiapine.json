@@ -41,7 +41,8 @@
     "note": "Developed in the 1980s as a clozapine-like dibenzothiazepine with low D2 affinity."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Sedating atypical antipsychotic licensed across schizophrenia, bipolar and depression",
   "summary": "Quetiapine is a second-generation antipsychotic with low dopamine D2 affinity and strong antihistamine effects. It is approved for schizophrenia, bipolar mania and bipolar depression and, in extended-release form, as an add-on for major depression. Its low extrapyramidal liability makes it common in Parkinson's-related psychosis.",

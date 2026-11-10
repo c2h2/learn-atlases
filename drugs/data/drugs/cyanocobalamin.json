@@ -35,7 +35,8 @@
     "note": "Red crystalline vitamin B12 was isolated from liver as the anti-pernicious anaemia factor; cyanocobalamin is the stable form produced during purification."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "OTC (oral); prescription for injection in many countries",
   "tagline": "Synthetic vitamin B12 that cures pernicious anaemia",
   "summary": "Cyanocobalamin is a stable synthetic form of vitamin B12 that the body converts into the active coenzymes methylcobalamin and adenosylcobalamin. It treats and prevents B12 deficiency, including pernicious anaemia, where loss of intrinsic factor prevents absorption from food.",

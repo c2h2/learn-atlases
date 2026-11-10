@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "Once-daily GLP-1 analogue, the first shown to cut cardiovascular events (LEADER)",
   "summary": "Liraglutide is a once-daily GLP-1 receptor agonist with 97% homology to human GLP-1, used for type 2 diabetes (Victoza) and chronic weight management (Saxenda). In the LEADER trial it reduced major cardiovascular events and death, and it was the first GLP-1 agonist approved for obesity.",

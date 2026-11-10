@@ -44,6 +44,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "OTC in most countries (some forms prescription)",
   "tagline": "Tobacco alkaloid used medicinally as replacement therapy to help people quit smoking",
   "summary": "Nicotine is the principal addictive alkaloid in tobacco. As a medicine it is used in nicotine replacement therapy (NRT), which delivers nicotine without the tar and carbon monoxide of smoke, easing withdrawal and roughly doubling quit rates compared with placebo.",

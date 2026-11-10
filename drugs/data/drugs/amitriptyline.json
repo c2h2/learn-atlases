@@ -41,6 +41,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Classic tricyclic antidepressant now used mostly at low doses for chronic pain",
   "summary": "Amitriptyline is a tricyclic antidepressant that inhibits serotonin and noradrenaline reuptake and blocks histamine, muscarinic and alpha-adrenergic receptors. Once a mainstay for depression, it is now widely used at low doses for neuropathic pain, migraine prophylaxis and other chronic pain syndromes.",

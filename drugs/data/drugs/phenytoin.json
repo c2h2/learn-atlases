@@ -40,6 +40,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Pioneering non-sedating anticonvulsant with famously non-linear kinetics",
   "summary": "Phenytoin, introduced in 1938, was the first anticonvulsant shown to control seizures without heavy sedation. It remains widely used for focal and tonic-clonic seizures and status epilepticus, although its saturable metabolism, interactions and long-term adverse effects demand monitoring.",

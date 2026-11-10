@@ -35,7 +35,8 @@
     "note": "An ergoline derivative with a very long half-life."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "A twice-weekly dopamine agonist that shrinks prolactin-secreting tumours",
   "summary": "Cabergoline is a long-acting ergot-derived dopamine agonist and the preferred treatment for hyperprolactinaemia and prolactinomas. Its use in Parkinson's disease has largely ended because high doses were linked to fibrotic heart-valve disease.",

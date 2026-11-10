@@ -41,7 +41,8 @@
     "note": "Immunex cloned the p75 TNF receptor (TNFR2) and fused its extracellular domain to the Fc of human IgG1, forming a dimeric decoy receptor."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "First TNF inhibitor approved, a soluble TNF-receptor decoy for inflammatory arthritis",
   "summary": "Etanercept is a dimeric fusion protein of the TNF receptor 2 ligand-binding domain and the Fc of human IgG1. It was the first TNF inhibitor approved, in 1998 for rheumatoid arthritis, and is used for juvenile idiopathic arthritis, psoriatic arthritis, ankylosing spondylitis and plaque psoriasis; it is not effective in inflammatory bowel disease.",

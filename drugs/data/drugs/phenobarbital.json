@@ -39,6 +39,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription; controlled (US Schedule IV)",
   "tagline": "The oldest anticonvulsant still in wide use, and a WHO essential medicine",
   "summary": "Phenobarbital, introduced by Bayer in 1912, is the oldest antiseizure medicine still widely used. It is inexpensive and effective, making it a first-line option in low-resource settings and for neonatal seizures, though sedation and enzyme induction limit its use elsewhere.",

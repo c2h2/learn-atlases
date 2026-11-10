@@ -40,6 +40,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Highly effective, iodine-rich antiarrhythmic with a months-long half-life",
   "summary": "Amiodarone is an iodinated benzofuran antiarrhythmic that blocks potassium, sodium and calcium channels and beta-adrenoceptors. It is among the most effective drugs for ventricular and atrial arrhythmias but is limited by thyroid, lung, liver, eye and skin toxicity.",

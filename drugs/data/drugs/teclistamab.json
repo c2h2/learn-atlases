@@ -35,7 +35,8 @@
     "note": "Humanised IgG4 bispecific antibody binding B-cell maturation antigen (BCMA) and CD3."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First BCMA-directed bispecific antibody for relapsed multiple myeloma",
   "summary": "Teclistamab is a bispecific antibody that binds BCMA on myeloma cells and CD3 on T cells, redirecting T cells to kill myeloma cells. It is approved for relapsed or refractory multiple myeloma after several prior lines of therapy, including a proteasome inhibitor, an immunomodulatory drug and an anti-CD38 antibody.",

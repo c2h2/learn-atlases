@@ -41,6 +41,7 @@
   },
   "generic": false,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Full-length recombinant factor VIII replacing the clotting factor missing in haemophilia A",
   "summary": "Octocog alfa is full-length recombinant human coagulation factor VIII, produced in Chinese hamster ovary or baby hamster kidney cells. It replaces the deficient factor in haemophilia A for treatment and prevention of bleeding, removing the viral risks of plasma-derived concentrates.",

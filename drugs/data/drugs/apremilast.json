@@ -36,7 +36,8 @@
     "note": "Emerged from Celgene's programme of thalidomide-derived small molecules that inhibit TNF-alpha production through PDE4."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Oral PDE4 inhibitor for psoriasis, psoriatic arthritis and Behçet's ulcers",
   "summary": "Apremilast is an oral inhibitor of phosphodiesterase 4 that raises intracellular cyclic AMP in immune cells and dampens inflammatory cytokine production. It is used for plaque psoriasis, psoriatic arthritis and oral ulcers of Behçet's disease. It does not require laboratory monitoring and has no boxed warning.",

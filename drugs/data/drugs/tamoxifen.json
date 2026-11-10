@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "First targeted cancer therapy: an oestrogen-receptor modulator for breast cancer",
   "summary": "Tamoxifen is a selective oestrogen receptor modulator that blocks oestrogen action in breast tissue while acting as a partial agonist in bone and the uterus. It reduces recurrence and death in oestrogen-receptor-positive breast cancer, is used for risk reduction in high-risk women, and is on the WHO essential medicines list.",

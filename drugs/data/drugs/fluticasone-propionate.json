@@ -40,7 +40,8 @@
     "note": "A trifluorinated androstane carbothioate designed for high receptor affinity and near-complete first-pass inactivation."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription; nasal spray OTC in the US and elsewhere",
   "tagline": "High-potency inhaled and nasal corticosteroid with very low oral bioavailability",
   "summary": "Fluticasone propionate is a potent synthetic glucocorticoid used as an inhaled controller for asthma and COPD, as a nasal spray for allergic rhinitis and topically for inflammatory skin disease. Swallowed drug is almost entirely inactivated in the liver.",

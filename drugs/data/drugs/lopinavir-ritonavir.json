@@ -38,6 +38,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "First co-formulated boosted protease inhibitor, long a second-line and paediatric mainstay",
   "summary": "Lopinavir/ritonavir combines the protease inhibitor lopinavir with low-dose ritonavir, which blocks CYP3A4 and raises lopinavir levels. It was the first co-formulated boosted protease inhibitor and was long a standard second-line and paediatric HIV regimen in low-income countries. Trials in COVID-19 found no benefit.",

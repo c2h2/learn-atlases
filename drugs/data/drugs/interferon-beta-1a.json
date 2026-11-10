@@ -38,7 +38,8 @@
     "note": "The human interferon beta gene was cloned in 1980; beta-1a is the glycosylated form produced in Chinese hamster ovary cells, identical in sequence to natural interferon beta."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Long-established injectable disease-modifying therapy for relapsing multiple sclerosis",
   "summary": "Interferon beta-1a is a recombinant glycosylated form of human interferon beta used to reduce relapses in multiple sclerosis. Introduced in the 1990s, it was one of the first disease-modifying MS therapies and has a long safety record.",

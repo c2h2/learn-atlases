@@ -36,6 +36,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Ancient poison repurposed as a curative, chemotherapy-free treatment for APL",
   "summary": "Arsenic trioxide is an inorganic compound that binds the PML portion of the PML::RARA oncoprotein and triggers its degradation, inducing differentiation and apoptosis of leukaemic promyelocytes. With tretinoin, it allows chemotherapy-free cure of most patients with acute promyelocytic leukaemia.",

@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription; some topical forms OTC",
   "tagline": "First useful polyene antifungal, still used for oral thrush and skin candidiasis",
   "summary": "Nystatin is a polyene antifungal produced by Streptomyces noursei and was the first antifungal of its class to be used clinically. It is too toxic for injection and is not absorbed from the gut, so it is used only on the skin and mucous membranes. Its main uses are oral thrush, candidiasis of the skin and vaginal candidiasis.",

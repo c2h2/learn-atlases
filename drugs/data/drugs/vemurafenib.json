@@ -35,7 +35,8 @@
     "note": "Discovered by fragment-based, structure-guided design starting from a 7-azaindole scaffold."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First BRAF V600E inhibitor, a fragment-based design for metastatic melanoma",
   "summary": "Vemurafenib is a selective inhibitor of BRAF kinase carrying the V600E mutation, found in about half of melanomas. It produced rapid tumour shrinkage and improved survival in BRAF-mutant metastatic melanoma and is also approved for Erdheim–Chester disease; it is now mostly used with the MEK inhibitor cobimetinib.",

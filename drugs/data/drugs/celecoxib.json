@@ -35,7 +35,8 @@
     "note": "A diarylheterocycle sulfonamide designed after the discovery of the inducible COX-2 isoform in the early 1990s."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "The surviving COX-2 selective NSAID after the rofecoxib withdrawal",
   "summary": "Celecoxib is a selective COX-2 inhibitor developed by Searle to relieve arthritis pain with less gastrointestinal injury than traditional NSAIDs. It remained on the market after rofecoxib's 2004 withdrawal and, in the PRECISION trial, showed cardiovascular safety similar to ibuprofen and naproxen at moderate doses.",

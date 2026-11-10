@@ -35,6 +35,7 @@
   },
   "generic": false,
   "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "withdrawn worldwide (September 2024)",
   "tagline": "Sickle haemoglobin polymerisation inhibitor withdrawn in 2024 over safety concerns",
   "summary": "Voxelotor binds haemoglobin and increases its oxygen affinity, preventing deoxygenated sickle haemoglobin from polymerising. It received accelerated approval in 2019 for sickle cell disease based on haemoglobin increases, but Pfizer withdrew it worldwide in 2024 after data showed more vaso-occlusive crises and deaths.",

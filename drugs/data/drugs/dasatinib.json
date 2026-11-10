@@ -40,6 +40,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Second-generation BCR-ABL inhibitor active against most imatinib-resistant mutants",
   "summary": "Dasatinib is a multi-targeted kinase inhibitor that binds both the active and inactive conformations of ABL and is about 300 times more potent than imatinib in vitro. It is used for Philadelphia chromosome-positive chronic myeloid leukaemia and acute lymphoblastic leukaemia, including after imatinib resistance, although it is inactive against T315I.",

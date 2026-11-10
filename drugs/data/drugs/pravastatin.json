@@ -36,7 +36,8 @@
     "note": "Produced by microbial hydroxylation of mevastatin (compactin); marketed in the US by Bristol-Myers Squibb."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "Hydrophilic statin with few drug interactions, proven in WOSCOPS",
   "summary": "Pravastatin is a hydrophilic statin made by microbial transformation of mevastatin. It lowers LDL cholesterol less potently than newer statins but has few cytochrome P450 interactions, and its trials helped establish statins for primary and secondary prevention.",

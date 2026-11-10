@@ -44,6 +44,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "A potent long-acting steroid, the first drug shown to cut COVID-19 deaths",
   "summary": "Dexamethasone is a highly potent, long-acting synthetic glucocorticoid with virtually no mineralocorticoid effect. It is used for cerebral oedema, nausea from chemotherapy, airway swelling, myeloma and many inflammatory conditions, and in 2020 the RECOVERY trial showed it reduced deaths in hospitalised COVID-19 patients needing oxygen.",

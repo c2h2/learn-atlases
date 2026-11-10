@@ -35,7 +35,8 @@
     "note": "Next-generation corrector elexacaftor (VX-445) added to tezacaftor and ivacaftor to rescue F508del-CFTR."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Triple CFTR modulator that treats about 90% of people with cystic fibrosis",
   "summary": "Elexacaftor/tezacaftor/ivacaftor is a triple combination of two CFTR correctors and a potentiator. It treats cystic fibrosis in people with at least one F508del mutation or another responsive mutation, roughly 90% of patients, and has produced large improvements in lung function.",

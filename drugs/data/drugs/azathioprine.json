@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Elion and Hitchings' purine analogue that made early kidney transplantation possible",
   "summary": "Azathioprine is a prodrug of 6-mercaptopurine whose thioguanine nucleotide metabolites interfere with DNA synthesis and lymphocyte function. It enabled the first successful kidney transplants between unrelated people and remains widely used for autoimmune disease. Toxicity depends strongly on TPMT and NUDT15 genotype.",

@@ -39,6 +39,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "High-potency butyrophenone antipsychotic used for psychosis, delirium and agitation",
   "summary": "Haloperidol is a high-potency first-generation antipsychotic discovered by Paul Janssen in 1958. It is used for schizophrenia, acute agitation, delirium, Tourette syndrome and nausea in palliative care, and is available as a long-acting depot injection.",

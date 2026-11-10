@@ -40,6 +40,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Cheap antimalarial that transformed malaria control, until resistance spread",
   "summary": "Chloroquine is a 4-aminoquinoline antimalarial that was the cornerstone of malaria treatment and of the WHO eradication campaign from the late 1940s. Widespread resistance in Plasmodium falciparum has ended its use for falciparum malaria in most regions, but it is still used for P. vivax, P. ovale and P. malariae in many areas. Tests of chloroquine and hydroxychloroquine for COVID-19 in 2020 found no benefit.",

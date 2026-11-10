@@ -37,7 +37,8 @@
     "note": "A cephalosporin designed to bind the low-affinity PBP2a of methicillin-resistant Staphylococcus aureus."
   },
   "generic": null,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (hospital)",
   "tagline": "Cephalosporin active against MRSA through high affinity for PBP2a",
   "summary": "Ceftaroline fosamil is a prodrug cephalosporin that is active against methicillin-resistant Staphylococcus aureus as well as streptococci and common community Gram-negative pathogens. It is approved for community-acquired pneumonia and acute bacterial skin and skin-structure infections.",

@@ -35,7 +35,8 @@
     "note": "A racemic bicyclic phthalane derivative; its S-enantiomer was later developed as escitalopram."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Racemic SSRI from Lundbeck, limited by dose-dependent QT prolongation",
   "summary": "Citalopram is a racemic SSRI used for depression. Developed by Lundbeck and marketed in the US by Forest Laboratories as Celexa, it is among the most selective SSRIs. Its S-enantiomer, escitalopram, carries most of the therapeutic activity.",

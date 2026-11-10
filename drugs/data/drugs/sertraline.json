@@ -35,7 +35,8 @@
     "note": "Developed from tametraline, an earlier Pfizer noradrenaline/dopamine uptake inhibitor; the cis-(1S,4S) enantiomer proved highly serotonin-selective."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Widely prescribed SSRI licensed for depression and a broad range of anxiety disorders",
   "summary": "Sertraline is an SSRI used for major depression and several anxiety disorders, including OCD, panic disorder, PTSD and social anxiety disorder. Introduced by Pfizer as Zoloft in 1991, it became one of the most prescribed antidepressants in the world.",

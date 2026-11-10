@@ -33,6 +33,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "Anti-staphylococcal penicillin used widely in the UK, Europe and Australia",
   "summary": "Flucloxacillin is a narrow-spectrum, penicillinase-stable penicillin used mainly for infections caused by methicillin-susceptible Staphylococcus aureus and streptococci. It is a standard agent for cellulitis and staphylococcal bacteraemia outside North America.",

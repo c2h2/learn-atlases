@@ -37,7 +37,8 @@
     "note": "Discovered as an analogue of mitozolomide in an academic–industry imidazotetrazine programme; it is a prodrug that spontaneously forms the methylating agent MTIC."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Brain-penetrant oral alkylator that is standard therapy for glioblastoma",
   "summary": "Temozolomide is an oral methylating agent that crosses the blood–brain barrier and spontaneously converts to the active compound MTIC at physiological pH. Combined with radiotherapy it is standard treatment for newly diagnosed glioblastoma; benefit is greatest in tumours with a methylated MGMT promoter.",

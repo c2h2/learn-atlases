@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Antimalarial turned lupus mainstay, briefly at the centre of the COVID-19 storm",
   "summary": "Hydroxychloroquine is a less toxic hydroxylated analogue of chloroquine. Although developed as an antimalarial, it is used mainly as a long-term treatment for systemic lupus erythematosus, rheumatoid arthritis and other autoimmune diseases. In 2020 it was widely promoted for COVID-19, but large randomised trials showed no benefit.",

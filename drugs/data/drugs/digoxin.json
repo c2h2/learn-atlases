@@ -30,6 +30,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Foxglove-derived glycoside for heart failure and atrial fibrillation rate control",
   "summary": "Digoxin is a cardiac glycoside from the foxglove Digitalis lanata that increases cardiac contractility and slows atrioventricular conduction. It is used to control ventricular rate in atrial fibrillation and to reduce hospitalisation in heart failure, but has a narrow therapeutic index.",

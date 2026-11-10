@@ -33,7 +33,8 @@
     "note": "A deuterated molecule that binds the regulatory pseudokinase (JH2) domain of TYK2 rather than the conserved ATP site, giving high selectivity over JAK1–3."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First allosteric TYK2 inhibitor, binding the pseudokinase domain",
   "summary": "Deucravacitinib is an oral, highly selective inhibitor of TYK2 that binds the kinase's regulatory pseudokinase domain. It blocks signalling of interleukin-23, interleukin-12 and type I interferons and is approved for moderate to severe plaque psoriasis. Unlike JAK1–3 inhibitors, it carries no boxed warning.",

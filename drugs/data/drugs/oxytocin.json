@@ -32,6 +32,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription; hospital use",
   "tagline": "First synthesised peptide hormone; induces labour and prevents postpartum haemorrhage",
   "summary": "Oxytocin is a nine-amino-acid peptide hormone released from the posterior pituitary that stimulates uterine contractions and milk ejection. Synthetic oxytocin is used to induce and augment labour and is the WHO-recommended first-line drug for preventing and treating postpartum haemorrhage.",

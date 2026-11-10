@@ -41,6 +41,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription; some topical forms OTC",
   "tagline": "The first amide local anaesthetic, also used as an antiarrhythmic",
   "summary": "Lidocaine is the most widely used local anaesthetic, given by infiltration, nerve block, epidural and topical application. Discovered in Sweden in 1943, it is more stable and less allergenic than older ester anaesthetics. It is also used intravenously as a class Ib antiarrhythmic and as a patch for post-herpetic neuralgia.",

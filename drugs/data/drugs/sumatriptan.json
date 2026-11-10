@@ -41,7 +41,8 @@
     "note": "Designed in the 1970s–80s as a selective agonist at the 5-HT1-like receptor mediating cranial vasoconstriction."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription (oral OTC in some countries, e.g. UK pharmacy medicine)",
   "tagline": "The first triptan, which transformed acute migraine treatment",
   "summary": "Sumatriptan, the first triptan, is a selective serotonin 5-HT1B/1D agonist that relieves acute migraine and cluster headache attacks. Its subcutaneous form is one of the fastest-acting migraine treatments.",

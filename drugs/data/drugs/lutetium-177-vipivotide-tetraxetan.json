@@ -35,7 +35,8 @@
     "note": "PSMA-617 is a small-molecule urea-based PSMA ligand with a DOTA chelator that holds the beta-emitting isotope lutetium-177."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (nuclear medicine)",
   "tagline": "Radioligand that delivers lutetium-177 beta radiation to PSMA-positive prostate cancer",
   "summary": "Lutetium (177Lu) vipivotide tetraxetan is a radiopharmaceutical that binds prostate-specific membrane antigen (PSMA) and delivers beta radiation to prostate cancer cells. It is approved for PSMA-positive metastatic castration-resistant prostate cancer after androgen-receptor pathway inhibition.",

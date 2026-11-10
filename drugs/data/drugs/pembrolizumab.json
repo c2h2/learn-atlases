@@ -38,6 +38,7 @@
   },
   "generic": false,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Anti-PD-1 antibody with the broadest label in oncology and top worldwide sales",
   "summary": "Pembrolizumab is a humanised IgG4 monoclonal antibody that blocks the PD-1 immune checkpoint. Approved in 2014 for melanoma, it now has dozens of indications across solid tumours and lymphoma and received the first tissue-agnostic cancer approval, for MSI-high or mismatch-repair-deficient tumours.",

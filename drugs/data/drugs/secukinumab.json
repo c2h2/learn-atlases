@@ -34,7 +34,8 @@
     "note": "Fully human IgG1κ antibody against IL-17A."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First IL-17A inhibitor, for psoriasis, psoriatic arthritis and axial spondyloarthritis",
   "summary": "Secukinumab is a fully human monoclonal antibody that neutralises interleukin-17A. It was the first IL-17 inhibitor approved and is used in plaque psoriasis, psoriatic arthritis, ankylosing spondylitis, non-radiographic axial spondyloarthritis, enthesitis-related arthritis and hidradenitis suppurativa.",

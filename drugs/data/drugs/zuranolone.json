@@ -34,7 +34,8 @@
     "note": "Designed as an orally bioavailable analogue of the endogenous neurosteroid allopregnanolone, following the IV allopregnanolone formulation brexanolone."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription; controlled (US Schedule IV)",
   "tagline": "First oral drug approved for postpartum depression, taken as a two-week course",
   "summary": "Zuranolone is an oral neuroactive steroid that positively modulates GABA-A receptors. In 2023 it became the first oral medicine approved specifically for postpartum depression, given as a 14-day course; an application for major depressive disorder was not approved.",

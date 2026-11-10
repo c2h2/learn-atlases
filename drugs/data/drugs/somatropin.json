@@ -42,7 +42,8 @@
     "note": "Human growth hormone was first purified from cadaver pituitaries; recombinant production in E. coli followed in 1979."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (US distribution restricted by law to approved indications)",
   "tagline": "Recombinant growth hormone, which replaced cadaver GH after prion disease cases",
   "summary": "Somatropin is recombinant human growth hormone with the natural 191-amino-acid sequence. It treats growth failure in children with GH deficiency and several genetic and other conditions, and adult GH deficiency; it replaced pituitary-extracted GH after cases of Creutzfeldt–Jakob disease in 1985. Omnitrope was the first biosimilar approved in Europe.",

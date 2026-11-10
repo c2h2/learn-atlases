@@ -28,7 +28,7 @@ page_head($d['name'] . ' · Drug Atlas');
     $fact('First approved', $fa ? h(trim(($fa['year'] ?? '') . ' · ' . ($fa['agency'] ?? '') . ($fa['brand'] ? ' (' . $fa['brand'] . ')' : ''), ' ·')) : null);
     $fact('Discovered', $d['discovery'] ? h(($d['discovery']['year'] ?? '') . ' — ' . ($d['discovery']['by'] ?? '')) : null);
     $fact('Generic', $d['generic'] === null ? null : ($d['generic'] ? 'Yes' : 'No'));
-    $fact('WHO essential', $d['who_essential'] === null ? null : ($d['who_essential'] ? 'Yes' : 'No'));
+    $fact('WHO essential (2025)', h(WHO_STATUS[$d['who_status'] ?? ''] ?? null));
     $fact('Status', h($d['rx_status']));
     ?>
   </dl>

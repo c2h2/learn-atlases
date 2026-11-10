@@ -42,7 +42,8 @@
     "note": "A decoy receptor fusing VEGFR1 domain 2 and VEGFR2 domain 3 to human IgG1 Fc, binding VEGF with very high affinity."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "VEGF trap fusion protein used for retinal disease and metastatic colorectal cancer",
   "summary": "Aflibercept is a recombinant fusion protein that acts as a soluble decoy receptor for VEGF-A, VEGF-B and placental growth factor. As Eylea it treats wet macular degeneration, diabetic macular oedema and retinal vein occlusion with less frequent injections than earlier agents; as ziv-aflibercept (Zaltrap) it is used with chemotherapy in metastatic colorectal cancer.",

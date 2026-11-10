@@ -38,7 +38,8 @@
     "note": "First synthesised at Lilly in the 1960s; Merz later developed it for neurological use, and its NMDA antagonism was characterised in 1989."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "NMDA receptor blocker for moderate-to-severe Alzheimer's disease",
   "summary": "Memantine is a low-affinity, uncompetitive NMDA glutamate receptor antagonist used for moderate-to-severe Alzheimer's disease. It is often combined with a cholinesterase inhibitor and offers modest symptomatic benefit.",

@@ -33,7 +33,8 @@
     "note": "A fully human IgG2 antibody developed after genetics linked PCSK9 to LDL cholesterol levels."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Fully human anti-PCSK9 antibody that lowers LDL by about 60%",
   "summary": "Evolocumab is a fully human monoclonal antibody that binds PCSK9 and prevents it from degrading LDL receptors. Given by subcutaneous injection, it lowers LDL cholesterol by roughly 60% on top of statins, and the FOURIER trial showed fewer cardiovascular events.",

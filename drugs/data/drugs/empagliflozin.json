@@ -36,6 +36,7 @@
   },
   "generic": false,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "A diabetes pill that turned out to protect the heart and kidneys",
   "summary": "Empagliflozin is an SGLT2 inhibitor that lowers blood glucose by making the kidneys excrete glucose in the urine. The 2015 EMPA-REG OUTCOME trial showed it reduced cardiovascular death, and later trials extended its use to heart failure and chronic kidney disease regardless of diabetes.",

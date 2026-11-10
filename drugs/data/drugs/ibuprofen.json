@@ -42,6 +42,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "OTC at low doses; prescription at higher doses and IV",
   "tagline": "Common over-the-counter NSAID for pain, fever and inflammation, discovered at Boots",
   "summary": "Ibuprofen is a non-selective NSAID discovered at Boots in the UK in the 1960s. It is one of the most widely used painkillers worldwide and is available over the counter for pain, fever and inflammation.",

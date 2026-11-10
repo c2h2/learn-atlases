@@ -44,7 +44,8 @@
     "note": "A quinoline carboxamide that binds VEGFR2 in a distinct type V mode and also inhibits FGF receptors."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "VEGFR/FGFR inhibitor for thyroid, liver, kidney and endometrial cancer",
   "summary": "Lenvatinib is an oral multi-kinase inhibitor of VEGF and FGF receptors, PDGFRα, RET and KIT. It is approved for radioiodine-refractory thyroid cancer and hepatocellular carcinoma, and in combination with pembrolizumab for renal cell and endometrial carcinoma.",

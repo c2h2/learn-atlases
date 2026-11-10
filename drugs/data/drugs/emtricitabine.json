@@ -39,6 +39,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "The 'F' in many HIV pills: a once-daily partner for tenofovir in treatment and PrEP",
   "summary": "Emtricitabine is a fluorinated cytidine analogue closely related to lamivudine. It inhibits HIV reverse transcriptase and is almost always combined with tenofovir, including in the PrEP pills Truvada and Descovy. It is well tolerated and has a long intracellular half-life suited to once-daily dosing.",

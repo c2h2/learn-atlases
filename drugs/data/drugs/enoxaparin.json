@@ -38,6 +38,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Low-molecular-weight heparin that made outpatient clot treatment routine",
   "summary": "Enoxaparin is a low-molecular-weight heparin made by chemically breaking down porcine heparin. Its shorter chains act mainly on factor Xa via antithrombin, giving predictable weight-based dosing by subcutaneous injection without routine monitoring.",

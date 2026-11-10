@@ -39,7 +39,8 @@
     "note": "An affinity-matured humanised Fab fragment derived from the same mouse anti-VEGF antibody as bevacizumab, designed for intraocular use."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Anti-VEGF antibody fragment that turned wet macular degeneration into a treatable disease",
   "summary": "Ranibizumab is a humanised antibody fragment that binds all isoforms of VEGF-A. Injected into the eye, it suppresses abnormal blood vessel growth and leakage in neovascular age-related macular degeneration and other retinal diseases, and was the first treatment to improve vision on average in wet AMD.",

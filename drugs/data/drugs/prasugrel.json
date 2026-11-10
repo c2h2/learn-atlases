@@ -35,7 +35,8 @@
     "note": "Third-generation thienopyridine designed for more efficient activation than clopidogrel."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Third-generation thienopyridine with faster, stronger platelet inhibition",
   "summary": "Prasugrel is a thienopyridine prodrug that irreversibly blocks the P2Y12 ADP receptor on platelets. It is used with aspirin in acute coronary syndrome patients undergoing coronary intervention, giving more potent inhibition than clopidogrel but more bleeding.",

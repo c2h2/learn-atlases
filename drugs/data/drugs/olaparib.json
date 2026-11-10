@@ -36,7 +36,8 @@
     "note": "A phthalazinone PARP inhibitor; AstraZeneca acquired KuDOS in 2005."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First PARP inhibitor, exploiting synthetic lethality in BRCA-mutated cancers",
   "summary": "Olaparib is an oral PARP inhibitor that kills cancer cells unable to repair DNA by homologous recombination, notably those with BRCA1 or BRCA2 mutations — a concept known as synthetic lethality. It is approved for ovarian, breast, pancreatic and prostate cancers, including as maintenance and adjuvant therapy.",

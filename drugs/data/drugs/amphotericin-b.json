@@ -39,6 +39,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription (hospital use)",
   "tagline": "Old, toxic but powerful polyene still central to life-threatening fungal infections",
   "summary": "Amphotericin B is a polyene antifungal produced by the soil bacterium Streptomyces nodosus. It binds ergosterol in fungal membranes and kills a very broad range of fungi, and it is also active against Leishmania. Kidney toxicity and infusion reactions limit the conventional form; lipid formulations such as liposomal amphotericin B are much better tolerated.",

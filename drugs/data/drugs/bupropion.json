@@ -41,7 +41,8 @@
     "note": "A cathinone-related aminoketone synthesised during a search for antidepressants without tricyclic side effects."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Atypical antidepressant and smoking-cessation aid without sexual side effects",
   "summary": "Bupropion is an aminoketone antidepressant that inhibits noradrenaline and dopamine reuptake and antagonises nicotinic receptors. It is used for depression, seasonal affective disorder and smoking cessation, and in combinations for obesity and depression. It is notable for not causing sexual dysfunction or weight gain, but it lowers the seizure threshold.",

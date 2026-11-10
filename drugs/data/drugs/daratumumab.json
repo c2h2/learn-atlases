@@ -37,7 +37,8 @@
     "note": "Fully human IgG1κ antibody raised in transgenic mice; licensed to Janssen in 2012."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First anti-CD38 antibody, now a backbone of multiple myeloma treatment",
   "summary": "Daratumumab is a human monoclonal antibody that targets CD38, a glycoprotein highly expressed on myeloma plasma cells. It is combined with lenalidomide, bortezomib, pomalidomide or other agents across all lines of multiple myeloma therapy and is approved for light-chain (AL) amyloidosis.",

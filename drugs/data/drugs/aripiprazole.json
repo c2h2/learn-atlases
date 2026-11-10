@@ -42,7 +42,8 @@
     "note": "Developed from a programme seeking dopamine autoreceptor agonists, yielding a quinolinone with partial D2 agonism."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "First dopamine partial agonist antipsychotic, with a low metabolic burden",
   "summary": "Aripiprazole is a dopamine D2 partial agonist antipsychotic, discovered by Otsuka. It stabilises dopamine signalling rather than blocking it fully, and is used for schizophrenia, bipolar disorder, adjunctive treatment of depression, irritability in autism and Tourette syndrome. It became one of the best-selling drugs in the US.",

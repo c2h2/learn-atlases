@@ -40,6 +40,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "OTC in most countries",
   "tagline": "The original wonder drug: analgesic, antipyretic and lifelong antiplatelet",
   "summary": "Aspirin is acetylsalicylic acid, a salicylate that irreversibly inhibits cyclooxygenase. At analgesic doses it treats pain, fever and inflammation; at low daily doses it is a cornerstone antiplatelet drug for secondary prevention of heart attack and stroke.",

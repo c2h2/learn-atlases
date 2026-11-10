@@ -36,7 +36,8 @@
     "note": "Pseudomonic acid A was isolated from Pseudomonas fluorescens; reported in Nature in 1971."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription (OTC in some countries)",
   "tagline": "Topical antibiotic for impetigo and nasal MRSA decolonisation",
   "summary": "Mupirocin is a topical antibiotic derived from Pseudomonas fluorescens that inhibits bacterial isoleucyl-tRNA synthetase. It is used for impetigo and other superficial skin infections and as nasal ointment to clear Staphylococcus aureus, including MRSA, before surgery or in outbreaks.",

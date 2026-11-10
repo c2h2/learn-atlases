@@ -36,6 +36,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "OTC in most countries",
   "tagline": "Non-sedating antihistamine that became a landmark prescription-to-OTC switch",
   "summary": "Loratadine is a long-acting, second-generation H1 antihistamine with minimal sedation at standard doses. It is used for allergic rhinitis and chronic urticaria and is converted in the liver to an active metabolite, desloratadine.",

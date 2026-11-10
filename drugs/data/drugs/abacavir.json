@@ -38,6 +38,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "HIV drug that made pharmacogenetic screening (HLA-B*57:01) routine",
   "summary": "Abacavir is a carbocyclic nucleoside analogue that is converted inside cells to carbovir triphosphate, a blocker of HIV reverse transcriptase. A serious hypersensitivity reaction strongly linked to the HLA-B*57:01 allele made it one of the first drugs for which genetic testing became standard before use. It is widely used in children and in combination tablets such as Triumeq.",

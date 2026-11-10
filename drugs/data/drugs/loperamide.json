@@ -36,6 +36,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "OTC in most countries",
   "tagline": "Gut-selective opioid that slows intestinal transit to treat diarrhoea",
   "summary": "Loperamide is an opioid agonist that acts on mu receptors in the intestinal wall to slow gut motility. At recommended doses it barely enters the brain, so it is sold over the counter for diarrhoea, but very high doses taken for misuse can cause fatal heart-rhythm disturbances.",

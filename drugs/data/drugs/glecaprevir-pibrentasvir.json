@@ -38,6 +38,7 @@
   },
   "generic": false,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Eight-week, pangenotypic hepatitis C cure that is safe in kidney disease",
   "summary": "Glecaprevir/pibrentasvir is a fixed-dose combination of an NS3/4A protease inhibitor and an NS5A inhibitor that cures hepatitis C of all genotypes, usually in 8 weeks. It is not cleared by the kidneys, so it can be used in severe kidney disease and dialysis. Like other protease-inhibitor regimens, it is not used in decompensated cirrhosis.",

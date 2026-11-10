@@ -41,7 +41,8 @@
     "note": "Humanised IgG1 antibody against the IL-6 receptor, building on Kishimoto's discovery of IL-6 in 1986."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "IL-6 receptor blocker for arthritis, giant cell arteritis, CAR T toxicity and COVID-19",
   "summary": "Tocilizumab is a humanised monoclonal antibody that blocks both soluble and membrane-bound interleukin-6 receptors. It is used in rheumatoid arthritis, juvenile idiopathic arthritis, giant cell arteritis, cytokine release syndrome after CAR T-cell therapy and hospitalised COVID-19.",

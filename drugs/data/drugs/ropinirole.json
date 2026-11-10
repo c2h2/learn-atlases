@@ -38,6 +38,7 @@
   },
   "generic": true,
   "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Dopamine agonist that was the first FDA-approved drug for restless legs syndrome",
   "summary": "Ropinirole is a non-ergoline D2/D3 dopamine agonist used to treat Parkinson's disease and restless legs syndrome. It was developed by SmithKline Beecham and is now widely available as a generic.",

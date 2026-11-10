@@ -34,6 +34,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "The statin of the landmark 4S and Heart Protection trials",
   "summary": "Simvastatin is a semi-synthetic statin derived from lovastatin. Its 1994 Scandinavian Simvastatin Survival Study was the first to show that lowering cholesterol reduces total mortality in coronary heart disease, and it remains a widely used generic statin.",

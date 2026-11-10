@@ -42,6 +42,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Vitamin A acid that turned acute promyelocytic leukaemia into a curable disease",
   "summary": "Tretinoin (all-trans retinoic acid) is the biologically active form of vitamin A. Orally it induces differentiation of leukaemic promyelocytes in acute promyelocytic leukaemia (APL), and combined with arsenic trioxide it cures most patients; topically it is a long-established treatment for acne and photodamage.",

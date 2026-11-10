@@ -44,7 +44,8 @@
     "note": "Isolated from sow ovaries in 1935; estrone had been isolated by Doisy and Butenandt in 1929."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "The main human estrogen, used in menopausal hormone therapy and gender-affirming care",
   "summary": "Estradiol is the most potent naturally occurring human estrogen. It is used to relieve menopausal symptoms, prevent postmenopausal osteoporosis, treat hypoestrogenism and as part of feminising hormone therapy; women with a uterus also need a progestogen to protect the endometrium.",

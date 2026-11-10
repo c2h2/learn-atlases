@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription (hospital)",
   "tagline": "The first carbapenem, paired with cilastatin to stop renal breakdown",
   "summary": "Imipenem was the first carbapenem antibiotic, derived from thienamycin discovered at Merck. It is co-administered with cilastatin, which blocks its degradation by renal dehydropeptidase-I, and has very broad activity against Gram-positive, Gram-negative and anaerobic bacteria.",

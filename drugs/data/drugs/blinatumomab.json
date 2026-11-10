@@ -35,7 +35,8 @@
     "note": "Two single-chain variable fragments joined by a linker, one binding CD19 and one CD3ε; about 55 kDa, without an Fc region."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "First bispecific T-cell engager, linking T cells to CD19-positive leukaemia cells",
   "summary": "Blinatumomab is a bispecific antibody construct that binds CD19 on B cells and CD3 on T cells, directing the patient's T cells to kill B-lineage leukaemia cells. It is used in B-cell precursor acute lymphoblastic leukaemia, including relapsed disease, measurable residual disease and consolidation.",

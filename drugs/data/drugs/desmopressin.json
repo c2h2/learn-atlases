@@ -44,6 +44,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "A selective vasopressin analogue for diabetes insipidus, bedwetting and bleeding",
   "summary": "Desmopressin is a synthetic analogue of vasopressin that selectively activates the V2 receptor. It reduces urine output in central diabetes insipidus, nocturnal enuresis and nocturia, and raises factor VIII and von Willebrand factor levels in mild haemophilia A and von Willebrand disease; hyponatraemia is the main risk.",

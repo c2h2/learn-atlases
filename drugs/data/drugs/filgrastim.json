@@ -42,6 +42,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Recombinant G-CSF that shortens neutropenia after chemotherapy",
   "summary": "Filgrastim is a non-glycosylated recombinant human granulocyte colony-stimulating factor produced in E. coli. It stimulates neutrophil production and release, reducing febrile neutropenia after myelosuppressive chemotherapy and mobilising stem cells for collection. It was the subject of the first US biosimilar approval.",

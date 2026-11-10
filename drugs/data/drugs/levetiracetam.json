@@ -37,7 +37,8 @@
     "note": "The S-enantiomer of the ethyl analogue of piracetam, found to protect against seizures in animal kindling models despite inactivity in classical screening tests."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Widely used broad-spectrum anticonvulsant acting on synaptic vesicle protein SV2A",
   "summary": "Levetiracetam is a broad-spectrum anticonvulsant with a unique mechanism, binding the synaptic vesicle protein SV2A. Its linear kinetics, few interactions and IV formulation have made it one of the most prescribed antiseizure medicines.",

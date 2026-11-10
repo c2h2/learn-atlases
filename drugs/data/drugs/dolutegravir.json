@@ -39,6 +39,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "High-barrier integrase inhibitor at the heart of the WHO-preferred TLD regimen",
   "summary": "Dolutegravir is a second-generation integrase strand transfer inhibitor taken once daily, with potent activity and a high barrier to resistance. Combined with tenofovir and lamivudine as the generic TLD tablet, it became WHO's preferred first-line HIV treatment and is taken by many millions of people. A 2018 neural tube defect signal was later found to be much smaller than first feared.",

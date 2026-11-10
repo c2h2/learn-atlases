@@ -34,7 +34,8 @@
     "note": "A simple pyridone found to have antifibrotic activity in animal models of lung fibrosis."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Oral antifibrotic that slows lung-function decline in idiopathic pulmonary fibrosis",
   "summary": "Pirfenidone is an oral antifibrotic drug that slows the decline in lung function in idiopathic pulmonary fibrosis (IPF). With nintedanib, it was one of the first two drugs approved for IPF in the US, on the same day in 2014.",

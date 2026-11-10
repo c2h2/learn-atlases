@@ -36,7 +36,8 @@
     "note": "Rat antibody Campath-1 was humanised in 1988 by Lutz Riechmann, Greg Winter and colleagues, one of the first humanised antibodies."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (restricted programme for MS)",
   "tagline": "Anti-CD52 antibody that resets the immune system in highly active MS",
   "summary": "Alemtuzumab is a humanised monoclonal antibody against CD52 that causes profound, long-lasting depletion of T and B lymphocytes. First approved for chronic lymphocytic leukaemia, it was relaunched at a lower dose as Lemtrada for highly active relapsing multiple sclerosis, given as two short annual courses.",

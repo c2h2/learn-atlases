@@ -42,7 +42,8 @@
     "note": "An indolinone angiokinase inhibitor first developed as an anticancer agent."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Kinase inhibitor that slows progressive fibrosing lung disease",
   "summary": "Nintedanib is an oral inhibitor of VEGF, FGF and PDGF receptor tyrosine kinases. It slows lung-function decline in idiopathic pulmonary fibrosis, systemic sclerosis-associated interstitial lung disease and other progressive fibrosing ILDs, and is used with docetaxel in some lung cancers in the EU.",

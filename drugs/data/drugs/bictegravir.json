@@ -34,7 +34,8 @@
     "note": "Unboosted second-generation INSTI structurally related to dolutegravir."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Integrase inhibitor in Biktarvy, the world's top-selling HIV pill",
   "summary": "Bictegravir is a second-generation integrase strand transfer inhibitor that does not need a pharmacokinetic booster. It is available only within Biktarvy, a once-daily single tablet with emtricitabine and tenofovir alafenamide that became the most prescribed HIV regimen in the United States. Like dolutegravir, it has a high barrier to resistance.",

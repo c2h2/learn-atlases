@@ -34,7 +34,8 @@
     "note": "A minocycline derivative with a glycylamido group at position 9 that overcomes common tetracycline efflux and ribosomal-protection resistance."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (hospital)",
   "tagline": "Glycylcycline for multidrug-resistant infections, limited by a mortality signal",
   "summary": "Tigecycline is the first glycylcycline, a minocycline derivative developed by Wyeth and approved in 2005. It is active against MRSA, VRE, many ESBL- and carbapenemase-producing Enterobacterales and Acinetobacter, but higher all-cause mortality in trials restricts it to situations where alternatives are unsuitable.",

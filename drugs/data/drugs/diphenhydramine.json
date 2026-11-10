@@ -41,7 +41,8 @@
     "note": "Synthesised while searching for muscle relaxants; found to have potent antihistamine activity."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "OTC (injection prescription-only)",
   "tagline": "Classic sedating antihistamine used for allergy, sleep and motion sickness",
   "summary": "Diphenhydramine is one of the earliest antihistamines and remains widely sold without prescription. It relieves allergic symptoms but readily enters the brain, causing sedation, and is used as a sleep aid, an antiemetic and for drug-induced dystonia.",

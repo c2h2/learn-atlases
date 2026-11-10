@@ -35,6 +35,7 @@
   },
   "generic": false,
   "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (specialist)",
   "tagline": "First oral treatment for spinal muscular atrophy",
   "summary": "Risdiplam is an orally available small molecule that corrects SMN2 splicing to raise SMN protein throughout the body. Approved in 2020, it was the first at-home oral treatment for spinal muscular atrophy.",

@@ -35,7 +35,8 @@
     "note": "A 6α-ethyl derivative of chenodeoxycholic acid about 100 times more potent at FXR."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (EU marketing authorisation revoked in 2024)",
   "tagline": "Semi-synthetic bile acid FXR agonist for primary biliary cholangitis",
   "summary": "Obeticholic acid is a potent agonist of the bile acid receptor FXR. It received accelerated approval in 2016 as second-line therapy for primary biliary cholangitis, but serious liver injury in patients with cirrhosis led to restrictions, and its EU authorisation was revoked in 2024 when confirmatory benefit was not shown.",

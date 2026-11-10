@@ -38,7 +38,8 @@
     "note": "Crystallised from the bile of the Japanese black bear, long used in traditional medicine; later synthesised from cholic acid."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Bear-bile acid used to dissolve gallstones and treat primary biliary cholangitis",
   "summary": "Ursodeoxycholic acid is a hydrophilic secondary bile acid originally found in bear bile. It dissolves cholesterol gallstones in selected patients and is first-line therapy for primary biliary cholangitis, where it improves liver tests and transplant-free survival.",

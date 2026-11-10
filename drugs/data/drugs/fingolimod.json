@@ -37,7 +37,8 @@
     "note": "Synthesised by simplifying the structure of myriocin, an immunosuppressive metabolite of the fungus Isaria sinclairii used in traditional Chinese medicine."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First oral multiple sclerosis therapy, derived from a fungal metabolite",
   "summary": "Fingolimod was the first oral disease-modifying therapy for relapsing multiple sclerosis. It traps lymphocytes in lymph nodes by modulating S1P receptors, preventing them from entering the central nervous system.",

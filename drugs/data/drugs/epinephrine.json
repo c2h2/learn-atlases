@@ -43,6 +43,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "First-line emergency treatment for anaphylaxis and a key drug in cardiac arrest",
   "summary": "Epinephrine (adrenaline) is the adrenal medullary hormone and neurotransmitter, used as a drug since the early 1900s. It is the first-line treatment for anaphylaxis, given intramuscularly or nasally, and is used intravenously in cardiac arrest and shock.",

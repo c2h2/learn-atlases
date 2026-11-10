@@ -32,6 +32,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Parent of the tetracycline class, now used mainly in eye ointment and H. pylori regimens",
   "summary": "Tetracycline is the namesake of a broad-spectrum antibiotic class derived from chlortetracycline in the early 1950s. Largely replaced by doxycycline for systemic use, it remains important in bismuth quadruple therapy for Helicobacter pylori and as eye ointment for trachoma and neonatal conjunctivitis prophylaxis.",

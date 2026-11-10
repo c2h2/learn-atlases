@@ -40,6 +40,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Lincosamide for anaerobic and Gram-positive infections, and for toxin suppression",
   "summary": "Clindamycin is a semi-synthetic lincosamide derived from lincomycin by Upjohn in 1966. It is active against many Gram-positive cocci and anaerobes, suppresses bacterial toxin production in necrotising infections, and is widely used topically for acne and vaginally for bacterial vaginosis.",

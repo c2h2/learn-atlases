@@ -37,7 +37,8 @@
     "note": "A thiophene naphthyloxy propylamine developed at Lilly in the late 1980s as a balanced serotonin and noradrenaline reuptake inhibitor."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "SNRI approved for depression, anxiety and several chronic pain conditions",
   "summary": "Duloxetine is a balanced serotonin–noradrenaline reuptake inhibitor approved for depression, generalised anxiety disorder and chronic pain conditions including diabetic neuropathic pain and fibromyalgia. In Europe it is also licensed for stress urinary incontinence.",

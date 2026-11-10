@@ -40,7 +40,8 @@
     "note": "Synthesised in the 1970s at Ferrosan and licensed to Beecham (later SmithKline Beecham/GSK)."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Potent SSRI with anticholinergic effects and a marked discontinuation syndrome",
   "summary": "Paroxetine is a potent SSRI used for depression and a range of anxiety disorders. It is notable among SSRIs for its anticholinergic effects, strong CYP2D6 inhibition, short half-life with pronounced withdrawal symptoms, and controversies over its paediatric trials.",

@@ -36,6 +36,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Reversible EGFR inhibitor for EGFR-mutant lung cancer and pancreatic cancer",
   "summary": "Erlotinib is an oral reversible EGFR tyrosine kinase inhibitor. It was first approved after it modestly improved survival in unselected previously treated lung cancer, and is now used mainly as first-line therapy for EGFR-mutant non-small-cell lung cancer; it is also approved with gemcitabine for pancreatic cancer.",

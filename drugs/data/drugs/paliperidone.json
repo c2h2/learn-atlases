@@ -46,7 +46,8 @@
     "note": "Developed as the principal active metabolite of risperidone, formulated for once-daily osmotic release and as long-acting palmitate ester."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Risperidone's active metabolite, best known as monthly to six-monthly injections",
   "summary": "Paliperidone is 9-hydroxyrisperidone, the major active metabolite of risperidone. It is used for schizophrenia and schizoaffective disorder, and its palmitate ester formulations allow injections as infrequently as twice a year, which can help adherence.",

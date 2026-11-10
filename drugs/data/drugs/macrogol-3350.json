@@ -38,7 +38,8 @@
     "note": "Developed a non-absorbable polyethylene glycol–electrolyte lavage solution that cleanses the colon without net fluid or salt shifts."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "OTC (laxative); bowel-preparation kits prescription in many countries",
   "tagline": "Osmotic polymer laxative and basis of most bowel-preparation solutions",
   "summary": "Macrogol 3350 is a polyethylene glycol of average molecular weight 3350 that is not absorbed or metabolised. It holds water in the bowel by osmosis, softening stool, and in large volumes with electrolytes is used to clear the colon before colonoscopy.",

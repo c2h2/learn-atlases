@@ -43,6 +43,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "The first antipsychotic, which launched modern psychopharmacology in 1952",
   "summary": "Chlorpromazine was the first antipsychotic drug. Its introduction in 1952 transformed the treatment of schizophrenia, contributed to deinstitutionalisation and led to the dopamine hypothesis of psychosis. It remains in use for psychosis, agitation, nausea and intractable hiccups.",

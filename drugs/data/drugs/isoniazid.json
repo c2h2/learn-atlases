@@ -36,6 +36,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Inexpensive first-line TB drug that blocks mycolic acid synthesis",
   "summary": "Isoniazid is a cheap synthetic prodrug that has been a cornerstone of tuberculosis treatment and prevention since 1952. It is highly bactericidal against rapidly dividing Mycobacterium tuberculosis, and its toxicity profile is shaped by genetic differences in acetylation.",

@@ -43,6 +43,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "The gold-standard dopamine replacement therapy for Parkinson's disease",
   "summary": "Levodopa/carbidopa combines the dopamine precursor levodopa with carbidopa, which blocks its breakdown outside the brain. More than half a century after its introduction it remains the most effective symptomatic treatment for Parkinson's disease.",

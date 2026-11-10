@@ -35,7 +35,8 @@
     "note": "Discovered at BMS as BMS-927711 and licensed to Biohaven in 2016 for phase 3 development."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Oral CGRP receptor antagonist that both treats and prevents migraine",
   "summary": "Rimegepant is an oral gepant that blocks the CGRP receptor. It was the first medicine approved in the US for both the acute treatment and the prevention of migraine, and does not constrict blood vessels like triptans.",

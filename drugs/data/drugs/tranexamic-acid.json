@@ -40,6 +40,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription; pharmacy (non-prescription) for heavy periods in some countries",
   "tagline": "Cheap antifibrinolytic that saves lives in trauma and postpartum haemorrhage",
   "summary": "Tranexamic acid is a synthetic lysine analogue that blocks the breakdown of fibrin clots. It reduces bleeding in surgery, heavy menstrual bleeding and haemophilia dental procedures, and large trials showed it lowers death from bleeding after trauma and childbirth when given early.",

@@ -37,7 +37,8 @@
     "note": "The carboxylic-acid metabolite of the first-generation antihistamine hydroxyzine, with less penetration into the brain."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "OTC in most countries",
   "tagline": "Widely used once-daily non-sedating antihistamine for hay fever and hives",
   "summary": "Cetirizine is a second-generation H1 antihistamine derived from hydroxyzine. Taken once daily, it relieves allergic rhinitis and urticaria with less sedation than older antihistamines, though somewhat more than loratadine or fexofenadine.",

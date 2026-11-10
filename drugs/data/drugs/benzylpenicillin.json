@@ -33,6 +33,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "The original penicillin: an injectable beta-lactam that launched the antibiotic era",
   "summary": "Benzylpenicillin (penicillin G) is the natural penicillin first purified at Oxford in 1940 and mass-produced during the Second World War. It remains a first-choice injectable agent for streptococcal infections, syphilis, meningococcal disease and other infections caused by susceptible organisms.",

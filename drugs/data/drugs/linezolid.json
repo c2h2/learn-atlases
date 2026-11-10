@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "First oxazolidinone: oral option for MRSA, VRE and drug-resistant tuberculosis",
   "summary": "Linezolid is a fully synthetic oxazolidinone antibiotic approved in 2000, active against MRSA, vancomycin-resistant enterococci and penicillin-resistant pneumococci. It is also a core component of modern regimens for multidrug-resistant tuberculosis, limited by bone-marrow and nerve toxicity with prolonged use.",

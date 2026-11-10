@@ -37,7 +37,8 @@
     "note": "Exendin-4 was isolated from the venom (saliva) of the Gila monster, Heloderma suspectum."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "The first GLP-1 drug, copied from a peptide in Gila monster venom",
   "summary": "Exenatide is a synthetic version of exendin-4, a peptide found in Gila monster venom that activates the GLP-1 receptor but resists breakdown by DPP-4. Approved in 2005 as Byetta, it was the first GLP-1 receptor agonist and opened the incretin era that led to semaglutide and tirzepatide.",

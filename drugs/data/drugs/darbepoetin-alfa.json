@@ -36,7 +36,8 @@
     "note": "Engineered EPO with two extra N-linked glycosylation sites; higher sialic acid content slows clearance about threefold."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "Hyperglycosylated EPO analogue allowing less frequent dosing than epoetin",
   "summary": "Darbepoetin alfa is an erythropoietin analogue with five N-linked carbohydrate chains instead of three, giving it a roughly threefold longer half-life than epoetin alfa. It treats anaemia of chronic kidney disease and chemotherapy-induced anaemia with weekly or less frequent injections. It carries the class boxed warning for erythropoiesis-stimulating agents.",

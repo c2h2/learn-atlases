@@ -39,6 +39,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription (eye drops OTC in some countries)",
   "tagline": "Broad-spectrum antibiotic limited by aplastic anaemia, still used in low-resource settings",
   "summary": "Chloramphenicol, isolated by Parke-Davis in 1947, was the first broad-spectrum antibiotic and the first made by total synthesis. Its use has been curtailed by rare, fatal aplastic anaemia and grey baby syndrome, but it remains important in eye preparations and as a cheap option for meningitis, typhoid and rickettsial disease in low-resource settings.",

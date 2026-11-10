@@ -38,6 +38,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "First proteasome inhibitor, a cornerstone of multiple myeloma therapy",
   "summary": "Bortezomib is a reversible inhibitor of the 26S proteasome, the cell's main machinery for degrading ubiquitinated proteins. Myeloma cells, which make large amounts of immunoglobulin, are especially vulnerable; bortezomib-based combinations are standard in multiple myeloma and mantle cell lymphoma.",

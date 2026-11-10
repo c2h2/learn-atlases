@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "A potent salt-retaining steroid that replaces aldosterone",
   "summary": "Fludrocortisone is a synthetic corticosteroid with very strong mineralocorticoid activity, used to replace aldosterone in Addison's disease and salt-wasting congenital adrenal hyperplasia. It is also used off-label to raise blood pressure in orthostatic hypotension.",

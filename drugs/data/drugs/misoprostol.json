@@ -42,6 +42,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription (access restricted in some countries)",
   "tagline": "Prostaglandin analogue for NSAID ulcers, obstetric haemorrhage and abortion care",
   "summary": "Misoprostol is a synthetic prostaglandin E1 analogue approved to prevent NSAID-induced gastric ulcers. Its uterotonic and cervical-ripening effects make it central to medical abortion, management of miscarriage, labour induction and postpartum haemorrhage, uses endorsed by WHO.",

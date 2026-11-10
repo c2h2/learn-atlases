@@ -40,6 +40,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Backbone of HIV treatment and prevention, and first-line therapy for hepatitis B",
   "summary": "Tenofovir disoproxil is an oral prodrug of tenofovir, a nucleotide analogue that blocks HIV reverse transcriptase and the hepatitis B virus polymerase. Combined with emtricitabine or lamivudine it forms the backbone of many HIV regimens and of oral pre-exposure prophylaxis (PrEP). Long-term use can affect kidney function and bone density.",

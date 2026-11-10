@@ -40,7 +40,8 @@
     "note": "An aza-analogue of the tetracyclic antidepressant mianserin, developed at Organon in the Netherlands."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Sedating tetracyclic antidepressant that blocks alpha-2 and several serotonin receptors",
   "summary": "Mirtazapine is a tetracyclic antidepressant that increases noradrenaline and serotonin release by blocking presynaptic alpha-2 receptors. Its potent antihistamine effect makes it sedating and appetite-stimulating, and it causes little sexual dysfunction or nausea.",

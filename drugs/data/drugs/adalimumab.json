@@ -43,7 +43,8 @@
     "note": "Isolated by phage display (guided selection from a murine antibody); the first fully human monoclonal antibody approved."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Fully human anti-TNF antibody, long the world's best-selling medicine",
   "summary": "Adalimumab is a fully human monoclonal antibody against TNF-α, given by subcutaneous injection. It treats rheumatoid arthritis, psoriatic arthritis, ankylosing spondylitis, Crohn's disease, ulcerative colitis, psoriasis, hidradenitis suppurativa and uveitis, and as Humira was the top-selling drug in the world for most of the 2010s.",

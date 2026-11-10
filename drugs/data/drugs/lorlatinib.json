@@ -35,7 +35,8 @@
     "note": "A macrocyclic ALK/ROS1 inhibitor designed for blood–brain barrier penetration and activity against resistance mutations including G1202R."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Macrocyclic ALK inhibitor built to reach the brain and overcome resistance mutations",
   "summary": "Lorlatinib is a third-generation macrocyclic ALK and ROS1 inhibitor with high brain penetration and activity against most ALK resistance mutations, including G1202R. It is used first-line and after other ALK inhibitors in ALK-positive non-small-cell lung cancer, where long-term follow-up of the CROWN trial showed unusually durable disease control.",

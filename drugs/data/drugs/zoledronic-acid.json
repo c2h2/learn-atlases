@@ -36,7 +36,8 @@
     "note": "The most potent bisphosphonate in clinical use, with an imidazole ring side chain."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "A once-a-year bisphosphonate infusion for osteoporosis and bone metastases",
   "summary": "Zoledronic acid is the most potent nitrogen-containing bisphosphonate and is given as an intravenous infusion. In oncology it treats hypercalcaemia of malignancy and prevents skeletal events from bone metastases and myeloma; a single yearly infusion reduces fractures in osteoporosis.",

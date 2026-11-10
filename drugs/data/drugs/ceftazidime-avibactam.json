@@ -37,6 +37,7 @@
   },
   "generic": null,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription (hospital)",
   "tagline": "Reserve antibiotic restoring ceftazidime against KPC and OXA-48 carbapenemase producers",
   "summary": "Ceftazidime/avibactam combines ceftazidime with avibactam, the first diazabicyclooctane beta-lactamase inhibitor. It is active against many carbapenem-resistant Enterobacterales producing KPC or OXA-48 enzymes and against some multidrug-resistant Pseudomonas, but not against metallo-beta-lactamase producers.",

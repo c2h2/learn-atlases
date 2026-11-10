@@ -38,7 +38,8 @@
     "note": "A carbazole beta-blocker with vasodilating alpha-1 blockade; licensed to SmithKline Beecham in the US."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "Vasodilating beta-blocker that reduced mortality in heart failure",
   "summary": "Carvedilol blocks β1, β2 and α1 adrenoceptors, combining heart-rate reduction with vasodilation. It is used in heart failure with reduced ejection fraction, left ventricular dysfunction after myocardial infarction and hypertension.",

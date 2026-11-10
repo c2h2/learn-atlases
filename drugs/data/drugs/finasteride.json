@@ -36,7 +36,8 @@
     "note": "Inspired by Julianne Imperato-McGinley's 1974 study of men with inherited 5α-reductase deficiency, who had small prostates and no male-pattern baldness."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "5α-reductase inhibitor for prostate enlargement and male-pattern hair loss",
   "summary": "Finasteride inhibits the enzyme that converts testosterone to the more potent androgen dihydrotestosterone (DHT). It shrinks the enlarged prostate in benign prostatic hyperplasia and slows male-pattern hair loss, and has been the subject of safety debates about persistent sexual and psychiatric effects.",

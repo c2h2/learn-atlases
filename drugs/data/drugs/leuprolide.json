@@ -43,6 +43,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "GnRH agonist depot used for prostate cancer, endometriosis and early puberty",
   "summary": "Leuprorelin (leuprolide) is a synthetic GnRH analogue that, after a brief surge, desensitises pituitary GnRH receptors and suppresses LH, FSH and sex hormones to castrate levels. It is a standard androgen-deprivation therapy for prostate cancer and is also used for endometriosis, uterine fibroids, central precocious puberty and breast cancer ovarian suppression.",

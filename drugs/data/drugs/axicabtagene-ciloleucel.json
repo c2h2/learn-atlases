@@ -34,7 +34,8 @@
     "note": "Retroviral CAR with the FMC63 anti-CD19 scFv, a CD28 costimulatory domain and CD3ζ."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (specialist centres)",
   "tagline": "CD19 CAR T therapy that became second-line standard for large B-cell lymphoma",
   "summary": "Axicabtagene ciloleucel is an autologous CAR T-cell therapy targeting CD19, built on a CD28 costimulatory design developed at the US National Cancer Institute. It is approved for large B-cell lymphoma, including as second-line treatment, and for follicular lymphoma.",

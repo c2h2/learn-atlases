@@ -36,7 +36,8 @@
     "note": "A pyrido-imidazole derivative of rifamycin SV designed to be essentially non-absorbed from the gut."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Non-absorbed antibiotic for hepatic encephalopathy, IBS-D and traveller's diarrhoea",
   "summary": "Rifaximin is a rifamycin antibiotic that stays almost entirely in the gut. It reduces recurrence of hepatic encephalopathy, treats irritable bowel syndrome with diarrhoea and treats traveller's diarrhoea caused by non-invasive E. coli.",

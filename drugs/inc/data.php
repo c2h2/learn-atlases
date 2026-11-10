@@ -24,6 +24,8 @@ const MODALITIES = [
 const ORIGINS = ['natural' => 'Natural product', 'semi-synthetic' => 'Semi-synthetic', 'synthetic' => 'Synthetic',
                  'biotech' => 'Biotechnology', 'endogenous' => 'Endogenous substance'];
 
+const WHO_STATUS = ['listed' => 'On the WHO list', 'alternative' => 'Therapeutic alternative on the WHO list', 'not-listed' => 'Not on the WHO list'];
+
 const ROUTE_FAMILY = [
     'oral' => 'oral', 'sublingual' => 'oral',
     'iv' => 'injected', 'im' => 'injected', 'sc' => 'injected', 'intrathecal' => 'injected', 'intravitreal' => 'injected',
@@ -55,7 +57,7 @@ function group_criteria(): array
             return [$y ? ($y < 1940 ? 'Before 1940' : (intdiv((int)$y, 10) * 10) . 's') : '— unknown'];
         }],
         'generic'    => ['Generic / biosimilar', fn($d) => [$d['generic'] === null ? '— unknown' : ($d['generic'] ? 'Generics available' : 'Brand only')]],
-        'who'        => ['WHO essential medicine', fn($d) => [$d['who_essential'] === null ? '— unknown' : ($d['who_essential'] ? 'On WHO list' : 'Not on list')]],
+        'who'        => ['WHO essential medicine', fn($d) => [WHO_STATUS[$d['who_status'] ?? ''] ?? '— unknown']],
         'stage'      => ['Writing stage', fn($d) => [ucfirst($d['stage'] ?? 'skeleton')]],
     ];
 }

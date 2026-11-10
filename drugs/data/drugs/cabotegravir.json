@@ -38,7 +38,8 @@
     "note": "Dolutegravir analogue whose low aqueous solubility and long half-life suit a nanosuspension depot injection."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Long-acting integrase inhibitor: HIV treatment or prevention injected every two months",
   "summary": "Cabotegravir is an integrase strand transfer inhibitor formulated as a long-acting intramuscular injection. Given every two months it is used alone for HIV pre-exposure prophylaxis, where it outperformed daily oral tenofovir/emtricitabine, and with rilpivirine as a complete long-acting HIV treatment. Oral tablets can be used as a lead-in or bridge.",

@@ -35,7 +35,8 @@
     "note": "Fully human IgG1κ antibody against TNF-α generated in transgenic mice (Medarex technology)."
   },
   "generic": null,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Once-monthly human anti-TNF antibody for arthritis and ulcerative colitis",
   "summary": "Golimumab is a fully human anti-TNF-α monoclonal antibody given subcutaneously once a month or intravenously every eight weeks. It is used in rheumatoid arthritis, psoriatic arthritis, ankylosing spondylitis, non-radiographic axial spondyloarthritis and ulcerative colitis.",

@@ -36,7 +36,8 @@
     "note": "A fusion of the modified extracellular domain of activin receptor type IIB with human IgG1 Fc, which traps TGF-beta superfamily ligands that inhibit late-stage erythropoiesis."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Ligand trap that corrects ineffective red cell maturation in thalassaemia and MDS",
   "summary": "Luspatercept is a recombinant fusion protein that binds selected TGF-beta superfamily ligands such as GDF11, reducing SMAD2/3 signalling that blocks late red cell maturation. It reduces transfusion needs in beta-thalassaemia and lower-risk myelodysplastic syndromes.",

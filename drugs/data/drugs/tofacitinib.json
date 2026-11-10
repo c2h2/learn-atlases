@@ -38,7 +38,8 @@
     "note": "Designed as a JAK3 inhibitor for transplant immunosuppression after JAK3 was shown to be essential for cytokine signalling through the common gamma chain."
   },
   "generic": null,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First oral JAK inhibitor for rheumatoid arthritis and ulcerative colitis",
   "summary": "Tofacitinib is an oral inhibitor of JAK1 and JAK3 that blocks signalling by many inflammatory cytokines. It was the first JAK inhibitor approved for rheumatoid arthritis and is also used in psoriatic arthritis, ankylosing spondylitis, ulcerative colitis and juvenile idiopathic arthritis. The ORAL Surveillance safety trial led to class-wide boxed warnings.",

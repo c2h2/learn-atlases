@@ -39,6 +39,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "3TC, a well-tolerated cornerstone of HIV combinations worldwide",
   "summary": "Lamivudine (3TC) is a cytidine analogue that inhibits the reverse transcriptase of HIV and the polymerase of hepatitis B virus. It is well tolerated and forms part of many first-line HIV regimens, including the dolutegravir-based combinations used worldwide. It was also the first oral drug for chronic hepatitis B.",

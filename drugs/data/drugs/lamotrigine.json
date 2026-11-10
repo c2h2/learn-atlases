@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Broad-spectrum anticonvulsant and bipolar depression preventive with a rash warning",
   "summary": "Lamotrigine is a broad-spectrum anticonvulsant also used to prevent mood episodes, particularly depression, in bipolar I disorder. It is well tolerated and has a comparatively favourable pregnancy profile, but must be titrated slowly to reduce the risk of serious rash.",

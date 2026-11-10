@@ -36,7 +36,8 @@
     "note": "A hydrogenated derivative of lipstatin, a natural lipase inhibitor produced by Streptomyces toxytricini."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (120 mg); OTC in many countries (60 mg)",
   "tagline": "A weight-loss pill that blocks fat digestion in the gut",
   "summary": "Orlistat inhibits gastric and pancreatic lipases in the gut so that about 30% of dietary fat passes unabsorbed. It produces modest weight loss alongside a reduced-calorie diet and is available over the counter at a lower dose in many countries; oily stools and faecal urgency are common.",

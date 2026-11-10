@@ -40,7 +40,8 @@
     "note": "Synthesised from thebaine/oxymorphone as a longer-acting, orally active successor to naloxone; development was later supported by the US National Institute on Drug Abuse."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Long-acting opioid antagonist for alcohol and opioid use disorders",
   "summary": "Naltrexone is a long-acting opioid receptor antagonist used to support abstinence in opioid use disorder after detoxification and to reduce heavy drinking in alcohol use disorder. It is available as a daily tablet and a monthly injection, and in combination with bupropion for weight management.",

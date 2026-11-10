@@ -35,6 +35,7 @@
   },
   "generic": false,
   "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (specialist)",
   "tagline": "First genetically targeted therapy for SOD1 familial ALS",
   "summary": "Tofersen is an intrathecal antisense oligonucleotide that lowers production of superoxide dismutase 1 (SOD1) protein in people with ALS caused by SOD1 mutations. It was approved on the basis of reduced neurofilament light chain, a biomarker of neurodegeneration.",

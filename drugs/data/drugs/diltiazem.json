@@ -38,7 +38,8 @@
     "note": "A benzothiazepine developed in Japan in the late 1960s–70s and first marketed there as Herbesser."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Rate-slowing calcium channel blocker for angina and atrial fibrillation",
   "summary": "Diltiazem is a benzothiazepine calcium channel blocker that acts on both heart and blood vessels. It is used for angina, hypertension and, intravenously, for rapid control of ventricular rate in atrial fibrillation or flutter.",

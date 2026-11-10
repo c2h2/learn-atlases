@@ -43,7 +43,8 @@
     "note": "Mouse anti-TNF antibody A2 developed at NYU and converted by Centocor to the chimeric antibody cA2."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "Chimeric anti-TNF antibody that pioneered biologic therapy in Crohn's disease",
   "summary": "Infliximab is a chimeric monoclonal antibody that neutralises tumour necrosis factor alpha. Approved in 1998 for Crohn's disease, it is used in ulcerative colitis, rheumatoid arthritis, ankylosing spondylitis, psoriatic arthritis and plaque psoriasis, and became the first monoclonal antibody with a biosimilar approved in Europe.",

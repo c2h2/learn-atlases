@@ -38,6 +38,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Difluorinated cytidine analogue used in pancreatic, lung, bladder and breast cancer",
   "summary": "Gemcitabine is a deoxycytidine analogue that, once phosphorylated, inhibits ribonucleotide reductase and is incorporated into DNA, terminating synthesis. It has broad solid-tumour activity and is a standard drug for pancreatic, lung, bladder, biliary, ovarian and breast cancer.",

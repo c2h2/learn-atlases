@@ -37,7 +37,8 @@
     "note": "Alkaloid isolated from autumn crocus (Colchicum autumnale), a plant used for gout since antiquity; pure colchicine was isolated by Geiger in 1833."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "An ancient crocus alkaloid for gout that became a heart-protection drug",
   "summary": "Colchicine is a plant alkaloid that binds tubulin and dampens neutrophil-driven inflammation. Used for gout for centuries, it also treats familial Mediterranean fever and pericarditis, and in 2023 a low-dose tablet became the first anti-inflammatory approved to reduce cardiovascular events.",

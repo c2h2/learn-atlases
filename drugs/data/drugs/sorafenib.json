@@ -41,7 +41,8 @@
     "note": "A bi-aryl urea found by screening for RAF1 (CRAF) kinase inhibitors; anti-angiogenic VEGFR/PDGFR activity proved clinically more important."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First systemic therapy to extend survival in advanced liver cancer",
   "summary": "Sorafenib is an oral multi-kinase inhibitor that blocks RAF kinases and the VEGF and PDGF receptors, inhibiting tumour cell signalling and angiogenesis. It is approved for advanced renal cell carcinoma, hepatocellular carcinoma and radioactive-iodine-refractory differentiated thyroid cancer; in 2007 it became the first drug to prolong survival in advanced liver cancer.",

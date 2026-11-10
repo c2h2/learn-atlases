@@ -34,7 +34,8 @@
     "note": "Licensed to The Medicines Company in 2013, which Novartis acquired in 2020."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Twice-yearly siRNA that silences PCSK9 production in the liver",
   "summary": "Inclisiran is a GalNAc-conjugated small interfering RNA that switches off production of PCSK9 in liver cells. Given by injection twice a year after initial doses, it lowers LDL cholesterol by about 50%.",

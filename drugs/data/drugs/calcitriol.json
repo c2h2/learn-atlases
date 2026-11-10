@@ -39,7 +39,8 @@
     "note": "Identified as the hormonally active metabolite of vitamin D, formed in the kidney by 1α-hydroxylation."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "The hormonally active form of vitamin D, used when the kidney cannot make it",
   "summary": "Calcitriol is 1,25-dihydroxyvitamin D3, the active hormone form of vitamin D. Because it does not need activation by the kidney, it is used to treat hypocalcaemia and secondary hyperparathyroidism in chronic kidney disease and hypoparathyroidism; topically it treats psoriasis.",

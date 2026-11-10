@@ -36,6 +36,7 @@
   },
   "generic": false,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "First oral drug for leishmaniasis, repurposed from cancer research",
   "summary": "Miltefosine is an alkylphosphocholine first developed as an anticancer agent and later found to kill Leishmania parasites. Approved in India in 2002, it was the first oral treatment for visceral leishmaniasis (kala-azar), and it is also used for cutaneous and mucosal leishmaniasis. It is teratogenic, so contraception is required during and after treatment.",

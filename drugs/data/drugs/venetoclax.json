@@ -36,7 +36,8 @@
     "note": "Re-engineered from navitoclax (ABT-263) to spare BCL-XL and so avoid dose-limiting thrombocytopenia."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First BCL-2 inhibitor: a BH3 mimetic that triggers apoptosis in leukaemia cells",
   "summary": "Venetoclax is a first-in-class oral BH3 mimetic that selectively inhibits the anti-apoptotic protein BCL-2, allowing cancer cells to undergo programmed cell death. It is used in chronic lymphocytic leukaemia, often as fixed-duration therapy with obinutuzumab or rituximab, and with hypomethylating agents or low-dose cytarabine for older or unfit patients with acute myeloid leukaemia.",

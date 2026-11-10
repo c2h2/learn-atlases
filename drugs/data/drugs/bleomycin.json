@@ -39,6 +39,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Streptomyces glycopeptide that cuts DNA; key to curative testicular and Hodgkin regimens",
   "summary": "Bleomycin is a glycopeptide antibiotic that chelates iron and generates free radicals that break DNA strands. It is a component of curative regimens for testicular cancer (BEP) and Hodgkin lymphoma (ABVD); it causes little marrow suppression but can cause serious pulmonary fibrosis.",

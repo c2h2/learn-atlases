@@ -35,7 +35,8 @@
     "note": "A selective JAK1/JAK2 inhibitor developed from the same programme that produced ruxolitinib."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "JAK1/2 inhibitor for rheumatoid arthritis, alopecia areata and severe COVID-19",
   "summary": "Baricitinib is an oral, once-daily inhibitor of JAK1 and JAK2. It is approved for rheumatoid arthritis, severe alopecia areata and, in some regions, atopic dermatitis, and it reduced mortality in hospitalised patients with COVID-19. It carries the JAK inhibitor class boxed warnings.",

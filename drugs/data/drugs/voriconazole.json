@@ -36,6 +36,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "First-line drug for invasive aspergillosis, with notable visual and skin side effects",
   "summary": "Voriconazole is a second-generation triazole derived from fluconazole with activity against Aspergillus, Fusarium, Scedosporium and resistant Candida. It became the standard first-line treatment for invasive aspergillosis after it outperformed amphotericin B in a landmark 2002 trial. Its nonlinear pharmacokinetics and CYP2C19 polymorphisms make blood-level monitoring important.",

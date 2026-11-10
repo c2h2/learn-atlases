@@ -34,7 +34,8 @@
     "note": "A liver-directed THR-β agonist designed to avoid THR-α-mediated effects on heart and bone."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "The first approved drug for MASH, a liver-targeted thyroid hormone mimic",
   "summary": "Resmetirom is an oral, liver-directed agonist of thyroid hormone receptor beta. In March 2024 it became the first drug approved for metabolic dysfunction-associated steatohepatitis (MASH, formerly NASH) with moderate-to-advanced liver fibrosis, after the MAESTRO-NASH trial showed resolution of steatohepatitis and improvement of fibrosis.",

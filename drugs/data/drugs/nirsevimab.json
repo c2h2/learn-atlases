@@ -34,7 +34,8 @@
     "note": "Optimised human IgG1 with the YTE Fc mutation (M252Y/S254T/T256E) that extends half-life through FcRn binding."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "One-dose antibody that protects babies from RSV for a whole season",
   "summary": "Nirsevimab is a long-acting human monoclonal antibody that binds the prefusion form of the respiratory syncytial virus (RSV) F protein. A single intramuscular dose protects infants through their first RSV season, cutting medically attended RSV lower respiratory infection by about three-quarters in trials. Unlike palivizumab, it is intended for all infants, not just those at high risk.",

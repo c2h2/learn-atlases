@@ -39,6 +39,7 @@
   },
   "generic": false,
   "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "First PD-1 inhibitor approved, active across many cancer types",
   "summary": "Nivolumab is a fully human IgG4 monoclonal antibody that blocks the PD-1 checkpoint receptor on T cells. First approved in Japan in 2014 for melanoma, it is used across melanoma, lung, kidney, head and neck, oesophageal, gastric, bladder and liver cancers and Hodgkin lymphoma.",

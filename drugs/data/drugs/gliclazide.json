@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Servier's sulfonylurea, widely used outside the US and in the ADVANCE trial",
   "summary": "Gliclazide is a sulfonylurea that stimulates insulin secretion and is widely used for type 2 diabetes in Europe, Asia and Australia but is not approved in the United States. It has a lower risk of severe hypoglycaemia than glibenclamide and is the sulfonylurea listed by the WHO as an essential medicine.",

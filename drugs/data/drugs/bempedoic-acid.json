@@ -36,7 +36,8 @@
     "note": "Developed by the company founded by Roger Newton, a co-discoverer of atorvastatin."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Liver-activated cholesterol-synthesis blocker for statin-intolerant patients",
   "summary": "Bempedoic acid is an oral prodrug that inhibits ATP citrate lyase, an enzyme upstream of HMG-CoA reductase in cholesterol synthesis. It lowers LDL cholesterol by about 20%, and the CLEAR Outcomes trial showed fewer cardiovascular events in statin-intolerant patients.",

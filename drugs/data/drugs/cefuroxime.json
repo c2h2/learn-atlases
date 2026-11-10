@@ -34,6 +34,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Second-generation cephalosporin, oral and injectable, used widely for surgical prophylaxis",
   "summary": "Cefuroxime is a second-generation cephalosporin developed by Glaxo in the 1970s. It has improved activity against Haemophilus influenzae and Moraxella compared with first-generation agents and is used for respiratory infections, Lyme disease and surgical prophylaxis.",

@@ -36,7 +36,8 @@
     "note": "Lundbeck resolved racemic citalopram and developed the active S-enantiomer as a separate drug as citalopram patents neared expiry."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Single-enantiomer SSRI derived from citalopram, used for depression and anxiety",
   "summary": "Escitalopram is the S-enantiomer of citalopram and one of the most widely used SSRIs. It is approved for major depression and generalised anxiety disorder and, in Europe, for several other anxiety disorders.",

@@ -39,6 +39,7 @@
   },
   "generic": true,
   "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Non-ergot dopamine agonist for Parkinson's disease and restless legs syndrome",
   "summary": "Pramipexole is a non-ergoline dopamine agonist that directly stimulates D2-family dopamine receptors. It is used as monotherapy in early Parkinson's disease, as an adjunct to levodopa, and at low doses for restless legs syndrome.",

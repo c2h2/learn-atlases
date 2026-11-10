@@ -37,7 +37,8 @@
     "note": "Designed as a selective DPP-4 inhibitor after earlier non-selective compounds showed toxicity linked to DPP-8/9 inhibition."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "The first DPP-4 inhibitor: a weight-neutral pill that boosts the body's own incretins",
   "summary": "Sitagliptin inhibits the enzyme DPP-4, prolonging the action of the gut hormones GLP-1 and GIP so that insulin secretion rises and glucagon falls when glucose is high. Approved in 2006 as the first gliptin, it is weight-neutral, carries little risk of hypoglycaemia and was shown neutral for cardiovascular outcomes in TECOS.",

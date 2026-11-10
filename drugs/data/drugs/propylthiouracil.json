@@ -36,6 +36,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Antithyroid drug kept for early pregnancy and thyroid storm because of liver risk",
   "summary": "Propylthiouracil is a thionamide that blocks thyroid hormone synthesis and also inhibits peripheral conversion of T4 to T3. Because of a risk of severe liver injury it is now reserved mainly for the first trimester of pregnancy, thyroid storm and patients who cannot take methimazole.",

@@ -36,7 +36,8 @@
     "note": "Dabigatran was designed as a direct thrombin inhibitor; the etexilate double prodrug was needed for oral absorption."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "First DOAC for atrial fibrillation, with its own antibody antidote",
   "summary": "Dabigatran etexilate is an oral prodrug of dabigatran, a direct, reversible thrombin inhibitor. It was the first direct oral anticoagulant approved for stroke prevention in atrial fibrillation and is the only one with a specific antibody reversal agent, idarucizumab.",

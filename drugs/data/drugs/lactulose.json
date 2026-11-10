@@ -34,6 +34,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription; OTC in some countries",
   "tagline": "Synthetic sugar laxative and first-line treatment for hepatic encephalopathy",
   "summary": "Lactulose is a synthetic disaccharide of galactose and fructose that humans cannot digest. Colonic bacteria ferment it, drawing water into the bowel and acidifying the colon, which makes it useful both as a laxative and to lower ammonia in hepatic encephalopathy.",

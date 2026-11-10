@@ -37,7 +37,8 @@
     "note": "Produced by microbial 1,2-dehydrogenation of cortisone with Corynebacterium simplex."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "The everyday oral steroid, converted by the liver into prednisolone",
   "summary": "Prednisone is a synthetic glucocorticoid that is inactive until converted to prednisolone in the liver. It is about four times as potent as hydrocortisone with less salt retention, and is one of the most widely used oral anti-inflammatory and immunosuppressive drugs, especially in North America.",

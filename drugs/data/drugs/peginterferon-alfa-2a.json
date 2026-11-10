@@ -35,7 +35,8 @@
     "note": "Recombinant interferon alfa-2a attached to a branched 40 kDa polyethylene glycol, slowing clearance to allow weekly dosing."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Weekly long-acting interferon, once the backbone of hepatitis C and B treatment",
   "summary": "Peginterferon alfa-2a is recombinant interferon alfa-2a linked to a large branched polyethylene glycol molecule, which prolongs its action so it can be injected weekly. With ribavirin it was standard treatment for chronic hepatitis C for over a decade until interferon-free direct-acting antivirals replaced it. It is still used for a finite course in chronic hepatitis B and hepatitis D.",

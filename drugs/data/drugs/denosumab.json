@@ -37,7 +37,8 @@
     "note": "A fully human IgG2 antibody developed after the discovery of the RANK–RANKL–osteoprotegerin system in the late 1990s, in which Amgen scientists identified osteoprotegerin."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Twice-yearly antibody that blocks RANKL and switches off bone-resorbing osteoclasts",
   "summary": "Denosumab is a fully human monoclonal antibody that binds RANKL, the signal that drives osteoclast formation and activity. It reduces fractures in osteoporosis when injected every six months (Prolia) and prevents skeletal complications of bone metastases at a higher monthly dose (Xgeva); biosimilars were approved from 2024.",

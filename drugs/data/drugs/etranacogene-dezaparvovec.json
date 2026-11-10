@@ -35,7 +35,8 @@
     "note": "Discovery of the hyperactive factor IX Padua variant (R338L) in a family with thrombophilia, later used to make gene therapy more potent."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription; administered at specialist centres",
   "tagline": "One-time AAV gene therapy delivering hyperactive factor IX for haemophilia B",
   "summary": "Etranacogene dezaparvovec is an adeno-associated virus serotype 5 vector carrying the gene for the highly active factor IX Padua variant under a liver-specific promoter. A single infusion lets the liver produce factor IX, reducing bleeding and removing the need for routine prophylaxis in most adults with haemophilia B.",

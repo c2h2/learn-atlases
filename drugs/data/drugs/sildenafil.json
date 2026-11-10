@@ -37,7 +37,8 @@
     "note": "Developed as a treatment for angina; penile erections noted in early trials redirected development."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription; pharmacy (OTC) in the UK since 2018",
   "tagline": "PDE5 inhibitor for erectile dysfunction and pulmonary arterial hypertension",
   "summary": "Sildenafil is a selective inhibitor of phosphodiesterase type 5 that enhances nitric oxide–cGMP signalling. Originally studied for angina, it became the first oral treatment for erectile dysfunction in 1998 and is also used for pulmonary arterial hypertension.",

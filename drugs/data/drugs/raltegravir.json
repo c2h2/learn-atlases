@@ -37,6 +37,7 @@
   },
   "generic": false,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "The first HIV integrase inhibitor, which opened a whole new drug class",
   "summary": "Raltegravir was the first integrase strand transfer inhibitor, approved in 2007. It blocks the step at which HIV inserts its DNA into the host genome and has few drug interactions because it is not metabolised by cytochrome P450 enzymes. It remains used in pregnancy, in neonates and in second-line regimens, though dolutegravir and bictegravir have largely replaced it.",

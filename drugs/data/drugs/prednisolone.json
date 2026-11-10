@@ -44,6 +44,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "The active form of prednisone and the standard oral steroid in much of the world",
   "summary": "Prednisolone is the active glucocorticoid formed from prednisone and is itself given orally, as eye drops and rectally. It is about four times as potent as hydrocortisone with less mineralocorticoid effect, and is used across asthma, rheumatology, gastroenterology, haematology and transplantation.",

@@ -36,7 +36,8 @@
     "note": "Recombinant acid alpha-glucosidase produced in CHO cells showed glycogen clearance in animal models of Pompe disease."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First treatment for Pompe disease, a fatal glycogen storage disorder of muscle",
   "summary": "Alglucosidase alfa is recombinant human acid alpha-glucosidase that is taken up into muscle lysosomes and breaks down glycogen. Approved in 2006, it was the first therapy for Pompe disease and markedly improves survival in infantile-onset disease. It carries boxed warnings for anaphylaxis and immune-mediated reactions.",

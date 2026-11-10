@@ -40,6 +40,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Cornerstone of tuberculosis and leprosy treatment and a potent enzyme inducer",
   "summary": "Rifampicin is a semi-synthetic rifamycin developed by Lepetit in the 1960s. Its sterilising activity made six-month short-course tuberculosis treatment possible, and it is also central to leprosy treatment, staphylococcal biofilm infections and meningococcal prophylaxis. It is one of the most powerful inducers of drug-metabolising enzymes.",

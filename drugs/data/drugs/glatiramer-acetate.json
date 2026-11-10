@@ -35,7 +35,8 @@
     "note": "Random copolymers made to mimic myelin basic protein and induce experimental autoimmune encephalomyelitis unexpectedly suppressed it instead."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Israeli-discovered polymer injection for relapsing multiple sclerosis",
   "summary": "Glatiramer acetate is a mixture of synthetic polypeptides made from four amino acids that reduces relapses in relapsing multiple sclerosis. Discovered at the Weizmann Institute and marketed by Teva as Copaxone, it became one of the best-selling MS drugs and later faced generic competition.",

@@ -50,6 +50,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "controlled (US Schedule III; UK Class C, Schedule 3)",
   "tagline": "Partial opioid agonist central to treatment of opioid use disorder",
   "summary": "Buprenorphine is a semi-synthetic partial mu-opioid agonist used for opioid use disorder and for pain. Its ceiling effect on respiratory depression and long receptor binding make it safer than full agonists, and it is a WHO essential medicine for opioid dependence.",

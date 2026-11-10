@@ -38,7 +38,8 @@
     "note": "A benzothiazole studied as an anticonvulsant and neuroprotectant before being tested in ALS on the glutamate excitotoxicity hypothesis."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "The first drug shown to prolong survival in amyotrophic lateral sclerosis",
   "summary": "Riluzole was the first medicine approved for amyotrophic lateral sclerosis (ALS). It modestly prolongs survival or time to tracheostomy, by roughly two to three months in pivotal trials.",

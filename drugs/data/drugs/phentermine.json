@@ -39,7 +39,8 @@
     "note": "A substituted phenethylamine structurally related to amphetamine, developed as an appetite suppressant in the 1950s."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "controlled (US Schedule IV)",
   "tagline": "The most prescribed US weight-loss drug, an amphetamine relative that curbs appetite",
   "summary": "Phentermine is a sympathomimetic amine that suppresses appetite and is used short-term for obesity together with diet and exercise. It is the most widely prescribed anti-obesity medicine in the United States, is a controlled substance because of its relationship to amphetamine, and is combined with topiramate in Qsymia.",

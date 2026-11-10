@@ -35,7 +35,8 @@
     "note": "Showed that antibody blockade of CTLA-4 causes rejection of tumours in mice; ipilimumab is a fully human IgG1 made in Medarex transgenic mice."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First immune checkpoint inhibitor, releasing the CTLA-4 brake on T cells",
   "summary": "Ipilimumab is a fully human monoclonal antibody that blocks CTLA-4, an inhibitory receptor on T cells. In 2011 it became the first drug shown to prolong survival in metastatic melanoma and the first immune checkpoint inhibitor approved; it is now used mostly in combination with nivolumab.",

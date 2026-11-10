@@ -44,6 +44,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Synthetic thyroid hormone, one of the most prescribed medicines in the world",
   "summary": "Levothyroxine is synthetic thyroxine (T4), identical to the main hormone secreted by the thyroid gland, and is the standard treatment for hypothyroidism. It is among the most prescribed drugs in the US and has a narrow therapeutic index, so doses are titrated by TSH measurement.",

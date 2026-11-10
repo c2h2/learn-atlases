@@ -43,7 +43,8 @@
     "note": "Fully human IgG1κ antibody against the p40 subunit shared by IL-12 and IL-23."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "IL-12/IL-23 p40 antibody for psoriasis, psoriatic arthritis and IBD",
   "summary": "Ustekinumab is a human monoclonal antibody against the p40 subunit shared by interleukins 12 and 23. Dosed every 8 to 12 weeks, it treats plaque psoriasis, psoriatic arthritis, Crohn's disease and ulcerative colitis; biosimilars launched in the US and Europe from 2024–2025.",

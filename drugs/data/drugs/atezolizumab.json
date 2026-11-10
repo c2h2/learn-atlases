@@ -36,7 +36,8 @@
     "note": "Humanised IgG1 anti-PD-L1 antibody with an engineered Fc (N297A) that abolishes effector function."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "First PD-L1 inhibitor, used in lung, liver and other cancers",
   "summary": "Atezolizumab is a humanised monoclonal antibody that blocks PD-L1, the main ligand of the PD-1 checkpoint. It was the first PD-L1 inhibitor approved and is used in non-small cell and small cell lung cancer, hepatocellular carcinoma, melanoma and alveolar soft part sarcoma.",

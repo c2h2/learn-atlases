@@ -38,7 +38,8 @@
     "note": "Synthesised in the late 1960s–early 1970s among fluorinated ethers; development stalled in the US until Maruishi took it forward in Japan."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription (hospital use)",
   "tagline": "Sweet-smelling volatile anaesthetic ideal for gas induction in children",
   "summary": "Sevoflurane is a fluorinated ether volatile anaesthetic used for induction and maintenance of general anaesthesia. Because it is non-pungent and has low blood solubility, it allows smooth, rapid inhalational induction, particularly in children, and fast emergence.",

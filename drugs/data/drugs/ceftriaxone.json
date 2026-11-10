@@ -35,6 +35,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Once-daily third-generation cephalosporin for meningitis, pneumonia and gonorrhoea",
   "summary": "Ceftriaxone is a broad-spectrum, once-daily injectable cephalosporin introduced by Roche in the early 1980s. It is a cornerstone treatment for bacterial meningitis, severe community-acquired pneumonia, gonorrhoea and many serious infections, and is one of the most used hospital antibiotics worldwide.",

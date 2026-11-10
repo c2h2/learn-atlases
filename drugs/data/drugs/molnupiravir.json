@@ -34,7 +34,8 @@
     "note": "Isopropyl-ester prodrug of β-D-N4-hydroxycytidine (NHC), developed for influenza and other RNA viruses before COVID-19."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (emergency use in the US)",
   "tagline": "Oral COVID-19 antiviral that riddles the viral genome with copying errors",
   "summary": "Molnupiravir is an oral prodrug of the nucleoside analogue N4-hydroxycytidine, which causes so many errors in viral RNA that the virus can no longer replicate. It was the first oral COVID-19 antiviral authorised anywhere, in the UK in November 2021. Its benefit in vaccinated populations proved modest, and the EU declined to approve it.",

@@ -33,7 +33,8 @@
     "note": "A triazole aromatase inhibitor optimised for potency and selectivity."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Potent aromatase inhibitor for breast cancer, also widely used to induce ovulation",
   "summary": "Letrozole is a potent non-steroidal aromatase inhibitor that suppresses oestrogen synthesis in postmenopausal women. It is used for adjuvant, extended adjuvant and metastatic treatment of hormone-receptor-positive breast cancer, often with CDK4/6 inhibitors, and off-label to induce ovulation in polycystic ovary syndrome.",

@@ -43,6 +43,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "First angiogenesis inhibitor approved for cancer, blocking VEGF-A",
   "summary": "Bevacizumab is a humanised monoclonal antibody that neutralises vascular endothelial growth factor A (VEGF-A). It was the first anti-angiogenic drug approved for cancer and is used with chemotherapy in colorectal, lung, ovarian, cervical and other cancers; it is also widely used off-label by intravitreal injection for retinal disease.",

@@ -37,7 +37,8 @@
     "note": "A tetracyclic β-carboline derivative with a long half-life, giving a long window of action."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription; OTC in some countries",
   "tagline": "Long-acting PDE5 inhibitor for erectile dysfunction, BPH and pulmonary hypertension",
   "summary": "Tadalafil is a PDE5 inhibitor with a half-life of about 17.5 hours, giving effects that last up to 36 hours. It is used for erectile dysfunction, lower urinary tract symptoms of benign prostatic hyperplasia and pulmonary arterial hypertension.",

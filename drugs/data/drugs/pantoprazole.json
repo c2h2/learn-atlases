@@ -39,7 +39,8 @@
     "note": "A difluoromethoxy benzimidazole PPI designed for greater chemical stability at near-neutral pH."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription; OTC in some countries",
   "tagline": "Proton pump inhibitor with an IV form and fewer CYP interactions",
   "summary": "Pantoprazole is a proton pump inhibitor used orally and intravenously to suppress gastric acid. Compared with omeprazole it has a lower potential for CYP-mediated drug interactions and is widely used in hospitals for stress-ulcer prophylaxis and upper GI bleeding.",

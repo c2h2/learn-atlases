@@ -36,7 +36,8 @@
     "note": "Xanomeline was developed for Alzheimer's disease in the 1990s; antipsychotic-like effects were seen but cholinergic side effects halted it. Karuna paired it with trospium, which does not cross the blood–brain barrier, to block peripheral effects."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First schizophrenia drug in decades that does not act by blocking dopamine receptors",
   "summary": "Cobenfy combines xanomeline, a muscarinic M1/M4 agonist, with trospium chloride, a peripherally restricted muscarinic antagonist. Approved in 2024 for schizophrenia, it is the first antipsychotic in decades with a mechanism not based on dopamine D2 receptor blockade.",

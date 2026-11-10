@@ -40,7 +40,8 @@
     "note": "Aciclovir analogue with an extra hydroxymethyl group that makes it a substrate for the cytomegalovirus UL97 kinase."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First drug for cytomegalovirus, vital in transplant and AIDS medicine",
   "summary": "Ganciclovir is a guanosine analogue that was the first antiviral approved for cytomegalovirus (CMV). It is used intravenously to treat CMV retinitis and other CMV disease in immunocompromised people and to prevent CMV after transplantation. Bone-marrow suppression limits its use.",

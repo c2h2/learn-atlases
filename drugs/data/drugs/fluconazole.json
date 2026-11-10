@@ -36,6 +36,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription; single-dose vaginal thrush capsule OTC in some countries",
   "tagline": "Well-absorbed triazole for candidiasis and cryptococcal meningitis",
   "summary": "Fluconazole is a triazole antifungal that is almost completely absorbed orally and penetrates well into body fluids including cerebrospinal fluid. It is a mainstay for Candida infections, from vaginal thrush to candidaemia, and for cryptococcal meningitis, especially in people with HIV. It has no useful activity against moulds such as Aspergillus.",

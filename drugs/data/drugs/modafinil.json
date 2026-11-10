@@ -37,7 +37,8 @@
     "note": "Identified as the active metabolite of adrafinil, a Lafon compound found to promote wakefulness in animals in the 1970s."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription; controlled (US Schedule IV)",
   "tagline": "Wake-promoting drug for narcolepsy, sleep apnoea and shift work sleepiness",
   "summary": "Modafinil is a wakefulness-promoting drug used for excessive sleepiness due to narcolepsy and, in the US, obstructive sleep apnoea and shift work disorder. Its main action is weak dopamine transporter inhibition; it is less euphoriant than amphetamines but still carries some misuse potential and is widely used off-label as a 'smart drug'.",

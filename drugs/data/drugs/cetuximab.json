@@ -34,7 +34,8 @@
     "note": "Murine antibody 225 against EGFR, later made chimeric as C225."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Chimeric EGFR-blocking antibody for RAS wild-type colorectal and head and neck cancer",
   "summary": "Cetuximab is a chimeric IgG1 monoclonal antibody that blocks the epidermal growth factor receptor (EGFR). It is used in RAS wild-type metastatic colorectal cancer and in squamous cell carcinoma of the head and neck, including with radiotherapy.",

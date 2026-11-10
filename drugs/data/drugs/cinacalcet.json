@@ -35,7 +35,8 @@
     "note": "Developed after the cloning of the calcium-sensing receptor in 1993."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "The first calcimimetic, which makes the parathyroid gland 'see' more calcium",
   "summary": "Cinacalcet was the first calcimimetic drug, a positive allosteric modulator of the calcium-sensing receptor on parathyroid cells. By increasing the receptor's sensitivity to calcium it lowers parathyroid hormone secretion, and is used for secondary hyperparathyroidism in dialysis and for hypercalcaemia in parathyroid carcinoma and primary hyperparathyroidism.",

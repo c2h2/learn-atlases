@@ -34,7 +34,8 @@
     "note": "A dihydronaphthyridine discovered by high-throughput screening, designed to be more selective than spironolactone and more potent than eplerenone."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "A non-steroidal MRA that slows diabetic kidney disease and helps heart failure",
   "summary": "Finerenone is a non-steroidal, selective mineralocorticoid receptor antagonist. It slows progression of chronic kidney disease and reduces cardiovascular events in type 2 diabetes, and in 2025 was approved for heart failure with mildly reduced or preserved ejection fraction.",

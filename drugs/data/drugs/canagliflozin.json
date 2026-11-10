@@ -38,6 +38,7 @@
   },
   "generic": false,
   "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "First SGLT2 inhibitor in the US, and the first to show kidney benefit (CREDENCE)",
   "summary": "Canagliflozin was the first SGLT2 inhibitor approved in the United States (2013). It lowers glucose by increasing urinary glucose excretion; the CANVAS programme showed cardiovascular benefit but raised an amputation signal, and CREDENCE showed it slows diabetic kidney disease.",

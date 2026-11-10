@@ -44,7 +44,8 @@
     "note": "Identified Clostridium botulinum as the cause of botulism; Alan Scott pioneered therapeutic injection of the purified toxin for strabismus in the 1970s."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (administered by trained clinicians)",
   "tagline": "The most potent known toxin, used in tiny doses for spasticity, migraine and wrinkles",
   "summary": "Botulinum toxin type A is a bacterial neurotoxin that blocks acetylcholine release at nerve terminals, causing local, temporary muscle weakness. Several products are used for dystonia, spasticity, chronic migraine, overactive bladder, hyperhidrosis and cosmetic facial lines.",

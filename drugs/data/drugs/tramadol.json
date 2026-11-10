@@ -45,6 +45,7 @@
   },
   "generic": true,
   "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "controlled (US Schedule IV; UK Class C, Schedule 3)",
   "tagline": "Dual-action opioid and monoamine reuptake inhibitor for moderate pain",
   "summary": "Tramadol is a synthetic analgesic combining weak mu-opioid agonism, mainly through its metabolite O-desmethyltramadol, with serotonin and noradrenaline reuptake inhibition. Once marketed as low-risk, it is now controlled in many countries and associated with seizures, serotonin syndrome and widespread non-medical use in parts of Africa and the Middle East.",

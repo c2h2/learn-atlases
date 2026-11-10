@@ -38,6 +38,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Once-daily inhaled anticholinergic, a cornerstone of COPD maintenance therapy",
   "summary": "Tiotropium is a long-acting muscarinic antagonist taken once daily by inhalation. It was the first once-daily bronchodilator for COPD, reduces exacerbations, and is also approved as add-on maintenance therapy in asthma.",

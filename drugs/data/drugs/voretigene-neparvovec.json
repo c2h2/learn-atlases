@@ -35,7 +35,8 @@
     "note": "AAV-delivered RPE65 restored vision in Briard dogs with naturally occurring RPE65 deficiency."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription; administered at specialist retinal centres",
   "tagline": "First in vivo gene therapy for an inherited disease approved in the US",
   "summary": "Voretigene neparvovec is an adeno-associated virus serotype 2 vector carrying a normal RPE65 gene, injected under the retina. It restores the visual cycle in retinal pigment epithelial cells and improves functional vision in patients with biallelic RPE65-mutation retinal dystrophy, including Leber congenital amaurosis. Its 2017 US approval was a landmark for gene therapy.",

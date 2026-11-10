@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Broad-spectrum triazole for histoplasmosis, nail fungus and chronic aspergillosis",
   "summary": "Itraconazole is a broad-spectrum triazole active against yeasts, dermatophytes, Aspergillus and the endemic dimorphic fungi. It is a first-line treatment for histoplasmosis, blastomycosis, sporotrichosis and chronic pulmonary aspergillosis and is also used for fungal nail infections. Its absorption is variable and it interacts with many drugs through strong CYP3A4 inhibition.",

@@ -36,7 +36,8 @@
     "note": "A triazolylmethyl indole triptan designed for better oral absorption than sumatriptan."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Fast-acting oral triptan for acute migraine, including in adolescents",
   "summary": "Rizatriptan is a second-generation triptan with higher oral bioavailability and faster onset than oral sumatriptan. It is used for acute migraine in adults and children aged 6 and older.",

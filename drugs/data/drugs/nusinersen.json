@@ -36,6 +36,7 @@
   },
   "generic": false,
   "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (specialist)",
   "tagline": "First approved treatment for spinal muscular atrophy, a splice-correcting antisense drug",
   "summary": "Nusinersen was the first disease-modifying treatment for spinal muscular atrophy (SMA). By altering splicing of the backup SMN2 gene it increases production of full-length SMN protein, improving motor milestones and survival, particularly when started early.",

@@ -37,7 +37,8 @@
     "note": "A phenethylamine bicyclic derivative developed at Wyeth in the 1980s as a dual reuptake inhibitor without tricyclic receptor effects."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "The first widely used SNRI, with dose-dependent noradrenergic effects",
   "summary": "Venlafaxine is a serotonin–noradrenaline reuptake inhibitor used for depression and anxiety disorders. At low doses it acts mainly on serotonin reuptake, adding noradrenaline reuptake inhibition at higher doses. Its main active metabolite, desvenlafaxine, is marketed separately.",

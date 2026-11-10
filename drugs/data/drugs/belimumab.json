@@ -35,7 +35,8 @@
     "note": "Fully human IgG1λ antibody against soluble B-lymphocyte stimulator (BLyS/BAFF), isolated by phage display."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First targeted biologic for lupus, blocking the B-cell survival factor BLyS",
   "summary": "Belimumab is a human monoclonal antibody that neutralises soluble B-lymphocyte stimulator (BLyS, also called BAFF). Approved in 2011, it was the first new drug for systemic lupus erythematosus in more than 50 years and is also used for lupus nephritis.",

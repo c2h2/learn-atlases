@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Prototype dihydropyridine for angina, hypertension and preterm labour",
   "summary": "Nifedipine is the prototype dihydropyridine calcium channel blocker. Extended-release forms treat hypertension and angina; it is also used for vasospastic angina, Raynaud's phenomenon and, on the WHO list, to delay preterm labour.",

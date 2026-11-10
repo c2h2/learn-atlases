@@ -40,6 +40,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Sequential folate blocker for UTIs, Pneumocystis pneumonia and HIV-related prophylaxis",
   "summary": "Co-trimoxazole combines sulfamethoxazole and trimethoprim, which block two successive steps in bacterial folate synthesis. Introduced in 1968, it is used for urinary infections, Pneumocystis jirovecii pneumonia treatment and prophylaxis, toxoplasmosis prophylaxis, MRSA skin infections and many tropical infections.",

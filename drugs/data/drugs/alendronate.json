@@ -36,7 +36,8 @@
     "note": "An aminobisphosphonate licensed to Merck, which ran the pivotal osteoporosis trials."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "The weekly pill that made osteoporosis treatment routine",
   "summary": "Alendronic acid (alendronate) is an oral nitrogen-containing bisphosphonate that inhibits osteoclast-mediated bone resorption. It increases bone mineral density and reduces vertebral and hip fractures in postmenopausal and male osteoporosis, and is the most widely used osteoporosis drug worldwide.",

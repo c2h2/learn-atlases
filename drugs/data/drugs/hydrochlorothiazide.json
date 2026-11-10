@@ -36,6 +36,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Thiazide diuretic, one of the most prescribed antihypertensives",
   "summary": "Hydrochlorothiazide is a thiazide diuretic that blocks sodium chloride reabsorption in the distal convoluted tubule. It is one of the most prescribed drugs for hypertension, often in combination pills, and is also used for oedema.",

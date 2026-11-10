@@ -38,6 +38,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "First 5-HT3 antagonist, a mainstay for chemotherapy and postoperative nausea",
   "summary": "Ondansetron blocks serotonin 5-HT3 receptors and was the first drug of its class. It revolutionised prevention of chemotherapy-induced nausea and vomiting and is widely used for postoperative and radiotherapy-induced nausea.",

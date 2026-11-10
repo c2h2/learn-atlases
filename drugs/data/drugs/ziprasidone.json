@@ -41,7 +41,8 @@
     "note": "Developed in the 1980s–90s as a serotonin–dopamine antagonist with additional 5-HT1A agonism."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Weight-neutral atypical antipsychotic that must be taken with food",
   "summary": "Ziprasidone is a second-generation antipsychotic used for schizophrenia and bipolar mania. It causes little weight gain or metabolic change, but prolongs the QT interval more than many alternatives and needs to be taken with a meal for adequate absorption.",

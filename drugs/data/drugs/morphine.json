@@ -48,6 +48,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "controlled (US Schedule II; UK Class A, Schedule 2; UN Single Convention Schedule I)",
   "tagline": "The prototype opioid and benchmark for treating severe and cancer pain",
   "summary": "Morphine is the principal alkaloid of the opium poppy and the reference opioid analgesic against which others are measured. It is essential for severe acute pain, cancer pain and palliative care, while carrying risks of respiratory depression, dependence and addiction.",

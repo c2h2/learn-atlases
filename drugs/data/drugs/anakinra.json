@@ -34,7 +34,8 @@
     "note": "Recombinant, non-glycosylated form of the natural IL-1 receptor antagonist (IL-1Ra) produced in E. coli, differing by one N-terminal methionine."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Short-acting recombinant IL-1 receptor antagonist for autoinflammatory disease",
   "summary": "Anakinra is a recombinant version of the body's own interleukin-1 receptor antagonist. It blocks both IL-1α and IL-1β signalling and is used in rheumatoid arthritis, cryopyrin-associated periodic syndromes, deficiency of IL-1 receptor antagonist and Still's disease; in the EU it is also approved for COVID-19 pneumonia.",

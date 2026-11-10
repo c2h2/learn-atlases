@@ -35,7 +35,8 @@
     "note": "Fully human IgG2λ antibody against thymic stromal lymphopoietin, co-developed with AstraZeneca."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First biologic blocking epithelial TSLP, for severe asthma without phenotype limits",
   "summary": "Tezepelumab is a human monoclonal antibody that blocks thymic stromal lymphopoietin (TSLP), an epithelial alarmin at the top of the airway inflammatory cascade. It is approved as add-on maintenance for severe asthma regardless of eosinophil count or allergic status.",

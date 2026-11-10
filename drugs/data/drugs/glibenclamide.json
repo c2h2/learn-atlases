@@ -39,7 +39,8 @@
     "note": "Developed jointly as a potent second-generation sulfonylurea."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "A potent second-generation sulfonylurea that closes beta-cell potassium channels",
   "summary": "Glibenclamide (glyburide in the US) is a sulfonylurea that stimulates insulin release from pancreatic beta cells. It is inexpensive and effective but carries a higher risk of prolonged hypoglycaemia than newer sulfonylureas, particularly in older people and those with kidney impairment.",

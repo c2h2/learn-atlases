@@ -35,6 +35,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Inexpensive aminoglycoside for Gram-negative sepsis and synergy in endocarditis",
   "summary": "Gentamicin is an aminoglycoside antibiotic produced by Micromonospora purpurea and discovered at Schering in 1963. It is rapidly bactericidal against aerobic Gram-negative bacteria and widely used for sepsis, neonatal infections and, in combination, for some Gram-positive endocarditis, with toxicity limiting its use.",

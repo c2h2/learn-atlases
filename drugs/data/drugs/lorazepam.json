@@ -39,6 +39,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription; controlled (US Schedule IV)",
   "tagline": "High-potency benzodiazepine and a first-line drug for status epilepticus",
   "summary": "Lorazepam is a high-potency, intermediate-acting benzodiazepine used for anxiety, insomnia related to anxiety, premedication and as a first-line treatment for status epilepticus. It is metabolised by glucuronidation without active metabolites, which makes it useful in liver disease and in older people.",

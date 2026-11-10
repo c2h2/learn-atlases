@@ -39,7 +39,8 @@
     "note": "A 20 kDa polyethylene glycol chain is attached to the N-terminal methionine of filgrastim, reducing renal clearance."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Pegylated G-CSF given once per chemotherapy cycle",
   "summary": "Pegfilgrastim is filgrastim covalently linked to a 20 kDa polyethylene glycol, which reduces renal clearance so a single dose per chemotherapy cycle replaces daily injections. It lowers the incidence of febrile neutropenia in patients receiving myelosuppressive chemotherapy. Several biosimilars are available.",

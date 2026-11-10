@@ -45,6 +45,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription (some human insulins OTC in the US)",
   "tagline": "The hormone itself: recombinant human insulin, the first biotech drug ever approved",
   "summary": "Insulin human is recombinant insulin with the same amino-acid sequence as the hormone made by pancreatic beta cells. It is used as regular (soluble, short-acting) insulin and as NPH (isophane, intermediate-acting) suspension to treat type 1 and type 2 diabetes. Humulin, approved in 1982, was the first medicine made by recombinant DNA technology.",

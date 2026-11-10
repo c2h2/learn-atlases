@@ -35,7 +35,8 @@
     "note": "Lentiviral CAR with two BCMA-binding single-domain (VHH) antibodies, a 4-1BB costimulatory domain and CD3ζ."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (specialist centres)",
   "tagline": "BCMA CAR T therapy with deep, durable responses in relapsed multiple myeloma",
   "summary": "Ciltacabtagene autoleucel is a CAR T-cell therapy directed at B-cell maturation antigen (BCMA) on myeloma cells. Its unusual receptor carries two camelid-derived single-domain binders, and it produces very high response rates in relapsed or refractory multiple myeloma, including after one prior line in lenalidomide-refractory disease.",

@@ -28,6 +28,7 @@ every roster entry with `"stage": "skeleton"`; writers fill the record and set
 | `discovery` | object | `{year:int, by:string, note:string}` |
 | `generic` ★ | bool | generic / biosimilar versions available |
 | `who_essential` ★ | bool | on WHO Model List of Essential Medicines (2025) |
+| `who_status` ★ | enum | `listed` (named on the 24th WHO Model List, 2025, alone or in a listed combination), `alternative` (named as a therapeutic alternative, incl. ATC class alternatives), `not-listed`. Set by matching against the list; `who_essential` = listed or alternative |
 | `rx_status` | string | e.g. "prescription", "OTC in many countries", "controlled (US Schedule II)" |
 | `tagline` | string | ≤ 90 chars |
 | `summary` | string | 2–3 sentences |

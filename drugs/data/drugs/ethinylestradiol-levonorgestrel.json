@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription (OTC or pharmacist-supplied in some countries)",
   "tagline": "Classic second-generation combined pill with a low venous thrombosis risk",
   "summary": "Ethinylestradiol/levonorgestrel is a combined hormonal contraceptive pairing a synthetic oestrogen with a second-generation progestin. It is among the most widely used and studied oral contraceptives and is often recommended first-line because of its relatively low risk of venous thromboembolism among combined pills.",

@@ -35,7 +35,8 @@
     "note": "A propanoic acid ETA-selective antagonist later licensed to Myogen, which Gilead acquired in 2006."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (restricted programme for pregnancy risk in the US)",
   "tagline": "Once-daily ETA-selective endothelin antagonist for pulmonary arterial hypertension",
   "summary": "Ambrisentan is a selective endothelin type A receptor antagonist taken once daily for pulmonary arterial hypertension. Started together with tadalafil, it reduces clinical failure compared with either drug alone.",

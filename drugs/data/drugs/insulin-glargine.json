@@ -41,6 +41,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "First once-daily basal insulin analogue; it precipitates under the skin for a flat profile",
   "summary": "Insulin glargine is a long-acting insulin analogue that provides basal insulin cover for about 24 hours after a single subcutaneous injection. Marketed as Lantus from 2000, it became the world's best-selling insulin; biosimilars including the first interchangeable biosimilar, Semglee, are now available.",

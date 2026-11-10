@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Narrow-spectrum first choice for childhood absence epilepsy",
   "summary": "Ethosuximide is a succinimide anticonvulsant used specifically for absence seizures. A large 2010 trial confirmed it as the preferred first-line treatment for childhood absence epilepsy.",

@@ -33,7 +33,8 @@
     "note": "Humanised IgG4 antibody against IL-17A."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Humanised IL-17A antibody for psoriasis and spondyloarthritis",
   "summary": "Ixekizumab is a humanised IgG4 monoclonal antibody that neutralises interleukin-17A. It is approved for plaque psoriasis, psoriatic arthritis, ankylosing spondylitis and non-radiographic axial spondyloarthritis.",

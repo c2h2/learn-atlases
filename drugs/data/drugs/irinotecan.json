@@ -38,6 +38,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Camptothecin prodrug of SN-38 used in FOLFIRI and FOLFIRINOX",
   "summary": "Irinotecan is a semisynthetic camptothecin prodrug converted to SN-38, which traps topoisomerase I on DNA and causes lethal DNA breaks during replication. It is a standard component of FOLFIRI and FOLFIRINOX for colorectal and pancreatic cancer; diarrhoea and neutropenia are its main toxicities.",

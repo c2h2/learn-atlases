@@ -34,7 +34,8 @@
     "note": "A gamma-cyclodextrin with eight carboxyl thioether side chains was designed to encapsulate the steroid nucleus of rocuronium in a 1:1 complex."
   },
   "generic": null,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription; hospital use",
   "tagline": "Cyclodextrin that rapidly reverses rocuronium and vecuronium by encapsulation",
   "summary": "Sugammadex is a modified gamma-cyclodextrin that binds rocuronium and vecuronium tightly in plasma, rapidly reversing neuromuscular blockade without acting on acetylcholinesterase. It can reverse even deep block within minutes and has largely replaced neostigmine in many settings where cost allows.",

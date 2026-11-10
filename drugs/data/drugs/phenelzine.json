@@ -36,7 +36,8 @@
     "note": "A hydrazine MAO inhibitor developed after iproniazid revealed the antidepressant potential of MAO inhibition in the 1950s."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Irreversible MAO inhibitor kept for atypical and treatment-resistant depression",
   "summary": "Phenelzine is an irreversible, non-selective monoamine oxidase inhibitor of the hydrazine class. It is effective in atypical and treatment-resistant depression but requires dietary restrictions and careful drug-interaction management because of the risk of hypertensive crisis and serotonin syndrome.",

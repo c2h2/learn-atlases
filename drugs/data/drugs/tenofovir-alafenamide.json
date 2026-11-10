@@ -38,7 +38,8 @@
     "note": "Phosphonamidate prodrug designed to stay stable in plasma and release tenofovir inside lymphocytes and hepatocytes, mainly via cathepsin A."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Newer tenofovir prodrug: a fraction of the dose, gentler on kidneys and bone",
   "summary": "Tenofovir alafenamide (TAF) is a prodrug of tenofovir that is more stable in plasma than tenofovir disoproxil and is converted to the active drug mainly inside cells. This gives high intracellular levels with about 90% lower plasma tenofovir, reducing effects on kidneys and bone. It is used in HIV combinations, for HIV PrEP and for chronic hepatitis B.",

@@ -34,7 +34,8 @@
     "note": "Identification of an erythroid-specific enhancer of BCL11A showed that disrupting it could reactivate fetal haemoglobin without affecting other blood lineages."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription; administered at authorised treatment centres",
   "tagline": "First approved CRISPR medicine; restores fetal haemoglobin in sickle cell and thalassaemia",
   "summary": "Exagamglogene autotemcel is a one-time therapy in which a patient's own blood stem cells are edited with CRISPR-Cas9 to disrupt the erythroid enhancer of BCL11A, restoring fetal haemoglobin production. It was the first CRISPR-based medicine to be approved, for severe sickle cell disease and transfusion-dependent beta-thalassaemia.",

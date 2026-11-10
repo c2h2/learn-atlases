@@ -34,7 +34,8 @@
     "note": "An isoxazole prodrug whose active metabolite, teriflunomide (A77 1726), inhibits dihydroorotate dehydrogenase."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "DHODH-inhibiting DMARD for rheumatoid and psoriatic arthritis",
   "summary": "Leflunomide is an oral disease-modifying antirheumatic drug converted to teriflunomide, which inhibits dihydroorotate dehydrogenase and limits pyrimidine synthesis in activated lymphocytes. It is used in rheumatoid arthritis, often as an alternative to methotrexate. Its very long half-life means an accelerated washout is needed before pregnancy.",

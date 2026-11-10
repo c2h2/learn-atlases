@@ -41,6 +41,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "The most serotonergic tricyclic, long the reference drug for OCD",
   "summary": "Clomipramine is a chlorinated analogue of imipramine and the most serotonergic tricyclic antidepressant. It was used in Europe from the 1960s and became the first drug approved by the FDA specifically for obsessive-compulsive disorder in 1989.",

@@ -34,7 +34,8 @@
     "note": "Designed from ATP analogues as a direct-acting, reversible P2Y12 antagonist."
   },
   "generic": null,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Direct-acting, reversible P2Y12 inhibitor that beat clopidogrel in PLATO",
   "summary": "Ticagrelor is an oral antiplatelet drug that reversibly blocks the platelet P2Y12 receptor without needing metabolic activation. It is given with aspirin after acute coronary syndromes and reduced cardiovascular death compared with clopidogrel in the PLATO trial.",

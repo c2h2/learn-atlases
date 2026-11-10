@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Highly β1-selective once-daily beta-blocker proven in heart failure",
   "summary": "Bisoprolol is one of the most β1-selective beta-blockers, with balanced renal and hepatic clearance and once-daily dosing. It treats hypertension and angina and, after the CIBIS-II trial, is a standard therapy for heart failure with reduced ejection fraction.",

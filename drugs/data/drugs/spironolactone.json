@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Steroidal aldosterone blocker that cut heart failure deaths in RALES",
   "summary": "Spironolactone is a steroidal mineralocorticoid receptor antagonist and potassium-sparing diuretic. It reduces mortality in heart failure with reduced ejection fraction, treats primary hyperaldosteronism, resistant hypertension and oedema in cirrhosis, and its anti-androgen effects are used off-label in acne and hirsutism.",

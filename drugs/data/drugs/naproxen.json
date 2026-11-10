@@ -41,7 +41,8 @@
     "note": "Developed by Syntex in the late 1960s; marketed as the single S-enantiomer."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "OTC at low doses (naproxen sodium); prescription at higher doses",
   "tagline": "Long-acting NSAID used twice daily for arthritis and pain",
   "summary": "Naproxen is a long-acting non-selective NSAID developed by Syntex and used for arthritis, musculoskeletal pain, dysmenorrhoea and gout. Its longer half-life allows twice-daily dosing, and some studies suggest a comparatively lower cardiovascular risk than other NSAIDs.",

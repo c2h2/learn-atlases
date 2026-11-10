@@ -37,7 +37,8 @@
     "note": "Designed in the 1970s as a lipophilic, brain-penetrant analogue of GABA; it was later found not to act on GABA receptors."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription; controlled (UK Class C, Schedule V in some US states)",
   "tagline": "Gabapentinoid used for neuropathic pain and focal seizures",
   "summary": "Gabapentin is a GABA analogue that binds the alpha-2-delta subunit of voltage-gated calcium channels. Approved for focal seizures and postherpetic neuralgia, it is very widely prescribed for neuropathic pain, and misuse concerns have led to controls in several countries.",

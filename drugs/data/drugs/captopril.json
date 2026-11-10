@@ -34,7 +34,8 @@
     "note": "Designed from peptides in Bothrops jararaca snake venom studied by Sérgio Ferreira, using a model of the ACE active site."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "First ACE inhibitor, rationally designed from Brazilian pit viper venom",
   "summary": "Captopril was the first orally active angiotensin-converting enzyme inhibitor and an early example of structure-based drug design, inspired by bradykinin-potentiating peptides from pit viper venom. It treats hypertension, heart failure, left ventricular dysfunction after myocardial infarction and diabetic nephropathy.",

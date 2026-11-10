@@ -35,7 +35,8 @@
     "note": "Isolated from bovine pineal glands as the factor that lightens frog skin melanophores, hence the name."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription in the EU/UK; dietary supplement (OTC) in the US",
   "tagline": "Pineal hormone of darkness, used as a sleep aid and for circadian rhythm disorders",
   "summary": "Melatonin is a hormone secreted by the pineal gland at night that signals darkness to the body's circadian system. Prolonged-release melatonin is a licensed medicine in Europe for insomnia in older adults and children with autism or Smith–Magenis syndrome, while in the US it is sold as a dietary supplement.",

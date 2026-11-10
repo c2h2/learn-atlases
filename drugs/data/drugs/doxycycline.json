@@ -40,6 +40,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Versatile tetracycline for atypical, tick-borne and sexually transmitted infections",
   "summary": "Doxycycline is a long-acting semi-synthetic tetracycline introduced by Pfizer in 1967. It is used for a wide range of infections including rickettsial disease, Lyme disease, chlamydia, atypical pneumonia and anthrax, for malaria prophylaxis and acne, and since 2024 as post-exposure prophylaxis against bacterial STIs in some guidelines.",

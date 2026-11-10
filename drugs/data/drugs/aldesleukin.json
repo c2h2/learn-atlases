@@ -38,7 +38,8 @@
     "note": "Described T-cell growth factor, later named interleukin-2; aldesleukin is a non-glycosylated E. coli-produced analogue."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (inpatient)",
   "tagline": "Recombinant interleukin-2: early cancer immunotherapy for kidney cancer and melanoma",
   "summary": "Aldesleukin is a recombinant form of interleukin-2, a cytokine that drives T-cell and NK-cell proliferation. High-dose IL-2 produces durable complete remissions in a small fraction of patients with metastatic renal cell carcinoma or melanoma, at the cost of severe capillary leak toxicity.",

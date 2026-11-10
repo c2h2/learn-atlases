@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "The first platinum anticancer drug, which turned testicular cancer into a curable disease",
   "summary": "Cisplatin is a square-planar platinum complex that binds DNA and forms intrastrand cross-links, triggering cell death. It is used in testicular, ovarian, bladder, lung, head and neck and cervical cancers, often with radiotherapy, but its use is limited by kidney, nerve and ear toxicity and severe nausea.",

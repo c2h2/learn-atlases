@@ -36,6 +36,7 @@
   },
   "generic": null,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "First new-mechanism TB drug in decades, backbone of all-oral drug-resistant TB regimens",
   "summary": "Bedaquiline is a diarylquinoline that inhibits mycobacterial ATP synthase. Approved in 2012 as the first new tuberculosis drug with a novel mechanism in about 40 years, it is now the backbone of WHO-recommended all-oral regimens such as BPaLM for rifampicin-resistant tuberculosis.",

@@ -39,7 +39,8 @@
     "note": "An imidazopyridine developed in France as a hypnotic with relative selectivity for alpha-1-containing GABA-A receptors."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription; controlled (US Schedule IV)",
   "tagline": "The most prescribed 'Z-drug' hypnotic, linked to complex sleep behaviours",
   "summary": "Zolpidem is a short-acting non-benzodiazepine hypnotic for short-term treatment of insomnia. It acts at the benzodiazepine site of GABA-A receptors with selectivity for alpha-1 subunits. Next-day impairment and complex sleep behaviours such as sleep-driving led to dose reductions and a boxed warning.",

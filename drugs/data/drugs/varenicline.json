@@ -39,6 +39,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "The most effective single smoking-cessation drug, a nicotinic partial agonist",
   "summary": "Varenicline is a partial agonist at alpha4beta2 nicotinic receptors used to help people stop smoking. It reduces craving and withdrawal while blocking the rewarding effects of nicotine, and in head-to-head trials it is more effective than nicotine patch or bupropion.",

@@ -41,6 +41,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Sponge-inspired nucleoside that anchors induction therapy for acute myeloid leukaemia",
   "summary": "Cytarabine is a cytidine analogue with an arabinose sugar that is incorporated into DNA and blocks DNA polymerase, killing cells in S phase. It is the backbone of induction and consolidation therapy for acute myeloid leukaemia and is used in acute lymphoblastic leukaemia, lymphomas and CNS leukaemia.",

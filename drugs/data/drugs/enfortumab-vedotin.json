@@ -35,7 +35,8 @@
     "note": "Fully human anti-Nectin-4 IgG1 linked by a protease-cleavable linker to monomethyl auristatin E (MMAE)."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Nectin-4 ADC that, with pembrolizumab, displaced platinum chemotherapy in bladder cancer",
   "summary": "Enfortumab vedotin is an antibody–drug conjugate targeting Nectin-4, an adhesion protein highly expressed in urothelial cancer. Combined with pembrolizumab it became a first-line standard for advanced urothelial carcinoma, nearly doubling survival compared with platinum chemotherapy in EV-302.",

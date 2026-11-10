@@ -35,7 +35,8 @@
     "note": "A supramolecular sodium salt complex of sacubitril and valsartan in a 1:1 molar ratio."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First angiotensin receptor–neprilysin inhibitor, reshaping heart failure care",
   "summary": "Sacubitril/valsartan combines a neprilysin inhibitor prodrug with an angiotensin II receptor blocker. In the PARADIGM-HF trial it reduced cardiovascular death and heart failure hospitalisation compared with enalapril, and it is a cornerstone therapy for heart failure with reduced ejection fraction.",

@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Thalidomide analogue that degrades Ikaros proteins; backbone of myeloma therapy",
   "summary": "Lenalidomide is an oral thalidomide analogue that redirects the cereblon E3 ubiquitin ligase to degrade transcription factors essential for myeloma cells. It is a backbone of multiple myeloma treatment, including long-term maintenance after transplant, and is used in del(5q) myelodysplastic syndrome and several lymphomas.",

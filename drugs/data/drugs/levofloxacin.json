@@ -42,6 +42,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Respiratory fluoroquinolone and key drug for drug-resistant tuberculosis",
   "summary": "Levofloxacin is the active S-enantiomer of ofloxacin, developed by Daiichi and launched in Japan in 1993. It has improved activity against Streptococcus pneumoniae and atypical pathogens and is used for pneumonia, urinary infections and drug-resistant tuberculosis, with the class warnings of all fluoroquinolones.",

@@ -33,7 +33,8 @@
     "note": "Humanised version of a murine antibody against a conserved epitope (site II) of the RSV F protein."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (restricted to high-risk infants)",
   "tagline": "First antibody licensed against an infection, shielding high-risk babies from RSV",
   "summary": "Palivizumab is a humanised monoclonal antibody that neutralises respiratory syncytial virus by binding its F protein. Approved in 1998, it was the first monoclonal antibody licensed for an infectious disease. Given monthly during the RSV season, it reduces RSV hospitalisation in premature infants and in children with chronic lung or congenital heart disease, but it is being replaced by the single-dose nirsevimab.",

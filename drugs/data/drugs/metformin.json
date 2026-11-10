@@ -42,6 +42,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "The first-line pill for type 2 diabetes, descended from a medieval herbal remedy",
   "summary": "Metformin is a biguanide that lowers blood glucose mainly by reducing glucose production in the liver, without causing weight gain or hypoglycaemia on its own. It is the most widely prescribed glucose-lowering drug and is recommended first-line for type 2 diabetes in most guidelines.",

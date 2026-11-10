@@ -40,6 +40,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "High-barrier protease inhibitor, the preferred PI when resistance is a concern",
   "summary": "Darunavir is a second-generation HIV protease inhibitor that is always given with a pharmacokinetic booster. Its tight binding to the protease backbone gives it a very high barrier to resistance, making it the preferred protease inhibitor in many guidelines, especially for second-line and treatment-experienced patients and in pregnancy.",

@@ -36,7 +36,8 @@
     "note": "Humanised IgG1 anti-CD20 antibody derived from murine antibody 2H7, binding an epitope overlapping that of rituximab."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Twice-yearly anti-CD20 antibody and first drug approved for primary progressive MS",
   "summary": "Ocrelizumab is a humanised anti-CD20 monoclonal antibody that depletes B cells. Given every six months, it is a highly effective therapy for relapsing multiple sclerosis and was the first drug approved for primary progressive MS.",

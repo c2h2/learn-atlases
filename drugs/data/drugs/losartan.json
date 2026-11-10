@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "The first angiotensin II receptor blocker, opening the sartan class",
   "summary": "Losartan was the first angiotensin II receptor blocker to reach the market. It treats hypertension, reduces stroke risk in hypertension with left ventricular hypertrophy and slows diabetic kidney disease, with less cough than ACE inhibitors.",

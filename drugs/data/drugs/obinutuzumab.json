@@ -36,7 +36,8 @@
     "note": "Humanised type II anti-CD20 IgG1 with a glycoengineered, low-fucose Fc that increases binding to FcγRIIIa."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Glycoengineered type II anti-CD20 antibody with enhanced ADCC for CLL and lymphoma",
   "summary": "Obinutuzumab is a humanised, glycoengineered anti-CD20 antibody designed to kill B cells more effectively than rituximab. It is used in chronic lymphocytic leukaemia and follicular lymphoma and, from 2025 in the US, in lupus nephritis.",

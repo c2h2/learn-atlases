@@ -34,7 +34,8 @@
     "note": "Designed for greater selectivity for JAK1 over JAK2, JAK3 and TYK2."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "JAK1-selective inhibitor approved across arthritis, eczema and inflammatory bowel disease",
   "summary": "Upadacitinib is an oral, once-daily inhibitor with selectivity for JAK1. Since 2019 it has been approved for rheumatoid arthritis, psoriatic arthritis, axial spondyloarthritis, atopic dermatitis, ulcerative colitis, Crohn's disease and giant cell arteritis. It shares the class boxed warnings of JAK inhibitors.",

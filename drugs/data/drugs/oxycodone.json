@@ -42,7 +42,8 @@
     "note": "Synthesised from thebaine, an opium alkaloid, in the search for an improved opioid."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "controlled (US Schedule II; UK Class A, Schedule 2)",
   "tagline": "Semi-synthetic opioid whose aggressive marketing helped ignite the US opioid crisis",
   "summary": "Oxycodone is a semi-synthetic opioid made from thebaine and used for moderate-to-severe pain. Purdue Pharma's extended-release OxyContin, launched in 1995 and promoted as having low addiction risk, became central to the first wave of the US opioid epidemic.",

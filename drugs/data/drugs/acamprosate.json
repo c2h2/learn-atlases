@@ -36,7 +36,8 @@
     "note": "Developed as a structural analogue of the amino acids taurine and GABA."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Glutamate-modulating drug to help maintain abstinence from alcohol",
   "summary": "Acamprosate is used to help maintain abstinence in people with alcohol dependence after withdrawal. It is thought to restore the balance between glutamatergic excitation and GABAergic inhibition that is disrupted by chronic drinking. It is renally excreted and not metabolised by the liver.",

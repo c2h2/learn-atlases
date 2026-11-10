@@ -42,6 +42,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription (antidote); OTC as mucolytic or supplement in many countries",
   "tagline": "Glutathione-restoring antidote for paracetamol overdose and a mucolytic",
   "summary": "Acetylcysteine is the N-acetyl derivative of cysteine. Its main use is as the antidote for paracetamol (acetaminophen) poisoning, where it prevents liver failure if given early; it is also used to thin mucus in respiratory disease.",

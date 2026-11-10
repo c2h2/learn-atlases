@@ -37,7 +37,8 @@
     "note": "Isolated from tea leaves; chemically synthesised by Traube in 1900; bronchodilator effect recognised in the 1920s."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Old methylxanthine bronchodilator with a narrow therapeutic window",
   "summary": "Theophylline is a methylxanthine related to caffeine that relaxes bronchial smooth muscle and has modest anti-inflammatory effects. Once a first-line asthma drug, it is now reserved as add-on therapy because of its narrow therapeutic range and many drug interactions.",

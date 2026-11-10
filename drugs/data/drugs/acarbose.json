@@ -37,7 +37,8 @@
     "note": "A pseudo-tetrasaccharide produced by fermentation of Actinoplanes bacteria, found in Bayer's screen for carbohydrate-digestion inhibitors."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "A bacterial sugar mimic that slows carbohydrate digestion in the gut",
   "summary": "Acarbose is an alpha-glucosidase inhibitor that delays digestion of complex carbohydrates in the small intestine, blunting the rise in blood glucose after meals. It is widely used in China and parts of Asia; flatulence and bloating limit its use elsewhere.",

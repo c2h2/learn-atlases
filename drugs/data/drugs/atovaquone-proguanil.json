@@ -29,7 +29,8 @@
     "note": "Atovaquone alone led to rapid resistance; proguanil was found to act synergistically with it."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription; available from pharmacists without prescription in the UK for prophylaxis",
   "tagline": "Well-tolerated travellers' malaria pill that acts on both liver and blood stages",
   "summary": "Atovaquone/proguanil combines atovaquone, which blocks the parasite's mitochondrial electron transport, with proguanil, which enhances that effect and inhibits folate synthesis through its metabolite cycloguanil. It is widely used for malaria prophylaxis in travellers because it is well tolerated and needs to be continued for only 7 days after leaving a malarious area. It is also used to treat uncomplicated falciparum malaria.",

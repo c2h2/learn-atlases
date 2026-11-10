@@ -35,6 +35,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription (hospital use for injection)",
   "tagline": "Injectable artemisinin that cut deaths from severe malaria compared with quinine",
   "summary": "Artesunate is a water-soluble semi-synthetic derivative of artemisinin that can be given intravenously, intramuscularly, rectally or by mouth. Two large trials showed it reduces death from severe malaria by about a third in Asian adults and about a fifth in African children compared with quinine, making it the WHO-recommended treatment for severe malaria. It is also a component of oral combinations such as artesunate/amodiaquine and artesunate/mefloquine.",

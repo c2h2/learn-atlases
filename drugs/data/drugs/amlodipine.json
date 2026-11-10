@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Long-acting once-daily calcium channel blocker, a global hypertension mainstay",
   "summary": "Amlodipine is a long-acting dihydropyridine calcium channel blocker that relaxes arterial smooth muscle. It is one of the most prescribed drugs worldwide for hypertension and chronic stable or vasospastic angina, and appears in many combination pills.",

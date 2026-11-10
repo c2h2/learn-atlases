@@ -45,6 +45,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription; controlled (US Schedule IV)",
   "tagline": "Short-acting water-soluble benzodiazepine for procedural sedation and seizure emergencies",
   "summary": "Midazolam is a short-acting, water-soluble benzodiazepine widely used for procedural sedation, anaesthetic induction and premedication, ICU sedation and emergency treatment of prolonged seizures. Buccal and intranasal forms allow seizure treatment outside hospital.",

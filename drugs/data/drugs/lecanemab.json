@@ -38,6 +38,7 @@
   },
   "generic": false,
   "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (specialist; amyloid confirmation and MRI monitoring required)",
   "tagline": "Anti-amyloid antibody that modestly slows early Alzheimer's disease",
   "summary": "Lecanemab is a humanised IgG1 antibody that binds soluble amyloid-beta protofibrils and clears amyloid plaques. In the Clarity AD trial it slowed decline on a clinical dementia scale by about 27% over 18 months in early Alzheimer's disease, at the cost of amyloid-related imaging abnormalities.",

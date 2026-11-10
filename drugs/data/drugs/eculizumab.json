@@ -37,7 +37,8 @@
     "note": "Humanised antibody with a hybrid IgG2/IgG4 constant region that binds complement component C5."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (restricted programme; meningococcal vaccination required)",
   "tagline": "First complement inhibitor, transforming PNH and atypical HUS",
   "summary": "Eculizumab is a humanised monoclonal antibody that blocks complement protein C5, preventing formation of the membrane attack complex. It was the first approved complement inhibitor and is used for paroxysmal nocturnal haemoglobinuria, atypical haemolytic uraemic syndrome, generalised myasthenia gravis and neuromyelitis optica spectrum disorder.",

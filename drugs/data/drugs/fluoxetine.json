@@ -38,6 +38,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "The first blockbuster SSRI, whose long half-life sets it apart from its class",
   "summary": "Fluoxetine is a selective serotonin reuptake inhibitor used for depression, obsessive-compulsive disorder, bulimia nervosa and panic disorder. Launched by Eli Lilly as Prozac in 1988, it reshaped the treatment of depression and became a cultural phenomenon. Its active metabolite norfluoxetine gives it a very long elimination half-life.",

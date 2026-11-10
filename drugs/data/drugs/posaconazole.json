@@ -35,7 +35,8 @@
     "note": "Hydroxylated analogue of itraconazole with broad activity including the Mucorales."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Broad-spectrum azole used to prevent mould infections in leukaemia and transplant patients",
   "summary": "Posaconazole is an extended-spectrum triazole related to itraconazole, active against Candida, Aspergillus and, unusually among azoles, many Mucorales. It is widely used as prophylaxis against invasive fungal infections in patients with acute myeloid leukaemia or graft-versus-host disease, and to treat invasive aspergillosis and mucormycosis. Newer tablet and IV forms overcame the erratic absorption of the original suspension.",

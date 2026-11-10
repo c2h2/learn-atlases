@@ -32,7 +32,8 @@
     "note": "Isolated from opium; most codeine used today is made by methylating morphine."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "controlled (US Schedule II alone, III–V in combinations; OTC in low-dose combinations in some countries)",
   "tagline": "Mild opioid prodrug whose effect depends on CYP2D6 genetics",
   "summary": "Codeine is a naturally occurring opium alkaloid used for mild-to-moderate pain, cough and diarrhoea. It is a prodrug converted to morphine by CYP2D6, so its effect and toxicity vary widely between people, leading to restrictions in children.",

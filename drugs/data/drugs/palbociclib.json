@@ -34,7 +34,8 @@
     "note": "A pyridopyrimidine highly selective for CDK4 and CDK6, shelved for years until UCLA studies showed activity in oestrogen-receptor-positive breast cancer cells."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First CDK4/6 inhibitor, doubling progression-free time in HR+ advanced breast cancer",
   "summary": "Palbociclib is an oral, selective inhibitor of cyclin-dependent kinases 4 and 6 that halts the cell cycle in G1. Combined with endocrine therapy, it roughly doubles progression-free survival in hormone-receptor-positive, HER2-negative advanced breast cancer and was the first CDK4/6 inhibitor approved.",

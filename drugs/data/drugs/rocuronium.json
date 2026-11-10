@@ -35,7 +35,8 @@
     "note": "A monoquaternary aminosteroid analogue of vecuronium with lower potency but faster onset, allowing rapid intubation."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription; hospital use",
   "tagline": "Fast-onset steroidal muscle relaxant used for intubation and surgery",
   "summary": "Rocuronium is a non-depolarising neuromuscular blocking agent that competitively blocks nicotinic acetylcholine receptors at the neuromuscular junction. Its rapid onset at high doses makes it an alternative to suxamethonium for rapid-sequence intubation, and its effect can be reversed quickly by sugammadex.",

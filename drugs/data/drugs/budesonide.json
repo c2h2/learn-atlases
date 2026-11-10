@@ -45,6 +45,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription; nasal spray OTC in some countries",
   "tagline": "Topically potent corticosteroid for asthma, rhinitis, IBD and IgA nephropathy",
   "summary": "Budesonide is a glucocorticoid with strong local anti-inflammatory activity but about 85–90% first-pass liver metabolism, limiting systemic effects. It is a mainstay inhaled corticosteroid in asthma and COPD and is also formulated for rhinitis, Crohn's disease, ulcerative colitis, eosinophilic oesophagitis and IgA nephropathy.",

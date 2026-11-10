@@ -38,7 +38,8 @@
     "note": "Showed that 5-ASA, not sulfapyridine, is the therapeutically active part of sulfasalazine in ulcerative colitis."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "Gut-targeted 5-ASA, first-line therapy for mild to moderate ulcerative colitis",
   "summary": "Mesalazine (mesalamine) is 5-aminosalicylic acid, the active component of sulfasalazine, formulated for release in the small bowel or colon. It is first-line therapy to induce and maintain remission in mild to moderate ulcerative colitis.",

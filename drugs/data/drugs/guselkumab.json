@@ -34,7 +34,8 @@
     "note": "Fully human IgG1λ antibody against IL-23 p19 selected from MorphoSys's HuCAL phage library."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First IL-23 p19-selective antibody approved, for psoriasis, PsA and IBD",
   "summary": "Guselkumab is a fully human monoclonal antibody that selectively inhibits interleukin-23 by binding its p19 subunit. It was the first IL-23-selective drug approved, for plaque psoriasis in 2017, and is now also used for psoriatic arthritis, ulcerative colitis and Crohn's disease.",

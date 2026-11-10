@@ -33,7 +33,8 @@
     "note": "Humanised IgG1κ antibody against interleukin-5."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First anti-IL-5 antibody, lowering eosinophils in severe asthma and EGPA",
   "summary": "Mepolizumab is a humanised monoclonal antibody that neutralises interleukin-5, the main cytokine for eosinophil growth and survival. It is used for severe eosinophilic asthma, eosinophilic granulomatosis with polyangiitis, hypereosinophilic syndrome, nasal polyps and, since 2025 in the US, eosinophilic COPD.",

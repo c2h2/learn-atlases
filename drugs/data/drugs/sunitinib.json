@@ -42,7 +42,8 @@
     "note": "An oxindole derived from earlier Sugen compounds SU5416 and SU6668, optimised for oral activity against VEGF and PDGF receptors."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Oral anti-angiogenic kinase inhibitor approved for kidney cancer and GIST on the same day",
   "summary": "Sunitinib is an oral multi-kinase inhibitor that blocks VEGF and PDGF receptors, KIT and other kinases, inhibiting tumour angiogenesis and direct tumour growth. In 2006 it became the first cancer drug approved by the FDA for two indications at once: advanced renal cell carcinoma and imatinib-resistant GIST.",

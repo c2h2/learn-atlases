@@ -39,7 +39,8 @@
     "note": "Synthesised as a cytotoxic nucleoside; its DNA-demethylating activity at low doses was recognised around 1980."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First drug approved for myelodysplastic syndromes; a DNA demethylating nucleoside",
   "summary": "Azacitidine is a cytidine analogue that is incorporated into RNA and DNA; in DNA it traps and degrades DNA methyltransferases, reversing aberrant gene silencing. It was the first drug to extend survival in higher-risk myelodysplastic syndromes and, with venetoclax, is a standard for older or unfit patients with acute myeloid leukaemia.",

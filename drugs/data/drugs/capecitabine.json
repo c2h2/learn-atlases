@@ -34,6 +34,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Oral prodrug that converts to fluorouracil inside tumours",
   "summary": "Capecitabine is an orally absorbed prodrug converted to fluorouracil through three enzymatic steps, the last catalysed by thymidine phosphorylase, which is often elevated in tumours. It is used in colorectal, breast, gastric and pancreatic cancer and can replace infusional 5-FU in many regimens.",

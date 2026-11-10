@@ -41,6 +41,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Most widely used fluoroquinolone, potent against Gram-negatives including Pseudomonas",
   "summary": "Ciprofloxacin is a fluoroquinolone discovered by Bayer in 1981 with strong activity against Gram-negative bacteria, including Pseudomonas aeruginosa, and good oral bioavailability. Its use is now restricted by regulators because of disabling musculoskeletal, neurological and cardiovascular adverse effects and rising resistance.",

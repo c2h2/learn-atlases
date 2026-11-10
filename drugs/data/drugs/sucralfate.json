@@ -36,7 +36,8 @@
     "note": "A basic aluminium salt of sucrose octasulfate developed as a non-systemic ulcer-healing agent."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Non-absorbed aluminium-sucrose complex that coats and protects ulcers",
   "summary": "Sucralfate is an aluminium complex of sulfated sucrose that forms a protective barrier over ulcer craters. It acts locally with minimal absorption and is used for duodenal ulcers and, in some settings, stress-ulcer prophylaxis.",

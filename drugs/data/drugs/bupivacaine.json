@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription; hospital and clinic use",
   "tagline": "Long-acting local anaesthetic for spinal, epidural and nerve-block anaesthesia",
   "summary": "Bupivacaine is a long-acting amide local anaesthetic that blocks voltage-gated sodium channels in nerves. It is widely used for spinal and epidural anaesthesia, labour analgesia and nerve blocks. It is more cardiotoxic than lidocaine, and accidental intravascular injection can cause cardiac arrest, which lipid emulsion therapy can treat.",

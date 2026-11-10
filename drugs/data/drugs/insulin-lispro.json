@@ -38,7 +38,8 @@
     "note": "Reversing proline B28 and lysine B29 (the sequence found in IGF-1) weakens hexamer formation so the analogue is absorbed quickly."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "The first rapid-acting insulin analogue, built by swapping two amino acids",
   "summary": "Insulin lispro is a rapid-acting insulin analogue taken at mealtimes or used in insulin pumps. Approved as Humalog in 1996, it was the first insulin analogue on the market; its onset of about 15 minutes better matches the rise in blood glucose after meals than regular human insulin.",

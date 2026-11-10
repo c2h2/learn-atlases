@@ -35,7 +35,8 @@
     "note": "A CrossMAb bispecific IgG1 with one arm against VEGF-A and one against angiopoietin-2, and an engineered Fc that does not bind FcRn or Fc-gamma receptors."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First bispecific antibody for the eye, blocking VEGF-A and angiopoietin-2",
   "summary": "Faricimab is a bispecific antibody that neutralises both VEGF-A and angiopoietin-2. By targeting two pathways that destabilise retinal vessels, it allows injection intervals of up to 16 weeks in wet age-related macular degeneration, diabetic macular oedema and retinal vein occlusion.",

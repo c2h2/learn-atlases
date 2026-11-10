@@ -39,6 +39,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Short-acting inhaled anticholinergic for COPD, acute asthma and runny nose",
   "summary": "Ipratropium bromide is a quaternary atropine derivative that blocks muscarinic receptors in the airways. It is used by inhalation for COPD and, together with salbutamol, in acute severe asthma, and as a nasal spray for rhinorrhoea.",

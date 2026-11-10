@@ -41,7 +41,8 @@
     "note": "A fructose derivative made in an antidiabetic programme, found active in anticonvulsant screening."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Anticonvulsant and migraine preventive that began as an antidiabetic lead",
   "summary": "Topiramate is a broad-spectrum anticonvulsant also approved for migraine prevention and, with phentermine, for weight management. Cognitive slowing, paraesthesia and teratogenicity limit its use.",

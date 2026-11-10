@@ -35,6 +35,7 @@
   },
   "generic": false,
   "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (specialist; amyloid confirmation and MRI monitoring required)",
   "tagline": "Plaque-clearing Alzheimer's antibody with a limited-duration treatment course",
   "summary": "Donanemab is a humanised antibody that targets a modified form of amyloid-beta present in plaques, rapidly clearing amyloid from the brain. In TRAILBLAZER-ALZ 2 it slowed clinical decline in early symptomatic Alzheimer's disease, and dosing can stop when plaques are cleared.",

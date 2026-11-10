@@ -35,7 +35,8 @@
     "note": "A triketone developed as an herbicide was found to inhibit HPPD in mammals and was repurposed to block toxic metabolite formation in tyrosinaemia type 1."
   },
   "generic": null,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Herbicide-derived enzyme inhibitor that transformed hereditary tyrosinaemia type 1",
   "summary": "Nitisinone inhibits 4-hydroxyphenylpyruvate dioxygenase, an early step in tyrosine breakdown. In hereditary tyrosinaemia type 1 it prevents formation of toxic downstream metabolites such as succinylacetone, dramatically reducing liver failure and liver cancer in children. It is also approved in Europe for alkaptonuria.",

@@ -35,6 +35,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Century-old natural anticoagulant from pig intestine, still essential in hospitals",
   "summary": "Heparin is a mixture of sulfated polysaccharides, extracted mainly from porcine intestinal mucosa, that greatly accelerates the natural anticoagulant antithrombin. It is given by injection for acute thrombosis, during cardiac surgery, dialysis and cardiopulmonary bypass, and can be rapidly reversed with protamine.",

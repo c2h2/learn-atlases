@@ -34,7 +34,8 @@
     "note": "Developed after the 1998 discovery of the orexin (hypocretin) neuropeptides and their role in wakefulness, via high-throughput screening and optimisation of a diazepane series."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription; controlled (US Schedule IV)",
   "tagline": "First orexin receptor antagonist for insomnia, switching off a wake-promoting signal",
   "summary": "Suvorexant is the first approved dual orexin receptor antagonist, used for insomnia characterised by difficulty falling or staying asleep. Rather than enhancing GABA-mediated sedation, it blocks the wake-promoting orexin system.",

@@ -33,7 +33,8 @@
     "note": "Designed from the non-steroidal scaffold RU59063 to bind the androgen receptor with high affinity and no agonist activity when the receptor is overexpressed."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "Androgen receptor blocker that extends survival across stages of advanced prostate cancer",
   "summary": "Enzalutamide is an oral androgen receptor inhibitor that blocks androgen binding, nuclear translocation and DNA binding of the receptor. It extends survival in metastatic castration-resistant prostate cancer and is approved across non-metastatic, hormone-sensitive and biochemically recurrent disease.",

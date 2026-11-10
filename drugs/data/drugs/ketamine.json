@@ -39,6 +39,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription; controlled (US Schedule III)",
   "tagline": "Dissociative anaesthetic that preserves breathing, now also a rapid antidepressant",
   "summary": "Ketamine is a dissociative anaesthetic that blocks NMDA receptors. Because it maintains airway reflexes, breathing and blood pressure, it is widely used in emergency, battlefield and low-resource anaesthesia. Since the 2000s, subanaesthetic doses have been studied for rapid relief of depression, leading to the development of esketamine. It is also used recreationally and is a controlled substance.",

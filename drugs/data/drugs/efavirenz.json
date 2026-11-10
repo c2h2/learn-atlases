@@ -38,6 +38,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Once-daily NNRTI that anchored first-line HIV therapy worldwide for over a decade",
   "summary": "Efavirenz is a non-nucleoside reverse transcriptase inhibitor that was a preferred first-line HIV drug worldwide for more than a decade, most famously in the single-tablet Atripla. Its central nervous system side effects (vivid dreams, dizziness, mood changes) and a low genetic barrier to resistance led to its replacement by dolutegravir in most guidelines.",

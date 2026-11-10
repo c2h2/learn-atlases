@@ -36,6 +36,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Oral flu pill that stops new virus particles escaping from infected cells",
   "summary": "Oseltamivir is an oral prodrug of oseltamivir carboxylate, a neuraminidase inhibitor active against influenza A and B. Started within 48 hours of symptoms it shortens illness by about a day, and it is also used for post-exposure prophylaxis. Governments have stockpiled it for pandemic preparedness.",

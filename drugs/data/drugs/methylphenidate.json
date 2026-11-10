@@ -41,7 +41,8 @@
     "note": "Synthesised in 1944; Panizzon named it Ritalin after his wife Marguerite ('Rita'), who reportedly used it to boost her tennis performance."
   },
   "generic": true,
-  "who_essential": true,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription; controlled (US Schedule II)",
   "tagline": "The most widely used ADHD stimulant, blocking dopamine and noradrenaline reuptake",
   "summary": "Methylphenidate is a CNS stimulant used for attention-deficit/hyperactivity disorder and narcolepsy. It blocks dopamine and noradrenaline reuptake and is available in many immediate- and extended-release formulations. It is a controlled substance because of its potential for misuse.",

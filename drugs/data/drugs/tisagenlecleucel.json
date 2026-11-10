@@ -34,7 +34,8 @@
     "note": "Lentiviral CAR combining an anti-CD19 scFv, a 4-1BB costimulatory domain and CD3ζ signalling."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (specialist centres)",
   "tagline": "First CAR T-cell therapy approved, for childhood leukaemia and B-cell lymphomas",
   "summary": "Tisagenlecleucel is a personalised gene-modified cell therapy in which a patient's T cells are engineered to express a chimeric antigen receptor against CD19. In 2017 it became the first CAR T-cell therapy and the first gene therapy approved in the US, for relapsed or refractory B-cell ALL in young patients.",

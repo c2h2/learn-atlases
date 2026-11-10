@@ -36,7 +36,8 @@
     "note": "A humanised bispecific IgG4 that bridges activated factor IX and factor X, restoring the cofactor function of missing factor VIII."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Bispecific antibody that mimics factor VIII for haemophilia A prophylaxis",
   "summary": "Emicizumab is a humanised bispecific monoclonal antibody that binds factor IXa and factor X, bringing them together to substitute for the function of factor VIII. Given subcutaneously as infrequently as monthly, it prevents bleeding in haemophilia A with or without factor VIII inhibitors.",

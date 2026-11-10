@@ -36,7 +36,8 @@
     "note": "Humanised IgG1 antibody against the p19 subunit of IL-23, with Fc mutations reducing effector function; licensed to AbbVie in 2016."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "IL-23 p19 antibody for psoriasis, psoriatic arthritis, Crohn's disease and UC",
   "summary": "Risankizumab is a humanised monoclonal antibody that selectively blocks interleukin-23 by binding its p19 subunit. It is used for plaque psoriasis, psoriatic arthritis, Crohn's disease and ulcerative colitis, and has become one of AbbVie's leading immunology products.",

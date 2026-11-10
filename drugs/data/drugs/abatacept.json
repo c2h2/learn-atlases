@@ -36,7 +36,8 @@
     "note": "Fusion of the extracellular domain of human CTLA-4 to a modified human IgG1 Fc."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "CTLA-4–Fc fusion that blocks T-cell costimulation in rheumatoid arthritis",
   "summary": "Abatacept is a fusion protein of CTLA-4 and an immunoglobulin Fc that blocks the CD28 costimulatory signal needed for full T-cell activation. It is used in rheumatoid arthritis, juvenile idiopathic arthritis and psoriatic arthritis, and for prevention of acute graft-versus-host disease.",

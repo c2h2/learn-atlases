@@ -36,6 +36,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Potent, high-barrier first-line oral drug for chronic hepatitis B",
   "summary": "Entecavir is a guanosine nucleoside analogue that strongly suppresses hepatitis B virus replication. Together with tenofovir it is a first-line treatment for chronic hepatitis B, with a very low rate of resistance in previously untreated patients. Long-term use reduces liver inflammation and fibrosis and lowers the risk of cirrhosis complications.",

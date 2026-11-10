@@ -40,6 +40,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Long-acting azalide used for respiratory infections, STIs and mass drug administration",
   "summary": "Azithromycin is a semi-synthetic azalide discovered at Pliva in Zagreb and licensed to Pfizer as Zithromax. Its long tissue half-life allows short courses, making it one of the world's most widely used antibiotics for respiratory infections, chlamydia, trachoma and enteric infections.",

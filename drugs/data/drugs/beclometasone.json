@@ -43,6 +43,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription; nasal spray OTC in some countries",
   "tagline": "The first widely used inhaled corticosteroid for asthma",
   "summary": "Beclometasone dipropionate is a prodrug glucocorticoid whose introduction as an aerosol in 1972 established inhaled corticosteroids as the basis of asthma treatment. It is used by inhalation, nasally and on the skin, and in fixed combinations with formoterol.",

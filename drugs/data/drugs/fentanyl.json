@@ -46,7 +46,8 @@
     "note": "Synthesised as part of a programme of pethidine-derived phenylpiperidine opioids; roughly 50–100 times more potent than morphine."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "controlled (US Schedule II; UK Class A, Schedule 2)",
   "tagline": "Ultra-potent synthetic opioid essential in anaesthesia and driving overdose deaths",
   "summary": "Fentanyl is a synthetic opioid about 50–100 times as potent as morphine, widely used in anaesthesia, intensive care and cancer pain. Illicitly manufactured fentanyl and its analogues became the leading cause of overdose deaths in North America from the mid-2010s.",

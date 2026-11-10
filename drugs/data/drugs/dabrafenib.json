@@ -36,7 +36,8 @@
     "note": "A thiazole-based ATP-competitive inhibitor selective for mutant BRAF."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "BRAF inhibitor paired with trametinib for melanoma and tumour-agnostic BRAF V600E use",
   "summary": "Dabrafenib is an oral inhibitor of mutant BRAF kinase. Combined with the MEK inhibitor trametinib it is a standard treatment for BRAF V600-mutant melanoma (metastatic and adjuvant), lung and anaplastic thyroid cancer, paediatric low-grade glioma, and any solid tumour with a BRAF V600E mutation.",

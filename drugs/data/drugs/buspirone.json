@@ -36,7 +36,8 @@
     "note": "Synthesised as a potential antipsychotic; it proved ineffective for psychosis but had anxiolytic activity."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Non-sedating, non-addictive anxiolytic acting on serotonin 5-HT1A receptors",
   "summary": "Buspirone is an azapirone anxiolytic used for generalised anxiety disorder. Unlike benzodiazepines it does not cause significant sedation, dependence or interaction with alcohol, but it takes weeks to work and is ineffective for acute anxiety or panic.",

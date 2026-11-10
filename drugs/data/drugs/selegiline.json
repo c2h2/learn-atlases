@@ -40,6 +40,7 @@
   },
   "generic": true,
   "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First selective MAO-B inhibitor, used in Parkinson's disease and as a depression patch",
   "summary": "Selegiline (L-deprenyl) is an irreversible inhibitor of monoamine oxidase B that slows the breakdown of dopamine in the brain. It is used in Parkinson's disease and, as a transdermal patch, for major depressive disorder.",

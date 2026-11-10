@@ -38,7 +38,8 @@
     "note": "Developed in Japan as a D2/5-HT2A antagonist with potent 5-HT7 antagonism."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Low-metabolic-risk antipsychotic approved for schizophrenia and bipolar depression",
   "summary": "Lurasidone is a second-generation antipsychotic approved for schizophrenia and for depressive episodes of bipolar I disorder, alone or with lithium or valproate. It has a favourable metabolic profile but must be taken with food and is sensitive to strong CYP3A4 interactions.",

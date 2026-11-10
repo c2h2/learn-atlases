@@ -36,7 +36,8 @@
     "note": "Isolated from the fungus Aspergillus terreus; Akira Endo independently found the same compound (monacolin K) in Monascus ruber."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "The first statin approved anywhere, a fungal metabolite from Aspergillus terreus",
   "summary": "Lovastatin is a natural statin produced by the fungus Aspergillus terreus and was the first HMG-CoA reductase inhibitor approved for clinical use, in 1987. It lowers LDL cholesterol and is also the main active compound in red yeast rice.",

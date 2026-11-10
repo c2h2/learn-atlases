@@ -36,7 +36,8 @@
     "note": "A long-acting prodrug ACE inhibitor with high tissue-ACE affinity."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "ACE inhibitor whose HOPE trial showed protection in high-risk vascular patients",
   "summary": "Ramipril is a prodrug ACE inhibitor hydrolysed to ramiprilat. Beyond hypertension and heart failure after myocardial infarction, the HOPE trial showed it reduces heart attack, stroke and cardiovascular death in high-risk patients without heart failure.",

@@ -36,7 +36,8 @@
     "note": "Humanised anti-TROP2 antibody hRS7 linked by a hydrolysable CL2A linker to SN-38, the active metabolite of irinotecan."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First TROP2-directed ADC, approved for metastatic triple-negative breast cancer",
   "summary": "Sacituzumab govitecan is an antibody–drug conjugate that targets TROP2, a surface glycoprotein found on many epithelial cancers, and delivers SN-38. It is approved for metastatic triple-negative and HR-positive/HER2-negative breast cancer after prior therapy.",

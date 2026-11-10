@@ -33,7 +33,8 @@
     "note": "A piperazine derivative discovered in the 1980s and licensed to CV Therapeutics, later acquired by Gilead in 2009."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Antianginal that works without lowering heart rate or blood pressure",
   "summary": "Ranolazine is an antianginal drug that inhibits the late inward sodium current in heart muscle, reducing calcium overload during ischaemia. It is used for chronic angina, usually added to other therapy, and has little effect on heart rate or blood pressure.",

@@ -31,6 +31,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription; OTC in many countries",
   "tagline": "Single-dose deworming tablet given to hundreds of millions of children each year",
   "summary": "Albendazole is a broad-spectrum benzimidazole anthelmintic that binds worm tubulin and blocks glucose uptake. A single dose treats common intestinal worms and is used in school-based deworming and lymphatic filariasis elimination programmes worldwide, supported by GSK donations. Longer courses treat tissue infections such as neurocysticercosis and hydatid disease.",

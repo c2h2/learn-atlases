@@ -40,7 +40,8 @@
     "note": "A benzamide PDE4 inhibitor optimised for oral once-daily dosing."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Oral PDE4 inhibitor that cuts COPD exacerbations; topical form for psoriasis",
   "summary": "Roflumilast is a selective PDE4 inhibitor with anti-inflammatory effects. Orally it reduces exacerbations in severe COPD with chronic bronchitis, and topical formulations are approved for plaque psoriasis, atopic dermatitis and seborrhoeic dermatitis.",

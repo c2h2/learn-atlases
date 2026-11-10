@@ -39,6 +39,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription (OTC in some countries)",
   "tagline": "The world's workhorse oral penicillin for respiratory, ear and urinary infections",
   "summary": "Amoxicillin is a semi-synthetic aminopenicillin introduced by Beecham in 1972. Better absorbed orally than ampicillin, it is one of the most widely prescribed antibiotics worldwide and a first-line WHO Access antibiotic for common community infections.",

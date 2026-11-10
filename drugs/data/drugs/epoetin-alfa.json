@@ -41,6 +41,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "Recombinant erythropoietin that ended routine transfusion for anaemia of kidney failure",
   "summary": "Epoetin alfa is recombinant human erythropoietin produced in mammalian cells. It stimulates red blood cell production and is used to treat anaemia from chronic kidney disease, chemotherapy and zidovudine, and to reduce transfusion around surgery. Cardiovascular and tumour-progression risks at higher haemoglobin targets led to boxed warnings.",

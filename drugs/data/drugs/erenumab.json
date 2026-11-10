@@ -34,7 +34,8 @@
     "note": "A fully human IgG2 antibody developed in transgenic mice against the canonical CGRP receptor; co-developed with Novartis."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First CGRP-pathway antibody for migraine prevention",
   "summary": "Erenumab is a fully human monoclonal antibody that blocks the calcitonin gene-related peptide (CGRP) receptor. Approved in 2018, it was the first medicine designed specifically to prevent migraine.",

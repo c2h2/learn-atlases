@@ -33,6 +33,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "OTC; prescription for high doses in some countries",
   "tagline": "Synthetic folate that prevents neural tube defects and megaloblastic anaemia",
   "summary": "Folic acid is the synthetic, oxidised form of vitamin B9. Once reduced to tetrahydrofolate it supplies one-carbon units for DNA synthesis and the methylation cycle. Periconceptional supplementation and food fortification greatly reduce neural tube defects, and it treats folate-deficiency anaemia.",

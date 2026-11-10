@@ -44,6 +44,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Targeted antibody that transformed the outlook of HER2-positive breast cancer",
   "summary": "Trastuzumab is a humanised monoclonal antibody against HER2, a growth-factor receptor overexpressed in a subset of breast and gastric cancers. Combined with chemotherapy it substantially improves survival in HER2-positive disease and is a model for biomarker-selected targeted therapy.",

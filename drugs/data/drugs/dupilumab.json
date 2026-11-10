@@ -34,7 +34,8 @@
     "note": "Fully human IgG4 antibody against IL-4Rα, generated with Regeneron's VelocImmune mice; co-developed with Sanofi."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "IL-4/IL-13 blocker treating atopic dermatitis, asthma and other type 2 diseases",
   "summary": "Dupilumab is a human monoclonal antibody that blocks the shared IL-4 receptor α subunit, inhibiting signalling by both IL-4 and IL-13. It treats a range of type 2 inflammatory diseases, including atopic dermatitis, asthma, nasal polyps, eosinophilic oesophagitis, prurigo nodularis, chronic urticaria, COPD with eosinophilia and bullous pemphigoid.",

@@ -38,6 +38,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Periwinkle alkaloid central to childhood leukaemia and lymphoma treatment",
   "summary": "Vincristine is a vinca alkaloid that binds tubulin and prevents microtubule assembly, arresting dividing cells in metaphase. It is a key component of treatment for acute lymphoblastic leukaemia, lymphomas and paediatric solid tumours; its dose-limiting toxicity is peripheral neuropathy rather than marrow suppression.",

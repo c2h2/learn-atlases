@@ -39,7 +39,8 @@
     "note": "Flexible diarylpyrimidine designed to bind the NNRTI pocket in several conformations, retaining activity against some resistant strains."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Low-dose NNRTI in single tablets and in the first long-acting injectable HIV regimen",
   "summary": "Rilpivirine is a second-generation non-nucleoside reverse transcriptase inhibitor taken orally once daily with food or given as a long-acting intramuscular injection. Combined with cabotegravir, it forms the first complete long-acting injectable HIV treatment, given monthly or every two months. Oral absorption requires stomach acid, so proton-pump inhibitors are contraindicated.",

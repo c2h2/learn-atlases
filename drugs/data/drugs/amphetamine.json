@@ -44,7 +44,8 @@
     "note": "First synthesised as phenylisopropylamine; Gordon Alles independently resynthesised it in 1927 and characterised its stimulant effects."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription; controlled (US Schedule II)",
   "tagline": "Century-old stimulant that releases dopamine and noradrenaline; used for ADHD, narcolepsy",
   "summary": "Amphetamine is a CNS stimulant that releases dopamine and noradrenaline from nerve terminals. First marketed as the Benzedrine inhaler in the 1930s, it is now used, mainly as dextroamphetamine or mixed salts such as Adderall, for ADHD and narcolepsy. It is a Schedule II controlled substance because of its potential for misuse and addiction.",

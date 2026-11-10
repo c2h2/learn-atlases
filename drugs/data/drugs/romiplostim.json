@@ -34,7 +34,8 @@
     "note": "A 'peptibody': an IgG1 Fc fragment carrying two copies of a TPO-mimetic peptide with no sequence homology to TPO, avoiding the antibody problems of earlier recombinant TPO."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Weekly Fc-peptide fusion that stimulates the thrombopoietin receptor",
   "summary": "Romiplostim is an Fc–peptide fusion protein that binds and activates the thrombopoietin receptor, increasing platelet production. It is given by weekly injection for chronic immune thrombocytopenia and was later approved for haematopoietic acute radiation syndrome.",

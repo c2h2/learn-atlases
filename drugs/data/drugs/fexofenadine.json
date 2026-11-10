@@ -35,7 +35,8 @@
     "note": "Identified as the active, non-cardiotoxic carboxylic-acid metabolite of terfenadine."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "OTC in the US and many other countries",
   "tagline": "Non-sedating antihistamine developed as the safe metabolite of terfenadine",
   "summary": "Fexofenadine is the active metabolite of terfenadine, an antihistamine withdrawn because of fatal heart-rhythm problems. It provides the antihistamine effect without terfenadine's QT liability and causes very little sedation.",

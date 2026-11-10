@@ -36,6 +36,7 @@
   },
   "generic": false,
   "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "First dual GIP/GLP-1 agonist, giving about 20% weight loss in obesity trials",
   "summary": "Tirzepatide is a once-weekly injectable peptide that activates both the GIP and GLP-1 receptors. It produces larger reductions in HbA1c and body weight than selective GLP-1 agonists, with mean weight loss around 20% in the SURMOUNT-1 obesity trial, and is approved for type 2 diabetes, obesity and obstructive sleep apnoea.",

@@ -37,7 +37,8 @@
     "note": "A ligand trap made of the extracellular domain of activin receptor type IIA fused to human IgG1 Fc, first studied for bone loss and anaemia."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First-in-class activin signalling inhibitor for pulmonary arterial hypertension",
   "summary": "Sotatercept is a fusion protein that traps activins and related TGF-β superfamily ligands. Approved in 2024, it is the first PAH therapy designed to target the vascular remodelling underlying the disease rather than only dilating vessels.",

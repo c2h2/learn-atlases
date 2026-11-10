@@ -33,7 +33,8 @@
     "note": "Emerged from Gilead's programme of 1'-cyano C-nucleoside analogues against RNA viruses (hepatitis C, RSV); broad activity against Ebola and coronaviruses was later found."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (hospital and infusion settings)",
   "tagline": "The first antiviral fully approved for COVID-19, given by infusion",
   "summary": "Remdesivir is an intravenous phosphoramidate prodrug of an adenosine nucleotide analogue that inhibits viral RNA-dependent RNA polymerase. Tested first against Ebola, it became the first drug approved by the FDA for COVID-19 in October 2020. It shortens recovery in hospitalised patients and reduces hospitalisation when given early to high-risk outpatients.",

@@ -36,7 +36,8 @@
     "note": "Monobactams were found in bacteria such as Chromobacterium violaceum; aztreonam is a fully synthetic monocyclic beta-lactam."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Monobactam for Gram-negatives, usable in most penicillin-allergic patients",
   "summary": "Aztreonam is a monocyclic beta-lactam (monobactam) active only against aerobic Gram-negative bacteria, including Pseudomonas aeruginosa. It shows little cross-reactivity with penicillin allergy (except with ceftazidime) and is stable to metallo-beta-lactamases, which has revived interest in combining it with avibactam.",

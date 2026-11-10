@@ -35,7 +35,8 @@
     "note": "Structure-based design of small molecules that bind the thyroxine sites of the TTR tetramer; Pfizer acquired FoldRx in 2010."
   },
   "generic": null,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First drug to stabilise transthyretin and treat ATTR cardiomyopathy",
   "summary": "Tafamidis binds and stabilises the transthyretin tetramer, preventing its dissociation into monomers that misfold into amyloid. It treats transthyretin amyloid cardiomyopathy, both hereditary and wild-type, and in some countries hereditary ATTR polyneuropathy.",

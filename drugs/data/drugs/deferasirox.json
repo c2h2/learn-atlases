@@ -35,6 +35,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Once-daily oral chelator for transfusional iron overload",
   "summary": "Deferasirox is an orally active tridentate iron chelator. Two molecules bind one ferric ion, and the complex is excreted mainly in the faeces. It treats chronic iron overload from blood transfusions and non-transfusion-dependent thalassaemia, but carries boxed warnings for renal, hepatic and gastrointestinal toxicity.",

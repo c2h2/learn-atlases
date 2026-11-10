@@ -36,7 +36,8 @@
     "note": "A piperidine-based acetylcholinesterase inhibitor discovered by Eisai after a screening programme begun in 1983."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "The most widely used cholinesterase inhibitor for Alzheimer's disease",
   "summary": "Donepezil is a once-daily acetylcholinesterase inhibitor that modestly improves cognition and function in Alzheimer's disease. Discovered by Eisai and co-marketed with Pfizer as Aricept, it became the best-selling dementia drug before generics arrived.",

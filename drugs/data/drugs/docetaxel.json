@@ -36,6 +36,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Semisynthetic taxane used in breast, prostate, lung, gastric and head and neck cancer",
   "summary": "Docetaxel is a semisynthetic taxane that binds β-tubulin and stabilises microtubules more potently than paclitaxel. It was the first chemotherapy shown to extend survival in metastatic castration-resistant prostate cancer and is widely used in breast, lung, gastric and head and neck cancer.",

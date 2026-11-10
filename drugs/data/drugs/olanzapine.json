@@ -44,7 +44,8 @@
     "note": "Designed as a clozapine-like thienobenzodiazepine intended to avoid clozapine's haematological toxicity."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Clozapine-like atypical antipsychotic, effective but with marked metabolic effects",
   "summary": "Olanzapine is a second-generation antipsychotic structurally related to clozapine, used for schizophrenia and bipolar disorder. It is among the more effective antipsychotics but causes substantial weight gain and metabolic disturbance. It is also used off-label for chemotherapy-induced nausea.",

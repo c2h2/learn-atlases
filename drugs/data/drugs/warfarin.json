@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Rat poison turned anticoagulant, dosed by INR for over 70 years",
   "summary": "Warfarin is an oral anticoagulant that blocks recycling of vitamin K, reducing production of functional clotting factors II, VII, IX and X. It is used to prevent and treat venous thromboembolism and to prevent stroke in atrial fibrillation and with mechanical heart valves, with dosing guided by INR monitoring.",

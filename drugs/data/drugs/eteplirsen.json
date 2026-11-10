@@ -34,6 +34,7 @@
   },
   "generic": false,
   "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Controversial exon-skipping antisense drug for Duchenne muscular dystrophy",
   "summary": "Eteplirsen is a phosphorodiamidate morpholino antisense oligonucleotide that causes skipping of exon 51 in dystrophin pre-mRNA. In about 13% of Duchenne muscular dystrophy patients with amenable deletions, this restores a shortened but partly functional dystrophin. Its 2016 accelerated approval, based on small dystrophin increases, was among the most contested FDA decisions; the EMA declined to approve it.",

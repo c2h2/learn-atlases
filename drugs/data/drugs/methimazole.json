@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "First-choice antithyroid drug that blocks thyroid hormone synthesis",
   "summary": "Methimazole (INN thiamazole) is a thionamide that inhibits thyroid peroxidase and so reduces production of thyroid hormones. It is the preferred antithyroid drug for Graves' disease and toxic nodular goitre except in the first trimester of pregnancy and in thyroid storm.",

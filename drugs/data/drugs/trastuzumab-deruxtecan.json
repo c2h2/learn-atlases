@@ -36,7 +36,8 @@
     "note": "Humanised anti-HER2 antibody joined by a cleavable tetrapeptide linker to deruxtecan (DXd), an exatecan derivative, with a drug-to-antibody ratio of about 8."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "High-payload HER2 ADC that extended targeted therapy to HER2-low breast cancer",
   "summary": "Trastuzumab deruxtecan is an antibody–drug conjugate delivering a potent topoisomerase I inhibitor to HER2-expressing cells. It has shown large benefits in HER2-positive and HER2-low breast cancer and is approved in gastric, lung and other HER2-expressing solid tumours.",

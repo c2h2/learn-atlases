@@ -39,7 +39,8 @@
     "note": "A sulfonamide alpha-blocker selective for the alpha1A subtype that predominates in prostate smooth muscle."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription; pharmacy (OTC) in the UK",
   "tagline": "Uroselective alpha blocker that eases urinary symptoms of prostate enlargement",
   "summary": "Tamsulosin selectively blocks alpha1A and alpha1D adrenoceptors in the prostate and bladder neck, relaxing smooth muscle and improving urine flow. It is one of the most prescribed drugs for lower urinary tract symptoms of benign prostatic hyperplasia.",

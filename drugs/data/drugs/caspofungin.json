@@ -35,7 +35,8 @@
     "note": "Semi-synthetic derivative of pneumocandin B0, a lipopeptide produced by the fungus Glarea lozoyensis."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription (hospital use)",
   "tagline": "First echinocandin, attacking the fungal cell wall rather than its membrane",
   "summary": "Caspofungin was the first echinocandin antifungal, approved in 2001. It inhibits synthesis of β-1,3-glucan, an essential component of the fungal cell wall that human cells lack, making it well tolerated. It is used for candidaemia and invasive candidiasis, as empirical therapy in febrile neutropenia and as salvage therapy for aspergillosis.",

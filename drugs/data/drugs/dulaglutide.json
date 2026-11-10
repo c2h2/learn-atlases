@@ -34,6 +34,7 @@
   },
   "generic": false,
   "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "A weekly GLP-1 agonist built on an antibody Fc backbone",
   "summary": "Dulaglutide is a once-weekly GLP-1 receptor agonist made by fusing GLP-1 analogues to an immunoglobulin Fc fragment, which slows clearance. It lowers glucose and modestly reduces weight, and the REWIND trial showed reduced cardiovascular events in a broad type 2 diabetes population.",

@@ -34,7 +34,8 @@
     "note": "Found by optimising azetidinone compounds in an animal screen before its molecular target was known."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Blocks intestinal cholesterol uptake; the usual add-on to statins",
   "summary": "Ezetimibe lowers LDL cholesterol by about 20% by blocking cholesterol absorption in the small intestine. It is used alone or with a statin, and the IMPROVE-IT trial showed that adding it to simvastatin after acute coronary syndrome modestly reduced cardiovascular events.",

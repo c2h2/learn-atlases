@@ -32,6 +32,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription (hospital)",
   "tagline": "Anti-pseudomonal cephalosporin used for melioidosis, neutropenic fever and HAP",
   "summary": "Ceftazidime is a third-generation cephalosporin with strong activity against Pseudomonas aeruginosa but weak Gram-positive activity. It is used for serious hospital infections, febrile neutropenia and melioidosis, and is the partner drug in ceftazidime-avibactam.",

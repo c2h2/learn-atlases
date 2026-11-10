@@ -40,7 +40,8 @@
     "note": "Synthesised by Geigy in 1951 as a chlorpromazine-like antihistamine; Kuhn observed its antidepressant effect in 1956 and reported it in 1957."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "The first tricyclic antidepressant, discovered by chance in a Swiss hospital",
   "summary": "Imipramine was the first tricyclic antidepressant. Its mood-elevating effect was discovered by psychiatrist Roland Kuhn in 1956 while testing a chlorpromazine analogue, and it helped launch the monoamine theory of depression. It is still used for depression and childhood nocturnal enuresis.",

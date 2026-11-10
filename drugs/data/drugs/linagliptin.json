@@ -36,7 +36,8 @@
     "note": "A xanthine-based DPP-4 inhibitor."
   },
   "generic": null,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "A gliptin cleared mainly through bile, so one dose fits all levels of kidney function",
   "summary": "Linagliptin is a DPP-4 inhibitor used for type 2 diabetes that, unlike most gliptins, is eliminated mainly via the bile and gut, so it needs no dose adjustment in kidney disease. Large outcome trials (CARMELINA and CAROLINA) showed cardiovascular and renal safety.",

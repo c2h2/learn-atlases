@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription; OTC for heartburn in many countries",
   "tagline": "The first proton pump inhibitor, transforming treatment of ulcers and reflux",
   "summary": "Omeprazole is the first proton pump inhibitor, a class that irreversibly blocks the final step of gastric acid secretion. It is used for peptic ulcers, gastro-oesophageal reflux disease and Helicobacter pylori eradication, and in the late 1990s it was the world's best-selling drug.",

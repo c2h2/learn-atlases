@@ -37,7 +37,8 @@
     "note": "A fermentation product of the actinomycete Dactylosporangium aurantiacum."
   },
   "generic": null,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Narrow-spectrum gut-acting antibiotic for C. difficile with fewer recurrences",
   "summary": "Fidaxomicin is a narrow-spectrum macrocyclic antibiotic that acts within the gut against Clostridioides difficile while largely sparing the normal microbiota. Approved in 2011, it lowers recurrence compared with vancomycin and is preferred in several guidelines for initial and recurrent C. difficile infection.",

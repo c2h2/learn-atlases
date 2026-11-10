@@ -41,6 +41,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription (pharmacy-available in some countries)",
   "tagline": "The standard short-acting 'reliever' bronchodilator for asthma and COPD",
   "summary": "Salbutamol (albuterol in the US) is a short-acting beta2-adrenergic agonist that relaxes airway smooth muscle within minutes. Introduced in 1969, it became the archetypal blue reliever inhaler and remains one of the most widely used medicines in the world.",

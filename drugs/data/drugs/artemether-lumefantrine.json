@@ -39,6 +39,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "World's most used malaria treatment: a fast artemisinin with a long-acting partner",
   "summary": "Artemether/lumefantrine is a fixed-dose artemisinin-based combination therapy (ACT) for uncomplicated malaria. Artemether kills parasites very quickly, while the longer-lived lumefantrine eliminates those that remain. It is the most widely used malaria treatment in Africa, and Novartis supplies it at cost in malaria-endemic countries.",

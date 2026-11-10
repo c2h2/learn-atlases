@@ -36,6 +36,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Glycopeptide workhorse against MRSA and, orally, against C. difficile",
   "summary": "Vancomycin is a glycopeptide antibiotic discovered by Eli Lilly in the 1950s. Once sidelined by toxicity concerns, it became the standard treatment for methicillin-resistant Staphylococcus aureus and other resistant Gram-positive infections, and oral vancomycin treats Clostridioides difficile colitis.",

@@ -36,7 +36,8 @@
     "note": "A fully synthetic statin with a pyrrole core; Pfizer co-marketed it and acquired Warner-Lambert in 2000."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Potent synthetic statin and the best-selling drug in pharmaceutical history",
   "summary": "Atorvastatin is a high-potency synthetic statin that lowers LDL cholesterol by inhibiting HMG-CoA reductase. It is used to reduce the risk of heart attack and stroke in people with or at risk of atherosclerotic cardiovascular disease, and to treat hypercholesterolaemia.",

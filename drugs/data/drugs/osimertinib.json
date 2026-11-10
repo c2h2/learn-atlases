@@ -34,7 +34,8 @@
     "note": "A mono-anilino-pyrimidine designed to covalently target mutant EGFR including the T790M resistance mutation while sparing wild-type EGFR."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Third-generation EGFR inhibitor that overcomes T790M and penetrates the brain",
   "summary": "Osimertinib is an irreversible EGFR inhibitor that selectively targets sensitising EGFR mutations and the T790M resistance mutation, with good central nervous system penetration. It is the standard first-line treatment for EGFR-mutant non-small-cell lung cancer and is also approved as adjuvant therapy after surgery and after chemoradiation for stage III disease.",

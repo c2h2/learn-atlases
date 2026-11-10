@@ -35,7 +35,8 @@
     "note": "Chimeric anti-CD30 antibody cAC10 linked via a protease-cleavable linker to monomethyl auristatin E."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "CD30-targeted ADC for Hodgkin lymphoma and CD30-positive T-cell lymphomas",
   "summary": "Brentuximab vedotin is an antibody–drug conjugate that targets CD30 and delivers the microtubule inhibitor MMAE. It is used in classical Hodgkin lymphoma, systemic anaplastic large cell lymphoma and other CD30-positive lymphomas.",

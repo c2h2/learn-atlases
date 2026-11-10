@@ -48,7 +48,8 @@
     "note": "Designed to combine structural features thought to give potent anti-inflammatory activity with good tolerability."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription; topical and low-dose oral OTC in many countries",
   "tagline": "Widely used NSAID whose veterinary use devastated South Asian vultures",
   "summary": "Diclofenac is a potent NSAID used orally, topically and by injection for arthritis, musculoskeletal pain and inflammation. It carries a higher cardiovascular risk than some other NSAIDs, and its veterinary use caused a catastrophic decline of vultures in South Asia.",

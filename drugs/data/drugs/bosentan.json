@@ -34,7 +34,8 @@
     "note": "Non-peptide endothelin receptor antagonist; its developers founded Actelion to bring it to market."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (restricted programme for liver and pregnancy risk)",
   "tagline": "First oral endothelin receptor antagonist for pulmonary arterial hypertension",
   "summary": "Bosentan is an oral antagonist of both endothelin ETA and ETB receptors. It was the first oral therapy approved for pulmonary arterial hypertension and is also used in the EU to reduce new digital ulcers in systemic sclerosis.",

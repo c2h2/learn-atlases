@@ -38,7 +38,8 @@
     "note": "Mycophenolic acid was isolated from Penicillium as one of the first antibiotics; Syntex later made the morpholinoethyl ester prodrug to improve bioavailability."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Prodrug of mycophenolic acid that selectively starves lymphocytes of guanine",
   "summary": "Mycophenolate mofetil is a prodrug of mycophenolic acid, which inhibits inosine monophosphate dehydrogenase and depletes guanosine nucleotides in lymphocytes. It is a standard part of immunosuppression after kidney, heart and liver transplantation and is widely used for lupus nephritis and other autoimmune diseases. It is strongly teratogenic.",

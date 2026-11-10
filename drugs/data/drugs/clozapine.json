@@ -44,6 +44,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription (with blood monitoring)",
   "tagline": "Uniquely effective antipsychotic for treatment-resistant schizophrenia",
   "summary": "Clozapine is the prototype atypical antipsychotic and the only drug with proven superiority in treatment-resistant schizophrenia; it also reduces suicidal behaviour. It was withdrawn in the 1970s after deaths from agranulocytosis and reintroduced in 1989 with mandatory blood monitoring.",

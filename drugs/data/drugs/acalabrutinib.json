@@ -34,7 +34,8 @@
     "note": "A more selective covalent BTK inhibitor with a butynamide warhead, designed to reduce off-target kinase effects."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "More selective second-generation BTK inhibitor for CLL and mantle cell lymphoma",
   "summary": "Acalabrutinib is a second-generation covalent BTK inhibitor with fewer off-target kinase effects than ibrutinib. It is approved for chronic lymphocytic leukaemia and mantle cell lymphoma, and in a head-to-head trial showed similar efficacy to ibrutinib with less atrial fibrillation.",

@@ -38,7 +38,8 @@
     "note": "A soil sample from Iloilo, Philippines, yielded Saccharopolyspora erythraea (then Streptomyces erythreus); Lilly isolated erythromycin and launched it in 1952."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "The first macrolide, also used for its motilin-agonist prokinetic effect",
   "summary": "Erythromycin, isolated from a Philippine soil bacterium and launched by Eli Lilly in 1952, was the first macrolide antibiotic. Its use has declined in favour of azithromycin and clarithromycin, but it remains a penicillin alternative, a neonatal eye prophylactic and an off-label prokinetic.",

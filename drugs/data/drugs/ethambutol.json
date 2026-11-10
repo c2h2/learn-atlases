@@ -35,6 +35,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Bacteriostatic TB drug that blocks arabinan synthesis; monitored for optic neuritis",
   "summary": "Ethambutol is a synthetic antimycobacterial discovered at Lederle in 1961. It is used in the initial phase of tuberculosis treatment to protect against resistance to the other drugs and in Mycobacterium avium complex disease; its main toxicity is dose-related optic neuritis.",

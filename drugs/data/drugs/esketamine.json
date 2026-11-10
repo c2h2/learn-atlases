@@ -37,7 +37,8 @@
     "note": "Small trials of IV racemic ketamine showed rapid antidepressant effects (2000, 2006), prompting Janssen to develop the S-enantiomer as a nasal spray."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription; controlled (US Schedule III); restricted (REMS)",
   "tagline": "Nasal-spray S-ketamine for treatment-resistant depression, given under supervision",
   "summary": "Esketamine is the S-enantiomer of ketamine, developed by Janssen as a nasal spray for treatment-resistant depression and for depressive symptoms with acute suicidal ideation. It acts within hours to days rather than weeks, but must be given under medical supervision because of sedation, dissociation and abuse potential.",

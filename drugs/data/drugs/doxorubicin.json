@@ -40,6 +40,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Red anthracycline antibiotic with broad anticancer activity and cumulative cardiotoxicity",
   "summary": "Doxorubicin is an anthracycline that intercalates into DNA and traps topoisomerase II, causing lethal double-strand breaks. It is one of the most broadly active cytotoxic drugs, used in breast cancer, lymphomas, leukaemias and sarcomas, with a lifetime dose limit because of dose-dependent cardiomyopathy.",

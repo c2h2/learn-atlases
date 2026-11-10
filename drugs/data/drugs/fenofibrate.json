@@ -37,7 +37,8 @@
     "note": "A clofibrate analogue developed in the early 1970s."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "PPAR-alpha agonist fibrate for high triglycerides",
   "summary": "Fenofibrate is a fibrate prodrug whose active form, fenofibric acid, activates the nuclear receptor PPARα. It mainly lowers triglycerides and raises HDL cholesterol, and is used for severe hypertriglyceridaemia and mixed dyslipidaemia.",

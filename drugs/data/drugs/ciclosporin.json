@@ -43,6 +43,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Fungal peptide that transformed organ transplantation in the 1980s",
   "summary": "Ciclosporin is a cyclic peptide from a soil fungus that inhibits calcineurin and blocks T-cell activation. Its introduction in the early 1980s greatly improved survival of transplanted kidneys, hearts and livers. It is also used for autoimmune diseases and, as eye drops, for dry eye disease.",

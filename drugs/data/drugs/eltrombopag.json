@@ -36,7 +36,8 @@
     "note": "A non-peptide hydrazone compound found to activate the thrombopoietin receptor through its transmembrane domain."
   },
   "generic": null,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Oral thrombopoietin-mimetic for immune thrombocytopenia and aplastic anaemia",
   "summary": "Eltrombopag is an orally active small-molecule agonist of the thrombopoietin receptor that increases platelet production. It is used in chronic immune thrombocytopenia, thrombocytopenia of chronic hepatitis C and severe aplastic anaemia. Its labelling warns of hepatotoxicity.",

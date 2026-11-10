@@ -34,7 +34,8 @@
     "note": "Identified as the main active metabolite of isosorbide dinitrate and developed as a drug that avoids first-pass metabolism."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Long-acting oral nitrate for preventing angina, dosed to avoid tolerance",
   "summary": "Isosorbide mononitrate is the active metabolite of isosorbide dinitrate, given orally to prevent angina. Unlike most nitrates it is not subject to first-pass metabolism, giving nearly complete bioavailability, and it is dosed with a nitrate-free interval to prevent tolerance.",

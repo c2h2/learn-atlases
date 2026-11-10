@@ -36,6 +36,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Prodrug P2Y12 blocker that became one of the best-selling cardiovascular medicines",
   "summary": "Clopidogrel is a thienopyridine prodrug that irreversibly blocks the platelet P2Y12 ADP receptor. Combined with aspirin it is used after acute coronary syndromes and coronary stenting, and alone for prevention after stroke or peripheral artery disease.",

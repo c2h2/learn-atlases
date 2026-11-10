@@ -42,6 +42,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Potent macrolide calcineurin inhibitor at the core of transplant immunosuppression",
   "summary": "Tacrolimus is a macrolide from Streptomyces tsukubaensis that inhibits calcineurin after binding FKBP12, blocking T-cell activation. It is the most widely used calcineurin inhibitor for preventing rejection after kidney, liver and heart transplantation, and a topical form treats atopic dermatitis. It has a narrow therapeutic window and needs blood-level monitoring.",

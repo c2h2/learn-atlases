@@ -38,6 +38,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "The mainstay of gout prevention, from Nobel laureates Elion and Hitchings",
   "summary": "Allopurinol is a purine analogue that inhibits xanthine oxidase and so lowers production of uric acid. It is the first-line urate-lowering therapy for chronic gout and is used to prevent tumour lysis syndrome; serious skin reactions are strongly associated with the HLA-B*58:01 allele.",

@@ -34,7 +34,8 @@
     "note": "Exploits a cryptic pocket next to the mutant cysteine 12 in GDP-bound KRAS G12C, first described by Shokat's laboratory in 2013."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First approved KRAS inhibitor, targeting a mutation once thought 'undruggable'",
   "summary": "Sotorasib is a covalent inhibitor that locks the KRAS G12C mutant protein in its inactive GDP-bound state. It was the first drug approved to target KRAS, a long-elusive oncogene, and is used for KRAS G12C-mutated non-small-cell lung cancer and, with panitumumab, colorectal cancer.",

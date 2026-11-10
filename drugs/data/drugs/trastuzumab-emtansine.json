@@ -36,7 +36,8 @@
     "note": "Trastuzumab linked through the non-cleavable thioether linker SMCC to the maytansinoid DM1, about 3.5 drug molecules per antibody."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First ADC for a solid tumour: trastuzumab carrying the microtubule poison DM1",
   "summary": "Trastuzumab emtansine (T-DM1) is an antibody–drug conjugate that delivers the cytotoxic maytansinoid DM1 to HER2-overexpressing cancer cells. It is used in previously treated metastatic HER2-positive breast cancer and as adjuvant therapy for residual disease after neoadjuvant treatment.",

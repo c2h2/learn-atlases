@@ -35,7 +35,8 @@
     "note": "Concept of an antibody binding free IgE at the site that engages FcεRI, without cross-linking IgE already on mast cells."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Anti-IgE antibody for allergic asthma, urticaria, nasal polyps and food allergy",
   "summary": "Omalizumab is a humanised monoclonal antibody that binds free immunoglobulin E. It was the first biologic for asthma, and is used for moderate to severe allergic asthma, chronic spontaneous urticaria, nasal polyps and, since 2024 in the US, IgE-mediated food allergy.",

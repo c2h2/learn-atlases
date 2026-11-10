@@ -34,7 +34,8 @@
     "note": "A formanilide-substituted phenylethanolamine developed in Japan in the 1970s."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Fast-onset long-acting bronchodilator used in maintenance-and-reliever inhalers",
   "summary": "Formoterol is a long-acting beta2-agonist with an onset of action within minutes, comparable to salbutamol, and a duration of about 12 hours. Combined with budesonide it can be used both as maintenance and as an as-needed reliever in asthma, an approach now preferred in GINA guidance.",

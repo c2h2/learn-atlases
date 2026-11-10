@@ -39,7 +39,8 @@
     "note": "Selected as a potent ATP-competitive inhibitor of JAK1 and JAK2 after the 2005 discovery of the JAK2 V617F mutation in myeloproliferative neoplasms."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First JAK inhibitor, for myelofibrosis, polycythaemia vera and graft-versus-host disease",
   "summary": "Ruxolitinib is an oral inhibitor of Janus kinases JAK1 and JAK2. It reduces spleen size and symptoms in myelofibrosis, controls polycythaemia vera, and treats steroid-refractory graft-versus-host disease. A cream formulation treats atopic dermatitis and vitiligo.",

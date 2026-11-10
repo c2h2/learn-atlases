@@ -38,7 +38,8 @@
     "note": "Developed as a β1-selective blocker."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "Widely prescribed β1-selective blocker for hypertension, angina and heart failure",
   "summary": "Metoprolol is a β1-selective beta-blocker available as immediate-release tartrate and extended-release succinate salts. It treats hypertension, angina and arrhythmias, improves survival after myocardial infarction, and the succinate form reduces mortality in heart failure with reduced ejection fraction.",

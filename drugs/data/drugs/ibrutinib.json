@@ -33,7 +33,8 @@
     "note": "Designed as a covalent probe that binds cysteine 481 in the ATP site of BTK."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "First-in-class BTK inhibitor that reshaped chronic lymphocytic leukaemia treatment",
   "summary": "Ibrutinib is an oral, irreversible inhibitor of Bruton tyrosine kinase, a key enzyme in B-cell receptor signalling. It was the first BTK inhibitor approved and changed the treatment of chronic lymphocytic leukaemia, Waldenström macroglobulinaemia and chronic graft-versus-host disease, although atrial fibrillation and bleeding limit its use.",

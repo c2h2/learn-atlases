@@ -32,6 +32,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Sterilising TB prodrug that made six-month short-course treatment possible",
   "summary": "Pyrazinamide is a nicotinamide analogue whose antituberculosis activity was discovered in 1952. Adding it to rifampicin and isoniazid during the first two months shortened standard tuberculosis therapy from nine to six months, because it kills semi-dormant bacilli in acidic environments.",

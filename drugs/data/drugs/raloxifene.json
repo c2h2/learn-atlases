@@ -37,7 +37,8 @@
     "note": "Originally developed in the 1980s as keoxifene for breast cancer, then repurposed for osteoporosis."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "An estrogen modulator that protects bone and lowers breast-cancer risk",
   "summary": "Raloxifene is a selective estrogen receptor modulator that acts like estrogen on bone but blocks estrogen in breast and uterus. It reduces vertebral fractures in postmenopausal osteoporosis and lowers the risk of invasive breast cancer, but raises the risk of venous thromboembolism and fatal stroke.",

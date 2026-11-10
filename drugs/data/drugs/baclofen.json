@@ -41,7 +41,8 @@
     "note": "Synthesised as a lipophilic GABA analogue intended for epilepsy; it proved ineffective for seizures but reduced spasticity."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "GABA-B agonist muscle relaxant for spasticity, also given by intrathecal pump",
   "summary": "Baclofen is a GABA-B receptor agonist that reduces spasticity from multiple sclerosis, spinal cord injury and cerebral palsy. Intrathecal delivery allows much lower doses for severe cases, and it is used in some countries for alcohol use disorder.",

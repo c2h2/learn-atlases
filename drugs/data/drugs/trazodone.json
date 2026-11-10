@@ -40,7 +40,8 @@
     "note": "Developed in Italy in the 1960s from a hypothesis linking depression to altered pain thresholds."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Sedating antidepressant widely used at low doses for insomnia",
   "summary": "Trazodone is a triazolopyridine antidepressant that blocks 5-HT2A receptors and weakly inhibits serotonin reuptake. Developed in Italy in the 1960s, it is licensed for depression but is very widely used off-label at low doses as a hypnotic.",

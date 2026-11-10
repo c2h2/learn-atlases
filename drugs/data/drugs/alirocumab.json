@@ -34,7 +34,8 @@
     "note": "A fully human IgG1 antibody co-developed with Sanofi."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First PCSK9 antibody approved by the FDA, central to a Supreme Court patent case",
   "summary": "Alirocumab is a fully human monoclonal antibody that inhibits PCSK9, increasing LDL receptor recycling and lowering LDL cholesterol by about 45–60%. The ODYSSEY OUTCOMES trial showed it reduced cardiovascular events and deaths after acute coronary syndrome.",

@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Androgen synthesis inhibitor developed at London's Institute of Cancer Research",
   "summary": "Abiraterone acetate is a prodrug of abiraterone, which inhibits CYP17A1 and shuts down androgen production in the testes, adrenal glands and prostate tumour tissue. Taken with prednisone, it prolongs survival in metastatic castration-resistant and high-risk castration-sensitive prostate cancer.",

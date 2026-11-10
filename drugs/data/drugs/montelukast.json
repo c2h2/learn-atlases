@@ -34,7 +34,8 @@
     "note": "Optimised from earlier leukotriene D4 antagonists to allow once-daily oral dosing."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Once-daily oral leukotriene blocker for asthma and allergic rhinitis",
   "summary": "Montelukast is an oral antagonist of the cysteinyl leukotriene type 1 receptor. It is used as add-on or alternative controller therapy in asthma, for exercise-induced bronchoconstriction and for allergic rhinitis, and carries an FDA boxed warning about neuropsychiatric events.",

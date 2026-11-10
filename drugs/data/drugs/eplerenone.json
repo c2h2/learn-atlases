@@ -33,7 +33,8 @@
     "note": "A spironolactone derivative with a 9,11-epoxy group giving greater receptor selectivity."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Selective aldosterone antagonist with fewer hormonal side effects",
   "summary": "Eplerenone is a selective mineralocorticoid receptor antagonist with much lower affinity for androgen and progesterone receptors than spironolactone. It reduces mortality in heart failure after myocardial infarction and in mild heart failure with reduced ejection fraction, and treats hypertension.",

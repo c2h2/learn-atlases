@@ -38,6 +38,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Pangenotypic backbone of hepatitis C cures, famous for its $84,000 price",
   "summary": "Sofosbuvir is a nucleotide analogue that inhibits the hepatitis C virus polymerase and is active against all genotypes. In combinations such as ledipasvir/sofosbuvir and sofosbuvir/velpatasvir it cures more than 95% of patients with a short, interferon-free oral course. Its US launch price of $84,000 for 12 weeks set off a global debate about drug pricing.",

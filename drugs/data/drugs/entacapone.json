@@ -36,6 +36,7 @@
   },
   "generic": true,
   "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "COMT inhibitor that extends each levodopa dose in Parkinson's disease",
   "summary": "Entacapone is a reversible, mainly peripheral COMT inhibitor taken with levodopa to reduce end-of-dose 'wearing off' in Parkinson's disease. It was developed by Orion Pharma and is also part of the triple combination Stalevo.",

@@ -40,7 +40,8 @@
     "note": "Dextroamphetamine was covalently linked to the amino acid L-lysine to create an inactive prodrug intended to give smooth, long-lasting release and reduce misuse by injection or snorting."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription; controlled (US Schedule II)",
   "tagline": "Lysine-linked amphetamine prodrug for ADHD and binge eating disorder",
   "summary": "Lisdexamfetamine is an inactive prodrug in which dextroamphetamine is bonded to L-lysine. After absorption, red blood cells cleave it to release dextroamphetamine gradually, giving a long, smooth effect. It is approved for ADHD and was the first drug approved for moderate-to-severe binge eating disorder.",

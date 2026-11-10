@@ -40,6 +40,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Rationally designed pyrimidine analogue, backbone of colorectal and GI cancer regimens",
   "summary": "Fluorouracil (5-FU) is a pyrimidine analogue that is converted inside cells into nucleotides that inhibit thymidylate synthase and are misincorporated into RNA and DNA. It is the backbone of FOLFOX, FOLFIRI and FOLFIRINOX regimens for gastrointestinal cancers and is also used for breast and head and neck cancer and topically for skin lesions.",

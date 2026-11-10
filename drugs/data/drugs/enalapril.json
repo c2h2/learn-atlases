@@ -40,6 +40,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "ACE inhibitor prodrug that first proved survival benefit in heart failure",
   "summary": "Enalapril is an ACE inhibitor prodrug converted in the liver to enalaprilat. The CONSENSUS and SOLVD trials established that ACE inhibition reduces mortality in heart failure, and enalapril is widely used for hypertension and heart failure.",

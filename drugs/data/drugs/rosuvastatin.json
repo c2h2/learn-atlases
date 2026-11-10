@@ -35,7 +35,8 @@
     "note": "Licensed to AstraZeneca in 1998 for worldwide development."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "High-potency hydrophilic statin with minimal CYP metabolism",
   "summary": "Rosuvastatin is a synthetic, hydrophilic, high-potency statin that lowers LDL cholesterol by up to around 50–60% at the highest dose. The JUPITER trial showed it reduced cardiovascular events in people with normal LDL but elevated C-reactive protein.",

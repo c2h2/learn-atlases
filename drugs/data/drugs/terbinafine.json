@@ -36,6 +36,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription (oral); topical forms OTC in many countries",
   "tagline": "Allylamine antifungal for fungal nails and athlete's foot, blocking squalene epoxidase",
   "summary": "Terbinafine is an allylamine antifungal that blocks squalene epoxidase, an early step in ergosterol synthesis. It is highly active against dermatophytes and accumulates in skin, hair and nails, making it a first-line oral treatment for fungal nail infections and tinea capitis and a widely used topical treatment for athlete's foot. The spread of resistant Trichophyton indotineae is a growing concern.",

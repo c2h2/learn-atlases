@@ -38,6 +38,7 @@
   },
   "generic": true,
   "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Oral prodrug that delivers three to five times more aciclovir to the blood",
   "summary": "Valaciclovir is the L-valine ester of aciclovir. After absorption it is rapidly converted to aciclovir, giving blood levels several times higher than oral aciclovir itself and allowing less frequent dosing. It is used for herpes zoster, genital herpes, cold sores and CMV prophylaxis after transplantation.",

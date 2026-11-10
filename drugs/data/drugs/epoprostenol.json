@@ -36,7 +36,8 @@
     "note": "Identified as an unstable arachidonic-acid metabolite produced by blood-vessel walls that inhibits platelet aggregation and dilates vessels."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (specialist use)",
   "tagline": "Continuously infused prostacyclin, the first drug shown to prolong survival in PAH",
   "summary": "Epoprostenol is synthetic prostacyclin, a natural vasodilator and inhibitor of platelet aggregation. Given by continuous intravenous infusion, it was the first therapy approved for pulmonary arterial hypertension and the first shown in a randomised trial to improve survival.",

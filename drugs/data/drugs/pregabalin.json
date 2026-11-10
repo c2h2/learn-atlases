@@ -36,7 +36,8 @@
     "note": "Synthesised as an activator of glutamate decarboxylase; its anticonvulsant activity led to licensing to Parke-Davis."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription; controlled (US Schedule V, UK Class C)",
   "tagline": "Gabapentinoid for neuropathic pain, fibromyalgia, seizures and anxiety",
   "summary": "Pregabalin is a more potent, more predictably absorbed successor to gabapentin. It is approved for neuropathic pain, fibromyalgia (US), focal seizures and, in Europe, generalised anxiety disorder, and is controlled because of misuse potential.",

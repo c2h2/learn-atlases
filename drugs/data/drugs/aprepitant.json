@@ -39,7 +39,8 @@
     "note": "A morpholine NK1 antagonist that crosses the blood–brain barrier, first explored as an antidepressant."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "First NK1 antagonist, preventing delayed chemotherapy-induced vomiting",
   "summary": "Aprepitant blocks the neurokinin-1 receptor for substance P. Added to a 5-HT3 antagonist and dexamethasone, it reduces both acute and delayed chemotherapy-induced nausea and vomiting, and an IV form is used for postoperative nausea.",

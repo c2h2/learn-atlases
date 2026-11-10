@@ -34,7 +34,8 @@
     "note": "A steroidal 7α-alkylsulfinyl oestradiol analogue designed as a 'pure' anti-oestrogen without the partial agonism of tamoxifen."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Injectable pure anti-oestrogen that degrades the oestrogen receptor",
   "summary": "Fulvestrant is a steroidal oestrogen receptor antagonist that also triggers degradation of the receptor, without the partial agonist activity of tamoxifen. Given by monthly intramuscular injection, it is used in hormone-receptor-positive advanced breast cancer in postmenopausal women, alone or with CDK4/6, PI3K or AKT inhibitors.",

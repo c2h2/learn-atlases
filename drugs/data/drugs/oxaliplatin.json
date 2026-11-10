@@ -36,6 +36,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "DACH-platinum drug at the heart of FOLFOX for colorectal cancer",
   "summary": "Oxaliplatin is a third-generation platinum compound whose bulky diaminocyclohexane ligand creates DNA adducts not recognised by mismatch repair, giving activity in colorectal cancer where cisplatin is inactive. Combined with fluorouracil and folinic acid (FOLFOX) or capecitabine (CAPOX), it is standard for colon cancer and other gastrointestinal tumours.",

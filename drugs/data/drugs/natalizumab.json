@@ -36,7 +36,8 @@
     "note": "Humanised IgG4 antibody against the α4 subunit of α4β1 and α4β7 integrins."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (restricted distribution)",
   "tagline": "Highly effective α4 integrin blocker for MS, limited by the risk of PML",
   "summary": "Natalizumab is a humanised monoclonal antibody against α4 integrin that prevents immune cells from crossing the blood–brain barrier. It is among the most effective treatments for relapsing multiple sclerosis and is also used in Crohn's disease, but carries a risk of progressive multifocal leukoencephalopathy (PML).",

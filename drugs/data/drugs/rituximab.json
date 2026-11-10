@@ -43,6 +43,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "The first monoclonal antibody approved for cancer; depletes CD20-positive B cells",
   "summary": "Rituximab is a chimeric monoclonal antibody against CD20, a surface protein on most B cells. Approved in 1997 for non-Hodgkin lymphoma, it became a backbone of lymphoma and CLL therapy and is also used in rheumatoid arthritis, ANCA-associated vasculitis and pemphigus vulgaris.",

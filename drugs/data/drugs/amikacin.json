@@ -34,6 +34,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Enzyme-resistant aminoglycoside for resistant Gram-negatives and mycobacteria",
   "summary": "Amikacin is a semi-synthetic aminoglycoside derived from kanamycin A. Its side chain protects it from most aminoglycoside-modifying enzymes, so it often remains active against gentamicin- and tobramycin-resistant Gram-negative bacteria and is used against nontuberculous mycobacteria.",

@@ -45,6 +45,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Founding antifolate of cancer chemotherapy and anchor drug for rheumatoid arthritis",
   "summary": "Methotrexate is a folic acid analogue that blocks dihydrofolate reductase, starving cells of the folate cofactors needed to make DNA. At high doses it treats leukaemias, lymphomas, osteosarcoma and choriocarcinoma; at low weekly doses it is the first-line disease-modifying drug for rheumatoid arthritis and is used in psoriasis and other immune diseases.",

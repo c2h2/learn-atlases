@@ -38,6 +38,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Amoxicillin protected by clavulanic acid, the first clinical beta-lactamase inhibitor",
   "summary": "Co-amoxiclav combines amoxicillin with clavulanic acid, a beta-lactamase inhibitor from Streptomyces clavuligerus. The combination restores activity against many beta-lactamase-producing strains of Staphylococcus aureus, Haemophilus, Moraxella, Enterobacterales and anaerobes.",

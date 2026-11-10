@@ -37,7 +37,8 @@
     "note": "Identified through phenotypic screening for p15INK4b inducers; later shown to be an allosteric MEK inhibitor."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First approved MEK inhibitor, the partner drug of dabrafenib",
   "summary": "Trametinib is a reversible, allosteric inhibitor of MEK1 and MEK2, the kinases downstream of RAF in the MAPK pathway. It was the first MEK inhibitor approved, and is used mainly with dabrafenib in BRAF V600-mutant melanoma, lung, thyroid and other cancers, and in paediatric low-grade glioma.",

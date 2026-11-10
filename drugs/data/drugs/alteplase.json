@@ -39,6 +39,7 @@
   },
   "generic": false,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription (hospital use)",
   "tagline": "Clot-dissolving enzyme for acute ischaemic stroke, the first big recombinant drug hit",
   "summary": "Alteplase is recombinant human tissue plasminogen activator, an enzyme that converts plasminogen to plasmin to dissolve fibrin clots. It is used for acute ischaemic stroke within a narrow time window, for pulmonary embolism and myocardial infarction, and in low doses to unblock catheters.",

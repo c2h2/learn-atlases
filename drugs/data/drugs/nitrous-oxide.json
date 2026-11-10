@@ -33,6 +33,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "medical gas; non-medical possession controlled in some countries (UK Class C since 2023)",
   "tagline": "Oldest anaesthetic gas still in use, now also a public health concern",
   "summary": "Nitrous oxide is an inhaled gas with analgesic and weak anaesthetic properties. Mixed with oxygen it is used for labour pain, emergency and dental analgesia, and as an adjunct to general anaesthesia. Recreational misuse can inactivate vitamin B12 and cause serious neurological damage, and the gas is a potent greenhouse gas.",

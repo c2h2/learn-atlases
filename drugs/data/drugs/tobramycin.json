@@ -36,7 +36,8 @@
     "note": "A component of the nebramycin complex produced by Streptomyces tenebrarius."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "Aminoglycoside favoured for Pseudomonas, notably inhaled in cystic fibrosis",
   "summary": "Tobramycin is an aminoglycoside from Streptomyces tenebrarius with slightly greater intrinsic activity against Pseudomonas aeruginosa than gentamicin. Inhaled tobramycin is a standard suppressive therapy for chronic Pseudomonas infection in cystic fibrosis, and eye drops are widely used for bacterial conjunctivitis.",

@@ -39,7 +39,8 @@
     "note": "Developed from Gilead's capsid-targeting programme; extremely high potency and low solubility allow a twice-yearly depot."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First HIV capsid inhibitor; two injections a year prevent HIV almost completely",
   "summary": "Lenacapavir is the first HIV-1 capsid inhibitor, potent enough to be given as a subcutaneous injection only twice a year. It was first approved for multidrug-resistant HIV and in 2025 for pre-exposure prophylaxis, after trials in which it prevented nearly all infections. Science named it the 2024 Breakthrough of the Year.",

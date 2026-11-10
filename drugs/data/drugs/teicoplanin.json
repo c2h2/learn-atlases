@@ -29,7 +29,8 @@
     "note": "Isolated from the actinomycete Actinoplanes teichomyceticus; a lipoglycopeptide mixture of several components."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (hospital)",
   "tagline": "Long-acting lipoglycopeptide alternative to vancomycin, used outside the US",
   "summary": "Teicoplanin is a glycopeptide related to vancomycin, discovered by Lepetit in the 1970s. Its long half-life permits once-daily IV or IM dosing, and it is widely used in Europe for MRSA and other Gram-positive infections and for surgical prophylaxis.",

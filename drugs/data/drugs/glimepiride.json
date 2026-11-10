@@ -34,7 +34,8 @@
     "note": "Developed as a once-daily sulfonylurea."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "Once-daily sulfonylurea that stimulates insulin release from beta cells",
   "summary": "Glimepiride is a long-acting sulfonylurea taken once daily to lower blood glucose in type 2 diabetes by stimulating insulin secretion. It is widely used, often combined with metformin, and is available as low-cost generics.",

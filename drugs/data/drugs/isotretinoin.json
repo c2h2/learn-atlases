@@ -41,7 +41,8 @@
     "note": "A small trial showed prolonged remission of severe nodulocystic acne with oral 13-cis-retinoic acid, which Roche had made earlier while studying retinoids."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription; restricted (iPLEDGE REMS in the US)",
   "tagline": "Highly effective acne retinoid and potent teratogen under strict controls",
   "summary": "Isotretinoin is an oral retinoid that shrinks sebaceous glands and can produce long-term remission of severe acne. It is one of the most potent known human teratogens, so it is supplied under strict pregnancy prevention programmes such as iPLEDGE. It is also used in maintenance therapy for high-risk neuroblastoma.",

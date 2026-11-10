@@ -34,7 +34,8 @@
     "note": "Isolated from Streptomyces roseosporus from a soil sample from Mount Ararat, Turkey; Lilly halted development because of muscle toxicity."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (hospital)",
   "tagline": "Membrane-active lipopeptide for MRSA bacteraemia and right-sided endocarditis",
   "summary": "Daptomycin is a cyclic lipopeptide that rapidly kills Gram-positive bacteria, including MRSA and vancomycin-resistant enterococci, by disrupting the cell membrane. It is used for complicated skin infections and S. aureus bacteraemia, but not for pneumonia because lung surfactant inactivates it.",

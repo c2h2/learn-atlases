@@ -38,7 +38,8 @@
     "note": "Part of Takeda's thiazolidinedione programme that began with ciglitazone."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "An insulin sensitiser that switches on PPAR-gamma in fat, muscle and liver",
   "summary": "Pioglitazone is a thiazolidinedione that improves insulin sensitivity by activating the nuclear receptor PPAR-gamma. It lowers glucose durably with low hypoglycaemia risk and benefits fatty liver disease, but causes fluid retention and weight gain and is contraindicated in heart failure.",

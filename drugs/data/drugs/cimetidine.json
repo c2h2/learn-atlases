@@ -36,7 +36,8 @@
     "note": "A product of rational drug design, developed from histamine via burimamide and metiamide."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "OTC and prescription",
   "tagline": "First H2 blocker and first 'blockbuster', born of rational drug design",
   "summary": "Cimetidine was the first histamine H2-receptor antagonist and transformed peptic ulcer treatment in the late 1970s. A landmark of rational drug design, it became the first drug to reach US$1 billion in annual sales, but its inhibition of liver enzymes causes many drug interactions.",

@@ -36,7 +36,8 @@
     "note": "A thiazolecarboxylic acid that inhibits both oxidised and reduced forms of xanthine oxidase."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "A non-purine gout drug whose cardiovascular death signal earned a boxed warning",
   "summary": "Febuxostat is a selective non-purine inhibitor of xanthine oxidase that lowers serum uric acid in chronic gout. It is more potent than standard-dose allopurinol and is mainly hepatically cleared, but the CARES trial found higher cardiovascular death than allopurinol, so in the US it is reserved for patients who cannot use allopurinol.",

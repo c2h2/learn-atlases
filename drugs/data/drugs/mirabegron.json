@@ -35,7 +35,8 @@
     "note": "A selective beta3-agonist developed for bladder relaxation without antimuscarinic side effects."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "First beta3-agonist for overactive bladder, avoiding anticholinergic effects",
   "summary": "Mirabegron is a beta3-adrenergic receptor agonist that relaxes the bladder detrusor during filling. It treats overactive bladder in adults and neurogenic detrusor overactivity in children, with less dry mouth and constipation than antimuscarinics, but can raise blood pressure.",

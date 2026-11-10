@@ -39,6 +39,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "First-line drug for trigeminal neuralgia and a long-standing focal epilepsy treatment",
   "summary": "Carbamazepine is a tricyclic anticonvulsant used for focal and tonic-clonic seizures, trigeminal neuralgia and bipolar disorder. It is effective and inexpensive but induces its own metabolism and many drug interactions, and carries a genetic risk of severe skin reactions.",

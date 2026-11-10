@@ -38,6 +38,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "alternative",
   "rx_status": "prescription",
   "tagline": "The first approved SGLT2 inhibitor, now used for heart failure and kidney disease",
   "summary": "Dapagliflozin was the first SGLT2 inhibitor approved anywhere (EU, 2012). Originally a glucose-lowering drug, it was shown in DAPA-HF, DAPA-CKD and DELIVER to reduce heart-failure events and kidney disease progression in people with or without diabetes.",

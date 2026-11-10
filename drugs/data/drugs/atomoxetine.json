@@ -35,7 +35,8 @@
     "note": "Originally developed as tomoxetine, an antidepressant candidate, in the late 1970s and 1980s; renamed atomoxetine to avoid confusion with tamoxifen."
   },
   "generic": true,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription (not a controlled substance)",
   "tagline": "The first non-stimulant ADHD medicine, a selective noradrenaline reuptake inhibitor",
   "summary": "Atomoxetine is a selective noradrenaline reuptake inhibitor and the first non-stimulant approved for ADHD. It is not a controlled substance and has low misuse potential, making it an option when stimulants are unsuitable, although its onset is slower and effect size somewhat smaller.",

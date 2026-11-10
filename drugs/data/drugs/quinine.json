@@ -37,6 +37,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "The original antimalarial from cinchona bark, now a backup for severe malaria",
   "summary": "Quinine is an alkaloid from the bark of the cinchona tree and was the first effective chemical treatment for malaria. It has largely been replaced by artemisinin derivatives, but it remains an alternative for severe malaria when artesunate is not available and for uncomplicated malaria in some settings. Cinchonism and serious blood disorders limit its use; it is no longer recommended for leg cramps.",

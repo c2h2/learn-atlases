@@ -41,6 +41,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "First beta-blocker eye drop for glaucoma, also used after heart attack",
   "summary": "Timolol is a non-selective beta-adrenergic antagonist. As eye drops it lowers intraocular pressure by reducing aqueous humour production and was a mainstay of glaucoma therapy from 1978. Orally it was one of the first beta blockers shown to reduce death after myocardial infarction. Systemic absorption from drops can cause bronchospasm and bradycardia.",

@@ -41,6 +41,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Landmark kinase inhibitor that turned chronic myeloid leukaemia into a manageable disease",
   "summary": "Imatinib was the first rationally designed tyrosine kinase inhibitor to transform a cancer's outlook: it blocks the BCR-ABL fusion kinase that drives chronic myeloid leukaemia (CML), giving most patients near-normal life expectancy. It also inhibits KIT and PDGFR and is standard therapy for gastrointestinal stromal tumours (GIST).",

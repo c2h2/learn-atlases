@@ -35,7 +35,8 @@
     "note": "Designed in 2020 from Pfizer's earlier SARS-CoV-1 protease inhibitor lufotrelvir as an orally available covalent nitrile inhibitor."
   },
   "generic": false,
-  "who_essential": null,
+  "who_essential": false,
+  "who_status": "not-listed",
   "rx_status": "prescription",
   "tagline": "Oral COVID-19 antiviral pairing a protease blocker with a ritonavir booster",
   "summary": "Nirmatrelvir/ritonavir is an oral COVID-19 treatment that combines nirmatrelvir, an inhibitor of the SARS-CoV-2 main protease, with low-dose ritonavir to slow its breakdown. In unvaccinated high-risk adults it cut hospitalisation or death by about 89% when started early. Its many drug interactions through CYP3A inhibition are a major practical issue.",

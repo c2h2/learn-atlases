@@ -36,6 +36,7 @@
   },
   "generic": true,
   "who_essential": true,
+  "who_status": "listed",
   "rx_status": "prescription",
   "tagline": "Single-dose oral treatment for cystitis and an IV option for resistant bacteria",
   "summary": "Fosfomycin is a small phosphonic acid antibiotic discovered in 1969 that blocks the first committed step of peptidoglycan synthesis. Oral fosfomycin trometamol is given as a single dose for uncomplicated cystitis, and intravenous fosfomycin is used, usually in combination, for multidrug-resistant infections in Europe and elsewhere.",
