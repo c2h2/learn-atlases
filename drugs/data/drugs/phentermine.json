@@ -1,36 +1,136 @@
 {
   "slug": "phentermine",
   "name": "Phentermine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "phentermine hydrochloride",
+    "alpha,alpha-dimethylphenethylamine"
+  ],
+  "brands": [
+    "Adipex-P",
+    "Lomaira",
+    "Duromine",
+    "Qsymia (with topiramate)"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Sympathomimetic amine anorectic (amphetamine-related)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet or capsule once daily in the morning, labelled for short-term use (a few weeks) in the US",
+  "targets": [
+    "SLC6A2 (NET, releaser)",
+    "TAAR1",
+    "SLC6A3 (DAT, weaker)"
+  ],
+  "origin": "synthetic",
+  "originator": "various US manufacturers (1950s)",
+  "owner": "generic (many); Vivus (Qsymia)",
+  "first_approval": {
+    "year": 1959,
+    "agency": "FDA",
+    "country": "US",
+    "brand": null
+  },
+  "discovery": {
+    "year": null,
+    "by": null,
+    "note": "A substituted phenethylamine structurally related to amphetamine, developed as an appetite suppressant in the 1950s."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "controlled (US Schedule IV)",
+  "tagline": "The most prescribed US weight-loss drug, an amphetamine relative that curbs appetite",
+  "summary": "Phentermine is a sympathomimetic amine that suppresses appetite and is used short-term for obesity together with diet and exercise. It is the most widely prescribed anti-obesity medicine in the United States, is a controlled substance because of its relationship to amphetamine, and is combined with topiramate in Qsymia.",
+  "mechanism": [
+    "Phentermine is taken up into nerve terminals and causes release of noradrenaline (and to a lesser extent dopamine and serotonin) from presynaptic stores, partly via TAAR1 agonism and reversal of monoamine transporters.",
+    "Increased noradrenergic signalling in the hypothalamus reduces appetite and may increase energy expenditure. Peripheral sympathetic effects raise heart rate and blood pressure, which limit its use in cardiovascular disease."
+  ],
+  "uses": [
+    "Short-term adjunct for exogenous obesity (BMI ≥30, or ≥27 with risk factors)",
+    "Chronic weight management in combination with topiramate (Qsymia)"
+  ],
+  "history": [
+    {
+      "year": 1959,
+      "title": "FDA approval",
+      "detail": "Phentermine is approved in the US as an appetite suppressant."
+    },
+    {
+      "year": 1973,
+      "title": "Controlled substance",
+      "detail": "Phentermine is placed in Schedule IV of the US Controlled Substances Act."
+    },
+    {
+      "year": 1992,
+      "title": "Fen-phen",
+      "detail": "A study by Weintraub popularises the combination of fenfluramine and phentermine ('fen-phen')."
+    },
+    {
+      "year": 1997,
+      "title": "Fenfluramine withdrawn",
+      "detail": "Fenfluramine and dexfenfluramine are withdrawn after reports of valvular heart disease; phentermine remains available."
+    },
+    {
+      "year": 2012,
+      "title": "Qsymia",
+      "detail": "FDA approves phentermine/topiramate extended-release (Qsymia) for chronic weight management."
+    },
+    {
+      "year": 2016,
+      "title": "Lomaira",
+      "detail": "A low-dose 8 mg tablet (Lomaira) is approved, allowing dosing up to three times daily."
+    }
+  ],
+  "pk": {
+    "half_life": "about 20 h",
+    "bioavailability": "high",
+    "metabolism": "limited hepatic metabolism (p-hydroxylation, N-oxidation)",
+    "excretion": "mainly unchanged in urine (pH-dependent)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "dry mouth",
+      "insomnia",
+      "palpitations",
+      "raised blood pressure",
+      "constipation",
+      "restlessness"
+    ],
+    "serious": [
+      "primary pulmonary hypertension (rare)",
+      "valvular heart disease (reported, mainly with fenfluramine combination)",
+      "tachyarrhythmia",
+      "psychosis",
+      "abuse and dependence"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "In 'fen-phen' it was fenfluramine, not phentermine, that was withdrawn for heart valve damage in 1997.",
+    "Phentermine is a Schedule IV controlled substance in the US."
+  ],
+  "related": [
+    "orlistat",
+    "amphetamine",
+    "topiramate",
+    "liraglutide",
+    "semaglutide"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Phentermine",
+      "url": "https://en.wikipedia.org/wiki/Phentermine"
+    },
+    {
+      "title": "DailyMed: Phentermine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=phentermine"
+    },
+    {
+      "title": "Wikipedia: Fenfluramine/phentermine",
+      "url": "https://en.wikipedia.org/wiki/Fenfluramine/phentermine"
+    }
+  ],
+  "stage": "written"
 }

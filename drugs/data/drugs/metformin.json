@@ -1,36 +1,155 @@
 {
   "slug": "metformin",
   "name": "Metformin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "dimethylbiguanide",
+    "metformin hydrochloride",
+    "LA-6023"
+  ],
+  "brands": [
+    "Glucophage",
+    "Glucophage XR",
+    "Fortamet",
+    "Glumetza",
+    "Riomet"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Biguanide",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet (immediate- or extended-release) or solution, with meals",
+  "targets": [
+    "Mitochondrial complex I (proposed)",
+    "GPD2 (mitochondrial glycerophosphate dehydrogenase, proposed)",
+    "AMPK (indirect activation)"
+  ],
+  "origin": "synthetic",
+  "originator": "Laboratoires Aron (Jean Sterne), France",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1957,
+    "agency": null,
+    "country": "France",
+    "brand": "Glucophage"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1922,
+    "by": "Emil Werner and James Bell (synthesis); Jean Sterne (clinical use, 1957)",
+    "note": "A guanidine derivative related to compounds in French lilac (Galega officinalis), a traditional remedy for diabetic symptoms."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "The first-line pill for type 2 diabetes, descended from a medieval herbal remedy",
+  "summary": "Metformin is a biguanide that lowers blood glucose mainly by reducing glucose production in the liver, without causing weight gain or hypoglycaemia on its own. It is the most widely prescribed glucose-lowering drug and is recommended first-line for type 2 diabetes in most guidelines.",
+  "mechanism": [
+    "Metformin is taken up into hepatocytes by the organic cation transporter OCT1 and accumulates in mitochondria, where it mildly inhibits respiratory chain complex I (and, in some studies, mitochondrial glycerophosphate dehydrogenase). The resulting change in cellular energy and redox state suppresses hepatic gluconeogenesis.",
+    "The energy shift activates AMP-activated protein kinase (AMPK), which contributes to reduced lipogenesis and improved insulin sensitivity, although part of the glucose-lowering effect is AMPK-independent. Metformin also acts in the gut, increasing glucose utilisation, GLP-1 secretion and altering the microbiome."
+  ],
+  "uses": [
+    "Type 2 diabetes mellitus (monotherapy or combination, adults and children 10 years and older)",
+    "Prevention of type 2 diabetes in high-risk adults (guideline use)",
+    "Polycystic ovary syndrome (off-label)"
+  ],
+  "history": [
+    {
+      "year": 1922,
+      "title": "Synthesis",
+      "detail": "Emil Werner and James Bell synthesise dimethylbiguanide in Dublin."
+    },
+    {
+      "year": 1957,
+      "title": "Clinical introduction",
+      "detail": "French physician Jean Sterne reports its use in diabetes and names it Glucophage ('glucose eater')."
+    },
+    {
+      "year": 1958,
+      "title": "UK availability",
+      "detail": "Metformin becomes available in the United Kingdom."
+    },
+    {
+      "year": 1978,
+      "title": "Phenformin withdrawn",
+      "detail": "The related biguanide phenformin is withdrawn in the US because of lactic acidosis, delaying metformin's US entry."
+    },
+    {
+      "year": 1994,
+      "title": "FDA approval",
+      "detail": "FDA approves Bristol-Myers Squibb's Glucophage in December 1994."
+    },
+    {
+      "year": 1998,
+      "title": "UKPDS",
+      "detail": "The UK Prospective Diabetes Study reports reduced diabetes-related outcomes with metformin in overweight patients."
+    },
+    {
+      "year": 2002,
+      "title": "Diabetes Prevention Program",
+      "detail": "Metformin reduces progression to diabetes by 31% versus placebo in high-risk adults (NEJM 2002)."
+    },
+    {
+      "year": 2016,
+      "title": "Renal labelling eased",
+      "detail": "FDA revises labelling to allow use with mild-to-moderate kidney impairment based on eGFR."
+    },
+    {
+      "year": 2020,
+      "title": "NDMA recalls",
+      "detail": "FDA asks manufacturers to recall some extended-release metformin lots with excess N-nitrosodimethylamine."
+    }
+  ],
+  "pk": {
+    "half_life": "about 5 h (plasma)",
+    "bioavailability": "50–60% (fasting)",
+    "metabolism": "not metabolised",
+    "excretion": "unchanged in urine by tubular secretion"
+  },
+  "safety": {
+    "common": [
+      "diarrhoea",
+      "nausea",
+      "abdominal discomfort",
+      "metallic taste"
+    ],
+    "serious": [
+      "lactic acidosis (rare)",
+      "vitamin B12 deficiency with long-term use"
+    ],
+    "boxed_warning": "Lactic acidosis: postmarketing cases, sometimes fatal, especially with renal impairment, hypoxia, excess alcohol, contrast imaging or hepatic impairment."
+  },
+  "facts": [
+    "Metformin is on the WHO Model List of Essential Medicines.",
+    "It is being studied in ageing research (the proposed TAME trial).",
+    "Metformin is not metabolised and is excreted unchanged by the kidneys."
+  ],
+  "related": [
+    "glibenclamide",
+    "sitagliptin",
+    "empagliflozin",
+    "pioglitazone",
+    "insulin-glargine",
+    "semaglutide"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Metformin",
+      "url": "https://en.wikipedia.org/wiki/Metformin"
+    },
+    {
+      "title": "DailyMed: Metformin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=metformin"
+    },
+    {
+      "title": "Diabetes Prevention Program Research Group (NEJM 2002)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa012512"
+    },
+    {
+      "title": "Wikipedia: Biguanide",
+      "url": "https://en.wikipedia.org/wiki/Biguanide"
+    }
+  ],
+  "stage": "written"
 }

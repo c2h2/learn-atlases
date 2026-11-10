@@ -1,36 +1,144 @@
 {
   "slug": "liraglutide",
   "name": "Liraglutide",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "NN2211",
+    "NN8022"
+  ],
+  "brands": [
+    "Victoza",
+    "Saxenda",
+    "Xultophy (with insulin degludec)"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "GLP-1 receptor agonist",
+  "modality": "peptide",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "subcutaneous injection once daily (up to 1.8 mg for diabetes; 3.0 mg for weight management)",
+  "targets": [
+    "GLP1R"
+  ],
+  "origin": "biotech",
+  "originator": "Novo Nordisk",
+  "owner": "Novo Nordisk; generics in the US",
+  "first_approval": {
+    "year": 2009,
+    "agency": "EMA",
+    "country": "EU",
+    "brand": "Victoza"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Novo Nordisk (team including Lotte Bjerre Knudsen)",
+    "note": "Human GLP-1 analogue with Arg34 substitution and a C16 palmitic acid attached at Lys26, enabling albumin binding."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Once-daily GLP-1 analogue, the first shown to cut cardiovascular events (LEADER)",
+  "summary": "Liraglutide is a once-daily GLP-1 receptor agonist with 97% homology to human GLP-1, used for type 2 diabetes (Victoza) and chronic weight management (Saxenda). In the LEADER trial it reduced major cardiovascular events and death, and it was the first GLP-1 agonist approved for obesity.",
+  "mechanism": [
+    "Liraglutide activates the GLP-1 receptor, increasing glucose-dependent insulin secretion, lowering glucagon and slowing gastric emptying. A fatty-acid chain lets it bind albumin and self-associate into heptamers at the injection site, protecting it from DPP-4 and renal clearance and giving a half-life of about 13 hours.",
+    "Through brain GLP-1 receptors in the hypothalamus and hindbrain the drug also reduces appetite and food intake, and it slows gastric emptying; together these effects produce weight loss."
+  ],
+  "uses": [
+    "Type 2 diabetes mellitus (adults and children 10 years and older)",
+    "Reduction of major adverse cardiovascular events in type 2 diabetes with cardiovascular disease",
+    "Chronic weight management in obesity or overweight with comorbidity (Saxenda; adults and adolescents 12+)"
+  ],
+  "history": [
+    {
+      "year": 2009,
+      "title": "EU approval",
+      "detail": "The European Commission approves Victoza in June 2009."
+    },
+    {
+      "year": 2010,
+      "title": "FDA approval",
+      "detail": "FDA approves Victoza in January 2010 with a boxed warning about thyroid C-cell tumours."
+    },
+    {
+      "year": 2014,
+      "title": "Saxenda for obesity",
+      "detail": "FDA approves liraglutide 3.0 mg (Saxenda) for chronic weight management in December 2014."
+    },
+    {
+      "year": 2016,
+      "title": "LEADER",
+      "detail": "LEADER shows a 13% reduction in major cardiovascular events versus placebo (NEJM 2016)."
+    },
+    {
+      "year": 2017,
+      "title": "Cardiovascular indication",
+      "detail": "FDA adds a cardiovascular risk-reduction indication to Victoza."
+    },
+    {
+      "year": 2019,
+      "title": "Paediatric use",
+      "detail": "Victoza becomes the first non-insulin drug approved for type 2 diabetes in children since metformin."
+    },
+    {
+      "year": 2024,
+      "title": "US generics",
+      "detail": "An authorised generic of Victoza launches in mid-2024 and FDA approves the first generic liraglutide in December 2024."
+    }
+  ],
+  "pk": {
+    "half_life": "about 13 h",
+    "bioavailability": "about 55% after SC injection",
+    "metabolism": "proteolysis by DPP-4 and neutral endopeptidases",
+    "excretion": "metabolites in urine and faeces; no intact drug"
+  },
+  "safety": {
+    "common": [
+      "nausea",
+      "diarrhoea",
+      "vomiting",
+      "constipation",
+      "decreased appetite",
+      "headache"
+    ],
+    "serious": [
+      "acute pancreatitis",
+      "gallbladder disease",
+      "acute kidney injury from dehydration",
+      "hypoglycaemia with insulin or sulfonylureas",
+      "suicidal ideation monitoring (Saxenda)"
+    ],
+    "boxed_warning": "Risk of thyroid C-cell tumours: caused C-cell tumours in rodents; contraindicated with personal or family history of medullary thyroid carcinoma or MEN 2."
+  },
+  "facts": [
+    "Saxenda (2014) was the first GLP-1 receptor agonist approved for chronic weight management.",
+    "Liraglutide was the first GLP-1 agonist to show cardiovascular benefit in a dedicated outcomes trial (LEADER, 2016)."
+  ],
+  "related": [
+    "semaglutide",
+    "exenatide",
+    "dulaglutide",
+    "tirzepatide",
+    "insulin-degludec",
+    "orlistat"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Liraglutide",
+      "url": "https://en.wikipedia.org/wiki/Liraglutide"
+    },
+    {
+      "title": "DailyMed: Liraglutide labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=liraglutide"
+    },
+    {
+      "title": "EMA EPAR: Victoza",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/victoza"
+    },
+    {
+      "title": "Marso SP et al. LEADER (NEJM 2016)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1603827"
+    }
+  ],
+  "stage": "written"
 }

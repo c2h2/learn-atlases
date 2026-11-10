@@ -1,36 +1,123 @@
 {
   "slug": "teplizumab",
   "name": "Teplizumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "teplizumab-mzwv",
+    "hOKT3γ1(Ala-Ala)",
+    "MGA031",
+    "PRV-031"
+  ],
+  "brands": [
+    "Tzield"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Anti-CD3 monoclonal antibody (immunomodulator)",
+  "modality": "antibody",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion once daily for 14 consecutive days",
+  "targets": [
+    "CD3E"
+  ],
+  "origin": "biotech",
+  "originator": "Jeffrey Bluestone and Kevan Herold (academic); MacroGenics, then Provention Bio",
+  "owner": "Sanofi",
+  "first_approval": {
+    "year": 2022,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Tzield"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Jeffrey Bluestone, Kevan Herold and colleagues",
+    "note": "A humanised, Fc-engineered (non-FcR-binding) version of the anti-CD3 antibody OKT3, designed to reduce cytokine release."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "The first drug to delay the onset of type 1 diabetes",
+  "summary": "Teplizumab is a humanised anti-CD3 monoclonal antibody given as a 14-day infusion course. In November 2022 it became the first therapy approved to delay the onset of clinical (stage 3) type 1 diabetes in people aged 8 and older who already have stage 2 disease, delaying diagnosis by about two years in the pivotal trial.",
+  "mechanism": [
+    "Teplizumab binds the CD3ε component of the T-cell receptor complex. Its Fc region is mutated so it does not bind Fc receptors, reducing T-cell activation and cytokine release compared with the original OKT3.",
+    "Binding partially activates and modulates CD8+ T cells, leading to an 'exhausted' phenotype and expansion of regulatory-like cells, which slows the autoimmune destruction of insulin-producing beta cells."
+  ],
+  "uses": [
+    "Delay of onset of stage 3 type 1 diabetes in adults and children aged 8 years and older with stage 2 type 1 diabetes"
+  ],
+  "history": [
+    {
+      "year": 2002,
+      "title": "New-onset trial",
+      "detail": "Herold and colleagues report that an anti-CD3 antibody preserves C-peptide in new-onset type 1 diabetes (NEJM 2002)."
+    },
+    {
+      "year": 2019,
+      "title": "TN-10 prevention trial",
+      "detail": "In relatives at high risk, teplizumab delays clinical type 1 diabetes by a median of about two years (NEJM 2019)."
+    },
+    {
+      "year": 2021,
+      "title": "Complete response letter",
+      "detail": "FDA declines approval pending pharmacokinetic comparability data."
+    },
+    {
+      "year": 2022,
+      "title": "FDA approval",
+      "detail": "FDA approves Tzield on 17 November 2022."
+    },
+    {
+      "year": 2023,
+      "title": "PROTECT and Sanofi acquisition",
+      "detail": "PROTECT shows preservation of beta-cell function in newly diagnosed patients; Sanofi acquires Provention Bio."
+    }
+  ],
+  "pk": {
+    "half_life": "about 4 days",
+    "bioavailability": "100% (IV)",
+    "metabolism": "catabolism to peptides",
+    "excretion": "not renally cleared intact"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "lymphopenia",
+      "rash",
+      "leukopenia",
+      "headache"
+    ],
+    "serious": [
+      "cytokine release syndrome",
+      "serious infections",
+      "lymphopenia",
+      "hypersensitivity reactions",
+      "reduced vaccine response (live vaccines avoided)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Teplizumab is the first approved disease-modifying therapy for autoimmune type 1 diabetes.",
+    "Stage 2 type 1 diabetes is defined by two or more islet autoantibodies with abnormal glucose tolerance but no symptoms."
+  ],
+  "related": [
+    "insulin-human",
+    "insulin-glargine",
+    "abatacept"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Teplizumab",
+      "url": "https://en.wikipedia.org/wiki/Teplizumab"
+    },
+    {
+      "title": "DailyMed: Teplizumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=teplizumab"
+    },
+    {
+      "title": "Herold KC et al. TN-10 teplizumab trial (NEJM 2019)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1902226"
+    }
+  ],
+  "stage": "written"
 }

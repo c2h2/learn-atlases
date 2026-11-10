@@ -1,36 +1,138 @@
 {
   "slug": "levothyroxine",
   "name": "Levothyroxine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "L-thyroxine",
+    "T4",
+    "levothyroxine sodium"
+  ],
+  "brands": [
+    "Synthroid",
+    "Eltroxin",
+    "Euthyrox",
+    "Levoxyl",
+    "Tirosint",
+    "Unithroid",
+    "Levothyrox"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Thyroid hormone (synthetic T4)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "oral tablet, capsule or solution once daily on an empty stomach; IV for myxoedema coma",
+  "targets": [
+    "THRA",
+    "THRB"
+  ],
+  "origin": "synthetic",
+  "originator": "Glaxo / Flint Laboratories (synthetic sodium salt, 1950s)",
+  "owner": "generic (many); AbbVie (Synthroid), Merck KGaA (Euthyrox)",
+  "first_approval": {
+    "year": 1955,
+    "agency": null,
+    "country": "US",
+    "brand": "Synthroid"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1914,
+    "by": "Edward Kendall (isolation, Mayo Clinic); Charles Harington and George Barger (structure and synthesis, 1926–1927)",
+    "note": "Thyroxine was isolated from thyroid tissue on Christmas Day 1914 and synthesised in London in 1927."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Synthetic thyroid hormone, one of the most prescribed medicines in the world",
+  "summary": "Levothyroxine is synthetic thyroxine (T4), identical to the main hormone secreted by the thyroid gland, and is the standard treatment for hypothyroidism. It is among the most prescribed drugs in the US and has a narrow therapeutic index, so doses are titrated by TSH measurement.",
+  "mechanism": [
+    "Levothyroxine is converted in peripheral tissues by deiodinases DIO1 and DIO2 into the active hormone triiodothyronine (T3). T3 enters cells and binds nuclear thyroid hormone receptors (TRα and TRβ), which act as ligand-dependent transcription factors on thyroid-response elements.",
+    "This regulates genes controlling basal metabolic rate, thermogenesis, cardiac contractility, lipid metabolism and growth and development. Replacement restores normal T4/T3 levels and suppresses pituitary TSH through negative feedback."
+  ],
+  "uses": [
+    "Primary, secondary and tertiary hypothyroidism",
+    "Congenital hypothyroidism",
+    "TSH suppression in well-differentiated thyroid cancer",
+    "Myxoedema coma (IV)"
+  ],
+  "history": [
+    {
+      "year": 1914,
+      "title": "Thyroxine isolated",
+      "detail": "Edward Kendall isolates crystalline thyroxine at the Mayo Clinic."
+    },
+    {
+      "year": 1927,
+      "title": "Synthesis",
+      "detail": "Charles Harington and George Barger determine the structure and synthesise thyroxine."
+    },
+    {
+      "year": 1949,
+      "title": "Sodium salt",
+      "detail": "Chalmers and colleagues at Glaxo prepare orally active levothyroxine sodium, leading to commercial tablets in the 1950s."
+    },
+    {
+      "year": 1955,
+      "title": "Synthroid",
+      "detail": "Synthroid is introduced in the US."
+    },
+    {
+      "year": 1997,
+      "title": "FDA requires NDAs",
+      "detail": "FDA declares oral levothyroxine a new drug because of inconsistent potency and requires approved applications."
+    },
+    {
+      "year": 2000,
+      "title": "First approved NDA",
+      "detail": "Unithroid becomes the first FDA-approved levothyroxine NDA; Synthroid is approved in 2002."
+    },
+    {
+      "year": 2017,
+      "title": "French formulation crisis",
+      "detail": "A reformulated Levothyrox in France triggers thousands of adverse-event reports and public controversy."
+    }
+  ],
+  "pk": {
+    "half_life": "6–7 days (euthyroid)",
+    "bioavailability": "40–80% (reduced by food, coffee, calcium, iron, PPIs)",
+    "metabolism": "deiodination to T3 and reverse T3, glucuronidation and sulfation in liver",
+    "excretion": "urine and faeces"
+  },
+  "safety": {
+    "common": [
+      "symptoms of overtreatment: palpitations, tremor, weight loss, heat intolerance, insomnia"
+    ],
+    "serious": [
+      "atrial fibrillation and angina with overdose",
+      "reduced bone mineral density with prolonged overtreatment",
+      "adrenal crisis if started before corticosteroid in adrenal insufficiency"
+    ],
+    "boxed_warning": "Not for obesity or weight loss: larger doses may cause serious or life-threatening toxicity, especially with sympathomimetic amines."
+  },
+  "facts": [
+    "Levothyroxine has for years been among the two or three most prescribed drugs in the United States.",
+    "Kendall isolated thyroxine on 25 December 1914 and later shared the 1950 Nobel Prize for work on adrenal hormones."
+  ],
+  "related": [
+    "methimazole",
+    "propylthiouracil",
+    "hydrocortisone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Levothyroxine",
+      "url": "https://en.wikipedia.org/wiki/Levothyroxine"
+    },
+    {
+      "title": "DailyMed: Levothyroxine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=levothyroxine"
+    },
+    {
+      "title": "Wikipedia: Thyroid hormones",
+      "url": "https://en.wikipedia.org/wiki/Thyroid_hormones"
+    }
+  ],
+  "stage": "written"
 }

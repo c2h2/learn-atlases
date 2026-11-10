@@ -1,36 +1,139 @@
 {
   "slug": "octreotide",
   "name": "Octreotide",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "SMS 201-995",
+    "octreotide acetate"
+  ],
+  "brands": [
+    "Sandostatin",
+    "Sandostatin LAR",
+    "Mycapssa",
+    "Bynfezia"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Somatostatin analogue",
+  "modality": "peptide",
+  "routes": [
+    "sc",
+    "iv",
+    "im",
+    "oral"
+  ],
+  "route_note": "SC injection 2–3 times daily or IV infusion; monthly IM depot (LAR); oral delayed-release capsules for acromegaly",
+  "targets": [
+    "SSTR2",
+    "SSTR5",
+    "SSTR3"
+  ],
+  "origin": "synthetic",
+  "originator": "Sandoz (now Novartis)",
+  "owner": "Novartis; generic (many); Chiesi (Mycapssa)",
+  "first_approval": {
+    "year": 1988,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Sandostatin"
+  },
+  "discovery": {
+    "year": 1982,
+    "by": "Wilfried Bauer and colleagues, Sandoz",
+    "note": "An eight-amino-acid cyclic peptide retaining the active core of somatostatin, with a half-life of hours rather than minutes."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "A stable somatostatin mimic for acromegaly, carcinoid syndrome and variceal bleeding",
+  "summary": "Octreotide is a synthetic eight-amino-acid analogue of somatostatin that inhibits secretion of growth hormone and many gut hormones. It treats acromegaly and the symptoms of neuroendocrine tumours, slows their growth, and is widely used to control bleeding from oesophageal varices.",
+  "mechanism": [
+    "Octreotide binds somatostatin receptors, mainly SSTR2 and SSTR5, which are Gi-coupled receptors that lower cAMP and calcium influx and inhibit hormone exocytosis. In the pituitary it reduces growth hormone and therefore IGF-1; in the gut and pancreas it suppresses serotonin, gastrin, VIP, insulin and glucagon.",
+    "It also reduces splanchnic blood flow and portal pressure, and has antiproliferative effects on neuroendocrine tumour cells. Oral Mycapssa uses a transient permeability enhancer to allow intestinal absorption."
+  ],
+  "uses": [
+    "Acromegaly",
+    "Symptoms of carcinoid tumours (flushing, diarrhoea) and VIPomas",
+    "Gastroenteropancreatic neuroendocrine tumours (antiproliferative, LAR)",
+    "Acute oesophageal variceal bleeding (off-label in US, standard practice)",
+    "Prevention of complications after pancreatic surgery (some countries)"
+  ],
+  "history": [
+    {
+      "year": 1973,
+      "title": "Somatostatin discovered",
+      "detail": "Roger Guillemin's group isolates somatostatin, whose very short half-life limits therapeutic use."
+    },
+    {
+      "year": 1982,
+      "title": "Octreotide synthesised",
+      "detail": "Bauer and colleagues at Sandoz report SMS 201-995."
+    },
+    {
+      "year": 1988,
+      "title": "FDA approval",
+      "detail": "FDA approves Sandostatin injection."
+    },
+    {
+      "year": 1998,
+      "title": "Monthly depot",
+      "detail": "Sandostatin LAR depot is approved in the US."
+    },
+    {
+      "year": 2009,
+      "title": "PROMID",
+      "detail": "The PROMID trial shows octreotide LAR prolongs time to progression in midgut neuroendocrine tumours."
+    },
+    {
+      "year": 2020,
+      "title": "Oral octreotide",
+      "detail": "FDA approves Mycapssa, the first oral somatostatin analogue, for acromegaly in June 2020."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1.7–1.9 h after SC/IV dosing",
+    "bioavailability": "100% SC; under 1% oral (enhanced with Mycapssa formulation)",
+    "metabolism": "hepatic",
+    "excretion": "about 32% unchanged in urine"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "diarrhoea",
+      "abdominal pain",
+      "flatulence",
+      "nausea",
+      "injection-site pain"
+    ],
+    "serious": [
+      "gallstones and cholecystitis",
+      "hypo- or hyperglycaemia",
+      "bradycardia and conduction abnormalities",
+      "hypothyroidism",
+      "vitamin B12 malabsorption"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Native somatostatin has a half-life of 1–3 minutes, compared with nearly 2 hours for octreotide.",
+    "Radiolabelled octreotide analogues are used for imaging and for peptide receptor radionuclide therapy of neuroendocrine tumours."
+  ],
+  "related": [
+    "somatropin",
+    "lutetium-177-vipivotide-tetraxetan",
+    "cabergoline"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Octreotide",
+      "url": "https://en.wikipedia.org/wiki/Octreotide"
+    },
+    {
+      "title": "DailyMed: Octreotide labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=octreotide"
+    },
+    {
+      "title": "Wikipedia: Somatostatin",
+      "url": "https://en.wikipedia.org/wiki/Somatostatin"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,165 @@
 {
   "slug": "insulin-human",
   "name": "Insulin human",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "regular insulin",
+    "soluble insulin",
+    "recombinant human insulin",
+    "NPH insulin (isophane, suspension form)"
+  ],
+  "brands": [
+    "Humulin",
+    "Novolin",
+    "Actrapid",
+    "Insulatard",
+    "Insuman",
+    "Afrezza (inhaled)"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Insulin (short-acting and intermediate-acting human insulin)",
+  "modality": "protein",
+  "routes": [
+    "sc",
+    "iv",
+    "im",
+    "inhaled"
+  ],
+  "route_note": "subcutaneous injection (regular or NPH); IV infusion of regular insulin in hospital, e.g. diabetic ketoacidosis; inhaled powder in some markets",
+  "targets": [
+    "INSR"
+  ],
+  "origin": "biotech",
+  "originator": "Genentech / Eli Lilly (recombinant); University of Toronto (insulin)",
+  "owner": "Novo Nordisk, Eli Lilly, Sanofi and others",
+  "first_approval": {
+    "year": 1982,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Humulin"
+  },
+  "discovery": {
+    "year": 1921,
+    "by": "Frederick Banting, Charles Best, James Collip, John Macleod (University of Toronto)",
+    "note": "Insulin was isolated from pancreas in 1921; recombinant human insulin was produced in E. coli by Genentech in 1978."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription (some human insulins OTC in the US)",
+  "tagline": "The hormone itself: recombinant human insulin, the first biotech drug ever approved",
+  "summary": "Insulin human is recombinant insulin with the same amino-acid sequence as the hormone made by pancreatic beta cells. It is used as regular (soluble, short-acting) insulin and as NPH (isophane, intermediate-acting) suspension to treat type 1 and type 2 diabetes. Humulin, approved in 1982, was the first medicine made by recombinant DNA technology.",
+  "mechanism": [
+    "Insulin binds the insulin receptor (INSR), a receptor tyrosine kinase on liver, muscle and fat cells. Receptor autophosphorylation recruits insulin receptor substrate proteins and activates the PI3K–AKT pathway, which moves GLUT4 glucose transporters to the cell surface in muscle and fat, stimulates glycogen, lipid and protein synthesis, and suppresses hepatic glucose output, lipolysis and ketogenesis.",
+    "Regular insulin forms hexamers in the vial that must dissociate into monomers after subcutaneous injection, so onset is about 30 minutes and peak 2–4 hours. NPH insulin is crystallised with protamine and zinc, which slows absorption and gives an intermediate profile (peak about 4–10 hours)."
+  ],
+  "uses": [
+    "Type 1 diabetes mellitus",
+    "Type 2 diabetes mellitus requiring insulin",
+    "Diabetic ketoacidosis and hyperglycaemic hyperosmolar state (IV regular insulin)",
+    "Gestational diabetes and diabetes in pregnancy",
+    "Hyperkalaemia (with glucose, off-label in many labels but standard practice)"
+  ],
+  "history": [
+    {
+      "year": 1921,
+      "title": "Isolation in Toronto",
+      "detail": "Banting and Best, with Macleod and Collip, extract an active anti-diabetic substance from canine and later bovine pancreas."
+    },
+    {
+      "year": 1922,
+      "title": "First patient",
+      "detail": "Leonard Thompson, aged 14, receives insulin at Toronto General Hospital in January 1922."
+    },
+    {
+      "year": 1923,
+      "title": "Nobel Prize and commercial supply",
+      "detail": "Banting and Macleod receive the Nobel Prize; Eli Lilly launches Iletin and Nordisk begins production in Denmark."
+    },
+    {
+      "year": 1946,
+      "title": "NPH insulin",
+      "detail": "Nordisk introduces neutral protamine Hagedorn insulin, an intermediate-acting formulation."
+    },
+    {
+      "year": 1955,
+      "title": "Sequence determined",
+      "detail": "Frederick Sanger completes the amino-acid sequence of insulin, the first protein sequenced (Nobel Prize 1958)."
+    },
+    {
+      "year": 1978,
+      "title": "Recombinant synthesis",
+      "detail": "Genentech scientists produce human insulin chains in E. coli."
+    },
+    {
+      "year": 1982,
+      "title": "Humulin approved",
+      "detail": "FDA approves Eli Lilly's Humulin, the first recombinant DNA drug."
+    },
+    {
+      "year": 2014,
+      "title": "Inhaled insulin",
+      "detail": "FDA approves Afrezza, an inhaled regular human insulin powder."
+    },
+    {
+      "year": 2020,
+      "title": "Transition to biologics",
+      "detail": "In March 2020 US insulins move from drug to biologic licences, opening a biosimilar pathway."
+    },
+    {
+      "year": 2023,
+      "title": "US price cuts",
+      "detail": "Lilly, Novo Nordisk and Sanofi announce large US list-price cuts and out-of-pocket caps for insulins."
+    }
+  ],
+  "pk": {
+    "half_life": "about 5–6 minutes IV; action after SC dose lasts 6–8 h (regular) or 12–18 h (NPH)",
+    "bioavailability": "variable after SC injection",
+    "metabolism": "degraded by insulin-degrading enzyme mainly in liver and kidney",
+    "excretion": "renal (filtered and degraded)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "hypoglycaemia",
+      "weight gain",
+      "injection-site reactions",
+      "lipodystrophy"
+    ],
+    "serious": [
+      "severe hypoglycaemia",
+      "hypokalaemia",
+      "fluid retention with thiazolidinediones"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Humulin (1982) was the first approved medicine produced by recombinant DNA technology.",
+    "Insulin was the first protein to have its amino-acid sequence determined (Sanger, 1955).",
+    "The Toronto discoverers sold the insulin patent to the University of Toronto for one dollar each."
+  ],
+  "related": [
+    "insulin-glargine",
+    "insulin-lispro",
+    "insulin-degludec",
+    "metformin",
+    "semaglutide"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Insulin (medication)",
+      "url": "https://en.wikipedia.org/wiki/Insulin_(medication)"
+    },
+    {
+      "title": "Wikipedia: Regular insulin",
+      "url": "https://en.wikipedia.org/wiki/Regular_insulin"
+    },
+    {
+      "title": "DailyMed: Insulin human labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=insulin%20human"
+    },
+    {
+      "title": "Wikipedia: History of insulin",
+      "url": "https://en.wikipedia.org/wiki/History_of_insulin"
+    }
+  ],
+  "stage": "written"
 }

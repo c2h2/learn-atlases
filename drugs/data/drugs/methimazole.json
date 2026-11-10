@@ -1,36 +1,126 @@
 {
   "slug": "methimazole",
   "name": "Methimazole",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "thiamazole (INN)",
+    "1-methyl-2-mercaptoimidazole"
+  ],
+  "brands": [
+    "Tapazole",
+    "Thyrozol",
+    "Strumazol"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Thionamide antithyroid agent",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once daily; carbimazole is a prodrug converted to methimazole",
+  "targets": [
+    "TPO (thyroid peroxidase)"
+  ],
+  "origin": "synthetic",
+  "originator": "Eli Lilly (Tapazole)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1950,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Tapazole"
+  },
+  "discovery": {
+    "year": null,
+    "by": "built on Edwin Astwood's thiourea work (1943)",
+    "note": "Developed after Astwood showed that thiourea and thiouracil treat hyperthyroidism."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "First-choice antithyroid drug that blocks thyroid hormone synthesis",
+  "summary": "Methimazole (INN thiamazole) is a thionamide that inhibits thyroid peroxidase and so reduces production of thyroid hormones. It is the preferred antithyroid drug for Graves' disease and toxic nodular goitre except in the first trimester of pregnancy and in thyroid storm.",
+  "mechanism": [
+    "Methimazole is concentrated in the thyroid and inhibits thyroid peroxidase, the enzyme that oxidises iodide and incorporates it into tyrosine residues of thyroglobulin and couples iodotyrosines to form T4 and T3.",
+    "Because stored hormone is not affected, clinical improvement takes several weeks. Unlike propylthiouracil, methimazole does not significantly block peripheral conversion of T4 to T3. It may also have modest immunomodulatory effects in Graves' disease."
+  ],
+  "uses": [
+    "Graves' disease (hyperthyroidism)",
+    "Toxic multinodular goitre and toxic adenoma",
+    "Preparation for thyroidectomy or radioiodine therapy"
+  ],
+  "history": [
+    {
+      "year": 1943,
+      "title": "Thionamide principle",
+      "detail": "Edwin Astwood reports treating hyperthyroidism with thiourea and thiouracil."
+    },
+    {
+      "year": 1950,
+      "title": "Tapazole approved",
+      "detail": "FDA approves methimazole as Tapazole (Eli Lilly)."
+    },
+    {
+      "year": 1953,
+      "title": "Carbimazole",
+      "detail": "Carbimazole, a prodrug of methimazole, is introduced in the UK."
+    },
+    {
+      "year": 2010,
+      "title": "Preferred over PTU",
+      "detail": "After FDA's liver-safety warning on propylthiouracil, guidelines recommend methimazole as first-line except in early pregnancy."
+    },
+    {
+      "year": 2019,
+      "title": "Pancreatitis warning",
+      "detail": "European regulators add acute pancreatitis as a rare adverse reaction to thiamazole and carbimazole labels."
+    }
+  ],
+  "pk": {
+    "half_life": "4–6 h (intrathyroidal action lasts longer, allowing once-daily dosing)",
+    "bioavailability": "about 93%",
+    "metabolism": "hepatic",
+    "excretion": "urine"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "rash",
+      "pruritus",
+      "arthralgia",
+      "nausea",
+      "taste disturbance"
+    ],
+    "serious": [
+      "agranulocytosis",
+      "cholestatic hepatotoxicity",
+      "congenital malformations with first-trimester exposure (e.g. aplasia cutis)",
+      "ANCA-associated vasculitis",
+      "acute pancreatitis"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Agranulocytosis occurs in roughly 0.2–0.5% of patients, usually in the first three months.",
+    "Carbimazole, used in the UK and elsewhere, is rapidly converted to methimazole."
+  ],
+  "related": [
+    "propylthiouracil",
+    "levothyroxine",
+    "prednisolone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Thiamazole",
+      "url": "https://en.wikipedia.org/wiki/Thiamazole"
+    },
+    {
+      "title": "DailyMed: Methimazole labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=methimazole"
+    },
+    {
+      "title": "Wikipedia: Antithyroid agent",
+      "url": "https://en.wikipedia.org/wiki/Antithyroid_agent"
+    }
+  ],
+  "stage": "written"
 }

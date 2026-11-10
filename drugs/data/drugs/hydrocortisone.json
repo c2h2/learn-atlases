@@ -1,36 +1,149 @@
 {
   "slug": "hydrocortisone",
   "name": "Hydrocortisone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "cortisol",
+    "hydrocortisone sodium succinate",
+    "hydrocortisone acetate"
+  ],
+  "brands": [
+    "Cortef",
+    "Solu-Cortef",
+    "Plenadren",
+    "Alkindi",
+    "Efmody",
+    "Anusol-HC"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Corticosteroid (glucocorticoid with mineralocorticoid activity)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "im",
+    "topical",
+    "rectal"
+  ],
+  "route_note": "oral tablets/granules for replacement; IV or IM in adrenal crisis and shock; creams, ointments and enemas for local inflammation",
+  "targets": [
+    "NR3C1 (glucocorticoid receptor)",
+    "NR3C2 (mineralocorticoid receptor)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Merck & Co. / Upjohn (industrial synthesis, 1950s)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1952,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Cortef"
+  },
+  "discovery": {
+    "year": 1936,
+    "by": "Edward Kendall and Tadeus Reichstein (adrenal cortex steroids)",
+    "note": "Cortisol ('compound F') was isolated from adrenal glands in the 1930s; industrial production used microbial 11-hydroxylation developed at Upjohn in 1952."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription; low-strength topical OTC in many countries",
+  "tagline": "The body's own stress hormone, used for adrenal replacement and as an anti-inflammatory",
+  "summary": "Hydrocortisone is the pharmaceutical form of cortisol, the main glucocorticoid made by the adrenal cortex. It is the drug of choice for replacement in adrenal insufficiency and congenital adrenal hyperplasia, is given intravenously in adrenal crisis, and is used topically and rectally for inflammatory skin and bowel conditions.",
+  "mechanism": [
+    "Glucocorticoids diffuse into cells and bind the cytoplasmic glucocorticoid receptor (NR3C1). The activated receptor moves to the nucleus, where it switches on anti-inflammatory genes (transactivation, e.g. annexin-1, IκBα, MKP-1) and represses pro-inflammatory transcription factors such as NF-κB and AP-1 (transrepression), reducing cytokines, prostaglandins, adhesion molecules and immune-cell activation.",
+    "At physiological doses hydrocortisone restores cortisol's roles in glucose homeostasis, vascular tone and stress response. Unlike synthetic glucocorticoids it has appreciable mineralocorticoid (sodium-retaining) activity at higher doses, because it binds the mineralocorticoid receptor in tissues where 11β-HSD2 is saturated."
+  ],
+  "uses": [
+    "Primary and secondary adrenal insufficiency (Addison's disease)",
+    "Congenital adrenal hyperplasia",
+    "Adrenal crisis and acute severe illness in steroid-dependent patients",
+    "Septic shock (adjunct)",
+    "Inflammatory skin conditions (topical)",
+    "Ulcerative colitis and proctitis (rectal)",
+    "Allergic emergencies and asthma exacerbation (IV)"
+  ],
+  "history": [
+    {
+      "year": 1936,
+      "title": "Adrenal steroids isolated",
+      "detail": "Kendall at the Mayo Clinic and Reichstein in Basel isolate a series of adrenocortical steroids including compound F (cortisol)."
+    },
+    {
+      "year": 1948,
+      "title": "Cortisone in arthritis",
+      "detail": "Philip Hench gives cortisone to a patient with rheumatoid arthritis with dramatic effect."
+    },
+    {
+      "year": 1950,
+      "title": "Nobel Prize",
+      "detail": "Kendall, Hench and Reichstein share the Nobel Prize in Physiology or Medicine."
+    },
+    {
+      "year": 1952,
+      "title": "Microbial synthesis",
+      "detail": "Upjohn chemists Durey Peterson and Herbert Murray use a Rhizopus mould to 11α-hydroxylate progesterone, making corticosteroids cheap to produce."
+    },
+    {
+      "year": 2011,
+      "title": "Modified-release replacement",
+      "detail": "Plenadren, a once-daily dual-release hydrocortisone, is approved in the EU."
+    },
+    {
+      "year": 2018,
+      "title": "Paediatric granules",
+      "detail": "Alkindi granules for children with adrenal insufficiency are approved in the EU; FDA approval follows in 2020."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1.5–2 h (plasma); biological 8–12 h",
+    "bioavailability": "about 95% oral",
+    "metabolism": "hepatic (11β-HSD, 5α/5β-reductases, CYP3A4)",
+    "excretion": "urine as conjugated metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "hyperglycaemia",
+      "fluid retention and hypertension",
+      "mood change and insomnia",
+      "increased appetite and weight gain",
+      "dyspepsia"
+    ],
+    "serious": [
+      "adrenal suppression and adrenal crisis on abrupt withdrawal",
+      "infections (including opportunistic)",
+      "osteoporosis and fractures",
+      "avascular necrosis",
+      "cataract and glaucoma",
+      "Cushingoid features",
+      "peptic ulceration",
+      "psychosis"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Hydrocortisone is chemically identical to cortisol made by the adrenal glands.",
+    "The 1950 Nobel Prize recognised the discovery of adrenal cortex hormones and their effects."
+  ],
+  "related": [
+    "prednisolone",
+    "prednisone",
+    "dexamethasone",
+    "fludrocortisone",
+    "levothyroxine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Hydrocortisone",
+      "url": "https://en.wikipedia.org/wiki/Hydrocortisone"
+    },
+    {
+      "title": "DailyMed: Hydrocortisone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=hydrocortisone"
+    },
+    {
+      "title": "EMA EPAR: Plenadren",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/plenadren"
+    }
+  ],
+  "stage": "written"
 }

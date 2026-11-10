@@ -1,36 +1,141 @@
 {
   "slug": "dapagliflozin",
   "name": "Dapagliflozin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BMS-512148",
+    "dapagliflozin propanediol"
+  ],
+  "brands": [
+    "Farxiga",
+    "Forxiga",
+    "Xigduo (with metformin)",
+    "Qtern (with saxagliptin)"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Sodium-glucose cotransporter 2 (SGLT2) inhibitor (gliflozin)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet 10 mg once daily (5 mg in some diabetes regimens)",
+  "targets": [
+    "SLC5A2 (SGLT2)"
+  ],
+  "origin": "synthetic",
+  "originator": "Bristol-Myers Squibb (with AstraZeneca)",
+  "owner": "AstraZeneca; generics in some markets",
+  "first_approval": {
+    "year": 2012,
+    "agency": "EMA",
+    "country": "EU",
+    "brand": "Forxiga"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Bristol-Myers Squibb",
+    "note": "A C-aryl glucoside designed for metabolic stability, following the natural product phlorizin."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "The first approved SGLT2 inhibitor, now used for heart failure and kidney disease",
+  "summary": "Dapagliflozin was the first SGLT2 inhibitor approved anywhere (EU, 2012). Originally a glucose-lowering drug, it was shown in DAPA-HF, DAPA-CKD and DELIVER to reduce heart-failure events and kidney disease progression in people with or without diabetes.",
+  "mechanism": [
+    "The sodium-glucose cotransporter 2 (SGLT2, gene SLC5A2) in the early proximal tubule reabsorbs about 90% of glucose filtered by the kidney. Inhibiting it causes urinary loss of roughly 60–80 g of glucose per day, lowering blood glucose independently of insulin and producing a mild calorie deficit and osmotic diuresis.",
+    "Increased sodium delivery to the macula densa restores tubuloglomerular feedback and reduces glomerular hyperfiltration, which is thought to underlie the kidney protection seen in trials. Natriuresis, lower blood pressure, a shift toward ketone use and other haemodynamic and metabolic effects are proposed to explain heart-failure benefits that occur even without diabetes."
+  ],
+  "uses": [
+    "Type 2 diabetes mellitus (adults and children 10 years and older)",
+    "Heart failure (reduced and preserved ejection fraction)",
+    "Chronic kidney disease at risk of progression"
+  ],
+  "history": [
+    {
+      "year": 2012,
+      "title": "First SGLT2 approval",
+      "detail": "The European Commission approves Forxiga in November 2012."
+    },
+    {
+      "year": 2014,
+      "title": "FDA approval",
+      "detail": "After a 2012 FDA advisory committee raised bladder and breast cancer questions, FDA approves Farxiga in January 2014."
+    },
+    {
+      "year": 2018,
+      "title": "DECLARE-TIMI 58",
+      "detail": "In 17,160 patients, dapagliflozin reduces cardiovascular death or HF hospitalisation."
+    },
+    {
+      "year": 2019,
+      "title": "DAPA-HF",
+      "detail": "Dapagliflozin reduces worsening HF or cardiovascular death in HFrEF, including patients without diabetes."
+    },
+    {
+      "year": 2020,
+      "title": "Heart failure approval; DAPA-CKD",
+      "detail": "FDA approves a HFrEF indication in May 2020; DAPA-CKD stops early for efficacy."
+    },
+    {
+      "year": 2021,
+      "title": "CKD approval",
+      "detail": "FDA approves dapagliflozin for chronic kidney disease in April 2021."
+    },
+    {
+      "year": 2022,
+      "title": "DELIVER",
+      "detail": "DELIVER shows benefit in HF with mildly reduced or preserved ejection fraction."
+    }
+  ],
+  "pk": {
+    "half_life": "about 12.9 h",
+    "bioavailability": "about 78%",
+    "metabolism": "mainly UGT1A9 to inactive dapagliflozin 3-O-glucuronide",
+    "excretion": "about 75% urine, 21% faeces (mostly as metabolites)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "genital mycotic infections",
+      "urinary tract infections",
+      "increased urination",
+      "back pain"
+    ],
+    "serious": [
+      "diabetic ketoacidosis (including euglycaemic)",
+      "necrotising fasciitis of the perineum (Fournier's gangrene)",
+      "volume depletion and hypotension",
+      "urosepsis and pyelonephritis",
+      "hypoglycaemia with insulin or sulfonylureas"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Forxiga was the world's first approved SGLT2 inhibitor (EU, November 2012).",
+    "DAPA-HF was the first trial to show an SGLT2 inhibitor benefits heart failure patients without diabetes."
+  ],
+  "related": [
+    "empagliflozin",
+    "canagliflozin",
+    "metformin",
+    "finerenone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Dapagliflozin",
+      "url": "https://en.wikipedia.org/wiki/Dapagliflozin"
+    },
+    {
+      "title": "DailyMed: Dapagliflozin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=dapagliflozin"
+    },
+    {
+      "title": "EMA EPAR: Forxiga",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/forxiga"
+    },
+    {
+      "title": "McMurray JJV et al. DAPA-HF (NEJM 2019)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1911303"
+    }
+  ],
+  "stage": "written"
 }

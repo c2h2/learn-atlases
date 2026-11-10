@@ -1,36 +1,120 @@
 {
   "slug": "glimepiride",
   "name": "Glimepiride",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "HOE 490"
+  ],
+  "brands": [
+    "Amaryl"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Sulfonylurea (second/third generation)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once daily with breakfast",
+  "targets": [
+    "ABCC8 (SUR1)",
+    "KCNJ11 (Kir6.2)"
+  ],
+  "origin": "synthetic",
+  "originator": "Hoechst",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1995,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Amaryl"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Hoechst AG",
+    "note": "Developed as a once-daily sulfonylurea."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Once-daily sulfonylurea that stimulates insulin release from beta cells",
+  "summary": "Glimepiride is a long-acting sulfonylurea taken once daily to lower blood glucose in type 2 diabetes by stimulating insulin secretion. It is widely used, often combined with metformin, and is available as low-cost generics.",
+  "mechanism": [
+    "Glimepiride binds the SUR1 subunit of ATP-sensitive potassium channels in pancreatic beta cells, closing the channels and depolarising the membrane. Calcium influx through voltage-gated channels then triggers insulin secretion.",
+    "Its binding kinetics differ from glibenclamide (faster association and dissociation from SUR1), which may partly explain a somewhat lower hypoglycaemia rate in some comparisons."
+  ],
+  "uses": [
+    "Type 2 diabetes mellitus, as monotherapy or with metformin, insulin or other agents"
+  ],
+  "history": [
+    {
+      "year": 1970,
+      "title": "UGDP study",
+      "detail": "The University Group Diabetes Program reports excess cardiovascular mortality with tolbutamide, the origin of the class special warning carried by US sulfonylurea labels."
+    },
+    {
+      "year": 1995,
+      "title": "FDA approval",
+      "detail": "FDA approves Hoechst's Amaryl in November 1995."
+    },
+    {
+      "year": 2005,
+      "title": "Generic entry",
+      "detail": "Generic glimepiride becomes available in the US."
+    },
+    {
+      "year": 2019,
+      "title": "CAROLINA trial",
+      "detail": "CAROLINA shows linagliptin non-inferior to glimepiride for cardiovascular outcomes, supporting glimepiride's cardiovascular safety."
+    },
+    {
+      "year": 2022,
+      "title": "GRADE study",
+      "detail": "The NIH-funded GRADE study compares glimepiride, sitagliptin, liraglutide and glargine added to metformin; glimepiride is intermediate in durability."
+    }
+  ],
+  "pk": {
+    "half_life": "5–9 h",
+    "bioavailability": "about 100%",
+    "metabolism": "hepatic CYP2C9 to M1 (active) and M2",
+    "excretion": "about 60% urine, 40% faeces as metabolites"
+  },
+  "safety": {
+    "common": [
+      "hypoglycaemia",
+      "dizziness",
+      "headache",
+      "nausea",
+      "weight gain"
+    ],
+    "serious": [
+      "severe hypoglycaemia",
+      "haemolytic anaemia in G6PD deficiency",
+      "hypersensitivity reactions"
+    ],
+    "boxed_warning": "US label carries the class special warning on increased cardiovascular mortality (UGDP study)."
+  },
+  "facts": [
+    "In the CAROLINA trial over 6,000 patients were followed for a median 6.3 years."
+  ],
+  "related": [
+    "glibenclamide",
+    "gliclazide",
+    "metformin",
+    "linagliptin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Glimepiride",
+      "url": "https://en.wikipedia.org/wiki/Glimepiride"
+    },
+    {
+      "title": "DailyMed: Glimepiride labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=glimepiride"
+    },
+    {
+      "title": "Wikipedia: Sulfonylurea",
+      "url": "https://en.wikipedia.org/wiki/Sulfonylurea"
+    }
+  ],
+  "stage": "written"
 }

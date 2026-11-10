@@ -1,36 +1,123 @@
 {
   "slug": "acarbose",
   "name": "Acarbose",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BAY g 5421"
+  ],
+  "brands": [
+    "Glucobay",
+    "Precose",
+    "Prandase"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Alpha-glucosidase inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet taken with the first bite of each main meal",
+  "targets": [
+    "MGAM (maltase-glucoamylase)",
+    "SI (sucrase-isomaltase)",
+    "AMY2A (pancreatic alpha-amylase)"
+  ],
+  "origin": "natural",
+  "originator": "Bayer",
+  "owner": "Bayer (Glucobay); generic (many)",
+  "first_approval": {
+    "year": 1990,
+    "agency": null,
+    "country": "Germany",
+    "brand": "Glucobay"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Bayer AG",
+    "note": "A pseudo-tetrasaccharide produced by fermentation of Actinoplanes bacteria, found in Bayer's screen for carbohydrate-digestion inhibitors."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "A bacterial sugar mimic that slows carbohydrate digestion in the gut",
+  "summary": "Acarbose is an alpha-glucosidase inhibitor that delays digestion of complex carbohydrates in the small intestine, blunting the rise in blood glucose after meals. It is widely used in China and parts of Asia; flatulence and bloating limit its use elsewhere.",
+  "mechanism": [
+    "Acarbose is a complex oligosaccharide that competitively and reversibly inhibits brush-border alpha-glucosidases (sucrase, maltase, glucoamylase, isomaltase) and pancreatic alpha-amylase. Starches and disaccharides are therefore broken down into absorbable monosaccharides more slowly and further along the intestine.",
+    "This flattens post-prandial glucose and insulin peaks. Undigested carbohydrate reaching the colon is fermented by bacteria, producing gas and the drug's typical gastrointestinal side effects. Very little acarbose is absorbed."
+  ],
+  "uses": [
+    "Type 2 diabetes mellitus, as adjunct to diet, alone or with other agents",
+    "Prevention of type 2 diabetes in impaired glucose tolerance (some countries)"
+  ],
+  "history": [
+    {
+      "year": 1977,
+      "title": "Discovery published",
+      "detail": "Bayer scientists led by Delf Schmidt describe alpha-glucosidase inhibitors of microbial origin, including acarbose."
+    },
+    {
+      "year": 1990,
+      "title": "Launch in Germany",
+      "detail": "Bayer introduces Glucobay."
+    },
+    {
+      "year": 1995,
+      "title": "FDA approval",
+      "detail": "FDA approves Precose in September 1995."
+    },
+    {
+      "year": 2002,
+      "title": "STOP-NIDDM",
+      "detail": "STOP-NIDDM shows acarbose reduces progression from impaired glucose tolerance to diabetes (Lancet 2002)."
+    },
+    {
+      "year": 2017,
+      "title": "ACE trial",
+      "detail": "The Acarbose Cardiovascular Evaluation in 6,522 Chinese patients with coronary disease finds no reduction in major cardiovascular events but less new diabetes."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2 h (absorbed fraction)",
+    "bioavailability": "<2% as active drug",
+    "metabolism": "degraded in the gut by bacteria and digestive enzymes",
+    "excretion": "mainly faeces; small fraction urine"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "flatulence",
+      "diarrhoea",
+      "abdominal pain",
+      "bloating"
+    ],
+    "serious": [
+      "elevated liver enzymes / hepatitis (rare)",
+      "pneumatosis cystoides intestinalis (rare)",
+      "ileus (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Hypoglycaemia during acarbose combination therapy should be treated with glucose (dextrose), not sucrose, because sucrose digestion is inhibited.",
+    "Acarbose is produced by fermentation of Actinoplanes bacteria."
+  ],
+  "related": [
+    "metformin",
+    "sitagliptin",
+    "orlistat"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Acarbose",
+      "url": "https://en.wikipedia.org/wiki/Acarbose"
+    },
+    {
+      "title": "DailyMed: Acarbose labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=acarbose"
+    },
+    {
+      "title": "Holman RR et al. Acarbose Cardiovascular Evaluation (Lancet Diabetes Endocrinol 2017)",
+      "url": "https://doi.org/10.1016/S2213-8587(17)30309-1"
+    }
+  ],
+  "stage": "written"
 }

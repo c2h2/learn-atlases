@@ -1,36 +1,133 @@
 {
   "slug": "teriparatide",
   "name": "Teriparatide",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "rhPTH(1-34)",
+    "LY333334"
+  ],
+  "brands": [
+    "Forteo",
+    "Forsteo",
+    "Terrosa",
+    "Movymia",
+    "Bonsity"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Parathyroid hormone analogue (anabolic bone agent)",
+  "modality": "peptide",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "subcutaneous injection 20 micrograms once daily from a pen, usually for up to 2 years",
+  "targets": [
+    "PTH1R"
+  ],
+  "origin": "biotech",
+  "originator": "Eli Lilly",
+  "owner": "Eli Lilly; biosimilars and follow-ons from others",
+  "first_approval": {
+    "year": 2002,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Forteo"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Eli Lilly",
+    "note": "Recombinant N-terminal 34-amino-acid fragment of human parathyroid hormone, which carries its full receptor activity."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "The first bone-building osteoporosis drug: intermittent parathyroid hormone",
+  "summary": "Teriparatide is the active 1–34 fragment of human parathyroid hormone. Given as a daily injection it stimulates new bone formation more than resorption, increasing bone density and reducing vertebral and non-vertebral fractures in severe osteoporosis.",
+  "mechanism": [
+    "Teriparatide binds the PTH/PTHrP type 1 receptor (PTH1R) on osteoblasts and osteocytes. Continuous high PTH, as in hyperparathyroidism, causes bone loss, but brief daily pulses preferentially activate osteoblasts, reduce osteoblast apoptosis and lower osteocyte sclerostin, producing an 'anabolic window' in which formation exceeds resorption.",
+    "It also increases renal calcium reabsorption, phosphate excretion and calcitriol synthesis, which can cause transient hypercalcaemia."
+  ],
+  "uses": [
+    "Postmenopausal osteoporosis at high fracture risk",
+    "Primary or hypogonadal osteoporosis in men at high fracture risk",
+    "Glucocorticoid-induced osteoporosis"
+  ],
+  "history": [
+    {
+      "year": 2001,
+      "title": "Pivotal trial",
+      "detail": "Neer and colleagues report that teriparatide reduces vertebral fractures by 65% (NEJM 2001)."
+    },
+    {
+      "year": 2002,
+      "title": "FDA approval",
+      "detail": "FDA approves Forteo in November 2002 with a boxed warning on osteosarcoma seen in rats."
+    },
+    {
+      "year": 2003,
+      "title": "EU approval",
+      "detail": "Forsteo is approved in the European Union."
+    },
+    {
+      "year": 2017,
+      "title": "Biosimilars in Europe",
+      "detail": "Terrosa and Movymia are approved as EU biosimilars."
+    },
+    {
+      "year": 2020,
+      "title": "Boxed warning removed",
+      "detail": "FDA removes the osteosarcoma boxed warning and the 2-year lifetime limit from the US label in November 2020."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1 h after SC injection",
+    "bioavailability": "about 95% after SC injection",
+    "metabolism": "non-specific proteolysis in liver",
+    "excretion": "renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "nausea",
+      "dizziness",
+      "leg cramps",
+      "arthralgia",
+      "injection-site reactions"
+    ],
+    "serious": [
+      "orthostatic hypotension after early doses",
+      "hypercalcaemia",
+      "urolithiasis",
+      "osteosarcoma (seen in rats; not confirmed in humans)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Teriparatide was the first approved osteoporosis drug that builds new bone rather than only slowing loss.",
+    "Osteosarcoma in rats given high lifelong doses led to a boxed warning that FDA removed in 2020."
+  ],
+  "related": [
+    "romosozumab",
+    "alendronate",
+    "denosumab",
+    "zoledronic-acid",
+    "calcitriol"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Teriparatide",
+      "url": "https://en.wikipedia.org/wiki/Teriparatide"
+    },
+    {
+      "title": "DailyMed: Teriparatide labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=teriparatide"
+    },
+    {
+      "title": "EMA EPAR: Forsteo",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/forsteo"
+    },
+    {
+      "title": "Neer RM et al. Effect of PTH(1-34) on fractures (NEJM 2001)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJM200105103441904"
+    }
+  ],
+  "stage": "written"
 }

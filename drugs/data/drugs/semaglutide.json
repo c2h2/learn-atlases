@@ -1,36 +1,164 @@
 {
   "slug": "semaglutide",
   "name": "Semaglutide",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "NN9535",
+    "NN9924 (oral)"
+  ],
+  "brands": [
+    "Ozempic",
+    "Wegovy",
+    "Rybelsus"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "GLP-1 receptor agonist",
+  "modality": "peptide",
+  "routes": [
+    "sc",
+    "oral"
+  ],
+  "route_note": "subcutaneous injection once weekly (Ozempic, Wegovy) or oral tablet once daily taken fasting with absorption enhancer SNAC (Rybelsus)",
+  "targets": [
+    "GLP1R"
+  ],
+  "origin": "biotech",
+  "originator": "Novo Nordisk",
+  "owner": "Novo Nordisk",
+  "first_approval": {
+    "year": 2017,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Ozempic"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Novo Nordisk",
+    "note": "Successor to liraglutide with Aib8 substitution for DPP-4 resistance and a C18 fatty diacid linker for strong albumin binding, giving a weekly half-life."
+  },
+  "generic": null,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Once-weekly GLP-1 drug for diabetes and obesity that reshaped medicine and markets",
+  "summary": "Semaglutide is a long-acting GLP-1 receptor agonist given weekly by injection or daily as a tablet. It lowers glucose and produces about 15% average weight loss at obesity doses, reduces cardiovascular events and kidney disease progression, and became one of the best-selling medicines in the world.",
+  "mechanism": [
+    "Semaglutide activates the GLP-1 receptor, increasing glucose-dependent insulin secretion, lowering glucagon and slowing gastric emptying. An alpha-aminoisobutyric acid at position 8 blocks DPP-4 cleavage and an octadecanedioic fatty diacid chain binds albumin strongly, giving a half-life of about one week.",
+    "Through brain GLP-1 receptors in the hypothalamus and hindbrain the drug also reduces appetite and food intake, and it slows gastric emptying; together these effects produce weight loss.",
+    "The oral tablet is co-formulated with sodium N-[8-(2-hydroxybenzoyl)amino]caprylate (SNAC), which locally raises gastric pH and aids absorption across the stomach lining; bioavailability is still only about 1%."
+  ],
+  "uses": [
+    "Type 2 diabetes mellitus (Ozempic, Rybelsus)",
+    "Reduction of major cardiovascular events in type 2 diabetes with CVD (Ozempic) and in obesity with CVD (Wegovy)",
+    "Chronic weight management in obesity or overweight with comorbidity (Wegovy, adults and adolescents 12+)",
+    "Reducing kidney disease progression in type 2 diabetes with CKD (Ozempic)",
+    "Metabolic dysfunction-associated steatohepatitis with fibrosis (Wegovy)"
+  ],
+  "history": [
+    {
+      "year": 2016,
+      "title": "SUSTAIN-6",
+      "detail": "Weekly semaglutide reduces major cardiovascular events by 26% versus placebo in type 2 diabetes."
+    },
+    {
+      "year": 2017,
+      "title": "Ozempic approved",
+      "detail": "FDA approves Ozempic in December 2017."
+    },
+    {
+      "year": 2019,
+      "title": "First oral GLP-1",
+      "detail": "FDA approves Rybelsus in September 2019, the first oral GLP-1 receptor agonist."
+    },
+    {
+      "year": 2021,
+      "title": "Wegovy for obesity",
+      "detail": "After STEP 1 shows about 15% mean weight loss, FDA approves Wegovy 2.4 mg in June 2021."
+    },
+    {
+      "year": 2022,
+      "title": "Shortages and compounding",
+      "detail": "Demand outstrips supply; FDA lists semaglutide in shortage, allowing compounded versions until early 2025."
+    },
+    {
+      "year": 2023,
+      "title": "SELECT",
+      "detail": "SELECT shows a 20% reduction in major cardiovascular events in adults with obesity and CVD without diabetes."
+    },
+    {
+      "year": 2024,
+      "title": "Cardiovascular label and FLOW",
+      "detail": "FDA adds a cardiovascular indication to Wegovy (March); FLOW shows reduced kidney outcomes in diabetic CKD."
+    },
+    {
+      "year": 2025,
+      "title": "Kidney and MASH indications",
+      "detail": "FDA approves Ozempic to reduce kidney disease progression (January) and Wegovy for MASH with fibrosis (August); WHO adds GLP-1 agonists to the Essential Medicines List."
+    },
+    {
+      "year": 2026,
+      "title": "Patent expiry in several countries",
+      "detail": "Key semaglutide patents expire in markets including China, India, Canada and Brazil, opening the way for generic versions."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1 week (about 165 h)",
+    "bioavailability": "about 89% SC; about 0.4–1% oral",
+    "metabolism": "proteolysis of the peptide backbone and beta-oxidation of the fatty-acid side chain",
+    "excretion": "urine and faeces as metabolites"
+  },
+  "safety": {
+    "common": [
+      "nausea",
+      "vomiting",
+      "diarrhoea",
+      "constipation",
+      "abdominal pain",
+      "fatigue"
+    ],
+    "serious": [
+      "acute pancreatitis",
+      "gallbladder disease",
+      "diabetic retinopathy complications (rapid glucose lowering)",
+      "acute kidney injury",
+      "hypoglycaemia with insulin or sulfonylureas",
+      "pulmonary aspiration during anaesthesia"
+    ],
+    "boxed_warning": "Risk of thyroid C-cell tumours: caused C-cell tumours in rodents; contraindicated with personal or family history of medullary thyroid carcinoma or MEN 2."
+  },
+  "facts": [
+    "Rybelsus was the first oral GLP-1 receptor agonist (2019).",
+    "Semaglutide sales made Novo Nordisk Europe's most valuable listed company for a period in 2023–2024.",
+    "The 2025 WHO Essential Medicines List added GLP-1 receptor agonists including semaglutide."
+  ],
+  "related": [
+    "liraglutide",
+    "tirzepatide",
+    "dulaglutide",
+    "exenatide",
+    "empagliflozin",
+    "metformin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Semaglutide",
+      "url": "https://en.wikipedia.org/wiki/Semaglutide"
+    },
+    {
+      "title": "DailyMed: Semaglutide labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=semaglutide"
+    },
+    {
+      "title": "EMA EPAR: Wegovy",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/wegovy"
+    },
+    {
+      "title": "Lincoff AM et al. SELECT (NEJM 2023)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2307563"
+    },
+    {
+      "title": "Wilding JPH et al. STEP 1 (NEJM 2021)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2032183"
+    }
+  ],
+  "stage": "written"
 }

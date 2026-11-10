@@ -1,36 +1,123 @@
 {
   "slug": "raloxifene",
   "name": "Raloxifene",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "keoxifene",
+    "LY156758",
+    "raloxifene hydrochloride"
+  ],
+  "brands": [
+    "Evista",
+    "Optruma"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Selective estrogen receptor modulator (SERM)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet 60 mg once daily",
+  "targets": [
+    "ESR1",
+    "ESR2"
+  ],
+  "origin": "synthetic",
+  "originator": "Eli Lilly",
+  "owner": "generic (many); Eli Lilly (Evista)",
+  "first_approval": {
+    "year": 1997,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Evista"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Eli Lilly",
+    "note": "Originally developed in the 1980s as keoxifene for breast cancer, then repurposed for osteoporosis."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "An estrogen modulator that protects bone and lowers breast-cancer risk",
+  "summary": "Raloxifene is a selective estrogen receptor modulator that acts like estrogen on bone but blocks estrogen in breast and uterus. It reduces vertebral fractures in postmenopausal osteoporosis and lowers the risk of invasive breast cancer, but raises the risk of venous thromboembolism and fatal stroke.",
+  "mechanism": [
+    "Raloxifene binds estrogen receptors α and β. The shape of the ligand–receptor complex determines which co-activators or co-repressors are recruited in each tissue, so its effects are tissue-selective.",
+    "In bone it acts as an agonist, reducing osteoclastic resorption and bone turnover; in breast and endometrium it acts as an antagonist, reducing estrogen-driven proliferation. Liver agonism lowers LDL cholesterol but increases coagulation factors, contributing to thrombosis risk."
+  ],
+  "uses": [
+    "Treatment and prevention of postmenopausal osteoporosis",
+    "Reduction in risk of invasive breast cancer in postmenopausal women with osteoporosis or at high risk"
+  ],
+  "history": [
+    {
+      "year": 1997,
+      "title": "FDA approval",
+      "detail": "FDA approves Evista for prevention of postmenopausal osteoporosis in December 1997."
+    },
+    {
+      "year": 1999,
+      "title": "MORE trial",
+      "detail": "MORE shows a 30–50% reduction in vertebral fractures and fewer invasive breast cancers."
+    },
+    {
+      "year": 2006,
+      "title": "STAR and RUTH",
+      "detail": "STAR finds raloxifene similar to tamoxifen for breast-cancer prevention with fewer uterine cancers; RUTH shows increased fatal stroke and VTE."
+    },
+    {
+      "year": 2007,
+      "title": "Breast cancer risk indication",
+      "detail": "FDA approves raloxifene for reducing invasive breast cancer risk in postmenopausal women."
+    },
+    {
+      "year": 2014,
+      "title": "US generics",
+      "detail": "Generic raloxifene becomes available in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "about 27.7 h",
+    "bioavailability": "about 2% (extensive first-pass glucuronidation)",
+    "metabolism": "glucuronidation, enterohepatic recycling",
+    "excretion": "mainly faeces"
+  },
+  "safety": {
+    "common": [
+      "hot flushes",
+      "leg cramps",
+      "peripheral oedema",
+      "flu-like symptoms"
+    ],
+    "serious": [
+      "venous thromboembolism (DVT, PE, retinal vein thrombosis)",
+      "fatal stroke in women with coronary disease or risk factors"
+    ],
+    "boxed_warning": "Increased risk of venous thromboembolism and of death from stroke; consider risk–benefit in women at risk of stroke."
+  },
+  "facts": [
+    "Raloxifene failed as a breast cancer treatment before being developed for osteoporosis.",
+    "Despite about 2% oral bioavailability, enterohepatic recycling sustains its once-daily effect."
+  ],
+  "related": [
+    "tamoxifen",
+    "alendronate",
+    "estradiol",
+    "denosumab"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Raloxifene",
+      "url": "https://en.wikipedia.org/wiki/Raloxifene"
+    },
+    {
+      "title": "DailyMed: Raloxifene labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=raloxifene"
+    },
+    {
+      "title": "Wikipedia: Selective estrogen receptor modulator",
+      "url": "https://en.wikipedia.org/wiki/Selective_estrogen_receptor_modulator"
+    }
+  ],
+  "stage": "written"
 }

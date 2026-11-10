@@ -1,36 +1,122 @@
 {
   "slug": "fludrocortisone",
   "name": "Fludrocortisone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "9α-fluorohydrocortisone",
+    "fludrocortisone acetate"
+  ],
+  "brands": [
+    "Florinef",
+    "Astonin"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Corticosteroid (mineralocorticoid)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet 50–200 micrograms daily",
+  "targets": [
+    "NR3C2 (mineralocorticoid receptor)",
+    "NR3C1 (glucocorticoid receptor)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "E. R. Squibb & Sons (Josef Fried and Emily Sabo)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1955,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Florinef"
+  },
+  "discovery": {
+    "year": 1954,
+    "by": "Josef Fried and Emily Sabo, Squibb",
+    "note": "Discovered that adding a fluorine at 9α of hydrocortisone hugely increases corticosteroid potency — the first fluorinated drug of its kind."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "A potent salt-retaining steroid that replaces aldosterone",
+  "summary": "Fludrocortisone is a synthetic corticosteroid with very strong mineralocorticoid activity, used to replace aldosterone in Addison's disease and salt-wasting congenital adrenal hyperplasia. It is also used off-label to raise blood pressure in orthostatic hypotension.",
+  "mechanism": [
+    "Fludrocortisone binds the mineralocorticoid receptor in the distal nephron and collecting duct, increasing expression of epithelial sodium channels and Na+/K+-ATPase. This increases sodium and water reabsorption and potassium and hydrogen-ion excretion, expanding plasma volume and raising blood pressure.",
+    "Its mineralocorticoid potency is about 125 times that of hydrocortisone, while glucocorticoid potency is about 10 times, so the low replacement doses have little glucocorticoid effect."
+  ],
+  "uses": [
+    "Primary adrenal insufficiency (Addison's disease), with a glucocorticoid",
+    "Salt-wasting congenital adrenal hyperplasia",
+    "Orthostatic hypotension (off-label)"
+  ],
+  "history": [
+    {
+      "year": 1855,
+      "title": "Addison's disease described",
+      "detail": "Thomas Addison describes the clinical syndrome of adrenal insufficiency."
+    },
+    {
+      "year": 1953,
+      "title": "Aldosterone isolated",
+      "detail": "Sylvia Simpson and James Tait isolate aldosterone, the natural mineralocorticoid."
+    },
+    {
+      "year": 1954,
+      "title": "Fluorine effect discovered",
+      "detail": "Fried and Sabo report that 9α-fluorination of hydrocortisone greatly increases potency."
+    },
+    {
+      "year": 1955,
+      "title": "Florinef",
+      "detail": "Squibb introduces fludrocortisone acetate."
+    },
+    {
+      "year": 2018,
+      "title": "APROCCHSS trial",
+      "detail": "Hydrocortisone plus fludrocortisone reduces 90-day mortality in septic shock compared with placebo (NEJM 2018)."
+    }
+  ],
+  "pk": {
+    "half_life": "about 3.5 h (plasma); biological 18–36 h",
+    "bioavailability": "high",
+    "metabolism": "hepatic",
+    "excretion": "urine"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "fluid retention and oedema",
+      "hypertension",
+      "hypokalaemia",
+      "headache"
+    ],
+    "serious": [
+      "heart failure",
+      "hypokalaemic alkalosis",
+      "supine hypertension in autonomic failure"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Fried and Sabo's 1954 discovery launched the era of fluorinated corticosteroids such as dexamethasone and betamethasone."
+  ],
+  "related": [
+    "hydrocortisone",
+    "dexamethasone",
+    "prednisolone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Fludrocortisone",
+      "url": "https://en.wikipedia.org/wiki/Fludrocortisone"
+    },
+    {
+      "title": "DailyMed: Fludrocortisone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=fludrocortisone"
+    },
+    {
+      "title": "Wikipedia: Mineralocorticoid",
+      "url": "https://en.wikipedia.org/wiki/Mineralocorticoid"
+    }
+  ],
+  "stage": "written"
 }

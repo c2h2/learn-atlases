@@ -1,36 +1,127 @@
 {
   "slug": "calcitriol",
   "name": "Calcitriol",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "1,25-dihydroxycholecalciferol",
+    "1α,25-dihydroxyvitamin D3"
+  ],
+  "brands": [
+    "Rocaltrol",
+    "Calcijex",
+    "Vectical",
+    "Silkis"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Active vitamin D (vitamin D receptor agonist)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "topical"
+  ],
+  "route_note": "oral capsules or solution; IV in dialysis; ointment for plaque psoriasis",
+  "targets": [
+    "VDR"
+  ],
+  "origin": "synthetic",
+  "originator": "Hoffmann-La Roche (Rocaltrol)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1978,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Rocaltrol"
+  },
+  "discovery": {
+    "year": 1971,
+    "by": "Hector DeLuca (Wisconsin), Egon Kodicek (Cambridge) and Anthony Norman (California)",
+    "note": "Identified as the hormonally active metabolite of vitamin D, formed in the kidney by 1α-hydroxylation."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "The hormonally active form of vitamin D, used when the kidney cannot make it",
+  "summary": "Calcitriol is 1,25-dihydroxyvitamin D3, the active hormone form of vitamin D. Because it does not need activation by the kidney, it is used to treat hypocalcaemia and secondary hyperparathyroidism in chronic kidney disease and hypoparathyroidism; topically it treats psoriasis.",
+  "mechanism": [
+    "Calcitriol binds the nuclear vitamin D receptor (VDR), which heterodimerises with the retinoid X receptor and regulates transcription of target genes.",
+    "In the intestine it increases calcium and phosphate absorption (via TRPV6 and calbindin); in bone it mobilises calcium; in the parathyroid gland it suppresses PTH synthesis. In skin it inhibits keratinocyte proliferation and promotes differentiation, explaining its use in psoriasis."
+  ],
+  "uses": [
+    "Secondary hyperparathyroidism and hypocalcaemia in chronic kidney disease (including dialysis)",
+    "Hypoparathyroidism and pseudohypoparathyroidism",
+    "Vitamin D-dependent rickets and hypophosphataemic rickets (with phosphate)",
+    "Mild-to-moderate plaque psoriasis (topical)"
+  ],
+  "history": [
+    {
+      "year": 1971,
+      "title": "Active metabolite identified",
+      "detail": "Several groups identify 1,25-dihydroxyvitamin D3 as the active hormone produced by the kidney."
+    },
+    {
+      "year": 1978,
+      "title": "Rocaltrol",
+      "detail": "FDA approves Roche's oral calcitriol."
+    },
+    {
+      "year": 1986,
+      "title": "IV calcitriol",
+      "detail": "Calcijex for injection is approved for hypocalcaemia in dialysis patients."
+    },
+    {
+      "year": 2009,
+      "title": "Topical approval in US",
+      "detail": "FDA approves calcitriol 3 µg/g ointment (Vectical) for plaque psoriasis."
+    },
+    {
+      "year": 2017,
+      "title": "KDIGO guidance",
+      "detail": "KDIGO CKD-MBD guidance no longer recommends routine calcitriol in non-dialysis CKD, citing hypercalcaemia risk."
+    }
+  ],
+  "pk": {
+    "half_life": "5–8 h (adults)",
+    "bioavailability": "rapid oral absorption",
+    "metabolism": "CYP24A1 24-hydroxylation to calcitroic acid; also CYP3A4",
+    "excretion": "mainly faeces (bile)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "hypercalcaemia",
+      "hypercalciuria",
+      "headache",
+      "nausea"
+    ],
+    "serious": [
+      "severe hypercalcaemia",
+      "vascular and soft-tissue calcification",
+      "nephrocalcinosis"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Calcitriol is made naturally in the kidney by the enzyme 1α-hydroxylase (CYP27B1).",
+    "It is far more potent than native vitamin D, so serum calcium is monitored closely during treatment."
+  ],
+  "related": [
+    "cinacalcet",
+    "alendronate",
+    "teriparatide"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Calcitriol",
+      "url": "https://en.wikipedia.org/wiki/Calcitriol"
+    },
+    {
+      "title": "DailyMed: Calcitriol labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=calcitriol"
+    },
+    {
+      "title": "Wikipedia: Vitamin D",
+      "url": "https://en.wikipedia.org/wiki/Vitamin_D"
+    }
+  ],
+  "stage": "written"
 }

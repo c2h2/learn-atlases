@@ -1,36 +1,127 @@
 {
   "slug": "cabergoline",
   "name": "Cabergoline",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "FCE 21336"
+  ],
+  "brands": [
+    "Dostinex",
+    "Cabaser"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Dopamine D2 receptor agonist (ergot-derived)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once or twice weekly for hyperprolactinaemia; single dose for lactation inhibition",
+  "targets": [
+    "DRD2",
+    "HTR2B (agonist)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Farmitalia Carlo Erba",
+  "owner": "generic (many); Pfizer (Dostinex)",
+  "first_approval": {
+    "year": 1996,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Dostinex"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Farmitalia Carlo Erba, Milan",
+    "note": "An ergoline derivative with a very long half-life."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "A twice-weekly dopamine agonist that shrinks prolactin-secreting tumours",
+  "summary": "Cabergoline is a long-acting ergot-derived dopamine agonist and the preferred treatment for hyperprolactinaemia and prolactinomas. Its use in Parkinson's disease has largely ended because high doses were linked to fibrotic heart-valve disease.",
+  "mechanism": [
+    "Pituitary lactotroph cells are tonically inhibited by hypothalamic dopamine acting on D2 receptors. Cabergoline is a potent, long-acting D2 agonist that suppresses prolactin synthesis and secretion and shrinks most prolactinomas.",
+    "Its agonism at serotonin 5-HT2B receptors on heart valve interstitial cells can stimulate fibroblast proliferation, the proposed mechanism of valvulopathy at the high doses once used in Parkinson's disease."
+  ],
+  "uses": [
+    "Hyperprolactinaemic disorders, idiopathic or due to pituitary adenoma",
+    "Inhibition or suppression of lactation (EU and other regions)",
+    "Parkinson's disease (second-line, EU; largely abandoned)",
+    "Acromegaly and other pituitary tumours (off-label adjunct)"
+  ],
+  "history": [
+    {
+      "year": 1994,
+      "title": "Cabergoline vs bromocriptine",
+      "detail": "A multicentre trial shows cabergoline more effective and better tolerated than bromocriptine for hyperprolactinaemic amenorrhoea (NEJM 1994)."
+    },
+    {
+      "year": 1996,
+      "title": "US approval",
+      "detail": "FDA approves Dostinex for hyperprolactinaemia in December 1996."
+    },
+    {
+      "year": 2007,
+      "title": "Valvulopathy studies",
+      "detail": "Two NEJM studies link cabergoline and pergolide in Parkinson's disease to cardiac valve regurgitation."
+    },
+    {
+      "year": 2008,
+      "title": "EU restrictions",
+      "detail": "The EMA restricts ergot-derived dopamine agonists in Parkinson's disease, requiring echocardiographic monitoring and lowering maximum dose."
+    },
+    {
+      "year": 2011,
+      "title": "Endocrine Society guideline",
+      "detail": "The Endocrine Society recommends cabergoline as the preferred dopamine agonist for hyperprolactinaemia and prolactinomas."
+    }
+  ],
+  "pk": {
+    "half_life": "63–69 h",
+    "bioavailability": "not established (substantial first-pass)",
+    "metabolism": "extensive hydrolysis; minimal CYP involvement",
+    "excretion": "mainly faeces"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "nausea",
+      "headache",
+      "dizziness",
+      "constipation",
+      "fatigue"
+    ],
+    "serious": [
+      "cardiac valvulopathy",
+      "pleural, pericardial and retroperitoneal fibrosis",
+      "impulse-control disorders",
+      "orthostatic hypotension",
+      "psychosis"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Its 63–69 hour half-life allows dosing once or twice a week.",
+    "Cabergoline normalises prolactin in most patients with microprolactinomas."
+  ],
+  "related": [
+    "levodopa-carbidopa",
+    "pramipexole",
+    "octreotide",
+    "ropinirole"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Cabergoline",
+      "url": "https://en.wikipedia.org/wiki/Cabergoline"
+    },
+    {
+      "title": "DailyMed: Cabergoline labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=cabergoline"
+    },
+    {
+      "title": "Schade R et al. Dopamine agonists and the risk of cardiac-valve regurgitation (NEJM 2007)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa062222"
+    }
+  ],
+  "stage": "written"
 }

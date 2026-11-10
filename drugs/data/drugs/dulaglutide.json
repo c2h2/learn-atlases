@@ -1,36 +1,122 @@
 {
   "slug": "dulaglutide",
   "name": "Dulaglutide",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "LY2189265"
+  ],
+  "brands": [
+    "Trulicity"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "GLP-1 receptor agonist (Fc fusion)",
+  "modality": "protein",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "subcutaneous injection once weekly via single-dose pen (0.75–4.5 mg)",
+  "targets": [
+    "GLP1R"
+  ],
+  "origin": "biotech",
+  "originator": "Eli Lilly",
+  "owner": "Eli Lilly",
+  "first_approval": {
+    "year": 2014,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Trulicity"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Eli Lilly",
+    "note": "Two DPP-4-resistant GLP-1 analogue chains fused through a peptide linker to a modified human IgG4 Fc fragment."
+  },
+  "generic": false,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "A weekly GLP-1 agonist built on an antibody Fc backbone",
+  "summary": "Dulaglutide is a once-weekly GLP-1 receptor agonist made by fusing GLP-1 analogues to an immunoglobulin Fc fragment, which slows clearance. It lowers glucose and modestly reduces weight, and the REWIND trial showed reduced cardiovascular events in a broad type 2 diabetes population.",
+  "mechanism": [
+    "Each dulaglutide molecule carries two GLP-1 analogue peptides, modified to resist DPP-4, joined to a modified IgG4 Fc domain. The large size limits renal filtration and the Fc region extends half-life to about five days.",
+    "Binding to the GLP-1 receptor increases glucose-dependent insulin release, reduces glucagon secretion and slows gastric emptying, with central appetite effects producing modest weight loss."
+  ],
+  "uses": [
+    "Type 2 diabetes mellitus (adults and children 10 years and older)",
+    "Reduction of major adverse cardiovascular events in type 2 diabetes with CVD or multiple risk factors"
+  ],
+  "history": [
+    {
+      "year": 2014,
+      "title": "Approval",
+      "detail": "FDA approves Trulicity in September 2014; EU approval follows in November 2014."
+    },
+    {
+      "year": 2019,
+      "title": "REWIND",
+      "detail": "REWIND, in 9,901 patients mostly without established CVD, shows a 12% reduction in major cardiovascular events."
+    },
+    {
+      "year": 2020,
+      "title": "Expansion",
+      "detail": "FDA adds a cardiovascular indication and approves higher 3 mg and 4.5 mg doses."
+    },
+    {
+      "year": 2021,
+      "title": "AWARD-11",
+      "detail": "AWARD-11 shows the 3.0 and 4.5 mg doses lower HbA1c and weight more than 1.5 mg."
+    },
+    {
+      "year": 2022,
+      "title": "Paediatric approval",
+      "detail": "Trulicity is approved for children aged 10 and over with type 2 diabetes."
+    }
+  ],
+  "pk": {
+    "half_life": "about 5 days",
+    "bioavailability": "47–65% after SC injection",
+    "metabolism": "protein catabolism to amino acids",
+    "excretion": "as amino acids"
+  },
+  "safety": {
+    "common": [
+      "nausea",
+      "diarrhoea",
+      "vomiting",
+      "abdominal pain",
+      "decreased appetite"
+    ],
+    "serious": [
+      "acute pancreatitis",
+      "gallbladder disease",
+      "acute kidney injury",
+      "hypoglycaemia with insulin or sulfonylureas",
+      "diabetic retinopathy complications"
+    ],
+    "boxed_warning": "Risk of thyroid C-cell tumours: caused C-cell tumours in rodents; contraindicated with personal or family history of medullary thyroid carcinoma or MEN 2."
+  },
+  "facts": [
+    "REWIND enrolled a majority of participants without established cardiovascular disease, unlike most GLP-1 outcome trials."
+  ],
+  "related": [
+    "liraglutide",
+    "semaglutide",
+    "tirzepatide",
+    "exenatide"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Dulaglutide",
+      "url": "https://en.wikipedia.org/wiki/Dulaglutide"
+    },
+    {
+      "title": "DailyMed: Dulaglutide labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=dulaglutide"
+    },
+    {
+      "title": "EMA EPAR: Trulicity",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/trulicity"
+    }
+  ],
+  "stage": "written"
 }

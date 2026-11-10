@@ -1,36 +1,126 @@
 {
   "slug": "glibenclamide",
   "name": "Glibenclamide",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "glyburide (USAN)",
+    "HB 419"
+  ],
+  "brands": [
+    "Daonil",
+    "Euglucon",
+    "Diabeta",
+    "Micronase",
+    "Glynase"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Sulfonylurea (second generation)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once or twice daily with breakfast; micronised formulation in some markets",
+  "targets": [
+    "ABCC8 (SUR1)",
+    "KCNJ11 (Kir6.2)"
+  ],
+  "origin": "synthetic",
+  "originator": "Boehringer Mannheim and Hoechst",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1969,
+    "agency": null,
+    "country": "West Germany",
+    "brand": "Euglucon / Daonil"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1966,
+    "by": "Boehringer Mannheim and Hoechst",
+    "note": "Developed jointly as a potent second-generation sulfonylurea."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "A potent second-generation sulfonylurea that closes beta-cell potassium channels",
+  "summary": "Glibenclamide (glyburide in the US) is a sulfonylurea that stimulates insulin release from pancreatic beta cells. It is inexpensive and effective but carries a higher risk of prolonged hypoglycaemia than newer sulfonylureas, particularly in older people and those with kidney impairment.",
+  "mechanism": [
+    "Glibenclamide binds the sulfonylurea receptor SUR1 (ABCC8), the regulatory subunit of the ATP-sensitive potassium (KATP) channel in beta-cell membranes. Channel closure depolarises the cell, opens voltage-gated calcium channels and triggers exocytosis of insulin granules, independent of the prevailing glucose level.",
+    "Because the effect does not switch off when glucose is low, hypoglycaemia is the main hazard. The same mechanism lets high-dose oral glibenclamide replace insulin in many people with neonatal diabetes caused by activating KCNJ11 or ABCC8 mutations."
+  ],
+  "uses": [
+    "Type 2 diabetes mellitus",
+    "Gestational diabetes (used in some guidelines)",
+    "Neonatal diabetes due to KATP channel mutations (off-label)"
+  ],
+  "history": [
+    {
+      "year": 1966,
+      "title": "Discovery",
+      "detail": "Glibenclamide is developed by Boehringer Mannheim with Hoechst."
+    },
+    {
+      "year": 1969,
+      "title": "Launch",
+      "detail": "Marketed in Europe as Euglucon and Daonil."
+    },
+    {
+      "year": 1984,
+      "title": "US approval",
+      "detail": "FDA approves glyburide as Diabeta and Micronase."
+    },
+    {
+      "year": 2006,
+      "title": "Neonatal diabetes",
+      "detail": "Studies (NEJM 2006) show sulfonylureas can replace insulin in neonatal diabetes due to Kir6.2 mutations."
+    },
+    {
+      "year": 2009,
+      "title": "Gestational diabetes debate",
+      "detail": "Trials and meta-analyses comparing glibenclamide with insulin and metformin in pregnancy lead several guidelines to prefer insulin or metformin."
+    }
+  ],
+  "pk": {
+    "half_life": "about 10 h (effect up to 24 h)",
+    "bioavailability": "high (formulation-dependent)",
+    "metabolism": "hepatic CYP2C9 and CYP3A4 to weakly active metabolites",
+    "excretion": "about 50% renal, 50% biliary"
+  },
+  "safety": {
+    "common": [
+      "hypoglycaemia",
+      "weight gain",
+      "nausea"
+    ],
+    "serious": [
+      "severe prolonged hypoglycaemia",
+      "haemolytic anaemia in G6PD deficiency",
+      "cholestatic jaundice"
+    ],
+    "boxed_warning": "US labels for sulfonylureas carry a special warning on increased cardiovascular mortality based on the 1970 UGDP study of tolbutamide."
+  },
+  "facts": [
+    "Glibenclamide is known as glyburide in the United States and Canada.",
+    "Oral sulfonylureas allow many children with KCNJ11 neonatal diabetes to stop insulin injections."
+  ],
+  "related": [
+    "glimepiride",
+    "gliclazide",
+    "metformin",
+    "insulin-human"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Glibenclamide",
+      "url": "https://en.wikipedia.org/wiki/Glibenclamide"
+    },
+    {
+      "title": "DailyMed: Glyburide labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=glyburide"
+    },
+    {
+      "title": "Pearson ER et al. Switching from insulin to oral sulfonylureas in neonatal diabetes (NEJM 2006)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa061759"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,136 @@
 {
   "slug": "denosumab",
   "name": "Denosumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "AMG 162",
+    "denosumab-bbdz (biosimilar)"
+  ],
+  "brands": [
+    "Prolia",
+    "Xgeva",
+    "Jubbonti",
+    "Wyost"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "RANKL inhibitor (monoclonal antibody)",
+  "modality": "antibody",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "subcutaneous injection: 60 mg every 6 months (Prolia) or 120 mg every 4 weeks (Xgeva)",
+  "targets": [
+    "TNFSF11 (RANKL)"
+  ],
+  "origin": "biotech",
+  "originator": "Amgen",
+  "owner": "Amgen; biosimilars from Sandoz, Samsung Bioepis, Celltrion and others",
+  "first_approval": {
+    "year": 2010,
+    "agency": "EMA",
+    "country": "EU",
+    "brand": "Prolia"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Amgen",
+    "note": "A fully human IgG2 antibody developed after the discovery of the RANK–RANKL–osteoprotegerin system in the late 1990s, in which Amgen scientists identified osteoprotegerin."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Twice-yearly antibody that blocks RANKL and switches off bone-resorbing osteoclasts",
+  "summary": "Denosumab is a fully human monoclonal antibody that binds RANKL, the signal that drives osteoclast formation and activity. It reduces fractures in osteoporosis when injected every six months (Prolia) and prevents skeletal complications of bone metastases at a higher monthly dose (Xgeva); biosimilars were approved from 2024.",
+  "mechanism": [
+    "RANKL (receptor activator of nuclear factor κB ligand), produced by osteoblasts, osteocytes and stromal cells, binds RANK on osteoclast precursors and is essential for their formation, activation and survival. Denosumab binds RANKL with high affinity, mimicking the natural decoy receptor osteoprotegerin.",
+    "Bone resorption falls rapidly and markedly. Unlike bisphosphonates, denosumab does not bind bone, so its effect wanes within months of a missed dose, and stopping without follow-on therapy can cause rebound resorption and multiple vertebral fractures."
+  ],
+  "uses": [
+    "Postmenopausal osteoporosis at high fracture risk",
+    "Osteoporosis in men; glucocorticoid-induced osteoporosis",
+    "Bone loss from androgen-deprivation or aromatase-inhibitor therapy",
+    "Prevention of skeletal-related events in bone metastases from solid tumours and in myeloma (Xgeva)",
+    "Giant cell tumour of bone",
+    "Hypercalcaemia of malignancy refractory to bisphosphonates"
+  ],
+  "history": [
+    {
+      "year": 1997,
+      "title": "Osteoprotegerin discovered",
+      "detail": "Amgen researchers describe osteoprotegerin, revealing the RANKL pathway."
+    },
+    {
+      "year": 2009,
+      "title": "FREEDOM trial",
+      "detail": "FREEDOM shows denosumab reduces vertebral fractures by 68% and hip fractures by 40% (NEJM 2009)."
+    },
+    {
+      "year": 2010,
+      "title": "Approvals",
+      "detail": "Prolia is approved in the EU (May) and US (June); Xgeva follows in November 2010."
+    },
+    {
+      "year": 2013,
+      "title": "Giant cell tumour",
+      "detail": "FDA approves Xgeva for unresectable giant cell tumour of bone."
+    },
+    {
+      "year": 2024,
+      "title": "Boxed warning and biosimilars",
+      "detail": "FDA adds a boxed warning on severe hypocalcaemia in advanced CKD (January) and approves the first biosimilars, Jubbonti and Wyost (March)."
+    }
+  ],
+  "pk": {
+    "half_life": "about 25–28 days",
+    "bioavailability": "about 62% after SC injection",
+    "metabolism": "immunoglobulin clearance (reticuloendothelial)",
+    "excretion": "not renally cleared"
+  },
+  "safety": {
+    "common": [
+      "back pain",
+      "musculoskeletal pain",
+      "hypercholesterolaemia",
+      "cystitis",
+      "fatigue"
+    ],
+    "serious": [
+      "severe hypocalcaemia",
+      "osteonecrosis of the jaw",
+      "atypical femoral fractures",
+      "multiple vertebral fractures after discontinuation",
+      "serious infections and skin reactions"
+    ],
+    "boxed_warning": "Prolia: severe hypocalcaemia in patients with advanced chronic kidney disease, including dialysis-dependent patients; evaluate for CKD-mineral bone disorder before starting."
+  },
+  "facts": [
+    "Denosumab does not require dose adjustment for kidney function, but people with advanced CKD have a high risk of severe hypocalcaemia.",
+    "Sandoz's Jubbonti/Wyost (2024) were the first FDA-approved denosumab biosimilars."
+  ],
+  "related": [
+    "alendronate",
+    "zoledronic-acid",
+    "romosozumab",
+    "teriparatide",
+    "raloxifene"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Denosumab",
+      "url": "https://en.wikipedia.org/wiki/Denosumab"
+    },
+    {
+      "title": "DailyMed: Denosumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=denosumab"
+    },
+    {
+      "title": "EMA EPAR: Prolia",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/prolia"
+    },
+    {
+      "title": "Cummings SR et al. FREEDOM trial (NEJM 2009)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa0809493"
+    }
+  ],
+  "stage": "written"
 }

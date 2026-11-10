@@ -1,36 +1,129 @@
 {
   "slug": "sitagliptin",
   "name": "Sitagliptin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "MK-0431",
+    "sitagliptin phosphate"
+  ],
+  "brands": [
+    "Januvia",
+    "Janumet (with metformin)",
+    "Xelevia",
+    "Zituvio"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Dipeptidyl peptidase-4 (DPP-4) inhibitor (gliptin)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once daily; dose reduced in kidney impairment",
+  "targets": [
+    "DPP4"
+  ],
+  "origin": "synthetic",
+  "originator": "Merck & Co.",
+  "owner": "Merck & Co. (MSD); generics in some markets",
+  "first_approval": {
+    "year": 2006,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Januvia"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Merck Research Laboratories (team including Ann Weber)",
+    "note": "Designed as a selective DPP-4 inhibitor after earlier non-selective compounds showed toxicity linked to DPP-8/9 inhibition."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "The first DPP-4 inhibitor: a weight-neutral pill that boosts the body's own incretins",
+  "summary": "Sitagliptin inhibits the enzyme DPP-4, prolonging the action of the gut hormones GLP-1 and GIP so that insulin secretion rises and glucagon falls when glucose is high. Approved in 2006 as the first gliptin, it is weight-neutral, carries little risk of hypoglycaemia and was shown neutral for cardiovascular outcomes in TECOS.",
+  "mechanism": [
+    "The incretin hormones GLP-1 and GIP are released from the gut after meals and amplify glucose-dependent insulin secretion, but are inactivated within minutes by dipeptidyl peptidase-4 (DPP-4). Sitagliptin competitively and selectively inhibits DPP-4, roughly doubling active incretin levels.",
+    "Higher incretin levels increase insulin secretion and suppress glucagon in a glucose-dependent manner, lowering fasting and post-meal glucose without the hypoglycaemia typical of sulfonylureas. Unlike GLP-1 receptor agonists, physiological incretin levels produce little effect on appetite or weight."
+  ],
+  "uses": [
+    "Type 2 diabetes mellitus, monotherapy or combination with metformin, sulfonylureas, thiazolidinediones or insulin"
+  ],
+  "history": [
+    {
+      "year": 2006,
+      "title": "First gliptin approved",
+      "detail": "FDA approves Januvia in October 2006; EU approval follows in 2007."
+    },
+    {
+      "year": 2007,
+      "title": "Janumet",
+      "detail": "A fixed-dose combination with metformin is approved."
+    },
+    {
+      "year": 2009,
+      "title": "Pancreatitis labelling",
+      "detail": "FDA adds information on post-marketing reports of acute pancreatitis to the label."
+    },
+    {
+      "year": 2015,
+      "title": "TECOS",
+      "detail": "The TECOS trial in 14,671 patients shows no increase in major cardiovascular events or heart-failure hospitalisation."
+    },
+    {
+      "year": 2022,
+      "title": "European generics",
+      "detail": "Generic sitagliptin enters EU markets after regulatory exclusivity and patent protection end."
+    }
+  ],
+  "pk": {
+    "half_life": "about 12.4 h",
+    "bioavailability": "about 87%",
+    "metabolism": "minimal (CYP3A4, CYP2C8 minor)",
+    "excretion": "about 79% unchanged in urine"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "nasopharyngitis",
+      "upper respiratory infection",
+      "headache"
+    ],
+    "serious": [
+      "acute pancreatitis",
+      "hypersensitivity (anaphylaxis, angioedema, Stevens–Johnson syndrome)",
+      "bullous pemphigoid",
+      "severe arthralgia",
+      "hypoglycaemia with sulfonylurea or insulin"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Januvia was the first DPP-4 inhibitor approved anywhere (FDA, October 2006).",
+    "Sitagliptin is excreted mostly unchanged by the kidneys, so doses are reduced when eGFR falls."
+  ],
+  "related": [
+    "linagliptin",
+    "metformin",
+    "exenatide",
+    "liraglutide",
+    "glimepiride"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Sitagliptin",
+      "url": "https://en.wikipedia.org/wiki/Sitagliptin"
+    },
+    {
+      "title": "DailyMed: Sitagliptin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=sitagliptin"
+    },
+    {
+      "title": "EMA EPAR: Januvia",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/januvia"
+    },
+    {
+      "title": "Green JB et al. TECOS (NEJM 2015)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1501352"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,135 @@
 {
   "slug": "exenatide",
   "name": "Exenatide",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "exendin-4 (synthetic)",
+    "AC2993",
+    "LY2148568"
+  ],
+  "brands": [
+    "Byetta",
+    "Bydureon",
+    "Bydureon BCise"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "GLP-1 receptor agonist",
+  "modality": "peptide",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "subcutaneous injection twice daily (Byetta) or once weekly extended-release microspheres (Bydureon)",
+  "targets": [
+    "GLP1R"
+  ],
+  "origin": "synthetic",
+  "originator": "Amylin Pharmaceuticals (with Eli Lilly)",
+  "owner": "AstraZeneca",
+  "first_approval": {
+    "year": 2005,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Byetta"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1992,
+    "by": "John Eng (Bronx Veterans Affairs Medical Center)",
+    "note": "Exendin-4 was isolated from the venom (saliva) of the Gila monster, Heloderma suspectum."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "The first GLP-1 drug, copied from a peptide in Gila monster venom",
+  "summary": "Exenatide is a synthetic version of exendin-4, a peptide found in Gila monster venom that activates the GLP-1 receptor but resists breakdown by DPP-4. Approved in 2005 as Byetta, it was the first GLP-1 receptor agonist and opened the incretin era that led to semaglutide and tirzepatide.",
+  "mechanism": [
+    "Exenatide shares about 53% sequence identity with human GLP-1 and binds the GLP-1 receptor on pancreatic beta cells, enhancing glucose-dependent insulin secretion, suppressing inappropriate glucagon release and slowing gastric emptying.",
+    "Because its N-terminal sequence is not a DPP-4 substrate, it lasts hours rather than minutes; the weekly form encapsulates it in biodegradable poly(lactide-co-glycolide) microspheres. Central effects reduce appetite and modestly lower body weight."
+  ],
+  "uses": [
+    "Type 2 diabetes mellitus as adjunct to diet and exercise (adults; Bydureon BCise also in children 10 years and older)"
+  ],
+  "history": [
+    {
+      "year": 1992,
+      "title": "Exendin-4 discovered",
+      "detail": "John Eng isolates exendin-4 from Gila monster venom."
+    },
+    {
+      "year": 2005,
+      "title": "Byetta approved",
+      "detail": "FDA approves Byetta in April 2005, the first GLP-1 receptor agonist."
+    },
+    {
+      "year": 2007,
+      "title": "Pancreatitis reports",
+      "detail": "FDA alerts prescribers to post-marketing reports of acute pancreatitis."
+    },
+    {
+      "year": 2012,
+      "title": "Weekly Bydureon",
+      "detail": "FDA approves once-weekly Bydureon in January 2012; Bristol-Myers Squibb acquires Amylin and AstraZeneca later takes over the franchise."
+    },
+    {
+      "year": 2017,
+      "title": "EXSCEL",
+      "detail": "The EXSCEL trial shows once-weekly exenatide is non-inferior but not superior to placebo for cardiovascular events."
+    },
+    {
+      "year": 2017,
+      "title": "BCise autoinjector",
+      "detail": "FDA approves the Bydureon BCise autoinjector."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2.4 h (immediate release)",
+    "bioavailability": "about 65–76% after SC injection (animal and human data)",
+    "metabolism": "proteolysis",
+    "excretion": "mainly glomerular filtration then degradation"
+  },
+  "safety": {
+    "common": [
+      "nausea",
+      "vomiting",
+      "diarrhoea",
+      "injection-site nodules (weekly form)",
+      "headache"
+    ],
+    "serious": [
+      "acute pancreatitis",
+      "acute kidney injury",
+      "severe hypoglycaemia with sulfonylureas",
+      "drug-induced thrombocytopenia (rare)"
+    ],
+    "boxed_warning": "Extended-release exenatide: risk of thyroid C-cell tumours (rodent data); contraindicated with personal or family history of medullary thyroid carcinoma or MEN 2."
+  },
+  "facts": [
+    "Exenatide was developed from a peptide in the saliva of the Gila monster, a venomous lizard of the southwestern US.",
+    "Byetta (2005) was the first approved GLP-1 receptor agonist."
+  ],
+  "related": [
+    "liraglutide",
+    "semaglutide",
+    "dulaglutide",
+    "tirzepatide",
+    "sitagliptin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Exenatide",
+      "url": "https://en.wikipedia.org/wiki/Exenatide"
+    },
+    {
+      "title": "DailyMed: Exenatide labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=exenatide"
+    },
+    {
+      "title": "EMA EPAR: Bydureon",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/bydureon"
+    },
+    {
+      "title": "Holman RR et al. EXSCEL (NEJM 2017)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1612917"
+    }
+  ],
+  "stage": "written"
 }

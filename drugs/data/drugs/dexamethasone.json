@@ -1,36 +1,148 @@
 {
   "slug": "dexamethasone",
   "name": "Dexamethasone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "9α-fluoro-16α-methylprednisolone",
+    "dexamethasone sodium phosphate"
+  ],
+  "brands": [
+    "Decadron",
+    "Ozurdex (intravitreal implant)",
+    "Maxidex",
+    "Dexsol",
+    "Hemady"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Corticosteroid (long-acting glucocorticoid)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "im",
+    "ophthalmic",
+    "intravitreal",
+    "topical"
+  ],
+  "route_note": "oral tablets/solution; IV or IM injection; eye drops; biodegradable intravitreal implant",
+  "targets": [
+    "NR3C1 (glucocorticoid receptor)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Merck & Co. (also Schering)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1958,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Decadron"
+  },
+  "discovery": {
+    "year": 1957,
+    "by": "Merck & Co. and Schering chemists",
+    "note": "Created by adding a 9α-fluorine and a 16α-methyl group to prednisolone, raising potency and eliminating mineralocorticoid activity."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "A potent long-acting steroid, the first drug shown to cut COVID-19 deaths",
+  "summary": "Dexamethasone is a highly potent, long-acting synthetic glucocorticoid with virtually no mineralocorticoid effect. It is used for cerebral oedema, nausea from chemotherapy, airway swelling, myeloma and many inflammatory conditions, and in 2020 the RECOVERY trial showed it reduced deaths in hospitalised COVID-19 patients needing oxygen.",
+  "mechanism": [
+    "Glucocorticoids diffuse into cells and bind the cytoplasmic glucocorticoid receptor (NR3C1). The activated receptor moves to the nucleus, where it switches on anti-inflammatory genes (transactivation, e.g. annexin-1, IκBα, MKP-1) and represses pro-inflammatory transcription factors such as NF-κB and AP-1 (transrepression), reducing cytokines, prostaglandins, adhesion molecules and immune-cell activation.",
+    "Fluorination at 9α and methylation at 16α make dexamethasone about 25–30 times as potent as hydrocortisone, slow its metabolism and remove sodium-retaining activity, giving a long biological half-life of 36–72 hours."
+  ],
+  "uses": [
+    "Cerebral oedema from tumours",
+    "Prevention of chemotherapy-induced nausea and vomiting",
+    "Multiple myeloma (with other agents)",
+    "Severe COVID-19 requiring oxygen or ventilation",
+    "Croup and airway oedema",
+    "Acceleration of fetal lung maturation (antenatal)",
+    "Inflammatory, allergic and ocular conditions; macular oedema (intravitreal implant)",
+    "Diagnostic dexamethasone suppression test for Cushing's syndrome"
+  ],
+  "history": [
+    {
+      "year": 1957,
+      "title": "Synthesis",
+      "detail": "Dexamethasone is synthesised as part of efforts to create more potent corticosteroids."
+    },
+    {
+      "year": 1958,
+      "title": "FDA approval",
+      "detail": "Merck markets dexamethasone as Decadron."
+    },
+    {
+      "year": 1960,
+      "title": "Suppression test",
+      "detail": "Grant Liddle describes the dexamethasone suppression test for diagnosing Cushing's syndrome."
+    },
+    {
+      "year": 2009,
+      "title": "Ozurdex",
+      "detail": "FDA approves Ozurdex intravitreal implant for macular oedema after retinal vein occlusion (EU 2010)."
+    },
+    {
+      "year": 2020,
+      "title": "RECOVERY trial",
+      "detail": "In June 2020 RECOVERY reports that dexamethasone reduces 28-day mortality in hospitalised COVID-19 patients on oxygen or ventilation."
+    },
+    {
+      "year": 2021,
+      "title": "Hemady",
+      "detail": "A 20 mg tablet (Hemady) is approved in the US for multiple myeloma."
+    }
+  ],
+  "pk": {
+    "half_life": "about 4 h (plasma); biological 36–72 h",
+    "bioavailability": "about 80–90% oral",
+    "metabolism": "hepatic CYP3A4",
+    "excretion": "urine"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "hyperglycaemia",
+      "fluid retention and hypertension",
+      "mood change and insomnia",
+      "increased appetite and weight gain",
+      "dyspepsia"
+    ],
+    "serious": [
+      "adrenal suppression and adrenal crisis on abrupt withdrawal",
+      "infections (including opportunistic)",
+      "osteoporosis and fractures",
+      "avascular necrosis",
+      "cataract and glaucoma",
+      "Cushingoid features",
+      "peptic ulceration",
+      "psychosis"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "RECOVERY found dexamethasone reduced deaths by about one-third in ventilated COVID-19 patients and one-fifth in those on oxygen.",
+    "Dexamethasone has no clinically meaningful mineralocorticoid activity."
+  ],
+  "related": [
+    "prednisolone",
+    "hydrocortisone",
+    "prednisone",
+    "ondansetron",
+    "aprepitant"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Dexamethasone",
+      "url": "https://en.wikipedia.org/wiki/Dexamethasone"
+    },
+    {
+      "title": "DailyMed: Dexamethasone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=dexamethasone"
+    },
+    {
+      "title": "RECOVERY Collaborative Group. Dexamethasone in hospitalized patients with Covid-19 (NEJM 2021)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2021436"
+    }
+  ],
+  "stage": "written"
 }

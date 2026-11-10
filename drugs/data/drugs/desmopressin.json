@@ -1,36 +1,133 @@
 {
   "slug": "desmopressin",
   "name": "Desmopressin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "DDAVP",
+    "1-deamino-8-D-arginine vasopressin",
+    "desmopressin acetate"
+  ],
+  "brands": [
+    "DDAVP",
+    "Minirin",
+    "Noctiva",
+    "Nocdurna",
+    "Octostim"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Vasopressin V2 receptor agonist (synthetic vasopressin analogue)",
+  "modality": "peptide",
+  "routes": [
+    "oral",
+    "sublingual",
+    "intranasal",
+    "iv",
+    "sc"
+  ],
+  "route_note": "oral tablets or sublingual melts; nasal spray; IV or SC injection for bleeding disorders and diabetes insipidus",
+  "targets": [
+    "AVPR2"
+  ],
+  "origin": "synthetic",
+  "originator": "Institute of Organic Chemistry and Biochemistry, Prague (Milan Zaoral); developed by Ferring",
+  "owner": "Ferring; generic (many)",
+  "first_approval": {
+    "year": 1978,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "DDAVP"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1967,
+    "by": "Milan Zaoral and František Šorm, Czechoslovak Academy of Sciences",
+    "note": "Deamination at position 1 and D-arginine at position 8 make the analogue longer-acting and selective for V2 receptors with little pressor effect."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "A selective vasopressin analogue for diabetes insipidus, bedwetting and bleeding",
+  "summary": "Desmopressin is a synthetic analogue of vasopressin that selectively activates the V2 receptor. It reduces urine output in central diabetes insipidus, nocturnal enuresis and nocturia, and raises factor VIII and von Willebrand factor levels in mild haemophilia A and von Willebrand disease; hyponatraemia is the main risk.",
+  "mechanism": [
+    "In the renal collecting duct, V2 receptor activation increases cAMP and inserts aquaporin-2 water channels into the luminal membrane, increasing water reabsorption and concentrating urine.",
+    "V2 receptors on vascular endothelium mediate release of von Willebrand factor and factor VIII from Weibel–Palade bodies, which is the basis for its haemostatic use. Because it barely activates V1a receptors, desmopressin causes little vasoconstriction."
+  ],
+  "uses": [
+    "Central (cranial) diabetes insipidus",
+    "Primary nocturnal enuresis (tablets/melts)",
+    "Nocturia due to nocturnal polyuria",
+    "Mild haemophilia A and type 1 von Willebrand disease (IV/intranasal)",
+    "Uraemic and other platelet-function bleeding (off-label)"
+  ],
+  "history": [
+    {
+      "year": 1967,
+      "title": "Synthesis",
+      "detail": "Zaoral and colleagues in Prague synthesise desmopressin."
+    },
+    {
+      "year": 1977,
+      "title": "Haemostatic use",
+      "detail": "Pier Mannuccio Mannucci reports desmopressin raises factor VIII and VWF in haemophilia and von Willebrand disease."
+    },
+    {
+      "year": 1978,
+      "title": "US approval",
+      "detail": "DDAVP is approved in the US."
+    },
+    {
+      "year": 2007,
+      "title": "Enuresis safety action",
+      "detail": "FDA removes primary nocturnal enuresis from intranasal desmopressin labels after hyponatraemic seizures and deaths."
+    },
+    {
+      "year": 2017,
+      "title": "Nocturia products",
+      "detail": "FDA approves Noctiva nasal spray for nocturia, followed by Nocdurna sublingual tablets in 2018, with boxed warnings for hyponatraemia."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1.5–3.5 h",
+    "bioavailability": "about 0.1–0.2% oral; 0.25% sublingual; 3–5% intranasal",
+    "metabolism": "not metabolised by liver to significant extent",
+    "excretion": "mainly renal (unchanged)"
+  },
+  "safety": {
+    "common": [
+      "headache",
+      "nausea",
+      "abdominal pain",
+      "nasal congestion (nasal forms)"
+    ],
+    "serious": [
+      "hyponatraemia with seizures (water intoxication)",
+      "fluid overload in heart failure",
+      "thrombosis (rare)"
+    ],
+    "boxed_warning": "Noctiva and Nocdurna: severe, life-threatening hyponatraemia; contraindicated in patients at increased risk of severe hyponatraemia."
+  },
+  "facts": [
+    "Oral bioavailability is only about 0.1%, so oral doses are many times larger than intranasal ones.",
+    "Desmopressin was synthesised in communist Czechoslovakia and commercialised by the Swedish company Ferring."
+  ],
+  "related": [
+    "tranexamic-acid",
+    "octocog-alfa",
+    "oxytocin",
+    "hydrocortisone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Desmopressin",
+      "url": "https://en.wikipedia.org/wiki/Desmopressin"
+    },
+    {
+      "title": "DailyMed: Desmopressin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=desmopressin"
+    },
+    {
+      "title": "Wikipedia: Diabetes insipidus",
+      "url": "https://en.wikipedia.org/wiki/Diabetes_insipidus"
+    }
+  ],
+  "stage": "written"
 }

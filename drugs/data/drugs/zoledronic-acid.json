@@ -1,36 +1,133 @@
 {
   "slug": "zoledronic-acid",
   "name": "Zoledronic acid",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "zoledronate",
+    "CGP 42446"
+  ],
+  "brands": [
+    "Zometa",
+    "Reclast",
+    "Aclasta"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Bisphosphonate (nitrogen-containing, imidazole)",
+  "modality": "small-molecule",
+  "routes": [
+    "iv"
+  ],
+  "route_note": "IV infusion over at least 15 minutes: 5 mg once yearly for osteoporosis; 4 mg every 3–4 weeks in cancer",
+  "targets": [
+    "FDPS (farnesyl pyrophosphate synthase)"
+  ],
+  "origin": "synthetic",
+  "originator": "Novartis (Ciba-Geigy)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 2001,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Zometa"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Ciba-Geigy (later Novartis)",
+    "note": "The most potent bisphosphonate in clinical use, with an imidazole ring side chain."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "A once-a-year bisphosphonate infusion for osteoporosis and bone metastases",
+  "summary": "Zoledronic acid is the most potent nitrogen-containing bisphosphonate and is given as an intravenous infusion. In oncology it treats hypercalcaemia of malignancy and prevents skeletal events from bone metastases and myeloma; a single yearly infusion reduces fractures in osteoporosis.",
+  "mechanism": [
+    "Bisphosphonates are analogues of pyrophosphate that bind avidly to hydroxyapatite at sites of active bone remodelling. When osteoclasts resorb bone they take up the drug, and nitrogen-containing bisphosphonates inhibit farnesyl pyrophosphate synthase (FDPS) in the mevalonate pathway, blocking prenylation of small GTPases needed for osteoclast function and survival.",
+    "Its high binding affinity and potency allow infrequent dosing, and in cancer it reduces tumour-driven osteolysis and the release of calcium from bone."
+  ],
+  "uses": [
+    "Hypercalcaemia of malignancy",
+    "Bone metastases from solid tumours and multiple myeloma (prevention of skeletal-related events)",
+    "Postmenopausal and male osteoporosis (yearly 5 mg)",
+    "Glucocorticoid-induced osteoporosis",
+    "Paget's disease of bone"
+  ],
+  "history": [
+    {
+      "year": 2001,
+      "title": "Zometa approved",
+      "detail": "FDA approves Zometa for hypercalcaemia of malignancy in August 2001, extended to bone metastases in 2002."
+    },
+    {
+      "year": 2005,
+      "title": "Paget's disease",
+      "detail": "Aclasta is approved in the EU for Paget's disease of bone."
+    },
+    {
+      "year": 2007,
+      "title": "HORIZON trials",
+      "detail": "HORIZON-PFT shows yearly zoledronic acid cuts vertebral fractures by 70%; FDA approves Reclast for osteoporosis."
+    },
+    {
+      "year": 2007,
+      "title": "Mortality after hip fracture",
+      "detail": "HORIZON-RFT shows reduced new fractures and mortality after hip fracture."
+    },
+    {
+      "year": 2013,
+      "title": "Generics",
+      "detail": "Generic zoledronic acid enters the US market."
+    },
+    {
+      "year": 2018,
+      "title": "Osteopenia trial",
+      "detail": "A New Zealand trial shows zoledronic acid every 18 months reduces fractures in older women with osteopenia (NEJM 2018)."
+    }
+  ],
+  "pk": {
+    "half_life": "triphasic; terminal about 146 h in plasma, years in bone",
+    "bioavailability": "100% (IV)",
+    "metabolism": "not metabolised",
+    "excretion": "about 40% unchanged in urine within 24 h; remainder bound to bone"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "acute-phase reaction (fever, myalgia, flu-like symptoms) after first infusion",
+      "nausea",
+      "bone pain",
+      "headache"
+    ],
+    "serious": [
+      "renal toxicity",
+      "osteonecrosis of the jaw",
+      "atypical femoral fractures",
+      "hypocalcaemia",
+      "atrial fibrillation (reported)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "A single 5 mg infusion maintains anti-fracture effect for at least a year.",
+    "Osteonecrosis of the jaw is considerably more frequent at oncology doses than osteoporosis doses."
+  ],
+  "related": [
+    "alendronate",
+    "denosumab",
+    "calcitriol",
+    "teriparatide"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Zoledronic acid",
+      "url": "https://en.wikipedia.org/wiki/Zoledronic_acid"
+    },
+    {
+      "title": "DailyMed: Zoledronic acid labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=zoledronic%20acid"
+    },
+    {
+      "title": "Black DM et al. HORIZON Pivotal Fracture Trial (NEJM 2007)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa067312"
+    }
+  ],
+  "stage": "written"
 }

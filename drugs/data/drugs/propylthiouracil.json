@@ -1,36 +1,122 @@
 {
   "slug": "propylthiouracil",
   "name": "Propylthiouracil",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "PTU",
+    "6-propyl-2-thiouracil"
+  ],
+  "brands": [
+    "Propycil"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Thionamide antithyroid agent",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet in divided doses two to three times daily",
+  "targets": [
+    "TPO (thyroid peroxidase)",
+    "DIO1 (type 1 deiodinase)"
+  ],
+  "origin": "synthetic",
+  "originator": "Edwin Astwood and colleagues (thiouracil series)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1947,
+    "agency": "FDA",
+    "country": "US",
+    "brand": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1945,
+    "by": "Edwin Astwood and colleagues, Tufts / Harvard",
+    "note": "Identified among thiouracil derivatives as more potent and less toxic than thiouracil."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Antithyroid drug kept for early pregnancy and thyroid storm because of liver risk",
+  "summary": "Propylthiouracil is a thionamide that blocks thyroid hormone synthesis and also inhibits peripheral conversion of T4 to T3. Because of a risk of severe liver injury it is now reserved mainly for the first trimester of pregnancy, thyroid storm and patients who cannot take methimazole.",
+  "mechanism": [
+    "Like methimazole, PTU inhibits thyroid peroxidase, reducing iodination of thyroglobulin and coupling of iodotyrosines, so new T4 and T3 synthesis falls over weeks.",
+    "PTU additionally inhibits type 1 5'-deiodinase in peripheral tissues, reducing conversion of T4 to the more active T3; this rapid effect is the rationale for its use in thyroid storm."
+  ],
+  "uses": [
+    "Hyperthyroidism (Graves' disease, toxic multinodular goitre) in patients intolerant of methimazole",
+    "Hyperthyroidism during the first trimester of pregnancy",
+    "Thyroid storm"
+  ],
+  "history": [
+    {
+      "year": 1943,
+      "title": "Thiouracil",
+      "detail": "Astwood introduces thiouracil for hyperthyroidism."
+    },
+    {
+      "year": 1945,
+      "title": "PTU identified",
+      "detail": "Propylthiouracil is reported as a more potent, better-tolerated derivative."
+    },
+    {
+      "year": 1947,
+      "title": "US approval",
+      "detail": "PTU becomes available in the US."
+    },
+    {
+      "year": 2009,
+      "title": "Liver safety review",
+      "detail": "FDA and the American Thyroid Association highlight cases of PTU-associated liver failure and transplants, including in children."
+    },
+    {
+      "year": 2010,
+      "title": "Boxed warning",
+      "detail": "FDA adds a boxed warning on severe liver injury and acute liver failure."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1 h",
+    "bioavailability": "about 75%",
+    "metabolism": "hepatic glucuronidation",
+    "excretion": "urine"
+  },
+  "safety": {
+    "common": [
+      "rash",
+      "nausea",
+      "arthralgia",
+      "taste loss"
+    ],
+    "serious": [
+      "severe hepatotoxicity and acute liver failure",
+      "agranulocytosis",
+      "ANCA-positive vasculitis"
+    ],
+    "boxed_warning": "Severe liver injury and acute liver failure, some fatal or requiring transplant; reserve for patients who cannot tolerate methimazole or when surgery/radioiodine are unsuitable; preferred in first trimester of pregnancy."
+  },
+  "facts": [
+    "PTU is preferred in the first trimester because methimazole is associated with a specific embryopathy.",
+    "Its short half-life requires dosing several times a day."
+  ],
+  "related": [
+    "methimazole",
+    "levothyroxine",
+    "hydrocortisone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Propylthiouracil",
+      "url": "https://en.wikipedia.org/wiki/Propylthiouracil"
+    },
+    {
+      "title": "DailyMed: Propylthiouracil labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=propylthiouracil"
+    },
+    {
+      "title": "Wikipedia: Thyroid storm",
+      "url": "https://en.wikipedia.org/wiki/Thyroid_storm"
+    }
+  ],
+  "stage": "written"
 }

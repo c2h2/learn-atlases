@@ -1,36 +1,123 @@
 {
   "slug": "linagliptin",
   "name": "Linagliptin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BI 1356"
+  ],
+  "brands": [
+    "Tradjenta",
+    "Trajenta",
+    "Jentadueto (with metformin)",
+    "Glyxambi (with empagliflozin)"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
+  "drug_class": "Dipeptidyl peptidase-4 (DPP-4) inhibitor (gliptin)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet 5 mg once daily; no dose adjustment for kidney impairment",
+  "targets": [
+    "DPP4"
+  ],
+  "origin": "synthetic",
+  "originator": "Boehringer Ingelheim",
+  "owner": "Boehringer Ingelheim (co-marketed with Eli Lilly)",
+  "first_approval": {
+    "year": 2011,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Tradjenta"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Boehringer Ingelheim",
+    "note": "A xanthine-based DPP-4 inhibitor."
+  },
   "generic": null,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "A gliptin cleared mainly through bile, so one dose fits all levels of kidney function",
+  "summary": "Linagliptin is a DPP-4 inhibitor used for type 2 diabetes that, unlike most gliptins, is eliminated mainly via the bile and gut, so it needs no dose adjustment in kidney disease. Large outcome trials (CARMELINA and CAROLINA) showed cardiovascular and renal safety.",
+  "mechanism": [
+    "Linagliptin binds DPP-4 tightly and with high selectivity, preventing breakdown of the incretins GLP-1 and GIP. Raised incretin levels enhance glucose-dependent insulin secretion and suppress glucagon release, lowering blood glucose.",
+    "Its high-affinity, saturable binding to DPP-4 in plasma and tissues gives a long terminal half-life while the free drug is cleared mostly unchanged in faeces."
+  ],
+  "uses": [
+    "Type 2 diabetes mellitus, monotherapy or combination"
+  ],
+  "history": [
+    {
+      "year": 2011,
+      "title": "FDA and EU approval",
+      "detail": "FDA approves Tradjenta in May 2011; the EU approves Trajenta in August 2011."
+    },
+    {
+      "year": 2011,
+      "title": "Boehringer–Lilly alliance",
+      "detail": "Boehringer Ingelheim and Eli Lilly form a diabetes alliance to co-develop and co-market linagliptin, empagliflozin and other agents."
+    },
+    {
+      "year": 2015,
+      "title": "Glyxambi",
+      "detail": "FDA approves the fixed combination of empagliflozin and linagliptin."
+    },
+    {
+      "year": 2018,
+      "title": "CARMELINA",
+      "detail": "In patients with high cardiovascular and renal risk, linagliptin is non-inferior to placebo for cardiovascular outcomes."
+    },
+    {
+      "year": 2019,
+      "title": "CAROLINA",
+      "detail": "Linagliptin is non-inferior to glimepiride for major cardiovascular events, with less hypoglycaemia."
+    }
+  ],
+  "pk": {
+    "half_life": "terminal >100 h; effective accumulation half-life about 12 h",
+    "bioavailability": "about 30%",
+    "metabolism": "minimal",
+    "excretion": "about 80% faeces (enterohepatic), about 5% urine"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "nasopharyngitis",
+      "cough",
+      "diarrhoea"
+    ],
+    "serious": [
+      "acute pancreatitis",
+      "hypersensitivity reactions",
+      "bullous pemphigoid",
+      "severe arthralgia",
+      "hypoglycaemia with sulfonylurea or insulin"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Linagliptin is the only widely used DPP-4 inhibitor that needs no dose adjustment for renal impairment.",
+    "It is developed and marketed through the Boehringer Ingelheim–Eli Lilly diabetes alliance formed in 2011."
+  ],
+  "related": [
+    "sitagliptin",
+    "empagliflozin",
+    "metformin",
+    "glimepiride"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Linagliptin",
+      "url": "https://en.wikipedia.org/wiki/Linagliptin"
+    },
+    {
+      "title": "DailyMed: Linagliptin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=linagliptin"
+    },
+    {
+      "title": "EMA EPAR: Trajenta",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/trajenta"
+    }
+  ],
+  "stage": "written"
 }

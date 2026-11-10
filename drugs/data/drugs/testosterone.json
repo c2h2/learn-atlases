@@ -1,36 +1,158 @@
 {
   "slug": "testosterone",
   "name": "Testosterone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "testosterone cypionate",
+    "testosterone enanthate",
+    "testosterone undecanoate",
+    "17β-hydroxyandrost-4-en-3-one"
+  ],
+  "brands": [
+    "AndroGel",
+    "Testogel",
+    "Depo-Testosterone",
+    "Nebido",
+    "Aveed",
+    "Jatenzo",
+    "Xyosted",
+    "Natesto",
+    "Sustanon"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Androgen (androgen receptor agonist)",
+  "modality": "small-molecule",
+  "routes": [
+    "im",
+    "transdermal",
+    "oral",
+    "sc",
+    "intranasal",
+    "topical"
+  ],
+  "route_note": "IM esters every 1–3 weeks or every 10–14 weeks (undecanoate); daily transdermal gel or patch; oral undecanoate capsules; SC autoinjector; nasal gel; implanted pellets",
+  "targets": [
+    "AR (androgen receptor)",
+    "ESR1 (via aromatisation to estradiol)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Organon, Schering and Ciba (1930s)",
+  "owner": "generic (many); Besins/AbbVie (AndroGel), Bayer (Nebido)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "discovery": {
+    "year": 1935,
+    "by": "Ernst Laqueur (isolation, Organon); Adolf Butenandt and Leopold Ruzicka (synthesis)",
+    "note": "Isolated from bull testes in 1935 and synthesised the same year; Butenandt and Ruzicka shared the 1939 Nobel Prize in Chemistry."
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "controlled (US Schedule III; prescription elsewhere)",
+  "tagline": "The principal male sex hormone, used for hypogonadism and gender-affirming care",
+  "summary": "Testosterone is the main male sex hormone and is used as replacement therapy for male hypogonadism, in delayed puberty and in gender-affirming treatment. It is given by injection, skin gel, oral capsule, nasal gel or implant; it is a controlled substance in the US because of misuse as an anabolic steroid.",
+  "mechanism": [
+    "Testosterone binds the intracellular androgen receptor, which acts as a ligand-activated transcription factor. In tissues such as prostate, skin and hair follicles, 5α-reductase converts it to the more potent dihydrotestosterone; aromatase converts part of it to estradiol, which mediates effects on bone and other tissues.",
+    "Androgen receptor activation develops and maintains male sexual characteristics, spermatogenesis (with FSH), libido, muscle mass, erythropoiesis and bone density. Exogenous testosterone suppresses pituitary LH and FSH, reducing endogenous production and sperm output."
+  ],
+  "uses": [
+    "Primary and secondary (hypogonadotropic) male hypogonadism",
+    "Delayed puberty in boys",
+    "Gender-affirming hormone therapy for transgender men (off-label in many labels)",
+    "Metastatic breast cancer in women (historical/limited)"
+  ],
+  "history": [
+    {
+      "year": 1935,
+      "title": "Isolation and synthesis",
+      "detail": "Laqueur's group isolates testosterone; Butenandt and Ruzicka independently synthesise it."
+    },
+    {
+      "year": 1939,
+      "title": "Nobel Prize",
+      "detail": "Butenandt and Ruzicka receive the Nobel Prize in Chemistry for work on sex hormones."
+    },
+    {
+      "year": 1991,
+      "title": "US controlled substance",
+      "detail": "Under the Anabolic Steroids Control Act of 1990, testosterone becomes a Schedule III drug."
+    },
+    {
+      "year": 2000,
+      "title": "AndroGel",
+      "detail": "FDA approves AndroGel, a transdermal gel that greatly expands testosterone prescribing."
+    },
+    {
+      "year": 2009,
+      "title": "Secondary exposure warning",
+      "detail": "FDA adds a boxed warning about virilisation of children exposed to testosterone gels."
+    },
+    {
+      "year": 2015,
+      "title": "Labelling on age-related low testosterone",
+      "detail": "FDA requires labels to state that benefit for age-related hypogonadism is not established and to mention possible cardiovascular risk."
+    },
+    {
+      "year": 2019,
+      "title": "Oral undecanoate",
+      "detail": "FDA approves Jatenzo, an oral testosterone undecanoate capsule."
+    },
+    {
+      "year": 2023,
+      "title": "TRAVERSE trial",
+      "detail": "TRAVERSE finds testosterone non-inferior to placebo for major cardiovascular events in hypogonadal men at high CV risk."
+    },
+    {
+      "year": 2025,
+      "title": "Class labelling update",
+      "detail": "FDA requires class-wide labelling changes reflecting TRAVERSE, retaining blood-pressure warnings."
+    }
+  ],
+  "pk": {
+    "half_life": "10–100 min (free); ester-dependent depot duration of days to weeks",
+    "bioavailability": "low orally unless as lymphatically absorbed undecanoate; about 10% of gel dose absorbed",
+    "metabolism": "hepatic; also converted to DHT (5α-reductase) and estradiol (aromatase)",
+    "excretion": "urine as glucuronide and sulfate conjugates"
+  },
+  "safety": {
+    "common": [
+      "acne",
+      "erythrocytosis (raised haematocrit)",
+      "application-site reactions",
+      "gynaecomastia",
+      "reduced sperm count"
+    ],
+    "serious": [
+      "polycythaemia and thrombosis",
+      "worsening of sleep apnoea",
+      "blood-pressure increase",
+      "suppression of fertility",
+      "virilisation of women and children exposed to gel",
+      "pulmonary oil microembolism (undecanoate injection)"
+    ],
+    "boxed_warning": "Topical gels/solutions: secondary exposure can cause virilisation in children. Some products (Xyosted, Jatenzo, Tlando, Kyzatrex): blood-pressure increases that can raise cardiovascular risk. Aveed: pulmonary oil microembolism and anaphylaxis."
+  },
+  "facts": [
+    "Testosterone has been a US Schedule III controlled substance since 1991.",
+    "Butenandt was forced by the Nazi government to decline the 1939 Nobel Prize and received it after the war."
+  ],
+  "related": [
+    "estradiol",
+    "finasteride",
+    "leuprolide",
+    "somatropin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Testosterone (medication)",
+      "url": "https://en.wikipedia.org/wiki/Testosterone_(medication)"
+    },
+    {
+      "title": "DailyMed: Testosterone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=testosterone"
+    },
+    {
+      "title": "Lincoff AM et al. TRAVERSE (NEJM 2023)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2215025"
+    }
+  ],
+  "stage": "written"
 }

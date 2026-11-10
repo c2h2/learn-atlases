@@ -1,36 +1,133 @@
 {
   "slug": "tirzepatide",
   "name": "Tirzepatide",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "LY3298176"
+  ],
+  "brands": [
+    "Mounjaro",
+    "Zepbound"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Dual GIP and GLP-1 receptor agonist ('twincretin')",
+  "modality": "peptide",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "subcutaneous injection once weekly (2.5–15 mg) by pen or vial",
+  "targets": [
+    "GIPR",
+    "GLP1R"
+  ],
+  "origin": "synthetic",
+  "originator": "Eli Lilly",
+  "owner": "Eli Lilly",
+  "first_approval": {
+    "year": 2022,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Mounjaro"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Eli Lilly",
+    "note": "A 39-amino-acid peptide based on the GIP sequence, engineered to also activate the GLP-1 receptor, with a C20 fatty diacid for albumin binding."
+  },
+  "generic": false,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "First dual GIP/GLP-1 agonist, giving about 20% weight loss in obesity trials",
+  "summary": "Tirzepatide is a once-weekly injectable peptide that activates both the GIP and GLP-1 receptors. It produces larger reductions in HbA1c and body weight than selective GLP-1 agonists, with mean weight loss around 20% in the SURMOUNT-1 obesity trial, and is approved for type 2 diabetes, obesity and obstructive sleep apnoea.",
+  "mechanism": [
+    "Tirzepatide is a GIP-based peptide that is a full agonist at the GIP receptor and a biased partial agonist at the GLP-1 receptor (favouring cAMP signalling with less receptor internalisation). Both incretin pathways increase glucose-dependent insulin secretion; GLP-1 activity also lowers glucagon and slows gastric emptying.",
+    "Central actions on appetite reduce energy intake, and GIP receptor activation in adipose tissue may improve lipid handling and insulin sensitivity. A C20 fatty diacid moiety binds albumin, giving a half-life of about five days."
+  ],
+  "uses": [
+    "Type 2 diabetes mellitus (Mounjaro)",
+    "Chronic weight management in obesity or overweight with comorbidity (Zepbound/Mounjaro)",
+    "Moderate-to-severe obstructive sleep apnoea in adults with obesity (Zepbound)"
+  ],
+  "history": [
+    {
+      "year": 2021,
+      "title": "SURPASS-2",
+      "detail": "Tirzepatide outperforms semaglutide 1 mg on HbA1c and weight in type 2 diabetes (NEJM 2021)."
+    },
+    {
+      "year": 2022,
+      "title": "Mounjaro approved",
+      "detail": "FDA approves Mounjaro for type 2 diabetes in May 2022; SURMOUNT-1 reports up to 20.9% mean weight loss."
+    },
+    {
+      "year": 2023,
+      "title": "Zepbound",
+      "detail": "FDA approves Zepbound for chronic weight management in November 2023."
+    },
+    {
+      "year": 2024,
+      "title": "Sleep apnoea; shortage resolved",
+      "detail": "FDA approves Zepbound for obstructive sleep apnoea (December); FDA declares the tirzepatide shortage resolved."
+    },
+    {
+      "year": 2025,
+      "title": "Head-to-head and outcomes trials",
+      "detail": "SURMOUNT-5 shows greater weight loss than semaglutide 2.4 mg, and SURPASS-CVOT reports cardiovascular non-inferiority versus dulaglutide."
+    }
+  ],
+  "pk": {
+    "half_life": "about 5 days",
+    "bioavailability": "about 80% after SC injection",
+    "metabolism": "proteolysis, beta-oxidation of the fatty diacid and amide hydrolysis",
+    "excretion": "urine and faeces as metabolites"
+  },
+  "safety": {
+    "common": [
+      "nausea",
+      "diarrhoea",
+      "vomiting",
+      "constipation",
+      "decreased appetite",
+      "dyspepsia"
+    ],
+    "serious": [
+      "acute pancreatitis",
+      "gallbladder disease",
+      "acute kidney injury",
+      "hypoglycaemia with insulin or sulfonylureas",
+      "pulmonary aspiration during anaesthesia",
+      "reduced oral contraceptive efficacy after dose changes"
+    ],
+    "boxed_warning": "Risk of thyroid C-cell tumours: caused C-cell tumours in rodents; contraindicated with personal or family history of medullary thyroid carcinoma or MEN 2."
+  },
+  "facts": [
+    "Tirzepatide was the first dual GIP/GLP-1 receptor agonist to be approved.",
+    "SURMOUNT-1 reported a mean 20.9% weight reduction at 72 weeks with the 15 mg dose."
+  ],
+  "related": [
+    "semaglutide",
+    "liraglutide",
+    "dulaglutide",
+    "exenatide",
+    "metformin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Tirzepatide",
+      "url": "https://en.wikipedia.org/wiki/Tirzepatide"
+    },
+    {
+      "title": "DailyMed: Tirzepatide labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=tirzepatide"
+    },
+    {
+      "title": "EMA EPAR: Mounjaro",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/mounjaro"
+    },
+    {
+      "title": "Jastreboff AM et al. SURMOUNT-1 (NEJM 2022)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2206038"
+    }
+  ],
+  "stage": "written"
 }

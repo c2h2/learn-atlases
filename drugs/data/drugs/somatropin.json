@@ -1,36 +1,142 @@
 {
   "slug": "somatropin",
   "name": "Somatropin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "recombinant human growth hormone",
+    "rhGH",
+    "somatrem (methionyl form)"
+  ],
+  "brands": [
+    "Genotropin",
+    "Norditropin",
+    "Humatrope",
+    "Omnitrope",
+    "Saizen",
+    "Nutropin",
+    "Zomacton"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Growth hormone (recombinant)",
+  "modality": "protein",
+  "routes": [
+    "sc",
+    "im"
+  ],
+  "route_note": "subcutaneous injection, usually daily in the evening by pen; weekly long-acting analogues are separate INNs",
+  "targets": [
+    "GHR"
+  ],
+  "origin": "biotech",
+  "originator": "Genentech (recombinant)",
+  "owner": "Novo Nordisk, Pfizer, Merck KGaA, Eli Lilly, Sandoz, Ferring and others",
+  "first_approval": {
+    "year": 1985,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Protropin (somatrem)"
+  },
+  "discovery": {
+    "year": 1956,
+    "by": "Choh Hao Li and Harold Papkoff (isolation of human GH); Genentech (recombinant, 1979)",
+    "note": "Human growth hormone was first purified from cadaver pituitaries; recombinant production in E. coli followed in 1979."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription (US distribution restricted by law to approved indications)",
+  "tagline": "Recombinant growth hormone, which replaced cadaver GH after prion disease cases",
+  "summary": "Somatropin is recombinant human growth hormone with the natural 191-amino-acid sequence. It treats growth failure in children with GH deficiency and several genetic and other conditions, and adult GH deficiency; it replaced pituitary-extracted GH after cases of Creutzfeldt–Jakob disease in 1985. Omnitrope was the first biosimilar approved in Europe.",
+  "mechanism": [
+    "Somatropin binds the growth hormone receptor, causing receptor dimerisation and activation of JAK2–STAT5 signalling. In the liver and other tissues this induces insulin-like growth factor 1 (IGF-1), which mediates much of the growth-promoting effect at the epiphyseal growth plates.",
+    "GH also has direct metabolic effects: it increases lipolysis and protein synthesis, decreases fat mass and antagonises insulin action on glucose uptake."
+  ],
+  "uses": [
+    "Growth hormone deficiency in children and adults",
+    "Turner syndrome",
+    "Prader–Willi syndrome",
+    "Chronic kidney disease-related growth failure",
+    "Small for gestational age without catch-up growth",
+    "Noonan syndrome and SHOX deficiency",
+    "Idiopathic short stature (US)",
+    "HIV-associated wasting (some products)"
+  ],
+  "history": [
+    {
+      "year": 1958,
+      "title": "Pituitary GH therapy",
+      "detail": "Maurice Raben first treats a GH-deficient child with human pituitary growth hormone."
+    },
+    {
+      "year": 1979,
+      "title": "Recombinant GH",
+      "detail": "Genentech produces human growth hormone in E. coli."
+    },
+    {
+      "year": 1985,
+      "title": "CJD and recombinant approval",
+      "detail": "Pituitary-derived GH is withdrawn after Creutzfeldt–Jakob disease cases; FDA approves recombinant Protropin."
+    },
+    {
+      "year": 1987,
+      "title": "Natural-sequence somatropin",
+      "detail": "Eli Lilly's Humatrope, identical to native GH, is approved in the US."
+    },
+    {
+      "year": 2006,
+      "title": "First EU biosimilar",
+      "detail": "Sandoz's Omnitrope becomes the first biosimilar approved in the European Union."
+    },
+    {
+      "year": 2020,
+      "title": "Weekly analogues arrive",
+      "detail": "Long-acting GH analogues begin to be approved, starting with somapacitan (Sogroya) in adults."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2–3 h after SC injection (about 20 min IV)",
+    "bioavailability": "about 70–80% after SC injection",
+    "metabolism": "proteolysis in liver and kidney",
+    "excretion": "renal (as degradation products)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "injection-site reactions",
+      "headache",
+      "arthralgia and myalgia",
+      "peripheral oedema (adults)"
+    ],
+    "serious": [
+      "idiopathic intracranial hypertension",
+      "slipped capital femoral epiphysis",
+      "scoliosis progression",
+      "glucose intolerance",
+      "respiratory death in severely obese Prader–Willi patients",
+      "possible tumour recurrence"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Omnitrope (2006) was the first biosimilar of any kind approved in the European Union.",
+    "Over 200 cases of Creutzfeldt–Jakob disease worldwide have been linked to cadaveric pituitary growth hormone."
+  ],
+  "related": [
+    "octreotide",
+    "insulin-human",
+    "testosterone"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Growth hormone therapy",
+      "url": "https://en.wikipedia.org/wiki/Growth_hormone_therapy"
+    },
+    {
+      "title": "DailyMed: Somatropin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=somatropin"
+    },
+    {
+      "title": "EMA EPAR: Omnitrope",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/omnitrope"
+    }
+  ],
+  "stage": "written"
 }

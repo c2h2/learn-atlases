@@ -1,36 +1,135 @@
 {
   "slug": "prednisone",
   "name": "Prednisone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "delta-cortisone",
+    "metacortandracin"
+  ],
+  "brands": [
+    "Deltasone",
+    "Rayos",
+    "Meticorten",
+    "Decortin"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Corticosteroid (glucocorticoid; prodrug of prednisolone)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet or solution, usually once daily in the morning; delayed-release tablet (Rayos) at night",
+  "targets": [
+    "NR3C1 (glucocorticoid receptor)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Schering Corporation (Arthur Nobile)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1955,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Meticorten"
+  },
+  "discovery": {
+    "year": 1950,
+    "by": "Arthur Nobile and colleagues, Schering",
+    "note": "Produced by microbial 1,2-dehydrogenation of cortisone with Corynebacterium simplex."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "The everyday oral steroid, converted by the liver into prednisolone",
+  "summary": "Prednisone is a synthetic glucocorticoid that is inactive until converted to prednisolone in the liver. It is about four times as potent as hydrocortisone with less salt retention, and is one of the most widely used oral anti-inflammatory and immunosuppressive drugs, especially in North America.",
+  "mechanism": [
+    "Prednisone is a prodrug: 11β-hydroxysteroid dehydrogenase type 1 in the liver reduces its 11-keto group to the 11β-hydroxyl of prednisolone, the active compound.",
+    "Glucocorticoids diffuse into cells and bind the cytoplasmic glucocorticoid receptor (NR3C1). The activated receptor moves to the nucleus, where it switches on anti-inflammatory genes (transactivation, e.g. annexin-1, IκBα, MKP-1) and represses pro-inflammatory transcription factors such as NF-κB and AP-1 (transrepression), reducing cytokines, prostaglandins, adhesion molecules and immune-cell activation."
+  ],
+  "uses": [
+    "Rheumatic diseases (rheumatoid arthritis, polymyalgia rheumatica, vasculitis, lupus)",
+    "Asthma and COPD exacerbations",
+    "Inflammatory bowel disease",
+    "Allergic and dermatological conditions",
+    "Nephrotic syndrome",
+    "Haematological cancers in combination regimens (e.g. lymphoma, myeloma)",
+    "Prevention of transplant rejection"
+  ],
+  "history": [
+    {
+      "year": 1948,
+      "title": "Cortisone in arthritis",
+      "detail": "Philip Hench's use of cortisone in rheumatoid arthritis launches corticosteroid therapy."
+    },
+    {
+      "year": 1950,
+      "title": "Nobel Prize",
+      "detail": "Kendall, Hench and Reichstein receive the Nobel Prize for adrenal cortex hormones."
+    },
+    {
+      "year": 1950,
+      "title": "Microbial dehydrogenation",
+      "detail": "Schering's Arthur Nobile converts cortisone into prednisone using bacteria."
+    },
+    {
+      "year": 1955,
+      "title": "Approval",
+      "detail": "Prednisone is approved and marketed as Meticorten, greatly reducing salt-retaining side effects of earlier steroids."
+    },
+    {
+      "year": 2012,
+      "title": "Delayed-release tablet",
+      "detail": "FDA approves Rayos, a delayed-release prednisone taken at bedtime for rheumatoid arthritis."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2–3 h (prednisolone); biological 12–36 h",
+    "bioavailability": "about 70% (as prednisolone)",
+    "metabolism": "hepatic conversion to prednisolone, then further metabolism",
+    "excretion": "urine"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "hyperglycaemia",
+      "fluid retention and hypertension",
+      "mood change and insomnia",
+      "increased appetite and weight gain",
+      "dyspepsia"
+    ],
+    "serious": [
+      "adrenal suppression and adrenal crisis on abrupt withdrawal",
+      "infections (including opportunistic)",
+      "osteoporosis and fractures",
+      "avascular necrosis",
+      "cataract and glaucoma",
+      "Cushingoid features",
+      "peptic ulceration",
+      "psychosis"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Prednisone is preferred in the US while prednisolone is preferred in the UK and much of Europe.",
+    "Both prednisone and prednisolone were introduced by Schering in 1955."
+  ],
+  "related": [
+    "prednisolone",
+    "hydrocortisone",
+    "dexamethasone",
+    "methotrexate"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Prednisone",
+      "url": "https://en.wikipedia.org/wiki/Prednisone"
+    },
+    {
+      "title": "DailyMed: Prednisone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=prednisone"
+    },
+    {
+      "title": "Wikipedia: Glucocorticoid",
+      "url": "https://en.wikipedia.org/wiki/Glucocorticoid"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,141 @@
 {
   "slug": "pioglitazone",
   "name": "Pioglitazone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "AD-4833",
+    "U-72107"
+  ],
+  "brands": [
+    "Actos",
+    "Glustin",
+    "Actoplus Met (with metformin)",
+    "Duetact (with glimepiride)"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Thiazolidinedione (PPAR-gamma agonist)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once daily",
+  "targets": [
+    "PPARG",
+    "PPARA (weak)"
+  ],
+  "origin": "synthetic",
+  "originator": "Takeda",
+  "owner": "generic (many); Takeda (Actos)",
+  "first_approval": {
+    "year": 1999,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Actos"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Takeda Chemical Industries",
+    "note": "Part of Takeda's thiazolidinedione programme that began with ciglitazone."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "An insulin sensitiser that switches on PPAR-gamma in fat, muscle and liver",
+  "summary": "Pioglitazone is a thiazolidinedione that improves insulin sensitivity by activating the nuclear receptor PPAR-gamma. It lowers glucose durably with low hypoglycaemia risk and benefits fatty liver disease, but causes fluid retention and weight gain and is contraindicated in heart failure.",
+  "mechanism": [
+    "Pioglitazone is a ligand for peroxisome proliferator-activated receptor gamma (PPARγ), a nuclear receptor expressed mainly in adipose tissue. Activation changes transcription of genes involved in glucose and lipid metabolism, promoting differentiation of small insulin-sensitive adipocytes, redistributing fat away from liver and muscle and increasing adiponectin.",
+    "The net effect is improved insulin sensitivity in muscle and liver and reduced hepatic glucose output. PPARγ activation in the kidney collecting duct increases sodium reabsorption, which explains oedema and heart-failure risk."
+  ],
+  "uses": [
+    "Type 2 diabetes mellitus, monotherapy or combination",
+    "Non-alcoholic steatohepatitis (guideline-supported, off-label in many regions)"
+  ],
+  "history": [
+    {
+      "year": 1999,
+      "title": "FDA approval",
+      "detail": "FDA approves Actos in July 1999, months after rosiglitazone."
+    },
+    {
+      "year": 2000,
+      "title": "Troglitazone withdrawn",
+      "detail": "The first thiazolidinedione, troglitazone, is withdrawn for liver toxicity; pioglitazone shows no such signal."
+    },
+    {
+      "year": 2005,
+      "title": "PROactive trial",
+      "detail": "PROactive reports a non-significant primary endpoint but fewer death, MI and stroke events in a secondary endpoint."
+    },
+    {
+      "year": 2007,
+      "title": "Heart failure boxed warning",
+      "detail": "FDA adds a boxed warning on congestive heart failure to thiazolidinediones."
+    },
+    {
+      "year": 2011,
+      "title": "Bladder cancer concerns",
+      "detail": "France and Germany suspend new prescriptions; FDA warns of a possible bladder cancer risk with use over one year."
+    },
+    {
+      "year": 2012,
+      "title": "Generics",
+      "detail": "Generic pioglitazone launches in the US in August 2012."
+    },
+    {
+      "year": 2016,
+      "title": "IRIS trial",
+      "detail": "In insulin-resistant patients after stroke or TIA, pioglitazone reduces recurrent stroke or MI (NEJM 2016)."
+    }
+  ],
+  "pk": {
+    "half_life": "3–7 h (parent); 16–24 h (total active metabolites)",
+    "bioavailability": ">80%",
+    "metabolism": "hepatic CYP2C8 and CYP3A4 to active metabolites",
+    "excretion": "mainly faeces (bile); 15–30% urine"
+  },
+  "safety": {
+    "common": [
+      "weight gain",
+      "oedema",
+      "upper respiratory infection",
+      "headache"
+    ],
+    "serious": [
+      "congestive heart failure",
+      "bone fractures (especially in women)",
+      "bladder cancer (possible)",
+      "macular oedema",
+      "hepatotoxicity (rare)"
+    ],
+    "boxed_warning": "Congestive heart failure: thiazolidinediones cause or exacerbate heart failure; not recommended in symptomatic heart failure and contraindicated in NYHA class III–IV."
+  },
+  "facts": [
+    "Pioglitazone was approved two months after rosiglitazone in 1999.",
+    "Its predecessor troglitazone was withdrawn in 2000 after cases of fatal liver failure."
+  ],
+  "related": [
+    "metformin",
+    "glimepiride",
+    "insulin-glargine",
+    "resmetirom"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Pioglitazone",
+      "url": "https://en.wikipedia.org/wiki/Pioglitazone"
+    },
+    {
+      "title": "DailyMed: Pioglitazone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=pioglitazone"
+    },
+    {
+      "title": "Kernan WN et al. IRIS trial (NEJM 2016)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1506930"
+    },
+    {
+      "title": "Wikipedia: Thiazolidinedione",
+      "url": "https://en.wikipedia.org/wiki/Thiazolidinedione"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,125 @@
 {
   "slug": "orlistat",
   "name": "Orlistat",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "tetrahydrolipstatin",
+    "Ro 18-0647"
+  ],
+  "brands": [
+    "Xenical",
+    "alli"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Gastrointestinal lipase inhibitor (anti-obesity agent)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral capsule with each main meal containing fat (120 mg prescription; 60 mg OTC)",
+  "targets": [
+    "PNLIP (pancreatic lipase)",
+    "LIPF (gastric lipase)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Hoffmann-La Roche",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1998,
+    "agency": "EMA",
+    "country": "EU",
+    "brand": "Xenical"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Hoffmann-La Roche",
+    "note": "A hydrogenated derivative of lipstatin, a natural lipase inhibitor produced by Streptomyces toxytricini."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription (120 mg); OTC in many countries (60 mg)",
+  "tagline": "A weight-loss pill that blocks fat digestion in the gut",
+  "summary": "Orlistat inhibits gastric and pancreatic lipases in the gut so that about 30% of dietary fat passes unabsorbed. It produces modest weight loss alongside a reduced-calorie diet and is available over the counter at a lower dose in many countries; oily stools and faecal urgency are common.",
+  "mechanism": [
+    "Orlistat forms a covalent bond with the active-site serine of gastric and pancreatic lipases in the stomach and small-intestinal lumen. The inactivated enzymes cannot hydrolyse dietary triglycerides into absorbable free fatty acids and monoglycerides.",
+    "Undigested fat is excreted in the faeces, reducing calorie absorption. Systemic absorption is minimal, so effects are largely confined to the gut; absorption of fat-soluble vitamins can also fall."
+  ],
+  "uses": [
+    "Obesity (BMI ≥30) or overweight (BMI ≥27) with risk factors, with a reduced-calorie diet",
+    "Reducing risk of weight regain after prior weight loss"
+  ],
+  "history": [
+    {
+      "year": 1998,
+      "title": "EU approval",
+      "detail": "Xenical is approved in the European Union."
+    },
+    {
+      "year": 1999,
+      "title": "FDA approval",
+      "detail": "FDA approves Xenical in April 1999."
+    },
+    {
+      "year": 2004,
+      "title": "XENDOS",
+      "detail": "The four-year XENDOS study reports a 37% reduction in type 2 diabetes incidence with orlistat plus lifestyle change."
+    },
+    {
+      "year": 2007,
+      "title": "OTC alli",
+      "detail": "FDA approves 60 mg orlistat (alli) as the first OTC weight-loss drug in the US; EU OTC approval follows in 2009."
+    },
+    {
+      "year": 2010,
+      "title": "Liver injury labelling",
+      "detail": "FDA adds information about rare reports of severe liver injury to orlistat labels."
+    }
+  ],
+  "pk": {
+    "half_life": "1–2 h (absorbed fraction)",
+    "bioavailability": "minimal (<1%)",
+    "metabolism": "mainly in the gut wall to inactive metabolites",
+    "excretion": "about 97% faeces (83% unchanged)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "oily spotting",
+      "flatus with discharge",
+      "faecal urgency",
+      "fatty or oily stools",
+      "increased defecation"
+    ],
+    "serious": [
+      "severe liver injury (rare)",
+      "oxalate nephropathy",
+      "reduced absorption of fat-soluble vitamins, ciclosporin and levothyroxine"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Orlistat derives from lipstatin, a natural product of the soil bacterium Streptomyces toxytricini.",
+    "alli became the first FDA-approved over-the-counter weight-loss drug in 2007."
+  ],
+  "related": [
+    "phentermine",
+    "liraglutide",
+    "semaglutide",
+    "tirzepatide",
+    "acarbose"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Orlistat",
+      "url": "https://en.wikipedia.org/wiki/Orlistat"
+    },
+    {
+      "title": "DailyMed: Orlistat labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=orlistat"
+    },
+    {
+      "title": "EMA EPAR: Xenical",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/xenical"
+    }
+  ],
+  "stage": "written"
 }

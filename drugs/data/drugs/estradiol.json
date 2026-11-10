@@ -1,36 +1,144 @@
 {
   "slug": "estradiol",
   "name": "Estradiol",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "oestradiol",
+    "17β-estradiol",
+    "estradiol valerate",
+    "estradiol hemihydrate"
+  ],
+  "brands": [
+    "Estrace",
+    "Climara",
+    "Vivelle-Dot",
+    "Estrogel",
+    "Vagifem",
+    "Progynova",
+    "Divigel",
+    "Imvexxy"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Estrogen (estrogen receptor agonist)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "transdermal",
+    "vaginal",
+    "im",
+    "topical"
+  ],
+  "route_note": "oral tablets; transdermal patches, gels and sprays; vaginal tablets, rings and creams; IM valerate or cypionate depot",
+  "targets": [
+    "ESR1",
+    "ESR2",
+    "GPER1"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Schering AG (1930s)",
+  "owner": "generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "discovery": {
+    "year": 1935,
+    "by": "Edward Doisy and colleagues (Saint Louis University)",
+    "note": "Isolated from sow ovaries in 1935; estrone had been isolated by Doisy and Butenandt in 1929."
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "The main human estrogen, used in menopausal hormone therapy and gender-affirming care",
+  "summary": "Estradiol is the most potent naturally occurring human estrogen. It is used to relieve menopausal symptoms, prevent postmenopausal osteoporosis, treat hypoestrogenism and as part of feminising hormone therapy; women with a uterus also need a progestogen to protect the endometrium.",
+  "mechanism": [
+    "Estradiol binds nuclear estrogen receptors α and β, which dimerise and regulate gene transcription through estrogen-response elements and interactions with other transcription factors. It also signals rapidly via membrane receptors including GPER.",
+    "In menopause, replacing estradiol stabilises hypothalamic thermoregulation (reducing hot flushes), maintains vaginal and urogenital epithelium, and reduces bone resorption. Unopposed estrogen stimulates endometrial proliferation, so a progestogen is added in women with a uterus."
+  ],
+  "uses": [
+    "Vasomotor symptoms of menopause",
+    "Vulvovaginal and genitourinary atrophy (vaginal forms)",
+    "Prevention of postmenopausal osteoporosis",
+    "Hypoestrogenism due to hypogonadism, castration or primary ovarian insufficiency",
+    "Feminising gender-affirming hormone therapy (off-label in many labels)",
+    "Palliation of advanced prostate and breast cancer (selected cases)"
+  ],
+  "history": [
+    {
+      "year": 1929,
+      "title": "Estrone isolated",
+      "detail": "Doisy and Butenandt independently isolate estrone from urine."
+    },
+    {
+      "year": 1935,
+      "title": "Estradiol isolated",
+      "detail": "Doisy's group isolates estradiol from ovarian tissue."
+    },
+    {
+      "year": 1975,
+      "title": "Endometrial cancer link",
+      "detail": "Studies link unopposed estrogen therapy to endometrial cancer, leading to combined estrogen–progestogen regimens."
+    },
+    {
+      "year": 1994,
+      "title": "Transdermal patch",
+      "detail": "Twice-weekly estradiol matrix patches widen transdermal use, which avoids first-pass liver effects."
+    },
+    {
+      "year": 2002,
+      "title": "Women's Health Initiative",
+      "detail": "WHI reports increased breast cancer, stroke and VTE with oral conjugated estrogens plus medroxyprogesterone, prompting class boxed warnings."
+    },
+    {
+      "year": 2025,
+      "title": "Boxed warnings to be removed",
+      "detail": "In November 2025 FDA announces it will ask manufacturers to remove boxed warnings on menopausal hormone therapy."
+    }
+  ],
+  "pk": {
+    "half_life": "about 13–20 h (oral, including recycling via estrone)",
+    "bioavailability": "about 5% oral (micronised); transdermal avoids first pass",
+    "metabolism": "hepatic conversion to estrone and estriol; CYP3A4, CYP1A2; sulfation and glucuronidation",
+    "excretion": "urine as conjugates; enterohepatic recycling"
+  },
+  "safety": {
+    "common": [
+      "breast tenderness",
+      "headache",
+      "nausea",
+      "vaginal bleeding",
+      "bloating"
+    ],
+    "serious": [
+      "venous thromboembolism (especially oral)",
+      "stroke",
+      "endometrial hyperplasia and cancer if unopposed",
+      "breast cancer with combined long-term therapy",
+      "gallbladder disease"
+    ],
+    "boxed_warning": "Class warning (US): endometrial cancer, cardiovascular disorders, breast cancer and probable dementia, based on WHI; in November 2025 FDA announced these boxed warnings would be removed from menopausal hormone therapy labels."
+  },
+  "facts": [
+    "Transdermal estradiol carries a lower risk of venous thromboembolism than oral estrogen in observational studies.",
+    "The WHI trials tested conjugated equine estrogens, not estradiol, but their findings were applied across the estrogen class."
+  ],
+  "related": [
+    "ethinylestradiol-levonorgestrel",
+    "raloxifene",
+    "testosterone",
+    "alendronate",
+    "tamoxifen"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Estradiol (medication)",
+      "url": "https://en.wikipedia.org/wiki/Estradiol_(medication)"
+    },
+    {
+      "title": "DailyMed: Estradiol labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=estradiol"
+    },
+    {
+      "title": "Wikipedia: Women's Health Initiative",
+      "url": "https://en.wikipedia.org/wiki/Women's_Health_Initiative"
+    }
+  ],
+  "stage": "written"
 }

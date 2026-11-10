@@ -1,36 +1,135 @@
 {
   "slug": "allopurinol",
   "name": "Allopurinol",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "4-hydroxypyrazolo[3,4-d]pyrimidine",
+    "BW 56-158"
+  ],
+  "brands": [
+    "Zyloprim",
+    "Zyloric",
+    "Aloprim (IV)"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Xanthine oxidase inhibitor (purine analogue)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "oral tablet once daily, titrated to serum urate target; IV for tumour lysis prevention",
+  "targets": [
+    "XDH (xanthine oxidase)"
+  ],
+  "origin": "synthetic",
+  "originator": "Burroughs Wellcome (Gertrude Elion, George Hitchings)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1966,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Zyloprim"
+  },
+  "discovery": {
+    "year": 1956,
+    "by": "Roland Robins (synthesis); Gertrude Elion and George Hitchings, Burroughs Wellcome (development)",
+    "note": "Studied first as an adjunct to raise mercaptopurine levels in leukaemia, then found to lower uric acid."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "The mainstay of gout prevention, from Nobel laureates Elion and Hitchings",
+  "summary": "Allopurinol is a purine analogue that inhibits xanthine oxidase and so lowers production of uric acid. It is the first-line urate-lowering therapy for chronic gout and is used to prevent tumour lysis syndrome; serious skin reactions are strongly associated with the HLA-B*58:01 allele.",
+  "mechanism": [
+    "Xanthine oxidase catalyses the last two steps of purine breakdown, hypoxanthine to xanthine and xanthine to uric acid. Allopurinol, a structural isomer of hypoxanthine, and its long-lived active metabolite oxypurinol (alloxanthine) inhibit the enzyme.",
+    "Uric acid levels fall, urate crystals in joints and tissues slowly dissolve, and gout flares and tophi diminish over months; the more soluble precursors hypoxanthine and xanthine are excreted instead. Starting treatment can trigger flares, so prophylaxis such as colchicine is often given."
+  ],
+  "uses": [
+    "Chronic gout and hyperuricaemia with tophi or recurrent flares",
+    "Prevention of tumour lysis syndrome during chemotherapy",
+    "Recurrent calcium oxalate kidney stones with hyperuricosuria"
+  ],
+  "history": [
+    {
+      "year": 1956,
+      "title": "Synthesis",
+      "detail": "Roland Robins synthesises allopurinol; Elion and Hitchings study it at Burroughs Wellcome."
+    },
+    {
+      "year": 1963,
+      "title": "Gout trials",
+      "detail": "Clinical studies show allopurinol lowers uric acid in gout."
+    },
+    {
+      "year": 1966,
+      "title": "FDA approval",
+      "detail": "FDA approves Zyloprim."
+    },
+    {
+      "year": 1988,
+      "title": "Nobel Prize",
+      "detail": "Elion and Hitchings (with James Black) receive the Nobel Prize for principles of drug treatment, including allopurinol."
+    },
+    {
+      "year": 2005,
+      "title": "HLA-B*5801 link",
+      "detail": "Researchers in Taiwan report that HLA-B*58:01 is strongly associated with allopurinol-induced SJS/TEN (PNAS 2005)."
+    },
+    {
+      "year": 2020,
+      "title": "ACR guideline",
+      "detail": "The American College of Rheumatology recommends allopurinol as first-line urate-lowering therapy with HLA-B*58:01 testing in high-risk ancestry groups."
+    },
+    {
+      "year": 2022,
+      "title": "ALL-HEART",
+      "detail": "The ALL-HEART trial finds allopurinol does not reduce cardiovascular events in ischaemic heart disease without gout."
+    }
+  ],
+  "pk": {
+    "half_life": "1–2 h (allopurinol); 15–30 h (oxypurinol)",
+    "bioavailability": "about 80–90%",
+    "metabolism": "aldehyde oxidase/xanthine oxidase to oxypurinol",
+    "excretion": "renal (oxypurinol)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "rash",
+      "gout flares at initiation",
+      "nausea",
+      "diarrhoea"
+    ],
+    "serious": [
+      "Stevens–Johnson syndrome / toxic epidermal necrolysis",
+      "DRESS (allopurinol hypersensitivity syndrome)",
+      "hepatotoxicity",
+      "bone marrow suppression with azathioprine or mercaptopurine"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Allopurinol greatly increases azathioprine and mercaptopurine toxicity, since both are inactivated by xanthine oxidase.",
+    "HLA-B*58:01 is common in Han Chinese, Korean and Thai populations, in whom pre-treatment testing is often recommended."
+  ],
+  "related": [
+    "febuxostat",
+    "colchicine",
+    "azathioprine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Allopurinol",
+      "url": "https://en.wikipedia.org/wiki/Allopurinol"
+    },
+    {
+      "title": "DailyMed: Allopurinol labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=allopurinol"
+    },
+    {
+      "title": "Hung SI et al. HLA-B*5801 and allopurinol-induced severe cutaneous reactions (PNAS 2005)",
+      "url": "https://www.pnas.org/doi/10.1073/pnas.0409500102"
+    }
+  ],
+  "stage": "written"
 }

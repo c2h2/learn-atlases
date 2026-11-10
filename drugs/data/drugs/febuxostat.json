@@ -1,36 +1,126 @@
 {
   "slug": "febuxostat",
   "name": "Febuxostat",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "TMX-67",
+    "TEI-6720"
+  ],
+  "brands": [
+    "Uloric",
+    "Adenuric",
+    "Feburic"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Xanthine oxidase inhibitor (non-purine)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet 40–120 mg once daily",
+  "targets": [
+    "XDH (xanthine oxidase)"
+  ],
+  "origin": "synthetic",
+  "originator": "Teijin Pharma",
+  "owner": "generic (many); Takeda (Uloric), Menarini (Adenuric)",
+  "first_approval": {
+    "year": 2008,
+    "agency": "EMA",
+    "country": "EU",
+    "brand": "Adenuric"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Teijin Pharma, Japan",
+    "note": "A thiazolecarboxylic acid that inhibits both oxidised and reduced forms of xanthine oxidase."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "A non-purine gout drug whose cardiovascular death signal earned a boxed warning",
+  "summary": "Febuxostat is a selective non-purine inhibitor of xanthine oxidase that lowers serum uric acid in chronic gout. It is more potent than standard-dose allopurinol and is mainly hepatically cleared, but the CARES trial found higher cardiovascular death than allopurinol, so in the US it is reserved for patients who cannot use allopurinol.",
+  "mechanism": [
+    "Febuxostat binds a channel leading to the molybdenum–pterin active site of xanthine oxidase, blocking substrate access in both oxidised and reduced forms of the enzyme. This lowers conversion of hypoxanthine and xanthine to uric acid.",
+    "Because it is not a purine analogue it has little effect on other enzymes of purine and pyrimidine metabolism. Like allopurinol, it can provoke gout flares early in treatment."
+  ],
+  "uses": [
+    "Chronic hyperuricaemia in gout (US: when allopurinol is inadequate or not tolerated)",
+    "Prevention of hyperuricaemia in tumour lysis syndrome (EU, 120 mg)"
+  ],
+  "history": [
+    {
+      "year": 2008,
+      "title": "EU approval",
+      "detail": "Adenuric is approved in the European Union in April 2008."
+    },
+    {
+      "year": 2009,
+      "title": "FDA approval",
+      "detail": "FDA approves Uloric in February 2009 after earlier requests for more cardiovascular data."
+    },
+    {
+      "year": 2018,
+      "title": "CARES trial",
+      "detail": "CARES shows non-inferiority for the composite endpoint but higher cardiovascular and all-cause death than allopurinol (NEJM 2018)."
+    },
+    {
+      "year": 2019,
+      "title": "Boxed warning; generics",
+      "detail": "FDA adds a boxed warning on cardiovascular death and limits use to allopurinol failures; US generics launch."
+    },
+    {
+      "year": 2020,
+      "title": "FAST trial",
+      "detail": "The European FAST trial finds febuxostat non-inferior to allopurinol for cardiovascular outcomes, with no excess deaths (Lancet 2020)."
+    }
+  ],
+  "pk": {
+    "half_life": "about 5–8 h",
+    "bioavailability": "at least 49–84%",
+    "metabolism": "hepatic glucuronidation (UGTs) and oxidation (CYP1A2, 2C8, 2C9)",
+    "excretion": "urine and faeces"
+  },
+  "safety": {
+    "common": [
+      "liver function abnormalities",
+      "nausea",
+      "arthralgia",
+      "rash",
+      "gout flares"
+    ],
+    "serious": [
+      "cardiovascular death",
+      "hepatotoxicity",
+      "serious skin and hypersensitivity reactions",
+      "bone marrow suppression with azathioprine or mercaptopurine"
+    ],
+    "boxed_warning": "Cardiovascular death: higher rate of CV death than allopurinol in gout patients with established CV disease; reserve for patients with inadequate response to or intolerance of allopurinol."
+  },
+  "facts": [
+    "Two large trials, CARES (US) and FAST (Europe), reached different conclusions about febuxostat's cardiovascular risk."
+  ],
+  "related": [
+    "allopurinol",
+    "colchicine"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Febuxostat",
+      "url": "https://en.wikipedia.org/wiki/Febuxostat"
+    },
+    {
+      "title": "DailyMed: Febuxostat labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=febuxostat"
+    },
+    {
+      "title": "EMA EPAR: Adenuric",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/adenuric"
+    },
+    {
+      "title": "White WB et al. CARES trial (NEJM 2018)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1710895"
+    }
+  ],
+  "stage": "written"
 }

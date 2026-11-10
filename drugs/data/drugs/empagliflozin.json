@@ -1,36 +1,138 @@
 {
   "slug": "empagliflozin",
   "name": "Empagliflozin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BI 10773"
+  ],
+  "brands": [
+    "Jardiance",
+    "Synjardy (with metformin)",
+    "Glyxambi (with linagliptin)"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Sodium-glucose cotransporter 2 (SGLT2) inhibitor (gliflozin)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet 10 or 25 mg once daily",
+  "targets": [
+    "SLC5A2 (SGLT2)"
+  ],
+  "origin": "synthetic",
+  "originator": "Boehringer Ingelheim",
+  "owner": "Boehringer Ingelheim (co-marketed with Eli Lilly)",
+  "first_approval": {
+    "year": 2014,
+    "agency": "EMA",
+    "country": "EU",
+    "brand": "Jardiance"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Boehringer Ingelheim",
+    "note": "A C-glucoside SGLT2 inhibitor in the gliflozin class descended from the natural product phlorizin."
+  },
+  "generic": false,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "A diabetes pill that turned out to protect the heart and kidneys",
+  "summary": "Empagliflozin is an SGLT2 inhibitor that lowers blood glucose by making the kidneys excrete glucose in the urine. The 2015 EMPA-REG OUTCOME trial showed it reduced cardiovascular death, and later trials extended its use to heart failure and chronic kidney disease regardless of diabetes.",
+  "mechanism": [
+    "The sodium-glucose cotransporter 2 (SGLT2, gene SLC5A2) in the early proximal tubule reabsorbs about 90% of glucose filtered by the kidney. Inhibiting it causes urinary loss of roughly 60–80 g of glucose per day, lowering blood glucose independently of insulin and producing a mild calorie deficit and osmotic diuresis.",
+    "Increased sodium delivery to the macula densa restores tubuloglomerular feedback and reduces glomerular hyperfiltration, which is thought to underlie the kidney protection seen in trials. Natriuresis, lower blood pressure, a shift toward ketone use and other haemodynamic and metabolic effects are proposed to explain heart-failure benefits that occur even without diabetes."
+  ],
+  "uses": [
+    "Type 2 diabetes mellitus (adults and children 10 years and older)",
+    "Reduction of cardiovascular death in type 2 diabetes with established CVD",
+    "Heart failure across the range of ejection fraction",
+    "Chronic kidney disease at risk of progression"
+  ],
+  "history": [
+    {
+      "year": 2014,
+      "title": "Approval",
+      "detail": "The EU approves Jardiance in May 2014 and FDA in August 2014."
+    },
+    {
+      "year": 2015,
+      "title": "EMPA-REG OUTCOME",
+      "detail": "Empagliflozin reduces cardiovascular death by 38% in type 2 diabetes with CVD (NEJM 2015)."
+    },
+    {
+      "year": 2016,
+      "title": "Cardiovascular indication",
+      "detail": "FDA approves Jardiance to reduce cardiovascular death, the first diabetes drug with such a claim."
+    },
+    {
+      "year": 2020,
+      "title": "EMPEROR-Reduced",
+      "detail": "Empagliflozin reduces cardiovascular death or HF hospitalisation in HF with reduced ejection fraction."
+    },
+    {
+      "year": 2021,
+      "title": "EMPEROR-Preserved",
+      "detail": "First positive major trial in HF with preserved ejection fraction; HF indications follow in 2021–2022."
+    },
+    {
+      "year": 2023,
+      "title": "EMPA-KIDNEY and CKD approval",
+      "detail": "EMPA-KIDNEY shows reduced kidney progression or cardiovascular death; FDA approves the CKD indication in September 2023."
+    }
+  ],
+  "pk": {
+    "half_life": "about 12.4 h",
+    "bioavailability": "about 78% (estimated)",
+    "metabolism": "glucuronidation by UGT2B7, UGT1A3, UGT1A8, UGT1A9",
+    "excretion": "about 41% faeces, 54% urine (half unchanged)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "genital mycotic infections",
+      "urinary tract infections",
+      "increased urination",
+      "dyslipidaemia"
+    ],
+    "serious": [
+      "diabetic ketoacidosis (including euglycaemic)",
+      "necrotising fasciitis of the perineum (Fournier's gangrene)",
+      "volume depletion and hypotension",
+      "urosepsis and pyelonephritis",
+      "hypoglycaemia with insulin or sulfonylureas",
+      "acute kidney injury"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Jardiance was the first diabetes drug labelled by FDA to reduce cardiovascular death (2016).",
+    "EMPEROR-Preserved was the first large trial to show clear benefit of any drug class in HF with preserved ejection fraction."
+  ],
+  "related": [
+    "dapagliflozin",
+    "canagliflozin",
+    "linagliptin",
+    "metformin",
+    "finerenone",
+    "semaglutide"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Empagliflozin",
+      "url": "https://en.wikipedia.org/wiki/Empagliflozin"
+    },
+    {
+      "title": "DailyMed: Empagliflozin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=empagliflozin"
+    },
+    {
+      "title": "EMA EPAR: Jardiance",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/jardiance"
+    },
+    {
+      "title": "Zinman B et al. EMPA-REG OUTCOME (NEJM 2015)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1504720"
+    }
+  ],
+  "stage": "written"
 }

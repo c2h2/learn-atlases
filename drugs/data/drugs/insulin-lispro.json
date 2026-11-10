@@ -1,36 +1,124 @@
 {
   "slug": "insulin-lispro",
   "name": "Insulin lispro",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "LY275585",
+    "insulin lispro-aabc (Lyumjev)"
+  ],
+  "brands": [
+    "Humalog",
+    "Admelog",
+    "Lyumjev",
+    "Liprolog"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Rapid-acting insulin analogue (prandial insulin)",
+  "modality": "protein",
+  "routes": [
+    "sc",
+    "iv"
+  ],
+  "route_note": "subcutaneous injection within 15 minutes of a meal or via insulin pump; IV under supervision",
+  "targets": [
+    "INSR"
+  ],
+  "origin": "biotech",
+  "originator": "Eli Lilly",
+  "owner": "Eli Lilly (follow-on from Sanofi)",
+  "first_approval": {
+    "year": 1996,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Humalog"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Eli Lilly researchers",
+    "note": "Reversing proline B28 and lysine B29 (the sequence found in IGF-1) weakens hexamer formation so the analogue is absorbed quickly."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "The first rapid-acting insulin analogue, built by swapping two amino acids",
+  "summary": "Insulin lispro is a rapid-acting insulin analogue taken at mealtimes or used in insulin pumps. Approved as Humalog in 1996, it was the first insulin analogue on the market; its onset of about 15 minutes better matches the rise in blood glucose after meals than regular human insulin.",
+  "mechanism": [
+    "Lispro has the B28 proline and B29 lysine of human insulin reversed. This reduces self-association into dimers and hexamers, so after subcutaneous injection it dissociates and is absorbed rapidly, with onset in about 15 minutes, peak at 30–90 minutes and duration of 3–5 hours.",
+    "Once absorbed it acts on the insulin receptor exactly like human insulin, promoting glucose uptake and storage and inhibiting hepatic glucose output, lipolysis and ketogenesis."
+  ],
+  "uses": [
+    "Type 1 diabetes mellitus (prandial insulin and pump therapy)",
+    "Type 2 diabetes mellitus requiring mealtime insulin"
+  ],
+  "history": [
+    {
+      "year": 1996,
+      "title": "Humalog approved",
+      "detail": "FDA approves Humalog in June 1996, the first commercially available insulin analogue; it is also approved in the EU in 1996."
+    },
+    {
+      "year": 1999,
+      "title": "Premixed formulation",
+      "detail": "Humalog Mix75/25, a mix of lispro with lispro protamine suspension, is approved in the US."
+    },
+    {
+      "year": 2017,
+      "title": "Follow-on product",
+      "detail": "FDA approves Sanofi's Admelog, a follow-on insulin lispro."
+    },
+    {
+      "year": 2019,
+      "title": "Lower-priced unbranded version",
+      "detail": "Lilly launches an unbranded Insulin Lispro at half the Humalog list price in the US."
+    },
+    {
+      "year": 2020,
+      "title": "Ultra-rapid Lyumjev",
+      "detail": "Lyumjev, lispro with treprostinil and citrate to speed absorption, is approved in the EU, Japan and US."
+    }
+  ],
+  "pk": {
+    "half_life": "about 1 h after SC dose; action lasts 3–5 h",
+    "bioavailability": "55–77% after SC injection",
+    "metabolism": "proteolytic degradation as for human insulin",
+    "excretion": "renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "hypoglycaemia",
+      "injection-site reactions",
+      "lipodystrophy",
+      "weight gain"
+    ],
+    "serious": [
+      "severe hypoglycaemia",
+      "hypokalaemia",
+      "hypersensitivity reactions"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Humalog was the first recombinant insulin analogue to reach the market (1996).",
+    "The B28/B29 sequence inversion in lispro mirrors the corresponding sequence of insulin-like growth factor 1."
+  ],
+  "related": [
+    "insulin-human",
+    "insulin-glargine",
+    "insulin-degludec"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Insulin lispro",
+      "url": "https://en.wikipedia.org/wiki/Insulin_lispro"
+    },
+    {
+      "title": "DailyMed: Insulin lispro labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=insulin%20lispro"
+    },
+    {
+      "title": "EMA EPAR: Humalog",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/humalog"
+    }
+  ],
+  "stage": "written"
 }

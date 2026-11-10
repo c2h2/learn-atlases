@@ -1,36 +1,122 @@
 {
   "slug": "resmetirom",
   "name": "Resmetirom",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "MGL-3196",
+    "VIA-3196"
+  ],
+  "brands": [
+    "Rezdiffra"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Thyroid hormone receptor beta (THR-β) selective agonist",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once daily (80 or 100 mg by body weight)",
+  "targets": [
+    "THRB"
+  ],
+  "origin": "synthetic",
+  "originator": "Hoffmann-La Roche (licensed to Madrigal Pharmaceuticals)",
+  "owner": "Madrigal Pharmaceuticals",
+  "first_approval": {
+    "year": 2024,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Rezdiffra"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Roche, then developed by VIA Pharmaceuticals / Madrigal",
+    "note": "A liver-directed THR-β agonist designed to avoid THR-α-mediated effects on heart and bone."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "The first approved drug for MASH, a liver-targeted thyroid hormone mimic",
+  "summary": "Resmetirom is an oral, liver-directed agonist of thyroid hormone receptor beta. In March 2024 it became the first drug approved for metabolic dysfunction-associated steatohepatitis (MASH, formerly NASH) with moderate-to-advanced liver fibrosis, after the MAESTRO-NASH trial showed resolution of steatohepatitis and improvement of fibrosis.",
+  "mechanism": [
+    "Thyroid hormone acting on THR-β in hepatocytes increases fatty-acid β-oxidation, mitochondrial biogenesis and cholesterol metabolism. Resmetirom is about 28-fold selective for THR-β over THR-α and is taken up preferentially into the liver by OATP1B1.",
+    "Liver fat falls, lipotoxicity and inflammation decrease, and LDL cholesterol, triglycerides and lipoprotein(a) decline. Avoiding THR-α activation is intended to spare the heart and bone from thyrotoxic effects."
+  ],
+  "uses": [
+    "Non-cirrhotic MASH/NASH with moderate to advanced liver fibrosis (stages F2–F3), with diet and exercise"
+  ],
+  "history": [
+    {
+      "year": 2008,
+      "title": "Licensed from Roche",
+      "detail": "Madrigal's predecessor licenses the compound from Roche."
+    },
+    {
+      "year": 2019,
+      "title": "Phase 2 results",
+      "detail": "A phase 2 trial shows significant reduction in liver fat at 12 weeks (Lancet 2019)."
+    },
+    {
+      "year": 2022,
+      "title": "Topline phase 3 results",
+      "detail": "In December 2022 Madrigal reports that MAESTRO-NASH met both liver-biopsy primary endpoints."
+    },
+    {
+      "year": 2024,
+      "title": "MAESTRO-NASH and FDA approval",
+      "detail": "MAESTRO-NASH is published in NEJM; FDA grants accelerated approval to Rezdiffra on 14 March 2024 as the first MASH treatment."
+    },
+    {
+      "year": 2025,
+      "title": "EU approval",
+      "detail": "The European Commission grants conditional marketing authorisation for Rezdiffra in August 2025."
+    }
+  ],
+  "pk": {
+    "half_life": "about 4.5 h",
+    "bioavailability": "not established",
+    "metabolism": "mainly CYP2C8",
+    "excretion": "faeces and urine"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "diarrhoea",
+      "nausea",
+      "pruritus",
+      "abdominal pain",
+      "vomiting",
+      "constipation",
+      "dizziness"
+    ],
+    "serious": [
+      "hepatotoxicity",
+      "gallbladder events",
+      "interactions with statins and CYP2C8 inhibitors"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Rezdiffra was approved under the accelerated pathway, with continued approval contingent on outcome data from the MAESTRO-NASH OUTCOMES study."
+  ],
+  "related": [
+    "levothyroxine",
+    "pioglitazone",
+    "semaglutide",
+    "obeticholic-acid"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Resmetirom",
+      "url": "https://en.wikipedia.org/wiki/Resmetirom"
+    },
+    {
+      "title": "DailyMed: Resmetirom labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=resmetirom"
+    },
+    {
+      "title": "Harrison SA et al. MAESTRO-NASH (NEJM 2024)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2309000"
+    }
+  ],
+  "stage": "written"
 }

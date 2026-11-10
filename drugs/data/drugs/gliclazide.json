@@ -1,36 +1,120 @@
 {
   "slug": "gliclazide",
   "name": "Gliclazide",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "S 1702",
+    "gliclazide MR"
+  ],
+  "brands": [
+    "Diamicron",
+    "Diamicron MR"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Sulfonylurea (second generation)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet; modified-release once daily or immediate-release once/twice daily",
+  "targets": [
+    "ABCC8 (SUR1)",
+    "KCNJ11 (Kir6.2)"
+  ],
+  "origin": "synthetic",
+  "originator": "Servier",
+  "owner": "Servier (Diamicron); generic (many)",
+  "first_approval": {
+    "year": 1972,
+    "agency": null,
+    "country": "France",
+    "brand": "Diamicron"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Servier",
+    "note": "A sulfonylurea with an azabicyclo-octyl ring developed by the French company Servier."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Servier's sulfonylurea, widely used outside the US and in the ADVANCE trial",
+  "summary": "Gliclazide is a sulfonylurea that stimulates insulin secretion and is widely used for type 2 diabetes in Europe, Asia and Australia but is not approved in the United States. It has a lower risk of severe hypoglycaemia than glibenclamide and is the sulfonylurea listed by the WHO as an essential medicine.",
+  "mechanism": [
+    "Gliclazide binds SUR1 on pancreatic beta cells, closing KATP channels, depolarising the membrane and triggering calcium-dependent insulin release. It is relatively selective for the beta-cell SUR1 over cardiac and vascular SUR2 isoforms.",
+    "It is metabolised to inactive products, which limits accumulation in kidney impairment compared with glibenclamide. Antioxidant and antiplatelet properties have been described in laboratory studies but their clinical relevance is uncertain."
+  ],
+  "uses": [
+    "Type 2 diabetes mellitus"
+  ],
+  "history": [
+    {
+      "year": 1972,
+      "title": "Launch",
+      "detail": "Servier introduces Diamicron in France."
+    },
+    {
+      "year": 2000,
+      "title": "Modified release",
+      "detail": "Diamicron MR, a once-daily modified-release formulation, is introduced."
+    },
+    {
+      "year": 2008,
+      "title": "ADVANCE trial",
+      "detail": "The ADVANCE trial uses gliclazide MR-based intensive control in 11,140 patients, reducing nephropathy (NEJM 2008)."
+    },
+    {
+      "year": 2014,
+      "title": "UK first-line sulfonylurea",
+      "detail": "Gliclazide is the most prescribed sulfonylurea in the UK and many Commonwealth countries, often as second-line after metformin."
+    },
+    {
+      "year": 2017,
+      "title": "TOSCA.IT",
+      "detail": "TOSCA.IT, comparing pioglitazone with sulfonylureas (mostly gliclazide or glimepiride) added to metformin, finds no difference in cardiovascular events."
+    }
+  ],
+  "pk": {
+    "half_life": "10–12 h (IR); MR gives 24 h coverage",
+    "bioavailability": "about 97% (MR)",
+    "metabolism": "hepatic (CYP2C9, CYP2C19) to inactive metabolites",
+    "excretion": "mainly renal as metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "hypoglycaemia",
+      "gastrointestinal upset",
+      "weight gain"
+    ],
+    "serious": [
+      "severe hypoglycaemia",
+      "haemolytic anaemia in G6PD deficiency",
+      "hepatic and skin reactions (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Gliclazide has never been approved by the US FDA.",
+    "The ADVANCE trial's intensive arm targeted an HbA1c of 6.5% or below using gliclazide MR."
+  ],
+  "related": [
+    "glibenclamide",
+    "glimepiride",
+    "metformin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Gliclazide",
+      "url": "https://en.wikipedia.org/wiki/Gliclazide"
+    },
+    {
+      "title": "ADVANCE Collaborative Group. Intensive blood glucose control (NEJM 2008)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa0802987"
+    },
+    {
+      "title": "WHO Model List of Essential Medicines",
+      "url": "https://www.who.int/groups/expert-committee-on-selection-and-use-of-essential-medicines/essential-medicines-lists"
+    }
+  ],
+  "stage": "written"
 }

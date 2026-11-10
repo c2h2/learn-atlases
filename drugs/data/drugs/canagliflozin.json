@@ -1,36 +1,132 @@
 {
   "slug": "canagliflozin",
   "name": "Canagliflozin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "TA-7284",
+    "JNJ-28431754"
+  ],
+  "brands": [
+    "Invokana",
+    "Invokamet (with metformin)",
+    "Vokanamet"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Sodium-glucose cotransporter 2 (SGLT2) inhibitor (gliflozin)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet 100 or 300 mg once daily before the first meal",
+  "targets": [
+    "SLC5A2 (SGLT2)",
+    "SLC5A1 (SGLT1, weak)"
+  ],
+  "origin": "synthetic",
+  "originator": "Mitsubishi Tanabe Pharma (licensed to Janssen)",
+  "owner": "Janssen (Johnson & Johnson); Mitsubishi Tanabe in Japan",
+  "first_approval": {
+    "year": 2013,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Invokana"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Mitsubishi Tanabe Pharma",
+    "note": "A C-glucoside thiophene SGLT2 inhibitor."
+  },
+  "generic": false,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "First SGLT2 inhibitor in the US, and the first to show kidney benefit (CREDENCE)",
+  "summary": "Canagliflozin was the first SGLT2 inhibitor approved in the United States (2013). It lowers glucose by increasing urinary glucose excretion; the CANVAS programme showed cardiovascular benefit but raised an amputation signal, and CREDENCE showed it slows diabetic kidney disease.",
+  "mechanism": [
+    "The sodium-glucose cotransporter 2 (SGLT2, gene SLC5A2) in the early proximal tubule reabsorbs about 90% of glucose filtered by the kidney. Inhibiting it causes urinary loss of roughly 60–80 g of glucose per day, lowering blood glucose independently of insulin and producing a mild calorie deficit and osmotic diuresis. At the 300 mg dose canagliflozin also partly inhibits intestinal SGLT1, delaying post-meal glucose absorption.",
+    "Increased sodium delivery to the macula densa restores tubuloglomerular feedback and reduces glomerular hyperfiltration, which is thought to underlie the kidney protection seen in trials. Natriuresis, lower blood pressure, a shift toward ketone use and other haemodynamic and metabolic effects are proposed to explain heart-failure benefits that occur even without diabetes."
+  ],
+  "uses": [
+    "Type 2 diabetes mellitus",
+    "Reduction of major cardiovascular events in type 2 diabetes with CVD",
+    "Reduction of end-stage kidney disease, creatinine doubling, cardiovascular death and HF hospitalisation in diabetic nephropathy with albuminuria"
+  ],
+  "history": [
+    {
+      "year": 2013,
+      "title": "First US SGLT2 approval",
+      "detail": "FDA approves Invokana in March 2013; EU approval follows in November 2013."
+    },
+    {
+      "year": 2015,
+      "title": "DKA warning",
+      "detail": "FDA warns that SGLT2 inhibitors may cause ketoacidosis."
+    },
+    {
+      "year": 2017,
+      "title": "CANVAS and amputation warning",
+      "detail": "CANVAS shows fewer cardiovascular events but about double the amputation risk; FDA adds a boxed warning."
+    },
+    {
+      "year": 2019,
+      "title": "CREDENCE",
+      "detail": "CREDENCE stops early after showing a 30% reduction in kidney failure and related outcomes."
+    },
+    {
+      "year": 2020,
+      "title": "Boxed warning removed",
+      "detail": "FDA removes the amputation boxed warning in August 2020, keeping a warning in the label."
+    }
+  ],
+  "pk": {
+    "half_life": "10.6 h (100 mg) to 13.1 h (300 mg)",
+    "bioavailability": "about 65%",
+    "metabolism": "O-glucuronidation by UGT1A9 and UGT2B4",
+    "excretion": "about 52% faeces, 33% urine"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "genital mycotic infections",
+      "urinary tract infections",
+      "increased urination",
+      "thirst"
+    ],
+    "serious": [
+      "diabetic ketoacidosis (including euglycaemic)",
+      "necrotising fasciitis of the perineum (Fournier's gangrene)",
+      "volume depletion and hypotension",
+      "urosepsis and pyelonephritis",
+      "hypoglycaemia with insulin or sulfonylureas",
+      "lower-limb amputation",
+      "bone fracture"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Invokana was the first SGLT2 inhibitor approved by FDA (March 2013).",
+    "A boxed warning on amputation was added in 2017 and removed in 2020."
+  ],
+  "related": [
+    "empagliflozin",
+    "dapagliflozin",
+    "metformin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Canagliflozin",
+      "url": "https://en.wikipedia.org/wiki/Canagliflozin"
+    },
+    {
+      "title": "DailyMed: Canagliflozin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=canagliflozin"
+    },
+    {
+      "title": "EMA EPAR: Invokana",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/invokana"
+    },
+    {
+      "title": "Perkovic V et al. CREDENCE (NEJM 2019)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1811744"
+    }
+  ],
+  "stage": "written"
 }

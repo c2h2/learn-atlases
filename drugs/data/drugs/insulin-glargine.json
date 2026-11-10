@@ -1,36 +1,136 @@
 {
   "slug": "insulin-glargine",
   "name": "Insulin glargine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "HOE 901",
+    "glargine U100",
+    "glargine U300",
+    "insulin glargine-yfgn"
+  ],
+  "brands": [
+    "Lantus",
+    "Toujeo",
+    "Basaglar / Abasaglar",
+    "Semglee",
+    "Rezvoglar"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Long-acting insulin analogue (basal insulin)",
+  "modality": "protein",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "subcutaneous injection once daily (100 U/mL or concentrated 300 U/mL pens)",
+  "targets": [
+    "INSR"
+  ],
+  "origin": "biotech",
+  "originator": "Hoechst (later Aventis / Sanofi)",
+  "owner": "Sanofi (biosimilars from Lilly, Biocon/Viatris and others)",
+  "first_approval": {
+    "year": 2000,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Lantus"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Hoechst AG researchers",
+    "note": "Engineered in the 1990s by substituting glycine at A21 and adding two arginines to the B-chain C-terminus, shifting the isoelectric point."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "First once-daily basal insulin analogue; it precipitates under the skin for a flat profile",
+  "summary": "Insulin glargine is a long-acting insulin analogue that provides basal insulin cover for about 24 hours after a single subcutaneous injection. Marketed as Lantus from 2000, it became the world's best-selling insulin; biosimilars including the first interchangeable biosimilar, Semglee, are now available.",
+  "mechanism": [
+    "Glargine differs from human insulin by glycine at position A21 and two arginines added to the B chain. These changes raise the isoelectric point so that the clear acidic solution forms microprecipitates at the neutral pH of subcutaneous tissue, from which insulin dissolves slowly and steadily.",
+    "After absorption glargine is cleaved to active metabolites (M1, M2) that bind the insulin receptor and exert the same metabolic actions as human insulin: increased glucose uptake in muscle and fat and suppressed hepatic glucose production, with no pronounced peak."
+  ],
+  "uses": [
+    "Type 1 diabetes mellitus (adults and children)",
+    "Type 2 diabetes mellitus requiring basal insulin"
+  ],
+  "history": [
+    {
+      "year": 2000,
+      "title": "Lantus approved",
+      "detail": "FDA approves Lantus in April 2000 and the European Commission approves it in June 2000."
+    },
+    {
+      "year": 2009,
+      "title": "Cancer-signal controversy",
+      "detail": "Observational studies prompt regulatory reviews of a possible cancer link; later data did not confirm an association."
+    },
+    {
+      "year": 2012,
+      "title": "ORIGIN trial",
+      "detail": "The ORIGIN trial in over 12,000 people with dysglycaemia shows neutral cardiovascular outcomes for early glargine."
+    },
+    {
+      "year": 2014,
+      "title": "First biosimilar in Europe",
+      "detail": "Lilly/Boehringer Ingelheim's Abasaglar becomes the first insulin biosimilar approved in the EU."
+    },
+    {
+      "year": 2015,
+      "title": "Toujeo and Basaglar",
+      "detail": "FDA approves the concentrated 300 U/mL Toujeo and Lilly's follow-on Basaglar."
+    },
+    {
+      "year": 2021,
+      "title": "First interchangeable biosimilar",
+      "detail": "In July 2021 FDA designates Semglee (insulin glargine-yfgn) the first interchangeable biosimilar in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "duration of action about 24 h (U100), longer for U300",
+    "bioavailability": "slow, peakless absorption from SC depot",
+    "metabolism": "cleaved at the B-chain to active metabolites M1 and M2",
+    "excretion": "renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "hypoglycaemia",
+      "weight gain",
+      "injection-site reactions",
+      "lipodystrophy"
+    ],
+    "serious": [
+      "severe hypoglycaemia",
+      "hypokalaemia",
+      "hypersensitivity reactions"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Semglee was the first biosimilar of any kind to be designated interchangeable by FDA (2021).",
+    "Glargine must not be diluted or mixed with other insulins, because changing the pH destroys its depot mechanism."
+  ],
+  "related": [
+    "insulin-human",
+    "insulin-degludec",
+    "insulin-lispro",
+    "metformin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Insulin glargine",
+      "url": "https://en.wikipedia.org/wiki/Insulin_glargine"
+    },
+    {
+      "title": "DailyMed: Insulin glargine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=insulin%20glargine"
+    },
+    {
+      "title": "EMA EPAR: Lantus",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/lantus"
+    },
+    {
+      "title": "ORIGIN Trial Investigators. Basal insulin and cardiovascular outcomes (NEJM 2012)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1203858"
+    }
+  ],
+  "stage": "written"
 }

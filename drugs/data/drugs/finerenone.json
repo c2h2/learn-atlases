@@ -1,36 +1,122 @@
 {
   "slug": "finerenone",
   "name": "Finerenone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BAY 94-8862"
+  ],
+  "brands": [
+    "Kerendia",
+    "Firialta"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Non-steroidal mineralocorticoid receptor antagonist",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet 10–20 mg once daily (40 mg in heart failure), titrated by potassium and eGFR",
+  "targets": [
+    "NR3C2 (mineralocorticoid receptor)"
+  ],
+  "origin": "synthetic",
+  "originator": "Bayer",
+  "owner": "Bayer",
+  "first_approval": {
+    "year": 2021,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Kerendia"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Bayer",
+    "note": "A dihydronaphthyridine discovered by high-throughput screening, designed to be more selective than spironolactone and more potent than eplerenone."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "A non-steroidal MRA that slows diabetic kidney disease and helps heart failure",
+  "summary": "Finerenone is a non-steroidal, selective mineralocorticoid receptor antagonist. It slows progression of chronic kidney disease and reduces cardiovascular events in type 2 diabetes, and in 2025 was approved for heart failure with mildly reduced or preserved ejection fraction.",
+  "mechanism": [
+    "Overactivation of the mineralocorticoid receptor by aldosterone and cortisol drives inflammation and fibrosis in kidney, heart and blood vessels. Finerenone binds the receptor with high affinity and, being bulky and non-steroidal, induces a conformation that blocks recruitment of transcriptional co-factors.",
+    "This reduces expression of pro-inflammatory and pro-fibrotic genes, lowers albuminuria and modestly lowers blood pressure. Lacking a steroid structure, it has negligible affinity for androgen and progesterone receptors and so does not cause gynaecomastia; hyperkalaemia remains the main risk."
+  ],
+  "uses": [
+    "Chronic kidney disease associated with type 2 diabetes (to reduce kidney failure, cardiovascular death, MI and HF hospitalisation)",
+    "Heart failure with left ventricular ejection fraction ≥40% (US from 2025)"
+  ],
+  "history": [
+    {
+      "year": 2020,
+      "title": "FIDELIO-DKD",
+      "detail": "Finerenone reduces kidney failure and kidney death outcomes in CKD with type 2 diabetes (NEJM 2020)."
+    },
+    {
+      "year": 2021,
+      "title": "FIGARO-DKD and FDA approval",
+      "detail": "FIGARO-DKD shows reduced cardiovascular events; FDA approves Kerendia in July 2021."
+    },
+    {
+      "year": 2022,
+      "title": "EU approval",
+      "detail": "The European Commission approves Kerendia in February 2022."
+    },
+    {
+      "year": 2024,
+      "title": "FINEARTS-HF",
+      "detail": "FINEARTS-HF shows reduced worsening heart failure events and cardiovascular death in HF with EF ≥40%."
+    },
+    {
+      "year": 2025,
+      "title": "Heart failure approval",
+      "detail": "FDA approves finerenone for heart failure with LVEF ≥40% in July 2025."
+    }
+  ],
+  "pk": {
+    "half_life": "about 2–3 h",
+    "bioavailability": "about 44%",
+    "metabolism": "hepatic CYP3A4 (90%) and CYP2C8 to inactive metabolites",
+    "excretion": "about 80% urine, 20% faeces as metabolites"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "hyperkalaemia",
+      "hypotension",
+      "hyponatraemia"
+    ],
+    "serious": [
+      "severe hyperkalaemia",
+      "interaction with strong CYP3A4 inhibitors (contraindicated)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Unlike spironolactone, finerenone has no meaningful anti-androgenic effects such as gynaecomastia."
+  ],
+  "related": [
+    "spironolactone",
+    "eplerenone",
+    "empagliflozin",
+    "dapagliflozin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Finerenone",
+      "url": "https://en.wikipedia.org/wiki/Finerenone"
+    },
+    {
+      "title": "DailyMed: Finerenone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=finerenone"
+    },
+    {
+      "title": "EMA EPAR: Kerendia",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/kerendia"
+    },
+    {
+      "title": "Bakris GL et al. FIDELIO-DKD (NEJM 2020)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2025845"
+    }
+  ],
+  "stage": "written"
 }

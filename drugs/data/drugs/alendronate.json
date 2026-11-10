@@ -1,36 +1,133 @@
 {
   "slug": "alendronate",
-  "name": "Alendronate",
-  "aliases": [],
-  "brands": [],
+  "name": "Alendronic acid",
+  "aliases": [
+    "alendronate sodium",
+    "MK-217"
+  ],
+  "brands": [
+    "Fosamax",
+    "Fosamax Plus D (with colecalciferol)",
+    "Binosto"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Bisphosphonate (nitrogen-containing)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet 70 mg once weekly (or 10 mg daily), taken fasting with plain water while upright for 30 minutes",
+  "targets": [
+    "FDPS (farnesyl pyrophosphate synthase)"
+  ],
+  "origin": "synthetic",
+  "originator": "Istituto Gentili (Italy), developed by Merck & Co.",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1995,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Fosamax"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Istituto Gentili, Pisa",
+    "note": "An aminobisphosphonate licensed to Merck, which ran the pivotal osteoporosis trials."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "The weekly pill that made osteoporosis treatment routine",
+  "summary": "Alendronic acid (alendronate) is an oral nitrogen-containing bisphosphonate that inhibits osteoclast-mediated bone resorption. It increases bone mineral density and reduces vertebral and hip fractures in postmenopausal and male osteoporosis, and is the most widely used osteoporosis drug worldwide.",
+  "mechanism": [
+    "Bisphosphonates are analogues of pyrophosphate that bind avidly to hydroxyapatite at sites of active bone remodelling. When osteoclasts resorb bone they take up the drug, and nitrogen-containing bisphosphonates inhibit farnesyl pyrophosphate synthase (FDPS) in the mevalonate pathway, blocking prenylation of small GTPases needed for osteoclast function and survival.",
+    "Reduced resorption lowers bone turnover and allows bone mineral density to rise over several years. Alendronate stays bound in bone for many years, so effects persist after stopping, which supports 'drug holidays' after long-term use."
+  ],
+  "uses": [
+    "Treatment and prevention of postmenopausal osteoporosis",
+    "Osteoporosis in men",
+    "Glucocorticoid-induced osteoporosis",
+    "Paget's disease of bone"
+  ],
+  "history": [
+    {
+      "year": 1995,
+      "title": "FDA approval",
+      "detail": "FDA approves Fosamax in September 1995 for postmenopausal osteoporosis."
+    },
+    {
+      "year": 1996,
+      "title": "Fracture Intervention Trial",
+      "detail": "FIT shows alendronate roughly halves vertebral and hip fractures in women with prior vertebral fractures."
+    },
+    {
+      "year": 2000,
+      "title": "Weekly dosing",
+      "detail": "Once-weekly 70 mg tablet is approved, improving tolerability and adherence."
+    },
+    {
+      "year": 2008,
+      "title": "US generics",
+      "detail": "Generic alendronate becomes available in the US in February 2008."
+    },
+    {
+      "year": 2010,
+      "title": "Atypical femur fracture warning",
+      "detail": "FDA adds information on atypical subtrochanteric femur fractures to bisphosphonate labels."
+    },
+    {
+      "year": 2012,
+      "title": "Effervescent form",
+      "detail": "Binosto, an effervescent buffered tablet, is approved by FDA."
+    }
+  ],
+  "pk": {
+    "half_life": "terminal half-life in bone over 10 years",
+    "bioavailability": "about 0.6% (fasting); near zero with food",
+    "metabolism": "not metabolised",
+    "excretion": "about half of absorbed dose excreted unchanged in urine; the rest binds bone"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "dyspepsia",
+      "abdominal pain",
+      "acid regurgitation",
+      "musculoskeletal pain"
+    ],
+    "serious": [
+      "oesophagitis and oesophageal ulcers",
+      "osteonecrosis of the jaw",
+      "atypical femoral fractures",
+      "hypocalcaemia"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Less than 1% of an oral dose is absorbed even when taken correctly on an empty stomach.",
+    "Alendronate can remain in the skeleton for more than a decade."
+  ],
+  "related": [
+    "zoledronic-acid",
+    "denosumab",
+    "raloxifene",
+    "teriparatide",
+    "romosozumab",
+    "calcitriol"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Alendronic acid",
+      "url": "https://en.wikipedia.org/wiki/Alendronic_acid"
+    },
+    {
+      "title": "DailyMed: Alendronate labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=alendronate"
+    },
+    {
+      "title": "Wikipedia: Bisphosphonate",
+      "url": "https://en.wikipedia.org/wiki/Bisphosphonate"
+    }
+  ],
+  "stage": "written"
 }

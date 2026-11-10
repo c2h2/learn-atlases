@@ -1,36 +1,144 @@
 {
   "slug": "colchicine",
   "name": "Colchicine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "colchicin"
+  ],
+  "brands": [
+    "Colcrys",
+    "Mitigare",
+    "Gloperba",
+    "Lodoco"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Microtubule polymerisation inhibitor (anti-inflammatory alkaloid)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet or capsule; low daily doses for prophylaxis and cardiovascular prevention, short courses for gout flares",
+  "targets": [
+    "Tubulin (TUBB)",
+    "NLRP3 inflammasome (indirect)"
+  ],
+  "origin": "natural",
+  "originator": "traditional remedy (Colchicum autumnale); URL Pharma (Colcrys, US NDA)",
+  "owner": "generic (many); Agepha (Lodoco)",
+  "first_approval": {
+    "year": 2009,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Colcrys"
+  },
+  "discovery": {
+    "year": 1820,
+    "by": "Pierre-Joseph Pelletier and Joseph Bienaimé Caventou",
+    "note": "Alkaloid isolated from autumn crocus (Colchicum autumnale), a plant used for gout since antiquity; pure colchicine was isolated by Geiger in 1833."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "An ancient crocus alkaloid for gout that became a heart-protection drug",
+  "summary": "Colchicine is a plant alkaloid that binds tubulin and dampens neutrophil-driven inflammation. Used for gout for centuries, it also treats familial Mediterranean fever and pericarditis, and in 2023 a low-dose tablet became the first anti-inflammatory approved to reduce cardiovascular events.",
+  "mechanism": [
+    "Colchicine binds β-tubulin and prevents microtubule polymerisation. In neutrophils this impairs migration, adhesion, degranulation and phagocytosis of urate crystals.",
+    "Disrupted microtubules also limit assembly of the NLRP3 inflammasome, reducing production of interleukin-1β and downstream IL-6 and CRP. Its narrow therapeutic index means toxicity rises sharply with overdose or with drugs that inhibit CYP3A4 or P-glycoprotein."
+  ],
+  "uses": [
+    "Treatment and prophylaxis of gout flares",
+    "Familial Mediterranean fever",
+    "Reduction of myocardial infarction, stroke, coronary revascularisation and cardiovascular death in atherosclerotic disease (0.5 mg, Lodoco)",
+    "Acute and recurrent pericarditis (guideline use)"
+  ],
+  "history": [
+    {
+      "year": 1820,
+      "title": "Isolation",
+      "detail": "Pelletier and Caventou isolate the active principle of Colchicum."
+    },
+    {
+      "year": 1972,
+      "title": "Familial Mediterranean fever",
+      "detail": "Colchicine is shown to prevent attacks of familial Mediterranean fever."
+    },
+    {
+      "year": 2009,
+      "title": "First US approval",
+      "detail": "FDA approves Colcrys, the first approved single-ingredient colchicine; unapproved versions are removed in 2010."
+    },
+    {
+      "year": 2013,
+      "title": "ICAP trial",
+      "detail": "ICAP shows colchicine halves recurrence of acute pericarditis (NEJM 2013)."
+    },
+    {
+      "year": 2019,
+      "title": "COLCOT",
+      "detail": "Low-dose colchicine reduces ischaemic cardiovascular events after recent myocardial infarction."
+    },
+    {
+      "year": 2020,
+      "title": "LoDoCo2",
+      "detail": "In chronic coronary disease, colchicine 0.5 mg reduces cardiovascular events by 31%."
+    },
+    {
+      "year": 2023,
+      "title": "Lodoco approved",
+      "detail": "FDA approves colchicine 0.5 mg (Lodoco) to reduce cardiovascular risk in June 2023."
+    },
+    {
+      "year": 2024,
+      "title": "CLEAR SYNERGY",
+      "detail": "CLEAR SYNERGY finds no cardiovascular benefit of colchicine started early after myocardial infarction."
+    }
+  ],
+  "pk": {
+    "half_life": "about 27–31 h (multiple doses)",
+    "bioavailability": "about 45%",
+    "metabolism": "hepatic CYP3A4; P-glycoprotein substrate",
+    "excretion": "biliary and renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "diarrhoea",
+      "nausea",
+      "vomiting",
+      "abdominal cramps"
+    ],
+    "serious": [
+      "fatal toxicity in overdose or with CYP3A4/P-gp inhibitors",
+      "bone marrow suppression",
+      "neuromuscular toxicity and rhabdomyolysis (especially with statins)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Colchicine was used in the US for decades without FDA approval until Colcrys in 2009.",
+    "Lodoco (2023) was the first anti-inflammatory drug approved specifically to reduce cardiovascular events."
+  ],
+  "related": [
+    "allopurinol",
+    "febuxostat",
+    "atorvastatin"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Colchicine",
+      "url": "https://en.wikipedia.org/wiki/Colchicine"
+    },
+    {
+      "title": "DailyMed: Colchicine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=colchicine"
+    },
+    {
+      "title": "Nidorf SM et al. LoDoCo2 (NEJM 2020)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa2021372"
+    },
+    {
+      "title": "Tardif JC et al. COLCOT (NEJM 2019)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1912388"
+    }
+  ],
+  "stage": "written"
 }

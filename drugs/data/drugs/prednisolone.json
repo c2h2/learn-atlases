@@ -1,36 +1,142 @@
 {
   "slug": "prednisolone",
   "name": "Prednisolone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "delta-hydrocortisone",
+    "metacortandralone",
+    "prednisolone acetate",
+    "prednisolone sodium phosphate"
+  ],
+  "brands": [
+    "Pred Forte",
+    "Orapred",
+    "Millipred",
+    "Deltacortril"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Corticosteroid (glucocorticoid)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "ophthalmic",
+    "rectal",
+    "iv",
+    "im"
+  ],
+  "route_note": "oral tablets or soluble/liquid forms; eye drops for ocular inflammation; enemas and suppositories for proctitis",
+  "targets": [
+    "NR3C1 (glucocorticoid receptor)"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Schering Corporation (Arthur Nobile)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1955,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Meticortelone"
+  },
+  "discovery": {
+    "year": 1950,
+    "by": "Arthur Nobile and colleagues, Schering",
+    "note": "Made by microbial 1,2-dehydrogenation of hydrocortisone."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "The active form of prednisone and the standard oral steroid in much of the world",
+  "summary": "Prednisolone is the active glucocorticoid formed from prednisone and is itself given orally, as eye drops and rectally. It is about four times as potent as hydrocortisone with less mineralocorticoid effect, and is used across asthma, rheumatology, gastroenterology, haematology and transplantation.",
+  "mechanism": [
+    "Glucocorticoids diffuse into cells and bind the cytoplasmic glucocorticoid receptor (NR3C1). The activated receptor moves to the nucleus, where it switches on anti-inflammatory genes (transactivation, e.g. annexin-1, IκBα, MKP-1) and represses pro-inflammatory transcription factors such as NF-κB and AP-1 (transrepression), reducing cytokines, prostaglandins, adhesion molecules and immune-cell activation.",
+    "The 1,2 double bond introduced into the A ring of hydrocortisone increases glucocorticoid potency and slows metabolism while reducing mineralocorticoid activity relative to cortisol."
+  ],
+  "uses": [
+    "Asthma and COPD exacerbations",
+    "Rheumatic and autoimmune disease",
+    "Inflammatory bowel disease (oral and rectal)",
+    "Ocular inflammation such as uveitis (eye drops)",
+    "Nephrotic syndrome",
+    "Haematological malignancies",
+    "Allergic disorders, croup and skin disease"
+  ],
+  "history": [
+    {
+      "year": 1948,
+      "title": "Cortisone in arthritis",
+      "detail": "Hench's results with cortisone prompt a search for more potent, less salt-retaining analogues."
+    },
+    {
+      "year": 1950,
+      "title": "Nobel Prize",
+      "detail": "Kendall, Hench and Reichstein share the Nobel Prize for adrenal cortex hormones."
+    },
+    {
+      "year": 1950,
+      "title": "Discovery",
+      "detail": "Nobile's team at Schering produces prednisolone from hydrocortisone by bacterial dehydrogenation."
+    },
+    {
+      "year": 1955,
+      "title": "Approval",
+      "detail": "Prednisolone is introduced as Meticortelone."
+    },
+    {
+      "year": 2009,
+      "title": "Preschool wheeze trial",
+      "detail": "A UK trial (NEJM 2009) finds oral prednisolone does not shorten hospital stay in preschool children with viral wheeze."
+    }
+  ],
+  "pk": {
+    "half_life": "2–4 h (plasma); biological 12–36 h",
+    "bioavailability": "about 80–100% oral",
+    "metabolism": "hepatic",
+    "excretion": "urine"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "hyperglycaemia",
+      "fluid retention and hypertension",
+      "mood change and insomnia",
+      "increased appetite and weight gain",
+      "dyspepsia"
+    ],
+    "serious": [
+      "adrenal suppression and adrenal crisis on abrupt withdrawal",
+      "infections (including opportunistic)",
+      "osteoporosis and fractures",
+      "avascular necrosis",
+      "cataract and glaucoma",
+      "Cushingoid features",
+      "peptic ulceration",
+      "psychosis",
+      "raised intraocular pressure with eye drops"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Prednisolone is on the WHO Model List of Essential Medicines.",
+    "Prednisolone and prednisone have essentially equivalent potency milligram for milligram."
+  ],
+  "related": [
+    "prednisone",
+    "hydrocortisone",
+    "dexamethasone",
+    "budesonide"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Prednisolone",
+      "url": "https://en.wikipedia.org/wiki/Prednisolone"
+    },
+    {
+      "title": "DailyMed: Prednisolone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=prednisolone"
+    },
+    {
+      "title": "Wikipedia: Corticosteroid",
+      "url": "https://en.wikipedia.org/wiki/Corticosteroid"
+    }
+  ],
+  "stage": "written"
 }

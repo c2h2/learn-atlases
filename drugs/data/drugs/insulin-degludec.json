@@ -1,36 +1,128 @@
 {
   "slug": "insulin-degludec",
   "name": "Insulin degludec",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "NN1250",
+    "IDeg"
+  ],
+  "brands": [
+    "Tresiba",
+    "Ryzodeg (with insulin aspart)",
+    "Xultophy (with liraglutide)"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Ultra-long-acting insulin analogue (basal insulin)",
+  "modality": "protein",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "subcutaneous injection once daily at any time of day (100 or 200 U/mL)",
+  "targets": [
+    "INSR"
+  ],
+  "origin": "biotech",
+  "originator": "Novo Nordisk",
+  "owner": "Novo Nordisk",
+  "first_approval": {
+    "year": 2012,
+    "agency": "PMDA",
+    "country": "Japan",
+    "brand": "Tresiba"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Novo Nordisk researchers",
+    "note": "B30 threonine removed and a hexadecanedioic acid side chain attached to B29 lysine via a glutamic acid linker."
+  },
+  "generic": false,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Basal insulin that forms multi-hexamer chains under the skin, lasting over 42 hours",
+  "summary": "Insulin degludec is an ultra-long-acting basal insulin with a half-life of about 25 hours and a duration of action beyond 42 hours. Its flat, stable profile allows flexible once-daily dosing, and the DEVOTE trial showed less severe hypoglycaemia than insulin glargine with similar cardiovascular safety.",
+  "mechanism": [
+    "Degludec lacks threonine B30 and carries a 16-carbon fatty diacid on lysine B29. In the pen it exists as dihexamers with phenol and zinc; after injection phenol diffuses away and the dihexamers link into long soluble multi-hexamer chains that slowly release monomers.",
+    "The fatty-acid side chain also binds albumin in the circulation, further prolonging action. Released insulin acts on the insulin receptor to lower blood glucose in the same way as human insulin."
+  ],
+  "uses": [
+    "Type 1 diabetes mellitus (adults and children aged 1 year and over)",
+    "Type 2 diabetes mellitus requiring basal insulin"
+  ],
+  "history": [
+    {
+      "year": 2012,
+      "title": "First approval",
+      "detail": "Tresiba is approved in Japan in September 2012."
+    },
+    {
+      "year": 2013,
+      "title": "EU approval; FDA delay",
+      "detail": "The European Commission approves Tresiba in January 2013; FDA issues a complete response letter requesting cardiovascular outcomes data."
+    },
+    {
+      "year": 2015,
+      "title": "FDA approval",
+      "detail": "After interim cardiovascular data, FDA approves Tresiba and Ryzodeg in September 2015."
+    },
+    {
+      "year": 2016,
+      "title": "Xultophy",
+      "detail": "Fixed combination with liraglutide (Xultophy 100/3.6) is approved by FDA."
+    },
+    {
+      "year": 2017,
+      "title": "DEVOTE results",
+      "detail": "The DEVOTE trial shows non-inferior cardiovascular safety and lower rates of severe hypoglycaemia versus glargine U100."
+    }
+  ],
+  "pk": {
+    "half_life": "about 25 h; duration of action >42 h; steady state after 2–3 days",
+    "bioavailability": "not fully characterised; slow SC absorption",
+    "metabolism": "proteolysis like human insulin",
+    "excretion": "renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "hypoglycaemia",
+      "injection-site reactions",
+      "lipodystrophy",
+      "peripheral oedema",
+      "weight gain"
+    ],
+    "serious": [
+      "severe hypoglycaemia",
+      "hypokalaemia",
+      "hypersensitivity reactions"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Degludec's US approval was delayed two years until a cardiovascular outcomes analysis was provided.",
+    "The DEVOTE trial randomised about 7,600 people with type 2 diabetes at high cardiovascular risk."
+  ],
+  "related": [
+    "insulin-glargine",
+    "insulin-human",
+    "liraglutide",
+    "insulin-lispro"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Insulin degludec",
+      "url": "https://en.wikipedia.org/wiki/Insulin_degludec"
+    },
+    {
+      "title": "DailyMed: Insulin degludec labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=insulin%20degludec"
+    },
+    {
+      "title": "EMA EPAR: Tresiba",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/tresiba"
+    },
+    {
+      "title": "Marso SP et al. DEVOTE: degludec vs glargine cardiovascular safety (NEJM 2017)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1615692"
+    }
+  ],
+  "stage": "written"
 }

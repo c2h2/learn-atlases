@@ -1,36 +1,128 @@
 {
   "slug": "romosozumab",
   "name": "Romosozumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "AMG 785",
+    "CDP7851",
+    "romosozumab-aqqg"
+  ],
+  "brands": [
+    "Evenity"
+  ],
   "area": "metabolic-endocrine",
   "batch": "02",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Sclerostin inhibitor (monoclonal antibody)",
+  "modality": "antibody",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "subcutaneous injection 210 mg (two 105 mg injections) once monthly for 12 months, then an antiresorptive",
+  "targets": [
+    "SOST (sclerostin)"
+  ],
+  "origin": "biotech",
+  "originator": "Amgen and UCB",
+  "owner": "Amgen and UCB",
+  "first_approval": {
+    "year": 2019,
+    "agency": "PMDA",
+    "country": "Japan",
+    "brand": "Evenity"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Amgen and UCB (Celltech)",
+    "note": "Developed after rare high-bone-mass disorders (sclerosteosis, van Buchem disease) were traced to loss of sclerostin (SOST gene, 2001)."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "An antibody against sclerostin that builds bone and curbs resorption at once",
+  "summary": "Romosozumab is a humanised monoclonal antibody against sclerostin, a natural brake on bone formation. A year of monthly injections both increases bone formation and decreases resorption, rapidly raising bone density and reducing fractures, but it carries a boxed warning for heart attack and stroke.",
+  "mechanism": [
+    "Sclerostin, secreted by osteocytes, binds LRP5/6 co-receptors and inhibits canonical Wnt signalling in osteoblasts. Blocking it with romosozumab activates Wnt signalling, increasing osteoblast activity and bone formation.",
+    "Romosozumab also reduces RANKL expression and so decreases bone resorption — a 'dual effect' distinct from teriparatide. The anabolic effect wanes after about a year, so treatment is limited to 12 months followed by an antiresorptive drug."
+  ],
+  "uses": [
+    "Osteoporosis in postmenopausal women at high risk of fracture",
+    "Osteoporosis in men at high fracture risk (Japan, EU and some other regions)"
+  ],
+  "history": [
+    {
+      "year": 2001,
+      "title": "Sclerostin gene identified",
+      "detail": "Loss-of-function SOST mutations are shown to cause sclerosteosis, a disorder of very high bone mass."
+    },
+    {
+      "year": 2016,
+      "title": "FRAME",
+      "detail": "FRAME shows romosozumab reduces new vertebral fractures by 73% versus placebo at 12 months."
+    },
+    {
+      "year": 2017,
+      "title": "ARCH",
+      "detail": "ARCH shows romosozumab followed by alendronate outperforms alendronate alone but finds more serious cardiovascular events."
+    },
+    {
+      "year": 2019,
+      "title": "Approvals",
+      "detail": "Evenity is approved in Japan (January), the US (April, with a boxed warning) and the EU (December)."
+    },
+    {
+      "year": 2020,
+      "title": "Guideline adoption",
+      "detail": "The Endocrine Society's 2020 guideline update recommends romosozumab for postmenopausal women at very high fracture risk."
+    }
+  ],
+  "pk": {
+    "half_life": "about 12.8 days",
+    "bioavailability": "about 81% after SC injection",
+    "metabolism": "catabolism to peptides and amino acids",
+    "excretion": "target-mediated and non-specific clearance"
+  },
+  "safety": {
+    "common": [
+      "arthralgia",
+      "headache",
+      "injection-site reactions"
+    ],
+    "serious": [
+      "myocardial infarction",
+      "stroke",
+      "cardiovascular death",
+      "hypocalcaemia",
+      "osteonecrosis of the jaw",
+      "atypical femoral fractures"
+    ],
+    "boxed_warning": "Potential risk of myocardial infarction, stroke and cardiovascular death; do not start in patients with MI or stroke within the past year."
+  },
+  "facts": [
+    "The drug target was discovered by studying families with sclerosteosis in South Africa and van Buchem disease in the Netherlands.",
+    "Romosozumab treatment is limited to 12 monthly doses."
+  ],
+  "related": [
+    "teriparatide",
+    "denosumab",
+    "alendronate",
+    "zoledronic-acid"
+  ],
+  "references": [
+    {
+      "title": "Wikipedia: Romosozumab",
+      "url": "https://en.wikipedia.org/wiki/Romosozumab"
+    },
+    {
+      "title": "DailyMed: Romosozumab labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=romosozumab"
+    },
+    {
+      "title": "EMA EPAR: Evenity",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/evenity"
+    },
+    {
+      "title": "Saag KG et al. ARCH trial (NEJM 2017)",
+      "url": "https://www.nejm.org/doi/full/10.1056/NEJMoa1708322"
+    }
+  ],
+  "stage": "written"
 }
