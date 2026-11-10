@@ -1,36 +1,125 @@
 {
   "slug": "ramipril",
   "name": "Ramipril",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "HOE 498",
+    "ramiprilat (active form)"
+  ],
+  "brands": [
+    "Altace",
+    "Tritace",
+    "Delix"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Angiotensin-converting enzyme (ACE) inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral capsule or tablet once or twice daily",
+  "targets": [
+    "ACE"
+  ],
+  "origin": "synthetic",
+  "originator": "Hoechst AG (now Sanofi)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1991,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Altace"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Hoechst AG",
+    "note": "A long-acting prodrug ACE inhibitor with high tissue-ACE affinity."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "ACE inhibitor whose HOPE trial showed protection in high-risk vascular patients",
+  "summary": "Ramipril is a prodrug ACE inhibitor hydrolysed to ramiprilat. Beyond hypertension and heart failure after myocardial infarction, the HOPE trial showed it reduces heart attack, stroke and cardiovascular death in high-risk patients without heart failure.",
+  "mechanism": [
+    "Hepatic esterases convert ramipril to ramiprilat, which inhibits angiotensin-converting enzyme, lowering angiotensin II and aldosterone and increasing bradykinin.",
+    "The result is vasodilation, natriuresis and reduced glomerular pressure; its slow dissociation from ACE gives a long terminal half-life and once-daily dosing."
+  ],
+  "uses": [
+    "Hypertension",
+    "Reduction of risk of MI, stroke and cardiovascular death in high-risk patients aged ≥55",
+    "Heart failure after myocardial infarction",
+    "Diabetic and non-diabetic nephropathy (in some markets)"
+  ],
+  "history": [
+    {
+      "year": 1991,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Altace."
+    },
+    {
+      "year": 1993,
+      "title": "AIRE",
+      "detail": "Ramipril reduces mortality in patients with clinical heart failure after acute MI."
+    },
+    {
+      "year": 2000,
+      "title": "HOPE",
+      "detail": "Ramipril reduces cardiovascular death, MI and stroke in high-risk patients without heart failure."
+    },
+    {
+      "year": 2008,
+      "title": "ONTARGET",
+      "detail": "Telmisartan is non-inferior to ramipril, and combining the two adds harm without benefit."
+    },
+    {
+      "year": 2008,
+      "title": "US generics",
+      "detail": "Generic ramipril becomes available in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "Ramiprilat effective 13–17 h; terminal >50 h",
+    "bioavailability": "~50–60% (as ramipril)",
+    "metabolism": "Hepatic hydrolysis to ramiprilat; glucuronidation",
+    "excretion": "~60% renal, ~40% faecal"
+  },
+  "safety": {
+    "common": [
+      "Dry cough",
+      "Dizziness",
+      "Hypotension",
+      "Hyperkalaemia"
+    ],
+    "serious": [
+      "Angioedema",
+      "Acute kidney injury",
+      "Severe hyperkalaemia",
+      "Fetal toxicity"
+    ],
+    "boxed_warning": "Fetal toxicity: drugs acting on the renin-angiotensin system can cause injury and death to the developing fetus; discontinue when pregnancy is detected."
+  },
+  "facts": [
+    "The HOPE trial was a major influence on the use of ACE inhibitors for vascular protection independent of blood pressure."
+  ],
+  "related": [
+    "enalapril",
+    "lisinopril",
+    "captopril",
+    "losartan"
+  ],
+  "references": [
+    {
+      "title": "Ramipril – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ramipril"
+    },
+    {
+      "title": "DailyMed – ramipril labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ramipril"
+    },
+    {
+      "title": "HOPE Study Investigators. Effects of an angiotensin-converting-enzyme inhibitor, ramipril, on cardiovascular events in high-risk patients. N Engl J Med 2000",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10639539/"
+    }
+  ],
+  "stage": "written"
 }

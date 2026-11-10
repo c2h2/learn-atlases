@@ -1,36 +1,139 @@
 {
   "slug": "warfarin",
   "name": "Warfarin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "warfarin sodium"
+  ],
+  "brands": [
+    "Coumadin",
+    "Jantoven",
+    "Marevan"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Coumarin vitamin K antagonist (anticoagulant)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "oral tablet once daily, dose adjusted to INR; IV form historically available",
+  "targets": [
+    "VKORC1"
+  ],
+  "origin": "synthetic",
+  "originator": "Wisconsin Alumni Research Foundation (Karl Paul Link)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1954,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Coumadin"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1948,
+    "by": "Karl Paul Link, University of Wisconsin",
+    "note": "Derived from work on dicoumarol, the anticoagulant in spoiled sweet clover that caused bleeding in cattle; first marketed as a rodenticide."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Rat poison turned anticoagulant, dosed by INR for over 70 years",
+  "summary": "Warfarin is an oral anticoagulant that blocks recycling of vitamin K, reducing production of functional clotting factors II, VII, IX and X. It is used to prevent and treat venous thromboembolism and to prevent stroke in atrial fibrillation and with mechanical heart valves, with dosing guided by INR monitoring.",
+  "mechanism": [
+    "Warfarin inhibits vitamin K epoxide reductase complex subunit 1 (VKORC1), which regenerates reduced vitamin K. Reduced vitamin K is a cofactor for gamma-carboxylation of glutamate residues on clotting factors II, VII, IX and X and on proteins C and S.",
+    "Without carboxylation these proteins cannot bind calcium and phospholipid surfaces. The anticoagulant effect develops over several days as existing factors are cleared, and protein C falls early, which can cause transient hypercoagulability.",
+    "Its effect is reversed by vitamin K, and urgently by prothrombin complex concentrate or plasma."
+  ],
+  "uses": [
+    "Treatment and prevention of deep vein thrombosis and pulmonary embolism",
+    "Stroke prevention in atrial fibrillation",
+    "Thromboembolism prevention with mechanical heart valves",
+    "Reduction of thromboembolic events after myocardial infarction"
+  ],
+  "history": [
+    {
+      "year": 1921,
+      "title": "Sweet clover disease",
+      "detail": "Cattle in North America bleed to death after eating spoiled sweet clover hay."
+    },
+    {
+      "year": 1940,
+      "title": "Dicoumarol isolated",
+      "detail": "Karl Paul Link's laboratory identifies dicoumarol as the anticoagulant agent."
+    },
+    {
+      "year": 1948,
+      "title": "Warfarin introduced",
+      "detail": "A more potent derivative is named after WARF and promoted as a rodenticide."
+    },
+    {
+      "year": 1954,
+      "title": "Human use",
+      "detail": "Approved for medical use in the US; Endo Laboratories markets it as Coumadin."
+    },
+    {
+      "year": 1955,
+      "title": "Eisenhower",
+      "detail": "President Eisenhower is treated with warfarin after a heart attack, boosting acceptance."
+    },
+    {
+      "year": 2006,
+      "title": "Boxed warning",
+      "detail": "The FDA adds a boxed warning on bleeding risk."
+    },
+    {
+      "year": 2007,
+      "title": "Pharmacogenetics",
+      "detail": "The US label is updated to describe the influence of CYP2C9 and VKORC1 variants on dosing."
+    },
+    {
+      "year": 2010,
+      "title": "Rise of DOACs",
+      "detail": "Direct oral anticoagulants begin replacing warfarin for many patients with atrial fibrillation and VTE."
+    }
+  ],
+  "pk": {
+    "half_life": "~40 h (range 20–60 h)",
+    "bioavailability": "~100%",
+    "metabolism": "Racemic; S-warfarin (more potent) via CYP2C9, R-warfarin via CYP1A2/3A4",
+    "excretion": "Renal as inactive metabolites"
+  },
+  "safety": {
+    "common": [
+      "Bleeding",
+      "Bruising"
+    ],
+    "serious": [
+      "Major or fatal bleeding",
+      "Skin necrosis",
+      "Calciphylaxis",
+      "Purple toe syndrome",
+      "Teratogenicity (warfarin embryopathy)"
+    ],
+    "boxed_warning": "May cause major or fatal bleeding; regular INR monitoring is required."
+  },
+  "facts": [
+    "The name comes from the Wisconsin Alumni Research Foundation (WARF) plus '-arin' from coumarin.",
+    "It has an unusually large number of food and drug interactions, including with vitamin K-rich foods.",
+    "It remains the anticoagulant of choice for mechanical heart valves."
+  ],
+  "related": [
+    "heparin",
+    "enoxaparin",
+    "apixaban",
+    "rivaroxaban",
+    "dabigatran"
+  ],
+  "references": [
+    {
+      "title": "Warfarin – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Warfarin"
+    },
+    {
+      "title": "DailyMed – warfarin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=warfarin"
+    }
+  ],
+  "stage": "written"
 }

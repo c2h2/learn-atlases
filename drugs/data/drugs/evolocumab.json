@@ -1,36 +1,127 @@
 {
   "slug": "evolocumab",
   "name": "Evolocumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "AMG 145"
+  ],
+  "brands": [
+    "Repatha"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "PCSK9 inhibitor (monoclonal antibody)",
+  "modality": "antibody",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "subcutaneous injection every 2 weeks or once monthly (prefilled pen or on-body infusor)",
+  "targets": [
+    "PCSK9"
+  ],
+  "origin": "biotech",
+  "originator": "Amgen",
+  "owner": "Amgen",
+  "first_approval": {
+    "year": 2015,
+    "agency": "EMA",
+    "country": "EU",
+    "brand": "Repatha"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Amgen",
+    "note": "A fully human IgG2 antibody developed after genetics linked PCSK9 to LDL cholesterol levels."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Fully human anti-PCSK9 antibody that lowers LDL by about 60%",
+  "summary": "Evolocumab is a fully human monoclonal antibody that binds PCSK9 and prevents it from degrading LDL receptors. Given by subcutaneous injection, it lowers LDL cholesterol by roughly 60% on top of statins, and the FOURIER trial showed fewer cardiovascular events.",
+  "mechanism": [
+    "PCSK9 is a liver-secreted protein that binds LDL receptors on hepatocytes and directs them to lysosomes for destruction instead of recycling to the cell surface.",
+    "Evolocumab binds circulating PCSK9 and blocks its interaction with the LDL receptor, so more receptors recycle and clear LDL from the blood. It also lowers lipoprotein(a) by about 25–30%."
+  ],
+  "uses": [
+    "Reduction of myocardial infarction, stroke and coronary revascularisation in established cardiovascular disease",
+    "Primary hyperlipidaemia including heterozygous familial hypercholesterolaemia (adults and children ≥10)",
+    "Homozygous familial hypercholesterolaemia"
+  ],
+  "history": [
+    {
+      "year": 2003,
+      "title": "PCSK9 genetics",
+      "detail": "Gain-of-function PCSK9 mutations are found to cause familial hypercholesterolaemia."
+    },
+    {
+      "year": 2006,
+      "title": "Loss-of-function protection",
+      "detail": "People with PCSK9 loss-of-function variants are shown to have low LDL and fewer coronary events."
+    },
+    {
+      "year": 2015,
+      "title": "Approvals",
+      "detail": "Approved in the EU (July) and the US (August)."
+    },
+    {
+      "year": 2017,
+      "title": "FOURIER",
+      "detail": "Evolocumab reduces major cardiovascular events by 15% in patients with atherosclerotic disease."
+    },
+    {
+      "year": 2018,
+      "title": "Price cut",
+      "detail": "Amgen cuts the US list price by about 60% to improve access."
+    },
+    {
+      "year": 2021,
+      "title": "Paediatric use",
+      "detail": "FDA approves use in children with familial hypercholesterolaemia."
+    }
+  ],
+  "pk": {
+    "half_life": "~11–17 days",
+    "bioavailability": "~72% (subcutaneous)",
+    "metabolism": "Saturable target-mediated binding to PCSK9 and non-specific proteolysis",
+    "excretion": "Not renally excreted as intact antibody"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nasopharyngitis",
+      "Upper respiratory infection",
+      "Injection-site reactions",
+      "Back pain"
+    ],
+    "serious": [
+      "Hypersensitivity reactions including angioedema"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "FOURIER found no excess of cognitive adverse events at very low LDL levels, and the EBBINGHAUS sub-study supported this."
+  ],
+  "related": [
+    "alirocumab",
+    "inclisiran",
+    "atorvastatin",
+    "ezetimibe"
+  ],
+  "references": [
+    {
+      "title": "Evolocumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Evolocumab"
+    },
+    {
+      "title": "DailyMed – repatha labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=repatha"
+    },
+    {
+      "title": "EMA EPAR – Repatha",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/repatha"
+    },
+    {
+      "title": "Sabatine MS et al. Evolocumab and clinical outcomes in patients with cardiovascular disease (FOURIER). N Engl J Med 2017",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/28304224/"
+    }
+  ],
+  "stage": "written"
 }

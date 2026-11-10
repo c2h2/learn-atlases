@@ -1,36 +1,117 @@
 {
   "slug": "atenolol",
   "name": "Atenolol",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "ICI 66082"
+  ],
+  "brands": [
+    "Tenormin",
+    "Tenoretic (with chlorthalidone)"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Cardioselective (β1) beta-adrenergic blocker",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "oral tablet once daily; IV form in some countries",
+  "targets": [
+    "ADRB1"
+  ],
+  "origin": "synthetic",
+  "originator": "Imperial Chemical Industries (now AstraZeneca)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1981,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Tenormin"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "ICI Pharmaceuticals",
+    "note": "A hydrophilic β1-selective blocker developed as a successor to propranolol."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Hydrophilic, renally cleared once-daily β1 blocker",
+  "summary": "Atenolol is a hydrophilic, β1-selective beta-blocker excreted unchanged by the kidneys. Once a leading antihypertensive, it lost favour after trials suggested weaker stroke protection than other drug classes, but it remains used for angina, arrhythmias and after myocardial infarction.",
+  "mechanism": [
+    "Atenolol selectively blocks cardiac β1-adrenoceptors, reducing heart rate, contractility and renin secretion.",
+    "Being hydrophilic, it crosses the blood–brain barrier poorly and has fewer central side effects than propranolol. It lacks intrinsic sympathomimetic and membrane-stabilising activity."
+  ],
+  "uses": [
+    "Hypertension",
+    "Angina pectoris",
+    "Acute myocardial infarction",
+    "Arrhythmias (in some markets)"
+  ],
+  "history": [
+    {
+      "year": 1981,
+      "title": "FDA approval",
+      "detail": "Approved in the US."
+    },
+    {
+      "year": 2002,
+      "title": "LIFE",
+      "detail": "Losartan-based therapy reduces stroke more than atenolol-based therapy in hypertension with LVH."
+    },
+    {
+      "year": 2004,
+      "title": "Meta-analysis",
+      "detail": "A Lancet meta-analysis questions atenolol as a reference antihypertensive."
+    },
+    {
+      "year": 2005,
+      "title": "ASCOT-BPLA",
+      "detail": "An amlodipine-based regimen outperforms an atenolol-based regimen for several outcomes."
+    }
+  ],
+  "pk": {
+    "half_life": "~6–7 h (prolonged in renal impairment)",
+    "bioavailability": "~50%",
+    "metabolism": "Minimal hepatic metabolism",
+    "excretion": "Renal, largely unchanged"
+  },
+  "safety": {
+    "common": [
+      "Fatigue",
+      "Cold extremities",
+      "Bradycardia",
+      "Dizziness"
+    ],
+    "serious": [
+      "Heart block",
+      "Bronchospasm",
+      "Heart failure exacerbation",
+      "Fetal growth restriction in pregnancy",
+      "Rebound ischaemia on abrupt withdrawal"
+    ],
+    "boxed_warning": "Abrupt cessation can exacerbate angina and precipitate myocardial infarction or ventricular arrhythmias in ischaemic heart disease; taper over 1–2 weeks."
+  },
+  "facts": [
+    "Dose reduction is required in renal impairment because it is cleared by the kidney."
+  ],
+  "related": [
+    "metoprolol",
+    "bisoprolol",
+    "propranolol",
+    "losartan",
+    "amlodipine"
+  ],
+  "references": [
+    {
+      "title": "Atenolol – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Atenolol"
+    },
+    {
+      "title": "DailyMed – atenolol labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=atenolol"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,129 @@
 {
   "slug": "pravastatin",
   "name": "Pravastatin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "pravastatin sodium",
+    "CS-514"
+  ],
+  "brands": [
+    "Pravachol",
+    "Mevalotin",
+    "Lipostat"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "HMG-CoA reductase inhibitor (statin)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once daily",
+  "targets": [
+    "HMGCR"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Sankyo (now Daiichi Sankyo)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1989,
+    "agency": null,
+    "country": "Japan",
+    "brand": "Mevalotin"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Sankyo",
+    "note": "Produced by microbial hydroxylation of mevastatin (compactin); marketed in the US by Bristol-Myers Squibb."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Hydrophilic statin with few drug interactions, proven in WOSCOPS",
+  "summary": "Pravastatin is a hydrophilic statin made by microbial transformation of mevastatin. It lowers LDL cholesterol less potently than newer statins but has few cytochrome P450 interactions, and its trials helped establish statins for primary and secondary prevention.",
+  "mechanism": [
+    "Pravastatin is an active hydroxy-acid that competitively inhibits HMG-CoA reductase. It is taken up into the liver by OATP1B1 and is not significantly metabolised by CYP3A4.",
+    "Falling intracellular cholesterol activates SREBP-2, which increases expression of LDL receptors on hepatocytes. More receptors clear more LDL particles from the blood, lowering LDL cholesterol; statins also modestly lower triglycerides and raise HDL."
+  ],
+  "uses": [
+    "Primary and secondary prevention of coronary events",
+    "Hypercholesterolaemia and mixed dyslipidaemia",
+    "Heterozygous familial hypercholesterolaemia in children ≥8 years"
+  ],
+  "history": [
+    {
+      "year": 1989,
+      "title": "Japan approval",
+      "detail": "Launched in Japan by Sankyo as Mevalotin."
+    },
+    {
+      "year": 1991,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Pravachol, marketed by Bristol-Myers Squibb."
+    },
+    {
+      "year": 1995,
+      "title": "WOSCOPS",
+      "detail": "Pravastatin reduces coronary events in men with hypercholesterolaemia and no prior MI."
+    },
+    {
+      "year": 1998,
+      "title": "LIPID",
+      "detail": "Pravastatin reduces mortality after MI or unstable angina with a broad range of cholesterol levels."
+    },
+    {
+      "year": 2004,
+      "title": "PROVE IT-TIMI 22",
+      "detail": "Intensive atorvastatin outperforms standard pravastatin after acute coronary syndrome."
+    },
+    {
+      "year": 2006,
+      "title": "US generics",
+      "detail": "Generic pravastatin becomes available in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "~1.5–2 h",
+    "bioavailability": "~17%",
+    "metabolism": "Hepatic isomerisation and conjugation; minimal CYP involvement",
+    "excretion": "~70% faeces, ~20% urine"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Myalgia",
+      "Headache",
+      "Gastrointestinal upset",
+      "Raised liver enzymes"
+    ],
+    "serious": [
+      "Myopathy and rhabdomyolysis",
+      "Hepatotoxicity (rare)",
+      "Small increase in new-onset diabetes",
+      "Immune-mediated necrotising myopathy (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Its minimal CYP3A4 metabolism makes it a common choice with HIV protease inhibitors and other interacting drugs."
+  ],
+  "related": [
+    "lovastatin",
+    "simvastatin",
+    "atorvastatin",
+    "rosuvastatin"
+  ],
+  "references": [
+    {
+      "title": "Pravastatin – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pravastatin"
+    },
+    {
+      "title": "DailyMed – pravastatin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=pravastatin"
+    },
+    {
+      "title": "Shepherd J et al. Prevention of coronary heart disease with pravastatin in men with hypercholesterolemia (WOSCOPS). N Engl J Med 1995",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7566020/"
+    }
+  ],
+  "stage": "written"
 }

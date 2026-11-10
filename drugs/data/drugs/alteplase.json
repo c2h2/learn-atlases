@@ -1,36 +1,140 @@
 {
   "slug": "alteplase",
   "name": "Alteplase",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "recombinant tissue plasminogen activator",
+    "rt-PA",
+    "tPA"
+  ],
+  "brands": [
+    "Activase",
+    "Actilyse",
+    "Cathflo Activase"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Thrombolytic; recombinant tissue plasminogen activator",
+  "modality": "protein",
+  "routes": [
+    "iv",
+    "other"
+  ],
+  "route_note": "IV bolus plus infusion for stroke, MI and PE; intracatheter instillation (Cathflo) to clear occluded central lines",
+  "targets": [
+    "PLG"
+  ],
+  "origin": "biotech",
+  "originator": "Genentech",
+  "owner": "Genentech (Roche) in the US; Boehringer Ingelheim elsewhere",
+  "first_approval": {
+    "year": 1987,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Activase"
+  },
+  "discovery": {
+    "year": 1983,
+    "by": "Genentech (Diane Pennica and colleagues)",
+    "note": "Human tPA cDNA was cloned and expressed in Escherichia coli, then produced in Chinese hamster ovary cells."
+  },
+  "generic": false,
+  "who_essential": true,
+  "rx_status": "prescription (hospital use)",
+  "tagline": "Clot-dissolving enzyme for acute ischaemic stroke, the first big recombinant drug hit",
+  "summary": "Alteplase is recombinant human tissue plasminogen activator, an enzyme that converts plasminogen to plasmin to dissolve fibrin clots. It is used for acute ischaemic stroke within a narrow time window, for pulmonary embolism and myocardial infarction, and in low doses to unblock catheters.",
+  "mechanism": [
+    "Alteplase is a serine protease that binds fibrin in a thrombus and converts bound plasminogen into plasmin. Plasmin then degrades the fibrin mesh, dissolving the clot.",
+    "Its activity is much greater in the presence of fibrin, giving relative clot selectivity, but systemic plasminogen activation still occurs and bleeding, including intracranial haemorrhage, is the main hazard."
+  ],
+  "uses": [
+    "Acute ischaemic stroke (within 3–4.5 hours of symptom onset)",
+    "Acute ST-elevation myocardial infarction",
+    "Massive pulmonary embolism",
+    "Restoration of function to occluded central venous catheters"
+  ],
+  "history": [
+    {
+      "year": 1983,
+      "title": "Gene cloned",
+      "detail": "Genentech scientists report cloning and expression of human tPA in Nature."
+    },
+    {
+      "year": 1987,
+      "title": "FDA approval",
+      "detail": "Approved as Activase for acute myocardial infarction."
+    },
+    {
+      "year": 1993,
+      "title": "GUSTO-I",
+      "detail": "Accelerated alteplase reduces mortality slightly more than streptokinase in acute MI."
+    },
+    {
+      "year": 1995,
+      "title": "NINDS trial",
+      "detail": "Alteplase within 3 hours of ischaemic stroke improves functional outcome."
+    },
+    {
+      "year": 1996,
+      "title": "Stroke approval",
+      "detail": "The FDA approves alteplase for acute ischaemic stroke, the first approved stroke treatment."
+    },
+    {
+      "year": 2001,
+      "title": "Cathflo Activase",
+      "detail": "A low-dose formulation is approved to clear occluded catheters."
+    },
+    {
+      "year": 2008,
+      "title": "ECASS III",
+      "detail": "Benefit is shown up to 4.5 hours after stroke onset."
+    },
+    {
+      "year": 2025,
+      "title": "Tenecteplase approved for stroke",
+      "detail": "The FDA approves tenecteplase for acute ischaemic stroke, a single-bolus alternative to alteplase."
+    }
+  ],
+  "pk": {
+    "half_life": "Initial ~5 min",
+    "bioavailability": "IV only",
+    "metabolism": "Hepatic clearance",
+    "excretion": "Hepatic"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Bleeding at puncture sites",
+      "Bruising"
+    ],
+    "serious": [
+      "Intracranial haemorrhage",
+      "Major bleeding",
+      "Orolingual angioedema (higher with ACE inhibitors)",
+      "Cholesterol embolisation"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Activase was one of the first blockbuster products of recombinant DNA technology.",
+    "It is endogenously produced by vascular endothelial cells."
+  ],
+  "related": [
+    "heparin",
+    "aspirin",
+    "clopidogrel"
+  ],
+  "references": [
+    {
+      "title": "Alteplase – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Alteplase"
+    },
+    {
+      "title": "DailyMed – alteplase labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=alteplase"
+    },
+    {
+      "title": "The NINDS rt-PA Stroke Study Group. Tissue plasminogen activator for acute ischemic stroke. N Engl J Med 1995",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7477192/"
+    }
+  ],
+  "stage": "written"
 }

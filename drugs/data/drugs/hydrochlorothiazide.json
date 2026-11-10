@@ -1,36 +1,117 @@
 {
   "slug": "hydrochlorothiazide",
   "name": "Hydrochlorothiazide",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "HCTZ"
+  ],
+  "brands": [
+    "HydroDIURIL",
+    "Esidrix",
+    "Microzide"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Thiazide diuretic",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet or capsule once daily; frequently combined with ACE inhibitors, ARBs or beta-blockers",
+  "targets": [
+    "SLC12A3"
+  ],
+  "origin": "synthetic",
+  "originator": "Ciba and Merck (independently)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1959,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Esidrix / HydroDIURIL"
+  },
+  "discovery": {
+    "year": 1958,
+    "by": "George de Stevens (Ciba) and Merck chemists",
+    "note": "A dihydro derivative of chlorothiazide, the first thiazide, discovered at Merck by Karl Beyer, James Sprague, Frederick Novello and John Baer."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Thiazide diuretic, one of the most prescribed antihypertensives",
+  "summary": "Hydrochlorothiazide is a thiazide diuretic that blocks sodium chloride reabsorption in the distal convoluted tubule. It is one of the most prescribed drugs for hypertension, often in combination pills, and is also used for oedema.",
+  "mechanism": [
+    "Hydrochlorothiazide inhibits the sodium–chloride cotransporter (NCC, SLC12A3) in the distal convoluted tubule, increasing excretion of sodium, chloride and water.",
+    "The initial volume loss lowers blood pressure; with long-term use, reduced peripheral vascular resistance sustains the effect. Increased distal sodium delivery promotes potassium loss, while calcium reabsorption is increased."
+  ],
+  "uses": [
+    "Hypertension",
+    "Oedema due to heart failure, cirrhosis or renal disease",
+    "Off-label: hypercalciuria and nephrogenic diabetes insipidus"
+  ],
+  "history": [
+    {
+      "year": 1957,
+      "title": "Chlorothiazide",
+      "detail": "Merck introduces chlorothiazide (Diuril), the first thiazide diuretic."
+    },
+    {
+      "year": 1959,
+      "title": "HCTZ approved",
+      "detail": "Hydrochlorothiazide is introduced by Ciba (Esidrix) and Merck (HydroDIURIL)."
+    },
+    {
+      "year": 2020,
+      "title": "Skin cancer warning",
+      "detail": "The FDA adds information on increased risk of non-melanoma skin cancer to the label, following earlier EMA action in 2018."
+    },
+    {
+      "year": 2022,
+      "title": "Diuretic Comparison Project",
+      "detail": "A large pragmatic US trial finds no difference in cardiovascular outcomes between hydrochlorothiazide and chlorthalidone."
+    }
+  ],
+  "pk": {
+    "half_life": "~6–15 h",
+    "bioavailability": "~65–75%",
+    "metabolism": "Not metabolised",
+    "excretion": "Renal, unchanged"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Hypokalaemia",
+      "Hyponatraemia",
+      "Hyperuricaemia",
+      "Hyperglycaemia",
+      "Photosensitivity"
+    ],
+    "serious": [
+      "Severe electrolyte disturbance",
+      "Gout",
+      "Non-melanoma skin cancer with long-term use",
+      "Acute angle-closure glaucoma",
+      "Pancreatitis (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "As a sulfonamide derivative, it can cause photosensitivity and, rarely, choroidal effusion with acute myopia."
+  ],
+  "related": [
+    "furosemide",
+    "spironolactone",
+    "lisinopril",
+    "losartan",
+    "valsartan"
+  ],
+  "references": [
+    {
+      "title": "Hydrochlorothiazide – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hydrochlorothiazide"
+    },
+    {
+      "title": "DailyMed – hydrochlorothiazide labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=hydrochlorothiazide"
+    }
+  ],
+  "stage": "written"
 }

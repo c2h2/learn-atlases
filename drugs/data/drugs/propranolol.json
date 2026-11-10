@@ -1,36 +1,144 @@
 {
   "slug": "propranolol",
   "name": "Propranolol",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "propranolol hydrochloride"
+  ],
+  "brands": [
+    "Inderal",
+    "Inderal LA",
+    "Hemangeol",
+    "InnoPran XL"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Non-selective beta-adrenergic blocker",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "oral tablets, extended-release capsules and solution; IV for arrhythmias",
+  "targets": [
+    "ADRB1",
+    "ADRB2"
+  ],
+  "origin": "synthetic",
+  "originator": "Imperial Chemical Industries (James Black)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1965,
+    "agency": null,
+    "country": "UK",
+    "brand": "Inderal"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1962,
+    "by": "James Black and colleagues, ICI Pharmaceuticals",
+    "note": "Designed to block cardiac beta-receptors to reduce myocardial oxygen demand in angina; succeeded pronethalol."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "The first successful beta-blocker, from angina to migraine and infant haemangiomas",
+  "summary": "Propranolol is a non-selective beta-blocker developed by James Black, who received a Nobel Prize partly for this work. It is used for hypertension, angina, arrhythmias, migraine prevention, essential tremor, thyrotoxicosis symptoms and, in a paediatric formulation, infantile haemangioma.",
+  "mechanism": [
+    "Propranolol competitively blocks β1-adrenoceptors in the heart, lowering heart rate, contractility and AV conduction and so reducing myocardial oxygen demand. It also reduces renin release from the kidney.",
+    "Blockade of β2-receptors can cause bronchoconstriction and blunts hypoglycaemia warning signs. As a lipophilic drug it enters the brain, which may contribute to its effects on migraine, tremor and anxiety symptoms, as well as fatigue and vivid dreams."
+  ],
+  "uses": [
+    "Hypertension",
+    "Angina pectoris",
+    "Atrial fibrillation rate control and other arrhythmias",
+    "Secondary prevention after myocardial infarction",
+    "Migraine prophylaxis",
+    "Essential tremor",
+    "Hypertrophic subaortic stenosis and phaeochromocytoma (adjunct)",
+    "Proliferating infantile haemangioma"
+  ],
+  "history": [
+    {
+      "year": 1962,
+      "title": "Synthesis",
+      "detail": "James Black's team at ICI makes propranolol."
+    },
+    {
+      "year": 1965,
+      "title": "UK launch",
+      "detail": "Marketed as Inderal in the United Kingdom."
+    },
+    {
+      "year": 1967,
+      "title": "FDA approval",
+      "detail": "Approved in the US."
+    },
+    {
+      "year": 1982,
+      "title": "BHAT",
+      "detail": "The Beta-Blocker Heart Attack Trial shows reduced mortality after myocardial infarction."
+    },
+    {
+      "year": 1988,
+      "title": "Nobel Prize",
+      "detail": "James Black shares the Nobel Prize in Physiology or Medicine, partly for developing propranolol."
+    },
+    {
+      "year": 2008,
+      "title": "Haemangioma discovery",
+      "detail": "French physicians report by chance that propranolol shrinks infantile haemangiomas."
+    },
+    {
+      "year": 2014,
+      "title": "Hemangeol",
+      "detail": "The FDA approves an oral solution for proliferating infantile haemangioma."
+    }
+  ],
+  "pk": {
+    "half_life": "~3–6 h",
+    "bioavailability": "~25% (extensive first-pass)",
+    "metabolism": "Hepatic CYP2D6, CYP1A2, CYP2C19; active 4-hydroxypropranolol",
+    "excretion": "Renal (metabolites)"
+  },
+  "safety": {
+    "common": [
+      "Fatigue",
+      "Bradycardia",
+      "Cold extremities",
+      "Sleep disturbance and vivid dreams"
+    ],
+    "serious": [
+      "Bronchospasm in asthma",
+      "Heart failure exacerbation",
+      "Heart block",
+      "Masked hypoglycaemia",
+      "Rebound ischaemia on abrupt withdrawal"
+    ],
+    "boxed_warning": "Abrupt cessation can exacerbate angina and precipitate myocardial infarction or ventricular arrhythmias in ischaemic heart disease; taper over 1–2 weeks."
+  },
+  "facts": [
+    "It is used off-label for performance anxiety, and its use is banned in some precision sports by WADA.",
+    "Overdose can be severe because of sodium-channel blocking (membrane-stabilising) effects."
+  ],
+  "related": [
+    "metoprolol",
+    "atenolol",
+    "bisoprolol",
+    "carvedilol",
+    "timolol"
+  ],
+  "references": [
+    {
+      "title": "Propranolol – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Propranolol"
+    },
+    {
+      "title": "DailyMed – propranolol labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=propranolol"
+    },
+    {
+      "title": "Léauté-Labrèze C et al. Propranolol for severe hemangiomas of infancy. N Engl J Med 2008",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18548738/"
+    }
+  ],
+  "stage": "written"
 }

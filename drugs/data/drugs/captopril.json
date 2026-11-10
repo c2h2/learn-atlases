@@ -1,36 +1,131 @@
 {
   "slug": "captopril",
   "name": "Captopril",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "SQ 14225"
+  ],
+  "brands": [
+    "Capoten",
+    "Capozide (with HCTZ)"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Angiotensin-converting enzyme (ACE) inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet two or three times daily, one hour before meals",
+  "targets": [
+    "ACE"
+  ],
+  "origin": "synthetic",
+  "originator": "Squibb (Miguel Ondetti, David Cushman, Bernard Rubin)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1981,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Capoten"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1975,
+    "by": "Miguel Ondetti and David Cushman, Squibb",
+    "note": "Designed from peptides in Bothrops jararaca snake venom studied by Sérgio Ferreira, using a model of the ACE active site."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "First ACE inhibitor, rationally designed from Brazilian pit viper venom",
+  "summary": "Captopril was the first orally active angiotensin-converting enzyme inhibitor and an early example of structure-based drug design, inspired by bradykinin-potentiating peptides from pit viper venom. It treats hypertension, heart failure, left ventricular dysfunction after myocardial infarction and diabetic nephropathy.",
+  "mechanism": [
+    "Angiotensin-converting enzyme converts angiotensin I to the vasoconstrictor angiotensin II and also breaks down bradykinin. Inhibiting it lowers angiotensin II, causing vasodilation, reduced aldosterone secretion and less sodium retention, while bradykinin accumulates.",
+    "Captopril binds the zinc ion in ACE through a sulfhydryl (thiol) group. This group is linked to side effects such as taste disturbance and rash that are less common with later ACE inhibitors.",
+    "In the kidney, reduced efferent arteriolar constriction lowers glomerular pressure and proteinuria. Bradykinin accumulation contributes to vasodilation and is thought to cause the characteristic dry cough and, rarely, angioedema."
+  ],
+  "uses": [
+    "Hypertension",
+    "Heart failure",
+    "Left ventricular dysfunction after myocardial infarction",
+    "Diabetic nephropathy in type 1 diabetes"
+  ],
+  "history": [
+    {
+      "year": 1965,
+      "title": "Venom peptides",
+      "detail": "Sérgio Ferreira reports bradykinin-potentiating factors in Bothrops jararaca venom."
+    },
+    {
+      "year": 1975,
+      "title": "Captopril designed",
+      "detail": "Ondetti and Cushman at Squibb design captopril from a hypothetical model of ACE."
+    },
+    {
+      "year": 1981,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Capoten."
+    },
+    {
+      "year": 1992,
+      "title": "SAVE",
+      "detail": "Captopril reduces mortality in left ventricular dysfunction after MI."
+    },
+    {
+      "year": 1993,
+      "title": "Diabetic nephropathy",
+      "detail": "Captopril slows kidney function decline in type 1 diabetic nephropathy."
+    },
+    {
+      "year": 1999,
+      "title": "Lasker Award",
+      "detail": "Ondetti and Cushman receive the Lasker Clinical Medical Research Award."
+    }
+  ],
+  "pk": {
+    "half_life": "~2 h",
+    "bioavailability": "~70–75% (reduced by food)",
+    "metabolism": "Partly oxidised to disulfide dimers",
+    "excretion": "Renal (>95%)"
+  },
+  "safety": {
+    "common": [
+      "Dry cough",
+      "Taste disturbance",
+      "Rash",
+      "Hypotension",
+      "Hyperkalaemia"
+    ],
+    "serious": [
+      "Angioedema",
+      "Neutropenia/agranulocytosis",
+      "Proteinuria",
+      "Acute kidney injury",
+      "Fetal toxicity"
+    ],
+    "boxed_warning": "Fetal toxicity: drugs acting on the renin-angiotensin system can cause injury and death to the developing fetus; discontinue when pregnancy is detected."
+  },
+  "facts": [
+    "Captopril is often cited as one of the first successful examples of structure-based drug design."
+  ],
+  "related": [
+    "enalapril",
+    "lisinopril",
+    "ramipril",
+    "losartan"
+  ],
+  "references": [
+    {
+      "title": "Captopril – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Captopril"
+    },
+    {
+      "title": "DailyMed – captopril labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=captopril"
+    },
+    {
+      "title": "Pfeffer MA et al. Effect of captopril on mortality and morbidity in patients with left ventricular dysfunction after myocardial infarction (SAVE). N Engl J Med 1992",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/1386652/"
+    }
+  ],
+  "stage": "written"
 }

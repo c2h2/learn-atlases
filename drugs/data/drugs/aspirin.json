@@ -1,36 +1,148 @@
 {
   "slug": "aspirin",
   "name": "Aspirin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "acetylsalicylic acid",
+    "ASA"
+  ],
+  "brands": [
+    "Aspirin (Bayer)",
+    "Ecotrin",
+    "Disprin"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Salicylate NSAID; irreversible COX inhibitor (antiplatelet)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "rectal"
+  ],
+  "route_note": "oral tablets (plain, buffered, enteric-coated); IV lysine acetylsalicylate in some countries; suppositories",
+  "targets": [
+    "PTGS1",
+    "PTGS2"
+  ],
+  "origin": "synthetic",
+  "originator": "Bayer (Felix Hoffmann)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1899,
+    "agency": null,
+    "country": "Germany",
+    "brand": "Aspirin"
+  },
+  "discovery": {
+    "year": 1897,
+    "by": "Felix Hoffmann, Bayer",
+    "note": "Acetylation of salicylic acid, itself derived from willow bark salicin; Charles Gerhardt had first made the compound in 1853."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "OTC in most countries",
+  "tagline": "The original wonder drug: analgesic, antipyretic and lifelong antiplatelet",
+  "summary": "Aspirin is acetylsalicylic acid, a salicylate that irreversibly inhibits cyclooxygenase. At analgesic doses it treats pain, fever and inflammation; at low daily doses it is a cornerstone antiplatelet drug for secondary prevention of heart attack and stroke.",
+  "mechanism": [
+    "Aspirin transfers its acetyl group to a serine residue (Ser529/530) in the active site of cyclooxygenase-1 and, less potently, cyclooxygenase-2, permanently blocking the conversion of arachidonic acid to prostaglandin H2.",
+    "Platelets lack a nucleus and cannot make new enzyme, so a single low dose suppresses thromboxane A2 production for the platelet's 7–10 day life span. This reduces platelet activation and aggregation, the basis of its use in cardiovascular prevention.",
+    "At higher doses, reduced prostaglandin synthesis in tissues and the hypothalamus produces analgesic, anti-inflammatory and antipyretic effects."
+  ],
+  "uses": [
+    "Secondary prevention of myocardial infarction and ischaemic stroke",
+    "Acute coronary syndrome and after coronary stenting (with a P2Y12 inhibitor)",
+    "Acute ischaemic stroke/TIA",
+    "Pain, fever and inflammatory conditions",
+    "Pre-eclampsia prevention in high-risk pregnancy (low dose)"
+  ],
+  "history": [
+    {
+      "year": 1853,
+      "title": "First synthesis",
+      "detail": "Charles Frédéric Gerhardt prepares acetylsalicylic acid in impure form."
+    },
+    {
+      "year": 1897,
+      "title": "Bayer synthesis",
+      "detail": "Felix Hoffmann at Bayer makes a pure, stable form of acetylsalicylic acid."
+    },
+    {
+      "year": 1899,
+      "title": "Aspirin launched",
+      "detail": "Bayer registers the 'Aspirin' trademark and markets the drug as a powder, later as tablets."
+    },
+    {
+      "year": 1919,
+      "title": "Trademark lost",
+      "detail": "Under the Treaty of Versailles Bayer loses the Aspirin trademark in several countries, where 'aspirin' becomes a generic name."
+    },
+    {
+      "year": 1971,
+      "title": "Mechanism discovered",
+      "detail": "John Vane shows that aspirin-like drugs inhibit prostaglandin synthesis; he shares the 1982 Nobel Prize."
+    },
+    {
+      "year": 1988,
+      "title": "ISIS-2",
+      "detail": "The ISIS-2 trial shows aspirin reduces vascular mortality after acute myocardial infarction."
+    },
+    {
+      "year": 2018,
+      "title": "Primary prevention trials",
+      "detail": "ASPREE, ARRIVE and ASCEND find little net benefit of aspirin for primary prevention, with more bleeding."
+    },
+    {
+      "year": 2022,
+      "title": "USPSTF update",
+      "detail": "The US Preventive Services Task Force recommends against starting low-dose aspirin for primary prevention in adults aged 60 or older."
+    }
+  ],
+  "pk": {
+    "half_life": "~15–20 min (aspirin); salicylate 2–3 h at low doses, longer at high doses (saturable)",
+    "bioavailability": "~50–70% (rapid presystemic hydrolysis)",
+    "metabolism": "Hydrolysed by esterases to salicylate; hepatic conjugation",
+    "excretion": "Renal (salicylate and metabolites)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Dyspepsia",
+      "Gastrointestinal irritation",
+      "Easy bruising"
+    ],
+    "serious": [
+      "Gastrointestinal bleeding and ulceration",
+      "Haemorrhagic stroke",
+      "Reye's syndrome in children and teenagers",
+      "Bronchospasm in aspirin-exacerbated respiratory disease",
+      "Salicylate toxicity in overdose"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "The name combines 'a' (acetyl) with 'spir' from Spiraea, the meadowsweet plant that is a source of salicylates.",
+    "Its antiplatelet effect is irreversible, lasting for the life of the platelet.",
+    "Aspirin is one of the most widely used medicines in the world."
+  ],
+  "related": [
+    "clopidogrel",
+    "ticagrelor",
+    "prasugrel",
+    "ibuprofen",
+    "paracetamol"
+  ],
+  "references": [
+    {
+      "title": "Aspirin – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aspirin"
+    },
+    {
+      "title": "DailyMed – aspirin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=aspirin"
+    },
+    {
+      "title": "Vane JR. Inhibition of prostaglandin synthesis as a mechanism of action for aspirin-like drugs. Nature New Biol 1971",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/5284360/"
+    }
+  ],
+  "stage": "written"
 }

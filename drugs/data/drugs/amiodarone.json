@@ -1,36 +1,137 @@
 {
   "slug": "amiodarone",
   "name": "Amiodarone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "amiodarone hydrochloride"
+  ],
+  "brands": [
+    "Cordarone",
+    "Pacerone",
+    "Nexterone"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Class III antiarrhythmic (multichannel blocker)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "oral loading then maintenance tablets; IV infusion for acute arrhythmias and cardiac arrest",
+  "targets": [
+    "KCNH2",
+    "SCN5A",
+    "CACNA1C",
+    "ADRB1"
+  ],
+  "origin": "synthetic",
+  "originator": "Labaz (Belgium; later Sanofi)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1985,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Cordarone"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1961,
+    "by": "Labaz laboratories, Belgium (Tondeur and Binon)",
+    "note": "Developed from khellin as an antianginal; its antiarrhythmic action was recognised later, notably by Bramah Singh."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Highly effective, iodine-rich antiarrhythmic with a months-long half-life",
+  "summary": "Amiodarone is an iodinated benzofuran antiarrhythmic that blocks potassium, sodium and calcium channels and beta-adrenoceptors. It is among the most effective drugs for ventricular and atrial arrhythmias but is limited by thyroid, lung, liver, eye and skin toxicity.",
+  "mechanism": [
+    "Amiodarone's main effect is blockade of the rapid delayed rectifier potassium current (IKr, hERG/KCNH2), prolonging the action potential and refractory period in all cardiac tissues (class III).",
+    "It also blocks inactivated sodium channels (class I), L-type calcium channels (class IV) and has non-competitive anti-adrenergic effects (class II). This mix causes QT prolongation but relatively little torsades de pointes.",
+    "It contains about 37% iodine by weight and inhibits peripheral conversion of T4 to T3, explaining both hypo- and hyperthyroidism."
+  ],
+  "uses": [
+    "Life-threatening recurrent ventricular fibrillation or haemodynamically unstable ventricular tachycardia",
+    "Shock-refractory VF/pulseless VT in cardiac arrest (IV)",
+    "Off-label: maintenance of sinus rhythm in atrial fibrillation"
+  ],
+  "history": [
+    {
+      "year": 1961,
+      "title": "Synthesis",
+      "detail": "Developed at Labaz in Belgium as an antianginal drug."
+    },
+    {
+      "year": 1970,
+      "title": "Antiarrhythmic action",
+      "detail": "Bramah Singh and Vaughan Williams describe its class III antiarrhythmic properties."
+    },
+    {
+      "year": 1985,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Cordarone tablets for life-threatening ventricular arrhythmias."
+    },
+    {
+      "year": 1999,
+      "title": "ARREST",
+      "detail": "IV amiodarone improves survival to hospital admission in shock-refractory out-of-hospital cardiac arrest."
+    },
+    {
+      "year": 2005,
+      "title": "SCD-HeFT",
+      "detail": "Amiodarone does not reduce mortality in heart failure, whereas an ICD does."
+    },
+    {
+      "year": 2008,
+      "title": "Nexterone",
+      "detail": "A premixed IV formulation without polysorbate 80 is approved."
+    }
+  ],
+  "pk": {
+    "half_life": "~58 days on average (range ~15–142 days)",
+    "bioavailability": "~30–65%",
+    "metabolism": "Hepatic CYP3A4 and CYP2C8 to active desethylamiodarone; inhibits CYP3A4, 2C9, 2D6 and P-gp",
+    "excretion": "Biliary; negligible renal"
+  },
+  "safety": {
+    "common": [
+      "Corneal microdeposits",
+      "Photosensitivity",
+      "Nausea",
+      "Tremor",
+      "Thyroid dysfunction"
+    ],
+    "serious": [
+      "Pulmonary toxicity (pneumonitis, fibrosis)",
+      "Hepatotoxicity",
+      "Hypo- or hyperthyroidism",
+      "Bradycardia, heart block and proarrhythmia",
+      "Optic neuropathy",
+      "Blue-grey skin discolouration"
+    ],
+    "boxed_warning": "For life-threatening arrhythmias only because of substantial toxicity: pulmonary toxicity (can be fatal), hepatic injury and worsened arrhythmia; initiate in hospital."
+  },
+  "facts": [
+    "Its large volume of distribution (around 60 L/kg) and fat storage explain the very long half-life.",
+    "It markedly increases warfarin and digoxin levels."
+  ],
+  "related": [
+    "digoxin",
+    "warfarin",
+    "metoprolol",
+    "ivabradine"
+  ],
+  "references": [
+    {
+      "title": "Amiodarone – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Amiodarone"
+    },
+    {
+      "title": "DailyMed – amiodarone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=amiodarone"
+    },
+    {
+      "title": "Kudenchuk PJ et al. Amiodarone for resuscitation after out-of-hospital cardiac arrest due to ventricular fibrillation (ARREST). N Engl J Med 1999",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10486418/"
+    }
+  ],
+  "stage": "written"
 }

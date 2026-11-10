@@ -1,36 +1,120 @@
 {
   "slug": "inclisiran",
   "name": "Inclisiran",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "ALN-PCSsc",
+    "inclisiran sodium"
+  ],
+  "brands": [
+    "Leqvio"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Small interfering RNA (siRNA) PCSK9 synthesis inhibitor",
+  "modality": "oligonucleotide",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "subcutaneous injection by a healthcare professional at day 0, month 3, then every 6 months",
+  "targets": [
+    "PCSK9"
+  ],
+  "origin": "synthetic",
+  "originator": "Alnylam Pharmaceuticals",
+  "owner": "Novartis",
+  "first_approval": {
+    "year": 2020,
+    "agency": "EMA",
+    "country": "EU",
+    "brand": "Leqvio"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Alnylam Pharmaceuticals",
+    "note": "Licensed to The Medicines Company in 2013, which Novartis acquired in 2020."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Twice-yearly siRNA that silences PCSK9 production in the liver",
+  "summary": "Inclisiran is a GalNAc-conjugated small interfering RNA that switches off production of PCSK9 in liver cells. Given by injection twice a year after initial doses, it lowers LDL cholesterol by about 50%.",
+  "mechanism": [
+    "The siRNA is conjugated to N-acetylgalactosamine, which binds the asialoglycoprotein receptor and delivers it selectively into hepatocytes.",
+    "Inside the cell its antisense strand is loaded into the RNA-induced silencing complex, which cleaves PCSK9 messenger RNA. Less PCSK9 protein is made, so more LDL receptors recycle to the cell surface and LDL clearance increases.",
+    "Because the loaded silencing complex persists for months, the effect lasts long after the drug has left the plasma."
+  ],
+  "uses": [
+    "Primary hypercholesterolaemia (including heterozygous FH) or mixed dyslipidaemia, as an adjunct to diet with or without statins"
+  ],
+  "history": [
+    {
+      "year": 2013,
+      "title": "Licensing",
+      "detail": "Alnylam licenses the PCSK9 siRNA programme to The Medicines Company."
+    },
+    {
+      "year": 2020,
+      "title": "ORION-10 and -11",
+      "detail": "Phase 3 trials show about 50% LDL reduction with twice-yearly dosing."
+    },
+    {
+      "year": 2020,
+      "title": "Novartis acquisition and EU approval",
+      "detail": "Novartis completes its acquisition of The Medicines Company; the EU approves Leqvio in December."
+    },
+    {
+      "year": 2021,
+      "title": "FDA approval",
+      "detail": "Approved in the US in December, after an earlier delay related to manufacturing inspection."
+    },
+    {
+      "year": 2023,
+      "title": "Label broadened",
+      "detail": "The US label is updated to allow earlier use in primary hyperlipidaemia."
+    }
+  ],
+  "pk": {
+    "half_life": "~9 h in plasma (pharmacodynamic effect lasts months)",
+    "bioavailability": "Subcutaneous; rapidly taken up by the liver",
+    "metabolism": "Nuclease degradation",
+    "excretion": "~16% renal as unchanged drug"
+  },
   "safety": {
-    "common": [],
+    "common": [
+      "Injection-site reactions",
+      "Arthralgia",
+      "Bronchitis"
+    ],
     "serious": [],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "It was the first siRNA approved for a common disease rather than a rare one.",
+    "Cardiovascular outcome trials (ORION-4, VICTORION-2 PREVENT) were ongoing at the time of writing."
+  ],
+  "related": [
+    "evolocumab",
+    "alirocumab",
+    "atorvastatin",
+    "patisiran"
+  ],
+  "references": [
+    {
+      "title": "Inclisiran – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Inclisiran"
+    },
+    {
+      "title": "DailyMed – leqvio labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=leqvio"
+    },
+    {
+      "title": "EMA EPAR – Leqvio",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/leqvio"
+    },
+    {
+      "title": "Ray KK et al. Two phase 3 trials of inclisiran in patients with elevated LDL cholesterol (ORION-10/11). N Engl J Med 2020",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32187462/"
+    }
+  ],
+  "stage": "written"
 }

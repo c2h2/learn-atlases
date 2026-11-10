@@ -1,36 +1,138 @@
 {
   "slug": "spironolactone",
   "name": "Spironolactone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "SC-9420"
+  ],
+  "brands": [
+    "Aldactone",
+    "CaroSpir",
+    "Aldactazide (with HCTZ)"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Mineralocorticoid receptor antagonist (potassium-sparing diuretic)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet or suspension once daily (suspension not interchangeable mg-for-mg)",
+  "targets": [
+    "NR3C2",
+    "AR"
+  ],
+  "origin": "synthetic",
+  "originator": "G. D. Searle & Company",
+  "owner": "generic (many); Aldactone brand held by Pfizer",
+  "first_approval": {
+    "year": 1960,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Aldactone"
+  },
+  "discovery": {
+    "year": 1957,
+    "by": "John Cella and Robert Tweit, Searle",
+    "note": "A steroidal spirolactone designed to antagonise aldosterone."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Steroidal aldosterone blocker that cut heart failure deaths in RALES",
+  "summary": "Spironolactone is a steroidal mineralocorticoid receptor antagonist and potassium-sparing diuretic. It reduces mortality in heart failure with reduced ejection fraction, treats primary hyperaldosteronism, resistant hypertension and oedema in cirrhosis, and its anti-androgen effects are used off-label in acne and hirsutism.",
+  "mechanism": [
+    "Spironolactone and its active metabolites (canrenone and 7α-thiomethylspironolactone) competitively block aldosterone at mineralocorticoid receptors in the distal nephron, reducing sodium reabsorption and potassium and hydrogen ion excretion.",
+    "Blocking aldosterone in the heart and vessels also reduces fibrosis and remodelling, which underlies its survival benefit in heart failure.",
+    "It also binds androgen and progesterone receptors, causing gynaecomastia and menstrual changes, and providing the anti-androgen effects used in dermatology."
+  ],
+  "uses": [
+    "Heart failure with reduced ejection fraction (NYHA III–IV)",
+    "Primary hyperaldosteronism",
+    "Resistant hypertension",
+    "Oedema in cirrhosis and nephrotic syndrome",
+    "Off-label: acne, hirsutism, female-pattern hair loss; feminising hormone therapy"
+  ],
+  "history": [
+    {
+      "year": 1957,
+      "title": "Synthesis",
+      "detail": "Searle chemists synthesise spironolactone."
+    },
+    {
+      "year": 1960,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Aldactone."
+    },
+    {
+      "year": 1999,
+      "title": "RALES",
+      "detail": "Spironolactone reduces mortality by 30% in severe heart failure; the trial stops early."
+    },
+    {
+      "year": 2004,
+      "title": "Hyperkalaemia warning",
+      "detail": "A population study shows rising hyperkalaemia admissions and deaths after RALES, emphasising monitoring."
+    },
+    {
+      "year": 2014,
+      "title": "TOPCAT",
+      "detail": "No significant benefit in heart failure with preserved ejection fraction overall, with regional heterogeneity."
+    },
+    {
+      "year": 2015,
+      "title": "PATHWAY-2",
+      "detail": "Spironolactone is the most effective add-on drug for resistant hypertension."
+    },
+    {
+      "year": 2017,
+      "title": "Oral suspension",
+      "detail": "CaroSpir oral suspension is approved in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "~1.4 h (parent); 14–16 h (active metabolites)",
+    "bioavailability": "~65–90% (increased by food)",
+    "metabolism": "Extensive hepatic metabolism to active sulfur-containing metabolites and canrenone",
+    "excretion": "Renal and biliary (metabolites)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Hyperkalaemia",
+      "Gynaecomastia",
+      "Menstrual irregularity",
+      "Dizziness"
+    ],
+    "serious": [
+      "Life-threatening hyperkalaemia",
+      "Acute kidney injury",
+      "Hyponatraemia"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Hyperkalaemia risk is highest with renal impairment and with ACE inhibitors, ARBs or potassium supplements.",
+    "Gynaecomastia led to the development of the more selective eplerenone."
+  ],
+  "related": [
+    "eplerenone",
+    "furosemide",
+    "hydrochlorothiazide",
+    "finerenone",
+    "sacubitril-valsartan"
+  ],
+  "references": [
+    {
+      "title": "Spironolactone – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Spironolactone"
+    },
+    {
+      "title": "DailyMed – spironolactone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=spironolactone"
+    },
+    {
+      "title": "Pitt B et al. The effect of spironolactone on morbidity and mortality in patients with severe heart failure (RALES). N Engl J Med 1999",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10471456/"
+    }
+  ],
+  "stage": "written"
 }

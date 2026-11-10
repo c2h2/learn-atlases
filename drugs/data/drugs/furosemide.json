@@ -1,36 +1,123 @@
 {
   "slug": "furosemide",
   "name": "Furosemide",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "frusemide"
+  ],
+  "brands": [
+    "Lasix",
+    "Furoscix"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Loop diuretic",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "im",
+    "sc"
+  ],
+  "route_note": "oral tablet or solution; IV or IM injection; subcutaneous on-body infusor (Furoscix)",
+  "targets": [
+    "SLC12A1"
+  ],
+  "origin": "synthetic",
+  "originator": "Hoechst AG (now Sanofi)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1966,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Lasix"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": 1959,
+    "by": "Hoechst AG",
+    "note": "A sulfamoylanthranilic acid derivative; introduced clinically in the early 1960s."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Potent loop diuretic for fluid overload, used since the 1960s",
+  "summary": "Furosemide is a potent loop diuretic that blocks sodium, potassium and chloride reabsorption in the thick ascending limb of the loop of Henle. It is the standard treatment for fluid overload in heart failure, cirrhosis and kidney disease, and for acute pulmonary oedema.",
+  "mechanism": [
+    "Furosemide is secreted into the tubule and inhibits the Na–K–2Cl cotransporter (NKCC2, SLC12A1) on the luminal membrane of the thick ascending limb, where about a quarter of filtered sodium is reabsorbed.",
+    "This causes a large natriuresis and diuresis and also increases excretion of potassium, calcium and magnesium. IV furosemide additionally causes venodilation, which relieves pulmonary congestion before diuresis begins."
+  ],
+  "uses": [
+    "Oedema due to heart failure, cirrhosis or renal disease",
+    "Acute pulmonary oedema",
+    "Hypertension (where thiazides are insufficient)",
+    "Hypercalcaemia (with fluids, adjunct)"
+  ],
+  "history": [
+    {
+      "year": 1959,
+      "title": "Synthesis",
+      "detail": "Furosemide is synthesised at Hoechst."
+    },
+    {
+      "year": 1966,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Lasix."
+    },
+    {
+      "year": 2011,
+      "title": "DOSE trial",
+      "detail": "In acute heart failure, bolus versus continuous infusion and low versus high dose show no major difference in symptoms."
+    },
+    {
+      "year": 2022,
+      "title": "Subcutaneous form",
+      "detail": "The FDA approves Furoscix, a subcutaneous on-body infusor for congestion in chronic heart failure."
+    },
+    {
+      "year": 2023,
+      "title": "TRANSFORM-HF",
+      "detail": "Torsemide does not reduce mortality compared with furosemide after heart failure hospitalisation."
+    }
+  ],
+  "pk": {
+    "half_life": "~1–2 h (prolonged in renal failure)",
+    "bioavailability": "~50% (range 10–100%)",
+    "metabolism": "Partly glucuronidated in the kidney",
+    "excretion": "Renal, mostly unchanged"
+  },
+  "safety": {
+    "common": [
+      "Hypokalaemia",
+      "Hyponatraemia",
+      "Dehydration",
+      "Hypotension",
+      "Hyperuricaemia"
+    ],
+    "serious": [
+      "Profound fluid and electrolyte depletion",
+      "Ototoxicity (high doses, rapid IV, with aminoglycosides)",
+      "Acute kidney injury",
+      "Severe skin reactions (rare)"
+    ],
+    "boxed_warning": "Potent diuretic that, in excessive amounts, can lead to profound diuresis with water and electrolyte depletion; dose must be individualised under supervision."
+  },
+  "facts": [
+    "The brand name Lasix is said to come from 'lasts six hours'.",
+    "It is prohibited in sport by WADA as a diuretic and masking agent, and is widely used in racehorses."
+  ],
+  "related": [
+    "hydrochlorothiazide",
+    "spironolactone",
+    "digoxin"
+  ],
+  "references": [
+    {
+      "title": "Furosemide – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Furosemide"
+    },
+    {
+      "title": "DailyMed – furosemide labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=furosemide"
+    }
+  ],
+  "stage": "written"
 }

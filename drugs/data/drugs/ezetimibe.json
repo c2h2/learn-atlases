@@ -1,36 +1,126 @@
 {
   "slug": "ezetimibe",
   "name": "Ezetimibe",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "SCH 58235"
+  ],
+  "brands": [
+    "Zetia",
+    "Ezetrol"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Cholesterol absorption inhibitor (NPC1L1 inhibitor)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once daily, alone or combined with a statin or bempedoic acid",
+  "targets": [
+    "NPC1L1"
+  ],
+  "origin": "synthetic",
+  "originator": "Schering-Plough",
+  "owner": "generic (many); Zetia brand held by Organon",
+  "first_approval": {
+    "year": 2002,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Zetia"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Schering-Plough",
+    "note": "Found by optimising azetidinone compounds in an animal screen before its molecular target was known."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Blocks intestinal cholesterol uptake; the usual add-on to statins",
+  "summary": "Ezetimibe lowers LDL cholesterol by about 20% by blocking cholesterol absorption in the small intestine. It is used alone or with a statin, and the IMPROVE-IT trial showed that adding it to simvastatin after acute coronary syndrome modestly reduced cardiovascular events.",
+  "mechanism": [
+    "Ezetimibe and its active glucuronide bind Niemann-Pick C1-Like 1 (NPC1L1), a sterol transporter on the brush border of enterocytes, blocking uptake of dietary and biliary cholesterol.",
+    "Less cholesterol reaches the liver, which responds by upregulating LDL receptors and clearing more LDL from the blood. Its effect is additive to statins, which block synthesis."
+  ],
+  "uses": [
+    "Primary hypercholesterolaemia, with or without a statin",
+    "Homozygous familial hypercholesterolaemia (with a statin)",
+    "Homozygous sitosterolaemia"
+  ],
+  "history": [
+    {
+      "year": 2002,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Zetia, marketed by a Merck/Schering-Plough partnership."
+    },
+    {
+      "year": 2004,
+      "title": "Target identified",
+      "detail": "NPC1L1 is identified as the molecular target of ezetimibe."
+    },
+    {
+      "year": 2004,
+      "title": "Vytorin",
+      "detail": "A fixed-dose combination with simvastatin is approved."
+    },
+    {
+      "year": 2008,
+      "title": "ENHANCE controversy",
+      "detail": "The ENHANCE imaging trial shows no reduction in carotid intima-media thickness, prompting scrutiny of delayed results."
+    },
+    {
+      "year": 2015,
+      "title": "IMPROVE-IT",
+      "detail": "Adding ezetimibe to simvastatin after ACS reduces cardiovascular events, supporting the LDL hypothesis for non-statin therapy."
+    },
+    {
+      "year": 2016,
+      "title": "US generics",
+      "detail": "Generic ezetimibe becomes available in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "~22 h (ezetimibe and glucuronide)",
+    "bioavailability": "Variable; rapidly glucuronidated",
+    "metabolism": "Intestinal and hepatic glucuronidation; enterohepatic recirculation",
+    "excretion": "~78% faeces, ~11% urine"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Diarrhoea",
+      "Upper respiratory infection",
+      "Arthralgia",
+      "Fatigue"
+    ],
+    "serious": [
+      "Myopathy (mainly with statins)",
+      "Raised liver enzymes with statins",
+      "Hypersensitivity reactions"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Its molecular target was discovered only after the drug was already in clinical development."
+  ],
+  "related": [
+    "simvastatin",
+    "atorvastatin",
+    "rosuvastatin",
+    "bempedoic-acid"
+  ],
+  "references": [
+    {
+      "title": "Ezetimibe – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ezetimibe"
+    },
+    {
+      "title": "DailyMed – ezetimibe labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ezetimibe"
+    },
+    {
+      "title": "Cannon CP et al. Ezetimibe added to statin therapy after acute coronary syndromes (IMPROVE-IT). N Engl J Med 2015",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26039521/"
+    }
+  ],
+  "stage": "written"
 }

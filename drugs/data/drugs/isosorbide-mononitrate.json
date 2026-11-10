@@ -1,36 +1,115 @@
 {
   "slug": "isosorbide-mononitrate",
   "name": "Isosorbide mononitrate",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "isosorbide 5-mononitrate",
+    "ISMN",
+    "5-ISMN"
+  ],
+  "brands": [
+    "Imdur",
+    "Monoket",
+    "Ismo",
+    "Elantan"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Organic nitrate vasodilator (nitric oxide donor)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "extended-release tablet once daily or immediate-release twice daily with an eccentric (7-hour) interval",
+  "targets": [
+    "GUCY1A1",
+    "GUCY1B1"
+  ],
+  "origin": "synthetic",
+  "originator": "Multiple companies (developed as the active metabolite of isosorbide dinitrate)",
+  "owner": "generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "discovery": {
+    "year": null,
+    "by": null,
+    "note": "Identified as the main active metabolite of isosorbide dinitrate and developed as a drug that avoids first-pass metabolism."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Long-acting oral nitrate for preventing angina, dosed to avoid tolerance",
+  "summary": "Isosorbide mononitrate is the active metabolite of isosorbide dinitrate, given orally to prevent angina. Unlike most nitrates it is not subject to first-pass metabolism, giving nearly complete bioavailability, and it is dosed with a nitrate-free interval to prevent tolerance.",
+  "mechanism": [
+    "Organic nitrates are bioactivated in vascular smooth muscle to release nitric oxide. NO activates soluble guanylate cyclase, raising cyclic GMP, which lowers intracellular calcium and relaxes smooth muscle.",
+    "At usual doses veins dilate more than arteries, so venous return (preload) and myocardial oxygen demand fall; larger arteries, including coronary arteries and collaterals, also dilate. Continuous exposure causes tolerance, so a daily nitrate-free interval is used."
+  ],
+  "uses": [
+    "Prevention of angina pectoris due to coronary artery disease"
+  ],
+  "history": [
+    {
+      "year": 1995,
+      "title": "ISIS-4",
+      "detail": "In a mega-trial of acute myocardial infarction, oral isosorbide mononitrate does not reduce 5-week mortality."
+    },
+    {
+      "year": 1998,
+      "title": "Nobel Prize for nitric oxide",
+      "detail": "Furchgott, Ignarro and Murad are honoured for discovering nitric oxide signalling, the pathway through which nitrates act."
+    },
+    {
+      "year": 1998,
+      "title": "PDE5 interaction",
+      "detail": "Sildenafil is approved with a contraindication for concomitant nitrate use."
+    },
+    {
+      "year": 2015,
+      "title": "NEAT-HFpEF",
+      "detail": "Isosorbide mononitrate reduces daily activity levels and does not improve quality of life in heart failure with preserved ejection fraction."
+    }
+  ],
+  "pk": {
+    "half_life": "~5 h",
+    "bioavailability": "~100%",
+    "metabolism": "Hepatic denitration and glucuronidation; no first-pass",
+    "excretion": "Renal (metabolites)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Headache",
+      "Dizziness",
+      "Flushing",
+      "Nausea"
+    ],
+    "serious": [
+      "Severe hypotension (especially with PDE5 inhibitors)",
+      "Syncope",
+      "Paradoxical bradycardia and worsened angina"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "It is not suitable for relief of an acute angina attack because of its slow onset.",
+    "Extended-release tablets should not be crushed or chewed."
+  ],
+  "related": [
+    "nitroglycerin",
+    "ranolazine",
+    "ivabradine",
+    "sildenafil"
+  ],
+  "references": [
+    {
+      "title": "Isosorbide mononitrate – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Isosorbide_mononitrate"
+    },
+    {
+      "title": "DailyMed – isosorbide mononitrate labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=isosorbide+mononitrate"
+    },
+    {
+      "title": "Redfield MM et al. Isosorbide mononitrate in heart failure with preserved ejection fraction (NEAT-HFpEF). N Engl J Med 2015",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26549714/"
+    }
+  ],
+  "stage": "written"
 }

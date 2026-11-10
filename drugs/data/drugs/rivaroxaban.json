@@ -1,36 +1,125 @@
 {
   "slug": "rivaroxaban",
   "name": "Rivaroxaban",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BAY 59-7939"
+  ],
+  "brands": [
+    "Xarelto"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Direct factor Xa inhibitor (DOAC)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet, once daily for AF (with food at higher doses); twice daily initially for VTE; oral suspension for children",
+  "targets": [
+    "F10"
+  ],
+  "origin": "synthetic",
+  "originator": "Bayer",
+  "owner": "Bayer; Janssen (Johnson & Johnson) in the US",
+  "first_approval": {
+    "year": 2008,
+    "agency": "EMA",
+    "country": "EU",
+    "brand": "Xarelto"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Bayer",
+    "note": "An oxazolidinone-based direct factor Xa inhibitor discovered by Bayer in the late 1990s."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "The first oral direct factor Xa inhibitor to reach the market",
+  "summary": "Rivaroxaban is an oral anticoagulant that directly inhibits factor Xa. It is used for stroke prevention in atrial fibrillation, for treatment and prevention of venous thromboembolism, and at low dose with aspirin in chronic coronary or peripheral artery disease.",
+  "mechanism": [
+    "Rivaroxaban binds reversibly to the active site of free and clot-bound factor Xa and of the prothrombinase complex, independent of antithrombin.",
+    "Inhibiting factor Xa interrupts both intrinsic and extrinsic pathways and reduces thrombin generation. Andexanet alfa or prothrombin complex concentrate can reverse it."
+  ],
+  "uses": [
+    "Stroke prevention in non-valvular atrial fibrillation",
+    "Treatment and secondary prevention of DVT and PE",
+    "VTE prophylaxis after hip or knee replacement and in medically ill patients",
+    "Reduction of major cardiovascular events in chronic CAD or PAD (2.5 mg twice daily with aspirin)",
+    "VTE treatment in children"
+  ],
+  "history": [
+    {
+      "year": 2008,
+      "title": "First approvals",
+      "detail": "Approved in the EU and Canada for VTE prevention after hip or knee replacement."
+    },
+    {
+      "year": 2011,
+      "title": "ROCKET AF and FDA",
+      "detail": "ROCKET AF shows non-inferiority to warfarin in AF; the FDA approves Xarelto in July for orthopaedic prophylaxis and in November for AF."
+    },
+    {
+      "year": 2017,
+      "title": "COMPASS",
+      "detail": "Low-dose rivaroxaban plus aspirin reduces cardiovascular events in stable atherosclerotic disease."
+    },
+    {
+      "year": 2018,
+      "title": "Vascular indication",
+      "detail": "FDA approves the 2.5 mg dose for chronic CAD/PAD."
+    },
+    {
+      "year": 2021,
+      "title": "Paediatric use",
+      "detail": "FDA approves rivaroxaban for VTE treatment in children."
+    }
+  ],
+  "pk": {
+    "half_life": "5–9 h (11–13 h in the elderly)",
+    "bioavailability": "~80–100% at 10 mg; higher doses need food",
+    "metabolism": "CYP3A4/2J2 and CYP-independent hydrolysis; P-gp substrate",
+    "excretion": "~2/3 metabolised; ~1/3 excreted unchanged in urine"
+  },
+  "safety": {
+    "common": [
+      "Bleeding",
+      "Bruising"
+    ],
+    "serious": [
+      "Major and intracranial bleeding",
+      "Spinal/epidural haematoma",
+      "Thrombosis on early discontinuation"
+    ],
+    "boxed_warning": "Premature discontinuation increases the risk of thrombotic events; spinal/epidural haematoma may occur with neuraxial anaesthesia or spinal puncture."
+  },
+  "facts": [
+    "Increased thrombotic events in triple-positive antiphospholipid syndrome were seen in the TRAPS trial.",
+    "It is developed and marketed jointly by Bayer and Janssen."
+  ],
+  "related": [
+    "apixaban",
+    "dabigatran",
+    "warfarin",
+    "aspirin"
+  ],
+  "references": [
+    {
+      "title": "Rivaroxaban – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rivaroxaban"
+    },
+    {
+      "title": "DailyMed – rivaroxaban labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=rivaroxaban"
+    },
+    {
+      "title": "EMA EPAR – Xarelto",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/xarelto"
+    },
+    {
+      "title": "Patel MR et al. Rivaroxaban versus warfarin in nonvalvular atrial fibrillation (ROCKET AF). N Engl J Med 2011",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21830957/"
+    }
+  ],
+  "stage": "written"
 }

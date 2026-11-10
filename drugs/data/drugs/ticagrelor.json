@@ -1,36 +1,126 @@
 {
   "slug": "ticagrelor",
   "name": "Ticagrelor",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "AZD6140"
+  ],
+  "brands": [
+    "Brilinta",
+    "Brilique"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
+  "drug_class": "Cyclopentyltriazolopyrimidine P2Y12 receptor antagonist (antiplatelet)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet twice daily, with a loading dose; orodispersible form available",
+  "targets": [
+    "P2RY12"
+  ],
+  "origin": "synthetic",
+  "originator": "AstraZeneca",
+  "owner": "AstraZeneca",
+  "first_approval": {
+    "year": 2010,
+    "agency": "EMA",
+    "country": "EU",
+    "brand": "Brilique"
+  },
+  "discovery": {
+    "year": null,
+    "by": "AstraZeneca",
+    "note": "Designed from ATP analogues as a direct-acting, reversible P2Y12 antagonist."
+  },
   "generic": null,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "rx_status": "prescription",
+  "tagline": "Direct-acting, reversible P2Y12 inhibitor that beat clopidogrel in PLATO",
+  "summary": "Ticagrelor is an oral antiplatelet drug that reversibly blocks the platelet P2Y12 receptor without needing metabolic activation. It is given with aspirin after acute coronary syndromes and reduced cardiovascular death compared with clopidogrel in the PLATO trial.",
+  "mechanism": [
+    "Unlike the thienopyridines, ticagrelor is not a prodrug. It and its active metabolite bind P2Y12 at a site distinct from ADP and hold the receptor in an inactive state, giving faster and more consistent platelet inhibition.",
+    "Because binding is reversible, platelet function recovers as drug levels fall, roughly 3–5 days after stopping.",
+    "Ticagrelor also inhibits the equilibrative nucleoside transporter ENT1, raising local adenosine levels; this is thought to contribute to dyspnoea and bradyarrhythmias."
+  ],
+  "uses": [
+    "Acute coronary syndrome (with aspirin)",
+    "Long-term secondary prevention after myocardial infarction (lower dose)",
+    "Coronary artery disease with type 2 diabetes at high risk",
+    "Acute ischaemic stroke or high-risk TIA (with aspirin)"
+  ],
+  "history": [
+    {
+      "year": 2009,
+      "title": "PLATO",
+      "detail": "In acute coronary syndromes ticagrelor reduces vascular death, MI and stroke compared with clopidogrel."
+    },
+    {
+      "year": 2010,
+      "title": "EU approval",
+      "detail": "Approved by the European Commission as Brilique."
+    },
+    {
+      "year": 2011,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Brilinta with a boxed warning about bleeding and aspirin dose."
+    },
+    {
+      "year": 2015,
+      "title": "PEGASUS-TIMI 54",
+      "detail": "Lower-dose ticagrelor is approved for use beyond the first year after myocardial infarction."
+    },
+    {
+      "year": 2020,
+      "title": "Stroke indication",
+      "detail": "Following the THALES trial, the FDA approves ticagrelor to reduce stroke risk after acute ischaemic stroke or high-risk TIA."
+    }
+  ],
+  "pk": {
+    "half_life": "~7 h (parent); ~9 h (active metabolite)",
+    "bioavailability": "~36%",
+    "metabolism": "Hepatic CYP3A4 to an equipotent active metabolite (AR-C124910XX)",
+    "excretion": "Mainly hepatic/biliary"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "safety": {
+    "common": [
+      "Dyspnoea",
+      "Bleeding",
+      "Bruising"
+    ],
+    "serious": [
+      "Major and fatal bleeding",
+      "Bradyarrhythmia/ventricular pauses",
+      "Central sleep apnoea"
+    ],
+    "boxed_warning": "Bleeding risk; maintenance aspirin doses above 100 mg/day reduce ticagrelor's effectiveness."
+  },
+  "facts": [
+    "The PLATO benefit was not seen in North American patients, a finding attributed partly to higher aspirin doses.",
+    "Strong CYP3A inhibitors and inducers are contraindicated or should be avoided."
+  ],
+  "related": [
+    "clopidogrel",
+    "prasugrel",
+    "aspirin"
+  ],
+  "references": [
+    {
+      "title": "Ticagrelor – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ticagrelor"
+    },
+    {
+      "title": "DailyMed – ticagrelor labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ticagrelor"
+    },
+    {
+      "title": "EMA EPAR – Brilique",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/brilique"
+    },
+    {
+      "title": "Wallentin L et al. Ticagrelor versus clopidogrel in patients with acute coronary syndromes (PLATO). N Engl J Med 2009",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19717846/"
+    }
+  ],
+  "stage": "written"
 }

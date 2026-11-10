@@ -1,36 +1,117 @@
 {
   "slug": "enoxaparin",
   "name": "Enoxaparin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "enoxaparin sodium"
+  ],
+  "brands": [
+    "Lovenox",
+    "Clexane"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Low-molecular-weight heparin (anticoagulant)",
+  "modality": "other",
+  "routes": [
+    "sc",
+    "iv"
+  ],
+  "route_note": "subcutaneous injection once or twice daily from prefilled syringes; IV bolus in some ACS protocols",
+  "targets": [
+    "SERPINC1",
+    "F10",
+    "F2"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Rhône-Poulenc (now Sanofi)",
+  "owner": "Sanofi; generics and biosimilars available",
+  "first_approval": {
+    "year": 1993,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Lovenox"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "French pharmaceutical research (later Rhône-Poulenc Rorer)",
+    "note": "Produced by alkaline depolymerisation of benzyl esters of porcine heparin."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Low-molecular-weight heparin that made outpatient clot treatment routine",
+  "summary": "Enoxaparin is a low-molecular-weight heparin made by chemically breaking down porcine heparin. Its shorter chains act mainly on factor Xa via antithrombin, giving predictable weight-based dosing by subcutaneous injection without routine monitoring.",
+  "mechanism": [
+    "Like heparin, enoxaparin binds antithrombin through a pentasaccharide sequence. Most of its chains are too short to bridge antithrombin to thrombin, so it inhibits factor Xa more than thrombin (anti-Xa:anti-IIa ratio about 4:1).",
+    "Lower binding to plasma proteins and cells gives more predictable absorption and a longer half-life than unfractionated heparin. Protamine only partially reverses its effect."
+  ],
+  "uses": [
+    "Prophylaxis of deep vein thrombosis in surgical and medical patients",
+    "Treatment of DVT with or without pulmonary embolism",
+    "Unstable angina and non-ST-elevation MI",
+    "ST-elevation MI (with thrombolysis or PCI)"
+  ],
+  "history": [
+    {
+      "year": 1993,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Lovenox for DVT prophylaxis after hip replacement."
+    },
+    {
+      "year": 1997,
+      "title": "Neuraxial warning",
+      "detail": "The FDA warns of spinal/epidural haematomas with LMWHs and neuraxial anaesthesia, later made a boxed warning."
+    },
+    {
+      "year": 2010,
+      "title": "US generic",
+      "detail": "The FDA approves the first generic enoxaparin (Sandoz), after a debate over how to show sameness of a complex mixture."
+    },
+    {
+      "year": 2016,
+      "title": "EU biosimilars",
+      "detail": "Biosimilar enoxaparin products are authorised in the EU."
+    }
+  ],
+  "pk": {
+    "half_life": "~4.5–7 h (anti-Xa activity)",
+    "bioavailability": "~100% subcutaneous",
+    "metabolism": "Hepatic desulfation and depolymerisation",
+    "excretion": "Renal; dose reduction needed in severe renal impairment"
+  },
+  "safety": {
+    "common": [
+      "Injection-site bruising and haematoma",
+      "Bleeding",
+      "Raised liver enzymes"
+    ],
+    "serious": [
+      "Major bleeding",
+      "Spinal/epidural haematoma",
+      "Heparin-induced thrombocytopenia (less than with UFH)",
+      "Hyperkalaemia"
+    ],
+    "boxed_warning": "Epidural or spinal haematomas, possibly causing permanent paralysis, can occur with neuraxial anaesthesia or spinal puncture."
+  },
+  "facts": [
+    "It is the most widely used low-molecular-weight heparin worldwide.",
+    "It is commonly preferred to warfarin for anticoagulation during pregnancy because it does not cross the placenta."
+  ],
+  "related": [
+    "heparin",
+    "warfarin",
+    "apixaban",
+    "rivaroxaban"
+  ],
+  "references": [
+    {
+      "title": "Enoxaparin sodium – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Enoxaparin_sodium"
+    },
+    {
+      "title": "DailyMed – enoxaparin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=enoxaparin"
+    }
+  ],
+  "stage": "written"
 }

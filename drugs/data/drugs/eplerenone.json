@@ -1,36 +1,113 @@
 {
   "slug": "eplerenone",
   "name": "Eplerenone",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "SC-66110"
+  ],
+  "brands": [
+    "Inspra"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Selective mineralocorticoid receptor antagonist",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once daily",
+  "targets": [
+    "NR3C2"
+  ],
+  "origin": "synthetic",
+  "originator": "G. D. Searle (later Pharmacia, Pfizer)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 2002,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Inspra"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Searle/Pharmacia",
+    "note": "A spironolactone derivative with a 9,11-epoxy group giving greater receptor selectivity."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Selective aldosterone antagonist with fewer hormonal side effects",
+  "summary": "Eplerenone is a selective mineralocorticoid receptor antagonist with much lower affinity for androgen and progesterone receptors than spironolactone. It reduces mortality in heart failure after myocardial infarction and in mild heart failure with reduced ejection fraction, and treats hypertension.",
+  "mechanism": [
+    "Eplerenone blocks aldosterone binding at mineralocorticoid receptors in the kidney, heart and blood vessels, promoting sodium excretion and potassium retention and limiting aldosterone-driven fibrosis.",
+    "Its selectivity means gynaecomastia and menstrual disturbance are uncommon. It is metabolised by CYP3A4, so strong CYP3A4 inhibitors are contraindicated."
+  ],
+  "uses": [
+    "Heart failure with reduced ejection fraction after acute myocardial infarction",
+    "Chronic heart failure with reduced ejection fraction (NYHA II, in some regions)",
+    "Hypertension"
+  ],
+  "history": [
+    {
+      "year": 2002,
+      "title": "FDA approval",
+      "detail": "Approved in the US for hypertension."
+    },
+    {
+      "year": 2003,
+      "title": "EPHESUS",
+      "detail": "Eplerenone reduces mortality in heart failure after MI; FDA approves this indication."
+    },
+    {
+      "year": 2011,
+      "title": "EMPHASIS-HF",
+      "detail": "Eplerenone reduces cardiovascular death or HF hospitalisation in mild heart failure."
+    },
+    {
+      "year": 2021,
+      "title": "FIDELIO/FIGARO context",
+      "detail": "The newer non-steroidal antagonist finerenone is approved for diabetic kidney disease, extending the MRA class."
+    }
+  ],
+  "pk": {
+    "half_life": "~4–6 h",
+    "bioavailability": "~69%",
+    "metabolism": "Hepatic CYP3A4 to inactive metabolites",
+    "excretion": "~67% urine, ~32% faeces"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Hyperkalaemia",
+      "Dizziness",
+      "Raised creatinine",
+      "Hypotension"
+    ],
+    "serious": [
+      "Life-threatening hyperkalaemia",
+      "Acute kidney injury"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Gynaecomastia rates were similar to placebo in EPHESUS."
+  ],
+  "related": [
+    "spironolactone",
+    "finerenone",
+    "furosemide"
+  ],
+  "references": [
+    {
+      "title": "Eplerenone – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Eplerenone"
+    },
+    {
+      "title": "DailyMed – eplerenone labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=eplerenone"
+    },
+    {
+      "title": "Pitt B et al. Eplerenone, a selective aldosterone blocker, in patients with left ventricular dysfunction after myocardial infarction (EPHESUS). N Engl J Med 2003",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/12668699/"
+    }
+  ],
+  "stage": "written"
 }

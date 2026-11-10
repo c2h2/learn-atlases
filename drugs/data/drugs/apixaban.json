@@ -1,36 +1,134 @@
 {
   "slug": "apixaban",
   "name": "Apixaban",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BMS-562247"
+  ],
+  "brands": [
+    "Eliquis"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Direct factor Xa inhibitor (DOAC)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet twice daily",
+  "targets": [
+    "F10"
+  ],
+  "origin": "synthetic",
+  "originator": "Bristol-Myers Squibb",
+  "owner": "Bristol-Myers Squibb and Pfizer",
+  "first_approval": {
+    "year": 2011,
+    "agency": "EMA",
+    "country": "EU",
+    "brand": "Eliquis"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Bristol-Myers Squibb",
+    "note": "Developed from the earlier factor Xa inhibitor razaxaban; co-developed with Pfizer from 2007."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Twice-daily factor Xa inhibitor and the world's best-selling anticoagulant",
+  "summary": "Apixaban is an oral anticoagulant that directly and reversibly inhibits factor Xa. It is used to prevent stroke in atrial fibrillation and to prevent and treat venous thromboembolism, and caused less major bleeding than warfarin in the ARISTOTLE trial.",
+  "mechanism": [
+    "Apixaban binds the active site of factor Xa, both free and within the prothrombinase complex, without needing antithrombin. This reduces thrombin generation and therefore fibrin clot formation.",
+    "It has no direct effect on platelet aggregation. Its anticoagulant effect can be reversed with andexanet alfa or prothrombin complex concentrate."
+  ],
+  "uses": [
+    "Stroke and systemic embolism prevention in non-valvular atrial fibrillation",
+    "Treatment of deep vein thrombosis and pulmonary embolism and prevention of recurrence",
+    "VTE prophylaxis after hip or knee replacement"
+  ],
+  "history": [
+    {
+      "year": 2011,
+      "title": "EU approval",
+      "detail": "First approved in the EU for VTE prevention after hip or knee replacement."
+    },
+    {
+      "year": 2011,
+      "title": "ARISTOTLE",
+      "detail": "Apixaban is superior to warfarin for stroke prevention in AF, with less bleeding and lower mortality."
+    },
+    {
+      "year": 2012,
+      "title": "FDA approval",
+      "detail": "Approved in the US for stroke prevention in non-valvular atrial fibrillation (December)."
+    },
+    {
+      "year": 2014,
+      "title": "VTE treatment",
+      "detail": "FDA approves use for treatment of DVT and PE after the AMPLIFY trial."
+    },
+    {
+      "year": 2018,
+      "title": "Reversal agent",
+      "detail": "Andexanet alfa is approved in the US to reverse apixaban and rivaroxaban."
+    },
+    {
+      "year": 2019,
+      "title": "Generics approved",
+      "detail": "The FDA approves generic apixaban, although US launch is delayed by patent litigation and settlements."
+    },
+    {
+      "year": 2023,
+      "title": "Medicare negotiation",
+      "detail": "Eliquis is among the first ten drugs selected for US Medicare price negotiation; the negotiated price takes effect in 2026."
+    }
+  ],
+  "pk": {
+    "half_life": "~12 h",
+    "bioavailability": "~50%",
+    "metabolism": "Hepatic, mainly CYP3A4; P-gp substrate",
+    "excretion": "~27% renal; remainder biliary/intestinal"
+  },
+  "safety": {
+    "common": [
+      "Bleeding",
+      "Bruising",
+      "Anaemia"
+    ],
+    "serious": [
+      "Major and intracranial bleeding",
+      "Spinal/epidural haematoma",
+      "Thrombosis on early discontinuation"
+    ],
+    "boxed_warning": "Premature discontinuation increases the risk of thrombotic events; spinal/epidural haematoma may occur with neuraxial anaesthesia or spinal puncture."
+  },
+  "facts": [
+    "Not recommended in patients with prosthetic heart valves or triple-positive antiphospholipid syndrome.",
+    "It has relatively low renal clearance among DOACs."
+  ],
+  "related": [
+    "rivaroxaban",
+    "dabigatran",
+    "warfarin",
+    "enoxaparin"
+  ],
+  "references": [
+    {
+      "title": "Apixaban – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Apixaban"
+    },
+    {
+      "title": "DailyMed – apixaban labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=apixaban"
+    },
+    {
+      "title": "EMA EPAR – Eliquis",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/eliquis"
+    },
+    {
+      "title": "Granger CB et al. Apixaban versus warfarin in patients with atrial fibrillation (ARISTOTLE). N Engl J Med 2011",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/21870978/"
+    }
+  ],
+  "stage": "written"
 }

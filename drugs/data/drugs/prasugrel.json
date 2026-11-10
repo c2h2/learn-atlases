@@ -1,36 +1,121 @@
 {
   "slug": "prasugrel",
   "name": "Prasugrel",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "CS-747",
+    "LY640315"
+  ],
+  "brands": [
+    "Effient",
+    "Efient"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Thienopyridine P2Y12 receptor antagonist (antiplatelet)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once daily after a loading dose",
+  "targets": [
+    "P2RY12"
+  ],
+  "origin": "synthetic",
+  "originator": "Daiichi Sankyo and Ube Industries; co-developed with Eli Lilly",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 2009,
+    "agency": "EMA",
+    "country": "EU",
+    "brand": "Efient"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Daiichi Sankyo and Ube Industries",
+    "note": "Third-generation thienopyridine designed for more efficient activation than clopidogrel."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Third-generation thienopyridine with faster, stronger platelet inhibition",
+  "summary": "Prasugrel is a thienopyridine prodrug that irreversibly blocks the P2Y12 ADP receptor on platelets. It is used with aspirin in acute coronary syndrome patients undergoing coronary intervention, giving more potent inhibition than clopidogrel but more bleeding.",
+  "mechanism": [
+    "Prasugrel is rapidly hydrolysed by intestinal esterases to a thiolactone, which a single cytochrome P450-dependent step (CYP3A4 and CYP2B6) converts to the active metabolite.",
+    "The active metabolite covalently binds P2Y12 and blocks ADP-induced platelet activation for the platelet's life span. Its more efficient activation makes it less dependent on CYP2C19 genotype than clopidogrel."
+  ],
+  "uses": [
+    "Acute coronary syndrome managed with percutaneous coronary intervention (with aspirin)"
+  ],
+  "history": [
+    {
+      "year": 2007,
+      "title": "TRITON-TIMI 38",
+      "detail": "Prasugrel reduces ischaemic events versus clopidogrel in ACS with PCI, but increases major bleeding."
+    },
+    {
+      "year": 2009,
+      "title": "EU approval",
+      "detail": "Approved in the EU as Efient (February)."
+    },
+    {
+      "year": 2009,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Effient with a boxed bleeding warning (July)."
+    },
+    {
+      "year": 2012,
+      "title": "TRILOGY ACS",
+      "detail": "No benefit over clopidogrel in medically managed ACS without revascularisation."
+    },
+    {
+      "year": 2019,
+      "title": "ISAR-REACT 5",
+      "detail": "A prasugrel-based strategy outperforms ticagrelor in ACS patients planned for invasive management."
+    }
+  ],
+  "pk": {
+    "half_life": "~7 h (active metabolite; range 2–15 h)",
+    "bioavailability": "≥79% absorbed",
+    "metabolism": "Esterase hydrolysis then CYP3A4/2B6 to active metabolite",
+    "excretion": "~68% urine, ~27% faeces (inactive metabolites)"
+  },
+  "safety": {
+    "common": [
+      "Bleeding",
+      "Bruising",
+      "Epistaxis"
+    ],
+    "serious": [
+      "Major and fatal bleeding",
+      "Thrombotic thrombocytopenic purpura (rare)"
+    ],
+    "boxed_warning": "Significant, sometimes fatal bleeding; contraindicated after prior TIA or stroke; generally not recommended at age ≥75; lower dose for weight <60 kg; avoid starting in patients likely to undergo CABG."
+  },
+  "facts": [
+    "Patients with prior stroke or TIA had net harm in TRITON-TIMI 38, leading to a contraindication."
+  ],
+  "related": [
+    "clopidogrel",
+    "ticagrelor",
+    "aspirin"
+  ],
+  "references": [
+    {
+      "title": "Prasugrel – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Prasugrel"
+    },
+    {
+      "title": "DailyMed – prasugrel labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=prasugrel"
+    },
+    {
+      "title": "EMA EPAR – Efient",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/efient"
+    },
+    {
+      "title": "Wiviott SD et al. Prasugrel versus clopidogrel in patients with acute coronary syndromes (TRITON-TIMI 38). N Engl J Med 2007",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17982182/"
+    }
+  ],
+  "stage": "written"
 }

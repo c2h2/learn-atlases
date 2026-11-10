@@ -1,36 +1,123 @@
 {
   "slug": "ranolazine",
   "name": "Ranolazine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "RS-43285"
+  ],
+  "brands": [
+    "Ranexa"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Late sodium current inhibitor (antianginal)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "extended-release tablet twice daily",
+  "targets": [
+    "SCN5A"
+  ],
+  "origin": "synthetic",
+  "originator": "Syntex; developed by CV Therapeutics",
+  "owner": "generic (many); Gilead (US) and Menarini (EU) brands",
+  "first_approval": {
+    "year": 2006,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Ranexa"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Syntex",
+    "note": "A piperazine derivative discovered in the 1980s and licensed to CV Therapeutics, later acquired by Gilead in 2009."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Antianginal that works without lowering heart rate or blood pressure",
+  "summary": "Ranolazine is an antianginal drug that inhibits the late inward sodium current in heart muscle, reducing calcium overload during ischaemia. It is used for chronic angina, usually added to other therapy, and has little effect on heart rate or blood pressure.",
+  "mechanism": [
+    "In ischaemic myocardium, an enhanced late sodium current (INaL through Nav1.5) raises intracellular sodium, which drives calcium in through the sodium–calcium exchanger. The resulting calcium overload impairs relaxation, increases wall tension and compresses small vessels.",
+    "Ranolazine preferentially blocks the late current, limiting sodium and calcium overload and improving diastolic function. It also blocks IKr, producing modest QT prolongation."
+  ],
+  "uses": [
+    "Chronic stable angina (alone or with other antianginals)"
+  ],
+  "history": [
+    {
+      "year": 2006,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Ranexa for chronic angina."
+    },
+    {
+      "year": 2007,
+      "title": "MERLIN-TIMI 36",
+      "detail": "No reduction in major cardiovascular events after ACS, but fewer recurrent ischaemia episodes and no excess proarrhythmia."
+    },
+    {
+      "year": 2008,
+      "title": "EU approval",
+      "detail": "Approved in the EU, marketed by Menarini."
+    },
+    {
+      "year": 2009,
+      "title": "Gilead acquisition",
+      "detail": "Gilead acquires CV Therapeutics."
+    },
+    {
+      "year": 2016,
+      "title": "RIVER-PCI",
+      "detail": "Ranolazine does not reduce ischaemia-driven events after incomplete revascularisation."
+    },
+    {
+      "year": 2019,
+      "title": "US generics",
+      "detail": "Generic ranolazine becomes available in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "~7 h (extended-release)",
+    "bioavailability": "~35–50%",
+    "metabolism": "Hepatic CYP3A4 (major), CYP2D6; P-gp substrate and inhibitor",
+    "excretion": "~75% renal, ~25% faecal (metabolites)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Dizziness",
+      "Headache",
+      "Constipation",
+      "Nausea"
+    ],
+    "serious": [
+      "QT prolongation",
+      "Acute renal failure in severe renal impairment",
+      "Syncope"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "It increases levels of simvastatin, digoxin and metformin through transporter and enzyme interactions."
+  ],
+  "related": [
+    "nitroglycerin",
+    "isosorbide-mononitrate",
+    "ivabradine",
+    "amlodipine"
+  ],
+  "references": [
+    {
+      "title": "Ranolazine – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ranolazine"
+    },
+    {
+      "title": "DailyMed – ranolazine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=ranolazine"
+    },
+    {
+      "title": "EMA EPAR – Ranexa",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/ranexa"
+    }
+  ],
+  "stage": "written"
 }

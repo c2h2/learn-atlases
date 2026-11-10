@@ -1,36 +1,113 @@
 {
   "slug": "diltiazem",
   "name": "Diltiazem",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "diltiazem hydrochloride"
+  ],
+  "brands": [
+    "Cardizem",
+    "Tiazac",
+    "Herbesser",
+    "Adizem"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Non-dihydropyridine (benzothiazepine) calcium channel blocker",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv",
+    "topical"
+  ],
+  "route_note": "oral immediate- and extended-release; IV for rapid rate control; compounded topical gel for anal fissure",
+  "targets": [
+    "CACNA1C"
+  ],
+  "origin": "synthetic",
+  "originator": "Tanabe Seiyaku (Japan)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1982,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Cardizem"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Tanabe Seiyaku",
+    "note": "A benzothiazepine developed in Japan in the late 1960s–70s and first marketed there as Herbesser."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Rate-slowing calcium channel blocker for angina and atrial fibrillation",
+  "summary": "Diltiazem is a benzothiazepine calcium channel blocker that acts on both heart and blood vessels. It is used for angina, hypertension and, intravenously, for rapid control of ventricular rate in atrial fibrillation or flutter.",
+  "mechanism": [
+    "Diltiazem blocks L-type calcium channels in cardiac and vascular smooth muscle. In the heart it slows sinoatrial node firing and atrioventricular conduction and modestly reduces contractility.",
+    "In vessels it dilates coronary and peripheral arteries. Its effects are intermediate between those of verapamil (more cardiac) and dihydropyridines (more vascular)."
+  ],
+  "uses": [
+    "Chronic stable and vasospastic angina",
+    "Hypertension (extended-release)",
+    "Atrial fibrillation or flutter rate control (IV)",
+    "Paroxysmal supraventricular tachycardia conversion (IV)"
+  ],
+  "history": [
+    {
+      "year": 1982,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Cardizem for angina, marketed by Marion Laboratories."
+    },
+    {
+      "year": 1988,
+      "title": "MDPIT",
+      "detail": "Diltiazem after MI shows no overall mortality benefit and harm in patients with pulmonary congestion."
+    },
+    {
+      "year": 2000,
+      "title": "NORDIL",
+      "detail": "Diltiazem-based therapy is as effective as diuretics and beta-blockers in hypertension."
+    }
+  ],
+  "pk": {
+    "half_life": "~3–4.5 h (longer with ER forms)",
+    "bioavailability": "~40% (first-pass)",
+    "metabolism": "Hepatic CYP3A4; active desacetyl metabolite; moderate CYP3A4 inhibitor",
+    "excretion": "Renal and faecal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Peripheral oedema",
+      "Headache",
+      "Dizziness",
+      "Bradycardia"
+    ],
+    "serious": [
+      "AV block",
+      "Worsening heart failure with reduced EF",
+      "Hypotension",
+      "Severe skin reactions (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "It inhibits CYP3A4, raising levels of drugs such as simvastatin and ciclosporin."
+  ],
+  "related": [
+    "verapamil",
+    "amlodipine",
+    "nifedipine",
+    "metoprolol"
+  ],
+  "references": [
+    {
+      "title": "Diltiazem – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Diltiazem"
+    },
+    {
+      "title": "DailyMed – diltiazem labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=diltiazem"
+    }
+  ],
+  "stage": "written"
 }

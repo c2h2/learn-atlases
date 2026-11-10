@@ -1,36 +1,114 @@
 {
   "slug": "bisoprolol",
   "name": "Bisoprolol",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "bisoprolol fumarate"
+  ],
+  "brands": [
+    "Concor",
+    "Zebeta",
+    "Cardicor",
+    "Ziac (with HCTZ)"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Highly cardioselective (β1) beta-adrenergic blocker",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once daily",
+  "targets": [
+    "ADRB1"
+  ],
+  "origin": "synthetic",
+  "originator": "E. Merck (Merck KGaA)",
+  "owner": "generic (many); Concor brand held by Merck KGaA",
+  "first_approval": {
+    "year": 1992,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Zebeta"
+  },
+  "discovery": {
+    "year": null,
+    "by": "E. Merck, Darmstadt",
+    "note": "Developed in Germany in the 1970s–80s; first marketed in Europe as Concor."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Highly β1-selective once-daily beta-blocker proven in heart failure",
+  "summary": "Bisoprolol is one of the most β1-selective beta-blockers, with balanced renal and hepatic clearance and once-daily dosing. It treats hypertension and angina and, after the CIBIS-II trial, is a standard therapy for heart failure with reduced ejection fraction.",
+  "mechanism": [
+    "Bisoprolol competitively blocks β1-adrenoceptors with high selectivity, slowing the heart, reducing contractility and lowering renin release.",
+    "In heart failure, long-term sympathetic blockade reduces arrhythmias, myocyte toxicity and adverse remodelling, improving survival when titrated slowly."
+  ],
+  "uses": [
+    "Hypertension",
+    "Stable angina",
+    "Chronic heart failure with reduced ejection fraction",
+    "Atrial fibrillation rate control (many markets)"
+  ],
+  "history": [
+    {
+      "year": 1992,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Zebeta for hypertension."
+    },
+    {
+      "year": 1993,
+      "title": "Ziac",
+      "detail": "A low-dose combination with hydrochlorothiazide is approved in the US as first-line therapy."
+    },
+    {
+      "year": 1999,
+      "title": "CIBIS-II",
+      "detail": "Bisoprolol reduces all-cause mortality by 34% in chronic heart failure; the trial is stopped early."
+    }
+  ],
+  "pk": {
+    "half_life": "~10–12 h",
+    "bioavailability": "~90%",
+    "metabolism": "~50% hepatic (CYP3A4)",
+    "excretion": "~50% renal unchanged"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Fatigue",
+      "Dizziness",
+      "Bradycardia",
+      "Headache"
+    ],
+    "serious": [
+      "Heart block",
+      "Bronchospasm (less than non-selective)",
+      "Worsening heart failure on initiation"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "It is the beta-blocker listed on the WHO Model List, with metoprolol and carvedilol as alternatives."
+  ],
+  "related": [
+    "metoprolol",
+    "carvedilol",
+    "atenolol",
+    "hydrochlorothiazide"
+  ],
+  "references": [
+    {
+      "title": "Bisoprolol – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bisoprolol"
+    },
+    {
+      "title": "DailyMed – bisoprolol labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=bisoprolol"
+    },
+    {
+      "title": "CIBIS-II Investigators. The Cardiac Insufficiency Bisoprolol Study II. Lancet 1999",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10023943/"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,127 @@
 {
   "slug": "lisinopril",
   "name": "Lisinopril",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "MK-521"
+  ],
+  "brands": [
+    "Zestril",
+    "Prinivil",
+    "Qbrelis",
+    "Zestoretic (with HCTZ)"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Angiotensin-converting enzyme (ACE) inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet or solution once daily",
+  "targets": [
+    "ACE"
+  ],
+  "origin": "synthetic",
+  "originator": "Merck & Co.",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1987,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Prinivil and Zestril"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Merck & Co.",
+    "note": "The lysine analogue of enalaprilat, active without metabolic conversion; co-marketed by Merck and ICI (now AstraZeneca)."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Once-daily non-prodrug ACE inhibitor, among the most prescribed US drugs",
+  "summary": "Lisinopril is a long-acting ACE inhibitor that, unlike most of its class, is not a prodrug and is excreted unchanged by the kidneys. It is used for hypertension, heart failure and acute myocardial infarction and is one of the most commonly prescribed medicines in the United States.",
+  "mechanism": [
+    "Angiotensin-converting enzyme converts angiotensin I to the vasoconstrictor angiotensin II and also breaks down bradykinin. Inhibiting it lowers angiotensin II, causing vasodilation, reduced aldosterone secretion and less sodium retention, while bradykinin accumulates.",
+    "In the kidney, reduced efferent arteriolar constriction lowers glomerular pressure and proteinuria. Bradykinin accumulation contributes to vasodilation and is thought to cause the characteristic dry cough and, rarely, angioedema."
+  ],
+  "uses": [
+    "Hypertension (adults and children ≥6 years)",
+    "Heart failure (adjunct)",
+    "Acute myocardial infarction in haemodynamically stable patients"
+  ],
+  "history": [
+    {
+      "year": 1987,
+      "title": "FDA approval",
+      "detail": "Approved in the US, marketed as Prinivil by Merck and Zestril by ICI/Stuart."
+    },
+    {
+      "year": 1994,
+      "title": "GISSI-3",
+      "detail": "Early lisinopril after acute MI reduces mortality."
+    },
+    {
+      "year": 1999,
+      "title": "ATLAS",
+      "detail": "High-dose lisinopril reduces hospitalisation compared with low dose in heart failure."
+    },
+    {
+      "year": 2002,
+      "title": "ALLHAT",
+      "detail": "Lisinopril is compared with chlorthalidone and amlodipine in a landmark hypertension trial."
+    },
+    {
+      "year": 2002,
+      "title": "US generics",
+      "detail": "Generic lisinopril becomes available in the US."
+    },
+    {
+      "year": 2016,
+      "title": "Oral solution",
+      "detail": "Qbrelis oral solution is approved in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "~12 h (effective)",
+    "bioavailability": "~25% (variable)",
+    "metabolism": "Not metabolised",
+    "excretion": "Renal, unchanged"
+  },
+  "safety": {
+    "common": [
+      "Dry cough",
+      "Dizziness",
+      "Hypotension",
+      "Hyperkalaemia",
+      "Rise in serum creatinine"
+    ],
+    "serious": [
+      "Angioedema",
+      "Acute kidney injury (especially with renal artery stenosis)",
+      "Severe hyperkalaemia",
+      "Fetal toxicity"
+    ],
+    "boxed_warning": "Fetal toxicity: drugs acting on the renin-angiotensin system can cause injury and death to the developing fetus; discontinue when pregnancy is detected."
+  },
+  "facts": [
+    "It is a lysine derivative of enalaprilat, hence the name.",
+    "As a hydrophilic drug, it does not bind plasma proteins significantly."
+  ],
+  "related": [
+    "enalapril",
+    "captopril",
+    "ramipril",
+    "hydrochlorothiazide"
+  ],
+  "references": [
+    {
+      "title": "Lisinopril – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lisinopril"
+    },
+    {
+      "title": "DailyMed – lisinopril labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=lisinopril"
+    }
+  ],
+  "stage": "written"
 }

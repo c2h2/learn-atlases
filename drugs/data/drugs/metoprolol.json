@@ -1,36 +1,129 @@
 {
   "slug": "metoprolol",
   "name": "Metoprolol",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "metoprolol tartrate",
+    "metoprolol succinate"
+  ],
+  "brands": [
+    "Lopressor",
+    "Toprol-XL",
+    "Betaloc",
+    "Seloken"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Cardioselective (β1) beta-adrenergic blocker",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "tartrate tablets twice daily; succinate extended-release once daily; IV in acute MI and arrhythmias",
+  "targets": [
+    "ADRB1"
+  ],
+  "origin": "synthetic",
+  "originator": "AB Hässle (Astra), Sweden",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1978,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Lopressor"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "AB Hässle (Astra)",
+    "note": "Developed as a β1-selective blocker."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Widely prescribed β1-selective blocker for hypertension, angina and heart failure",
+  "summary": "Metoprolol is a β1-selective beta-blocker available as immediate-release tartrate and extended-release succinate salts. It treats hypertension, angina and arrhythmias, improves survival after myocardial infarction, and the succinate form reduces mortality in heart failure with reduced ejection fraction.",
+  "mechanism": [
+    "Metoprolol preferentially blocks β1-adrenoceptors in the heart, reducing heart rate, contractility and conduction through the AV node, and lowers renin release.",
+    "In chronic heart failure, long-term beta-blockade counters the harmful effects of sustained sympathetic activation, leading to reverse remodelling. Selectivity for β1 is relative and is lost at higher doses."
+  ],
+  "uses": [
+    "Hypertension",
+    "Angina pectoris",
+    "Acute myocardial infarction and secondary prevention",
+    "Heart failure with reduced ejection fraction (succinate ER)",
+    "Rate control in atrial fibrillation (off-label in some regions)"
+  ],
+  "history": [
+    {
+      "year": 1978,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Lopressor."
+    },
+    {
+      "year": 1992,
+      "title": "Toprol-XL",
+      "detail": "The extended-release succinate formulation is approved in the US."
+    },
+    {
+      "year": 1999,
+      "title": "MERIT-HF",
+      "detail": "Metoprolol succinate reduces mortality by about 34% in heart failure."
+    },
+    {
+      "year": 2005,
+      "title": "COMMIT",
+      "detail": "Early IV then oral metoprolol in acute MI reduces reinfarction and VF but increases cardiogenic shock."
+    },
+    {
+      "year": 2008,
+      "title": "POISE",
+      "detail": "Perioperative extended-release metoprolol reduces MI but increases stroke and death."
+    }
+  ],
+  "pk": {
+    "half_life": "~3–7 h",
+    "bioavailability": "~50% (first-pass)",
+    "metabolism": "Hepatic CYP2D6 (polymorphic)",
+    "excretion": "Renal (mainly metabolites)"
+  },
+  "safety": {
+    "common": [
+      "Fatigue",
+      "Dizziness",
+      "Bradycardia",
+      "Depression"
+    ],
+    "serious": [
+      "Heart block",
+      "Bronchospasm",
+      "Worsening heart failure on initiation",
+      "Rebound ischaemia on abrupt withdrawal"
+    ],
+    "boxed_warning": "Abrupt cessation can exacerbate angina and precipitate myocardial infarction or ventricular arrhythmias in ischaemic heart disease; taper over 1–2 weeks."
+  },
+  "facts": [
+    "CYP2D6 poor metabolisers have several-fold higher exposure.",
+    "Metoprolol is one of the most-prescribed drugs in the United States."
+  ],
+  "related": [
+    "bisoprolol",
+    "atenolol",
+    "carvedilol",
+    "propranolol"
+  ],
+  "references": [
+    {
+      "title": "Metoprolol – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Metoprolol"
+    },
+    {
+      "title": "DailyMed – metoprolol labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=metoprolol"
+    },
+    {
+      "title": "MERIT-HF Study Group. Effect of metoprolol CR/XL in chronic heart failure. Lancet 1999",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/10376614/"
+    }
+  ],
+  "stage": "written"
 }

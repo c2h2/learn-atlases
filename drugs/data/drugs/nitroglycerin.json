@@ -1,36 +1,142 @@
 {
   "slug": "nitroglycerin",
-  "name": "Nitroglycerin",
-  "aliases": [],
-  "brands": [],
+  "name": "Glyceryl trinitrate",
+  "aliases": [
+    "nitroglycerin",
+    "nitroglycerine",
+    "GTN",
+    "trinitroglycerin"
+  ],
+  "brands": [
+    "Nitrostat",
+    "Nitro-Dur",
+    "Nitrolingual",
+    "Minitran",
+    "Rectiv"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Organic nitrate vasodilator (nitric oxide donor)",
+  "modality": "small-molecule",
+  "routes": [
+    "sublingual",
+    "transdermal",
+    "iv",
+    "topical",
+    "oral"
+  ],
+  "route_note": "sublingual tablet or spray for acute angina; transdermal patch; IV infusion; ointment (including rectal for anal fissure); buccal/oral ER in some markets",
+  "targets": [
+    "GUCY1A1",
+    "GUCY1B1"
+  ],
+  "origin": "synthetic",
+  "originator": "Ascanio Sobrero (first synthesis)",
+  "owner": "generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "discovery": {
+    "year": 1847,
+    "by": "Ascanio Sobrero, University of Turin",
+    "note": "First made as an explosive; William Murrell reported its use for angina in The Lancet in 1879."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription (some sublingual forms OTC in certain countries)",
+  "tagline": "The explosive in dynamite and, since 1879, a fast reliever of angina",
+  "summary": "Glyceryl trinitrate, better known as nitroglycerin, is an organic nitrate that releases nitric oxide to relax vascular smooth muscle. Sublingual doses relieve angina within minutes, and patches, infusions and ointments are used for angina prophylaxis, acute heart failure, hypertension during surgery and anal fissure.",
+  "mechanism": [
+    "Organic nitrates are bioactivated in vascular smooth muscle (for glyceryl trinitrate, largely by mitochondrial aldehyde dehydrogenase 2) to release nitric oxide. NO activates soluble guanylate cyclase, raising cyclic GMP, which lowers intracellular calcium and relaxes smooth muscle.",
+    "At usual doses veins dilate more than arteries, so venous return (preload) and myocardial oxygen demand fall; larger arteries, including coronary arteries and collaterals, also dilate. Continuous exposure causes tolerance, so a daily nitrate-free interval is used.",
+    "Combining nitrates with PDE5 inhibitors such as sildenafil or with riociguat amplifies cGMP and can cause severe hypotension, so this is contraindicated."
+  ],
+  "uses": [
+    "Acute relief and prevention of angina pectoris",
+    "Prophylaxis of angina (patch, ointment)",
+    "Acute decompensated heart failure and pulmonary oedema (IV)",
+    "Perioperative hypertension and controlled hypotension (IV)",
+    "Chronic anal fissure pain (rectal ointment)"
+  ],
+  "history": [
+    {
+      "year": 1847,
+      "title": "Synthesis",
+      "detail": "Ascanio Sobrero prepares nitroglycerin and notes it causes a violent headache."
+    },
+    {
+      "year": 1867,
+      "title": "Dynamite",
+      "detail": "Alfred Nobel patents dynamite, stabilising nitroglycerin in kieselguhr."
+    },
+    {
+      "year": 1879,
+      "title": "Angina treatment",
+      "detail": "William Murrell reports in The Lancet that nitroglycerin relieves angina."
+    },
+    {
+      "year": 1977,
+      "title": "NO mechanism",
+      "detail": "Ferid Murad shows that nitroglycerin releases nitric oxide, which activates guanylate cyclase."
+    },
+    {
+      "year": 1998,
+      "title": "Nobel Prize",
+      "detail": "Furchgott, Ignarro and Murad share the Nobel Prize for discovering nitric oxide as a cardiovascular signalling molecule."
+    },
+    {
+      "year": 2002,
+      "title": "ALDH2 bioactivation",
+      "detail": "Mitochondrial aldehyde dehydrogenase is identified as a key enzyme in nitroglycerin bioactivation."
+    },
+    {
+      "year": 2011,
+      "title": "Rectiv",
+      "detail": "The FDA approves nitroglycerin ointment for pain of chronic anal fissure."
+    }
+  ],
+  "pk": {
+    "half_life": "~1–4 min",
+    "bioavailability": "Oral <1% (extensive first-pass); sublingual ~40%",
+    "metabolism": "Rapid hepatic and vascular denitration to dinitrates and mononitrates",
+    "excretion": "Renal (metabolites)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Headache",
+      "Flushing",
+      "Dizziness",
+      "Postural hypotension"
+    ],
+    "serious": [
+      "Severe hypotension (especially with PDE5 inhibitors)",
+      "Reflex tachycardia",
+      "Methaemoglobinaemia (high doses)",
+      "Tolerance with continuous use"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Alfred Nobel, whose fortune came from nitroglycerin explosives, was prescribed it for his own heart condition late in life.",
+    "Factory workers exposed to nitroglycerin developed 'Monday headache' and rebound angina on weekends."
+  ],
+  "related": [
+    "isosorbide-mononitrate",
+    "sildenafil",
+    "ranolazine",
+    "metoprolol"
+  ],
+  "references": [
+    {
+      "title": "Nitroglycerin (medication) – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nitroglycerin_(medication)"
+    },
+    {
+      "title": "DailyMed – nitroglycerin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=nitroglycerin"
+    },
+    {
+      "title": "Nitroglycerin – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nitroglycerin"
+    }
+  ],
+  "stage": "written"
 }

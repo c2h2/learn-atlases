@@ -1,36 +1,119 @@
 {
   "slug": "bempedoic-acid",
   "name": "Bempedoic acid",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "ETC-1002"
+  ],
+  "brands": [
+    "Nexletol",
+    "Nilemdo",
+    "Nexlizet (with ezetimibe)",
+    "Nustendi (with ezetimibe)"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "ATP citrate lyase (ACL) inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once daily, alone or fixed-dose with ezetimibe",
+  "targets": [
+    "ACLY"
+  ],
+  "origin": "synthetic",
+  "originator": "Esperion Therapeutics",
+  "owner": "Esperion Therapeutics (US); Daiichi Sankyo (Europe)",
+  "first_approval": {
+    "year": 2020,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Nexletol"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Esperion Therapeutics",
+    "note": "Developed by the company founded by Roger Newton, a co-discoverer of atorvastatin."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Liver-activated cholesterol-synthesis blocker for statin-intolerant patients",
+  "summary": "Bempedoic acid is an oral prodrug that inhibits ATP citrate lyase, an enzyme upstream of HMG-CoA reductase in cholesterol synthesis. It lowers LDL cholesterol by about 20%, and the CLEAR Outcomes trial showed fewer cardiovascular events in statin-intolerant patients.",
+  "mechanism": [
+    "Bempedoic acid is activated to bempedoyl-CoA by very-long-chain acyl-CoA synthetase-1 (ACSVL1), an enzyme present in the liver but largely absent from skeletal muscle.",
+    "The active form inhibits ATP citrate lyase, reducing acetyl-CoA supply for cholesterol synthesis. As with statins, lower hepatic cholesterol increases LDL-receptor expression and LDL clearance.",
+    "Lack of activation in muscle is thought to explain the low rate of muscle symptoms."
+  ],
+  "uses": [
+    "Reduction of cardiovascular risk in adults unable to take recommended statin therapy",
+    "Primary hyperlipidaemia including heterozygous familial hypercholesterolaemia, alone or with other lipid-lowering drugs"
+  ],
+  "history": [
+    {
+      "year": 2020,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Nexletol (February) and with ezetimibe as Nexlizet."
+    },
+    {
+      "year": 2020,
+      "title": "EU approval",
+      "detail": "Approved in the EU as Nilemdo and Nustendi, marketed by Daiichi Sankyo Europe."
+    },
+    {
+      "year": 2023,
+      "title": "CLEAR Outcomes",
+      "detail": "In nearly 14,000 statin-intolerant patients, bempedoic acid reduces major cardiovascular events by 13%."
+    },
+    {
+      "year": 2024,
+      "title": "Outcomes label",
+      "detail": "The FDA expands the label to cardiovascular risk reduction, including primary prevention in high-risk patients."
+    }
+  ],
+  "pk": {
+    "half_life": "~21 h",
+    "bioavailability": "Not established; well absorbed",
+    "metabolism": "Activated in liver by ACSVL1; glucuronidation",
+    "excretion": "~70% urine, ~30% faeces (mainly as metabolites)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Hyperuricaemia",
+      "Muscle spasms",
+      "Back pain",
+      "Anaemia"
+    ],
+    "serious": [
+      "Gout",
+      "Tendon rupture",
+      "Cholelithiasis"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "It inhibits the same pathway as statins one step earlier, at ATP citrate lyase.",
+    "It raises uric acid by competing for the renal transporter OAT2."
+  ],
+  "related": [
+    "ezetimibe",
+    "atorvastatin",
+    "evolocumab",
+    "inclisiran"
+  ],
+  "references": [
+    {
+      "title": "Bempedoic acid – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bempedoic_acid"
+    },
+    {
+      "title": "DailyMed – bempedoic acid labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=bempedoic+acid"
+    },
+    {
+      "title": "EMA EPAR – Nilemdo",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/nilemdo"
+    }
+  ],
+  "stage": "written"
 }

@@ -1,36 +1,136 @@
 {
   "slug": "lovastatin",
   "name": "Lovastatin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "mevinolin",
+    "monacolin K",
+    "MK-803"
+  ],
+  "brands": [
+    "Mevacor",
+    "Altoprev"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "HMG-CoA reductase inhibitor (statin)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet with the evening meal; extended-release form at bedtime",
+  "targets": [
+    "HMGCR"
+  ],
+  "origin": "natural",
+  "originator": "Merck & Co.",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1987,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Mevacor"
+  },
+  "discovery": {
+    "year": 1978,
+    "by": "Alfred Alberts and colleagues, Merck",
+    "note": "Isolated from the fungus Aspergillus terreus; Akira Endo independently found the same compound (monacolin K) in Monascus ruber."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "The first statin approved anywhere, a fungal metabolite from Aspergillus terreus",
+  "summary": "Lovastatin is a natural statin produced by the fungus Aspergillus terreus and was the first HMG-CoA reductase inhibitor approved for clinical use, in 1987. It lowers LDL cholesterol and is also the main active compound in red yeast rice.",
+  "mechanism": [
+    "Lovastatin is an inactive lactone that is hydrolysed to its beta-hydroxy acid, a structural mimic of HMG-CoA that competitively inhibits HMG-CoA reductase.",
+    "Falling intracellular cholesterol activates SREBP-2, which increases expression of LDL receptors on hepatocytes. More receptors clear more LDL particles from the blood, lowering LDL cholesterol; statins also modestly lower triglycerides and raise HDL."
+  ],
+  "uses": [
+    "Primary prevention of coronary heart disease",
+    "Slowing coronary atherosclerosis",
+    "Primary hypercholesterolaemia",
+    "Heterozygous familial hypercholesterolaemia in adolescents"
+  ],
+  "history": [
+    {
+      "year": 1973,
+      "title": "Compactin",
+      "detail": "Akira Endo at Sankyo discovers mevastatin (compactin), the first statin, in Penicillium citrinum."
+    },
+    {
+      "year": 1978,
+      "title": "Lovastatin isolated",
+      "detail": "Merck isolates mevinolin (lovastatin) from Aspergillus terreus."
+    },
+    {
+      "year": 1980,
+      "title": "Trials halted",
+      "detail": "Merck suspends development after reports of tumours in dogs given compactin; work later resumes."
+    },
+    {
+      "year": 1987,
+      "title": "FDA approval",
+      "detail": "Mevacor becomes the first statin approved by the FDA (August)."
+    },
+    {
+      "year": 1998,
+      "title": "AFCAPS/TexCAPS",
+      "detail": "Lovastatin reduces first coronary events in people with average cholesterol."
+    },
+    {
+      "year": 2001,
+      "title": "Generics",
+      "detail": "Generic lovastatin becomes available in the US."
+    },
+    {
+      "year": 2024,
+      "title": "Endo dies",
+      "detail": "Akira Endo, who discovered the first statin, dies in June."
+    }
+  ],
+  "pk": {
+    "half_life": "~1–2 h (active acid)",
+    "bioavailability": "<5%",
+    "metabolism": "Extensive first-pass CYP3A4 metabolism",
+    "excretion": "~83% faeces, ~10% urine"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Myalgia",
+      "Headache",
+      "Gastrointestinal upset",
+      "Raised liver enzymes"
+    ],
+    "serious": [
+      "Myopathy and rhabdomyolysis",
+      "Hepatotoxicity (rare)",
+      "Small increase in new-onset diabetes",
+      "Immune-mediated necrotising myopathy (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Red yeast rice supplements contain monacolin K, chemically identical to lovastatin.",
+    "Akira Endo received the Lasker-DeBakey Clinical Medical Research Award in 2008 for discovering statins."
+  ],
+  "related": [
+    "simvastatin",
+    "pravastatin",
+    "atorvastatin",
+    "rosuvastatin"
+  ],
+  "references": [
+    {
+      "title": "Lovastatin – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lovastatin"
+    },
+    {
+      "title": "DailyMed – lovastatin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=lovastatin"
+    },
+    {
+      "title": "Akira Endo (biochemist) – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Akira_Endo_(biochemist)"
+    }
+  ],
+  "stage": "written"
 }

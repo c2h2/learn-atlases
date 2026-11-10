@@ -1,36 +1,132 @@
 {
   "slug": "carvedilol",
   "name": "Carvedilol",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BM 14190"
+  ],
+  "brands": [
+    "Coreg",
+    "Coreg CR",
+    "Dilatrend",
+    "Eucardic"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Non-selective beta-blocker with alpha-1 blocking activity",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet twice daily with food; extended-release capsule once daily",
+  "targets": [
+    "ADRB1",
+    "ADRB2",
+    "ADRA1A"
+  ],
+  "origin": "synthetic",
+  "originator": "Boehringer Mannheim",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1995,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Coreg"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Boehringer Mannheim",
+    "note": "A carbazole beta-blocker with vasodilating alpha-1 blockade; licensed to SmithKline Beecham in the US."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Vasodilating beta-blocker that reduced mortality in heart failure",
+  "summary": "Carvedilol blocks β1, β2 and α1 adrenoceptors, combining heart-rate reduction with vasodilation. It is used in heart failure with reduced ejection fraction, left ventricular dysfunction after myocardial infarction and hypertension.",
+  "mechanism": [
+    "Carvedilol is a racemate: the S-enantiomer blocks β1- and β2-receptors, while both enantiomers block α1-receptors, lowering peripheral vascular resistance.",
+    "In heart failure, sustained blockade of sympathetic overactivity reduces remodelling and arrhythmias. It also has antioxidant properties in laboratory studies, of uncertain clinical significance."
+  ],
+  "uses": [
+    "Chronic heart failure with reduced ejection fraction",
+    "Left ventricular dysfunction after myocardial infarction",
+    "Essential hypertension"
+  ],
+  "history": [
+    {
+      "year": 1995,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Coreg for hypertension."
+    },
+    {
+      "year": 1996,
+      "title": "US Carvedilol HF trials",
+      "detail": "The US carvedilol programme shows reduced mortality in heart failure."
+    },
+    {
+      "year": 1997,
+      "title": "Heart failure indication",
+      "detail": "Carvedilol becomes the first beta-blocker approved by the FDA for heart failure."
+    },
+    {
+      "year": 2001,
+      "title": "COPERNICUS",
+      "detail": "Mortality is reduced in severe heart failure."
+    },
+    {
+      "year": 2003,
+      "title": "COMET",
+      "detail": "Carvedilol reduces mortality compared with metoprolol tartrate in heart failure."
+    },
+    {
+      "year": 2007,
+      "title": "US generics",
+      "detail": "Generic carvedilol becomes available in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "~7–10 h",
+    "bioavailability": "~25–35% (first-pass)",
+    "metabolism": "Hepatic CYP2D6 and CYP2C9",
+    "excretion": "Mainly biliary/faecal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Dizziness",
+      "Fatigue",
+      "Hypotension",
+      "Weight gain",
+      "Bradycardia"
+    ],
+    "serious": [
+      "Worsening heart failure during titration",
+      "Heart block",
+      "Bronchospasm",
+      "Masked hypoglycaemia",
+      "Rebound ischaemia on abrupt withdrawal"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "COMET compared it with immediate-release metoprolol tartrate, not the succinate form proven in MERIT-HF, which remains a point of debate."
+  ],
+  "related": [
+    "metoprolol",
+    "bisoprolol",
+    "propranolol"
+  ],
+  "references": [
+    {
+      "title": "Carvedilol – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Carvedilol"
+    },
+    {
+      "title": "DailyMed – carvedilol labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=carvedilol"
+    },
+    {
+      "title": "Packer M et al. Effect of carvedilol on survival in severe chronic heart failure (COPERNICUS). N Engl J Med 2001",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11386263/"
+    }
+  ],
+  "stage": "written"
 }

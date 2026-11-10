@@ -1,36 +1,123 @@
 {
   "slug": "nifedipine",
   "name": "Nifedipine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "BAY a1040"
+  ],
+  "brands": [
+    "Adalat",
+    "Procardia",
+    "Procardia XL",
+    "Adalat CC"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Dihydropyridine calcium channel blocker",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "extended-release tablets once daily; immediate-release capsules (restricted use)",
+  "targets": [
+    "CACNA1C"
+  ],
+  "origin": "synthetic",
+  "originator": "Bayer",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1975,
+    "agency": null,
+    "country": "Germany",
+    "brand": "Adalat"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Bayer (Friedrich Bossert, Wulf Vater)",
+    "note": "The prototype dihydropyridine calcium antagonist, discovered in the 1960s."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Prototype dihydropyridine for angina, hypertension and preterm labour",
+  "summary": "Nifedipine is the prototype dihydropyridine calcium channel blocker. Extended-release forms treat hypertension and angina; it is also used for vasospastic angina, Raynaud's phenomenon and, on the WHO list, to delay preterm labour.",
+  "mechanism": [
+    "Nifedipine blocks L-type calcium channels in vascular smooth muscle, relaxing arteries, including coronary arteries, and lowering peripheral resistance.",
+    "Immediate-release forms cause a rapid fall in blood pressure with reflex sympathetic activation and tachycardia, which can precipitate ischaemia; extended-release formulations avoid these peaks."
+  ],
+  "uses": [
+    "Hypertension (extended-release)",
+    "Chronic stable angina",
+    "Vasospastic angina",
+    "Raynaud's phenomenon (off-label in some regions)",
+    "Tocolysis in preterm labour (WHO listed; off-label in many countries)"
+  ],
+  "history": [
+    {
+      "year": 1975,
+      "title": "Launch",
+      "detail": "Bayer introduces nifedipine as Adalat."
+    },
+    {
+      "year": 1981,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Procardia for angina."
+    },
+    {
+      "year": 1989,
+      "title": "Procardia XL",
+      "detail": "A once-daily osmotic (GITS) extended-release formulation is approved."
+    },
+    {
+      "year": 1995,
+      "title": "Safety concerns",
+      "detail": "Meta-analyses link short-acting nifedipine to increased mortality in coronary disease; sublingual use for hypertensive urgency is abandoned."
+    },
+    {
+      "year": 2004,
+      "title": "ACTION",
+      "detail": "Long-acting nifedipine is shown to be safe in stable angina."
+    }
+  ],
+  "pk": {
+    "half_life": "~2 h (immediate-release)",
+    "bioavailability": "~45–75% (first-pass)",
+    "metabolism": "Hepatic CYP3A4",
+    "excretion": "Renal (inactive metabolites)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Headache",
+      "Flushing",
+      "Peripheral oedema",
+      "Dizziness",
+      "Palpitations"
+    ],
+    "serious": [
+      "Severe hypotension",
+      "Reflex tachycardia and ischaemia (immediate-release)",
+      "Gingival hyperplasia",
+      "GI obstruction with non-deformable tablets (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Grapefruit juice and strong CYP3A4 inhibitors raise nifedipine levels.",
+    "The empty shell of osmotic extended-release tablets can appear in stool."
+  ],
+  "related": [
+    "amlodipine",
+    "diltiazem",
+    "verapamil"
+  ],
+  "references": [
+    {
+      "title": "Nifedipine – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nifedipine"
+    },
+    {
+      "title": "DailyMed – nifedipine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=nifedipine"
+    }
+  ],
+  "stage": "written"
 }

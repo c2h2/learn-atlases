@@ -1,36 +1,131 @@
 {
   "slug": "tafamidis",
   "name": "Tafamidis",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "Fx-1006A",
+    "tafamidis meglumine"
+  ],
+  "brands": [
+    "Vyndaqel",
+    "Vyndamax"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
+  "drug_class": "Transthyretin (TTR) kinetic stabiliser",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral capsule once daily (tafamidis meglumine 80 mg or free acid 61 mg)",
+  "targets": [
+    "TTR"
+  ],
+  "origin": "synthetic",
+  "originator": "FoldRx Pharmaceuticals (from Jeffery Kelly's laboratory, Scripps Research)",
+  "owner": "Pfizer",
+  "first_approval": {
+    "year": 2011,
+    "agency": "EMA",
+    "country": "EU",
+    "brand": "Vyndaqel"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Jeffery Kelly and colleagues, Scripps Research Institute",
+    "note": "Structure-based design of small molecules that bind the thyroxine sites of the TTR tetramer; Pfizer acquired FoldRx in 2010."
+  },
   "generic": null,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First drug to stabilise transthyretin and treat ATTR cardiomyopathy",
+  "summary": "Tafamidis binds and stabilises the transthyretin tetramer, preventing its dissociation into monomers that misfold into amyloid. It treats transthyretin amyloid cardiomyopathy, both hereditary and wild-type, and in some countries hereditary ATTR polyneuropathy.",
+  "mechanism": [
+    "Transthyretin is a liver-made tetramer that carries thyroxine and retinol-binding protein. Dissociation of the tetramer is the rate-limiting step in amyloid formation; released monomers misfold and aggregate into fibrils deposited in heart and nerves.",
+    "Tafamidis binds the two thyroxine-binding sites with negative cooperativity, kinetically stabilising the native tetramer and slowing amyloidogenesis. It does not remove existing deposits."
+  ],
+  "uses": [
+    "Transthyretin amyloid cardiomyopathy (wild-type or hereditary) in adults",
+    "Hereditary transthyretin amyloid polyneuropathy, stage 1 (EU, Japan and other markets)"
+  ],
+  "history": [
+    {
+      "year": 2010,
+      "title": "Acquisition",
+      "detail": "Pfizer acquires FoldRx, developer of tafamidis."
+    },
+    {
+      "year": 2011,
+      "title": "EU approval",
+      "detail": "Approved in the EU for early-stage hereditary ATTR polyneuropathy."
+    },
+    {
+      "year": 2012,
+      "title": "FDA rejection",
+      "detail": "The FDA declines approval for polyneuropathy, requesting more efficacy data."
+    },
+    {
+      "year": 2018,
+      "title": "ATTR-ACT",
+      "detail": "Tafamidis reduces all-cause mortality and cardiovascular hospitalisation in ATTR cardiomyopathy."
+    },
+    {
+      "year": 2019,
+      "title": "FDA approval",
+      "detail": "Approved in the US for ATTR cardiomyopathy as Vyndaqel and Vyndamax; its high list price draws criticism."
+    },
+    {
+      "year": 2024,
+      "title": "Competition",
+      "detail": "The FDA approves acoramidis, another TTR stabiliser, for ATTR cardiomyopathy."
+    },
+    {
+      "year": 2025,
+      "title": "RNA silencer approved",
+      "detail": "Vutrisiran becomes the first TTR silencer approved in the US for ATTR cardiomyopathy."
+    }
+  ],
+  "pk": {
+    "half_life": "~49 h",
+    "bioavailability": "Well absorbed (not quantified)",
+    "metabolism": "Glucuronidation; minimal CYP metabolism",
+    "excretion": "Mainly faecal (unchanged), some urinary glucuronide"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Diarrhoea",
+      "Urinary tract infection",
+      "Abdominal pain"
+    ],
+    "serious": [
+      "Embryo-fetal toxicity (contraception advised)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Jeffery Kelly's work on tafamidis provided clinical proof that kinetic stabilisation of a protein can slow an amyloid disease.",
+    "It is one of Pfizer's largest-selling products."
+  ],
+  "related": [
+    "patisiran",
+    "mavacamten"
+  ],
+  "references": [
+    {
+      "title": "Tafamidis – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tafamidis"
+    },
+    {
+      "title": "DailyMed – tafamidis labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=tafamidis"
+    },
+    {
+      "title": "EMA EPAR – Vyndaqel",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/vyndaqel"
+    },
+    {
+      "title": "Maurer MS et al. Tafamidis treatment for patients with transthyretin amyloid cardiomyopathy (ATTR-ACT). N Engl J Med 2018",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30145929/"
+    }
+  ],
+  "stage": "written"
 }

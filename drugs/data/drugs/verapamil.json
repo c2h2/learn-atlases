@@ -1,36 +1,125 @@
 {
   "slug": "verapamil",
   "name": "Verapamil",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "iproveratril",
+    "verapamil hydrochloride"
+  ],
+  "brands": [
+    "Isoptin",
+    "Calan",
+    "Verelan",
+    "Securon"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Non-dihydropyridine (phenylalkylamine) calcium channel blocker; class IV antiarrhythmic",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "oral immediate- and extended-release; IV for supraventricular tachycardia",
+  "targets": [
+    "CACNA1C"
+  ],
+  "origin": "synthetic",
+  "originator": "Knoll AG (Germany)",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1981,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Calan and Isoptin"
+  },
+  "discovery": {
+    "year": 1962,
+    "by": "Knoll AG (Ferdinand Dengel)",
+    "note": "Synthesised as a coronary dilator; Albrecht Fleckenstein identified its calcium-antagonist action in the mid-1960s."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "The first calcium channel blocker, a class IV antiarrhythmic",
+  "summary": "Verapamil was the first calcium channel blocker to be characterised and acts predominantly on the heart. It treats supraventricular arrhythmias, angina and hypertension, and is used off-label to prevent cluster headache.",
+  "mechanism": [
+    "Verapamil blocks L-type calcium channels from the intracellular side in a use-dependent manner, so it acts most strongly on rapidly firing tissue. It slows the SA node and markedly prolongs AV nodal conduction and refractoriness, which terminates re-entrant SVT and slows ventricular rate in AF.",
+    "It reduces myocardial contractility and dilates coronary and peripheral arteries. It also inhibits P-glycoprotein and CYP3A4, causing many drug interactions."
+  ],
+  "uses": [
+    "Paroxysmal supraventricular tachycardia (IV)",
+    "Atrial fibrillation or flutter rate control",
+    "Angina, including vasospastic and unstable",
+    "Hypertension",
+    "Cluster headache prophylaxis (off-label)"
+  ],
+  "history": [
+    {
+      "year": 1962,
+      "title": "Synthesis",
+      "detail": "Verapamil is synthesised at Knoll AG."
+    },
+    {
+      "year": 1964,
+      "title": "Calcium antagonism",
+      "detail": "Albrecht Fleckenstein's laboratory begins showing that verapamil blocks excitation–contraction coupling by inhibiting calcium entry."
+    },
+    {
+      "year": 1981,
+      "title": "FDA approval",
+      "detail": "Approved in the US, among the first calcium channel blockers there."
+    },
+    {
+      "year": 1990,
+      "title": "DAVIT II",
+      "detail": "Verapamil after MI reduces reinfarction in patients without heart failure."
+    },
+    {
+      "year": 2018,
+      "title": "Type 1 diabetes pilot",
+      "detail": "A small randomised trial reports that verapamil helps preserve beta-cell function in recent-onset type 1 diabetes, prompting larger studies."
+    }
+  ],
+  "pk": {
+    "half_life": "~3–7 h (longer with repeated dosing)",
+    "bioavailability": "~20–35% (first-pass)",
+    "metabolism": "Hepatic CYP3A4; active norverapamil",
+    "excretion": "~70% renal (metabolites), ~16% faecal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Constipation",
+      "Dizziness",
+      "Headache",
+      "Bradycardia"
+    ],
+    "serious": [
+      "AV block",
+      "Heart failure exacerbation",
+      "Severe hypotension",
+      "Ventricular fibrillation if given IV in wide-complex tachycardia or WPW with AF"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "IV verapamil can be fatal in ventricular tachycardia misdiagnosed as SVT.",
+    "Constipation is its most characteristic side effect."
+  ],
+  "related": [
+    "diltiazem",
+    "amlodipine",
+    "nifedipine",
+    "digoxin"
+  ],
+  "references": [
+    {
+      "title": "Verapamil – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Verapamil"
+    },
+    {
+      "title": "DailyMed – verapamil labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=verapamil"
+    }
+  ],
+  "stage": "written"
 }

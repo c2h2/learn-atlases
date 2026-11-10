@@ -1,36 +1,126 @@
 {
   "slug": "heparin",
   "name": "Heparin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "unfractionated heparin",
+    "UFH",
+    "heparin sodium"
+  ],
+  "brands": [
+    "Hep-Lock",
+    "Heparin Leo"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Glycosaminoglycan anticoagulant (indirect thrombin and factor Xa inhibitor)",
+  "modality": "other",
+  "routes": [
+    "iv",
+    "sc"
+  ],
+  "route_note": "IV bolus and infusion adjusted by aPTT or anti-Xa; subcutaneous for prophylaxis; also used for catheter flushes",
+  "targets": [
+    "SERPINC1",
+    "F2",
+    "F10"
+  ],
+  "origin": "natural",
+  "originator": "Johns Hopkins University (Jay McLean, William Howell)",
+  "owner": "generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "discovery": {
+    "year": 1916,
+    "by": "Jay McLean, working with William Howell at Johns Hopkins",
+    "note": "An anticoagulant found in liver extracts; Howell named it heparin in 1918."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Century-old natural anticoagulant from pig intestine, still essential in hospitals",
+  "summary": "Heparin is a mixture of sulfated polysaccharides, extracted mainly from porcine intestinal mucosa, that greatly accelerates the natural anticoagulant antithrombin. It is given by injection for acute thrombosis, during cardiac surgery, dialysis and cardiopulmonary bypass, and can be rapidly reversed with protamine.",
+  "mechanism": [
+    "Heparin contains a specific pentasaccharide sequence that binds antithrombin and changes its shape, increasing its inhibition of thrombin (factor IIa) and factor Xa roughly a thousand-fold.",
+    "Inhibition of thrombin requires longer chains (at least 18 saccharides) that bridge antithrombin and thrombin; factor Xa inhibition needs only the pentasaccharide.",
+    "Because chains vary in length and bind many plasma proteins, its effect is variable and is monitored with aPTT or anti-Xa levels. Protamine sulfate neutralises it."
+  ],
+  "uses": [
+    "Treatment and prevention of venous thromboembolism",
+    "Acute coronary syndromes and percutaneous coronary intervention",
+    "Anticoagulation during cardiopulmonary bypass, dialysis and extracorporeal circuits",
+    "Disseminated intravascular coagulation (selected cases)",
+    "Catheter patency"
+  ],
+  "history": [
+    {
+      "year": 1916,
+      "title": "Discovery",
+      "detail": "Medical student Jay McLean finds an anticoagulant in dog liver extracts."
+    },
+    {
+      "year": 1918,
+      "title": "Named",
+      "detail": "William Howell names the substance heparin from the Greek for liver."
+    },
+    {
+      "year": 1935,
+      "title": "Purification",
+      "detail": "Groups including Charles Best in Toronto and Erik Jorpes in Stockholm produce purified heparin suitable for human use."
+    },
+    {
+      "year": 1937,
+      "title": "Clinical use",
+      "detail": "Clinical trials of purified heparin for thrombosis begin in Toronto and Sweden."
+    },
+    {
+      "year": 1973,
+      "title": "Antithrombin mechanism",
+      "detail": "Rosenberg and Damus show heparin acts by accelerating antithrombin."
+    },
+    {
+      "year": 2008,
+      "title": "Contamination crisis",
+      "detail": "Heparin contaminated with oversulfated chondroitin sulfate, traced to Chinese suppliers, causes serious allergic reactions and deaths; testing standards are tightened."
+    }
+  ],
+  "pk": {
+    "half_life": "~1–2 h, dose-dependent",
+    "bioavailability": "Not absorbed orally; subcutaneous absorption variable",
+    "metabolism": "Cleared by the reticuloendothelial system and endothelium (saturable), then renal",
+    "excretion": "Renal at high doses"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Bleeding",
+      "Injection-site haematoma",
+      "Mild transient thrombocytopenia"
+    ],
+    "serious": [
+      "Heparin-induced thrombocytopenia with thrombosis (HIT)",
+      "Major bleeding",
+      "Osteoporosis with long-term use",
+      "Hyperkalaemia (aldosterone suppression)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Heparin is one of the oldest drugs still in widespread clinical use.",
+    "Most global supply is derived from pig intestines, much of it processed in China.",
+    "Low-molecular-weight heparins such as enoxaparin are made by depolymerising it."
+  ],
+  "related": [
+    "enoxaparin",
+    "warfarin",
+    "alteplase"
+  ],
+  "references": [
+    {
+      "title": "Heparin – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Heparin"
+    },
+    {
+      "title": "DailyMed – heparin sodium labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=heparin+sodium"
+    }
+  ],
+  "stage": "written"
 }

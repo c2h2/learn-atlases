@@ -1,36 +1,124 @@
 {
   "slug": "losartan",
   "name": "Losartan",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "losartan potassium",
+    "DuP 753",
+    "MK-954"
+  ],
+  "brands": [
+    "Cozaar",
+    "Hyzaar (with HCTZ)"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Angiotensin II receptor blocker (ARB, sartan)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once or twice daily",
+  "targets": [
+    "AGTR1"
+  ],
+  "origin": "synthetic",
+  "originator": "DuPont",
+  "owner": "generic (many); Cozaar brand held by Organon",
+  "first_approval": {
+    "year": 1995,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Cozaar"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "DuPont (David Carini, John Duncia and colleagues)",
+    "note": "Designed from imidazole leads; developed with Merck."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "The first angiotensin II receptor blocker, opening the sartan class",
+  "summary": "Losartan was the first angiotensin II receptor blocker to reach the market. It treats hypertension, reduces stroke risk in hypertension with left ventricular hypertrophy and slows diabetic kidney disease, with less cough than ACE inhibitors.",
+  "mechanism": [
+    "Angiotensin II receptor blockers selectively block the AT1 receptor, preventing angiotensin II from causing vasoconstriction, aldosterone release, sympathetic activation and sodium retention. Because ACE is not inhibited, bradykinin does not accumulate, so cough is uncommon.",
+    "About 14% of losartan is converted by CYP2C9 and CYP3A4 to EXP3174, a carboxylic acid metabolite that is 10–40 times more potent and longer-acting. Losartan itself also has a mild uricosuric effect."
+  ],
+  "uses": [
+    "Hypertension (adults and children ≥6)",
+    "Stroke risk reduction in hypertension with left ventricular hypertrophy",
+    "Diabetic nephropathy with proteinuria in type 2 diabetes and hypertension"
+  ],
+  "history": [
+    {
+      "year": 1995,
+      "title": "FDA approval",
+      "detail": "Approved as Cozaar, the first ARB, marketed by Merck."
+    },
+    {
+      "year": 2001,
+      "title": "RENAAL",
+      "detail": "Losartan slows progression of nephropathy in type 2 diabetes."
+    },
+    {
+      "year": 2002,
+      "title": "LIFE",
+      "detail": "Losartan-based therapy reduces stroke compared with atenolol in hypertension with LVH."
+    },
+    {
+      "year": 2010,
+      "title": "US generics",
+      "detail": "Generic losartan becomes available in the US."
+    },
+    {
+      "year": 2019,
+      "title": "Nitrosamine recalls",
+      "detail": "Lots of losartan are recalled worldwide after detection of nitrosamine impurities such as NMBA and NDEA."
+    }
+  ],
+  "pk": {
+    "half_life": "~2 h (losartan); 6–9 h (EXP3174)",
+    "bioavailability": "~33%",
+    "metabolism": "Hepatic CYP2C9 and CYP3A4 to EXP3174",
+    "excretion": "~35% urine, ~60% faeces"
+  },
+  "safety": {
+    "common": [
+      "Dizziness",
+      "Hypotension",
+      "Hyperkalaemia",
+      "Rise in serum creatinine"
+    ],
+    "serious": [
+      "Acute kidney injury (especially with renal artery stenosis)",
+      "Severe hyperkalaemia",
+      "Angioedema (rare)",
+      "Fetal toxicity"
+    ],
+    "boxed_warning": "Fetal toxicity: drugs acting on the renin-angiotensin system can cause injury and death to the developing fetus; discontinue when pregnancy is detected."
+  },
+  "facts": [
+    "Its uricosuric property is not shared by most other ARBs."
+  ],
+  "related": [
+    "valsartan",
+    "sacubitril-valsartan",
+    "enalapril",
+    "hydrochlorothiazide"
+  ],
+  "references": [
+    {
+      "title": "Losartan – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Losartan"
+    },
+    {
+      "title": "DailyMed – losartan labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=losartan"
+    },
+    {
+      "title": "Dahlöf B et al. Cardiovascular morbidity and mortality in the Losartan Intervention For Endpoint reduction in hypertension study (LIFE). Lancet 2002",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11937178/"
+    }
+  ],
+  "stage": "written"
 }

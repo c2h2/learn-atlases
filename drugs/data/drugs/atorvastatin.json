@@ -1,36 +1,138 @@
 {
   "slug": "atorvastatin",
   "name": "Atorvastatin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "atorvastatin calcium",
+    "CI-981"
+  ],
+  "brands": [
+    "Lipitor",
+    "Sortis",
+    "Tahor"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "HMG-CoA reductase inhibitor (statin)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once daily, any time of day",
+  "targets": [
+    "HMGCR"
+  ],
+  "origin": "synthetic",
+  "originator": "Parke-Davis (Warner-Lambert)",
+  "owner": "generic (many); Lipitor brand held by Viatris (Pfizer in some markets)",
+  "first_approval": {
+    "year": 1996,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Lipitor"
+  },
+  "discovery": {
+    "year": 1985,
+    "by": "Bruce Roth, Parke-Davis",
+    "note": "A fully synthetic statin with a pyrrole core; Pfizer co-marketed it and acquired Warner-Lambert in 2000."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Potent synthetic statin and the best-selling drug in pharmaceutical history",
+  "summary": "Atorvastatin is a high-potency synthetic statin that lowers LDL cholesterol by inhibiting HMG-CoA reductase. It is used to reduce the risk of heart attack and stroke in people with or at risk of atherosclerotic cardiovascular disease, and to treat hypercholesterolaemia.",
+  "mechanism": [
+    "Atorvastatin competitively inhibits HMG-CoA reductase, the rate-limiting enzyme of cholesterol synthesis, mainly in the liver.",
+    "Falling intracellular cholesterol activates SREBP-2, which increases expression of LDL receptors on hepatocytes. More receptors clear more LDL particles from the blood, lowering LDL cholesterol; statins also modestly lower triglycerides and raise HDL.",
+    "Its long-lived active metabolites contribute to a prolonged effect, allowing dosing at any time of day."
+  ],
+  "uses": [
+    "Primary and secondary prevention of cardiovascular events",
+    "Primary hypercholesterolaemia and mixed dyslipidaemia",
+    "Heterozygous and homozygous familial hypercholesterolaemia (including children ≥10 years)"
+  ],
+  "history": [
+    {
+      "year": 1985,
+      "title": "Synthesis",
+      "detail": "Bruce Roth synthesises the compound at Parke-Davis."
+    },
+    {
+      "year": 1996,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Lipitor, co-promoted by Warner-Lambert and Pfizer."
+    },
+    {
+      "year": 2000,
+      "title": "Pfizer acquisition",
+      "detail": "Pfizer acquires Warner-Lambert, largely to obtain Lipitor."
+    },
+    {
+      "year": 2003,
+      "title": "ASCOT-LLA",
+      "detail": "Atorvastatin reduces coronary events in hypertensive patients with average cholesterol."
+    },
+    {
+      "year": 2005,
+      "title": "TNT",
+      "detail": "High-dose atorvastatin beats low dose in stable coronary disease."
+    },
+    {
+      "year": 2006,
+      "title": "SPARCL",
+      "detail": "Atorvastatin reduces recurrent stroke after stroke or TIA."
+    },
+    {
+      "year": 2011,
+      "title": "US generics",
+      "detail": "Generic atorvastatin launches in the US in November."
+    },
+    {
+      "year": 2020,
+      "title": "Viatris",
+      "detail": "Lipitor moves to Viatris, formed from Pfizer's Upjohn unit and Mylan."
+    }
+  ],
+  "pk": {
+    "half_life": "~14 h (HMG-CoA reductase inhibitory activity 20–30 h)",
+    "bioavailability": "~14%",
+    "metabolism": "Hepatic CYP3A4 to active ortho- and para-hydroxylated metabolites",
+    "excretion": "Biliary; <2% renal"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Myalgia",
+      "Headache",
+      "Gastrointestinal upset",
+      "Raised liver enzymes"
+    ],
+    "serious": [
+      "Myopathy and rhabdomyolysis",
+      "Hepatotoxicity (rare)",
+      "Small increase in new-onset diabetes",
+      "Immune-mediated necrotising myopathy (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Lipitor is widely reported as the top-selling drug of all time by cumulative revenue.",
+    "Strong CYP3A4 inhibitors and grapefruit juice in large amounts increase exposure."
+  ],
+  "related": [
+    "simvastatin",
+    "rosuvastatin",
+    "pravastatin",
+    "lovastatin",
+    "ezetimibe"
+  ],
+  "references": [
+    {
+      "title": "Atorvastatin – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Atorvastatin"
+    },
+    {
+      "title": "DailyMed – atorvastatin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=atorvastatin"
+    }
+  ],
+  "stage": "written"
 }

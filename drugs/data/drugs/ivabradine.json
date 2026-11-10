@@ -1,36 +1,132 @@
 {
   "slug": "ivabradine",
   "name": "Ivabradine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "S 16257"
+  ],
+  "brands": [
+    "Procoralan",
+    "Corlanor",
+    "Corlentor"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Hyperpolarisation-activated cyclic nucleotide-gated (HCN) channel blocker (If inhibitor)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet twice daily with meals; oral solution for children",
+  "targets": [
+    "HCN4"
+  ],
+  "origin": "synthetic",
+  "originator": "Servier",
+  "owner": "Servier; Amgen (US)",
+  "first_approval": {
+    "year": 2005,
+    "agency": "EMA",
+    "country": "EU",
+    "brand": "Procoralan"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Servier",
+    "note": "Developed as a pure heart-rate-lowering agent acting on the sinoatrial node funny current."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "Pure heart-rate lowering via the sinus node funny current",
+  "summary": "Ivabradine slows the heart rate by selectively blocking the funny current (If) in the sinoatrial node, without affecting contractility or blood pressure. It is used in chronic heart failure with reduced ejection fraction and elevated resting heart rate and, in Europe, for stable angina.",
+  "mechanism": [
+    "The funny current, carried mainly by HCN4 channels in sinoatrial node cells, drives the slow diastolic depolarisation that sets heart rate. Ivabradine enters the open channel from the inside and blocks it in a use-dependent manner.",
+    "Slowing diastolic depolarisation reduces heart rate and prolongs diastole, improving coronary filling and reducing oxygen demand, without negative inotropic effects. Related HCN1 channels in the retina explain the visual phosphenes it can cause."
+  ],
+  "uses": [
+    "Chronic heart failure with LVEF ≤35%, sinus rhythm and resting heart rate ≥70 bpm despite maximally tolerated beta-blocker",
+    "Stable symptomatic dilated cardiomyopathy-related heart failure in children (US)",
+    "Symptomatic stable angina in patients intolerant of or inadequately controlled by beta-blockers (EU)"
+  ],
+  "history": [
+    {
+      "year": 2005,
+      "title": "EU approval",
+      "detail": "Approved in the EU as Procoralan for stable angina."
+    },
+    {
+      "year": 2008,
+      "title": "BEAUTIFUL",
+      "detail": "No reduction in the primary outcome in coronary disease with LV dysfunction."
+    },
+    {
+      "year": 2010,
+      "title": "SHIFT",
+      "detail": "Ivabradine reduces cardiovascular death or heart failure hospitalisation in HFrEF with high heart rate."
+    },
+    {
+      "year": 2014,
+      "title": "SIGNIFY",
+      "detail": "No benefit, and possible harm in angina subgroups, in stable coronary disease without heart failure."
+    },
+    {
+      "year": 2015,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Corlanor (Amgen) for chronic heart failure."
+    },
+    {
+      "year": 2019,
+      "title": "Paediatric approval",
+      "detail": "FDA approves use in children with heart failure due to dilated cardiomyopathy."
+    }
+  ],
+  "pk": {
+    "half_life": "~2 h; effective ~6 h",
+    "bioavailability": "~40% (first-pass)",
+    "metabolism": "Hepatic and intestinal CYP3A4; active N-desmethyl metabolite",
+    "excretion": "Renal and faecal (metabolites)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Luminous phenomena (phosphenes)",
+      "Bradycardia",
+      "Hypertension",
+      "Blurred vision"
+    ],
+    "serious": [
+      "Symptomatic bradycardia and heart block",
+      "Atrial fibrillation",
+      "Fetal toxicity"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "It is ineffective in atrial fibrillation, because heart rate is then not set by the sinus node.",
+    "Strong CYP3A4 inhibitors and the heart-rate-lowering calcium blockers verapamil and diltiazem are contraindicated."
+  ],
+  "related": [
+    "metoprolol",
+    "bisoprolol",
+    "sacubitril-valsartan",
+    "ranolazine"
+  ],
+  "references": [
+    {
+      "title": "Ivabradine – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ivabradine"
+    },
+    {
+      "title": "DailyMed – corlanor labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=corlanor"
+    },
+    {
+      "title": "EMA EPAR – Procoralan",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/procoralan"
+    },
+    {
+      "title": "Swedberg K et al. Ivabradine and outcomes in chronic heart failure (SHIFT). Lancet 2010",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/20801500/"
+    }
+  ],
+  "stage": "written"
 }

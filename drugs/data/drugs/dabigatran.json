@@ -1,36 +1,136 @@
 {
   "slug": "dabigatran",
-  "name": "Dabigatran",
-  "aliases": [],
-  "brands": [],
+  "name": "Dabigatran etexilate",
+  "aliases": [
+    "dabigatran",
+    "BIBR 1048"
+  ],
+  "brands": [
+    "Pradaxa",
+    "Pradax",
+    "Prazaxa"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Direct thrombin inhibitor (DOAC)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral capsule twice daily, swallowed whole; pellets for children",
+  "targets": [
+    "F2"
+  ],
+  "origin": "synthetic",
+  "originator": "Boehringer Ingelheim",
+  "owner": "Boehringer Ingelheim; generics available",
+  "first_approval": {
+    "year": 2008,
+    "agency": "EMA",
+    "country": "EU",
+    "brand": "Pradaxa"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Boehringer Ingelheim",
+    "note": "Dabigatran was designed as a direct thrombin inhibitor; the etexilate double prodrug was needed for oral absorption."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "First DOAC for atrial fibrillation, with its own antibody antidote",
+  "summary": "Dabigatran etexilate is an oral prodrug of dabigatran, a direct, reversible thrombin inhibitor. It was the first direct oral anticoagulant approved for stroke prevention in atrial fibrillation and is the only one with a specific antibody reversal agent, idarucizumab.",
+  "mechanism": [
+    "After absorption, esterases convert dabigatran etexilate to dabigatran, which binds the active site of thrombin (factor IIa). It inhibits free and clot-bound thrombin and thrombin-induced platelet aggregation.",
+    "Blocking thrombin prevents conversion of fibrinogen to fibrin. Idarucizumab, a humanised antibody fragment, binds dabigatran with very high affinity and reverses its effect within minutes."
+  ],
+  "uses": [
+    "Stroke prevention in non-valvular atrial fibrillation",
+    "Treatment and secondary prevention of DVT and PE",
+    "VTE prophylaxis after hip or knee replacement",
+    "VTE treatment in children"
+  ],
+  "history": [
+    {
+      "year": 2008,
+      "title": "EU approval",
+      "detail": "Approved in the EU for VTE prevention after orthopaedic surgery."
+    },
+    {
+      "year": 2009,
+      "title": "RE-LY",
+      "detail": "The 150 mg dose is superior to warfarin for stroke prevention in AF, with similar major bleeding."
+    },
+    {
+      "year": 2010,
+      "title": "FDA approval",
+      "detail": "Approved in the US for stroke prevention in AF (October), the first DOAC for this use."
+    },
+    {
+      "year": 2012,
+      "title": "Mechanical valves",
+      "detail": "RE-ALIGN is stopped early for excess events; dabigatran is contraindicated with mechanical heart valves."
+    },
+    {
+      "year": 2014,
+      "title": "Litigation settlement",
+      "detail": "Boehringer Ingelheim settles thousands of US bleeding lawsuits for about $650 million."
+    },
+    {
+      "year": 2015,
+      "title": "Antidote",
+      "detail": "The FDA approves idarucizumab (Praxbind) for dabigatran reversal."
+    },
+    {
+      "year": 2022,
+      "title": "US generics",
+      "detail": "Generic dabigatran capsules launch in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "12–17 h (longer in renal impairment)",
+    "bioavailability": "~3–7%",
+    "metabolism": "Esterase hydrolysis of the prodrug; dabigatran is not CYP-metabolised; P-gp substrate",
+    "excretion": "~80% renal"
+  },
+  "safety": {
+    "common": [
+      "Dyspepsia and gastritis-like symptoms",
+      "Bleeding"
+    ],
+    "serious": [
+      "Major and gastrointestinal bleeding",
+      "Spinal/epidural haematoma",
+      "Thrombosis on early discontinuation"
+    ],
+    "boxed_warning": "Premature discontinuation increases the risk of thrombotic events; spinal/epidural haematoma may occur with neuraxial anaesthesia or spinal puncture."
+  },
+  "facts": [
+    "Capsules should not be opened, because doing so can increase absorption by up to about 75%.",
+    "Its tartaric acid core is included to improve absorption and contributes to dyspepsia."
+  ],
+  "related": [
+    "apixaban",
+    "rivaroxaban",
+    "warfarin"
+  ],
+  "references": [
+    {
+      "title": "Dabigatran – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dabigatran"
+    },
+    {
+      "title": "DailyMed – dabigatran labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=dabigatran"
+    },
+    {
+      "title": "EMA EPAR – Pradaxa",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/pradaxa"
+    },
+    {
+      "title": "Connolly SJ et al. Dabigatran versus warfarin in patients with atrial fibrillation (RE-LY). N Engl J Med 2009",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19717844/"
+    }
+  ],
+  "stage": "written"
 }

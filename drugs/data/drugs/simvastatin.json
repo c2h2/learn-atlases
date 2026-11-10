@@ -1,36 +1,128 @@
 {
   "slug": "simvastatin",
   "name": "Simvastatin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "MK-733"
+  ],
+  "brands": [
+    "Zocor"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "HMG-CoA reductase inhibitor (statin)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once daily, usually in the evening",
+  "targets": [
+    "HMGCR"
+  ],
+  "origin": "semi-synthetic",
+  "originator": "Merck & Co.",
+  "owner": "generic (many); Zocor brand held by Organon",
+  "first_approval": {
+    "year": 1991,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Zocor"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Merck & Co.",
+    "note": "A semi-synthetic derivative of lovastatin, made by adding a methyl group to the side chain."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "The statin of the landmark 4S and Heart Protection trials",
+  "summary": "Simvastatin is a semi-synthetic statin derived from lovastatin. Its 1994 Scandinavian Simvastatin Survival Study was the first to show that lowering cholesterol reduces total mortality in coronary heart disease, and it remains a widely used generic statin.",
+  "mechanism": [
+    "Simvastatin is an inactive lactone prodrug hydrolysed in the liver to its open-acid form, which competitively inhibits HMG-CoA reductase.",
+    "Falling intracellular cholesterol activates SREBP-2, which increases expression of LDL receptors on hepatocytes. More receptors clear more LDL particles from the blood, lowering LDL cholesterol; statins also modestly lower triglycerides and raise HDL."
+  ],
+  "uses": [
+    "Reduction of cardiovascular events and mortality in people at high risk",
+    "Primary hypercholesterolaemia and mixed dyslipidaemia",
+    "Heterozygous familial hypercholesterolaemia in adolescents"
+  ],
+  "history": [
+    {
+      "year": 1991,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Zocor."
+    },
+    {
+      "year": 1994,
+      "title": "4S trial",
+      "detail": "Simvastatin reduces total mortality by 30% in patients with coronary heart disease."
+    },
+    {
+      "year": 2002,
+      "title": "Heart Protection Study",
+      "detail": "Benefit is shown across a wide range of high-risk patients regardless of baseline cholesterol."
+    },
+    {
+      "year": 2006,
+      "title": "US generics",
+      "detail": "Generic simvastatin becomes available in the US."
+    },
+    {
+      "year": 2011,
+      "title": "80 mg restriction",
+      "detail": "The FDA restricts the 80 mg dose because of increased myopathy risk, based partly on the SEARCH trial."
+    },
+    {
+      "year": 2021,
+      "title": "Organon",
+      "detail": "Zocor transfers to Organon when it is spun off from Merck."
+    }
+  ],
+  "pk": {
+    "half_life": "~2 h (active acid)",
+    "bioavailability": "<5%",
+    "metabolism": "Extensive first-pass hepatic metabolism by CYP3A4",
+    "excretion": "Mainly biliary (~60% faeces), ~13% urine"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Myalgia",
+      "Headache",
+      "Gastrointestinal upset",
+      "Raised liver enzymes"
+    ],
+    "serious": [
+      "Myopathy and rhabdomyolysis",
+      "Hepatotoxicity (rare)",
+      "Small increase in new-onset diabetes",
+      "Immune-mediated necrotising myopathy (rare)"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "It is contraindicated with strong CYP3A4 inhibitors such as clarithromycin and itraconazole.",
+    "The SLCO1B1 c.521T>C variant markedly increases myopathy risk at high doses."
+  ],
+  "related": [
+    "lovastatin",
+    "atorvastatin",
+    "rosuvastatin",
+    "pravastatin",
+    "ezetimibe"
+  ],
+  "references": [
+    {
+      "title": "Simvastatin – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Simvastatin"
+    },
+    {
+      "title": "DailyMed – simvastatin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=simvastatin"
+    },
+    {
+      "title": "Scandinavian Simvastatin Survival Study Group. Randomised trial of cholesterol lowering in 4444 patients with coronary heart disease (4S). Lancet 1994",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/7968073/"
+    }
+  ],
+  "stage": "written"
 }

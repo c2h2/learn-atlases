@@ -1,36 +1,133 @@
 {
   "slug": "clopidogrel",
   "name": "Clopidogrel",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "clopidogrel bisulfate",
+    "SR 25990C"
+  ],
+  "brands": [
+    "Plavix",
+    "Iscover"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Thienopyridine P2Y12 receptor antagonist (antiplatelet)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once daily, with a loading dose in acute coronary syndromes",
+  "targets": [
+    "P2RY12"
+  ],
+  "origin": "synthetic",
+  "originator": "Sanofi",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1997,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Plavix"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Sanofi (Jean-Pierre Maffrand and colleagues)",
+    "note": "Developed as a successor to ticlopidine with a better safety profile."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Prodrug P2Y12 blocker that became one of the best-selling cardiovascular medicines",
+  "summary": "Clopidogrel is a thienopyridine prodrug that irreversibly blocks the platelet P2Y12 ADP receptor. Combined with aspirin it is used after acute coronary syndromes and coronary stenting, and alone for prevention after stroke or peripheral artery disease.",
+  "mechanism": [
+    "Clopidogrel is inactive as given. About 85% is hydrolysed by esterases to an inactive acid; the remainder is oxidised in two steps by hepatic cytochrome P450 enzymes, chiefly CYP2C19, to a thiol metabolite.",
+    "The active metabolite forms a disulfide bond with the P2Y12 receptor, permanently preventing ADP from activating the glycoprotein IIb/IIIa pathway for the life of the platelet.",
+    "Because activation depends on CYP2C19, people carrying loss-of-function alleles produce less active metabolite and have reduced platelet inhibition."
+  ],
+  "uses": [
+    "Acute coronary syndrome (with aspirin)",
+    "After percutaneous coronary intervention with stenting",
+    "Secondary prevention after recent myocardial infarction, ischaemic stroke or established peripheral arterial disease",
+    "Minor ischaemic stroke or high-risk TIA (short-term dual therapy with aspirin)"
+  ],
+  "history": [
+    {
+      "year": 1996,
+      "title": "CAPRIE",
+      "detail": "The CAPRIE trial compares clopidogrel with aspirin in patients with atherosclerotic disease, showing a modest relative benefit."
+    },
+    {
+      "year": 1997,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Plavix, co-marketed by Sanofi and Bristol-Myers Squibb."
+    },
+    {
+      "year": 2001,
+      "title": "CURE trial",
+      "detail": "Adding clopidogrel to aspirin reduces cardiovascular events in non-ST-elevation acute coronary syndrome."
+    },
+    {
+      "year": 2010,
+      "title": "Boxed warning",
+      "detail": "The FDA adds a boxed warning about diminished effectiveness in CYP2C19 poor metabolisers."
+    },
+    {
+      "year": 2012,
+      "title": "US generics",
+      "detail": "Generic clopidogrel becomes available in the US after patent expiry."
+    },
+    {
+      "year": 2018,
+      "title": "POINT trial",
+      "detail": "Short-term clopidogrel plus aspirin reduces recurrent stroke after minor stroke or TIA, at the cost of more bleeding."
+    }
+  ],
+  "pk": {
+    "half_life": "~6 h (parent); active metabolite ~30 min",
+    "bioavailability": "≥50% absorbed",
+    "metabolism": "Hepatic: esterase hydrolysis (major, inactive) and CYP2C19/3A4/1A2/2B6 oxidation to the active thiol",
+    "excretion": "~50% urine, ~46% faeces"
+  },
+  "safety": {
+    "common": [
+      "Bleeding",
+      "Bruising",
+      "Diarrhoea"
+    ],
+    "serious": [
+      "Major and intracranial bleeding",
+      "Thrombotic thrombocytopenic purpura (rare)",
+      "Reduced efficacy in CYP2C19 poor metabolisers"
+    ],
+    "boxed_warning": "Diminished antiplatelet effect in patients who are CYP2C19 poor metabolisers."
+  },
+  "facts": [
+    "Interaction with CYP2C19 inhibitors such as omeprazole has been a long-running clinical concern.",
+    "Plavix was for years among the world's top-selling drugs before generics arrived."
+  ],
+  "related": [
+    "aspirin",
+    "prasugrel",
+    "ticagrelor",
+    "omeprazole"
+  ],
+  "references": [
+    {
+      "title": "Clopidogrel – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Clopidogrel"
+    },
+    {
+      "title": "DailyMed – clopidogrel labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=clopidogrel"
+    },
+    {
+      "title": "EMA EPAR – Plavix",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/plavix"
+    },
+    {
+      "title": "Yusuf S et al. Effects of clopidogrel in addition to aspirin in patients with acute coronary syndromes without ST-segment elevation (CURE). N Engl J Med 2001",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11519503/"
+    }
+  ],
+  "stage": "written"
 }

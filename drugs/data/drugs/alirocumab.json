@@ -1,36 +1,123 @@
 {
   "slug": "alirocumab",
   "name": "Alirocumab",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "REGN727",
+    "SAR236553"
+  ],
+  "brands": [
+    "Praluent"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "PCSK9 inhibitor (monoclonal antibody)",
+  "modality": "antibody",
+  "routes": [
+    "sc"
+  ],
+  "route_note": "subcutaneous injection every 2 weeks or every 4 weeks",
+  "targets": [
+    "PCSK9"
+  ],
+  "origin": "biotech",
+  "originator": "Regeneron",
+  "owner": "Regeneron (US); Sanofi (outside the US)",
+  "first_approval": {
+    "year": 2015,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Praluent"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Regeneron (VelocImmune platform)",
+    "note": "A fully human IgG1 antibody co-developed with Sanofi."
+  },
+  "generic": false,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "First PCSK9 antibody approved by the FDA, central to a Supreme Court patent case",
+  "summary": "Alirocumab is a fully human monoclonal antibody that inhibits PCSK9, increasing LDL receptor recycling and lowering LDL cholesterol by about 45–60%. The ODYSSEY OUTCOMES trial showed it reduced cardiovascular events and deaths after acute coronary syndrome.",
+  "mechanism": [
+    "Alirocumab binds free PCSK9 in the circulation and stops it from attaching to hepatocyte LDL receptors, which would otherwise be degraded in lysosomes.",
+    "With more LDL receptors on the liver surface, clearance of LDL particles rises. Lipoprotein(a) also falls modestly."
+  ],
+  "uses": [
+    "Reduction of cardiovascular events in established cardiovascular disease",
+    "Primary hyperlipidaemia including heterozygous familial hypercholesterolaemia",
+    "Homozygous familial hypercholesterolaemia",
+    "Heterozygous FH in children ≥8 years"
+  ],
+  "history": [
+    {
+      "year": 2015,
+      "title": "FDA approval",
+      "detail": "Approved in July, a month before evolocumab, as the first PCSK9 inhibitor in the US."
+    },
+    {
+      "year": 2015,
+      "title": "EU approval",
+      "detail": "Approved by the European Commission in September."
+    },
+    {
+      "year": 2018,
+      "title": "ODYSSEY OUTCOMES",
+      "detail": "Alirocumab reduces major cardiovascular events after ACS, with lower all-cause mortality."
+    },
+    {
+      "year": 2020,
+      "title": "Rights restructured",
+      "detail": "Regeneron takes full US rights; Sanofi takes rights outside the US."
+    },
+    {
+      "year": 2023,
+      "title": "Amgen v. Sanofi",
+      "detail": "The US Supreme Court rules Amgen's broad PCSK9 antibody patent claims invalid for lack of enablement."
+    }
+  ],
+  "pk": {
+    "half_life": "~17–20 days",
+    "bioavailability": "~85% (subcutaneous)",
+    "metabolism": "Target-mediated and non-specific proteolytic degradation",
+    "excretion": "Not renally excreted as intact antibody"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Injection-site reactions",
+      "Nasopharyngitis",
+      "Influenza-like illness"
+    ],
+    "serious": [
+      "Hypersensitivity reactions including angioedema"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "The 2023 Amgen v. Sanofi ruling is a landmark decision on the enablement requirement for genus claims in biotechnology patents."
+  ],
+  "related": [
+    "evolocumab",
+    "inclisiran",
+    "atorvastatin",
+    "ezetimibe"
+  ],
+  "references": [
+    {
+      "title": "Alirocumab – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Alirocumab"
+    },
+    {
+      "title": "DailyMed – praluent labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=praluent"
+    },
+    {
+      "title": "EMA EPAR – Praluent",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/praluent"
+    },
+    {
+      "title": "Schwartz GG et al. Alirocumab and cardiovascular outcomes after acute coronary syndrome (ODYSSEY OUTCOMES). N Engl J Med 2018",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/30403574/"
+    }
+  ],
+  "stage": "written"
 }

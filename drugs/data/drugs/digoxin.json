@@ -1,36 +1,123 @@
 {
   "slug": "digoxin",
   "name": "Digoxin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "digitalis glycoside"
+  ],
+  "brands": [
+    "Lanoxin"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
+  "drug_class": "Cardiac glycoside (Na+/K+-ATPase inhibitor)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "oral tablet or elixir once daily; IV loading in some settings",
+  "targets": [
+    "ATP1A1"
+  ],
+  "origin": "natural",
+  "originator": "Burroughs Wellcome (Sydney Smith)",
+  "owner": "generic (many)",
   "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "discovery": {
+    "year": 1930,
+    "by": "Sydney Smith, Burroughs Wellcome",
+    "note": "Isolated from the woolly foxglove Digitalis lanata; foxglove itself was described for dropsy by William Withering in 1785."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Foxglove-derived glycoside for heart failure and atrial fibrillation rate control",
+  "summary": "Digoxin is a cardiac glycoside from the foxglove Digitalis lanata that increases cardiac contractility and slows atrioventricular conduction. It is used to control ventricular rate in atrial fibrillation and to reduce hospitalisation in heart failure, but has a narrow therapeutic index.",
+  "mechanism": [
+    "Digoxin inhibits the Na+/K+-ATPase pump in cardiac myocytes. The rise in intracellular sodium reduces calcium extrusion by the sodium–calcium exchanger, so more calcium is stored and released, strengthening contraction.",
+    "It also increases vagal tone, slowing the sinus rate and AV nodal conduction, which is the basis of rate control in atrial fibrillation.",
+    "In toxicity, calcium overload causes afterdepolarisations and arrhythmias; digoxin immune Fab binds and neutralises the drug."
+  ],
+  "uses": [
+    "Ventricular rate control in chronic atrial fibrillation",
+    "Heart failure with reduced ejection fraction (to reduce hospitalisation)",
+    "Increasing myocardial contractility in children with heart failure"
+  ],
+  "history": [
+    {
+      "year": 1785,
+      "title": "Withering's account",
+      "detail": "William Withering publishes An Account of the Foxglove, describing its use for dropsy."
+    },
+    {
+      "year": 1930,
+      "title": "Digoxin isolated",
+      "detail": "Sydney Smith at Burroughs Wellcome isolates digoxin from Digitalis lanata."
+    },
+    {
+      "year": 1986,
+      "title": "Antidote",
+      "detail": "Digoxin immune Fab (Digibind) is approved in the US for life-threatening toxicity."
+    },
+    {
+      "year": 1997,
+      "title": "DIG trial",
+      "detail": "Digoxin does not reduce mortality in heart failure but reduces hospitalisation."
+    },
+    {
+      "year": 1997,
+      "title": "Lanoxin NDA",
+      "detail": "Long marketed before modern drug laws, Lanoxin tablets receive formal FDA approval."
+    },
+    {
+      "year": 2020,
+      "title": "RATE-AF",
+      "detail": "Low-dose digoxin is comparable to bisoprolol for quality of life in permanent AF with fewer adverse effects."
+    }
+  ],
+  "pk": {
+    "half_life": "~36–48 h (much longer in renal failure)",
+    "bioavailability": "~60–80% (tablets)",
+    "metabolism": "Minimal; some gut-bacterial reduction",
+    "excretion": "Renal, largely unchanged; P-glycoprotein substrate"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Nausea",
+      "Anorexia",
+      "Dizziness",
+      "Visual disturbance"
+    ],
+    "serious": [
+      "Digoxin toxicity: arrhythmias, heart block",
+      "Xanthopsia (yellow-green vision)",
+      "Toxicity potentiated by hypokalaemia and renal impairment"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Amiodarone, verapamil and other P-gp inhibitors raise digoxin levels.",
+    "Digitalis lanata is grown commercially as the source of digoxin, which is still extracted from plants rather than synthesised."
+  ],
+  "related": [
+    "amiodarone",
+    "metoprolol",
+    "verapamil",
+    "furosemide"
+  ],
+  "references": [
+    {
+      "title": "Digoxin – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Digoxin"
+    },
+    {
+      "title": "DailyMed – digoxin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=digoxin"
+    },
+    {
+      "title": "Digitalis Investigation Group. The effect of digoxin on mortality and morbidity in patients with heart failure. N Engl J Med 1997",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/9036306/"
+    }
+  ],
+  "stage": "written"
 }

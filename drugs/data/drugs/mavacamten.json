@@ -1,36 +1,126 @@
 {
   "slug": "mavacamten",
   "name": "Mavacamten",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "MYK-461",
+    "SAR439152"
+  ],
+  "brands": [
+    "Camzyos"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Cardiac myosin inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral capsule once daily, titrated by echocardiographic LVOT gradient and ejection fraction",
+  "targets": [
+    "MYH7"
+  ],
+  "origin": "synthetic",
+  "originator": "MyoKardia",
+  "owner": "Bristol Myers Squibb",
+  "first_approval": {
+    "year": 2022,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Camzyos"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "MyoKardia",
+    "note": "Found by screening for compounds that reduce actin-activated myosin ATPase; BMS acquired MyoKardia in 2020."
+  },
+  "generic": false,
+  "who_essential": null,
+  "rx_status": "prescription (restricted REMS programme in the US)",
+  "tagline": "First-in-class cardiac myosin inhibitor for obstructive hypertrophic cardiomyopathy",
+  "summary": "Mavacamten is a first-in-class allosteric inhibitor of cardiac myosin that reduces excessive contractility in hypertrophic cardiomyopathy. In symptomatic obstructive HCM it lowers the outflow-tract gradient and improves symptoms and exercise capacity, but requires echocardiographic monitoring because it can reduce ejection fraction.",
+  "mechanism": [
+    "Hypertrophic cardiomyopathy is often caused by sarcomere mutations that increase the number of myosin heads available to bind actin, producing hypercontractility and impaired relaxation.",
+    "Mavacamten binds β-cardiac myosin and inhibits its ATPase, stabilising an energy-sparing 'super-relaxed' state and reducing actin–myosin cross-bridge formation. This lowers contractility, relieves left ventricular outflow obstruction and improves filling pressures."
+  ],
+  "uses": [
+    "Symptomatic NYHA class II–III obstructive hypertrophic cardiomyopathy in adults"
+  ],
+  "history": [
+    {
+      "year": 2016,
+      "title": "Mechanism published",
+      "detail": "Preclinical work in Science shows a small-molecule myosin inhibitor suppresses HCM development in mice."
+    },
+    {
+      "year": 2020,
+      "title": "EXPLORER-HCM",
+      "detail": "Mavacamten improves exercise capacity, LVOT gradient and symptoms in obstructive HCM."
+    },
+    {
+      "year": 2020,
+      "title": "BMS acquisition",
+      "detail": "Bristol Myers Squibb acquires MyoKardia for about $13.1 billion."
+    },
+    {
+      "year": 2022,
+      "title": "FDA approval",
+      "detail": "Approved in the US with a boxed warning and REMS; VALOR-HCM shows reduced need for septal reduction therapy."
+    },
+    {
+      "year": 2023,
+      "title": "EU approval",
+      "detail": "Authorised in the EU."
+    },
+    {
+      "year": 2025,
+      "title": "ODYSSEY-HCM",
+      "detail": "A trial in non-obstructive HCM does not meet its primary endpoints."
+    }
+  ],
+  "pk": {
+    "half_life": "~6–9 days (CYP2C19 normal metabolisers); ~23 days in poor metabolisers",
+    "bioavailability": "≥85%",
+    "metabolism": "Hepatic CYP2C19 (major) and CYP3A4",
+    "excretion": "Renal and faecal (metabolites)"
+  },
+  "safety": {
+    "common": [
+      "Dizziness",
+      "Syncope"
+    ],
+    "serious": [
+      "Heart failure due to systolic dysfunction (reduced LVEF)",
+      "Interactions with CYP2C19/CYP3A4 inhibitors and inducers",
+      "Embryo-fetal toxicity"
+    ],
+    "boxed_warning": "Risk of heart failure from systolic dysfunction: echocardiographic LVEF assessment is required before and during treatment; certain CYP2C19 and CYP3A4 inhibitors and inducers are contraindicated; available only through a REMS programme."
+  },
+  "facts": [
+    "It can reduce the effectiveness of hormonal contraceptives.",
+    "CYP2C19 genotype strongly affects exposure."
+  ],
+  "related": [
+    "tafamidis",
+    "metoprolol",
+    "verapamil"
+  ],
+  "references": [
+    {
+      "title": "Mavacamten – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Mavacamten"
+    },
+    {
+      "title": "DailyMed – camzyos labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=camzyos"
+    },
+    {
+      "title": "EMA EPAR – Camzyos",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/camzyos"
+    },
+    {
+      "title": "Olivotto I et al. Mavacamten for treatment of symptomatic obstructive hypertrophic cardiomyopathy (EXPLORER-HCM). Lancet 2020",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/32871100/"
+    }
+  ],
+  "stage": "written"
 }

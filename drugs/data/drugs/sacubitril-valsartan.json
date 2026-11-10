@@ -1,36 +1,139 @@
 {
   "slug": "sacubitril-valsartan",
-  "name": "Sacubitril valsartan",
-  "aliases": [],
-  "brands": [],
+  "name": "Sacubitril/valsartan",
+  "aliases": [
+    "LCZ696",
+    "ARNI"
+  ],
+  "brands": [
+    "Entresto"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Angiotensin receptor–neprilysin inhibitor (ARNI)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet twice daily; sprinkle pellets for children",
+  "targets": [
+    "MME",
+    "AGTR1"
+  ],
+  "origin": "synthetic",
+  "originator": "Novartis",
+  "owner": "Novartis; generics in some markets",
+  "first_approval": {
+    "year": 2015,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Entresto"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Novartis",
+    "note": "A supramolecular sodium salt complex of sacubitril and valsartan in a 1:1 molar ratio."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "First angiotensin receptor–neprilysin inhibitor, reshaping heart failure care",
+  "summary": "Sacubitril/valsartan combines a neprilysin inhibitor prodrug with an angiotensin II receptor blocker. In the PARADIGM-HF trial it reduced cardiovascular death and heart failure hospitalisation compared with enalapril, and it is a cornerstone therapy for heart failure with reduced ejection fraction.",
+  "mechanism": [
+    "Sacubitril is converted to LBQ657, which inhibits neprilysin, the enzyme that degrades natriuretic peptides, bradykinin and other vasoactive peptides. Higher natriuretic peptide levels promote vasodilation, natriuresis and reduced cardiac remodelling.",
+    "Neprilysin also breaks down angiotensin II, so neprilysin inhibition alone would raise it; valsartan blocks the AT1 receptor to counter this. Combining neprilysin inhibition with an ACE inhibitor causes excessive angioedema, so the two must not be used together."
+  ],
+  "uses": [
+    "Chronic heart failure in adults, to reduce cardiovascular death and hospitalisation (benefit most evident with LVEF below normal)",
+    "Symptomatic heart failure with systemic left ventricular dysfunction in children ≥1 year"
+  ],
+  "history": [
+    {
+      "year": 2014,
+      "title": "PARADIGM-HF",
+      "detail": "The trial is stopped early after showing a 20% reduction in cardiovascular death or HF hospitalisation versus enalapril."
+    },
+    {
+      "year": 2015,
+      "title": "Approvals",
+      "detail": "Approved in the US (July) and EU (November)."
+    },
+    {
+      "year": 2019,
+      "title": "PARAGON-HF",
+      "detail": "In heart failure with preserved ejection fraction, the primary endpoint narrowly misses significance."
+    },
+    {
+      "year": 2019,
+      "title": "Paediatric approval",
+      "detail": "FDA approves use in children with heart failure."
+    },
+    {
+      "year": 2021,
+      "title": "Expanded indication",
+      "detail": "FDA broadens the label to adults with chronic heart failure, with greatest benefit below normal LVEF."
+    },
+    {
+      "year": 2023,
+      "title": "Medicare negotiation",
+      "detail": "Entresto is among the first ten drugs selected for US Medicare price negotiation."
+    },
+    {
+      "year": 2025,
+      "title": "US generics",
+      "detail": "Generic sacubitril/valsartan launches in the US after patent litigation."
+    }
+  ],
+  "pk": {
+    "half_life": "Sacubitril ~1.4 h; LBQ657 ~11.5 h; valsartan ~9.9 h",
+    "bioavailability": "Sacubitril ≥60%; valsartan in this formulation more bioavailable than standalone",
+    "metabolism": "Sacubitril hydrolysed by esterases to LBQ657; valsartan minimally metabolised",
+    "excretion": "LBQ657 mainly renal; valsartan mainly biliary"
+  },
+  "safety": {
+    "common": [
+      "Hypotension",
+      "Hyperkalaemia",
+      "Cough",
+      "Dizziness",
+      "Renal impairment"
+    ],
+    "serious": [
+      "Angioedema",
+      "Acute kidney injury",
+      "Severe hyperkalaemia",
+      "Fetal toxicity"
+    ],
+    "boxed_warning": "Fetal toxicity: drugs acting on the renin-angiotensin system can cause injury and death to the developing fetus; discontinue when pregnancy is detected."
+  },
+  "facts": [
+    "A 36-hour washout is required when switching from an ACE inhibitor.",
+    "Natriuretic peptide BNP rises on treatment, while NT-proBNP is not a neprilysin substrate and remains interpretable."
+  ],
+  "related": [
+    "valsartan",
+    "enalapril",
+    "spironolactone",
+    "dapagliflozin",
+    "empagliflozin"
+  ],
+  "references": [
+    {
+      "title": "Sacubitril/valsartan – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sacubitril/valsartan"
+    },
+    {
+      "title": "DailyMed – entresto labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=entresto"
+    },
+    {
+      "title": "EMA EPAR – Entresto",
+      "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/entresto"
+    },
+    {
+      "title": "McMurray JJV et al. Angiotensin–neprilysin inhibition versus enalapril in heart failure (PARADIGM-HF). N Engl J Med 2014",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25176015/"
+    }
+  ],
+  "stage": "written"
 }

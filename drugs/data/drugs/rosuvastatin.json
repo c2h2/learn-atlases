@@ -1,36 +1,123 @@
 {
   "slug": "rosuvastatin",
   "name": "Rosuvastatin",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "rosuvastatin calcium",
+    "ZD4522",
+    "S-4522"
+  ],
+  "brands": [
+    "Crestor"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "HMG-CoA reductase inhibitor (statin)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet once daily, any time of day",
+  "targets": [
+    "HMGCR"
+  ],
+  "origin": "synthetic",
+  "originator": "Shionogi",
+  "owner": "generic (many); Crestor brand held by AstraZeneca",
+  "first_approval": {
+    "year": 2002,
+    "agency": null,
+    "country": "Netherlands",
+    "brand": "Crestor"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Shionogi",
+    "note": "Licensed to AstraZeneca in 1998 for worldwide development."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "High-potency hydrophilic statin with minimal CYP metabolism",
+  "summary": "Rosuvastatin is a synthetic, hydrophilic, high-potency statin that lowers LDL cholesterol by up to around 50–60% at the highest dose. The JUPITER trial showed it reduced cardiovascular events in people with normal LDL but elevated C-reactive protein.",
+  "mechanism": [
+    "Rosuvastatin competitively inhibits HMG-CoA reductase. Its hydrophilicity and uptake by the OATP1B1 transporter concentrate it in the liver.",
+    "Falling intracellular cholesterol activates SREBP-2, which increases expression of LDL receptors on hepatocytes. More receptors clear more LDL particles from the blood, lowering LDL cholesterol; statins also modestly lower triglycerides and raise HDL."
+  ],
+  "uses": [
+    "Primary and secondary prevention of cardiovascular events",
+    "Primary hypercholesterolaemia, mixed dyslipidaemia and hypertriglyceridaemia",
+    "Familial hypercholesterolaemia (including children)",
+    "Slowing progression of atherosclerosis"
+  ],
+  "history": [
+    {
+      "year": 1998,
+      "title": "Licensing",
+      "detail": "Shionogi licenses rosuvastatin to AstraZeneca."
+    },
+    {
+      "year": 2002,
+      "title": "First approval",
+      "detail": "Rosuvastatin is first approved in the Netherlands."
+    },
+    {
+      "year": 2003,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Crestor."
+    },
+    {
+      "year": 2008,
+      "title": "JUPITER",
+      "detail": "Rosuvastatin reduces major cardiovascular events in people with LDL below 130 mg/dL and high hsCRP."
+    },
+    {
+      "year": 2016,
+      "title": "US generics",
+      "detail": "Generic rosuvastatin becomes available in the US."
+    }
+  ],
+  "pk": {
+    "half_life": "~19 h",
+    "bioavailability": "~20%",
+    "metabolism": "Limited (~10%), mainly CYP2C9",
+    "excretion": "~90% faeces (largely unchanged)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Myalgia",
+      "Headache",
+      "Nausea"
+    ],
+    "serious": [
+      "Myopathy and rhabdomyolysis",
+      "Proteinuria at high doses",
+      "Small increase in new-onset diabetes"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Exposure is roughly twice as high in people of Asian ancestry, so lower starting doses are recommended.",
+    "Few CYP3A4 interactions make it useful in patients on many interacting drugs."
+  ],
+  "related": [
+    "atorvastatin",
+    "simvastatin",
+    "pravastatin",
+    "ezetimibe"
+  ],
+  "references": [
+    {
+      "title": "Rosuvastatin – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Rosuvastatin"
+    },
+    {
+      "title": "DailyMed – rosuvastatin labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=rosuvastatin"
+    },
+    {
+      "title": "Ridker PM et al. Rosuvastatin to prevent vascular events in men and women with elevated C-reactive protein (JUPITER). N Engl J Med 2008",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18997196/"
+    }
+  ],
+  "stage": "written"
 }

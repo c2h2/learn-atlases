@@ -1,36 +1,120 @@
 {
   "slug": "fenofibrate",
   "name": "Fenofibrate",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "procetofen",
+    "fenofibric acid (active form)"
+  ],
+  "brands": [
+    "Tricor",
+    "Lipanthyl",
+    "Lipidil",
+    "Trilipix (fenofibric acid)"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
+  "drug_class": "Fibrate (PPARα agonist)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral capsule or tablet once daily; micronised and nanocrystal formulations differ in dose",
+  "targets": [
+    "PPARA"
+  ],
+  "origin": "synthetic",
+  "originator": "Laboratoires Fournier",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1975,
+    "agency": null,
+    "country": "France",
+    "brand": "Lipanthyl"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Laboratoires Fournier (France)",
+    "note": "A clofibrate analogue developed in the early 1970s."
+  },
+  "generic": true,
   "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "rx_status": "prescription",
+  "tagline": "PPAR-alpha agonist fibrate for high triglycerides",
+  "summary": "Fenofibrate is a fibrate prodrug whose active form, fenofibric acid, activates the nuclear receptor PPARα. It mainly lowers triglycerides and raises HDL cholesterol, and is used for severe hypertriglyceridaemia and mixed dyslipidaemia.",
+  "mechanism": [
+    "Fenofibric acid activates peroxisome proliferator-activated receptor alpha, a transcription factor that increases lipoprotein lipase activity and fatty acid oxidation and reduces apolipoprotein C-III.",
+    "The result is faster clearance of triglyceride-rich lipoproteins, reduced VLDL production and increased apoA-I and apoA-II, raising HDL. It also lowers uric acid modestly."
+  ],
+  "uses": [
+    "Severe hypertriglyceridaemia",
+    "Primary hypercholesterolaemia or mixed dyslipidaemia (adjunct to diet)"
+  ],
+  "history": [
+    {
+      "year": 1975,
+      "title": "Launch in France",
+      "detail": "Introduced in France by Laboratoires Fournier."
+    },
+    {
+      "year": 1993,
+      "title": "FDA approval",
+      "detail": "Approved in the US, later marketed as Tricor by Abbott."
+    },
+    {
+      "year": 2005,
+      "title": "FIELD",
+      "detail": "Fenofibrate does not significantly reduce the primary coronary endpoint in type 2 diabetes but reduces some microvascular outcomes."
+    },
+    {
+      "year": 2010,
+      "title": "ACCORD Lipid",
+      "detail": "Adding fenofibrate to simvastatin does not reduce cardiovascular events in type 2 diabetes."
+    },
+    {
+      "year": 2024,
+      "title": "LENS trial",
+      "detail": "Fenofibrate slows progression of diabetic retinopathy in a Scottish trial."
+    }
+  ],
+  "pk": {
+    "half_life": "~20 h (fenofibric acid)",
+    "bioavailability": "Formulation-dependent; improved with food for older forms",
+    "metabolism": "Ester hydrolysis to fenofibric acid; glucuronidation; not CYP3A4",
+    "excretion": "Mainly renal (~60%)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Raised liver enzymes",
+      "Abdominal pain",
+      "Raised serum creatinine"
+    ],
+    "serious": [
+      "Myopathy and rhabdomyolysis (especially with statins)",
+      "Cholelithiasis",
+      "Pancreatitis",
+      "Venous thromboembolism",
+      "Hepatotoxicity"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Fenofibrate is approved in Australia for slowing diabetic retinopathy.",
+    "It interacts less with statins than gemfibrozil does."
+  ],
+  "related": [
+    "atorvastatin",
+    "rosuvastatin",
+    "ezetimibe"
+  ],
+  "references": [
+    {
+      "title": "Fenofibrate – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fenofibrate"
+    },
+    {
+      "title": "DailyMed – fenofibrate labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=fenofibrate"
+    }
+  ],
+  "stage": "written"
 }

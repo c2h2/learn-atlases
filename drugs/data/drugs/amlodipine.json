@@ -1,36 +1,123 @@
 {
   "slug": "amlodipine",
   "name": "Amlodipine",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "amlodipine besylate",
+    "UK-48340"
+  ],
+  "brands": [
+    "Norvasc",
+    "Istin",
+    "Katerzia"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
+  "drug_class": "Dihydropyridine calcium channel blocker",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet or suspension once daily; many fixed-dose combinations",
+  "targets": [
+    "CACNA1C"
+  ],
+  "origin": "synthetic",
+  "originator": "Pfizer",
+  "owner": "generic (many); Norvasc brand held by Viatris",
+  "first_approval": {
+    "year": 1992,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Norvasc"
+  },
+  "discovery": {
+    "year": null,
+    "by": "Pfizer (Sandwich, UK)",
+    "note": "Designed as a long-acting dihydropyridine with gradual onset."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "Long-acting once-daily calcium channel blocker, a global hypertension mainstay",
+  "summary": "Amlodipine is a long-acting dihydropyridine calcium channel blocker that relaxes arterial smooth muscle. It is one of the most prescribed drugs worldwide for hypertension and chronic stable or vasospastic angina, and appears in many combination pills.",
+  "mechanism": [
+    "Amlodipine binds L-type voltage-gated calcium channels (Cav1.2) in vascular smooth muscle, reducing calcium entry and causing arterial vasodilation and lower peripheral resistance.",
+    "At therapeutic doses it has little effect on cardiac conduction or contractility. Its very long half-life gives smooth, gradual blood pressure control with little reflex tachycardia."
+  ],
+  "uses": [
+    "Hypertension (adults and children ≥6)",
+    "Chronic stable angina",
+    "Vasospastic (Prinzmetal) angina",
+    "Angiographically documented coronary artery disease"
+  ],
+  "history": [
+    {
+      "year": 1992,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Norvasc."
+    },
+    {
+      "year": 2002,
+      "title": "ALLHAT",
+      "detail": "Amlodipine is as effective as chlorthalidone for coronary outcomes in hypertension, with more heart failure."
+    },
+    {
+      "year": 2005,
+      "title": "ASCOT-BPLA",
+      "detail": "An amlodipine-based regimen reduces total mortality and stroke versus an atenolol-based regimen."
+    },
+    {
+      "year": 2007,
+      "title": "US generics",
+      "detail": "Generic amlodipine becomes available in the US."
+    },
+    {
+      "year": 2008,
+      "title": "ACCOMPLISH",
+      "detail": "Benazepril plus amlodipine outperforms benazepril plus hydrochlorothiazide."
+    }
+  ],
+  "pk": {
+    "half_life": "~30–50 h",
+    "bioavailability": "~64–90%",
+    "metabolism": "Extensive hepatic CYP3A4",
+    "excretion": "Renal (mainly metabolites)"
+  },
   "safety": {
-    "common": [],
-    "serious": [],
+    "common": [
+      "Peripheral (ankle) oedema",
+      "Flushing",
+      "Headache",
+      "Dizziness",
+      "Palpitations"
+    ],
+    "serious": [
+      "Hypotension",
+      "Worsening angina or MI on initiation (rare)",
+      "Gingival hyperplasia"
+    ],
     "boxed_warning": null
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "facts": [
+    "Ankle oedema is dose-related and caused by precapillary vasodilation, not fluid retention, so diuretics help little.",
+    "It is one of the most prescribed medicines in the United States."
+  ],
+  "related": [
+    "nifedipine",
+    "diltiazem",
+    "verapamil",
+    "valsartan",
+    "atorvastatin"
+  ],
+  "references": [
+    {
+      "title": "Amlodipine – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Amlodipine"
+    },
+    {
+      "title": "DailyMed – amlodipine labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=amlodipine"
+    }
+  ],
+  "stage": "written"
 }

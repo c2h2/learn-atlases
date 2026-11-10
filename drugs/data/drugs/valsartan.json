@@ -1,36 +1,124 @@
 {
   "slug": "valsartan",
   "name": "Valsartan",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "CGP 48933"
+  ],
+  "brands": [
+    "Diovan",
+    "Exforge (with amlodipine)",
+    "Diovan HCT"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Angiotensin II receptor blocker (ARB, sartan)",
+  "modality": "small-molecule",
+  "routes": [
+    "oral"
+  ],
+  "route_note": "oral tablet or solution once or twice daily",
+  "targets": [
+    "AGTR1"
+  ],
+  "origin": "synthetic",
+  "originator": "Ciba-Geigy (now Novartis)",
+  "owner": "generic (many); Diovan brand held by Novartis",
+  "first_approval": {
+    "year": 1996,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Diovan"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Ciba-Geigy",
+    "note": "A non-heterocyclic sartan developed in Basel."
+  },
+  "generic": true,
+  "who_essential": null,
+  "rx_status": "prescription",
+  "tagline": "Blockbuster ARB at the centre of the 2018 nitrosamine contamination recall",
+  "summary": "Valsartan is an angiotensin II receptor blocker used for hypertension, heart failure and left ventricular dysfunction after myocardial infarction. It is also a component of sacubitril/valsartan, and in 2018 contaminated generic supplies triggered a global recall.",
+  "mechanism": [
+    "Angiotensin II receptor blockers selectively block the AT1 receptor, preventing angiotensin II from causing vasoconstriction, aldosterone release, sympathetic activation and sodium retention. Because ACE is not inhibited, bradykinin does not accumulate, so cough is uncommon.",
+    "Valsartan is active as given and is excreted largely unchanged in bile, so it has few metabolic drug interactions."
+  ],
+  "uses": [
+    "Hypertension (adults and children)",
+    "Heart failure (NYHA II–IV)",
+    "Left ventricular failure or dysfunction after myocardial infarction"
+  ],
+  "history": [
+    {
+      "year": 1996,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Diovan."
+    },
+    {
+      "year": 2001,
+      "title": "Val-HeFT",
+      "detail": "Valsartan reduces heart failure hospitalisation when added to standard therapy."
+    },
+    {
+      "year": 2003,
+      "title": "VALIANT",
+      "detail": "Valsartan is as effective as captopril after MI with heart failure or LV dysfunction."
+    },
+    {
+      "year": 2013,
+      "title": "Japanese data scandal",
+      "detail": "Papers from Japanese investigator-led valsartan trials are retracted after data manipulation involving a Novartis employee."
+    },
+    {
+      "year": 2014,
+      "title": "US generics",
+      "detail": "Generic valsartan launches in the US."
+    },
+    {
+      "year": 2018,
+      "title": "NDMA recall",
+      "detail": "Valsartan made with active ingredient from a Chinese supplier is found to contain the probable carcinogen NDMA, prompting worldwide recalls and new nitrosamine controls."
+    }
+  ],
+  "pk": {
+    "half_life": "~6 h",
+    "bioavailability": "~25%",
+    "metabolism": "~20% metabolised (CYP2C9 minor)",
+    "excretion": "~83% faeces, ~13% urine, mostly unchanged"
+  },
+  "safety": {
+    "common": [
+      "Dizziness",
+      "Hypotension",
+      "Hyperkalaemia",
+      "Rise in serum creatinine"
+    ],
+    "serious": [
+      "Acute kidney injury (especially with renal artery stenosis)",
+      "Severe hyperkalaemia",
+      "Angioedema (rare)",
+      "Fetal toxicity"
+    ],
+    "boxed_warning": "Fetal toxicity: drugs acting on the renin-angiotensin system can cause injury and death to the developing fetus; discontinue when pregnancy is detected."
+  },
+  "facts": [
+    "The 2018 contamination led regulators worldwide to require nitrosamine risk assessments for all medicines."
+  ],
+  "related": [
+    "losartan",
+    "sacubitril-valsartan",
+    "amlodipine",
+    "hydrochlorothiazide"
+  ],
+  "references": [
+    {
+      "title": "Valsartan – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Valsartan"
+    },
+    {
+      "title": "DailyMed – valsartan labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=valsartan"
+    }
+  ],
+  "stage": "written"
 }

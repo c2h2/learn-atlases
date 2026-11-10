@@ -1,36 +1,130 @@
 {
   "slug": "enalapril",
   "name": "Enalapril",
-  "aliases": [],
-  "brands": [],
+  "aliases": [
+    "enalapril maleate",
+    "enalaprilat (active form)",
+    "MK-421"
+  ],
+  "brands": [
+    "Vasotec",
+    "Renitec",
+    "Innovace",
+    "Epaned"
+  ],
   "area": "cardiovascular",
   "batch": "01",
-  "drug_class": null,
-  "modality": null,
-  "routes": [],
-  "route_note": null,
-  "targets": [],
-  "origin": null,
-  "originator": null,
-  "owner": null,
-  "first_approval": null,
-  "discovery": null,
-  "generic": null,
-  "who_essential": null,
-  "rx_status": null,
-  "tagline": null,
-  "summary": null,
-  "mechanism": [],
-  "uses": [],
-  "history": [],
-  "pk": {},
-  "safety": {
-    "common": [],
-    "serious": [],
-    "boxed_warning": null
+  "drug_class": "Angiotensin-converting enzyme (ACE) inhibitor",
+  "modality": "small-molecule",
+  "routes": [
+    "oral",
+    "iv"
+  ],
+  "route_note": "oral tablet or solution once or twice daily; IV enalaprilat for hypertensive emergencies",
+  "targets": [
+    "ACE"
+  ],
+  "origin": "synthetic",
+  "originator": "Merck & Co.",
+  "owner": "generic (many)",
+  "first_approval": {
+    "year": 1985,
+    "agency": "FDA",
+    "country": "US",
+    "brand": "Vasotec"
   },
-  "facts": [],
-  "related": [],
-  "references": [],
-  "stage": "skeleton"
+  "discovery": {
+    "year": null,
+    "by": "Arthur Patchett and colleagues, Merck",
+    "note": "A carboxyalkyl dipeptide designed to avoid captopril's thiol group; given as an ethyl-ester prodrug."
+  },
+  "generic": true,
+  "who_essential": true,
+  "rx_status": "prescription",
+  "tagline": "ACE inhibitor prodrug that first proved survival benefit in heart failure",
+  "summary": "Enalapril is an ACE inhibitor prodrug converted in the liver to enalaprilat. The CONSENSUS and SOLVD trials established that ACE inhibition reduces mortality in heart failure, and enalapril is widely used for hypertension and heart failure.",
+  "mechanism": [
+    "Angiotensin-converting enzyme converts angiotensin I to the vasoconstrictor angiotensin II and also breaks down bradykinin. Inhibiting it lowers angiotensin II, causing vasodilation, reduced aldosterone secretion and less sodium retention, while bradykinin accumulates.",
+    "Enalapril itself is poorly active; hepatic esterases convert it to enalaprilat, which binds ACE tightly. Enalaprilat is poorly absorbed orally, so it is given IV when needed.",
+    "In the kidney, reduced efferent arteriolar constriction lowers glomerular pressure and proteinuria. Bradykinin accumulation contributes to vasodilation and is thought to cause the characteristic dry cough and, rarely, angioedema."
+  ],
+  "uses": [
+    "Hypertension (adults and children)",
+    "Symptomatic heart failure",
+    "Asymptomatic left ventricular dysfunction"
+  ],
+  "history": [
+    {
+      "year": 1985,
+      "title": "FDA approval",
+      "detail": "Approved in the US as Vasotec."
+    },
+    {
+      "year": 1987,
+      "title": "CONSENSUS",
+      "detail": "Enalapril reduces mortality in severe heart failure, the first such trial for an ACE inhibitor."
+    },
+    {
+      "year": 1991,
+      "title": "SOLVD",
+      "detail": "Benefit is extended to mild-to-moderate heart failure and asymptomatic LV dysfunction."
+    },
+    {
+      "year": 2000,
+      "title": "US generics",
+      "detail": "Generic enalapril becomes widely available in the US."
+    },
+    {
+      "year": 2014,
+      "title": "PARADIGM-HF comparator",
+      "detail": "Enalapril serves as the active comparator in the trial that established sacubitril/valsartan."
+    }
+  ],
+  "pk": {
+    "half_life": "~11 h (effective, enalaprilat)",
+    "bioavailability": "~60% absorbed; ~40% as enalaprilat",
+    "metabolism": "Hepatic hydrolysis to enalaprilat",
+    "excretion": "Renal"
+  },
+  "safety": {
+    "common": [
+      "Dry cough",
+      "Dizziness",
+      "Hypotension",
+      "Hyperkalaemia",
+      "Rise in serum creatinine"
+    ],
+    "serious": [
+      "Angioedema",
+      "Acute kidney injury (especially with renal artery stenosis)",
+      "Severe hyperkalaemia",
+      "Fetal toxicity"
+    ],
+    "boxed_warning": "Fetal toxicity: drugs acting on the renin-angiotensin system can cause injury and death to the developing fetus; discontinue when pregnancy is detected."
+  },
+  "facts": [
+    "It was Merck's first billion-dollar-a-year drug.",
+    "Enalapril is the ACE inhibitor on the WHO Model List of Essential Medicines."
+  ],
+  "related": [
+    "captopril",
+    "lisinopril",
+    "ramipril",
+    "sacubitril-valsartan"
+  ],
+  "references": [
+    {
+      "title": "Enalapril – Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Enalapril"
+    },
+    {
+      "title": "DailyMed – enalapril labels",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/search.cfm?query=enalapril"
+    },
+    {
+      "title": "CONSENSUS Trial Study Group. Effects of enalapril on mortality in severe congestive heart failure. N Engl J Med 1987",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/2883575/"
+    }
+  ],
+  "stage": "written"
 }
