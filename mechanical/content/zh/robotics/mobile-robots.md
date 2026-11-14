@@ -189,7 +189,7 @@ caption: 线性化的路径跟踪误差动态[[#eq-lateral]]（横轴：横向�
 2. 用测量模型$p(\mathbf z_k\mid\mathbf q_k)$进行**校正**：$\mathrm{bel}(\mathbf q_k) = \eta\,p(\mathbf z_k\mid\mathbf q_k)\,\overline{\mathrm{bel}}(\mathbf q_k)$，其中$\eta$为归一化常数。不确定性减小。
 :::
 
-预测就是全概率公式，校正就是贝叶斯公式（[条件概率](/learn/maths/lesson.php?c=probability&l=conditional-probability)）；使递推成立的假设是马尔可夫性——给定当前位姿，过去的测量和控制不再提供更多信息。各种实现的区别在于如何表示置信度：概率栅格（直方图滤波）、高斯分布（[[robotics/motion-planning-perception]]中的卡尔曼滤波），或一组样本（粒子滤波，广泛用于已知地图中的定位）。
+预测就是全概率公式，校正就是贝叶斯公式（[条件概率](/a/maths/lesson.php?c=probability&l=conditional-probability)）；使递推成立的假设是马尔可夫性——给定当前位姿，过去的测量和控制不再提供更多信息。各种实现的区别在于如何表示置信度：概率栅格（直方图滤波）、高斯分布（[[robotics/motion-planning-perception]]中的卡尔曼滤波），或一组样本（粒子滤波，广泛用于已知地图中的定位）。
 
 **建图**是反过来的问题：已知位姿，估计地图。**占据栅格**把地面划分成单元格，每个单元格有一个被占据的概率，用贝叶斯公式独立地更新。采用**对数几率**$\ell = \ln\frac{p}{1-p}$可以把更新变成加法：每次测量加上$\ln\frac{p(\text{占据}\mid z)}{1 - p(\text{占据}\mid z)}$（减去先验的对数几率），因此一个反复被观测为占据的单元格会线性地积累证据。
 

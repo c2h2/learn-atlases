@@ -1,6 +1,6 @@
 A transcription factor represses its own gene. Does that make its concentration steadier, or make it oscillate? Both answers can be defended in words. Repression pushes the level down whenever it rises and lets it recover whenever it falls, which sounds stabilising; but the repressor takes time to be made, so by the time it acts the level may already have changed direction, which sounds like a recipe for overshoot. Which effect wins depends on how strong the repression is, how sharp it is and how long the delay lasts — on numbers, not on the wiring diagram. Verbal reasoning about feedback, cooperativity and competition between processes is unreliable precisely where biology is most interesting. A **mathematical model** turns the wiring diagram and the rates into equations whose consequences can be worked out without self-deception, and then compared with experiment.
 
-This chapter lays the foundations used in the rest of the course. We discuss what models are for and what kinds exist, how to translate molecular processes into **kinetic equations** using the **law of mass action**, how to count molecules in a cell, what a **steady state** is and how it differs from equilibrium, how to tell whether a steady state is stable, and how differences in **time scale** let us simplify a model — the idea behind the Michaelis–Menten equation. The molecular processes themselves (transcription, translation, regulation by transcription factors) were described in [[molecular-biology/eukaryotic-gene-regulation]] and [[molecular-biology/bacterial-gene-regulation]]; here we turn them into mathematics. The calculus of first-order differential equations is in [first-order equations](/learn/maths/lesson.php?c=ode&l=first-order) in Maths Atlas, which this chapter uses but does not re-teach.
+This chapter lays the foundations used in the rest of the course. We discuss what models are for and what kinds exist, how to translate molecular processes into **kinetic equations** using the **law of mass action**, how to count molecules in a cell, what a **steady state** is and how it differs from equilibrium, how to tell whether a steady state is stable, and how differences in **time scale** let us simplify a model — the idea behind the Michaelis–Menten equation. The molecular processes themselves (transcription, translation, regulation by transcription factors) were described in [[molecular-biology/eukaryotic-gene-regulation]] and [[molecular-biology/bacterial-gene-regulation]]; here we turn them into mathematics. The calculus of first-order differential equations is in [first-order equations](/a/maths/lesson.php?c=ode&l=first-order) in Maths Atlas, which this chapter uses but does not re-teach.
 
 ## Why model?
 
@@ -150,7 +150,7 @@ $K_\mathrm{d} = k_\mathrm{off}/k_\mathrm{on} = 0.01/10^6 = 10^{-8}$ M $= 10$ nM.
 :::
 :::
 
-The following short program integrates [[#eq-binding]] for the depletion example with Euler's method (see [numerical ODEs](/learn/maths/lesson.php?c=numerical-analysis&l=numerical-odes) for why a small step is needed) and compares the result with the exact equilibrium.
+The following short program integrates [[#eq-binding]] for the depletion example with Euler's method (see [numerical ODEs](/a/maths/lesson.php?c=numerical-analysis&l=numerical-odes) for why a small step is needed) and compares the result with the exact equilibrium.
 
 ```python
 import math
@@ -238,7 +238,7 @@ For one variable, $dx/dt = f(x)$, the test is simple. Near $x^*$, write $x = x^*
 A steady state $x^*$ of $dx/dt = f(x)$ is stable if $f'(x^*) < 0$ and unstable if $f'(x^*) > 0$. Deviations decay (or grow) with time constant $1/\abs{f'(x^*)}$. If $f'(x^*) = 0$ the linear test is inconclusive. **Assumption:** $f$ is differentiable near $x^*$.
 :::
 
-Graphically: plot $f(x)$ against $x$. Steady states are where the curve crosses the axis; a crossing from positive to negative (downwards) is stable, because to its left $x$ increases and to its right $x$ decreases. For the production–removal model, $f(x) = \beta - \alpha x$ has $f' = -\alpha < 0$: its unique steady state is stable. For systems of two or more variables, the derivative becomes the **Jacobian matrix** and stability is decided by its eigenvalues — the subject of [nonlinear systems](/learn/maths/lesson.php?c=ode&l=nonlinear-systems) in Maths Atlas, used heavily in [[systems-biology/switches-oscillators]].
+Graphically: plot $f(x)$ against $x$. Steady states are where the curve crosses the axis; a crossing from positive to negative (downwards) is stable, because to its left $x$ increases and to its right $x$ decreases. For the production–removal model, $f(x) = \beta - \alpha x$ has $f' = -\alpha < 0$: its unique steady state is stable. For systems of two or more variables, the derivative becomes the **Jacobian matrix** and stability is decided by its eigenvalues — the subject of [nonlinear systems](/a/maths/lesson.php?c=ode&l=nonlinear-systems) in Maths Atlas, used heavily in [[systems-biology/switches-oscillators]].
 
 ::: quiz
 For $dx/dt = f(x)$, the curve $f(x)$ crosses zero at $x = 2$ going upwards (negative to the left, positive to the right). What can you say about the steady state $x^* = 2$?
@@ -312,7 +312,7 @@ $$
 \frac{du}{d\tau} = 1 - u,
 $$
 
-with no parameters at all: every production–removal process is the same process seen at a different scale. For more complicated models the dimensionless groups that remain are the ones that control the behaviour — the Hill coefficient and the ratio of production to threshold in a feedback loop, or the ratio of diffusion coefficients in a Turing pattern. Finding them is usually the first step of any analysis; Maths Atlas discusses the technique alongside [first-order equations](/learn/maths/lesson.php?c=ode&l=first-order).
+with no parameters at all: every production–removal process is the same process seen at a different scale. For more complicated models the dimensionless groups that remain are the ones that control the behaviour — the Hill coefficient and the ratio of production to threshold in a feedback loop, or the ratio of diffusion coefficients in a Turing pattern. Finding them is usually the first step of any analysis; Maths Atlas discusses the technique alongside [first-order equations](/a/maths/lesson.php?c=ode&l=first-order).
 
 ## A modelling workflow
 

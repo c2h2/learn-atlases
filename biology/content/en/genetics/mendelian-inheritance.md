@@ -159,7 +159,7 @@ P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}, \qquad k = 0, 1, \dots, n .
 $$ {#eq-binomial}
 :::
 
-The binomial coefficient $\binom{n}{k} = \dfrac{n!}{k!\,(n-k)!}$ counts the orders in which $k$ offspring of one kind and $n-k$ of the other can be born. These rules are developed properly in [Maths Atlas](/learn/maths/) and in [[biostatistics]]; here we use them.
+The binomial coefficient $\binom{n}{k} = \dfrac{n!}{k!\,(n-k)!}$ counts the orders in which $k$ offspring of one kind and $n-k$ of the other can be born. These rules are developed properly in [Maths Atlas](/a/maths/) and in [[biostatistics]]; here we use them.
 
 ::: example A trihybrid cross by branch counting {#ex-trihybrid}
 Consider *Aa Bb Cc* × *Aa Bb Cc*, with all three loci unlinked and *A*, *B*, *C* dominant. (a) What fraction of the offspring show all three dominant traits? (b) What fraction are *Aa bb Cc*? (c) How many genotypes and how many phenotypes are possible?
@@ -183,7 +183,7 @@ Each child is independently affected with probability $p = \tfrac14$.
 
 (c) A specified order has no binomial coefficient: $(\tfrac34)^2(\tfrac14)^2 = \tfrac{9}{256} \approx 0.035$.
 
-The $\tfrac14$ applies to *each* child independently: having one affected child does not make the next one less likely to be affected — chance has no memory. (This is a textbook probability calculation, not clinical guidance; the genetics of cystic fibrosis in medicine is treated in [Medicine Atlas](/learn/medicine/lesson.php?c=genetics&l=mendelian-inheritance).)
+The $\tfrac14$ applies to *each* child independently: having one affected child does not make the next one less likely to be affected — chance has no memory. (This is a textbook probability calculation, not clinical guidance; the genetics of cystic fibrosis in medicine is treated in [Medicine Atlas](/a/medicine/lesson.php?c=genetics&l=mendelian-inheritance).)
 :::
 :::
 

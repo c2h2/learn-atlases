@@ -117,7 +117,7 @@ $$ {#eq-interior}
 
 which lies between 0 and 1 exactly when $w_{12}$ is either larger than both homozygote fitnesses (overdominance) or smaller than both (underdominance).
 
-To decide whether an equilibrium is stable, we linearise. A discrete map $p' = f(p)$ with fixed point $\hat p$ is locally stable if $\lvert f'(\hat p)\rvert < 1$, unstable if $\lvert f'(\hat p)\rvert > 1$, and the approach is monotone if $0 < f'(\hat p) < 1$ (difference equations are treated in [Maths Atlas](/learn/maths/)).
+To decide whether an equilibrium is stable, we linearise. A discrete map $p' = f(p)$ with fixed point $\hat p$ is locally stable if $\lvert f'(\hat p)\rvert < 1$, unstable if $\lvert f'(\hat p)\rvert > 1$, and the approach is monotone if $0 < f'(\hat p) < 1$ (difference equations are treated in [Maths Atlas](/a/maths/)).
 
 ::: proposition Stability of the one-locus equilibria {#prop-stability}
 For two alleles with fitnesses $w_{11}, w_{12}, w_{22}$:

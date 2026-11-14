@@ -163,7 +163,7 @@ Homeostasis keeps a few variables within limits, and it does so by letting other
 :::
 
 ::: application When control fails
-Many human diseases can be understood as failures of a homeostatic loop: a sensor that no longer detects, an effector that no longer responds, or a set point that has moved. In type 1 diabetes, the insulin-secreting cells that act as both sensor and effector of glucose regulation are destroyed, and glucose is no longer held in range; in type 2 diabetes the tissues respond less to insulin, so the loop gain falls. The clinical physiology of body fluids and their regulation is in [Medicine Atlas: homeostasis and body fluids](/learn/medicine/lesson.php?c=physiology&l=homeostasis-body-fluids); this course stays with the comparative picture.
+Many human diseases can be understood as failures of a homeostatic loop: a sensor that no longer detects, an effector that no longer responds, or a set point that has moved. In type 1 diabetes, the insulin-secreting cells that act as both sensor and effector of glucose regulation are destroyed, and glucose is no longer held in range; in type 2 diabetes the tissues respond less to insulin, so the loop gain falls. The clinical physiology of body fluids and their regulation is in [Medicine Atlas: homeostasis and body fluids](/a/medicine/lesson.php?c=physiology&l=homeostasis-body-fluids); this course stays with the comparative picture.
 :::
 
 ## Regulators and conformers

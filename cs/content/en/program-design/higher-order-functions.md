@@ -52,7 +52,7 @@ $ python3 series.py
 
 ### Functions that return functions
 
-A higher-order function can also *make* functions. The derivative of $f$ is a function, and so it is natural to compute it with a function that returns a function. The central difference $\frac{f(x+h) - f(x-h)}{2h}$ approximates $f'(x)$ with an error proportional to $h^2$ for smooth $f$, as long as $h$ is not so small that rounding errors dominate. Newton's method, used below, is analysed in [Maths Atlas: root finding](/learn/maths/lesson.php?c=numerical-analysis&l=root-finding).
+A higher-order function can also *make* functions. The derivative of $f$ is a function, and so it is natural to compute it with a function that returns a function. The central difference $\frac{f(x+h) - f(x-h)}{2h}$ approximates $f'(x)$ with an error proportional to $h^2$ for smooth $f$, as long as $h$ is not so small that rounding errors dominate. Newton's method, used below, is analysed in [Maths Atlas: root finding](/a/maths/lesson.php?c=numerical-analysis&l=root-finding).
 
 ```python
 def deriv(f, h=1e-6):

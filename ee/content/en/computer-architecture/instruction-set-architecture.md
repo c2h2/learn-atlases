@@ -2,7 +2,7 @@ Open any electronic product with a screen, a motor or a radio in it and you will
 
 The ISA is the contract between hardware and software. A compiler writer needs to know nothing about pipelines, caches or transistor sizes; it is enough to know what each instruction does. A hardware designer needs to know nothing about the programs that will run; it is enough to implement every instruction exactly as specified. Because of this contract, a program compiled in 2010 for a 64-bit Arm phone still runs on a 2026 phone whose implementation is completely different, and the same Linux kernel image boots on processors from several vendors. In this chapter we learn one ISA well — **RISC-V**, an open instruction set designed for teaching and industry alike — and use it to see how the constructs of a high-level language become instructions and how instructions become bits. The rest of the course then builds hardware that executes these bits.
 
-This chapter takes the hardware designer's view of the instruction set: what the instructions must provide and why they are encoded as they are. The programmer's view of machine code, with x86-64 and the details of how a C compiler uses it, is in [Machine-level programs](/learn/cs/lesson.php?c=computer-systems&l=machine-code). Binary and two's complement numbers are assumed from [[digital-logic/number-systems]].
+This chapter takes the hardware designer's view of the instruction set: what the instructions must provide and why they are encoded as they are. The programmer's view of machine code, with x86-64 and the details of how a C compiler uses it, is in [Machine-level programs](/a/cs/lesson.php?c=computer-systems&l=machine-code). Binary and two's complement numbers are assumed from [[digital-logic/number-systems]].
 
 ## The stored-program computer
 
@@ -385,7 +385,7 @@ If `dist2` had forgotten to save `ra`, its own `ret` would jump to the instructi
 :::
 
 ::: remark Saving registers costs memory traffic
-Every saved register is a store on entry and a load on exit. The split into caller-saved and callee-saved registers lets the compiler choose: values that do not need to survive a call go in temporaries (no saving at all in a leaf procedure), and values that do go in saved registers (saved once per procedure, not once per call). Register allocation, the compiler's task of making these choices, is described in [Code generation and register allocation](/learn/cs/lesson.php?c=compilers&l=code-generation).
+Every saved register is a store on entry and a load on exit. The split into caller-saved and callee-saved registers lets the compiler choose: values that do not need to survive a call go in temporaries (no saving at all in a leaf procedure), and values that do go in saved registers (saved once per procedure, not once per call). Register allocation, the compiler's task of making these choices, is described in [Code generation and register allocation](/a/cs/lesson.php?c=compilers&l=code-generation).
 :::
 
 ## Designing an instruction set
@@ -427,7 +427,7 @@ The stored-program principle was set out in John von Neumann's *First Draft of a
 
 ## Where this leads
 
-The next chapter, [[computer-architecture/computer-arithmetic]], builds the circuits that the arithmetic instructions need: fast adders, multipliers, dividers and floating-point units. [[computer-architecture/single-cycle-processor]] then turns the formats of this chapter into a datapath — register file, immediate generator, ALU and memories — and a control unit that decodes the opcode, and [[computer-architecture/pipelining]] overlaps instructions, where the regular encoding pays off. The calling convention and the stack reappear when interrupts must save state in [[computer-architecture/input-output]]. On the software side, the compiler's choice of instructions is the subject of [Code generation and register allocation](/learn/cs/lesson.php?c=compilers&l=code-generation), and embedded programs written close to the hardware are the subject of [[embedded-systems]].
+The next chapter, [[computer-architecture/computer-arithmetic]], builds the circuits that the arithmetic instructions need: fast adders, multipliers, dividers and floating-point units. [[computer-architecture/single-cycle-processor]] then turns the formats of this chapter into a datapath — register file, immediate generator, ALU and memories — and a control unit that decodes the opcode, and [[computer-architecture/pipelining]] overlaps instructions, where the regular encoding pays off. The calling convention and the stack reappear when interrupts must save state in [[computer-architecture/input-output]]. On the software side, the compiler's choice of instructions is the subject of [Code generation and register allocation](/a/cs/lesson.php?c=compilers&l=code-generation), and embedded programs written close to the hardware are the subject of [[embedded-systems]].
 
 ::: summary
 - The ISA ([[#def-isa]]) is the contract between software and hardware: instructions, registers, memory model and encodings. Many implementations can share one ISA.

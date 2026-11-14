@@ -1,6 +1,6 @@
 “模型有$94\%$准确”既可能是天大的好消息，也可能毫无意义，还可能是一场伪装起来的灾难。当$94\%$的样例都属于同一个类别，以至于一个永远回答“不”的模型也能得同样的分数时，这个数毫无意义；当它做错的$6\%$偏偏是要紧的场合时，它就是灾难；而要是测试集很小，或者曾用它来挑选模型，那连$94\%$都未必靠得住。评测正是[[ml-fundamentals/generalisation]]中的统计严谨落到实处的地方：选择度量真正要紧之处的**指标**，检查预测概率靠不靠得住（**校准**），给每个数字附上**不确定性**，并以换一批新样本也站得住的方式**比较**模型。
 
-本章发展分类器的标准工具箱——混淆矩阵、精确率与召回率、ROC曲线及其下面积、恰当评分规则与校准、置信区间与配对检验——最后以回归与语言模型的指标收尾。用到的统计工具（标准误差、置信区间、配对比较）已在[[math-for-ml/estimation#sec-evaluation]]引入，这里系统地加以运用。数学图谱中[置信区间](/learn/maths/lesson.php?c=statistics&l=confidence-intervals)与[假设检验](/learn/maths/lesson.php?c=statistics&l=hypothesis-testing)两课给出背景，而大语言模型的评测专门是[[evaluation]]的主题。
+本章发展分类器的标准工具箱——混淆矩阵、精确率与召回率、ROC曲线及其下面积、恰当评分规则与校准、置信区间与配对检验——最后以回归与语言模型的指标收尾。用到的统计工具（标准误差、置信区间、配对比较）已在[[math-for-ml/estimation#sec-evaluation]]引入，这里系统地加以运用。数学图谱中[置信区间](/a/maths/lesson.php?c=statistics&l=confidence-intervals)与[假设检验](/a/maths/lesson.php?c=statistics&l=hypothesis-testing)两课给出背景，而大语言模型的评测专门是[[evaluation]]的主题。
 
 ## 混淆矩阵 {#sec-confusion}
 

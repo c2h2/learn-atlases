@@ -226,7 +226,7 @@ Guglielmo Marconi's radio telegraphy came at the start of the twentieth century,
 
 ## Where this leads
 
-This chapter completes the tour of the layers. Security for wireless and mobile networks — WPA3, cellular authentication, tracking and location privacy — is developed in [[security]], and the cryptography behind it in [[cryptography]]. Services that must keep working as devices move, disconnect and reconnect — replicated data, synchronisation, consistency — are the subject of [[distributed-systems]]. The physics of antennas, modulation and coding belongs to the [Electrical Engineering Atlas](/learn/ee/), and Shannon's theory to courses on information theory.
+This chapter completes the tour of the layers. Security for wireless and mobile networks — WPA3, cellular authentication, tracking and location privacy — is developed in [[security]], and the cryptography behind it in [[cryptography]]. Services that must keep working as devices move, disconnect and reconnect — replicated data, synchronisation, consistency — are the subject of [[distributed-systems]]. The physics of antennas, modulation and coding belongs to the [Electrical Engineering Atlas](/a/ee/), and Shannon's theory to courses on information theory.
 
 ::: summary
 - Radio signals suffer **path loss** ([[#eq-fspl]]), multipath **fading** and **interference**; the **SNR** ([[#def-snr]]) determines the bit error rate of each modulation, and **rate adaptation** picks the scheme frame by frame.

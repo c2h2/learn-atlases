@@ -2,7 +2,7 @@
 
 本章把"小"变成一套系统的方法。我们把哈密顿量写成可解部分加一个修正，把能量和态按修正的幂展开，再读出前几项。这个方法称为**定态**（或**不含时**）**微扰论**，因为修正不依赖时间；依赖时间的微扰在 [[quantum-2/time-dependent]] 中处理。我们推导一阶与二阶公式，说明简并能级为什么要单独处理，然后把两者分别用于氢的精细结构以及塞曼效应与斯塔克效应。最后一节是变分法：没有小参数时，它给出基态能量的上界；它的第一个胜利是氦的基态，误差不超过百分之二。
 
-语言沿用 [[quantum-1/formalism]]：右矢、厄米算符、标准正交本征基。精细结构一节要用到 [[quantum-1/angular-momentum]] 的角动量相加与 [[quantum-1/spin]] 的自旋。同样的思想以化学家的侧重出现在化学图谱的[近似方法](/learn/chemistry/lesson.php?c=quantum-chemistry&l=approximation-methods)一课中。
+语言沿用 [[quantum-1/formalism]]：右矢、厄米算符、标准正交本征基。精细结构一节要用到 [[quantum-1/angular-momentum]] 的角动量相加与 [[quantum-1/spin]] 的自旋。同样的思想以化学家的侧重出现在化学图谱的[近似方法](/a/chemistry/lesson.php?c=quantum-chemistry&l=approximation-methods)一课中。
 
 ## 展开式的建立 {#setup}
 

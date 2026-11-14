@@ -20,7 +20,7 @@ if (PHP_SAPI !== 'cli') {
 }
 require __DIR__ . '/../inc/bootstrap.php';
 
-const UA = 'PeptideAtlas/1.0 (https://f.g77k.com/learn/peptides/; public research visualisation)';
+const UA = 'PeptideAtlas/1.0 (https://f.g77k.com/a/peptides/; public research visualisation)';
 const MAX_AGE = 7 * 86400;
 
 $args = array_slice($argv, 1);

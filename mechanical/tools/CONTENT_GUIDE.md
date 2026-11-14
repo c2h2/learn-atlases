@@ -1,13 +1,13 @@
 # Mechanical & Aerospace Atlas — content guide
 
-Mechanical & Aerospace Atlas (`/learn/mechanical/`) teaches the undergraduate mechanical and
+Mechanical & Aerospace Atlas (`/a/mechanical/`) teaches the undergraduate mechanical and
 aerospace engineering curriculum in depth. Every chapter is a long, self-contained lesson in the
 style of a very good textbook: a physical picture and motivation first, then precise definitions,
 the governing laws with their derivations, many fully worked examples with real numbers and
 units, interactive figures, quick checks, and graded exercises with full solutions.
 
-The site runs on the same engine as Maths Atlas (`/learn/maths/`). Its reference lesson,
-`/var/www/f.g77k.com/learn/maths/content/en/calculus-1/limits.md`, shows the expected depth, tone
+The site runs on the same engine as Maths Atlas (`/a/maths/`). Its reference lesson,
+`/var/www/f.g77k.com/a/maths/content/en/calculus-1/limits.md`, shows the expected depth, tone
 and markup: read it before writing.
 
 **Status: curriculum skeleton.** Every chapter shows "to be written" until its lesson exists, and
@@ -26,8 +26,8 @@ The curriculum — 27 courses and 241 chapters in seven areas (solid mechanics, 
 vibration, thermofluids, materials and manufacturing, design, control and robotics, aerospace)
 over four years — is fixed in the `course.json` files. **Do not rename, add, remove or reorder
 courses or chapters**: other lessons and the map link to them. Electric circuits and electronics
-are taught in the Electrical Engineering Atlas (`/learn/ee/`) and the mathematics in Maths Atlas
-(`/learn/maths/`); link to them instead of re-teaching them.
+are taught in the Electrical Engineering Atlas (`/a/ee/`) and the mathematics in Maths Atlas
+(`/a/maths/`); link to them instead of re-teaching them.
 
 ## 2. course.json — what to fill in
 
@@ -80,7 +80,7 @@ reliable source; do not repeat events that are already in a course's `history`.
 - Audience: students who have done the prerequisite chapters. Explain from scratch, give the
   physical picture before the equations, then be exact. Link to Maths Atlas for mathematical tools
   (vectors, ODEs, linear algebra, Laplace and Fourier transforms) and to Physics Atlas
-  (`/learn/physics/`) for the underlying physics.
+  (`/a/physics/`) for the underlying physics.
 - **British spelling** (modelling, behaviour, centre, fibre, vapour, aluminium, manoeuvre) except
   in names, quotations and the titles of standards.
 - **Units: SI throughout** — N, Pa (kPa, MPa, GPa), J, W, kg, m (mm), s, K or °C — and carry the
@@ -131,7 +131,7 @@ reliable source; do not repeat events that are already in a course's `history`.
 
 ## 5. Markup
 
-Exactly as in Maths Atlas — see `/var/www/f.g77k.com/learn/maths/tools/CONTENT_GUIDE.md` §5 for
+Exactly as in Maths Atlas — see `/var/www/f.g77k.com/a/maths/tools/CONTENT_GUIDE.md` §5 for
 blocks, references (`[[#id]]`, `[[course/chapter]]`, `[[course/chapter#id]]`), answer checks and
 KaTeX. Notation used across the atlas:
 
@@ -164,7 +164,7 @@ The available types are in `data/widgets.json`: `plot`, `parametric`, `newton`, 
 `svd`, `rowreduce`, `surface`, `contour`, `vectorfield`, `region`, `gradientdescent`,
 `slopefield`, `phaseplane`, `odesolver`, `oscillator`, `fourier`, `heat`, `interpolation`,
 `quadrature`, `iterative`, `distribution` and `montecarlo`; try each at
-`/learn/mechanical/lab.php?w=<type>`. `tools/WIDGET_GUIDE.md` lists what they already cover in
+`/a/mechanical/lab.php?w=<type>`. `tools/WIDGET_GUIDE.md` lists what they already cover in
 this subject and the planned mechanical and aerospace types (free-body diagrams, trusses, beam
 diagrams, Mohr's circle, linkages, cams, gear trains, thermodynamic cycles, the Moody chart, fins,
 heat exchangers, airfoils, control loops, robot arms, shocks and orbital transfers …). Use a type
@@ -174,11 +174,11 @@ and what to notice.
 ## 7. Check your work
 
 ```
-cd /var/www/f.g77k.com/learn/mechanical
+cd /var/www/f.g77k.com/a/mechanical
 bash tools/check.sh <course> [<course> …]
 ```
 
 Fix every `ERROR`; depth `warn`ings must be gone for finished lessons. Preview at
-`http://f.g77k.com/learn/mechanical/lesson.php?c=<course>&l=<chapter>` (from this machine:
+`http://f.g77k.com/a/mechanical/lesson.php?c=<course>&l=<chapter>` (from this machine:
 `curl --resolve f.g77k.com:80:127.0.0.1 …` or
 `node tools/shot.js "lesson.php?c=…&l=…" out.png`). Read your rendered lesson at least once.

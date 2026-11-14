@@ -240,7 +240,7 @@ Alexander Crum Brown and Thomas Fraser's paper of 1868 was the first explicit st
 
 ## Where this leads
 
-SAR tells us what matters; protein structures tell us why. [[medicinal-chemistry/structure-based-design]] uses crystal structures, docking and free-energy calculations to make the moves of this chapter deliberate rather than empirical, and [[medicinal-chemistry/drug-case-studies]] follows SAR campaigns that produced β-lactams, ACE inhibitors, statins and kinase inhibitors. The pharmacokinetic consequences of the property changes discussed here are in [[medicinal-chemistry/pharmacokinetics]]. Multiple linear regression and cross-validation are treated in Maths Atlas (`/learn/maths/`), and the physical organic chemistry behind σ in [[organic-2/aromatic-substitution]].
+SAR tells us what matters; protein structures tell us why. [[medicinal-chemistry/structure-based-design]] uses crystal structures, docking and free-energy calculations to make the moves of this chapter deliberate rather than empirical, and [[medicinal-chemistry/drug-case-studies]] follows SAR campaigns that produced β-lactams, ACE inhibitors, statins and kinase inhibitors. The pharmacokinetic consequences of the property changes discussed here are in [[medicinal-chemistry/pharmacokinetics]]. Multiple linear regression and cross-validation are treated in Maths Atlas (`/a/maths/`), and the physical organic chemistry behind σ in [[organic-2/aromatic-substitution]].
 
 ::: summary
 - Structure–activity relationships are found by removing or masking groups one at a time and reading the changes as free energies ($5.7\ \mathrm{kJ\,mol^{-1}}$ per factor of 10 at $298\ \mathrm{K}$); the essential features and their 3D arrangement form the pharmacophore.

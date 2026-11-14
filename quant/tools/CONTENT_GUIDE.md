@@ -1,6 +1,6 @@
 # Quant Trading Atlas — content guide
 
-Quant Trading Atlas (`/learn/quant/`) teaches systematic trading **research**: how a rule is specified, measured and criticised. Every chapter is a long, self-contained lesson in the style of a very good textbook. Motivation first, then definitions, results with their assumptions, worked numbers, an interactive figure, quick checks and graded exercises with full solutions.
+Quant Trading Atlas (`/a/quant/`) teaches systematic trading **research**: how a rule is specified, measured and criticised. Every chapter is a long, self-contained lesson in the style of a very good textbook. Motivation first, then definitions, results with their assumptions, worked numbers, an interactive figure, quick checks and graded exercises with full solutions.
 
 The reference for markup and tone is `/home/c2h2/learn/maths/content/en/calculus-1/limits.md`. Read it before writing.
 
@@ -45,7 +45,7 @@ Do not write "Theorem [[#id]]" or "Definition [[#id]]". The reference already pr
 - Illustrative prices are invented (100, 101, 99) unless you are quoting `tools/LIBRARY.md`.
 - When you quote the library, name the case (W01, O03, …), say the figure is **as reported on quants.md for that QuantJourney example (Apache-2.0), read in 2026**, and say this atlas has **not** re-run the backtest. Do not invent a win rate, Sharpe or CAGR that LIBRARY.md does not list. If a cell is "—", say the library does not report it.
 - A library loss is part of the lesson. Do not flip it into "so one should take the other side".
-- Link inside the atlas with `[[course/chapter]]`. Link to Maths Atlas in ordinary URLs, for example `[hypothesis tests](/learn/maths/lesson.php?c=statistics&l=hypothesis-testing)`.
+- Link inside the atlas with `[[course/chapter]]`. Link to Maths Atlas in ordinary URLs, for example `[hypothesis tests](/a/maths/lesson.php?c=statistics&l=hypothesis-testing)`.
 
 Notation used everywhere:
 

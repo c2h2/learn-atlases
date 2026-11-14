@@ -14,7 +14,7 @@
 """
 import json, sys, urllib.request, urllib.parse
 
-UA = {"User-Agent": "PeptideAtlas/1.0 (f.g77k.com/learn/peptides; data verification)"}
+UA = {"User-Agent": "PeptideAtlas/1.0 (f.g77k.com/a/peptides; data verification)"}
 
 def get(url, data=None, headers=None):
     h = dict(UA)

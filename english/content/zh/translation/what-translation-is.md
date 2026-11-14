@@ -224,7 +224,7 @@ caption: 据纽马克（1988），他的图是一个 V 字形（左侧强调源�
 - **方向不同。** 在许多国家，职业译者主要译入自己的第一语言。在中国，许多英译工作是由中国译者完成的，常常配有一位以英语为第一语言的审校。学习者应当练习两个方向，并知道两个方向需要不同的能力：英译汉需要理解英语，汉译英需要产出英语（[[translation/chinese-into-english]]）。
 - **不同的“自然”传统。** 有文化修养的汉语文章讲究对称和四字格；好的英语文章讲究平实的用词和富于变化的句子（[[style-and-rhetoric/word-choice]]）。哪一种传统的修饰都不能机械地搬到另一种里。
 - **两个方向的翻译腔。** 翻译腔（读起来像英语的汉语）和中式英语（读起来像汉语的英语，[[collocation-and-register/false-friends-chinglish]]）是从两边看到的同一现象：原文的结构挤进了译文。两者都说明译者是在词的层面而不是在意义的层面工作。
-- **关于文言**，见汉语图谱中[文言的翻译](/learn/chinese/lesson.php?c=classical-chinese-1&l=translating)一课；关于翻译与世界文学在中国的接受，见该图谱的[翻译与接受](/learn/chinese/lesson.php?c=world-literature&l=translation-reception)一课。
+- **关于文言**，见汉语图谱中[文言的翻译](/a/chinese/lesson.php?c=classical-chinese-1&l=translating)一课；关于翻译与世界文学在中国的接受，见该图谱的[翻译与接受](/a/chinese/lesson.php?c=world-literature&l=translation-reception)一课。
 :::
 
 ::: history

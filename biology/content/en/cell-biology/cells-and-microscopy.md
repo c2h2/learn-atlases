@@ -150,7 +150,7 @@ $$
 \langle x^2\rangle = \sum_i \langle s_i^2\rangle + \sum_{i\neq j}\langle s_i\rangle\langle s_j\rangle = N\delta^2 + 0 = \frac{\delta^2}{\tau}\,t.
 $$
 
-Defining $D = \delta^2/(2\tau)$ gives $\langle x^2\rangle = 2Dt$. The motions along the three axes are independent, so their contributions add to give $6Dt$. The same result follows from the diffusion (heat) equation, whose solution from a point source is a Gaussian of variance $2Dt$ — see [Maths Atlas: the heat equation](/learn/maths/lesson.php?c=pde&l=heat-equation).
+Defining $D = \delta^2/(2\tau)$ gives $\langle x^2\rangle = 2Dt$. The motions along the three axes are independent, so their contributions add to give $6Dt$. The same result follows from the diffusion (heat) equation, whose solution from a point source is a Gaussian of variance $2Dt$ — see [Maths Atlas: the heat equation](/a/maths/lesson.php?c=pde&l=heat-equation).
 :::
 
 The essential feature is that distance grows only as the *square root* of time: to go ten times further takes a hundred times longer. Diffusion coefficients for representative molecules (at 20–37 °C; from BioNumbers and the studies cited) are: a small metabolite such as glucose in water, about $600\ \mathrm{\mu m^2\,s^{-1}}$; green fluorescent protein in water, about $90\ \mathrm{\mu m^2\,s^{-1}}$, but about $25\ \mathrm{\mu m^2\,s^{-1}}$ in the cytoplasm of a mammalian cell and $3$–$8\ \mathrm{\mu m^2\,s^{-1}}$ in *E. coli* (Elowitz and colleagues, 1999); a lipid in a membrane, about $1\ \mathrm{\mu m^2\,s^{-1}}$.
@@ -203,7 +203,7 @@ $$ {#eq-abbe}
 The two forms come from different criteria — Abbe's from the finest periodic grating whose diffraction orders the objective can still collect, Rayleigh's from placing the first dark ring of one point's diffraction pattern on the centre of the other — and differ by about 20 %. Both assume conventional (linear, far-field) imaging of incoherent or partially coherent light.
 :::
 
-The derivation belongs to optics; see [Physics Atlas: diffraction](/learn/physics/lesson.php?c=optics&l=diffraction). The biological consequence is what matters here.
+The derivation belongs to optics; see [Physics Atlas: diffraction](/a/physics/lesson.php?c=optics&l=diffraction). The biological consequence is what matters here.
 
 ::: example The best a light microscope can do {#ex-abbe}
 Calculate the Abbe and Rayleigh limits for green light ($\lambda = 500\ \mathrm{nm}$) with (a) a dry objective of $\mathrm{NA} = 0.25$ and (b) an oil-immersion objective of $\mathrm{NA} = 1.4$. Which of these can be resolved with (b): two mitochondria 1 µm apart; two ribosomes 30 nm apart; the two membranes of the nuclear envelope, about 40 nm apart?
@@ -276,7 +276,7 @@ The first electron microscope was built by Ernst Ruska and Max Knoll in Berlin i
 Chemical fixation and staining can produce artefacts. **Cryo-electron microscopy** avoids them by freezing the specimen so fast (in liquid ethane, cooled by liquid nitrogen) that water forms a glass rather than ice crystals, a method developed by Jacques Dubochet and colleagues in the early 1980s. Averaging images of many identical molecules, using methods pioneered by Joachim Frank, and the direct electron detectors introduced around 2012, now give structures of proteins and complexes at near-atomic resolution; Richard Henderson's 1990 structure of bacteriorhodopsin was an early landmark. Dubochet, Frank and Henderson shared the 2017 Nobel Prize in Chemistry. **Cryo-electron tomography** applies the same idea to thin regions of whole frozen cells, tilting the specimen to reconstruct molecular machines in their native setting. Structure determination is treated in [[structural-biology]].
 
 ::: application Correlating light and electrons
-Light and electron microscopy answer complementary questions: fluorescence shows *which* molecule is *where* in a living cell, and how it moves, but at 0.2 µm resolution; electron microscopy shows ultrastructure at nanometre resolution, but in dead, fixed or frozen cells, and with little molecular identity. **Correlative light and electron microscopy** images the same cell both ways — for example, locating a rare fluorescent event in a living cell, then freezing the cell and imaging that spot by cryo-electron tomography. Pathology laboratories still use TEM of biopsies for some kidney and muscle diseases; the clinical side belongs to [Medicine Atlas: diagnostic pathology](/learn/medicine/lesson.php?c=pathology&l=diagnostic-pathology).
+Light and electron microscopy answer complementary questions: fluorescence shows *which* molecule is *where* in a living cell, and how it moves, but at 0.2 µm resolution; electron microscopy shows ultrastructure at nanometre resolution, but in dead, fixed or frozen cells, and with little molecular identity. **Correlative light and electron microscopy** images the same cell both ways — for example, locating a rare fluorescent event in a living cell, then freezing the cell and imaging that spot by cryo-electron tomography. Pathology laboratories still use TEM of biopsies for some kidney and muscle diseases; the clinical side belongs to [Medicine Atlas: diagnostic pathology](/a/medicine/lesson.php?c=pathology&l=diagnostic-pathology).
 :::
 
 ::: history
@@ -285,7 +285,7 @@ In *Micrographia* (1665) Robert Hooke described the little boxes he saw in thin 
 
 ## Where the course goes from here
 
-With the size and time scales of this chapter in hand, the rest of the course moves inward. [[cell-biology/membranes]] and [[cell-biology/membrane-transport]] deal with the boundary every cell shares; [[cell-biology/organelles]] and [[cell-biology/protein-sorting]] with the internal compartments of eukaryotes and the traffic between them; [[cell-biology/cytoskeleton]] with how cells get shape and move; [[cell-biology/cell-signalling]], [[cell-biology/cell-cycle]] and [[cell-biology/tissues-and-cell-death]] with how cells sense, decide, divide, cooperate and die. The molecules themselves — proteins, nucleic acids, lipids and metabolism — are the subject of [Chemistry Atlas: biochemistry](/learn/chemistry/course.php?c=biochemistry).
+With the size and time scales of this chapter in hand, the rest of the course moves inward. [[cell-biology/membranes]] and [[cell-biology/membrane-transport]] deal with the boundary every cell shares; [[cell-biology/organelles]] and [[cell-biology/protein-sorting]] with the internal compartments of eukaryotes and the traffic between them; [[cell-biology/cytoskeleton]] with how cells get shape and move; [[cell-biology/cell-signalling]], [[cell-biology/cell-cycle]] and [[cell-biology/tissues-and-cell-death]] with how cells sense, decide, divide, cooperate and die. The molecules themselves — proteins, nucleic acids, lipids and metabolism — are the subject of [Chemistry Atlas: biochemistry](/a/chemistry/course.php?c=biochemistry).
 
 ::: summary
 - The cell theory: all organisms are made of cells, the cell is the smallest living unit, and every cell arises from a pre-existing cell.

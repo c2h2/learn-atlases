@@ -1,6 +1,6 @@
 预训练语言模型追根究底是一个统计估计问题。文本上存在一个未知分布；我们有一个从它抽出的、非常庞大的样本；我们为模型$p_\theta$选取参数$\theta$，让模型尽可能好地解释这个样本。“尽可能好”有一个精确的含义——最大化模型赋予数据的概率——而这个原则，即**极大似然**，最后被证明与每个语言模型训练时所最小化的交叉熵损失是同一件事。给参数加上一个先验信念，它就变成**最大后验**估计，而最常见的先验，结果正是权重衰减。
 
-本章从能用手算到底的小例子——一枚硬币、一个二元语法模型、一个高斯分布——出发展开这些想法，然后转向估计的另一面：一个估计值有多可信。偏差与方差刻画一个估计量的误差；标准误差与置信区间刻画一个测出来的数（比如模型在某基准上的准确率）的不确定程度。数学图谱中关于[估计](/learn/maths/lesson.php?c=statistics&l=estimation)、[贝叶斯推断](/learn/maths/lesson.php?c=statistics&l=bayesian)与[置信区间](/learn/maths/lesson.php?c=statistics&l=confidence-intervals)的课对统计部分讲得更完备。
+本章从能用手算到底的小例子——一枚硬币、一个二元语法模型、一个高斯分布——出发展开这些想法，然后转向估计的另一面：一个估计值有多可信。偏差与方差刻画一个估计量的误差；标准误差与置信区间刻画一个测出来的数（比如模型在某基准上的准确率）的不确定程度。数学图谱中关于[估计](/a/maths/lesson.php?c=statistics&l=estimation)、[贝叶斯推断](/a/maths/lesson.php?c=statistics&l=bayesian)与[置信区间](/a/maths/lesson.php?c=statistics&l=confidence-intervals)的课对统计部分讲得更完备。
 
 ## 似然 {#sec-likelihood}
 

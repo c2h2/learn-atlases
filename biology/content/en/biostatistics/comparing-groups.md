@@ -8,7 +8,7 @@ The running example is the most famous data set in statistics. In 1936 Ronald Fi
 | *I. versicolor* | 50 | 5.936 | 0.5162 |
 | *I. virginica* | 50 | 6.588 | 0.6359 |
 
-The one-sample and paired t-tests were introduced in [[biostatistics/hypothesis-testing]]; the theory of the two-sample test is in [Maths Atlas: hypothesis testing](/learn/maths/lesson.php?c=statistics&l=hypothesis-testing).
+The one-sample and paired t-tests were introduced in [[biostatistics/hypothesis-testing]]; the theory of the two-sample test is in [Maths Atlas: hypothesis testing](/a/maths/lesson.php?c=statistics&l=hypothesis-testing).
 
 ## Two independent groups {#two-groups}
 
@@ -101,7 +101,7 @@ Write $x_{ij} - \bar x = (x_{ij} - \bar x_j) + (\bar x_j - \bar x)$ and square:
 $$
 \sum_j\sum_i (x_{ij} - \bar x)^2 = \sum_j\sum_i (x_{ij} - \bar x_j)^2 + \sum_j n_j(\bar x_j - \bar x)^2 + 2\sum_j(\bar x_j - \bar x)\sum_i (x_{ij} - \bar x_j).
 $$
-The inner sum in the last term is zero for every group, because deviations from a group's own mean sum to zero ([[biostatistics/data-and-variation#prop-mean-median]]). The distributional statements, which rest on Cochran's theorem for quadratic forms in normal variables, are proved in [Maths Atlas: regression](/learn/maths/lesson.php?c=statistics&l=regression).
+The inner sum in the last term is zero for every group, because deviations from a group's own mean sum to zero ([[biostatistics/data-and-variation#prop-mean-median]]). The distributional statements, which rest on Cochran's theorem for quadratic forms in normal variables, are proved in [Maths Atlas: regression](/a/maths/lesson.php?c=statistics&l=regression).
 :::
 
 The logic is that of the name: we analyse the *variance* to learn about the *means*. Variation within groups measures the noise. Variation between group means contains the same noise (scaled by the group sizes) plus any real differences. If the null hypothesis is true the two mean squares estimate the same thing and $F$ is near 1; real differences inflate the numerator.

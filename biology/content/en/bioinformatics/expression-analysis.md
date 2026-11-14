@@ -145,7 +145,7 @@ The parameter $\alpha$ is the **dispersion**; $\sqrt\alpha$ is the biological co
 :::
 
 ::: proof
-By the laws of total expectation and total variance ([expectation](/learn/maths/lesson.php?c=probability&l=expectation) in Maths Atlas), $\E[K] = \E[\E[K\mid\lambda]] = \E[\lambda] = \mu$ and $\Var(K) = \E[\Var(K\mid\lambda)] + \Var(\E[K\mid\lambda]) = \E[\lambda] + \Var(\lambda) = \mu + \alpha\mu^2$. That the mixture is exactly negative binomial follows by integrating the Poisson probability against the gamma density: with shape $r = 1/\alpha$ the result is $\Prob(K = k) = \binom{k + r - 1}{k}p^r(1 - p)^k$ with $p = r/(r + \mu)$.
+By the laws of total expectation and total variance ([expectation](/a/maths/lesson.php?c=probability&l=expectation) in Maths Atlas), $\E[K] = \E[\E[K\mid\lambda]] = \E[\lambda] = \mu$ and $\Var(K) = \E[\Var(K\mid\lambda)] + \Var(\E[K\mid\lambda]) = \E[\lambda] + \Var(\lambda) = \mu + \alpha\mu^2$. That the mixture is exactly negative binomial follows by integrating the Poisson probability against the gamma density: with shape $r = 1/\alpha$ the result is $\Prob(K = k) = \binom{k + r - 1}{k}p^r(1 - p)^k$ with $p = r/(r + \mu)$.
 :::
 
 The two terms of [[#eq-nbvar]] have a natural reading. The first, $\mu$, is the Poisson "shot noise" of counting, which dominates for weakly expressed genes. The second, $\alpha\mu^2$, is biological variation, which grows with the square of the mean and dominates for highly expressed genes. However deep the sequencing, the second term remains: more reads cannot substitute for more replicates.

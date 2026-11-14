@@ -208,7 +208,7 @@ $$
 
 ## 后续内容
 
-能带结构与载流子统计是本课程其余部分的基础。[[materials-chemistry/magnetic-optical]]把带隙与颜色、发光和荧光粉联系起来，把窄能带与磁性联系起来；[[materials-chemistry/nanomaterials]]展示能带如何在量子点中离散成分立能级，以及石墨烯的能带结构如何使其电子如同无质量；[[materials-chemistry/energy-materials]]在太阳能电池与热电材料中用到带隙、掺杂与p-n结，并追问某些金属为什么超导。物理学的处理（包括近自由电子模型与真实晶体的能带结构）见物理图谱（[凝聚态：能带结构](/learn/physics/lesson.php?c=condensed-matter&l=band-structure)与[半导体](/learn/physics/lesson.php?c=condensed-matter&l=semiconductors)），能带的DFT计算见[[computational-chemistry/density-functional-theory]]。
+能带结构与载流子统计是本课程其余部分的基础。[[materials-chemistry/magnetic-optical]]把带隙与颜色、发光和荧光粉联系起来，把窄能带与磁性联系起来；[[materials-chemistry/nanomaterials]]展示能带如何在量子点中离散成分立能级，以及石墨烯的能带结构如何使其电子如同无质量；[[materials-chemistry/energy-materials]]在太阳能电池与热电材料中用到带隙、掺杂与p-n结，并追问某些金属为什么超导。物理学的处理（包括近自由电子模型与真实晶体的能带结构）见物理图谱（[凝聚态：能带结构](/a/physics/lesson.php?c=condensed-matter&l=band-structure)与[半导体](/a/physics/lesson.php?c=condensed-matter&l=semiconductors)），能带的DFT计算见[[computational-chemistry/density-functional-theory]]。
 
 ::: history
 德鲁德（Paul Drude）经典的金属电子气模型（1900年）解释了欧姆定律，却解释不了很小的电子热容；索末菲（Arnold Sommerfeld）在1927–28年把费米-狄拉克统计用于电子气而解决了这一问题。布洛赫（Felix Bloch）1928年在莱比锡的博士论文证明了以他名字命名的定理；佩尔斯（Rudolf Peierls，1929–30年）与布里渊（Léon Brillouin，1930年）引入了布里渊区本身以及区边界处的能量间隙。威尔逊（Alan Wilson）1931年用能带的填充解释了金属、绝缘体与半导体的区别，并指出杂质如何控制半导体。巴丁（John Bardeen）、布拉顿（Walter Brattain）与肖克利（William Shockley）1947–48年在贝尔实验室制成了点接触晶体管与结型晶体管（1956年诺贝尔物理学奖）。莫特1949年关于金属-非金属转变的论文与哈伯德（John Hubbard）的模型（1963年）开创了关联电子理论。白川英树、艾伦·麦克迪尔米德（Alan MacDiarmid）与艾伦·黑格（Alan Heeger）1977年报道掺杂聚乙炔像金属一样导电，获2000年诺贝尔化学奖；赤崎勇、天野浩与中村修二的蓝色GaN发光二极管（1990年代初）获2014年诺贝尔物理学奖。

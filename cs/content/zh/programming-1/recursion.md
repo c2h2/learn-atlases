@@ -153,7 +153,7 @@ def f(n):
 :::
 
 ::: proof
-对 $n$ 作归纳。**基本情形：** `factorial(0)` 不递归，返回 $1 = 0!$。**归纳步骤：** 设 $n \ge 1$，并假设 `factorial(n - 1)` 终止且返回 $(n-1)!$。那么 `factorial(n)` 就作那一次调用，把它的结果乘以 $n$，由 [[#eq-factorial]] 返回 $n \cdot (n - 1)! = n!$；它能终止，因为它所作的调用能终止。由归纳法，结论对所有 $n \ge 0$ 成立。（参见[数学图谱：归纳法](/learn/maths/lesson.php?c=proofs&l=induction)。）
+对 $n$ 作归纳。**基本情形：** `factorial(0)` 不递归，返回 $1 = 0!$。**归纳步骤：** 设 $n \ge 1$，并假设 `factorial(n - 1)` 终止且返回 $(n-1)!$。那么 `factorial(n)` 就作那一次调用，把它的结果乘以 $n$，由 [[#eq-factorial]] 返回 $n \cdot (n - 1)! = n!$；它能终止，因为它所作的调用能终止。由归纳法，结论对所有 $n \ge 0$ 成立。（参见[数学图谱：归纳法](/a/maths/lesson.php?c=proofs&l=induction)。）
 :::
 
 对 `digit_sum` 这类在 $n /\!/ 10$ 而非 $n - 1$ 上递归的函数，同样的论证要用**强归纳法**：假设函数对所有比 $n$ 小的输入都正确，再推出它对 $n$ 正确。套路总是如此：找一个每次递归调用都会减小的度量（这里是数值 $n$）；证明基本情形；假设对度量更小的所有调用都正确，证明每个递归情形。
@@ -260,7 +260,7 @@ C(n) = (2F_n - 1) + (2F_{n-1} - 1) + 1 = 2(F_n + F_{n-1}) - 1 = 2F_{n+1} - 1. \q
 $$
 :::
 
-由于 $F_n$ 的增长速度如 $\varphi^n/\sqrt 5$，其中 $\varphi = (1 + \sqrt5)/2 \approx 1.618$，朴素程序的时间关于 $n$ 呈指数增长——不是因为递归慢，而是因为它一遍又一遍地重新计算同样的值。（$F_n$ 的封闭形式在[数学图谱：递推关系](/learn/maths/lesson.php?c=discrete&l=recurrences)中推导。）
+由于 $F_n$ 的增长速度如 $\varphi^n/\sqrt 5$，其中 $\varphi = (1 + \sqrt5)/2 \approx 1.618$，朴素程序的时间关于 $n$ 呈指数增长——不是因为递归慢，而是因为它一遍又一遍地重新计算同样的值。（$F_n$ 的封闭形式在[数学图谱：递推关系](/a/maths/lesson.php?c=discrete&l=recurrences)中推导。）
 
 ::: widget plot
 f: 2*((1 + sqrt(5))/2)^(x + 1)/sqrt(5) - 1; x + 1

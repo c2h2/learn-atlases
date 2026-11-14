@@ -14,7 +14,7 @@ where $E_\mathrm{el}(\mathbf{R})$ is the electronic energy at fixed nuclei and $
 
 A diatomic has $3 \times 2 - 5 = 1$ internal coordinate, so its "surface" is a curve $E(r)$; water has $3$ (two bond lengths and an angle); benzene has $30$. Visualising more than two dimensions is impossible, which is why the language of this lesson is the language of calculus rather than of pictures: gradients, Hessians, eigenvalues. Two-dimensional model surfaces such as the one below are the training ground for intuition that must then work blind in $30$ or $3000$ dimensions.
 
-Near any geometry $\mathbf{R}_0$ the energy can be expanded as a Taylor series ([Maths Atlas](/learn/maths/) covers the multivariable version):
+Near any geometry $\mathbf{R}_0$ the energy can be expanded as a Taylor series ([Maths Atlas](/a/maths/) covers the multivariable version):
 $$
 E(\mathbf{R}_0 + \Delta\mathbf{R}) = E(\mathbf{R}_0) + \mathbf{g}\T\Delta\mathbf{R} + \tfrac{1}{2}\,\Delta\mathbf{R}\T\mathbf{H}\,\Delta\mathbf{R} + \cdots
 $$ {#eq-taylor-pes}

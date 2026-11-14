@@ -1,6 +1,6 @@
 A human cell holds about two metres of DNA in a nucleus roughly ten micrometres across. That DNA must be packed more than a hundred-thousand-fold, yet every gene stays reachable by the proteins that read it. The whole genome must also be unpacked, copied and packed again at every division without tangling. Molecular biology begins with this physical problem. How a long, stiff, negatively charged polymer is folded, twisted and wrapped decides which parts of it can be read, and the proteins that do the folding are themselves tools of gene regulation.
 
-This chapter starts from the double helix and asks what its geometry means for the proteins that bind it. It then treats DNA as a topological object, with linking number, supercoiling and the topoisomerases that change them, and ends with chromatin: nucleosomes, the higher-order folding of interphase and mitotic chromosomes, and the bacterial nucleoid. The chemistry of nucleotides, base pairing, helix stability and melting is covered in Chemistry Atlas ([Nucleic acids](/learn/chemistry/lesson.php?c=biochemistry&l=nucleic-acids)), and the evidence that genes are made of DNA in [[genetics/genes-and-mutation]]. Here we build on both.
+This chapter starts from the double helix and asks what its geometry means for the proteins that bind it. It then treats DNA as a topological object, with linking number, supercoiling and the topoisomerases that change them, and ends with chromatin: nucleosomes, the higher-order folding of interphase and mitotic chromosomes, and the bacterial nucleoid. The chemistry of nucleotides, base pairing, helix stability and melting is covered in Chemistry Atlas ([Nucleic acids](/a/chemistry/lesson.php?c=biochemistry&l=nucleic-acids)), and the evidence that genes are made of DNA in [[genetics/genes-and-mutation]]. Here we build on both.
 
 ## The double helix as a surface for proteins
 
@@ -58,7 +58,7 @@ Genome size varies more than a thousand-fold among eukaryotes and is only loosel
 
 ## DNA topology
 
-A closed circular DNA, or a long linear molecule whose ends are held fixed by proteins, has a property that a free linear molecule lacks. Its two strands are interlinked a definite number of times, and that number cannot change unless a strand is broken. The definitions of **linking number** $Lk$, **twist** $Tw$ and **writhe** $Wr$, with $Lk = Tw + Wr$, and of the superhelical density $\sigma = (Lk - Lk_0)/Lk_0$, are given in Chemistry Atlas ([Nucleic acids, Length and topology](/learn/chemistry/lesson.php?c=biochemistry&l=nucleic-acids)). We restate them as the working rules a biologist needs.
+A closed circular DNA, or a long linear molecule whose ends are held fixed by proteins, has a property that a free linear molecule lacks. Its two strands are interlinked a definite number of times, and that number cannot change unless a strand is broken. The definitions of **linking number** $Lk$, **twist** $Tw$ and **writhe** $Wr$, with $Lk = Tw + Wr$, and of the superhelical density $\sigma = (Lk - Lk_0)/Lk_0$, are given in Chemistry Atlas ([Nucleic acids, Length and topology](/a/chemistry/lesson.php?c=biochemistry&l=nucleic-acids)). We restate them as the working rules a biologist needs.
 
 ::: proposition Rules of DNA topology {#prop-topology}
 For a covalently closed duplex DNA of $N$ base pairs:
@@ -76,7 +76,7 @@ Topoisomerases are not optional. Two problems make them essential.
 2. **Unlinking daughter molecules.** When two replication forks meet, the two daughter duplexes are still intertwined (**catenated**). Only a type II enzyme can separate them, by passing one duplex through the other: topoisomerase IV in *E. coli* and topoisomerase II in eukaryotes. Without it, sister chromatids cannot segregate at mitosis.
 
 ::: application Topoisomerases as drug targets
-Because topoisomerases work by making transient breaks, a drug that traps the enzyme while the DNA is cut turns it into a source of DNA damage. The quinolone antibiotics, such as ciprofloxacin, trap bacterial gyrase and topoisomerase IV. Camptothecin derivatives trap human topoisomerase I, and etoposide and doxorubicin trap topoisomerase II; these are used in cancer chemotherapy, where rapidly dividing cells suffer most. How these drugs are used clinically belongs to Medicine Atlas ([/learn/medicine/](/learn/medicine/)). The point here is mechanistic: the target is the enzyme–DNA intermediate, and that is possible only because topoisomerases cut DNA.
+Because topoisomerases work by making transient breaks, a drug that traps the enzyme while the DNA is cut turns it into a source of DNA damage. The quinolone antibiotics, such as ciprofloxacin, trap bacterial gyrase and topoisomerase IV. Camptothecin derivatives trap human topoisomerase I, and etoposide and doxorubicin trap topoisomerase II; these are used in cancer chemotherapy, where rapidly dividing cells suffer most. How these drugs are used clinically belongs to Medicine Atlas ([/a/medicine/](/a/medicine/)). The point here is mechanistic: the target is the enzyme–DNA intermediate, and that is possible only because topoisomerases cut DNA.
 :::
 
 ::: quiz

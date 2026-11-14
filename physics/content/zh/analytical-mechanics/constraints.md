@@ -384,7 +384,7 @@ $$ {#eq-multiplier}
 至于解释，注意：如果丢掉约束 $G = 0$，改用一个额外的主动力来代替它，那么要再现同样的运动，这个力就必须在每个坐标上恰好补上广义力 $\mathcal{E}_j - Q_j$。那正是 $\lambda\,\partial G/\partial q_j$。
 :::
 
-这套论证与多元微积分里的约束优化是同一个线性代数：与每个允许方向都正交的梯度，必须是约束梯度的倍数；见[数学图谱中的条件极值](/learn/maths/lesson.php?c=multivariable&l=extrema)。有多个约束 $G_1 = 0, \dots, G_k = 0$ 时，每个约束各有一个乘数，[[#eq-multiplier]] 的右端变成 $\sum_a \lambda_a\,\partial G_a/\partial q_j$。$n$ 个方程 [[#eq-multiplier]] 连同约束方程一起，确定 $n$ 个坐标和各乘数。
+这套论证与多元微积分里的约束优化是同一个线性代数：与每个允许方向都正交的梯度，必须是约束梯度的倍数；见[数学图谱中的条件极值](/a/maths/lesson.php?c=multivariable&l=extrema)。有多个约束 $G_1 = 0, \dots, G_k = 0$ 时，每个约束各有一个乘数，[[#eq-multiplier]] 的右端变成 $\sum_a \lambda_a\,\partial G_a/\partial q_j$。$n$ 个方程 [[#eq-multiplier]] 连同约束方程一起，确定 $n$ 个坐标和各乘数。
 
 如果 $G$ 取作"到表面的距离减去零"，使 $\partial G/\partial q$ 是该坐标方向的单位法向量，那么 $\lambda$ 就是法向支持力本身。对 $G$ 另选归一化只会缩放 $\lambda$，而力 $\lambda\nabla G$ 不变。
 

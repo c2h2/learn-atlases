@@ -297,7 +297,7 @@ $$
 
 ## 后续内容
 
-本章的矢量运算在 [[statics/particle-equilibrium]] 中原样使用，那里 $\sum \mathbf{F} = \mathbf{0}$ 成为工作工具；在 [[statics/moments-couples]] 中叉积又加入进来。同样的分量在 [[mechanics-of-materials/stress-transformation]] 中作为应力分量重新出现，在 [[dynamics/work-energy]] 中作为沿路径分解的力重新出现，在 [[aerodynamics/thin-airfoil-theory]] 中作为气动升力和阻力重新出现。这里用到的矢量代数——位置矢量、点积与叉积、空间直线的几何——在数学图谱中有详细展开（见[三维中的矢量](/learn/maths/lesson.php?c=multivariable)），牛顿定律背后的物理见[力学](/learn/physics/lesson.php?c=mechanics)。
+本章的矢量运算在 [[statics/particle-equilibrium]] 中原样使用，那里 $\sum \mathbf{F} = \mathbf{0}$ 成为工作工具；在 [[statics/moments-couples]] 中叉积又加入进来。同样的分量在 [[mechanics-of-materials/stress-transformation]] 中作为应力分量重新出现，在 [[dynamics/work-energy]] 中作为沿路径分解的力重新出现，在 [[aerodynamics/thin-airfoil-theory]] 中作为气动升力和阻力重新出现。这里用到的矢量代数——位置矢量、点积与叉积、空间直线的几何——在数学图谱中有详细展开（见[三维中的矢量](/a/maths/lesson.php?c=multivariable)），牛顿定律背后的物理见[力学](/a/physics/lesson.php?c=mechanics)。
 
 ::: summary
 - 力有大小、作用线、指向和作用点；对刚体它是滑移矢量，把它移出作用线会改变问题。

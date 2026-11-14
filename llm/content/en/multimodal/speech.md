@@ -10,7 +10,7 @@ A microphone signal $x(\tau)$ is recorded as samples $x[n] = x(n/f_s)$ at a **sa
 
 Speech recognition usually works at $f_s = 16$ kHz, which keeps frequencies up to $8$ kHz — enough for the information that distinguishes speech sounds, most of which lies below $4$ kHz. Music and high-quality TTS use $22.05$, $24$, $44.1$ or $48$ kHz.
 
-Raw samples are a poor input for learning: what distinguishes one vowel from another is the distribution of energy over frequencies (the **formants**, resonances of the vocal tract), and that distribution changes every few tens of milliseconds. The **short-time Fourier transform** measures it in short overlapping frames. The Fourier series and transform themselves are developed in Physics Atlas ([Fourier series](/learn/physics/lesson.php?c=math-methods&l=fourier)); here we need only the discrete version.
+Raw samples are a poor input for learning: what distinguishes one vowel from another is the distribution of energy over frequencies (the **formants**, resonances of the vocal tract), and that distribution changes every few tens of milliseconds. The **short-time Fourier transform** measures it in short overlapping frames. The Fourier series and transform themselves are developed in Physics Atlas ([Fourier series](/a/physics/lesson.php?c=math-methods&l=fourier)); here we need only the discrete version.
 
 ::: definition Short-time Fourier transform and spectrogram {#def-stft}
 Choose a **window length** $N_w$ (typically $25$ ms, $400$ samples at $16$ kHz), a **hop** $h$ (typically $10$ ms, $160$ samples), a window function $w[n]$ and an FFT size $N\ge N_w$. Frame $m$ consists of $x[mh], \dots, x[mh + N_w - 1]$, multiplied by $w$ and zero-padded to length $N$. Its discrete Fourier transform is

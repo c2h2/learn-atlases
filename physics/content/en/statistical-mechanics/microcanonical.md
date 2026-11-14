@@ -390,7 +390,7 @@ By [[#eq-temperature]], $1/T = \dd S/\dd U = \tfrac12 aU^{-1/2}$, so $T = 2U^{1/
 :::
 
 ::: application Where chemists use the same count
-Residual entropies of crystals are multiplicities at $T = 0$. Solid carbon monoxide freezes with each molecule pointing one of two ways at random, leaving roughly $R\ln2 = 5.76\,\mathrm{J/(mol\cdot K)}$ of entropy that the third law would otherwise forbid; the measured residual entropy is somewhat less. The chemical side of the counting, with molecular energy levels and the Boltzmann distribution among them, is developed in the Chemistry Atlas chapter [The Boltzmann distribution](/learn/chemistry/lesson.php?c=statistical-thermodynamics&l=boltzmann-distribution).
+Residual entropies of crystals are multiplicities at $T = 0$. Solid carbon monoxide freezes with each molecule pointing one of two ways at random, leaving roughly $R\ln2 = 5.76\,\mathrm{J/(mol\cdot K)}$ of entropy that the third law would otherwise forbid; the measured residual entropy is somewhat less. The chemical side of the counting, with molecular energy levels and the Boltzmann distribution among them, is developed in the Chemistry Atlas chapter [The Boltzmann distribution](/a/chemistry/lesson.php?c=statistical-thermodynamics&l=boltzmann-distribution).
 :::
 
 ::: history Boltzmann, Planck and the formula on the tombstone

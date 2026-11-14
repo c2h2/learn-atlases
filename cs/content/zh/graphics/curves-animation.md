@@ -418,7 +418,7 @@ symplectic energy after 10 periods: 0.5003
 predicted explicit: 258.6978
 ```
 
-振荡十个周期之后，显式欧拉法积分的弹簧能量是初始的 $500$ 倍——与预测分毫不差——这样模拟出的布料会炸开；代价完全相同的半隐式版本则稳定地振荡。游戏使用半隐式欧拉法或基于位置的动力学；影视模拟使用隐式积分器（Baraff 与 Witkin，"Large steps in cloth simulation"，1998），对刚性材料也能在大时间步长下保持稳定。一般理论见 [Maths Atlas：数值常微分方程](/learn/maths/lesson.php?c=numerical-analysis&l=numerical-odes)。
+振荡十个周期之后，显式欧拉法积分的弹簧能量是初始的 $500$ 倍——与预测分毫不差——这样模拟出的布料会炸开；代价完全相同的半隐式版本则稳定地振荡。游戏使用半隐式欧拉法或基于位置的动力学；影视模拟使用隐式积分器（Baraff 与 Witkin，"Large steps in cloth simulation"，1998），对刚性材料也能在大时间步长下保持稳定。一般理论见 [Maths Atlas：数值常微分方程](/a/maths/lesson.php?c=numerical-analysis&l=numerical-odes)。
 
 ::: history
 Paul de Casteljau 于 1959 年在雪铁龙提出他的算法，但公司对其保密；Pierre Bézier 在雷诺自六十年代初开始的工作催生了 UNISURF CAD 系统，并自 1966 年起发表，于是曲线以他的名字命名。Isaac Schoenberg 于 1946 年把样条引入数学；B 样条的递推由于 1972 年由 Maurice Cox 与 Carl de Boor 各自独立发表，Richard Riesenfeld 1973 年的锡拉丘兹博士论文把 B 样条引入计算机辅助设计，随后 Kenneth Versprille 1975 年的论文研究有理 B 样条（NURBS）。George Chaikin 于 1974 年发表切角法，同年 Ed Catmull 与 Raphael Rom 提出他们的插值样条。Ed Catmull 与 Jim Clark，以及 Daniel Doo 与 Malcolm Sabin，于 1978 年发表细分曲面，Charles Loop 的犹他大学硕士论文于 1987 年接续；Tony DeRose、Michael Kass 与 Tien Truong 的 "Subdivision surfaces in character animation"（SIGGRAPH 1998）描述了它们在《棋局》中的运用。John Lasseter 的 "Principles of traditional animation applied to 3D computer animation"（SIGGRAPH 1987）把迪士尼的原则——挤压与拉伸、预期动作、慢入慢出——带进计算机动画。Nadia Magnenat-Thalmann、Richard Laperrière 与 Daniel Thalmann 于 1988 年描述了关节依赖的皮肤变形，Kavan、Collins、Žára 与 O'Sullivan 于 2007 年提出对偶四元数蒙皮。William Reeves 的粒子系统（1983）与 Craig Reynolds 的集群"群鸟"（boids，1987）开启了程序化与基于物理的动画。

@@ -347,10 +347,10 @@ def build(spec_path):
         edit(dst, js, lambda t, js=js: sub(t, '/* Maths Atlas — ', '/* ' + shared, where(js)))
     edit(dst, 'assets/js/core.js', lambda t: sub(t, "'maths-progress'", f"'{slug}-progress'", where('assets/js/core.js')))
     for tool in ['tools/shot.js', 'tools/labcheck.js']:
-        edit(dst, tool, lambda t, tool=tool: sub(t, "'http://f.g77k.com/learn/maths/'", f"'http://f.g77k.com/learn/{slug}/'", where(tool)))
+        edit(dst, tool, lambda t, tool=tool: sub(t, "'http://f.g77k.com/a/maths/'", f"'http://f.g77k.com/a/{slug}/'", where(tool)))
     article = 'an' if name[0].lower() in 'aeiou' else 'a'
     edit(dst, 'tools/shot.js', lambda t: sub(sub(t, 'Screenshot a Maths Atlas page', f'Screenshot {article} {name} page', where('tools/shot.js')),
-                                               'http://f.g77k.com/learn/maths/ (resolved', f'http://f.g77k.com/learn/{slug}/ (resolved', where('tools/shot.js')))
+                                               'http://f.g77k.com/a/maths/ (resolved', f'http://f.g77k.com/a/{slug}/ (resolved', where('tools/shot.js')))
 
     with open(os.path.join(SRC, 'assets/css/maths.css'), encoding='utf-8') as f:
         css = f.read()

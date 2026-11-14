@@ -180,7 +180,7 @@ $$ {#eq-pressure}
 
 ## 主应力 {#principal}
 
-因为 $\boldsymbol\sigma$ 是实对称矩阵，线性代数的谱定理适用（见数学图谱的[谱定理](/learn/maths/lesson.php?c=linear-algebra&l=spectral-theorem)一课）。存在一组由特征向量构成的标准正交基，在该基下应力张量是对角阵。
+因为 $\boldsymbol\sigma$ 是实对称矩阵，线性代数的谱定理适用（见数学图谱的[谱定理](/a/maths/lesson.php?c=linear-algebra&l=spectral-theorem)一课）。存在一组由特征向量构成的标准正交基，在该基下应力张量是对角阵。
 
 ::: theorem 主应力 {#thm-principal}
 在每一点存在三个两两垂直的方向 $\mathbf n^{(1)}, \mathbf n^{(2)}, \mathbf n^{(3)}$，称为**主方向（主轴）**，其截面上的面力纯属法向：$\boldsymbol\sigma\mathbf n^{(k)} = \sigma_k\mathbf n^{(k)}$。实数 $\sigma_1 \ge \sigma_2 \ge \sigma_3$ 称为**主应力**。它们是方程
@@ -382,7 +382,7 @@ $\lambda = 1.01$ 时：$\varepsilon_{xx} = 0.0100$，$E_{xx} = 0.01005$。差额
 :::
 
 ::: application 应变片
-应变片是粘在表面上的薄箔电阻。表面沿栅丝方向伸长 $\varepsilon$ 时，电阻的相对改变为 $k\varepsilon$，金属箔的应变片系数 $k \approx 2$。典型应变片可分辨 $10^{-6}$ 的应变。因为表面处于平面应力，按 $0^\circ$、$45^\circ$、$90^\circ$ 贴的三片——应变花——测出三个方向的 $\varepsilon_{nn}$，由 [[#thm-strain-meaning]] 的第 (1) 条，它们是 $\varepsilon_{xx}$、$\varepsilon_{yy}$、$\varepsilon_{xy}$ 的三个线性组合。解出即得完整的平面应变张量，进而得主应变。应力分析的工程做法在机械工程图谱的[应力变换](/learn/mechanical/lesson.php?c=mechanics-of-materials&l=stress-transformation)与[三维应力与应变](/learn/mechanical/lesson.php?c=solid-mechanics&l=stress-strain-3d)两课中展开。
+应变片是粘在表面上的薄箔电阻。表面沿栅丝方向伸长 $\varepsilon$ 时，电阻的相对改变为 $k\varepsilon$，金属箔的应变片系数 $k \approx 2$。典型应变片可分辨 $10^{-6}$ 的应变。因为表面处于平面应力，按 $0^\circ$、$45^\circ$、$90^\circ$ 贴的三片——应变花——测出三个方向的 $\varepsilon_{nn}$，由 [[#thm-strain-meaning]] 的第 (1) 条，它们是 $\varepsilon_{xx}$、$\varepsilon_{yy}$、$\varepsilon_{xy}$ 的三个线性组合。解出即得完整的平面应变张量，进而得主应变。应力分析的工程做法在机械工程图谱的[应力变换](/a/mechanical/lesson.php?c=mechanics-of-materials&l=stress-transformation)与[三维应力与应变](/a/mechanical/lesson.php?c=solid-mechanics&l=stress-strain-3d)两课中展开。
 :::
 
 ::: history 应力概念是谁提出的

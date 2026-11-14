@@ -153,7 +153,7 @@ $$
 
 由规则 2，一个和由最大项支配；由规则 1，常数因子消失。于是任何满足 $a_k > 0$ 的多项式 $a_k n^k + \dots + a_1 n + a_0$ 都是 $\Theta(n^k)$，从规则 5 也能看出这一点：它与 $n^k$ 之比趋于 $a_k$。
 
-极限规则配上洛必达（L'Hôpital）法则或[微积分](/learn/maths/lesson.php?c=calculus-1&l=limits)中的已知极限，把常见函数排进一个严格的层级。对任意常数 $\eps > 0$、$k \ge 1$ 与 $b > 1$，
+极限规则配上洛必达（L'Hôpital）法则或[微积分](/a/maths/lesson.php?c=calculus-1&l=limits)中的已知极限，把常见函数排进一个严格的层级。对任意常数 $\eps > 0$、$k \ge 1$ 与 $b > 1$，
 
 $$
 1 \;\prec\; \log n \;\prec\; n^{\eps} \;\prec\; n \;\prec\; n \log n \;\prec\; n^k \;\prec\; b^n \;\prec\; n!,
@@ -353,7 +353,7 @@ n =  4000  time 0.614 s  ratio 4.2
 
 ## 后续内容
 
-本课程的每一章都用这套语言陈述其代价。[[data-structures/arrays-lists]] 增加另一类界——**摊还**代价：在一个操作序列上取平均，而不是在随机输入上取平均；[[data-structures/hash-tables]] 增加**期望**代价：在算法自身的随机选择上取平均。在 [[algorithms]] 中你会遇到描述递归算法的递归式，如 $T(n) = 2T(n/2) + n$，以及求解它们的**主定理**；还会遇到对某个问题的*一切*算法都成立的下界，例如比较排序的 $\Omega(n\log n)$ 界。求和与递归式的数学在 [Maths Atlas：递归式](/learn/maths/lesson.php?c=discrete&l=recurrences) 中展开。
+本课程的每一章都用这套语言陈述其代价。[[data-structures/arrays-lists]] 增加另一类界——**摊还**代价：在一个操作序列上取平均，而不是在随机输入上取平均；[[data-structures/hash-tables]] 增加**期望**代价：在算法自身的随机选择上取平均。在 [[algorithms]] 中你会遇到描述递归算法的递归式，如 $T(n) = 2T(n/2) + n$，以及求解它们的**主定理**；还会遇到对某个问题的*一切*算法都成立的下界，例如比较排序的 $\Omega(n\log n)$ 界。求和与递归式的数学在 [Maths Atlas：递归式](/a/maths/lesson.php?c=discrete&l=recurrences) 中展开。
 
 ::: summary
 - 我们在 RAM 模型（[[#def-ram]]）中以单位操作计数来度量算法，通常通过数一种占主导的操作，把它写成输入规模 $n$ 的函数。

@@ -1,6 +1,6 @@
 [[artificial-intelligence/decision-making]] 的算法从**模型**出发计算最优策略：转移概率 $P(s' \mid s, a)$ 与奖励 $R(s, a, s')$。很多时候没人写得出了这个模型。机器人夹爪抓住某件特定物体时打滑的概率是多少？顾客点击某条特定推荐的概率是多少？围棋中某一步导致胜局的概率又是多少？智能体*能*做的是行动并观察结果。**强化学习**（RL）就是要从这样的经验中学会好好行动：智能体看到的是状态与**奖励**，永远看不到模型，必须通过反复试错去发现哪些动作会——也许要晚得多——带来高回报。
 
-有两个困难把强化学习与 [LLM Atlas](/learn/llm/course.php?c=ml-fundamentals) 的监督学习区分开来。没有老师告诉你哪个动作是对的，只有一个标量奖励，而且常常延迟——这就是**信用分配**问题。而数据取决于智能体自己的行为：想了解一个动作就必须去试它，代价是不做当前看来最好的事——**探索–利用**两难。本章展开经典的答案。我们从采样的回报估计值（**蒙特卡洛**），也从由一步自举目标估计（**时序差分学习**）；不用模型、用 **Q 学习**学最优动作值，其收敛性倚赖上一章的压缩性质；以最纯粹的形式研究探索——**多臂老虎机**；并看看**函数近似**与**策略梯度**如何把这些思想带到大问题上——以及保证在哪里止步。
+有两个困难把强化学习与 [LLM Atlas](/a/llm/course.php?c=ml-fundamentals) 的监督学习区分开来。没有老师告诉你哪个动作是对的，只有一个标量奖励，而且常常延迟——这就是**信用分配**问题。而数据取决于智能体自己的行为：想了解一个动作就必须去试它，代价是不做当前看来最好的事——**探索–利用**两难。本章展开经典的答案。我们从采样的回报估计值（**蒙特卡洛**），也从由一步自举目标估计（**时序差分学习**）；不用模型、用 **Q 学习**学最优动作值，其收敛性倚赖上一章的压缩性质；以最纯粹的形式研究探索——**多臂老虎机**；并看看**函数近似**与**策略梯度**如何把这些思想带到大问题上——以及保证在哪里止步。
 
 ## 从经验学习值
 
@@ -289,7 +289,7 @@ $$
 :::
 :::
 
-于是智能体可以抽一个动作、观察其奖励，并把 $\boldsymbol\theta$ 沿 $(r - b)\nabla\ln\pi_{\boldsymbol\theta}(a)$ 迈一步：表现好于基线的动作变得更可能。一个好的基线——比如学出来的值估计，即**演员–评论家**（actor–critic）方法——不改变期望梯度，却能极大地削减方差。策略梯度方法——包括信赖域与截断变体，如 PPO（2017）——是现代深度强化学习大部分工作的基础——也是用于微调语言模型的人类反馈强化学习的基础，后者在 LLM Atlas 中讲授（[语言模型的强化学习](/learn/llm/lesson.php?c=post-training&l=rl-for-language-models)、[RLHF](/learn/llm/lesson.php?c=post-training&l=rlhf)）。
+于是智能体可以抽一个动作、观察其奖励，并把 $\boldsymbol\theta$ 沿 $(r - b)\nabla\ln\pi_{\boldsymbol\theta}(a)$ 迈一步：表现好于基线的动作变得更可能。一个好的基线——比如学出来的值估计，即**演员–评论家**（actor–critic）方法——不改变期望梯度，却能极大地削减方差。策略梯度方法——包括信赖域与截断变体，如 PPO（2017）——是现代深度强化学习大部分工作的基础——也是用于微调语言模型的人类反馈强化学习的基础，后者在 LLM Atlas 中讲授（[语言模型的强化学习](/a/llm/lesson.php?c=post-training&l=rl-for-language-models)、[RLHF](/a/llm/lesson.php?c=post-training&l=rlhf)）。
 
 ::: quiz
 为什么从 REINFORCE 更新的奖励中减去基线 $b$ 不会使梯度估计有偏？
@@ -313,7 +313,7 @@ $\E[b\,\nabla\ln\pi_{\boldsymbol\theta}(a)] = b\sum_a\nabla\pi_{\boldsymbol\thet
 
 ## 后续内容
 
-本章为课程从搜索到学习的弧线收束。用学出的模型作规划的强化学习智能体把它与 [[artificial-intelligence/search]] 和 [[artificial-intelligence/adversarial-search]] 结合（正如 AlphaZero 把 MCTS 与学出的网络结合）；部分可观测的强化学习需要 [[artificial-intelligence/probabilistic-reasoning]] 的信念状态。监督学习、神经网络及其优化——深度强化学习的函数近似器——在 LLM Atlas 中讲授，从[神经网络](/learn/llm/course.php?c=neural-networks)开始；用强化学习训练并对齐语言模型则在其[后训练](/learn/llm/course.php?c=post-training)课程中。
+本章为课程从搜索到学习的弧线收束。用学出的模型作规划的强化学习智能体把它与 [[artificial-intelligence/search]] 和 [[artificial-intelligence/adversarial-search]] 结合（正如 AlphaZero 把 MCTS 与学出的网络结合）；部分可观测的强化学习需要 [[artificial-intelligence/probabilistic-reasoning]] 的信念状态。监督学习、神经网络及其优化——深度强化学习的函数近似器——在 LLM Atlas 中讲授，从[神经网络](/a/llm/course.php?c=neural-networks)开始；用强化学习训练并对齐语言模型则在其[后训练](/a/llm/course.php?c=post-training)课程中。
 
 ::: summary
 - 强化学习无需模型，从奖励中学习行动。**蒙特卡洛**对完整回报取平均；**TD(0)**（[[#def-td]]）朝 $r + \gamma U(s')$ 更新，其期望更新以 $U^\pi$ 为唯一不动点（[[#prop-td-fixed-point]]）；取罗宾斯–蒙罗步长时它收敛（[[#thm-td]]）。

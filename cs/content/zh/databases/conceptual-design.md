@@ -255,7 +255,7 @@ ER 建模并不唯一：同一组需求允许若干正确的设计，诀窍在�
 ::: example 基数的算术 {#ex-min-max}
 某辅导课安排中，每名学生恰好参加 $2$ 个辅导组，每组恰好 $5$ 名学生。若有 $30$ 名学生，组数是多少？能有 $31$ 名学生吗？
 ::: solution
-对 Attends 的联系数两面计数：每名学生贡献 $2$，每组贡献 $5$，故 $2 \cdot \lvert \text{Student} \rvert = 5 \cdot \lvert \text{Group} \rvert$。$30$ 名学生时有 $60$ 次参加、$12$ 个组。$31$ 名学生时，$62$ 次参加必须等于 $5\lvert\text{Group}\rvert$，而 $5 \nmid 62$，不可能。于是两侧精确的 (min, max) 约束会让某些实体数目根本不可能出现——只有当 $\lvert\text{Student}\rvert$ 是 $5$ 的倍数时约束才相容。这一双重计数论证就是[数学图谱：图](/learn/maths/lesson.php?c=discrete&l=graphs)中的握手引理，施加于该联系对应的二分图上。
+对 Attends 的联系数两面计数：每名学生贡献 $2$，每组贡献 $5$，故 $2 \cdot \lvert \text{Student} \rvert = 5 \cdot \lvert \text{Group} \rvert$。$30$ 名学生时有 $60$ 次参加、$12$ 个组。$31$ 名学生时，$62$ 次参加必须等于 $5\lvert\text{Group}\rvert$，而 $5 \nmid 62$，不可能。于是两侧精确的 (min, max) 约束会让某些实体数目根本不可能出现——只有当 $\lvert\text{Student}\rvert$ 是 $5$ 的倍数时约束才相容。这一双重计数论证就是[数学图谱：图](/a/maths/lesson.php?c=discrete&l=graphs)中的握手引理，施加于该联系对应的二分图上。
 :::
 :::
 

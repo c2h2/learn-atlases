@@ -1,6 +1,6 @@
 达尔文的十五对玉米给出平均身高差 20.9 个 1/8 英寸，有利异花授粉植株（[[biostatistics/data-and-variation#ex-darwin-location]]）。若他培育的是另外十五对，他会得到另一个数。能有多不同？杂交的真正优势——用无限的植株才能测出的那个——是接近 21，还是可能是零，或两倍大？样本的单个数值是一个**估计**，而估计若不给出精确度的陈述就毫无用处。
 
-本章讲的就是这个陈述。它先谈样本应当如何取得，使统计量估计到我们意图估计的东西；然后引入统计量的**抽样分布**、度量其散布的**标准误**，以及使均值的抽样分布近似正态的**中心极限定理**；接着用学生氏 t 分布建立均值与比例的**置信区间**；最后以计算完成同样工作的自助法（bootstrap）作结。底层理论在数学图谱（[抽样](/learn/maths/lesson.php?c=statistics&l=sampling)、[估计](/learn/maths/lesson.php?c=statistics&l=estimation)与[置信区间](/learn/maths/lesson.php?c=statistics&l=confidence-intervals)）。
+本章讲的就是这个陈述。它先谈样本应当如何取得，使统计量估计到我们意图估计的东西；然后引入统计量的**抽样分布**、度量其散布的**标准误**，以及使均值的抽样分布近似正态的**中心极限定理**；接着用学生氏 t 分布建立均值与比例的**置信区间**；最后以计算完成同样工作的自助法（bootstrap）作结。底层理论在数学图谱（[抽样](/a/maths/lesson.php?c=statistics&l=sampling)、[估计](/a/maths/lesson.php?c=statistics&l=estimation)与[置信区间](/a/maths/lesson.php?c=statistics&l=confidence-intervals)）。
 
 ## 样本与总体 {#sampling}
 
@@ -55,7 +55,7 @@ $$
 的分布近似标准正态，无论各 $X_i$ 的分布是什么形状。确切地说，对每个 $z$，$n \to \infty$ 时 $\Prob(Z \le z) \to \Phi(z)$。
 :::
 
-证明（用特征函数）见[数学图谱：极限定理](/learn/maths/lesson.php?c=probability&l=limit-theorems)。"足够大"是多大？取决于总体距正态有多远：对称总体 $n = 10$ 通常足够；强偏态的总体，如寄生虫负荷或多度，$n$ 可能需要 30、50 以上。动手试一试。
+证明（用特征函数）见[数学图谱：极限定理](/a/maths/lesson.php?c=probability&l=limit-theorems)。"足够大"是多大？取决于总体距正态有多远：对称总体 $n = 10$ 通常足够；强偏态的总体，如寄生虫负荷或多度，$n$ 可能需要 30、50 以上。动手试一试。
 
 ::: widget clt
 dist: skewed
@@ -130,7 +130,7 @@ $$ {#eq-ci-mean}
 :::
 :::
 
-95 % 是什么意思？不是说 $\mu$ 落在 0.03 与 41.84 之间的概率是 95 %：$\mu$ 是一个固定（未知）的数，它或者在那里或者不在那里。95 % 说的是*方法*：把达尔文的实验重复多次，每次按 [[#eq-ci-mean]] 计算一个区间，则 95 % 的区间会包含真平均差。我们的区间是其中之一，而我们不知道它是不是那走运的 95 %。（贝叶斯**可信区间**在给定先验下确有直接的概率解读；见[数学图谱：贝叶斯推断](/learn/maths/lesson.php?c=statistics&l=bayesian)。先验模糊时两种区间常在数值上接近。）
+95 % 是什么意思？不是说 $\mu$ 落在 0.03 与 41.84 之间的概率是 95 %：$\mu$ 是一个固定（未知）的数，它或者在那里或者不在那里。95 % 说的是*方法*：把达尔文的实验重复多次，每次按 [[#eq-ci-mean]] 计算一个区间，则 95 % 的区间会包含真平均差。我们的区间是其中之一，而我们不知道它是不是那走运的 95 %。（贝叶斯**可信区间**在给定先验下确有直接的概率解读；见[数学图谱：贝叶斯推断](/a/maths/lesson.php?c=statistics&l=bayesian)。先验模糊时两种区间常在数值上接近。）
 
 ::: widget confidence
 dist: normal

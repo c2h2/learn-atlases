@@ -1,6 +1,6 @@
 计算机无法存储一个函数，只能存储一串数。把微分方程变成计算机可以求解的问题，最简单的方法是只在网格点上保留未知量，并把每个导数替换为相邻网格值的某种组合——即**有限差分**。这是 CFD 中最古老的离散方法，即使形式上属于“有限体积”或“有限元”的程序，内部也在使用差分公式：用于面上的梯度、时间导数和边界通量。更重要的是，有限差分是最容易学习数值分析语言的地方：截断误差、精度阶、显式与隐式时间推进、修正波数。所有这些在以后每一课中都会用到。
 
-本课由泰勒级数构造差分公式，度量其误差，并用它们离散[[computational-fluid-dynamics/governing-equations]]中引入的 CFD 两个模型方程——热（扩散）方程和线性对流方程。这些离散是否**稳定**，是下一课[[computational-fluid-dynamics/stability-accuracy]]的主题。其背后的数值分析见数学图谱（[数值积分与数值微分](/learn/maths/lesson.php?c=numerical-analysis&l=numerical-integration)和[常微分方程数值解](/learn/maths/lesson.php?c=numerical-analysis&l=numerical-odes)）。
+本课由泰勒级数构造差分公式，度量其误差，并用它们离散[[computational-fluid-dynamics/governing-equations]]中引入的 CFD 两个模型方程——热（扩散）方程和线性对流方程。这些离散是否**稳定**，是下一课[[computational-fluid-dynamics/stability-accuracy]]的主题。其背后的数值分析见数学图谱（[数值积分与数值微分](/a/maths/lesson.php?c=numerical-analysis&l=numerical-integration)和[常微分方程数值解](/a/maths/lesson.php?c=numerical-analysis&l=numerical-odes)）。
 
 ## 网格与记号
 

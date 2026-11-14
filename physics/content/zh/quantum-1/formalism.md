@@ -2,7 +2,7 @@
 
 收获是巨大的。一旦这一结构就位，同样的规则既能处理直线上的粒子，也能处理电子的自旋——它并没有通常意义上的波函数——还能处理多粒子体系。不确定性原理成为关于任意一对可观测量的定理，证明只有两行。其后的角动量、氢原子与自旋各章，都是这里建立起来的结构的应用。
 
-你需要复数向量空间的线性代数：内积、标准正交基、本征值与厄米矩阵，数学图谱的[内积](/learn/maths/lesson.php?c=linear-algebra&l=inner-products)与[谱定理](/learn/maths/lesson.php?c=linear-algebra&l=spectral-theorem)两文讲了这些。我们对有限维陈述结果并给出证明，并说明波函数所处的无限维空间里有什么改变。无限维情形的完整数学处理见参考文献（Shankar 第 1 章是一个温和的起点；冯·诺依曼的著作是原始文献）。
+你需要复数向量空间的线性代数：内积、标准正交基、本征值与厄米矩阵，数学图谱的[内积](/a/maths/lesson.php?c=linear-algebra&l=inner-products)与[谱定理](/a/maths/lesson.php?c=linear-algebra&l=spectral-theorem)两文讲了这些。我们对有限维陈述结果并给出证明，并说明波函数所处的无限维空间里有什么改变。无限维情形的完整数学处理见参考文献（Shankar 第 1 章是一个温和的起点；冯·诺依曼的著作是原始文献）。
 
 ## 态是向量 {#states}
 

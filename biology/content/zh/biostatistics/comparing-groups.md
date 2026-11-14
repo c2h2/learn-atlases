@@ -8,7 +8,7 @@
 | *I. versicolor* | 50 | 5.936 | 0.5162 |
 | *I. virginica* | 50 | 6.588 | 0.6359 |
 
-单样本与配对 t 检验已在 [[biostatistics/hypothesis-testing]] 中引入；双样本检验的理论在[数学图谱：假设检验](/learn/maths/lesson.php?c=statistics&l=hypothesis-testing)。
+单样本与配对 t 检验已在 [[biostatistics/hypothesis-testing]] 中引入；双样本检验的理论在[数学图谱：假设检验](/a/maths/lesson.php?c=statistics&l=hypothesis-testing)。
 
 ## 两个独立组 {#two-groups}
 
@@ -101,7 +101,7 @@ $$ {#eq-anova-f}
 $$
 \sum_j\sum_i (x_{ij} - \bar x)^2 = \sum_j\sum_i (x_{ij} - \bar x_j)^2 + \sum_j n_j(\bar x_j - \bar x)^2 + 2\sum_j(\bar x_j - \bar x)\sum_i (x_{ij} - \bar x_j).
 $$
-最后一项的内层和对每个组都为零，因为偏离本组均值的偏差之和为零（[[biostatistics/data-and-variation#prop-mean-median]]）。关于分布的陈述建立在正态变量二次型的科克伦（Cochran）定理之上，证明见[数学图谱：回归](/learn/maths/lesson.php?c=statistics&l=regression)。
+最后一项的内层和对每个组都为零，因为偏离本组均值的偏差之和为零（[[biostatistics/data-and-variation#prop-mean-median]]）。关于分布的陈述建立在正态变量二次型的科克伦（Cochran）定理之上，证明见[数学图谱：回归](/a/maths/lesson.php?c=statistics&l=regression)。
 :::
 
 这里的逻辑正是名称的逻辑：我们分析*方差*，是为了了解*均值*。组内变异度量噪声。组间均值的变异包含同样的噪声（按组大小定标），外加任何真实的差异。零假设为真时，两个均方估计的是同一个东西，$F$ 接近 1；真实的差异使分子膨胀。

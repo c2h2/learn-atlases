@@ -28,7 +28,7 @@ $$
 :::
 
 ::: proof 下落球体的受力平衡 {#proof-stokes}
-终端速度下阻力与重力平衡。球体周围的蠕流中，斯托克斯阻力为 $F_\mathrm{D} = 3\pi\mu d\,v$（流体力学的结果；见[物理图谱](/learn/physics/)）。重力为 $\frac{\pi}{6}d^3\rho_\mathrm{p}g$。令两者相等，
+终端速度下阻力与重力平衡。球体周围的蠕流中，斯托克斯阻力为 $F_\mathrm{D} = 3\pi\mu d\,v$（流体力学的结果；见[物理图谱](/a/physics/)）。重力为 $\frac{\pi}{6}d^3\rho_\mathrm{p}g$。令两者相等，
 $$
 3\pi\mu d\,v_\mathrm{s} = \frac{\pi}{6}d^3\rho_\mathrm{p}g
 \quad\Longrightarrow\quad

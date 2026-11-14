@@ -158,7 +158,7 @@ caption: 约化单位下的朗道自由能[[#eq-landau]]（$a = b = 1$、$T_0 = 
 
 ## 后续内容
 
-本章的亚铁磁氧化物在[[materials-chemistry/nanomaterials]]中以纳米颗粒的面目重现，尺寸在那里改变它们的磁性（超顺磁性）与颜色（量子点、等离激元金）。[[materials-chemistry/energy-materials]]中的电极材料常是磁性而有颜色的过渡金属氧化物，其氧化态在循环中改变，而铜氧化物超导体是掺杂的反铁磁体。颜色背后的电子结构见[[materials-chemistry/electronic-structure-solids]]与[[coordination-chemistry/spectra-of-complexes]]；磁有序的物理（包括自旋波）见物理图谱（[凝聚态：磁性与超导](/learn/physics/lesson.php?c=condensed-matter&l=magnetism-superconductivity)）。
+本章的亚铁磁氧化物在[[materials-chemistry/nanomaterials]]中以纳米颗粒的面目重现，尺寸在那里改变它们的磁性（超顺磁性）与颜色（量子点、等离激元金）。[[materials-chemistry/energy-materials]]中的电极材料常是磁性而有颜色的过渡金属氧化物，其氧化态在循环中改变，而铜氧化物超导体是掺杂的反铁磁体。颜色背后的电子结构见[[materials-chemistry/electronic-structure-solids]]与[[coordination-chemistry/spectra-of-complexes]]；磁有序的物理（包括自旋波）见物理图谱（[凝聚态：磁性与超导](/a/physics/lesson.php?c=condensed-matter&l=magnetism-superconductivity)）。
 
 ::: history
 皮埃尔·居里（Pierre Curie）1895年证明铁磁性在临界温度以上消失，外斯（Pierre Weiss）1907年提出分子场与磁畴。海森堡1928年把分子场解释为量子力学的交换作用。奈尔1932–36年预言了反铁磁性，1948年解释了尖晶石铁氧体的亚铁磁性（1970年诺贝尔物理学奖）；舒尔与斯马特1949年由中子衍射观察到MnO中的反铁磁有序；安德森（Philip Anderson）1950年建立了超交换理论，古迪纳夫与金森顺次郎在1955–59年提出了他们的规则。雅克与皮埃尔·居里（Jacques and Pierre Curie）1880年发现压电性，瓦拉谢克（Joseph Valasek）1920–21年在酒石酸钾钠中发现铁电性，钛酸钡的铁电性则在二战期间由美国、苏联（武尔（Bentsion Vul））与日本的几个课题组发现。朗道的相变理论始于1937年。梅曼（Theodore Maiman）的红宝石激光器（1960年）、1960年代彩色电视所用的稀土荧光粉与Nd-Fe-B磁体（1984年），都出自掺杂固体的化学。

@@ -12,7 +12,7 @@ A **mechanochemical cycle** is a closed sequence of states of a machine — diff
 
 Two physical pictures describe how chemistry is converted into motion. In a **power stroke**, a chemical step (binding, hydrolysis, product release) drives a conformational change that does work directly, like a lever. In a **Brownian ratchet**, thermal fluctuations move the machine back and forth, and chemical steps rectify them, trapping forward movements and preventing backward ones. Real machines combine both, and structures help decide which step does what. Because molecules are small and the medium viscous, inertia is negligible: a motor that stops consuming fuel stops at once, and every step is made against a background of thermal motion of comparable energy.
 
-A cycle can be described as a Markov chain of states, each step taken with some probability per unit time ([Maths Atlas: Markov chains](/learn/maths/lesson.php?c=probability&l=markov-chains)). The figure shows an illustrative four-state cycle for a motor such as kinesin, with transitions per 1 ms time step.
+A cycle can be described as a Markov chain of states, each step taken with some probability per unit time ([Maths Atlas: Markov chains](/a/maths/lesson.php?c=probability&l=markov-chains)). The figure shows an illustrative four-state cycle for a motor such as kinesin, with transitions per 1 ms time step.
 
 ::: widget markov
 matrix: 0.7,0.3,0,0; 0.05,0.45,0.5,0; 0,0,0.4,0.6; 0.8,0,0,0.2
@@ -179,7 +179,7 @@ The crystal structure's asymmetry is consistent with rotation and inspired the e
 :::
 
 ::: application Machines as drug targets
-The structures of machines have guided many drugs: ribosome-targeting antibiotics, whose binding sites and resistance mutations were mapped in crystal and cryo-EM structures; the antituberculosis drug bedaquiline, which binds the c-ring of mycobacterial ATP synthase and stalls it (cryo-EM structures of the complex were reported in 2020–21); inhibitors of the serotonin transporter (selective serotonin reuptake inhibitors) whose binding modes were defined first in LeuT and then in the human transporter (J. A. Coleman, E. Gouaux and colleagues, 2016); and inhibitors of ABC transporters that cause multidrug resistance in tumours. Clinical aspects are covered in the [Medicine Atlas](/learn/medicine/).
+The structures of machines have guided many drugs: ribosome-targeting antibiotics, whose binding sites and resistance mutations were mapped in crystal and cryo-EM structures; the antituberculosis drug bedaquiline, which binds the c-ring of mycobacterial ATP synthase and stalls it (cryo-EM structures of the complex were reported in 2020–21); inhibitors of the serotonin transporter (selective serotonin reuptake inhibitors) whose binding modes were defined first in LeuT and then in the human transporter (J. A. Coleman, E. Gouaux and colleagues, 2016); and inhibitors of ABC transporters that cause multidrug resistance in tumours. Clinical aspects are covered in the [Medicine Atlas](/a/medicine/).
 :::
 
 ::: history

@@ -29,7 +29,7 @@ $$ {#eq-bloch-ball}
 ::: example 贝尔对的一半 {#ex-reduced}
 计算 $\ket{\Phi^+}$ 的任一量子比特的约化状态，以及乘积态 $\ket+\ket0$ 中量子比特 $0$ 的约化状态。
 ::: solution
-$\ket{\Phi^+}\!\bra{\Phi^+} = \tfrac12(\ket{00}\!\bra{00} + \ket{00}\!\bra{11} + \ket{11}\!\bra{00} + \ket{11}\!\bra{11})$。对量子比特 $1$ 求偏迹，交叉项因 $\braket{1|0} = 0$ 而消失，剩下 $\tfrac12(\ket0\!\bra0 + \ket1\!\bra1) = I/2$：极大混合，布洛赫向量为 $0$。贝尔对的两半各自都是最随机的，这就是隐形传态中经典比特到达之前 Bob 的量子比特不带任何信息的原因（[[quantum-computing/entanglement#thm-teleport]]）。对 $\ket+\ket0$，$\rho = \ket+\!\bra+\otimes\ket0\!\bra0$，偏迹给出 $\ket+\!\bra+$：纯态。一般地，$AB$ 的纯态是乘积态当且仅当 $\rho_A$ 是纯的，且 $\rho_A$ 的特征值就是施密特（Schmidt）系数的平方（[[quantum-computing/entanglement#thm-schmidt]]）。同样的计算见[物理图谱：纠缠](/learn/physics/lesson.php?c=quantum-2&l=entanglement)。
+$\ket{\Phi^+}\!\bra{\Phi^+} = \tfrac12(\ket{00}\!\bra{00} + \ket{00}\!\bra{11} + \ket{11}\!\bra{00} + \ket{11}\!\bra{11})$。对量子比特 $1$ 求偏迹，交叉项因 $\braket{1|0} = 0$ 而消失，剩下 $\tfrac12(\ket0\!\bra0 + \ket1\!\bra1) = I/2$：极大混合，布洛赫向量为 $0$。贝尔对的两半各自都是最随机的，这就是隐形传态中经典比特到达之前 Bob 的量子比特不带任何信息的原因（[[quantum-computing/entanglement#thm-teleport]]）。对 $\ket+\ket0$，$\rho = \ket+\!\bra+\otimes\ket0\!\bra0$，偏迹给出 $\ket+\!\bra+$：纯态。一般地，$AB$ 的纯态是乘积态当且仅当 $\rho_A$ 是纯的，且 $\rho_A$ 的特征值就是施密特（Schmidt）系数的平方（[[quantum-computing/entanglement#thm-schmidt]]）。同样的计算见[物理图谱：纠缠](/a/physics/lesson.php?c=quantum-2&l=entanglement)。
 :::
 :::
 

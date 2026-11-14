@@ -390,7 +390,7 @@ $$ {#eq-identity}
 :::
 
 ::: application 化学家用的是同一套计数
-晶体的残余熵是 $T = 0$ 处的多重度。固态一氧化碳凝固时每个分子随机取两种取向之一，留下大约 $R\ln2 = 5.76\,\mathrm{J/(mol\cdot K)}$ 的熵——否则热力学第三定律不会答应；实测残余熵略小于此。计数的化学一面——分子能级及其中间的玻尔兹曼分布——在化学图谱的章节 [玻尔兹曼分布](/learn/chemistry/lesson.php?c=statistical-thermodynamics&l=boltzmann-distribution) 里展开。
+晶体的残余熵是 $T = 0$ 处的多重度。固态一氧化碳凝固时每个分子随机取两种取向之一，留下大约 $R\ln2 = 5.76\,\mathrm{J/(mol\cdot K)}$ 的熵——否则热力学第三定律不会答应；实测残余熵略小于此。计数的化学一面——分子能级及其中间的玻尔兹曼分布——在化学图谱的章节 [玻尔兹曼分布](/a/chemistry/lesson.php?c=statistical-thermodynamics&l=boltzmann-distribution) 里展开。
 :::
 
 ::: history 玻尔兹曼、普朗克与墓碑上的公式

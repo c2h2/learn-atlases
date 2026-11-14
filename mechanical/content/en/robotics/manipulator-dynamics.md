@@ -200,7 +200,7 @@ In the recursive algorithm, gravity enters *either* as the fictitious base accel
 $$
 \ddot{\mathbf q} = M(\mathbf q)^{-1}\big(\boldsymbol\tau - C(\mathbf q,\dot{\mathbf q})\dot{\mathbf q} - \mathbf g(\mathbf q)\big),
 $$ {#eq-forward-dynamics}
-which is always possible because $M$ is positive definite, gives a first-order system in the state $(\mathbf q, \dot{\mathbf q})$ that a numerical integrator advances in time ([linear and nonlinear ODE systems](/learn/maths/lesson.php?c=ode&l=nonlinear-systems)). A simulator needs $M$ (which can itself be computed with $n$ calls to the inverse-dynamics routine, one per column, with zero velocity and gravity and a unit acceleration) and the bias $C\dot{\mathbf q} + \mathbf g$ (one call with zero acceleration). Faster $O(n)$ forward-dynamics algorithms exist (Featherstone's articulated-body algorithm), but for arms with six or seven joints the $M^{-1}$ approach is common.
+which is always possible because $M$ is positive definite, gives a first-order system in the state $(\mathbf q, \dot{\mathbf q})$ that a numerical integrator advances in time ([linear and nonlinear ODE systems](/a/maths/lesson.php?c=ode&l=nonlinear-systems)). A simulator needs $M$ (which can itself be computed with $n$ calls to the inverse-dynamics routine, one per column, with zero velocity and gravity and a unit acceleration) and the bias $C\dot{\mathbf q} + \mathbf g$ (one call with zero acceleration). Faster $O(n)$ forward-dynamics algorithms exist (Featherstone's articulated-body algorithm), but for arms with six or seven joints the $M^{-1}$ approach is common.
 
 ::: widget phaseplane
 f: y

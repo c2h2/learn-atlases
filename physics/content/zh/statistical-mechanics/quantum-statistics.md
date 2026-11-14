@@ -352,7 +352,7 @@ $$
 :::
 
 ::: application 朗缪尔（Langmuir）吸附
-具有 $M$ 个独立结合位的表面，每个位至多结合一个能量为 $\varepsilon_b$ 的分子，与化学势为 $\mu$ 的气体接触，就是一组能量为 $-\varepsilon_b$ 的费米-狄拉克"轨道"，无论分子是不是费米子：这里的排斥是几何的。被占位比例为 $\theta = 1/(e^{-\beta(\varepsilon_b + \mu)} + 1)$。对气体用 $e^{\beta\mu} = n\lambda^3 \propto P$，它就化为 $\theta = KP/(1 + KP)$，表面化学的朗缪尔等温线，其中 $K$ 可由分子数据算出。化学图谱从化学家的一面发展量子统计，包括氢的正仲形式，见[量子统计](/learn/chemistry/lesson.php?c=statistical-thermodynamics&l=quantum-statistics)。
+具有 $M$ 个独立结合位的表面，每个位至多结合一个能量为 $\varepsilon_b$ 的分子，与化学势为 $\mu$ 的气体接触，就是一组能量为 $-\varepsilon_b$ 的费米-狄拉克"轨道"，无论分子是不是费米子：这里的排斥是几何的。被占位比例为 $\theta = 1/(e^{-\beta(\varepsilon_b + \mu)} + 1)$。对气体用 $e^{\beta\mu} = n\lambda^3 \propto P$，它就化为 $\theta = KP/(1 + KP)$，表面化学的朗缪尔等温线，其中 $K$ 可由分子数据算出。化学图谱从化学家的一面发展量子统计，包括氢的正仲形式，见[量子统计](/a/chemistry/lesson.php?c=statistical-thermodynamics&l=quantum-statistics)。
 :::
 
 ::: history 玻色、爱因斯坦、费米与狄拉克

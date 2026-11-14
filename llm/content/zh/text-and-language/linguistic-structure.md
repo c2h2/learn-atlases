@@ -1,6 +1,6 @@
 本课程到目前为止的一切，都把文本当作一串带有统计规律的符号。语言学家的描述方式不同：词由更小的有意义单位构成；句子有一种在字符串上看不出来的层次结构；意义则按照这一结构由各部分的意义组合而成。几十年来，自然语言处理把这种结构显式地写出来——为每一个层次配备单独的程序：形态分析器、词性标注器、句法分析器、命名实体识别器——串成一条流水线。大模型什么都不显式写出，却能够产出合乎语法的文本，让动词与相距很远的主语保持一致，并化解许多歧义。理解它们必定以某种方式捕捉的这种结构，理解曾经显式捕捉过它的经典算法，无论对于构建系统，还是对于追问语言模型究竟学到了什么，都是有益的。
 
-本章概览语言结构的各个层次，以及附着其上的经典任务与算法：**形态学**及其与分词的关系、用隐马尔可夫模型与 Viterbi 算法完成的**词性标注**、作为序列标注的**命名实体识别**、**句法**——由 CKY 算法分析的成分语法，以及依存树——还有从词义到语义角色的**语义学**。最后介绍探针（probing）研究关于这种结构在神经语言模型内部情形的发现。关于各个层次更完整的语言学讨论，见中文图谱中关于[形态学](/learn/chinese/lesson.php?c=linguistics&l=morphology)、[句法学](/learn/chinese/lesson.php?c=linguistics&l=syntax)、[语义学](/learn/chinese/lesson.php?c=linguistics&l=semantics)与[语用学](/learn/chinese/lesson.php?c=linguistics&l=pragmatics)的课，它们以中英文的例句讲解普通语言学。
+本章概览语言结构的各个层次，以及附着其上的经典任务与算法：**形态学**及其与分词的关系、用隐马尔可夫模型与 Viterbi 算法完成的**词性标注**、作为序列标注的**命名实体识别**、**句法**——由 CKY 算法分析的成分语法，以及依存树——还有从词义到语义角色的**语义学**。最后介绍探针（probing）研究关于这种结构在神经语言模型内部情形的发现。关于各个层次更完整的语言学讨论，见中文图谱中关于[形态学](/a/chinese/lesson.php?c=linguistics&l=morphology)、[句法学](/a/chinese/lesson.php?c=linguistics&l=syntax)、[语义学](/a/chinese/lesson.php?c=linguistics&l=semantics)与[语用学](/a/chinese/lesson.php?c=linguistics&l=pragmatics)的课，它们以中英文的例句讲解普通语言学。
 
 ## 结构的层次 {#sec-levels}
 

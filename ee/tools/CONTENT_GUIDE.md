@@ -1,13 +1,13 @@
 # EE Atlas — content guide
 
-EE Atlas (`/learn/ee/`) teaches the undergraduate electrical and electronic engineering curriculum
+EE Atlas (`/a/ee/`) teaches the undergraduate electrical and electronic engineering curriculum
 in depth. Every chapter is a long, self-contained lesson in the style of a very good textbook:
 motivation and physical intuition first, then precise definitions, laws and theorems with their
 derivations, many fully worked examples and design problems, interactive figures, quick checks,
 and graded exercises with full solutions.
 
-The site runs on the same engine as Maths Atlas (`/learn/maths/`). Its reference lesson,
-`/var/www/f.g77k.com/learn/maths/content/en/calculus-1/limits.md`, shows the expected depth, tone
+The site runs on the same engine as Maths Atlas (`/a/maths/`). Its reference lesson,
+`/var/www/f.g77k.com/a/maths/content/en/calculus-1/limits.md`, shows the expected depth, tone
 and markup: read it before writing.
 
 ## 1. Files
@@ -81,7 +81,7 @@ Suggested shape (adapt to the topic):
 ## 4. Writing style
 
 - Audience: undergraduates who have seen the prerequisite chapters and first-year calculus,
-  linear algebra and physics (link to Maths Atlas, `/learn/maths/`, with ordinary Markdown links
+  linear algebra and physics (link to Maths Atlas, `/a/maths/`, with ordinary Markdown links
   when a mathematical tool is needed). Explain ideas from scratch, motivate before formalising,
   then be exact. Show the reasoning, not just results.
 - Voice: "we" for shared reasoning, "you" for instructions. Friendly, precise, unhurried.
@@ -204,7 +204,7 @@ caption: A series RLC circuit as a linear system. Increase the resistance until 
 ```
 
 The available figure types, their keys and examples are in `data/widgets.json`; try each one at
-`/learn/ee/lab.php?w=<type>`. Unknown types or keys are build errors. Inherited from Maths Atlas:
+`/a/ee/lab.php?w=<type>`. Unknown types or keys are build errors. Inherited from Maths Atlas:
 function plots, parametric curves (Lissajous figures), the unit circle (sinusoids), slope fields,
 phase planes and ODE solvers (transients), complex-plane arithmetic and complex maps (phasors,
 Möbius maps), contour integrals and winding numbers (Nyquist), Fourier series, the heat and wave
@@ -237,13 +237,13 @@ Maths Atlas `tools/CONTENT_GUIDE.md` §6.2).
 ## 7. Check your work
 
 ```
-cd /var/www/f.g77k.com/learn/ee
+cd /var/www/f.g77k.com/a/ee
 bash tools/check.sh <course> [<course> …]
 ```
 
 This typesets every formula with KaTeX, validates figures, checks and references, and prints a
 depth table per lesson. Fix every `ERROR`; depth `warn`ings must be gone for finished lessons.
-Preview a lesson at `http://f.g77k.com/learn/ee/lesson.php?c=<course>&l=<chapter>` (from this
+Preview a lesson at `http://f.g77k.com/a/ee/lesson.php?c=<course>&l=<chapter>` (from this
 machine: `curl --resolve f.g77k.com:80:127.0.0.1 …`, or `node tools/shot.js "lesson.php?c=…&l=…"
 out.png` for a screenshot). Read your rendered lesson at least once.
 

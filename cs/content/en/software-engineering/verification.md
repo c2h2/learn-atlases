@@ -21,7 +21,7 @@ where $\mathrm{MTTF} = 1/p$ and $\mathrm{MTTR} = 1/q$ are the mean times to fail
 :::
 
 ::: proof
-The chain is irreducible and aperiodic when $p, q > 0$ and not both equal to 1 (the case $p = q = 1$, alternating every hour, has time-average $1/2$, which agrees with the formula). Its stationary distribution $(\pi_u, \pi_d)$ satisfies the balance equation $\pi_u p = \pi_d q$ — the flow from up to down equals the flow from down to up — and $\pi_u + \pi_d = 1$, giving $\pi_u = q/(p+q)$; by the ergodic theorem for Markov chains ([Maths Atlas: Markov chains](/learn/maths/lesson.php?c=probability&l=markov-chains)) this is the long-run fraction of hours spent up. The time to failure from the up state is geometric with mean $1/p$, and the time to repair geometric with mean $1/q$; substituting $p = 1/\mathrm{MTTF}$ and $q = 1/\mathrm{MTTR}$ gives the second form.
+The chain is irreducible and aperiodic when $p, q > 0$ and not both equal to 1 (the case $p = q = 1$, alternating every hour, has time-average $1/2$, which agrees with the formula). Its stationary distribution $(\pi_u, \pi_d)$ satisfies the balance equation $\pi_u p = \pi_d q$ — the flow from up to down equals the flow from down to up — and $\pi_u + \pi_d = 1$, giving $\pi_u = q/(p+q)$; by the ergodic theorem for Markov chains ([Maths Atlas: Markov chains](/a/maths/lesson.php?c=probability&l=markov-chains)) this is the long-run fraction of hours spent up. The time to failure from the up state is geometric with mean $1/p$, and the time to repair geometric with mean $1/q$; substituting $p = 1/\mathrm{MTTF}$ and $q = 1/\mathrm{MTTR}$ gives the second form.
 :::
 
 ::: widget markov

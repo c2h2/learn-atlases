@@ -111,7 +111,7 @@ Several refinements made cloning routine:
 PCR, conceived by Kary Mullis at the Cetus Corporation in 1983 and first published by Randall Saiki, Mullis and colleagues in 1985, copies a chosen segment of DNA over and over in vitro. It uses two **primers**, oligonucleotides of about 18–25 nucleotides complementary to opposite strands at either end of the target, and a DNA polymerase. Each **cycle** has three steps:
 
 1. **Denaturation** at about 95 °C separates the strands.
-2. **Annealing** at a temperature a few degrees below the primers' melting temperature (typically 50–65 °C) lets the primers pair with their targets. (Melting temperatures are calculated in Chemistry Atlas, [Nucleic acids](/learn/chemistry/lesson.php?c=biochemistry&l=nucleic-acids).)
+2. **Annealing** at a temperature a few degrees below the primers' melting temperature (typically 50–65 °C) lets the primers pair with their targets. (Melting temperatures are calculated in Chemistry Atlas, [Nucleic acids](/a/chemistry/lesson.php?c=biochemistry&l=nucleic-acids).)
 3. **Extension** at about 72 °C lets the polymerase extend each primer across the target.
 
 The breakthrough that made PCR practical was the **thermostable** DNA polymerase of the bacterium *Thermus aquaticus*, isolated from a hot spring in Yellowstone National Park by Thomas Brock in the 1960s. Taq polymerase survives the denaturation step, so it need not be added again at every cycle, and its high working temperature makes priming more specific (Saiki et al., 1988).

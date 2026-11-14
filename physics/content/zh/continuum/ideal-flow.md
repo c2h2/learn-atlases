@@ -330,7 +330,7 @@ $$
 C_L = \frac{L}{\frac12\rho U^2c} = 2\pi\alpha ,
 $$ {#eq-thin-airfoil}
 
-其中 $\alpha$ 以弧度计——直到失速前都与实验相符到约百分之十以内。物理上，环量是由黏性创造的：机翼开始运动时，黏性作用在后缘的薄层里。由开尔文定理，包围机翼及其尾流的大物质曲线的总环量保持为零，所以一个等值反向的**起始涡**从后缘放出，留在跑道附近。普朗特在哥廷根（Göttingen）的实验室于 1920 年代把它拍摄下来。有限翼展机翼的细节——尾涡与诱导阻力——在机械工程图谱的[势流](/learn/mechanical/lesson.php?c=aerodynamics&l=potential-flow)与[薄翼理论](/learn/mechanical/lesson.php?c=aerodynamics&l=thin-airfoil-theory)两课中展开。
+其中 $\alpha$ 以弧度计——直到失速前都与实验相符到约百分之十以内。物理上，环量是由黏性创造的：机翼开始运动时，黏性作用在后缘的薄层里。由开尔文定理，包围机翼及其尾流的大物质曲线的总环量保持为零，所以一个等值反向的**起始涡**从后缘放出，留在跑道附近。普朗特在哥廷根（Göttingen）的实验室于 1920 年代把它拍摄下来。有限翼展机翼的细节——尾涡与诱导阻力——在机械工程图谱的[势流](/a/mechanical/lesson.php?c=aerodynamics&l=potential-flow)与[薄翼理论](/a/mechanical/lesson.php?c=aerodynamics&l=thin-airfoil-theory)两课中展开。
 
 ::: example 轻型飞机的升力 {#ex-aircraft}
 一架质量 $1000\,\mathrm{kg}$ 的轻型飞机有矩形机翼，翼展 $10.0\,\mathrm m$，弦长 $1.50\,\mathrm m$。它在密度 $1.20\,\mathrm{kg/m^3}$ 的空气中以 $50.0\,\mathrm{m/s}$ 平飞。求绕翼环量、升力系数，以及薄翼理论预言的迎角。忽略翼端效应。
@@ -361,7 +361,7 @@ $$
 
 ## 后续内容 {#leads}
 
-理想理论在远离壁面和尾流之处是正确的，壁面附近必须由黏性补全。[[continuum/viscous-flow]] 加上黏性应力，导出纳维-斯托克斯（Navier–Stokes）方程，并用普朗特的边界层说明欧拉理论为何在其适用处有效、在其失效处失效。欧拉方程对静止状态线性化给出声波；带上自由表面给出水波——两者都在 [[continuum/waves-in-fluids]] 中，那里会再次使用本章的势流方法。[[mechanics/fluids]] 中那条定常流动的初等伯努利方程就是 [[#eq-bernoulli]] 这个特例；它的工程应用——文丘里流量计、水箱出流、虹吸——在机械工程图谱的[伯努利方程](/learn/mechanical/lesson.php?c=fluid-mechanics&l=bernoulli)一课中展开。
+理想理论在远离壁面和尾流之处是正确的，壁面附近必须由黏性补全。[[continuum/viscous-flow]] 加上黏性应力，导出纳维-斯托克斯（Navier–Stokes）方程，并用普朗特的边界层说明欧拉理论为何在其适用处有效、在其失效处失效。欧拉方程对静止状态线性化给出声波；带上自由表面给出水波——两者都在 [[continuum/waves-in-fluids]] 中，那里会再次使用本章的势流方法。[[mechanics/fluids]] 中那条定常流动的初等伯努利方程就是 [[#eq-bernoulli]] 这个特例；它的工程应用——文丘里流量计、水箱出流、虹吸——在机械工程图谱的[伯努利方程](/a/mechanical/lesson.php?c=fluid-mechanics&l=bernoulli)一课中展开。
 
 ::: summary
 - 理想流体有 $\sigma_{ij} = -p\,\delta_{ij}$，柯西运动方程化为欧拉方程 $\rho\,D\mathbf v/Dt = -\nabla p + \rho\mathbf g$，壁面允许滑移。

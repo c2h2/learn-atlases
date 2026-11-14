@@ -104,7 +104,7 @@ $$ {#eq-schur}
 :::
 
 ::: proof
-最小化$\boldsymbol\delta H\boldsymbol\delta^\top$，约束为$\boldsymbol\delta\mathbf{u}_j = -e_j$，其中$\mathbf{u}_j$是第$j$个单位列向量。拉格朗日函数$\boldsymbol\delta H\boldsymbol\delta^\top - 2\lambda(\boldsymbol\delta\mathbf{u}_j + e_j)$的梯度为$2\boldsymbol\delta H - 2\lambda\mathbf{u}_j^\top = 0$，故$\boldsymbol\delta = \lambda\mathbf{u}_j^\top H^{-1} = \lambda(H^{-1})_{j,:}$。代入约束得$\lambda[H^{-1}]_{jj} = -e_j$，于是得$\boldsymbol\delta^*$。再代入得$E = \lambda^2(H^{-1})_{j,:}H(H^{-1})_{:,j} = \lambda^2[H^{-1}]_{jj} = e_j^2/[H^{-1}]_{jj}$。由于$E$是正定二次型而约束是仿射的，这个驻点就是最小值点。至于第二点：固定$\delta_j$后，目标关于其余坐标是一个以$H_{-j,-j}$为矩阵的二次型，而用整体逆表示主子矩阵之逆的公式（舒尔补恒等式，分块求逆见 [Maths Atlas](/learn/maths/)）就是[[#eq-schur]]。
+最小化$\boldsymbol\delta H\boldsymbol\delta^\top$，约束为$\boldsymbol\delta\mathbf{u}_j = -e_j$，其中$\mathbf{u}_j$是第$j$个单位列向量。拉格朗日函数$\boldsymbol\delta H\boldsymbol\delta^\top - 2\lambda(\boldsymbol\delta\mathbf{u}_j + e_j)$的梯度为$2\boldsymbol\delta H - 2\lambda\mathbf{u}_j^\top = 0$，故$\boldsymbol\delta = \lambda\mathbf{u}_j^\top H^{-1} = \lambda(H^{-1})_{j,:}$。代入约束得$\lambda[H^{-1}]_{jj} = -e_j$，于是得$\boldsymbol\delta^*$。再代入得$E = \lambda^2(H^{-1})_{j,:}H(H^{-1})_{:,j} = \lambda^2[H^{-1}]_{jj} = e_j^2/[H^{-1}]_{jj}$。由于$E$是正定二次型而约束是仿射的，这个驻点就是最小值点。至于第二点：固定$\delta_j$后，目标关于其余坐标是一个以$H_{-j,-j}$为矩阵的二次型，而用整体逆表示主子矩阵之逆的公式（舒尔补恒等式，分块求逆见 [Maths Atlas](/a/maths/)）就是[[#eq-schur]]。
 :::
 
 ::: algorithm GPTQ（单层） {#alg-gptq}

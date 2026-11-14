@@ -415,7 +415,7 @@ $$
 
 ## 后续内容 {#leads}
 
-本章的每条规则都是严格量子力学的特例。[[quantum-1/schrodinger-equation]] 的薛定谔方程把德布罗意关系构建成一个波动方程。普朗克的能量阶梯 $nh\nu$ 加上零点能 $\frac12 h\nu$ 之后，以 [[quantum-1/harmonic-oscillator]] 的能谱重现。玻尔的能量从 [[quantum-1/hydrogen]] 的氢原子中得出，且带有正确的角动量。光子统计与完整的普朗克定律属于 [[statistical-mechanics]]。化学图谱在[量子化学基础](/learn/chemistry/lesson.php?c=quantum-chemistry&l=quantum-foundations)一文中从化学家的角度处理同一段历史。
+本章的每条规则都是严格量子力学的特例。[[quantum-1/schrodinger-equation]] 的薛定谔方程把德布罗意关系构建成一个波动方程。普朗克的能量阶梯 $nh\nu$ 加上零点能 $\frac12 h\nu$ 之后，以 [[quantum-1/harmonic-oscillator]] 的能谱重现。玻尔的能量从 [[quantum-1/hydrogen]] 的氢原子中得出，且带有正确的角动量。光子统计与完整的普朗克定律属于 [[statistical-mechanics]]。化学图谱在[量子化学基础](/a/chemistry/lesson.php?c=quantum-chemistry&l=quantum-foundations)一文中从化学家的角度处理同一段历史。
 
 ::: summary
 - 经典能量均分给出瑞利-金斯定律 $u = 8\pi\nu^2k_BT/c^3$ 与无限的总能量。普朗克量子化的振子平均能量为 $h\nu/(e^{h\nu/k_BT}-1)$，把 $h\nu \gg k_BT$ 的模式冻结，给出实测谱。

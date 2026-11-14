@@ -1,4 +1,4 @@
-前面每一章都假定存在一个`get_scene`工具，它返回带标识符和位姿的物体。本章就来造这个工具。操作员说“扭矩扳手”，而规划器需要的是机器人基坐标系中以毫米为单位的抓取位姿。两者之间隔着四步：找到与词语匹配的图像区域（**开放词汇检测与分割**），或者让一个视觉-语言模型直接**指点**物体上要紧的部位；用相机**内参**和深度把像素变成三维点（**反投影**）；用**手眼变换**把这些点表达到机器人坐标系中；再从得到的点云计算出**抓取位姿**。每一步上我们还跟踪**不确定度**，因为基于$\pm3\,\mathrm{mm}$已知位置规划的抓取，和基于$\pm15\,\mathrm{mm}$已知位置规划的抓取，需要的夹爪开口不一样。针孔模型与立体视觉测深在[[robotics/motion-planning-perception]]中推导；相机标定与手眼标定在[[robot-arm-design/calibration]]；视觉-语言模型本身在LLM图谱的[图文对比学习](/learn/llm/lesson.php?c=multimodal&l=contrastive-learning)与[视觉-语言模型](/learn/llm/lesson.php?c=multimodal&l=vision-language-models)两章。
+前面每一章都假定存在一个`get_scene`工具，它返回带标识符和位姿的物体。本章就来造这个工具。操作员说“扭矩扳手”，而规划器需要的是机器人基坐标系中以毫米为单位的抓取位姿。两者之间隔着四步：找到与词语匹配的图像区域（**开放词汇检测与分割**），或者让一个视觉-语言模型直接**指点**物体上要紧的部位；用相机**内参**和深度把像素变成三维点（**反投影**）；用**手眼变换**把这些点表达到机器人坐标系中；再从得到的点云计算出**抓取位姿**。每一步上我们还跟踪**不确定度**，因为基于$\pm3\,\mathrm{mm}$已知位置规划的抓取，和基于$\pm15\,\mathrm{mm}$已知位置规划的抓取，需要的夹爪开口不一样。针孔模型与立体视觉测深在[[robotics/motion-planning-perception]]中推导；相机标定与手眼标定在[[robot-arm-design/calibration]]；视觉-语言模型本身在LLM图谱的[图文对比学习](/a/llm/lesson.php?c=multimodal&l=contrastive-learning)与[视觉-语言模型](/a/llm/lesson.php?c=multimodal&l=vision-language-models)两章。
 
 ## 开放词汇检测与分割 {#sec-detection}
 
@@ -137,7 +137,7 @@ caption: 位置误差随工作距离$Z$（米）的变化，其中$\sigma_u$为�
 6. 与运动规划器一起检查预抓取、抓取与提升位姿的可达性和碰撞，包括张开的手指与点云中相邻点的碰撞。若检查失败，换下一个候选（旋转$180^\circ$、沿长轴平移），或报告失败。
 :::
 
-第4步的角度公式是对称$2\times2$矩阵主轴的经典结论（[特征值](/learn/maths/lesson.php?c=linear-algebra&l=eigenvalues)）：较大特征值的特征向量指向点云展开最大的方向。
+第4步的角度公式是对称$2\times2$矩阵主轴的经典结论（[特征值](/a/maths/lesson.php?c=linear-algebra&l=eigenvalues)）：较大特征值的特征向量指向点云展开最大的方向。
 
 ::: example 抓取一个支架 {#ex-pca}
 一扁平支架顶面点的水平协方差为$S_{xx} = 4.0\times10^{-4}\,\mathrm{m^2}$，$S_{yy} = 1.0\times10^{-4}\,\mathrm{m^2}$，$S_{xy} = 1.2\times10^{-4}\,\mathrm{m^2}$。求支架的朝向、近似的长与宽（当作均匀矩形处理）以及夹爪偏航。夹爪开口$50\,\mathrm{mm}$，位置不确定度$\sigma = 2.8\,\mathrm{mm}$。

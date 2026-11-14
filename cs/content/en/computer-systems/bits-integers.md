@@ -14,7 +14,7 @@ All C in this chapter was compiled with GCC 15.2 as `gcc -std=c17 -Wall -Wextra`
 
 ## Bits, bytes and hexadecimal
 
-A **bit** is a quantity with two values, written $0$ and $1$. Electronic circuits represent the two values reliably as two voltage ranges, which is why digital computers are binary (how transistors and gates do this is the subject of [EE Atlas: digital logic](/learn/ee/)). A single bit can say yes or no; meaning comes from grouping bits and agreeing on how to interpret the group.
+A **bit** is a quantity with two values, written $0$ and $1$. Electronic circuits represent the two values reliably as two voltage ranges, which is why digital computers are binary (how transistors and gates do this is the subject of [EE Atlas: digital logic](/a/ee/)). A single bit can say yes or no; meaning comes from grouping bits and agreeing on how to interpret the group.
 
 ::: definition Bit vector {#def-bit-vector}
 A **bit vector** of width $w$ is a sequence $\vec{x} = [x_{w-1}, x_{w-2}, \ldots, x_1, x_0]$ of $w$ bits, written with the **most significant bit** $x_{w-1}$ on the left and the **least significant bit** $x_0$ on the right. There are $2^w$ bit vectors of width $w$. A **byte** is a bit vector of width $8$; it has $256$ possible values.
@@ -96,7 +96,7 @@ The bytes of `0x01234567` come out "backwards", least significant first: the mac
 
 ## Bit-level operations
 
-Before reading bit vectors as numbers, consider operations on the bits themselves. C provides the Boolean operations of [Maths Atlas: propositional logic](/learn/maths/lesson.php?c=proofs&l=propositional-logic) applied **bitwise**, position by position: `&` (and), `|` (or), `^` (exclusive or) and `~` (not). They work on any integer type.
+Before reading bit vectors as numbers, consider operations on the bits themselves. C provides the Boolean operations of [Maths Atlas: propositional logic](/a/maths/lesson.php?c=proofs&l=propositional-logic) applied **bitwise**, position by position: `&` (and), `|` (or), `^` (exclusive or) and `~` (not). They work on any integer type.
 
 ```c
 unsigned x = 0x69, y = 0x55;     /* 0110 1001 and 0101 0101 */

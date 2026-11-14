@@ -2,7 +2,7 @@
 
 本章覆盖模仿学习中最早、也仍是应用最广的形式——**行为克隆**，它把问题当作普通的监督学习。我们精确定义观测、动作与策略，说明行为克隆是一个回归或分类问题，然后研究会出问题的两件事。第一件是**复合误差**（compounding error）：会犯小错的策略漂移到示范者从未到过的情形里，错误在那里越滚越大——$T$步一个回合的误差按$T^2$而非$T$增长。第二件是**多峰性**：当示范者用两种不同方式解决同一情形时，用均方误差训练的网络会把两者平均，而“从障碍物左边绕”与“从右边绕”的平均是“撞进去”。解药——DAgger、更丰富的动作分布、动作分块——为课程的后续章节定下议程。
 
-本章假定[[robot-arm-design/software-stack]]的软件图景：一个以几百赫兹到几千赫兹运行的实时关节控制器，以及到达得更慢的高层指令。学得的策略正是那些高层指令源之一。关于神经网络及其训练，参考 LLM 图谱：[多层网络](/learn/llm/lesson.php?c=neural-networks&l=perceptrons-mlps)、[反向传播](/learn/llm/lesson.php?c=neural-networks&l=backpropagation)与[优化器](/learn/llm/lesson.php?c=neural-networks&l=optimisers)。
+本章假定[[robot-arm-design/software-stack]]的软件图景：一个以几百赫兹到几千赫兹运行的实时关节控制器，以及到达得更慢的高层指令。学得的策略正是那些高层指令源之一。关于神经网络及其训练，参考 LLM 图谱：[多层网络](/a/llm/lesson.php?c=neural-networks&l=perceptrons-mlps)、[反向传播](/a/llm/lesson.php?c=neural-networks&l=backpropagation)与[优化器](/a/llm/lesson.php?c=neural-networks&l=optimisers)。
 
 ## 观测、动作与策略 {#sec-policies}
 

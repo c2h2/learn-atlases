@@ -125,7 +125,7 @@ $$
 The first equation is the definition of `%` rearranged. For the inequality, let $q = \lfloor a/b \rfloor$. By the definition of the floor, $q \le a/b < q + 1$. Multiplying through by $b > 0$ preserves the inequalities: $qb \le a < qb + b$. Subtracting $qb$ gives $0 \le a - qb < b$, and $a - qb = a \mathbin{\%} b$.
 :::
 
-So for a positive divisor the remainder is always between $0$ and $b - 1$, *whatever the sign of $a$*. This is the convention of mathematics (and of the `mod` in [Maths Atlas: congruences](/learn/maths/lesson.php?c=number-theory&l=congruences)), and it is what makes `%` useful for "wrapping around": `(day + 3) % 7` gives a day of the week from $0$ to $6$ even when `day + 3` is negative. (For $b < 0$ the remainder lies in $b < r \le 0$, by the same argument with the inequalities reversed.)
+So for a positive divisor the remainder is always between $0$ and $b - 1$, *whatever the sign of $a$*. This is the convention of mathematics (and of the `mod` in [Maths Atlas: congruences](/a/maths/lesson.php?c=number-theory&l=congruences)), and it is what makes `%` useful for "wrapping around": `(day + 3) % 7` gives a day of the week from $0$ to $6$ even when `day + 3` is negative. (For $b < 0$ the remainder lies in $b < r \le 0$, by the same argument with the inequalities reversed.)
 
 ::: example Negative operands {#ex-negative}
 Compute `-7 // 2`, `-7 % 2`, `-17 // 5` and `-17 % 5`, and check the division identity.
@@ -347,7 +347,7 @@ The idea of a data type has two roots. Mathematicians such as Bertrand Russell i
 
 ## Where this leads
 
-With values, operators and variables in hand, the next step is to make programs that decide and repeat: [[programming-1/control-flow]] introduces `if`, `while` and `for`, all of which are driven by the Boolean expressions of this chapter. Strings are developed fully in [[programming-1/sequences]]. The representation of integers and floats as bit patterns in memory — two's complement, overflow in fixed-size integers, the exact layout of a double — belongs to [[computer-systems]], and the analysis of rounding error in long computations to numerical analysis ([Maths Atlas: floating-point arithmetic](/learn/maths/lesson.php?c=numerical-analysis&l=floating-point)).
+With values, operators and variables in hand, the next step is to make programs that decide and repeat: [[programming-1/control-flow]] introduces `if`, `while` and `for`, all of which are driven by the Boolean expressions of this chapter. Strings are developed fully in [[programming-1/sequences]]. The representation of integers and floats as bit patterns in memory — two's complement, overflow in fixed-size integers, the exact layout of a double — belongs to [[computer-systems]], and the analysis of rounding error in long computations to numerical analysis ([Maths Atlas: floating-point arithmetic](/a/maths/lesson.php?c=numerical-analysis&l=floating-point)).
 
 ::: summary
 - Every value has a **type** that fixes what it represents and what operators mean for it; the basic types are `int`, `float`, `str`, `bool` and `NoneType`. Python is dynamically and strongly typed: convert explicitly with `int()`, `float()` and `str()`.

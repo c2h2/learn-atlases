@@ -1,13 +1,13 @@
 # Chemistry Atlas — content guide
 
-Chemistry Atlas (`/learn/chemistry/`) teaches the undergraduate chemistry curriculum in depth. Every
+Chemistry Atlas (`/a/chemistry/`) teaches the undergraduate chemistry curriculum in depth. Every
 chapter is a long, self-contained lesson in the style of a very good textbook: motivation and
 intuition first, then precise definitions, laws and their derivations, many fully worked examples
 (with numbers, units and significant figures), interactive figures, quick checks, and graded
 exercises with full solutions.
 
-The site runs on the same engine as Maths Atlas (`/learn/maths/`). Its reference lesson,
-`/var/www/f.g77k.com/learn/maths/content/en/calculus-1/limits.md`, shows the expected depth, tone
+The site runs on the same engine as Maths Atlas (`/a/maths/`). Its reference lesson,
+`/var/www/f.g77k.com/a/maths/content/en/calculus-1/limits.md`, shows the expected depth, tone
 and markup: read it before writing.
 
 **Every lesson is written by hand to this standard.** Never generate lessons, course fields or
@@ -92,8 +92,8 @@ chemistry ("Law", "Derivation", a "Key results" index — as Medicine Atlas rela
 ## 4. Writing style, accuracy and safety
 
 - Audience: undergraduates who have done the prerequisite chapters. Explain from scratch, motivate
-  before formalising, then be exact. Link to Maths Atlas (`/learn/maths/`) for mathematical tools
-  and to Physics Atlas (`/learn/physics/`) for physics.
+  before formalising, then be exact. Link to Maths Atlas (`/a/maths/`) for mathematical tools
+  and to Physics Atlas (`/a/physics/`) for physics.
 - Voice: "we" for shared reasoning, "you" for instructions. Friendly, precise, unhurried.
 - **British spelling** (ionisation, polymerisation, vapour, behaviour, analyse) with IUPAC element
   names: **sulfur, aluminium, caesium**.
@@ -116,13 +116,13 @@ chemistry ("Law", "Derivation", a "Key results" index — as Medicine Atlas rela
   described by hazard category and mechanism, never as doses to reach or avoid.
 - **Medicinal chemistry and biochemistry** are for education only, not medical advice: no
   individual advice and no doses as instructions (illustrative values only), as in Medicine Atlas
-  (`/learn/medicine/tools/CONTENT_GUIDE.md` §4).
+  (`/a/medicine/tools/CONTENT_GUIDE.md` §4).
 - **Environmental and industrial chemistry**: date statistics and regulations ("as of 2026"), cite
   the source (IPCC, WMO ozone assessments, national agencies), and describe policy neutrally.
 
 ## 5. Markup and notation
 
-Exactly as in Maths Atlas — see `/var/www/f.g77k.com/learn/maths/tools/CONTENT_GUIDE.md` §5 for
+Exactly as in Maths Atlas — see `/var/www/f.g77k.com/a/maths/tools/CONTENT_GUIDE.md` §5 for
 blocks, references (`[[#id]]`, `[[course/chapter]]`, `[[course/chapter#id]]`), answer checks and
 KaTeX conventions.
 
@@ -158,7 +158,7 @@ lone pair on the hydroxide oxygen attacks the carbon; the C–Br bond breaks and
 
 ## 6. Interactive figures
 
-The available types are in `data/widgets.json`; try each at `/learn/chemistry/lab.php?w=<type>`:
+The available types are in `data/widgets.json`; try each at `/a/chemistry/lab.php?w=<type>`:
 
 - `plot`, `parametric` — functions and curves (Arrhenius plots, distribution functions, radial
   probability, titration curves from a formula); `newton` — solving equilibrium and pH equations.
@@ -178,12 +178,12 @@ profiles, kinetics, phase diagrams, spectra, crystal lattices, cells …) are pl
 ## 7. Check your work
 
 ```
-cd /var/www/f.g77k.com/learn/chemistry
+cd /var/www/f.g77k.com/a/chemistry
 bash tools/check.sh <course> [<course> …]
 ```
 
 This typesets every formula with KaTeX, validates figures, checks and references, and prints a
 depth table per lesson. Fix every `ERROR`; depth `warn`ings must be gone for finished lessons.
-Preview at `http://f.g77k.com/learn/chemistry/lesson.php?c=<course>&l=<chapter>` (from this machine:
+Preview at `http://f.g77k.com/a/chemistry/lesson.php?c=<course>&l=<chapter>` (from this machine:
 `curl --resolve f.g77k.com:80:127.0.0.1 …` or `node tools/shot.js "lesson.php?c=…&l=…" out.png`).
 Read your rendered lesson at least once.

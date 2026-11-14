@@ -1,6 +1,6 @@
 Every crew and cargo flight to a space station ends with a rendezvous: a spacecraft that was launched hours or days earlier must arrive at the same point of the same orbit, at the same time and at almost zero relative speed. Phasing manoeuvres ([[orbital-mechanics/orbital-manoeuvres]]) bring the chaser within a few tens of kilometres. The final approach is a different kind of problem: what matters is no longer the shape of each orbit but the small *difference* between two neighbouring orbits, seen from the target. In that view orbital mechanics becomes strange. A chaser that fires its engine towards the target drifts away from it; one sitting motionless a hundred metres below the target is a few kilometres ahead of it one orbit later; to move forward you thrust downward. All of this follows from one set of linear equations — the **Clohessy–Wiltshire** (or **Hill**) equations — which this chapter derives, solves in closed form, and uses to design approach trajectories, two-impulse rendezvous transfers and formation-flying orbits. We finish by checking the linear theory against the exact two-body motion, to see when it can be trusted.
 
-The tools are the rotating-frame kinematics of [[dynamics/relative-motion]] and linear constant-coefficient ODEs ([linear systems](/learn/maths/lesson.php?c=ode&l=linear-systems)).
+The tools are the rotating-frame kinematics of [[dynamics/relative-motion]] and linear constant-coefficient ODEs ([linear systems](/a/maths/lesson.php?c=ode&l=linear-systems)).
 
 ## The target's frame {#sec-frame}
 
@@ -52,7 +52,7 @@ The in-plane equations are coupled through the **Coriolis terms** $2n\dot y$ and
 
 ## The closed-form solution {#sec-solution}
 
-The equations [[#eq-cw]] are linear with constant coefficients and can be solved exactly ([second-order linear ODEs](/learn/maths/lesson.php?c=ode&l=second-order-linear)).
+The equations [[#eq-cw]] are linear with constant coefficients and can be solved exactly ([second-order linear ODEs](/a/maths/lesson.php?c=ode&l=second-order-linear)).
 
 ::: proposition Solution of the Clohessy–Wiltshire equations {#prop-cw-solution}
 For free motion from $(x_0, y_0, z_0)$ with velocity $(\dot x_0, \dot y_0, \dot z_0)$ at $t = 0$, with $c = \cos nt$ and $s = \sin nt$,

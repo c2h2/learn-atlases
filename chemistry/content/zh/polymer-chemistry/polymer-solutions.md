@@ -298,7 +298,7 @@ Kuhn（Werner Kuhn）1934 年把无规线团链引入统计处理，同年 Guth�
 
 ## 后续内容
 
-这里发展的稀溶液性质正是主要表征方法所测的东西。[[polymer-chemistry/polymer-characterisation]]在光散射中使用 $R_\mathrm{g}$ 与 $A_2$，在渗透压法中使用维里展开，在尺寸排阻色谱与黏度法中使用流体力学尺寸。[[#eq-entropic-spring]]的熵弹簧在[[polymer-chemistry/polymer-properties]]中变成橡胶弹性，那里缠结高斯链的熔体还解释了黏弹性。水溶性聚合物的 LCST 行为、水凝胶溶胀与载药胶束出现在[[polymer-chemistry/functional-polymers]]。这里推广的正规溶液与化学势观念来自[[thermodynamics/mixtures]]。高斯链背后的中心极限定理在 Maths Atlas（[/learn/maths/](/learn/maths/)）中讲述。
+这里发展的稀溶液性质正是主要表征方法所测的东西。[[polymer-chemistry/polymer-characterisation]]在光散射中使用 $R_\mathrm{g}$ 与 $A_2$，在渗透压法中使用维里展开，在尺寸排阻色谱与黏度法中使用流体力学尺寸。[[#eq-entropic-spring]]的熵弹簧在[[polymer-chemistry/polymer-properties]]中变成橡胶弹性，那里缠结高斯链的熔体还解释了黏弹性。水溶性聚合物的 LCST 行为、水凝胶溶胀与载药胶束出现在[[polymer-chemistry/functional-polymers]]。这里推广的正规溶液与化学势观念来自[[thermodynamics/mixtures]]。高斯链背后的中心极限定理在 Maths Atlas（[/a/maths/](/a/maths/)）中讲述。
 
 ::: summary
 - 柔性链是无规行走。$\langle R^2\rangle = nl^2$（自由连接）或 $2nl^2$（自由旋转，四面体角），一般地 $\langle R^2\rangle_0 = C_\infty nl^2$ 且 $R_\mathrm{g}^2 = \langle R^2\rangle/6$。库恩长度 $b = \langle R^2\rangle_0/R_\text{max}$ 度量刚柔性。

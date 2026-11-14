@@ -239,7 +239,7 @@ $$
 
 ## 后续内容
 
-后面每一章都会用到这里的思想。[[biochemistry/amino-acids-proteins]]中的蛋白质折叠在疏水效应与链的构象熵之间权衡，由氢键与堆积决定细节；本章的酸碱方程给出氨基酸的电荷与蛋白质的等电点。[[biochemistry/protein-function]]中的配体结合与[[biochemistry/enzymes]]中的催化，利用的正是低介电口袋中精确安置的电荷与氢键。[[biochemistry/carbohydrates-lipids]]中的膜是看得见的疏水效应，而[[biochemistry/nucleic-acids]]的碱基堆积与氢键搭成双螺旋。同一套连续介质静电学将在[[thermodynamics/ions-in-solution]]（德拜-休克尔理论）和[[medicinal-chemistry/drug-binding]]中的药物设计中重现。至于贯穿各处使用的对数与指数数学，见[Maths Atlas](/learn/maths/)。
+后面每一章都会用到这里的思想。[[biochemistry/amino-acids-proteins]]中的蛋白质折叠在疏水效应与链的构象熵之间权衡，由氢键与堆积决定细节；本章的酸碱方程给出氨基酸的电荷与蛋白质的等电点。[[biochemistry/protein-function]]中的配体结合与[[biochemistry/enzymes]]中的催化，利用的正是低介电口袋中精确安置的电荷与氢键。[[biochemistry/carbohydrates-lipids]]中的膜是看得见的疏水效应，而[[biochemistry/nucleic-acids]]的碱基堆积与氢键搭成双螺旋。同一套连续介质静电学将在[[thermodynamics/ions-in-solution]]（德拜-休克尔理论）和[[medicinal-chemistry/drug-binding]]中的药物设计中重现。至于贯穿各处使用的对数与指数数学，见[Maths Atlas](/a/maths/)。
 
 ::: history
 氢键于 1920 年进入化学：拉蒂默（Wendell Latimer）与罗德巴什（Worth Rodebush）在伯克利的路易斯（Gilbert Lewis）门下，把水的缔合与氢氧化铵作为碱的弱势，解释为一个氢核"被夹在两个八隅体之间"。1933 年贝纳尔（John Desmond Bernal）与福勒（Ralph Fowler）提出液体的四面体氢键模型；1935 年鲍林（Linus Pauling）用质子的无序解释了冰的残余熵（每摩尔 $R\ln\tfrac32$）。pH 的语言出自嘉士伯实验室：瑟伦森（Søren Sørensen）1909 年引入 pH 标度，比亨德森（Lawrence Henderson）为血液中的碳酸写出缓冲平衡方程晚一年；哈塞尔巴尔赫（Karl Albert Hasselbalch）1916 年把亨德森方程写成对数形式。德拜（Peter Debye）与休克尔（Erich Hückel）1923 年发表电解质屏蔽理论，伦纳德-琼斯（John Lennard-Jones）1924 年提出他的反幂势。疏水水合的热力学由弗兰克（Henry Frank）与埃文斯（Marjorie Evans）1945 年描述（"冰山"）；考兹曼（Walter Kauzmann）1959 年的综述论证"疏水键"是蛋白质折叠的主要力量——这一观点在坦福德（Charles Tanford）的《疏水效应》（1973）一书中得到巩固。

@@ -69,7 +69,7 @@ $$
 \texttt{not}\,(p \;\texttt{or}\; q) \equiv (\texttt{not}\,p)\;\texttt{and}\;(\texttt{not}\,q).
 $$ {#eq-de-morgan}
 
-于是"不在 0 与 9 之间"，即 `not (0 <= x and x <= 9)`，与 `x < 0 or x > 9` 相同。（其证明就是一张真值表：见[数学图谱：命题逻辑](/learn/maths/lesson.php?c=proofs&l=propositional-logic)。）
+于是"不在 0 与 9 之间"，即 `not (0 <= x and x <= 9)`，与 `x < 0 or x > 9` 相同。（其证明就是一张真值表：见[数学图谱：命题逻辑](/a/maths/lesson.php?c=proofs&l=propositional-logic)。）
 
 ::: widget truthtable
 formula: ~(p & q)
@@ -187,7 +187,7 @@ steps: 8
 :::
 
 ::: proof
-对 $k$ 归纳证明：对所有不超过实际执行次数的 $k$，$P$ 在 $k$ 次迭代后成立。$k = 0$ 时这就是初始化。若 $P$ 在 $k$ 次迭代后成立，且进行了第 $k+1$ 次迭代，则该迭代开始时 $C$ 为真（这正是它被执行的原因），于是由保持性，$P$ 在 $k + 1$ 次迭代后成立。当循环在 $N$ 次迭代后终止时，$P$ 在第 $N$ 次迭代后成立，且循环之所以停止是因为 $C$ 为假。（归纳法见[数学图谱：归纳法](/learn/maths/lesson.php?c=proofs&l=induction)。）
+对 $k$ 归纳证明：对所有不超过实际执行次数的 $k$，$P$ 在 $k$ 次迭代后成立。$k = 0$ 时这就是初始化。若 $P$ 在 $k$ 次迭代后成立，且进行了第 $k+1$ 次迭代，则该迭代开始时 $C$ 为真（这正是它被执行的原因），于是由保持性，$P$ 在 $k + 1$ 次迭代后成立。当循环在 $N$ 次迭代后终止时，$P$ 在第 $N$ 次迭代后成立，且循环之所以停止是因为 $C$ 为假。（归纳法见[数学图谱：归纳法](/a/maths/lesson.php?c=proofs&l=induction)。）
 :::
 
 不变式原理把一个关于次数未知的迭代的问题，化为两个关于单次迭代的小问题。关键在于选取 $P$：它应当描述*迄今取得的进展*，使得"$P$ 且非 $C$"恰好说明任务已经完成。下面是可能的最简单的示例。

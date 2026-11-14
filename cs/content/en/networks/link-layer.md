@@ -296,7 +296,7 @@ Robert Metcalfe and David Boggs built the first Ethernet at Xerox PARC in 1973, 
 
 ## Where this leads
 
-Wireless links share many ideas of this chapter — random access, link-layer retransmission, MAC addresses — but replace collision detection with collision avoidance, for reasons explained in [[networks/wireless-mobile]]. Error-correcting codes are developed in coding theory, with algebraic foundations in [Maths Atlas](/learn/maths/); the hardware of network adapters and shift-register CRCs belongs to the [Electrical Engineering Atlas](/learn/ee/). Network security at the link layer — 802.1X port authentication, Wi-Fi encryption — is part of [[security]].
+Wireless links share many ideas of this chapter — random access, link-layer retransmission, MAC addresses — but replace collision detection with collision avoidance, for reasons explained in [[networks/wireless-mobile]]. Error-correcting codes are developed in coding theory, with algebraic foundations in [Maths Atlas](/a/maths/); the hardware of network adapters and shift-register CRCs belongs to the [Electrical Engineering Atlas](/a/ee/). Network security at the link layer — 802.1X port authentication, Wi-Fi encryption — is part of [[security]].
 
 ::: summary
 - The link layer moves frames across one link: framing, medium access, error detection, sometimes reliable delivery; it is implemented largely in the network adapter.

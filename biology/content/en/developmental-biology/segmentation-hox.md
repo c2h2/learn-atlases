@@ -177,7 +177,7 @@ Imagine a thermostat that can only see the temperature as it was ten minutes ago
 Human segmentation-clock oscillations have been studied in presomitic mesoderm cells derived from induced pluripotent stem cells. In 2020 the groups of Miki Ebisuya and Olivier Pourquié reported a period of about 5 h, compared with about 2–3 h for equivalent mouse cells; differences in the rates of biochemical reactions, such as protein degradation, appear to explain much of the difference in tempo between species.
 
 ::: application Segmentation defects
-Mutations in genes of the segmentation clock and the Notch pathway, such as *DLL3*, *MESP2*, *LFNG* and *HES7*, cause congenital disorders of the human vertebral column in which vertebrae are fused, misshapen or missing. Their identification depended directly on the mouse and zebrafish studies of the clock described here. Clinical aspects are covered in the Medicine Atlas ([Medicine Atlas](/learn/medicine/)).
+Mutations in genes of the segmentation clock and the Notch pathway, such as *DLL3*, *MESP2*, *LFNG* and *HES7*, cause congenital disorders of the human vertebral column in which vertebrae are fused, misshapen or missing. Their identification depended directly on the mouse and zebrafish studies of the clock described here. Clinical aspects are covered in the Medicine Atlas ([Medicine Atlas](/a/medicine/)).
 :::
 
 ::: history

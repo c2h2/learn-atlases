@@ -21,7 +21,7 @@ so its fundamental is a sinusoid in space, $\mathcal F_1 = \dfrac4\pi\dfrac{N_ci
 :::
 
 ::: proof
-The wave is even in $\theta$ and has half-wave symmetry, equal to $+A = N_ci/2$ for $\abs\theta < \pi/2$ and $-A$ for $\pi/2 < \abs\theta < \pi$. Its cosine coefficients are $a_h = \frac2\pi\int_0^\pi\mathcal F(\theta)\cos h\theta\,\mathrm d\theta = \frac{2A}\pi\Bigl[\int_0^{\pi/2}\cos h\theta\,\mathrm d\theta - \int_{\pi/2}^{\pi}\cos h\theta\,\mathrm d\theta\Bigr] = \frac{4A}{\pi h}\sin\frac{h\pi}2$. These vanish for even $h$ and equal $\pm4A/(\pi h)$ for odd $h$, with alternating signs. (This is the square wave of [Fourier series](/learn/maths/) shifted by a quarter period.)
+The wave is even in $\theta$ and has half-wave symmetry, equal to $+A = N_ci/2$ for $\abs\theta < \pi/2$ and $-A$ for $\pi/2 < \abs\theta < \pi$. Its cosine coefficients are $a_h = \frac2\pi\int_0^\pi\mathcal F(\theta)\cos h\theta\,\mathrm d\theta = \frac{2A}\pi\Bigl[\int_0^{\pi/2}\cos h\theta\,\mathrm d\theta - \int_{\pi/2}^{\pi}\cos h\theta\,\mathrm d\theta\Bigr] = \frac{4A}{\pi h}\sin\frac{h\pi}2$. These vanish for even $h$ and equal $\pm4A/(\pi h)$ for odd $h$, with alternating signs. (This is the square wave of [Fourier series](/a/maths/) shifted by a quarter period.)
 :::
 
 ### Electrical and mechanical angles

@@ -150,7 +150,7 @@ $$
 \langle x^2\rangle = \sum_i \langle s_i^2\rangle + \sum_{i\neq j}\langle s_i\rangle\langle s_j\rangle = N\delta^2 + 0 = \frac{\delta^2}{\tau}\,t.
 $$
 
-定义 $D = \delta^2/(2\tau)$ 即得 $\langle x^2\rangle = 2Dt$。沿三轴的运动独立，因此贡献相加为 $6Dt$。同样的结果也来自扩散（热）方程，其点源解是方差为 $2Dt$ 的高斯分布——见[数学图谱：热方程](/learn/maths/lesson.php?c=pde&l=heat-equation)。
+定义 $D = \delta^2/(2\tau)$ 即得 $\langle x^2\rangle = 2Dt$。沿三轴的运动独立，因此贡献相加为 $6Dt$。同样的结果也来自扩散（热）方程，其点源解是方差为 $2Dt$ 的高斯分布——见[数学图谱：热方程](/a/maths/lesson.php?c=pde&l=heat-equation)。
 :::
 
 关键特征是距离只按时间的**平方根**增长：要走十倍远，需要一百倍时间。代表性分子的扩散系数（20–37 °C；来自 BioNumbers 与所引研究）为：水中的小代谢物如葡萄糖约 $600\ \mathrm{\mu m^2\,s^{-1}}$；水中的绿色荧光蛋白约 $90\ \mathrm{\mu m^2\,s^{-1}}$，但在哺乳动物细胞质中约 $25\ \mathrm{\mu m^2\,s^{-1}}$，在 *E. coli* 中为 $3$–$8\ \mathrm{\mu m^2\,s^{-1}}$（Elowitz 及其同事，1999）；膜中的脂质约 $1\ \mathrm{\mu m^2\,s^{-1}}$。
@@ -203,7 +203,7 @@ $$ {#eq-abbe}
 两种形式来自不同判据——阿贝（Ernst Abbe）的判据来自物镜仍能收集其衍射级的最细周期光栅，瑞利（Lord Rayleigh）的判据来自把一个点衍射图案的第一个暗环放在另一个点的中心——相差约 20%。两者都假设对非相干或部分相干光的常规（线性、远场）成像。
 :::
 
-推导属于光学；见[物理图谱：衍射](/learn/physics/lesson.php?c=optics&l=diffraction)。这里重要的是生物学后果。
+推导属于光学；见[物理图谱：衍射](/a/physics/lesson.php?c=optics&l=diffraction)。这里重要的是生物学后果。
 
 ::: example 光学显微镜能做到的最好程度 {#ex-abbe}
 计算绿光（$\lambda = 500\ \mathrm{nm}$）在 (a) 干式物镜 $\mathrm{NA} = 0.25$ 与 (b) 油浸物镜 $\mathrm{NA} = 1.4$ 下的阿贝极限与瑞利极限。用 (b) 能否分辨：相距 1 µm 的两个线粒体；相距 30 nm 的两个核糖体；核膜的两层膜，相距约 40 nm？
@@ -276,7 +276,7 @@ $$
 化学固定与染色会产生假象。**冷冻电子显微镜**通过极快冷冻标本（在液氮冷却的液乙烷中）使水形成玻璃而非冰晶，避免这些假象；这一方法由迪博歇（Jacques Dubochet）及其同事在 1980 年代初发展。由弗兰克（Joachim Frank）开创的对许多相同分子图像求平均的方法，以及约 2012 年引入的直接电子探测器，现在给出接近原子分辨率的蛋白质与复合物结构；亨德森（Richard Henderson）1990 年的细菌视紫红质结构是早期里程碑。迪博歇、弗兰克与亨德森共享 2017 年诺贝尔化学奖。**冷冻电子断层扫描**把同样思路用于整个冷冻细胞的薄区域，倾斜标本以在天然环境中重建分子机器。结构测定在 [[structural-biology]] 中讲授。
 
 ::: application 关联光与电子
-光学与电子显微镜回答互补问题：荧光显示**哪种**分子在活细胞中的**哪里**以及如何移动，但分辨率为 0.2 µm；电子显微镜以纳米分辨率显示超微结构，但在死亡、固定或冷冻细胞中，且分子身份信息很少。**关联光与电子显微镜**用两种方式对同一细胞成像——例如在活细胞中定位一个稀有荧光事件，然后冷冻细胞并用冷冻电子断层扫描对该点成像。病理实验室仍对某些肾病与肌肉疾病使用活检的 TEM；临床方面属于[医学图谱：诊断病理学](/learn/medicine/lesson.php?c=pathology&l=diagnostic-pathology)。
+光学与电子显微镜回答互补问题：荧光显示**哪种**分子在活细胞中的**哪里**以及如何移动，但分辨率为 0.2 µm；电子显微镜以纳米分辨率显示超微结构，但在死亡、固定或冷冻细胞中，且分子身份信息很少。**关联光与电子显微镜**用两种方式对同一细胞成像——例如在活细胞中定位一个稀有荧光事件，然后冷冻细胞并用冷冻电子断层扫描对该点成像。病理实验室仍对某些肾病与肌肉疾病使用活检的 TEM；临床方面属于[医学图谱：诊断病理学](/a/medicine/lesson.php?c=pathology&l=diagnostic-pathology)。
 :::
 
 ::: history
@@ -285,7 +285,7 @@ $$
 
 ## 课程由此走向何处
 
-有了本章的尺寸与时间尺度，课程余下部分向内走。[[cell-biology/membranes]] 与 [[cell-biology/membrane-transport]] 处理每个细胞共享的边界；[[cell-biology/organelles]] 与 [[cell-biology/protein-sorting]] 处理真核细胞的内部隔室及其间的运输；[[cell-biology/cytoskeleton]] 处理细胞如何获得形状并运动；[[cell-biology/cell-signalling]]、[[cell-biology/cell-cycle]] 与 [[cell-biology/tissues-and-cell-death]] 处理细胞如何感知、决定、分裂、合作与死亡。分子本身——蛋白质、核酸、脂质与代谢——是[化学图谱：生物化学](/learn/chemistry/course.php?c=biochemistry)的主题。
+有了本章的尺寸与时间尺度，课程余下部分向内走。[[cell-biology/membranes]] 与 [[cell-biology/membrane-transport]] 处理每个细胞共享的边界；[[cell-biology/organelles]] 与 [[cell-biology/protein-sorting]] 处理真核细胞的内部隔室及其间的运输；[[cell-biology/cytoskeleton]] 处理细胞如何获得形状并运动；[[cell-biology/cell-signalling]]、[[cell-biology/cell-cycle]] 与 [[cell-biology/tissues-and-cell-death]] 处理细胞如何感知、决定、分裂、合作与死亡。分子本身——蛋白质、核酸、脂质与代谢——是[化学图谱：生物化学](/a/chemistry/course.php?c=biochemistry)的主题。
 
 ::: summary
 - 细胞学说：所有生物由细胞构成，细胞是最小生命单位，每个细胞来自已有细胞。

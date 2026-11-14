@@ -361,7 +361,7 @@ $$
 
 ## 后续内容 {#leads}
 
-在 [[quantum-1/hydrogen]] 中，拉普拉斯算符按 [[#eq-laplacian]] 分裂为一个径向部分与 $\hat L^2$，中心势中每个定态的角向部分都是一个 $Y_l^m$，而径向方程含有离心项 $\hbar^2l(l+1)/2mr^2$。在 [[quantum-1/spin]] 中，[[#thm-spectrum]] 的半整数值将被发现是由电子的一个内部角动量实现的，其 $j = \frac12$，算符是 $2\times2$ 矩阵。自旋与轨道角动量相加给出 [[quantum-2/atomic-structure]] 中的原子精细结构，化学图谱用同样的球谐函数构造原子轨道，见[氢原子](/learn/chemistry/lesson.php?c=quantum-chemistry&l=hydrogen-atom)。
+在 [[quantum-1/hydrogen]] 中，拉普拉斯算符按 [[#eq-laplacian]] 分裂为一个径向部分与 $\hat L^2$，中心势中每个定态的角向部分都是一个 $Y_l^m$，而径向方程含有离心项 $\hbar^2l(l+1)/2mr^2$。在 [[quantum-1/spin]] 中，[[#thm-spectrum]] 的半整数值将被发现是由电子的一个内部角动量实现的，其 $j = \frac12$，算符是 $2\times2$ 矩阵。自旋与轨道角动量相加给出 [[quantum-2/atomic-structure]] 中的原子精细结构，化学图谱用同样的球谐函数构造原子轨道，见[氢原子](/a/chemistry/lesson.php?c=quantum-chemistry&l=hydrogen-atom)。
 
 ::: summary
 - $\hat{\mathbf L} = \hat{\mathbf r}\times\hat{\mathbf p}$ 的分量满足 $[\hat L_i, \hat L_j] = i\hbar\varepsilon_{ijk}\hat L_k$ 与 $[\hat L^2, \hat L_i] = 0$：能同时尖锐的只有 $L^2$ 与一个分量。

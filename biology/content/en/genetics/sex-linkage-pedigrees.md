@@ -101,7 +101,7 @@ Let the frequency of an X-linked recessive allele in a randomly mating populatio
 A male receives one X from a random mother; it carries the allele with probability $q$. A female receives an X from each parent, independently under random mating; both carry the allele with probability $q\cdot q = q^2$. The ratio is $q/q^2 = 1/q$.
 :::
 
-Red–green colour vision deficiency, caused mainly by rearrangements of the tandem opsin genes *OPN1LW* and *OPN1MW* on Xq28, affects about 8 % of men of northern European ancestry. With $q \approx 0.08$, [[#prop-xfreq]] predicts about $0.08^2 = 0.64\ \%$ of women, close to the observed frequency of about 0.5 %; the ratio is $1/0.08 = 12.5$ men per woman. For rare X-linked conditions such as haemophilia A (factor VIII gene *F8*) or Duchenne muscular dystrophy (*DMD*), $q$ is of order $10^{-4}$, and affected females are exceedingly rare. (Clinical aspects belong to [Medicine Atlas](/learn/medicine/lesson.php?c=genetics&l=mendelian-inheritance).)
+Red–green colour vision deficiency, caused mainly by rearrangements of the tandem opsin genes *OPN1LW* and *OPN1MW* on Xq28, affects about 8 % of men of northern European ancestry. With $q \approx 0.08$, [[#prop-xfreq]] predicts about $0.08^2 = 0.64\ \%$ of women, close to the observed frequency of about 0.5 %; the ratio is $1/0.08 = 12.5$ men per woman. For rare X-linked conditions such as haemophilia A (factor VIII gene *F8*) or Duchenne muscular dystrophy (*DMD*), $q$ is of order $10^{-4}$, and affected females are exceedingly rare. (Clinical aspects belong to [Medicine Atlas](/a/medicine/lesson.php?c=genetics&l=mendelian-inheritance).)
 
 ::: widget plot
 f: x; x^2
@@ -175,7 +175,7 @@ By [[#eq-bayes-carrier]], $P(\text{carrier}) = 1/(1 + 2^3) = \tfrac19 \approx 0.
 | Joint | $\tfrac1{16}$ | $\tfrac12 = \tfrac8{16}$ |
 | Posterior | $\tfrac{1}{9}$ | $\tfrac89$ |
 
-Her next son is affected with probability $\tfrac19\cdot\tfrac12 = \tfrac1{18} \approx 0.056$, compared with $\tfrac14$ before her sons' phenotypes were taken into account. This is an exercise in conditional probability; risk assessment for real families takes many more factors into account and is the business of clinical genetics services ([Medicine Atlas](/learn/medicine/lesson.php?c=genetics&l=genetic-testing)).
+Her next son is affected with probability $\tfrac19\cdot\tfrac12 = \tfrac1{18} \approx 0.056$, compared with $\tfrac14$ before her sons' phenotypes were taken into account. This is an exercise in conditional probability; risk assessment for real families takes many more factors into account and is the business of clinical genetics services ([Medicine Atlas](/a/medicine/lesson.php?c=genetics&l=genetic-testing)).
 :::
 :::
 

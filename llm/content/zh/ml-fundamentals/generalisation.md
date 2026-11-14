@@ -1,6 +1,6 @@
 模型只有在没见过的数据上也表现好才有用。[[ml-fundamentals/learning-problem]]把这一点说得精确——我们想要**风险**小，可测得到的只有**经验风险**——并且表明两者可以相差很远：查表能完美拟合任何训练集，却什么都预测不了。本章从三个方向谈它们之间的差距，即**泛化间隙**。实践的：怎样用留出数据诚实地估计风险，并借助验证与交叉验证用这些估计在模型之间做选择。统计的：一个拟合出的模型的期望测试误差如何分解成噪声、**偏差**与**方差**，以及灵活模型为何要以一个换另一个。理论的：当假设类足够小——按假设的个数、或按它的**VC维**——能保证间隙很小的经典界，以及这些界为何对今天的大模型几乎无所说——后者在经典图景未曾预料到的情形里泛化得很好（**双下降**与**良性过拟合**）。
 
-本章的实验取[[ml-fundamentals/linear-regression]]的最小二乘拟合，并使用[[math-for-ml/estimation#prop-bias-variance]]中估计量的偏差-方差分解。一切界的基础是样本平均的集中性，它是大数定律的定量版本；背景见数学图谱的[极限定理](/learn/maths/lesson.php?c=probability&l=limit-theorems)一课。
+本章的实验取[[ml-fundamentals/linear-regression]]的最小二乘拟合，并使用[[math-for-ml/estimation#prop-bias-variance]]中估计量的偏差-方差分解。一切界的基础是样本平均的集中性，它是大数定律的定量版本；背景见数学图谱的[极限定理](/a/maths/lesson.php?c=probability&l=limit-theorems)一课。
 
 ## 训练、验证与测试数据 {#sec-splits}
 

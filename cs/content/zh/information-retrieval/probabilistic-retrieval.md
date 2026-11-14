@@ -1,6 +1,6 @@
 [[information-retrieval/vector-space]] 的 tf–idf 权重好用，却是试出来的：为什么是 $N/\mathrm{df}$ 的对数？为什么是 tf 的对数？文档长度应当如何掺进来？检索系统对相关性并不确定——它看见的是词，不是用户的需求——而刻画不确定性的自然语言是概率。若能对每篇文档估出用户判其相关的概率，正确的排序便一目了然：概率最大者排最前。本章顺着这条思路，从一条原理推到实践中在用的公式。
 
-我们从**概率排序原理**出发，证明它在什么意义上是最优的。拿二元的词项出现情形使它变得可算，得到**二元独立模型**，其词项权重——**Robertson–Spärck Jones 权重**——解释了 idf。经 2-Poisson 卓越性（eliteness）模型引入词频、再对其形状作近似，得到 **BM25**，带两个参数 $k_1$（tf 饱和）与 $b$（长度归一化）——数十年后的今天，它仍是标准的初排函数。最后是**语言建模**方法：按文档的语言模型生成查询的可能性给文档打分；配上我们给出贝叶斯推导的 **Dirichlet 平滑**，它会自发产生类 idf 加权与长度归一化，无须旁人指点。所有分数都是逐词项贡献之和，所以 [[information-retrieval/vector-space]] 的 WAND 与 MaxScore 算法原样适用。用到的概率知识止于 [Maths Atlas: conditional probability](/learn/maths/lesson.php?c=probability&l=conditional-probability) 的水平。
+我们从**概率排序原理**出发，证明它在什么意义上是最优的。拿二元的词项出现情形使它变得可算，得到**二元独立模型**，其词项权重——**Robertson–Spärck Jones 权重**——解释了 idf。经 2-Poisson 卓越性（eliteness）模型引入词频、再对其形状作近似，得到 **BM25**，带两个参数 $k_1$（tf 饱和）与 $b$（长度归一化）——数十年后的今天，它仍是标准的初排函数。最后是**语言建模**方法：按文档的语言模型生成查询的可能性给文档打分；配上我们给出贝叶斯推导的 **Dirichlet 平滑**，它会自发产生类 idf 加权与长度归一化，无须旁人指点。所有分数都是逐词项贡献之和，所以 [[information-retrieval/vector-space]] 的 WAND 与 MaxScore 算法原样适用。用到的概率知识止于 [Maths Atlas: conditional probability](/a/maths/lesson.php?c=probability&l=conditional-probability) 的水平。
 
 ## 概率排序原理
 
@@ -228,7 +228,7 @@ BM25 取 $k_1 = 1.2$、$b = 0.75$，某查询词项在一篇长度恰为平均�
 
 ## 检索的语言模型
 
-杰伊·庞特（Ponte）与布鲁斯·克罗夫特（Croft）（1998）提出另一种概率视角。不直接建模相关性，而是设想每篇文档 $d$ 由一个**语言模型** $\theta_d$ 生成——词项上的概率分布——并按查询由同一模型生成的概率给文档排序，即 $\Prob(q \mid \theta_d)$——**查询似然**模型。一段讲假海龟的文字，其语言模型里 `mock`、`turtle`、`soup` 的概率都高，于是它也多半生成了含这些词的查询。（语言模型本身，从 $n$-gram 到 transformer，是 [LLM Atlas](/learn/llm/lesson.php?c=text-and-language&l=ngram-models) 的主题；这里只需要一元模型。）
+杰伊·庞特（Ponte）与布鲁斯·克罗夫特（Croft）（1998）提出另一种概率视角。不直接建模相关性，而是设想每篇文档 $d$ 由一个**语言模型** $\theta_d$ 生成——词项上的概率分布——并按查询由同一模型生成的概率给文档排序，即 $\Prob(q \mid \theta_d)$——**查询似然**模型。一段讲假海龟的文字，其语言模型里 `mock`、`turtle`、`soup` 的概率都高，于是它也多半生成了含这些词的查询。（语言模型本身，从 $n$-gram 到 transformer，是 [LLM Atlas](/a/llm/lesson.php?c=text-and-language&l=ngram-models) 的主题；这里只需要一元模型。）
 
 ::: definition 一元模型的查询似然 {#def-ql}
 **一元语言模型**（unigram language model）$\theta$ 给每个词项一个概率 $\theta_t$，$\sum_t \theta_t = 1$，并独立抽取词项生成查询 $q = t_1 t_2 \dots t_{\abs q}$：$\Prob(q \mid \theta) = \prod_{i} \theta_{t_i}$。文档的**查询似然分数**为 $\log \Prob(q \mid \theta_d) = \sum_{i} \log \theta_{d, t_i}$，其中 $\theta_d$ 由 $d$ 估计。

@@ -87,7 +87,7 @@ The load and the line are the same in all three cases; only the length differs. 
 
 ## Constructing the Smith chart {#sec-construction}
 
-Equation [[#eq-z-gamma]] is a **Möbius transformation**, a map of the complex plane of the form $(az + b)/(cz + d)$. Such maps send circles and straight lines to circles and straight lines and preserve angles ([Maths Atlas: conformal maps](/learn/maths/)). The right half of the $z$-plane, $r\ge0$, which holds every passive impedance, maps to the unit disc $\abs\Gamma\le1$; the imaginary axis $r = 0$ maps to the unit circle; $z = 1$ (a matched load) maps to the centre.
+Equation [[#eq-z-gamma]] is a **Möbius transformation**, a map of the complex plane of the form $(az + b)/(cz + d)$. Such maps send circles and straight lines to circles and straight lines and preserve angles ([Maths Atlas: conformal maps](/a/maths/)). The right half of the $z$-plane, $r\ge0$, which holds every passive impedance, maps to the unit disc $\abs\Gamma\le1$; the imaginary axis $r = 0$ maps to the unit circle; $z = 1$ (a matched load) maps to the centre.
 
 ::: theorem Circles of constant resistance and reactance {#thm-smith-circles}
 Write $\Gamma = u + jv$. In the $\Gamma$-plane,

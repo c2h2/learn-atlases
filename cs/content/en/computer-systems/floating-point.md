@@ -314,7 +314,7 @@ Konrad Zuse's Z3 (1941) already used binary floating point. Through the 1960s an
 
 ## Where this leads
 
-The instructions that move and operate on floats (`movsd`, `addsd`, `cvttsd2si`) and the registers that hold them (`%xmm0`–`%xmm15`) appear in [[computer-systems/machine-code]]. The analysis of error propagation through whole algorithms — condition numbers, backward stability, why some algorithms are reliable and others are not — is numerical analysis ([Maths Atlas: floating-point arithmetic](/learn/maths/lesson.php?c=numerical-analysis&l=floating-point)). Floating point also underlies [[graphics]], where accumulated error shows up as cracks between triangles, and the reduced-precision formats used to train language models ([LLM Atlas](/learn/llm/)).
+The instructions that move and operate on floats (`movsd`, `addsd`, `cvttsd2si`) and the registers that hold them (`%xmm0`–`%xmm15`) appear in [[computer-systems/machine-code]]. The analysis of error propagation through whole algorithms — condition numbers, backward stability, why some algorithms are reliable and others are not — is numerical analysis ([Maths Atlas: floating-point arithmetic](/a/maths/lesson.php?c=numerical-analysis&l=floating-point)). Floating point also underlies [[graphics]], where accumulated error shows up as cracks between triangles, and the reduced-precision formats used to train language models ([LLM Atlas](/a/llm/)).
 
 ::: summary
 - A binary float stores a sign, a biased exponent and a fraction: normalised values $(-1)^s \times 1.M \times 2^{E-B}$ with an implicit leading $1$; subnormals $0.M \times 2^{1-B}$ give **gradual underflow**; the all-ones exponent encodes $\pm\infty$ and NaN ([[#def-ieee]]).

@@ -293,7 +293,7 @@ caption: [[#thm-blind-reflex]] 中的随机化盲智能体，从 $A$ 出发、�
 集合 $P^+$ 是可数无穷：先按长度、长度相同时按字典序排列各序列，得 $s_1, s_2, s_3, \dots$。固定两个不同动作 $a, b \in A$。假想取值于 $\{a, b\}$ 的智能体函数能排成 $f_1, f_2, \dots$。定义：若 $f_i(s_i) = a$ 则 $g(s_i) = b$，否则 $g(s_i) = a$。那么 $g$ 在每个 $s_i$ 处都与 $f_i$ 不同，故不在表中——这就是康托尔（Cantor）的对角线论证。于是智能体函数不可数。程序是有限字母表上的有限串，这样的串只有可数个。所以函数比程序多，绝大多数函数没有程序可言。
 :::
 
-这与证明绝大多数语言不可判定的计数论证完全相同（[[theory-of-computation/decidability]]）；另见 [Maths Atlas：基数](/learn/maths/lesson.php?c=proofs&l=cardinality)。它对 AI 的教训温和而真实：给定环境的理性智能体函数可能根本不可计算；即便可计算，精确计算它也可能耗时过长。因此实际的 AI 追求**有限理性**：在计算需要时间这一前提下，给定机器上的最佳程序——现在做出不错决策的智能体，常常胜过本来会做出完美决策却为时已晚的智能体。
+这与证明绝大多数语言不可判定的计数论证完全相同（[[theory-of-computation/decidability]]）；另见 [Maths Atlas：基数](/a/maths/lesson.php?c=proofs&l=cardinality)。它对 AI 的教训温和而真实：给定环境的理性智能体函数可能根本不可计算；即便可计算，精确计算它也可能耗时过长。因此实际的 AI 追求**有限理性**：在计算需要时间这一前提下，给定机器上的最佳程序——现在做出不错决策的智能体，常常胜过本来会做出完美决策却为时已晚的智能体。
 
 ## AI 处理哪些问题？
 
@@ -303,7 +303,7 @@ caption: [[#thm-blind-reflex]] 中的随机化盲智能体，从 $A$ 出发、�
 - **约束满足**为因子式状态寻找满足约束的赋值（[[artificial-intelligence/constraint-satisfaction]]）。
 - **逻辑推理**从以形式语言表达的知识中推出新事实，保证结论在每个与知识相容的世界里都为真（[[artificial-intelligence/logical-agents]]）；**规划**利用这类表示构造行动方案（[[artificial-intelligence/planning]]）。
 - **概率推理**在世界只能部分观察、规则不确定时维护信念程度（[[artificial-intelligence/probabilistic-reasoning]]），**决策论**则选择使期望效用最大的动作，也包括长时域（[[artificial-intelligence/decision-making]]）。
-- **学习**从经验中改进智能体。从奖励中学习行动的强化学习是本课程的终点（[[artificial-intelligence/reinforcement-learning]]）；监督学习、神经网络与语言模型在 [LLM Atlas](/learn/llm/) 中讲授，从[学习问题](/learn/llm/lesson.php?c=ml-fundamentals&l=learning-problem)开始。
+- **学习**从经验中改进智能体。从奖励中学习行动的强化学习是本课程的终点（[[artificial-intelligence/reinforcement-learning]]）；监督学习、神经网络与语言模型在 [LLM Atlas](/a/llm/) 中讲授，从[学习问题](/a/llm/lesson.php?c=ml-fundamentals&l=learning-problem)开始。
 
 贯穿这一切的，是**知识**与**计算**之间的张力。智能体对环境了解得越多——一个更好的启发式、一个更好的模型、更强的约束——它需要搜索的就越少。本课程的多数定理都把这一定量化：更好的启发式扩展更少的结点（[[artificial-intelligence/search]]），更好的着法排序让 α–β 搜索深入一层（[[artificial-intelligence/adversarial-search]]），条件独立使概率推理变得可处理（[[artificial-intelligence/probabilistic-reasoning]]）。
 
@@ -313,7 +313,7 @@ caption: [[#thm-blind-reflex]] 中的随机化盲智能体，从 $A$ 出发、�
 
 ## 后续内容
 
-下一章 [[artificial-intelligence/search]] 构造第一批基于目标的智能体：给定问题的描述，它们找到一条解决问题的动作序列，配上好的启发式时，只考察状态空间极小的一部分就够了。信息有限下的理性这一主题将在 [[artificial-intelligence/probabilistic-reasoning]]（维护信念状态，即把基于模型的智能体的内部状态精确化）与 [[artificial-intelligence/decision-making]]（选择使期望效用最大的动作）中重现。围绕语言模型构建的智能体——它们会规划、调用工具、在软件环境中行动——是同一智能体循环的一个新兴且快速演化的应用；它们在 LLM Atlas 的[智能体](/learn/llm/course.php?c=agents)课程中讲授。
+下一章 [[artificial-intelligence/search]] 构造第一批基于目标的智能体：给定问题的描述，它们找到一条解决问题的动作序列，配上好的启发式时，只考察状态空间极小的一部分就够了。信息有限下的理性这一主题将在 [[artificial-intelligence/probabilistic-reasoning]]（维护信念状态，即把基于模型的智能体的内部状态精确化）与 [[artificial-intelligence/decision-making]]（选择使期望效用最大的动作）中重现。围绕语言模型构建的智能体——它们会规划、调用工具、在软件环境中行动——是同一智能体循环的一个新兴且快速演化的应用；它们在 LLM Atlas 的[智能体](/a/llm/course.php?c=agents)课程中讲授。
 
 ::: summary
 - **智能体**把感知序列映射为动作；**智能体函数**是规格说明，**智能体程序**是其实现（[[#def-agent]]）。显式表需要 $\sum_t \lvert P\rvert^t$ 个表项，不可行（[[#ex-table-size]]）。

@@ -347,7 +347,7 @@ Pick the lowest-numbered unpaired cysteine; how many partners can it have? Then 
 ::: exercise Cold denaturation {level=3 check="254"}
 A protein has $T_\mathrm{m} = 323.15\ \mathrm{K}$, $\Delta H_\mathrm{m} = 300\ \mathrm{kJ\,mol^{-1}}$ and $\Delta C_p = 8.0\ \mathrm{kJ\,K^{-1}\,mol^{-1}}$, independent of temperature. (a) Show from [[#eq-stability]] that the temperature of maximum stability is $T_\mathrm{max} = T_\mathrm{m}\exp(-\Delta H_\mathrm{m}/T_\mathrm{m}\Delta C_p)$, and evaluate it. (b) Find $\Delta G_\mathrm{unf}$ at $298.15\ \mathrm{K}$. (c) Find the cold-denaturation temperature, the lower solution of $\Delta G_\mathrm{unf} = 0$, and comment on whether it could be observed. (Enter the cold-denaturation temperature in K to the nearest kelvin.)
 ::: hint
-For (c), evaluate $\Delta G_\mathrm{unf}$ at a few trial temperatures below $T_\mathrm{max}$ and use bisection or Newton's method (both are treated in [Maths Atlas](/learn/maths/)).
+For (c), evaluate $\Delta G_\mathrm{unf}$ at a few trial temperatures below $T_\mathrm{max}$ and use bisection or Newton's method (both are treated in [Maths Atlas](/a/maths/)).
 :::
 ::: solution
 (a) Differentiate: $d\Delta G/dT = -\Delta H_\mathrm{m}/T_\mathrm{m} + \Delta C_p[1 - \ln(T/T_\mathrm{m}) - 1] = -\Delta H_\mathrm{m}/T_\mathrm{m} - \Delta C_p\ln(T/T_\mathrm{m})$. Setting this to zero gives $\ln(T/T_\mathrm{m}) = -\Delta H_\mathrm{m}/(T_\mathrm{m}\Delta C_p)$, which is the stated formula; it is the temperature where $\Delta S_\mathrm{unf} = 0$. Numerically the exponent is $-300/(323.15 \times 8.0) = -0.1160$ and $T_\mathrm{max} = 323.15\,e^{-0.1160} = 287.7\ \mathrm{K}$.

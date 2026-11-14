@@ -2,7 +2,7 @@
 
 每个力学系统在稳定平衡附近都像这样。振动的分子、摇晃的桥梁、传递声波的晶格：只要振幅足够小，每种情形里的运动都是彼此独立的简正模的叠加，每个模以它自己的频率振荡。求它们是一个线性代数问题——**广义特征值问题** $K\mathbf{a} = \omega^2 M\mathbf{a}$——而本章的目的，是从拉格朗日量把它建立起来，证明它总有物理需要的解，并在对称性允许处用手、在不允许处用数值把它解出来。
 
-你应当知道简谐振动（[[oscillations/simple-harmonic]]）、两个耦合的滑块（[[oscillations/superposition]]）、拉格朗日方程（[[analytical-mechanics/lagrangian]]），以及对称矩阵的特征值与特征向量（数学图谱中的[特征值](/learn/maths/lesson.php?c=linear-algebra&l=eigenvalues)与[谱定理](/learn/maths/lesson.php?c=linear-algebra&l=spectral-theorem)）。
+你应当知道简谐振动（[[oscillations/simple-harmonic]]）、两个耦合的滑块（[[oscillations/superposition]]）、拉格朗日方程（[[analytical-mechanics/lagrangian]]），以及对称矩阵的特征值与特征向量（数学图谱中的[特征值](/a/maths/lesson.php?c=linear-algebra&l=eigenvalues)与[谱定理](/a/maths/lesson.php?c=linear-algebra&l=spectral-theorem)）。
 
 ## 平衡与二次近似 {#quadratic}
 
@@ -392,7 +392,7 @@ $$
 :::
 :::
 
-对更大的系统，绝不去构造特征多项式再来求根，因为它的根的条件数很差。库函数按证明的第 (3) 部分把问题化归为对称的，然后用 QR 或雅可比算法；见数学图谱中的[数值线性代数](/learn/maths/lesson.php?c=numerical-analysis&l=iterative-methods)与 [[computation/linear-algebra]]。
+对更大的系统，绝不去构造特征多项式再来求根，因为它的根的条件数很差。库函数按证明的第 (3) 部分把问题化归为对称的，然后用 QR 或雅可比算法；见数学图谱中的[数值线性代数](/a/maths/lesson.php?c=numerical-analysis&l=iterative-methods)与 [[computation/linear-algebra]]。
 
 ::: application 分子、固体与建筑
 在红外与拉曼光谱学中，分子振动谱的每一条吸收线都是这样一列简正模，其中 $M$ 是原子质量，$K$ 是电子能量的曲率。$N$ 个原子的非线性分子有 $3N - 6$ 个振动模，六个零模是平动与转动。在晶体中，对 $10^{23}$ 个原子做同样的分析得到声子，它的频率决定 [[statistical-mechanics]] 中的热容。结构工程师计算高楼与桥梁最低的几个简正模，因为风或地震一旦以接近某个简正频率驱动结构就是共振驱动，如同 [[oscillations/resonance]]。

@@ -364,7 +364,7 @@ $$
 \set{ s.\text{sid} \mid s \in \text{Student} \wedge \forall c \in \text{Course}\,\bigl(c.\text{dept} = \text{'CS'} \rightarrow \exists e \in \text{Enrolled}\,(e.\text{sid} = s.\text{sid} \wedge e.\text{code} = c.\text{code})\bigr) }.
 $$
 
-这就是元组关系微积分。微积分查询必须是**安全的**——其答案只能依赖数据库中出现的值，从而像 $\set{t \mid \neg (t \in \text{Student})}$ 这样的无限集合被排除在外。**科德定理**（1972）指出：关系代数与安全性关系微积分具有相同的表达能力——每个代数表达式都有一条等价的安全微积分查询，反之亦然。SQL 更接近微积分——它的 `WHERE NOT EXISTS (...)` 读起来就像上面那条公式——而引擎会把它翻译成代数计划。其中的逻辑即[数学图谱：量词](/learn/maths/lesson.php?c=proofs&l=quantifiers)。
+这就是元组关系微积分。微积分查询必须是**安全的**——其答案只能依赖数据库中出现的值，从而像 $\set{t \mid \neg (t \in \text{Student})}$ 这样的无限集合被排除在外。**科德定理**（1972）指出：关系代数与安全性关系微积分具有相同的表达能力——每个代数表达式都有一条等价的安全微积分查询，反之亦然。SQL 更接近微积分——它的 `WHERE NOT EXISTS (...)` 读起来就像上面那条公式——而引擎会把它翻译成代数计划。其中的逻辑即[数学图谱：量词](/a/maths/lesson.php?c=proofs&l=quantifiers)。
 
 ::: history
 埃德加·F. "Ted" 科德（Edgar F. "Ted" Codd）是 IBM 圣何塞实验室的数学家，1970 年 6 月在 *Communications of the ACM* 上发表了《大型共享数据银行的数据关系模型》（"A relational model of data for large shared data banks"），其动机是数据独立性；IBM 的一份内部报告早在 1969 年就已出现，David Childs 更是在 1968 年就描述了集合论式的数据结构。科德的《数据库子语言的关系完备性》（"Relational completeness of data base sublanguages"，1972）定义了代数与微积分并证明二者等价。IBM 迟迟不愿采纳这一思想，因为它威胁到公司的层次式 IMS 产品；但 IBM 的 System R 项目（1974 年起，圣何塞）与伯克利加州大学 Michael Stonebraker 和 Eugene Wong 的 Ingres 项目（1973 年起）表明，关系系统可以是高效的。关系软件公司（Relational Software，后来的 Oracle）于 1979 年交付了第一个商用 SQL 系统，IBM 的 SQL/DS 与 DB2 分别于 1981 年和 1983 年跟进。科德荣获 1981 年的图灵奖。

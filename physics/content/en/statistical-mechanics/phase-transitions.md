@@ -332,7 +332,7 @@ The energies can be checked too. At $T_c$ the exact energy per spin of the infin
 :::
 
 ::: application Simulation beyond the Ising model
-Monte Carlo sampling with the Metropolis rule, or with cluster algorithms such as Wolff's (1989), which flip whole correlated domains and defeat the slowing-down of single flips near $T_c$, is now the standard way to compute the properties of interacting systems: liquids, polymers, alloys, lattice gauge theories of quarks, and the adsorption and phase equilibria of molecular fluids. For the chemical side, including real gases and liquids from intermolecular potentials, see [Interacting molecules: real gases and liquids](/learn/chemistry/lesson.php?c=statistical-thermodynamics&l=real-gases-liquids) in the Chemistry Atlas.
+Monte Carlo sampling with the Metropolis rule, or with cluster algorithms such as Wolff's (1989), which flip whole correlated domains and defeat the slowing-down of single flips near $T_c$, is now the standard way to compute the properties of interacting systems: liquids, polymers, alloys, lattice gauge theories of quarks, and the adsorption and phase equilibria of molecular fluids. For the chemical side, including real gases and liquids from intermolecular potentials, see [Interacting molecules: real gases and liquids](/a/chemistry/lesson.php?c=statistical-thermodynamics&l=real-gases-liquids) in the Chemistry Atlas.
 :::
 
 ::: history From Andrews to Wilson

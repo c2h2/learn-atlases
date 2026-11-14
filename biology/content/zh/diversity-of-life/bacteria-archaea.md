@@ -73,7 +73,7 @@ $$ {#eq-gibbs}
 其中 $\Delta G^{\circ\prime}$ 是标准变（溶质 1 mol L⁻¹、气体 1 bar、pH 7），$R = 8.314$ J mol⁻¹ K⁻¹，$T$ 为绝对温度，活度以浓度（或分压，以 bar 计）近似。只有 $\Delta G < 0$ 时反应才能提供能量。生长中的细胞合成 ATP 大约需要 +60 至 +70 kJ mol⁻¹；但由于能量以离子梯度贮存、每转移一个离子约 −15 至 −20 kJ mol⁻¹ 分级保存，细胞可以使用只够 ATP 分数的反应。Bernhard Schink（1997）提出约 −20 kJ mol⁻¹ 是多数生物可用的最小能量子；有些生物被认为生活在更靠近平衡之处。
 :::
 
-这与[化学图谱](/learn/chemistry/lesson.php?c=biochemistry&l=bioenergetics)中处理代谢途径所用的是同一个关系。
+这与[化学图谱](/a/chemistry/lesson.php?c=biochemistry&l=bioenergetics)中处理代谢途径所用的是同一个关系。
 
 ::: example 产甲烷菌能拿到多少能量？ {#ex-methanogen}
 氢营养型产甲烷，CO₂ + 4 H₂ → CH₄ + 2 H₂O，$\Delta G^{\circ\prime} = -131$ kJ mol⁻¹（Rudolf Thauer 及同事，1977）。在 25 °C 的淡水沉积物中，CO₂ 与 CH₄ 分压大致相等，发酵细菌把 H₂ 压在约 $10^{-4}$ bar。$\Delta G$ 是多少？每分子 CH₄ 能造几个 ATP？
@@ -224,7 +224,7 @@ caption: 由 [[#eq-rarefaction]] 对两个 100 条读段、各含 5 个 ASV 的�
 稀疏化要扔掉数据，统计学家在某些用途上反对它（Paul McMurdie 与 Susan Holmes，2014），转而推荐直接对抽样过程建模的方法，或按相等的**覆盖率**（已观察类型占群落个体的估计比例）而不是相等的大小来比较样品（Anne Chao 与 Lou Jost，2012）。其中的教训是普遍的：离开了背后的抽样努力，物种计数一文不值。
 
 ::: application 养活世界、治愈世界的微生物
-生物固氮每年向陆地与海洋生态系统添加约 1–2 亿吨氮，与 Haber–Bosch 工艺的工业固氮相当；豆科作物依靠根瘤中的根瘤菌。Actinomycetota，尤其 *Streptomyces*，是临床所用多数抗生素的来源——从链霉素（Albert Schatz、Elizabeth Bugie 与 Selman Waksman，1944）开始；基因组测序表明每个 *Streptomyces* 基因组编码几十个生物合成基因簇，其中大多数在实验室里沉默。嗜热菌的耐热酶，如来自 *Thermus aquaticus*（Thomas Brock 与 Hudson Freeze 于 1969 年分离）的 *Taq* DNA 聚合酶，使 PCR 成为实用技术；CRISPR–Cas 系统——细菌与古菌的适应性免疫系统——如今是基因组编辑的基础（[[biotechnology]]）。细菌作为疾病病原，见[医学图谱](/learn/medicine/course.php?c=microbiology)。
+生物固氮每年向陆地与海洋生态系统添加约 1–2 亿吨氮，与 Haber–Bosch 工艺的工业固氮相当；豆科作物依靠根瘤中的根瘤菌。Actinomycetota，尤其 *Streptomyces*，是临床所用多数抗生素的来源——从链霉素（Albert Schatz、Elizabeth Bugie 与 Selman Waksman，1944）开始；基因组测序表明每个 *Streptomyces* 基因组编码几十个生物合成基因簇，其中大多数在实验室里沉默。嗜热菌的耐热酶，如来自 *Thermus aquaticus*（Thomas Brock 与 Hudson Freeze 于 1969 年分离）的 *Taq* DNA 聚合酶，使 PCR 成为实用技术；CRISPR–Cas 系统——细菌与古菌的适应性免疫系统——如今是基因组编辑的基础（[[biotechnology]]）。细菌作为疾病病原，见[医学图谱](/a/medicine/course.php?c=microbiology)。
 :::
 
 ::: history

@@ -1,14 +1,14 @@
 # Computer Science Atlas — content guide
 
-Computer Science Atlas (`/learn/cs/`) teaches the undergraduate computer science curriculum in
+Computer Science Atlas (`/a/cs/`) teaches the undergraduate computer science curriculum in
 depth, from a first program to compilers, distributed systems, cryptography and quantum computing.
 Every chapter is a long, self-contained lesson in the style of a very good textbook: motivation and
 intuition first, then precise definitions, algorithms with proofs of correctness and analyses of
 their cost, many fully worked examples (traces, tables, small programs), interactive figures, quick
 checks, and graded exercises with full solutions.
 
-The site runs on the same engine as Maths Atlas (`/learn/maths/`). Its reference lesson,
-`/var/www/f.g77k.com/learn/maths/content/en/calculus-1/limits.md`, shows the expected depth, tone
+The site runs on the same engine as Maths Atlas (`/a/maths/`). Its reference lesson,
+`/var/www/f.g77k.com/a/maths/content/en/calculus-1/limits.md`, shows the expected depth, tone
 and markup: read it before writing.
 
 **Status: curriculum skeleton.** Every course and chapter is defined; no lesson is written yet.
@@ -31,9 +31,9 @@ rename, add, remove or reorder courses or chapters**, because other lessons link
 
 Topics taught in the sibling atlases are not repeated here; link to them instead:
 discrete mathematics, logic and proof, linear algebra, probability and number theory are in Maths
-Atlas (`/learn/maths/`); digital logic, computer architecture and embedded systems are in the
-Electrical Engineering Atlas (`/learn/ee/`); machine learning and language models are in the LLM
-Atlas (`/learn/llm/`). Write such links as ordinary Markdown links (`[Maths Atlas: graphs](/learn/maths/lesson.php?c=discrete&l=graphs)`);
+Atlas (`/a/maths/`); digital logic, computer architecture and embedded systems are in the
+Electrical Engineering Atlas (`/a/ee/`); machine learning and language models are in the LLM
+Atlas (`/a/llm/`). Write such links as ordinary Markdown links (`[Maths Atlas: graphs](/a/maths/lesson.php?c=discrete&l=graphs)`);
 `[[…]]` references only reach chapters of this atlas.
 
 ## 2. course.json — what to fill in
@@ -136,7 +136,7 @@ Suggested shape (adapt to the topic):
 
 ## 5. Markup and notation
 
-Markup is exactly as in Maths Atlas — see `/var/www/f.g77k.com/learn/maths/tools/CONTENT_GUIDE.md`
+Markup is exactly as in Maths Atlas — see `/var/www/f.g77k.com/a/maths/tools/CONTENT_GUIDE.md`
 §5 for blocks (`:::definition`, `:::theorem`/`:::lemma`/`:::proposition`, `:::proof`,
 `:::example` + `:::solution`, `:::exercise`, `:::quiz`, `:::warning`, `:::intuition`,
 `:::application`, `:::history`, `:::summary`), references (`[[#id]]`, `[[course/chapter]]`,
@@ -166,7 +166,7 @@ Computer-science conventions:
 
 ## 6. Interactive figures
 
-The available types are in `data/widgets.json`; try each at `/learn/cs/lab.php?w=<type>`:
+The available types are in `data/widgets.json`; try each at `/a/cs/lab.php?w=<type>`:
 `plot` (functions, e.g. growth rates), `floatline` (floating-point numbers), `truthtable`,
 `venn`, `relation`, `mapping`, `graph` (BFS, DFS, Dijkstra, Prim, Kruskal, topological sort, Euler
 circuits — step by step), `cantor` (countability and diagonalisation), `permutation`, `pascal`,
@@ -180,7 +180,7 @@ planned in `tools/WIDGET_GUIDE.md`; use a type only once it is in the catalogue.
 ## 7. Check your work
 
 ```
-cd /var/www/f.g77k.com/learn/cs
+cd /var/www/f.g77k.com/a/cs
 bash tools/check.sh <course> [<course> …]
 ```
 
@@ -188,6 +188,6 @@ This typesets every formula with KaTeX, validates figures, checks and references
 depth table per lesson. Fix every `ERROR`; depth `warn`ings must be gone for finished lessons.
 Until then, `php tools/check.php` lists every missing lesson and empty course field as a warning:
 its output is the to-do list. Preview at
-`http://f.g77k.com/learn/cs/lesson.php?c=<course>&l=<chapter>` (from this machine:
+`http://f.g77k.com/a/cs/lesson.php?c=<course>&l=<chapter>` (from this machine:
 `curl --resolve f.g77k.com:80:127.0.0.1 …` or `node tools/shot.js "lesson.php?c=…&l=…" out.png`).
 Read your rendered lesson at least once.

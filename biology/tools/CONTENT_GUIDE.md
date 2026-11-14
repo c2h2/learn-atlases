@@ -1,13 +1,13 @@
 # Biology Atlas — content guide
 
-Biology Atlas (`/learn/biology/`) teaches the undergraduate biology curriculum in depth, from
+Biology Atlas (`/a/biology/`) teaches the undergraduate biology curriculum in depth, from
 molecules and cells to evolution and ecosystems. Every chapter is a long, self-contained lesson in
 the style of a very good textbook: motivation and intuition first, then precise definitions,
 mechanisms explained step by step, quantitative worked examples, interactive figures, quick checks,
 and graded exercises with full solutions.
 
-The site runs on the same engine as Maths Atlas (`/learn/maths/`). Its reference lesson,
-`/var/www/f.g77k.com/learn/maths/content/en/calculus-1/limits.md`, shows the expected depth, tone
+The site runs on the same engine as Maths Atlas (`/a/maths/`). Its reference lesson,
+`/var/www/f.g77k.com/a/maths/content/en/calculus-1/limits.md`, shows the expected depth, tone
 and markup: read it before writing.
 
 ## 1. Files
@@ -76,8 +76,8 @@ sequences and modern structure prediction — `area` being one of the seven area
 ## 4. Writing style and accuracy
 
 - Audience: undergraduates who have read the prerequisite chapters. Explain from scratch, motivate
-  before formalising, then be exact. Link to Maths Atlas (`/learn/maths/`) for mathematical tools
-  and to Chemistry Atlas (`/learn/chemistry/`) for chemical background.
+  before formalising, then be exact. Link to Maths Atlas (`/a/maths/`) for mathematical tools
+  and to Chemistry Atlas (`/a/chemistry/`) for chemical background.
 - **British spelling** (colour, behaviour, analyse, oxidise, haemoglobin, foetal, ageing, sulfur as
   the IUPAC form) except in quotations and in the published titles of works.
 - Voice: "we" for shared reasoning, "you" for instructions. Precise and unhurried; avoid "obviously".
@@ -90,7 +90,7 @@ sequences and modern structure prediction — `area` being one of the seven area
 - **Attribute discoveries** to the people and papers that made them, with the year, and name the
   organism the work was done in.
 - **No medical advice.** Clinical medicine, human anatomy, medical physiology, immunology and
-  clinical microbiology belong to Medicine Atlas (`/learn/medicine/`), which carries its own
+  clinical microbiology belong to Medicine Atlas (`/a/medicine/`), which carries its own
   education-only disclaimer. Here, keep human material comparative and mechanistic; never give
   diagnostic criteria, doses or anything a reader could take as guidance for their own health, and
   link the Medicine Atlas instead.
@@ -112,7 +112,7 @@ sequences and modern structure prediction — `area` being one of the seven area
 
 ## 5. Markup
 
-Exactly as in Maths Atlas — see `/var/www/f.g77k.com/learn/maths/tools/CONTENT_GUIDE.md` §5 for
+Exactly as in Maths Atlas — see `/var/www/f.g77k.com/a/maths/tools/CONTENT_GUIDE.md` §5 for
 blocks (`:::definition`, `:::theorem`/`:::proposition`, `:::proof`, `:::example` + `:::solution`,
 `:::exercise`, `:::quiz`, `:::warning`, `:::intuition`, `:::application`, `:::history`,
 `:::summary`, `:::algorithm` for procedures such as Needleman–Wunsch or the Gillespie algorithm),
@@ -145,7 +145,7 @@ The available types are in `data/widgets.json` (function plots, slope fields and
 population and kinetic models, phase planes, probability distributions, the central limit theorem,
 Monte Carlo and Galton board, Markov chains, Bayes, regression, hypothesis tests and confidence
 intervals, graphs, Pascal's triangle, Venn diagrams); try each at
-`/learn/biology/lab.php?w=<type>`. Biology-specific figures (Punnett squares, pedigrees,
+`/a/biology/lab.php?w=<type>`. Biology-specific figures (Punnett squares, pedigrees,
 Wright–Fisher drift, Hardy–Weinberg, Michaelis–Menten, Lotka–Volterra, membrane potentials,
 sequence alignment, phylogenetic trees …) are planned in `tools/WIDGET_GUIDE.md`; use a type only
 once it is in the catalogue.
@@ -156,12 +156,12 @@ describe what the figure actually draws — check it on the rendered page.
 ## 7. Check your work
 
 ```
-cd /var/www/f.g77k.com/learn/biology
+cd /var/www/f.g77k.com/a/biology
 bash tools/check.sh <course> [<course> …]
 ```
 
 This typesets every formula with KaTeX, validates figures, checks and references, and prints a
 depth table per lesson. Fix every `ERROR`; depth `warn`ings must be gone for finished lessons.
-Preview at `http://f.g77k.com/learn/biology/lesson.php?c=<course>&l=<chapter>` (from this machine:
+Preview at `http://f.g77k.com/a/biology/lesson.php?c=<course>&l=<chapter>` (from this machine:
 `curl --resolve f.g77k.com:80:127.0.0.1 …` or `node tools/shot.js "lesson.php?c=…&l=…" out.png`).
 Read your rendered lesson at least once.

@@ -1,6 +1,6 @@
 In the previous two chapters we found fields by starting from known charges: Coulomb's law integrates over them, Gauss's law exploits their symmetry. Most practical problems are posed the other way round. You know the **potentials** of the electrodes, because they are connected to a supply or to ground, but not how charge distributes itself over their surfaces; that distribution is part of the answer. What is the capacitance of a microstrip on a circuit board? How strong is the field at the corner of a busbar at $20\,\mathrm{kV}$? What is the potential inside a reverse-biased diode? Each is a **boundary-value problem**: a differential equation for the potential in a region, plus conditions on its boundary.
 
-The differential equation is Poisson's equation, which follows in one line from Gauss's law and $\mathbf E = -\nabla V$. This chapter derives it, proves the uniqueness theorem that makes boundary-value problems well posed, and then works through the main solution methods: direct integration for one-dimensional problems, separation of variables for rectangular and cylindrical geometries, the method of images for conductors that are planes or spheres, and finite differences, the simplest numerical method and the ancestor of every commercial field solver. The mathematical theory of Laplace's equation is in the Maths Atlas [Laplace equation](/learn/maths/lesson.php?c=pde&l=laplace-equation) chapter; here the emphasis is on electrodes, devices and numbers.
+The differential equation is Poisson's equation, which follows in one line from Gauss's law and $\mathbf E = -\nabla V$. This chapter derives it, proves the uniqueness theorem that makes boundary-value problems well posed, and then works through the main solution methods: direct integration for one-dimensional problems, separation of variables for rectangular and cylindrical geometries, the method of images for conductors that are planes or spheres, and finite differences, the simplest numerical method and the ancestor of every commercial field solver. The mathematical theory of Laplace's equation is in the Maths Atlas [Laplace equation](/a/maths/lesson.php?c=pde&l=laplace-equation) chapter; here the emphasis is on electrodes, devices and numbers.
 
 ## Poisson's and Laplace's equations
 
@@ -145,7 +145,7 @@ $$
 V(x,y) = \sum_{n=1}^\infty c_n\sin\frac{n\pi x}{a}\,\sinh\frac{n\pi y}{a} .
 $$
 
-The last condition, $V(x, b) = V_0$, is a Fourier sine series ([Maths Atlas: Fourier series](/learn/maths/lesson.php?c=pde&l=fourier-series)): $c_n\sinh(n\pi b/a)$ must be the sine coefficients of the constant $V_0$ on $(0, a)$, which are $4V_0/(n\pi)$ for odd $n$ and $0$ for even $n$. Hence
+The last condition, $V(x, b) = V_0$, is a Fourier sine series ([Maths Atlas: Fourier series](/a/maths/lesson.php?c=pde&l=fourier-series)): $c_n\sinh(n\pi b/a)$ must be the sine coefficients of the constant $V_0$ on $(0, a)$, which are $4V_0/(n\pi)$ for odd $n$ and $0$ for even $n$. Hence
 
 $$
 V(x,y) = \frac{4V_0}{\pi}\sum_{n\ \text{odd}}\frac1n\,\sin\frac{n\pi x}{a}\,\frac{\sinh(n\pi y/a)}{\sinh(n\pi b/a)} .

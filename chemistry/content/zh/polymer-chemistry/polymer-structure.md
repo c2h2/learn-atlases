@@ -339,7 +339,7 @@ $$
 
 ## 后续内容
 
-本课程其余部分讲的是这些分布从何而来、有何作用。[[polymer-chemistry/step-growth]]从缩聚动力学导出 Flory 分布，并展示支化单体如何造出网络。[[polymer-chemistry/radical-polymerisation]]通过动力学链长把速率常数变成 $\bar{X}_\mathrm{n}$，[[polymer-chemistry/controlled-polymerisation]]展示活性体系如何逼近泊松极限、催化剂如何固定立构规整性。序列统计将在[[polymer-chemistry/copolymerisation]]中重现，用两种不同单体取代两种构型。关于单个长链如何占据空间、它的线团尺寸及其与溶剂的相互作用，见[[polymer-chemistry/polymer-solutions]]。这里用到的概率思想（几何分布与泊松分布、均值与方差）在 Maths Atlas（[/learn/maths/](/learn/maths/)）中讲述。
+本课程其余部分讲的是这些分布从何而来、有何作用。[[polymer-chemistry/step-growth]]从缩聚动力学导出 Flory 分布，并展示支化单体如何造出网络。[[polymer-chemistry/radical-polymerisation]]通过动力学链长把速率常数变成 $\bar{X}_\mathrm{n}$，[[polymer-chemistry/controlled-polymerisation]]展示活性体系如何逼近泊松极限、催化剂如何固定立构规整性。序列统计将在[[polymer-chemistry/copolymerisation]]中重现，用两种不同单体取代两种构型。关于单个长链如何占据空间、它的线团尺寸及其与溶剂的相互作用，见[[polymer-chemistry/polymer-solutions]]。这里用到的概率思想（几何分布与泊松分布、均值与方差）在 Maths Atlas（[/a/maths/](/a/maths/)）中讲述。
 
 ::: summary
 - 聚合物是由重复单元构成的大分子群体。聚合度 $X = M/M_0$ 数的是单元数，通用塑料有 $X \approx 10^{3}$–$10^{5}$。拓扑结构（线型、支化、星形、网络）决定聚合物是流动（热塑性）还是定型（热固性）。

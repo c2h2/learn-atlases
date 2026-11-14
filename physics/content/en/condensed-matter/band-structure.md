@@ -215,7 +215,7 @@ $$ {#eq-tb3d}
 a band of width $12t$.
 
 ::: intuition Two pictures, one band
-The nearly-free model says: start with a continuous parabola and cut gaps into it at the zone boundaries. Tight binding says: start with sharp atomic levels and broaden each into a band. The Kronig–Penney figure interpolates between them as $P$ grows. Real solids sit somewhere in between, and the two pictures agree on the qualitative facts that matter: bands of $2N$ states, gaps between them, flat bands near the zone boundary and parabolic bands near their extremes. The chemist's version, with orbitals and bonding and antibonding combinations, is in Chemistry Atlas ([electronic structure of solids](/learn/chemistry/lesson.php?c=materials-chemistry&l=electronic-structure-solids)).
+The nearly-free model says: start with a continuous parabola and cut gaps into it at the zone boundaries. Tight binding says: start with sharp atomic levels and broaden each into a band. The Kronig–Penney figure interpolates between them as $P$ grows. Real solids sit somewhere in between, and the two pictures agree on the qualitative facts that matter: bands of $2N$ states, gaps between them, flat bands near the zone boundary and parabolic bands near their extremes. The chemist's version, with orbitals and bonding and antibonding combinations, is in Chemistry Atlas ([electronic structure of solids](/a/chemistry/lesson.php?c=materials-chemistry&l=electronic-structure-solids)).
 :::
 
 ## Effective mass and holes {#effective-mass}

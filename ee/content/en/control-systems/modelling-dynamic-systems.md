@@ -144,7 +144,7 @@ Motors, loudspeakers, relays and actuators couple an electrical circuit to a mec
 | spring $k$ | torsional spring $k$ | $f = k\int v\,\dd t$ | capacitor, $1/C$ |
 | force $f$, velocity $v$ | torque $\tau$, speed $\omega$ | | voltage, current |
 
-In this **force–voltage analogy**, a mass–spring–damper driven by a force behaves exactly like a series RLC circuit driven by a voltage, and the same transfer functions describe both. The mechanical atlas develops these models in detail ([Mechanical Atlas: modelling dynamic systems](/learn/mechanical/lesson.php?c=control-systems&l=modelling-dynamic-systems)); here we need only Newton's law for a rotating body, $J\dot\omega = \sum\tau$.
+In this **force–voltage analogy**, a mass–spring–damper driven by a force behaves exactly like a series RLC circuit driven by a voltage, and the same transfer functions describe both. The mechanical atlas develops these models in detail ([Mechanical Atlas: modelling dynamic systems](/a/mechanical/lesson.php?c=control-systems&l=modelling-dynamic-systems)); here we need only Newton's law for a rotating body, $J\dot\omega = \sum\tau$.
 
 ### The DC motor
 
@@ -275,7 +275,7 @@ with the partial derivatives (Jacobian matrices) evaluated at the operating poin
 :::
 
 ::: proof
-Taylor's theorem for a function of several variables (see [Maths Atlas: nonlinear systems](/learn/maths/lesson.php?c=ode&l=nonlinear-systems)) gives $f(x_0 + \delta x, u_0 + \delta u) = f(x_0, u_0) + \frac{\partial f}{\partial x}\delta x + \frac{\partial f}{\partial u}\delta u + O(\norm{\delta x}^2 + \norm{\delta u}^2)$. The first term vanishes at an equilibrium, and $\dot x = \dot{\delta x}$ because $x_0$ is constant.
+Taylor's theorem for a function of several variables (see [Maths Atlas: nonlinear systems](/a/maths/lesson.php?c=ode&l=nonlinear-systems)) gives $f(x_0 + \delta x, u_0 + \delta u) = f(x_0, u_0) + \frac{\partial f}{\partial x}\delta x + \frac{\partial f}{\partial u}\delta u + O(\norm{\delta x}^2 + \norm{\delta u}^2)$. The first term vanishes at an equilibrium, and $\dot x = \dot{\delta x}$ because $x_0$ is constant.
 :::
 
 The linear model holds only near the operating point, and its coefficients depend on which point we choose. A controller designed with it works for small signals; large excursions may need **gain scheduling** (a different controller for each operating point) or a nonlinear design.

@@ -1,6 +1,6 @@
 训练神经网络，就是调整数以百万、十亿计的数字，让单一的一个数——损失——降下来。要知道每个权重该往哪个方向调，我们需要同时得到损失对每一个权重的导数：**梯度**。一个有$7\times10^9$个参数的语言模型，每个训练步都需要$7\times10^9$个偏导数，而它的代价只相当于几次前向传播——靠的是一个思想：链式法则，沿着计算过程反向作用回去。这个过程叫**反向传播**（backpropagation），每个深度学习库都会自动实现它。
 
-自动并不意味着不透明。你将阅读论文里的梯度、为新层推导梯度、在训练发散时调试它们、并估算其代价。本章建立所需的微积分：偏导数与梯度、作为向量值映射之导数的雅可比矩阵、多元链式法则、矩阵微积分的几个恒等式，以及两个每个从业者都应当能在纸上完成的推导——线性层的梯度，与 softmax 交叉熵损失的梯度。数学图谱中关于[偏导数](/learn/maths/lesson.php?c=multivariable&l=partial-derivatives)、[梯度](/learn/maths/lesson.php?c=multivariable&l=gradient)与[链式法则](/learn/maths/lesson.php?c=calculus-1&l=chain-rule)的课程给出背后的分析。
+自动并不意味着不透明。你将阅读论文里的梯度、为新层推导梯度、在训练发散时调试它们、并估算其代价。本章建立所需的微积分：偏导数与梯度、作为向量值映射之导数的雅可比矩阵、多元链式法则、矩阵微积分的几个恒等式，以及两个每个从业者都应当能在纸上完成的推导——线性层的梯度，与 softmax 交叉熵损失的梯度。数学图谱中关于[偏导数](/a/maths/lesson.php?c=multivariable&l=partial-derivatives)、[梯度](/a/maths/lesson.php?c=multivariable&l=gradient)与[链式法则](/a/maths/lesson.php?c=calculus-1&l=chain-rule)的课程给出背后的分析。
 
 ## 偏导数与梯度 {#sec-gradient}
 
@@ -91,7 +91,7 @@ $$ {#eq-chain}
 这是一个$(m\times k)(k\times n)$矩阵乘积。按分量，$\dfrac{\partial f_i}{\partial x_j} = \displaystyle\sum_{l=1}^k\frac{\partial f_i}{\partial g_l}\frac{\partial g_l}{\partial x_j}$。
 :::
 
-证明的思路是：两个近似线性映射的复合，近似等于这两个线性映射的复合，而线性映射的复合就是矩阵乘法（[[math-for-ml/vectors-matrices#def-matmul]]）；数学图谱在[梯度一课](/learn/maths/lesson.php?c=multivariable&l=gradient)中仔细证明了这一点。分量形式有一个有用的读法：$x_j$对$f_i$的影响，就是对每个中间量$g_l$、把沿该路径传递的影响求和。
+证明的思路是：两个近似线性映射的复合，近似等于这两个线性映射的复合，而线性映射的复合就是矩阵乘法（[[math-for-ml/vectors-matrices#def-matmul]]）；数学图谱在[梯度一课](/a/maths/lesson.php?c=multivariable&l=gradient)中仔细证明了这一点。分量形式有一个有用的读法：$x_j$对$f_i$的影响，就是对每个中间量$g_l$、把沿该路径传递的影响求和。
 
 深度网络是一个很长的复合：$\mathbf{x}\mapsto\mathbf{h}_1\mapsto\mathbf{h}_2\mapsto\dots\mapsto\mathbf{h}_L\mapsto\mathcal{L}$，最后落在一个标量损失上。由[[#eq-chain]]，损失对输入的导数是一串雅可比矩阵的乘积，
 
@@ -318,7 +318,7 @@ ReLU 在$0$处不可导，max 池化的最大值在两个输入打平时不可�
 | $\tr(AW)$（对$W$） | $A^\top$ | 矩阵值参数 |
 | $\mathbf{u}^\top W\mathbf{v}$（对$W$） | $\mathbf{u}\mathbf{v}^\top$ | 双线性型、注意力分数 |
 
-让最小二乘的梯度为零，就得到**正规方程**$A^\top A\mathbf{x} = A^\top\mathbf{b}$，即线性回归的封闭形式解（见数学图谱的[最小二乘](/learn/maths/lesson.php?c=linear-algebra&l=least-squares)一课）。log-sum-exp 那一行说明 softmax 本身就是一个梯度，这就是它的雅可比矩阵$\diag(\mathbf{p}) - \mathbf{p}\mathbf{p}^\top$对称的原因：它是 log-sum-exp 的黑塞矩阵。
+让最小二乘的梯度为零，就得到**正规方程**$A^\top A\mathbf{x} = A^\top\mathbf{b}$，即线性回归的封闭形式解（见数学图谱的[最小二乘](/a/maths/lesson.php?c=linear-algebra&l=least-squares)一课）。log-sum-exp 那一行说明 softmax 本身就是一个梯度，这就是它的雅可比矩阵$\diag(\mathbf{p}) - \mathbf{p}\mathbf{p}^\top$对称的原因：它是 log-sum-exp 的黑塞矩阵。
 
 ::: history
 莱布尼茨（Leibniz）在1670年代的微积分里就用过链式法则，柯西（Cauchy）在1847年提出了最速下降法。自动微分始于前向模式：Robert Wengert 的《一种简单的自动求导程序》（A simple automatic derivative evaluation program，1964）。Seppo Linnainmaa 在1970年研究舍入误差的硕士论文里描述了反向模式的导数累加，并给出了实现；Paul Werbos 在1974年的博士论文中提出用它训练神经网络。Bert Speelpenning 在1980年造出了一个反向模式编译器，Baur 与 Strassen（1983）证明了有理函数的梯度至多花费函数本身代价的常数倍。Rumelhart、Hinton 与 Williams（1986）在《自然》（Nature）上发表文章，证明反向传播能让多层网络学到有用的内部表示，方法由此在神经网络研究中传开。自动构建反向传播的程序库——Theano（2010），以及后来的 TensorFlow、PyTorch 与 JAX——把反向传播从一次推导变成了一次函数调用。

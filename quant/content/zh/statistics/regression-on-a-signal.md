@@ -4,7 +4,7 @@ $$
 R_{t+1} = a + b\, s_t + \varepsilon_{t+1},
 $$
 
-其中$s$上的下标和斜率同样重要。本章用最小二乘拟合这条直线，用的数字小到足以手工验算，并把拟合与预测分开。这条直线使残差平方和最小的证明住在数学图谱里，见[一元线性回归](/learn/maths/lesson.php?c=statistics&l=regression)与[最小二乘](/learn/maths/lesson.php?c=linear-algebra&l=least-squares)。这里推导的是时钟：哪个变量允许坐在等号右边。拟合不是拿这个信号去交易的建议。
+其中$s$上的下标和斜率同样重要。本章用最小二乘拟合这条直线，用的数字小到足以手工验算，并把拟合与预测分开。这条直线使残差平方和最小的证明住在数学图谱里，见[一元线性回归](/a/maths/lesson.php?c=statistics&l=regression)与[最小二乘](/a/maths/lesson.php?c=linear-algebra&l=least-squares)。这里推导的是时钟：哪个变量允许坐在等号右边。拟合不是拿这个信号去交易的建议。
 
 ## 一个日期为$t$的信号
 

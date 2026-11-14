@@ -1,6 +1,6 @@
 到此为止的一切都是数学：单位向量、酉矩阵、投影算子。量子计算机是一个物理客体，那些抽象由真实系统去近似——冷却到比绝对零度高百分之一度的超导电路、电场中囚禁的单离子、陷在聚焦激光束里的原子、波导中的单光子——而每一种近似都在漏。本章问：造出一个量子比特需要什么；用真正要紧的数字（错误率、相干时间、门速、连接性、规模）比较各大硬件平台；描述**含噪声中等规模**时代及其算法；并把 2026 年的学科现状总结一下：什么已被演示，什么被宣称又被质疑，以及距对密码学有意义的数运行肖尔（Shor）算法还有多远。
 
-先说两点提醒。其一，硬件变化很快，这里引用的数字是 2020 年代中期已发表的最佳器件的量级，不是任何产品的规格；凡会变的东西都标了日期。其二，量子计算招来的炒作比多数领域都多。我们按作者本人及其质疑者发表的内容来描述实验，并始终保持*演示*（器件上实测的结果）与*展望*（路线图、资源估计）的区分。各个系统的物理见[物理图谱](/learn/physics/lesson.php?c=quantum-1&l=spin)，光子部分另见[电气图谱：光纤](/learn/ee/lesson.php?c=photonics&l=optical-fibres)。
+先说两点提醒。其一，硬件变化很快，这里引用的数字是 2020 年代中期已发表的最佳器件的量级，不是任何产品的规格；凡会变的东西都标了日期。其二，量子计算招来的炒作比多数领域都多。我们按作者本人及其质疑者发表的内容来描述实验，并始终保持*演示*（器件上实测的结果）与*展望*（路线图、资源估计）的区分。各个系统的物理见[物理图谱](/a/physics/lesson.php?c=quantum-1&l=spin)，光子部分另见[电气图谱：光纤](/a/ee/lesson.php?c=photonics&l=optical-fibres)。
 
 ## 量子比特需要什么
 
@@ -202,7 +202,7 @@ Richard Feynman（1982）与 David Deutsch（1985）提出量子计算机；Pete
 
 ## 后续内容
 
-本章是课程的最后一章。算法（[[quantum-computing/shor]]、[[quantum-computing/grover]]）定下目标；纠错（[[quantum-computing/error-correction]]）说明达到它们需要什么；复杂性理论（[[quantum-computing/quantum-complexity]]）说明该期待什么、不该期待什么。密码学方面的后果见 [[cryptography/post-quantum]]；各平台的物理见[物理图谱](/learn/physics/lesson.php?c=quantum-1&l=formalism)的量子力学课程。Preskill 的讲义与他 2018 年的 NISQ 论文是从物理与计算结合的角度出发的最佳进阶读物，Nielsen 与 Chuang 的教材仍是本课程全部内容公认的标准参考。
+本章是课程的最后一章。算法（[[quantum-computing/shor]]、[[quantum-computing/grover]]）定下目标；纠错（[[quantum-computing/error-correction]]）说明达到它们需要什么；复杂性理论（[[quantum-computing/quantum-complexity]]）说明该期待什么、不该期待什么。密码学方面的后果见 [[cryptography/post-quantum]]；各平台的物理见[物理图谱](/a/physics/lesson.php?c=quantum-1&l=formalism)的量子力学课程。Preskill 的讲义与他 2018 年的 NISQ 论文是从物理与计算结合的角度出发的最佳进阶读物，Nielsen 与 Chuang 的教材仍是本课程全部内容公认的标准参考。
 
 ::: summary
 - 有用的量子计算机需要 **DiVincenzo 准则**（[[#def-divincenzo]]）：可扩量子比特、初始化、远长于门时的相干时间、通用门与按量子比特测量。

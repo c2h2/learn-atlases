@@ -127,7 +127,7 @@ A burst of length $20 > r + 1 = 17$ is undetected with probability $2^{-r} = 2^{
 
 ## Finite fields {#sec-fields}
 
-To correct more than one error, codes need arithmetic on symbols richer than single bits. The right setting is a **finite field**, in which we can add, subtract, multiply and divide by non-zero elements with the usual rules (see [Fields and Galois theory](/learn/maths/lesson.php?c=abstract-algebra&l=fields-galois) in Maths Atlas).
+To correct more than one error, codes need arithmetic on symbols richer than single bits. The right setting is a **finite field**, in which we can add, subtract, multiply and divide by non-zero elements with the usual rules (see [Fields and Galois theory](/a/maths/lesson.php?c=abstract-algebra&l=fields-galois) in Maths Atlas).
 
 The integers modulo a prime $p$ form the field $\mathrm{GF}(p)$: in $\mathrm{GF}(7)$, $3\times5 = 15 = 1$, so $3^{-1} = 5$. For $p = 2$ this is $\mathbb F_2$. For codes that work on bytes we need $\mathrm{GF}(2^8)$, which is *not* the integers modulo $256$ (in which $2$ has no inverse). It is built from polynomials.
 

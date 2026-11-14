@@ -2,7 +2,7 @@ An engine controller computes the fuel injection for each cylinder; if the resul
 
 The previous chapters handled timing one interrupt at a time. This chapter treats the whole program. It begins with the simple structures that most small systems use — a main loop with interrupts, and time-triggered cyclic schedules — then introduces the **real-time operating system** (RTOS), which lets the program be written as a set of independent **tasks** that a scheduler switches between by priority. Then comes the central question: given a set of periodic tasks with known execution times, will every one of them always meet its deadline? For fixed priorities the answer is given by the **rate-monotonic** utilisation bound of Liu and Layland and, exactly, by **response-time analysis**. The last part deals with what goes wrong when tasks share data: races, deadlock and **priority inversion**, and the semaphores, mutexes, queues and protocols that prevent them.
 
-Scheduling also appears in general-purpose operating systems, with different goals (throughput and fairness rather than guaranteed deadlines); see [Processes and CPU scheduling](/learn/cs/lesson.php?c=operating-systems&l=processes-scheduling). Here every result is about the worst case.
+Scheduling also appears in general-purpose operating systems, with different goals (throughput and fairness rather than guaranteed deadlines); see [Processes and CPU scheduling](/a/cs/lesson.php?c=operating-systems&l=processes-scheduling). Here every result is about the worst case.
 
 ## Real-time requirements
 

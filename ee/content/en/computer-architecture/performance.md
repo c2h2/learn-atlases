@@ -1,6 +1,6 @@
 Every design decision in this course has been justified by a number: the carry-select adder is $2.5$ times faster than ripple carry, the pipeline completes an instruction every $290\,\mathrm{ps}$ instead of every $750$, the L2 cache cuts the average memory access time from $11$ cycles to $3.6$. Computer architecture is a quantitative discipline, and its arguments are only as good as the measurements and models behind them. A designer who adds a feature because it "should help" without estimating by how much will often spend chip area, power and design time on something that makes no difference — or makes things worse.
 
-This chapter collects the tools for such estimates. We define performance precisely and relate it to the three factors of the **processor performance equation**, see how to break CPI into contributions from the pipeline and the memory system, and meet **Amdahl's law**, which limits what any single improvement can achieve. We then turn to measurement — benchmarks and how to summarise them honestly — and to the two constraints that have come to dominate design since the mid-2000s: **power**, and the balance between computation and **memory bandwidth** captured by the roofline model. The software-oriented laws of parallel speedup (Gustafson's law, work and span) are treated in [Speed-up and performance laws](/learn/cs/lesson.php?c=parallel-computing&l=performance-laws); here we take the hardware designer's view.
+This chapter collects the tools for such estimates. We define performance precisely and relate it to the three factors of the **processor performance equation**, see how to break CPI into contributions from the pipeline and the memory system, and meet **Amdahl's law**, which limits what any single improvement can achieve. We then turn to measurement — benchmarks and how to summarise them honestly — and to the two constraints that have come to dominate design since the mid-2000s: **power**, and the balance between computation and **memory bandwidth** captured by the roofline model. The software-oriented laws of parallel speedup (Gustafson's law, work and span) are treated in [Speed-up and performance laws](/a/cs/lesson.php?c=parallel-computing&l=performance-laws); here we take the hardware designer's view.
 
 ## Defining performance
 
@@ -136,7 +136,7 @@ labels: S(s); \text{limit }1/(1-f)
 caption: Amdahl's law: the overall speedup against the speedup $s$ of the improved part (or the number of processors $p$), for an improved fraction $f$ set by the slider $a$. With $f = 0.9$, $64$ processors give only $8.8$, and the limit is $10$. Push $f$ to $0.99$ and the curve climbs much further — the serial fraction, however small, is what limits a parallel machine.
 :::
 
-Amdahl's law assumes a fixed task. If, as is common for parallel machines, the task grows with the machine — a bigger simulation on a bigger computer — the serial fraction shrinks as the problem grows, and the achievable speedup is much larger; that is **Gustafson's law**, discussed in [Speed-up and performance laws](/learn/cs/lesson.php?c=parallel-computing&l=performance-laws).
+Amdahl's law assumes a fixed task. If, as is common for parallel machines, the task grows with the machine — a bigger simulation on a bigger computer — the serial fraction shrinks as the problem grows, and the achievable speedup is much larger; that is **Gustafson's law**, discussed in [Speed-up and performance laws](/a/cs/lesson.php?c=parallel-computing&l=performance-laws).
 
 ::: quiz
 A program runs in $100\,\mathrm{s}$, of which $80\,\mathrm{s}$ are spent in multiplications. How much faster must multiplication become for the whole program to run $5$ times faster?
@@ -149,7 +149,7 @@ To run in $20\,\mathrm{s}$, the program would have to finish its $20\,\mathrm{s}
 :::
 :::
 
-Amdahl's law assumes a fixed task. If, as is common for parallel machines, the task grows with the machine — a bigger simulation on a bigger computer — the serial fraction shrinks as the problem grows, and the achievable speedup is much larger; that is **Gustafson's law**, discussed in [Speed-up and performance laws](/learn/cs/lesson.php?c=parallel-computing&l=performance-laws).
+Amdahl's law assumes a fixed task. If, as is common for parallel machines, the task grows with the machine — a bigger simulation on a bigger computer — the serial fraction shrinks as the problem grows, and the achievable speedup is much larger; that is **Gustafson's law**, discussed in [Speed-up and performance laws](/a/cs/lesson.php?c=parallel-computing&l=performance-laws).
 
 ::: quiz
 A program runs in $100\,\mathrm{s}$, of which $80\,\mathrm{s}$ are spent in multiplications. How much faster must multiplication become for the program to run $4$ times faster?
@@ -294,7 +294,7 @@ Gene Amdahl presented his argument on the limits of parallel speedup at the AFIP
 
 ## Where this leads
 
-The tools of this chapter are applied to parallel machines in [[computer-architecture/parallel-architectures]], where Amdahl's law limits multicore speedup, cache coherence adds a new CPI term, and the roofline explains why GPUs need high-bandwidth memory. The circuit-level origins of power dissipation and the techniques for reducing it — clock gating, power gating, multiple voltage domains — are treated in [[digital-ic/power-dissipation]]. On the software side, measuring and improving real programs is the subject of [Performance engineering](/learn/cs/lesson.php?c=parallel-computing&l=performance-engineering).
+The tools of this chapter are applied to parallel machines in [[computer-architecture/parallel-architectures]], where Amdahl's law limits multicore speedup, cache coherence adds a new CPI term, and the roofline explains why GPUs need high-bandwidth memory. The circuit-level origins of power dissipation and the techniques for reducing it — clock gating, power gating, multiple voltage domains — are treated in [[digital-ic/power-dissipation]]. On the software side, measuring and improving real programs is the subject of [Performance engineering](/a/cs/lesson.php?c=parallel-computing&l=performance-engineering).
 
 ::: summary
 - Performance is the reciprocal of execution time; "X is $n$ times faster than Y" means $T_Y/T_X = n$ ([[#def-perf]]).

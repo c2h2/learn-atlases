@@ -83,7 +83,7 @@ $L(A) = \Sigma^*$ 当且仅当补 DFA（交换接受状态）语言为空：可�
 
 ## 语言比机器多
 
-一个计数论证说明存在不可判定——甚至不可识别——的语言，却不给出任何一个的具体例子。它要用到可数集与不可数集的概念（[Maths Atlas：基数](/learn/maths/lesson.php?c=proofs&l=cardinality)）。
+一个计数论证说明存在不可判定——甚至不可识别——的语言，却不给出任何一个的具体例子。它要用到可数集与不可数集的概念（[Maths Atlas：基数](/a/maths/lesson.php?c=proofs&l=cardinality)）。
 
 ::: theorem 有些语言不是图灵可识别的 {#thm-counting}
 对任何字母表 $\Sigma$，$\Sigma$ 上图灵机的集合是可数的，而 $\Sigma$ 上语言的集合是不可数的。从而存在没有任何图灵机识别的语言。

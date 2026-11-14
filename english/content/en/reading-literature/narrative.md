@@ -240,7 +240,7 @@ Genette's distinction between narration (who speaks) and focalisation (who sees)
 - **Tense and free indirect style.** English free indirect style is recognisable partly because of the tense shift (*was*, *would*) combined with deictic words of the character's present (*now*, *tomorrow*). Mandarin does not mark tense on the verb, so the boundary between narrator and character is drawn by other means — pronouns, sentence-final particles, the choice of words — and is often even more fluid. When you read English fiction, the mixture of past tense and *now* or *here* is a reliable signal; when you translate it into Chinese, the effect usually has to be recreated with word choice ([[translation/literary-translation]]).
 - **Frame narratives.** Chinese readers may know a famous frame: Lu Xun's "A Madman's Diary" (《狂人日记》, 1918) opens with a short preface in classical Chinese by a narrator who presents the madman's diary, written in the vernacular. The difference of language marks the two narrative levels, as Lockwood's and Nelly Dean's voices do in *Wuthering Heights*.
 - **The narrator is not the author.** Chinese school analysis sometimes treats a first-person *我* as the author. In English literary study, always distinguish the narrator or speaker from the author ([[#def-narrator]]).
-- For the theory of narrative in the Chinese tradition and its comparison with Western narratology, see the Chinese Atlas lesson on [narrative](/learn/chinese/lesson.php?c=literary-theory&l=narrative).
+- For the theory of narrative in the Chinese tradition and its comparison with Western narratology, see the Chinese Atlas lesson on [narrative](/a/chinese/lesson.php?c=literary-theory&l=narrative).
 :::
 
 ::: history

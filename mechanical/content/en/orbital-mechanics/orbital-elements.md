@@ -1,6 +1,6 @@
 The first two chapters solved the two-body problem inside the orbital plane: the conic's size and shape, and where on it the spacecraft is at a given time. A real mission needs more. The orbit of a weather satellite must pass over the poles; a communications satellite must stay over the equator; a space station's orbit is tilted so that it can be reached from launch sites at high latitudes; and every tracking station on the ground needs to know where in the sky to point. All of these questions concern the *orientation* of the orbit in three-dimensional space. This chapter sets up the reference frames in which orbits are described, defines the six **classical orbital elements** that pin down a two-body orbit completely, and derives the two conversions every orbit program performs constantly: from a measured position and velocity (a **state vector**) to the elements, and back. Along the way we deal with the awkward special cases — circular and equatorial orbits, where some elements are undefined — and with the ground track, the path a satellite traces over the rotating Earth.
 
-The mathematics is vector algebra and rotation matrices ([linear maps](/learn/maths/lesson.php?c=linear-algebra&l=linear-maps)); the physics is entirely contained in [[orbital-mechanics/two-body-problem]].
+The mathematics is vector algebra and rotation matrices ([linear maps](/a/maths/lesson.php?c=linear-algebra&l=linear-maps)); the physics is entirely contained in [[orbital-mechanics/two-body-problem]].
 
 ## Reference frames {#sec-frames}
 

@@ -69,7 +69,7 @@ $$
 \texttt{not}\,(p \;\texttt{or}\; q) \equiv (\texttt{not}\,p)\;\texttt{and}\;(\texttt{not}\,q).
 $$ {#eq-de-morgan}
 
-So "not between 0 and 9", `not (0 <= x and x <= 9)`, is the same as `x < 0 or x > 9`. (The proof is a truth table: see [Maths Atlas: propositional logic](/learn/maths/lesson.php?c=proofs&l=propositional-logic).)
+So "not between 0 and 9", `not (0 <= x and x <= 9)`, is the same as `x < 0 or x > 9`. (The proof is a truth table: see [Maths Atlas: propositional logic](/a/maths/lesson.php?c=proofs&l=propositional-logic).)
 
 ::: widget truthtable
 formula: ~(p & q)
@@ -187,7 +187,7 @@ If $P$ is a loop invariant for `while C: body` and the loop terminates, then whe
 :::
 
 ::: proof
-We show by induction on $k$ that $P$ holds after $k$ iterations, for every $k$ up to the number of iterations performed. For $k = 0$ this is initialisation. If $P$ holds after $k$ iterations and an iteration $k+1$ is performed, then $C$ was true at its start (that is why it was performed), so by maintenance $P$ holds after $k + 1$ iterations. When the loop terminates after some number $N$ of iterations, $P$ holds after iteration $N$, and the loop stopped because $C$ was false. (Induction is reviewed in [Maths Atlas: induction](/learn/maths/lesson.php?c=proofs&l=induction).)
+We show by induction on $k$ that $P$ holds after $k$ iterations, for every $k$ up to the number of iterations performed. For $k = 0$ this is initialisation. If $P$ holds after $k$ iterations and an iteration $k+1$ is performed, then $C$ was true at its start (that is why it was performed), so by maintenance $P$ holds after $k + 1$ iterations. When the loop terminates after some number $N$ of iterations, $P$ holds after iteration $N$, and the loop stopped because $C$ was false. (Induction is reviewed in [Maths Atlas: induction](/a/maths/lesson.php?c=proofs&l=induction).)
 :::
 
 The invariant principle turns a question about an unknown number of iterations into two small questions about one iteration. The art is in choosing $P$: it should describe *the progress made so far*, so that "$P$ and not $C$" says that the job is done. Here is the simplest possible illustration.

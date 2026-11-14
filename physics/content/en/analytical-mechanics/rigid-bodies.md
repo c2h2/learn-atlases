@@ -90,7 +90,7 @@ The extra term is the inertia tensor of a point mass $M$ at the centre of mass. 
 
 ### Principal axes
 
-Because $I$ is real and symmetric, the spectral theorem ([see the Maths Atlas](/learn/maths/lesson.php?c=linear-algebra&l=spectral-theorem)) guarantees three real eigenvalues and an orthonormal basis of eigenvectors.
+Because $I$ is real and symmetric, the spectral theorem ([see the Maths Atlas](/a/maths/lesson.php?c=linear-algebra&l=spectral-theorem)) guarantees three real eigenvalues and an orthonormal basis of eigenvectors.
 
 ::: definition Principal axes and moments {#def-principal}
 The eigenvectors $\mathbf{e}_1, \mathbf{e}_2, \mathbf{e}_3$ of the inertia tensor about $O$, chosen orthonormal, are the **principal axes** of the body at $O$, and the eigenvalues $I_1, I_2, I_3$ are the **principal moments of inertia**. In principal axes,
@@ -292,7 +292,7 @@ sliders: a=1:0.5:2:0.05; b=3:2.2:4:0.05
 caption: Spin about an axis with moment $x$, the other two principal moments being $a$ and $b$. The curve is $\lambda^2/\omega^2$ from [[#eq-tennis-rate]]: where it is positive, between $a$ and $b$, the spin is unstable and disturbances grow like $e^{\lambda t}$; where it is negative, small disturbances oscillate with angular frequency $\omega\sqrt{-(\text{value})}$. Only the intermediate moment lands in the unstable band. Move $a$ and $b$ together and watch the band shrink: a nearly symmetric body tumbles only slowly.
 :::
 
-The nonlinear motion is easily computed. The listing integrates Euler's equations with the classical fourth-order Runge–Kutta method ([see the Maths Atlas](/learn/maths/lesson.php?c=numerical-analysis&l=numerical-odes)) for a body with $I = (1, 2, 3)$, started close to each principal axis with $\abs{\boldsymbol{\omega}} \approx 1$, and reports when the large component changes sign.
+The nonlinear motion is easily computed. The listing integrates Euler's equations with the classical fourth-order Runge–Kutta method ([see the Maths Atlas](/a/maths/lesson.php?c=numerical-analysis&l=numerical-odes)) for a body with $I = (1, 2, 3)$, started close to each principal axis with $\abs{\boldsymbol{\omega}} \approx 1$, and reports when the large component changes sign.
 
 ```python
 import math

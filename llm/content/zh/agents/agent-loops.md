@@ -4,7 +4,7 @@
 
 ## 什么是智能体 {#sec-agent}
 
-这个词来自经典人工智能，在那里它有一个刻意宽泛而精确的含义（CS 图谱中的[智能体](/learn/cs/lesson.php?c=artificial-intelligence&l=intelligent-agents)一课；Russell 与 Norvig，2020，第 2 章）。
+这个词来自经典人工智能，在那里它有一个刻意宽泛而精确的含义（CS 图谱中的[智能体](/a/cs/lesson.php?c=artificial-intelligence&l=intelligent-agents)一课；Russell 与 Norvig，2020，第 2 章）。
 
 ::: definition 智能体 {#def-agent}
 一个**智能体**在离散时间上与一个**环境**相互作用。在每一步 $t$，它收到一个**观察**（知觉）$o_t$，并从动作集 $\mathcal{A}$ 中选择一个**动作** $a_t$；环境随之改变并产生下一个观察。智能体的行为由一个**策略** $\pi$ 描述，它把**历史** $h_t = (o_1, a_1, \dots, a_{t-1}, o_t)$ 映射为一个动作（或动作上的分布）。其优劣由设计者选定的、定义在所得环境状态序列上的**性能度量**来衡量。

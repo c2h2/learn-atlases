@@ -173,7 +173,7 @@ NFKC 把用上标写成的 $x^2$ 变成 *x2*，把看起来像化学式的 *H₂
 **语料库**是为研究而收集的大量文本。**词切分**（分词，经典意义上的 tokenisation）把语料库切成一串**词例**——连读的词——$w_1, w_2, \dots, w_N$；$N$ 就是语料库按词例计的大小。出现的不同取值是它的**词形**；词形的集合是**词表**，大小为 $V$。一个词形的**频率** $c(w)$ 是它的词例数，于是 $\sum_wc(w) = N$。$c(w) = 1$ 的词形叫 **hapax legomenon**（希腊语，"仅说过一次"）。
 :::
 
-句子 *the cat sat on the mat* 有 $N = 6$ 个词例、$V = 5$ 个词形，*the* 的频率为 $2$。即便对英语，切分也涉及种种选择——*don't* 算一个词例还是两个？*New York* 算一个吗？*Cat* 和 *cat* 是同一个词形吗？*run*、*runs* 和 *ran* 呢？——每个选择都会改变 $N$、$V$ 和计数。许多文字系统让这道选择题更难。中文、日文和泰文不用空格分词，切分本身就是一个预测问题，而且汉语语言学家连"什么是词"都还在争论（见中文图谱中关于[形态学](/learn/chinese/lesson.php?c=linguistics&l=morphology)与[数字时代的汉字](/learn/chinese/lesson.php?c=chinese-characters&l=characters-digital)的课）。土耳其语、芬兰语这类黏着语用许多语素构成长词，不同词形的数目因此极其庞大。[[text-and-language/linguistic-structure]]会回到形态学；这里我们刻意用最简单的一条规则——把文本转小写，取最长的连续字母段、允许词内有撇号——并研究它给出的计数。
+句子 *the cat sat on the mat* 有 $N = 6$ 个词例、$V = 5$ 个词形，*the* 的频率为 $2$。即便对英语，切分也涉及种种选择——*don't* 算一个词例还是两个？*New York* 算一个吗？*Cat* 和 *cat* 是同一个词形吗？*run*、*runs* 和 *ran* 呢？——每个选择都会改变 $N$、$V$ 和计数。许多文字系统让这道选择题更难。中文、日文和泰文不用空格分词，切分本身就是一个预测问题，而且汉语语言学家连"什么是词"都还在争论（见中文图谱中关于[形态学](/a/chinese/lesson.php?c=linguistics&l=morphology)与[数字时代的汉字](/a/chinese/lesson.php?c=chinese-characters&l=characters-digital)的课）。土耳其语、芬兰语这类黏着语用许多语素构成长词，不同词形的数目因此极其庞大。[[text-and-language/linguistic-structure]]会回到形态学；这里我们刻意用最简单的一条规则——把文本转小写，取最长的连续字母段、允许词内有撇号——并研究它给出的计数。
 
 用于语言建模的语料库规模已经增长了好几个数量级。布朗语料库（Brown Corpus，Francis 与 Kučera 编，1960 年代编制）收录约一百万词的美式英语，来自 $15$ 个文体的 $500$ 个样本，是早期频率研究的基础。Project Gutenberg 提供数万本公版书。大语言模型的预训练语料主要由过滤后的网络爬取汇编而成，以数万亿词元计（2026 年时；见[[pretraining/training-data]]）。下面的统计规律在所有这些尺度上成立。
 

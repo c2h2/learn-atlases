@@ -345,7 +345,7 @@ $$
 Z_1 = \frac{V}{\lambda^3}\,z_{\mathrm{int}}(T), \qquad Z_N = \frac{1}{N!}\left(\frac{V}{\lambda^3}\right)^N z_{\mathrm{int}}^N,
 $$
 
-其中 $\lambda$ 由总质量构成。因为 $z_{\mathrm{int}}$ 不依赖 $V$，压强仍是 $Nk_BT/V$：理想气体定律不关心内部结构。内部配分函数向 $F$ 添加 $-Nk_BT\ln z_{\mathrm{int}}$，并向 $U$、$S$、$C_V$ 作贡献。室温下转动对转动常数为 $B$、对称数为 $\sigma$ 的线性分子给出 $z_{\mathrm{rot}} \approx k_BT/(\sigma hcB)$，并向能量贡献一份 $k_BT$；振动如 [[statistical-mechanics/canonical]] 里算过的那样，大体冻结。化学图谱在 [分子配分函数](/learn/chemistry/lesson.php?c=statistical-thermodynamics&l=partition-function) 里把这些因子、以及由此得到的热容与熵逐一算清，并在 [由分子数据求平衡常数](/learn/chemistry/lesson.php?c=statistical-thermodynamics&l=equilibrium-from-molecules) 里用它们计算平衡常数。
+其中 $\lambda$ 由总质量构成。因为 $z_{\mathrm{int}}$ 不依赖 $V$，压强仍是 $Nk_BT/V$：理想气体定律不关心内部结构。内部配分函数向 $F$ 添加 $-Nk_BT\ln z_{\mathrm{int}}$，并向 $U$、$S$、$C_V$ 作贡献。室温下转动对转动常数为 $B$、对称数为 $\sigma$ 的线性分子给出 $z_{\mathrm{rot}} \approx k_BT/(\sigma hcB)$，并向能量贡献一份 $k_BT$；振动如 [[statistical-mechanics/canonical]] 里算过的那样，大体冻结。化学图谱在 [分子配分函数](/a/chemistry/lesson.php?c=statistical-thermodynamics&l=partition-function) 里把这些因子、以及由此得到的热容与熵逐一算清，并在 [由分子数据求平衡常数](/a/chemistry/lesson.php?c=statistical-thermodynamics&l=equilibrium-from-molecules) 里用它们计算平衡常数。
 
 ::: quiz
 双原子分子的理想气体与原子的理想气体处于相同的 $T$、$V$、$N$。哪些量对两种气体必然相同？
@@ -364,7 +364,7 @@ $$
 
 ## 后续内容 {#leads}
 
-经典气体是某个更大东西的 $n\lambda^3 \ll 1$ 极限。[[statistical-mechanics/quantum-statistics]] 撤掉"没有两个粒子共享一个态"的假设，直接数占据数，使用巨正则系综；麦克斯韦-玻尔兹曼分布作为玻色-爱因斯坦分布与费米-狄拉克分布的公共极限重新出现，本章的化学势 $\mu = k_BT\ln(n\lambda^3)$ 就是那座桥。[[statistical-mechanics/bose-fermi]] 随后研究 $n\lambda^3$ 到一甚至更大时发生什么：金属与白矮星中的电子，以及玻色-爱因斯坦凝聚体。气体分子间的相互作用——把气体变成液体的那种——是 [[statistical-mechanics/phase-transitions]] 的起点；对化学家，也是 [相互作用的分子：实际气体与液体](/learn/chemistry/lesson.php?c=statistical-thermodynamics&l=real-gases-liquids) 的起点。
+经典气体是某个更大东西的 $n\lambda^3 \ll 1$ 极限。[[statistical-mechanics/quantum-statistics]] 撤掉"没有两个粒子共享一个态"的假设，直接数占据数，使用巨正则系综；麦克斯韦-玻尔兹曼分布作为玻色-爱因斯坦分布与费米-狄拉克分布的公共极限重新出现，本章的化学势 $\mu = k_BT\ln(n\lambda^3)$ 就是那座桥。[[statistical-mechanics/bose-fermi]] 随后研究 $n\lambda^3$ 到一甚至更大时发生什么：金属与白矮星中的电子，以及玻色-爱因斯坦凝聚体。气体分子间的相互作用——把气体变成液体的那种——是 [[statistical-mechanics/phase-transitions]] 的起点；对化学家，也是 [相互作用的分子：实际气体与液体](/a/chemistry/lesson.php?c=statistical-thermodynamics&l=real-gases-liquids) 的起点。
 
 ::: summary
 - 体积 $V$ 的箱中的自由粒子有 $Z_1 = V/\lambda^3$，热波长 $\lambda = h/\sqrt{2\pi mk_BT}$；等价地，相空间每 $h^3$ 一个量子态。

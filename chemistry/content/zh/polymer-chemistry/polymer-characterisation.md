@@ -259,7 +259,7 @@ van 't Hoff（Jacobus van 't Hoff）的渗透压定律（1887）加上维里修�
 
 ## 后续内容
 
-这里测得的平均值与分布，检验着[[polymer-chemistry/step-growth]]、[[polymer-chemistry/radical-polymerisation]]与[[polymer-chemistry/controlled-polymerisation]]的动力学预言。Flory 缩聚物应给出 $Đ \approx 2$，活性聚合物 $Đ$ 应接近 1。DSC 测得的热转变与它给出的结晶度，在[[polymer-chemistry/polymer-properties]]中得到解释，那章还把动态力学分析与流变学加入工具箱。通用技术（色谱、NMR、IR、质谱与热分析）在[[analytical-chemistry]]与[[spectroscopy]]中讲解，校准曲线的统计处理在 Maths Atlas（[/learn/maths/](/learn/maths/)）中涉及。
+这里测得的平均值与分布，检验着[[polymer-chemistry/step-growth]]、[[polymer-chemistry/radical-polymerisation]]与[[polymer-chemistry/controlled-polymerisation]]的动力学预言。Flory 缩聚物应给出 $Đ \approx 2$，活性聚合物 $Đ$ 应接近 1。DSC 测得的热转变与它给出的结晶度，在[[polymer-chemistry/polymer-properties]]中得到解释，那章还把动态力学分析与流变学加入工具箱。通用技术（色谱、NMR、IR、质谱与热分析）在[[analytical-chemistry]]与[[spectroscopy]]中讲解，校准曲线的统计处理在 Maths Atlas（[/a/maths/](/a/maths/)）中涉及。
 
 ::: summary
 - 每种方法测一个特定的平均值。依数性方法与端基计数的是链（$\bar{M}_\mathrm{n}$），光散射按质量加权（$\bar{M}_\mathrm{w}$，$R_\mathrm{g}$ 为 z 均），黏度法给出介于两者之间的 $\bar{M}_\mathrm{v}$。

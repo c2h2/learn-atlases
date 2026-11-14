@@ -1,6 +1,6 @@
 十二名参与者试用新触控板和旧鼠标。鼠标的平均吞吐量为 4.38 bits/s，触控板为 4.13。把数据当作两组相互独立的数字来分析，差距远谈不上显著（$p = 0.21$），团队于是断定两种设备表现相同。而正确地分析——毕竟是*同样*的十二个人分别使用了两种设备，而且他们每个人都用鼠标更快——差距则极其显著（$p \approx 10^{-5}$）。同样的数据，相反的结论；唯一的区别，是分析是否尊重了实验的设计。放到网络规模上，错误的样子不同，但同样容易犯：一个每天都检查、一看起来显著就立刻停止的在线实验，会在约三分之一的概率上"发现"一个根本不存在的效应。
 
-[[hci/usability-evaluation]] 讲的是发现问题；这一章讲的是如何回答**比较性**的问题——设计 A 比设计 B 更快、更准或更令人满意吗？——并且带着已知的犯错风险。我们设计**受控实验**：选择变量与假设，在被试内与被试间设计之间作出取舍，用平衡拉丁方对顺序作平衡。我们用**配对** $t$ 检验与 **Welch** $t$ 检验（以纯 Python 实现）来分析实验结果，并讨论效应量、置信区间与功效。最后我们把规模放大到**在线受控实验**（A/B 测试）及其陷阱：检测小效应所需的样本量、样本比例失配、窥视、新奇效应与伦理。背后的概率与统计在 Maths Atlas 中讲授——[假设检验](/learn/maths/lesson.php?c=statistics&l=hypothesis-testing)与[置信区间](/learn/maths/lesson.php?c=statistics&l=confidence-intervals)——本章直接加以上述运用。
+[[hci/usability-evaluation]] 讲的是发现问题；这一章讲的是如何回答**比较性**的问题——设计 A 比设计 B 更快、更准或更令人满意吗？——并且带着已知的犯错风险。我们设计**受控实验**：选择变量与假设，在被试内与被试间设计之间作出取舍，用平衡拉丁方对顺序作平衡。我们用**配对** $t$ 检验与 **Welch** $t$ 检验（以纯 Python 实现）来分析实验结果，并讨论效应量、置信区间与功效。最后我们把规模放大到**在线受控实验**（A/B 测试）及其陷阱：检测小效应所需的样本量、样本比例失配、窥视、新奇效应与伦理。背后的概率与统计在 Maths Atlas 中讲授——[假设检验](/a/maths/lesson.php?c=statistics&l=hypothesis-testing)与[置信区间](/a/maths/lesson.php?c=statistics&l=confidence-intervals)——本章直接加以上述运用。
 
 ## 实验设计
 
@@ -326,7 +326,7 @@ A/B 测试是对人做的实验，研究伦理适用。2014 年，Adam Kramer、
 
 ## 后续内容
 
-实验检验 [[hci/human-factors]] 与 [[hci/interaction-techniques]] 的预测，以及 [[hci/usability-evaluation]] 的总结性论断。它们的伦理——同意、伤害与大规模操纵——在 [[hci/accessibility-ethics]] 中继续。本章每个检验背后的概率在 Maths Atlas 中展开（[假设检验](/learn/maths/lesson.php?c=statistics&l=hypothesis-testing)），机器学习系统的评估及其引出的相关问题则在 [LLM 图谱](/learn/llm/)。
+实验检验 [[hci/human-factors]] 与 [[hci/interaction-techniques]] 的预测，以及 [[hci/usability-evaluation]] 的总结性论断。它们的伦理——同意、伤害与大规模操纵——在 [[hci/accessibility-ethics]] 中继续。本章每个检验背后的概率在 Maths Atlas 中展开（[假设检验](/a/maths/lesson.php?c=statistics&l=hypothesis-testing)），机器学习系统的评估及其引出的相关问题则在 [LLM 图谱](/a/llm/)。
 
 ::: summary
 - 实验**操纵自变量**、**测量因变量**，并以随机指派与控制打断**混淆**（[[#def-variables]]）。

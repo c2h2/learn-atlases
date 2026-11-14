@@ -475,7 +475,7 @@ ${}^{209}\mathrm{Bi}$ 的 $Z = 83$、$N = 126$。中子构成满壳层。八十�
 
 ## 后续内容 {#leads}
 
-质量公式与它的稳定谷统辖着后面两章。在 [[particles/decay]] 里，不在谷底的核经 β 衰变向谷底靠拢，而位于稳定谷高端附近的重核放出 α 粒子，因为库仑项已使这在能量上有利。在 [[particles/reactions]] 里，结合能曲线决定裂变与聚变释放的能量。壳层模型将在 γ 衰变中重新登场：能级的自旋与宇称决定了哪些跃迁快。放射性同位素的化学及其应用见化学图谱的课程[核化学](/learn/chemistry/lesson.php?c=general-chemistry-2&l=nuclear-chemistry)。
+质量公式与它的稳定谷统辖着后面两章。在 [[particles/decay]] 里，不在谷底的核经 β 衰变向谷底靠拢，而位于稳定谷高端附近的重核放出 α 粒子，因为库仑项已使这在能量上有利。在 [[particles/reactions]] 里，结合能曲线决定裂变与聚变释放的能量。壳层模型将在 γ 衰变中重新登场：能级的自旋与宇称决定了哪些跃迁快。放射性同位素的化学及其应用见化学图谱的课程[核化学](/a/chemistry/lesson.php?c=general-chemistry-2&l=nuclear-chemistry)。
 
 两个模型都不解释的是核力本身。它的短程、它的饱和性、它对自旋的依赖，都是夸克之间强相互作用的残余，将在 [[particles/standard-model]] 中处理。多体工具——费米气体与平均场——来自 [[quantum-2/identical-particles]] 与 [[statistical-mechanics/quantum-statistics]]。
 

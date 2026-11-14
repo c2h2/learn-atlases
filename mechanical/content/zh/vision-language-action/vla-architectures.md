@@ -2,7 +2,7 @@
 
 本章剖析动作输出如何接到 VLM 上。我们先描述骨干网络——视觉编码器、投影层与语言模型——并计算它的词元数与开销。然后按时间顺序讲述几条主要设计路线：**动作即词元**（RT-2，2023；OpenVLA，2024）、**从头训练的通用策略**（Octo，2024）、带流匹配的**动作专家**（π0，2024及其后续模型），以及让慢速推理模型与快速运动模型以不同频率运行的**双系统**设计（Helix、GR00T N1与 Gemini Robotics，2025）。这个领域进展很快：这里的名字会过时，但设计问题——如何从语言模型输出连续动作、如何让它足够快、如何保住它的网络知识——不会过时。凡描述某个模型之处，描述依照其公开论文、报告或博客，并附年份。
 
-各组件的背景见 LLM Atlas：[视觉 Transformer](/learn/llm/lesson.php?c=multimodal&l=vision-transformers)、[图文对比学习](/learn/llm/lesson.php?c=multimodal&l=contrastive-learning)、[视觉-语言模型](/learn/llm/lesson.php?c=multimodal&l=vision-language-models)与 [Transformer 块](/learn/llm/lesson.php?c=transformers&l=transformer-block)。
+各组件的背景见 LLM Atlas：[视觉 Transformer](/a/llm/lesson.php?c=multimodal&l=vision-transformers)、[图文对比学习](/a/llm/lesson.php?c=multimodal&l=contrastive-learning)、[视觉-语言模型](/a/llm/lesson.php?c=multimodal&l=vision-language-models)与 [Transformer 块](/a/llm/lesson.php?c=transformers&l=transformer-block)。
 
 ## 视觉-语言骨干网络 {#sec-backbone}
 

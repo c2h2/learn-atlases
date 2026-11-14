@@ -364,7 +364,7 @@ D–T 聚变的 $17.59\,\mathrm{MeV}$ 由动量守恒按质量反比分配给 α
 
 ## 后续内容 {#leads}
 
-产生入射粒子、探测反应产物的仪器是 [[particles/accelerators]] 的主题，阈能公式 [[#eq-threshold]] 在那里以固定靶机器与对撞机之比较的面目重现。截面、共振与宽度是粒子物理的基本语言：$Z$ 玻色子的布莱特–维格纳线型在那里量出中微子的种类数（[[particles/standard-model]]）。氦以外的恒星核合成与恒星的终局见 [[gravitation/stars]]。化学图谱的课程[核化学](/learn/chemistry/lesson.php?c=general-chemistry-2&l=nuclear-chemistry)从化学家的角度讲核方程与应用。
+产生入射粒子、探测反应产物的仪器是 [[particles/accelerators]] 的主题，阈能公式 [[#eq-threshold]] 在那里以固定靶机器与对撞机之比较的面目重现。截面、共振与宽度是粒子物理的基本语言：$Z$ 玻色子的布莱特–维格纳线型在那里量出中微子的种类数（[[particles/standard-model]]）。氦以外的恒星核合成与恒星的终局见 [[gravitation/stars]]。化学图谱的课程[核化学](/a/chemistry/lesson.php?c=general-chemistry-2&l=nuclear-chemistry)从化学家的角度讲核方程与应用。
 
 ::: summary
 - $X(a,b)Y$ 的 Q 值为 $[m_a + m_X - m_Y - m_b]c^2$，用原子质量计算。吸能反应有阈能 $K_\mathrm{th} = (M_f^2 - (m_a + m_X)^2)c^2/2m_X \approx -Q(1 + m_a/m_X)$。

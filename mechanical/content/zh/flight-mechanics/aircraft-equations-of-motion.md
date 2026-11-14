@@ -1,6 +1,6 @@
 前几讲的静态分析回答了“是否存在恢复力矩？”这个问题。要回答“接下来会发生什么？”——飞机受突风扰动后如何运动，它对飞行员操纵的响应有多快，它的振荡是否衰减——我们需要它的**运动方程**：在随飞机一起运动的坐标轴中写出的六自由度刚体牛顿定律，再加上一个描述气动力如何依赖于运动的模型。完整的方程是非线性且相互耦合的，每一台飞行模拟器积分的正是它们。对于偏离定常飞行的小扰动，它们变成线性方程，并整齐地分离为纵向和横航向两组独立的方程，每一组都是一个四阶线性系统，其特征值就是飞机的固有模态（[[flight-mechanics/dynamic-modes]]）。
 
-刚体力学——角动量、惯性张量、欧拉方程以及矢量在旋转坐标系中的导数——在[[dynamics/three-dimensional-dynamics]]中建立；状态空间模型的线性代数见[[control-systems/state-space]]以及 Maths Atlas 的[特征值](/learn/maths/lesson.php?c=linear-algebra&l=eigenvalues)。
+刚体力学——角动量、惯性张量、欧拉方程以及矢量在旋转坐标系中的导数——在[[dynamics/three-dimensional-dynamics]]中建立；状态空间模型的线性代数见[[control-systems/state-space]]以及 Maths Atlas 的[特征值](/a/maths/lesson.php?c=linear-algebra&l=eigenvalues)。
 
 ## 坐标轴与姿态 {#sec-axes}
 

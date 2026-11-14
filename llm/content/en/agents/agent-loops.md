@@ -4,7 +4,7 @@ This chapter makes the loop precise. It defines an agent in the classical sense,
 
 ## What an agent is {#sec-agent}
 
-The word comes from classical artificial intelligence, where it has a precise and deliberately broad meaning ([Intelligent agents](/learn/cs/lesson.php?c=artificial-intelligence&l=intelligent-agents) in the CS Atlas; Russell and Norvig, 2020, ch. 2).
+The word comes from classical artificial intelligence, where it has a precise and deliberately broad meaning ([Intelligent agents](/a/cs/lesson.php?c=artificial-intelligence&l=intelligent-agents) in the CS Atlas; Russell and Norvig, 2020, ch. 2).
 
 ::: definition Agent {#def-agent}
 An **agent** interacts with an **environment** over discrete time. At each step $t$ it receives an **observation** (percept) $o_t$ and chooses an **action** $a_t$ from an action set $\mathcal{A}$; the environment changes and produces the next observation. The agent's behaviour is described by a **policy** $\pi$ mapping the **history** $h_t = (o_1, a_1, \dots, a_{t-1}, o_t)$ to an action (or a distribution over actions). Its quality is measured by a **performance measure** on the resulting sequence of environment states, chosen by its designer.

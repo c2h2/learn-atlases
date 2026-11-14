@@ -98,7 +98,7 @@ caption: 一条平滑的动作轨迹（归一化单位下的正弦曲线）及�
 
 对控制而言，词元输出有两个性质要紧。
 
-1. **开销。**每个词元需要语言模型一次前进一步。每动作$d = 7$个词元，则70亿参数的模型每个控制步要跑七个解码步。有了键值缓存，每个解码步比处理整个提示便宜，但大型自回归 VLA 在2024年于单张高端 GPU 上只能跑到几 Hz（[[vision-language-action/vla-deployment]]；另见 LLM Atlas 中的 [KV 缓存](/learn/llm/lesson.php?c=inference&l=kv-cache)）。
+1. **开销。**每个词元需要语言模型一次前进一步。每动作$d = 7$个词元，则70亿参数的模型每个控制步要跑七个解码步。有了键值缓存，每个解码步比处理整个提示便宜，但大型自回归 VLA 在2024年于单张高端 GPU 上只能跑到几 Hz（[[vision-language-action/vla-deployment]]；另见 LLM Atlas 中的 [KV 缓存](/a/llm/lesson.php?c=inference&l=kv-cache)）。
 2. **高频动作块词元化得很糟。**在50 Hz 下，相邻动作几乎相等，于是在分箱动作的块里，每个词元都几乎是其前$d$个位置的词元的复制品。这样下一词元预测有一条轻松的捷径（复制），关于整体运动的信号则收获得很少。Pertsch 等（2025）表明，用朴素分箱在高频灵巧数据上训练的自回归 VLA 表现很差，并提出了一种压缩词元化。
 
 ### FAST：频率空间动作词元化 {#sec-fast}
@@ -125,7 +125,7 @@ $$ {#eq-dct}
 :::
 
 ::: proof
-分量$c_{k,n} = \sqrt{(2-\delta_{k0})/H}\,\cos\bigl(\pi(n+\tfrac12)k/H\bigr)$的向量$\mathbf c_k$，是带反射（诺伊曼）边界的对称$H\times H$二阶差分矩阵的特征向量，特征值$2 - 2\cos(\pi k/H)$互不相同，所以它们两两正交；归一化常数使每个都是单位长（和$\sum_n\cos^2(\pi(n+\frac12)k/H)$在$k\ge1$时为$H/2$，在$k = 0$时为$H$）。行标准正交的矩阵是正交矩阵，因此保持欧氏范数，其逆就是转置。若系数改变$\delta\mathbf C$，信号改变$\mathbf M\T\delta\mathbf C$，二者范数相同。（连续情形见 [Maths Atlas 的傅里叶级数](/learn/maths/lesson.php?c=pde&l=fourier-series)。）
+分量$c_{k,n} = \sqrt{(2-\delta_{k0})/H}\,\cos\bigl(\pi(n+\tfrac12)k/H\bigr)$的向量$\mathbf c_k$，是带反射（诺伊曼）边界的对称$H\times H$二阶差分矩阵的特征向量，特征值$2 - 2\cos(\pi k/H)$互不相同，所以它们两两正交；归一化常数使每个都是单位长（和$\sum_n\cos^2(\pi(n+\frac12)k/H)$在$k\ge1$时为$H/2$，在$k = 0$时为$H$）。行标准正交的矩阵是正交矩阵，因此保持欧氏范数，其逆就是转置。若系数改变$\delta\mathbf C$，信号改变$\mathbf M\T\delta\mathbf C$，二者范数相同。（连续情形见 [Maths Atlas 的傅里叶级数](/a/maths/lesson.php?c=pde&l=fourier-series)。）
 :::
 
 于是每个系数上$1/\gamma$的量化步长像[[#prop-quant]]那样给出误差上界，但只对存活的系数成立——把一个系数舍入到零，至多从中去掉$1/(2\gamma)$。

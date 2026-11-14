@@ -364,7 +364,7 @@ references, attributes, code, URLs and *italic* spans are removed. English examp
 italics, as the rules above require, therefore pass. Passages kept in English in a blockquote are
 flagged until the checker learns to skip them. The run must end with `0 errors`, and the only
 warnings left may be those for English passages in blockquotes.
-Preview: `http://f.g77k.com/learn/english/lesson.php?c=<course>&l=<chapter>&lang=zh`.
+Preview: `http://f.g77k.com/a/english/lesson.php?c=<course>&l=<chapter>&lang=zh`.
 
 ## Workflow
 
@@ -380,5 +380,5 @@ Preview: `http://f.g77k.com/learn/english/lesson.php?c=<course>&l=<chapter>&lang
    translation faithful and report it — never "correct" English in the Chinese file.
 
 A model for markup and tone (Maths Atlas, same engine):
-`/var/www/f.g77k.com/learn/maths/content/zh/multivariable/gradient.md` and
-`/var/www/f.g77k.com/learn/maths/content/zh/ode/course.json`. Site name: 英语图谱.
+`/var/www/f.g77k.com/a/maths/content/zh/multivariable/gradient.md` and
+`/var/www/f.g77k.com/a/maths/content/zh/ode/course.json`. Site name: 英语图谱.

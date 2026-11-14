@@ -336,7 +336,7 @@ Johann Balmer fitted the visible lines in 1885, and Johannes Rydberg found the g
 
 ## Where this leads {#leads}
 
-Electron spin, [[quantum-1/spin]], doubles each level. Relativistic corrections, spin–orbit coupling and the Lamb shift split the $n^2$ degeneracy into fine and hyperfine structure, treated by perturbation theory in [[quantum-2/stationary-perturbation]] and [[quantum-2/atomic-structure]]. Atoms with more than one electron cannot be solved exactly; the hydrogen orbitals, with screening, are the starting point for the periodic table. The Chemistry Atlas develops the chemist's view of the same solution in [the hydrogen atom](/learn/chemistry/lesson.php?c=quantum-chemistry&l=hydrogen-atom) and [many-electron atoms](/learn/chemistry/lesson.php?c=quantum-chemistry&l=many-electron-atoms).
+Electron spin, [[quantum-1/spin]], doubles each level. Relativistic corrections, spin–orbit coupling and the Lamb shift split the $n^2$ degeneracy into fine and hyperfine structure, treated by perturbation theory in [[quantum-2/stationary-perturbation]] and [[quantum-2/atomic-structure]]. Atoms with more than one electron cannot be solved exactly; the hydrogen orbitals, with screening, are the starting point for the periodic table. The Chemistry Atlas develops the chemist's view of the same solution in [the hydrogen atom](/a/chemistry/lesson.php?c=quantum-chemistry&l=hydrogen-atom) and [many-electron atoms](/a/chemistry/lesson.php?c=quantum-chemistry&l=many-electron-atoms).
 
 ::: summary
 - In a central potential $\psi = R(r)Y_l^m(\theta, \varphi)$, and $u = rR$ obeys a one-dimensional equation with $V_{\mathrm{eff}} = V + \hbar^2l(l+1)/2\mu r^2$ and $u(0) = 0$.

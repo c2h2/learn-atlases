@@ -2,7 +2,7 @@ The socket in the wall does not supply a constant voltage. In Europe it delivers
 
 In [[circuits-1/first-order-circuits]] and [[circuits-1/second-order-circuits]] you solved circuits by writing and solving differential equations. That approach works for a sinusoidal source too, but the algebra quickly becomes heavy: even a single resistor and inductor need a page of trigonometry. This lesson introduces the **phasor**, a complex number that holds the amplitude and phase of a sinusoid, and shows that with phasors the derivative becomes multiplication by $j\omega$. Each element then obeys a complex version of Ohm's law, $\mathbf V = Z\mathbf I$, with an **impedance** $Z$ that depends on frequency, and Kirchhoff's laws hold for the phasors unchanged. Every DC technique of the first course then applies with complex numbers in place of real ones. Here we build the tools; in [[circuits-2/ac-analysis]] we use them on whole networks.
 
-You will need complex numbers in rectangular and polar form, Euler's formula $e^{j\theta} = \cos\theta + j\sin\theta$, and the conversion between the two forms. If they are rusty, revise them in [Complex numbers](/learn/maths/lesson.php?c=complex-analysis&l=complex-numbers) in Maths Atlas. Engineers write the imaginary unit as $j$, because $i$ is reserved for current.
+You will need complex numbers in rectangular and polar form, Euler's formula $e^{j\theta} = \cos\theta + j\sin\theta$, and the conversion between the two forms. If they are rusty, revise them in [Complex numbers](/a/maths/lesson.php?c=complex-analysis&l=complex-numbers) in Maths Atlas. Engineers write the imaginary unit as $j$, because $i$ is reserved for current.
 
 ## Sinusoids and their parameters
 

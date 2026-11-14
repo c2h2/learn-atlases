@@ -8,7 +8,7 @@ Trees are also the basis of the fastest general-purpose searching structures: bi
 A **rooted tree** is either empty, or consists of a node $r$, its **root**, together with a finite sequence of zero or more rooted trees $T_1, \dots, T_k$, the **subtrees** of $r$, which share no nodes with each other or with $r$. The roots of the non-empty $T_i$ are the **children** of $r$, and $r$ is their **parent**.
 :::
 
-The definition is recursive — a tree is a root with smaller trees hanging below it — and that is why almost every algorithm on trees is recursive too ([[programming-1/recursion]]). (Graph theory defines a tree differently, as a connected graph without cycles; choosing any vertex as root and directing edges away from it turns such a tree into a rooted tree in the sense above. See [Maths Atlas: graphs](/learn/maths/lesson.php?c=discrete&l=graphs).)
+The definition is recursive — a tree is a root with smaller trees hanging below it — and that is why almost every algorithm on trees is recursive too ([[programming-1/recursion]]). (Graph theory defines a tree differently, as a connected graph without cycles; choosing any vertex as root and directing edges away from it turns such a tree into a rooted tree in the sense above. See [Maths Atlas: graphs](/a/maths/lesson.php?c=discrete&l=graphs).)
 
 The vocabulary comes partly from botany and partly from genealogy:
 

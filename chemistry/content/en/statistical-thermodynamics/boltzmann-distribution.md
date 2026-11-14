@@ -14,7 +14,7 @@ $$ {#eq-weight}
 The **total energy** of the configuration is $E = \sum_i n_i \varepsilon_i$.
 :::
 
-The formula is the multinomial coefficient of combinatorics (elementary [counting](/learn/maths/lesson.php?c=probability&l=probability-spaces) is the only mathematics needed). There are $N!$ ways of lining up the molecules and then handing out states in order — $n_0$ copies of state 0, then $n_1$ of state 1, and so on — but permuting the $n_i$ molecules that end up in the same state among themselves does not produce a new assignment, so we divide by $n_i!$ for each state. Two extreme cases make the meaning plain: if every molecule is in the ground state, $W = N!/N! = 1$ (there is one way to do it); if every molecule is in a different state, $W = N!$, the largest value possible.
+The formula is the multinomial coefficient of combinatorics (elementary [counting](/a/maths/lesson.php?c=probability&l=probability-spaces) is the only mathematics needed). There are $N!$ ways of lining up the molecules and then handing out states in order — $n_0$ copies of state 0, then $n_1$ of state 1, and so on — but permuting the $n_i$ molecules that end up in the same state among themselves does not produce a new assignment, so we divide by $n_i!$ for each state. Two extreme cases make the meaning plain: if every molecule is in the ground state, $W = N!/N! = 1$ (there is one way to do it); if every molecule is in a different state, $W = N!$, the largest value possible.
 
 Why "distinguishable"? In a crystal each molecule sits at its own lattice site and can be labelled by it; in a gas the molecules are identical and cannot be labelled. The counting in [[#eq-weight]] is nonetheless the right starting point for a gas too, because the ratio between the weights of two configurations — which is all we need to find the most probable one — is not affected by dividing every weight by the same $N!$. The correct treatment of indistinguishability changes the entropy and the free energy, and is the business of [[statistical-thermodynamics/canonical-ensemble]].
 
@@ -64,7 +64,7 @@ Write $\ln N! = \sum_{x=1}^{N}\ln x$. The sum is the area of $N$ rectangles of u
 $$
 N\ln N - N + 1 \;\le\; \ln N! \;\le\; (N+1)\ln(N+1) - N .
 $$
-Both bounds equal $N\ln N - N$ plus terms of order $\ln N$, which are negligible beside $N\ln N$ when $N$ is large (for $N = 10^{23}$, $N\ln N \approx 5\times10^{24}$ while $\ln N \approx 53$). Hence $\ln N! = N\ln N - N + O(\ln N)$. The refined form with $\tfrac{1}{2}\ln(2\pi N)$ follows from evaluating the gamma-function integral $N! = \int_0^\infty x^{N}e^{-x}\,\mathrm{d}x$ by Laplace's method (see [improper integrals](/learn/maths/lesson.php?c=calculus-1&l=improper-integrals) in Maths Atlas).
+Both bounds equal $N\ln N - N$ plus terms of order $\ln N$, which are negligible beside $N\ln N$ when $N$ is large (for $N = 10^{23}$, $N\ln N \approx 5\times10^{24}$ while $\ln N \approx 53$). Hence $\ln N! = N\ln N - N + O(\ln N)$. The refined form with $\tfrac{1}{2}\ln(2\pi N)$ follows from evaluating the gamma-function integral $N! = \int_0^\infty x^{N}e^{-x}\,\mathrm{d}x$ by Laplace's method (see [improper integrals](/a/maths/lesson.php?c=calculus-1&l=improper-integrals) in Maths Atlas).
 :::
 
 The approximation is surprisingly good already for modest numbers: $\ln 10! = 15.104$, the simple form gives $13.026$ and the refined form $15.096$; for $100!$ the values are $363.739$, $360.517$ and $363.739$. For $N \approx 10^{23}$ the error of the simple form is utterly negligible.
@@ -113,7 +113,7 @@ We now find the configuration of greatest weight for molecules with an arbitrary
 $$
 \sum_i n_i = N, \qquad \sum_i n_i\varepsilon_i = E .
 $$ {#eq-constraints}
-Because $\ln W$ increases monotonically with $W$, we may maximise $\ln W$, which is much easier. The constraints are handled by the method of Lagrange multipliers ([Lagrange multipliers](/learn/maths/lesson.php?c=multivariable&l=extrema) in Maths Atlas).
+Because $\ln W$ increases monotonically with $W$, we may maximise $\ln W$, which is much easier. The constraints are handled by the method of Lagrange multipliers ([Lagrange multipliers](/a/maths/lesson.php?c=multivariable&l=extrema) in Maths Atlas).
 
 ::: proposition The Boltzmann distribution {#prop-boltzmann}
 For $N$ independent molecules with total energy $E$, the configuration of greatest weight has populations

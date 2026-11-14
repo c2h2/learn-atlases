@@ -1,6 +1,6 @@
 A $t$ statistic answers the question that was asked before the number was seen. A search over twenty rules asks twenty questions and then reports the winner as if it had been the only question. The arithmetic of that distinction is small. It does not depend on a market, and it is not a licence to trade the rule that survived.
 
-The single-test machinery — null hypothesis, size, p-value, and the Student distribution under an independent normal model — is proved in the Maths Atlas, in [hypothesis tests](/learn/maths/lesson.php?c=statistics&l=hypothesis-testing). This chapter specialises it to a mean excess return, then derives the probability of at least one false rejection when several true nulls are tested together. White's reality check and the factor-zoo warning are stated as ideas, not re-derived.
+The single-test machinery — null hypothesis, size, p-value, and the Student distribution under an independent normal model — is proved in the Maths Atlas, in [hypothesis tests](/a/maths/lesson.php?c=statistics&l=hypothesis-testing). This chapter specialises it to a mean excess return, then derives the probability of at least one false rejection when several true nulls are tested together. White's reality check and the factor-zoo warning are stated as ideas, not re-derived.
 
 ## One mean, one test
 

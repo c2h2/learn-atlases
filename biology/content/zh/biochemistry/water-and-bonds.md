@@ -1,6 +1,6 @@
 每个细胞大部分是水。像 *Escherichia coli*（大肠杆菌）这样的细菌按质量约 70% 是水，人体约 60%，水母超过 95%，甚至干燥种子也保留几个百分点的水结合在蛋白质与糖上。水不是被动填充物。它是几乎所有生化反应发生的溶剂，是水解与光合作用中的反应物、呼吸的产物，并通过它形成和拒绝形成的氢键，成为折叠蛋白质、组装膜、把酶与底物结合在一起的力。它的酸碱化学用一个数字 pH 概括，决定细胞中每个可电离基团的电荷。
 
-本章从生物学家的角度看待水与弱相互作用：在真实隔室、真实温度、生活在沙漠、深海与冰冻池塘的生物中。物理化学——氢键几何、介电质中的库仑定律、疏水效应的热力学与 Henderson–Hasselbalch 方程的推导——在[化学图谱：水与非共价相互作用](/learn/chemistry/lesson.php?c=biochemistry&l=water-noncovalent)中详细处理。这里我们陈述所需结果，并追问它们对生物意味着什么：隔室为何保持不同 pH、如何测量，细胞如何缓冲制造的酸，生物如何平衡水与溶质对抗严酷环境，以及弱键之弱为何正是生物学所需。
+本章从生物学家的角度看待水与弱相互作用：在真实隔室、真实温度、生活在沙漠、深海与冰冻池塘的生物中。物理化学——氢键几何、介电质中的库仑定律、疏水效应的热力学与 Henderson–Hasselbalch 方程的推导——在[化学图谱：水与非共价相互作用](/a/chemistry/lesson.php?c=biochemistry&l=water-noncovalent)中详细处理。这里我们陈述所需结果，并追问它们对生物意味着什么：隔室为何保持不同 pH、如何测量，细胞如何缓冲制造的酸，生物如何平衡水与溶质对抗严酷环境，以及弱键之弱为何正是生物学所需。
 
 ## 水作为生命介质
 
@@ -80,7 +80,7 @@ $$
 f_\mathrm{HA} = \frac{[\mathrm{HA}]}{[\mathrm{HA}]+[\mathrm{A^-}]} = \frac{1}{1 + 10^{\,\mathrm{pH}-\mathrm{p}K_\mathrm{a}}}.
 $$ {#eq-hh}
 
-它来自对 $K_\mathrm{a} = [\mathrm{H^+}][\mathrm{A^-}]/[\mathrm{HA}]$ 取对数；推导与假设（稀溶液、活度用浓度替代）在[化学图谱](/learn/chemistry/lesson.php?c=biochemistry&l=water-noncovalent)。基团在 $\mathrm{pH} = \mathrm{p}K_\mathrm{a}$ 时半质子化，低一个单位时约 91% 质子化，高一个单位时约 9%。
+它来自对 $K_\mathrm{a} = [\mathrm{H^+}][\mathrm{A^-}]/[\mathrm{HA}]$ 取对数；推导与假设（稀溶液、活度用浓度替代）在[化学图谱](/a/chemistry/lesson.php?c=biochemistry&l=water-noncovalent)。基团在 $\mathrm{pH} = \mathrm{p}K_\mathrm{a}$ 时半质子化，低一个单位时约 91% 质子化，高一个单位时约 9%。
 :::
 
 下图显示 [[#eq-hh]] 与同一酸碱对的缓冲能力。
@@ -189,7 +189,7 @@ $$ {#eq-beta}
 - **无机磷酸**（$\mathrm{H_2PO_4^-}/\mathrm{HPO_4^{2-}}$，生理离子强度下 $\mathrm{p}K_\mathrm{a} \approx 6.9$）与有机代谢物的磷酸基。
 - 蛋白质的**组氨酸侧链**（$\mathrm{p}K_\mathrm{a}$ 约 6–7，取决于环境）。血红蛋白每个四聚体有数十个组氨酸，红细胞中四聚体浓度约 5 mmol L⁻¹，是血液主要的非碳酸氢盐缓冲物。
 - **咪唑二肽**如肌肽（β-丙氨酰组氨酸，$\mathrm{p}K_\mathrm{a}$ 近 6.8）及甲基化类似物鹅肌肽与鲸肌肽，在脊椎动物骨骼肌中达数十毫摩尔每千克，尤其在爆发无氧用力或长时间潜水的动物中丰富——金枪鱼等冲刺鱼与潜水鲸（H. Abe，*Biochemistry (Moscow)* 65, 757, 2000）。
-- **碳酸氢盐**表观 $\mathrm{p}K$ 为 6.1，远离 7.4，却是最重要的细胞外缓冲物，因为它是**开放**系统：CO₂ 被肺（或鳃）移除，酸形式保持恒定。其详细处理与动脉血 pH 计算在[化学图谱](/learn/chemistry/lesson.php?c=biochemistry&l=water-noncovalent)，临床解释在[医学图谱：肾](/learn/medicine/course.php?c=renal)。
+- **碳酸氢盐**表观 $\mathrm{p}K$ 为 6.1，远离 7.4，却是最重要的细胞外缓冲物，因为它是**开放**系统：CO₂ 被肺（或鳃）移除，酸形式保持恒定。其详细处理与动脉血 pH 计算在[化学图谱](/a/chemistry/lesson.php?c=biochemistry&l=water-noncovalent)，临床解释在[医学图谱：肾](/a/medicine/course.php?c=renal)。
 
 ::: example 磷酸缓冲隔室吸收酸 {#ex-buffer}
 一个隔室含 20 mmol L⁻¹ 总无机磷酸（$\mathrm{p}K_\mathrm{a} = 6.86$），pH 7.20，无其他缓冲物。(a) $\mathrm{HPO_4^{2-}}$ 与 $\mathrm{H_2PO_4^-}$ 浓度是多少？(b) 加入 5 mmol L⁻¹ 强酸后 pH 是多少？(c) 完全没有缓冲时 pH 是多少？
@@ -210,7 +210,7 @@ $$ {#eq-beta}
 
 ### 温度、pH 与变温动物的方案
 
-对体温变化的动物，固定 pH 意味着其蛋白质电离状态变化，因为 $\mathrm{p}K_\mathrm{w}$ 与组氨酸 $\mathrm{p}K_\mathrm{a}$ 都随温度上升下降（约每 °C 0.02 单位）。1960–70 年代 Hermann Rahn 与 Robert Reeves 发现龟、蛙与鱼的血液和细胞 pH 随温度上升下降约每 °C 0.015–0.02 单位，使 pH 与中性保持恒定距离。Reeves 的 **alpha-stat（α 稳态）** 假说（1972）提出被调节的不是 pH 本身，而是蛋白质组氨酸咪唑基团的分数解离（α），使蛋白质净电荷——因而结构与功能——随温度变化保持恒定。冬眠哺乳动物与手术降温患者也有同样问题，临床策略长期争论（见[医学图谱](/learn/medicine/)）。
+对体温变化的动物，固定 pH 意味着其蛋白质电离状态变化，因为 $\mathrm{p}K_\mathrm{w}$ 与组氨酸 $\mathrm{p}K_\mathrm{a}$ 都随温度上升下降（约每 °C 0.02 单位）。1960–70 年代 Hermann Rahn 与 Robert Reeves 发现龟、蛙与鱼的血液和细胞 pH 随温度上升下降约每 °C 0.015–0.02 单位，使 pH 与中性保持恒定距离。Reeves 的 **alpha-stat（α 稳态）** 假说（1972）提出被调节的不是 pH 本身，而是蛋白质组氨酸咪唑基团的分数解离（α），使蛋白质净电荷——因而结构与功能——随温度变化保持恒定。冬眠哺乳动物与手术降温患者也有同样问题，临床策略长期争论（见[医学图谱](/a/medicine/)）。
 
 ::: example 龟中的 alpha-stat 模式 {#ex-alphastat}
 适应不同温度淡水龟的代表性动脉血 pH 为 10 °C 时 7.80、20 °C 时 7.63、30 °C 时 7.46（与 Howell、Rahn 及同事 1970 年报告的数据同类的示例值）。用这些温度下 $\mathrm{p}K_\mathrm{w} = 14.535$、14.167 与 13.833，比较 pH 与中性。

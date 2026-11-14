@@ -302,7 +302,7 @@ The Stanford Research Institute Problem Solver, STRIPS, by Richard Fikes and Nil
 
 ## In practice
 
-As of 2026, the leading classical planners — many built on Malte Helmert's Fast Downward system (2006) — use forward heuristic search with combinations of relaxation, landmark and abstraction heuristics, and the International Planning Competition, held regularly since 1998, tracks their progress on PDDL benchmarks. Planning is used for spacecraft operations, logistics, manufacturing, robotics, and as a component of video-game AI (goal-oriented action planning). Language-model-based agents that "plan" in natural language are a different and evolving approach; their plans carry no guarantee of validity unless checked by a model of the actions, and combining them with classical planners and validators is an active area — see the LLM Atlas on [agent planning](/learn/llm/lesson.php?c=agents&l=planning).
+As of 2026, the leading classical planners — many built on Malte Helmert's Fast Downward system (2006) — use forward heuristic search with combinations of relaxation, landmark and abstraction heuristics, and the International Planning Competition, held regularly since 1998, tracks their progress on PDDL benchmarks. Planning is used for spacecraft operations, logistics, manufacturing, robotics, and as a component of video-game AI (goal-oriented action planning). Language-model-based agents that "plan" in natural language are a different and evolving approach; their plans carry no guarantee of validity unless checked by a model of the actions, and combining them with classical planners and validators is an active area — see the LLM Atlas on [agent planning](/a/llm/lesson.php?c=agents&l=planning).
 
 ## Where this leads
 

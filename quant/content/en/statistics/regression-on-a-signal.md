@@ -4,7 +4,7 @@ $$
 R_{t+1} = a + b\, s_t + \varepsilon_{t+1},
 $$
 
-with the subscript on $s$ doing as much work as the slope. This chapter fits that line by least squares, on numbers small enough to check by hand, and separates the fit from a forecast. The proof that the line minimises the sum of squared residuals lives in the Maths Atlas, in [simple linear regression](/learn/maths/lesson.php?c=statistics&l=regression) and in [least squares](/learn/maths/lesson.php?c=linear-algebra&l=least-squares). What is derived here is the clock: which variable is allowed to sit on the right-hand side. The fit is not a recommendation to trade the signal.
+with the subscript on $s$ doing as much work as the slope. This chapter fits that line by least squares, on numbers small enough to check by hand, and separates the fit from a forecast. The proof that the line minimises the sum of squared residuals lives in the Maths Atlas, in [simple linear regression](/a/maths/lesson.php?c=statistics&l=regression) and in [least squares](/a/maths/lesson.php?c=linear-algebra&l=least-squares). What is derived here is the clock: which variable is allowed to sit on the right-hand side. The fit is not a recommendation to trade the signal.
 
 ## A signal dated $t$
 

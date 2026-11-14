@@ -73,7 +73,7 @@ Horner's rule, reducing modulo $101$ at each step:
 | `a` | $(99 \cdot 31 + 97) \bmod 101 = 3166 \bmod 101$ | $35$ |
 | `t` | $(35 \cdot 31 + 116) \bmod 101 = 1201 \bmod 101$ | $90$ |
 
-So $h(\texttt{cat}) = 90$, as the program printed. Reducing at each step gives the same result as computing $99\cdot31^2 + 97\cdot 31 + 116 = 98\,262$ and reducing once ($98\,262 = 972 \cdot 101 + 90$), because $(a \bmod m)\cdot B + c \equiv aB + c \pmod m$ — see [Maths Atlas: modular arithmetic](/learn/maths/lesson.php?c=number-theory&l=congruences).
+So $h(\texttt{cat}) = 90$, as the program printed. Reducing at each step gives the same result as computing $99\cdot31^2 + 97\cdot 31 + 116 = 98\,262$ and reducing once ($98\,262 = 972 \cdot 101 + 90$), because $(a \bmod m)\cdot B + c \equiv aB + c \pmod m$ — see [Maths Atlas: modular arithmetic](/a/maths/lesson.php?c=number-theory&l=congruences).
 :::
 :::
 
@@ -99,7 +99,7 @@ For each pair of keys $i < j$ let $X_{ij}$ be $1$ if they collide and $0$ otherw
 For no collision, key $i+1$ must avoid the $i$ slots already used, which happens with probability $1 - i/m$ independently of what came before; multiplying gives the product. Since $1 - x \le e^{-x}$ for all real $x$, the product is at most $\exp(-\sum_{i<n} i/m) = e^{-n(n-1)/(2m)}$.
 :::
 
-With $m = 365$ "slots" and $n = 23$ people, the expected number of pairs sharing a birthday is $23\cdot22/730 \approx 0.69$, and the probability of no shared birthday is $0.493$: more likely than not, two of the 23 share a birthday. In hashing terms, collisions become likely once $n$ is around $\sqrt m$ — with a million slots, after only about a thousand keys. So collision handling is not an exceptional case; it is the normal operation of every hash table. (Probability background: [Maths Atlas: expectation](/learn/maths/lesson.php?c=probability&l=expectation).)
+With $m = 365$ "slots" and $n = 23$ people, the expected number of pairs sharing a birthday is $23\cdot22/730 \approx 0.69$, and the probability of no shared birthday is $0.493$: more likely than not, two of the 23 share a birthday. In hashing terms, collisions become likely once $n$ is around $\sqrt m$ — with a million slots, after only about a thousand keys. So collision handling is not an exceptional case; it is the normal operation of every hash table. (Probability background: [Maths Atlas: expectation](/a/maths/lesson.php?c=probability&l=expectation).)
 
 ## Separate chaining
 

@@ -198,7 +198,7 @@ The set of chromaticities of all physical spectra is the horseshoe-shaped **chro
 An **RGB colour space** is specified by the chromaticities of three **primaries** $R, G, B$ and of a **white point** $W$. Its **linear** coordinates $(r, g, b)$ describe the colour $r\,\mathbf{R} + g\,\mathbf{G} + b\,\mathbf{B}$ in XYZ, where the primary vectors $\mathbf{R}, \mathbf{G}, \mathbf{B}$ are scaled so that $(1, 1, 1)$ is the white point with luminance $Y = 1$. The map from linear RGB to XYZ is a $3\times3$ matrix $M$ whose columns are $\mathbf{R}, \mathbf{G}, \mathbf{B}$.
 :::
 
-That $M$ exists and is unique is pure linear algebra: the columns are known up to scale from the chromaticities, and three unknown scales are fixed by the three equations "$M(1,1,1)\T = W$" (see [Maths Atlas: linear systems](/learn/maths/lesson.php?c=linear-algebra&l=linear-systems) and [matrices](/learn/maths/lesson.php?c=linear-algebra&l=matrices)).
+That $M$ exists and is unique is pure linear algebra: the columns are known up to scale from the chromaticities, and three unknown scales are fixed by the three equations "$M(1,1,1)\T = W$" (see [Maths Atlas: linear systems](/a/maths/lesson.php?c=linear-algebra&l=linear-systems) and [matrices](/a/maths/lesson.php?c=linear-algebra&l=matrices)).
 
 ::: example Deriving the sRGB-to-XYZ matrix {#ex-srgb-matrix}
 The sRGB space (shared with the HDTV standard ITU-R BT.709) has primaries $R = (0.64, 0.33)$, $G = (0.30, 0.60)$, $B = (0.15, 0.06)$ and white point D65, $(0.3127, 0.3290)$. Compute $M$.

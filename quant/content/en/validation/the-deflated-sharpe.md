@@ -168,7 +168,7 @@ Halbert White's reality check of 2000, published in Econometrica, tests the best
 
 ## Where this leads
 
-A scale that survived every assumption in this chapter would still be a statement about one recorded history. [[validation/what-a-fold-does-not-prove]] is the reason a stack of folds, purged, embargoed and deflated, does not become a decision to trade. The trial counts it takes as input are the counts in [[validation/parameter-search]]. The standard error it borrows, under assumptions, is the one in [[performance/uncertainty-of-performance]], and the Sharpe ratio being standardised is the object in [[performance/sharpe-and-its-relatives]]. Hypothesis testing as a subject, without a grid of windows attached, is the [hypothesis tests](/learn/maths/lesson.php?c=statistics&l=hypothesis-testing) chapter of the Maths Atlas.
+A scale that survived every assumption in this chapter would still be a statement about one recorded history. [[validation/what-a-fold-does-not-prove]] is the reason a stack of folds, purged, embargoed and deflated, does not become a decision to trade. The trial counts it takes as input are the counts in [[validation/parameter-search]]. The standard error it borrows, under assumptions, is the one in [[performance/uncertainty-of-performance]], and the Sharpe ratio being standardised is the object in [[performance/sharpe-and-its-relatives]]. Hypothesis testing as a subject, without a grid of windows attached, is the [hypothesis tests](/a/maths/lesson.php?c=statistics&l=hypothesis-testing) chapter of the Maths Atlas.
 
 :::summary
 - Under a true null and independent normal trials, the expected maximum of $N$ standardised statistics grows like $\sqrt{2\ln N}$.

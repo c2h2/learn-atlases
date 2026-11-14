@@ -24,7 +24,7 @@ foreach ($args as $a) {
         $only = $m[1];
     }
 }
-$base = 'http://127.0.0.1/learn/medicine/';
+$base = 'http://127.0.0.1/a/medicine/';
 $ctx = stream_context_create(['http' => [
     'header' => "Host: f.g77k.com\r\n",
     'timeout' => 25,

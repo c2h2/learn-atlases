@@ -47,7 +47,7 @@ $$
 \frac{q^2 + Fpq}{q^2} = 1 + F\,\frac{p}{q},
 $$ {#eq-ratio}
 
-which is very large when $q$ is small. For an allele at $q = 0.01$ and the offspring of first cousins ($F = 1/16$, derived below), the ratio is $1 + 0.0625\times99 = 7.2$. The rarer the allele, the larger the proportion of affected homozygotes who are the children of related parents — an observation made by Archibald Garrod in 1902 for alkaptonuria, which helped him recognise it as a recessive Mendelian condition. This is population genetics; for clinical genetics and counselling see Medicine Atlas ([/learn/medicine/](/learn/medicine/)).
+which is very large when $q$ is small. For an allele at $q = 0.01$ and the offspring of first cousins ($F = 1/16$, derived below), the ratio is $1 + 0.0625\times99 = 7.2$. The rarer the allele, the larger the proportion of affected homozygotes who are the children of related parents — an observation made by Archibald Garrod in 1902 for alkaptonuria, which helped him recognise it as a recessive Mendelian condition. This is population genetics; for clinical genetics and counselling see Medicine Atlas ([/a/medicine/](/a/medicine/)).
 
 ## Inbreeding from pedigrees
 

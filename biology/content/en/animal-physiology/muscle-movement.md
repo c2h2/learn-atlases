@@ -222,7 +222,7 @@ At equal $\mathrm{Fr} = v^2/gL$, $v \propto \sqrt{L}$: a mammal with legs four t
 :::
 
 ::: application Muscle in agriculture and medicine
-In pigs, a single point mutation in the skeletal-muscle ryanodine receptor gene *RYR1* (Arg615Cys) causes the **porcine stress syndrome**: affected pigs respond to stress or to the anaesthetic halothane with uncontrolled Ca²⁺ release, muscle rigidity and a lethal rise in body temperature, and their meat is pale and watery. The mutation, identified by J. Fujii and colleagues in 1991, had spread because it was associated with leaner carcasses; DNA testing has since allowed breeders to eliminate it. Related *RYR1* variants cause malignant hyperthermia in humans, a matter for [Medicine Atlas: musculoskeletal](/learn/medicine/course.php?c=musculoskeletal) and the human muscle physiology in [Medicine Atlas: muscle](/learn/medicine/lesson.php?c=physiology&l=muscle).
+In pigs, a single point mutation in the skeletal-muscle ryanodine receptor gene *RYR1* (Arg615Cys) causes the **porcine stress syndrome**: affected pigs respond to stress or to the anaesthetic halothane with uncontrolled Ca²⁺ release, muscle rigidity and a lethal rise in body temperature, and their meat is pale and watery. The mutation, identified by J. Fujii and colleagues in 1991, had spread because it was associated with leaner carcasses; DNA testing has since allowed breeders to eliminate it. Related *RYR1* variants cause malignant hyperthermia in humans, a matter for [Medicine Atlas: musculoskeletal](/a/medicine/course.php?c=musculoskeletal) and the human muscle physiology in [Medicine Atlas: muscle](/a/medicine/lesson.php?c=physiology&l=muscle).
 :::
 
 ::: history

@@ -228,7 +228,7 @@ $\mathit{PRIMES} \in \mathsf{NP} \cap \mathsf{coNP}$。
 ::: proof
 $\mathit{PRIMES} \in \mathsf{coNP}$，因为合数的一个因子就是证书。为证 $\mathit{PRIMES} \in \mathsf{NP}$，我们引用数论中的一个事实：整数 $p \ge 3$ 是素数，当且仅当存在 $g$ 使得 $g^{p-1} \equiv 1 \pmod p$，且对每个整除 $p - 1$ 的素数 $q$ 有 $g^{(p-1)/q} \not\equiv 1 \pmod p$。
 
-*事实为何成立。*两个条件恰是说 $g$ 在模 $p$ 单位乘法群中的阶为 $p - 1$：由第一个条件，阶整除 $p - 1$；由第二个条件，阶不是 $p - 1$ 的真因子（$p - 1$ 的任何真因子都整除某个 $(p-1)/q$，$q$ 为素数）。若 $p$ 是素数，则存在阶为 $p - 1$ 的**原根**（[Maths Atlas：数论](/learn/maths/lesson.php?c=number-theory&l=primitive-roots)）。反之，若 $g$ 的阶为 $p - 1$，则 $1, g, \dots, g^{p-2}$ 是模 $p$ 的 $p - 1$ 个互异单位，于是 $1, \dots, p - 1$ 中每一个都与 $p$ 互素，$p$ 是素数。
+*事实为何成立。*两个条件恰是说 $g$ 在模 $p$ 单位乘法群中的阶为 $p - 1$：由第一个条件，阶整除 $p - 1$；由第二个条件，阶不是 $p - 1$ 的真因子（$p - 1$ 的任何真因子都整除某个 $(p-1)/q$，$q$ 为素数）。若 $p$ 是素数，则存在阶为 $p - 1$ 的**原根**（[Maths Atlas：数论](/a/maths/lesson.php?c=number-theory&l=primitive-roots)）。反之，若 $g$ 的阶为 $p - 1$，则 $1, g, \dots, g^{p-2}$ 是模 $p$ 的 $p - 1$ 个互异单位，于是 $1, \dots, p - 1$ 中每一个都与 $p$ 互素，$p$ 是素数。
 
 对 $p$ 的*证书*（普拉特（Pratt），1975）是：$g$；素因数分解 $p - 1 = q_1^{e_1} \cdots q_r^{e_r}$；以及对每个奇素数 $q_i$ 递归给出的证书（$q = 2$ 时什么也不要）。验证器检验该分解乘出来等于 $p - 1$，用快速模幂检验 $g$ 的条件（每次检验只需 $O(\log p)$ 次模 $p$ 乘法），并检验各子证书。
 

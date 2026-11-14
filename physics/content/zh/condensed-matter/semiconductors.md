@@ -393,7 +393,7 @@ $$
 
 ## 后续内容 {#leads}
 
-这里的思想贯穿应用物理与电气工程。不同半导体之间的异质结把电子限制在几纳米厚的层中，其量子化能级就是 [[quantum-1/schrodinger-equation]] 的箱中粒子态；低温强场下这样的二维电子气展示量子霍尔效应。强场输运、热载流子、隧穿二极管与 MOSFET 物理在 Sze 与 Ng 的书中展开。半导体材料的化学——从硅提纯到钙钛矿太阳能吸收层——见化学图谱（[固体电子结构](/learn/chemistry/lesson.php?c=materials-chemistry&l=electronic-structure-solids)与[能源材料](/learn/chemistry/lesson.php?c=materials-chemistry&l=energy-materials)）。下一章 [[condensed-matter/magnetism-superconductivity]] 离开独立电子图像，走向电子的集体态。
+这里的思想贯穿应用物理与电气工程。不同半导体之间的异质结把电子限制在几纳米厚的层中，其量子化能级就是 [[quantum-1/schrodinger-equation]] 的箱中粒子态；低温强场下这样的二维电子气展示量子霍尔效应。强场输运、热载流子、隧穿二极管与 MOSFET 物理在 Sze 与 Ng 的书中展开。半导体材料的化学——从硅提纯到钙钛矿太阳能吸收层——见化学图谱（[固体电子结构](/a/chemistry/lesson.php?c=materials-chemistry&l=electronic-structure-solids)与[能源材料](/a/chemistry/lesson.php?c=materials-chemistry&l=energy-materials)）。下一章 [[condensed-matter/magnetism-superconductivity]] 离开独立电子图像，走向电子的集体态。
 
 ::: summary
 - 半导体有一条填满的价带与一条空着的导带，中间隔着量级为 $1\,\mathrm{eV}$ 的能隙；价带中的空穴充当正电荷载流子。

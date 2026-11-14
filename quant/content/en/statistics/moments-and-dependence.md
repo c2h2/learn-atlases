@@ -6,7 +6,7 @@ $$
 P = (100,\ 102,\ 101,\ 104,\ 103,\ 107,\ 106,\ 110).
 $$
 
-The seven simple returns, to six decimals, are $0.020000$, $-0.009804$, $0.029703$, $-0.009615$, $0.038835$, $-0.009346$, $0.037736$. The performance course records the sample mean $0.013930$ and the sample standard deviation $0.022848$ with divisor $n-1$. Those two numbers describe the column after the order has been thrown away. This chapter puts the order back, and it points to the Maths Atlas for the probability underneath: [expectation](/learn/maths/lesson.php?c=probability&l=expectation) and [covariance](/learn/maths/lesson.php?c=probability&l=joint-distributions). Nothing computed here is a recommendation to trade.
+The seven simple returns, to six decimals, are $0.020000$, $-0.009804$, $0.029703$, $-0.009615$, $0.038835$, $-0.009346$, $0.037736$. The performance course records the sample mean $0.013930$ and the sample standard deviation $0.022848$ with divisor $n-1$. Those two numbers describe the column after the order has been thrown away. This chapter puts the order back, and it points to the Maths Atlas for the probability underneath: [expectation](/a/maths/lesson.php?c=probability&l=expectation) and [covariance](/a/maths/lesson.php?c=probability&l=joint-distributions). Nothing computed here is a recommendation to trade.
 
 ## Centre and spread
 

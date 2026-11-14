@@ -215,7 +215,7 @@ The modern study of child language began with diaries kept by parents, such as t
 
 ## Where this leads
 
-The structures whose acquisition this chapter described — morphology, questions, relative clauses — are analysed in [[linguistics/morphology]] and [[linguistics/clauses-movement]]. How learners can use what is known about learning is the subject of practical lessons such as [[core-vocabulary/learning-and-remembering]] and [[listening-and-conversation/how-listening-works]]. Pronunciation goals for adult learners are in [[sounds-of-english/sounds-for-chinese-speakers]] and in the course *World Englishes*. Language models that learn from text alone, and how they differ from children, are discussed in the [LLM Atlas](/learn/llm/).
+The structures whose acquisition this chapter described — morphology, questions, relative clauses — are analysed in [[linguistics/morphology]] and [[linguistics/clauses-movement]]. How learners can use what is known about learning is the subject of practical lessons such as [[core-vocabulary/learning-and-remembering]] and [[listening-and-conversation/how-listening-works]]. Pronunciation goals for adult learners are in [[sounds-of-english/sounds-for-chinese-speakers]] and in the course *World Englishes*. Language models that learn from text alone, and how they differ from children, are discussed in the [LLM Atlas](/a/llm/).
 
 ::: summary
 - Children acquire their first language without instruction along a similar path in all languages, spoken or signed, with wide individual variation in timing.

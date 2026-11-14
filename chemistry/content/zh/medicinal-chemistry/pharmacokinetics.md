@@ -260,7 +260,7 @@ $t_{1/2} = \ln 2\,V/\mathrm{CL}$ 同时依赖于清除率与容积。消除快�
 
 ## 后续内容
 
-药代动力学性质与效价在整个项目中一起优化。[[medicinal-chemistry/hits-and-leads]]引入了亲脂性配体效率，它嘉奖不靠亲脂性换来的效价；[[medicinal-chemistry/structure-activity]]则引入了把 $\log P$ 作为变量的汉施方程。前药设计与代谢封闭在[[medicinal-chemistry/drug-case-studies]]的案例中重现。生物药（[[medicinal-chemistry/biologics]]）经由完全不同的途径清除——蛋白水解、靶点介导的清除与新生儿 Fc 受体的再循环——半衰期也截然不同。ADME 性质的临床前与临床测定，包括首次人体给药，见[[medicinal-chemistry/drug-development]]。本章所用线性微分方程的数学见[[kinetics/rate-laws]]与 Maths Atlas（`/learn/maths/`）。
+药代动力学性质与效价在整个项目中一起优化。[[medicinal-chemistry/hits-and-leads]]引入了亲脂性配体效率，它嘉奖不靠亲脂性换来的效价；[[medicinal-chemistry/structure-activity]]则引入了把 $\log P$ 作为变量的汉施方程。前药设计与代谢封闭在[[medicinal-chemistry/drug-case-studies]]的案例中重现。生物药（[[medicinal-chemistry/biologics]]）经由完全不同的途径清除——蛋白水解、靶点介导的清除与新生儿 Fc 受体的再循环——半衰期也截然不同。ADME 性质的临床前与临床测定，包括首次人体给药，见[[medicinal-chemistry/drug-development]]。本章所用线性微分方程的数学见[[kinetics/rate-laws]]与 Maths Atlas（`/a/maths/`）。
 
 ::: summary
 - ADME——吸收、分布、代谢、排泄——决定一个效价高的分子能否到达靶点，并以有用的游离浓度停留足够长的时间。

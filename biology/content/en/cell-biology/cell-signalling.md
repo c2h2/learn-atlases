@@ -26,7 +26,7 @@ GPCRs are the largest family of membrane receptors: the human genome encodes abo
 
 ## Binding: how much signal is enough?
 
-The first step is binding of ligand L to receptor R to form a complex LR. The analysis is the same as for an enzyme binding a substrate or a protein binding oxygen ([Chemistry Atlas: protein function](/learn/chemistry/lesson.php?c=biochemistry&l=protein-function)).
+The first step is binding of ligand L to receptor R to form a complex LR. The analysis is the same as for an enzyme binding a substrate or a protein binding oxygen ([Chemistry Atlas: protein function](/a/chemistry/lesson.php?c=biochemistry&l=protein-function)).
 
 ::: proposition Fractional receptor occupancy {#prop-occupancy}
 For a receptor with a single binding site in equilibrium with free ligand at concentration $[\mathrm{L}]$, the fraction of receptors occupied is
@@ -101,7 +101,7 @@ Growth factors such as epidermal growth factor (EGF, discovered by Stanley Cohen
 
 One adaptor, Grb2, brings the exchange factor Sos to the membrane, where it activates the small GTPase **Ras**. Ras·GTP starts a three-kinase relay, the **MAP-kinase cascade**: Raf (a MAP-kinase kinase kinase) phosphorylates and activates MEK (a MAP-kinase kinase), which phosphorylates and activates ERK (a MAP kinase) on a threonine and a tyrosine. ERK phosphorylates many cytoplasmic proteins and, in the nucleus, transcription factors that switch on genes needed for cell proliferation. The pathway was pieced together in the late 1980s and early 1990s from three directions at once: oncogene research in mammalian cells, genetic screens for eye development in *Drosophila* (the *sevenless* receptor and *Son of sevenless*), and genetic screens for vulval development in *C. elegans* (*let-23*, *sem-5*, *let-60*) — a striking demonstration of conserved signalling.
 
-Mutations that lock Ras in its GTP-bound state, such as the glycine-to-valine change at codon 12 found in 1982 in the first human oncogene isolated from a bladder carcinoma cell line, keep the pathway on without any growth factor. Mutant *RAS* genes are among the commonest drivers of human cancers ([[cell-biology/cell-cycle]]; [Medicine Atlas: cancer biology](/learn/medicine/lesson.php?c=pathology&l=cancer-biology)).
+Mutations that lock Ras in its GTP-bound state, such as the glycine-to-valine change at codon 12 found in 1982 in the first human oncogene isolated from a bladder carcinoma cell line, keep the pathway on without any growth factor. Mutant *RAS* genes are among the commonest drivers of human cancers ([[cell-biology/cell-cycle]]; [Medicine Atlas: cancer biology](/a/medicine/lesson.php?c=pathology&l=cancer-biology)).
 
 Other enzyme-coupled receptors work similarly but use different relays: cytokine receptors activate associated **JAK** kinases, which phosphorylate **STAT** transcription factors that move directly into the nucleus; receptors for TGF-β are serine/threonine kinases that phosphorylate **Smad** proteins; and **PI 3-kinase**, recruited by many RTKs, makes PI(3,4,5)P₃ in the membrane, which activates the kinase Akt to promote cell survival and growth.
 

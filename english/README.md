@@ -90,4 +90,4 @@ to-do list.
 The engine in this directory is a generated copy of the Maths Atlas engine: re-run
 `python3 tools/mkatlas.py tools/atlas-specs/english.json` from the repository root to bring in
 engine fixes (course records, this README and `tools/*.md` are never overwritten). Engine changes
-belong in `/learn/maths/` or in the generator, not in the copied files here.
+belong in `/a/maths/` or in the generator, not in the copied files here.

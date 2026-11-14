@@ -198,7 +198,7 @@ $Y$ 是**亮度**（差一个常数因子）。**色度坐标**为 $x = X/(X+Y+Z
 一个 **RGB 颜色空间**由三个**原色** $R, G, B$ 与一个**白点** $W$ 的色度指定。它的**线性**坐标 $(r, g, b)$ 描述 XYZ 中的颜色 $r\,\mathbf{R} + g\,\mathbf{G} + b\,\mathbf{B}$，其中原色向量 $\mathbf{R}, \mathbf{G}, \mathbf{B}$ 经过缩放，使得 $(1, 1, 1)$ 是亮度 $Y = 1$ 的白点。从线性 RGB 到 XYZ 的映射是一个 $3\times3$ 矩阵 $M$，其列就是 $\mathbf{R}, \mathbf{G}, \mathbf{B}$。
 :::
 
-$M$ 存在且唯一，是纯粹的线性代数：各列由色度定到差缩放的程度，三个未知的缩放由三个方程 "$M(1,1,1)\T = W$" 定死（见[数学图谱：线性方程组](/learn/maths/lesson.php?c=linear-algebra&l=linear-systems)与[矩阵](/learn/maths/lesson.php?c=linear-algebra&l=matrices)）。
+$M$ 存在且唯一，是纯粹的线性代数：各列由色度定到差缩放的程度，三个未知的缩放由三个方程 "$M(1,1,1)\T = W$" 定死（见[数学图谱：线性方程组](/a/maths/lesson.php?c=linear-algebra&l=linear-systems)与[矩阵](/a/maths/lesson.php?c=linear-algebra&l=matrices)）。
 
 ::: example 推导 sRGB 到 XYZ 的矩阵 {#ex-srgb-matrix}
 sRGB 空间（与高清电视标准 ITU-R BT.709 共用）的原色为 $R = (0.64, 0.33)$、$G = (0.30, 0.60)$、$B = (0.15, 0.06)$，白点为 D65，$(0.3127, 0.3290)$。算出 $M$。

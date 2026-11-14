@@ -200,7 +200,7 @@ $$
 $$
 \ddot{\mathbf q} = M(\mathbf q)^{-1}\big(\boldsymbol\tau - C(\mathbf q,\dot{\mathbf q})\dot{\mathbf q} - \mathbf g(\mathbf q)\big),
 $$ {#eq-forward-dynamics}
-由于$M$正定，这总是可以做到的，由此得到状态$(\mathbf q, \dot{\mathbf q})$的一阶方程组，用数值积分器沿时间推进（[线性与非线性常微分方程组](/learn/maths/lesson.php?c=ode&l=nonlinear-systems)）。仿真器需要$M$（它本身可以通过调用逆动力学程序$n$次来计算，每次一列，取零速度、零重力和单位加速度）以及偏置项$C\dot{\mathbf q} + \mathbf g$（取零加速度调用一次）。存在更快的$O(n)$正动力学算法（Featherstone 的铰接体算法），但对于六关节或七关节的机械臂，$M^{-1}$的方法很常用。
+由于$M$正定，这总是可以做到的，由此得到状态$(\mathbf q, \dot{\mathbf q})$的一阶方程组，用数值积分器沿时间推进（[线性与非线性常微分方程组](/a/maths/lesson.php?c=ode&l=nonlinear-systems)）。仿真器需要$M$（它本身可以通过调用逆动力学程序$n$次来计算，每次一列，取零速度、零重力和单位加速度）以及偏置项$C\dot{\mathbf q} + \mathbf g$（取零加速度调用一次）。存在更快的$O(n)$正动力学算法（Featherstone 的铰接体算法），但对于六关节或七关节的机械臂，$M^{-1}$的方法很常用。
 
 ::: widget phaseplane
 f: y

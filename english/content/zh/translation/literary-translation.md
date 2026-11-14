@@ -195,7 +195,7 @@ caption: 一首诗的**意义**（sense：它说了什么，它的意象），�
 - **修辞格。** 逐字翻译的汉语排比或对偶在英语中常常显得过分雕琢，英语的交错配列在汉语中可能失去其妙处。形式传不过去时，翻译效果而不是形式：汉语四项并列的排比可以变成英语的三联句；英语的对照如果能自然地译成汉语的对偶，就译成对偶（[[style-and-rhetoric/figures-of-speech]]）。
 - **叙述中的时。** 英语小说大多用过去时，时还承载着一些区别（用过去完成时表示更早的事件，自由间接引语中的时态后移），汉语则用时间词和“了”“过”来标示，或者根本不标示。译成英语时，选择一种统一的叙述时；译成汉语时，不要在每个句子里都加“了”（[[tense-and-aspect/narrative-tenses]]）。
 - **书名。** 书名的翻译既要考虑意义，也要考虑市场：《红楼梦》曾被译为 *The Dream of the Red Chamber*、*A Dream of Red Mansions* 和 *The Story of the Stone*（这部小说的另一个中文书名是《石头记》）。
-- **关于翻译与世界文学在中国的接受**，见汉语图谱中[翻译与接受](/learn/chinese/lesson.php?c=world-literature&l=translation-reception)一课；关于阅读中国古典诗歌，见该图谱的[意象与用典](/learn/chinese/lesson.php?c=poetry-metrics&l=imagery-allusion)和[怎样读一首诗](/learn/chinese/lesson.php?c=poetry-metrics&l=reading-a-poem)两课。
+- **关于翻译与世界文学在中国的接受**，见汉语图谱中[翻译与接受](/a/chinese/lesson.php?c=world-literature&l=translation-reception)一课；关于阅读中国古典诗歌，见该图谱的[意象与用典](/a/chinese/lesson.php?c=poetry-metrics&l=imagery-allusion)和[怎样读一首诗](/a/chinese/lesson.php?c=poetry-metrics&l=reading-a-poem)两课。
 :::
 
 ::: history

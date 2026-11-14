@@ -101,7 +101,7 @@ The intended reading, `the table down there`, is also a segmentation into dictio
 Splitting on whitespace leaves punctuation attached (`book,'` and `book` become different types), splits nothing in Chinese, and treats `New York` as two unrelated words. Tokenisation is language-dependent and domain-dependent: the rules for chemical names, programming code, tweets with `#hashtags` and `@mentions`, or legal citations all differ. Above all, **the query must be tokenised exactly as the documents were.** If the index keeps `C++` but the query parser drops `+`, the query `C++` searches for `c`, and an apparently perfect index fails.
 :::
 
-The language models of the [LLM Atlas](/learn/llm/lesson.php?c=text-and-language&l=tokenisation) use a different kind of tokenisation — **subword** units learned from data, such as byte-pair encoding, which split rare words into pieces and need no language-specific rules. They are designed to give a model a fixed, small vocabulary, not to define units of matching, and classic search engines still tokenise into words.
+The language models of the [LLM Atlas](/a/llm/lesson.php?c=text-and-language&l=tokenisation) use a different kind of tokenisation — **subword** units learned from data, such as byte-pair encoding, which split rare words into pieces and need no language-specific rules. They are designed to give a model a fixed, small vocabulary, not to define units of matching, and classic search engines still tokenise into words.
 
 ## From tokens to terms
 
@@ -235,7 +235,7 @@ $$ {#eq-zipf}
 for a constant $C$; the classical form has $s = 1$, so that $r \cdot f_r$ is roughly constant. Equivalently $\log f_r \approx \log C - s \log r$: on log–log axes, frequency against rank is a straight line of slope $-s$.
 :::
 
-Zipf's law is an empirical regularity, not a theorem: it is an **observation** about real text, true only approximately, and the exponent depends on the text and on the tokeniser. Fitting a least-squares line to the points $(\log_{10} r, \log_{10} f_r)$ (the method of [Maths Atlas: regression](/learn/maths/lesson.php?c=statistics&l=regression)) gives:
+Zipf's law is an empirical regularity, not a theorem: it is an **observation** about real text, true only approximately, and the exponent depends on the text and on the tokeniser. Fitting a least-squares line to the points $(\log_{10} r, \log_{10} f_r)$ (the method of [Maths Atlas: regression](/a/maths/lesson.php?c=statistics&l=regression)) gives:
 
 ```python
 import math
@@ -384,7 +384,7 @@ The design principle is that each step is a decision about which tokens are equi
 
 ## Where this leads
 
-The terms produced by this chapter become the keys of the inverted index ([[information-retrieval/inverted-indexes]]), the data structure that maps each term to the documents containing it, built with the hash tables of [[data-structures/hash-tables]] or a sorted dictionary. Zipf's law explains the shape of that index — a few enormous posting lists and millions of tiny ones — and Heaps' law its dictionary size, both used in [[information-retrieval/index-compression]]. Term frequencies within documents and document frequencies across the collection become the raw material of ranking in [[information-retrieval/vector-space]] and [[information-retrieval/probabilistic-retrieval]]. Subword tokenisation and word embeddings, which avoid hand-written rules altogether, are developed in the [LLM Atlas](/learn/llm/lesson.php?c=text-and-language&l=word-embeddings) and return in [[information-retrieval/dense-retrieval]].
+The terms produced by this chapter become the keys of the inverted index ([[information-retrieval/inverted-indexes]]), the data structure that maps each term to the documents containing it, built with the hash tables of [[data-structures/hash-tables]] or a sorted dictionary. Zipf's law explains the shape of that index — a few enormous posting lists and millions of tiny ones — and Heaps' law its dictionary size, both used in [[information-retrieval/index-compression]]. Term frequencies within documents and document frequencies across the collection become the raw material of ranking in [[information-retrieval/vector-space]] and [[information-retrieval/probabilistic-retrieval]]. Subword tokenisation and word embeddings, which avoid hand-written rules altogether, are developed in the [LLM Atlas](/a/llm/lesson.php?c=text-and-language&l=word-embeddings) and return in [[information-retrieval/dense-retrieval]].
 
 ::: summary
 - Text processing turns bytes into **terms**: decode the encoding, normalise Unicode (NFC or NFKC) and fold case, tokenise, and map tokens to terms by equivalence classing ([[#def-normalisation]], [[#def-token]]).

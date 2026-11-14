@@ -1,6 +1,6 @@
 Almost every chemical reaction in a cell would be far too slow to sustain life without a catalyst. The decarboxylation of orotidine monophosphate, a step in making the pyrimidine nucleotides, has an uncatalysed half-life in water of about 78 million years; the enzyme that catalyses it does the job in milliseconds, a rate enhancement of about $10^{17}$ (A. Radzicka and R. Wolfenden, *Science* 267, 90, 1995). Enzymes make metabolism possible, and because each is the product of a gene, they make it controllable and evolvable: a cell decides what chemistry happens by deciding which enzymes to make and how active to let them be.
 
-This chapter is about enzymes as a biologist uses and meets them: how their activity is measured, what the Michaelis–Menten parameters mean inside a living cell, how isozymes adapt the same reaction to different tissues, how enzymes have evolved to work at the temperatures of their owners, and how inhibitors — natural toxins, herbicides, antibiotics and drugs — exploit them. The physical chemistry of catalysis (transition-state binding, catalytic strategies, the mechanism of the serine proteases and the effect of pH) is developed in [Chemistry Atlas: enzymes](/learn/chemistry/lesson.php?c=biochemistry&l=enzymes).
+This chapter is about enzymes as a biologist uses and meets them: how their activity is measured, what the Michaelis–Menten parameters mean inside a living cell, how isozymes adapt the same reaction to different tissues, how enzymes have evolved to work at the temperatures of their owners, and how inhibitors — natural toxins, herbicides, antibiotics and drugs — exploit them. The physical chemistry of catalysis (transition-state binding, catalytic strategies, the mechanism of the serine proteases and the effect of pH) is developed in [Chemistry Atlas: enzymes](/a/chemistry/lesson.php?c=biochemistry&l=enzymes).
 
 ## What an enzyme is
 
@@ -29,7 +29,7 @@ Animals have lost the ability to make many coenzymes and must eat their precurso
 | folate (B₉) | tetrahydrofolate | one-carbon transfer |
 | cobalamin (B₁₂) | adenosyl- and methylcobalamin | rearrangements, methyl transfer |
 
-Cobalamin is made only by certain bacteria and archaea; animals obtain it through food chains or from gut microbes, and plants neither make nor need it. Such dependencies trace how metabolic capabilities are distributed through the tree of life. The clinical side of vitamin deficiencies belongs to [Medicine Atlas: cell biology and biochemistry](/learn/medicine/course.php?c=cell-biochemistry).
+Cobalamin is made only by certain bacteria and archaea; animals obtain it through food chains or from gut microbes, and plants neither make nor need it. Such dependencies trace how metabolic capabilities are distributed through the tree of life. The clinical side of vitamin deficiencies belongs to [Medicine Atlas: cell biology and biochemistry](/a/medicine/course.php?c=cell-biochemistry).
 
 ## Measuring enzyme activity
 
@@ -135,7 +135,7 @@ Most mammalian tissues phosphorylate glucose with hexokinase I, which has $K_\ma
 ::: solution
 Hexokinase I: $5/(0.05 + 5) = 0.990$ and $10/10.05 = 0.995$ — essentially saturated at both. Glucokinase: $5^{1.7}/(8^{1.7} + 5^{1.7}) = 0.310$ and $10^{1.7}/(8^{1.7} + 10^{1.7}) = 0.594$, almost doubling.
 
-Hexokinase I ensures that tissues such as brain take up glucose at a steady rate whatever the blood level, so long as it is well above 0.05 mmol L⁻¹. Glucokinase's activity tracks the blood glucose concentration across its physiological range, which suits the two tissues that must *respond* to glucose: the liver, which stores excess glucose as glycogen after a meal, and the β-cell, which uses its glucose-phosphorylation rate as a sensor to decide how much insulin to release. Variants of the human glucokinase gene that shift its kinetics alter the glucose concentration the body regulates to ([Medicine Atlas: endocrine](/learn/medicine/course.php?c=endocrine)).
+Hexokinase I ensures that tissues such as brain take up glucose at a steady rate whatever the blood level, so long as it is well above 0.05 mmol L⁻¹. Glucokinase's activity tracks the blood glucose concentration across its physiological range, which suits the two tissues that must *respond* to glucose: the liver, which stores excess glucose as glycogen after a meal, and the β-cell, which uses its glucose-phosphorylation rate as a sensor to decide how much insulin to release. Variants of the human glucokinase gene that shift its kinetics alter the glucose concentration the body regulates to ([Medicine Atlas: endocrine](/a/medicine/course.php?c=endocrine)).
 :::
 :::
 
@@ -211,7 +211,7 @@ $$
 v = \frac{V_{\max}[\mathrm{S}]}{\alpha K_\mathrm{m} + \alpha'[\mathrm{S}]},\qquad \alpha = 1 + \frac{[\mathrm{I}]}{K_\mathrm{i}},\quad \alpha' = 1 + \frac{[\mathrm{I}]}{K_\mathrm{i}'}.
 $$ {#eq-inhibition}
 
-A **competitive** inhibitor binds only free enzyme ($\alpha' = 1$): the apparent $K_\mathrm{m}$ rises to $\alpha K_\mathrm{m}$, and $V_{\max}$ is unchanged. An **uncompetitive** inhibitor binds only ES ($\alpha = 1$): both apparent $V_{\max}$ and $K_\mathrm{m}$ fall by $\alpha'$. A **mixed** inhibitor binds both; if $K_\mathrm{i} = K_\mathrm{i}'$ it is called **non-competitive**, and only $V_{\max}$ falls. Derivation and the diagnostic double-reciprocal plots are in [Chemistry Atlas](/learn/chemistry/lesson.php?c=biochemistry&l=enzymes). Assumptions: those of [[#prop-mm]], with rapid, reversible inhibitor binding.
+A **competitive** inhibitor binds only free enzyme ($\alpha' = 1$): the apparent $K_\mathrm{m}$ rises to $\alpha K_\mathrm{m}$, and $V_{\max}$ is unchanged. An **uncompetitive** inhibitor binds only ES ($\alpha = 1$): both apparent $V_{\max}$ and $K_\mathrm{m}$ fall by $\alpha'$. A **mixed** inhibitor binds both; if $K_\mathrm{i} = K_\mathrm{i}'$ it is called **non-competitive**, and only $V_{\max}$ falls. Derivation and the diagnostic double-reciprocal plots are in [Chemistry Atlas](/a/chemistry/lesson.php?c=biochemistry&l=enzymes). Assumptions: those of [[#prop-mm]], with rapid, reversible inhibitor binding.
 :::
 
 ::: example How much does a competitive inhibitor inhibit? {#ex-inhibitor}
@@ -227,7 +227,7 @@ The deepest principle in the biological use of inhibitors is **selective toxicit
 
 - **Sulfonamides**, the first synthetic antibacterials (Gerhard Domagk, 1935), are structural analogues of *p*-aminobenzoate and competitively inhibit dihydropteroate synthase in the bacterial folate pathway. Humans do not make folate, but obtain it in food, so they lack the target.
 - **Glyphosate**, the world's most widely used herbicide, inhibits EPSP synthase of the shikimate pathway, by which plants, fungi and bacteria make aromatic amino acids. Animals lack the pathway — the same loss that makes Phe and Trp essential amino acids ([[biochemistry/amino-acids-proteins]]). Glyphosate-tolerant crops carry a bacterial EPSP synthase (from *Agrobacterium* strain CP4) that glyphosate binds poorly.
-- **Statins** competitively inhibit HMG-CoA reductase, the committed step of cholesterol synthesis; their clinical use is described in [Medicine Atlas: pharmacology](/learn/medicine/course.php?c=pharmacology).
+- **Statins** competitively inhibit HMG-CoA reductase, the committed step of cholesterol synthesis; their clinical use is described in [Medicine Atlas: pharmacology](/a/medicine/course.php?c=pharmacology).
 
 Resistance evolves by the same rules: target-site mutations that lower the inhibitor's affinity more than the substrate's, overproduction of the target, enzymes that destroy the inhibitor (β-lactamases), or pumps that expel it.
 

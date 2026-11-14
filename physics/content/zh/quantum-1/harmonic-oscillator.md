@@ -185,7 +185,7 @@ $$
 h'' - 2\xi h' + (K - 1)h = 0.
 $$ {#eq-hermite-ode}
 
-试用幂级数 $h = \sum_j a_j\xi^j$（[数学图谱：级数解法](/learn/maths/lesson.php?c=ode&l=series-solutions)）。代入并整理 $\xi^j$ 的系数，
+试用幂级数 $h = \sum_j a_j\xi^j$（[数学图谱：级数解法](/a/maths/lesson.php?c=ode&l=series-solutions)）。代入并整理 $\xi^j$ 的系数，
 
 $$
 (j + 1)(j + 2)a_{j+2} - 2ja_j + (K - 1)a_j = 0, \qquad a_{j+2} = \frac{2j + 1 - K}{(j+1)(j+2)}\,a_j.
@@ -355,7 +355,7 @@ $$
 :::
 
 ::: application 无处不在的谐振子
-分子的振动光谱（如 [[#ex-hcl]]）与固体的热容量（爱因斯坦 1907 年的模型把每个原子当作三个谐振子，$\langle E\rangle$ 取普朗克公式的值，再加零点能）都是直接应用。空腔中电磁场的每个模式都是一个谐振子，其量子即光子；而这些模式的零点能产生两块导体板之间的卡西米尔（Casimir）力，1997 年的测量精度达几个百分点。泡利阱中的离子与光力学中的机械薄膜被冷却到谐振子基态，再用 $\hat a$ 与 $\hat a^\dagger$ 一个量子一个量子地操控。化学图谱在[振动与转动](/learn/chemistry/lesson.php?c=quantum-chemistry&l=vibration-rotation)一文中展开分子方面的应用。
+分子的振动光谱（如 [[#ex-hcl]]）与固体的热容量（爱因斯坦 1907 年的模型把每个原子当作三个谐振子，$\langle E\rangle$ 取普朗克公式的值，再加零点能）都是直接应用。空腔中电磁场的每个模式都是一个谐振子，其量子即光子；而这些模式的零点能产生两块导体板之间的卡西米尔（Casimir）力，1997 年的测量精度达几个百分点。泡利阱中的离子与光力学中的机械薄膜被冷却到谐振子基态，再用 $\hat a$ 与 $\hat a^\dagger$ 一个量子一个量子地操控。化学图谱在[振动与转动](/a/chemistry/lesson.php?c=quantum-chemistry&l=vibration-rotation)一文中展开分子方面的应用。
 :::
 
 ::: history 新力学中的谐振子

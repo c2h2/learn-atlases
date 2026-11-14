@@ -16,7 +16,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 STRUCT = os.path.join(ROOT, "data", "structures")
 MODELS = os.path.join(ROOT, "data", "cache", "models")
 RES = json.load(open(os.path.join(ROOT, "data", "residues.json")))
-UA = {"User-Agent": "PeptideAtlas/1.0 (f.g77k.com/learn/peptides; model build)"}
+UA = {"User-Agent": "PeptideAtlas/1.0 (f.g77k.com/a/peptides; model build)"}
 
 
 def parent(tok):

@@ -143,7 +143,7 @@ Willett Kempton's study "Two theories of home heat control" (*Cognitive Science*
 
 ## Choosing: the Hick–Hyman law
 
-When a person must choose among several possible responses, each tied to a different stimulus, the decision takes longer the more alternatives there are. William Hick (1952) found the growth logarithmic, and Ray Hyman (1953) showed that what matters is not the number of alternatives but the **information** in the choice, in Shannon's sense ([Maths Atlas: probability spaces](/learn/maths/lesson.php?c=probability&l=probability-spaces)).
+When a person must choose among several possible responses, each tied to a different stimulus, the decision takes longer the more alternatives there are. William Hick (1952) found the growth logarithmic, and Ray Hyman (1953) showed that what matters is not the number of alternatives but the **information** in the choice, in Shannon's sense ([Maths Atlas: probability spaces](/a/maths/lesson.php?c=probability&l=probability-spaces)).
 
 ::: definition Hick–Hyman law {#def-hick}
 If a person must respond to one of $n$ stimuli occurring with probabilities $p_1, \dots, p_n$, each with its own response, the mean **choice reaction time** is
@@ -231,7 +231,7 @@ caption: Predicted movement time (ms) against distance $D$ (pixels) for a target
 
 ### Fitting the law
 
-The constants $a$ and $b$ are found by measuring several $(D, W)$ conditions and fitting a straight line to mean movement time against $ID$ by least squares ([Maths Atlas: regression](/learn/maths/lesson.php?c=statistics&l=regression)).
+The constants $a$ and $b$ are found by measuring several $(D, W)$ conditions and fitting a straight line to mean movement time against $ID$ by least squares ([Maths Atlas: regression](/a/maths/lesson.php?c=statistics&l=regression)).
 
 ::: example Fitting $a$ and $b$ {#ex-fitts-fit}
 In an illustrative (invented) pointing session, six conditions gave these mean movement times. Fit [[#eq-fitts]].

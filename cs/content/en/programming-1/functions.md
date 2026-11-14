@@ -290,7 +290,7 @@ In Python a function is a value like any other: it can be bound to another name,
 
 A small function needed only once can be written inline as a **lambda expression**: `lambda x: x * x - 2` is a function of `x` whose value is `x * x - 2`. A lambda's body must be a single expression; anything longer deserves a `def` and a name.
 
-Passing functions as arguments lets one algorithm work for a whole family of problems. The classic numerical example is root-finding by **bisection**: if a continuous function changes sign on an interval, it has a root there, and halving the interval repeatedly closes in on it. (The theorem behind this, the intermediate value theorem, is proved in [Maths Atlas: continuity](/learn/maths/lesson.php?c=calculus-1&l=continuity).)
+Passing functions as arguments lets one algorithm work for a whole family of problems. The classic numerical example is root-finding by **bisection**: if a continuous function changes sign on an interval, it has a root there, and halving the interval repeatedly closes in on it. (The theorem behind this, the intermediate value theorem, is proved in [Maths Atlas: continuity](/a/maths/lesson.php?c=calculus-1&l=continuity).)
 
 ::: algorithm Bisection {#alg-bisection}
 **Input:** a continuous function $f$, numbers $lo < hi$ with $f(lo)\,f(hi) \le 0$, a tolerance $\tau > 0$. **Output:** a number within $\tau$ of a root of $f$ in $[lo, hi]$.

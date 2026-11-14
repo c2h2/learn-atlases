@@ -28,7 +28,7 @@ where $C_\mathrm{c} \geq 1$ is the **Cunningham slip correction**, close to $1$ 
 :::
 
 ::: proof Force balance on a falling sphere {#proof-stokes}
-At terminal velocity the drag balances the weight. For creeping flow round a sphere, the Stokes drag is $F_\mathrm{D} = 3\pi\mu d\,v$ (a result of fluid mechanics; see [Physics Atlas](/learn/physics/)). The weight is $\frac{\pi}{6}d^3\rho_\mathrm{p}g$. Setting them equal,
+At terminal velocity the drag balances the weight. For creeping flow round a sphere, the Stokes drag is $F_\mathrm{D} = 3\pi\mu d\,v$ (a result of fluid mechanics; see [Physics Atlas](/a/physics/)). The weight is $\frac{\pi}{6}d^3\rho_\mathrm{p}g$. Setting them equal,
 $$
 3\pi\mu d\,v_\mathrm{s} = \frac{\pi}{6}d^3\rho_\mathrm{p}g
 \quad\Longrightarrow\quad

@@ -30,7 +30,7 @@ rounded up, where $z_{1-\alpha/2} = 1.96$ for $95\ \%$ confidence. Written in re
 :::
 
 ::: proof Width of the confidence interval {#proof-sample-size}
-The mean of $n$ independent samples has standard error $\sigma/\sqrt{n}$ and is approximately normal, so $\bar{x} \pm z_{1-\alpha/2}\sigma/\sqrt{n}$ covers $\mu$ with probability $1 - \alpha$ ([[analytical-chemistry/statistics-calibration]]; on Maths Atlas, [confidence intervals](/learn/maths/)). Requiring the half-width $z\sigma/\sqrt{n} \leq E$ and solving for $n$ gives the result. The quadratic dependence is the practical message: halving the margin of error needs four times as many samples, and a heterogeneous site (large CV) can need very many.
+The mean of $n$ independent samples has standard error $\sigma/\sqrt{n}$ and is approximately normal, so $\bar{x} \pm z_{1-\alpha/2}\sigma/\sqrt{n}$ covers $\mu$ with probability $1 - \alpha$ ([[analytical-chemistry/statistics-calibration]]; on Maths Atlas, [confidence intervals](/a/maths/)). Requiring the half-width $z\sigma/\sqrt{n} \leq E$ and solving for $n$ gives the result. The quadratic dependence is the practical message: halving the margin of error needs four times as many samples, and a heterogeneous site (large CV) can need very many.
 :::
 
 ::: example How many soil samples? {#ex-sample-size}

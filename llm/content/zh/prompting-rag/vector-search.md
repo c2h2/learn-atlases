@@ -1,6 +1,6 @@
 嵌入模型（[[prompting-rag/text-embeddings]]）把文档集合中的每个段落变成一个向量，把查询也变成一个。检索于是成了一个几何问题：存储的向量中，哪些离查询向量最近？只有一千个段落时，答案就是一个循环。面对一亿个 $768$ 维的段落，这个循环每次查询要读 $300$ GB 内存，而必须在毫秒之内作答的搜索引擎负担不起。
 
-本章讲如何快速回答这个问题。先从精确检索讲起，并证明对归一化向量而言，三种常用相似度——余弦、点积与欧氏距离——给出的排序完全相同。随后搭建**近似最近邻**（ANN）索引的几个主要家族：只搜索最有希望的若干簇的倒排文件、把向量压缩到几字节的乘积量化，以及在向量数据库中占主导地位的 HNSW 图。一个纯 Python 实验测量召回率与工作量之间的权衡。最后一部分回到词语：手工计算的 BM25 排序函数，以及用倒数排名融合结合关键词排序与向量排序的**混合检索**。计算机科学图谱把索引这一侧讲得更深——[倒排索引](/learn/cs/lesson.php?c=information-retrieval&l=inverted-indexes)、[BM25 与概率检索](/learn/cs/lesson.php?c=information-retrieval&l=probabilistic-retrieval)、[稠密检索](/learn/cs/lesson.php?c=information-retrieval&l=dense-retrieval)——其中还有 IVF、乘积量化与图搜索的自有实现，本章链接过去而不重复其内容。
+本章讲如何快速回答这个问题。先从精确检索讲起，并证明对归一化向量而言，三种常用相似度——余弦、点积与欧氏距离——给出的排序完全相同。随后搭建**近似最近邻**（ANN）索引的几个主要家族：只搜索最有希望的若干簇的倒排文件、把向量压缩到几字节的乘积量化，以及在向量数据库中占主导地位的 HNSW 图。一个纯 Python 实验测量召回率与工作量之间的权衡。最后一部分回到词语：手工计算的 BM25 排序函数，以及用倒数排名融合结合关键词排序与向量排序的**混合检索**。计算机科学图谱把索引这一侧讲得更深——[倒排索引](/a/cs/lesson.php?c=information-retrieval&l=inverted-indexes)、[BM25 与概率检索](/a/cs/lesson.php?c=information-retrieval&l=probabilistic-retrieval)、[稠密检索](/a/cs/lesson.php?c=information-retrieval&l=dense-retrieval)——其中还有 IVF、乘积量化与图搜索的自有实现，本章链接过去而不重复其内容。
 
 ## 精确检索与相似度的选择 {#sec-exact}
 
@@ -55,7 +55,7 @@ caption: 两个单位向量之间的欧氏距离对它们之间夹角的曲线�
 
 ## 倒排文件 {#sec-ivf}
 
-避免全量扫描的第一个想法是聚类。把集合划分成若干簇，每簇配一个代表性质心，查询就只需与质心最近的那几个簇里的向量比较。这与词语的倒排索引是同一个想法（[倒排索引](/learn/cs/lesson.php?c=information-retrieval&l=inverted-indexes)），只是用簇代替词条，因此沿用了同样的名字。
+避免全量扫描的第一个想法是聚类。把集合划分成若干簇，每簇配一个代表性质心，查询就只需与质心最近的那几个簇里的向量比较。这与词语的倒排索引是同一个想法（[倒排索引](/a/cs/lesson.php?c=information-retrieval&l=inverted-indexes)），只是用簇代替词条，因此沿用了同样的名字。
 
 ::: algorithm 倒排文件（IVF）索引 {#alg-ivf}
 **构建。** 对（集合的样本）运行 $k$-means，得到 $n_{\text{list}}$ 个质心 $\mathbf{c}_1, \dots, \mathbf{c}_{n_{\text{list}}}$。把每个向量分配到最近的质心，对每个质心存下它那一列向量。
@@ -209,7 +209,7 @@ ANN 索引不动声色地用精确性换速度：无论发生什么，它都返�
 
 ## 关键词检索：BM25 {#sec-bm25}
 
-稠密嵌入并非总是最好的检索器。它们会错过真正要紧的精确匹配——产品编号、罕见的姓氏、一条错误消息——因为嵌入把含义摊在多个维上，把罕见的字符串当成噪声。关键词排序函数做精确的词匹配，且无需训练。应用最广的是 **BM25**（Robertson 与合作者在 1990 年代提出；Robertson 与 Zaragoza, 2009 有综述），它来自[计算机科学图谱](/learn/cs/lesson.php?c=information-retrieval&l=probabilistic-retrieval)中的相关性概率模型。
+稠密嵌入并非总是最好的检索器。它们会错过真正要紧的精确匹配——产品编号、罕见的姓氏、一条错误消息——因为嵌入把含义摊在多个维上，把罕见的字符串当成噪声。关键词排序函数做精确的词匹配，且无需训练。应用最广的是 **BM25**（Robertson 与合作者在 1990 年代提出；Robertson 与 Zaragoza, 2009 有综述），它来自[计算机科学图谱](/a/cs/lesson.php?c=information-retrieval&l=probabilistic-retrieval)中的相关性概率模型。
 
 ::: definition BM25 {#def-bm25}
 查询 $q$ 与长度 $\mathrm{dl}_d$ 个词元的文档 $d$，集合共 $N$ 个文档、平均长度 $\mathrm{avgdl}$，词条 $t$ 在 $d$ 中出现 $\mathrm{tf}_{t,d}$ 次、共出现在 $n_t$ 个文档中，则

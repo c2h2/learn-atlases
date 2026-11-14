@@ -1,6 +1,6 @@
 # European History Atlas — content guide
 
-European History Atlas (`/learn/europe/`) is a survey of European history for self-study. Every chapter is a long lesson: a question, the terms, a claim that can be checked, the evidence and its limits, a worked case, an interactive figure, and exercises with full solutions.
+European History Atlas (`/a/europe/`) is a survey of European history for self-study. Every chapter is a long lesson: a question, the terms, a claim that can be checked, the evidence and its limits, a worked case, an interactive figure, and exercises with full solutions.
 
 The reference for markup is `/home/c2h2/learn/maths/content/en/calculus-1/limits.md`, and the depth rules below are the ones `tools/check.php` enforces. In this atlas a `:::theorem` block is displayed as **Claim** and a `:::proof` as **Argument**.
 

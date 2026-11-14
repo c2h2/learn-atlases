@@ -15,7 +15,7 @@ from the repository root) copies the Maths Atlas engine into this directory agai
 `data/widgets.json` (the maths catalogue filtered to the spec's `widgets`), the Lab groups in
 `lab.php` (from the spec's `lab_groups`) and `inc/lang/zh-figures.php`. New files of our own, such as
 `assets/js/widgets/sounds.js`, survive a refresh; edits to copied files do not. Fixes to shared code
-go into `/learn/maths/` (or the generator), never into the copies here.
+go into `/a/maths/` (or the generator), never into the copies here.
 
 ## Files and loading
 
@@ -143,12 +143,12 @@ speaks, with these rules:
 
 ## Testing
 
-Every type has a live page: `http://f.g77k.com/learn/english/lab.php?w=<type>` (renders the
+Every type has a live page: `http://f.g77k.com/a/english/lab.php?w=<type>` (renders the
 catalogue `example`; `&cfg=` with URL-encoded `key: value` lines tests other settings).
 From this machine:
 
 ```
-cd /var/www/f.g77k.com/learn/english
+cd /var/www/f.g77k.com/a/english
 node tools/shot.js "lab.php?w=plot" /tmp/.../plot.png            # prints JS errors + figure state
 node tools/shot.js "lab.php?w=plot" /tmp/.../plot-dark.png --dark
 node tools/labcheck.js [type …] [--dark] [--zh]                  # load Lab pages and report errors
@@ -237,7 +237,7 @@ font.
 | 1 | `alignment` | translation, complex-sentences | hovers over a phrase in an English sentence to see its counterpart in the Chinese translation; lines show reordering (modifiers after the noun in English, before it in Chinese), connectives that Chinese leaves implicit (hypotaxis and parataxis) and passives turned active | sentence pairs written for the atlas; machine translations only when labelled as such | none |
 | 2 | `language-tree` | history-of-english, linguistics | explores the Indo-European family down to English, with cognates (*father*, German *Vater*, Latin *pater*, Sanskrit *pitár-*) and the correspondences of Grimm's law; Chinese appears in its own family (Sino-Tibetan) for contrast | standard references (Fortson, *Indo-European Language and Culture*; Mallory & Adams) | none |
 | 2 | `word-origins` | history-of-english, word-formation | compares the sources of English words (Germanic, French, Latin, Greek, other) counted two ways — dictionary headwords and running text — which give very different pictures | dictionary counts from Finkenstaedt & Wolff (1973), cited; running-text counts computed from a public-domain sample with etymologies checked in a cited dictionary | none |
-| 2 | `english-map` | world-englishes, history-of-english | sees countries shaded by the status of English (official, co-official, widely learned) with Kachru's circles and dated estimates of speakers | D3 7.9.0 is already in `assets/vendor/`; TopoJSON 3.0.2 and Natural Earth's `countries-110m.json` (via world-atlas) are vendored in `/learn/peptides/` and can be copied with their notices; statuses and numbers from cited sources (Crystal, *English as a Global Language*; national censuses — Ethnologue's tables are proprietary). Borders are politically sensitive: prefer a tile or dot map, or draw no disputed boundaries and label no disputed areas | none |
+| 2 | `english-map` | world-englishes, history-of-english | sees countries shaded by the status of English (official, co-official, widely learned) with Kachru's circles and dated estimates of speakers | D3 7.9.0 is already in `assets/vendor/`; TopoJSON 3.0.2 and Natural Earth's `countries-110m.json` (via world-atlas) are vendored in `/a/peptides/` and can be copied with their notices; statuses and numbers from cited sources (Crystal, *English as a Global Language*; national censuses — Ethnologue's tables are proprietary). Borders are politically sensitive: prefer a tile or dot map, or draw no disputed boundaries and label no disputed areas | none |
 | 2 | `kachru-circles` | world-englishes, pragmatics | sees the inner, outer and expanding circles with example countries; clicking one gives its history and the status of English there, with the critiques of the model and the alternatives (Schneider's dynamic model, English as a lingua franca) | Kachru (1985); Schneider (2007); Jenkins, *Global Englishes* | none |
 | 2 | `politeness-scale` | pragmatics, everyday-english, presentations-and-discussion | slides a request from direct to indirect (*Close the window.* → *Could you possibly close the window?* → *It's cold in here.*), sees the strategy (Brown & Levinson's bald on record, positive and negative politeness, off record) and how distance, power and the size of the request change the choice | written for the atlas; the notes say that norms vary within every culture and avoid national stereotypes | optional |
 | 3 | `dialogue` | everyday-english, listening-and-conversation | steps through a dialogue turn by turn, choosing what to say at decision points and seeing why each choice fits or not | dialogues written for the atlas | optional |

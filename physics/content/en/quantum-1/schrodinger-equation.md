@@ -373,7 +373,7 @@ $$
 \Psi(x,t) = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty \phi(k)\,e^{i(kx - \hbar k^2t/2m)}\,\dd k, \qquad \phi(k) = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty\Psi(x,0)\,e^{-ikx}\,\dd x.
 $$ {#eq-packet}
 
-The function $\phi(k)$ is the Fourier transform of the initial state ([Maths Atlas: the Fourier transform](/learn/maths/lesson.php?c=pde&l=fourier-transform)), and Plancherel's theorem guarantees that $\int\abs{\phi}^2\,\dd k = \int\abs{\Psi}^2\,\dd x = 1$. Such a superposition is a **wave packet**. In [[quantum-1/formalism]] we will see that $\abs{\phi(k)}^2\,\dd k$ is the probability that the momentum lies between $\hbar k$ and $\hbar(k + \dd k)$.
+The function $\phi(k)$ is the Fourier transform of the initial state ([Maths Atlas: the Fourier transform](/a/maths/lesson.php?c=pde&l=fourier-transform)), and Plancherel's theorem guarantees that $\int\abs{\phi}^2\,\dd k = \int\abs{\Psi}^2\,\dd x = 1$. Such a superposition is a **wave packet**. In [[quantum-1/formalism]] we will see that $\abs{\phi(k)}^2\,\dd k$ is the probability that the momentum lies between $\hbar k$ and $\hbar(k + \dd k)$.
 
 Each plane wave travels at the **phase velocity** $\omega/k = \hbar k/2m$, which is half the classical speed $p/m$. The packet as a whole, peaked near some $k_0$, moves at the **group velocity**
 

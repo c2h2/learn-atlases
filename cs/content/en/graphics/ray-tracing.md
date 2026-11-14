@@ -27,7 +27,7 @@ A sphere with centre $c$ and radius $R$ is the set of points with $\norm{p - c}^
 $$
 t^2 + 2(m\cdot d)\,t + \bigl(\norm m^2 - R^2\bigr) = 0 .
 $$ {#eq-ray-sphere}
-With $b = m\cdot d$ and $\Delta = b^2 - (\norm m^2 - R^2)$, the roots are $t = -b \pm \sqrt\Delta$: no intersection if $\Delta < 0$, a tangent ray if $\Delta = 0$, and otherwise the ray's line enters at $-b - \sqrt\Delta$ and leaves at $-b + \sqrt\Delta$. The nearest hit is the smaller root if it is positive, else the larger one (the origin is inside the sphere), else none. The "half-$b$" form saves a multiplication and a division and avoids the factor-of-$4$ cancellation of the textbook quadratic formula; for distant, large spheres, computing the smaller root as $(\norm m^2 - R^2)/(-b + \sqrt\Delta)$ when $b < 0$ avoids catastrophic cancellation (see [Maths Atlas: floating point](/learn/maths/lesson.php?c=numerical-analysis&l=floating-point)).
+With $b = m\cdot d$ and $\Delta = b^2 - (\norm m^2 - R^2)$, the roots are $t = -b \pm \sqrt\Delta$: no intersection if $\Delta < 0$, a tangent ray if $\Delta = 0$, and otherwise the ray's line enters at $-b - \sqrt\Delta$ and leaves at $-b + \sqrt\Delta$. The nearest hit is the smaller root if it is positive, else the larger one (the origin is inside the sphere), else none. The "half-$b$" form saves a multiplication and a division and avoids the factor-of-$4$ cancellation of the textbook quadratic formula; for distant, large spheres, computing the smaller root as $(\norm m^2 - R^2)/(-b + \sqrt\Delta)$ when $b < 0$ avoids catastrophic cancellation (see [Maths Atlas: floating point](/a/maths/lesson.php?c=numerical-analysis&l=floating-point)).
 
 ### Triangles: the Möller–Trumbore algorithm
 
@@ -45,7 +45,7 @@ and the ray hits the triangle exactly when $b_1 \ge 0$, $b_2 \ge 0$, $b_1 + b_2 
 :::
 
 ::: proof
-By Cramer's rule, each unknown is a ratio of determinants of $3\times3$ matrices, and a $3\times3$ determinant is a scalar triple product: $\det(a, b, c) = a\cdot(b\times c)$, which is invariant under cyclic permutation and changes sign under a swap (see [Maths Atlas: determinants](/learn/maths/lesson.php?c=linear-algebra&l=determinants)). The system's determinant is $\det(-d, e_1, e_2) = -d\cdot(e_1\times e_2) = e_1\cdot(d\times e_2) = e_1\cdot p$, by cyclic permutation and a swap. Replacing the columns one at a time by $s$:
+By Cramer's rule, each unknown is a ratio of determinants of $3\times3$ matrices, and a $3\times3$ determinant is a scalar triple product: $\det(a, b, c) = a\cdot(b\times c)$, which is invariant under cyclic permutation and changes sign under a swap (see [Maths Atlas: determinants](/a/maths/lesson.php?c=linear-algebra&l=determinants)). The system's determinant is $\det(-d, e_1, e_2) = -d\cdot(e_1\times e_2) = e_1\cdot(d\times e_2) = e_1\cdot p$, by cyclic permutation and a swap. Replacing the columns one at a time by $s$:
 - $t = \det(s, e_1, e_2)/\det = e_2\cdot(s\times e_1)/\det = e_2\cdot q/\det$ (cyclic permutation);
 - $b_1 = \det(-d, s, e_2)/\det = s\cdot(e_2\times(-d))/\det = s\cdot(d\times e_2)/\det = s\cdot p/\det$;
 - $b_2 = \det(-d, e_1, s)/\det = -d\cdot(e_1\times s)/\det = d\cdot(s\times e_1)/\det = d\cdot q/\det$.
@@ -348,7 +348,7 @@ By symmetry $L$ is the same constant everywhere. Every ray from a wall point hit
 
 ## Monte Carlo integration
 
-To estimate an integral $I = \int_D g(x)\,dx$, draw random points $X_1, \dots, X_N$ independently from a probability density $p$ on $D$ that is positive wherever $g \ne 0$, and average the ratios $g(X_i)/p(X_i)$ (see [Maths Atlas: expectation](/learn/maths/lesson.php?c=probability&l=expectation) and [limit theorems](/learn/maths/lesson.php?c=probability&l=limit-theorems)).
+To estimate an integral $I = \int_D g(x)\,dx$, draw random points $X_1, \dots, X_N$ independently from a probability density $p$ on $D$ that is positive wherever $g \ne 0$, and average the ratios $g(X_i)/p(X_i)$ (see [Maths Atlas: expectation](/a/maths/lesson.php?c=probability&l=expectation) and [limit theorems](/a/maths/lesson.php?c=probability&l=limit-theorems)).
 
 ::: theorem The Monte Carlo estimator {#thm-monte-carlo}
 The estimator $\hat I_N = \frac1N\sum_{i=1}^N \frac{g(X_i)}{p(X_i)}$ is **unbiased**, $\E[\hat I_N] = I$, and if $\sigma^2 = \Var[g(X)/p(X)]$ is finite then $\Var[\hat I_N] = \sigma^2/N$: the root-mean-square error decreases like $1/\sqrt N$, independently of the dimension of $D$.
@@ -596,7 +596,7 @@ The relative error after $K$ bounces is $\frac{\rho^{K+1}/(1-\rho)}{1/(1-\rho)} 
 ::: exercise Variance of the furnace estimator {level=3 #ex-roulette-variance}
 In `furnace.py` with $q = \rho = 0.7$, each path's estimate is the number $N$ of wall points it visits. (a) Show that $N$ is geometrically distributed and find its mean and variance. (b) Compute the standard error with $100\,000$ paths and compare with the deviation of the printed estimate from $3.333$. (c) What happens to the variance if instead $q = 1$ and paths are cut after $K = 12$ bounces?
 ::: solution
-(a) Each path contributes $L_e = 1$ at every visited point, with throughput $\rho/q = 1$; after each point it continues with probability $q = 0.7$. So $\Prob[N = k] = q^{k-1}(1-q)$ for $k \ge 1$: geometric with mean $1/(1-q) = 3.333$ and variance $q/(1-q)^2 = 0.7/0.09 = 7.78$ (see [Maths Atlas: discrete random variables](/learn/maths/lesson.php?c=probability&l=discrete-random-variables)). The mean is the exact radiance, confirming unbiasedness.
+(a) Each path contributes $L_e = 1$ at every visited point, with throughput $\rho/q = 1$; after each point it continues with probability $q = 0.7$. So $\Prob[N = k] = q^{k-1}(1-q)$ for $k \ge 1$: geometric with mean $1/(1-q) = 3.333$ and variance $q/(1-q)^2 = 0.7/0.09 = 7.78$ (see [Maths Atlas: discrete random variables](/a/maths/lesson.php?c=probability&l=discrete-random-variables)). The mean is the exact radiance, confirming unbiasedness.
 
 (b) The standard error is $\sqrt{7.78/100\,000} = 0.0088$. The printed estimate $3.3224$ is $0.0109$ below $3.3333$, about $1.2$ standard errors — an ordinary fluctuation.
 

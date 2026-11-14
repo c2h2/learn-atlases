@@ -1,6 +1,6 @@
 生长在丰富肉汤中的细菌，一旦在食物里发现异亮氨酸，几秒之内就会停止合成它。起跑瞬间的肌肉，能在不到一秒内把糖原分解速率提高数百倍。随着一餐被消化、一段禁食开始，肝脏从贮存葡萄糖切换为释放葡萄糖。如果酶只按底物决定的速率运转，这一切都不可能。代谢之所以运转，是因为关键酶的活性在被不断调整——被途径自身的分子、被通过信号通路发挥作用的激素与神经，也被细胞对每种酶含量的改变。
 
-本章讲这些调控的机制，并提出一个看似简单实则棘手的问题：一条途径的通量改变时，是哪些酶在起作用？协同结合的物理化学——希尔方程以及 Monod–Wyman–Changeux 与 Koshland–Némethy–Filmer 模型，并以血红蛋白为例——在[化学图谱：蛋白质功能](/learn/chemistry/lesson.php?c=biochemistry&l=protein-function)中展开。本课以 [[biochemistry/enzymes]] 为基础。
+本章讲这些调控的机制，并提出一个看似简单实则棘手的问题：一条途径的通量改变时，是哪些酶在起作用？协同结合的物理化学——希尔方程以及 Monod–Wyman–Changeux 与 Koshland–Némethy–Filmer 模型，并以血红蛋白为例——在[化学图谱：蛋白质功能](/a/chemistry/lesson.php?c=biochemistry&l=protein-function)中展开。本课以 [[biochemistry/enzymes]] 为基础。
 
 ## 改变酶促速率的四种方式
 
@@ -46,7 +46,7 @@ $$
 \theta = \frac{[\mathrm{S}]^{n_\mathrm{H}}}{K_{0.5}^{\,n_\mathrm{H}} + [\mathrm{S}]^{n_\mathrm{H}}},\qquad\text{等价地}\qquad \log\frac{\theta}{1-\theta} = n_\mathrm{H}\log[\mathrm{S}] - n_\mathrm{H}\log K_{0.5},
 $$ {#eq-hill}
 
-其中 $K_{0.5}$ 是给出半饱和的浓度，$n_\mathrm{H}$ 是**希尔系数**。$n_\mathrm{H} = 1$ 给出米氏双曲线；$n_\mathrm{H} > 1$ 表示正协同。该方程仅对 $n$ 个位点同时结合这一非物理的情形精确；对真实蛋白质，$n_\mathrm{H}$ 是陡峭度的经验度量，绝不超过结合位点的数目（血红蛋白：4 个位点，$n_\mathrm{H} \approx 2.8$）。机理模型——同步的 MWC 模型（Monod、Jeffries Wyman 与 Changeux，1965）与顺序的 KNF 模型（Koshland、George Némethy 与 David Filmer，1966）——由构象变化导出 S 形曲线，在[化学图谱](/learn/chemistry/lesson.php?c=biochemistry&l=protein-function)中讲述。
+其中 $K_{0.5}$ 是给出半饱和的浓度，$n_\mathrm{H}$ 是**希尔系数**。$n_\mathrm{H} = 1$ 给出米氏双曲线；$n_\mathrm{H} > 1$ 表示正协同。该方程仅对 $n$ 个位点同时结合这一非物理的情形精确；对真实蛋白质，$n_\mathrm{H}$ 是陡峭度的经验度量，绝不超过结合位点的数目（血红蛋白：4 个位点，$n_\mathrm{H} \approx 2.8$）。机理模型——同步的 MWC 模型（Monod、Jeffries Wyman 与 Changeux，1965）与顺序的 KNF 模型（Koshland、George Némethy 与 David Filmer，1966）——由构象变化导出 S 形曲线，在[化学图谱](/a/chemistry/lesson.php?c=biochemistry&l=protein-function)中讲述。
 :::
 
 ::: example 协同性如何让响应变陡 {#ex-81}
@@ -176,7 +176,7 @@ $$ {#eq-summation}
 在稳态途径中每个酶承载相同的通量，所以哪个都不比别的"慢"。最大活性相对通量而言较低的步骤可能有高控制，但控制还取决于每个酶的速率对其底物与产物的响应强度（其**弹性系数**）以及反馈。一个酶可能恰恰*因为*被反馈强烈调控而控制很小：其活性提高时，它的终产物上升又把它抑制回去。而且控制是稳态的性质——安静时控制通量的酶，运动时未必还在控制。"限速步骤"最好留给经测定证明确实控制系数接近 1 的步骤。
 :::
 
-那么，若不在一个限速酶上，调控到底作用于何处？受调控的酶通常是催化远离平衡步骤的酶（近平衡步骤只是跟随质量作用；通量-作用力关系见[化学图谱：糖酵解](/learn/chemistry/lesson.php?c=biochemistry&l=glycolysis-citric-acid)）。但控制分析表明，要大幅改变通量，最好是同时改变几个酶，例如一种激素磷酸化其中几个，或一次性诱导一条途径的全部基因。David Fell 称之为**多位点调节**（*Understanding the Control of Metabolism*，1997）；这解释了为什么基因表达程序通常把整条途径一起开启。
+那么，若不在一个限速酶上，调控到底作用于何处？受调控的酶通常是催化远离平衡步骤的酶（近平衡步骤只是跟随质量作用；通量-作用力关系见[化学图谱：糖酵解](/a/chemistry/lesson.php?c=biochemistry&l=glycolysis-citric-acid)）。但控制分析表明，要大幅改变通量，最好是同时改变几个酶，例如一种激素磷酸化其中几个，或一次性诱导一条途径的全部基因。David Fell 称之为**多位点调节**（*Understanding the Control of Metabolism*，1997）；这解释了为什么基因表达程序通常把整条途径一起开启。
 
 ### 底物循环
 

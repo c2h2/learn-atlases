@@ -314,7 +314,7 @@ double          : 16.6953114
 
 ## 后续内容
 
-搬运与运算浮点数的指令（`movsd`、`addsd`、`cvttsd2si`）和存放它们的寄存器（`%xmm0`–`%xmm15`）出现在 [[computer-systems/machine-code]] 中。对误差在整个算法中传播的分析——条件数、后向稳定性，以及为什么有些算法可靠而另一些不可靠——属于数值分析（[Maths Atlas：浮点算术](/learn/maths/lesson.php?c=numerical-analysis&l=floating-point)）。浮点数还是 [[graphics]] 的基础，那里的误差积累表现为三角形之间的裂缝；训练语言模型所用的低精度格式亦然（[LLM Atlas](/learn/llm/)）。
+搬运与运算浮点数的指令（`movsd`、`addsd`、`cvttsd2si`）和存放它们的寄存器（`%xmm0`–`%xmm15`）出现在 [[computer-systems/machine-code]] 中。对误差在整个算法中传播的分析——条件数、后向稳定性，以及为什么有些算法可靠而另一些不可靠——属于数值分析（[Maths Atlas：浮点算术](/a/maths/lesson.php?c=numerical-analysis&l=floating-point)）。浮点数还是 [[graphics]] 的基础，那里的误差积累表现为三角形之间的裂缝；训练语言模型所用的低精度格式亦然（[LLM Atlas](/a/llm/)）。
 
 ::: summary
 - 二进制浮点数存符号、加偏移量的指数和尾数：规格化值 $(-1)^s \times 1.M \times 2^{E-B}$ 带隐含的前导 $1$；非规格化数 $0.M \times 2^{1-B}$ 带来**渐进下溢**；全 $1$ 的指数编码 $\pm\infty$ 与 NaN（[[#def-ieee]]）。

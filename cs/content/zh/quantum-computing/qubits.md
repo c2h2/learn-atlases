@@ -1,6 +1,6 @@
 拿一枚均匀的硬币抛一次：正面或反面，概率各为 $1/2$。再抛一次，仍然是正面或反面各占 $1/2$。随机叠加随机仍是随机。现在拿单个光子，让它通过一块半镀银镜。它会在两条输出路径之一中被探测到，每条路径的概率都是 $1/2$，于是这面镜子看起来和抛硬币没有两样。但是，如果不探测光子，而是把两条路径在第二面半镀银镜上重新合束，光子每次都从**同一个特定端口**出来。两次"抛硬币"产生了一个确定的结果。"光子走了哪条路径"上的任何概率分布都无法解释这一点：概率非负，不可能相互抵消。能够抵消的是**振幅**——其模的平方为概率的复数，与概率不同，它们可以相加得零。
 
-本章就从这一观察出发建立量子计算的语言。我们用一个由两个复振幅构成的单位向量来描述**量子比特**（qubit），用狄拉克（Dirac）记号书写它，给出计算机科学家需要的量子力学公理（状态、酉演化、测量、复合系统），并把单个量子比特画成**布洛赫球**（Bloch sphere）上的一点。沿途我们会证明三个塑造后续一切内容的事实：全局相位不可观测；非正交的状态不可能被确切地区分；在不同基下的测量揭示不同的、互补的信息。唯一的预备知识是复数（[数学图谱：复数](/learn/maths/lesson.php?c=complex-analysis&l=complex-numbers)）与内积空间（[数学图谱：内积](/learn/maths/lesson.php?c=linear-algebra&l=inner-products)）；公理背后的物理在[物理图谱：量子力学的形式体系](/learn/physics/lesson.php?c=quantum-1&l=formalism)。
+本章就从这一观察出发建立量子计算的语言。我们用一个由两个复振幅构成的单位向量来描述**量子比特**（qubit），用狄拉克（Dirac）记号书写它，给出计算机科学家需要的量子力学公理（状态、酉演化、测量、复合系统），并把单个量子比特画成**布洛赫球**（Bloch sphere）上的一点。沿途我们会证明三个塑造后续一切内容的事实：全局相位不可观测；非正交的状态不可能被确切地区分；在不同基下的测量揭示不同的、互补的信息。唯一的预备知识是复数（[数学图谱：复数](/a/maths/lesson.php?c=complex-analysis&l=complex-numbers)）与内积空间（[数学图谱：内积](/a/maths/lesson.php?c=linear-algebra&l=inner-products)）；公理背后的物理在[物理图谱：量子力学的形式体系](/a/physics/lesson.php?c=quantum-1&l=formalism)。
 
 ## 从概率比特到振幅
 
@@ -79,7 +79,7 @@ $$
 :::
 
 ::: proof
-(a)⇒(b)：$\braket{U\phi|U\psi} = \bra\phi U^\dagger U\ket\psi = \braket{\phi|\psi}$。(b)⇒(c)：取 $\phi = \psi$。(c)⇒(a)：矩阵 $A = U^\dagger U - I$ 是 Hermitian 的，且对每个 $\ket\psi$ 满足 $\bra\psi A\ket\psi = \norm{U\psi}^2 - \norm{\psi}^2 = 0$。Hermitian 矩阵可在标准正交特征向量基下对角化且特征值为实数（[数学图谱：谱定理](/learn/maths/lesson.php?c=linear-algebra&l=spectral-theorem)）；把 $\ket\psi$ 依次取为每个特征向量即知每个特征值都是 $0$，故 $A = 0$。最后，若 $U\ket v = \lambda\ket v$ 且 $\ket v \ne 0$，则 $\norm{v} = \norm{Uv} = \abs\lambda\,\norm{v}$，所以 $\abs\lambda = 1$。
+(a)⇒(b)：$\braket{U\phi|U\psi} = \bra\phi U^\dagger U\ket\psi = \braket{\phi|\psi}$。(b)⇒(c)：取 $\phi = \psi$。(c)⇒(a)：矩阵 $A = U^\dagger U - I$ 是 Hermitian 的，且对每个 $\ket\psi$ 满足 $\bra\psi A\ket\psi = \norm{U\psi}^2 - \norm{\psi}^2 = 0$。Hermitian 矩阵可在标准正交特征向量基下对角化且特征值为实数（[数学图谱：谱定理](/a/maths/lesson.php?c=linear-algebra&l=spectral-theorem)）；把 $\ket\psi$ 依次取为每个特征向量即知每个特征值都是 $0$，故 $A = 0$。最后，若 $U\ket v = \lambda\ket v$ 且 $\ket v \ne 0$，则 $\norm{v} = \norm{Uv} = \abs\lambda\,\norm{v}$，所以 $\abs\lambda = 1$。
 :::
 
 ::: example 两个哈达玛门对两次抛硬币 {#ex-interference}
@@ -151,7 +151,7 @@ $$
 $$
 \langle Z\rangle = \abs\alpha^2 - \abs\beta^2, \qquad \langle X\rangle = 2\operatorname{Re}(\overline\alpha\beta), \qquad \langle Y \rangle = 2\operatorname{Im}(\overline\alpha\beta).
 $$ {#eq-pauli-exp}
-（例如 $\bra\psi X\ket\psi = \overline\alpha\beta + \overline\beta\alpha = 2\operatorname{Re}(\overline\alpha\beta)$。）对电子而言，这些是其自旋的三个分量，用 Stern–Gerlach 磁铁测量（[物理图谱：自旋](/learn/physics/lesson.php?c=quantum-1&l=spin)）；对计算机科学家而言，它们是可以对一个量子比特提出的三个互补的问题，每个都只能按统计规律回答。
+（例如 $\bra\psi X\ket\psi = \overline\alpha\beta + \overline\beta\alpha = 2\operatorname{Re}(\overline\alpha\beta)$。）对电子而言，这些是其自旋的三个分量，用 Stern–Gerlach 磁铁测量（[物理图谱：自旋](/a/physics/lesson.php?c=quantum-1&l=spin)）；对计算机科学家而言，它们是可以对一个量子比特提出的三个互补的问题，每个都只能按统计规律回答。
 
 下面的程序计算所选基下的测量概率，并模拟重复测量（"shots"，采样），这是每一台真实量子计算机报告结果的方式。它使用 Python 内置的 `complex` 类型；不需要任何库。
 
@@ -300,7 +300,7 @@ caption: 状态 $\cos\frac\theta2\ket0 + e^{i\varphi}\sin\frac\theta2\ket1$ 的�
 
 ## 后续内容
 
-[[quantum-computing/quantum-circuits]] 从小型的**门**构造酉变换并引入线路模型，附一个简短的 Python 态向量模拟器，供本课程余下部分使用。[[quantum-computing/entanglement]] 讨论复合公理：多量子比特状态、纠缠、不可克隆定理与隐形传态。旋转基下的测量、作为信息的相位与干涉，是 [[quantum-computing/first-algorithms]]、[[quantum-computing/shor]] 与 [[quantum-computing/grover]] 中算法的工作部件。我们在关于叠加的警告里只瞥了一眼的混合态，将在 [[quantum-computing/error-correction]] 中用密度矩阵描述。二能级系统的物理见[物理图谱：自旋](/learn/physics/lesson.php?c=quantum-1&l=spin)。
+[[quantum-computing/quantum-circuits]] 从小型的**门**构造酉变换并引入线路模型，附一个简短的 Python 态向量模拟器，供本课程余下部分使用。[[quantum-computing/entanglement]] 讨论复合公理：多量子比特状态、纠缠、不可克隆定理与隐形传态。旋转基下的测量、作为信息的相位与干涉，是 [[quantum-computing/first-algorithms]]、[[quantum-computing/shor]] 与 [[quantum-computing/grover]] 中算法的工作部件。我们在关于叠加的警告里只瞥了一眼的混合态，将在 [[quantum-computing/error-correction]] 中用密度矩阵描述。二能级系统的物理见[物理图谱：自旋](/a/physics/lesson.php?c=quantum-1&l=spin)。
 
 ::: summary
 - 量子比特是单位向量 $\alpha\ket0 + \beta\ket1 \in \C^2$；测量它以概率 $\abs\alpha^2$ 给出 $0$、以概率 $\abs\beta^2$ 给出 $1$，并留下相应的基状态。

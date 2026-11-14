@@ -1,6 +1,6 @@
 #!/bin/bash
 # Refresh every fetched dataset for Peptide Atlas. Safe to run from cron, e.g. weekly:
-#   17 4 * * 1  /var/www/f.g77k.com/learn/peptides/tools/refresh.sh >> /var/www/f.g77k.com/learn/peptides/data/cache/refresh.log 2>&1
+#   17 4 * * 1  /var/www/f.g77k.com/a/peptides/tools/refresh.sh >> /var/www/f.g77k.com/a/peptides/data/cache/refresh.log 2>&1
 set -u
 cd "$(dirname "$0")/.."
 echo "== refresh $(date -u +%FT%TZ)"

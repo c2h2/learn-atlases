@@ -1,6 +1,6 @@
 用户问 `how do I repair a punctured bicycle tyre`，文集里最好的一页标题是 "Fixing a flat on your bike"，而且通篇没有 *repair*、*punctured*、*bicycle*、*tyre* 这几个词。到此为止的每个排序函数——布尔匹配、tf–idf、BM25、查询似然——都按文档所含的查询词项给文档打分，这一页得零分。这就是**词汇不匹配**（vocabulary mismatch）问题，与这个领域同岁：词干提取（[[information-retrieval/text-processing]]）管得了 `repair`/`repairs`，管不了 `repair`/`fix`；查询扩展与相关反馈（[[information-retrieval/vector-space]]）只在头几条结果本来就好时才帮得上忙。需要的是一种表示：*意义*相近的文本彼此靠近，不论它们用了什么词。
 
-**稠密检索**（dense retrieval）把查询与文档表示为几百个实数组成的向量——**嵌入**（embedding）——由神经网络产出，网络的训练使查询的向量落在与它相关的文档向量附近，检索则通过**最近邻搜索**完成。本章只谈这个话题中属于信息检索的部分。编码网络如何工作、如何预训练是 LLM 图谱的主题（[text embeddings](/learn/llm/lesson.php?c=prompting-rag&l=text-embeddings)、[transformers](/learn/llm/lesson.php?c=transformers&l=self-attention)），所以学到的表示我们只简要引入——双编码器架构与训练它的对比损失——而把力气花在之后发生的事上：把最大内积搜索归约为最近邻搜索，让百万向量的检索变快的**近似最近邻**索引（倒排文件索引、乘积量化与基于图的搜索，每个都在合成数据上实现并测量），稠密与词法检索的结合，交叉编码器重排，以及评测。章末讲面向语言模型的检索。
+**稠密检索**（dense retrieval）把查询与文档表示为几百个实数组成的向量——**嵌入**（embedding）——由神经网络产出，网络的训练使查询的向量落在与它相关的文档向量附近，检索则通过**最近邻搜索**完成。本章只谈这个话题中属于信息检索的部分。编码网络如何工作、如何预训练是 LLM 图谱的主题（[text embeddings](/a/llm/lesson.php?c=prompting-rag&l=text-embeddings)、[transformers](/a/llm/lesson.php?c=transformers&l=self-attention)），所以学到的表示我们只简要引入——双编码器架构与训练它的对比损失——而把力气花在之后发生的事上：把最大内积搜索归约为最近邻搜索，让百万向量的检索变快的**近似最近邻**索引（倒排文件索引、乘积量化与基于图的搜索，每个都在合成数据上实现并测量），稠密与词法检索的结合，交叉编码器重排，以及评测。章末讲面向语言模型的检索。
 
 ## 嵌入与双编码器
 
@@ -12,7 +12,7 @@ $$
 （或余弦，即归一化向量的内积）。文档向量**离线**计算，每篇文档算一次，存进索引；查询时系统编码查询，返回分数最大的 $k$ 篇文档。查询与文档分开编码，故这一架构称为**双编码器**（bi-encoder，或称对偶编码器）。
 :::
 
-这些向量是**稠密**的：几乎每个坐标都非零，且没有任何坐标对应一个词。这与 [[information-retrieval/vector-space#def-vsm]] 的 tf–idf 向量正相反——那里每个词项一维、几乎全为零。稠密向量能把 "fix a flat" 与 "repair a puncture" 放在一起，因为编码器从海量文本中学到这两个短语用在相似的上下文里。这个想法比神经网络更老：**潜在语义索引**（latent semantic indexing；Deerwester 等人，1990）对词项–文档矩阵取截断奇异值分解，在几百个"概念"构成的空间里得到稠密的文档向量（[Maths Atlas: the SVD](/learn/maths/lesson.php?c=linear-algebra&l=svd)）。神经编码器从 Sentence-BERT（赖默斯（Reimers）与古雷维奇（Gurevych），2019）与稠密段落检索（Dense Passage Retrieval，DPR；卡尔普京（Karpukhin）等人，2020）起步，使这一路线堪与 BM25 匹敌，继而在许多基准上胜出。
+这些向量是**稠密**的：几乎每个坐标都非零，且没有任何坐标对应一个词。这与 [[information-retrieval/vector-space#def-vsm]] 的 tf–idf 向量正相反——那里每个词项一维、几乎全为零。稠密向量能把 "fix a flat" 与 "repair a puncture" 放在一起，因为编码器从海量文本中学到这两个短语用在相似的上下文里。这个想法比神经网络更老：**潜在语义索引**（latent semantic indexing；Deerwester 等人，1990）对词项–文档矩阵取截断奇异值分解，在几百个"概念"构成的空间里得到稠密的文档向量（[Maths Atlas: the SVD](/a/maths/lesson.php?c=linear-algebra&l=svd)）。神经编码器从 Sentence-BERT（赖默斯（Reimers）与古雷维奇（Gurevych），2019）与稠密段落检索（Dense Passage Retrieval，DPR；卡尔普京（Karpukhin）等人，2020）起步，使这一路线堪与 BM25 匹敌，继而在许多基准上胜出。
 
 ### 用对比损失训练
 
@@ -33,7 +33,7 @@ $\dfrac{\partial L}{\partial s_j} = \dfrac{1}{\tau}\bigl(p_j - \mathbf 1[j = 1]\
 求导：$\partial(-s_1/\tau)/\partial s_j = -\mathbf 1[j = 1]/\tau$，而 $\partial \log\sum_l e^{s_l/\tau}/\partial s_j = \frac{e^{s_j/\tau}/\tau}{\sum_l e^{s_l/\tau}} = p_j/\tau$。相加即得结果。由于 $\sum_j p_j = 1$，负例上的力气之和恰等于正例上的力气。
 :::
 
-这正是 ListNet（[[information-retrieval/learning-to-rank]]）在只有一个相关文档时的 softmax 交叉熵，也是多项逻辑回归。梯度给出两条实操要点。**批内负例**：一批 $B$ 个查询–正例对里，其余 $B - 1$ 个查询的正例就充当负例，不花额外编码成本就得到许多负例。**困难负例**：随机负例太容易，很快 $p_j \approx 0$、什么也不贡献；用 BM25 或当前模型检回的负例更难、教得更多，可其中有些其实是从未被标过的相关文档，把它们推开反而害了模型。嵌入模型的训练配方——数据、负例、温度、模型规模的选择——变化很快；见 [LLM Atlas](/learn/llm/lesson.php?c=prompting-rag&l=text-embeddings) 的讨论。
+这正是 ListNet（[[information-retrieval/learning-to-rank]]）在只有一个相关文档时的 softmax 交叉熵，也是多项逻辑回归。梯度给出两条实操要点。**批内负例**：一批 $B$ 个查询–正例对里，其余 $B - 1$ 个查询的正例就充当负例，不花额外编码成本就得到许多负例。**困难负例**：随机负例太容易，很快 $p_j \approx 0$、什么也不贡献；用 BM25 或当前模型检回的负例更难、教得更多，可其中有些其实是从未被标过的相关文档，把它们推开反而害了模型。嵌入模型的训练配方——数据、负例、温度、模型规模的选择——变化很快；见 [LLM Atlas](/a/llm/lesson.php?c=prompting-rag&l=text-embeddings) 的讨论。
 
 ::: example 手算对比损失 {#ex-infonce}
 某查询的正例得分 $0.8$，三个负例得分 $0.5$、$0.3$、$0.1$（余弦相似度）。对 $\tau = 0.1$ 算出 $p_1$、损失与各力气，再对 $\tau = 0.05$ 算一遍。
@@ -230,7 +230,7 @@ $$
 
 ## 面向语言模型的检索
 
-**检索增强生成**（retrieval-augmented generation，RAG；刘易斯（Lewis）等人，2020）让语言模型访问一个文集：每次用户请求，检回最相关的段落放进模型输入，模型便能从当前、具体、可引用的来源作答，而不只是背训练时记住的东西。本课程每一章都有份。文档切成几百个词元的段落（**切块**（chunking）的决定就是 [[information-retrieval/text-processing#def-collection]] 的检索单位选择）；段落按词法、稠密或两者一起索引；检索是混合的、带重排的；结果既按检索评判（相关段落进前 $k$ 了吗？）也按生成评判（答案受段落支持吗？）。生成一侧——模型如何使用检回的上下文、幻觉、引用与 RAG 系统的评测——在 [LLM Atlas](/learn/llm/lesson.php?c=prompting-rag&l=retrieval-augmented-generation) 中展开，向量数据库在 [LLM Atlas: vector search](/learn/llm/lesson.php?c=prompting-rag&l=vector-search)。
+**检索增强生成**（retrieval-augmented generation，RAG；刘易斯（Lewis）等人，2020）让语言模型访问一个文集：每次用户请求，检回最相关的段落放进模型输入，模型便能从当前、具体、可引用的来源作答，而不只是背训练时记住的东西。本课程每一章都有份。文档切成几百个词元的段落（**切块**（chunking）的决定就是 [[information-retrieval/text-processing#def-collection]] 的检索单位选择）；段落按词法、稠密或两者一起索引；检索是混合的、带重排的；结果既按检索评判（相关段落进前 $k$ 了吗？）也按生成评判（答案受段落支持吗？）。生成一侧——模型如何使用检回的上下文、幻觉、引用与 RAG 系统的评测——在 [LLM Atlas](/a/llm/lesson.php?c=prompting-rag&l=retrieval-augmented-generation) 中展开，向量数据库在 [LLM Atlas: vector search](/a/llm/lesson.php?c=prompting-rag&l=vector-search)。
 
 ::: history
 斯科特·德韦斯特（Deerwester）、苏珊·杜梅（Dumais）、乔治·弗纳斯（Furnas）、托马斯·兰道尔（Landauer）与理查德·哈什曼（Harshman）在 "Indexing by latent semantic analysis"（*Journal of the American Society for Information Science*，1990）中提出潜在语义索引。彼得·因迪克（Indyk）与拉吉夫·莫特瓦尼（Motwani）的局部敏感哈希（1998），以及埃尔韦·热古（Jégou）、马泰伊斯·杜兹（Douze）与科黛拉·施密德（Schmid）的 "Product quantization for nearest neighbor search"（*IEEE TPAMI*，2011）是近似搜索的里程碑；尤里·马利科夫（Malkov）与德米特里·亚舒宁（Yashunin）的 HNSW 于 2016 年以预印本亮相、2020 年登于 *IEEE TPAMI*；杰夫·约翰逊（Johnson）、杜兹与热古 2017 年发布 FAISS。戈登·科马克（Cormack）、查尔斯·克拉克（Clarke）与施特凡·比特赫尔（Büttcher）在 SIGIR 2009 提出倒数排名融合。神经时代，MS MARCO 段落排序数据集（阮（Nguyen）等人，2016）提供了大规模训练数据；尼尔斯·赖默斯（Reimers）与伊琳娜·古雷维奇（Gurevych）的 Sentence-BERT（2019）、罗德里戈·诺盖拉（Nogueira）与 Kyunghyun Cho 的 BERT 重排器（2019）、弗拉基米尔·卡尔普京（Karpukhin）等人的稠密段落检索（2020）、奥马尔·哈塔卜（Khattab）与马泰·扎哈里亚（Zaharia）的 ColBERT（2020）与帕特里克·刘易斯（Lewis）等人的检索增强生成（2020）奠定了各种架构；南丹·塔库尔（Thakur）等人的 BEIR 基准（2021）检验它们泛化得如何。
@@ -238,7 +238,7 @@ $$
 
 ## 后续内容
 
-稠密检索为这门课从词的确切匹配到意义的学习匹配画上句号，可它几乎复用了之前每章的思想：检索单位与词元化的选择、倒排列表（如今装的是聚类）、压缩（如今压的是向量）、前 $k$ 选择与剪枝、作为强悍基线的概率打分、带判定与显著性检验的评测、用哈希去近似重复、多级排序。编码器本身、对比训练、向量数据库与面向语言模型的检索在 LLM Atlas 中继续（[text embeddings](/learn/llm/lesson.php?c=prompting-rag&l=text-embeddings)、[retrieval-augmented generation](/learn/llm/lesson.php?c=prompting-rag&l=retrieval-augmented-generation)）。把向量索引分发到多台机器上，引出 [[distributed-systems/distributed-storage]] 的划分问题；在 GPU 上跑 ANN 搜索，是 [[parallel-computing/gpu-programming]] 的一个应用。
+稠密检索为这门课从词的确切匹配到意义的学习匹配画上句号，可它几乎复用了之前每章的思想：检索单位与词元化的选择、倒排列表（如今装的是聚类）、压缩（如今压的是向量）、前 $k$ 选择与剪枝、作为强悍基线的概率打分、带判定与显著性检验的评测、用哈希去近似重复、多级排序。编码器本身、对比训练、向量数据库与面向语言模型的检索在 LLM Atlas 中继续（[text embeddings](/a/llm/lesson.php?c=prompting-rag&l=text-embeddings)、[retrieval-augmented generation](/a/llm/lesson.php?c=prompting-rag&l=retrieval-augmented-generation)）。把向量索引分发到多台机器上，引出 [[distributed-systems/distributed-storage]] 的划分问题；在 GPU 上跑 ANN 搜索，是 [[parallel-computing/gpu-programming]] 的一个应用。
 
 ::: summary
 - **双编码器**（[[#def-biencoder]]）把查询与文档分别映到稠密向量、按内积打分；文档向量离线算好，检索成了最近邻搜索。它对付词汇不匹配。

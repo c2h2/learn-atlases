@@ -240,7 +240,7 @@ $$ {#eq-heisenberg}
 把两个本征值代入即可验证。自旋似乎被耦合起来了，尽管哈密顿量里根本没有自旋。
 
 ::: application 铁磁性与共价键
-海森堡（Heisenberg，1928）提出，相邻原子电子之间形如 [[#eq-heisenberg]] 的相互作用对整个晶体求和，$\hat H = -\sum_{\langle ij\rangle}J_{ij}\hat{\mathbf S}_i\cdot\hat{\mathbf S}_j$，可以解释铁磁性：当有效耦合使平行自旋有利时，铁、钴、镍的自旋在居里（Curie）温度（铁为 $1043\,\mathrm K$）以下自发排齐。磁偶极相互作用远太弱，做不到这一点。在氢分子中符号反过来：成键态是空间对称的自旋单态，电子密度堆积在两个质子之间，而三重态是排斥的。共价键是一种交换效应，化学图谱[化学结合](/learn/chemistry/lesson.php?c=quantum-chemistry&l=chemical-bond-qm)一课从化学家的角度作了说明。
+海森堡（Heisenberg，1928）提出，相邻原子电子之间形如 [[#eq-heisenberg]] 的相互作用对整个晶体求和，$\hat H = -\sum_{\langle ij\rangle}J_{ij}\hat{\mathbf S}_i\cdot\hat{\mathbf S}_j$，可以解释铁磁性：当有效耦合使平行自旋有利时，铁、钴、镍的自旋在居里（Curie）温度（铁为 $1043\,\mathrm K$）以下自发排齐。磁偶极相互作用远太弱，做不到这一点。在氢分子中符号反过来：成键态是空间对称的自旋单态，电子密度堆积在两个质子之间，而三重态是排斥的。共价键是一种交换效应，化学图谱[化学结合](/a/chemistry/lesson.php?c=quantum-chemistry&l=chemical-bond-qm)一课从化学家的角度作了说明。
 :::
 
 ::: quiz

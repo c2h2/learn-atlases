@@ -371,7 +371,7 @@ $$
 :::
 :::
 
-真实的梁、轴、板和压力容器，连同它们的失效判据，是机械工程图谱的[梁的挠度](/learn/mechanical/lesson.php?c=mechanics-of-materials&l=beam-deflection)、[扭转](/learn/mechanical/lesson.php?c=mechanics-of-materials&l=torsion)与[线弹性](/learn/mechanical/lesson.php?c=solid-mechanics&l=linear-elasticity)三课的主题，从设计者的立场展开。
+真实的梁、轴、板和压力容器，连同它们的失效判据，是机械工程图谱的[梁的挠度](/a/mechanical/lesson.php?c=mechanics-of-materials&l=beam-deflection)、[扭转](/a/mechanical/lesson.php?c=mechanics-of-materials&l=torsion)与[线弹性](/a/mechanical/lesson.php?c=solid-mechanics&l=linear-elasticity)三课的主题，从设计者的立场展开。
 
 ::: history 从胡克到纳维
 罗伯特·胡克（Robert Hooke）于 1678 年在《论恢复力》（*De Potentia Restitutiva*）中发表了他的定律，作为两年前登出的一个字谜的谜底：*ut tensio, sic vis*——有多少伸长，就有多大拉力。那说的是弹簧和金属丝，不是材料常数。托马斯·杨（Thomas Young）在 1807 年的《自然哲学讲义》（*Lectures on Natural Philosophy*）中引入了以他命名的模量，尽管那时的形式依赖于试件本身。弹性固体的一般方程由纳维在 1821 年宣读、1827 年发表的一篇纪念文章中导出，用的是只给出一个弹性常数的分子模型。柯西 1822–28 年的连续介质处理给出各向同性体的两个常数；格林（Green, George）在 1839 年从能量函数导出弹性张量，在常数数目上裁决了柯西正确。泊松在 1829 年证明弹性固体承载两种波速不同的波——比奥尔德姆在地震图上认出它们早了近八十年。

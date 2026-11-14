@@ -180,7 +180,7 @@ and split $\sigma_{ij} = -p\,\delta_{ij} + s_{ij}$, where the **deviatoric stres
 
 ## Principal stresses {#principal}
 
-Because $\boldsymbol\sigma$ is a real symmetric matrix, the spectral theorem of linear algebra applies (see the Maths Atlas lesson [The spectral theorem](/learn/maths/lesson.php?c=linear-algebra&l=spectral-theorem)). There is an orthonormal basis of eigenvectors, and in that basis the stress tensor is diagonal.
+Because $\boldsymbol\sigma$ is a real symmetric matrix, the spectral theorem of linear algebra applies (see the Maths Atlas lesson [The spectral theorem](/a/maths/lesson.php?c=linear-algebra&l=spectral-theorem)). There is an orthonormal basis of eigenvectors, and in that basis the stress tensor is diagonal.
 
 ::: theorem Principal stresses {#thm-principal}
 At every point there are three mutually perpendicular directions $\mathbf n^{(1)}, \mathbf n^{(2)}, \mathbf n^{(3)}$, the **principal axes**, on whose planes the traction is purely normal: $\boldsymbol\sigma\mathbf n^{(k)} = \sigma_k\mathbf n^{(k)}$. The real numbers $\sigma_1 \ge \sigma_2 \ge \sigma_3$ are the **principal stresses**. They are the roots of
@@ -382,7 +382,7 @@ For $\mathbf u = \alpha(-y, x, 0)$ the gradients are $\partial_y u_x = -\alpha$ 
 :::
 
 ::: application Strain gauges
-A strain gauge is a thin foil resistor glued to a surface. When the surface stretches by $\varepsilon$ along the gauge, the resistance changes by a fraction $k\varepsilon$ with gauge factor $k \approx 2$ for metal foils. A typical gauge resolves $10^{-6}$ in strain. Because the surface is in plane stress, three gauges at $0^\circ$, $45^\circ$ and $90^\circ$ — a rosette — measure $\varepsilon_{nn}$ in three directions, which by part (1) of [[#thm-strain-meaning]] are three linear combinations of $\varepsilon_{xx}$, $\varepsilon_{yy}$, $\varepsilon_{xy}$. Solving gives the full plane strain tensor and hence the principal strains. The engineering practice of stress analysis is developed in the Mechanical Engineering Atlas lessons [Stress transformation](/learn/mechanical/lesson.php?c=mechanics-of-materials&l=stress-transformation) and [Three-dimensional stress and strain](/learn/mechanical/lesson.php?c=solid-mechanics&l=stress-strain-3d).
+A strain gauge is a thin foil resistor glued to a surface. When the surface stretches by $\varepsilon$ along the gauge, the resistance changes by a fraction $k\varepsilon$ with gauge factor $k \approx 2$ for metal foils. A typical gauge resolves $10^{-6}$ in strain. Because the surface is in plane stress, three gauges at $0^\circ$, $45^\circ$ and $90^\circ$ — a rosette — measure $\varepsilon_{nn}$ in three directions, which by part (1) of [[#thm-strain-meaning]] are three linear combinations of $\varepsilon_{xx}$, $\varepsilon_{yy}$, $\varepsilon_{xy}$. Solving gives the full plane strain tensor and hence the principal strains. The engineering practice of stress analysis is developed in the Mechanical Engineering Atlas lessons [Stress transformation](/a/mechanical/lesson.php?c=mechanics-of-materials&l=stress-transformation) and [Three-dimensional stress and strain](/a/mechanical/lesson.php?c=solid-mechanics&l=stress-strain-3d).
 :::
 
 ::: history Who invented stress

@@ -2,7 +2,7 @@
 
 来自图像生成的生成式模型能一举解决这两个问题。**扩散模型**学会通过一步步去噪，把随机噪声变成来自数据分布的样本；**流匹配**模型学一个速度场，把噪声沿光滑路径送到数据。两者都不假定分布的形状，都能在数百维上工作，而且都能一次产出整个分块。Diffusion Policy（Chi 等，2023）把扩散带进了视觉运动控制；流匹配则成为 π0（2024）及其后许多 VLA 的动作生成器。本章从头推导这两者，展示它们如何以观测为条件，解释为什么它们的训练目标——都是均方误差——却*不会*把模式平均掉，并算出它们在运行时的代价。
 
-同一套数学在图像生成一侧的内容见 LLM Atlas 的[生成图像](/learn/llm/lesson.php?c=multimodal&l=image-generation)；概率背景在[机器学习中的概率](/learn/llm/lesson.php?c=math-for-ml&l=probability)。
+同一套数学在图像生成一侧的内容见 LLM Atlas 的[生成图像](/a/llm/lesson.php?c=multimodal&l=image-generation)；概率背景在[机器学习中的概率](/a/llm/lesson.php?c=math-for-ml&l=probability)。
 
 ## 采样，而非预测 {#sec-sampling}
 

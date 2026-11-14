@@ -87,7 +87,7 @@ Engine work still outstanding (every lesson is written; these are engine limits 
   only English lessons. This atlas needs a source-language option (for example `source_lang: "zh"`
   in the spec, handled by the generator) that turns all of this round, with the length target
   counted in Han characters. Markup errors and unresolved references in Chinese lessons are
-  already reported. (The `/learn` landing page already counts this atlas's Chinese lessons.)
+  already reported. (The `/a` landing page already counts this atlas's Chinese lessons.)
 - **Figures of our own.** `tools/mkatlas.py` accepts only figure types from the Maths Atlas
   catalogue and rewrites `data/widgets.json`, the Lab groups and `inc/lang/zh-figures.php` on every
   run; it needs an atlas-local catalogue before any Chinese figure is built.
@@ -118,4 +118,4 @@ lessons as warnings; `--lang=zh` runs the same checks with Chinese thresholds an
 The engine in this directory is a generated copy of the Maths Atlas engine: re-run
 `python3 tools/mkatlas.py tools/atlas-specs/chinese.json` from the repository root to bring in
 engine fixes (course records, this README and `tools/*.md` are never overwritten). Engine changes
-belong in `/learn/maths/` or in the generator, not in the copied files here.
+belong in `/a/maths/` or in the generator, not in the copied files here.

@@ -3,7 +3,7 @@
  *
  *   node tools/shot.js "lab.php?w=riemann" /path/out.png [--full] [--width=1280] [--height=900] [--wait=2500] [--dark] [--click=selector]
  *
- * The page is loaded from http://f.g77k.com/learn/cs/ (resolved to this machine). Prints any page errors,
+ * The page is loaded from http://f.g77k.com/a/cs/ (resolved to this machine). Prints any page errors,
  * console errors and failed requests, then the state of every interactive figure (ok / error message).
  * View the PNG with an image viewer (or the Read tool).
  */
@@ -18,7 +18,7 @@ const args = process.argv.slice(2);
 const pos = args.filter((a) => !a.startsWith('--'));
 const opt = (k, d) => { const a = args.find((x) => x.startsWith('--' + k + '=')); return a ? a.split('=').slice(1).join('=') : d; };
 if (pos.length < 2) { console.error('usage: node tools/shot.js <page?query> <out.png> [--full] [--width=1280] [--height=900] [--wait=2500] [--dark] [--click=selector]'); process.exit(2); }
-const BASE = process.env.MATHS_BASE || 'http://f.g77k.com/learn/cs/'; // f.g77k.com is mapped to 127.0.0.1
+const BASE = process.env.MATHS_BASE || 'http://f.g77k.com/a/cs/'; // f.g77k.com is mapped to 127.0.0.1
 const url = pos[0].startsWith('http') ? pos[0] : BASE + pos[0].replace(/^\//, '');
 const out = pos[1];
 

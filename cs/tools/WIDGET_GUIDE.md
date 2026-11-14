@@ -110,12 +110,12 @@ every visible string (translated later); keep strings short and use `%d`/`%s` fo
 
 ## Testing
 
-Every type has a live page: `http://f.g77k.com/learn/cs/lab.php?w=<type>` (renders the
+Every type has a live page: `http://f.g77k.com/a/cs/lab.php?w=<type>` (renders the
 catalogue `example`; `&cfg=` with URL-encoded `key: value` lines tests other settings).
 From this machine:
 
 ```
-cd /var/www/f.g77k.com/learn/cs
+cd /var/www/f.g77k.com/a/cs
 node tools/shot.js "lab.php?w=graph" /tmp/.../graph.png                # prints JS errors + figure state
 node tools/shot.js "lab.php?w=graph" /tmp/.../graph-dark.png --dark
 node tools/shot.js "lab.php?w=graph&cfg=nodes%3A%20A%3B%20B%3B%20C%0Aedges%3A%20A-B%3B%20B-C%0Aalgorithm%3A%20bfs%0Astart%3A%20A" /tmp/.../bfs.png

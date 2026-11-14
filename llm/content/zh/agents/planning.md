@@ -4,7 +4,7 @@
 
 ## 经典规划 {#sec-classical}
 
-经典规划研究的是规划仍然困难的最简单设定：完全可观察的世界、确定性的动作、已知的初始状态与目标。CS 图谱对其有深入处理（[规划](/learn/cs/lesson.php?c=artificial-intelligence&l=planning)，搜索算法见[搜索](/learn/cs/lesson.php?c=artificial-intelligence&l=search)）；这里只需要其核心。
+经典规划研究的是规划仍然困难的最简单设定：完全可观察的世界、确定性的动作、已知的初始状态与目标。CS 图谱对其有深入处理（[规划](/a/cs/lesson.php?c=artificial-intelligence&l=planning)，搜索算法见[搜索](/a/cs/lesson.php?c=artificial-intelligence&l=search)）；这里只需要其核心。
 
 ::: definition STRIPS 规划问题 {#def-strips}
 一个 **STRIPS 问题**是一个元组 $(F, A, s_0, G)$：基**原子**（如 `on(A,B)` 这样的事实）的有限集 $F$、动作集 $A$、**初始状态** $s_0\subseteq F$ 与**目标** $G\subseteq F$。**状态**是原子的集合，即当前为真的那些。每个动作 $a$ 带一个**前置条件** $\operatorname{pre}(a)$、一个**添加表** $\operatorname{add}(a)$ 与一个**删除表** $\operatorname{del}(a)$，都是 $F$ 的子集。当 $\operatorname{pre}(a)\subseteq s$ 时，动作 $a$ 在 $s$ 中**可适用**，此时其结果为

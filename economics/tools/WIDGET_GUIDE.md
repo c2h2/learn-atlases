@@ -120,12 +120,12 @@ every visible string (translated later in `inc/lang/zh-figures.php`); keep strin
 
 ## Testing
 
-Every type has a live page: `http://f.g77k.com/learn/economics/lab.php?w=<type>` (renders the
+Every type has a live page: `http://f.g77k.com/a/economics/lab.php?w=<type>` (renders the
 catalogue `example`; `&cfg=` with URL-encoded `key: value` lines tests other settings).
 From this machine:
 
 ```
-cd /var/www/f.g77k.com/learn/economics
+cd /var/www/f.g77k.com/a/economics
 node tools/shot.js "lab.php?w=riemann" /tmp/.../riemann.png            # prints JS errors + figure state
 node tools/shot.js "lab.php?w=riemann" /tmp/.../riemann-dark.png --dark
 node tools/shot.js "lab.php?w=contour&cfg=f%3A%20x%5E0.5*y%5E0.5" /tmp/.../cd.png

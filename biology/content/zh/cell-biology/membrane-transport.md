@@ -1,6 +1,6 @@
 [[cell-biology/membranes]] 中的双层是极好的屏障，但这既是解决办法，也是问题。细胞必须输入糖、氨基酸和离子，输出废物，并使细胞质基质中的浓度与外部相差悬殊：典型动物细胞把钾保持在内部约三十倍于外部，钠约十倍低于外部，游离钙约一万倍低于外部。这些差异中的每一个都在持续渗漏下维持，靠让特定物质通过的蛋白质和消耗能量把它们逆坡上推的泵。这些差异也是一座能量库。细胞利用其离子梯度驱动营养摄取、发出信号，并——作为跨膜的电压——使神经和肌肉的电活动成为可能。
 
-本章逐步建立穿膜的物理：穿过双层的扩散与通透系数；载体与通道，使通过具有选择性且快速；电化学势，决定被动流的方向；泵与偶联运输蛋白，使流反向；膜电位，从单一离子的能斯特（Nernst）方程到多离子的戈德曼–霍奇金–卡茨（Goldman–Hodgkin–Katz）方程。热力学背景在[化学图谱：生物能量学](/learn/chemistry/lesson.php?c=biochemistry&l=bioenergetics)中。
+本章逐步建立穿膜的物理：穿过双层的扩散与通透系数；载体与通道，使通过具有选择性且快速；电化学势，决定被动流的方向；泵与偶联运输蛋白，使流反向；膜电位，从单一离子的能斯特（Nernst）方程到多离子的戈德曼–霍奇金–卡茨（Goldman–Hodgkin–Katz）方程。热力学背景在[化学图谱：生物能量学](/a/chemistry/lesson.php?c=biochemistry&l=bioenergetics)中。
 
 ## 穿过双层的扩散
 
@@ -56,7 +56,7 @@ $$
 v = \frac{V_{\max}\,c}{K_\mathrm{m} + c},
 $$ {#eq-carrier}
 
-其中 $V_{\max}$ 是所有载体都占满时的速率，$K_\mathrm{m}$ 是速率达到半最大时的浓度。这是酶动力学的米氏形式，载体是酶，转位是催化步骤（见[化学图谱：酶](/learn/chemistry/lesson.php?c=biochemistry&l=enzymes)）。相比之下，穿过双层的简单扩散 [[#eq-fick]] 线性增加，没有上限。
+其中 $V_{\max}$ 是所有载体都占满时的速率，$K_\mathrm{m}$ 是速率达到半最大时的浓度。这是酶动力学的米氏形式，载体是酶，转位是催化步骤（见[化学图谱：酶](/a/chemistry/lesson.php?c=biochemistry&l=enzymes)）。相比之下，穿过双层的简单扩散 [[#eq-fick]] 线性增加，没有上限。
 :::
 
 饱和、高特异性（D-葡萄糖而非 L-葡萄糖）以及近似类似物的竞争性抑制，是实验上识别载体介导运输的方式。例如人红细胞中的葡萄糖单向转运蛋白 GLUT1 对葡萄糖的 $K_\mathrm{m}$ 约为 1.5 mmol L⁻¹（Lodish《分子细胞生物学》（*Molecular Cell Biology*）第 9 版，2021）；在血糖浓度约 5 mmol L⁻¹ 时，它以约四分之三的最大速率运行。
@@ -161,7 +161,7 @@ $$
 1957 年斯科（Jens Christian Skou）在蟹 *Carcinus maenas*（普通滨蟹）神经的膜中发现一种同时需要 Na⁺ 和 K⁺ 的 ATP 酶——即今天所称的**Na⁺/K⁺-ATP 酶**或钠泵（斯科共享 1997 年诺贝尔化学奖）。每水解一个 ATP，它输出三个 Na⁺ 并输入两个 K⁺，在朝内、对 Na⁺ 高亲和与朝外、对 K⁺ 高亲和两种构象间循环，由天冬氨酸残基的磷酸化驱动。它属于**P 型 ATP 酶**家族，该家族还包括质膜与内质网的 Ca²⁺ 泵和胃的 H⁺/K⁺ 泵。由于它每输入两个正电荷就输出三个，它是**生电的**，直接对膜电位贡献几毫伏。在许多动物细胞中它消耗全部 ATP 的很大一部分，常引用的估计约为五分之一到三分之一，在神经元中更多。
 
 ::: example 一个 ATP 能支付钠泵吗？ {#ex-pump}
-用 [[#ex-nernst]] 的浓度和 37 °C 下 $V_\mathrm{m} = -70\ \mathrm{mV}$，计算输出 3 Na⁺、输入 2 K⁺ 所需自由能，并与细胞中 ATP 水解的自由能约 −50 到 −60 kJ mol⁻¹ 比较（[化学图谱：生物能量学](/learn/chemistry/lesson.php?c=biochemistry&l=bioenergetics)）。
+用 [[#ex-nernst]] 的浓度和 37 °C 下 $V_\mathrm{m} = -70\ \mathrm{mV}$，计算输出 3 Na⁺、输入 2 K⁺ 所需自由能，并与细胞中 ATP 水解的自由能约 −50 到 −60 kJ mol⁻¹ 比较（[化学图谱：生物能量学](/a/chemistry/lesson.php?c=biochemistry&l=bioenergetics)）。
 ::: solution
 $RT = 2.579\ \mathrm{kJ\,mol^{-1}}$，$F\times0.070\ \mathrm{V} = 6.75\ \mathrm{kJ\,mol^{-1}}$。
 
@@ -173,7 +173,7 @@ $RT = 2.579\ \mathrm{kJ\,mol^{-1}}$，$F\times0.070\ \mathrm{V} = 6.75\ \mathrm{
 :::
 :::
 
-其他原发泵包括酸化溶酶体与液泡的**V 型 ATP 酶**（[[cell-biology/organelles]]），线粒体、叶绿体与细菌的**F 型 ATP 合酶**，它通常反向运行，用质子梯度制造 ATP（[化学图谱：氧化磷酸化](/learn/chemistry/lesson.php?c=biochemistry&l=oxidative-phosphorylation)），以及庞大的**ABC 转运蛋白**超家族，用 ATP 移动糖、肽、脂质和药物等多样底物。一个 ABC 转运蛋白 P-糖蛋白把化疗药泵出肿瘤细胞，是多药耐药的原因之一；另一个 CFTR 已成为氯通道，其缺失导致囊性纤维化（[医学图谱：遗传学](/learn/medicine/course.php?c=genetics)）。
+其他原发泵包括酸化溶酶体与液泡的**V 型 ATP 酶**（[[cell-biology/organelles]]），线粒体、叶绿体与细菌的**F 型 ATP 合酶**，它通常反向运行，用质子梯度制造 ATP（[化学图谱：氧化磷酸化](/a/chemistry/lesson.php?c=biochemistry&l=oxidative-phosphorylation)），以及庞大的**ABC 转运蛋白**超家族，用 ATP 移动糖、肽、脂质和药物等多样底物。一个 ABC 转运蛋白 P-糖蛋白把化疗药泵出肿瘤细胞，是多药耐药的原因之一；另一个 CFTR 已成为氯通道，其缺失导致囊性纤维化（[医学图谱：遗传学](/a/medicine/course.php?c=genetics)）。
 
 ### 继发性主动运输
 
@@ -252,7 +252,7 @@ caption: 37 °C 下戈德曼–霍奇金–卡茨膜电位（mV）与 $\log_{10}
 - [ ] 变得更负，因为 K⁺ 不再被泵入。
 - [ ] 什么也不发生，因为电位只取决于通道。
 ::: solution
-静息电位主要由离子梯度和漏通透性通过 [[#eq-ghk]] 决定；泵的直接生电贡献只有几毫伏。阻断它立即移除这一贡献，但梯度会持续到漏失耗散它们，这取决于细胞大小与通透性，需数分钟到数小时。细胞还会肿胀，因为 Na⁺ 与 Cl⁻ 积累、水随之渗透——泵是动物细胞的主要体积调节器。强心苷如哇巴因（ouabain）与地高辛（digoxin）抑制该泵；其临床用途属于[医学图谱：药理学](/learn/medicine/course.php?c=pharmacology)。
+静息电位主要由离子梯度和漏通透性通过 [[#eq-ghk]] 决定；泵的直接生电贡献只有几毫伏。阻断它立即移除这一贡献，但梯度会持续到漏失耗散它们，这取决于细胞大小与通透性，需数分钟到数小时。细胞还会肿胀，因为 Na⁺ 与 Cl⁻ 积累、水随之渗透——泵是动物细胞的主要体积调节器。强心苷如哇巴因（ouabain）与地高辛（digoxin）抑制该泵；其临床用途属于[医学图谱：药理学](/a/medicine/course.php?c=pharmacology)。
 :::
 :::
 
@@ -264,7 +264,7 @@ caption: 37 °C 下戈德曼–霍奇金–卡茨膜电位（mV）与 $\log_{10}
 能斯特方程由能斯特在 1889 年为电化学电池推导；1902 年伯恩斯坦（Julius Bernstein）提出神经与肌肉的静息电位源于膜对钾的选择性通透，兴奋是这种选择性的短暂破坏。戈德曼在 1943 年推导恒定场电流方程。1949 年霍奇金与卡茨在乌贼 *Loligo*（枪乌贼属）的巨轴突上表明，静息电位跟随 K⁺ 梯度，动作电位超射（越过零电位）并趋向 Na⁺ 平衡电位，并用戈德曼方程拟合数据；霍奇金与赫克斯利（Andrew Huxley）的动作电位定量模型于 1952 年发表（1963 年诺贝尔生理学或医学奖，与埃克尔斯（John Eccles）共享）。斯科在 1957 年描述 Na⁺/K⁺-ATP 酶。米切尔的化学渗透假说于 1961 年出现。内尔与萨克曼在 1976 年记录蛙肌肉的单个乙酰胆碱受体通道。阿格雷的团队在 1992 年鉴定水孔蛋白-1，麦金农的团队在 1998 年解出钾通道 KcsA 的结构。
 :::
 
-神经元把 [[#ex-ghk]] 的通透性变化变成动作电位；完整的霍奇金–赫克斯利故事属于 [[neuroscience]] 和[医学图谱：膜电位](/learn/medicine/lesson.php?c=physiology&l=membrane-potentials)。在 [[cell-biology/cell-signalling]] 中我们再次见到离子通道作为受体，以及具有一万倍梯度的 Ca²⁺ 作为信使。
+神经元把 [[#ex-ghk]] 的通透性变化变成动作电位；完整的霍奇金–赫克斯利故事属于 [[neuroscience]] 和[医学图谱：膜电位](/a/medicine/lesson.php?c=physiology&l=membrane-potentials)。在 [[cell-biology/cell-signalling]] 中我们再次见到离子通道作为受体，以及具有一万倍梯度的 Ca²⁺ 作为信使。
 
 ::: summary
 - 裸双层容易通过小的非极性分子和水，但离子慢约 $10^9$ 倍；$J = P(c_\mathrm{o} - c_\mathrm{i})$，仅靠双层离子平衡需数年。

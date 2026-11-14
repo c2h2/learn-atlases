@@ -256,7 +256,7 @@ caption: Rescorla–Wagner 模型[[#eq-rw-curve]]中的联想强度 $V$（纵轴
 :::
 
 ::: application 记忆与疾病
-许多神经与精神疾病都涉及本章的机制。阿尔茨海默病最早受累的脑区通常是内嗅皮层与海马，随之丧失的是新陈述性记忆的形成。滥用药物作用于多巴胺预测误差系统，并改变纹状体的突触。焦虑症的暴露疗法利用消退学习。临床方面见[医学图谱：痴呆与神经退行性疾病](/learn/medicine/lesson.php?c=nervous-system&l=dementia-neurodegeneration)与[医学图谱：物质使用](/learn/medicine/lesson.php?c=psychiatry&l=substance-use)。
+许多神经与精神疾病都涉及本章的机制。阿尔茨海默病最早受累的脑区通常是内嗅皮层与海马，随之丧失的是新陈述性记忆的形成。滥用药物作用于多巴胺预测误差系统，并改变纹状体的突触。焦虑症的暴露疗法利用消退学习。临床方面见[医学图谱：痴呆与神经退行性疾病](/a/medicine/lesson.php?c=nervous-system&l=dementia-neurodegeneration)与[医学图谱：物质使用](/a/medicine/lesson.php?c=psychiatry&l=substance-use)。
 :::
 
 ::: history
@@ -328,7 +328,7 @@ $B = 1/(1 + (2/3.57)\mathrm{e}^{4.34}) = 1/(1 + 0.560\times76.7) = 1/43.97 = 0.0
 
 (b)$\mathbf C$ 半正定，所以 $\mathbf w\T\Delta\mathbf w = \eta\,\mathbf w\T\mathbf C\mathbf w \ge 0$：$\mathbf w$ 的长度平均意义上永不减小，且沿每个正特征值对应特征向量的分量按几何级数增长，特征值 $\mu$ 对应的每步增长因子为 $(1 + \eta\mu)$。
 
-(c)$\mathbf C$ 的特征值为 $1.8$（特征向量 $(1, 1)/\sqrt2$，方向45°）与 $0.2$（特征向量 $(1, -1)/\sqrt2$）。沿第一个特征向量的分量增长更快，于是 $\mathbf w$ 转向45°轴，即第一主成分。Oja 规则加上 $-\eta y^2w_i$，它平均意义上减去 $\eta(\mathbf w\T\mathbf C\mathbf w)\mathbf w$；平衡时 $\mathbf C\mathbf w = (\mathbf w\T\mathbf C\mathbf w)\mathbf w$，这要求 $\mathbf w$ 是一个满足 $\lVert\mathbf w\rVert = 1$ 的特征向量，而只有主特征向量是稳定的。本章的程序给出了数值上的收敛。特征向量见[数学图谱：线性代数](/learn/maths/course.php?c=linear-algebra)。
+(c)$\mathbf C$ 的特征值为 $1.8$（特征向量 $(1, 1)/\sqrt2$，方向45°）与 $0.2$（特征向量 $(1, -1)/\sqrt2$）。沿第一个特征向量的分量增长更快，于是 $\mathbf w$ 转向45°轴，即第一主成分。Oja 规则加上 $-\eta y^2w_i$，它平均意义上减去 $\eta(\mathbf w\T\mathbf C\mathbf w)\mathbf w$；平衡时 $\mathbf C\mathbf w = (\mathbf w\T\mathbf C\mathbf w)\mathbf w$，这要求 $\mathbf w$ 是一个满足 $\lVert\mathbf w\rVert = 1$ 的特征向量，而只有主特征向量是稳定的。本章的程序给出了数值上的收敛。特征向量见[数学图谱：线性代数](/a/maths/course.php?c=linear-algebra)。
 :::
 :::
 

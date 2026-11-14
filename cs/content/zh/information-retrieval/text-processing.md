@@ -101,7 +101,7 @@ print(maxmatch("thetabledownthere", D))
 按空白切分会把标点粘住（`book,'` 和 `book` 成了不同词型），对中文什么也切不开，还把 `New York` 当成两个不相干的词。分词依赖于语言、也依赖于领域：化学名称、程序代码、带 `#话题标签` 和 `@提及` 的推文、法律引证的规则各不相同。最要紧的一条：**查询必须与文档完全同样地分词。** 若索引保留 `C++` 而查询解析器丢掉 `+`，查询 `C++` 就变成搜索 `c`，一个看上去再完美不过的索引也会失灵。
 :::
 
-[LLM 图谱](/learn/llm/lesson.php?c=text-and-language&l=tokenisation) 中的语言模型使用另一类分词——**子词**单元，从数据中学习而来，例如字节对编码，它把罕见词拆成片段、不需要针对语言的规则。它们的设计目标是给模型一个固定而小巧的词表，而不是定义匹配的单元；经典搜索引擎仍然按词分词。
+[LLM 图谱](/a/llm/lesson.php?c=text-and-language&l=tokenisation) 中的语言模型使用另一类分词——**子词**单元，从数据中学习而来，例如字节对编码，它把罕见词拆成片段、不需要针对语言的规则。它们的设计目标是给模型一个固定而小巧的词表，而不是定义匹配的单元；经典搜索引擎仍然按词分词。
 
 ## 从词元到词项
 
@@ -235,7 +235,7 @@ $$ {#eq-zipf}
 对某个常数 $C$ 和指数 $s > 0$ 成立，则称该文档集服从**齐普夫定律**；经典形式取 $s = 1$，于是 $r \cdot f_r$ 大致是常数。等价地，$\log f_r \approx \log C - s \log r$：在双对数坐标上，频次对名次是一条斜率为 $-s$ 的直线。
 :::
 
-齐普夫定律是一条经验规律，不是定理：它是关于真实文本的**观察**，只在近似意义下成立，指数取决于文本和分词器。对点 $(\log_{10} r, \log_{10} f_r)$ 作最小二乘拟合（方法见 [Maths Atlas: regression](/learn/maths/lesson.php?c=statistics&l=regression)）得到：
+齐普夫定律是一条经验规律，不是定理：它是关于真实文本的**观察**，只在近似意义下成立，指数取决于文本和分词器。对点 $(\log_{10} r, \log_{10} f_r)$ 作最小二乘拟合（方法见 [Maths Atlas: regression](/a/maths/lesson.php?c=statistics&l=regression)）得到：
 
 ```python
 import math
@@ -384,7 +384,7 @@ Lucene（以及在其上构建的 Elasticsearch 与 OpenSearch）与 Tantivy 这
 
 ## 后续内容
 
-本章产出的词项将成为倒排索引（[[information-retrieval/inverted-indexes]]）的键——那个把每个词项映射到含它的文档的数据结构——可以用 [[data-structures/hash-tables]] 的哈希表或一个有序词典来构建。齐普夫定律解释那个索引的形状——几条庞大的倒排列表，外加数百万条极小的——Heaps 定律解释其词典大小；两者都用在 [[information-retrieval/index-compression]] 中。文档内的词频与文档集上的文档频率，则成为 [[information-retrieval/vector-space]] 与 [[information-retrieval/probabilistic-retrieval]] 中排序的原料。子词分词与词嵌入彻底绕开手写规则，在 [LLM 图谱](/learn/llm/lesson.php?c=text-and-language&l=word-embeddings) 中展开，并将在 [[information-retrieval/dense-retrieval]] 中回归。
+本章产出的词项将成为倒排索引（[[information-retrieval/inverted-indexes]]）的键——那个把每个词项映射到含它的文档的数据结构——可以用 [[data-structures/hash-tables]] 的哈希表或一个有序词典来构建。齐普夫定律解释那个索引的形状——几条庞大的倒排列表，外加数百万条极小的——Heaps 定律解释其词典大小；两者都用在 [[information-retrieval/index-compression]] 中。文档内的词频与文档集上的文档频率，则成为 [[information-retrieval/vector-space]] 与 [[information-retrieval/probabilistic-retrieval]] 中排序的原料。子词分词与词嵌入彻底绕开手写规则，在 [LLM 图谱](/a/llm/lesson.php?c=text-and-language&l=word-embeddings) 中展开，并将在 [[information-retrieval/dense-retrieval]] 中回归。
 
 ::: summary
 - 文本处理把字节变成**词项**：解码编码、Unicode 规范化（NFC 或 NFKC）并折叠大小写、分词，再按等价类把词元映射为词项（[[#def-normalisation]]、[[#def-token]]）。

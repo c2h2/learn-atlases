@@ -305,7 +305,7 @@ $$
 对 $F = \rho G$ 用 [[#eq-rtt]]：被积函数是 $\rho\,DG/Dt + G\bigl(D\rho/Dt + \rho\nabla\cdot\mathbf v\bigr)$，方括号由 [[#eq-continuity]] 为零。至于最后一句，[[#eq-rtt]] 取 $F = 1$ 得 $\dd V/\dd t = \int\nabla\cdot\mathbf v\,\dd V = 0$。
 :::
 
-这补上了 [[continuum/stress-strain]] 中柯西运动方程证明留下的缺口：物质体的动量变化率等于密度乘加速度的积分。工程师把 [[#eq-rtt]] 用到有进有出的固定控制体上——弯管受到的力、喷流的推力——机械工程图谱的[控制体分析](/learn/mechanical/lesson.php?c=fluid-mechanics&l=control-volume-analysis)一课对此有展开。
+这补上了 [[continuum/stress-strain]] 中柯西运动方程证明留下的缺口：物质体的动量变化率等于密度乘加速度的积分。工程师把 [[#eq-rtt]] 用到有进有出的固定控制体上——弯管受到的力、喷流的推力——机械工程图谱的[控制体分析](/a/mechanical/lesson.php?c=fluid-mechanics&l=control-volume-analysis)一课对此有展开。
 
 ::: quiz
 下列流动中，哪些使得每个物质区域的体积保持不变？
@@ -381,7 +381,7 @@ $\cos^2\theta$、$\sin^2\theta$ 与 $\sin\theta\cos\theta$ 在整圈上的平均
 
 ## 后续内容 {#leads}
 
-运动学现在已经就位。[[continuum/ideal-flow]] 加上力：取 $\sigma_{ij} = -p\,\delta_{ij}$，柯西运动方程化为欧拉方程，它与 [[#eq-continuity]] 一起决定流动；伯努利（Bernoulli）方程与开尔文（Kelvin）的环量守恒定理随之而来。[[continuum/viscous-flow]] 加上与 [[#eq-decomp]] 的变形速率张量 $e_{ij}$ 成正比的应力，得到纳维-斯托克斯方程。只要有任何守恒量被流动携带，连续性方程就会重新出现——[[electrodynamics]] 中的电荷、量子力学（[[quantum-1]]）中的概率、[[analytical-mechanics/hamiltonian]] 中刘维尔（Liouville）定理的相空间密度——而拉格朗日与欧拉两种观点正是数值求解它的两条路（[[computation]]）。同一内容的工程处理见机械工程图谱的[流体运动学](/learn/mechanical/lesson.php?c=fluid-mechanics&l=fluid-kinematics)一课。
+运动学现在已经就位。[[continuum/ideal-flow]] 加上力：取 $\sigma_{ij} = -p\,\delta_{ij}$，柯西运动方程化为欧拉方程，它与 [[#eq-continuity]] 一起决定流动；伯努利（Bernoulli）方程与开尔文（Kelvin）的环量守恒定理随之而来。[[continuum/viscous-flow]] 加上与 [[#eq-decomp]] 的变形速率张量 $e_{ij}$ 成正比的应力，得到纳维-斯托克斯方程。只要有任何守恒量被流动携带，连续性方程就会重新出现——[[electrodynamics]] 中的电荷、量子力学（[[quantum-1]]）中的概率、[[analytical-mechanics/hamiltonian]] 中刘维尔（Liouville）定理的相空间密度——而拉格朗日与欧拉两种观点正是数值求解它的两条路（[[computation]]）。同一内容的工程处理见机械工程图谱的[流体运动学](/a/mechanical/lesson.php?c=fluid-mechanics&l=fluid-kinematics)一课。
 
 ::: summary
 - 欧拉速度场 $\mathbf v(\mathbf x, t)$ 与拉格朗日运动 $\mathbf X(\mathbf a, t)$ 由 $\partial_t\mathbf X = \mathbf v(\mathbf X, t)$ 相连。

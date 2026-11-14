@@ -222,7 +222,7 @@ $$ {#eq-alexander}
 :::
 
 ::: application 农业与医学中的肌肉
-猪的骨骼肌兰尼碱受体基因 *RYR1* 的一个单核苷酸点突变（Arg615Cys）导致**猪应激综合征**：患病猪在应激或接触麻醉药氟烷时 Ca²⁺ 失控释放、肌肉强直、体温致命性升高，其肉苍白而渗水。这一突变由 J. Fujii 及其同事于1991年鉴定，而它此前一直在扩散，因为它与更瘦肉的胴体相关；此后 DNA 检测已让育种者将其清除。相关的 *RYR1* 变异在人类中引起恶性高热，可参见 [医学图谱：肌肉骨骼系统与皮肤](/learn/medicine/course.php?c=musculoskeletal) 以及 [医学图谱：肌肉](/learn/medicine/lesson.php?c=physiology&l=muscle) 中的人类肌肉生理。
+猪的骨骼肌兰尼碱受体基因 *RYR1* 的一个单核苷酸点突变（Arg615Cys）导致**猪应激综合征**：患病猪在应激或接触麻醉药氟烷时 Ca²⁺ 失控释放、肌肉强直、体温致命性升高，其肉苍白而渗水。这一突变由 J. Fujii 及其同事于1991年鉴定，而它此前一直在扩散，因为它与更瘦肉的胴体相关；此后 DNA 检测已让育种者将其清除。相关的 *RYR1* 变异在人类中引起恶性高热，可参见 [医学图谱：肌肉骨骼系统与皮肤](/a/medicine/course.php?c=musculoskeletal) 以及 [医学图谱：肌肉](/a/medicine/lesson.php?c=physiology&l=muscle) 中的人类肌肉生理。
 :::
 
 ::: history

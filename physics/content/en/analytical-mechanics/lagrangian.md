@@ -440,7 +440,7 @@ Pierre-Louis Moreau de Maupertuis proposed a principle of least action in 1744, 
 
 [[analytical-mechanics/central-forces]] uses the cyclic angle of a central-force Lagrangian to reduce a three-dimensional problem to one dimension. [[analytical-mechanics/rigid-bodies]] applies the Lagrangian to rotation and needs the energy and angular momentum integrals proved here. [[analytical-mechanics/hamiltonian]] makes the generalised momenta $p_j$ into independent variables alongside the $q_j$; the energy function $h$ of [[#def-energy-function]] becomes the Hamiltonian. The same variational principle, with $L$ replaced by a Lagrangian density, gives Maxwell's equations and the field equations of particle physics, and in [[quantum-1]] Feynman's path integral weights every path by $e^{iS/\hbar}$, so that stationary action emerges as the classical limit.
 
-For more on second-order equations such as those produced by [[#eq-lagrange]], see [second-order linear equations](/learn/maths/lesson.php?c=ode&l=second-order-linear) and [existence and uniqueness](/learn/maths/lesson.php?c=ode&l=existence-uniqueness) in the Maths Atlas.
+For more on second-order equations such as those produced by [[#eq-lagrange]], see [second-order linear equations](/a/maths/lesson.php?c=ode&l=second-order-linear) and [existence and uniqueness](/a/maths/lesson.php?c=ode&l=existence-uniqueness) in the Maths Atlas.
 
 ::: summary
 - A functional $J[y] = \int f(y, y', x)\,\dd x$ is stationary under variations with fixed endpoints if and only if $y$ obeys the Euler–Lagrange equation $\frac{\dd}{\dd x}\frac{\partial f}{\partial y'} = \frac{\partial f}{\partial y}$; the proof is integration by parts plus the fundamental lemma.

@@ -43,7 +43,7 @@ The triple-helical region of each α1 chain of type I collagen contains 1014 ami
 
 (b) $1014\times0.286\ \mathrm{nm} = 290\ \mathrm{nm}$, consistent with the measured length of the collagen molecule, about 300 nm, and its diameter of about 1.5 nm — an exceptionally long, thin rod.
 
-(c) In the triple helix the three chains wind round a common axis, and every third residue of each chain lies on the inside, packed against the other two chains. Only glycine, with a hydrogen atom as its side chain, fits there. A substitution of a single glycine by a bulkier residue disrupts the helix locally; in type I collagen such substitutions cause the brittle-bone disease osteogenesis imperfecta. The hydroxylation of proline, which stabilises the helix, requires vitamin C, which is why its deficiency (scurvy) weakens connective tissues; clinical aspects are in [Medicine Atlas](/learn/medicine/course.php?c=musculoskeletal).
+(c) In the triple helix the three chains wind round a common axis, and every third residue of each chain lies on the inside, packed against the other two chains. Only glycine, with a hydrogen atom as its side chain, fits there. A substitution of a single glycine by a bulkier residue disrupts the helix locally; in type I collagen such substitutions cause the brittle-bone disease osteogenesis imperfecta. The hydroxylation of proline, which stabilises the helix, requires vitamin C, which is why its deficiency (scurvy) weakens connective tissues; clinical aspects are in [Medicine Atlas](/a/medicine/course.php?c=musculoskeletal).
 :::
 :::
 
@@ -166,7 +166,7 @@ Apoptotic cells expose PS (detected with fluorescent annexin V, which binds it) 
 :::
 
 ::: application Cell death and disease
-Too little apoptosis contributes to cancer and autoimmunity; too much to neurodegeneration and to the tissue damage of strokes and heart attacks. Tumour cells evade death by overexpressing Bcl-2 or losing p53, and drugs that mimic BH3-only proteins ("BH3 mimetics", such as venetoclax) restore the cell's ability to die; their clinical use is described in [Medicine Atlas: cancer biology](/learn/medicine/lesson.php?c=pathology&l=cancer-biology), and cell injury and necrosis in tissues in [Medicine Atlas: cell injury](/learn/medicine/lesson.php?c=pathology&l=cell-injury). Many viruses carry genes that block apoptosis of the cells they infect, a sign of how important the programme is in defence.
+Too little apoptosis contributes to cancer and autoimmunity; too much to neurodegeneration and to the tissue damage of strokes and heart attacks. Tumour cells evade death by overexpressing Bcl-2 or losing p53, and drugs that mimic BH3-only proteins ("BH3 mimetics", such as venetoclax) restore the cell's ability to die; their clinical use is described in [Medicine Atlas: cancer biology](/a/medicine/lesson.php?c=pathology&l=cancer-biology), and cell injury and necrosis in tissues in [Medicine Atlas: cell injury](/a/medicine/lesson.php?c=pathology&l=cell-injury). Many viruses carry genes that block apoptosis of the cells they infect, a sign of how important the programme is in defence.
 :::
 
 ::: history

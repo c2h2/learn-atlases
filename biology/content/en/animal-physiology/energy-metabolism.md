@@ -58,7 +58,7 @@ so on log–log axes the relation is a straight line with slope $b$ and intercep
 This is a statistical description, not a law of nature. The exponent is estimated by regression of $\log Y$ on $\log M$, and its value depends on which species are included, how they are sampled, and the regression method; the units of $a$ depend on $b$ (W kg⁻ᵇ when $Y$ is in watts and $M$ in kilograms).
 :::
 
-The log–log form explains why allometry is useful. Over a factor of a million in body mass, a small difference in exponent produces a large difference in prediction, and the logarithmic plot lets mice and elephants appear on the same graph with equal weight. Allometric analysis and power-law fitting are developed mathematically in [Maths Atlas](/learn/maths/); here we concentrate on what the exponents mean.
+The log–log form explains why allometry is useful. Over a factor of a million in body mass, a small difference in exponent produces a large difference in prediction, and the logarithmic plot lets mice and elephants appear on the same graph with equal weight. Allometric analysis and power-law fitting are developed mathematically in [Maths Atlas](/a/maths/); here we concentrate on what the exponents mean.
 
 ### The surface law
 
@@ -234,7 +234,7 @@ A 50 g songbird has 33 g of body water. After an injection of doubly labelled wa
 :::
 
 ::: application Energetics in conservation and farming
-Allometric relations let ecologists estimate the food requirements of animals that cannot be measured directly — how many fish a colony of seabirds must catch, how much grazing land an antelope population needs, whether a reserve can support a population of large predators. In animal husbandry, the "metabolic body weight" $M^{0.75}$ introduced by Kleiber and Brody is still used to scale the maintenance feed and drug doses of livestock of different sizes; for humans the corresponding practice is a matter for [Medicine Atlas: pharmacology](/learn/medicine/course.php?c=pharmacology).
+Allometric relations let ecologists estimate the food requirements of animals that cannot be measured directly — how many fish a colony of seabirds must catch, how much grazing land an antelope population needs, whether a reserve can support a population of large predators. In animal husbandry, the "metabolic body weight" $M^{0.75}$ introduced by Kleiber and Brody is still used to scale the maintenance feed and drug doses of livestock of different sizes; for humans the corresponding practice is a matter for [Medicine Atlas: pharmacology](/a/medicine/course.php?c=pharmacology).
 :::
 
 ::: history

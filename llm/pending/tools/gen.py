@@ -8,7 +8,7 @@ course/chapter's own domain lexicon via a noun map. Structure is preserved;
 only the surface nouns change.
 """
 import json, os, sys, re
-ROOT = "/var/www/f.g77k.com/learn/llm/content/en"
+ROOT = "/var/www/f.g77k.com/a/llm/content/en"
 # Anatomy nouns used by the template, in the order they appear.
 ANAT = ["development","embryo","organ","layer","tissue","week","stage","defect",
         "structure","tube","field","effect","limb","bud","germ","somite","segment",

@@ -59,7 +59,7 @@ caption: 三次与五次时间标度的归一化位置$s$和速度$ds/d\tau$随�
 $$
 q(t) = q_0 + v_0t + a_2t^2 + a_3t^3,\qquad a_2 = \frac{3(q_f - q_0) - (2v_0 + v_f)T}{T^2},\qquad a_3 = \frac{-2(q_f - q_0) + (v_0 + v_f)T}{T^3},
 $$ {#eq-cubic-velocities}
-它完全按[[#prop-polynomials]]的方法由$q(T) = q_f$、$\dot q(T) = v_f$得到。把这样的三次多项式首尾相接，并在路径点处使速度相等，得到的轨迹速度连续，但加速度一般不连续。如果选取路径点速度使**加速度**也相等，就得到**三次样条**：对$N$段，$N-1$个内点处的加速度连续条件加上两个端点条件，通过一个三对角线性方程组确定全部路径点速度（[数学图谱中的插值](/learn/maths/lesson.php?c=numerical-analysis&l=interpolation)）。
+它完全按[[#prop-polynomials]]的方法由$q(T) = q_f$、$\dot q(T) = v_f$得到。把这样的三次多项式首尾相接，并在路径点处使速度相等，得到的轨迹速度连续，但加速度一般不连续。如果选取路径点速度使**加速度**也相等，就得到**三次样条**：对$N$段，$N-1$个内点处的加速度连续条件加上两个端点条件，通过一个三对角线性方程组确定全部路径点速度（[数学图谱中的插值](/a/maths/lesson.php?c=numerical-analysis&l=interpolation)）。
 
 ::: example 经过一个路径点的固支三次样条 {#ex-spline}
 一个关节须在$t = 0$时静止于$0^\circ$，在$t = 1\,\mathrm s$时经过$40^\circ$，并在$t = 3\,\mathrm s$时停在$30^\circ$。求加速度连续的三次样条。

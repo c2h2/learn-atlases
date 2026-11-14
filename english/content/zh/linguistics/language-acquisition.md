@@ -215,7 +215,7 @@ caption: 萨弗兰、阿斯林和纽波特（1996）所用的那种言语流的�
 
 ## 后续内容
 
-本章描述了其习得过程的那些结构——形态、疑问句、关系从句——在 [[linguistics/morphology]] 和 [[linguistics/clauses-movement]] 中有分析。学习者怎样利用关于学习的已知知识，是 [[core-vocabulary/learning-and-remembering]] 和 [[listening-and-conversation/how-listening-works]] 等实用课的主题。成年学习者的发音目标见 [[sounds-of-english/sounds-for-chinese-speakers]] 和《世界英语》（*World Englishes*）课程。仅从文本中学习的语言模型，以及它们与儿童有什么不同，在[大语言模型图谱](/learn/llm/)中有讨论。
+本章描述了其习得过程的那些结构——形态、疑问句、关系从句——在 [[linguistics/morphology]] 和 [[linguistics/clauses-movement]] 中有分析。学习者怎样利用关于学习的已知知识，是 [[core-vocabulary/learning-and-remembering]] 和 [[listening-and-conversation/how-listening-works]] 等实用课的主题。成年学习者的发音目标见 [[sounds-of-english/sounds-for-chinese-speakers]] 和《世界英语》（*World Englishes*）课程。仅从文本中学习的语言模型，以及它们与儿童有什么不同，在[大语言模型图谱](/a/llm/)中有讨论。
 
 ::: summary
 - 儿童在没有教学的情况下习得第一语言，在所有语言中（无论是有声语言还是手语）都沿着相似的路径，时间上的个体差异很大。

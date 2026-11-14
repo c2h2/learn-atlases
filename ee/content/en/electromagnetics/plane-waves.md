@@ -1,6 +1,6 @@
 Far from the antenna that launched it, a radio wave arriving at your phone looks, over the few centimetres of the phone, like a wave whose fields are the same everywhere on a flat surface perpendicular to its direction of travel. That idealisation, the **uniform plane wave**, is the simplest solution of Maxwell's equations, and it already contains most of the physics of electromagnetic propagation: the speed of light, the fixed ratio of electric to magnetic field that we call the intrinsic impedance, the attenuation of waves in lossy media, the skin effect that confines high-frequency currents to the surface of conductors, the polarisation of the field, and the flow of power described by the Poynting vector.
 
-This chapter derives the wave equation from [[electromagnetics/maxwells-equations]], solves it for plane waves in lossless media, then in lossy media, with the two important limits of low-loss dielectrics and good conductors. It ends with power flow and polarisation. Throughout we use the phasor form, with fields varying as $e^{j\omega t}$. The physics side is in the Physics Atlas [waves in media](/learn/physics/lesson.php?c=electrodynamics&l=waves-in-media).
+This chapter derives the wave equation from [[electromagnetics/maxwells-equations]], solves it for plane waves in lossless media, then in lossy media, with the two important limits of low-loss dielectrics and good conductors. It ends with power flow and polarisation. Throughout we use the phasor form, with fields varying as $e^{j\omega t}$. The physics side is in the Physics Atlas [waves in media](/a/physics/lesson.php?c=electrodynamics&l=waves-in-media).
 
 ## The wave equation
 
@@ -16,7 +16,7 @@ $$
 \nabla^2\mathbf E = \mu\epsilon\frac{\partial^2\mathbf E}{\partial t^2},
 $$ {#eq-wave}
 
-and $\mathbf H$ obeys the same equation. Each Cartesian component satisfies the scalar wave equation of the Maths Atlas [wave equation](/learn/maths/lesson.php?c=pde&l=wave-equation) chapter with speed $u = 1/\sqrt{\mu\epsilon}$. If the field depends only on $z$ and $t$, the general solution is d'Alembert's,
+and $\mathbf H$ obeys the same equation. Each Cartesian component satisfies the scalar wave equation of the Maths Atlas [wave equation](/a/maths/lesson.php?c=pde&l=wave-equation) chapter with speed $u = 1/\sqrt{\mu\epsilon}$. If the field depends only on $z$ and $t$, the general solution is d'Alembert's,
 
 $$
 E_x(z,t) = f^+(t - z/u) + f^-(t + z/u) ,

@@ -83,7 +83,7 @@ $L(A) = \Sigma^*$ iff the complement DFA (swap accepting states) has empty langu
 
 ## There are more languages than machines
 
-A counting argument shows that undecidable — indeed unrecognisable — languages exist, without exhibiting one. It uses the notions of countable and uncountable sets ([Maths Atlas: cardinality](/learn/maths/lesson.php?c=proofs&l=cardinality)).
+A counting argument shows that undecidable — indeed unrecognisable — languages exist, without exhibiting one. It uses the notions of countable and uncountable sets ([Maths Atlas: cardinality](/a/maths/lesson.php?c=proofs&l=cardinality)).
 
 ::: theorem Some languages are not Turing-recognisable {#thm-counting}
 For any alphabet $\Sigma$, the set of Turing machines over $\Sigma$ is countable, while the set of languages over $\Sigma$ is uncountable. Hence there are languages that no Turing machine recognises.

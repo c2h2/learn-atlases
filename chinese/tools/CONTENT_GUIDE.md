@@ -1,6 +1,6 @@
 # Chinese Atlas — content guide
 
-Chinese Atlas (`/learn/chinese/`, 中文图谱) is a course in Chinese language and literature for native
+Chinese Atlas (`/a/chinese/`, 中文图谱) is a course in Chinese language and literature for native
 speakers: readers who grew up with Chinese in mainland China, have finished secondary school, and
 want to know their language and its literature at the level of a university degree in 汉语言文学 —
 characters and calligraphy, modern Chinese, classical Chinese, literature from the 《诗经》 to the
@@ -13,16 +13,16 @@ exercises with full answers.
 **Lessons are written in Chinese.** Pages open in Chinese by default (`default_lang` in the spec).
 An English version of a lesson is optional and comes later (`tools/TRANSLATION_GUIDE_EN.md`).
 
-The engine is Maths Atlas's (`/learn/maths/`). For markup and depth, read its reference lesson
-`/var/www/f.g77k.com/learn/maths/content/en/calculus-1/limits.md`; for Chinese typography and tone,
-read one of its Chinese lessons, `/var/www/f.g77k.com/learn/maths/content/zh/multivariable/gradient.md`.
+The engine is Maths Atlas's (`/a/maths/`). For markup and depth, read its reference lesson
+`/var/www/f.g77k.com/a/maths/content/en/calculus-1/limits.md`; for Chinese typography and tone,
+read one of its Chinese lessons, `/var/www/f.g77k.com/a/maths/content/zh/multivariable/gradient.md`.
 Both are far from our subject; their care is the standard.
 
 **Every lesson is written by hand to this standard.** Never generate lessons, course fields,
 examples, exercises or milestones from templates, scripts or language models. A chapter is either
 written properly or it stays "待编写" (its file does not exist): a placeholder that looks like a
-lesson is worse than no lesson. Medicine Atlas shows why — `/learn/medicine/pending/README.md`
-describes the generated filler that had to be taken off that site, and `/learn/medicine/tools/check.php`
+lesson is worse than no lesson. Medicine Atlas shows why — `/a/medicine/pending/README.md`
+describes the generated filler that had to be taken off that site, and `/a/medicine/tools/check.php`
 now rejects its patterns. This atlas's checker does not have those patterns yet; the rule applies
 all the same.
 
@@ -284,7 +284,7 @@ a `::: quiz`.
 
 ## 7. Markup and notation
 
-Exactly as in Maths Atlas — see `/var/www/f.g77k.com/learn/maths/tools/CONTENT_GUIDE.md` §5 for
+Exactly as in Maths Atlas — see `/var/www/f.g77k.com/a/maths/tools/CONTENT_GUIDE.md` §5 for
 headings, lists, tables, blocks, references (`[[#id]]`, `[[course/chapter]]`,
 `[[course/chapter#id]]`) and attributes. What behaves differently with Chinese text (tested on this
 engine):
@@ -303,7 +303,7 @@ engine):
 - **Faulty and correct forms**: ✗ before the faulty sentence, ✓ before the corrected one —
   ✗ 通过这次活动，使我们受到了深刻的教育。 ✓ 这次活动使我们受到了深刻的教育。
 - **Typography** follows GB/T 15834—2011 (标点符号用法) and GB/T 15835—2011 (出版物上数字用法), and the
-  Chinese conventions of the other atlases (`/learn/maths/tools/TRANSLATION_GUIDE_ZH.md`):
+  Chinese conventions of the other atlases (`/a/maths/tools/TRANSLATION_GUIDE_ZH.md`):
   full-width punctuation in Chinese sentences (，。；：？！、（）“”‘’《》〈〉——……); numbers and formulas
   written directly next to Han characters (2019年, 第3章); a Latin word separated from Han characters
   by one half-width space, except next to full-width punctuation. Titles of books and of poems in
@@ -331,12 +331,12 @@ engine):
 - **Avoid** braces `{…}` at the end of a heading or block line (they are read as attributes) and the
   pattern `[text](http…)` unless you mean a link. Raw HTML is escaped and there is no image syntax:
   ruby, images and vertical text are not available in lessons (§9).
-- **Links to other atlases** are plain Markdown links (`[数学图谱](/learn/maths/)`): `[[…]]` only
+- **Links to other atlases** are plain Markdown links (`[数学图谱](/a/maths/)`): `[[…]]` only
   works inside one atlas.
 
 ## 8. Interactive figures
 
-The available types are in `data/widgets.json`; try each at `/learn/chinese/lab.php?w=<type>`:
+The available types are in `data/widgets.json`; try each at `/a/chinese/lab.php?w=<type>`:
 
 - `plot` — curves with sliders: tone contours on Chao's five-level scale (pitch against time, with
   `if()` for the dipping third tone), Zipf's law for characters or words (plot the logarithms: the
@@ -388,7 +388,7 @@ appears unchanged on English pages.
 ## 10. Check your work
 
 ```
-cd /var/www/f.g77k.com/learn/chinese
+cd /var/www/f.g77k.com/a/chinese
 bash tools/check.sh --lang=zh <course> [<course> …]
 ```
 
@@ -404,7 +404,7 @@ grep -cE '^::: ?(example|exercise|quiz|widget|definition|theorem)\b' content/zh/
 ```
 
 (the second line counts blocks of all six kinds together; look at the rendered page for the
-breakdown). Preview at `http://f.g77k.com/learn/chinese/lesson.php?c=<course>&l=<chapter>` (Chinese
+breakdown). Preview at `http://f.g77k.com/a/chinese/lesson.php?c=<course>&l=<chapter>` (Chinese
 by default; add `&lang=en` for the English page) — from this machine with
 `curl --resolve f.g77k.com:80:127.0.0.1 …` or `node tools/shot.js "lesson.php?c=…&l=…" out.png`;
 `node tools/labcheck.js --lessons --zh` loads every figure in every Chinese lesson. Read your

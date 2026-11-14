@@ -182,7 +182,7 @@ caption: 一张人工编制的表，不是来自真实语料库的计数。每�
 :::
 
 ::: proof
-规则1和规则2源于齐夫定律：由于大多数类符和大多数序列都是罕见的，任何规模的语料库都会使大多数可能的三元语法和几乎所有可能的五元语法从未出现。规则4源于 [[linguistics/phrases-constituents]] 和 [[linguistics/clauses-movement]] 中描述的语言结构：依存关系是在成分之上定义的，而成分可以是任意长度的，不是在固定数量的词之上定义的。神经语言模型自21世纪10年代以来已在大多数应用中取代了 n 元语法模型，它们解决了这两个问题：它们把词表示为一个习得空间中的点，使相似的语境能共享信息，并且能以很长的文本为条件。现代聊天机器人背后的大语言模型，其核心是用规模巨大的语料库训练出来的下一个词预测器；它们怎样工作，在[大语言模型图谱](/learn/llm/)中有解释。它们的成功重新提出了本课程的一些老问题——语法有多少能仅从分布中习得——这些问题将在 [[linguistics/language-acquisition]] 中再次讨论。
+规则1和规则2源于齐夫定律：由于大多数类符和大多数序列都是罕见的，任何规模的语料库都会使大多数可能的三元语法和几乎所有可能的五元语法从未出现。规则4源于 [[linguistics/phrases-constituents]] 和 [[linguistics/clauses-movement]] 中描述的语言结构：依存关系是在成分之上定义的，而成分可以是任意长度的，不是在固定数量的词之上定义的。神经语言模型自21世纪10年代以来已在大多数应用中取代了 n 元语法模型，它们解决了这两个问题：它们把词表示为一个习得空间中的点，使相似的语境能共享信息，并且能以很长的文本为条件。现代聊天机器人背后的大语言模型，其核心是用规模巨大的语料库训练出来的下一个词预测器；它们怎样工作，在[大语言模型图谱](/a/llm/)中有解释。它们的成功重新提出了本课程的一些老问题——语法有多少能仅从分布中习得——这些问题将在 [[linguistics/language-acquisition]] 中再次讨论。
 :::
 
 ::: example 一个二元语法估计 {#ex-bigram}
@@ -210,7 +210,7 @@ caption: 一张人工编制的表，不是来自真实语料库的计数。每�
 
 ## 后续内容
 
-实用技能见 [[collocation-and-register/using-a-corpus]]、[[collocation-and-register/what-is-collocation]] 和 [[core-vocabulary/frequency-and-coverage]]。不同时期和不同变体的语料库为 [[linguistics/variation-change]] 提供证据；学习者语料库以及儿童在言语中可能追踪的统计信息见 [[linguistics/language-acquisition]]。建立在同样的计数思想以及更多东西之上的语言模型，在[大语言模型图谱](/learn/llm/)中有解释。
+实用技能见 [[collocation-and-register/using-a-corpus]]、[[collocation-and-register/what-is-collocation]] 和 [[core-vocabulary/frequency-and-coverage]]。不同时期和不同变体的语料库为 [[linguistics/variation-change]] 提供证据；学习者语料库以及儿童在言语中可能追踪的统计信息见 [[linguistics/language-acquisition]]。建立在同样的计数思想以及更多东西之上的语言模型，在[大语言模型图谱](/a/llm/)中有解释。
 
 ::: summary
 - 语料库通过其**抽样**和**平衡性**来**代表**一个界定了的总体；没有哪个语料库能代表整个“英语”，所以必须说明它的设计。

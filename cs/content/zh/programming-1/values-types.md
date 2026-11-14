@@ -125,7 +125,7 @@ $$
 第一个等式就是 `%` 的定义移项而得。至于不等式，令 $q = \lfloor a/b \rfloor$。由向下取整的定义，$q \le a/b < q + 1$。各乘 $b > 0$ 保持不等号：$qb \le a < qb + b$。各减 $qb$ 得 $0 \le a - qb < b$，而 $a - qb = a \mathbin{\%} b$。
 :::
 
-所以只要除数为正，余数就永远介于 $0$ 与 $b - 1$ 之间，*无论 $a$ 的符号如何*。这正是数学中的约定（也是 [数学图谱：同余](/learn/maths/lesson.php?c=number-theory&l=congruences) 中 `mod` 的约定），也正是它让 `%` 在“绕回”时有用武之地：即使 `day + 3` 是负数，`(day + 3) % 7` 也给出 $0$ 到 $6$ 之间的一天。（当 $b < 0$ 时，余数落在 $b < r \le 0$ 内；同一个论证，把所有不等号反向即可。）
+所以只要除数为正，余数就永远介于 $0$ 与 $b - 1$ 之间，*无论 $a$ 的符号如何*。这正是数学中的约定（也是 [数学图谱：同余](/a/maths/lesson.php?c=number-theory&l=congruences) 中 `mod` 的约定），也正是它让 `%` 在“绕回”时有用武之地：即使 `day + 3` 是负数，`(day + 3) % 7` 也给出 $0$ 到 $6$ 之间的一天。（当 $b < 0$ 时，余数落在 $b < r \le 0$ 内；同一个论证，把所有不等号反向即可。）
 
 ::: example 负操作数 {#ex-negative}
 计算 `-7 // 2`、`-7 % 2`、`-17 // 5` 与 `-17 % 5`，并验证除法恒等式。
@@ -347,7 +347,7 @@ Temperature in Celsius: 21.5
 
 ## 后续内容
 
-值、运算符与变量已在手中，下一步是让程序会判定、会重复：[[programming-1/control-flow]]引入 `if`、`while` 与 `for`，它们全都由本章的布尔表达式驱动。字符串将在[[programming-1/sequences]]中充分展开。整数与浮点数在内存中作为位模式的表示——补码、定宽整数的溢出、双精度数的精确布局——属于[[computer-systems]]；长串计算中舍入误差的分析则属于数值分析（[数学图谱：浮点数运算](/learn/maths/lesson.php?c=numerical-analysis&l=floating-point)）。
+值、运算符与变量已在手中，下一步是让程序会判定、会重复：[[programming-1/control-flow]]引入 `if`、`while` 与 `for`，它们全都由本章的布尔表达式驱动。字符串将在[[programming-1/sequences]]中充分展开。整数与浮点数在内存中作为位模式的表示——补码、定宽整数的溢出、双精度数的精确布局——属于[[computer-systems]]；长串计算中舍入误差的分析则属于数值分析（[数学图谱：浮点数运算](/a/maths/lesson.php?c=numerical-analysis&l=floating-point)）。
 
 ::: summary
 - 每个值都有一个**类型**，它规定值代表什么、运算符对它意味着什么；基本类型是 `int`、`float`、`str`、`bool` 与 `NoneType`。Python 是动态类型且强类型的：用 `int()`、`float()` 与 `str()` 显式转换。

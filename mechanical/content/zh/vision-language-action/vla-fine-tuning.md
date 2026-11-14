@@ -1,6 +1,6 @@
 制造机械臂的公司很少会从零训练一个视觉-动作模型。经济账指向相反的方向：一个视觉-语言模型的预训练要花数百万 GPU 小时，而一个在来自许多机器人的几十万条示范上训练出来的通用机器人模型，已有多个团队提供开放权重（截至2026年）。实际的问题是：如何拿这样一个模型，让它擅长*你的*任务、跑在*你的*机械臂上——用你的运动学、相机、夹爪与控制频率——只用几百或几千条示范，又不破坏这个预训练模型值得你从它出发的那些东西。
 
-本章由外向内跟着一条 VLA 的训练流水线走。我们描述各个阶段（VLM 预训练、机器人预训练、后训练），说明由许多数据集构成的**预训练混合**如何加权，机器人训练为什么与网络数据**联合训练**，以及来自不同机器人的数据如何靠**跨具身归一化**变得兼容。然后转向一个团队真正要做的决定：**全量微调**还是 LoRA 这样的**参数高效**方法，把内存与算力算清楚，最后谈数据量、超参数，以及微调后的策略过拟合或遗忘的信号。架构见 [[vision-language-action/vla-architectures]]；数据见 [[vision-language-action/demonstration-data]]。微调大模型的一般机制见 LLM Atlas 的[指令微调](/learn/llm/lesson.php?c=post-training&l=instruction-tuning)、[参数高效微调](/learn/llm/lesson.php?c=post-training&l=parameter-efficient-tuning)与[数据混合](/learn/llm/lesson.php?c=pretraining&l=data-mixtures)。
+本章由外向内跟着一条 VLA 的训练流水线走。我们描述各个阶段（VLM 预训练、机器人预训练、后训练），说明由许多数据集构成的**预训练混合**如何加权，机器人训练为什么与网络数据**联合训练**，以及来自不同机器人的数据如何靠**跨具身归一化**变得兼容。然后转向一个团队真正要做的决定：**全量微调**还是 LoRA 这样的**参数高效**方法，把内存与算力算清楚，最后谈数据量、超参数，以及微调后的策略过拟合或遗忘的信号。架构见 [[vision-language-action/vla-architectures]]；数据见 [[vision-language-action/demonstration-data]]。微调大模型的一般机制见 LLM Atlas 的[指令微调](/a/llm/lesson.php?c=post-training&l=instruction-tuning)、[参数高效微调](/a/llm/lesson.php?c=post-training&l=parameter-efficient-tuning)与[数据混合](/a/llm/lesson.php?c=pretraining&l=data-mixtures)。
 
 ## 训练流水线 {#sec-pipeline}
 

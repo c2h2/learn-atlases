@@ -59,7 +59,7 @@ Long motions often pass through intermediate **via points** without stopping. Th
 $$
 q(t) = q_0 + v_0t + a_2t^2 + a_3t^3,\qquad a_2 = \frac{3(q_f - q_0) - (2v_0 + v_f)T}{T^2},\qquad a_3 = \frac{-2(q_f - q_0) + (v_0 + v_f)T}{T^3},
 $$ {#eq-cubic-velocities}
-obtained exactly as in [[#prop-polynomials]] from $q(T) = q_f$, $\dot q(T) = v_f$. Chaining such cubics with matching velocities at the via points gives a trajectory with continuous velocity but generally discontinuous acceleration. Choosing the via-point velocities so that the *accelerations* also match gives a **cubic spline**: with $N$ segments, continuity of acceleration at the $N-1$ interior points plus two end conditions determines all via velocities through a tridiagonal linear system ([interpolation in Maths Atlas](/learn/maths/lesson.php?c=numerical-analysis&l=interpolation)).
+obtained exactly as in [[#prop-polynomials]] from $q(T) = q_f$, $\dot q(T) = v_f$. Chaining such cubics with matching velocities at the via points gives a trajectory with continuous velocity but generally discontinuous acceleration. Choosing the via-point velocities so that the *accelerations* also match gives a **cubic spline**: with $N$ segments, continuity of acceleration at the $N-1$ interior points plus two end conditions determines all via velocities through a tridiagonal linear system ([interpolation in Maths Atlas](/a/maths/lesson.php?c=numerical-analysis&l=interpolation)).
 
 ::: example A clamped cubic spline through a via point {#ex-spline}
 A joint must start at $0^\circ$ at rest at $t = 0$, pass through $40^\circ$ at $t = 1\,\mathrm s$, and stop at $30^\circ$ at $t = 3\,\mathrm s$. Find the cubic spline with continuous acceleration.

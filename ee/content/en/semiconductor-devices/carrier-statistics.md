@@ -14,7 +14,7 @@ Throughout the course we use the following values for silicon at $T = 300\,\math
 
 Device physics conventionally measures concentrations per cubic centimetre and lengths in centimetres or micrometres; we follow that convention in the text and convert to SI where an answer is to be checked.
 
-The statistical mechanics behind the Fermi–Dirac distribution is derived in [Quantum statistics](/learn/physics/lesson.php?c=statistical-mechanics&l=quantum-statistics) in the Physics atlas; here we state it and use it.
+The statistical mechanics behind the Fermi–Dirac distribution is derived in [Quantum statistics](/a/physics/lesson.php?c=statistical-mechanics&l=quantum-statistics) in the Physics atlas; here we state it and use it.
 
 ## Electrons, holes and the intrinsic semiconductor
 

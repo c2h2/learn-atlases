@@ -79,7 +79,7 @@ Hugh Beyer and Karen Holtzblatt's **contextual inquiry** (from their book *Conte
 
 ### Surveys and how many to ask
 
-Surveys measure how *common* something is — once you know what to ask, typically from interviews. Their precision depends on the number of responses, through a standard result of sampling theory ([Maths Atlas: confidence intervals](/learn/maths/lesson.php?c=statistics&l=confidence-intervals)).
+Surveys measure how *common* something is — once you know what to ask, typically from interviews. Their precision depends on the number of responses, through a standard result of sampling theory ([Maths Atlas: confidence intervals](/a/maths/lesson.php?c=statistics&l=confidence-intervals)).
 
 ::: proposition Margin of error of a proportion {#prop-moe}
 Suppose $n$ respondents are a simple random sample from a large population in which a proportion $p$ would answer "yes", and let $\hat p$ be the sample proportion. By the normal approximation to the binomial, an approximate 95% confidence interval for $p$ is $\hat p \pm 1.96\sqrt{\hat p(1-\hat p)/n}$. The half-width (the **margin of error**) is at most $0.98/\sqrt{n}$, and to guarantee a margin of at most $m$ whatever $p$ is, it suffices that

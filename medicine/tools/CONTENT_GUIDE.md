@@ -1,6 +1,6 @@
 # Medicine Atlas — content guide
 
-Medicine Atlas (`/learn/medicine/`) teaches the medical curriculum in depth for students and
+Medicine Atlas (`/a/medicine/`) teaches the medical curriculum in depth for students and
 curious readers: how the body works, how disease develops, how it is recognised and treated, and
 how the health of populations is protected. Every chapter is a long, self-contained lesson in the
 style of a very good textbook: motivation and mechanisms first, then precise definitions, explained
@@ -10,8 +10,8 @@ answers.
 **It is an educational resource, not medical advice.** Every page carries a footer saying so. The
 rules in §4 keep the content consistent with that.
 
-The site runs on the same engine as Maths Atlas (`/learn/maths/`). Read its reference lesson,
-`/var/www/f.g77k.com/learn/maths/content/en/calculus-1/limits.md`, for the expected depth, tone
+The site runs on the same engine as Maths Atlas (`/a/maths/`). Read its reference lesson,
+`/var/www/f.g77k.com/a/maths/content/en/calculus-1/limits.md`, for the expected depth, tone
 and markup.
 
 ## 1. Files
@@ -87,7 +87,7 @@ The timeline (`data/milestones.json`) needs about 30 field-wide milestones `{"ye
 
 ## 5. Markup
 
-As in Maths Atlas — see `/var/www/f.g77k.com/learn/maths/tools/CONTENT_GUIDE.md` §5 for blocks
+As in Maths Atlas — see `/var/www/f.g77k.com/a/maths/tools/CONTENT_GUIDE.md` §5 for blocks
 (`:::definition`, `:::theorem` (Principle), `:::proof` (Explanation), `:::example` +
 `:::solution`, `:::exercise`, `:::quiz`, `:::warning`, `:::intuition`, `:::application`,
 `:::history`, `:::summary`), references (`[[#id]]`, `[[course/chapter]]`,
@@ -100,7 +100,7 @@ The available types are in `data/widgets.json`: function plots (dose–response,
 concentration–time), slope fields, phase planes and ODE solvers (pharmacokinetic and epidemic
 models), probability distributions, Bayes' rule (diagnostic tests), hypothesis tests and
 confidence intervals (trials), regression, Markov chains (disease progression), Monte Carlo and
-networks (contact tracing). Try each at `/learn/medicine/lab.php?w=<type>`. Medicine-specific
+networks (contact tracing). Try each at `/a/medicine/lab.php?w=<type>`. Medicine-specific
 figures (pharmacokinetics, ECG rhythms, the oxygen–haemoglobin curve, spirometry, blood-gas
 interpretation, the SIR epidemic, Kaplan–Meier curves, forest plots, growth charts, pedigrees …)
 are planned in `tools/WIDGET_GUIDE.md`; use a type only once it is in the catalogue.
@@ -122,10 +122,10 @@ are planned in `tools/WIDGET_GUIDE.md`; use a type only once it is in the catalo
 ## 7. Check your work
 
 ```
-cd /var/www/f.g77k.com/learn/medicine
+cd /var/www/f.g77k.com/a/medicine
 bash tools/check.sh <course> [<course> …]
 ```
 
 Fix every `ERROR`; depth `warn`ings must be gone for finished lessons. Preview at
-`http://f.g77k.com/learn/medicine/lesson.php?c=<course>&l=<chapter>` (from this machine:
+`http://f.g77k.com/a/medicine/lesson.php?c=<course>&l=<chapter>` (from this machine:
 `curl --resolve f.g77k.com:80:127.0.0.1 …` or `node tools/shot.js "lesson.php?c=…&l=…" out.png`).

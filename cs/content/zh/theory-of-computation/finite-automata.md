@@ -6,7 +6,7 @@
 
 ## 串与语言
 
-本课程的一切都关于**串**：机器的输入是串，程序是串，甚至"这个程序会停机吗"这类问题也将被表述为关于串集的问题。全文使用 [Maths Atlas：集合](/learn/maths/lesson.php?c=proofs&l=sets) 中的集合记号。
+本课程的一切都关于**串**：机器的输入是串，程序是串，甚至"这个程序会停机吗"这类问题也将被表述为关于串集的问题。全文使用 [Maths Atlas：集合](/a/maths/lesson.php?c=proofs&l=sets) 中的集合记号。
 
 ::: definition 字母表、串与语言 {#def-strings}
 **字母表**是一个有限非空集 $\Sigma$，其元素称为**符号**。$\Sigma$ 上的一个**串**（或**词**）是一个由符号 $a_i \in \Sigma$ 组成的有限序列 $w = a_1 a_2 \cdots a_n$；其**长度**为 $\lvert w\rvert = n$。长度为 $0$ 的唯一串是**空串** $\varepsilon$。$\Sigma$ 上所有串的集合记作 $\Sigma^*$，而 $\Sigma^n$ 是长度恰为 $n$ 的串的集合。$\Sigma$ 上的一个**语言**是任意子集 $L \subseteq \Sigma^*$。
@@ -80,7 +80,7 @@ $M$ **接受** $w$，若 $\hat\delta(q_0, w) \in F$；否则**拒绝**它。**$M
 :::
 
 ::: proof
-对 $\lvert y\rvert$ 归纳（见 [Maths Atlas：归纳法](/learn/maths/lesson.php?c=proofs&l=induction)）。若 $y = \varepsilon$，两边都等于 $\hat\delta(q, x)$。否则 $y = za$，其中 $a \in \Sigma$；先由定义，再对 $z$ 用归纳假设，最后再由定义，得
+对 $\lvert y\rvert$ 归纳（见 [Maths Atlas：归纳法](/a/maths/lesson.php?c=proofs&l=induction)）。若 $y = \varepsilon$，两边都等于 $\hat\delta(q, x)$。否则 $y = za$，其中 $a \in \Sigma$；先由定义，再对 $z$ 用归纳假设，最后再由定义，得
 
 $$
 \hat\delta(q, xza) = \delta\bigl(\hat\delta(q, xz), a\bigr) = \delta\bigl(\hat\delta(\hat\delta(q, x), z), a\bigr) = \hat\delta\bigl(\hat\delta(q, x), za\bigr).
@@ -326,7 +326,7 @@ caption: [[#ex-product]] 的乘积自动机，状态 $xy$ 代表有序对 $(x, y
 
 ## 有限自动机的应用
 
-DFA 模型是理想化的，但并非书斋里的东西。`lex` 及其后继工具生成的词法分析器就是编译成表的 DFA（[[compilers]]）。硬件设计者把控制器指定为**有限状态机**，它们被综合成触发器和逻辑门；Mealy 与 Moore 变体给每条转移或每个状态加上一个**输出**（[电气电子工程图谱](/learn/ee/)）。协议规格——包括 RFC 9293 中的 TCP 连接状态机——就是用状态图给出的（[[networks]]）。模型检验器验证一个系统（抽象成一个大型有限自动机）永远达不到坏状态。而你的编辑器里每次正则表达式搜索，都以某种形式在跑我们接下来两章要造的自动机。
+DFA 模型是理想化的，但并非书斋里的东西。`lex` 及其后继工具生成的词法分析器就是编译成表的 DFA（[[compilers]]）。硬件设计者把控制器指定为**有限状态机**，它们被综合成触发器和逻辑门；Mealy 与 Moore 变体给每条转移或每个状态加上一个**输出**（[电气电子工程图谱](/a/ee/)）。协议规格——包括 RFC 9293 中的 TCP 连接状态机——就是用状态图给出的（[[networks]]）。模型检验器验证一个系统（抽象成一个大型有限自动机）永远达不到坏状态。而你的编辑器里每次正则表达式搜索，都以某种形式在跑我们接下来两章要造的自动机。
 
 每个场合的局限都是同一个：内存事先固定，与输入长度无关。$k$ 个状态的 DFA 对任意长度的输入至多记住 $\log_2 k$ 个比特。计数、配对括号、比较串的两半都超出它的能力；后面几章的下推自动机和图灵机会增加随输入增长的内存。
 

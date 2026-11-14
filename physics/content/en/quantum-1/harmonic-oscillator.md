@@ -185,7 +185,7 @@ $$
 h'' - 2\xi h' + (K - 1)h = 0.
 $$ {#eq-hermite-ode}
 
-Try a power series $h = \sum_j a_j\xi^j$ ([Maths Atlas: series solutions](/learn/maths/lesson.php?c=ode&l=series-solutions)). Substituting and collecting the coefficient of $\xi^j$,
+Try a power series $h = \sum_j a_j\xi^j$ ([Maths Atlas: series solutions](/a/maths/lesson.php?c=ode&l=series-solutions)). Substituting and collecting the coefficient of $\xi^j$,
 
 $$
 (j + 1)(j + 2)a_{j+2} - 2ja_j + (K - 1)a_j = 0, \qquad a_{j+2} = \frac{2j + 1 - K}{(j+1)(j+2)}\,a_j.
@@ -355,7 +355,7 @@ The polynomials in [[#def-hermite]] are the "physicists'" Hermite polynomials, w
 :::
 
 ::: application Oscillators everywhere
-The vibrational spectra of molecules (as in [[#ex-hcl]]) and the heat capacity of solids (Einstein's model of 1907 treats each atom as three oscillators with $\langle E\rangle$ from Planck's formula, plus zero point) are direct applications. Each mode of the electromagnetic field in a cavity is an oscillator whose quanta are photons, and the zero-point energy of those modes produces the Casimir force between conducting plates, measured to a few per cent in 1997. Ions in a Paul trap and the mechanical membranes of optomechanics are cooled into their oscillator ground states and manipulated one quantum at a time with $\hat a$ and $\hat a^\dagger$. The Chemistry Atlas develops the molecular applications in [vibration and rotation](/learn/chemistry/lesson.php?c=quantum-chemistry&l=vibration-rotation).
+The vibrational spectra of molecules (as in [[#ex-hcl]]) and the heat capacity of solids (Einstein's model of 1907 treats each atom as three oscillators with $\langle E\rangle$ from Planck's formula, plus zero point) are direct applications. Each mode of the electromagnetic field in a cavity is an oscillator whose quanta are photons, and the zero-point energy of those modes produces the Casimir force between conducting plates, measured to a few per cent in 1997. Ions in a Paul trap and the mechanical membranes of optomechanics are cooled into their oscillator ground states and manipulated one quantum at a time with $\hat a$ and $\hat a^\dagger$. The Chemistry Atlas develops the molecular applications in [vibration and rotation](/a/chemistry/lesson.php?c=quantum-chemistry&l=vibration-rotation).
 :::
 
 ::: history The oscillator in the new mechanics

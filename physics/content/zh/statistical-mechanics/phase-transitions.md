@@ -332,7 +332,7 @@ $T = 2.269$ 基本上就是 $T_c$：严格无限格点的磁化强度为零，�
 :::
 
 ::: application 走出伊辛模型的模拟
-按 Metropolis 规则的蒙特卡洛抽样，或者按沃尔夫（Wolff）（1989）一类团簇算法——一次翻转整个关联畴，破解 $T_c$ 附近单次翻转的减速——如今是计算相互作用系统性质的标准手段：液体、聚合物、合金、夸克的格点规范理论，以及分子流体的吸附与相平衡。化学的一面，包括由分子间势计算真实气体与液体，见化学图谱的[相互作用的分子：实际气体与液体](/learn/chemistry/lesson.php?c=statistical-thermodynamics&l=real-gases-liquids)。
+按 Metropolis 规则的蒙特卡洛抽样，或者按沃尔夫（Wolff）（1989）一类团簇算法——一次翻转整个关联畴，破解 $T_c$ 附近单次翻转的减速——如今是计算相互作用系统性质的标准手段：液体、聚合物、合金、夸克的格点规范理论，以及分子流体的吸附与相平衡。化学的一面，包括由分子间势计算真实气体与液体，见化学图谱的[相互作用的分子：实际气体与液体](/a/chemistry/lesson.php?c=statistical-thermodynamics&l=real-gases-liquids)。
 :::
 
 ::: history 从安德鲁斯到威尔逊

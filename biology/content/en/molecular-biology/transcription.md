@@ -229,7 +229,7 @@ Take the error rate of RNA polymerase II as $10^{-5}$ per nucleotide (an order-o
 :::
 
 ::: application Drugs and toxins that target transcription
-The antibiotic **rifampicin** binds the β subunit of bacterial RNA polymerase in the RNA exit channel and blocks extension beyond 2–3 nucleotides. It does not affect eukaryotic polymerases, so it is selective. Resistance arises from mutations in the *rpoB* gene that alter the binding pocket, and these mutations are among the most-studied in bacterial genetics. **Actinomycin D** intercalates into DNA and blocks all polymerases. It is used in the laboratory to stop transcription and measure mRNA half-lives. **α-Amanitin** binds Pol II near the active site and blocks translocation; this is why the death cap is so dangerous, since liver cells, which take up the toxin, stop making mRNA. Clinical use of these agents is discussed in Medicine Atlas ([/learn/medicine/](/learn/medicine/)).
+The antibiotic **rifampicin** binds the β subunit of bacterial RNA polymerase in the RNA exit channel and blocks extension beyond 2–3 nucleotides. It does not affect eukaryotic polymerases, so it is selective. Resistance arises from mutations in the *rpoB* gene that alter the binding pocket, and these mutations are among the most-studied in bacterial genetics. **Actinomycin D** intercalates into DNA and blocks all polymerases. It is used in the laboratory to stop transcription and measure mRNA half-lives. **α-Amanitin** binds Pol II near the active site and blocks translocation; this is why the death cap is so dangerous, since liver cells, which take up the toxin, stop making mRNA. Clinical use of these agents is discussed in Medicine Atlas ([/a/medicine/](/a/medicine/)).
 :::
 
 ::: history

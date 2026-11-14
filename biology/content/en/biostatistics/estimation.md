@@ -1,6 +1,6 @@
 Darwin's fifteen pairs of maize plants gave a mean difference in height of 20.9 eighths of an inch in favour of the cross-fertilised plants ([[biostatistics/data-and-variation#ex-darwin-location]]). Had he raised fifteen different pairs, he would have obtained a different number. How different? Is the true advantage of crossing, the one we would find with unlimited plants, probably close to 21, or could it be zero, or twice as large? A single number from a sample is an **estimate**, and an estimate is useless without a statement of how precise it is.
 
-This chapter is about that statement. It starts with how samples should be taken, so that statistics estimate what we intend; then introduces the **sampling distribution** of a statistic, the **standard error** that measures its spread, and the **central limit theorem** that makes the sampling distribution of a mean approximately normal; then builds **confidence intervals** for means and proportions using Student's t distribution; and ends with the bootstrap, which does the same job by computation. The underlying theory is in Maths Atlas ([sampling](/learn/maths/lesson.php?c=statistics&l=sampling), [estimation](/learn/maths/lesson.php?c=statistics&l=estimation) and [confidence intervals](/learn/maths/lesson.php?c=statistics&l=confidence-intervals)).
+This chapter is about that statement. It starts with how samples should be taken, so that statistics estimate what we intend; then introduces the **sampling distribution** of a statistic, the **standard error** that measures its spread, and the **central limit theorem** that makes the sampling distribution of a mean approximately normal; then builds **confidence intervals** for means and proportions using Student's t distribution; and ends with the bootstrap, which does the same job by computation. The underlying theory is in Maths Atlas ([sampling](/a/maths/lesson.php?c=statistics&l=sampling), [estimation](/a/maths/lesson.php?c=statistics&l=estimation) and [confidence intervals](/a/maths/lesson.php?c=statistics&l=confidence-intervals)).
 
 ## Samples and populations {#sampling}
 
@@ -55,7 +55,7 @@ $$
 is approximately standard normal, whatever the shape of the distribution of the $X_i$. Precisely, $\Prob(Z \le z) \to \Phi(z)$ as $n \to \infty$, for every $z$.
 :::
 
-The proof (by characteristic functions) is in [Maths Atlas: limit theorems](/learn/maths/lesson.php?c=probability&l=limit-theorems). How large is "large"? It depends on how far the population is from normal: for a symmetric population $n = 10$ is usually plenty; for a strongly skewed one, such as parasite loads or species abundances, $n$ may need to be 30, 50 or more. Try it.
+The proof (by characteristic functions) is in [Maths Atlas: limit theorems](/a/maths/lesson.php?c=probability&l=limit-theorems). How large is "large"? It depends on how far the population is from normal: for a symmetric population $n = 10$ is usually plenty; for a strongly skewed one, such as parasite loads or species abundances, $n$ may need to be 30, 50 or more. Try it.
 
 ::: widget clt
 dist: skewed
@@ -130,7 +130,7 @@ In inches the 95 % interval is 0.004 to 5.2 inches. The data are compatible with
 :::
 :::
 
-What does the 95 % mean? Not that there is a 95 % probability that $\mu$ lies between 0.03 and 41.84: $\mu$ is a fixed (unknown) number and either does or does not lie there. The 95 % describes the *method*: if Darwin's experiment were repeated many times and an interval computed each time by [[#eq-ci-mean]], 95 % of the intervals would contain the true mean difference. Our interval is one of them, and we do not know whether it is one of the lucky 95 %. (A Bayesian **credible interval** does carry the direct probability interpretation, given a prior; see [Maths Atlas: Bayesian inference](/learn/maths/lesson.php?c=statistics&l=bayesian). With vague priors the two intervals are often numerically similar.)
+What does the 95 % mean? Not that there is a 95 % probability that $\mu$ lies between 0.03 and 41.84: $\mu$ is a fixed (unknown) number and either does or does not lie there. The 95 % describes the *method*: if Darwin's experiment were repeated many times and an interval computed each time by [[#eq-ci-mean]], 95 % of the intervals would contain the true mean difference. Our interval is one of them, and we do not know whether it is one of the lucky 95 %. (A Bayesian **credible interval** does carry the direct probability interpretation, given a prior; see [Maths Atlas: Bayesian inference](/a/maths/lesson.php?c=statistics&l=bayesian). With vague priors the two intervals are often numerically similar.)
 
 ::: widget confidence
 dist: normal

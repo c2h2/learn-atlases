@@ -1,6 +1,6 @@
 前面几章假定轨道已知，问的是航天器将在哪里。实践中的问题通常恰恰相反。雷达捕捉到一个新发射的物体，望远镜在星空背景上记录下一道划痕，地面站测量探测器无线电信号的距离和多普勒频移——必须从这些零碎信息中重建轨道。这就是**轨道确定**（orbit determination）。它有两个方面。**初轨确定**在没有任何先验知识的情况下，由最少数量的观测求出*一条*轨道：三个位置矢量（吉布斯法）、两个位置和它们之间的时间（兰伯特问题），或三对角度（高斯法）。**轨道估计**则用最小二乘法由大量冗余的、含噪声的观测改进这条轨道，并告诉我们结果的不确定度有多大。兰伯特问题还有另一重身份，它是轨道设计的核心——求出在给定时间内连接两点的转移轨道——我们将在[[orbital-mechanics/interplanetary-trajectories]]中再次使用它。
 
-本章要用到[[orbital-mechanics/orbital-elements]]中的矢量和轨道根数、[[orbital-mechanics/orbital-position-time]]中关于普适变量的注记，以及一些线性代数（[最小二乘](/learn/maths/lesson.php?c=linear-algebra&l=least-squares)）。
+本章要用到[[orbital-mechanics/orbital-elements]]中的矢量和轨道根数、[[orbital-mechanics/orbital-position-time]]中关于普适变量的注记，以及一些线性代数（[最小二乘](/a/maths/lesson.php?c=linear-algebra&l=least-squares)）。
 
 ## 地面观测 {#sec-observations}
 

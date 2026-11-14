@@ -1,6 +1,6 @@
 “我们的策略有85%的成功率。”这句话是多数机器人学习工作的最终成果，单看它几乎什么也说明不了。85%是对多少次试次而言——20次还是2,000次？从哪些位置出发，由谁挑选？与什么相比，在同一天、由知道正在运行哪个策略的评测者测出的？两个策略各做20次，10个百分点的差距完全落在单凭运气也能产生的范围之内；一个在训练所用物体上表现出色的策略，可能会在顾客放到它面前的第一个新杯子上失败。学得的策略不能像程序那样逐行验证，所以它们的评测*就是*它们的规格说明：你测到了什么、测得有多仔细，就是你对将要交付之物所能知道的全部。
 
-本章把评测当作一场试验来对待。我们先定义指标，把成功建模为二项结果，并构造在试次数少时也表现正确的置信区间（Wilson 区间），再用能利用配平初始条件的检验来比较两个策略。接着介绍规程——设盲、交错进行、预先登记的试次——以及应当沿之检验泛化的各个泛化轴。最后一部分讲仿真：用于比较各方法的基准（LIBERO、SIMPLER、CALVIN 等）、它们能告诉你什么、不能告诉你什么，以及仿真到真机的差距（sim-to-real gap）。所用的统计就是 Maths Atlas 中的[置信区间](/learn/maths/lesson.php?c=statistics&l=confidence-intervals)与[假设检验](/learn/maths/lesson.php?c=statistics&l=hypothesis-testing)；语言模型上的同样问题在 LLM Atlas 的[评测中的统计](/learn/llm/lesson.php?c=evaluation&l=evaluation-statistics)中讨论。
+本章把评测当作一场试验来对待。我们先定义指标，把成功建模为二项结果，并构造在试次数少时也表现正确的置信区间（Wilson 区间），再用能利用配平初始条件的检验来比较两个策略。接着介绍规程——设盲、交错进行、预先登记的试次——以及应当沿之检验泛化的各个泛化轴。最后一部分讲仿真：用于比较各方法的基准（LIBERO、SIMPLER、CALVIN 等）、它们能告诉你什么、不能告诉你什么，以及仿真到真机的差距（sim-to-real gap）。所用的统计就是 Maths Atlas 中的[置信区间](/a/maths/lesson.php?c=statistics&l=confidence-intervals)与[假设检验](/a/maths/lesson.php?c=statistics&l=hypothesis-testing)；语言模型上的同样问题在 LLM Atlas 的[评测中的统计](/a/llm/lesson.php?c=evaluation&l=evaluation-statistics)中讨论。
 
 ## 要测什么 {#sec-metrics}
 

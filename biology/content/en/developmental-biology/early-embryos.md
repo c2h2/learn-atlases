@@ -63,7 +63,7 @@ The Ca²⁺ rise is not only the trigger of the slow block; it activates the who
 ::: example Why the calcium signal must regenerate {#ex-calcium-wave}
 A *Xenopus* egg is 1.2 mm in diameter. (a) How long would Ca²⁺ take to spread 1.2 mm by simple diffusion, if its effective diffusion coefficient in the buffered cytoplasm is $D = 13\ \mathrm{\mu m^2\,s^{-1}}$ (Nancy Allbritton, Tobias Meyer and Lubert Stryer, 1992)? Use the characteristic time $t \approx L^2/2D$ for diffusion over a distance $L$ in one dimension. (b) Compare with the time taken by a wave travelling at 10 µm s⁻¹.
 ::: solution
-(a) $t \approx L^2/2D = (1200\ \mathrm{\mu m})^2/(2\times13\ \mathrm{\mu m^2\,s^{-1}}) = 1.44\times10^6/26\ \mathrm{s} = 5.5\times10^4$ s, about 15 hours — and by then the concentration would have been diluted almost to nothing. Diffusion time grows with the *square* of distance ([heat equation](/learn/maths/lesson.php?c=pde&l=heat-equation)), so it is fast over a micrometre and hopelessly slow over a millimetre.
+(a) $t \approx L^2/2D = (1200\ \mathrm{\mu m})^2/(2\times13\ \mathrm{\mu m^2\,s^{-1}}) = 1.44\times10^6/26\ \mathrm{s} = 5.5\times10^4$ s, about 15 hours — and by then the concentration would have been diluted almost to nothing. Diffusion time grows with the *square* of distance ([heat equation](/a/maths/lesson.php?c=pde&l=heat-equation)), so it is fast over a micrometre and hopelessly slow over a millimetre.
 
 (b) A wave at 10 µm s⁻¹ crosses 1.2 mm in 120 s, two minutes. A propagating wave covers distance in proportion to time, not to its square root, because each region releases its own stored Ca²⁺ when triggered by its neighbour. That is how a signal from one point can activate an entire giant cell almost uniformly and quickly.
 :::
@@ -192,7 +192,7 @@ caption: Diameter of a blastomere in micrometres after $x$ equal cleavages of an
 :::
 
 ::: application Assisted reproduction
-The biology described here underlies *in vitro* fertilisation, in which eggs are fertilised outside the body and early embryos are cultured to the blastocyst stage before transfer to the uterus, and intracytoplasmic sperm injection, in which a single sperm is injected into an egg — bypassing the zona pellucida and the fusion step but relying on the egg's activation by the sperm's PLCζ. The clinical practice of these techniques, and the regulation of research on human embryos (in many countries limited to the first 14 days of development), belong to the Medicine Atlas ([Medicine Atlas](/learn/medicine/)).
+The biology described here underlies *in vitro* fertilisation, in which eggs are fertilised outside the body and early embryos are cultured to the blastocyst stage before transfer to the uterus, and intracytoplasmic sperm injection, in which a single sperm is injected into an egg — bypassing the zona pellucida and the fusion step but relying on the egg's activation by the sperm's PLCζ. The clinical practice of these techniques, and the regulation of research on human embryos (in many countries limited to the first 14 days of development), belong to the Medicine Atlas ([Medicine Atlas](/a/medicine/)).
 :::
 
 ::: history

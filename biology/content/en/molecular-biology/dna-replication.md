@@ -1,6 +1,6 @@
 Every cell division begins with a copy of the genome, and the copy must be very nearly perfect. A human cell copies $6.2\times10^9$ base pairs in a few hours and makes, on average, less than one uncorrected mistake. *E. coli* copies its 4.6 million base pairs in forty minutes, at a thousand nucleotides per second at each fork. Both cells start replication at defined places, make sure that each part of the genome is copied exactly once, and finish the ends of their chromosomes. The proteins that do this, the **replisome**, form one of the fastest and most accurate machines in biology.
 
-The chemistry of nucleotide addition, the two-metal-ion mechanism of polymerases and the reason chains grow only 5′→3′ are explained in Chemistry Atlas ([Nucleic acids, Replication](/learn/chemistry/lesson.php?c=biochemistry&l=nucleic-acids)). This chapter takes the biologist's view. We start with the experiment that showed how DNA is copied, then build the replication fork protein by protein, follow it from origin to terminus in bacteria and in eukaryotes, and end with the two problems that a linear chromosome adds: licensing each origin once per cycle and replicating the ends.
+The chemistry of nucleotide addition, the two-metal-ion mechanism of polymerases and the reason chains grow only 5′→3′ are explained in Chemistry Atlas ([Nucleic acids, Replication](/a/chemistry/lesson.php?c=biochemistry&l=nucleic-acids)). This chapter takes the biologist's view. We start with the experiment that showed how DNA is copied, then build the replication fork protein by protein, follow it from origin to terminus in bacteria and in eukaryotes, and end with the two problems that a linear chromosome adds: licensing each origin once per cycle and replicating the ends.
 
 ## Semiconservative replication
 
@@ -233,7 +233,7 @@ Human fibroblast telomeres lose about 50–100 bp per division in culture withou
 :::
 :::
 
-Telomerase is active in the germ line, in many stem-cell populations and in most cancer cells, which escape the division limit by re-expressing *TERT* or, in a minority of tumours, by a recombination-based mechanism (alternative lengthening of telomeres). Most somatic human cells have little activity. Mice have long telomeres and active telomerase in many tissues, so the "telomere clock" is not a universal timer of ageing. Telomere biology in human health and disease is discussed in Medicine Atlas ([/learn/medicine/](/learn/medicine/)).
+Telomerase is active in the germ line, in many stem-cell populations and in most cancer cells, which escape the division limit by re-expressing *TERT* or, in a minority of tumours, by a recombination-based mechanism (alternative lengthening of telomeres). Most somatic human cells have little activity. Mice have long telomeres and active telomerase in many tissues, so the "telomere clock" is not a universal timer of ageing. Telomere biology in human health and disease is discussed in Medicine Atlas ([/a/medicine/](/a/medicine/)).
 
 ::: quiz
 A yeast mutant lacks the RNA subunit of telomerase. Which outcome do you expect over many generations?

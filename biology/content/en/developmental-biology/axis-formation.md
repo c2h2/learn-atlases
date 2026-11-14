@@ -231,7 +231,7 @@ Shigenori Nonaka, Nobutaka Hirokawa and colleagues described this **nodal flow**
 Downstream, on the left side only, the TGF-β family protein **Nodal** is expressed in the lateral plate mesoderm, together with its feedback inhibitor **Lefty** and the transcription factor **Pitx2**, which directs the asymmetric morphogenesis of the organs. Lefty1 in the midline acts as a barrier that keeps Nodal from spreading to the right. Not all vertebrates use cilia-driven flow — chick embryos break symmetry by cell movements around Hensen's node — but the left-sided Nodal–Lefty–Pitx2 cassette is widely conserved.
 
 ::: application Ciliopathies and laterality
-In humans, about half of people with primary ciliary dyskinesia, an inherited defect of motile cilia, have *situs inversus*, a mirror-image arrangement of the internal organs: without nodal flow, the left–right axis is set at random, so half the time it is reversed. The association, first noticed by Manes Kartagener in the 1930s, made sense only after nodal flow was discovered. The clinical features of laterality and ciliary disorders are covered by the Medicine Atlas ([Medicine Atlas](/learn/medicine/)).
+In humans, about half of people with primary ciliary dyskinesia, an inherited defect of motile cilia, have *situs inversus*, a mirror-image arrangement of the internal organs: without nodal flow, the left–right axis is set at random, so half the time it is reversed. The association, first noticed by Manes Kartagener in the 1930s, made sense only after nodal flow was discovered. The clinical features of laterality and ciliary disorders are covered by the Medicine Atlas ([Medicine Atlas](/a/medicine/)).
 :::
 
 ::: history

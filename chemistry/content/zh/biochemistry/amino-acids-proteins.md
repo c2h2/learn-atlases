@@ -347,7 +347,7 @@ $$
 ::: exercise 冷变性 {level=3 check="254"}
 某蛋白质 $T_\mathrm{m} = 323.15\ \mathrm{K}$，$\Delta H_\mathrm{m} = 300\ \mathrm{kJ\,mol^{-1}}$，$\Delta C_p = 8.0\ \mathrm{kJ\,K^{-1}\,mol^{-1}}$，与温度无关。(a) 由[[#eq-stability]]证明稳定性最大的温度为 $T_\mathrm{max} = T_\mathrm{m}\exp(-\Delta H_\mathrm{m}/T_\mathrm{m}\Delta C_p)$ 并求值。(b) 求 $298.15\ \mathrm{K}$ 下的 $\Delta G_\mathrm{unf}$。(c) 求冷变性温度，即 $\Delta G_\mathrm{unf} = 0$ 的较低根，并评论它能否被观察到。（冷变性温度以 K 输入，取整到开尔文。）
 ::: hint
-(c) 在 $T_\mathrm{max}$ 以下取几个试探温度算出 $\Delta G_\mathrm{unf}$，用二分法或牛顿法（两者在[数学图谱](/learn/maths/)中都有讨论）。
+(c) 在 $T_\mathrm{max}$ 以下取几个试探温度算出 $\Delta G_\mathrm{unf}$，用二分法或牛顿法（两者在[数学图谱](/a/maths/)中都有讨论）。
 :::
 ::: solution
 (a) 求导：$d\Delta G/dT = -\Delta H_\mathrm{m}/T_\mathrm{m} + \Delta C_p[1 - \ln(T/T_\mathrm{m}) - 1] = -\Delta H_\mathrm{m}/T_\mathrm{m} - \Delta C_p\ln(T/T_\mathrm{m})$。令其为零得 $\ln(T/T_\mathrm{m}) = -\Delta H_\mathrm{m}/(T_\mathrm{m}\Delta C_p)$，即所给公式；这就是 $\Delta S_\mathrm{unf} = 0$ 的温度。数值上指数为 $-300/(323.15 \times 8.0) = -0.1160$，$T_\mathrm{max} = 323.15\,e^{-0.1160} = 287.7\ \mathrm{K}$。

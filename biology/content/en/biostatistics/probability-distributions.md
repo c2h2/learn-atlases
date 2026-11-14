@@ -1,6 +1,6 @@
 Why do four offspring of two heterozygous parents sometimes include no recessive individuals at all, when Mendel's ratio says one in four should be? Why did Bortkiewicz's horse-kick deaths follow such a regular pattern, when each death was an accident? Why are so many biological measurements shaped like a bell? The answers all come from probability, the mathematics of chance. Probability is the language in which a statistical model says what data *would* look like if a hypothesis were true, and so it underlies every estimate and every test in this course.
 
-This chapter introduces the rules of probability as they are used in biology, the idea of a random variable and its distribution, and the three distributions that turn up everywhere: the **binomial** for counts of successes among a fixed number of trials, the **Poisson** for counts of rare independent events, and the **normal** for measurements that are sums of many small effects. The formal theory, with proofs, is in Maths Atlas: [probability spaces](/learn/maths/lesson.php?c=probability&l=probability-spaces), [discrete random variables](/learn/maths/lesson.php?c=probability&l=discrete-random-variables), [continuous random variables](/learn/maths/lesson.php?c=probability&l=continuous-random-variables) and [limit theorems](/learn/maths/lesson.php?c=probability&l=limit-theorems).
+This chapter introduces the rules of probability as they are used in biology, the idea of a random variable and its distribution, and the three distributions that turn up everywhere: the **binomial** for counts of successes among a fixed number of trials, the **Poisson** for counts of rare independent events, and the **normal** for measurements that are sums of many small effects. The formal theory, with proofs, is in Maths Atlas: [probability spaces](/a/maths/lesson.php?c=probability&l=probability-spaces), [discrete random variables](/a/maths/lesson.php?c=probability&l=discrete-random-variables), [continuous random variables](/a/maths/lesson.php?c=probability&l=continuous-random-variables) and [limit theorems](/a/maths/lesson.php?c=probability&l=limit-theorems).
 
 ## The rules of probability {#rules}
 
@@ -22,7 +22,7 @@ $$
 so that $\Prob(A \text{ and } B) = \Prob(A \mid B)\,\Prob(B)$ (the **multiplication rule**). Events $A$ and $B$ are **independent** if $\Prob(A \mid B) = \Prob(A)$, equivalently $\Prob(A \text{ and } B) = \Prob(A)\Prob(B)$.
 :::
 
-Probabilities can be read as long-run relative frequencies — the fraction of offspring with the recessive phenotype in a very large cross — or as degrees of belief. The rules are the same; the frequency reading is the one used by the classical methods in most of this course, and the Bayesian reading is developed in [Maths Atlas: Bayesian inference](/learn/maths/lesson.php?c=statistics&l=bayesian).
+Probabilities can be read as long-run relative frequencies — the fraction of offspring with the recessive phenotype in a very large cross — or as degrees of belief. The rules are the same; the frequency reading is the one used by the classical methods in most of this course, and the Bayesian reading is developed in [Maths Atlas: Bayesian inference](/a/maths/lesson.php?c=statistics&l=bayesian).
 
 Mendelian genetics is a laboratory of probability. In a cross *Aa* × *Aa*, each parent transmits *A* or *a* with probability ½, independently of the other parent (Mendel's first law, [[genetics/mendelian-inheritance]]). By the multiplication rule each of the four combinations has probability ¼; by the addition rule the probability of a heterozygote, *Aa* or *aA*, is ½, and that of the dominant phenotype (*AA* or *Aa*) is ¾.
 
@@ -33,7 +33,7 @@ Before we know the phenotype, the child is *AA* with probability ¼, *Aa* with �
 $$
 \Prob(Aa \mid \text{unaffected}) = \frac{\Prob(Aa)}{\Prob(\text{unaffected})} = \frac{1/2}{3/4} = \frac23.
 $$
-The answer is not ½: knowing the phenotype changes the probabilities of the genotypes. This is the simplest example of the reasoning used in pedigree analysis. (Genetic counselling of real families belongs to [Medicine Atlas: genetics](/learn/medicine/course.php?c=genetics).)
+The answer is not ½: knowing the phenotype changes the probabilities of the genotypes. This is the simplest example of the reasoning used in pedigree analysis. (Genetic counselling of real families belongs to [Medicine Atlas: genetics](/a/medicine/course.php?c=genetics).)
 :::
 :::
 
@@ -166,7 +166,7 @@ The curve is symmetric about $\mu$ and bell-shaped, with points of inflection at
 If $X \sim \Normal(\mu, \sigma^2)$ then $Z = (X - \mu)/\sigma \sim \Normal(0, 1)$, so $\Prob(X \le x) = \Phi\big((x - \mu)/\sigma\big)$. If $X_1$ and $X_2$ are independent and normal, then $a X_1 + b X_2$ is normal, with mean $a\mu_1 + b\mu_2$ and variance $a^2\sigma_1^2 + b^2\sigma_2^2$. In particular the mean of $n$ independent $\Normal(\mu, \sigma^2)$ observations is exactly $\Normal(\mu, \sigma^2/n)$.
 :::
 
-The proof of the closure of the normal family under sums is in [Maths Atlas: joint distributions](/learn/maths/lesson.php?c=probability&l=joint-distributions); the means and variances follow from the rules above. The quantity $z = (x - \mu)/\sigma$ is a **z-score**: the number of standard deviations an observation lies from the mean.
+The proof of the closure of the normal family under sums is in [Maths Atlas: joint distributions](/a/maths/lesson.php?c=probability&l=joint-distributions); the means and variances follow from the rules above. The quantity $z = (x - \mu)/\sigma$ is a **z-score**: the number of standard deviations an observation lies from the mean.
 
 ::: example Sepal length in *Iris setosa* {#ex-normal}
 Sepal length in Anderson's sample of 50 *Iris setosa* flowers has mean 5.006 cm and standard deviation 0.352 cm, and its distribution is roughly normal. Treating these as the population values, (a) what proportion of flowers have sepals longer than 5.5 cm, and (b) between which lengths do the central 95 % of flowers lie?
@@ -179,7 +179,7 @@ Sepal length in Anderson's sample of 50 *Iris setosa* flowers has mean 5.006 cm 
 
 ### Why so many traits are normal
 
-The normal distribution is not a law of nature, but it arises whenever a quantity is the sum of many small, independent contributions. This is the **central limit theorem**, made precise in [[biostatistics/estimation]] and proved in [Maths Atlas: limit theorems](/learn/maths/lesson.php?c=probability&l=limit-theorems). Galton built a machine to demonstrate it: balls falling through rows of pins, each deflected left or right at random, pile up in a bell shape.
+The normal distribution is not a law of nature, but it arises whenever a quantity is the sum of many small, independent contributions. This is the **central limit theorem**, made precise in [[biostatistics/estimation]] and proved in [Maths Atlas: limit theorems](/a/maths/lesson.php?c=probability&l=limit-theorems). Galton built a machine to demonstrate it: balls falling through rows of pins, each deflected left or right at random, pile up in a bell shape.
 
 ::: widget galton
 caption: Galton's board. Each ball is deflected left or right at random at every row of pins, so its final bin is the number of rightward deflections — a binomial count. As balls accumulate, the histogram approaches the normal curve. This is the model behind Ronald Fisher's 1918 explanation of continuous variation: a trait influenced by many genes of small, additive effect (plus environmental effects) is a sum of many small contributions, and is therefore close to normal.

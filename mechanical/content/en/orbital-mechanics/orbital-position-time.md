@@ -110,7 +110,7 @@ Time: $t - t_p = M/n = 0.5238/1.6569\times10^{-4} = 3161\ \mathrm{s} = 52.7\ \ma
 
 ## Solving Kepler's equation {#sec-solving}
 
-The inverse problem — where is the spacecraft at a given time? — requires $E$ from $M$. The equation $E - e\sin E = M$ is transcendental; there is no finite formula for $E$ in elementary functions. But the function $f(E) = E - e\sin E - M$ is perfect for Newton's method ([root finding](/learn/maths/lesson.php?c=numerical-analysis&l=root-finding)): its derivative $f'(E) = 1 - e\cos E \ge 1 - e > 0$ never vanishes for an ellipse, so $f$ is strictly increasing, the root is unique, and it lies in $[M - e, M + e]$ because $\lvert e\sin E\rvert \le e$.
+The inverse problem — where is the spacecraft at a given time? — requires $E$ from $M$. The equation $E - e\sin E = M$ is transcendental; there is no finite formula for $E$ in elementary functions. But the function $f(E) = E - e\sin E - M$ is perfect for Newton's method ([root finding](/a/maths/lesson.php?c=numerical-analysis&l=root-finding)): its derivative $f'(E) = 1 - e\cos E \ge 1 - e > 0$ never vanishes for an ellipse, so $f$ is strictly increasing, the root is unique, and it lies in $[M - e, M + e]$ because $\lvert e\sin E\rvert \le e$.
 
 ::: algorithm Newton's method for Kepler's equation {#alg-kepler-newton}
 Given $M$ (reduced to $0 \le M < 2\pi$) and $0 \le e < 1$:

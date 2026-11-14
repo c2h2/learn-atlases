@@ -153,7 +153,7 @@ For every integer $n \ge 0$, `factorial(n)` terminates and returns $n!$.
 :::
 
 ::: proof
-By induction on $n$. *Base case:* `factorial(0)` returns $1 = 0!$ without recursing. *Inductive step:* let $n \ge 1$ and assume that `factorial(n - 1)` terminates and returns $(n-1)!$. Then `factorial(n)` makes that one call, multiplies its result by $n$ and returns $n \cdot (n - 1)! = n!$ by [[#eq-factorial]]; it terminates because the call it makes terminates. By induction the claim holds for all $n \ge 0$. (See [Maths Atlas: induction](/learn/maths/lesson.php?c=proofs&l=induction).)
+By induction on $n$. *Base case:* `factorial(0)` returns $1 = 0!$ without recursing. *Inductive step:* let $n \ge 1$ and assume that `factorial(n - 1)` terminates and returns $(n-1)!$. Then `factorial(n)` makes that one call, multiplies its result by $n$ and returns $n \cdot (n - 1)! = n!$ by [[#eq-factorial]]; it terminates because the call it makes terminates. By induction the claim holds for all $n \ge 0$. (See [Maths Atlas: induction](/a/maths/lesson.php?c=proofs&l=induction).)
 :::
 
 For a function such as `digit_sum`, whose recursive call is on $n /\!/ 10$ rather than $n - 1$, the same argument uses **strong induction**: assume the function is correct for *all* inputs smaller than $n$, and deduce it for $n$. The pattern is always: identify a measure (here the value $n$) that every recursive call decreases; prove the base cases; prove each recursive case assuming every call on a smaller measure is correct.
@@ -260,7 +260,7 @@ C(n) = (2F_n - 1) + (2F_{n-1} - 1) + 1 = 2(F_n + F_{n-1}) - 1 = 2F_{n+1} - 1. \q
 $$
 :::
 
-Since $F_n$ grows like $\varphi^n/\sqrt 5$ with $\varphi = (1 + \sqrt5)/2 \approx 1.618$, the naive program takes time exponential in $n$ — not because recursion is slow, but because it recomputes the same values over and over. (The closed form for $F_n$ is derived in [Maths Atlas: recurrences](/learn/maths/lesson.php?c=discrete&l=recurrences).)
+Since $F_n$ grows like $\varphi^n/\sqrt 5$ with $\varphi = (1 + \sqrt5)/2 \approx 1.618$, the naive program takes time exponential in $n$ — not because recursion is slow, but because it recomputes the same values over and over. (The closed form for $F_n$ is derived in [Maths Atlas: recurrences](/a/maths/lesson.php?c=discrete&l=recurrences).)
 
 ::: widget plot
 f: 2*((1 + sqrt(5))/2)^(x + 1)/sqrt(5) - 1; x + 1

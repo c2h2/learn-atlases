@@ -205,7 +205,7 @@ The organic layer is removed and fresh solvent added; the same fraction $q$ of w
 $$
 q_n = \left(1 + \frac{a}{n}\right)^{-n},
 $$
-and $(1 + a/n)^n$ increases with $n$ towards $e^{a}$ (it is the compound-interest sequence of [Maths Atlas](/learn/maths/)), so $q_n$ decreases towards the limit $e^{-a}$. Splitting helps, but with diminishing returns: the limit $e^{-a}$ is never beaten.
+and $(1 + a/n)^n$ increases with $n$ towards $e^{a}$ (it is the compound-interest sequence of [Maths Atlas](/a/maths/)), so $q_n$ decreases towards the limit $e^{-a}$. Splitting helps, but with diminishing returns: the limit $e^{-a}$ is never beaten.
 :::
 
 ::: widget plot

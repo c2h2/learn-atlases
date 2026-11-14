@@ -1,6 +1,6 @@
 同一个文档集上建了两个排序器：一个用 [[information-retrieval/vector-space]] 的 tf–idf 余弦，另一个用 [[information-retrieval/probabilistic-retrieval]] 的 BM25。对查询 `the mock turtle sang about soup`，两者返回的前五名不同。哪个更好？看几条查询、评判输出“看着对不对”，是 1960 年以前绝大多数检索系统的评价方式，而这种方法毫无价值：看的人有自己的偏好，几条查询证明不了什么，别人也无法重复这个实验。检索质量必须被**度量**：在大量查询上进行，相关性由不知道结果出自哪个系统的人来判定，使用含义精确的度量——并且要说明找到的差异不是所选查询碰巧造成的。
 
-本章发展这套方法论。我们定义**测试文集**，以及让大型文集建得起的**池化**方法；集合式度量**查准率**、**查全率**和 $F$；面向排序表的度量**前 $k$ 查准率**、**平均查准率**（连同它作为查准率–查全率曲线面积的解读）与**倒数排名**；针对分级相关性的**折扣累积增益**与 **nDCG**。每个度量都在一个算例上精确算一遍。随后我们追问平均分上的差异何时是真的，对比配对 $t$ 检验、符号检验与精确随机化检验，并列举评测会误导人的种种方式。章末讲用真实用户做评价：在线实验、交织与用户研究。统计检验本身在 [Maths Atlas: hypothesis testing](/learn/maths/lesson.php?c=statistics&l=hypothesis-testing) 中展开；这里我们直接使用它。
+本章发展这套方法论。我们定义**测试文集**，以及让大型文集建得起的**池化**方法；集合式度量**查准率**、**查全率**和 $F$；面向排序表的度量**前 $k$ 查准率**、**平均查准率**（连同它作为查准率–查全率曲线面积的解读）与**倒数排名**；针对分级相关性的**折扣累积增益**与 **nDCG**。每个度量都在一个算例上精确算一遍。随后我们追问平均分上的差异何时是真的，对比配对 $t$ 检验、符号检验与精确随机化检验，并列举评测会误导人的种种方式。章末讲用真实用户做评价：在线实验、交织与用户研究。统计检验本身在 [Maths Atlas: hypothesis testing](/a/maths/lesson.php?c=statistics&l=hypothesis-testing) 中展开；这里我们直接使用它。
 
 ## 测试文集
 
@@ -272,7 +272,7 @@ $$
 
 ## 后续内容
 
-之后每一章都拿这些度量来评。[[information-retrieval/learning-to-rank]] 直接优化它们——nDCG 不可微，LambdaRank 硬要优化它的诀窍正依赖本章的换位分析——并从点击学习，这就需要上面粗描的位置偏置模型。网页搜索（[[information-retrieval/web-search]]）加上对新鲜度、垃圾与去重的评测。稠密检索（[[information-retrieval/dense-retrieval]]）通常在基准套件上报告 nDCG@10 与 recall@$k$，检索增强生成又添一问：检回的段落是否真的支持生成的答案——在 [LLM Atlas](/learn/llm/lesson.php?c=prompting-rag&l=rag-evaluation) 中讨论。评测机器学习系统的更大问题——基准、污染、裁判——见 [LLM Atlas: evaluation principles](/learn/llm/lesson.php?c=evaluation&l=evaluation-principles)。
+之后每一章都拿这些度量来评。[[information-retrieval/learning-to-rank]] 直接优化它们——nDCG 不可微，LambdaRank 硬要优化它的诀窍正依赖本章的换位分析——并从点击学习，这就需要上面粗描的位置偏置模型。网页搜索（[[information-retrieval/web-search]]）加上对新鲜度、垃圾与去重的评测。稠密检索（[[information-retrieval/dense-retrieval]]）通常在基准套件上报告 nDCG@10 与 recall@$k$，检索增强生成又添一问：检回的段落是否真的支持生成的答案——在 [LLM Atlas](/a/llm/lesson.php?c=prompting-rag&l=rag-evaluation) 中讨论。评测机器学习系统的更大问题——基准、污染、裁判——见 [LLM Atlas: evaluation principles](/a/llm/lesson.php?c=evaluation&l=evaluation-principles)。
 
 ::: summary
 - 离线评测用**测试文集**——文档、主题、相关性判定（[[#def-test-collection]]）——把许多系统的前列结果**池化**起来才建得起（[[#def-pooling]]），代价是对找到池外文档的系统有偏。

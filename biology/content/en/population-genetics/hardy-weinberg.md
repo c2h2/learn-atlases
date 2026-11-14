@@ -191,7 +191,7 @@ By [[#eq-xlinked]]: generation 1, $q_m = 0$, $q_f = 0.5$; generation 2, $q_m = 0
 :::
 :::
 
-For a rare recessive X-linked allele, $\bar q$ affected males against $\bar q^2$ affected females means that affected males are far more common: if one male in 12 is affected ($\bar q \approx 0.08$), about one female in 160 is. This is the population-level counterpart of the pedigree patterns of X-linked traits. (Clinical aspects of such conditions are covered in Medicine Atlas, [/learn/medicine/](/learn/medicine/).)
+For a rare recessive X-linked allele, $\bar q$ affected males against $\bar q^2$ affected females means that affected males are far more common: if one male in 12 is affected ($\bar q \approx 0.08$), about one female in 160 is. This is the population-level counterpart of the pedigree patterns of X-linked traits. (Clinical aspects of such conditions are covered in Medicine Atlas, [/a/medicine/](/a/medicine/).)
 
 ::: quiz
 At an autosomal locus, males in a newly mixed population have allele frequency $p_m = 0.8$ and females $p_f = 0.4$. Which statement is correct about their offspring?

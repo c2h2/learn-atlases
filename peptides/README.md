@@ -5,7 +5,7 @@ peptides: residue-level sequence drawings, 3D structures, history of use,
 regulatory status, and worldwide attention (Wikipedia readership by language and
 country, PubMed output, ClinicalTrials.gov activity).
 
-Served at `https://f.g77k.com/learn/peptides/` (moved from `/peptides/` on 2026-10-01; the old URLs redirect) by the existing Caddy + PHP-FPM 8.1 setup. The index at `/learn/` links it with its sibling, Maths Atlas (`/learn/maths/`).
+Served at `https://f.g77k.com/a/peptides/` (moved from `/peptides/` on 2026-10-01; the old URLs redirect) by the existing Caddy + PHP-FPM 8.1 setup. The index at `/a/` links it with its sibling, Maths Atlas (`/a/maths/`).
 All JavaScript libraries and fonts are self-hosted in `assets/`.
 
 ## Pages

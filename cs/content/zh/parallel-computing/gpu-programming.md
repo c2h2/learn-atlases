@@ -357,7 +357,7 @@ caption: 主机到设备的有效带宽 $m/(\alpha + m/\beta)$ 随传输长度 $
 
 ## 后续内容
 
-[[parallel-computing/parallel-algorithms]] 的算法——归约、扫描、基于划分的基数排序、共享内存中的双调排序、层同步广度优先搜索——正是 CUB、Thrust 这类 GPU 库的核心。多块 GPU 的系统（单节点内或跨集群）靠集合操作通信（[[parallel-computing/message-passing]]），其代价模型正是这里量出的 $\alpha + m/\beta$ 形式。[[parallel-computing/performance-engineering]] 在 CPU 上应用屋顶线模型与同样的分块思想。训练与运行神经网络——如今 GPU 最主要的用途——属于 [LLM 图谱](/learn/llm/)；GPU 的电路属于[电气工程图谱](/learn/ee/)中的计算机架构。
+[[parallel-computing/parallel-algorithms]] 的算法——归约、扫描、基于划分的基数排序、共享内存中的双调排序、层同步广度优先搜索——正是 CUB、Thrust 这类 GPU 库的核心。多块 GPU 的系统（单节点内或跨集群）靠集合操作通信（[[parallel-computing/message-passing]]），其代价模型正是这里量出的 $\alpha + m/\beta$ 形式。[[parallel-computing/performance-engineering]] 在 CPU 上应用屋顶线模型与同样的分块思想。训练与运行神经网络——如今 GPU 最主要的用途——属于 [LLM 图谱](/a/llm/)；GPU 的电路属于[电气工程图谱](/a/ee/)中的计算机架构。
 
 ::: summary
 - CUDA 核函数跑在由**线程块**与**线程**构成的**网格**上（[[#def-cuda-hierarchy]]）；块在流多处理器上相互独立地运行，每个块的线程以 $32$ 个一组、一次发射一条指令的**线程束**执行（SIMT）。

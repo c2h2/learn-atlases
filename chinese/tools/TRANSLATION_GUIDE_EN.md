@@ -425,7 +425,7 @@ bash tools/check.sh --lang=zh <course>   # confirms the Chinese lesson still mat
 ```
 
 Both runs must end with `0 errors`. Preview the English page at
-`http://f.g77k.com/learn/chinese/lesson.php?c=<course>&l=<chapter>&lang=en`.
+`http://f.g77k.com/a/chinese/lesson.php?c=<course>&l=<chapter>&lang=en`.
 
 ## Workflow
 
@@ -437,5 +437,5 @@ Both runs must end with `0 errors`. Preview the English page at
    translation faithful and report it.
 
 A model for markup and tone (Maths Atlas, same engine, the other direction):
-`/var/www/f.g77k.com/learn/maths/content/en/multivariable/gradient.md` and its Chinese version
-`/var/www/f.g77k.com/learn/maths/content/zh/multivariable/gradient.md`. Site name: Chinese Atlas.
+`/var/www/f.g77k.com/a/maths/content/en/multivariable/gradient.md` and its Chinese version
+`/var/www/f.g77k.com/a/maths/content/zh/multivariable/gradient.md`. Site name: Chinese Atlas.

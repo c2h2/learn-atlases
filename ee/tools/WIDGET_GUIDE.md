@@ -7,7 +7,7 @@ as catalogued; it is the contract.
 
 Reference implementations: `plot`, `riemann`, `taylor` in `assets/js/widgets/calculus.js`.
 Read them and `assets/js/plot.js` before writing anything. The engine and the figure files are
-copied from Maths Atlas (`/learn/maths/`); the EE catalogue keeps the 33 types useful in
+copied from Maths Atlas (`/a/maths/`); the EE catalogue keeps the 33 types useful in
 engineering. EE-specific types still have to be built — see the plan at the end.
 
 ## Files and loading
@@ -108,12 +108,12 @@ every visible string (translated later); keep strings short and use `%d`/`%s` fo
 
 ## Testing
 
-Every type has a live page: `http://f.g77k.com/learn/ee/lab.php?w=<type>` (renders the
+Every type has a live page: `http://f.g77k.com/a/ee/lab.php?w=<type>` (renders the
 catalogue `example`; `&cfg=` with URL-encoded `key: value` lines tests other settings).
 From this machine:
 
 ```
-cd /var/www/f.g77k.com/learn/ee
+cd /var/www/f.g77k.com/a/ee
 node tools/shot.js "lab.php?w=riemann" /tmp/.../riemann.png            # prints JS errors + figure state
 node tools/shot.js "lab.php?w=riemann" /tmp/.../riemann-dark.png --dark
 node tools/shot.js "lab.php?w=riemann&cfg=f%3A%20x%5E2" /tmp/.../x2.png

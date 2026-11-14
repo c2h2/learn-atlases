@@ -1,8 +1,8 @@
 #!/bin/bash
 # Render PNG previews of generated models for the Structures gallery (needs Playwright's headless Chromium).
-# Usage: tools/previews.sh [base-url]   (default http://f.g77k.com/learn/peptides/, resolved to 127.0.0.1)
+# Usage: tools/previews.sh [base-url]   (default http://f.g77k.com/a/peptides/, resolved to 127.0.0.1)
 cd "$(dirname "$0")/.."
-BASE=${1:-http://f.g77k.com/learn/peptides/}
+BASE=${1:-http://f.g77k.com/a/peptides/}
 CH=$(ls -d ~/.cache/ms-playwright/chromium_headless_shell-*/chrome-headless-shell-linux64/chrome-headless-shell 2>/dev/null | tail -1)
 [ -x "$CH" ] || { echo "headless chromium not found"; exit 1; }
 for m in data/cache/models/*.json; do

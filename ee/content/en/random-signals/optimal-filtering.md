@@ -180,7 +180,7 @@ $$
 with equality only if $\tilde S = \hat S$ (in mean square). Conversely, if some $\E[(S - \hat S)X_k] = c \neq 0$, adding $\eps X_k$ to $\hat S$ changes the error by $-2\eps c + \eps^2\E[X_k^2]$, which is negative for small $\eps$ of the sign of $c$, so $\hat S$ was not optimal. Finally, the MMSE is $\E[(S - \hat S)(S - \hat S)] = \E[(S - \hat S)S]$, because the error is orthogonal to $\hat S$, a combination of the $X_k$.
 :::
 
-Geometrically, random variables with finite second moments form a vector space with inner product $\E[UV]$; the best estimate is the orthogonal projection of $S$ onto the subspace spanned by the observations, exactly like the least-squares solution in [Maths Atlas: least squares](/learn/maths/lesson.php?c=linear-algebra&l=least-squares). The error is perpendicular to the subspace.
+Geometrically, random variables with finite second moments form a vector space with inner product $\E[UV]$; the best estimate is the orthogonal projection of $S$ onto the subspace spanned by the observations, exactly like the least-squares solution in [Maths Atlas: least squares](/a/maths/lesson.php?c=linear-algebra&l=least-squares). The error is perpendicular to the subspace.
 
 ::: example A single noisy measurement {#ex-scalar}
 A zero-mean signal $S$ with variance $\sigma_S^2$ is measured as $X = S + N$, with independent zero-mean noise of variance $\sigma_N^2$. Find the best linear estimate $\hat S = cX$ and its MMSE.

@@ -14,7 +14,7 @@ $$ {#eq-weight}
 该分布方式的**总能量**为$E = \sum_i n_i \varepsilon_i$。
 :::
 
-这个公式就是组合学中的多项式系数（初等[计数](/learn/maths/lesson.php?c=probability&l=probability-spaces)是唯一必需的数学）。把分子排成一列再依次发放状态——先$n_0$份状态0，再$n_1$份状态1，依此类推——有$N!$种排法；但落到同一状态的那$n_i$个分子彼此对调并不产生新的指派，所以每个状态都除以$n_i!$。两个极端情形使含义一目了然：所有分子都在基态，$W = N!/N! = 1$（只有一种方式）；每个分子各在不同状态，$W = N!$，即可能的最大值。
+这个公式就是组合学中的多项式系数（初等[计数](/a/maths/lesson.php?c=probability&l=probability-spaces)是唯一必需的数学）。把分子排成一列再依次发放状态——先$n_0$份状态0，再$n_1$份状态1，依此类推——有$N!$种排法；但落到同一状态的那$n_i$个分子彼此对调并不产生新的指派，所以每个状态都除以$n_i!$。两个极端情形使含义一目了然：所有分子都在基态，$W = N!/N! = 1$（只有一种方式）；每个分子各在不同状态，$W = N!$，即可能的最大值。
 
 为什么是"可分辨的"？在晶体中，每个分子位于自己的格点上，可用格点给它编号；在气体中，分子全同，无法编号。不过[[#eq-weight]]的计数对气体同样是正确的出发点，因为两个分布方式的权之比——求最概然分布所需要的只是它——并不因把每个权同除以同一个$N!$而改变。对不可分辨性的正确处理会改变熵与自由能，那是[[statistical-thermodynamics/canonical-ensemble]]的任务。
 
@@ -64,7 +64,7 @@ $$ {#eq-stirling}
 $$
 N\ln N - N + 1 \;\le\; \ln N! \;\le\; (N+1)\ln(N+1) - N .
 $$
-两个界都等于$N\ln N - N$加上$\ln N$量级的项，$N$大时这些项与$N\ln N$相比可以忽略（$N = 10^{23}$时，$N\ln N \approx 5\times10^{24}$而$\ln N \approx 53$）。故$\ln N! = N\ln N - N + O(\ln N)$。带$\tfrac{1}{2}\ln(2\pi N)$的改进形式，可由对伽马函数积分$N! = \int_0^\infty x^{N}e^{-x}\,\mathrm{d}x$用拉普拉斯方法求值得到（见数学图谱中的[反常积分](/learn/maths/lesson.php?c=calculus-1&l=improper-integrals)）。
+两个界都等于$N\ln N - N$加上$\ln N$量级的项，$N$大时这些项与$N\ln N$相比可以忽略（$N = 10^{23}$时，$N\ln N \approx 5\times10^{24}$而$\ln N \approx 53$）。故$\ln N! = N\ln N - N + O(\ln N)$。带$\tfrac{1}{2}\ln(2\pi N)$的改进形式，可由对伽马函数积分$N! = \int_0^\infty x^{N}e^{-x}\,\mathrm{d}x$用拉普拉斯方法求值得到（见数学图谱中的[反常积分](/a/maths/lesson.php?c=calculus-1&l=improper-integrals)）。
 :::
 
 即使对不大的数，这个近似也好得惊人：$\ln 10! = 15.104$，简单形式给出$13.026$，改进形式给出$15.096$；对$100!$，三个值分别为$363.739$、$360.517$和$363.739$。对$N \approx 10^{23}$，简单形式的误差完全微不足道。
@@ -113,7 +113,7 @@ caption: 共有$N$个分子时，处于两个等能量状态之一中的分子�
 $$
 \sum_i n_i = N, \qquad \sum_i n_i\varepsilon_i = E .
 $$ {#eq-constraints}
-由于$\ln W$随$W$单调增大，我们可以极大化$\ln W$，这要容易得多。约束由拉格朗日乘数法处理（数学图谱中的[拉格朗日乘数](/learn/maths/lesson.php?c=multivariable&l=extrema)）。
+由于$\ln W$随$W$单调增大，我们可以极大化$\ln W$，这要容易得多。约束由拉格朗日乘数法处理（数学图谱中的[拉格朗日乘数](/a/maths/lesson.php?c=multivariable&l=extrema)）。
 
 ::: proposition 玻尔兹曼分布 {#prop-boltzmann}
 对总能量为$E$的$N$个独立分子，权最大的分布方式的布居为

@@ -79,7 +79,7 @@
 
 ### 问卷与样本量
 
-问卷测量某事有多*普遍*——前提是你已经知道该问什么，而这通常来自访谈。问卷的精度取决于回答份数，这由抽样理论的一个标准结果决定（[Maths Atlas：置信区间](/learn/maths/lesson.php?c=statistics&l=confidence-intervals)）。
+问卷测量某事有多*普遍*——前提是你已经知道该问什么，而这通常来自访谈。问卷的精度取决于回答份数，这由抽样理论的一个标准结果决定（[Maths Atlas：置信区间](/a/maths/lesson.php?c=statistics&l=confidence-intervals)）。
 
 ::: proposition 比例的可误差范围 {#prop-moe}
 设 $n$ 名回答者来自一个大总体的简单随机样本，该总体中比例为 $p$ 的人会回答"是"，$\hat p$ 为样本比例。由二项分布的正态近似，$p$ 的近似 95% 置信区间为 $\hat p \pm 1.96\sqrt{\hat p(1-\hat p)/n}$。其半宽（**可误差范围**）至多为 $0.98/\sqrt{n}$；要使无论 $p$ 为何值误差范围都不超过 $m$，只需

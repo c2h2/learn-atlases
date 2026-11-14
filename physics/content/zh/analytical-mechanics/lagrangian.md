@@ -440,7 +440,7 @@ $$
 
 [[analytical-mechanics/central-forces]] 会利用有心力拉格朗日量中的循环角坐标，把三维问题化为一维。[[analytical-mechanics/rigid-bodies]] 把拉格朗日量用于转动，需要这里证明的能量与角动量首次积分。[[analytical-mechanics/hamiltonian]] 把广义动量 $p_j$ 与 $q_j$ 并列为独立变量；[[#def-energy-function]] 的能量函数 $h$ 就变成哈密顿量。同一个变分原理，把 $L$ 换成拉格朗日密度，就给出麦克斯韦方程组与粒子物理的场方程；而在 [[quantum-1]] 中，费曼的路径积分给每条路径配上权重 $e^{iS/\hbar}$，驻作用量作为经典极限浮现出来。
 
-关于 [[#eq-lagrange]] 产生的那类二阶方程的更多知识，见数学图谱中的[二阶线性方程](/learn/maths/lesson.php?c=ode&l=second-order-linear)与[存在唯一性](/learn/maths/lesson.php?c=ode&l=existence-uniqueness)。
+关于 [[#eq-lagrange]] 产生的那类二阶方程的更多知识，见数学图谱中的[二阶线性方程](/a/maths/lesson.php?c=ode&l=second-order-linear)与[存在唯一性](/a/maths/lesson.php?c=ode&l=existence-uniqueness)。
 
 ::: summary
 - 泛函 $J[y] = \int f(y, y', x)\,\dd x$ 在端点固定的变分下驻定，当且仅当 $y$ 满足欧拉–拉格朗日方程 $\frac{\dd}{\dd x}\frac{\partial f}{\partial y'} = \frac{\partial f}{\partial y}$；证明就是分部积分加上变分法基本引理。

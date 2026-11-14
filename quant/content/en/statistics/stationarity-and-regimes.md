@@ -1,6 +1,6 @@
 A price can wander off without ever settling around a mean. The return over a single step is a different series, and it is often modelled as if its mean and variance stood still. That model may be wrong in a precise way: large moves arrive in bunches, and a correlation estimated in a calm stretch need not describe the next stretch. A two-state chain is the smallest picture of the bunching. A filter that decides, from the whole sample, which days were the stressful ones is another searched parameter, not a second independent experiment.
 
-The probability underneath a stationary distribution is proved in the Maths Atlas, in [Markov chains](/learn/maths/lesson.php?c=probability&l=markov-chains). This chapter solves one $2 \times 2$ system and says what the solution is not allowed to decide. No result here is a recommendation to move capital when a state label flips.
+The probability underneath a stationary distribution is proved in the Maths Atlas, in [Markov chains](/a/maths/lesson.php?c=probability&l=markov-chains). This chapter solves one $2 \times 2$ system and says what the solution is not allowed to decide. No result here is a recommendation to move capital when a state label flips.
 
 ## A level is not a return
 

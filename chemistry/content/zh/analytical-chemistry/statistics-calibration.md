@@ -330,7 +330,7 @@ $$
 
 ## 后续内容
 
-这些工具在后续每一章都会用到。校准线与检出限随光谱方法在[[analytical-chemistry/molecular-spectrometry]]和[[analytical-chemistry/atomic-spectrometry]]中重现，在那里基体效应使标准加入法和内标成为常规。内标在[[analytical-chemistry/chromatography]]中必不可少，并在同位素稀释中达到其最佳形态（[[analytical-chemistry/hyphenated-methods]]）。把一种方法与参考值比较，正是[[analytical-chemistry/classical-analysis]]中经典绝对方法用来认证标准物质的方式。更深入的统计学——方差分析、回归诊断、贝叶斯方法——见数学图谱（[/learn/maths/](/learn/maths/)）。
+这些工具在后续每一章都会用到。校准线与检出限随光谱方法在[[analytical-chemistry/molecular-spectrometry]]和[[analytical-chemistry/atomic-spectrometry]]中重现，在那里基体效应使标准加入法和内标成为常规。内标在[[analytical-chemistry/chromatography]]中必不可少，并在同位素稀释中达到其最佳形态（[[analytical-chemistry/hyphenated-methods]]）。把一种方法与参考值比较，正是[[analytical-chemistry/classical-analysis]]中经典绝对方法用来认证标准物质的方式。更深入的统计学——方差分析、回归诊断、贝叶斯方法——见数学图谱（[/a/maths/](/a/maths/)）。
 
 ::: history
 威廉·西利·戈塞特（Gosset）是都柏林吉尼斯（Guinness）啤酒厂的化学师，以笔名发表了如今以该笔名命名的分布，载于《平均数的可能误差》（*The probable error of a mean*，*Biometrika*，1908）。罗纳德·费希尔（Fisher）在《研究工作的统计方法》（*Statistical Methods for Research Workers*，1925）中把显著性检验、方差分析和$F$分布（斯内德科（Snedecor）为向他致敬而命名）置于实验科学的中心。沃尔特·休哈特（Shewhart）1924年在贝尔电话实验室引入控制图，并在《制造产品质量的经济控制》（*Economic Control of Quality of Manufactured Product*，1931）中加以论述。就分析化学而言，迪安（Dean）与迪克森（Dixon）1951年在*Analytical Chemistry*上发表了针对小样本的Q检验，格拉布斯（Grubbs）1950年在*Annals of Mathematical Statistics*上提出了他的离群值判据，柯里（Currie）在《定性检出与定量测定的限值》（*Limits for qualitative detection and quantitative determination*，*Analytical Chemistry*，1968）中定义了临界水平、检出限与测定限。

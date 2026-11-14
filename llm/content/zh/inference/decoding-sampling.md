@@ -250,7 +250,7 @@ $$
 :::
 
 ::: proof
-每次浮点加法返回$(a + b)(1 + \delta)$，$\lvert\delta\rvert\le u$，这是浮点运算的标准模型，[Maths Atlas](/learn/maths/)中有所处理。无论哪种顺序，和都由$d - 1$次加法构成，而每个$x_i$至多穿过其中$d - 1$次，故$\hat s = \sum_ix_i\prod_{k}(1 + \delta_{ik})$，每项至多$d - 1$个因子。展开得$\lvert\hat s - s\rvert\le\sum_i\lvert x_i\rvert\big((1 + u)^{d-1} - 1\big) = (d - 1)u\sum_i\lvert x_i\rvert + O(u^2)$。出现哪些$\delta$取决于形成了哪些部分和，所以不同顺序给出不同误差。
+每次浮点加法返回$(a + b)(1 + \delta)$，$\lvert\delta\rvert\le u$，这是浮点运算的标准模型，[Maths Atlas](/a/maths/)中有所处理。无论哪种顺序，和都由$d - 1$次加法构成，而每个$x_i$至多穿过其中$d - 1$次，故$\hat s = \sum_ix_i\prod_{k}(1 + \delta_{ik})$，每项至多$d - 1$个因子。展开得$\lvert\hat s - s\rvert\le\sum_i\lvert x_i\rvert\big((1 + u)^{d-1} - 1\big) = (d - 1)u\sum_i\lvert x_i\rvert + O(u^2)$。出现哪些$\delta$取决于形成了哪些部分和，所以不同顺序给出不同误差。
 :::
 
 误差极小——logit 末位的几个单位——但解码是不连续的：当前两名 logits 相差就在那点幅度之内时，不同的求和顺序会选不同的词元，此后两个输出便再无任何相同之处。数百个词元下来，接近平局的情形很常见。

@@ -1,6 +1,6 @@
 前几章的技术都是为图书馆发展出来的：固定的合集、善意写成的文档、只建一次的索引。网页不是其中的任何一样。没有人把文档集合交给搜索引擎；引擎必须自己一页一页地**抓取（crawling）**，而这些服务器属于别人，还可能声明不希望被抓取。页面每秒都在变化、出现和消失。爬虫抓回的东西里，很大一部分是已见过页面的拷贝或近似拷贝——镜像站点、适合打印的版本、只差一则广告或一个日期的页面。而由于排名靠前就是钱，许多页面专门是为了欺骗排序函数而写的。面对这一切，网络提供了一样图书馆没有的东西：**链接**。一个页面指向另一个页面的链接，是一个小小的、公开的判断——说目标值得一看——而数亿作者都在作出这样的判断。
 
-本章讲使网页搜索与众不同的三个问题。**抓取**：爬虫的体系结构、它欠服务器的礼貌，以及机器人排除协议（Robots Exclusion Protocol，RFC 9309），并依照标准实现一个匹配器。**近似重复检测**：分片（shingling）与杰卡德系数（Jaccard coefficient），**MinHash** 并证明它估计杰卡德系数，用来找候选对的局部敏感哈希，以及查里卡尔（Charikar）的 **SimHash**。**链接分析**：**PageRank**，作为随机冲浪者的平稳分布，并证明传送使它存在、唯一、可用幂迭代以保证的速度算出；还有克莱因伯格（Kleinberg）的 **HITS** 枢纽与权威。图算法见 [[algorithms/graph-search]]，马尔可夫链在 [Maths Atlas: Markov chains](/learn/maths/lesson.php?c=probability&l=markov-chains)，特征向量在 [Maths Atlas: eigenvalues](/learn/maths/lesson.php?c=linear-algebra&l=eigenvalues)。
+本章讲使网页搜索与众不同的三个问题。**抓取**：爬虫的体系结构、它欠服务器的礼貌，以及机器人排除协议（Robots Exclusion Protocol，RFC 9309），并依照标准实现一个匹配器。**近似重复检测**：分片（shingling）与杰卡德系数（Jaccard coefficient），**MinHash** 并证明它估计杰卡德系数，用来找候选对的局部敏感哈希，以及查里卡尔（Charikar）的 **SimHash**。**链接分析**：**PageRank**，作为随机冲浪者的平稳分布，并证明传送使它存在、唯一、可用幂迭代以保证的速度算出；还有克莱因伯格（Kleinberg）的 **HITS** 枢纽与权威。图算法见 [[algorithms/graph-search]]，马尔可夫链在 [Maths Atlas: Markov chains](/a/maths/lesson.php?c=probability&l=markov-chains)，特征向量在 [Maths Atlas: eigenvalues](/a/maths/lesson.php?c=linear-algebra&l=eigenvalues)。
 
 ## 抓取
 
@@ -262,7 +262,7 @@ $$ {#eq-pagerank}
 若 $M$ 是各元素全为正的方阵，则 $M$ 有一个等于其谱半径的正实特征值 $\rho > 0$，$\rho$ 是单特征值，它有一个各元素全为正特征的左特征向量，每个其他特征值 $\lambda$ 满足 $\abs\lambda < \rho$，且没有其他特征值拥有非负特征向量。对行随机的正矩阵，$\rho = 1$。
 :::
 
-这条经典定理我们不加证明地陈述（背景见 [Maths Atlas: eigenvalues](/learn/maths/lesson.php?c=linear-algebra&l=eigenvalues)）。由于 $G$ 的每个元素都至少是 $(1 - \alpha)/n > 0$，定理适用于 $G$：恰有一个平稳分布，且每个分量都是正的。定理没有说幂迭代收敛多快；对 PageRank，我们可以只用 $G$ 的特殊结构，凭一段短论证直接证明存在、唯一与收敛速度。
+这条经典定理我们不加证明地陈述（背景见 [Maths Atlas: eigenvalues](/a/maths/lesson.php?c=linear-algebra&l=eigenvalues)）。由于 $G$ 的每个元素都至少是 $(1 - \alpha)/n > 0$，定理适用于 $G$：恰有一个平稳分布，且每个分量都是正的。定理没有说幂迭代收敛多快；对 PageRank，我们可以只用 $G$ 的特殊结构，凭一段短论证直接证明存在、唯一与收敛速度。
 
 ::: theorem PageRank 存在、唯一且可由幂迭代算出 {#thm-pagerank}
 设 $G = \alpha P + (1 - \alpha)\mathbf 1 \vec v$，$P$ 行随机，$\vec v$ 是概率行向量，$0 \le \alpha < 1$。则恰有一个概率向量 $\vec x$ 满足 $\vec x G = \vec x$。对任何概率向量 $\vec x^{(0)}$，迭代点 $\vec x^{(k+1)} = \vec x^{(k)} G$ 满足

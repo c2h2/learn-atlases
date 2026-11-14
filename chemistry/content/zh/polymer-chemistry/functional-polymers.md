@@ -198,7 +198,7 @@ Shirakawa（Hideki Shirakawa）、MacDiarmid（Alan MacDiarmid）与 Heeger（Al
 
 ## 后续内容
 
-功能聚合物把整门课程汇于一身。合成依赖[[polymer-chemistry/controlled-polymerisation]]得到端基、嵌段与可降解主链。响应行为是[[polymer-chemistry/polymer-solutions]]的 Flory–Huggins 热力学，器件则依赖[[polymer-chemistry/polymer-properties]]的玻璃化转变、网络与黏弹性。可持续聚合物设计——生命周期评估、原子经济性、可再生原料与解聚催化——是[[green-chemistry]]的主题。共轭链的能带图像接上[[materials-chemistry]]，势箱中粒子的量子力学接上[[quantum-chemistry]]。药物释放所用的扩散方程在 Maths Atlas（[/learn/maths/](/learn/maths/)）中求解。
+功能聚合物把整门课程汇于一身。合成依赖[[polymer-chemistry/controlled-polymerisation]]得到端基、嵌段与可降解主链。响应行为是[[polymer-chemistry/polymer-solutions]]的 Flory–Huggins 热力学，器件则依赖[[polymer-chemistry/polymer-properties]]的玻璃化转变、网络与黏弹性。可持续聚合物设计——生命周期评估、原子经济性、可再生原料与解聚催化——是[[green-chemistry]]的主题。共轭链的能带图像接上[[materials-chemistry]]，势箱中粒子的量子力学接上[[quantum-chemistry]]。药物释放所用的扩散方程在 Maths Atlas（[/a/maths/](/a/maths/)）中求解。
 
 ::: summary
 - 共轭缩小 π–π* 间隙，但键交替（派尔斯畸变）使它保持在约 1.5 eV。自由电子模型趋势正确，长链失效。掺杂产生极化子与双极化子，重复单元带电达百分之几时 $\sigma = ne\mu$ 可达金属量级。应用包括 PEDOT:PSS、OLED、有机太阳电池与晶体管。

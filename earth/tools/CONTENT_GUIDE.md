@@ -1,14 +1,14 @@
 # Earth & Climate Atlas — content guide
 
-Earth & Climate Atlas (`/learn/earth/`) teaches university Earth and climate science: the solid
+Earth & Climate Atlas (`/a/earth/`) teaches university Earth and climate science: the solid
 Earth, landscapes and water, the atmosphere, the oceans and ice, Earth history and the climate
 system. Every chapter is a long, self-contained lesson in the style of a very good textbook:
 observations and motivation first, then precise definitions, the governing principles with their
 derivations, many fully worked examples with real numbers and units, interactive figures, quick
 checks, and graded exercises with full solutions.
 
-The site runs on the same engine as Maths Atlas (`/learn/maths/`). Its reference lesson,
-`/var/www/f.g77k.com/learn/maths/content/en/calculus-1/limits.md`, shows the expected depth, tone
+The site runs on the same engine as Maths Atlas (`/a/maths/`). Its reference lesson,
+`/var/www/f.g77k.com/a/maths/content/en/calculus-1/limits.md`, shows the expected depth, tone
 and markup: read it before writing.
 
 ## 1. Files
@@ -94,9 +94,9 @@ chapters, then `:::summary` and `## Exercises`.
 - Audience: students who have done the prerequisite chapters. Explain from scratch, motivate before
   formalising, then be exact. Show the reasoning and the evidence, not just the conclusions — how do
   we *know* the age of the Earth, the structure of the core, the size of a feedback?
-- Link instead of re-teaching: Maths Atlas (`/learn/maths/`) for calculus, differential equations
-  and statistics, Physics Atlas (`/learn/physics/`) for thermodynamics, fluids, waves and
-  electromagnetism, and the Chemistry and Biology atlases (`/learn/chemistry/`, `/learn/biology/`)
+- Link instead of re-teaching: Maths Atlas (`/a/maths/`) for calculus, differential equations
+  and statistics, Physics Atlas (`/a/physics/`) for thermodynamics, fluids, waves and
+  electromagnetism, and the Chemistry and Biology atlases (`/a/chemistry/`, `/a/biology/`)
   for equilibria, kinetics, evolution and ecology.
 - Voice: "we" for shared reasoning, "you" for instructions; friendly, precise and unhurried.
 - **British spelling** (colour, modelling, behaviour, metre, sulfur as recommended by IUPAC), also in
@@ -174,7 +174,7 @@ chapters, then `:::summary` and `## Exercises`.
 
 ## 6. Markup
 
-Exactly as in Maths Atlas — see `/var/www/f.g77k.com/learn/maths/tools/CONTENT_GUIDE.md` §5 for
+Exactly as in Maths Atlas — see `/var/www/f.g77k.com/a/maths/tools/CONTENT_GUIDE.md` §5 for
 blocks (`:::definition`, `:::theorem`/`:::proposition`, `:::proof`, `:::example` + `:::solution`,
 `:::exercise`, `:::quiz`, `:::warning`, `:::intuition`, `:::application`, `:::history`,
 `:::summary`, `:::algorithm` for procedures such as locating an epicentre or classifying an image),
@@ -188,7 +188,7 @@ vector fields (winds, currents), contour maps and surfaces (topography, pressure
 fields, an ODE solver and phase planes (energy-balance and box models, feedbacks), Fourier series
 and the heat equation (seasonal cycles, heat diffusion into the ground), probability distributions,
 Monte Carlo simulation, regression, hypothesis tests and confidence intervals (trends and their
-uncertainty). Try each at `/learn/earth/lab.php?w=<type>`. Earth- and climate-specific figures
+uncertainty). Try each at `/a/earth/lab.php?w=<type>`. Earth- and climate-specific figures
 (energy-balance model, greenhouse layers, the Keeling curve, insolation and orbital cycles, plate
 motion, seismic rays, radiometric decay, groundwater flow, a thermodynamic diagram, box models of
 the ocean and carbon cycle, a world map …) are planned in `tools/WIDGET_GUIDE.md`; use a type only
@@ -197,12 +197,12 @@ once it is in the catalogue.
 ## 8. Check your work
 
 ```
-cd /var/www/f.g77k.com/learn/earth
+cd /var/www/f.g77k.com/a/earth
 bash tools/check.sh <course> [<course> …]
 ```
 
 Fix every `ERROR`; depth `warn`ings must be gone for finished lessons. Preview at
-`http://f.g77k.com/learn/earth/lesson.php?c=<course>&l=<chapter>` (from this machine:
+`http://f.g77k.com/a/earth/lesson.php?c=<course>&l=<chapter>` (from this machine:
 `curl --resolve f.g77k.com:80:127.0.0.1 …` or `node tools/shot.js "lesson.php?c=…&l=…" out.png`)
 and read the rendered lesson at least once. `php tools/check.php` lists every lesson not yet written
 and every empty course field as a warning: its output is the to-do list.

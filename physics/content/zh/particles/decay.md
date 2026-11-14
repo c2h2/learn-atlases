@@ -422,7 +422,7 @@ $$
 
 ## 后续内容 {#leads}
 
-[[particles/reactions]] 中的反应用的是同一套 Q 值记账，只不过多了一个入射粒子；把 α 粒子关在里面的库仑势垒，也正是使太阳中的聚变慢下来的那道势垒。β 衰变背后的弱相互作用带着它的点耦合 $G_F$，到 [[particles/standard-model]] 中被揭示为重 $W$ 玻色子的交换；它破坏宇称的事在 [[particles/symmetries]]。测量这些辐射的探测器在 [[particles/accelerators]]。衰变在化学、测年与医学中的应用见化学图谱的课程[核化学](/learn/chemistry/lesson.php?c=general-chemistry-2&l=nuclear-chemistry)。
+[[particles/reactions]] 中的反应用的是同一套 Q 值记账，只不过多了一个入射粒子；把 α 粒子关在里面的库仑势垒，也正是使太阳中的聚变慢下来的那道势垒。β 衰变背后的弱相互作用带着它的点耦合 $G_F$，到 [[particles/standard-model]] 中被揭示为重 $W$ 玻色子的交换；它破坏宇称的事在 [[particles/symmetries]]。测量这些辐射的探测器在 [[particles/accelerators]]。衰变在化学、测年与医学中的应用见化学图谱的课程[核化学](/a/chemistry/lesson.php?c=general-chemistry-2&l=nuclear-chemistry)。
 
 ::: summary
 - 每个核以恒定的单位时间概率 $\lambda$ 衰变，所以 $N = N_0 e^{-\lambda t}$，$t_{1/2} = \ln 2/\lambda$，$\tau = 1/\lambda$，活度 $\mathcal{A} = \lambda N$，以贝可勒尔计。

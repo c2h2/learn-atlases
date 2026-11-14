@@ -250,7 +250,7 @@ and different orders generally return different values within this bound.
 :::
 
 ::: proof
-Each floating-point addition returns $(a + b)(1 + \delta)$ with $\lvert\delta\rvert\le u$ the standard model of floating-point arithmetic, treated in [Maths Atlas](/learn/maths/). In any order, the sum is formed by $d - 1$ additions, and each $x_i$ passes through at most $d - 1$ of them, so $\hat s = \sum_ix_i\prod_{k}(1 + \delta_{ik})$ with at most $d - 1$ factors per term. Expanding, $\lvert\hat s - s\rvert\le\sum_i\lvert x_i\rvert\big((1 + u)^{d-1} - 1\big) = (d - 1)u\sum_i\lvert x_i\rvert + O(u^2)$. The $\delta$s that occur depend on which partial sums are formed, so different orders give different errors.
+Each floating-point addition returns $(a + b)(1 + \delta)$ with $\lvert\delta\rvert\le u$ the standard model of floating-point arithmetic, treated in [Maths Atlas](/a/maths/). In any order, the sum is formed by $d - 1$ additions, and each $x_i$ passes through at most $d - 1$ of them, so $\hat s = \sum_ix_i\prod_{k}(1 + \delta_{ik})$ with at most $d - 1$ factors per term. Expanding, $\lvert\hat s - s\rvert\le\sum_i\lvert x_i\rvert\big((1 + u)^{d-1} - 1\big) = (d - 1)u\sum_i\lvert x_i\rvert + O(u^2)$. The $\delta$s that occur depend on which partial sums are formed, so different orders give different errors.
 :::
 
 The errors are tiny — a few units in the last place of a logit — but decoding is discontinuous: when the top two logits are within that margin, a different summation order picks a different token, and from then on the two outputs share nothing. Over hundreds of tokens, near-ties are common.

@@ -1,6 +1,6 @@
 每一次飞往空间站的载人和货运飞行都以交会结束：一个在数小时或数天前发射的航天器，必须在同一时刻、以几乎为零的相对速度到达同一条轨道上的同一点。调相机动（[[orbital-mechanics/orbital-manoeuvres]]）把追踪航天器带到几十千米以内。最终逼近则是另一类问题：重要的不再是每条轨道的形状，而是从目标看去两条相邻轨道之间微小的*差别*。从这个角度看，轨道力学变得很奇特。朝目标点火的追踪航天器会远离目标；在目标正下方一百米处静止不动的航天器，一圈之后会跑到目标前方几千米；要向前移动，就得向下推。所有这些都来自一组线性方程——**克洛希西-威尔特希尔**（Clohessy–Wiltshire）方程（或**希尔**（Hill）方程）——本章推导这组方程，求出其封闭形式的解，并用它来设计逼近轨迹、双脉冲交会转移和编队飞行轨道。最后，我们把线性理论与精确的二体运动相比较，看看它何时可信。
 
-所用的工具是[[dynamics/relative-motion]]中的转动坐标系运动学以及常系数线性常微分方程（[线性方程组](/learn/maths/lesson.php?c=ode&l=linear-systems)）。
+所用的工具是[[dynamics/relative-motion]]中的转动坐标系运动学以及常系数线性常微分方程（[线性方程组](/a/maths/lesson.php?c=ode&l=linear-systems)）。
 
 ## 目标坐标系 {#sec-frame}
 
@@ -52,7 +52,7 @@ $$
 
 ## 封闭形式的解 {#sec-solution}
 
-方程[[#eq-cw]]是常系数线性方程，可以精确求解（[二阶线性常微分方程](/learn/maths/lesson.php?c=ode&l=second-order-linear)）。
+方程[[#eq-cw]]是常系数线性方程，可以精确求解（[二阶线性常微分方程](/a/maths/lesson.php?c=ode&l=second-order-linear)）。
 
 ::: proposition 克洛希西-威尔特希尔方程的解 {#prop-cw-solution}
 对于$t = 0$时从$(x_0, y_0, z_0)$出发、速度为$(\dot x_0, \dot y_0, \dot z_0)$的自由运动，记$c = \cos nt$，$s = \sin nt$，

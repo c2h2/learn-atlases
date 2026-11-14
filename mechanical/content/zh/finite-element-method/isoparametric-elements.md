@@ -41,7 +41,7 @@ $$ {#eq-kiso}
 :::
 
 ::: proof
-$N_i$通过$(\xi, \eta)$依赖于$(x, y)$；把它看作$(\xi, \eta)$的函数，$\partial N_i/\partial\xi = (\partial N_i/\partial x)(\partial x/\partial\xi) + (\partial N_i/\partial y)(\partial y/\partial\xi)$，对$\eta$同样，这就是[[#eq-jacobian]]。求$2 \times 2$矩阵的逆要求$\det\mathbf{J} \neq 0$。面积微元是二重积分的标准变量替换（[多元微积分](/learn/maths/lesson.php?c=multivariable)）：母单元的矩形$d\xi \times d\eta$映射为由$(\partial x/\partial\xi, \partial y/\partial\xi)\,d\xi$与$(\partial x/\partial\eta, \partial y/\partial\eta)\,d\eta$张成的平行四边形，其面积为$\lvert\det\mathbf{J}\rvert\,d\xi\,d\eta$；节点按逆时针编号时$\det\mathbf{J} > 0$。
+$N_i$通过$(\xi, \eta)$依赖于$(x, y)$；把它看作$(\xi, \eta)$的函数，$\partial N_i/\partial\xi = (\partial N_i/\partial x)(\partial x/\partial\xi) + (\partial N_i/\partial y)(\partial y/\partial\xi)$，对$\eta$同样，这就是[[#eq-jacobian]]。求$2 \times 2$矩阵的逆要求$\det\mathbf{J} \neq 0$。面积微元是二重积分的标准变量替换（[多元微积分](/a/maths/lesson.php?c=multivariable)）：母单元的矩形$d\xi \times d\eta$映射为由$(\partial x/\partial\xi, \partial y/\partial\xi)\,d\xi$与$(\partial x/\partial\eta, \partial y/\partial\eta)\,d\eta$张成的平行四边形，其面积为$\lvert\det\mathbf{J}\rvert\,d\xi\,d\eta$；节点按逆时针编号时$\det\mathbf{J} > 0$。
 :::
 
 $\mathbf{B}$的元素现在是比值——对$\xi, \eta$的导数乘以含有$1/\det\mathbf{J}$的雅可比逆矩阵——所以对一般四边形，[[#eq-kiso]]的被积函数是有理函数，而不是多项式。只有对平行四边形，$\mathbf{J}$才是常数，被积函数才是多项式。

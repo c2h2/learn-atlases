@@ -258,7 +258,7 @@ Gough（John Gough）1805 年报告了拉伸天然橡胶条拉伸时发热、受
 
 ## 后续内容
 
-这里的热转变由 DSC 与 DMA 测量（[[polymer-chemistry/polymer-characterisation]]）。[[#prop-rubber]]的网络物理在[[polymer-chemistry/functional-polymers]]的水凝胶与形状记忆聚合物中得到延续，那里 $T_\mathrm{g}$ 与橡胶平台被用作开关。熵弹性背后的链统计在[[polymer-chemistry/polymer-solutions]]中发展，其交联密度决定模量的逐步增长网络在[[polymer-chemistry/step-growth]]中制备。晶体结构与聚合物晶体的衍射连接[[materials-chemistry/crystal-structures]]。材料力学（应力、应变、模量）在 Physics Atlas（[/learn/physics/](/learn/physics/)）中讲述。
+这里的热转变由 DSC 与 DMA 测量（[[polymer-chemistry/polymer-characterisation]]）。[[#prop-rubber]]的网络物理在[[polymer-chemistry/functional-polymers]]的水凝胶与形状记忆聚合物中得到延续，那里 $T_\mathrm{g}$ 与橡胶平台被用作开关。熵弹性背后的链统计在[[polymer-chemistry/polymer-solutions]]中发展，其交联密度决定模量的逐步增长网络在[[polymer-chemistry/step-growth]]中制备。晶体结构与聚合物晶体的衍射连接[[materials-chemistry/crystal-structures]]。材料力学（应力、应变、模量）在 Physics Atlas（[/a/physics/](/a/physics/)）中讲述。
 
 ::: summary
 - 规整链结晶成折叠链片晶（5–25 nm），组装成球晶。它们总是半晶的，韧性来自连接分子。Gibbs–Thomson 方程 $T_\mathrm{m} = T_\mathrm{m}^\circ(1 - 2\sigma_\mathrm{e}/\Delta h_\mathrm{f}\ell)$ 把熔点与片晶厚度联系起来。

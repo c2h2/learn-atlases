@@ -61,7 +61,7 @@ $$
 L \text{ regular} \implies \exists p \ge 1\ \forall s \in L,\ \lvert s\rvert \ge p\ \ \exists x,y,z \ \bigl(s = xyz,\ \lvert y\rvert \ge 1,\ \lvert xy\rvert \le p,\ \forall i \ge 0:\ xy^iz \in L\bigr).
 $$
 
-To prove $L$ is *not* regular we prove the negation of the right-hand side (see [Maths Atlas: quantifiers](/learn/maths/lesson.php?c=proofs&l=quantifiers)):
+To prove $L$ is *not* regular we prove the negation of the right-hand side (see [Maths Atlas: quantifiers](/a/maths/lesson.php?c=proofs&l=quantifiers)):
 
 $$
 \forall p \ge 1\ \exists s \in L,\ \lvert s\rvert \ge p\ \ \forall x,y,z \text{ with } s = xyz,\ \lvert y\rvert \ge 1,\ \lvert xy\rvert \le p\ \ \exists i \ge 0:\ xy^iz \notin L.
@@ -131,7 +131,7 @@ The method only works in one direction. The union or intersection of two non-reg
 
 ## The Myhill–Nerode theorem
 
-The relation $\equiv_L$ is an **equivalence relation** on $\Sigma^*$ — reflexive, symmetric and transitive, as an "if and only if for all $z$" relation always is (see [Maths Atlas: relations](/learn/maths/lesson.php?c=proofs&l=relations)). Its equivalence classes group together the prefixes that a recogniser may treat alike. It is also **right-invariant**: if $x \equiv_L y$ then $xa \equiv_L ya$ for every symbol $a$, because any $z$ distinguishing $xa$ and $ya$ would give $az$ distinguishing $x$ and $y$. The **index** of $\equiv_L$ is its number of classes (possibly infinite).
+The relation $\equiv_L$ is an **equivalence relation** on $\Sigma^*$ — reflexive, symmetric and transitive, as an "if and only if for all $z$" relation always is (see [Maths Atlas: relations](/a/maths/lesson.php?c=proofs&l=relations)). Its equivalence classes group together the prefixes that a recogniser may treat alike. It is also **right-invariant**: if $x \equiv_L y$ then $xa \equiv_L ya$ for every symbol $a$, because any $z$ distinguishing $xa$ and $ya$ would give $az$ distinguishing $x$ and $y$. The **index** of $\equiv_L$ is its number of classes (possibly infinite).
 
 ::: theorem Myhill–Nerode theorem {#thm-myhill-nerode}
 A language $L \subseteq \Sigma^*$ is regular if and only if $\equiv_L$ has finite index. In that case the number of equivalence classes equals the number of states of the smallest DFA recognising $L$.

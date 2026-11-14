@@ -27,7 +27,7 @@ $\tan45° = 1$。水平坐标为 $\bigl(\frac{2\cdot0.5}{4} - 1\bigr)\cdot2\cdot
 $$
 t^2 + 2(m\cdot d)\,t + \bigl(\norm m^2 - R^2\bigr) = 0 .
 $$ {#eq-ray-sphere}
-记 $b = m\cdot d$、$\Delta = b^2 - (\norm m^2 - R^2)$，两个根为 $t = -b \pm \sqrt\Delta$：$\Delta < 0$ 时无交点，$\Delta = 0$ 时光线与球相切，否则光线所在直线在 $-b - \sqrt\Delta$ 处进入球、在 $-b + \sqrt\Delta$ 处穿出。最近的命中点：若小根为正的取小根，否则若大根为正取大根（此时原点位于球内），否则无命中。这种"$b$ 之半"的写法省一次乘法和一次除法，并避开教科书求根公式里因子 $4$ 带来的相消；对远处的大球，当 $b < 0$ 时把小根写成 $(\norm m^2 - R^2)/(-b + \sqrt\Delta)$ 可以避免灾难性相消（参见 [Maths Atlas：浮点数](/learn/maths/lesson.php?c=numerical-analysis&l=floating-point)）。
+记 $b = m\cdot d$、$\Delta = b^2 - (\norm m^2 - R^2)$，两个根为 $t = -b \pm \sqrt\Delta$：$\Delta < 0$ 时无交点，$\Delta = 0$ 时光线与球相切，否则光线所在直线在 $-b - \sqrt\Delta$ 处进入球、在 $-b + \sqrt\Delta$ 处穿出。最近的命中点：若小根为正的取小根，否则若大根为正取大根（此时原点位于球内），否则无命中。这种"$b$ 之半"的写法省一次乘法和一次除法，并避开教科书求根公式里因子 $4$ 带来的相消；对远处的大球，当 $b < 0$ 时把小根写成 $(\norm m^2 - R^2)/(-b + \sqrt\Delta)$ 可以避免灾难性相消（参见 [Maths Atlas：浮点数](/a/maths/lesson.php?c=numerical-analysis&l=floating-point)）。
 
 ### 三角形：Möller–Trumbore 算法
 
@@ -45,7 +45,7 @@ $$
 :::
 
 ::: proof
-由克莱姆法则（Cramer's rule），每个未知数都是某个 $3\times3$ 行列式之比，而 $3\times3$ 行列式就是标量三重积：$\det(a, b, c) = a\cdot(b\times c)$，它在循环置换下不变、在对换下变号（见 [Maths Atlas：行列式](/learn/maths/lesson.php?c=linear-algebra&l=determinants)）。方程组的行列式是 $\det(-d, e_1, e_2) = -d\cdot(e_1\times e_2) = e_1\cdot(d\times e_2) = e_1\cdot p$，用了一次循环置换和一次对换。把各列依次换成 $s$：
+由克莱姆法则（Cramer's rule），每个未知数都是某个 $3\times3$ 行列式之比，而 $3\times3$ 行列式就是标量三重积：$\det(a, b, c) = a\cdot(b\times c)$，它在循环置换下不变、在对换下变号（见 [Maths Atlas：行列式](/a/maths/lesson.php?c=linear-algebra&l=determinants)）。方程组的行列式是 $\det(-d, e_1, e_2) = -d\cdot(e_1\times e_2) = e_1\cdot(d\times e_2) = e_1\cdot p$，用了一次循环置换和一次对换。把各列依次换成 $s$：
 - $t = \det(s, e_1, e_2)/\det = e_2\cdot(s\times e_1)/\det = e_2\cdot q/\det$（循环置换）；
 - $b_1 = \det(-d, s, e_2)/\det = s\cdot(e_2\times(-d))/\det = s\cdot(d\times e_2)/\det = s\cdot p/\det$；
 - $b_2 = \det(-d, e_1, s)/\det = -d\cdot(e_1\times s)/\det = d\cdot(s\times e_1)/\det = d\cdot q/\det$。
@@ -348,7 +348,7 @@ $$
 
 ## 蒙特卡洛积分
 
-为估计积分 $I = \int_D g(x)\,dx$，从 $D$ 上在一个 $g \ne 0$ 处取正值的概率密度 $p$ 下独立地抽取随机点 $X_1, \dots, X_N$，对各比值 $g(X_i)/p(X_i)$ 取平均（参见 [Maths Atlas：数学期望](/learn/maths/lesson.php?c=probability&l=expectation) 与 [Maths Atlas：极限定理](/learn/maths/lesson.php?c=probability&l=limit-theorems)）。
+为估计积分 $I = \int_D g(x)\,dx$，从 $D$ 上在一个 $g \ne 0$ 处取正值的概率密度 $p$ 下独立地抽取随机点 $X_1, \dots, X_N$，对各比值 $g(X_i)/p(X_i)$ 取平均（参见 [Maths Atlas：数学期望](/a/maths/lesson.php?c=probability&l=expectation) 与 [Maths Atlas：极限定理](/a/maths/lesson.php?c=probability&l=limit-theorems)）。
 
 ::: theorem 蒙特卡洛估计量 {#thm-monte-carlo}
 估计量 $\hat I_N = \frac1N\sum_{i=1}^N \frac{g(X_i)}{p(X_i)}$ 是**无偏的**，$\E[\hat I_N] = I$；若 $\sigma^2 = \Var[g(X)/p(X)]$ 有限，则 $\Var[\hat I_N] = \sigma^2/N$：均方根误差像 $1/\sqrt N$ 那样下降，与 $D$ 的维数无关。
@@ -596,7 +596,7 @@ $K$ 次反弹后的相对误差为 $\frac{\rho^{K+1}/(1-\rho)}{1/(1-\rho)} = \rh
 ::: exercise 炉子估计量的方差 {level=3 #ex-roulette-variance}
 在 $q = \rho = 0.7$ 的 `furnace.py` 中，每条路径的估计就是它访问过的墙面点数 $N$。(a) 证明 $N$ 服从几何分布，并求其均值与方差。(b) 计算 $100\,000$ 条路径的标准误差，并与打印出的估计值偏离 $3.333$ 的幅度作比较。(c) 若改为 $q = 1$ 且路径在 $K = 12$ 次反弹后截断，方差会怎样？
 ::: solution
-(a) 每条路径在每个访问过的点处贡献 $L_e = 1$，吞吐量为 $\rho/q = 1$；每经过一个点，路径以概率 $q = 0.7$ 继续。于是 $\Prob[N = k] = q^{k-1}(1-q)$（$k \ge 1$）：几何分布，均值 $1/(1-q) = 3.333$，方差 $q/(1-q)^2 = 0.7/0.09 = 7.78$（见 [Maths Atlas：离散随机变量](/learn/maths/lesson.php?c=probability&l=discrete-random-variables)）。均值恰是精确的辐射亮度，证实了无偏性。
+(a) 每条路径在每个访问过的点处贡献 $L_e = 1$，吞吐量为 $\rho/q = 1$；每经过一个点，路径以概率 $q = 0.7$ 继续。于是 $\Prob[N = k] = q^{k-1}(1-q)$（$k \ge 1$）：几何分布，均值 $1/(1-q) = 3.333$，方差 $q/(1-q)^2 = 0.7/0.09 = 7.78$（见 [Maths Atlas：离散随机变量](/a/maths/lesson.php?c=probability&l=discrete-random-variables)）。均值恰是精确的辐射亮度，证实了无偏性。
 
 (b) 标准误差为 $\sqrt{7.78/100\,000} = 0.0088$。打印出的估计 $3.3224$ 比 $3.3333$ 低 $0.0109$，约 $1.2$ 倍标准误差——寻常的波动。
 

@@ -293,7 +293,7 @@ $x \ne x'$ 时的转移概率为 $P(x, x') = q(x, x') \min(1, e^{-(E(x') - E(x))
 $$
 \pi_T(x) P(x, x') = \frac{e^{-E(x)/T}}{Z_T}\, q(x, x')\, e^{-(E(x') - E(x))/T} = \frac{e^{-E(x')/T}}{Z_T}\, q(x', x) = \pi_T(x') P(x', x).
 $$
-对细致平衡关于 $x$ 求和得 $\sum_x \pi_T(x) P(x, x') = \pi_T(x') \sum_x P(x', x) = \pi_T(x')$，所以 $\pi_T$ 是平稳的。（提议的连通性使链不可约，从而这个平稳分布唯一；见 [Maths Atlas：马尔可夫链](/learn/maths/lesson.php?c=probability&l=markov-chains)。）最后，设 $E_{\min}$ 为最小能量，$M$ 为最小元之集。对 $x \notin M$，对任何 $m \in M$ 有 $\pi_T(x)/\pi_T(m) = e^{-(E(x) - E_{\min})/T} \to 0$（$T \to 0$），故 $\pi_T(M) \to 1$。
+对细致平衡关于 $x$ 求和得 $\sum_x \pi_T(x) P(x, x') = \pi_T(x') \sum_x P(x', x) = \pi_T(x')$，所以 $\pi_T$ 是平稳的。（提议的连通性使链不可约，从而这个平稳分布唯一；见 [Maths Atlas：马尔可夫链](/a/maths/lesson.php?c=probability&l=markov-chains)。）最后，设 $E_{\min}$ 为最小能量，$M$ 为最小元之集。对 $x \notin M$，对任何 $m \in M$ 有 $\pi_T(x)/\pi_T(m) = e^{-(E(x) - E_{\min})/T} \to 0$（$T \to 0$），故 $\pi_T(M) \to 1$。
 :::
 
 该定理解释了退火的设计：在每个温度下，搜索按 $e^{-E/T}$ 的比例在各状态上停留，低 $T$ 时它由最好的状态支配；缓慢降温让链跟上分布的变化。若温度降得足够慢——对数地，$T_k \ge C/\ln(k + 1)$，常数 $C$ 依赖于问题（格曼（Geman）与格曼（Geman），1984；哈耶克（Hajek），1988）——处于全局最小值的概率趋于 $1$。这样的降温时间表在实践中慢得没法用；实际实现按几何降温（比如 $T \gets 0.99\,T$），放弃保证。
@@ -353,7 +353,7 @@ hill climbing solves 165 of 1000; simulated annealing solves 197 of 200
 :::
 :::
 
-其他局部搜索方法共享同样的取舍：**局部束搜索**维护 $k$ 个状态并从它们全部后继中选出最好的 $k$ 个；**遗传算法**用交叉把状态成对组合。对连续变量，爬山法的对应物是梯度下降，即机器学习的主力（[LLM Atlas：优化器](/learn/llm/lesson.php?c=neural-networks&l=optimisers)）。
+其他局部搜索方法共享同样的取舍：**局部束搜索**维护 $k$ 个状态并从它们全部后继中选出最好的 $k$ 个；**遗传算法**用交叉把状态成对组合。对连续变量，爬山法的对应物是梯度下降，即机器学习的主力（[LLM Atlas：优化器](/a/llm/lesson.php?c=neural-networks&l=optimisers)）。
 
 ::: history
 大卫·沃尔茨（David Waltz）1975 年为多面体场景线条标注编写的程序传播了顶点之间的约束。乌戈·蒙塔纳里（Ugo Montanari，1974）引入了约束网络与路径相容；艾伦·麦肯沃思（Alan Mackworth）的 "Consistency in networks of relations"（*Artificial Intelligence*，1977）给出了 AC-1 到 AC-3 算法；麦肯沃思与尤金·弗罗伊德尔（Eugene Freuder）于 1985 年分析了 AC-3 的复杂性；罗杰·莫尔（Roger Mohr）与托马斯·亨德森（Thomas Henderson）于 1986 年给出了最优的 AC-4。罗伯特·哈拉利克（Robert Haralick）与戈登·埃利奥特（Gordon Elliott）于 1980 年研究了前瞻检查与"先失败"原则。弗罗伊德尔（1982）把无回溯搜索与树结构、相容性联系起来；里娜·德赫特（Rina Dechter）与朱迪亚·珀尔（Judea Pearl）在 1980 年代后期发展了树分解与割集条件化。史蒂文·明顿（Steven Minton）、马克·约翰斯顿（Mark Johnston）、安德鲁·菲利普斯（Andrew Philips）与菲利普·莱尔德（Philip Laird）的最小冲突启发式（1992）源于对哈勃空间望远镜排程工作的观察。模拟退火由斯科特·柯克帕特里克（Scott Kirkpatrick）、丹尼尔·杰拉特（Daniel Gelatt）与马里奥·韦基（Mario Vecchi）（*Science*，1983）提出，弗拉迪米尔·切尔尼（Vladimír Černý，1985）独立提出，其基础是 1953 年的梅特罗波利斯算法。

@@ -127,7 +127,7 @@ $$
 
 ## 数值逆运动学 {#sec-numerical}
 
-对于没有球形腕的机械臂、冗余机械臂，以及只规定部分位姿的任务，逆运动学方程用迭代法求解。把任务写成求$\mathbf e(\boldsymbol\theta) = \mathbf x_d - \mathbf f(\boldsymbol\theta)$的根，其中$\mathbf f$是用任务坐标矢量（位置，或位置加上适当的姿态误差）表示的正运动学。在猜测值$\boldsymbol\theta_k$附近，由泰勒定理得$\mathbf f(\boldsymbol\theta_k + \Delta\boldsymbol\theta) \approx \mathbf f(\boldsymbol\theta_k) + J(\boldsymbol\theta_k)\Delta\boldsymbol\theta$，其中$J = \partial\mathbf f/\partial\boldsymbol\theta$为雅可比矩阵；令线性化误差为零就得到牛顿法（[数学图谱中的数值分析](/learn/maths/lesson.php?c=numerical-analysis)）。
+对于没有球形腕的机械臂、冗余机械臂，以及只规定部分位姿的任务，逆运动学方程用迭代法求解。把任务写成求$\mathbf e(\boldsymbol\theta) = \mathbf x_d - \mathbf f(\boldsymbol\theta)$的根，其中$\mathbf f$是用任务坐标矢量（位置，或位置加上适当的姿态误差）表示的正运动学。在猜测值$\boldsymbol\theta_k$附近，由泰勒定理得$\mathbf f(\boldsymbol\theta_k + \Delta\boldsymbol\theta) \approx \mathbf f(\boldsymbol\theta_k) + J(\boldsymbol\theta_k)\Delta\boldsymbol\theta$，其中$J = \partial\mathbf f/\partial\boldsymbol\theta$为雅可比矩阵；令线性化误差为零就得到牛顿法（[数学图谱中的数值分析](/a/maths/lesson.php?c=numerical-analysis)）。
 
 ::: algorithm 牛顿-拉弗森逆运动学 {#alg-newton-ik}
 输入：目标$\mathbf x_d$，初始猜测$\boldsymbol\theta_0$（通常为当前关节矢量），容差$\varepsilon$，迭代次数上限$k_{\max}$。
@@ -175,7 +175,7 @@ $$ {#eq-dls}
 :::
 
 ::: proof
-目标函数是$\Delta\boldsymbol\theta$的凸二次函数：$\Delta\boldsymbol\theta^{\mathsf T}(J^{\mathsf T}J + \lambda^2I)\Delta\boldsymbol\theta - 2\mathbf e^{\mathsf T}J\Delta\boldsymbol\theta + \mathbf e^{\mathsf T}\mathbf e$。当$\lambda > 0$时，其黑塞矩阵$2(J^{\mathsf T}J + \lambda^2I)$正定（因为$\mathbf u^{\mathsf T}J^{\mathsf T}J\mathbf u = \lVert J\mathbf u\rVert^2 \ge 0$），所以唯一的极小点就是梯度为零之处：$(J^{\mathsf T}J + \lambda^2I)\Delta\boldsymbol\theta = J^{\mathsf T}\mathbf e$。第二种形式来自恒等式$J^{\mathsf T}(JJ^{\mathsf T} + \lambda^2I) = (J^{\mathsf T}J + \lambda^2I)J^{\mathsf T}$，左乘$(J^{\mathsf T}J + \lambda^2I)^{-1}$并右乘$(JJ^{\mathsf T} + \lambda^2I)^{-1}$即得；它只需对一个$m\times m$矩阵（$m$为任务维数）求逆，对冗余机械臂而言计算量更小。关于增益，写出奇异值分解$J = U\Sigma V^{\mathsf T}$（[奇异值分解](/learn/maths/lesson.php?c=linear-algebra&l=svd)）；于是[[#eq-dls]]变为$\Delta\boldsymbol\theta = \sum_i \frac{\sigma_i}{\sigma_i^2 + \lambda^2}\mathbf v_i\mathbf u_i^{\mathsf T}\mathbf e$。函数$\sigma/(\sigma^2 + \lambda^2)$在$\sigma = \lambda$处取最大值$1/(2\lambda)$，并在$\sigma\to0$时趋于零，而$1/\sigma \to \infty$。
+目标函数是$\Delta\boldsymbol\theta$的凸二次函数：$\Delta\boldsymbol\theta^{\mathsf T}(J^{\mathsf T}J + \lambda^2I)\Delta\boldsymbol\theta - 2\mathbf e^{\mathsf T}J\Delta\boldsymbol\theta + \mathbf e^{\mathsf T}\mathbf e$。当$\lambda > 0$时，其黑塞矩阵$2(J^{\mathsf T}J + \lambda^2I)$正定（因为$\mathbf u^{\mathsf T}J^{\mathsf T}J\mathbf u = \lVert J\mathbf u\rVert^2 \ge 0$），所以唯一的极小点就是梯度为零之处：$(J^{\mathsf T}J + \lambda^2I)\Delta\boldsymbol\theta = J^{\mathsf T}\mathbf e$。第二种形式来自恒等式$J^{\mathsf T}(JJ^{\mathsf T} + \lambda^2I) = (J^{\mathsf T}J + \lambda^2I)J^{\mathsf T}$，左乘$(J^{\mathsf T}J + \lambda^2I)^{-1}$并右乘$(JJ^{\mathsf T} + \lambda^2I)^{-1}$即得；它只需对一个$m\times m$矩阵（$m$为任务维数）求逆，对冗余机械臂而言计算量更小。关于增益，写出奇异值分解$J = U\Sigma V^{\mathsf T}$（[奇异值分解](/a/maths/lesson.php?c=linear-algebra&l=svd)）；于是[[#eq-dls]]变为$\Delta\boldsymbol\theta = \sum_i \frac{\sigma_i}{\sigma_i^2 + \lambda^2}\mathbf v_i\mathbf u_i^{\mathsf T}\mathbf e$。函数$\sigma/(\sigma^2 + \lambda^2)$在$\sigma = \lambda$处取最大值$1/(2\lambda)$，并在$\sigma\to0$时趋于零，而$1/\sigma \to \infty$。
 :::
 
 **阻尼**$\lambda$（单位与任务坐标相同，这里是米）以精度换取鲁棒性：远离奇异位形时（$\sigma_i \gg \lambda$），步长几乎就是牛顿步；在奇异位形附近，步长受到限制。当$\lambda\to\infty$时，$\Delta\boldsymbol\theta \approx J^{\mathsf T}\mathbf e/\lambda^2$，这是沿$\frac12\lVert\mathbf e\rVert^2$的负梯度方向的一小步——即**雅可比转置**法，鲁棒但缓慢（线性收敛）。

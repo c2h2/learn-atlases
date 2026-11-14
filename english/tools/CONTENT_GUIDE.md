@@ -1,22 +1,22 @@
 # English Atlas — content guide
 
-English Atlas (`/learn/english/`) is a course in how English works, written for learners and
+English Atlas (`/a/english/`) is a course in how English works, written for learners and
 especially for Chinese speakers: pronunciation, vocabulary and grammar, reading and writing from
 everyday texts to academic papers, listening and speaking, and the history, varieties and
 translation of English. Every chapter is a long, self-contained lesson in the style of a very good
 textbook: a real question first, then clear definitions and rules with their explanations, many
 examples, worked analyses, interactive figures, quick checks and graded exercises with full answers.
 
-The site runs on the same engine as Maths Atlas (`/learn/maths/`). Its reference lesson,
-`/var/www/f.g77k.com/learn/maths/content/en/calculus-1/limits.md`, shows the markup and the level
+The site runs on the same engine as Maths Atlas (`/a/maths/`). Its reference lesson,
+`/var/www/f.g77k.com/a/maths/content/en/calculus-1/limits.md`, shows the markup and the level
 of care expected: read it before writing, even though its subject is far from ours.
 
 **Every lesson is written by hand to this standard.** Never generate lessons, course fields,
 example sentences, exercises or milestones from templates, scripts, word lists or language models.
 A chapter is either written properly or it stays "to be written" (its file does not exist): a
 placeholder that looks like a lesson is worse than no lesson. Medicine Atlas shows why —
-`/learn/medicine/pending/README.md` describes the generated filler that had to be taken off the
-site, and `/learn/medicine/tools/check.php` now rejects its patterns. This atlas's checker does not
+`/a/medicine/pending/README.md` describes the generated filler that had to be taken off the
+site, and `/a/medicine/tools/check.php` now rejects its patterns. This atlas's checker does not
 have those patterns yet; the rule applies all the same.
 
 ## 1. Files
@@ -223,12 +223,12 @@ acceptable variant. Questions that have one right choice among a few belong in a
 
 ## 7. Markup and notation
 
-Exactly as in Maths Atlas — see `/var/www/f.g77k.com/learn/maths/tools/CONTENT_GUIDE.md` §5 for
+Exactly as in Maths Atlas — see `/var/www/f.g77k.com/a/maths/tools/CONTENT_GUIDE.md` §5 for
 headings, lists, tables, blocks, references (`[[#id]]`, `[[course/chapter]]`,
 `[[course/chapter#id]]`) and attributes. A reference renders its own label ("Rule 3.2"), so write
 `[[#rule-present-perfect]]`, never "Rule [[#rule-present-perfect]]" (the checker flags the
 duplicated label). Links to other atlases are plain
-Markdown links (`[Maths Atlas](/learn/maths/)`): `[[…]]` only works inside one atlas.
+Markdown links (`[Maths Atlas](/a/maths/)`): `[[…]]` only works inside one atlas.
 
 Conventions of this atlas:
 
@@ -256,7 +256,7 @@ Conventions of this atlas:
 
 ## 8. Interactive figures
 
-The available types are in `data/widgets.json`; try each at `/learn/english/lab.php?w=<type>`:
+The available types are in `data/widgets.json`; try each at `/a/english/lab.php?w=<type>`:
 
 - `plot` — curves with sliders: forgetting and spacing models, Zipf's law (plot the logarithms:
   the type has no log axes), coverage curves from a formula.
@@ -299,13 +299,13 @@ warning, and say in your report which figure it needs.
 ## 10. Check your work
 
 ```
-cd /var/www/f.g77k.com/learn/english
+cd /var/www/f.g77k.com/a/english
 bash tools/check.sh <course> [<course> …]
 ```
 
 This validates figures, references and structure and prints a depth table per lesson. Fix every
 `ERROR`; depth `warn`ings must be gone for finished lessons (except a missing figure that does not
 exist yet, see §8). Preview at
-`http://f.g77k.com/learn/english/lesson.php?c=<course>&l=<chapter>` (from this machine:
+`http://f.g77k.com/a/english/lesson.php?c=<course>&l=<chapter>` (from this machine:
 `curl --resolve f.g77k.com:80:127.0.0.1 …` or `node tools/shot.js "lesson.php?c=…&l=…" out.png`).
 Read your rendered lesson at least once, in both languages at levels 1–2.

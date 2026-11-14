@@ -487,7 +487,7 @@ Prove that, for reps satisfying the reduced invariant $RI(n, d) \equiv d > 0 \la
 From $n_1 d_2 = n_2 d_1$ deduce that $d_1$ divides $d_2$, using the fact that if $p$ divides $qr$ and $\gcd(p, q) = 1$ then $p$ divides $r$.
 :::
 ::: solution
-Suppose $n_1/d_1 = n_2/d_2$, so $n_1 d_2 = n_2 d_1$. Then $d_1$ divides $n_1 d_2$, and $\gcd(d_1, n_1) = 1$, so $d_1$ divides $d_2$ (the general form of Euclid's lemma, proved in [Maths Atlas: number theory](/learn/maths/lesson.php?c=number-theory&l=divisibility)). Symmetrically $d_2$ divides $d_1$. Two positive integers that divide each other are equal, so $d_1 = d_2$, and cancelling the non-zero $d_1$ from $n_1 d_2 = n_2 d_1$ gives $n_1 = n_2$.
+Suppose $n_1/d_1 = n_2/d_2$, so $n_1 d_2 = n_2 d_1$. Then $d_1$ divides $n_1 d_2$, and $\gcd(d_1, n_1) = 1$, so $d_1$ divides $d_2$ (the general form of Euclid's lemma, proved in [Maths Atlas: number theory](/a/maths/lesson.php?c=number-theory&l=divisibility)). Symmetrically $d_2$ divides $d_1$. Two positive integers that divide each other are equal, so $d_1 = d_2$, and cancelling the non-zero $d_1$ from $n_1 d_2 = n_2 d_1$ gives $n_1 = n_2$.
 
 `equal_rat(x, y)` returns whether the components are equal. If they are, $AF(x) = AF(y)$ trivially; if $AF(x) = AF(y)$, injectivity gives equal components. So `equal_rat` returns `True` exactly when the rationals are equal, as specified — but only for reps satisfying $RI$, which [[#thm-ri-preserved]] guarantees.
 :::

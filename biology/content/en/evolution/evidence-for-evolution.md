@@ -181,7 +181,7 @@ caption: Two shapes a fitness trajectory might take, plotted against thousands o
 :::
 
 ::: application Evolution in medicine and agriculture
-Because evolution is happening now, it is a practical problem. Pathogens evolve resistance to drugs, tumours evolve within patients, weeds evolve resistance to herbicides and pests to insecticides and to crops engineered with *Bacillus thuringiensis* (Bt) toxins. Management strategies — combinations of drugs, refuges of non-Bt crops in which susceptible insects survive and dilute resistance genes, rotation of herbicides — are applications of evolutionary theory, designed to slow the spread of resistance alleles by the quantitative processes we study in [[evolution/natural-selection]] and [[evolution/mutation-drift-gene-flow]]. (The clinical side is in [Medicine Atlas](/learn/medicine/).)
+Because evolution is happening now, it is a practical problem. Pathogens evolve resistance to drugs, tumours evolve within patients, weeds evolve resistance to herbicides and pests to insecticides and to crops engineered with *Bacillus thuringiensis* (Bt) toxins. Management strategies — combinations of drugs, refuges of non-Bt crops in which susceptible insects survive and dilute resistance genes, rotation of herbicides — are applications of evolutionary theory, designed to slow the spread of resistance alleles by the quantitative processes we study in [[evolution/natural-selection]] and [[evolution/mutation-drift-gene-flow]]. (The clinical side is in [Medicine Atlas](/a/medicine/).)
 :::
 
 ## How the lines of evidence fit together

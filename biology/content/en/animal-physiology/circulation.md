@@ -202,7 +202,7 @@ By the law of Laplace ([[#prop-laplace]]), wall stress $\sigma = Pr/w$ (for a sp
 :::
 
 ::: application Comparative cardiology
-Comparative studies of hearts inform medicine in unexpected ways. The hearts of zebrafish and newts regenerate after injury, replacing lost muscle with new cardiomyocytes, whereas adult mammalian hearts form scar tissue; zebrafish heart regeneration (K. D. Poss and colleagues, 2002) is studied in the hope of stimulating repair in humans. Burmese pythons enlarge their hearts rapidly after a meal ([[animal-physiology/feeding-digestion]]), a reversible, healthy growth that is studied for comparison with the harmful enlargement of diseased hearts. Clinical cardiovascular physiology is in [Medicine Atlas: cardiovascular](/learn/medicine/course.php?c=cardiovascular).
+Comparative studies of hearts inform medicine in unexpected ways. The hearts of zebrafish and newts regenerate after injury, replacing lost muscle with new cardiomyocytes, whereas adult mammalian hearts form scar tissue; zebrafish heart regeneration (K. D. Poss and colleagues, 2002) is studied in the hope of stimulating repair in humans. Burmese pythons enlarge their hearts rapidly after a meal ([[animal-physiology/feeding-digestion]]), a reversible, healthy growth that is studied for comparison with the harmful enlargement of diseased hearts. Clinical cardiovascular physiology is in [Medicine Atlas: cardiovascular](/a/medicine/course.php?c=cardiovascular).
 :::
 
 ::: history

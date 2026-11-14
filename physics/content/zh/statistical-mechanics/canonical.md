@@ -327,7 +327,7 @@ labels: 量子谐振子; 经典渐近线
 caption: 量子谐振子高于基态的平均热能 $\langle n\rangle\varepsilon$，以 $\varepsilon$ 为单位，对 $k_BT/\varepsilon$ 作图。直线是高温渐近线 $k_BT - \varepsilon/2$；加上零点能，它就是经典的均分值。$k_BT \approx \varepsilon$ 以上两条曲线重合。$k_BT \approx 0.2\,\varepsilon$ 以下谐振子被冻结：它的能量、因而它的热容，几乎为零。
 :::
 
-所以能量均分对某个自由度成立，只有当它的能级间距远小于 $k_BT$。对氮分子，振动量子对应约 $2330\,\mathrm{cm^{-1}}$ 的波数，即温度 $hc\tilde\nu/k_B \approx 3350\,\mathrm{K}$；室温下振动受激的分子比例为 $e^{-3350/300} \approx 1.4\times10^{-5}$，空气的 $C_V = \tfrac52R$ 而不是 $\tfrac72R$。氮的转动间距只有几开尔文，所以转动在室温下完全经典。电子激发高好几个电子伏，从不参与。经典理论解释不了这些"缺席"的自由度——这正是开尔文（Kelvin）1900 年在英国皇家研究所（Royal Institution）的讲演里挂在十九世纪物理学上空的"两朵乌云"之一。答案是量子化。分子的转动与振动配分函数及其热容，在化学图谱的章节 [分子配分函数](/learn/chemistry/lesson.php?c=statistical-thermodynamics&l=partition-function) 里详细算出。
+所以能量均分对某个自由度成立，只有当它的能级间距远小于 $k_BT$。对氮分子，振动量子对应约 $2330\,\mathrm{cm^{-1}}$ 的波数，即温度 $hc\tilde\nu/k_B \approx 3350\,\mathrm{K}$；室温下振动受激的分子比例为 $e^{-3350/300} \approx 1.4\times10^{-5}$，空气的 $C_V = \tfrac52R$ 而不是 $\tfrac72R$。氮的转动间距只有几开尔文，所以转动在室温下完全经典。电子激发高好几个电子伏，从不参与。经典理论解释不了这些"缺席"的自由度——这正是开尔文（Kelvin）1900 年在英国皇家研究所（Royal Institution）的讲演里挂在十九世纪物理学上空的"两朵乌云"之一。答案是量子化。分子的转动与振动配分函数及其热容，在化学图谱的章节 [分子配分函数](/a/chemistry/lesson.php?c=statistical-thermodynamics&l=partition-function) 里详细算出。
 
 ::: example 一氧化碳的转动 {#ex-rotation}
 刚性线性分子的转动能级为 $E_J = k_B\theta_{\mathrm{rot}}J(J+1)$，$J = 0, 1, 2, \dots$，每级简并度 $2J + 1$。一氧化碳的转动常数 $1.9313\,\mathrm{cm^{-1}}$ 给出 $\theta_{\mathrm{rot}} = hc\tilde B/k_B = 2.779\,\mathrm{K}$。在 $300\,\mathrm{K}$ 下计算转动配分函数，与经典值 $T/\theta_{\mathrm{rot}}$ 比较，并找出占据数最大的能级。
@@ -413,7 +413,7 @@ $U$ 与 $C_V$ 都加倍。$\Delta E = \sqrt{k_BT^2C_V}$ 增大 $\sqrt2$ 倍，�
 :::
 
 ::: application 同一个配分函数算出的化学
-平衡常数、反应自由能、真实气体的热容、分子的绝对熵，化学里全都是从正则 $Z$ 算出来的——分子配分函数因子化成平动、转动、振动、电子四块。参见化学图谱的 [由配分函数出发的热力学函数](/learn/chemistry/lesson.php?c=statistical-thermodynamics&l=thermodynamic-functions) 与 [正则系综](/learn/chemistry/lesson.php?c=statistical-thermodynamics&l=canonical-ensemble)：它们从这里沿化学家的路一直走到 $\Delta G^\circ$ 的表格。
+平衡常数、反应自由能、真实气体的热容、分子的绝对熵，化学里全都是从正则 $Z$ 算出来的——分子配分函数因子化成平动、转动、振动、电子四块。参见化学图谱的 [由配分函数出发的热力学函数](/a/chemistry/lesson.php?c=statistical-thermodynamics&l=thermodynamic-functions) 与 [正则系综](/a/chemistry/lesson.php?c=statistical-thermodynamics&l=canonical-ensemble)：它们从这里沿化学家的路一直走到 $\Delta G^\circ$ 的表格。
 :::
 
 ::: history 吉布斯与系综

@@ -45,7 +45,7 @@ x: 0, 8000
 y: 0, 1300
 sliders: t=10:1:300:1
 labels: temperature
-caption: Temperature against distance from the margin of a hot intrusion, after $t$ thousand years, for $\kappa = 10^{-6}\ \mathrm{m^2\,s^{-1}}$. The curve is the error-function solution of the heat equation ([Maths Atlas](/learn/maths/)), and the slider is time. At $10\ \mathrm{kyr}$ the $600\ ^\circ\mathrm{C}$ isotherm — the usual base of the hornfels facies — sits about $700\ \mathrm{m}$ from the contact; at $300\ \mathrm{kyr}$ it sits past $3.5\ \mathrm{km}$. Drag the slider and watch the curve flatten rather than stretch: conductive heating spreads as $\sqrt{t}$, so making an aureole twice as wide takes four times as long.
+caption: Temperature against distance from the margin of a hot intrusion, after $t$ thousand years, for $\kappa = 10^{-6}\ \mathrm{m^2\,s^{-1}}$. The curve is the error-function solution of the heat equation ([Maths Atlas](/a/maths/)), and the slider is time. At $10\ \mathrm{kyr}$ the $600\ ^\circ\mathrm{C}$ isotherm — the usual base of the hornfels facies — sits about $700\ \mathrm{m}$ from the contact; at $300\ \mathrm{kyr}$ it sits past $3.5\ \mathrm{km}$. Drag the slider and watch the curve flatten rather than stretch: conductive heating spreads as $\sqrt{t}$, so making an aureole twice as wide takes four times as long.
 :::
 
 ## Facies: naming the pressure–temperature box

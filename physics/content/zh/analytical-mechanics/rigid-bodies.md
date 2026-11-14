@@ -90,7 +90,7 @@ $$
 
 ### 主轴
 
-因为 $I$ 实对称，谱定理（[见数学图谱](/learn/maths/lesson.php?c=linear-algebra&l=spectral-theorem)）保证三个实特征值和一组标准正交的特征向量。
+因为 $I$ 实对称，谱定理（[见数学图谱](/a/maths/lesson.php?c=linear-algebra&l=spectral-theorem)）保证三个实特征值和一组标准正交的特征向量。
 
 ::: definition 主轴与主转动惯量 {#def-principal}
 关于 $O$ 的惯量张量的特征向量 $\mathbf{e}_1, \mathbf{e}_2, \mathbf{e}_3$，取成标准正交，就是刚体在 $O$ 处的**主轴**；特征值 $I_1, I_2, I_3$ 是**主转动惯量**。在主轴系中，
@@ -294,7 +294,7 @@ sliders: a=1:0.5:2:0.05; b=3:2.2:4:0.05
 caption: 绕转动惯量为 $x$ 的轴转动，另两个主转动惯量为 $a$ 与 $b$。曲线是 [[#eq-tennis-rate]] 给出的 $\lambda^2/\omega^2$：在它为正的地方，即 $a$ 与 $b$ 之间，转动不稳定，扰动按 $e^{\lambda t}$ 增长；在它为负的地方，小扰动以角频率 $\omega\sqrt{-(\text{函数值})}$ 振动。只有中间的转动惯量落进不稳定带。把 $a$ 与 $b$ 拖到一起，看不稳定带收窄：近于对称的刚体翻转得很慢。
 :::
 
-非线性运动很容易计算。下面的清单用经典四阶龙格-库塔方法（[见数学图谱](/learn/maths/lesson.php?c=numerical-analysis&l=numerical-odes)）积分欧拉方程，取 $I = (1, 2, 3)$ 的刚体，从每条主轴附近出发，$\abs{\boldsymbol{\omega}} \approx 1$，并报告大分量变号的时刻。
+非线性运动很容易计算。下面的清单用经典四阶龙格-库塔方法（[见数学图谱](/a/maths/lesson.php?c=numerical-analysis&l=numerical-odes)）积分欧拉方程，取 $I = (1, 2, 3)$ 的刚体，从每条主轴附近出发，$\abs{\boldsymbol{\omega}} \approx 1$，并报告大分量变号的时刻。
 
 ```python
 import math

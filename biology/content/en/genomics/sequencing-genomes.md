@@ -189,7 +189,7 @@ All-against-all comparison is impractical for a billion short reads. Short-read 
 For a chosen word length $k$, the **de Bruijn graph** of a set of reads has a node for each distinct $(k-1)$-mer and a directed edge for each distinct $k$-mer occurring in the reads, from the node of its first $k-1$ bases (its prefix) to the node of its last $k-1$ bases (its suffix). Each read is a walk in the graph, and the genome — if every $k$-mer of it was sampled — is a walk that uses every edge: an **Eulerian path**.
 :::
 
-The trick is that finding a path that uses every *edge* once (an Eulerian path) is easy — it takes time proportional to the number of edges, by an algorithm of Carl Hierholzer from 1873 (see [graph algorithms](/learn/maths/lesson.php?c=discrete&l=graph-algorithms) in Maths Atlas) — whereas finding a path that visits every *node* once, as the overlap formulation requires, is in general a hard problem. In practice assemblers do not search for a single Eulerian path: they simplify the graph and report the unbranched stretches ("unitigs") as contigs.
+The trick is that finding a path that uses every *edge* once (an Eulerian path) is easy — it takes time proportional to the number of edges, by an algorithm of Carl Hierholzer from 1873 (see [graph algorithms](/a/maths/lesson.php?c=discrete&l=graph-algorithms) in Maths Atlas) — whereas finding a path that visits every *node* once, as the overlap formulation requires, is in general a hard problem. In practice assemblers do not search for a single Eulerian path: they simplify the graph and report the unbranched stretches ("unitigs") as contigs.
 
 ```python
 from collections import defaultdict

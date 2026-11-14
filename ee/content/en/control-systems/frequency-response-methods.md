@@ -38,7 +38,7 @@ The consequence for design is immediate. A loop gain that crosses $0\,\mathrm{dB
 
 ## The Nyquist stability criterion
 
-Nyquist's criterion rests on a theorem of complex analysis, the argument principle (see [Maths Atlas: residues](/learn/maths/lesson.php?c=complex-analysis&l=residues)).
+Nyquist's criterion rests on a theorem of complex analysis, the argument principle (see [Maths Atlas: residues](/a/maths/lesson.php?c=complex-analysis&l=residues)).
 
 ::: theorem Argument principle {#thm-argument}
 Let $F(s)$ be rational, and let $\Gamma$ be a simple closed contour in the $s$-plane, traversed clockwise, that passes through no pole or zero of $F$. If $\Gamma$ encloses $Z$ zeros and $P$ poles of $F$ (counted with multiplicity), then as $s$ travels once around $\Gamma$ the image curve $F(s)$ encircles the origin $Z - P$ times clockwise.

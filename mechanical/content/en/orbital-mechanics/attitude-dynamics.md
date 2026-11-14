@@ -4,7 +4,7 @@ The rigid-body kinematics and the inertia tensor are developed in [[dynamics/thr
 
 ## Euler's equations {#sec-euler}
 
-Fix a frame to the spacecraft with origin at its centre of mass. The angular momentum about the centre of mass is $\mathbf{H} = \mathbf{I}\boldsymbol{\omega}$, where $\boldsymbol{\omega}$ is the spacecraft's angular velocity and $\mathbf{I}$ its inertia tensor — a symmetric positive-definite matrix, constant in the body frame for a rigid body. Its eigenvectors are the **principal axes**, and in principal axes $\mathbf{I} = \operatorname{diag}(I_1, I_2, I_3)$ ([spectral theorem for symmetric matrices](/learn/maths/lesson.php?c=linear-algebra&l=spectral-theorem)).
+Fix a frame to the spacecraft with origin at its centre of mass. The angular momentum about the centre of mass is $\mathbf{H} = \mathbf{I}\boldsymbol{\omega}$, where $\boldsymbol{\omega}$ is the spacecraft's angular velocity and $\mathbf{I}$ its inertia tensor — a symmetric positive-definite matrix, constant in the body frame for a rigid body. Its eigenvectors are the **principal axes**, and in principal axes $\mathbf{I} = \operatorname{diag}(I_1, I_2, I_3)$ ([spectral theorem for symmetric matrices](/a/maths/lesson.php?c=linear-algebra&l=spectral-theorem)).
 
 ::: theorem Euler's equations {#thm-euler}
 In principal body axes, a rigid body acted on by an external torque $\mathbf{M}$ about its centre of mass obeys

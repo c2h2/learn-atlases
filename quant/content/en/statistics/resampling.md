@@ -1,6 +1,6 @@
 The ordinary standard error of a mean divides by $\sqrt{n}$ because it treats the observations as independent draws. A return series is one path. Resampling asks what else that path could have looked like if it is rebuilt from its own pieces. Pieces of length one destroy runs. Pieces that are blocks keep the runs that fit inside a block. Neither procedure can invent a return that the path never contained, and neither procedure is a decision to trade.
 
-The $\sqrt{n}$ scaling itself is the conclusion of the central limit theorem under an independent, finite-variance model. The proof is in the Maths Atlas, in [limit theorems](/learn/maths/lesson.php?c=probability&l=limit-theorems). This chapter does not prove it, and it does not pretend that a histogram of bootstrap means is that theorem. The bootstrap is a different construction: it resamples one observed series.
+The $\sqrt{n}$ scaling itself is the conclusion of the central limit theorem under an independent, finite-variance model. The proof is in the Maths Atlas, in [limit theorems](/a/maths/lesson.php?c=probability&l=limit-theorems). This chapter does not prove it, and it does not pretend that a histogram of bootstrap means is that theorem. The bootstrap is a different construction: it resamples one observed series.
 
 ## Draws of length one
 

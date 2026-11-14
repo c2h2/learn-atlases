@@ -44,7 +44,7 @@ $$ {#eq-vcell}
 
 数 $a$ 是**晶格常数**，永远指惯用立方的边长。因此，给出一个 bcc 或 fcc 金属的晶格常数，并没有给出基矢的长度，这是 $\sqrt2$ 因子差错的一个常见来源。
 
-多数晶体需要多于一个原子的基元。氯化钠是 fcc 格子配上基元：$\mathrm{Na}$ 在 $(0,0,0)$，$\mathrm{Cl}$ 在 $\frac a2(1,0,0)$：两套互相穿插的 fcc 格子，每个离子被六个异号离子包围。氯化铯是简单立方，$\mathrm{Cs}$ 在顶角，$\mathrm{Cl}$ 在体心。它看起来像 bcc，但不是，因为体心位置是另一种原子，与顶角不等价。金刚石、硅和锗具有**金刚石结构**：fcc 配两个全同原子，位于 $(0,0,0)$ 和 $\frac a4(1,1,1)$，每个原子以四面体方式与四个近邻成键。闪锌矿（$\mathrm{GaAs}$、$\mathrm{ZnS}$）情形相同，只是两个原子不同。这些以及许多其他结构的晶体化学概要，见化学图谱（[晶体结构](/learn/chemistry/lesson.php?c=materials-chemistry&l=crystal-structures)）。
+多数晶体需要多于一个原子的基元。氯化钠是 fcc 格子配上基元：$\mathrm{Na}$ 在 $(0,0,0)$，$\mathrm{Cl}$ 在 $\frac a2(1,0,0)$：两套互相穿插的 fcc 格子，每个离子被六个异号离子包围。氯化铯是简单立方，$\mathrm{Cs}$ 在顶角，$\mathrm{Cl}$ 在体心。它看起来像 bcc，但不是，因为体心位置是另一种原子，与顶角不等价。金刚石、硅和锗具有**金刚石结构**：fcc 配两个全同原子，位于 $(0,0,0)$ 和 $\frac a4(1,1,1)$，每个原子以四面体方式与四个近邻成键。闪锌矿（$\mathrm{GaAs}$、$\mathrm{ZnS}$）情形相同，只是两个原子不同。这些以及许多其他结构的晶体化学概要，见化学图谱（[晶体结构](/a/chemistry/lesson.php?c=materials-chemistry&l=crystal-structures)）。
 
 ::: example 致密度 {#ex-packing}
 把原子当作与最近邻相切的硬球。求 sc、bcc、fcc 三种格子中球填满空间的比例。

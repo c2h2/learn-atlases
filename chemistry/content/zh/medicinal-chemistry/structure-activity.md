@@ -240,7 +240,7 @@ Free–Wilson 增量只对训练集中的取代基与位置存在，所以模型
 
 ## 后续内容
 
-SAR 告诉我们什么要紧；蛋白质结构告诉我们为什么。[[medicinal-chemistry/structure-based-design]]用晶体结构、对接与自由能计算把本章的套路从经验变成深思熟虑；[[medicinal-chemistry/drug-case-studies]]沿着产生 β-内酰胺类、ACE 抑制药、他汀与激酶抑制剂的 SAR 战役追踪。这里讨论的性质改变的药代动力学后果见[[medicinal-chemistry/pharmacokinetics]]。多元线性回归与交叉验证在 Maths Atlas（`/learn/maths/`）中有处理，σ 背后的物理有机化学见[[organic-2/aromatic-substitution]]。
+SAR 告诉我们什么要紧；蛋白质结构告诉我们为什么。[[medicinal-chemistry/structure-based-design]]用晶体结构、对接与自由能计算把本章的套路从经验变成深思熟虑；[[medicinal-chemistry/drug-case-studies]]沿着产生 β-内酰胺类、ACE 抑制药、他汀与激酶抑制剂的 SAR 战役追踪。这里讨论的性质改变的药代动力学后果见[[medicinal-chemistry/pharmacokinetics]]。多元线性回归与交叉验证在 Maths Atlas（`/a/maths/`）中有处理，σ 背后的物理有机化学见[[organic-2/aromatic-substitution]]。
 
 ::: summary
 - 构效关系靠一次去掉或掩蔽一个基团来发现，并把变化读成自由能（$298\ \mathrm{K}$ 下每十倍 $5.7\ \mathrm{kJ\,mol^{-1}}$）；必要特征及其三维排布构成药效团。

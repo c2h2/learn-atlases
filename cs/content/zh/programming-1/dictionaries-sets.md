@@ -229,7 +229,7 @@ True 6
 sets: 2
 expr: (M - P) | (P - M)
 labels: M; P
-caption: 对称差 `maths ^ physics`：恰好选修两门课程之一（$M$ 表示数学，$P$ 表示物理）的学生，写作 $(M \setminus P) \cup (P \setminus M)$。键入其他表达式——`M & P`、`M | P`、`M - P`——即可看到 [[#ex-enrol]] 中的其他运算。Python 的集合运算严格遵循 [Maths Atlas：集合](/learn/maths/lesson.php?c=proofs&l=sets)中的运算律。
+caption: 对称差 `maths ^ physics`：恰好选修两门课程之一（$M$ 表示数学，$P$ 表示物理）的学生，写作 $(M \setminus P) \cup (P \setminus M)$。键入其他表达式——`M & P`、`M | P`、`M - P`——即可看到 [[#ex-enrol]] 中的其他运算。Python 的集合运算严格遵循 [Maths Atlas：集合](/a/maths/lesson.php?c=proofs&l=sets)中的运算律。
 :::
 
 快速的成员资格检验改变了哪些算法切实可用。作为一个观测结果（CPython 3.14 的某一次运行，2026 年；时间因机器而异）：对一个含 $100{,}000$ 个数字的列表，对接近末尾的数做 $1000$ 次成员资格检验用了约 $0.6$ 秒，而对同样这些数字组成的集合做同样的检验只用了约 $0.0001$ 秒——快了大约四个数量级，因为列表的每次检验几乎要扫完整个列表。

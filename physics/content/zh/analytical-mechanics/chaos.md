@@ -2,7 +2,7 @@
 
 这就是**确定性混沌**：在没有噪声的系统中，有界、非周期的运动却对初始条件有敏感依赖。它不是什么奇闻。它把天气预报限制在两周左右，它主宰小行星带的长期行为，它出现在激光器、化学反应、心脏节律与滴水的水龙头里；它是在分析力学最古老的问题——三个相互引力作用的天体的运动——中被发现的。
 
-前面几章讲的是可解的系统：化归为求积（[[analytical-mechanics/central-forces]]）、用简正模（[[analytical-mechanics/small-oscillations]]），或用作用–角变量（[[analytical-mechanics/hamiltonian]]）。本章讲的是一般的非线性系统取而代之会做什么。我们从不动点的几何开始，解释混沌为什么至少需要三维相空间，用数值跟着受驱摆一路进入混沌，定义并计算**李雅普诺夫（Lyapunov）指数**，然后研究所有混沌系统中最简单的一个——逻辑斯蒂（logistic）映射——它的通往混沌之路连着几个普适常数。第一节要用的相平面技术，数学图谱中的[非线性系统一章](/learn/maths/lesson.php?c=ode&l=nonlinear-systems)讲得更细。
+前面几章讲的是可解的系统：化归为求积（[[analytical-mechanics/central-forces]]）、用简正模（[[analytical-mechanics/small-oscillations]]），或用作用–角变量（[[analytical-mechanics/hamiltonian]]）。本章讲的是一般的非线性系统取而代之会做什么。我们从不动点的几何开始，解释混沌为什么至少需要三维相空间，用数值跟着受驱摆一路进入混沌，定义并计算**李雅普诺夫（Lyapunov）指数**，然后研究所有混沌系统中最简单的一个——逻辑斯蒂（logistic）映射——它的通往混沌之路连着几个普适常数。第一节要用的相平面技术，数学图谱中的[非线性系统一章](/a/maths/lesson.php?c=ode&l=nonlinear-systems)讲得更细。
 
 ## 不动点与相平面 {#fixed-points}
 
@@ -73,7 +73,7 @@ v0: 0
 caption: 线性受驱振子，即单摆的小振幅极限。播放运动，看从 $x_0 = 1.5$ 处释放的瞬态如何消退为驱动频率上的稳态振荡。改变 $x_0$ 或 $v_0$ 再运行：稳态是同一个，因为线性系统只有这一个。增大 $F$ 只是把稳态振幅按比例缩放。本节其余部分出现的一切行为，在这张图里都不可能发生。
 :::
 
-$\phi$ 一旦不再小，单摆就不是线性的。问题是当 $\gamma$ 增大越过 $1$ 时稳态长什么样。运动用四阶龙格-库塔方法数值积分（[数学图谱中的数值常微分方程](/learn/maths/lesson.php?c=numerical-analysis&l=numerical-odes)），每个驱动周期 $1000$ 步，从 $\phi(0) = -\pi/2$、$\dot\phi(0) = 0$ 出发。
+$\phi$ 一旦不再小，单摆就不是线性的。问题是当 $\gamma$ 增大越过 $1$ 时稳态长什么样。运动用四阶龙格-库塔方法数值积分（[数学图谱中的数值常微分方程](/a/maths/lesson.php?c=numerical-analysis&l=numerical-odes)），每个驱动周期 $1000$ 步，从 $\phi(0) = -\pi/2$、$\dot\phi(0) = 0$ 出发。
 
 ### 庞加莱截面
 

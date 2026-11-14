@@ -84,7 +84,7 @@ $$
 $$
 \mathbf{K}\boldsymbol\phi = \omega^2\mathbf{M}\boldsymbol\phi,
 $$ {#eq-eig}
-它的$n$个解（对$n$个自由的自由度）就是离散化结构的固有频率$\omega_1 \le \omega_2 \le \dots \le \omega_n$和振型$\boldsymbol\phi_i$。大型模型用子空间迭代法或兰乔斯（Lanczos）法求解，只提取最低的几十阶模态（[特征值](/learn/maths/lesson.php?c=linear-algebra&l=eigenvalues)）；网格的最高阶模态没有物理意义，从不计算。
+它的$n$个解（对$n$个自由的自由度）就是离散化结构的固有频率$\omega_1 \le \omega_2 \le \dots \le \omega_n$和振型$\boldsymbol\phi_i$。大型模型用子空间迭代法或兰乔斯（Lanczos）法求解，只提取最低的几十阶模态（[特征值](/a/maths/lesson.php?c=linear-algebra&l=eigenvalues)）；网格的最高阶模态没有物理意义，从不计算。
 
 ::: theorem 振型的正交性 {#thm-orth}
 若$\mathbf{K}$和$\mathbf{M}$对称且$\mathbf{M}$正定，则[[#eq-eig]]的所有特征值$\omega_i^2$都是实数，并且属于不同特征值的振型关于这两个矩阵都正交：
@@ -95,7 +95,7 @@ $$
 :::
 
 ::: proof
-写出模态$i$和$j$的特征方程，用$\boldsymbol\phi_j^{\mathsf T}$左乘第一个，用$\boldsymbol\phi_i^{\mathsf T}$左乘第二个：$\boldsymbol\phi_j^{\mathsf T}\mathbf{K}\boldsymbol\phi_i = \omega_i^2\boldsymbol\phi_j^{\mathsf T}\mathbf{M}\boldsymbol\phi_i$和$\boldsymbol\phi_i^{\mathsf T}\mathbf{K}\boldsymbol\phi_j = \omega_j^2\boldsymbol\phi_i^{\mathsf T}\mathbf{M}\boldsymbol\phi_j$。由对称性，两式左边相等，两个$\mathbf{M}$乘积也相等；相减得$(\omega_i^2 - \omega_j^2)\,\boldsymbol\phi_i^{\mathsf T}\mathbf{M}\boldsymbol\phi_j = 0$，所以当频率不同时$\mathbf{M}$乘积为零，进而$\mathbf{K}$乘积也为零。实性：若$\boldsymbol\phi$是复向量、对应特征值$\lambda$，用其共轭转置左乘得$\bar{\boldsymbol\phi}^{\mathsf T}\mathbf{K}\boldsymbol\phi = \lambda\,\bar{\boldsymbol\phi}^{\mathsf T}\mathbf{M}\boldsymbol\phi$，对实对称矩阵这两个二次型都是实数，且第二个为正；因此$\lambda$是实数。（重频的振型可以选成正交的；见[谱定理](/learn/maths/lesson.php?c=linear-algebra&l=spectral-theorem)。）
+写出模态$i$和$j$的特征方程，用$\boldsymbol\phi_j^{\mathsf T}$左乘第一个，用$\boldsymbol\phi_i^{\mathsf T}$左乘第二个：$\boldsymbol\phi_j^{\mathsf T}\mathbf{K}\boldsymbol\phi_i = \omega_i^2\boldsymbol\phi_j^{\mathsf T}\mathbf{M}\boldsymbol\phi_i$和$\boldsymbol\phi_i^{\mathsf T}\mathbf{K}\boldsymbol\phi_j = \omega_j^2\boldsymbol\phi_i^{\mathsf T}\mathbf{M}\boldsymbol\phi_j$。由对称性，两式左边相等，两个$\mathbf{M}$乘积也相等；相减得$(\omega_i^2 - \omega_j^2)\,\boldsymbol\phi_i^{\mathsf T}\mathbf{M}\boldsymbol\phi_j = 0$，所以当频率不同时$\mathbf{M}$乘积为零，进而$\mathbf{K}$乘积也为零。实性：若$\boldsymbol\phi$是复向量、对应特征值$\lambda$，用其共轭转置左乘得$\bar{\boldsymbol\phi}^{\mathsf T}\mathbf{K}\boldsymbol\phi = \lambda\,\bar{\boldsymbol\phi}^{\mathsf T}\mathbf{M}\boldsymbol\phi$，对实对称矩阵这两个二次型都是实数，且第二个为正；因此$\lambda$是实数。（重频的振型可以选成正交的；见[谱定理](/a/maths/lesson.php?c=linear-algebra&l=spectral-theorem)。）
 :::
 
 ::: example 两自由度模型 {#ex-2dof}

@@ -1,6 +1,6 @@
 按 [[quantum-computing/quantum-circuits#ex-bell-matrix]] 的方法，用一个哈达玛门和一个 CNOT 制备两个量子比特，把其中一个交给 Alice，另一个交给 Bob。他们各自单独测量，看到的都是一个完全随机的比特。然而两人的比特总是相同——而且若两人先各施加一个哈达玛门再测量，他们的比特*仍然*总是相同，这是任何事先约定好的随机比特对在任何基的选择下都无法保证的。这一对处于这样一种状态：它不是 Alice 量子比特的某个状态与 Bob 量子比特的某个状态的张量组合——它是**纠缠的**。爱因斯坦（Einstein）称这种关联为“鬼魅般的超距作用”，并与 Podolsky、Rosen 在 1935 年据此断定量子力学必定是不完备的。此后的实验证实了量子力学的正确，而纠缠已经成为一种可以像带宽或内存那样被制备、存储、消耗和计数的资源。
 
-本章发展多个量子比特的数学：乘积态与纠缠态、部分测量，以及**施密特分解**（Schmidt decomposition）。我们证明**不可克隆定理**与**无通信**（no-signalling）原则，两者一起说明纠缠不能做什么。然后展示它能做什么：**超密编码**用一个量子比特发送两个经典比特，**隐形传态**用两个经典比特发送一个量子比特，而在 **CHSH 博弈**中，拥有纠缠的玩家一方以概率 $\cos^2(\pi/8) \approx 0.854$ 获胜，而经典玩家至多 $3/4$。两个协议都用 [[quantum-computing/quantum-circuits]] 中的模拟器 `qsim.py` 检验。纠缠的物理，包括 EPR 论证与贝尔定理，另见[物理图谱：纠缠](/learn/physics/lesson.php?c=quantum-2&l=entanglement)。
+本章发展多个量子比特的数学：乘积态与纠缠态、部分测量，以及**施密特分解**（Schmidt decomposition）。我们证明**不可克隆定理**与**无通信**（no-signalling）原则，两者一起说明纠缠不能做什么。然后展示它能做什么：**超密编码**用一个量子比特发送两个经典比特，**隐形传态**用两个经典比特发送一个量子比特，而在 **CHSH 博弈**中，拥有纠缠的玩家一方以概率 $\cos^2(\pi/8) \approx 0.854$ 获胜，而经典玩家至多 $3/4$。两个协议都用 [[quantum-computing/quantum-circuits]] 中的模拟器 `qsim.py` 检验。纠缠的物理，包括 EPR 论证与贝尔定理，另见[物理图谱：纠缠](/a/physics/lesson.php?c=quantum-2&l=entanglement)。
 
 ## 乘积态与纠缠态
 
@@ -36,7 +36,7 @@ $$
 
 ### 施密特分解
 
-每个两部分状态都有一个规范形，而它不过是奇值分解（[数学图谱：奇异值分解](/learn/maths/lesson.php?c=linear-algebra&l=svd)）换了外衣。
+每个两部分状态都有一个规范形，而它不过是奇值分解（[数学图谱：奇异值分解](/a/maths/lesson.php?c=linear-algebra&l=svd)）换了外衣。
 
 ::: theorem 施密特分解 {#thm-schmidt}
 设 $\ket\psi = \sum_{i=1}^{d_A}\sum_{j=1}^{d_B}c_{ij}\ket i\ket j$ 是 $\C^{d_A}\otimes\C^{d_B}$ 中的单位向量。存在 $\C^{d_A}$ 中的标准正交向量 $\ket{u_1}, \dots, \ket{u_r}$、$\C^{d_B}$ 中的标准正交向量 $\ket{v_1}, \dots, \ket{v_r}$，以及正数 $\lambda_1 \ge \dots \ge \lambda_r > 0$ 满足 $\sum_k\lambda_k^2 = 1$，使得

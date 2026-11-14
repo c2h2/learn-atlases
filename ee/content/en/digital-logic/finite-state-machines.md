@@ -2,7 +2,7 @@ A traffic-light controller, a USB protocol engine, the control unit of a process
 
 The FSM is the point where the two halves of the course meet: the flip-flops of [[digital-logic/latches-flip-flops]] hold the state, and the combinational design of [[digital-logic/logic-minimisation]] produces the logic around them. It is also the place where design method matters most. A state machine coded straight from a vague idea almost always has an unhandled case; one drawn as a state diagram first, checked against the specification, and then converted mechanically into logic usually works the first time. This chapter teaches that method: the two kinds of machine (Moore and Mealy), the complete design procedure from words to gates, the choice of state encoding, and the minimisation of the number of states.
 
-The same mathematical object appears in computer science as the finite automaton, used to recognise languages; see [Finite automata](/learn/cs/lesson.php?c=theory-of-computation&l=finite-automata). The engineering emphasis here is on outputs, clocks and hardware cost.
+The same mathematical object appears in computer science as the finite automaton, used to recognise languages; see [Finite automata](/a/cs/lesson.php?c=theory-of-computation&l=finite-automata). The engineering emphasis here is on outputs, clocks and hardware cost.
 
 ## Synchronous sequential circuits
 

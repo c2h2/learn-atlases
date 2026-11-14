@@ -332,7 +332,7 @@ Let a set of values be defined as the smallest set built from some **base** cons
 :::
 
 ::: proof
-Assign each value its **size**, the number of constructor applications used to build it; sub-values have strictly smaller size. Suppose $P$ failed for some value, and let $v$ be a failing value of least size. If $v$ is built by a base constructor, $P(v)$ holds by the first part of the hypothesis — a contradiction. Otherwise $v$ is built by a recursive constructor from sub-values of smaller size, for which $P$ holds by the minimality of $v$; then the second part of the hypothesis gives $P(v)$ — again a contradiction. So $P$ holds for every value. (This is ordinary strong induction on size, from [Maths Atlas: induction](/learn/maths/lesson.php?c=proofs&l=induction).)
+Assign each value its **size**, the number of constructor applications used to build it; sub-values have strictly smaller size. Suppose $P$ failed for some value, and let $v$ be a failing value of least size. If $v$ is built by a base constructor, $P(v)$ holds by the first part of the hypothesis — a contradiction. Otherwise $v$ is built by a recursive constructor from sub-values of smaller size, for which $P$ holds by the minimality of $v$; then the second part of the hypothesis gives $P(v)$ — again a contradiction. So $P$ holds for every value. (This is ordinary strong induction on size, from [Maths Atlas: induction](/a/maths/lesson.php?c=proofs&l=induction).)
 :::
 
 ::: example Leaves and operators {#ex-leaves}

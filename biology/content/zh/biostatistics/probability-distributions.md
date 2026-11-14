@@ -1,6 +1,6 @@
 为什么两个杂合亲本的四个后代中有时根本没有隐性个体，而孟德尔的比例说四个中应有一个？为什么博尔特凯维奇的马踢死亡数遵循如此规律的模式，尽管每一次死亡都是一场意外？为什么那么多生物学测量值呈钟形？这些回答都来自概率——机会的数学。概率是一个统计模型陈述"若某假说为真，数据*将会*是什么样子"所用的语言，因此本课程中每一个估计、每一个检验都以它为基础。
 
-本章介绍生物学中使用的概率法则、随机变量及其分布的概念，以及无处不在的三个分布：固定次数试验中成功数目的**二项分布**（binomial）、稀有独立事件计数的**泊松分布**（Poisson）、许多小效应之和的测量值的**正态分布**（normal）。带证明的严格理论在数学图谱：[概率空间](/learn/maths/lesson.php?c=probability&l=probability-spaces)、[离散随机变量](/learn/maths/lesson.php?c=probability&l=discrete-random-variables)、[连续随机变量](/learn/maths/lesson.php?c=probability&l=continuous-random-variables)与[极限定理](/learn/maths/lesson.php?c=probability&l=limit-theorems)。
+本章介绍生物学中使用的概率法则、随机变量及其分布的概念，以及无处不在的三个分布：固定次数试验中成功数目的**二项分布**（binomial）、稀有独立事件计数的**泊松分布**（Poisson）、许多小效应之和的测量值的**正态分布**（normal）。带证明的严格理论在数学图谱：[概率空间](/a/maths/lesson.php?c=probability&l=probability-spaces)、[离散随机变量](/a/maths/lesson.php?c=probability&l=discrete-random-variables)、[连续随机变量](/a/maths/lesson.php?c=probability&l=continuous-random-variables)与[极限定理](/a/maths/lesson.php?c=probability&l=limit-theorems)。
 
 ## 概率法则 {#rules}
 
@@ -22,7 +22,7 @@ $$
 于是 $\Prob(A \text{ 且 } B) = \Prob(A \mid B)\,\Prob(B)$（**乘法法则**）。若 $\Prob(A \mid B) = \Prob(A)$，等价地 $\Prob(A \text{ 且 } B) = \Prob(A)\Prob(B)$，则事件 $A$ 与 $B$ **独立**。
 :::
 
-概率可以解读为长期相对频率——巨大杂交中隐性表型后代的比例——也可以解读为信念的强度。法则是一样的；频率解读是本课程大多数经典方法采用的解读，贝叶斯解读在[数学图谱：贝叶斯推断](/learn/maths/lesson.php?c=statistics&l=bayesian)中展开。
+概率可以解读为长期相对频率——巨大杂交中隐性表型后代的比例——也可以解读为信念的强度。法则是一样的；频率解读是本课程大多数经典方法采用的解读，贝叶斯解读在[数学图谱：贝叶斯推断](/a/maths/lesson.php?c=statistics&l=bayesian)中展开。
 
 孟德尔遗传学是概率的实验室。杂交 *Aa* × *Aa* 中，每个亲本以概率 ½ 传递 *A* 或 *a*，且与另一亲本无关（孟德尔第一定律，[[genetics/mendelian-inheritance]]）。由乘法法则，四种组合各有概率 ¼；由加法法则，杂合子（*Aa* 或 *aA*）的概率为 ½，显性表型（*AA* 或 *Aa*）的概率为 ¾。
 
@@ -33,7 +33,7 @@ $$
 $$
 \Prob(Aa \mid \text{正常}) = \frac{\Prob(Aa)}{\Prob(\text{正常})} = \frac{1/2}{3/4} = \frac23.
 $$
-答案不是 ½：知道表型会改变各基因型的概率。这是谱系分析所用推理的最简单例子。（真实家庭的遗传咨询属于[医学图谱：遗传学](/learn/medicine/course.php?c=genetics)。）
+答案不是 ½：知道表型会改变各基因型的概率。这是谱系分析所用推理的最简单例子。（真实家庭的遗传咨询属于[医学图谱：遗传学](/a/medicine/course.php?c=genetics)。）
 :::
 :::
 
@@ -166,7 +166,7 @@ $$ {#eq-normal}
 若 $X \sim \Normal(\mu, \sigma^2)$，则 $Z = (X - \mu)/\sigma \sim \Normal(0, 1)$，于是 $\Prob(X \le x) = \Phi\big((x - \mu)/\sigma\big)$。若 $X_1$ 与 $X_2$ 独立且正态，则 $a X_1 + b X_2$ 正态，均值 $a\mu_1 + b\mu_2$，方差 $a^2\sigma_1^2 + b^2\sigma_2^2$。特别地，$n$ 个独立的 $\Normal(\mu, \sigma^2)$ 观测的均值恰为 $\Normal(\mu, \sigma^2/n)$。
 :::
 
-正态族对求和封闭的证明见[数学图谱：联合分布](/learn/maths/lesson.php?c=probability&l=joint-distributions)；均值与方差由上面的法则直接得出。量 $z = (x - \mu)/\sigma$ 是 **z 值**（z 分数）：观测偏离均值多少个标准差。
+正态族对求和封闭的证明见[数学图谱：联合分布](/a/maths/lesson.php?c=probability&l=joint-distributions)；均值与方差由上面的法则直接得出。量 $z = (x - \mu)/\sigma$ 是 **z 值**（z 分数）：观测偏离均值多少个标准差。
 
 ::: example *Iris setosa* 的萼片长度 {#ex-normal}
 安德森 50 朵 *Iris setosa* 样本的萼片长度均值 5.006 cm、标准差 0.352 cm，分布大致正态。把它们当作总体值：(a) 多大比例的植株萼片长于 5.5 cm？(b) 中央 95 % 的植株长度介于哪两个值之间？
@@ -179,7 +179,7 @@ $$ {#eq-normal}
 
 ### 为什么那么多性状正态
 
-正态分布不是自然法则，但只要一个量是许多小的、独立的贡献之和，它就会产生。这就是**中心极限定理**，其严格陈述见 [[biostatistics/estimation]]，证明见[数学图谱：极限定理](/learn/maths/lesson.php?c=probability&l=limit-theorems)。高尔顿造了一台机器演示它：小球逐排落下穿过一排排针，每排都被随机拨向左或右，最终堆成钟形。
+正态分布不是自然法则，但只要一个量是许多小的、独立的贡献之和，它就会产生。这就是**中心极限定理**，其严格陈述见 [[biostatistics/estimation]]，证明见[数学图谱：极限定理](/a/maths/lesson.php?c=probability&l=limit-theorems)。高尔顿造了一台机器演示它：小球逐排落下穿过一排排针，每排都被随机拨向左或右，最终堆成钟形。
 
 ::: widget galton
 caption: 高尔顿板。每个小球在每一排针处都被随机向左或向右拨动，所以它最终落入的格子号就是向右拨动的次数——一个二项计数。随着小球累积，直方图趋近正态曲线。这是费希尔 1918 年解释连续变异的模型背后的道理：受许多微效基因（加上环境效应）相加影响的性状是许多小贡献之和，因而接近正态。

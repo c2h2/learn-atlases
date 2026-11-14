@@ -1,7 +1,7 @@
 # Learn — interactive atlases
 
 Long-form, interactive references for self-study, with an English and Simplified Chinese interface.
-Every topic is explained in depth, with figures you can play with. Live at <https://f.g77k.com/learn/>.
+Every topic is explained in depth, with figures you can play with. Live at <https://f.g77k.com/a/>.
 
 | | |
 |---|---|
@@ -60,7 +60,7 @@ Optional, for speed and completeness:
 ## Layout
 
 ```
-index.php, assets/     the /learn landing page
+index.php, assets/     the /a landing page
 maths/                 Maths Atlas
 physics/               Physics Atlas
 ee/                    Electrical Engineering Atlas (curriculum; lessons being written)

@@ -278,7 +278,7 @@ ijk 4.30 s   jki 18.27 s   kij 0.57 s
 
 ## 后续内容
 
-本章数缺失的论证会在 [[databases]] 的 B树分析中重现——B树结点的大小正是为了匹配磁盘或 SSD 的块——也会在 [[algorithms]] 的缓存高效算法中重现。[[computer-systems/dynamic-memory]] 讨论分配器的放置决策如何影响局部性。核心之间共享的高速缓存、一致性与伪共享属于 [[parallel-computing]]；虚拟内存、页替换与快表管理在 [[operating-systems]] 中展开。SRAM 与 DRAM 的电路以及高速缓存控制器的设计属于计算机体系结构，见[电气电子工程图谱](/learn/ee/)。高速缓存还会通过计时泄露信息，这是 Spectre 等侧信道攻击及其缓解措施的基础（[[security]]）。
+本章数缺失的论证会在 [[databases]] 的 B树分析中重现——B树结点的大小正是为了匹配磁盘或 SSD 的块——也会在 [[algorithms]] 的缓存高效算法中重现。[[computer-systems/dynamic-memory]] 讨论分配器的放置决策如何影响局部性。核心之间共享的高速缓存、一致性与伪共享属于 [[parallel-computing]]；虚拟内存、页替换与快表管理在 [[operating-systems]] 中展开。SRAM 与 DRAM 的电路以及高速缓存控制器的设计属于计算机体系结构，见[电气电子工程图谱](/a/ee/)。高速缓存还会通过计时泄露信息，这是 Spectre 等侧信道攻击及其缓解措施的基础（[[security]]）。
 
 ::: summary
 - 存储构成一个层次——寄存器、L1、L2、L3、DRAM、SSD、磁盘——每层比上一层大约十倍、慢好几倍；处理器与内存的差距约为 100 纳秒，即几百个周期。

@@ -487,7 +487,7 @@ Items $1, 2, \dots, n$ arrive in that order. Each can be pushed onto a stack, an
 ::: solution
 $2, 3, 1$: push 1, push 2, pop 2, push 3, pop 3, pop 1. For $3, 1, 2$: to output $3$ first, $1$ and $2$ must already be on the stack with $2$ above $1$; after popping $3$ the next pop must give $2$, not $1$. So $3, 1, 2$ is impossible.
 
-Checking all six, only $3, 1, 2$ is impossible: $1,2,3$; $1,3,2$; $2,1,3$; $2,3,1$; $3,2,1$ are all producible. So $5$ permutations can be produced. In general the number is the Catalan number $C_n = \binom{2n}{n}/(n+1)$, which is $5$ for $n = 3$ (see [Maths Atlas: generating functions](/learn/maths/lesson.php?c=discrete&l=generating-functions)); Knuth showed the impossible ones are exactly those containing a pattern $k, i, j$ with $i < j < k$ in that relative order.
+Checking all six, only $3, 1, 2$ is impossible: $1,2,3$; $1,3,2$; $2,1,3$; $2,3,1$; $3,2,1$ are all producible. So $5$ permutations can be produced. In general the number is the Catalan number $C_n = \binom{2n}{n}/(n+1)$, which is $5$ for $n = 3$ (see [Maths Atlas: generating functions](/a/maths/lesson.php?c=discrete&l=generating-functions)); Knuth showed the impossible ones are exactly those containing a pattern $k, i, j$ with $i < j < k$ in that relative order.
 :::
 :::
 

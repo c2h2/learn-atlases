@@ -2,7 +2,7 @@ So far we have solved problems: a wavefunction, a potential, a differential equa
 
 The pay-off is large. Once the structure is in place, the same rules handle a particle on a line, an electron's spin, which has no wavefunction in the ordinary sense, and systems of many particles. The uncertainty principle becomes a theorem about any pair of observables, with a two-line proof. The angular momentum, hydrogen and spin chapters that follow are applications of what is set up here.
 
-You will need the linear algebra of complex vector spaces: inner products, orthonormal bases, eigenvalues and Hermitian matrices. The Maths Atlas lessons on [inner products](/learn/maths/lesson.php?c=linear-algebra&l=inner-products) and the [spectral theorem](/learn/maths/lesson.php?c=linear-algebra&l=spectral-theorem) cover them. We state results for finite dimensions with proofs, and say what changes in the infinite-dimensional spaces that wavefunctions live in. A full mathematical treatment of the infinite-dimensional case is in the references (Shankar, chapter 1, is a gentle start; von Neumann's book is the original).
+You will need the linear algebra of complex vector spaces: inner products, orthonormal bases, eigenvalues and Hermitian matrices. The Maths Atlas lessons on [inner products](/a/maths/lesson.php?c=linear-algebra&l=inner-products) and the [spectral theorem](/a/maths/lesson.php?c=linear-algebra&l=spectral-theorem) cover them. We state results for finite dimensions with proofs, and say what changes in the infinite-dimensional spaces that wavefunctions live in. A full mathematical treatment of the infinite-dimensional case is in the references (Shankar, chapter 1, is a gentle start; von Neumann's book is the original).
 
 ## States as vectors {#states}
 

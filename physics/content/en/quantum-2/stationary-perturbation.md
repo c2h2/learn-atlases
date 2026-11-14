@@ -2,7 +2,7 @@ The hydrogen atom of [[quantum-1/hydrogen]] is solved exactly, and its levels de
 
 This chapter turns "small" into a systematic method. We write the Hamiltonian as a solvable part plus a correction, expand the energies and states in powers of the correction, and read off the first few terms. The method is called **stationary** (or time-independent) **perturbation theory**, because the correction does not depend on time; [[quantum-2/time-dependent]] treats corrections that do. We derive the first- and second-order formulae, see why degenerate levels need separate treatment, and then apply both to the fine structure of hydrogen and to the Zeeman and Stark effects. The last section is the variational method, which gives upper bounds on ground-state energies when no small parameter is available, and its first triumph: the ground state of helium to within two per cent.
 
-The language is that of [[quantum-1/formalism]]: kets, Hermitian operators, orthonormal eigenbases. Angular momentum addition from [[quantum-1/angular-momentum]] and spin from [[quantum-1/spin]] are used in the fine-structure section. The same ideas, with a chemist's emphasis, appear in the Chemistry Atlas lesson on [approximation methods](/learn/chemistry/lesson.php?c=quantum-chemistry&l=approximation-methods).
+The language is that of [[quantum-1/formalism]]: kets, Hermitian operators, orthonormal eigenbases. Angular momentum addition from [[quantum-1/angular-momentum]] and spin from [[quantum-1/spin]] are used in the fine-structure section. The same ideas, with a chemist's emphasis, appear in the Chemistry Atlas lesson on [approximation methods](/a/chemistry/lesson.php?c=quantum-chemistry&l=approximation-methods).
 
 ## Setting up the expansion {#setup}
 

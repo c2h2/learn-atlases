@@ -191,7 +191,7 @@ The ruminant retains coarse fibre selectively in its rumen and re-chews it, so i
 :::
 
 ::: application Feeding livestock and feeding the planet
-Ruminant nutrition is one of the oldest applications of digestive physiology. Feed formulation balances the energy and protein needs of the animal with those of its rumen microbes; non-protein nitrogen such as urea can be added to poor forage because the microbes turn it into protein. Enteric methane from ruminants is a significant part of agricultural greenhouse-gas emissions, and reducing it — by diet, by additives that inhibit methanogens, and by breeding — is an active area of research. The human gastrointestinal system and its disorders are treated in [Medicine Atlas: gastrointestinal](/learn/medicine/course.php?c=gastrointestinal).
+Ruminant nutrition is one of the oldest applications of digestive physiology. Feed formulation balances the energy and protein needs of the animal with those of its rumen microbes; non-protein nitrogen such as urea can be added to poor forage because the microbes turn it into protein. Enteric methane from ruminants is a significant part of agricultural greenhouse-gas emissions, and reducing it — by diet, by additives that inhibit methanogens, and by breeding — is an active area of research. The human gastrointestinal system and its disorders are treated in [Medicine Atlas: gastrointestinal](/a/medicine/course.php?c=gastrointestinal).
 :::
 
 ::: history

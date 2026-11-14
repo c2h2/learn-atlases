@@ -322,7 +322,7 @@ Linux 还有**实时**类：优先级固定为 $1$–$99$ 的 `SCHED_FIFO` 与 `
 
 ## 后续内容
 
-进程抽象有两半：本章虚拟化了处理器，[[operating-systems/address-spaces-paging]] 虚拟化内存。多个线程共享一个地址空间时，调度决策可以在任何一条指令处打断它们，这正是 [[operating-systems/threads-locks]] 中竞争条件的来源；优先级调度与锁相互作用会引起*优先级反转*，在 [[operating-systems/synchronisation]] 中讨论。磁盘请求调度面临着同样的吞吐率与公平性的取舍，见 [[operating-systems/storage-io]]；在物理处理器上调度虚拟处理器见 [[operating-systems/virtualisation]]。排队论由到达与服务分布预测平均等待时间，建立在 [Maths Atlas](/learn/maths/) 的概率论之上；跨机器的调度是 [[distributed-systems]] 的一部分。
+进程抽象有两半：本章虚拟化了处理器，[[operating-systems/address-spaces-paging]] 虚拟化内存。多个线程共享一个地址空间时，调度决策可以在任何一条指令处打断它们，这正是 [[operating-systems/threads-locks]] 中竞争条件的来源；优先级调度与锁相互作用会引起*优先级反转*，在 [[operating-systems/synchronisation]] 中讨论。磁盘请求调度面临着同样的吞吐率与公平性的取舍，见 [[operating-systems/storage-io]]；在物理处理器上调度虚拟处理器见 [[operating-systems/virtualisation]]。排队论由到达与服务分布预测平均等待时间，建立在 [Maths Atlas](/a/maths/) 的概率论之上；跨机器的调度是 [[distributed-systems]] 的一部分。
 
 ::: summary
 - 内核用一个 **PCB**（[[#def-pcb]]）表示每个进程（在 Linux 中是每个线程），让它在就绪、运行与阻塞之间移动（[[#def-states]]）；**上下文切换**保存旧上下文，靠切换内核栈和地址空间恢复新上下文（[[#def-context-switch]]），直接代价是微秒级，缓存与快表缺失带来更大代价（[[#ex-pingpong]]）。

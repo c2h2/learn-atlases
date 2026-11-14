@@ -260,7 +260,7 @@ print(f"never infected: {S:.3f}, infected overall: {R + I:.3f}")
 # never infected: 0.059, infected overall: 0.941
 ```
 
-If transmission depends on the *density* of infected hosts rather than their proportion, $R_0 = \beta' N/\gamma$ grows with host density $N$, and there is a **threshold host density** $N_T = \gamma/\beta'$ below which the pathogen cannot persist. This is the theoretical basis of culling as a means of disease control in wildlife, although in practice culling can disturb social structure and increase contact between groups, with the opposite effect, as was argued for badgers and bovine tuberculosis in Britain. The human applications of these models — vaccination programmes and the epidemiology of human disease — belong to epidemiology and are treated in the [Medicine Atlas](/learn/medicine/).
+If transmission depends on the *density* of infected hosts rather than their proportion, $R_0 = \beta' N/\gamma$ grows with host density $N$, and there is a **threshold host density** $N_T = \gamma/\beta'$ below which the pathogen cannot persist. This is the theoretical basis of culling as a means of disease control in wildlife, although in practice culling can disturb social structure and increase contact between groups, with the opposite effect, as was argued for badgers and bovine tuberculosis in Britain. The human applications of these models — vaccination programmes and the epidemiology of human disease — belong to epidemiology and are treated in the [Medicine Atlas](/a/medicine/).
 
 ::: quiz
 For a pathogen with $R_0 = 4$ in a well-mixed host population, what is the minimum proportion that must be immune to prevent an epidemic?

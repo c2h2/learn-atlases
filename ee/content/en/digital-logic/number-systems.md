@@ -2,7 +2,7 @@ A digital circuit knows nothing about numbers. Each wire carries a voltage, and 
 
 Why two values and not ten? A transistor switch is very good at being fully on or fully off and rather poor at holding an exact intermediate level. If a signal only has to be distinguished as "above the threshold" or "below it", every gate can restore a slightly degraded input to a clean output, so noise does not accumulate along a chain of a million gates. That **regeneration** is the real reason digital electronics works, and it is why the natural number system for hardware is base two.
 
-In this chapter we set up the representations used throughout the course: positional numbers in binary, octal and hexadecimal; the two's complement code for signed integers and its overflow rules; fixed-point numbers for fractions; and a handful of special codes — BCD, Gray code and parity — that solve particular engineering problems. The CS atlas treats the same material from the programmer's side in [Bits, bytes and integers](/learn/cs/lesson.php?c=computer-systems&l=bits-integers); here the emphasis is on what the hardware has to do.
+In this chapter we set up the representations used throughout the course: positional numbers in binary, octal and hexadecimal; the two's complement code for signed integers and its overflow rules; fixed-point numbers for fractions; and a handful of special codes — BCD, Gray code and parity — that solve particular engineering problems. The CS atlas treats the same material from the programmer's side in [Bits, bytes and integers](/a/cs/lesson.php?c=computer-systems&l=bits-integers); here the emphasis is on what the hardware has to do.
 
 ## Positional number systems
 
@@ -285,7 +285,7 @@ So Q4.12 meets both requirements. (Q5.11 would also work, with an LSB of $0.488\
 :::
 :::
 
-Fixed point has a fixed absolute resolution: tiny values are stored with few significant bits. **Floating point** instead stores a sign, an exponent and a significand, giving roughly constant *relative* precision over an enormous range at the cost of a much more complex adder. It is treated in [Floating point](/learn/cs/lesson.php?c=computer-systems&l=floating-point) and, from the hardware side, in [[computer-architecture/computer-arithmetic]].
+Fixed point has a fixed absolute resolution: tiny values are stored with few significant bits. **Floating point** instead stores a sign, an exponent and a significand, giving roughly constant *relative* precision over an enormous range at the cost of a much more complex adder. It is treated in [Floating point](/a/cs/lesson.php?c=computer-systems&l=floating-point) and, from the hardware side, in [[computer-architecture/computer-arithmetic]].
 
 ## Codes for special purposes
 

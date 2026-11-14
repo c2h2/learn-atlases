@@ -305,7 +305,7 @@ Norbert Wiener's *The Human Use of Human Beings* (1950) raised the social conseq
 
 ## Where this leads
 
-Privacy engineering and the attacks it defends against are treated in [[security/privacy]], and secure development in [[security/secure-development]]. Accessibility, inclusive design and the ethics of research with users are in [[hci/accessibility-ethics]] and [[hci/experiments]]. Fairness in machine-learning systems, and the techniques for measuring and mitigating bias, are taught in the [LLM Atlas](/learn/llm/). Above all, the questions of this chapter apply to every other: the requirements you elicit, the architectures you choose, the tests you skip and the warnings you raise are where professional responsibility is actually exercised.
+Privacy engineering and the attacks it defends against are treated in [[security/privacy]], and secure development in [[security/secure-development]]. Accessibility, inclusive design and the ethics of research with users are in [[hci/accessibility-ethics]] and [[hci/experiments]]. Fairness in machine-learning systems, and the techniques for measuring and mitigating bias, are taught in the [LLM Atlas](/a/llm/). Above all, the questions of this chapter apply to every other: the requirements you elicit, the architectures you choose, the tests you skip and the warnings you raise are where professional responsibility is actually exercised.
 
 ::: summary
 - Software engineers' work harms people who never chose it when it fails; the **ACM Code** and the **Software Engineering Code** ([[#def-codes]]) put the public interest first and expect engineers to raise risks. Analyse hard cases: facts, obligations, options, evaluation, record.

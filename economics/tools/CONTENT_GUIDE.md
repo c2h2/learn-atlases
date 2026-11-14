@@ -1,14 +1,14 @@
 # Economics & Finance Atlas — content guide
 
-Economics & Finance Atlas (`/learn/economics/`) teaches the undergraduate economics and finance
+Economics & Finance Atlas (`/a/economics/`) teaches the undergraduate economics and finance
 curriculum in depth, from first principles to the frontier of the standard syllabus. Every chapter is
 a long, self-contained lesson in the style of a very good textbook: motivation and intuition first,
 then precise definitions, models with their assumptions stated, results with derivations or proofs,
 many fully worked examples with numbers, interactive figures, quick checks, and graded exercises
 with full solutions.
 
-The site runs on the same engine as Maths Atlas (`/learn/maths/`). Its reference lesson,
-`/var/www/f.g77k.com/learn/maths/content/en/calculus-1/limits.md`, shows the expected depth, tone
+The site runs on the same engine as Maths Atlas (`/a/maths/`). Its reference lesson,
+`/var/www/f.g77k.com/a/maths/content/en/calculus-1/limits.md`, shows the expected depth, tone
 and markup: read it before writing.
 
 **For education only — not investment or financial advice.** Every page of the atlas says so in
@@ -108,8 +108,8 @@ Suggested shape (adapt to the topic):
 - Original text only — never copy textbooks. Use standard notation (§5.1).
 - Mathematics tools are taught in [[mathematical-economics]]; probability, statistics and linear
   algebra in full in the Maths Atlas. Link there with ordinary links, e.g.
-  `[hypothesis tests](/learn/maths/lesson.php?c=statistics&l=hypothesis-testing)` or
-  `[least squares](/learn/maths/lesson.php?c=linear-algebra&l=least-squares)`; `[[…]]` references
+  `[hypothesis tests](/a/maths/lesson.php?c=statistics&l=hypothesis-testing)` or
+  `[least squares](/a/maths/lesson.php?c=linear-algebra&l=least-squares)`; `[[…]]` references
   only work inside this atlas.
 
 ### 4.2 For education only — not investment or financial advice
@@ -167,7 +167,7 @@ Suggested shape (adapt to the topic):
 
 ## 5. Markup
 
-Exactly as in Maths Atlas — see `/var/www/f.g77k.com/learn/maths/tools/CONTENT_GUIDE.md` §5 for
+Exactly as in Maths Atlas — see `/var/www/f.g77k.com/a/maths/tools/CONTENT_GUIDE.md` §5 for
 blocks (`:::definition`, `:::theorem`/`:::proposition`, `:::proof`, `:::example` + `:::solution`,
 `:::exercise`, `:::quiz`, `:::warning`, `:::intuition`, `:::application`, `:::history`,
 `:::summary`, `:::algorithm` for procedures such as deferred acceptance or backward induction),
@@ -215,7 +215,7 @@ State any symbol whose meaning differs from this list at the start of the chapte
 ## 6. Interactive figures
 
 The available types are in `data/widgets.json`; try each at
-`/learn/economics/lab.php?w=<type>`. Useful mappings:
+`/a/economics/lab.php?w=<type>`. Useful mappings:
 
 | type | economics use |
 |---|---|
@@ -243,12 +243,12 @@ frontier, binomial trees, Black–Scholes, difference-in-differences …) are pl
 ## 7. Check your work
 
 ```
-cd /var/www/f.g77k.com/learn/economics
+cd /var/www/f.g77k.com/a/economics
 bash tools/check.sh <course> [<course> …]
 ```
 
 This typesets every formula with KaTeX, validates figures, answer checks and references, and prints
 a depth table per lesson. Fix every `ERROR`; depth `warn`ings must be gone for finished lessons.
-Preview at `http://f.g77k.com/learn/economics/lesson.php?c=<course>&l=<chapter>` (from this machine:
+Preview at `http://f.g77k.com/a/economics/lesson.php?c=<course>&l=<chapter>` (from this machine:
 `curl --resolve f.g77k.com:80:127.0.0.1 …` or `node tools/shot.js "lesson.php?c=…&l=…" out.png`).
 Read your rendered lesson at least once, in light and dark mode.

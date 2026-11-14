@@ -186,7 +186,7 @@ caption: 英语文学的惯常分期，按时间从左到右排列；年代是�
 ::: note 英汉对比
 - **朝代和运动。** 中国文学史通常按朝代分期——唐诗、宋词、元曲、明清小说——中国读者常常期待每个时期都有一种主导体裁。英语的时期更多地以语言的阶段或文化运动命名，它们的主导体裁也不那么分明，不过这种模式在一定程度上仍然成立（伊丽莎白时代的戏剧，维多利亚时代的小说）。
 - **平行的年代。** 乔叟（卒于1400年）写作于元朝的最后几年和明朝的最初几年，大约正是《水浒传》成形的时候；莎士比亚的同时代人是汤显祖；《红楼梦》于1791年首次以印本流传，比《抒情歌谣集》早七年；而乔伊斯和伍尔夫的现代主义年代，正是鲁迅最初的小说和新文化运动的年代。这样的平行对于定位方向很有用，但不能作为影响的证据。
-- **世界文学。** 关于从文艺复兴到现代主义的欧洲各时期以及欧洲大陆作家的背景，见汉语图谱中关于[文艺复兴](/learn/chinese/lesson.php?c=world-literature&l=renaissance)、[浪漫主义](/learn/chinese/lesson.php?c=world-literature&l=romanticism)和[现代主义](/learn/chinese/lesson.php?c=world-literature&l=modernism)的课。
+- **世界文学。** 关于从文艺复兴到现代主义的欧洲各时期以及欧洲大陆作家的背景，见汉语图谱中关于[文艺复兴](/a/chinese/lesson.php?c=world-literature&l=renaissance)、[浪漫主义](/a/chinese/lesson.php?c=world-literature&l=romanticism)和[现代主义](/a/chinese/lesson.php?c=world-literature&l=modernism)的课。
 - **较早语篇的语言。** 对中国学习者来说，中古英语比早期现代英语难，而古英语则是一门外语。读乔叟要用带对照注释的版本，读莎士比亚要用注释本（[[reading-literature/drama-shakespeare#rule-emode]]）。
 :::
 

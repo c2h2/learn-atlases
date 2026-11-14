@@ -159,7 +159,7 @@ P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}, \qquad k = 0, 1, \dots, n .
 $$ {#eq-binomial}
 :::
 
-二项系数 $\binom{n}{k} = \dfrac{n!}{k!\,(n-k)!}$ 计数 $k$ 个一种类型与 $n-k$ 个另一种类型后代的出生次序数目。这些法则在[数学图谱](/learn/maths/)与 [[biostatistics]] 中有完整展开；这里直接使用。
+二项系数 $\binom{n}{k} = \dfrac{n!}{k!\,(n-k)!}$ 计数 $k$ 个一种类型与 $n-k$ 个另一种类型后代的出生次序数目。这些法则在[数学图谱](/a/maths/)与 [[biostatistics]] 中有完整展开；这里直接使用。
 
 ::: example 用分枝法解三因子杂交 {#ex-trihybrid}
 考虑 *Aa Bb Cc* × *Aa Bb Cc*，三个基因座均未连锁，*A*、*B*、*C* 显性。(a) 子代中同时表现三个显性性状的比例是多少？(b) *Aa bb Cc* 的比例是多少？(c) 可能有多少种基因型、多少种表型？
@@ -183,7 +183,7 @@ $$ {#eq-binomial}
 
 (c) 指定顺序没有二项系数：$(\tfrac34)^2(\tfrac14)^2 = \tfrac{9}{256} \approx 0.035$。
 
-$\tfrac14$ 独立地适用于*每个*孩子：已有一个患病孩子并不会使下一个患病的可能性变小——随机过程没有记忆。（这是教科书式的概率计算，不是临床建议；囊性纤维化的医学遗传学见[医学图谱](/learn/medicine/lesson.php?c=genetics&l=mendelian-inheritance)。）
+$\tfrac14$ 独立地适用于*每个*孩子：已有一个患病孩子并不会使下一个患病的可能性变小——随机过程没有记忆。（这是教科书式的概率计算，不是临床建议；囊性纤维化的医学遗传学见[医学图谱](/a/medicine/lesson.php?c=genetics&l=mendelian-inheritance)。）
 :::
 :::
 

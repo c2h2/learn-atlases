@@ -1,13 +1,13 @@
 # LLM Atlas — content guide
 
-LLM Atlas (`/learn/llm/`) teaches how large language models work, how they are trained and used,
+LLM Atlas (`/a/llm/`) teaches how large language models work, how they are trained and used,
 and how to make them safe, from first principles to current research. Every chapter is a long,
 self-contained lesson in the style of a very good textbook: motivation and intuition first, then
 precise definitions, derivations, many fully worked examples (with numbers and tensor shapes),
 interactive figures, quick checks, and graded exercises with full solutions.
 
-The site runs on the same engine as Maths Atlas (`/learn/maths/`). Its reference lesson,
-`/var/www/f.g77k.com/learn/maths/content/en/calculus-1/limits.md`, shows the expected depth, tone
+The site runs on the same engine as Maths Atlas (`/a/maths/`). Its reference lesson,
+`/var/www/f.g77k.com/a/maths/content/en/calculus-1/limits.md`, shows the expected depth, tone
 and markup: read it before writing.
 
 ## 1. Files
@@ -61,7 +61,7 @@ the seven area keys.
 ## 4. Writing style and accuracy
 
 - Audience: students who have done the prerequisite chapters. Explain from scratch, motivate
-  before formalising, then be exact. Link to Maths Atlas (`/learn/maths/`) for mathematical tools.
+  before formalising, then be exact. Link to Maths Atlas (`/a/maths/`) for mathematical tools.
 - **British spelling** (optimise, tokenise, modelling, behaviour) except in names and quotations.
 - **Accuracy over currency.** The field moves fast. Teach methods and ideas that are published and
   established; attribute them (authors, year, venue). Date any statement that may change ("as of
@@ -76,7 +76,7 @@ the seven area keys.
 
 ## 5. Markup
 
-Exactly as in Maths Atlas — see `/var/www/f.g77k.com/learn/maths/tools/CONTENT_GUIDE.md` §5 for
+Exactly as in Maths Atlas — see `/var/www/f.g77k.com/a/maths/tools/CONTENT_GUIDE.md` §5 for
 blocks (`:::definition`, `:::theorem`/`:::proposition`, `:::proof`, `:::example` + `:::solution`,
 `:::exercise`, `:::quiz`, `:::warning`, `:::intuition`, `:::application`, `:::history`,
 `:::summary`, `:::algorithm` for procedures such as BPE or beam search), references
@@ -98,7 +98,7 @@ Notation used across the atlas:
 The available types are in `data/widgets.json` (plots, gradient descent and loss landscapes,
 linear maps, projections and SVD, probability distributions, sampling and the CLT, Markov chains,
 Bayes, regression, hypothesis tests and confidence intervals, graphs, floating-point formats); try
-each at `/learn/llm/lab.php?w=<type>`. LLM-specific figures (tokeniser, sampling with temperature
+each at `/a/llm/lab.php?w=<type>`. LLM-specific figures (tokeniser, sampling with temperature
 and top-p, attention maps, embeddings, a small neural-network playground, positional encodings,
 scaling laws, KV-cache memory, quantisation, LoRA, beam search …) are planned in
 `tools/WIDGET_GUIDE.md`; use a type only once it is in the catalogue.
@@ -106,12 +106,12 @@ scaling laws, KV-cache memory, quantisation, LoRA, beam search …) are planned 
 ## 7. Check your work
 
 ```
-cd /var/www/f.g77k.com/learn/llm
+cd /var/www/f.g77k.com/a/llm
 bash tools/check.sh <course> [<course> …]
 ```
 
 Fix every `ERROR`; depth `warn`ings must be gone for finished lessons. Preview at
-`http://f.g77k.com/learn/llm/lesson.php?c=<course>&l=<chapter>` (from this machine:
+`http://f.g77k.com/a/llm/lesson.php?c=<course>&l=<chapter>` (from this machine:
 `curl --resolve f.g77k.com:80:127.0.0.1 …` or `node tools/shot.js "lesson.php?c=…&l=…" out.png`).
 
 Generated text is an error, whatever its length: a lesson or course field containing the filler

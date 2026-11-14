@@ -422,7 +422,7 @@ Henri Becquerel discovered the radiation of uranium in February–March 1896. Ma
 
 ## Where this leads {#leads}
 
-Reactions, [[particles/reactions]], use the same Q-value bookkeeping, now with a projectile; the Coulomb barrier that traps the alpha particle is the same barrier that makes fusion in the Sun slow. The weak interaction behind beta decay, with its point-like coupling $G_F$, is revealed in [[particles/standard-model]] as the exchange of a heavy $W$ boson, and its violation of parity is in [[particles/symmetries]]. The detectors that measure these radiations are in [[particles/accelerators]]. For the uses of decay in chemistry, dating and medicine, see the Chemistry Atlas lesson [Nuclear chemistry](/learn/chemistry/lesson.php?c=general-chemistry-2&l=nuclear-chemistry).
+Reactions, [[particles/reactions]], use the same Q-value bookkeeping, now with a projectile; the Coulomb barrier that traps the alpha particle is the same barrier that makes fusion in the Sun slow. The weak interaction behind beta decay, with its point-like coupling $G_F$, is revealed in [[particles/standard-model]] as the exchange of a heavy $W$ boson, and its violation of parity is in [[particles/symmetries]]. The detectors that measure these radiations are in [[particles/accelerators]]. For the uses of decay in chemistry, dating and medicine, see the Chemistry Atlas lesson [Nuclear chemistry](/a/chemistry/lesson.php?c=general-chemistry-2&l=nuclear-chemistry).
 
 ::: summary
 - Each nucleus decays with a constant probability per unit time $\lambda$, so $N = N_0 e^{-\lambda t}$, $t_{1/2} = \ln 2/\lambda$, $\tau = 1/\lambda$, and activity $\mathcal{A} = \lambda N$ in becquerels.

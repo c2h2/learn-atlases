@@ -1,6 +1,6 @@
 <?php
 declare(strict_types=1);
-/* Learn — landing page for the atlases under /learn (Maths, Physics, Electrical Engineering, Medicine, Chinese, Peptide,
+/* Learn — landing page for the atlases under /a (Maths, Physics, Electrical Engineering, Medicine, Chinese, Peptide,
    Mechanical & Aerospace, Earth & Climate, English, Quant Trading and European History, and the curriculum skeletons
    LLM, Chemistry, Computer Science, Biology and Economics & Finance). Self-contained. */
 
@@ -8,7 +8,7 @@ mb_internal_encoding('UTF-8');
 $q = $_GET['lang'] ?? null;
 if (is_string($q) && in_array($q, ['en', 'zh'], true)) {
     $lang = $q;
-    setcookie('learn_lang', $lang, ['expires' => time() + 31536000, 'path' => '/learn/', 'samesite' => 'Lax']);
+    setcookie('learn_lang', $lang, ['expires' => time() + 31536000, 'path' => '/a/', 'samesite' => 'Lax']);
 } elseif (in_array($_COOKIE['learn_lang'] ?? '', ['en', 'zh'], true)) {
     $lang = $_COOKIE['learn_lang'];
 } else {

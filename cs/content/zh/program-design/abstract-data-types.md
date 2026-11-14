@@ -487,7 +487,7 @@ $ python3 sortedset.py
 由 $n_1 d_2 = n_2 d_1$ 推出 $d_1$ 整除 $d_2$，利用"若 $p$ 整除 $qr$ 且 $\gcd(p, q) = 1$，则 $p$ 整除 $r$"这一事实。
 :::
 ::: solution
-设 $n_1/d_1 = n_2/d_2$，即 $n_1 d_2 = n_2 d_1$。于是 $d_1$ 整除 $n_1 d_2$，而 $\gcd(d_1, n_1) = 1$，所以 $d_1$ 整除 $d_2$（欧几里得引理的推广形式，证明见 [Maths Atlas：数论](/learn/maths/lesson.php?c=number-theory&l=divisibility)）。由对称性，$d_2$ 整除 $d_1$。两个互相整除的正整数相等，故 $d_1 = d_2$；从 $n_1 d_2 = n_2 d_1$ 中约去非零的 $d_1$，得 $n_1 = n_2$。
+设 $n_1/d_1 = n_2/d_2$，即 $n_1 d_2 = n_2 d_1$。于是 $d_1$ 整除 $n_1 d_2$，而 $\gcd(d_1, n_1) = 1$，所以 $d_1$ 整除 $d_2$（欧几里得引理的推广形式，证明见 [Maths Atlas：数论](/a/maths/lesson.php?c=number-theory&l=divisibility)）。由对称性，$d_2$ 整除 $d_1$。两个互相整除的正整数相等，故 $d_1 = d_2$；从 $n_1 d_2 = n_2 d_1$ 中约去非零的 $d_1$，得 $n_1 = n_2$。
 
 `equal_rat(x, y)` 返回两个分量是否相等。若相等，则 $AF(x) = AF(y)$ 是显然的；若 $AF(x) = AF(y)$，单射性给出分量相等。所以 `equal_rat` 恰在两个有理数相等时返回 `True`，正如规格说明所要求的——但只对满足 $RI$ 的表示值成立，而这由 [[#thm-ri-preserved]] 保证。
 :::

@@ -2,7 +2,7 @@
 
 Generative models from image synthesis solve both problems at once. A **diffusion model** learns to turn random noise into a sample from the data distribution by removing the noise step by step; a **flow-matching** model learns a velocity field that carries noise to data along a smooth path. Neither assumes a shape for the distribution, both work in hundreds of dimensions, and both produce a whole chunk at once. Diffusion Policy (Chi et al., 2023) brought diffusion to visuomotor control; flow matching became the action generator of π0 (2024) and many VLAs after it. This chapter derives both from the beginning, shows how they are conditioned on observations, explains why their training objectives — which are mean-squared errors — do *not* average modes, and works out what they cost at run time.
 
-For the image-generation side of the same mathematics, see [Generating images](/learn/llm/lesson.php?c=multimodal&l=image-generation) in the LLM Atlas; the probability background is in [Probability for machine learning](/learn/llm/lesson.php?c=math-for-ml&l=probability).
+For the image-generation side of the same mathematics, see [Generating images](/a/llm/lesson.php?c=multimodal&l=image-generation) in the LLM Atlas; the probability background is in [Probability for machine learning](/a/llm/lesson.php?c=math-for-ml&l=probability).
 
 ## Sampling instead of predicting {#sec-sampling}
 

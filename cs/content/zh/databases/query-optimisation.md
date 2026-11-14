@@ -311,7 +311,7 @@ System R 优化器由 Patricia Selinger、Morton Astrahan、Donald Chamberlin、
 
 ## 后续内容
 
-优化器把整门课程串成一体：它读 SQL（[[databases/sql]]），应用代数的定律（[[databases/relational-model]]），使用设计中定下的码与外码（[[databases/normalisation]]），在 [[databases/storage-indexing]] 的访问路径与 [[databases/query-processing]] 的算法之间做选择。分布式查询优化器还要加上数据在机器间搬运的代价（[[distributed-systems]]），而学习型基数估计器与代价模型是它与机器学习交汇处的一个活跃研究方向。动态规划是 [[algorithms/dynamic-programming]] 的经典实例，连接树的计数则用到[数学图谱：生成函数](/learn/maths/lesson.php?c=discrete&l=generating-functions)中的 Catalan 数。
+优化器把整门课程串成一体：它读 SQL（[[databases/sql]]），应用代数的定律（[[databases/relational-model]]），使用设计中定下的码与外码（[[databases/normalisation]]），在 [[databases/storage-indexing]] 的访问路径与 [[databases/query-processing]] 的算法之间做选择。分布式查询优化器还要加上数据在机器间搬运的代价（[[distributed-systems]]），而学习型基数估计器与代价模型是它与机器学习交汇处的一个活跃研究方向。动态规划是 [[algorithms/dynamic-programming]] 的经典实例，连接树的计数则用到[数学图谱：生成函数](/a/maths/lesson.php?c=discrete&l=generating-functions)中的 Catalan 数。
 
 ::: summary
 - 优化器需要**搜索空间**（由等价规则生成的计划）、喂以**基数估计**的**代价模型**、以及**搜索算法**。

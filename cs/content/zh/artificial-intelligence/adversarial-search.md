@@ -389,7 +389,7 @@ labels: N = 1000; N = 10000
 caption: UCB1 的探索奖励 $c\sqrt{\ln N/N_i}$ 作为一个臂被访问次数 $N_i$ 的函数，取总数 $N$ 的两个值。访问很少的着法获得很大的奖励，因此终会被再次尝试；把 $N$ 乘以十，奖励只略有提高。改变 $c$：$c$ 小则贪婪利用，可能永远发现不了好棋；$c$ 大则访问几乎均匀摊开。
 :::
 
-MCTS 不需要评估函数——只需要规则就能把一局走完——这使它成为博弈、规划以及一切带模拟器的场合的通用方法。它的弱点是：在只有精确着法序列表效用的"战术"局面里，随机模拟对局可能严重误导。现代程序用**学出来的**网络取代随机模拟对局与均匀探索：一个估计谁会赢的价值网络，和一个给着法先验概率的策略网络。这一组合就是强化学习（[[artificial-intelligence/reinforcement-learning]]）；神经网络在 [LLM Atlas](/learn/llm/course.php?c=neural-networks) 中讲授。
+MCTS 不需要评估函数——只需要规则就能把一局走完——这使它成为博弈、规划以及一切带模拟器的场合的通用方法。它的弱点是：在只有精确着法序列表效用的"战术"局面里，随机模拟对局可能严重误导。现代程序用**学出来的**网络取代随机模拟对局与均匀探索：一个估计谁会赢的价值网络，和一个给着法先验概率的策略网络。这一组合就是强化学习（[[artificial-intelligence/reinforcement-learning]]）；神经网络在 [LLM Atlas](/a/llm/course.php?c=neural-networks) 中讲授。
 
 ::: history
 恩斯特·策梅洛（Ernst Zermelo）1913 年关于国际象棋的论文包含对策论的第一个定理，约翰·冯·诺依曼（John von Neumann）1928 年证明了零和博弈的极小化极大定理。克劳德·香农（Claude Shannon）的 "Programming a computer for playing chess"（1950）提出了带评估函数的深度受限极小化极大，阿兰·图灵（Alan Turing）在几乎同一时期用手算模拟过一个国际象棋程序。阿瑟·塞缪尔（Arthur Samuel）的国际跳棋程序（1959）通过自我对局学出了它的评估函数。α–β 剪枝在 1950 年代末被多次独立发现（其发明常归于约翰·麦卡锡（John McCarthy）等人），唐纳德·高德纳（Donald Knuth）与罗纳德·穆尔（Ronald Moore）的 "An analysis of alpha–beta pruning"（*Artificial Intelligence*，1975）证明了它的正确性与最小树下界；朱迪亚·珀尔（Judea Pearl）于 1982 年确定了它在随机树上的分支因子。1997 年，IBM 的「深蓝」（Deep Blue）在六局比赛中击败国际象棋世界冠军加里·卡斯帕罗夫（Garry Kasparov）。乔纳森·谢弗（Jonathan Schaeffer）的团队在 2007 年证明国际跳棋在完美对局下是和棋。雷米·库隆（Rémi Coulom）在 2006 年造出了"蒙特卡洛树搜索"一词，莱文特·科奇什（Levente Kocsis）与乔鲍·塞派什瓦里（Csaba Szepesvári）的 "Bandit based Monte-Carlo planning"（2006）提出了 UCT，其基础是彼得·奥尔（Peter Auer）、尼科洛·切萨-比安基（Nicolò Cesa-Bianchi）与保罗·费舍尔（Paul Fischer）（2002）的 UCB1 分析。DeepMind 的 AlphaGo 把 MCTS 与深度网络结合，于 2016 年 3 月以 4–1 击败围棋棋手李世石（Lee Sedol）；AlphaZero（2017–18）仅靠自我对局就学会了国际象棋、将棋与围棋。

@@ -21,7 +21,7 @@ const dark = args.includes('--dark');
 const lessons = args.includes('--lessons');
 const zh = args.includes('--zh');
 const LANG = zh ? '&lang=zh' : '';
-const BASE = process.env.MATHS_BASE || 'http://f.g77k.com/learn/europe/'; // f.g77k.com is mapped to 127.0.0.1
+const BASE = process.env.MATHS_BASE || 'http://f.g77k.com/a/europe/'; // f.g77k.com is mapped to 127.0.0.1
 
 function chrome() {
   if (process.env.CHROME) return process.env.CHROME; // any Chromium build; default: Playwright's headless shell

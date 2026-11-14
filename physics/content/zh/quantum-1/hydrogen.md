@@ -336,7 +336,7 @@ $$
 
 ## 后续内容 {#leads}
 
-电子自旋（[[quantum-1/spin]]）使每个能级加倍。相对论修正、自旋–轨道耦合与兰姆位移把 $n^2$ 简并劈分为精细结构与超精细结构，将在 [[quantum-2/stationary-perturbation]] 与 [[quantum-2/atomic-structure]] 中用微扰论处理。多电子原子无法精确求解；氢原子轨道加上屏蔽，是元素周期表的出发点。化学图谱在[氢原子](/learn/chemistry/lesson.php?c=quantum-chemistry&l=hydrogen-atom)与[多电子原子](/learn/chemistry/lesson.php?c=quantum-chemistry&l=many-electron-atoms)两文中，从化学家的角度展开同一解的图像。
+电子自旋（[[quantum-1/spin]]）使每个能级加倍。相对论修正、自旋–轨道耦合与兰姆位移把 $n^2$ 简并劈分为精细结构与超精细结构，将在 [[quantum-2/stationary-perturbation]] 与 [[quantum-2/atomic-structure]] 中用微扰论处理。多电子原子无法精确求解；氢原子轨道加上屏蔽，是元素周期表的出发点。化学图谱在[氢原子](/a/chemistry/lesson.php?c=quantum-chemistry&l=hydrogen-atom)与[多电子原子](/a/chemistry/lesson.php?c=quantum-chemistry&l=many-electron-atoms)两文中，从化学家的角度展开同一解的图像。
 
 ::: summary
 - 在中心势中 $\psi = R(r)Y_l^m(\theta, \varphi)$，而 $u = rR$ 服从一个一维方程，其中 $V_{\mathrm{eff}} = V + \hbar^2l(l+1)/2\mu r^2$，且 $u(0) = 0$。

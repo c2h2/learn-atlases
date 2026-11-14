@@ -2,7 +2,7 @@ Hang two identical pendulums side by side and join their bobs with a weak spring
 
 Every mechanical system near a stable equilibrium behaves like this. A molecule vibrating, a bridge swaying, a crystal lattice carrying sound: in each case, for small enough amplitudes, the motion is a superposition of independent normal modes, each oscillating at its own frequency. Finding them is a problem in linear algebra, the **generalised eigenvalue problem** $K\mathbf{a} = \omega^2 M\mathbf{a}$, and the purpose of this chapter is to set it up from a Lagrangian, to prove that it always has the solutions physics needs, and to solve it, by hand where symmetry allows and numerically where it does not.
 
-You should know simple harmonic motion ([[oscillations/simple-harmonic]]) and two coupled masses ([[oscillations/superposition]]), Lagrange's equations ([[analytical-mechanics/lagrangian]]), and eigenvalues and eigenvectors of symmetric matrices ([eigenvalues](/learn/maths/lesson.php?c=linear-algebra&l=eigenvalues) and [the spectral theorem](/learn/maths/lesson.php?c=linear-algebra&l=spectral-theorem) in the Maths Atlas).
+You should know simple harmonic motion ([[oscillations/simple-harmonic]]) and two coupled masses ([[oscillations/superposition]]), Lagrange's equations ([[analytical-mechanics/lagrangian]]), and eigenvalues and eigenvectors of symmetric matrices ([eigenvalues](/a/maths/lesson.php?c=linear-algebra&l=eigenvalues) and [the spectral theorem](/a/maths/lesson.php?c=linear-algebra&l=spectral-theorem) in the Maths Atlas).
 
 ## Equilibrium and the quadratic approximation {#quadratic}
 
@@ -392,7 +392,7 @@ The lowest mode, at $0.841\,\mathrm{Hz}$, has all three blocks moving the same w
 :::
 :::
 
-For larger systems one never forms the characteristic polynomial, whose roots are badly conditioned. Library routines reduce the problem to a symmetric one, as in part (3) of the proof, and apply the QR or Jacobi algorithm; see [numerical linear algebra](/learn/maths/lesson.php?c=numerical-analysis&l=iterative-methods) in the Maths Atlas and [[computation/linear-algebra]].
+For larger systems one never forms the characteristic polynomial, whose roots are badly conditioned. Library routines reduce the problem to a symmetric one, as in part (3) of the proof, and apply the QR or Jacobi algorithm; see [numerical linear algebra](/a/maths/lesson.php?c=numerical-analysis&l=iterative-methods) in the Maths Atlas and [[computation/linear-algebra]].
 
 ::: application Molecules, solids and buildings
 In infrared and Raman spectroscopy, every absorption line of a molecule's vibrational spectrum is a normal mode of exactly this kind, with $M$ the atomic masses and $K$ the curvature of the electronic energy. A nonlinear molecule with $N$ atoms has $3N - 6$ vibrational modes, the six zero modes being translations and rotations. In a crystal the same analysis with $10^{23}$ atoms gives phonons, whose frequencies determine the heat capacity in [[statistical-mechanics]]. Structural engineers compute the lowest normal modes of tall buildings and bridges, because a wind or earthquake that drives a structure near one of its normal frequencies drives it at resonance, as in [[oscillations/resonance]].

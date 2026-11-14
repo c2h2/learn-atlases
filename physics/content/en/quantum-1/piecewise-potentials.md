@@ -34,7 +34,7 @@ $$
 
 Several features recur in every bound-state problem. The ground state energy is not zero: $E_1 = \pi^2\hbar^2/2ma^2 > 0$. A particle confined to a region of size $a$ has momentum uncertainty of order $\hbar/a$ and so kinetic energy of order $\hbar^2/ma^2$; this **zero-point energy** is the uncertainty principle at work. The $n$th eigenfunction has $n - 1$ nodes inside the well. The eigenfunctions alternate between symmetric and antisymmetric about the centre. And the energies grow like $n^2$, so the spacing grows too, unlike the evenly spaced oscillator of [[quantum-1/harmonic-oscillator]].
 
-The functions $\psi_n$ are also **complete**: any reasonable function $f$ on $[0,a]$ vanishing at the ends can be expanded as $f = \sum c_n\psi_n$ with $c_n = \int_0^a\psi_nf\,\dd x$. This is the Fourier sine series ([Maths Atlas: Fourier series](/learn/maths/lesson.php?c=pde&l=fourier-series)), and it is what made the expansion in [[quantum-1/schrodinger-equation#ex-expand]] possible.
+The functions $\psi_n$ are also **complete**: any reasonable function $f$ on $[0,a]$ vanishing at the ends can be expanded as $f = \sum c_n\psi_n$ with $c_n = \int_0^a\psi_nf\,\dd x$. This is the Fourier sine series ([Maths Atlas: Fourier series](/a/maths/lesson.php?c=pde&l=fourier-series)), and it is what made the expansion in [[quantum-1/schrodinger-equation#ex-expand]] possible.
 
 ::: widget well
 n: 1
@@ -351,7 +351,7 @@ Wells with hard walls were among the first problems solved after Schrödinger's 
 
 ## Where this leads {#leads}
 
-The finite well with a smooth bottom becomes the harmonic oscillator of [[quantum-1/harmonic-oscillator]], where the matching problem is replaced by the condition that a power series terminate. The radial equation of the hydrogen atom in [[quantum-1/hydrogen]] is a one-dimensional problem on $r > 0$ with the condition $u(0) = 0$, exactly like one wall of the infinite well. Barriers that are not rectangular are handled approximately by the WKB method, in which $\kappa L$ becomes $\int\kappa(x)\,\dd x$, and periodic arrays of wells produce the energy bands of [[condensed-matter]]. The Chemistry Atlas applies the particle in a box to conjugated molecules in [model systems](/learn/chemistry/lesson.php?c=quantum-chemistry&l=model-systems).
+The finite well with a smooth bottom becomes the harmonic oscillator of [[quantum-1/harmonic-oscillator]], where the matching problem is replaced by the condition that a power series terminate. The radial equation of the hydrogen atom in [[quantum-1/hydrogen]] is a one-dimensional problem on $r > 0$ with the condition $u(0) = 0$, exactly like one wall of the infinite well. Barriers that are not rectangular are handled approximately by the WKB method, in which $\kappa L$ becomes $\int\kappa(x)\,\dd x$, and periodic arrays of wells produce the energy bands of [[condensed-matter]]. The Chemistry Atlas applies the particle in a box to conjugated molecules in [model systems](/a/chemistry/lesson.php?c=quantum-chemistry&l=model-systems).
 
 ::: summary
 - On intervals of constant $V$ the solutions are $e^{\pm ikx}$ (allowed region) or $e^{\pm\kappa x}$ (forbidden region); $\psi$ and $\psi'$ are continuous at finite jumps, and $\psi = 0$ at infinite walls.

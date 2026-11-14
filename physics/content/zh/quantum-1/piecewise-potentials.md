@@ -34,7 +34,7 @@ $$
 
 有几个特征在每个束缚态问题中反复出现。基态能量不为零：$E_1 = \pi^2\hbar^2/2ma^2 > 0$。一个被束缚在尺度 $a$ 区域内的粒子，动量不确定度为 $\hbar/a$ 量级，从而动能约为 $\hbar^2/ma^2$；这一**零点能**正是不确定性原理在起作用。第 $n$ 个本征函数在阱内有 $n - 1$ 个节点。本征函数关于中心在对称与反对称之间交替。能量按 $n^2$ 增长，间距也随之增大，这与 [[quantum-1/harmonic-oscillator]] 中等间距的谐振子不同。
 
-函数 $\psi_n$ 还是**完备**的：$[0,a]$ 上任何在端点为零的合理函数 $f$ 都可展开为 $f = \sum c_n\psi_n$，$c_n = \int_0^a\psi_nf\,\dd x$。这就是傅里叶正弦级数（[数学图谱中的傅里叶级数](/learn/maths/lesson.php?c=pde&l=fourier-series)），[[quantum-1/schrodinger-equation#ex-expand]] 中的展开正是靠它才可行。
+函数 $\psi_n$ 还是**完备**的：$[0,a]$ 上任何在端点为零的合理函数 $f$ 都可展开为 $f = \sum c_n\psi_n$，$c_n = \int_0^a\psi_nf\,\dd x$。这就是傅里叶正弦级数（[数学图谱中的傅里叶级数](/a/maths/lesson.php?c=pde&l=fourier-series)），[[quantum-1/schrodinger-equation#ex-expand]] 中的展开正是靠它才可行。
 
 ::: widget well
 n: 1
@@ -351,7 +351,7 @@ caption: 矩形势垒的透射率 $T$ 随 $E/V_0$ 的变化，滑块是 $g = L\s
 
 ## 后续内容 {#leads}
 
-底部光滑的有限深势阱成为 [[quantum-1/harmonic-oscillator]] 的谐振子，匹配问题在那里换成幂级数必须截断的条件。[[quantum-1/hydrogen]] 中氢原子的径向方程是 $r > 0$ 上带条件 $u(0) = 0$ 的一维问题，与无限深势阱的一壁完全相同。非矩形的势垒用 WKB 方法近似处理，其中 $\kappa L$ 换成 $\int\kappa(x)\,\dd x$；势阱的周期阵列则产生 [[condensed-matter]] 的能带。化学图谱在[模型体系](/learn/chemistry/lesson.php?c=quantum-chemistry&l=model-systems)一文中把势箱中的粒子应用于共轭分子。
+底部光滑的有限深势阱成为 [[quantum-1/harmonic-oscillator]] 的谐振子，匹配问题在那里换成幂级数必须截断的条件。[[quantum-1/hydrogen]] 中氢原子的径向方程是 $r > 0$ 上带条件 $u(0) = 0$ 的一维问题，与无限深势阱的一壁完全相同。非矩形的势垒用 WKB 方法近似处理，其中 $\kappa L$ 换成 $\int\kappa(x)\,\dd x$；势阱的周期阵列则产生 [[condensed-matter]] 的能带。化学图谱在[模型体系](/a/chemistry/lesson.php?c=quantum-chemistry&l=model-systems)一文中把势箱中的粒子应用于共轭分子。
 
 ::: summary
 - 在 $V$ 为常量的区间上，解是 $e^{\pm ikx}$（允许区）或 $e^{\pm\kappa x}$（禁区）；$\psi$ 与 $\psi'$ 在有限跳跃处连续，无穷高壁处 $\psi = 0$。

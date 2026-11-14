@@ -296,7 +296,7 @@ ARP 没有认证：局域网上的任何主机都可以发送 ARP 应答、声�
 
 ## 后续内容
 
-无线链路继承本章的许多思想——随机接入、链路层重传、MAC 地址——但用碰撞避免取代碰撞检测，理由在 [[networks/wireless-mobile]] 中说明。纠错码在编码理论中展开，其代数基础见 [Maths Atlas](/learn/maths/)；网络适配器的硬件和移位寄存器 CRC 属于 [Electrical Engineering Atlas](/learn/ee/)。链路层的网络安全——802.1X 端口认证、Wi-Fi 加密——是 [[security]] 的一部分。
+无线链路继承本章的许多思想——随机接入、链路层重传、MAC 地址——但用碰撞避免取代碰撞检测，理由在 [[networks/wireless-mobile]] 中说明。纠错码在编码理论中展开，其代数基础见 [Maths Atlas](/a/maths/)；网络适配器的硬件和移位寄存器 CRC 属于 [Electrical Engineering Atlas](/a/ee/)。链路层的网络安全——802.1X 端口认证、Wi-Fi 加密——是 [[security]] 的一部分。
 
 ::: summary
 - 数据链路层把帧送过一条链路：成帧、媒体接入、差错检测，有时还有可靠交付；它主要实现在网卡里。

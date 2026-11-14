@@ -79,7 +79,7 @@ $$
 $$
 :::
 
-一个 CNF 公式为真，当且仅当*每个*子句都含有*至少一个*真文字。两个问题都属于 $\mathsf{NP}$：证书是一个满足赋值，对它求值公式即可在线性时间内检验。真值表（[Maths Atlas：命题逻辑](/learn/maths/lesson.php?c=proofs&l=propositional-logic)）以公式长度乘以 $2^n$ 的时间判定可满足性。
+一个 CNF 公式为真，当且仅当*每个*子句都含有*至少一个*真文字。两个问题都属于 $\mathsf{NP}$：证书是一个满足赋值，对它求值公式即可在线性时间内检验。真值表（[Maths Atlas：命题逻辑](/a/maths/lesson.php?c=proofs&l=propositional-logic)）以公式长度乘以 $2^n$ 的时间判定可满足性。
 
 ::: widget truthtable
 formula: (a | b | c) & ~(a & b) & ~(a & c) & ~(b & c)

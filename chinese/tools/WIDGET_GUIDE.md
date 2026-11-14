@@ -15,7 +15,7 @@ the repository root) copies the Maths Atlas engine into this directory again and
 `data/widgets.json` (the maths catalogue filtered to the spec's `widgets`), the Lab groups in `lab.php`
 (from the spec's `lab_groups`) and `inc/lang/zh-figures.php`. New files of our own, such as
 `assets/js/widgets/script.js`, survive a refresh; edits to copied files do not. Fixes to shared code go
-into `/learn/maths/` (or the generator), never into the copies here.
+into `/a/maths/` (or the generator), never into the copies here.
 
 ## Files and loading
 
@@ -121,7 +121,7 @@ symbols, so transcriptions fall back to system fonts until an IPA-capable OFL fo
 Gentium Plus) is added.
 
 **Sound.** No atlas plays sound yet. Tones, sandhi and initials would gain from it; follow the English
-atlas's rules for the shared audio helper (`/learn/english/tools/WIDGET_GUIDE.md`): only on a button
+atlas's rules for the shared audio helper (`/a/english/tools/WIDGET_GUIDE.md`): only on a button
 press, never autoplay; recorded files made for the atlas or under a licence that allows
 redistribution; the browser's `speechSynthesis` only with `localService` voices (zh-CN for
 Putonghua), labelled as synthetic, and never for isolated tones, dialect forms or reconstructed
@@ -132,7 +132,7 @@ publication; no microphone input in the first version.
 map review) a map showing China's territory that is published or displayed to the public — online
 included — must pass map review and carry its 审图号; unmodified maps from the Ministry of Natural
 Resources' standard map service (标准地图服务) may be used with their 审图号 shown. World datasets
-such as Natural Earth (vendored for the Peptide Atlas in `/learn/peptides/`) do not draw China's
+such as Natural Earth (vendored for the Peptide Atlas in `/a/peptides/`) do not draw China's
 boundaries as the regulations require and must not be used for maps of China. Therefore:
 **no geographic maps of China** in this atlas without that review. Dialect groups, the distribution of
 a feature and poets' journeys are shown as schematic, non-geographic diagrams (trees, grids, lists,
@@ -170,12 +170,12 @@ caption or info row.
 
 ## Testing
 
-Every type has a live page: `http://f.g77k.com/learn/chinese/lab.php?w=<type>` (Chinese by default;
+Every type has a live page: `http://f.g77k.com/a/chinese/lab.php?w=<type>` (Chinese by default;
 `&lang=en` for the English interface; `&cfg=` with URL-encoded `key: value` lines tests other
 settings). From this machine:
 
 ```
-cd /var/www/f.g77k.com/learn/chinese
+cd /var/www/f.g77k.com/a/chinese
 node tools/shot.js "lab.php?w=plot" /tmp/.../plot.png            # prints JS errors + figure state
 node tools/shot.js "lab.php?w=plot" /tmp/.../plot-dark.png --dark
 node tools/labcheck.js [type …] [--dark] [--zh]                  # load Lab pages and report errors

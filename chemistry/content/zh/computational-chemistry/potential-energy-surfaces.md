@@ -14,7 +14,7 @@ $$
 
 双原子分子有$3 \times 2 - 5 = 1$个内部坐标，所以它的“曲面”是一条曲线$E(r)$；水有$3$个（两个键长与一个键角）；苯有$30$个。超过两维便无法直观可视化，这就是本课的语言是微积分的语言——梯度、Hessian矩阵、特征值——而不是图像的原因。像下面这样的二维模型曲面，是训练直觉的场地，而这种直觉必须在$30$维或$3000$维中盲用。
 
-在任一几何$\mathbf{R}_0$附近，能量可展开为泰勒级数（多变量情形见[Maths Atlas](/learn/maths/)）：
+在任一几何$\mathbf{R}_0$附近，能量可展开为泰勒级数（多变量情形见[Maths Atlas](/a/maths/)）：
 $$
 E(\mathbf{R}_0 + \Delta\mathbf{R}) = E(\mathbf{R}_0) + \mathbf{g}\T\Delta\mathbf{R} + \tfrac{1}{2}\,\Delta\mathbf{R}\T\mathbf{H}\,\Delta\mathbf{R} + \cdots
 $$ {#eq-taylor-pes}

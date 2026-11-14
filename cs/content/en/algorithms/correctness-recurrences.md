@@ -2,7 +2,7 @@ You have written a function that sorts a list, and it has passed every test you 
 
 This course is about designing algorithms and about the two arguments that accompany every one of them: a **proof of correctness**, showing that the algorithm meets its specification on every valid input, and an **analysis of cost**, showing how its running time (or memory) grows with the size of the input. This first chapter supplies the tools for both. For iterative algorithms the correctness tool is the **loop invariant**, a statement that stays true each time round a loop; for recursive algorithms it is **induction**. For cost, iterative algorithms lead to sums, and recursive ones lead to **recurrences** — equations such as $T(n) = 2T(n/2) + n$ that describe the cost on input size $n$ in terms of the cost on smaller inputs. We solve recurrences by substitution, by recursion trees and by the **master theorem**, which every later chapter uses.
 
-We assume the asymptotic notation $O$, $\Omega$, $\Theta$ and the RAM cost model from [[data-structures/asymptotic-analysis]], induction from [Maths Atlas: induction](/learn/maths/lesson.php?c=proofs&l=induction), and Python as in [[programming-1]]. Pseudocode in this course is in the CLRS style: arrays are indexed from $1$ unless said otherwise, `←` is assignment, and indentation shows structure; the Python versions index from $0$.
+We assume the asymptotic notation $O$, $\Omega$, $\Theta$ and the RAM cost model from [[data-structures/asymptotic-analysis]], induction from [Maths Atlas: induction](/a/maths/lesson.php?c=proofs&l=induction), and Python as in [[programming-1]]. Pseudocode in this course is in the CLRS style: arrays are indexed from $1$ unless said otherwise, `←` is assignment, and indentation shows structure; the Python versions index from $0$.
 
 ## Specifications and loop invariants
 
@@ -116,7 +116,7 @@ The lower bound is reached on an already sorted array (every insertion stops at 
 For an algorithm whose cost on an input $x$ is $c(x)$, the **worst-case running time** is $T(n) = \max\{c(x) : \lvert x\rvert = n\}$ and the **best-case running time** is the minimum over inputs of size $n$. Given a probability distribution on inputs of each size, the **average-case running time** is the expected value $\E[c(X)]$ for a random input $X$ of size $n$.
 :::
 
-Unless we say otherwise, "running time" means worst-case running time: it is a guarantee for every input, and for many algorithms the worst case occurs often. If all $n!$ orders of distinct keys are equally likely, each of the $\binom n2$ pairs is inverted with probability $1/2$, so the expected number of inversions is $n(n-1)/4$ (by linearity of expectation, [Maths Atlas: expectation](/learn/maths/lesson.php?c=probability&l=expectation)): insertion sort is $\Theta(n^2)$ on average too, about half its worst case.
+Unless we say otherwise, "running time" means worst-case running time: it is a guarantee for every input, and for many algorithms the worst case occurs often. If all $n!$ orders of distinct keys are equally likely, each of the $\binom n2$ pairs is inverted with probability $1/2$, so the expected number of inversions is $n(n-1)/4$ (by linearity of expectation, [Maths Atlas: expectation](/a/maths/lesson.php?c=probability&l=expectation)): insertion sort is $\Theta(n^2)$ on average too, about half its worst case.
 
 ::: quiz
 Which of the following is a loop invariant for this loop, which finds the largest element of a non-empty list `a`, and is strong enough to prove that it returns $\max(a)$?
@@ -395,7 +395,7 @@ For $2T(n/2) + n^2$ the watershed is $n$ and $f(n) = n^2 = \Omega(n^{1+1})$; reg
 
 Two more techniques complete the toolkit.
 
-**Linear recurrences** such as $T(n) = T(n-1) + f(n)$ unroll into sums: $T(n) = T(0) + \sum_{k=1}^n f(k)$. Insertion sort's worst case is $T(n) = T(n-1) + (n-1)$, which sums to $n(n-1)/2$. Recurrences with two or more subtractive calls, like $T(n) = T(n-1) + T(n-2) + 1$ for naive Fibonacci, have exponential solutions and are solved with the characteristic equation ([Maths Atlas: recurrences](/learn/maths/lesson.php?c=discrete&l=recurrences)).
+**Linear recurrences** such as $T(n) = T(n-1) + f(n)$ unroll into sums: $T(n) = T(0) + \sum_{k=1}^n f(k)$. Insertion sort's worst case is $T(n) = T(n-1) + (n-1)$, which sums to $n(n-1)/2$. Recurrences with two or more subtractive calls, like $T(n) = T(n-1) + T(n-2) + 1$ for naive Fibonacci, have exponential solutions and are solved with the characteristic equation ([Maths Atlas: recurrences](/a/maths/lesson.php?c=discrete&l=recurrences)).
 
 **Changing variables** turns some unusual recurrences into familiar ones. For $T(n) = 2T(\sqrt n) + \log n$, put $n = 2^m$ and $S(m) = T(2^m)$. Then $S(m) = 2S(m/2) + m$, so $S(m) = \Theta(m\log m)$ and $T(n) = \Theta(\log n \log\log n)$.
 

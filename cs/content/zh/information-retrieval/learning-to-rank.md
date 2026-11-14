@@ -1,6 +1,6 @@
 网页搜索引擎并不是只靠 BM25 排序的。对每个候选文档，它可以分别计算标题、正文、URL 和锚文本上的 BM25；一个查询似然分数；查询词是否彼此挨得近；文档的 PageRank 与它在站点内的深度；它的新鲜度和最近一次修改的时间；它的语言和阅读难度；一个垃圾分数；用户在相似查询下点过它多少次、停留多久。一百个甚至更多这样的**特征**稀松平常。它们该怎么组合？手工给一百个数定权重、每改一处都拿测试查询去检验，是行不通的——而这恰恰是机器学习擅长的那类问题。**排序学习**（learning to rank）在训练数据上拟合一个打分函数，使排序在 [[information-retrieval/evaluation]] 的度量上得高分。
 
-本章只处理这个问题中排序专有的部分；监督学习的一般机制——损失函数、梯度下降、泛化与过拟合、神经网络与 boosted 树——是 LLM 图谱的主题，见 [ML fundamentals](/learn/llm/lesson.php?c=ml-fundamentals&l=learning-problem) 与 [neural networks](/learn/llm/lesson.php?c=neural-networks&l=backpropagation)，这里直接使用、不加推导。我们先建立问题及其三大类方法：**逐点法**（pointwise，预测每个文档的等级）、**逐对法**（pairwise，预测两个文档中哪个更好，如 RankNet 与 RankSVM）与**逐表法**（listwise，优化整张表的度量，如 LambdaRank 与 LambdaMART——许多生产级排序器背后的方法）。我们导出 RankNet 的梯度，解释 nDCG 为什么不能直接用梯度下降优化、LambdaRank 如何绕过这一点，并在一个合成数据集上运行三种方法。最后一部分讲从**点击**学习：点击很多，却有偏——不管放什么，用户都爱点靠前的。我们给**位置偏置**建模，证明**逆倾向加权**能把它消去，并用模拟演示这一纠正。
+本章只处理这个问题中排序专有的部分；监督学习的一般机制——损失函数、梯度下降、泛化与过拟合、神经网络与 boosted 树——是 LLM 图谱的主题，见 [ML fundamentals](/a/llm/lesson.php?c=ml-fundamentals&l=learning-problem) 与 [neural networks](/a/llm/lesson.php?c=neural-networks&l=backpropagation)，这里直接使用、不加推导。我们先建立问题及其三大类方法：**逐点法**（pointwise，预测每个文档的等级）、**逐对法**（pairwise，预测两个文档中哪个更好，如 RankNet 与 RankSVM）与**逐表法**（listwise，优化整张表的度量，如 LambdaRank 与 LambdaMART——许多生产级排序器背后的方法）。我们导出 RankNet 的梯度，解释 nDCG 为什么不能直接用梯度下降优化、LambdaRank 如何绕过这一点，并在一个合成数据集上运行三种方法。最后一部分讲从**点击**学习：点击很多，却有偏——不管放什么，用户都爱点靠前的。我们给**位置偏置**建模，证明**逆倾向加权**能把它消去，并用模拟演示这一纠正。
 
 ## 排序学习问题
 
@@ -260,7 +260,7 @@ caption: 一族位置偏置曲线 $\theta_k = k^{-\eta}$——常拟合给点击
 
 ## 实践中
 
-排序学习在 2000 年代末成为网页搜索的核心。公开的基准数据集——微软的 LETOR（2007）与 MSLR-WEB10K/30K、Yahoo! 排序学习挑战赛数据（2010）——为几万条查询提供了特征向量和分级判定，带 lambda 梯度的 boosted 树长期是其上最强的方法。约 2019 年起，构建在预训练语言模型上的**神经重排器**——一个把查询和文档放在一起读、输出相关性分数的 transformer，即**交叉编码器**——在许多基准上带来大幅的效力提升，但每个文档代价高昂，所以只用于头几十到一百个候选；它们在 [[information-retrieval/dense-retrieval]] 中引入，模型本身见 [LLM Atlas](/learn/llm/lesson.php?c=transformers&l=architecture-families)。在新鲜度、热度或个性化等特征必不可少、时延预算又吃紧的地方，基于特征的学习排序器依然重要。这些系统一律按 [[information-retrieval/evaluation]] 评估：留出的查询上离线 nDCG，然后在线交织或 A/B 测试。
+排序学习在 2000 年代末成为网页搜索的核心。公开的基准数据集——微软的 LETOR（2007）与 MSLR-WEB10K/30K、Yahoo! 排序学习挑战赛数据（2010）——为几万条查询提供了特征向量和分级判定，带 lambda 梯度的 boosted 树长期是其上最强的方法。约 2019 年起，构建在预训练语言模型上的**神经重排器**——一个把查询和文档放在一起读、输出相关性分数的 transformer，即**交叉编码器**——在许多基准上带来大幅的效力提升，但每个文档代价高昂，所以只用于头几十到一百个候选；它们在 [[information-retrieval/dense-retrieval]] 中引入，模型本身见 [LLM Atlas](/a/llm/lesson.php?c=transformers&l=architecture-families)。在新鲜度、热度或个性化等特征必不可少、时延预算又吃紧的地方，基于特征的学习排序器依然重要。这些系统一律按 [[information-retrieval/evaluation]] 评估：留出的查询上离线 nDCG，然后在线交织或 A/B 测试。
 
 从用户行为学习还提出超越精度的问题。拿点击训练的排序器学的是用户点什么，而那未必是准确的、安全的或公平的——耸动的结果招点击——反馈回路还会把现有排序和从中获利的提供者固化下来。因此引擎把行为信号与编辑判定、质量准则并用，并在相关性之外度量曝光与公平。
 
@@ -270,7 +270,7 @@ caption: 一族位置偏置曲线 $\theta_k = k^{-\eta}$——常拟合给点击
 
 ## 后续内容
 
-学习排序器享用之前每一章的全部特征——BM25 与语言模型分数、位置索引来的邻近度、PageRank 与锚文本——并接受 [[information-retrieval/evaluation]] 的度量与检验评判。下一章 [[information-retrieval/dense-retrieval]] 把学习从最后一级挪到第一级：不再组合手工设计的特征，而是把查询与文档表示成稠密向量，用最近邻搜索检回，再用交叉编码器重排。机器学习的地基——逻辑回归、梯度下降、boosting、神经网络——在 [LLM Atlas](/learn/llm/lesson.php?c=ml-fundamentals&l=logistic-regression) 中展开。
+学习排序器享用之前每一章的全部特征——BM25 与语言模型分数、位置索引来的邻近度、PageRank 与锚文本——并接受 [[information-retrieval/evaluation]] 的度量与检验评判。下一章 [[information-retrieval/dense-retrieval]] 把学习从最后一级挪到第一级：不再组合手工设计的特征，而是把查询与文档表示成稠密向量，用最近邻搜索检回，再用交叉编码器重排。机器学习的地基——逻辑回归、梯度下降、boosting、神经网络——在 [LLM Atlas](/a/llm/lesson.php?c=ml-fundamentals&l=logistic-regression) 中展开。
 
 ::: summary
 - **排序学习**（[[#def-ltr]]）在查询–文档对的特征上拟合打分函数，使新查询的排序在 nDCG 一类度量上得高分；要紧的只是查询内的次序，而头部最要紧。
@@ -332,7 +332,7 @@ $\ln p_i = s_i - \ln\sum_j e^{s_j}$，故 $\partial \ln p_i/\partial s_k = \math
 $$
 \frac{\partial L}{\partial s_k} = -\sum_i t_i\bigl(\mathbf 1[i = k] - p_k\bigr) = -t_k + p_k\sum_i t_i = p_k - t_k,
 $$
-用到 $\sum_i t_i = 1$。一个文档"排第一"的预测概率超过它的目标份额，分数就被压低，反之被抬高；两个分布一致时梯度恰为零。softmax 把质量聚在最高的分数上，损失便由排序头部主导——这是一种不必排序就能侧重头部的光滑办法。（同一梯度就是多项逻辑回归的梯度，见 [LLM Atlas](/learn/llm/lesson.php?c=ml-fundamentals&l=logistic-regression)。）
+用到 $\sum_i t_i = 1$。一个文档"排第一"的预测概率超过它的目标份额，分数就被压低，反之被抬高；两个分布一致时梯度恰为零。softmax 把质量聚在最高的分数上，损失便由排序头部主导——这是一种不必排序就能侧重头部的光滑办法。（同一梯度就是多项逻辑回归的梯度，见 [LLM Atlas](/a/llm/lesson.php?c=ml-fundamentals&l=logistic-regression)。）
 :::
 :::
 

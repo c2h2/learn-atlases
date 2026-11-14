@@ -40,7 +40,7 @@ ROOT = Path(__file__).resolve().parent.parent
 AUDIO = ROOT / 'audio'
 VERSION = 1  # bump when the script rules change, to regenerate every lesson
 VOICES = {'en': 'en-GB-SoniaNeural', 'zh': 'zh-CN-XiaoxiaoNeural'}
-BASE = os.environ.get('ATLAS_BASE', 'http://127.0.0.1/learn/medicine/')
+BASE = os.environ.get('ATLAS_BASE', 'http://127.0.0.1/a/medicine/')
 HOST = os.environ.get('ATLAS_HOST', 'f.g77k.com')
 # The readable elements of a lesson, in document order. assets/js/audio.js uses the same selector and
 # skips the same subtrees (figure stages, which scripts fill in), so element i here is element i there.

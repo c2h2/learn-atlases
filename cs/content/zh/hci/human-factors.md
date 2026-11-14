@@ -143,7 +143,7 @@ $$
 
 ## 选择：希克–海曼定律
 
-当一个人在若干可能的反应之间作出选择、每个反应各连着一个不同的刺激时，选择肢越多，决策越久。威廉·希克（William Hick）（1952）发现这种增长是对数的，雷伊·海曼（Ray Hyman）（1953）又表明，要紧的不是选择肢的数目，而是选择中的**信息量**——按香农（Shannon）的意义（[Maths Atlas：概率空间](/learn/maths/lesson.php?c=probability&l=probability-spaces)）。
+当一个人在若干可能的反应之间作出选择、每个反应各连着一个不同的刺激时，选择肢越多，决策越久。威廉·希克（William Hick）（1952）发现这种增长是对数的，雷伊·海曼（Ray Hyman）（1953）又表明，要紧的不是选择肢的数目，而是选择中的**信息量**——按香农（Shannon）的意义（[Maths Atlas：概率空间](/a/maths/lesson.php?c=probability&l=probability-spaces)）。
 
 ::: definition 希克–海曼定律 {#def-hick}
 若一人必须对以概率 $p_1, \dots, p_n$ 出现的 $n$ 个刺激之一作出各自专属的反应，则平均**选择反应时**为
@@ -231,7 +231,7 @@ caption: 对宽 $W$ 的目标（第一条曲线）与宽四倍的目标（第二
 
 ### 拟合定律
 
-常数 $a$ 与 $b$ 由测量若干 $(D, W)$ 条件、并对平均运动时间关于 $ID$ 作最小二乘直线拟合得到（[Maths Atlas：回归](/learn/maths/lesson.php?c=statistics&l=regression)）。
+常数 $a$ 与 $b$ 由测量若干 $(D, W)$ 条件、并对平均运动时间关于 $ID$ 作最小二乘直线拟合得到（[Maths Atlas：回归](/a/maths/lesson.php?c=statistics&l=regression)）。
 
 ::: example 拟合 $a$ 与 $b$ {#ex-fitts-fit}
 在一次演示性（虚构）的指点实验中，六个条件给出如下的平均运动时间。拟合 [[#eq-fitts]]。

@@ -255,7 +255,7 @@ observed yes: 0.4102   estimate of p: 0.3204   true p: 0.3033
 
 ## 后续内容
 
-隐私依赖本课程的种种安全机制：个人数据必须由访问控制（[[security/access-control]]）与加密来保护，而它在数据泄露事件中的流失是事件响应（[[security/malware]]）的中心议题。设计与默认的数据保护是 [[security/secure-development]] 所述开发流程的一部分。差分隐私与机器学习相连——在不记住个别样本的前提下训练模型——也与数学图谱中的概率论相连（[Maths Atlas: probability](/learn/maths/course.php?c=probability)）；对私有数据进行计算的密码学技术在 [[cryptography]]，数据收集的伦理问题在 [[software-engineering/professional-ethics]] 与 [[hci]]。
+隐私依赖本课程的种种安全机制：个人数据必须由访问控制（[[security/access-control]]）与加密来保护，而它在数据泄露事件中的流失是事件响应（[[security/malware]]）的中心议题。设计与默认的数据保护是 [[security/secure-development]] 所述开发流程的一部分。差分隐私与机器学习相连——在不记住个别样本的前提下训练模型——也与数学图谱中的概率论相连（[Maths Atlas: probability](/a/maths/course.php?c=probability)）；对私有数据进行计算的密码学技术在 [[cryptography]]，数据收集的伦理问题在 [[software-engineering/professional-ethics]] 与 [[hci]]。
 
 ::: summary
 - 隐私保护的是数据主体。**情境完整性**（[[#def-contextual-integrity]]）依据信息共享发生时那个情境的规范来评判一条流动；数据保护法又添上目的限制、**数据最小化**、存储限制与问责制。

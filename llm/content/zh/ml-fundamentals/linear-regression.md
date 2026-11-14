@@ -1,6 +1,6 @@
 线性回归是至今仍每天在用的最古老的学习算法，也是把[[ml-fundamentals/learning-problem]]的每一个思想都看个明白、毫无遮掩的最佳场所。假设空间是线性函数的集合，损失是平方误差，经验风险最小化有一个由线性方程组给出的精确解，即**正规方程**。对这个解的三种解读——几何的（正交投影）、概率的（高斯（Gauss）噪声下的最大似然）与贝叶斯的（配上高斯先验便得到**岭回归**）——贯穿机器学习的始终。而且，由于同一个目标函数也能用梯度下降来极小化，线性回归还是展示步长与数据形状如何支配优化的最干净的例子。
 
-神经网络的几乎每一层——包括 Transformer 内部的投影——都是一个线性映射后面再接别的东西；回归网络的最后一层*就是*在学得的特征上做线性回归（[[ml-fundamentals/representations]]）。这里用到的线性代数——矩阵乘积、秩、正交投影、对称矩阵的特征值——在[[math-for-ml/vectors-matrices]]与[[math-for-ml/matrix-decompositions]]中；数学图谱的[最小二乘](/learn/maths/lesson.php?c=linear-algebra&l=least-squares)一课对几何着墨更多；它的[回归](/learn/maths/lesson.php?c=statistics&l=regression)一课涵盖经典统计的内容。
+神经网络的几乎每一层——包括 Transformer 内部的投影——都是一个线性映射后面再接别的东西；回归网络的最后一层*就是*在学得的特征上做线性回归（[[ml-fundamentals/representations]]）。这里用到的线性代数——矩阵乘积、秩、正交投影、对称矩阵的特征值——在[[math-for-ml/vectors-matrices]]与[[math-for-ml/matrix-decompositions]]中；数学图谱的[最小二乘](/a/maths/lesson.php?c=linear-algebra&l=least-squares)一课对几何着墨更多；它的[回归](/a/maths/lesson.php?c=statistics&l=regression)一课涵盖经典统计的内容。
 
 ## 模型 {#sec-model}
 

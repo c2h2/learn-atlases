@@ -2,7 +2,7 @@ The pipeline of [[computer-architecture/pipelining]] assumed that the instructio
 
 The way out is a **memory hierarchy**: a small, fast memory close to the processor holding copies of the data in use right now, backed by larger and slower levels, down to DRAM and finally to flash storage. If the hierarchy is well designed, almost every access is served by the fast level, and the processor sees a memory that is nearly as fast as the smallest level and nearly as large as the biggest. That this works at all is a statement about programs, not hardware: programs reuse data and use data that lie close together. This chapter makes that statement precise and builds on it: the organisation of caches, how they are looked up and how they decide what to keep, how to calculate their effect on performance, and how **virtual memory** gives each program the illusion of a private address space using the same ideas one level further down.
 
-The circuits themselves — SRAM cells, DRAM cells and refresh, the organisation of memory arrays — are in [[digital-logic/memories-programmable-logic]]. The programmer's view, how to write code that uses caches well, is in [The memory hierarchy and caches](/learn/cs/lesson.php?c=computer-systems&l=memory-hierarchy), and the operating system's management of pages in [Address spaces and paging](/learn/cs/lesson.php?c=operating-systems&l=address-spaces-paging).
+The circuits themselves — SRAM cells, DRAM cells and refresh, the organisation of memory arrays — are in [[digital-logic/memories-programmable-logic]]. The programmer's view, how to write code that uses caches well, is in [The memory hierarchy and caches](/a/cs/lesson.php?c=computer-systems&l=memory-hierarchy), and the operating system's management of pages in [Address spaces and paging](/a/cs/lesson.php?c=operating-systems&l=address-spaces-paging).
 
 ## Technology and locality
 
@@ -222,7 +222,7 @@ Main memory itself acts as a cache for storage, and the same ideas, with very di
 In a **paged** virtual memory, virtual and physical address spaces are divided into **pages** of $2^p$ bytes (commonly $4\,\mathrm{KiB}$, $p = 12$). A virtual address is split into a **virtual page number** (VPN), its high bits, and a **page offset**, its low $p$ bits. A **page table**, maintained by the operating system in memory, maps each VPN to a **page table entry** (PTE) holding a physical page number (PPN) and status bits: valid, readable, writable, executable, user-accessible, accessed and dirty. The physical address is the PPN followed by the unchanged page offset. An access to a page whose PTE is not valid, or that violates its permissions, raises a **page fault** exception handled by the operating system.
 :::
 
-The parameters differ from those of caches because the miss penalty is so large: a page fault that must read the page from an SSD costs tens of microseconds, around $10^5$ processor cycles. So pages are large (to amortise the transfer), placement is fully associative (any virtual page can go in any physical page), replacement is done by the operating system with an LRU approximation, and writes are always write-back. The policies are described in [Swapping and page replacement](/learn/cs/lesson.php?c=operating-systems&l=page-replacement).
+The parameters differ from those of caches because the miss penalty is so large: a page fault that must read the page from an SSD costs tens of microseconds, around $10^5$ processor cycles. So pages are large (to amortise the transfer), placement is fully associative (any virtual page can go in any physical page), replacement is done by the operating system with an LRU approximation, and writes are always write-back. The policies are described in [Swapping and page replacement](/a/cs/lesson.php?c=operating-systems&l=page-replacement).
 
 ### Page table organisation
 
@@ -351,7 +351,7 @@ A $1024\times 1024$ matrix of 8-byte `double`s is stored in row-major order (row
 ::: solution
 *Row by row*: consecutive accesses are $8$ bytes apart, so each $64$-byte line serves $8$ accesses: one miss, then seven hits. Miss rate $1/8 = 12.5\,\%$ (less with a prefetcher).
 
-*Column by column*: consecutive accesses are $8192$ bytes apart (one row), each in a different line. Before the program returns to the next element of a line — after a whole column of $1024$ accesses — it has touched $1024$ lines, $64\,\mathrm{KiB}$ of lines, twice the cache. With LRU replacement all are evicted, and every access misses: about $100\,\%$. The same arithmetic, eight times as many misses — the reason loop order matters so much (see [The memory hierarchy and caches](/learn/cs/lesson.php?c=computer-systems&l=memory-hierarchy)).
+*Column by column*: consecutive accesses are $8192$ bytes apart (one row), each in a different line. Before the program returns to the next element of a line — after a whole column of $1024$ accesses — it has touched $1024$ lines, $64\,\mathrm{KiB}$ of lines, twice the cache. With LRU replacement all are evicted, and every access misses: about $100\,\%$. The same arithmetic, eight times as many misses — the reason loop order matters so much (see [The memory hierarchy and caches](/a/cs/lesson.php?c=computer-systems&l=memory-hierarchy)).
 :::
 :::
 

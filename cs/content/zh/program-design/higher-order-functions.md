@@ -52,7 +52,7 @@ $ python3 series.py
 
 ### 返回函数的函数
 
-高阶函数也可以*制造*函数。$f$ 的导数是一个函数，因此用一个返回函数的函数来计算它就是自然而然的事。对光滑的 $f$，中心差商 $\frac{f(x+h) - f(x-h)}{2h}$ 以与 $h^2$ 成正比的误差逼近 $f'(x)$，只要 $h$ 不至于小到舍入误差占上风。下文要用的牛顿法，其分析见 [Maths Atlas：求根](/learn/maths/lesson.php?c=numerical-analysis&l=root-finding)。
+高阶函数也可以*制造*函数。$f$ 的导数是一个函数，因此用一个返回函数的函数来计算它就是自然而然的事。对光滑的 $f$，中心差商 $\frac{f(x+h) - f(x-h)}{2h}$ 以与 $h^2$ 成正比的误差逼近 $f'(x)$，只要 $h$ 不至于小到舍入误差占上风。下文要用的牛顿法，其分析见 [Maths Atlas：求根](/a/maths/lesson.php?c=numerical-analysis&l=root-finding)。
 
 ```python
 def deriv(f, h=1e-6):

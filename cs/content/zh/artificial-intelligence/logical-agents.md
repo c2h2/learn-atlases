@@ -1,6 +1,6 @@
 一家医院的排班系统知道：没有外科医生会同时在两个手术室动手术，每台手术都需要一名麻醉师，奥卡福医生星期二休假。一个配置工具知道哪些部件互相兼容。一个验证工具知道一块芯片的转移规则。这些系统都没有被编程写入它将被问到的每个问题的答案；每个系统只是用形式语言得到了**知识**，它*依靠推理推导*出答案。被问"手术 17 星期二上午可以进行吗？"时，它应当只在"这从它所知道的东西推出"——在每一个与其知识相容的情形下都成立——时才回答"可以"，并且只要结论确实成立，它就应当能找到答案。
 
-这正是**基于知识的智能体**的纲领：在一门逻辑中维护一个**知识库**（KB），用 `Tell` 操作把感知加入其中，用 `Ask` 询问什么是它的推论。这一设计把智能体*知道什么*（陈述性知识，可供检查与修改）与*如何推理*（一般的推理过程）分开。本章展开经典 AI 赖以立足的两门逻辑。在**命题逻辑**中，我们定义蕴含，用模型检验与**消解**判定它，证明消解可靠且反驳完备，并证明对**霍恩子句**，正向链可在线性时间内判定蕴含。在谈论对象与关系的**一阶逻辑**中，我们引入量词、**合一**与提升消解，并遇到根本的限制：蕴含只是半可判定的。命题逻辑本身——语法、真值表、范式——在 [Maths Atlas：命题逻辑](/learn/maths/lesson.php?c=proofs&l=propositional-logic) 中讲授；这里我们专注于推理算法。
+这正是**基于知识的智能体**的纲领：在一门逻辑中维护一个**知识库**（KB），用 `Tell` 操作把感知加入其中，用 `Ask` 询问什么是它的推论。这一设计把智能体*知道什么*（陈述性知识，可供检查与修改）与*如何推理*（一般的推理过程）分开。本章展开经典 AI 赖以立足的两门逻辑。在**命题逻辑**中，我们定义蕴含，用模型检验与**消解**判定它，证明消解可靠且反驳完备，并证明对**霍恩子句**，正向链可在线性时间内判定蕴含。在谈论对象与关系的**一阶逻辑**中，我们引入量词、**合一**与提升消解，并遇到根本的限制：蕴含只是半可判定的。命题逻辑本身——语法、真值表、范式——在 [Maths Atlas：命题逻辑](/a/maths/lesson.php?c=proofs&l=propositional-logic) 中讲授；这里我们专注于推理算法。
 
 ## 蕴含与推理
 
@@ -252,7 +252,7 @@ False
 一阶语言有**常量符号**（$\mathit{Ann}$、$\mathit{Bob}$）、带元数的**谓词符号**（$\mathit{Patient}(x)$、$\mathit{Knows}(x, y)$）、带元数的**函数符号**（$\mathit{Mother}(x)$）与**变量**（$x, y, z$）。**项**是常量、变量以及以项 $t_i$ 构成的 $f(t_1, \dots, t_k)$。**原子句子**是 $P(t_1, \dots, t_k)$ 与 $t_1 = t_2$；句子由原子句子经联结词与量词 $\forall x$、$\exists x$ 构成。**模型**由一个非空的对象**域**和一个**解释**构成：解释把每个常量映到一个对象、每个 $k$ 元谓词映到域上的一个 $k$ 元关系、每个函数符号映到一个函数。$\forall x\, \varphi$ 为真，当 $\varphi$ 对指派给 $x$ 的每个对象都为真；$\exists x\, \varphi$ 为真，当它对某个对象为真。蕴含的定义同前：$\mathit{KB} \models \alpha$ 指 $\alpha$ 在 $\mathit{KB}$ 的每个模型中为真。
 :::
 
-有些模式反复出现。"每个 $P$ 都是 $Q$"是 $\forall x\, (P(x) \Rightarrow Q(x))$——用 $\Rightarrow$ 而不是 $\land$，因为 $\forall x\, (P(x) \land Q(x))$ 说的是万物都是 $Q$ 的 $P$。"有 $P$ 是 $Q$"是 $\exists x\, (P(x) \land Q(x))$——用 $\land$，因为只要有东西不是 $P$，$\exists x\, (P(x) \Rightarrow Q(x))$ 就为真。量词一般不可交换：$\forall x\, \exists y\, \mathit{Knows}(x, y)$（人人都认识某个人）不同于 $\exists y\, \forall x\, \mathit{Knows}(x, y)$（有一个人被所有人认识）；见 [Maths Atlas：量词](/learn/maths/lesson.php?c=proofs&l=quantifiers)。
+有些模式反复出现。"每个 $P$ 都是 $Q$"是 $\forall x\, (P(x) \Rightarrow Q(x))$——用 $\Rightarrow$ 而不是 $\land$，因为 $\forall x\, (P(x) \land Q(x))$ 说的是万物都是 $Q$ 的 $P$。"有 $P$ 是 $Q$"是 $\exists x\, (P(x) \land Q(x))$——用 $\land$，因为只要有东西不是 $P$，$\exists x\, (P(x) \Rightarrow Q(x))$ 就为真。量词一般不可交换：$\forall x\, \exists y\, \mathit{Knows}(x, y)$（人人都认识某个人）不同于 $\exists y\, \forall x\, \mathit{Knows}(x, y)$（有一个人被所有人认识）；见 [Maths Atlas：量词](/a/maths/lesson.php?c=proofs&l=quantifiers)。
 
 一阶逻辑的模型可以有无穷域，所以模型检验一般行不通。推理于是走句法的道路。关键一步是把 $\forall x\, (\mathit{Fever}(x) \Rightarrow \mathit{NeedsTest}(x))$ 这样的规则用于 $\mathit{Fever}(\mathit{Ann})$ 这样的事实——即找一个**代换** $\theta = \{x / \mathit{Ann}\}$ 使两者变得相同。
 

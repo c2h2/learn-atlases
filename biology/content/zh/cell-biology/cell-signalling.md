@@ -26,7 +26,7 @@ GPCR 是最大的膜受体家族：人基因组编码约 800 个，近一半是�
 
 ## 结合：多少信号才够？
 
-第一步是配体 L 与受体 R 结合形成复合物 LR。分析与酶结合底物或蛋白结合氧相同（[化学图谱：蛋白质功能](/learn/chemistry/lesson.php?c=biochemistry&l=protein-function)）。
+第一步是配体 L 与受体 R 结合形成复合物 LR。分析与酶结合底物或蛋白结合氧相同（[化学图谱：蛋白质功能](/a/chemistry/lesson.php?c=biochemistry&l=protein-function)）。
 
 ::: proposition 受体占据比例 {#prop-occupancy}
 对在浓度 $[\mathrm{L}]$ 的自由配体平衡中、有单一结合位点的受体，被占据的受体比例为
@@ -101,7 +101,7 @@ $$ {#eq-occupancy}
 
 一个接头蛋白 Grb2 把交换因子 Sos 带到膜上，在那里激活小 GTP 酶 **Ras**。Ras·GTP 启动三激酶接力，即 **MAP 激酶级联**：Raf（一种 MAP 激酶激酶激酶）磷酸化并激活 MEK（MAP 激酶激酶），后者在苏氨酸与酪氨酸上磷酸化并激活 ERK（MAP 激酶）。ERK 磷酸化许多细胞质蛋白，并在细胞核中磷酸化开启细胞增殖所需基因的转录因子。该途径在 1980 年代末与 1990 年代初从三个方向拼合：哺乳动物细胞的癌基因研究、*Drosophila*（果蝇）眼发育的遗传筛选（*sevenless* 受体与 *Son of sevenless*），以及 *C. elegans*（秀丽隐杆线虫）外阴发育的遗传筛选（*let-23*、*sem-5*、*let-60*）——保守信号的显著证明。
 
-把 Ras 锁在 GTP 结合状态的突变，如 1982 年从膀胱癌细胞系分离的第一个人癌基因中密码子 12 的甘氨酸到缬氨酸改变，使途径无需生长因子就保持开启。突变 *RAS* 基因是人癌症最常见的驱动之一（[[cell-biology/cell-cycle]]；[医学图谱：癌症生物学](/learn/medicine/lesson.php?c=pathology&l=cancer-biology)）。
+把 Ras 锁在 GTP 结合状态的突变，如 1982 年从膀胱癌细胞系分离的第一个人癌基因中密码子 12 的甘氨酸到缬氨酸改变，使途径无需生长因子就保持开启。突变 *RAS* 基因是人癌症最常见的驱动之一（[[cell-biology/cell-cycle]]；[医学图谱：癌症生物学](/a/medicine/lesson.php?c=pathology&l=cancer-biology)）。
 
 其他酶偶联受体类似但用不同接力：细胞因子受体激活相关 **JAK** 激酶，后者磷酸化直接进入细胞核的 **STAT** 转录因子；TGF-β 受体是丝氨酸/苏氨酸激酶，磷酸化 **Smad** 蛋白；许多 RTK 招募的 **PI 3-激酶** 在膜中制造 PI(3,4,5)P₃，激活激酶 Akt 促进细胞存活与生长。
 

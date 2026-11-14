@@ -4,7 +4,7 @@
 
 ## 欧拉方程 {#sec-euler}
 
-在航天器上固连一个原点位于其质心的坐标系。对质心的角动量为$\mathbf{H} = \mathbf{I}\boldsymbol{\omega}$，其中$\boldsymbol{\omega}$是航天器的角速度，$\mathbf{I}$是其惯性张量——一个对称正定矩阵，对刚体而言在本体坐标系中为常数。其特征向量是**主轴**，在主轴坐标系中$\mathbf{I} = \operatorname{diag}(I_1, I_2, I_3)$（[对称矩阵的谱定理](/learn/maths/lesson.php?c=linear-algebra&l=spectral-theorem)）。
+在航天器上固连一个原点位于其质心的坐标系。对质心的角动量为$\mathbf{H} = \mathbf{I}\boldsymbol{\omega}$，其中$\boldsymbol{\omega}$是航天器的角速度，$\mathbf{I}$是其惯性张量——一个对称正定矩阵，对刚体而言在本体坐标系中为常数。其特征向量是**主轴**，在主轴坐标系中$\mathbf{I} = \operatorname{diag}(I_1, I_2, I_3)$（[对称矩阵的谱定理](/a/maths/lesson.php?c=linear-algebra&l=spectral-theorem)）。
 
 ::: theorem 欧拉方程 {#thm-euler}
 在本体主轴坐标系中，受对质心的外力矩$\mathbf{M}$作用的刚体满足

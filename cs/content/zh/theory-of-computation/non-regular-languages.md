@@ -61,7 +61,7 @@ $$
 L \text{ 正则} \implies \exists p \ge 1\ \forall s \in L,\ \lvert s\rvert \ge p\ \ \exists x,y,z \ \bigl(s = xyz,\ \lvert y\rvert \ge 1,\ \lvert xy\rvert \le p,\ \forall i \ge 0:\ xy^iz \in L\bigr).
 $$
 
-要证明 $L$ *不*正则，就证明右端的否定（见 [Maths Atlas：量词](/learn/maths/lesson.php?c=proofs&l=quantifiers)）：
+要证明 $L$ *不*正则，就证明右端的否定（见 [Maths Atlas：量词](/a/maths/lesson.php?c=proofs&l=quantifiers)）：
 
 $$
 \forall p \ge 1\ \exists s \in L,\ \lvert s\rvert \ge p\ \ \forall x,y,z \text{ 满足 } s = xyz,\ \lvert y\rvert \ge 1,\ \lvert xy\rvert \le p\ \ \exists i \ge 0:\ xy^iz \notin L.
@@ -131,7 +131,7 @@ $$
 
 ## Myhill–Nerode 定理
 
-关系 $\equiv_L$ 是 $\Sigma^*$ 上的一个**等价关系**——自反、对称、传递，凡是“对所有 $z$ 当且仅当”式的关系都是如此（见 [Maths Atlas：关系](/learn/maths/lesson.php?c=proofs&l=relations)）。它的等价类把识别器可以一视同仁的前缀归并在一起。它还是**右不变**的：若 $x \equiv_L y$，则对每个符号 $a$ 都有 $xa \equiv_L ya$，因为任何区分 $xa$ 与 $ya$ 的 $z$ 都会给出区分 $x$ 与 $y$ 的 $az$。$\equiv_L$ 的**指数**是其等价类的个数（可以无穷）。
+关系 $\equiv_L$ 是 $\Sigma^*$ 上的一个**等价关系**——自反、对称、传递，凡是“对所有 $z$ 当且仅当”式的关系都是如此（见 [Maths Atlas：关系](/a/maths/lesson.php?c=proofs&l=relations)）。它的等价类把识别器可以一视同仁的前缀归并在一起。它还是**右不变**的：若 $x \equiv_L y$，则对每个符号 $a$ 都有 $xa \equiv_L ya$，因为任何区分 $xa$ 与 $ya$ 的 $z$ 都会给出区分 $x$ 与 $y$ 的 $az$。$\equiv_L$ 的**指数**是其等价类的个数（可以无穷）。
 
 ::: theorem Myhill–Nerode 定理 {#thm-myhill-nerode}
 语言 $L \subseteq \Sigma^*$ 正则当且仅当 $\equiv_L$ 有有限指数。此时等价类的个数等于识别 $L$ 的最小 DFA 的状态数。

@@ -4,7 +4,7 @@ This chapter explains what membranes are made of, why lipids assemble into bilay
 
 ## Membrane lipids
 
-Membrane lipids are **amphipathic**: each molecule has a polar, water-loving (hydrophilic) head and one or two non-polar, water-avoiding (hydrophobic) tails. Three classes dominate. The chemistry of each is set out in [Chemistry Atlas: carbohydrates, lipids and membranes](/learn/chemistry/lesson.php?c=biochemistry&l=carbohydrates-lipids); here we need their shapes and roles.
+Membrane lipids are **amphipathic**: each molecule has a polar, water-loving (hydrophilic) head and one or two non-polar, water-avoiding (hydrophobic) tails. Three classes dominate. The chemistry of each is set out in [Chemistry Atlas: carbohydrates, lipids and membranes](/a/chemistry/lesson.php?c=biochemistry&l=carbohydrates-lipids); here we need their shapes and roles.
 
 - **Glycerophospholipids** (phosphoglycerides) have two fatty-acid chains esterified to glycerol, and a phosphate linked to a head group: choline in phosphatidylcholine (PC), ethanolamine in phosphatidylethanolamine (PE), serine in phosphatidylserine (PS), inositol in phosphatidylinositol (PI). PC and PE are the most abundant lipids in most animal membranes. Fatty-acid chains are usually 16–20 carbons long; a *cis* double bond puts a fixed kink of about 30° in a chain.
 - **Sphingolipids** are built on sphingosine instead of glycerol. Sphingomyelin carries a phosphocholine head; glycosphingolipids carry sugars, and the complex ones (gangliosides) carry sialic acid. Their chains are usually long and saturated.
@@ -14,7 +14,7 @@ Bacteria use similar glycerophospholipids (*E. coli* membranes are about three-q
 
 ### Why bilayers form
 
-A single fatty-acid chain in water forces the surrounding water molecules into a more ordered hydrogen-bonded cage. Bringing chains together releases that water and *increases* the entropy of the system: this is the **hydrophobic effect**, the main driving force of membrane assembly ([Chemistry Atlas: water and non-covalent interactions](/learn/chemistry/lesson.php?c=biochemistry&l=water-noncovalent)). Amphipathic molecules can satisfy it in several ways, and which one they choose depends on their shape.
+A single fatty-acid chain in water forces the surrounding water molecules into a more ordered hydrogen-bonded cage. Bringing chains together releases that water and *increases* the entropy of the system: this is the **hydrophobic effect**, the main driving force of membrane assembly ([Chemistry Atlas: water and non-covalent interactions](/a/chemistry/lesson.php?c=biochemistry&l=water-noncovalent)). Amphipathic molecules can satisfy it in several ways, and which one they choose depends on their shape.
 
 - A molecule with one tail and a big head (a detergent, or a lysophospholipid) is cone-shaped and packs into spherical **micelles**.
 - A molecule with two tails and a head of similar cross-section (PC) is roughly cylindrical and packs into flat **bilayers**.

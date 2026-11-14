@@ -221,7 +221,7 @@ $\lvert F_h\rvert^2 = F_hF_h^* = \sum_j\sum_k f_jf_k e^{2\pi ih(x_j - x_k)}$，�
 
 ## 后续内容
 
-衍射是本课程中几乎每一个结构背后的测量手段。[[materials-chemistry/defects]]用点阵参数的变化与漫散射来追踪非化学计量；[[materials-chemistry/solid-synthesis]]依靠粉末衍射判断反应是否完全；[[materials-chemistry/porous-materials]]与[[materials-chemistry/nanomaterials]]分别利用大晶胞的低角反射与小颗粒的谢乐宽化。[[#eq-density]]背后的数学是傅里叶分析（[数学图谱](/learn/maths/)），同样的结构因子思想也支撑着[[biochemistry/amino-acids-proteins]]中蛋白质结构的测定。
+衍射是本课程中几乎每一个结构背后的测量手段。[[materials-chemistry/defects]]用点阵参数的变化与漫散射来追踪非化学计量；[[materials-chemistry/solid-synthesis]]依靠粉末衍射判断反应是否完全；[[materials-chemistry/porous-materials]]与[[materials-chemistry/nanomaterials]]分别利用大晶胞的低角反射与小颗粒的谢乐宽化。[[#eq-density]]背后的数学是傅里叶分析（[数学图谱](/a/maths/)），同样的结构因子思想也支撑着[[biochemistry/amino-acids-proteins]]中蛋白质结构的测定。
 
 ::: history
 马克斯·冯·劳厄（Max von Laue）与瓦尔特·弗里德里希（Walter Friedrich）、保罗·克尼平（Paul Knipping）1912年在慕尼黑观测到X射线被硫酸铜晶体的衍射，一举证明X射线是波、晶体是周期性的。数月之内，威廉·劳伦斯·布拉格（William Lawrence Bragg）把花样重新解释为来自晶面的反射，得到$n\lambda = 2d\sin\theta$；他与建造X射线谱仪的父亲威廉·亨利·布拉格（William Henry Bragg）在1913年解出了NaCl、KCl、金刚石等结构；劳厄获1914年诺贝尔物理学奖，布拉格父子获1915年。保罗·埃瓦尔德在1913年与1921年发表了他的倒格球作图。彼得·德拜（Peter Debye）与保罗·谢乐（Paul Scherrer）（1916年）以及各自独立工作的阿尔伯特·胡尔（Albert Hull）（1917年）引入了粉末衍射，谢乐于1918年给出了他的谱线宽化公式。阿瑟·林多·帕特森（Arthur Lindo Patterson）于1934年引入了以他命名的函数。雨果·里特维尔德于1969年发表了他的全谱线精修方法；豪普特曼与卡尔莱自1953年起发展的直接法获得了1985年诺贝尔化学奖。克利福德·舒尔（Clifford Shull）与伯特伦·布罗克豪斯（Bertram Brockhouse）因中子散射分享1994年诺贝尔物理学奖。截至2026年，剑桥结构数据库收录的有机与金属有机结构已逾130万个，无机晶体结构数据库则收录了数十万个无机结构。

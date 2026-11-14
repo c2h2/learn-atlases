@@ -41,7 +41,7 @@ Exact SP-optimal alignment of $N$ sequences of length about $L$ by dynamic progr
 :::
 
 ::: proof
-The array has $(L + 1)^N$ cells. Each is computed as a maximum over $2^N - 1$ predecessor cells, each requiring the score of a column of $N$ entries, which involves $\binom N2$ pairs. Multiplying gives the time bound; the space is that of the array. (The NP-hardness result is a reduction from a known hard problem and is not reproduced here; see [reductions](/learn/cs/lesson.php?c=theory-of-computation&l=reductions) in Computer Science Atlas for the general method.)
+The array has $(L + 1)^N$ cells. Each is computed as a maximum over $2^N - 1$ predecessor cells, each requiring the score of a column of $N$ entries, which involves $\binom N2$ pairs. Multiplying gives the time bound; the space is that of the array. (The NP-hardness result is a reduction from a known hard problem and is not reproduced here; see [reductions](/a/cs/lesson.php?c=theory-of-computation&l=reductions) in Computer Science Atlas for the general method.)
 :::
 
 ::: example How big is the array? {#ex-exact}
@@ -159,7 +159,7 @@ $$ {#eq-hmm-joint}
 Only $x$ is observed; the path $\pi$ is hidden.
 :::
 
-The Markov chain on hidden states is an ordinary one ([Markov chains](/learn/maths/lesson.php?c=probability&l=markov-chains) in Maths Atlas). The two questions we need to answer are: how probable is a sequence under the model, summing over all the paths that could have produced it; and which single path most probably produced it?
+The Markov chain on hidden states is an ordinary one ([Markov chains](/a/maths/lesson.php?c=probability&l=markov-chains) in Maths Atlas). The two questions we need to answer are: how probable is a sequence under the model, summing over all the paths that could have produced it; and which single path most probably produced it?
 
 ::: proposition The forward algorithm {#prop-forward}
 Let $f_k(i) = \Prob(x_1\cdots x_i, \pi_i = k)$, the probability of the first $i$ symbols with the path in state $k$ at step $i$. Then

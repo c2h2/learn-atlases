@@ -1,6 +1,6 @@
 Everything so far has been symmetric: Alice and Bob share a key. In 1976 Whitfield Diffie and Martin Hellman asked how two people who have never met could agree on a key over a channel that everyone can read, and the answer they found — and the RSA cryptosystem that followed a year later — came not from block ciphers but from **number theory**: arithmetic modulo a large integer, in which some operations are easy (multiplying, raising to a power, testing primality) while their apparent inverses (factoring, taking discrete logarithms) seem to be extraordinarily hard. Public-key cryptography lives in that gap.
 
-This chapter collects the number theory and the algorithms that the next three chapters need, with the emphasis on *computation*: how to compute greatest common divisors and inverses with the extended Euclidean algorithm, powers with repeated squaring, and isomorphisms with the Chinese remainder theorem; why Fermat's and Euler's theorems hold, in the language of finite groups; how to find large primes with the Miller–Rabin test; and how to state precisely the hard problems — factoring, discrete logarithms, the computational and decisional Diffie–Hellman problems — on which security will rest. Proofs of the classical theorems are in [Maths Atlas: congruences](/learn/maths/lesson.php?c=number-theory&l=congruences), [Fermat and Euler](/learn/maths/lesson.php?c=number-theory&l=fermat-euler) and [primitive roots](/learn/maths/lesson.php?c=number-theory&l=primitive-roots), and group theory in [Maths Atlas: groups](/learn/maths/lesson.php?c=abstract-algebra&l=groups); here we prove what we need in the form we need it, and count the cost of every algorithm in bit operations, because cryptographic numbers have thousands of bits.
+This chapter collects the number theory and the algorithms that the next three chapters need, with the emphasis on *computation*: how to compute greatest common divisors and inverses with the extended Euclidean algorithm, powers with repeated squaring, and isomorphisms with the Chinese remainder theorem; why Fermat's and Euler's theorems hold, in the language of finite groups; how to find large primes with the Miller–Rabin test; and how to state precisely the hard problems — factoring, discrete logarithms, the computational and decisional Diffie–Hellman problems — on which security will rest. Proofs of the classical theorems are in [Maths Atlas: congruences](/a/maths/lesson.php?c=number-theory&l=congruences), [Fermat and Euler](/a/maths/lesson.php?c=number-theory&l=fermat-euler) and [primitive roots](/a/maths/lesson.php?c=number-theory&l=primitive-roots), and group theory in [Maths Atlas: groups](/a/maths/lesson.php?c=abstract-algebra&l=groups); here we prove what we need in the form we need it, and count the cost of every algorithm in bit operations, because cryptographic numbers have thousands of bits.
 
 ## Modular arithmetic and its cost
 
@@ -103,7 +103,7 @@ For instance after the third bit $r = 49^2 \bmod 561 = 2401 - 4 \cdot 561 = 157$
 
 ## Groups, Fermat and Euler
 
-The right language for exponentiation is that of groups ([Maths Atlas: groups](/learn/maths/lesson.php?c=abstract-algebra&l=groups)). A **group** $(G, \cdot)$ is a set with an associative operation, an identity $1$, and inverses; it is **abelian** if the operation is commutative, and its **order** is $\abs G$. The groups we need are:
+The right language for exponentiation is that of groups ([Maths Atlas: groups](/a/maths/lesson.php?c=abstract-algebra&l=groups)). A **group** $(G, \cdot)$ is a set with an associative operation, an identity $1$, and inverses; it is **abelian** if the operation is commutative, and its **order** is $\abs G$. The groups we need are:
 
 - $\Z_N$ under addition, of order $N$;
 - $\Z_N^* = \set{a \in \Z_N : \gcd(a, N) = 1}$ under multiplication modulo $N$, of order $\phi(N)$, **Euler's totient** (closed under multiplication because a product of numbers coprime to $N$ is coprime to $N$; inverses exist by extended Euclid);
@@ -122,7 +122,7 @@ $$
 Multiplying by the inverse of $h_1\cdots h_m$ gives $g^m = 1$. For any $x$, write $x = qm + r$ with $r = x \bmod m$; then $g^x = (g^m)^q g^r = g^r$.
 :::
 
-The result holds for non-abelian groups too, by Lagrange's theorem ([Maths Atlas: Lagrange's theorem](/learn/maths/lesson.php?c=abstract-algebra&l=lagrange)). Applied to $\Z_N^*$ and $\Z_p^*$ it gives the two classical theorems.
+The result holds for non-abelian groups too, by Lagrange's theorem ([Maths Atlas: Lagrange's theorem](/a/maths/lesson.php?c=abstract-algebra&l=lagrange)). Applied to $\Z_N^*$ and $\Z_p^*$ it gives the two classical theorems.
 
 ::: corollary Euler's and Fermat's theorems {#cor-euler-fermat}
 If $\gcd(a, N) = 1$ then $a^{\phi(N)} \equiv 1 \pmod N$. If $p$ is prime and $p \nmid a$ then $a^{p-1} \equiv 1 \pmod p$.
@@ -268,7 +268,7 @@ Trial division takes about $\sqrt N = 2^n$ steps. The best known classical algor
 
 ### Discrete logarithms
 
-Let $G$ be a **cyclic** group of order $q$ with **generator** $g$, meaning $G = \set{g^0, g^1, \dots, g^{q-1}}$. Every $h \in G$ is $g^x$ for a unique $x \in \Z_q$, the **discrete logarithm** $\log_g h$. Computing $g^x$ is fast ([[#alg-modexp]]); computing $x$ from $g^x$ seems hard in suitable groups. For a prime $p$, the group $\Z_p^*$ is cyclic of order $p - 1$ ([Maths Atlas: primitive roots](/learn/maths/lesson.php?c=number-theory&l=primitive-roots)).
+Let $G$ be a **cyclic** group of order $q$ with **generator** $g$, meaning $G = \set{g^0, g^1, \dots, g^{q-1}}$. Every $h \in G$ is $g^x$ for a unique $x \in \Z_q$, the **discrete logarithm** $\log_g h$. Computing $g^x$ is fast ([[#alg-modexp]]); computing $x$ from $g^x$ seems hard in suitable groups. For a prime $p$, the group $\Z_p^*$ is cyclic of order $p - 1$ ([Maths Atlas: primitive roots](/a/maths/lesson.php?c=number-theory&l=primitive-roots)).
 
 ::: widget modular
 n: 23
@@ -300,7 +300,7 @@ If DDH is hard relative to $\mathcal G$, then so is CDH; if CDH is hard, then so
 Contrapositively, an algorithm for the easier-looking problem solves the harder-looking one. If $\mathcal A$ computes discrete logarithms, then given $g^x, g^y$ compute $x = \mathcal A(g^x)$ and output $(g^y)^x = g^{xy}$: CDH is solved with the same success probability. If $\mathcal B$ solves CDH with probability $\varepsilon$, let $D(g^x, g^y, h)$ output $1$ iff $\mathcal B(g^x, g^y) = h$. On a real triple $D$ outputs $1$ with probability at least $\varepsilon$; on a random triple, $h = g^z$ is uniform and independent of $\mathcal B$'s output, so $D$ outputs $1$ with probability exactly $1/q$. The advantage is at least $\varepsilon - 1/q$, non-negligible if $\varepsilon$ is (since $1/q \le 2^{-(n-1)}$ is negligible).
 :::
 
-Which groups? Generic algorithms — baby-step giant-step ([Maths Atlas](/learn/maths/lesson.php?c=number-theory&l=primitive-roots)) and Pollard's rho — compute discrete logarithms in any group of order $q$ in about $\sqrt q$ operations, and Shoup (1997) proved that no "generic" algorithm, one that only multiplies group elements, can do better. Two refinements follow:
+Which groups? Generic algorithms — baby-step giant-step ([Maths Atlas](/a/maths/lesson.php?c=number-theory&l=primitive-roots)) and Pollard's rho — compute discrete logarithms in any group of order $q$ in about $\sqrt q$ operations, and Shoup (1997) proved that no "generic" algorithm, one that only multiplies group elements, can do better. Two refinements follow:
 
 - If the order $q$ has small prime factors, the **Pohlig–Hellman** method computes the logarithm modulo each prime-power factor separately and combines the results with the CRT; the cost is governed by the *largest prime factor* of the order. So we use groups of **prime order** $q$.
 - In $\Z_p^*$ itself, DDH is *easy*, because the order $p - 1$ is even and squares can be recognised ([[#ex-ddh-zp]]). The standard choice is the subgroup of squares modulo a **safe prime** $p = 2q + 1$ with $q$ prime, which is cyclic of prime order $q$; in $\Z_{23}^*$ ($23 = 2 \cdot 11 + 1$) it is the subgroup of order $11$ generated by $4$.

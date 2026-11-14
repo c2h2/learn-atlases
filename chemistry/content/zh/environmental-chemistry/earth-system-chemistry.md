@@ -62,7 +62,7 @@ $$
 :::
 
 ::: proof 求解单箱方程 {#proof-onebox}
-记 $\Delta = M - S\tau$。由于 $S$ 与 $\tau$ 恒定，$\mathrm{d}\Delta/\mathrm{d}t = \mathrm{d}M/\mathrm{d}t = S - M/\tau = -\Delta/\tau$。这是一级衰减，故 $\Delta(t) = \Delta(0)\,e^{-t/\tau}$，即 $M(t) - S\tau = (M_0 - S\tau)e^{-t/\tau}$，以 $M_\text{ss} = S\tau$ 代入即得所果。时刻 $t$ 已弥合的初始差距比例为 $1 - e^{-t/\tau}$；令其等于 $0.90$ 得 $t = \tau\ln 10$。该方程与恒定进料的一级化学反应是同一个线性一阶常微分方程，其解法见 [[kinetics/rate-laws]] 及数学图谱中的[一阶线性方程](/learn/maths/)；环境方面的内容只在于对 $S$ 和 $\tau$ 的解释。
+记 $\Delta = M - S\tau$。由于 $S$ 与 $\tau$ 恒定，$\mathrm{d}\Delta/\mathrm{d}t = \mathrm{d}M/\mathrm{d}t = S - M/\tau = -\Delta/\tau$。这是一级衰减，故 $\Delta(t) = \Delta(0)\,e^{-t/\tau}$，即 $M(t) - S\tau = (M_0 - S\tau)e^{-t/\tau}$，以 $M_\text{ss} = S\tau$ 代入即得所果。时刻 $t$ 已弥合的初始差距比例为 $1 - e^{-t/\tau}$；令其等于 $0.90$ 得 $t = \tau\ln 10$。该方程与恒定进料的一级化学反应是同一个线性一阶常微分方程，其解法见 [[kinetics/rate-laws]] 及数学图谱中的[一阶线性方程](/a/maths/)；环境方面的内容只在于对 $S$ 和 $\tau$ 的解释。
 :::
 
 决定趋近快慢的时间常数是**寿命**，而不是扰动当初积累所花的时间。寿命十天的污染物，排控措施在一个月之内就见效；寿命一个世纪的污染物，无论今年做出什么决定，都会把当前存量保持好几代人。这种不对称是以下事实的原因之一：控制酸雨前体物（寿命数天）在十年内就带来可见的改善，而控制氯氟烃（寿命数十年到一个世纪）预计要用掉本世纪的大部分时间才能修复臭氧层（[[environmental-chemistry/stratospheric-ozone]]）。
@@ -290,7 +290,7 @@ $$
 
 ## 后续内容
 
-本课的两件工具在每一章都会重现。停留时间和箱式模型为 [[environmental-chemistry/stratospheric-ozone]]（为什么氯氟烃能到达平流层）和 [[environmental-chemistry/tropospheric-chemistry]]（为什么羟基自由基控制着几乎一切物种的寿命）的光化学搭好舞台；也用于 [[environmental-chemistry/particulates-acid-deposition]] 中局部污染与全球污染的区分，以及 [[environmental-chemistry/greenhouse-gases]] 中的碳循环与辐射强迫。氧化还原阶梯和海水以碳酸盐为主这两点，将在 [[environmental-chemistry/natural-waters]] 中作定量处理，多箱模型则在 [[environmental-chemistry/pollutants-fate]] 中以逸度模型的面目重现。其中的数学——线性一阶微分方程及其方程组——在[数学图谱](/learn/maths/)中讲述。
+本课的两件工具在每一章都会重现。停留时间和箱式模型为 [[environmental-chemistry/stratospheric-ozone]]（为什么氯氟烃能到达平流层）和 [[environmental-chemistry/tropospheric-chemistry]]（为什么羟基自由基控制着几乎一切物种的寿命）的光化学搭好舞台；也用于 [[environmental-chemistry/particulates-acid-deposition]] 中局部污染与全球污染的区分，以及 [[environmental-chemistry/greenhouse-gases]] 中的碳循环与辐射强迫。氧化还原阶梯和海水以碳酸盐为主这两点，将在 [[environmental-chemistry/natural-waters]] 中作定量处理，多箱模型则在 [[environmental-chemistry/pollutants-fate]] 中以逸度模型的面目重现。其中的数学——线性一阶微分方程及其方程组——在[数学图谱](/a/maths/)中讲述。
 
 ::: summary
 - 地球系统被建模为由**通量**相连的充分混合**储库**；质量衡算 $\mathrm{d}M/\mathrm{d}t = F_\text{in} - F_\text{out}$。稳态（$\mathrm{d}M/\mathrm{d}t = 0$）不是平衡。

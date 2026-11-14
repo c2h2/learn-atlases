@@ -255,7 +255,7 @@ Some rules are beyond the ER model altogether: "the head of a department works i
 ::: example Cardinality arithmetic {#ex-min-max}
 In a tutorial scheme, each student attends exactly $2$ tutorial groups and each group has exactly $5$ students. If there are $30$ students, how many groups are there? Can there be $31$ students?
 ::: solution
-Count the relationships of Attends in two ways: each student contributes $2$, each group $5$, so $2 \cdot \lvert \text{Student} \rvert = 5 \cdot \lvert \text{Group} \rvert$. With $30$ students there are $60$ attendances and $12$ groups. With $31$ students, $62$ attendances would have to equal $5\lvert\text{Group}\rvert$, impossible since $5 \nmid 62$. So exact (min, max) constraints on both sides can make some numbers of entities impossible — the constraints are consistent only when $\lvert\text{Student}\rvert$ is a multiple of $5$. The double-counting argument is the handshake lemma of [Maths Atlas: graphs](/learn/maths/lesson.php?c=discrete&l=graphs), applied to the bipartite graph of the relationship.
+Count the relationships of Attends in two ways: each student contributes $2$, each group $5$, so $2 \cdot \lvert \text{Student} \rvert = 5 \cdot \lvert \text{Group} \rvert$. With $30$ students there are $60$ attendances and $12$ groups. With $31$ students, $62$ attendances would have to equal $5\lvert\text{Group}\rvert$, impossible since $5 \nmid 62$. So exact (min, max) constraints on both sides can make some numbers of entities impossible — the constraints are consistent only when $\lvert\text{Student}\rvert$ is a multiple of $5$. The double-counting argument is the handshake lemma of [Maths Atlas: graphs](/a/maths/lesson.php?c=discrete&l=graphs), applied to the bipartite graph of the relationship.
 :::
 :::
 

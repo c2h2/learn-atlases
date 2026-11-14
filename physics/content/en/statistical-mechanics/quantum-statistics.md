@@ -352,7 +352,7 @@ Whether an atom is a boson or a fermion depends on the total number of fermions 
 :::
 
 ::: application Langmuir adsorption
-A surface with $M$ independent binding sites, each holding at most one molecule with binding energy $\varepsilon_b$, in contact with a gas at chemical potential $\mu$, is a set of Fermi–Dirac "orbitals" of energy $-\varepsilon_b$, whether the molecules are fermions or not: the exclusion is geometric. The fraction of occupied sites is $\theta = 1/(e^{-\beta(\varepsilon_b + \mu)} + 1)$. With $e^{\beta\mu} = n\lambda^3 \propto P$ for the gas, this becomes $\theta = KP/(1 + KP)$, the Langmuir isotherm of surface chemistry, with $K$ computable from molecular data. The Chemistry Atlas develops quantum statistics from the chemist's side, including the ortho and para forms of hydrogen, in [Quantum statistics](/learn/chemistry/lesson.php?c=statistical-thermodynamics&l=quantum-statistics).
+A surface with $M$ independent binding sites, each holding at most one molecule with binding energy $\varepsilon_b$, in contact with a gas at chemical potential $\mu$, is a set of Fermi–Dirac "orbitals" of energy $-\varepsilon_b$, whether the molecules are fermions or not: the exclusion is geometric. The fraction of occupied sites is $\theta = 1/(e^{-\beta(\varepsilon_b + \mu)} + 1)$. With $e^{\beta\mu} = n\lambda^3 \propto P$ for the gas, this becomes $\theta = KP/(1 + KP)$, the Langmuir isotherm of surface chemistry, with $K$ computable from molecular data. The Chemistry Atlas develops quantum statistics from the chemist's side, including the ortho and para forms of hydrogen, in [Quantum statistics](/a/chemistry/lesson.php?c=statistical-thermodynamics&l=quantum-statistics).
 :::
 
 ::: history Bose, Einstein, Fermi and Dirac

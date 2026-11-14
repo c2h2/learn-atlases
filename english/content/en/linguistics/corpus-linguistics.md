@@ -182,7 +182,7 @@ caption: A hand-made table, not counts from a real corpus. Each row gives the pr
 :::
 
 ::: proof
-Rules 1 and 2 follow from Zipf's law: because most types and most sequences are rare, a corpus of any size leaves most possible trigrams and almost all possible five-grams unseen. Rule 4 follows from the structure of language described in [[linguistics/phrases-constituents]] and [[linguistics/clauses-movement]]: dependencies are defined over constituents, which can be of any length, not over a fixed number of words. Neural language models, which since the 2010s have replaced n-gram models in most applications, address both problems: they represent words as points in a learned space, so that similar contexts share information, and they can condition on long stretches of text. The large language models behind modern chatbots are, at their core, next-word predictors trained on corpora of enormous size; how they work is explained in the [LLM Atlas](/learn/llm/). Their success has revived old questions of this course — how much of grammar can be learned from distribution alone — which return in [[linguistics/language-acquisition]].
+Rules 1 and 2 follow from Zipf's law: because most types and most sequences are rare, a corpus of any size leaves most possible trigrams and almost all possible five-grams unseen. Rule 4 follows from the structure of language described in [[linguistics/phrases-constituents]] and [[linguistics/clauses-movement]]: dependencies are defined over constituents, which can be of any length, not over a fixed number of words. Neural language models, which since the 2010s have replaced n-gram models in most applications, address both problems: they represent words as points in a learned space, so that similar contexts share information, and they can condition on long stretches of text. The large language models behind modern chatbots are, at their core, next-word predictors trained on corpora of enormous size; how they work is explained in the [LLM Atlas](/a/llm/). Their success has revived old questions of this course — how much of grammar can be learned from distribution alone — which return in [[linguistics/language-acquisition]].
 :::
 
 ::: example A bigram estimate {#ex-bigram}
@@ -210,7 +210,7 @@ Before computers, large collections of examples were made by hand: the *Oxford E
 
 ## Where this leads
 
-The practical skills are in [[collocation-and-register/using-a-corpus]], [[collocation-and-register/what-is-collocation]] and [[core-vocabulary/frequency-and-coverage]]. Corpora of different periods and varieties provide the evidence for [[linguistics/variation-change]]; learner corpora and the statistics children may track in speech appear in [[linguistics/language-acquisition]]. Language models built on the same counting ideas, and on much more, are explained in the [LLM Atlas](/learn/llm/).
+The practical skills are in [[collocation-and-register/using-a-corpus]], [[collocation-and-register/what-is-collocation]] and [[core-vocabulary/frequency-and-coverage]]. Corpora of different periods and varieties provide the evidence for [[linguistics/variation-change]]; learner corpora and the statistics children may track in speech appear in [[linguistics/language-acquisition]]. Language models built on the same counting ideas, and on much more, are explained in the [LLM Atlas](/a/llm/).
 
 ::: summary
 - A corpus is **representative** of a defined population through its **sampling** and **balance**; no corpus represents "English" as a whole, so its design must be stated.

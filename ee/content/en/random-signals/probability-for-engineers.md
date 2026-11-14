@@ -1,10 +1,10 @@
 Every measurement an engineer makes is a little uncertain. The voltage on a thermocouple lead wanders by a few microvolts from one reading to the next; a receiver occasionally decides that a transmitted 0 was a 1; an analog-to-digital converter rounds every sample and so adds a small error that is different each time; the number of photons reaching a photodiode in a microsecond is never quite the same twice. None of these effects can be predicted sample by sample, yet all of them are perfectly predictable *on average*: a well-designed link really does make one error in a billion bits, and a 12-bit converter really does add $0.14\,\mathrm{mV}$ RMS of rounding error. The tool that makes "unpredictable in detail but predictable on average" precise is **probability theory**.
 
-This chapter collects the probability that the rest of the course needs and gives it an engineering slant. The axioms and the general theory are developed in the Maths Atlas course [Probability](/learn/maths/lesson.php?c=probability&l=probability-spaces); we review them briefly and concentrate on what an electrical engineer does with them: interpreting the mean as a DC level and the variance as an AC power, computing error probabilities with the Gaussian $Q$-function, describing two signals at once with joint distributions and the correlation coefficient, and finding the distribution of a signal after it passes through a nonlinear device such as a rectifier or an envelope detector. These are the building blocks of the random processes in [[random-signals/random-processes]].
+This chapter collects the probability that the rest of the course needs and gives it an engineering slant. The axioms and the general theory are developed in the Maths Atlas course [Probability](/a/maths/lesson.php?c=probability&l=probability-spaces); we review them briefly and concentrate on what an electrical engineer does with them: interpreting the mean as a DC level and the variance as an AC power, computing error probabilities with the Gaussian $Q$-function, describing two signals at once with joint distributions and the correlation coefficient, and finding the distribution of a signal after it passes through a nonlinear device such as a rectifier or an envelope detector. These are the building blocks of the random processes in [[random-signals/random-processes]].
 
 ## Events, probability and Bayes' rule
 
-A random experiment has a set of possible outcomes, the **sample space** $\Omega$. An **event** is a set of outcomes, and a **probability** $\Prob$ assigns to each event a number in $[0, 1]$ such that $\Prob(\Omega) = 1$ and the probabilities of disjoint events add (Kolmogorov's axioms; see [Probability spaces](/learn/maths/lesson.php?c=probability&l=probability-spaces)). For an engineer the most useful reading of $\Prob(A)$ is the long-run **relative frequency**: repeat the experiment $N$ times, count the $N_A$ occurrences of $A$, and $N_A/N \to \Prob(A)$ as $N\to\infty$. A bit error rate of $10^{-6}$ means about one wrong bit per million transmitted.
+A random experiment has a set of possible outcomes, the **sample space** $\Omega$. An **event** is a set of outcomes, and a **probability** $\Prob$ assigns to each event a number in $[0, 1]$ such that $\Prob(\Omega) = 1$ and the probabilities of disjoint events add (Kolmogorov's axioms; see [Probability spaces](/a/maths/lesson.php?c=probability&l=probability-spaces)). For an engineer the most useful reading of $\Prob(A)$ is the long-run **relative frequency**: repeat the experiment $N$ times, count the $N_A$ occurrences of $A$, and $N_A/N \to \Prob(A)$ as $N\to\infty$. A bit error rate of $10^{-6}$ means about one wrong bit per million transmitted.
 
 The **conditional probability** of $A$ given $B$ is $\Prob(A\mid B) = \Prob(A\cap B)/\Prob(B)$ for $\Prob(B) > 0$: the relative frequency of $A$ among those trials in which $B$ occurred. Two events are **independent** if $\Prob(A\cap B) = \Prob(A)\Prob(B)$, that is, if knowing that $B$ occurred does not change the probability of $A$.
 
@@ -73,7 +73,7 @@ $$ {#eq-pdf}
 
 A density is not a probability: $f_X(x)\,\dd x$ is the probability that $X$ lands in the small interval $(x, x+\dd x]$, and $f_X$ has the units of $1/x$ (per volt, for a voltage). Densities can exceed 1; probabilities cannot. Mixed variables, with both a density and point masses, occur too — the output of a half-wave rectifier fed with noise is exactly $0$ half the time — and are handled by allowing impulses $\delta(x - x_k)$ in the density, just as impulses appear in the spectra of [[signals-systems/fourier-transform]].
 
-The following distributions turn up again and again in electrical engineering. Their properties are derived in [Discrete random variables](/learn/maths/lesson.php?c=probability&l=discrete-random-variables) and [Continuous random variables](/learn/maths/lesson.php?c=probability&l=continuous-random-variables).
+The following distributions turn up again and again in electrical engineering. Their properties are derived in [Discrete random variables](/a/maths/lesson.php?c=probability&l=discrete-random-variables) and [Continuous random variables](/a/maths/lesson.php?c=probability&l=continuous-random-variables).
 
 | distribution | PMF or PDF | mean | variance | where it appears |
 |---|---|---|---|---|
@@ -126,7 +126,7 @@ For $N = 12$ and $V_\mathrm{FS} = 1\,\mathrm{V}$: $\Delta = 2/4096 = 0.488\,\mat
 
 ### The Gaussian distribution and the Q-function
 
-The Gaussian (or normal) distribution is special for two reasons. Physically, noise that is the sum of very many small independent contributions — the thermal agitation of electrons, the arrival of many photons — is Gaussian by the **central limit theorem** ([Limit theorems](/learn/maths/lesson.php?c=probability&l=limit-theorems)). Mathematically, Gaussians stay Gaussian under every linear operation, so that filtered Gaussian noise is still Gaussian ([[random-signals/gaussian-noise]]).
+The Gaussian (or normal) distribution is special for two reasons. Physically, noise that is the sum of very many small independent contributions — the thermal agitation of electrons, the arrival of many photons — is Gaussian by the **central limit theorem** ([Limit theorems](/a/maths/lesson.php?c=probability&l=limit-theorems)). Mathematically, Gaussians stay Gaussian under every linear operation, so that filtered Gaussian noise is still Gaussian ([[random-signals/gaussian-noise]]).
 
 ::: widget clt
 dist: uniform
@@ -333,7 +333,7 @@ caption: Density of a sample of a random-phase sinusoid of amplitude $A$ (the ar
 
 ### Two variables: the Rayleigh envelope
 
-For a function of two variables, $(U, V) = \mathbf g(X, Y)$ with a one-to-one smooth map, the same argument with areas instead of lengths gives $f_{UV}(u, v) = f_{XY}(x, y)/\abs{J}$, where $J$ is the Jacobian determinant $\partial(u, v)/\partial(x, y)$ evaluated at the preimage (see [Joint distributions](/learn/maths/lesson.php?c=probability&l=joint-distributions)). The most important application in communications follows.
+For a function of two variables, $(U, V) = \mathbf g(X, Y)$ with a one-to-one smooth map, the same argument with areas instead of lengths gives $f_{UV}(u, v) = f_{XY}(x, y)/\abs{J}$, where $J$ is the Jacobian determinant $\partial(u, v)/\partial(x, y)$ evaluated at the preimage (see [Joint distributions](/a/maths/lesson.php?c=probability&l=joint-distributions)). The most important application in communications follows.
 
 ::: example The envelope of two Gaussian components {#ex-rayleigh}
 A narrowband noise signal at a radio receiver can be written $X\cos\omega_ct - Y\sin\omega_ct$, where $X$ and $Y$ are independent $\Normal(0,\sigma^2)$ variables ([[random-signals/gaussian-noise]]). Find the density of the envelope $R = \sqrt{X^2 + Y^2}$ and of the phase $\Phi = \operatorname{atan2}(Y, X)$, the mean of $R$, and the probability that $R$ exceeds $3\sigma$.

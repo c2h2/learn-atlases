@@ -1,6 +1,6 @@
 到目前为止，一切都还是对称密码的场景：Alice 和 Bob 共享一把密钥。1976 年，惠特菲尔德·迪菲（Whitfield Diffie）与马丁·赫尔曼（Martin Hellman）提出这样一个问题：两个素未谋面的人，如何在一条人人都能读取的信道上商定一把密钥？他们找到的答案——以及一年后问世的 RSA 密码体制——并非来自分组密码，而是来自**数论**：对一个巨大整数取模的算术，其中一些运算很容易（相乘、求幂、检验素性），而它们表面上对应的逆运算（大整数分解、求离散对数）却似乎难得惊人。公钥密码学就生存于这道缝隙之中。
 
-本章汇集后三章所需的数论与算法，重点在*计算*：如何用扩展欧几里得算法计算最大公因数与逆元，用重复平方计算幂，用中国剩余定理构造同构；费马定理与欧拉定理为何成立——用有限群的语言；如何用 Miller–Rabin 检验寻找大素数；以及如何精确陈述那些支撑安全性的困难问题——大整数分解、离散对数、计算 Diffie–Hellman 问题与判定 Diffie–Hellman 问题。经典定理的证明可在 [Maths Atlas：同余](/learn/maths/lesson.php?c=number-theory&l=congruences)、[费马与欧拉](/learn/maths/lesson.php?c=number-theory&l=fermat-euler) 与 [原根](/learn/maths/lesson.php?c=number-theory&l=primitive-roots) 中找到，群论见 [Maths Atlas：群](/learn/maths/lesson.php?c=abstract-algebra&l=groups)；这里只以我们需要的形式证明我们需要的结论，并且用位运算计量每个算法的代价，因为密码学中的数有成千上万位。
+本章汇集后三章所需的数论与算法，重点在*计算*：如何用扩展欧几里得算法计算最大公因数与逆元，用重复平方计算幂，用中国剩余定理构造同构；费马定理与欧拉定理为何成立——用有限群的语言；如何用 Miller–Rabin 检验寻找大素数；以及如何精确陈述那些支撑安全性的困难问题——大整数分解、离散对数、计算 Diffie–Hellman 问题与判定 Diffie–Hellman 问题。经典定理的证明可在 [Maths Atlas：同余](/a/maths/lesson.php?c=number-theory&l=congruences)、[费马与欧拉](/a/maths/lesson.php?c=number-theory&l=fermat-euler) 与 [原根](/a/maths/lesson.php?c=number-theory&l=primitive-roots) 中找到，群论见 [Maths Atlas：群](/a/maths/lesson.php?c=abstract-algebra&l=groups)；这里只以我们需要的形式证明我们需要的结论，并且用位运算计量每个算法的代价，因为密码学中的数有成千上万位。
 
 ## 模运算及其代价
 
@@ -103,7 +103,7 @@ $560 = 1000110000_2$。从 $r = 1$ 出发，每个比特平方一次，每个 $1
 
 ## 群、费马与欧拉
 
-求幂的正确语言是群的语言（[Maths Atlas：群](/learn/maths/lesson.php?c=abstract-algebra&l=groups)）。**群** $(G, \cdot)$ 是配有结合运算、单位元 $1$ 和逆元的集合；若运算可交换则称**交换群**；它的**阶**是 $\abs G$。我们需要的群有：
+求幂的正确语言是群的语言（[Maths Atlas：群](/a/maths/lesson.php?c=abstract-algebra&l=groups)）。**群** $(G, \cdot)$ 是配有结合运算、单位元 $1$ 和逆元的集合；若运算可交换则称**交换群**；它的**阶**是 $\abs G$。我们需要的群有：
 
 - $\Z_N$ 对加法，阶为 $N$；
 - $\Z_N^* = \set{a \in \Z_N : \gcd(a, N) = 1}$ 对模 $N$ 乘法，阶为 $\phi(N)$，即**欧拉函数**（与 $N$ 互素的数之积仍与 $N$ 互素，故对乘法封闭；逆元由扩展欧几里得算法保证存在）；
@@ -122,7 +122,7 @@ $$
 乘以 $h_1\cdots h_m$ 的逆元即得 $g^m = 1$。对任意 $x$，写 $x = qm + r$，其中 $r = x \bmod m$；则 $g^x = (g^m)^q g^r = g^r$。
 :::
 
-非交换群结论同样成立，由拉格朗日定理（[Maths Atlas：拉格朗日定理](/learn/maths/lesson.php?c=abstract-algebra&l=lagrange)）。用于 $\Z_N^*$ 与 $\Z_p^*$ 就得到两条经典定理。
+非交换群结论同样成立，由拉格朗日定理（[Maths Atlas：拉格朗日定理](/a/maths/lesson.php?c=abstract-algebra&l=lagrange)）。用于 $\Z_N^*$ 与 $\Z_p^*$ 就得到两条经典定理。
 
 ::: corollary 欧拉定理与费马定理 {#cor-euler-fermat}
 若 $\gcd(a, N) = 1$，则 $a^{\phi(N)} \equiv 1 \pmod N$。若 $p$ 为素数且 $p \nmid a$，则 $a^{p-1} \equiv 1 \pmod p$。
@@ -268,7 +268,7 @@ caption: 素数计数函数 $\pi(x)$ 与 $x/\ln x$ 以及对数积分 $\operator
 
 ### 离散对数
 
-设 $G$ 是 $q$ 阶**循环**群，$g$ 是其**生成元**，即 $G = \set{g^0, g^1, \dots, g^{q-1}}$。每个 $h \in G$ 都唯一地写成 $g^x$，其中 $x \in \Z_q$，称为**离散对数** $\log_g h$。计算 $g^x$ 很快（[[#alg-modexp]]）；从 $g^x$ 求 $x$，在合适的群里似乎很难。对素数 $p$，群 $\Z_p^*$ 是 $p - 1$ 阶循环群（[Maths Atlas：原根](/learn/maths/lesson.php?c=number-theory&l=primitive-roots)）。
+设 $G$ 是 $q$ 阶**循环**群，$g$ 是其**生成元**，即 $G = \set{g^0, g^1, \dots, g^{q-1}}$。每个 $h \in G$ 都唯一地写成 $g^x$，其中 $x \in \Z_q$，称为**离散对数** $\log_g h$。计算 $g^x$ 很快（[[#alg-modexp]]）；从 $g^x$ 求 $x$，在合适的群里似乎很难。对素数 $p$，群 $\Z_p^*$ 是 $p - 1$ 阶循环群（[Maths Atlas：原根](/a/maths/lesson.php?c=number-theory&l=primitive-roots)）。
 
 ::: widget modular
 n: 23
@@ -300,7 +300,7 @@ DDH 说的是：Diffie–Hellman 值 $g^{xy}$ 看起来仍像一个随机的群�
 逆否地看，能解"看起来较易"问题的算法就能解"看起来较难"的那个。若 $\mathcal A$ 能算离散对数，则给定 $g^x, g^y$，算出 $x = \mathcal A(g^x)$ 并输出 $(g^y)^x = g^{xy}$：CDH 就此解决，成功概率相同。若 $\mathcal B$ 以概率 $\varepsilon$ 解 CDH，令 $D(g^x, g^y, h)$ 当且仅当 $\mathcal B(g^x, g^y) = h$ 时输出 $1$。对真实三元组，$D$ 输出 $1$ 的概率至少 $\varepsilon$；对随机三元组，$h = g^z$ 均匀且与 $\mathcal B$ 的输出独立，故 $D$ 输出 $1$ 的概率恰为 $1/q$。优势至少 $\varepsilon - 1/q$，当 $\varepsilon$ 不可忽略时它也不可忽略（因为 $1/q \le 2^{-(n-1)}$ 是可忽略的）。
 :::
 
-用哪些群？通用算法——小步大步法（baby-step giant-step，[Maths Atlas](/learn/maths/lesson.php?c=number-theory&l=primitive-roots)）与 Pollard rho 算法——在任何 $q$ 阶群中都约需 $\sqrt q$ 次运算求离散对数；Shoup（1997）证明了任何只做群元素乘法的"通用"算法都无法更快。两点引申：
+用哪些群？通用算法——小步大步法（baby-step giant-step，[Maths Atlas](/a/maths/lesson.php?c=number-theory&l=primitive-roots)）与 Pollard rho 算法——在任何 $q$ 阶群中都约需 $\sqrt q$ 次运算求离散对数；Shoup（1997）证明了任何只做群元素乘法的"通用"算法都无法更快。两点引申：
 
 - 若阶 $q$ 有小素因子，**Pohlig–Hellman 方法**分别对每个素数幂因子求模下的对数，再用中国剩余定理合并；代价由阶的*最大素因子*决定。所以我们采用**素数阶** $q$ 的群。
 - 在 $\Z_p^*$ 本身中，DDH 是*容易*的，因为阶 $p - 1$ 是偶数，平方可以识别（[[#ex-ddh-zp]]）。标准做法是取**安全素数（safe prime）** $p = 2q + 1$（$q$ 为素数）下平方构成的子群，它是素数阶 $q$ 的循环群；在 $\Z_{23}^*$ 中（$23 = 2 \cdot 11 + 1$）它就是 $4$ 生成的 $11$ 阶子群。

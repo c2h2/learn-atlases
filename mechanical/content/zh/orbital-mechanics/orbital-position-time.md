@@ -110,7 +110,7 @@ $$
 
 ## 求解开普勒方程 {#sec-solving}
 
-逆问题——给定时刻航天器在哪里？——需要由$M$求$E$。方程$E - e\sin E = M$是超越方程；不存在用初等函数表示$E$的有限公式。但函数$f(E) = E - e\sin E - M$非常适合用牛顿法求解（[求根](/learn/maths/lesson.php?c=numerical-analysis&l=root-finding)）：对椭圆，其导数$f'(E) = 1 - e\cos E \ge 1 - e > 0$永不为零，所以$f$严格递增，根唯一，并且由于$\lvert e\sin E\rvert \le e$，根位于$[M - e, M + e]$内。
+逆问题——给定时刻航天器在哪里？——需要由$M$求$E$。方程$E - e\sin E = M$是超越方程；不存在用初等函数表示$E$的有限公式。但函数$f(E) = E - e\sin E - M$非常适合用牛顿法求解（[求根](/a/maths/lesson.php?c=numerical-analysis&l=root-finding)）：对椭圆，其导数$f'(E) = 1 - e\cos E \ge 1 - e > 0$永不为零，所以$f$严格递增，根唯一，并且由于$\lvert e\sin E\rvert \le e$，根位于$[M - e, M + e]$内。
 
 ::: algorithm 求解开普勒方程的牛顿法 {#alg-kepler-newton}
 给定$M$（化到$0 \le M < 2\pi$）和$0 \le e < 1$：

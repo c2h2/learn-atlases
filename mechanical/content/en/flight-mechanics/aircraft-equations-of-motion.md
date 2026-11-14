@@ -1,6 +1,6 @@
 The static analyses of the previous lessons answered "is there a restoring moment?". To answer "what happens next?" — how the aircraft moves after a gust, how quickly it responds to the pilot, whether its oscillations die out — we need its **equations of motion**: Newton's laws for a rigid body with six degrees of freedom, written in axes that move with the aircraft, together with a model of how the aerodynamic forces depend on the motion. The full equations are nonlinear and coupled, and they are what every flight simulator integrates. For small disturbances from steady flight they become linear and split neatly into two independent sets, longitudinal and lateral–directional, each a fourth-order linear system whose eigenvalues are the aircraft's natural modes ([[flight-mechanics/dynamic-modes]]).
 
-The rigid-body mechanics — angular momentum, the inertia tensor, Euler's equations and the derivative of a vector in a rotating frame — is developed in [[dynamics/three-dimensional-dynamics]]; the linear algebra of state-space models in [[control-systems/state-space]] and Maths Atlas's [eigenvalues](/learn/maths/lesson.php?c=linear-algebra&l=eigenvalues).
+The rigid-body mechanics — angular momentum, the inertia tensor, Euler's equations and the derivative of a vector in a rotating frame — is developed in [[dynamics/three-dimensional-dynamics]]; the linear algebra of state-space models in [[control-systems/state-space]] and Maths Atlas's [eigenvalues](/a/maths/lesson.php?c=linear-algebra&l=eigenvalues).
 
 ## Axes and attitude {#sec-axes}
 

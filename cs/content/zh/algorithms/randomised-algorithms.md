@@ -1,6 +1,6 @@
 有人递给你三个 $1000 \times 1000$ 的矩阵 $A$、$B$、$C$，声称 $AB = C$。直接把乘积算出来验证约需十亿次乘法。下面这个检验只需约三百万次：随机取一个分量为 $0$ 或 $1$ 的向量 $r$，检查是否 $A(Br) = Cr$。若 $AB = C$，检验必然通过。若 $AB \ne C$，它至少有 $1/2$ 的概率识破——独立重复二十次，被骗的概率就不到百万分之一。没有人知道有任何确定性方法能接近这么快。
 
-会掷硬币的算法称为**随机化算法**。随机性买来简单与快速——随机化快速排序（[[algorithms/divide-and-conquer#thm-quicksort]]）比任何有 $O(n\log n)$ 保证的确定性快速排序都简单，快速选择（[[algorithms/sorting-selection#thm-quickselect]]）在实践中也比中位数的中位数更简单更快。它还能克制作恶者：对一个选择尚未做出的算法，输入无法预先变得不利。代价是我们必须对概率进行推理，并说清楚什么是随机的——是算法自己的抛硬币，绝不是输入。本章介绍两类随机化算法、分析它们所用的概率工具，以及三个经典例子：验证矩阵乘积、**通用哈希**，以及 Karger 的随机化**最小割**。概率本身——样本空间、数学期望、独立性——见[数学图谱：概率](/learn/maths/lesson.php?c=probability&l=probability-spaces)。
+会掷硬币的算法称为**随机化算法**。随机性买来简单与快速——随机化快速排序（[[algorithms/divide-and-conquer#thm-quicksort]]）比任何有 $O(n\log n)$ 保证的确定性快速排序都简单，快速选择（[[algorithms/sorting-selection#thm-quickselect]]）在实践中也比中位数的中位数更简单更快。它还能克制作恶者：对一个选择尚未做出的算法，输入无法预先变得不利。代价是我们必须对概率进行推理，并说清楚什么是随机的——是算法自己的抛硬币，绝不是输入。本章介绍两类随机化算法、分析它们所用的概率工具，以及三个经典例子：验证矩阵乘积、**通用哈希**，以及 Karger 的随机化**最小割**。概率本身——样本空间、数学期望、独立性——见[数学图谱：概率](/a/maths/lesson.php?c=probability&l=probability-spaces)。
 
 ## 拉斯维加斯型与蒙特卡洛型
 
@@ -82,7 +82,7 @@ caption: 在成功概率各为 $p$ 的独立试验中，首次成功所需的试
 $$
 \Prob[X \ge (1 + \delta)\mu] \le e^{-\delta^2\mu/3}, \qquad \Prob[X \le (1 - \delta)\mu] \le e^{-\delta^2\mu/2}.
 $$
-我们不加证明地使用它们（相关的见[数学图谱：极限定理](/learn/maths/lesson.php?c=probability&l=limit-theorems)中的大数定律）。例如，以概率 $2/3$ 正确、独立运行 $k$ 次的双侧蒙特卡洛型算法，多数表决出错意味着正确的次数至多 $k/2$，而 $\mu = 2k/3$；取 $\delta = 1/4$，$(1 - \delta)\mu = k/2$，于是误差不超过 $e^{-k/48}$。
+我们不加证明地使用它们（相关的见[数学图谱：极限定理](/a/maths/lesson.php?c=probability&l=limit-theorems)中的大数定律）。例如，以概率 $2/3$ 正确、独立运行 $k$ 次的双侧蒙特卡洛型算法，多数表决出错意味着正确的次数至多 $k/2$，而 $\mu = 2k/3$；取 $\delta = 1/4$，$(1 - \delta)\mu = k/2$，于是误差不超过 $e^{-k/48}$。
 
 ## 验证矩阵乘积
 
@@ -202,7 +202,7 @@ $$
 :::
 
 ::: proof
-固定键 $k \ne l$，记 $r = (ak + b) \bmod p$、$s = (al + b) \bmod p$。第一，$r \ne s$：两者之差是 $a(k - l) \bmod p$，是两个不被素数 $p$ 整除之数的乘积，故模 $p$ 非零。第二，映射 $(a, b) \mapsto (r, s)$ 是从 $a \ne 0$ 的 $p(p-1)$ 个数对到 $r \ne s$ 的 $p(p-1)$ 个数对的双射：给定 $(r, s)$，方程组有唯一解 $a = (r - s)(k - l)^{-1} \bmod p$（非零）与 $b = (r - ak) \bmod p$，因为 $k - l$ 在模 $p$ 下可逆（[数学图谱：模算术](/learn/maths/lesson.php?c=number-theory&l=congruences)）。于是 $(a, b)$ 均匀时，$(r, s)$ 均匀分布在模 $p$ 的互异剩余对上。
+固定键 $k \ne l$，记 $r = (ak + b) \bmod p$、$s = (al + b) \bmod p$。第一，$r \ne s$：两者之差是 $a(k - l) \bmod p$，是两个不被素数 $p$ 整除之数的乘积，故模 $p$ 非零。第二，映射 $(a, b) \mapsto (r, s)$ 是从 $a \ne 0$ 的 $p(p-1)$ 个数对到 $r \ne s$ 的 $p(p-1)$ 个数对的双射：给定 $(r, s)$，方程组有唯一解 $a = (r - s)(k - l)^{-1} \bmod p$（非零）与 $b = (r - ak) \bmod p$，因为 $k - l$ 在模 $p$ 下可逆（[数学图谱：模算术](/a/maths/lesson.php?c=number-theory&l=congruences)）。于是 $(a, b)$ 均匀时，$(r, s)$ 均匀分布在模 $p$ 的互异剩余对上。
 
 两键碰撞当且仅当 $r \equiv s \pmod m$。固定 $r$，$\{0, \dots, p-1\}$ 中满足 $s \ne r$ 且 $s \equiv r \pmod m$ 的 $s$ 至多有 $\lceil p/m\rceil - 1 \le (p + m - 1)/m - 1 = (p - 1)/m$ 个。所以
 $$

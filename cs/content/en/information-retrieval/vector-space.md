@@ -80,7 +80,7 @@ $$ {#eq-cosine}
 and documents are ranked by decreasing cosine similarity.
 :::
 
-The vectors live in a space with one dimension per term — millions of dimensions — but each document vector is **sparse**, with non-zero entries only for the terms the document contains, and the query vector has a handful of non-zero entries. The dot product therefore runs over the query terms only, which is exactly what the inverted index makes cheap. (Inner products, norms and angles are developed in [Maths Atlas: inner products](/learn/maths/lesson.php?c=linear-algebra&l=inner-products).)
+The vectors live in a space with one dimension per term — millions of dimensions — but each document vector is **sparse**, with non-zero entries only for the terms the document contains, and the query vector has a handful of non-zero entries. The dot product therefore runs over the query terms only, which is exactly what the inverted index makes cheap. (Inner products, norms and angles are developed in [Maths Atlas: inner products](/a/maths/lesson.php?c=linear-algebra&l=inner-products).)
 
 Why the cosine rather than the dot product or the Euclidean distance? Suppose we append a document to a copy of itself. Its vector doubles, $\vec{d}' = 2\vec{d}$, though its content is the same. The dot product with any query doubles, so long documents would win merely by being long; the Euclidean distance $\norm{\vec q - \vec d'}$ changes too. The cosine depends only on direction: $\cos(\vec q, 2\vec d) = \cos(\vec q, \vec d)$.
 

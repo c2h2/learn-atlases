@@ -304,7 +304,7 @@ caption: M/M/1 队列的平均停留时间随利用率 $\rho = x$ 的变化，�
 
 ## 后续内容
 
-其余各章自上而下沿着层次展开。[[networks/application-layer]] 研究万维网、DNS 和电子邮件，[[networks/sockets]] 讲解程序如何使用传输层。[[networks/reliable-transport]] 在不可靠的网络之上构造可靠交付，并用本章的时延与带宽时延乘积来分析它；[[networks/tcp-congestion]] 展示 TCP 如何公平地分享瓶颈链路。[[networks/network-layer]] 与 [[networks/routing]] 讲解 IP 编址以及跨自治系统的路由计算，[[networks/link-layer]] 与 [[networks/wireless-mobile]] 下探到以太网、Wi-Fi 和蜂窝网络。[[#thm-mm1]] 的排队模型在概率论课程中进一步发展（[Maths Atlas: Markov chains](/learn/maths/)），并在 [[operating-systems]] 和 [[distributed-systems]] 中重现。
+其余各章自上而下沿着层次展开。[[networks/application-layer]] 研究万维网、DNS 和电子邮件，[[networks/sockets]] 讲解程序如何使用传输层。[[networks/reliable-transport]] 在不可靠的网络之上构造可靠交付，并用本章的时延与带宽时延乘积来分析它；[[networks/tcp-congestion]] 展示 TCP 如何公平地分享瓶颈链路。[[networks/network-layer]] 与 [[networks/routing]] 讲解 IP 编址以及跨自治系统的路由计算，[[networks/link-layer]] 与 [[networks/wireless-mobile]] 下探到以太网、Wi-Fi 和蜂窝网络。[[#thm-mm1]] 的排队模型在概率论课程中进一步发展（[Maths Atlas: Markov chains](/a/maths/)），并在 [[operating-systems]] 和 [[distributed-systems]] 中重现。
 
 ::: summary
 - **分组交换**按需共享链路容量；与**电路交换**相比，它能支持多得多的突发用户（[[#ex-statmux]]），代价是波动的时延和偶尔的丢失。

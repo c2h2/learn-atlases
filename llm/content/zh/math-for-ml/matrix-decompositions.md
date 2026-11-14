@@ -1,6 +1,6 @@
 一个$4096\times4096$的权重矩阵存储着近一千七百万个数。它们真的每一个都需要吗？微调语言模型时，每个权重都会改变一点，可实践中，这一变化往往能用一个仅由几千个数构造的矩阵来刻画；而$768$维空间中上百万个嵌入向量构成的云团，常常只需几十个方向就能以很好的精度描述。这两个观察说的都是**秩**，而度量并利用秩的工具，正是**奇异值分解**。
 
-本章展开机器学习用得最多的两种分解。特征分解用一个方阵只做拉伸的那些方向来描述它；对对称矩阵——协方差矩阵、黑塞矩阵、格拉姆（Gram）矩阵——这些方向彼此正交，图像格外干净。奇异值分解把这一想法推广到任何矩阵——无论是不是方阵——并给出矩阵的最佳低秩近似，这正是主成分分析、模型压缩以及 LoRA 等低秩适配器背后的结果。数学图谱中关于[特征值](/learn/maths/lesson.php?c=linear-algebra&l=eigenvalues)、[谱定理](/learn/maths/lesson.php?c=linear-algebra&l=spectral-theorem)和 [SVD](/learn/maths/lesson.php?c=linear-algebra&l=svd) 的课给出完整理论；这里的重点，是这些分解对数据与权重说明了什么。
+本章展开机器学习用得最多的两种分解。特征分解用一个方阵只做拉伸的那些方向来描述它；对对称矩阵——协方差矩阵、黑塞矩阵、格拉姆（Gram）矩阵——这些方向彼此正交，图像格外干净。奇异值分解把这一想法推广到任何矩阵——无论是不是方阵——并给出矩阵的最佳低秩近似，这正是主成分分析、模型压缩以及 LoRA 等低秩适配器背后的结果。数学图谱中关于[特征值](/a/maths/lesson.php?c=linear-algebra&l=eigenvalues)、[谱定理](/a/maths/lesson.php?c=linear-algebra&l=spectral-theorem)和 [SVD](/a/maths/lesson.php?c=linear-algebra&l=svd) 的课给出完整理论；这里的重点，是这些分解对数据与权重说明了什么。
 
 ## 特征值与特征向量 {#sec-eigen}
 
@@ -49,7 +49,7 @@ A = Q\Lambda Q^\top = \sum_{i=1}^n\lambda_i\mathbf{q}_i\mathbf{q}_i^\top.
 $$ {#eq-spectral}
 :::
 
-完整证明见[数学图谱](/learn/maths/lesson.php?c=linear-algebra&l=spectral-theorem)。有一小部分足够短，可以在这里给出：对称矩阵属于不同特征值的特征向量彼此正交，因为若$A\mathbf{u} = \lambda\mathbf{u}$且$A\mathbf{v} = \mu\mathbf{v}$，则$\lambda\,\mathbf{u}\cdot\mathbf{v} = (A\mathbf{u})\cdot\mathbf{v} = \mathbf{u}\cdot(A\mathbf{v}) = \mu\,\mathbf{u}\cdot\mathbf{v}$，而$\lambda\ne\mu$迫使$\mathbf{u}\cdot\mathbf{v} = 0$。
+完整证明见[数学图谱](/a/maths/lesson.php?c=linear-algebra&l=spectral-theorem)。有一小部分足够短，可以在这里给出：对称矩阵属于不同特征值的特征向量彼此正交，因为若$A\mathbf{u} = \lambda\mathbf{u}$且$A\mathbf{v} = \mu\mathbf{v}$，则$\lambda\,\mathbf{u}\cdot\mathbf{v} = (A\mathbf{u})\cdot\mathbf{v} = \mathbf{u}\cdot(A\mathbf{v}) = \mu\,\mathbf{u}\cdot\mathbf{v}$，而$\lambda\ne\mu$迫使$\mathbf{u}\cdot\mathbf{v} = 0$。
 
 式[[#eq-spectral]]把一个对称矩阵写成一组秩一投影之和，投影方向彼此正交，每一项按自己的特征值加权。对称矩阵在机器学习中无处不在：数据集的协方差矩阵、成对点积构成的格拉姆矩阵$XX^\top$、损失的黑塞矩阵（二阶导数矩阵，见[[math-for-ml/optimisation]]）。它们大多还有一个额外的性质。
 

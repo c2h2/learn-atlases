@@ -229,7 +229,7 @@ Because sets have no order, and string hashes are randomised, printing a set of 
 sets: 2
 expr: (M - P) | (P - M)
 labels: M; P
-caption: The symmetric difference `maths ^ physics`, students taking exactly one of the two subjects ($M$ for mathematics, $P$ for physics), written as $(M \setminus P) \cup (P \setminus M)$. Type other expressions — `M & P`, `M | P`, `M - P` — to see the other operations of [[#ex-enrol]]. Set algebra in Python follows the laws of [Maths Atlas: sets](/learn/maths/lesson.php?c=proofs&l=sets) exactly.
+caption: The symmetric difference `maths ^ physics`, students taking exactly one of the two subjects ($M$ for mathematics, $P$ for physics), written as $(M \setminus P) \cup (P \setminus M)$. Type other expressions — `M & P`, `M | P`, `M - P` — to see the other operations of [[#ex-enrol]]. Set algebra in Python follows the laws of [Maths Atlas: sets](/a/maths/lesson.php?c=proofs&l=sets) exactly.
 :::
 
 Fast membership testing changes what algorithms are practical. As an observation (one run with CPython 3.14, 2026; times vary by machine), $1000$ membership tests for numbers near the end of a list of $100{,}000$ numbers took about $0.6$ seconds, and the same tests on a set of those numbers about $0.0001$ seconds — some four orders of magnitude faster, because each list test scans almost the whole list.

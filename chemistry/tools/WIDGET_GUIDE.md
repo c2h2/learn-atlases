@@ -108,12 +108,12 @@ every visible string (translated later); keep strings short and use `%d`/`%s` fo
 
 ## Testing
 
-Every type has a live page: `http://f.g77k.com/learn/chemistry/lab.php?w=<type>` (renders the
+Every type has a live page: `http://f.g77k.com/a/chemistry/lab.php?w=<type>` (renders the
 catalogue `example`; `&cfg=` with URL-encoded `key: value` lines tests other settings).
 From this machine:
 
 ```
-cd /var/www/f.g77k.com/learn/chemistry
+cd /var/www/f.g77k.com/a/chemistry
 node tools/shot.js "lab.php?w=plot" /tmp/.../plot.png            # prints JS errors + figure state
 node tools/shot.js "lab.php?w=plot" /tmp/.../plot-dark.png --dark
 node tools/shot.js "lab.php?w=plot&cfg=f%3A%20exp(-x%5E2)" /tmp/.../gauss.png
@@ -136,7 +136,7 @@ small, fixed data (a built-in table of molecules, spectra, lattices) — no netw
 chemistry web services.
 
 For true 3D molecular graphics, 3Dmol.js (BSD-3-Clause) is already vendored in this repository at
-`/learn/peptides/assets/vendor/3Dmol-min.js`; copy it into `assets/vendor/` (and list it in the root
+`/a/peptides/assets/vendor/3Dmol-min.js`; copy it into `assets/vendor/` (and list it in the root
 `THIRD-PARTY-NOTICES.md`) rather than loading it from a CDN. A small canvas renderer in the style of
 the `surface` figure (rotation by drag, painter's algorithm, Lambert shading) may be enough for
 ball-and-stick models and orbital lobes.

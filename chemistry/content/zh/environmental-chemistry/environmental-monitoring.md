@@ -30,7 +30,7 @@ $$
 :::
 
 ::: proof 置信区间的宽度 {#proof-sample-size}
-$n$ 个独立样本均值的标准误为 $\sigma/\sqrt{n}$ 且近似正态，于是 $\bar{x} \pm z_{1-\alpha/2}\sigma/\sqrt{n}$ 以概率 $1 - \alpha$ 覆盖 $\mu$（[[analytical-chemistry/statistics-calibration]]；数学图谱中的[置信区间](/learn/maths/)）。要求半宽 $z\sigma/\sqrt{n} \leq E$ 并对 $n$ 求解即得结果。二次方依赖是给实践者的要旨：误差限减半需要四倍的样本，非均匀的场地（CV 大）可能需要极多的样本。
+$n$ 个独立样本均值的标准误为 $\sigma/\sqrt{n}$ 且近似正态，于是 $\bar{x} \pm z_{1-\alpha/2}\sigma/\sqrt{n}$ 以概率 $1 - \alpha$ 覆盖 $\mu$（[[analytical-chemistry/statistics-calibration]]；数学图谱中的[置信区间](/a/maths/)）。要求半宽 $z\sigma/\sqrt{n} \leq E$ 并对 $n$ 求解即得结果。二次方依赖是给实践者的要旨：误差限减半需要四倍的样本，非均匀的场地（CV 大）可能需要极多的样本。
 :::
 
 ::: example 需要多少个土壤样品？ {#ex-sample-size}

@@ -155,7 +155,7 @@ With $f_c$ the $3\,\mathrm{dB}$ cutoff frequency,
 :::
 
 ::: proof
-For the Butterworth filter $\abs{H}^2 = 1/(1 + (f/f_c)^{2n})$, and the standard integral $\int_0^\infty\frac{\dd u}{1 + u^{2n}} = \frac{\pi/2n}{\sin(\pi/2n)}$ (obtained by contour integration; see [Maths Atlas: residues](/learn/maths/lesson.php?c=complex-analysis&l=residues)) gives the result, with $n = 1$ the RC case: $\int_0^\infty\frac{\dd u}{1 + u^2} = \frac\pi2$. For the averager, $H_0 = 1$ and by Parseval $\int_0^\infty\abs H^2\,\dd f = \frac12\int_{-\infty}^{\infty}h^2\,\dd t = \frac12\cdot\frac{1}{T^2}\cdot T = \frac{1}{2T}$.
+For the Butterworth filter $\abs{H}^2 = 1/(1 + (f/f_c)^{2n})$, and the standard integral $\int_0^\infty\frac{\dd u}{1 + u^{2n}} = \frac{\pi/2n}{\sin(\pi/2n)}$ (obtained by contour integration; see [Maths Atlas: residues](/a/maths/lesson.php?c=complex-analysis&l=residues)) gives the result, with $n = 1$ the RC case: $\int_0^\infty\frac{\dd u}{1 + u^2} = \frac\pi2$. For the averager, $H_0 = 1$ and by Parseval $\int_0^\infty\abs H^2\,\dd f = \frac12\int_{-\infty}^{\infty}h^2\,\dd t = \frac12\cdot\frac{1}{T^2}\cdot T = \frac{1}{2T}$.
 :::
 
 The averager result reproduces the ergodic theorem of [[random-signals/random-processes]] in a new light: averaging white noise for a time $T$ leaves a variance $N_0/(2T)$, falling as $1/T$. Higher-order filters approach the ideal brick wall, and their noise bandwidth approaches the $3\,\mathrm{dB}$ bandwidth; the single-pole filter's long $1/f^2$ skirt lets through $57\,\%$ more noise than its cutoff suggests.

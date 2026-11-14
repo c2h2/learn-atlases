@@ -375,7 +375,7 @@ $$
 \Psi(x,t) = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty \phi(k)\,e^{i(kx - \hbar k^2t/2m)}\,\dd k, \qquad \phi(k) = \frac{1}{\sqrt{2\pi}}\int_{-\infty}^\infty\Psi(x,0)\,e^{-ikx}\,\dd x.
 $$ {#eq-packet}
 
-函数 $\phi(k)$ 是初始态的傅里叶变换（[数学图谱中的傅里叶变换](/learn/maths/lesson.php?c=pde&l=fourier-transform)），而普拉塞瓦尔（Plancherel）定理保证 $\int\abs{\phi}^2\,\dd k = \int\abs{\Psi}^2\,\dd x = 1$。这样的叠加称为**波包**。在 [[quantum-1/formalism]] 中我们将看到，$\abs{\phi(k)}^2\,\dd k$ 是动量落在 $\hbar k$ 与 $\hbar(k + \dd k)$ 之间的概率。
+函数 $\phi(k)$ 是初始态的傅里叶变换（[数学图谱中的傅里叶变换](/a/maths/lesson.php?c=pde&l=fourier-transform)），而普拉塞瓦尔（Plancherel）定理保证 $\int\abs{\phi}^2\,\dd k = \int\abs{\Psi}^2\,\dd x = 1$。这样的叠加称为**波包**。在 [[quantum-1/formalism]] 中我们将看到，$\abs{\phi(k)}^2\,\dd k$ 是动量落在 $\hbar k$ 与 $\hbar(k + \dd k)$ 之间的概率。
 
 每个平面波以**相速度** $\omega/k = \hbar k/2m$ 传播，它是经典速度 $p/m$ 的一半。整个波包——峰在某个 $k_0$ 附近——以**群速度**
 

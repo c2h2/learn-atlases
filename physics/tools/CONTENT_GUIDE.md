@@ -1,6 +1,6 @@
 # Physics Atlas — content guide
 
-Physics Atlas (`/learn/physics/`) teaches the undergraduate physics curriculum in depth. Every
+Physics Atlas (`/a/physics/`) teaches the undergraduate physics curriculum in depth. Every
 chapter is a long, self-contained lesson in the style of a very good textbook: motivation and
 intuition first, then precise definitions, laws with derivations, many fully worked
 examples, interactive figures, quick checks, and graded exercises with full solutions.
@@ -208,7 +208,7 @@ caption: Increase $n$ and watch the error shrink — roughly like $1/n^2$ for mi
 ```
 
 The available figure types, their keys and examples are in `data/widgets.json`; each one can be
-tried live at `/learn/physics/lab.php?w=<type>`. Unknown types or keys are build errors. The mechanics figures are `vector`, `motion`, `projectile`, `incline`, `springenergy`, `collision`, `rolling`, `orbit` and `hydro` (see `data/widgets.json`). `plot`, `parametric`, `oscillator` and `slopefield` are also available.
+tried live at `/a/physics/lab.php?w=<type>`. Unknown types or keys are build errors. The mechanics figures are `vector`, `motion`, `projectile`, `incline`, `springenergy`, `collision`, `rolling`, `orbit` and `hydro` (see `data/widgets.json`). `plot`, `parametric`, `oscillator` and `slopefield` are also available.
 
 ### 6.1 Values
 
@@ -229,12 +229,12 @@ heaviside sinc clamp if sum(expr, k, from, to) prod(…) re im conj arg`.
 ## 7. Check your work
 
 ```
-cd /var/www/f.g77k.com/learn/physics
+cd /var/www/f.g77k.com/a/physics
 php tools/check.php <course> [<course> …]
 ```
 
 This typesets every formula with KaTeX, validates figures, checks and references, and prints a
 depth table (words, numbered blocks, examples, exercises, figures, quizzes, proofs) per lesson.
 Fix every `ERROR`; depth `warn`ings must be gone for finished lessons. Preview a lesson at
-`http://f.g77k.com/learn/physics/lesson.php?c=<course>&l=<chapter>` (from this machine:
+`http://f.g77k.com/a/physics/lesson.php?c=<course>&l=<chapter>` (from this machine:
 `curl --resolve f.g77k.com:80:127.0.0.1 …`). Read your rendered lesson at least once.

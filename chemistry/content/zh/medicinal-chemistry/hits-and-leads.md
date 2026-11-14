@@ -199,7 +199,7 @@ $$ {#eq-linking}
 
 ## 后续内容
 
-先导只是起点。[[medicinal-chemistry/structure-activity]]描述对先导的系统改造——药效团、生物电子等排体与定量构效关系；[[medicinal-chemistry/structure-based-design]]描述用蛋白质结构指导这种改造，包括用于虚拟筛选的分子对接。分流淘汰中检查的药代动力学性质见[[medicinal-chemistry/pharmacokinetics]]。筛选的统计学用到假设检验与贝叶斯定理，Maths Atlas（`/learn/maths/`）两者皆有；[[analytical-chemistry/statistics-calibration]]中对测量不确定度的处理可直接用于测定数据。
+先导只是起点。[[medicinal-chemistry/structure-activity]]描述对先导的系统改造——药效团、生物电子等排体与定量构效关系；[[medicinal-chemistry/structure-based-design]]描述用蛋白质结构指导这种改造，包括用于虚拟筛选的分子对接。分流淘汰中检查的药代动力学性质见[[medicinal-chemistry/pharmacokinetics]]。筛选的统计学用到假设检验与贝叶斯定理，Maths Atlas（`/a/maths/`）两者皆有；[[analytical-chemistry/statistics-calibration]]中对测量不确定度的处理可直接用于测定数据。
 
 ::: summary
 - 苗头来自天然产物、已知配体与药物、表型筛选、$10^5$–$10^6$ 个化合物的高通量筛选、片段筛选、虚拟筛选与 DNA 编码化合物库；化学空间（约 $10^{60}$ 个类药分子）只能采样。

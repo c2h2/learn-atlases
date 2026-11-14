@@ -153,7 +153,7 @@ Let $f, g, h$ be eventually positive functions.
 
 By rule 2 a sum is dominated by its largest term, and by rule 1 constant factors disappear. So any polynomial $a_k n^k + \dots + a_1 n + a_0$ with $a_k > 0$ is $\Theta(n^k)$, which you can also see from rule 5: the ratio to $n^k$ tends to $a_k$.
 
-The limit rule, together with L'Hôpital's rule or known limits from [calculus](/learn/maths/lesson.php?c=calculus-1&l=limits), places the common functions in a strict hierarchy. For any constants $\eps > 0$, $k \ge 1$ and $b > 1$,
+The limit rule, together with L'Hôpital's rule or known limits from [calculus](/a/maths/lesson.php?c=calculus-1&l=limits), places the common functions in a strict hierarchy. For any constants $\eps > 0$, $k \ge 1$ and $b > 1$,
 
 $$
 1 \;\prec\; \log n \;\prec\; n^{\eps} \;\prec\; n \;\prec\; n \log n \;\prec\; n^k \;\prec\; b^n \;\prec\; n!,
@@ -353,7 +353,7 @@ The symbol $O$ was introduced by the number theorist Paul Bachmann in *Die analy
 
 ## Where this leads
 
-Every chapter of this course states its costs in this language. [[data-structures/arrays-lists]] adds one more kind of bound — the **amortised** cost, an average over a sequence of operations rather than over random inputs — and [[data-structures/hash-tables]] adds **expected** costs over the random choices of an algorithm. In [[algorithms]] you will meet recurrences such as $T(n) = 2T(n/2) + n$ for recursive algorithms and the master theorem that solves them, and lower bounds that hold for *every* algorithm for a problem, such as the $\Omega(n\log n)$ bound for comparison sorting. The mathematics of sums and recurrences is developed in [Maths Atlas: recurrences](/learn/maths/lesson.php?c=discrete&l=recurrences).
+Every chapter of this course states its costs in this language. [[data-structures/arrays-lists]] adds one more kind of bound — the **amortised** cost, an average over a sequence of operations rather than over random inputs — and [[data-structures/hash-tables]] adds **expected** costs over the random choices of an algorithm. In [[algorithms]] you will meet recurrences such as $T(n) = 2T(n/2) + n$ for recursive algorithms and the master theorem that solves them, and lower bounds that hold for *every* algorithm for a problem, such as the $\Omega(n\log n)$ bound for comparison sorting. The mathematics of sums and recurrences is developed in [Maths Atlas: recurrences](/a/maths/lesson.php?c=discrete&l=recurrences).
 
 ::: summary
 - We measure an algorithm by counting unit operations in the RAM model ([[#def-ram]]), usually by counting one dominant operation, as a function of the input size $n$.

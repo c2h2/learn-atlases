@@ -325,7 +325,7 @@ $$
 
 ## 后续内容
 
-其余各章将逐一处理过程活动：规格说明在 [[software-engineering/requirements]]，设计在 [[software-engineering/software-architecture]] 与 [[software-engineering/design-principles]]，协作构建的机制在 [[software-engineering/version-control]]，确认在 [[software-engineering/testing]] 与 [[software-engineering/verification]]，演化在 [[software-engineering/refactoring-maintenance]]，以及伴随这一切而来的责任在 [[software-engineering/professional-ethics]]。估计所用的概率在[数学图谱：期望](/learn/maths/lesson.php?c=probability&l=expectation)中展开；像利特尔法则这样的排队思想将在 [[operating-systems]] 与 [[networks]] 中重现，在那里它们支配着调度与缓冲；关键路径背后的最长路径计算在 [[algorithms/shortest-paths]]。
+其余各章将逐一处理过程活动：规格说明在 [[software-engineering/requirements]]，设计在 [[software-engineering/software-architecture]] 与 [[software-engineering/design-principles]]，协作构建的机制在 [[software-engineering/version-control]]，确认在 [[software-engineering/testing]] 与 [[software-engineering/verification]]，演化在 [[software-engineering/refactoring-maintenance]]，以及伴随这一切而来的责任在 [[software-engineering/professional-ethics]]。估计所用的概率在[数学图谱：期望](/a/maths/lesson.php?c=probability&l=expectation)中展开；像利特尔法则这样的排队思想将在 [[operating-systems]] 与 [[networks]] 中重现，在那里它们支配着调度与缓冲；关键路径背后的最长路径计算在 [[algorithms/shortest-paths]]。
 
 ::: summary
 - **软件过程**组织四项活动——规格说明、设计与实现、确认、演化（[[#def-process]]）。计划驱动的过程预先固定计划；增量式的以短周期交付并重新计划（[[#def-plan-driven]]）。按风险选择。

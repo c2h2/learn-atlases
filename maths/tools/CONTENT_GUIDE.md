@@ -1,6 +1,6 @@
 # Maths Atlas — content guide
 
-Maths Atlas (`/learn/maths/`) teaches the undergraduate mathematics curriculum in depth. Every
+Maths Atlas (`/a/maths/`) teaches the undergraduate mathematics curriculum in depth. Every
 chapter is a long, self-contained lesson in the style of a very good textbook: motivation and
 intuition first, then precise definitions, theorems with complete proofs, many fully worked
 examples, interactive figures, quick checks, and graded exercises with full solutions.
@@ -208,7 +208,7 @@ caption: Increase $n$ and watch the error shrink — roughly like $1/n^2$ for mi
 ```
 
 The available figure types, their keys and examples are in `data/widgets.json`; each one can be
-tried live at `/learn/maths/lab.php?w=<type>`. Unknown types or keys are build errors.
+tried live at `/a/maths/lab.php?w=<type>`. Unknown types or keys are build errors.
 
 ### 6.1 Values
 
@@ -229,12 +229,12 @@ heaviside sinc clamp if sum(expr, k, from, to) prod(…) re im conj arg`.
 ## 7. Check your work
 
 ```
-cd /var/www/f.g77k.com/learn/maths
+cd /var/www/f.g77k.com/a/maths
 bash tools/check.sh <course> [<course> …]
 ```
 
 This typesets every formula with KaTeX, validates figures, checks and references, and prints a
 depth table (words, numbered blocks, examples, exercises, figures, quizzes, proofs) per lesson.
 Fix every `ERROR`; depth `warn`ings must be gone for finished lessons. Preview a lesson at
-`http://f.g77k.com/learn/maths/lesson.php?c=<course>&l=<chapter>` (from this machine:
+`http://f.g77k.com/a/maths/lesson.php?c=<course>&l=<chapter>` (from this machine:
 `curl --resolve f.g77k.com:80:127.0.0.1 …`). Read your rendered lesson at least once.

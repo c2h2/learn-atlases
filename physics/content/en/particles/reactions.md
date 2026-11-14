@@ -364,7 +364,7 @@ Rutherford reported the transmutation of nitrogen in 1919, and Patrick Blackett 
 
 ## Where this leads {#leads}
 
-The instruments that produce projectiles and detect reaction products are the subject of [[particles/accelerators]], where the threshold formula [[#eq-threshold]] reappears in the comparison of fixed-target machines and colliders. Cross-sections, resonances and widths are the basic language of particle physics, where the Breit–Wigner shape of the $Z$ boson measures the number of neutrino species ([[particles/standard-model]]). Stellar nucleosynthesis beyond helium, and the end states of stars, are in [[gravitation/stars]]. The Chemistry Atlas lesson [Nuclear chemistry](/learn/chemistry/lesson.php?c=general-chemistry-2&l=nuclear-chemistry) covers nuclear equations and applications from a chemist's point of view.
+The instruments that produce projectiles and detect reaction products are the subject of [[particles/accelerators]], where the threshold formula [[#eq-threshold]] reappears in the comparison of fixed-target machines and colliders. Cross-sections, resonances and widths are the basic language of particle physics, where the Breit–Wigner shape of the $Z$ boson measures the number of neutrino species ([[particles/standard-model]]). Stellar nucleosynthesis beyond helium, and the end states of stars, are in [[gravitation/stars]]. The Chemistry Atlas lesson [Nuclear chemistry](/a/chemistry/lesson.php?c=general-chemistry-2&l=nuclear-chemistry) covers nuclear equations and applications from a chemist's point of view.
 
 ::: summary
 - The Q-value of $X(a,b)Y$ is $[m_a + m_X - m_Y - m_b]c^2$, computed with atomic masses. Endothermic reactions have a threshold $K_\mathrm{th} = (M_f^2 - (m_a + m_X)^2)c^2/2m_X \approx -Q(1 + m_a/m_X)$.

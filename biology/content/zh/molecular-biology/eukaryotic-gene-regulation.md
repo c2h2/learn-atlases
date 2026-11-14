@@ -242,7 +242,7 @@ caption: 由 [[#eq-steady-state]]，以每小时 10 个分子合成、半衰期 
 :::
 
 ::: application 作为工具与药物的小 RNA 和染色质
-用 siRNA 或短发夹 RNA 做 RNAi，成为在培养细胞与线虫、果蝇等模式生物中降低所选基因表达的标准方法。在 CRISPR 筛在很大程度上取代它们之前，全基因组 RNAi 筛鉴定了许多细胞过程的基因（[[molecular-biology/molecular-tools]]）。化学稳定的 siRNA 递送至肝脏，自 2018 年起已获批为药物（patisiran，用于遗传性转甲状腺素蛋白淀粉样变性），DNA 甲基转移酶抑制剂与组蛋白去乙酰化酶抑制剂也已用于某些血液肿瘤。临床方面属于医学图谱（[/learn/medicine/](/learn/medicine/)）。在农业上，RNAi 已被用于培育抗病毒作物、改变苹果与马铃薯褐变等性状，受转基因生物法规管理（[[biotechnology/agricultural-biotechnology]]）。
+用 siRNA 或短发夹 RNA 做 RNAi，成为在培养细胞与线虫、果蝇等模式生物中降低所选基因表达的标准方法。在 CRISPR 筛在很大程度上取代它们之前，全基因组 RNAi 筛鉴定了许多细胞过程的基因（[[molecular-biology/molecular-tools]]）。化学稳定的 siRNA 递送至肝脏，自 2018 年起已获批为药物（patisiran，用于遗传性转甲状腺素蛋白淀粉样变性），DNA 甲基转移酶抑制剂与组蛋白去乙酰化酶抑制剂也已用于某些血液肿瘤。临床方面属于医学图谱（[/a/medicine/](/a/medicine/)）。在农业上，RNAi 已被用于培育抗病毒作物、改变苹果与马铃薯褐变等性状，受转基因生物法规管理（[[biotechnology/agricultural-biotechnology]]）。
 :::
 
 ::: quiz

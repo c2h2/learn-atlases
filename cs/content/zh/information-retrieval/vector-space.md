@@ -80,7 +80,7 @@ $$ {#eq-cosine}
 文档按余弦相似度从大到小排序。
 :::
 
-向量住在每个词项一维的空间里——几百万维——但每个文档向量都是**稀疏**的，只有文档含有的词项对应非零分量，查询向量也只有寥寥几个非零分量。因此点积只需扫过查询词项，而这正是倒排索引让变便宜的事。（内积、范数与夹角见 [Maths Atlas: inner products](/learn/maths/lesson.php?c=linear-algebra&l=inner-products)。）
+向量住在每个词项一维的空间里——几百万维——但每个文档向量都是**稀疏**的，只有文档含有的词项对应非零分量，查询向量也只有寥寥几个非零分量。因此点积只需扫过查询词项，而这正是倒排索引让变便宜的事。（内积、范数与夹角见 [Maths Atlas: inner products](/a/maths/lesson.php?c=linear-algebra&l=inner-products)。）
 
 为什么用余弦，而不是点积或欧氏距离？设想把一个文档接在自身的一份拷贝后面。它的向量加倍，$\vec{d}' = 2\vec{d}$，内容却相同。它与任何查询的点积跟着加倍，于是长文档只因为长就赢了；欧氏距离 $\norm{\vec q - \vec d'}$ 也变了。余弦只依赖方向：$\cos(\vec q, 2\vec d) = \cos(\vec q, \vec d)$。
 

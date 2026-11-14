@@ -181,7 +181,7 @@ caption: 适合度轨迹可能呈现的两种形状，以千代为单位对世�
 :::
 
 ::: application 医学与农业中的进化
-因为进化正在此刻发生，它是一个实际问题。病原体进化出耐药性，肿瘤在病人体内进化，杂草进化出对除草剂的抗性，害虫进化出对杀虫剂以及对其转入 *Bacillus thuringiensis*（Bt）毒素之作物的抗性。管理策略——联合用药、种植非 Bt 作物的庇护所让敏感个体存活并稀释抗性基因、轮换除草剂——都是进化论的应用，其目的是用我们将在 [[evolution/natural-selection]] 与 [[evolution/mutation-drift-gene-flow]] 中研究的定量过程，拖慢抗性等位基因的扩散。（临床方面见[医学图谱](/learn/medicine/)。）
+因为进化正在此刻发生，它是一个实际问题。病原体进化出耐药性，肿瘤在病人体内进化，杂草进化出对除草剂的抗性，害虫进化出对杀虫剂以及对其转入 *Bacillus thuringiensis*（Bt）毒素之作物的抗性。管理策略——联合用药、种植非 Bt 作物的庇护所让敏感个体存活并稀释抗性基因、轮换除草剂——都是进化论的应用，其目的是用我们将在 [[evolution/natural-selection]] 与 [[evolution/mutation-drift-gene-flow]] 中研究的定量过程，拖慢抗性等位基因的扩散。（临床方面见[医学图谱](/a/medicine/)。）
 :::
 
 ## 各条证据如何拼合

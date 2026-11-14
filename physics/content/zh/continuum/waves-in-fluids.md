@@ -343,7 +343,7 @@ $3000\,\mathrm{km}$ 外的一场风暴同时激起一切周期的涌浪。深水
 
 ## 后续内容 {#leads}
 
-流体中的声音是 [[condensed-matter]] 中纵向声子的长波极限；振幅很大时波面变陡成为激波，这是可压缩气体动力学的主题（机械工程图谱的[可压缩流动](/learn/mechanical/lesson.php?c=fluid-mechanics&l=compressible-flow)一课）。群速度在波包的量子力学中重现：德布罗意（de Broglie）波的群速度 $\dd E/\dd p$ 就是粒子的速度（[[quantum-1]]）；在 [[optics]] 中，脉冲在色散玻璃中以群速度行进。本章的波都是线性的；有限振幅下，色散与非线性的平衡产生孤立波——罗素（Russell）1834 年在联合运河上首先观察到它，它服从科特韦格-德弗里斯（Korteweg–de Vries）方程，是可积系统的奠基例子之一——分析力学中 [[analytical-mechanics/chaos|混沌系统]] 的有序对应物。数值波浪模型是 [[computation]] 的问题之一。
+流体中的声音是 [[condensed-matter]] 中纵向声子的长波极限；振幅很大时波面变陡成为激波，这是可压缩气体动力学的主题（机械工程图谱的[可压缩流动](/a/mechanical/lesson.php?c=fluid-mechanics&l=compressible-flow)一课）。群速度在波包的量子力学中重现：德布罗意（de Broglie）波的群速度 $\dd E/\dd p$ 就是粒子的速度（[[quantum-1]]）；在 [[optics]] 中，脉冲在色散玻璃中以群速度行进。本章的波都是线性的；有限振幅下，色散与非线性的平衡产生孤立波——罗素（Russell）1834 年在联合运河上首先观察到它，它服从科特韦格-德弗里斯（Korteweg–de Vries）方程，是可积系统的奠基例子之一——分析力学中 [[analytical-mechanics/chaos|混沌系统]] 的有序对应物。数值波浪模型是 [[computation]] 的问题之一。
 
 ::: summary
 - 把连续性方程与欧拉方程在静止态附近线性化，得到 $c^2 = (\partial p/\partial\rho)_s = K_s/\rho$ 的波方程；声音是无旋的，且 $v = p'/\rho c$。

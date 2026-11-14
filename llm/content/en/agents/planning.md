@@ -4,7 +4,7 @@ Planning is one of the oldest subjects of artificial intelligence, and the class
 
 ## Classical planning {#sec-classical}
 
-Classical planning studies the simplest setting in which planning is still hard: a fully observed world, deterministic actions, a known initial state and a goal. The CS Atlas treats it in depth ([Planning](/learn/cs/lesson.php?c=artificial-intelligence&l=planning), with search algorithms in [Search](/learn/cs/lesson.php?c=artificial-intelligence&l=search)); here we need only the core.
+Classical planning studies the simplest setting in which planning is still hard: a fully observed world, deterministic actions, a known initial state and a goal. The CS Atlas treats it in depth ([Planning](/a/cs/lesson.php?c=artificial-intelligence&l=planning), with search algorithms in [Search](/a/cs/lesson.php?c=artificial-intelligence&l=search)); here we need only the core.
 
 ::: definition STRIPS planning problem {#def-strips}
 A **STRIPS problem** is a tuple $(F, A, s_0, G)$: a finite set $F$ of ground **atoms** (facts such as `on(A,B)`), a set $A$ of **actions**, an **initial state** $s_0\subseteq F$ and a **goal** $G\subseteq F$. A **state** is a set of atoms, those currently true. Each action $a$ has a **precondition** $\operatorname{pre}(a)$, an **add list** $\operatorname{add}(a)$ and a **delete list** $\operatorname{del}(a)$, all subsets of $F$. Action $a$ is **applicable** in $s$ if $\operatorname{pre}(a)\subseteq s$, and then its result is

@@ -256,7 +256,7 @@ The dopamine signal reports the difference between received and predicted reward
 :::
 
 ::: application Memory and disease
-Many neurological and psychiatric conditions involve the mechanisms of this chapter. The earliest losses in Alzheimer's disease typically affect the entorhinal cortex and hippocampus, and with them the formation of new declarative memories. Drugs of abuse act on the dopamine prediction-error system and change synapses in the striatum. Exposure-based therapies for anxiety use extinction learning. Clinical aspects are covered in [Medicine Atlas: dementia and neurodegeneration](/learn/medicine/lesson.php?c=nervous-system&l=dementia-neurodegeneration) and [Medicine Atlas: substance use](/learn/medicine/lesson.php?c=psychiatry&l=substance-use).
+Many neurological and psychiatric conditions involve the mechanisms of this chapter. The earliest losses in Alzheimer's disease typically affect the entorhinal cortex and hippocampus, and with them the formation of new declarative memories. Drugs of abuse act on the dopamine prediction-error system and change synapses in the striatum. Exposure-based therapies for anxiety use extinction learning. Clinical aspects are covered in [Medicine Atlas: dementia and neurodegeneration](/a/medicine/lesson.php?c=nervous-system&l=dementia-neurodegeneration) and [Medicine Atlas: substance use](/a/medicine/lesson.php?c=psychiatry&l=substance-use).
 :::
 
 ::: history
@@ -328,7 +328,7 @@ A neuron receives two inputs with activities $x_1$ and $x_2$ and responds with $
 
 (b) $\mathbf C$ is positive semi-definite, so $\mathbf w\T\Delta\mathbf w = \eta\,\mathbf w\T\mathbf C\mathbf w \ge 0$: the length of $\mathbf w$ never decreases on average, and the component along each eigenvector with a positive eigenvalue grows geometrically, by a factor $(1 + \eta\mu)$ per step for eigenvalue $\mu$.
 
-(c) The eigenvalues of $\mathbf C$ are $1.8$ (eigenvector $(1, 1)/\sqrt2$, at 45°) and $0.2$ (eigenvector $(1, -1)/\sqrt2$). The component along the first grows faster, so $\mathbf w$ turns towards the 45° axis, the first principal component. Oja's rule adds $-\eta y^2w_i$, which on average subtracts $\eta(\mathbf w\T\mathbf C\mathbf w)\mathbf w$; at equilibrium $\mathbf C\mathbf w = (\mathbf w\T\mathbf C\mathbf w)\mathbf w$, which requires $\mathbf w$ to be an eigenvector with $\lVert\mathbf w\rVert = 1$, and only the principal eigenvector is stable. The program in this chapter shows the convergence numerically. See [linear algebra in Maths Atlas](/learn/maths/course.php?c=linear-algebra) for eigenvectors.
+(c) The eigenvalues of $\mathbf C$ are $1.8$ (eigenvector $(1, 1)/\sqrt2$, at 45°) and $0.2$ (eigenvector $(1, -1)/\sqrt2$). The component along the first grows faster, so $\mathbf w$ turns towards the 45° axis, the first principal component. Oja's rule adds $-\eta y^2w_i$, which on average subtracts $\eta(\mathbf w\T\mathbf C\mathbf w)\mathbf w$; at equilibrium $\mathbf C\mathbf w = (\mathbf w\T\mathbf C\mathbf w)\mathbf w$, which requires $\mathbf w$ to be an eigenvector with $\lVert\mathbf w\rVert = 1$, and only the principal eigenvector is stable. The program in this chapter shows the convergence numerically. See [linear algebra in Maths Atlas](/a/maths/course.php?c=linear-algebra) for eigenvectors.
 :::
 :::
 

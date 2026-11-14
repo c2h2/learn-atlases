@@ -168,7 +168,7 @@ WF05给30次TPE试验计分，然后把赢家向前做走步验证。在本章�
 
 ## 通向何处
 
-一把尺度哪怕在本章的每一条假设都成立的情况下幸存下来，仍然会是一条已记录的历史的一个陈述。[[validation/what-a-fold-does-not-prove]]就是那堆折——清洗过、禁运过、收缩过——成不了一条去交易的决定，其原因所在。它作为输入采用的试验计数，是[[validation/parameter-search]]里的那些计数。它在种种假设之下借用的标准误，是[[performance/uncertainty-of-performance]]里的那一个，而被标准化的那个夏普比率，是[[performance/sharpe-and-its-relatives]]里的对象。假设检验作为一个主题、不附带一张窗口的网格，在数学图谱的[假设检验](/learn/maths/lesson.php?c=statistics&l=hypothesis-testing)那一章。
+一把尺度哪怕在本章的每一条假设都成立的情况下幸存下来，仍然会是一条已记录的历史的一个陈述。[[validation/what-a-fold-does-not-prove]]就是那堆折——清洗过、禁运过、收缩过——成不了一条去交易的决定，其原因所在。它作为输入采用的试验计数，是[[validation/parameter-search]]里的那些计数。它在种种假设之下借用的标准误，是[[performance/uncertainty-of-performance]]里的那一个，而被标准化的那个夏普比率，是[[performance/sharpe-and-its-relatives]]里的对象。假设检验作为一个主题、不附带一张窗口的网格，在数学图谱的[假设检验](/a/maths/lesson.php?c=statistics&l=hypothesis-testing)那一章。
 
 :::summary
 - 在真零假设与独立正态试验之下，$N$个标准化的统计量的期望最大值像$\sqrt{2\ln N}$那样增长。
