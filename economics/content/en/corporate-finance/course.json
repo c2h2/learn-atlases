@@ -7,12 +7,27 @@
   "order": 90,
   "tagline": "The time value of money, valuing bonds and shares, capital budgeting, risk and the cost of capital, capital structure, payout policy, real options and corporate governance",
   "summary": "Corporate finance asks which projects a firm should undertake and how it should pay for them. This course develops the tools of valuation — discounting, net present value and the valuation of bonds and shares — and applies them to capital budgeting, the cost of capital, the choice between debt and equity, payout policy, the value of flexibility, and the conflicts of interest between managers, shareholders and creditors.",
-  "overview": [],
+  "overview": [
+    "A firm is a collection of claims on cash that has not yet arrived. Some of those claims are projects the firm might build; some are bonds and shares it has already issued; some are promises to managers, suppliers and the tax authority. **Corporate finance** is the study of which claims to create and which to honour: which real investments to accept, how to pay for them, and how to return cash to owners. The unifying idea is present value. A pound, a dollar or a yuan today is not the same object as the same unit next year, because the unit can be lent or invested in the meantime. Once that comparison is made precise, bonds, shares, factories and options on factories become applications of the same arithmetic.",
+    "The course has three movements. The first builds the valuation toolkit: compounding and discounting, annuities and perpetuities, the pricing of bonds from their cash flows and yields, and the pricing of shares from dividends or free cash flow. The second applies the toolkit inside the firm: net present value as a capital-budgeting rule, the alternatives that managers still use, and the cost of capital that turns a forecast of cash into a present value. The third asks how the firm’s financial claims are split and governed. In the Modigliani–Miller world the split is irrelevant; taxes, distress costs, asymmetric information and agency conflicts restore a role for capital structure and payout. Real options record the value of waiting, expanding or walking away, and corporate governance studies the conflicts among shareholders, managers and creditors.",
+    "Two disciplines make the subject hard, and both are worth stating at the outset. The first is the distinction between a model and a recommendation. Every worked example in this course uses **illustrative numbers** and **fictional firms**. A calculated net present value, a Modigliani–Miller leverage ratio, or a dividend in a homemade-payout argument is not advice to accept a project, issue a bond, or pay a dividend. The atlas is for education only — not investment or financial advice. The second discipline is the list of assumptions. Present-value rules are additive only when discount rates are well-defined; Modigliani–Miller irrelevance holds only when markets are complete enough and frictions are absent; the CAPM cost of equity is an equilibrium implication, not a law of arithmetic. State the assumptions, compute under them, and then say what has been left out.",
+    "The prerequisites are [[principles]] and [[mathematical-economics]]: opportunity cost and marginal reasoning from the first, and geometric series, derivatives and integrals from the second. Probability and statistics at the level of the Maths Atlas are used when returns are random. Work every numerical example with pencil and paper (or with `python3`) before reading the solution; the interactive figures are there to show how a present value, a yield or an NPV moves when a parameter moves, not to replace the algebra. Later courses pick up the thread: [[asset-pricing]] takes the cost of capital into equilibrium models of risk, and [[derivatives]] prices the financial options of which real options are cousins."
+  ],
   "prerequisites": [
     "principles",
     "mathematical-economics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Compute future and present values of single cash flows, annuities, perpetuities and continuously compounded streams, and convert between quoted and effective annual rates.",
+    "Price a coupon bond from its cash flows and a yield, compute Macaulay and modified duration, and explain why bond prices move inversely with yields.",
+    "Value a share with the dividend-discount model and with discounted free cash flow, and interpret a valuation by comparable firms as a restricted form of the same idea.",
+    "Apply the net-present-value rule to a project, compute payback, internal rate of return and profitability index, and state the conditions under which those alternatives agree with NPV.",
+    "Estimate a cost of equity from the CAPM and a weighted average cost of capital, stating the assumptions each formula requires.",
+    "State the Modigliani–Miller propositions with their assumptions, and show how corporate taxes and costs of financial distress restore a trade-off between debt and equity.",
+    "Explain dividend and repurchase irrelevance in frictionless markets, and identify the frictions — taxes, information and agency — that give payout policy a role.",
+    "Value an option to delay, expand or abandon a project on a decision tree, and contrast that value with a static NPV that ignores flexibility.",
+    "Analyse conflicts among shareholders, managers and creditors, and describe how boards, incentive pay and the market for corporate control are intended to address them."
+  ],
   "chapters": [
     {
       "slug": "time-value-of-money",
@@ -89,8 +104,114 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1930,
+      "title": "Fisher's Theory of Interest",
+      "detail": "Irving Fisher's The Theory of Interest restates the present-value relation between capital and income, and separates the firm's investment decision from the owners' consumption preferences when capital markets are complete.",
+      "people": [
+        "Irving Fisher"
+      ]
+    },
+    {
+      "year": 1938,
+      "title": "Williams and the investment value of a share",
+      "detail": "John Burr Williams's The Theory of Investment Value writes the price of a share as the discounted value of expected dividends, the ancestor of the dividend-discount models used in this course.",
+      "people": [
+        "John Burr Williams"
+      ]
+    },
+    {
+      "year": 1958,
+      "title": "Modigliani and Miller on capital structure",
+      "detail": "Franco Modigliani and Merton Miller, in the American Economic Review, prove that in frictionless markets the total value of the firm is independent of the mix of debt and equity, shifting the debate onto the frictions that violate their assumptions.",
+      "people": [
+        "Franco Modigliani",
+        "Merton Miller"
+      ]
+    },
+    {
+      "year": 1961,
+      "title": "Dividend irrelevance",
+      "detail": "Miller and Modigliani show, in the Journal of Business, that payout policy is also irrelevant under the same frictionless conditions: shareholders can manufacture homemade dividends by selling shares.",
+      "people": [
+        "Merton Miller",
+        "Franco Modigliani"
+      ]
+    },
+    {
+      "year": 1963,
+      "title": "The tax correction to Modigliani–Miller",
+      "detail": "Modigliani and Miller's correction in the American Economic Review introduces corporate taxes: interest is deductible, so a pound of debt raises firm value by the present value of the tax shield.",
+      "people": [
+        "Franco Modigliani",
+        "Merton Miller"
+      ]
+    },
+    {
+      "year": 1964,
+      "title": "Sharpe's capital asset pricing model",
+      "detail": "William Sharpe's Journal of Finance paper derives an equilibrium expected return linear in an asset's beta on the market portfolio, the formula later used to estimate a cost of equity. John Lintner (1965) and Jan Mossin (1966) obtained closely related results.",
+      "people": [
+        "William Sharpe"
+      ]
+    },
+    {
+      "year": 1976,
+      "title": "Jensen and Meckling on agency costs",
+      "detail": "Michael Jensen and William Meckling's Journal of Financial Economics paper treats the firm as a nexus of contracts and identifies the agency costs of outside equity and of debt, founding the modern analysis of capital structure and governance.",
+      "people": [
+        "Michael Jensen",
+        "William Meckling"
+      ]
+    },
+    {
+      "year": 1977,
+      "title": "Myers on debt overhang and real options",
+      "detail": "Stewart Myers, in the Journal of Financial Economics, shows that risky debt can cause equity holders to reject positive-NPV projects, and describes the firm's real investment opportunities as call options — the starting point of real-options analysis.",
+      "people": [
+        "Stewart Myers"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Principles of Corporate Finance",
+      "authors": "Richard Brealey, Stewart Myers and Franklin Allen",
+      "year": 2023,
+      "note": "The 14th edition is the standard university treatment of valuation, capital budgeting, capital structure and payout, with unusually careful statements of what the theory does and does not imply."
+    },
+    {
+      "title": "Corporate Finance",
+      "authors": "Jonathan Berk and Peter DeMarzo",
+      "year": 2020,
+      "note": "The 5th edition is organised around the Law of One Price and is especially clear on the cost of capital, WACC and the three valuation methods (WACC, APV, flow-to-equity)."
+    },
+    {
+      "title": "Corporate Finance",
+      "authors": "Stephen Ross, Randolph Westerfield, Jeffrey Jaffe and Bradford Jordan",
+      "year": 2022,
+      "note": "The 13th edition is a widely used alternative path through the same syllabus, with many worked numerical examples of bonds, capital budgeting and leverage."
+    },
+    {
+      "title": "The Theory of Corporate Finance",
+      "authors": "Jean Tirole",
+      "year": 2006,
+      "note": "A graduate treatment of credit rationing, moral hazard in lending, control rights and security design; the place to go once the MBA toolkit in the earlier chapters feels too reduced-form."
+    },
+    {
+      "title": "Financial Markets and Corporate Strategy",
+      "authors": "Mark Grinblatt and Sheridan Titman",
+      "year": 2002,
+      "note": "The 2nd edition connects corporate financial decisions to the equilibrium models of asset pricing, and is strong on taxes, hedging as a corporate decision, and the empirical evidence of the 1980s and 1990s."
+    },
+    {
+      "title": "Financial Theory and Corporate Policy",
+      "authors": "Thomas Copeland, J. Fred Weston and Kuldeep Shastri",
+      "year": 2005,
+      "note": "The 4th edition is a bridge between the MBA texts and Tirole: state-preference valuation, agency, and the classic empirical papers on capital structure and dividends."
+    }
+  ],
   "next": [
     "asset-pricing"
   ]

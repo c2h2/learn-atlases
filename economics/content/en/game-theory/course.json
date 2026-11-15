@@ -7,12 +7,26 @@
   "order": 70,
   "tagline": "Strategic-form games and dominance, Nash equilibrium, mixed strategies, continuous games, extensive-form games and subgame perfection, bargaining, repeated games, Bayesian games and signalling",
   "summary": "Game theory is the mathematics of strategic interaction: situations in which each decision-maker’s best choice depends on what the others do. This course develops the core solution concepts — dominance, Nash equilibrium in pure and mixed strategies, subgame-perfect equilibrium, and equilibria of repeated and Bayesian games — and applies them to coordination, the commons, bargaining, cooperation, auctions and signalling.",
-  "overview": [],
+  "overview": [
+    "A farmer deciding how much water to pump from a shared aquifer, two firms setting prices, a government bargaining with a union, and a bidder in a sealed-tender auction are all solving the same kind of problem: each must choose an action whose payoff depends on what others choose, and each knows that the others are doing likewise. **Game theory** is the formal language for that problem. It does not assume that people are selfish in a narrow sense — payoffs can encode altruism, fairness or a political objective — but it does assume that they act on a well-defined objective and that they reason about one another’s reasoning. The course is for education only; the models are tools for understanding strategic structure, not advice on how to compete, bargain or bid.",
+    "The first half stays with simultaneous-move games. We write a game in strategic form, eliminate dominated strategies, and introduce Nash equilibrium as a profile of mutual best responses. Mixed strategies handle matching pennies, inspection and penalty kicks; continuous action spaces handle Cournot competition, Hotelling location, contests and the tragedy of the commons. The second half adds time and information. Backward induction and subgame-perfect equilibrium discipline sequential moves; the Nash bargaining solution and Rubinstein’s alternating-offer model split a surplus; repeated games and the folk theorem say when cooperation can be sustained; Bayesian games and perfect Bayesian equilibrium handle hidden types, auctions and Spence’s education signal.",
+    "What makes the subject hard is not the algebra of a $2\\times 2$ matrix, which is elementary, but the discipline of the solution concept. An equilibrium is a requirement on a whole profile, not a recipe that tells one player what to do in isolation. Multiple equilibria are common; some are implausible once a threat has to be carried out; some exist only in mixed strategies, whose interpretation needs care. The way through is to state the rules of the game, compute best responses with numbers, and then ask what the solution concept has assumed — common knowledge of rationality, a particular order of moves, a discount factor, a prior over types — and what it has left out."
+  ],
   "prerequisites": [
     "principles",
     "mathematical-economics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Write a finite strategic-form game from a description of players, feasible actions and payoffs, and identify strictly and weakly dominated strategies.",
+    "Compute all pure-strategy Nash equilibria of a bimatrix game by best-response correspondence, and explain the difference between an equilibrium and a Pareto-efficient profile.",
+    "Derive a mixed-strategy Nash equilibrium from the indifference principle, verify it by checking expected payoffs, and apply the minimax theorem to a finite zero-sum game.",
+    "Find Nash equilibria of games with continuous actions — Cournot, Hotelling, Tullock contests and common-pool extraction — from first-order conditions and best-response functions.",
+    "Represent a sequential game as a tree, distinguish strategies from actions, and compute a subgame-perfect equilibrium by backward induction.",
+    "Apply the Nash bargaining solution and sketch the unique subgame-perfect equilibrium of Rubinstein’s alternating-offer model, stating the role of impatience.",
+    "Determine when grim-trigger strategies sustain cooperation in an infinitely repeated prisoner’s dilemma, and state the folk theorem with its assumptions.",
+    "Formulate a Bayesian game with types and beliefs, compute a Bayesian Nash equilibrium, and analyse a first-price auction with independent private values.",
+    "Distinguish pooling from separating perfect Bayesian equilibria in Spence’s signalling game, and explain why cheap talk can transmit information only when preferences are sufficiently aligned."
+  ],
   "chapters": [
     {
       "slug": "strategic-games",
@@ -89,8 +103,106 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1838,
+      "title": "Cournot’s duopoly",
+      "detail": "Antoine Augustin Cournot’s Recherches sur les principes mathématiques de la théorie des richesses analysed two producers choosing quantities, each taking the other’s output as given — the first explicit Nash equilibrium of a continuous game, a century before the name.",
+      "people": ["Antoine Augustin Cournot"]
+    },
+    {
+      "year": 1928,
+      "title": "von Neumann’s minimax theorem",
+      "detail": "John von Neumann proved that every finite two-player zero-sum game has a value in mixed strategies, in Zur Theorie der Gesellschaftsspiele (Mathematische Annalen). The result is the ancestor of existence theorems for non-zero-sum games.",
+      "people": ["John von Neumann"]
+    },
+    {
+      "year": 1944,
+      "title": "Theory of Games and Economic Behavior",
+      "detail": "John von Neumann and Oskar Morgenstern’s book introduced expected-utility payoffs, the extensive and strategic forms, and coalitional games, and put game theory into economics.",
+      "people": ["John von Neumann", "Oskar Morgenstern"]
+    },
+    {
+      "year": 1950,
+      "title": "Nash equilibrium and the bargaining problem",
+      "detail": "John Nash’s one-page PNAS note defined equilibrium points of n-person games and sketched an existence proof. The same year, The Bargaining Problem (Econometrica) axiomatised the Nash bargaining solution. The full existence argument for finite games appeared in Annals of Mathematics in 1951.",
+      "people": ["John Nash"]
+    },
+    {
+      "year": 1965,
+      "title": "Subgame-perfect equilibrium",
+      "detail": "Reinhard Selten, in a German-language oligopoly paper with demand inertia, required Nash equilibrium in every subgame, eliminating incredible threats. He later refined the idea as trembling-hand perfection (1975).",
+      "people": ["Reinhard Selten"]
+    },
+    {
+      "year": 1967,
+      "title": "Games of incomplete information",
+      "detail": "John Harsanyi’s three Management Science papers showed how to transform a game in which players do not know others’ payoffs into a game of imperfect information with types drawn from a common prior — the Bayesian games used for auctions and signalling.",
+      "people": ["John Harsanyi"]
+    },
+    {
+      "year": 1973,
+      "title": "Job-market signalling",
+      "detail": "Michael Spence’s Quarterly Journal of Economics paper showed that education can raise wages by signalling productivity even if it does not raise productivity, provided the signal is cheaper for more productive workers. Separating and pooling equilibria, and the need to specify off-path beliefs, followed.",
+      "people": ["Michael Spence"]
+    },
+    {
+      "year": 1982,
+      "title": "Rubinstein’s alternating-offer bargaining",
+      "detail": "Ariel Rubinstein proved that a bargaining game with alternating offers and discounting has a unique subgame-perfect equilibrium, in which impatience and the first-mover advantage determine the split of the surplus (Econometrica).",
+      "people": ["Ariel Rubinstein"]
+    },
+    {
+      "year": 1986,
+      "title": "The folk theorem with discounting",
+      "detail": "Drew Fudenberg and Eric Maskin gave a complete statement and proof of the folk theorem for infinitely repeated games with discounting: any feasible payoff vector that is strictly individually rational can be sustained by a subgame-perfect equilibrium when players are patient enough, under a dimensionality condition (Econometrica).",
+      "people": ["Drew Fudenberg", "Eric Maskin"]
+    }
+  ],
+  "references": [
+    {
+      "title": "An Introduction to Game Theory",
+      "authors": "Martin J. Osborne",
+      "year": 2004,
+      "note": "The undergraduate text this course is closest to: strategic and extensive forms, mixed strategies, bargaining, repeated games and incomplete information, with fully worked finite games."
+    },
+    {
+      "title": "Game Theory for Applied Economists",
+      "authors": "Robert Gibbons",
+      "year": 1992,
+      "note": "A short, application-first introduction covering static and dynamic games of complete and incomplete information; excellent on Bayesian Nash and perfect Bayesian equilibrium."
+    },
+    {
+      "title": "Strategy: An Introduction to Game Theory",
+      "authors": "Joel Watson",
+      "year": 2013,
+      "note": "Third edition. Contract-theory flavour, careful treatment of mixed strategies and extensive-form information sets; useful companion exercises."
+    },
+    {
+      "title": "A Course in Game Theory",
+      "authors": "Martin J. Osborne and Ariel Rubinstein",
+      "year": 1994,
+      "note": "A compact graduate text: knowledge, rationalisability, Nash and mixed equilibria, extensive games, and implementation. Free from the authors’ pages."
+    },
+    {
+      "title": "Game Theory",
+      "authors": "Drew Fudenberg and Jean Tirole",
+      "year": 1991,
+      "note": "The standard graduate reference for repeated games, sequential equilibrium, signalling and reputation; the place to go once this course is finished."
+    },
+    {
+      "title": "Microeconomic Theory",
+      "authors": "Andreu Mas-Colell, Michael D. Whinston and Jerry R. Green",
+      "year": 1995,
+      "note": "Chapters 7–9 give a self-contained graduate treatment of strategic-form games, extensive-form games and Bayesian games, sitting next to the rest of microeconomic theory."
+    },
+    {
+      "title": "The Theory of Industrial Organization",
+      "authors": "Jean Tirole",
+      "year": 1988,
+      "note": "Cournot, Bertrand, Stackelberg, entry deterrence and collusion as applications of the tools in this course; the natural sequel in [[industrial-organisation]]."
+    }
+  ],
   "next": [
     "industrial-organisation",
     "information-economics",

@@ -5,13 +5,28 @@
   "area": "policy",
   "level": 3,
   "order": 180,
-  "tagline": "The role of government, public goods, externalities, social insurance, redistribution, tax incidence, the efficiency cost of taxes, optimal taxation, public choice and fiscal federalism",
-  "summary": "Public economics studies what governments should do and how their policies affect the economy. This course uses the tools of welfare economics to analyse public goods and externalities, social insurance and redistribution, the incidence and efficiency costs of taxes, optimal commodity and income taxation, and the political economy of public decisions and of multi-level government.",
-  "overview": [],
+  "tagline": "The role of government, public goods, externalities, social insurance, redistribution, tax incidence, the efficiency cost of taxes, optimal taxation, and public choice",
+  "summary": "Public economics studies what governments do, what they could do, and how their policies change prices, quantities and welfare. This course uses welfare economics to analyse public goods and externalities, social insurance and redistribution, the incidence and efficiency costs of taxes, optimal commodity and income taxation, and the political economy of public decisions and of multi-level government.",
+  "overview": [
+    "Public economics is the study of government in the economy: why public budgets exist, how taxes and transfers change behaviour, who actually bears a tax, and how political institutions shape the policies that get chosen. The field sits between microeconomic theory and the facts of fiscal life. In 2023 the unweighted OECD average tax-to-GDP ratio was 33.9 per cent, ranging from 17.7 per cent in Mexico to 43.8 per cent in France (OECD, *Revenue Statistics 2024*). IMF Fiscal Monitor data put general government expenditure in advanced economies at about 40.5 per cent of GDP in 2023. Those magnitudes are large enough that a theory of markets that omits the public sector is a theory of a minority of GDP.",
+    "The course is organised around a distinction that must be kept in view throughout: **positive** public economics describes and explains what governments do and what follows from a given policy; **normative** public economics asks which policies would be desirable, and that question is never answered by efficiency alone. Efficiency arguments — the Samuelson condition for public goods, Pigouvian taxes for externalities, the Ramsey inverse-elasticity rule — are derived under stated assumptions. Equity arguments require a social welfare function, or at least an explicit judgement about whose gains count. We will flag the jump from one to the other whenever it occurs, and we will not pretend that a first-best formula is a recommendation once information, politics and administrative cost are admitted.",
+    "After a chapter on the role of government and the two welfare theorems, the course treats the two textbook market failures — public goods and externalities — then social insurance and redistribution, which exist even when markets are efficient if households are risk-averse or if society cares about the distribution of income. The second half is about paying for all of this: tax incidence, the deadweight loss of taxation, and the Ramsey and Mirrlees theories of optimal taxation, with their assumptions stated rather than waved through. The last chapter turns from the benevolent planner to public choice and fiscal federalism: voting, interest groups, and the division of tasks between levels of government.",
+    "The mathematics is intermediate microeconomics: constrained optimisation, expected utility, and a little calculus of variations in the Mirrlees chapter. Every numerical example uses illustrative prices and fictional firms unless a source and date are given; statutory tax rates, when real, are dated. This course is for education only — it is not investment, tax or financial advice, and it does not recommend a tax scheme, pension or mortgage. The way through is to keep the assumptions of each model in view, to compute incidence and deadweight loss rather than to guess them, and to ask, of every normative claim, whose welfare is in the objective and what information the government is assumed to have."
+  ],
   "prerequisites": [
     "microeconomics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Distinguish positive from normative claims about public policy, and state the first and second welfare theorems with the assumptions under which they hold.",
+    "Derive the Samuelson condition for a pure public good, compare it with Nash private provision, and explain why preference revelation is a problem.",
+    "Compute a Pigouvian tax in a partial-equilibrium externality model, state the Coase theorem and its transaction-cost limits, and compare taxes, subsidies, permits and regulation as instruments.",
+    "Explain why governments provide social insurance when private markets face adverse selection or when moral hazard is constrained by public information, using expected-utility reasoning.",
+    "Measure inequality with Lorenz curves and Gini coefficients, and analyse the incentive effects of cash transfers, in-kind transfers and means tests.",
+    "Determine the economic incidence of a tax in competitive partial equilibrium from supply and demand elasticities, and discuss how general-equilibrium and empirical incidence can differ from the statutory assignment.",
+    "Calculate deadweight loss of a tax (the Harberger triangle) and interpret the marginal cost of public funds, stating when the triangle is a good approximation.",
+    "State the Ramsey inverse-elasticity rule and the Mirrlees first-order condition for optimal income taxation with their assumptions, and apply the Saez elasticity formula as an accounting identity plus a behavioural elasticity.",
+    "Analyse median-voter and interest-group models of public choice, and apply the Tiebout logic — and its limits — to the assignment of functions across levels of government."
+  ],
   "chapters": [
     {
       "slug": "role-of-government",
@@ -89,8 +104,106 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1919,
+      "title": "Lindahl pricing",
+      "detail": "Erik Lindahl's dissertation Die Gerechtigkeit der Besteuerung proposed that each consumer of a public good pay a personalised price equal to their marginal benefit, with those prices summing to marginal cost — a decentralised counterpart of the later Samuelson condition.",
+      "people": ["Erik Lindahl"]
+    },
+    {
+      "year": 1920,
+      "title": "The Economics of Welfare",
+      "detail": "A. C. Pigou's The Economics of Welfare distinguished private and social net products and argued that a tax (or bounty) could align them when an activity generated an uncompensated external effect — the origin of Pigouvian policy.",
+      "people": ["A. C. Pigou"]
+    },
+    {
+      "year": 1927,
+      "title": "Ramsey's contribution to the theory of taxation",
+      "detail": "Frank Ramsey, answering a question of Pigou's, derived the least-distortive commodity taxes that raise a given revenue when lump-sum taxes are unavailable, obtaining the inverse-elasticity rule in the independent-demands case.",
+      "people": ["Frank Ramsey"]
+    },
+    {
+      "year": 1954,
+      "title": "The pure theory of public expenditure",
+      "detail": "Paul Samuelson's Review of Economics and Statistics paper stated the first-order condition for a pure public good: the sum of marginal rates of substitution equals the marginal rate of transformation.",
+      "people": ["Paul Samuelson"]
+    },
+    {
+      "year": 1956,
+      "title": "Tiebout's local public goods",
+      "detail": "Charles Tiebout argued that households 'vote with their feet' among local jurisdictions, revealing preferences for local public goods and, under strong assumptions, achieving an efficient allocation.",
+      "people": ["Charles Tiebout"]
+    },
+    {
+      "year": 1959,
+      "title": "Musgrave's three branches",
+      "detail": "Richard Musgrave's The Theory of Public Finance organised the public budget into allocation, distribution and stabilisation branches, giving public economics its standard map of what governments do.",
+      "people": ["Richard Musgrave"]
+    },
+    {
+      "year": 1960,
+      "title": "The problem of social cost",
+      "detail": "Ronald Coase's Journal of Law and Economics article argued that if transaction costs are zero and rights are well defined, private bargaining can internalise externalities regardless of the initial assignment of rights — the Coase theorem as later named.",
+      "people": ["Ronald Coase"]
+    },
+    {
+      "year": 1962,
+      "title": "The Calculus of Consent",
+      "detail": "James Buchanan and Gordon Tullock analysed collective choice as exchange among constitutional rules, founding the public-choice tradition that treats government as a set of agents with their own constraints rather than a benevolent planner.",
+      "people": ["James Buchanan", "Gordon Tullock"]
+    },
+    {
+      "year": 1971,
+      "title": "Mirrlees on optimum income taxation",
+      "detail": "James Mirrlees's Review of Economic Studies paper characterised optimal nonlinear income taxes when ability is private information, founding the modern theory of redistributive taxation under incentive constraints.",
+      "people": ["James Mirrlees"]
+    }
+  ],
+  "references": [
+    {
+      "title": "Public Finance and Public Policy",
+      "authors": "Jonathan Gruber",
+      "year": 2022,
+      "note": "The standard North American undergraduate text (7th ed.): institutions, theory and evidence on taxes, social insurance and expenditure, with many empirical applications."
+    },
+    {
+      "title": "Intermediate Public Economics",
+      "authors": "Jean Hindriks and Gareth D. Myles",
+      "year": 2013,
+      "note": "A more formal undergraduate/MSc treatment (2nd ed., MIT Press): public goods, externalities, voting, and optimal taxation with proofs at a comfortable mathematical level."
+    },
+    {
+      "title": "Public Finance",
+      "authors": "Harvey S. Rosen and Ted Gayer",
+      "year": 2014,
+      "note": "A clear undergraduate text (10th ed.) on expenditure and tax analysis in the US institutional setting, useful for incidence and for the structure of income and commodity taxes."
+    },
+    {
+      "title": "The Economics of Taxation",
+      "authors": "Bernard Salanié",
+      "year": 2011,
+      "note": "A compact graduate introduction (2nd ed., MIT Press) to tax incidence, deadweight loss, and the Ramsey–Mirrlees theory, with the assumptions kept in view."
+    },
+    {
+      "title": "Lectures on Public Economics",
+      "authors": "Anthony B. Atkinson and Joseph E. Stiglitz",
+      "year": 2015,
+      "note": "The 1980 classic, reissued by Princeton in 2015: still the reference for many of the theorems used in this course, including the Atkinson–Stiglitz result on commodity taxation."
+    },
+    {
+      "title": "Economics of the Public Sector",
+      "authors": "Joseph E. Stiglitz and Jay K. Rosengard",
+      "year": 2015,
+      "note": "A wide-ranging undergraduate text (4th ed.) that links market failure, public choice and tax theory to the practice of public finance in high- and middle-income countries."
+    },
+    {
+      "title": "The Theory of Taxation and Public Economics",
+      "authors": "Louis Kaplow",
+      "year": 2008,
+      "note": "A unified normative treatment that takes a social welfare function as primitive and asks which tax and expenditure rules it implies, useful as a foil to piecemeal Pigouvian reasoning."
+    }
+  ],
   "next": [
     "environmental-economics"
   ]

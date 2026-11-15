@@ -7,12 +7,27 @@
   "order": 170,
   "tagline": "Measuring development, poverty and inequality, structural transformation, health and education, credit and insurance, land and agriculture, institutions, and aid and development policy",
   "summary": "Development economics asks why billions of people remain poor and what can be done about it. This course studies how development and poverty are measured and how economies transform as they grow; how markets for labour, land, credit and insurance work — and fail — in poor countries; health and education; the role of institutions, governance and foreign aid; and the evidence from field experiments.",
-  "overview": [],
+  "overview": [
+    "In 2024, GDP per capita at purchasing-power parity was about \\$86,000 in the United States, \\$27,100 in China, \\$11,200 in India, \\$9,100 in Nigeria and \\$3,300 in Ethiopia (World Bank World Development Indicators, accessed 2026). A newborn in Japan can expect about 85 years of life; a newborn in Nigeria, about 54 (UN DESA, *World Population Prospects 2024*). Roughly one person in ten worldwide still lives below the World Bank's extreme-poverty line of \\$3.00 a day at 2021 purchasing-power parity — about 824 million people in 2024, with the bulk in sub-Saharan Africa (World Bank Poverty and Inequality Platform, September 2026 update). Development economics is the study of these gaps: why they opened, why some closed and others did not, and which policies, if any, change the lives of the poor.",
+    "The course begins with measurement. Income comparisons require purchasing-power parities; poverty and inequality require lines, Lorenz curves and the Foster–Greer–Thorbecke family; the Human Development Index and the capability approach of Amartya Sen insist that health and schooling are ends, not just means. It then turns to the structure of poor economies: the Lewis dual-economy model and rural–urban migration, the transformation of employment out of agriculture, and the recent fact of premature deindustrialisation. Microeconomic chapters study the markets that matter most to poor households — labour and human capital, credit and microfinance, risk and insurance, land and sharecropping — each with a model of why the market may fail and with evidence from Africa, South and East Asia and Latin America.",
+    "Two later chapters take a longer view. Institutions, state capacity and corruption are candidate 'deep causes' of prosperity; the debate between the institutional, geographic and cultural accounts is presented with the evidence, not as a settled verdict. Foreign aid, trade strategy and industrial policy are live disputes: Jeffrey Sachs, William Easterly, Dani Rodrik and the randomised-evaluation programme associated with Abhijit Banerjee, Esther Duflo and Michael Kremer offer competing diagnoses, and the course states the trade-offs rather than picking a side. Randomised controlled trials are treated as a powerful tool with stated limits — external validity, general-equilibrium effects, and the difference between a local average treatment effect and a national policy.",
+    "The course assumes intermediate microeconomics (especially choice under uncertainty and general equilibrium) and intermediate macroeconomics (national income and the Solow framework). Mathematics is used where it earns its keep — poverty axioms, the Marshallian inefficiency of sharecropping, Stiglitz–Weiss rationing, Townsend's full-insurance test — and every formula is paired with a numerical example. Data are sourced and dated. The aim is that a student who works through the chapters, widgets and exercises can read a World Bank poverty update, a field-experiment paper or a debate on industrial policy and know what is being claimed, what is assumed, and what remains unknown."
+  ],
   "prerequisites": [
     "microeconomics",
     "macroeconomics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Compute purchasing-power-parity income comparisons and the Human Development Index from their formulas, and explain what each omits.",
+    "Calculate the Foster–Greer–Thorbecke poverty measures and the Gini coefficient from a Lorenz curve, and evaluate the Kuznets hypothesis against the evidence.",
+    "Work through the Lewis dual-economy and Harris–Todaro models and relate them to observed structural transformation and premature deindustrialisation.",
+    "Derive a nutrition-based poverty trap and a Mincer return to schooling, and interpret randomised evidence on health and education programmes.",
+    "Explain credit-market failure under adverse selection and moral hazard, and evaluate group lending and the randomised evidence on microfinance.",
+    "State the full-insurance benchmark, test it on a household panel in the style of Townsend, and analyse index insurance with basis risk.",
+    "Compare Marshallian and efficient sharecropping, and relate land rights and the Green Revolution to agricultural productivity.",
+    "Set out the institutional, geographic and cultural accounts of long-run development and the empirical strategies used to distinguish them.",
+    "Evaluate competing claims about foreign aid and industrial policy, and state the identifying assumptions and limits of randomised evaluations."
+  ],
   "chapters": [
     {
       "slug": "measuring-development",
@@ -89,7 +104,111 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1954,
+      "title": "Lewis's dual-economy model",
+      "detail": "W. Arthur Lewis published 'Economic Development with Unlimited Supplies of Labour' in the Manchester School, modelling a modern sector that draws surplus labour from a traditional sector at a constant real wage until the turning point.",
+      "people": ["W. Arthur Lewis"]
+    },
+    {
+      "year": 1955,
+      "title": "The Kuznets curve",
+      "detail": "Simon Kuznets's 'Economic Growth and Income Inequality' (American Economic Review) hypothesised that inequality first rises and then falls with income per head — an inverted-U that later work has treated as a hypothesis to be tested, not a law.",
+      "people": ["Simon Kuznets"]
+    },
+    {
+      "year": 1970,
+      "title": "Borlaug and the Green Revolution",
+      "detail": "Norman Borlaug received the Nobel Peace Prize for high-yielding, disease-resistant wheat, which — together with irrigation, fertiliser and complementary rice varieties — raised cereal yields across South Asia and Mexico from the 1960s.",
+      "people": ["Norman Borlaug"]
+    },
+    {
+      "year": 1981,
+      "title": "Stiglitz–Weiss credit rationing",
+      "detail": "Joseph Stiglitz and Andrew Weiss showed, in 'Credit Rationing in Markets with Imperfect Information' (American Economic Review), that adverse selection and moral hazard can produce equilibrium rationing: a higher interest rate need not clear the market.",
+      "people": ["Joseph Stiglitz", "Andrew Weiss"]
+    },
+    {
+      "year": 1990,
+      "title": "The first Human Development Report",
+      "detail": "Mahbub ul Haq directed the UNDP's first Human Development Report, introducing the Human Development Index as a geometric combination of health, schooling and income, under the intellectual influence of Amartya Sen's capability approach.",
+      "people": ["Mahbub ul Haq", "Amartya Sen"]
+    },
+    {
+      "year": 1994,
+      "title": "Townsend's village insurance test",
+      "detail": "Robert Townsend's 'Risk and Insurance in Village India' (Econometrica) tested full consumption insurance in ICRISAT villages and found substantial but incomplete risk sharing — a template for a generation of household-panel work.",
+      "people": ["Robert Townsend"]
+    },
+    {
+      "year": 1997,
+      "title": "PROGRESA in Mexico",
+      "detail": "Mexico launched PROGRESA (later Oportunidades, then Prospera), a conditional cash transfer randomised at the locality level, which became the template for CCT programmes in Latin America and for field experiments in development policy.",
+      "people": ["Santiago Levy"]
+    },
+    {
+      "year": 2001,
+      "title": "Colonial origins of comparative development",
+      "detail": "Daron Acemoglu, Simon Johnson and James Robinson, in the American Economic Review, used settler mortality as an instrument for expropriation risk and argued that institutions, not geography alone, explain long-run income differences.",
+      "people": ["Daron Acemoglu", "Simon Johnson", "James Robinson"]
+    },
+    {
+      "year": 2019,
+      "title": "Nobel Prize for field experiments",
+      "detail": "The Sveriges Riksbank Prize in Economic Sciences was awarded to Abhijit Banerjee, Esther Duflo and Michael Kremer 'for their experimental approach to alleviating global poverty', consolidating randomised controlled trials as a central method in development economics.",
+      "people": ["Abhijit Banerjee", "Esther Duflo", "Michael Kremer"]
+    }
+  ],
+  "references": [
+    {
+      "title": "Development Economics",
+      "authors": "Debraj Ray",
+      "year": 1998,
+      "note": "The standard graduate-leaning undergraduate text: dualism, inequality, land, credit and incomplete markets, with fully worked models."
+    },
+    {
+      "title": "Poor Economics: A Radical Rethinking of the Way to Fight Global Poverty",
+      "authors": "Abhijit V. Banerjee and Esther Duflo",
+      "year": 2011,
+      "note": "A readable synthesis of field experiments on food, health, education, credit, insurance and entrepreneurship, with an emphasis on what the poor actually do."
+    },
+    {
+      "title": "Development Microeconomics",
+      "authors": "Pranab Bardhan and Christopher Udry",
+      "year": 1999,
+      "note": "Compact theory of rural households, sharecropping, credit, insurance and the household as a production unit."
+    },
+    {
+      "title": "Economic Development",
+      "authors": "Michael P. Todaro and Stephen C. Smith",
+      "year": 2020,
+      "note": "Thirteenth edition of a wide-ranging undergraduate survey covering measurement, structural change, population, human capital, agriculture, industry, trade and aid."
+    },
+    {
+      "title": "Development as Freedom",
+      "authors": "Amartya Sen",
+      "year": 1999,
+      "note": "The capability approach in book form: development as the expansion of real freedoms rather than as a rise in GDP per head."
+    },
+    {
+      "title": "The Elusive Quest for Growth",
+      "authors": "William Easterly",
+      "year": 2001,
+      "note": "A sceptical account of aid, financing-gap models and panaceas, stressing incentives and the limits of planners."
+    },
+    {
+      "title": "Why Nations Fail",
+      "authors": "Daron Acemoglu and James A. Robinson",
+      "year": 2012,
+      "note": "A book-length statement of the inclusive-versus-extractive institutions thesis, with historical case studies; pair with the 2001 AER paper for the econometrics."
+    },
+    {
+      "title": "Handbook of Development Economics, Volume 4",
+      "authors": "Dani Rodrik and Mark R. Rosenzweig (eds.)",
+      "year": 2010,
+      "note": "Survey chapters on growth diagnostics, trade, industrial policy, evaluation methods and the political economy of development, useful for going beyond the textbook."
+    }
+  ],
   "next": []
 }

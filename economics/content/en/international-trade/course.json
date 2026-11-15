@@ -7,11 +7,26 @@
   "order": 150,
   "tagline": "Patterns of trade and gravity, the Ricardian model, specific factors, Heckscher–Ohlin, increasing returns, firms and value chains, trade-policy instruments, political economy and trade agreements",
   "summary": "Why do countries trade, what do they trade, and who gains and who loses? This course develops the classical and modern theories of international trade — the Ricardian model, the specific-factors and Heckscher–Ohlin models, increasing returns and monopolistic competition, and heterogeneous firms — and uses them to analyse tariffs, quotas and subsidies, global value chains, the political economy of protection and the world trading system.",
-  "overview": [],
+  "overview": [
+    "International trade is the study of exchange across national borders: who sells what to whom, at what prices, and with what consequences for real incomes. The questions look simple. Why does Vietnam export electronics and footwear while Saudi Arabia exports crude oil? Why do Germany and France ship similar cars to each other? Why did China's accession to the World Trade Organization rearrange manufacturing employment from the American Midwest to the Pearl River Delta, and from São Paulo to Guangdong? The answers require models, because a country's trade pattern is the joint outcome of technology, factor supplies, increasing returns, firm-level costs of entering foreign markets, and the tariffs, quotas and rules that governments choose. The same models also tell us who is made better off and who is made worse off — a distinction the data force us to take seriously.",
+    "The course has three movements. The first is empirical and classical: the facts of world trade and the gravity equation; then the Ricardian model, in which countries differ in labour productivity; the specific-factors model, in which some inputs cannot move between industries and trade therefore redistributes income; and the Heckscher–Ohlin model, in which trade is driven by differences in capital, labour and land. The second movement is modern: intra-industry trade under increasing returns and monopolistic competition; heterogeneous firms, exporting, multinational production and global value chains. The third is policy: tariffs, quotas and subsidies in partial and general equilibrium; the political economy of protection, including infant-industry and strategic-trade arguments; and the institutions that govern commercial policy — the GATT, the WTO, and regional trade agreements.",
+    "Two results run through every chapter and should not be collapsed into one. Under standard assumptions, opening to trade raises national real income: there are **gains from trade**. Under the same assumptions, those gains are not shared equally, and some groups — workers attached to import-competing industries, owners of factors used intensively in those industries — can lose. The political economy of trade policy, and much of the empirical literature since the 1990s, is about that distribution. The course states both results, with their assumptions, and keeps positive claims (what a model or a study finds) separate from normative ones (what a government ought to do). Industrial policy and trade wars are live disputes; competing theories and the evidence on each side are presented, and the institutions of the trading system are described factually.",
+    "The main obstacle is keeping the models' assumptions in view when the news cycle supplies a new tariff or a new supply-chain shock. Work the numerical examples with pencil and paper; use the interactive figures until a production-possibility frontier, a relative-demand curve or a tariff's deadweight-loss triangle is a picture you can redraw. When a later chapter cites a theorem, return to the chapter that proved it. The empirical sections name sources and dates; they are illustrations of concepts, not forecasts, and they are for education only."
+  ],
   "prerequisites": [
     "microeconomics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Describe the main patterns of world trade — who trades with whom, in what goods and services, and how those patterns have changed as transport and communication costs have fallen — and apply the gravity equation to bilateral flows.",
+    "Derive autarky and trading equilibria in the Ricardian model, state the principle of comparative advantage, and compute the gains from trade for each country.",
+    "Analyse how trade redistributes income in the specific-factors model, identifying which factors gain and which lose when a country opens, and relate the predictions to evidence on local labour markets.",
+    "Apply the Heckscher–Ohlin, Stolper–Samuelson, Rybczynski and factor-price-equalisation theorems, and evaluate them against the Leontief paradox and later tests of the Heckscher–Ohlin–Vanek equations.",
+    "Explain intra-industry trade with monopolistic competition and increasing returns, including the home-market effect, and distinguish those gains from the comparative-advantage gains of earlier chapters.",
+    "Analyse exporting, multinational production and global value chains with heterogeneous-firm models, including the Melitz selection mechanism and the exporter premium.",
+    "Compute the partial-equilibrium welfare effects of tariffs, quotas and export subsidies, including deadweight loss and, in the large-country case, the terms-of-trade effect and the optimal tariff.",
+    "Evaluate political-economy explanations of protection — interest groups, the median voter, infant-industry and strategic-trade arguments — stating assumptions and the evidence, without collapsing the analysis into a policy recommendation.",
+    "Describe the GATT and the WTO, most-favoured-nation treatment, bound tariffs and dispute settlement, and compare multilateral rules with regional trade agreements as a matter of positive economics."
+  ],
   "chapters": [
     {
       "slug": "trade-facts",
@@ -88,7 +103,129 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
-  "next": []
+  "history": [
+    {
+      "year": 1817,
+      "title": "Ricardo's comparative advantage",
+      "detail": "David Ricardo's On the Principles of Political Economy and Taxation states the principle of comparative advantage with the famous arithmetic of English cloth and Portuguese wine, showing that both countries can gain from trade even when one is more productive in every good.",
+      "people": [
+        "David Ricardo"
+      ]
+    },
+    {
+      "year": 1919,
+      "title": "Heckscher's factor-proportions essay",
+      "detail": "Eli Heckscher publishes 'The Effect of Foreign Trade on the Distribution of Income' in Ekonomisk Tidskrift, arguing that trade is driven by differences in national endowments of productive factors — the seed of the Heckscher–Ohlin model.",
+      "people": [
+        "Eli Heckscher"
+      ]
+    },
+    {
+      "year": 1933,
+      "title": "Ohlin's Interregional and International Trade",
+      "detail": "Bertil Ohlin's doctoral work, published in English as Interregional and International Trade, develops Heckscher's insight into a general-equilibrium account of trade, factor prices and location, later recognised in the 1977 Nobel Prize shared with James Meade.",
+      "people": [
+        "Bertil Ohlin"
+      ]
+    },
+    {
+      "year": 1941,
+      "title": "Stolper–Samuelson theorem",
+      "detail": "Wolfgang Stolper and Paul Samuelson prove that, in a two-good two-factor Heckscher–Ohlin economy, an increase in the relative price of a good raises the real return to the factor used intensively in that good and lowers the real return to the other factor.",
+      "people": [
+        "Wolfgang Stolper",
+        "Paul Samuelson"
+      ]
+    },
+    {
+      "year": 1947,
+      "title": "The General Agreement on Tariffs and Trade",
+      "detail": "Twenty-three countries sign the GATT in Geneva on 30 October 1947. The agreement, intended as a stopgap until a stillborn International Trade Organisation could be created, becomes the legal framework for eight rounds of multilateral tariff cuts over the next half-century.",
+      "people": []
+    },
+    {
+      "year": 1962,
+      "title": "Tinbergen's gravity equation",
+      "detail": "Jan Tinbergen's Shaping the World Economy fits the first gravity regressions: bilateral trade rises with the economic size of the partners and falls with the distance between them, a relationship that remains the organising empirical fact of the field.",
+      "people": [
+        "Jan Tinbergen"
+      ]
+    },
+    {
+      "year": 1979,
+      "title": "Krugman's monopolistic-competition model of trade",
+      "detail": "Paul Krugman's paper 'Increasing Returns, Monopolistic Competition, and International Trade' shows that economies of scale and love of variety can generate trade — including trade in similar products between similar countries — without differences in technology or endowments.",
+      "people": [
+        "Paul Krugman"
+      ]
+    },
+    {
+      "year": 1995,
+      "title": "The World Trade Organization is established",
+      "detail": "The WTO, created by the Uruguay Round's Marrakesh Agreement of 1994, begins operations on 1 January 1995, absorbing the GATT and adding agreements on services, intellectual property and a binding dispute-settlement mechanism.",
+      "people": []
+    },
+    {
+      "year": 2003,
+      "title": "Melitz's heterogeneous-firm model",
+      "detail": "Marc Melitz's 'The Impact of Trade on Intra-Industry Reallocations and Aggregate Industry Productivity' shows how a fixed cost of exporting causes only the more productive firms to sell abroad, so that opening to trade reallocates market share toward those firms and raises industry productivity.",
+      "people": [
+        "Marc Melitz"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "International Economics: Theory and Policy",
+      "authors": "Paul R. Krugman, Maurice Obstfeld and Marc J. Melitz",
+      "year": 2022,
+      "note": "Twelfth edition. The standard undergraduate text covering both trade and international finance; the trade half is the closest single companion to this course, with careful diagrams and a balanced treatment of policy."
+    },
+    {
+      "title": "Advanced International Trade: Theory and Evidence",
+      "authors": "Robert C. Feenstra",
+      "year": 2016,
+      "note": "Second edition. The graduate-level treatment of the theories in this course, with explicit derivations of gravity, monopolistic competition, heterogeneous firms and the empirics of the Heckscher–Ohlin–Vanek equations."
+    },
+    {
+      "title": "International Trade",
+      "authors": "Robert C. Feenstra and Alan M. Taylor",
+      "year": 2021,
+      "note": "Fifth edition. An undergraduate alternative to Krugman, Obstfeld and Melitz, particularly clear on offshoring, the terms of trade and the empirical chapters."
+    },
+    {
+      "title": "Theory of International Trade",
+      "authors": "Avinash Dixit and Victor Norman",
+      "year": 1980,
+      "note": "The classic dual general-equilibrium treatment of comparative advantage, factor-price equalisation and the gains from trade; still the cleanest place to see the theorems of chapters 2–4 proved with expenditure and revenue functions."
+    },
+    {
+      "title": "Market Structure and Foreign Trade",
+      "authors": "Elhanan Helpman and Paul R. Krugman",
+      "year": 1985,
+      "note": "The monograph that put monopolistic competition and increasing returns at the centre of trade theory; the natural next step after the new-trade-theory chapter."
+    },
+    {
+      "title": "The Economics of the World Trading System",
+      "authors": "Kyle Bagwell and Robert W. Staiger",
+      "year": 2002,
+      "note": "The leading economic analysis of the GATT and the WTO as a terms-of-trade-driven agreement to escape a prisoner's dilemma in tariff setting; essential for the political-economy and trade-agreements chapters."
+    },
+    {
+      "title": "The Great Convergence: Information Technology and the New Globalization",
+      "authors": "Richard Baldwin",
+      "year": 2016,
+      "note": "A historically organised account of how falling communication costs unbundled factories across borders and created global value chains; pairs with the firms-in-trade chapter."
+    },
+    {
+      "title": "Global Production: Firms, Contracts, and Trade Structure",
+      "authors": "Pol Antràs",
+      "year": 2015,
+      "note": "A research-level treatment of the contractual foundations of offshoring and the organisation of global value chains, for students who want to go beyond Melitz and Helpman–Krugman."
+    }
+  ],
+  "next": [
+    "international-finance",
+    "development-economics"
+  ]
 }

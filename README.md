@@ -28,11 +28,11 @@ written yet. Each says "(skeleton)" in its title until it is finished.
 | **[Chemistry Atlas](chemistry/)** (skeleton) | 24 courses and 211 chapters: general, physical, inorganic, organic and analytical chemistry, spectroscopy, biochemistry and medicinal chemistry, materials, polymers and the environment. |
 | **[Computer Science Atlas](cs/)** (skeleton) | 22 courses and 197 chapters: programming and languages, data structures and algorithms, computability and complexity, systems, networks, databases, AI, security and cryptography, graphics and software engineering. |
 | **[Biology Atlas](biology/)** (skeleton) | 21 courses and 187 chapters: molecules and cells, genetics and genomics, microbes, plants and animals, neuroscience and behaviour, evolution, ecology and quantitative biology. |
-| **[Economics and Finance Atlas](economics/)** (skeleton) | 25 courses and 220 chapters, for education only (not investment advice): micro- and macroeconomics, econometrics, game theory, finance, trade, development, and public and behavioural economics. |
+| **[Economics and Finance Atlas](economics/)** | 25 courses and 220 chapters, for education only (not investment advice): micro- and macroeconomics, econometrics, game theory, finance, trade, development, and public and behavioural economics. English lessons are written; Chinese translations of the lessons are still to come. |
 
 All are plain PHP sites: no framework, no database, no build step needed to serve them, and every
 script, font and library is self-hosted. The thirteen course atlases share one lesson engine (each keeps
-its own copy); Mechanical, Earth, English, Quant Trading, European History and the five skeletons are
+its own copy); Mechanical, Earth, English, Quant Trading, European History, Economics, and the four skeletons are
 generated from the Maths Atlas engine by [`tools/mkatlas.py`](tools/mkatlas.py) and the specs in `tools/atlas-specs/`, and re-running it
 brings later engine fixes into them without touching their content.
 

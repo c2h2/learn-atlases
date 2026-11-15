@@ -7,9 +7,24 @@
   "order": 20,
   "tagline": "Functions and models, derivatives and elasticities, integration, matrices, constrained optimisation and Lagrange multipliers, comparative statics, dynamics and dynamic optimisation",
   "summary": "Modern economics is written in mathematics. This course develops the tools used throughout the atlas — functions and derivatives, integrals and present values, matrices and linear models, unconstrained and constrained optimisation with Lagrange multipliers and the Kuhn–Tucker conditions, comparative statics and the envelope theorem, difference and differential equations, and an introduction to dynamic optimisation — each motivated by an economic problem. Probability and statistics are taught in the Maths Atlas.",
-  "overview": [],
+  "overview": [
+    "A market clears when the quantity demanded equals the quantity supplied; a firm maximises profit when the last unit produced adds as much to revenue as to cost; a household divides its income so that the last pound spent on each good yields the same extra satisfaction. Each of these statements is an equation, or a first-order condition, or a constrained optimisation problem. **Mathematical economics** is the craft of turning such statements into models that can be solved, compared and, later, estimated. The mathematics is not decoration: it is how economists keep assumptions visible, how they derive what a model implies, and how they know when two stories that sound different are the same story in different clothes.",
+    "This course teaches the mathematics that economists actually use, in the order it is needed. We begin with functions and the idea of equilibrium, then treat derivatives as marginal quantities and as elasticities, integrals as surplus and present value, and matrices as the language of linear systems and input–output models. Functions of several variables, unconstrained and constrained optimisation (Lagrange multipliers and the Kuhn–Tucker conditions), and comparative statics with the envelope theorem form the core of static theory. The last two chapters turn to time: difference and differential equations, then a first look at dynamic programming and optimal control. Full proofs of analysis, linear algebra and probability live in the [Maths Atlas](/a/maths/); we cite them and spend our pages on economic structure.",
+    "The hard part is not the algebra so much as the translation: seeing that a budget line is a level set, that an elasticity is a logarithmic derivative, that a multiplier is a shadow price, that a steady state of a difference equation is an equilibrium of a market that never quite sits still. Work the numerical examples with pencil and paper before opening the solutions; move the sliders on the figures until the picture and the formula say the same thing; and keep a running list of economic interpretations (marginal cost, consumer surplus, shadow price, saddle path) so that later courses can call on the tool without re-deriving it."
+  ],
   "prerequisites": [],
-  "outcomes": [],
+  "outcomes": [
+    "Write economic relationships as functions, distinguish variables from parameters, invert demand and supply, and solve for a market or macroeconomic equilibrium.",
+    "Compute derivatives of the functions used in economics, interpret them as marginal quantities, and convert them into elasticities and instantaneous growth rates.",
+    "Evaluate definite integrals as areas, compute consumer and producer surplus, and discount a continuous income stream to a present value.",
+    "Solve linear systems by row reduction and Cramer’s rule, invert a Leontief matrix, and classify a quadratic form by the signs of its eigenvalues.",
+    "Differentiate functions of several variables, read a total differential and a level curve, apply Euler’s theorem to homogeneous functions, and differentiate implicit relations.",
+    "State and apply first- and second-order conditions for unconstrained maxima and minima, and recognise concave and convex objective functions.",
+    "Set up a Lagrangian, interpret the multiplier as a shadow price, and apply the Kuhn–Tucker conditions to problems with inequality constraints.",
+    "Use the implicit function theorem and the envelope theorem to compute comparative statics of optima and of equilibria.",
+    "Solve first-order linear difference and differential equations, locate steady states, and determine local stability, including in the cobweb model and in simple growth models.",
+    "Write a two-period or infinite-horizon problem as a Bellman equation, derive an Euler equation, and sketch the logic of optimal control."
+  ],
   "chapters": [
     {
       "slug": "functions-and-models",
@@ -92,8 +107,112 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1838,
+      "title": "Cournot’s mathematical theory of wealth",
+      "detail": "Antoine Augustin Cournot publishes Recherches sur les principes mathématiques de la théorie des richesses, treating demand as a function, monopoly as a calculus problem, and duopoly as what we now call a Nash equilibrium in quantities.",
+      "people": ["Antoine Augustin Cournot"]
+    },
+    {
+      "year": 1874,
+      "title": "Walras’s Éléments",
+      "detail": "Léon Walras’s Éléments d’économie politique pure writes general equilibrium as a system of simultaneous equations in prices and quantities, and argues that a complete set of markets can, in principle, determine all relative prices together.",
+      "people": ["Léon Walras"]
+    },
+    {
+      "year": 1890,
+      "title": "Marshall’s Principles",
+      "detail": "Alfred Marshall’s Principles of Economics puts supply and demand, elasticity and consumer surplus into the working language of the profession, keeping the diagrams in the text and the calculus in footnotes and appendices.",
+      "people": ["Alfred Marshall"]
+    },
+    {
+      "year": 1939,
+      "title": "Hicks’s Value and Capital",
+      "detail": "John Hicks’s Value and Capital restates consumer and producer theory in the language of constrained optimisation and comparative statics, and introduces the compensation tests that still organise welfare measurement.",
+      "people": ["John Hicks"]
+    },
+    {
+      "year": 1947,
+      "title": "Samuelson’s Foundations",
+      "detail": "Paul Samuelson’s Foundations of Economic Analysis takes the maximisation of a function subject to constraints, and the comparative statics of the resulting equilibrium, as the unifying structure of economic theory, summarised in his correspondence principle.",
+      "people": ["Paul Samuelson"]
+    },
+    {
+      "year": 1951,
+      "title": "Kuhn–Tucker conditions",
+      "detail": "Harold Kuhn and Albert Tucker present the first-order conditions for nonlinear programming with inequality constraints, giving economics a systematic treatment of non-negativity, capacity limits and rationing.",
+      "people": ["Harold Kuhn", "Albert Tucker"]
+    },
+    {
+      "year": 1954,
+      "title": "Arrow and Debreu on competitive equilibrium",
+      "detail": "Kenneth Arrow and Gérard Debreu prove the existence of a competitive equilibrium in a finite economy using convexity and a fixed-point theorem, putting general equilibrium on a modern mathematical footing.",
+      "people": ["Kenneth Arrow", "Gérard Debreu"]
+    },
+    {
+      "year": 1957,
+      "title": "Bellman’s Dynamic Programming",
+      "detail": "Richard Bellman’s book Dynamic Programming develops the principle of optimality and the functional equation that now bears his name, which recursive macroeconomic theory later took as its basic language.",
+      "people": ["Richard Bellman"]
+    },
+    {
+      "year": 1989,
+      "title": "Recursive Methods in Economic Dynamics",
+      "detail": "Nancy Stokey and Robert Lucas, with Edward Prescott, publish Recursive Methods in Economic Dynamics, the graduate standard for dynamic programming in economics: contraction mappings, the Bellman operator, and stochastic recursive competitive equilibrium.",
+      "people": ["Nancy Stokey", "Robert Lucas", "Edward Prescott"]
+    }
+  ],
+  "references": [
+    {
+      "title": "Fundamental Methods of Mathematical Economics",
+      "authors": "Alpha C. Chiang and Kevin Wainwright",
+      "year": 2005,
+      "note": "Fourth edition. The classic undergraduate text: equilibrium analysis, comparative statics, optimisation and dynamics, written for economics students rather than mathematicians. Matches this course’s syllabus closely."
+    },
+    {
+      "title": "Mathematics for Economists",
+      "authors": "Carl P. Simon and Lawrence Blume",
+      "year": 1994,
+      "note": "The standard bridge to graduate work. Linear algebra, multivariate calculus, concave programming and dynamical systems are treated with proofs; use it when you want the theorem behind a recipe in Chiang."
+    },
+    {
+      "title": "Essential Mathematics for Economic Analysis",
+      "authors": "Knut Sydsæter, Peter Hammond, Arne Strøm and Andrés Carvajal",
+      "year": 2021,
+      "note": "Sixth edition. Careful undergraduate development of calculus and linear algebra with economic examples throughout; the companion Further Mathematics for Economic Analysis covers the more advanced topics of this course’s later chapters."
+    },
+    {
+      "title": "Mathematics for Economics",
+      "authors": "Michael Hoy, John Livernois, Chris McKenna, Ray Rees and Thanasis Stengos",
+      "year": 2011,
+      "note": "Third edition (MIT Press). Full proofs of the implicit function theorem, envelope results and difference equations, with a large stock of worked economic applications."
+    },
+    {
+      "title": "Optimization in Economic Theory",
+      "authors": "Avinash K. Dixit",
+      "year": 1990,
+      "note": "Second edition. A short, lucid treatment of unconstrained and constrained optimisation, the envelope theorem and an introduction to dynamic optimisation — the best companion to this course’s middle chapters."
+    },
+    {
+      "title": "Mathematical Methods and Models for Economists",
+      "authors": "Angel de la Fuente",
+      "year": 2000,
+      "note": "A rigorous one-volume reference: real analysis, linear algebra, concave programming, dynamical systems and a taste of dynamic optimisation, written so that an economist can follow every proof."
+    },
+    {
+      "title": "The Structure of Economics: A Mathematical Analysis",
+      "authors": "Eugene Silberberg and Wing Suen",
+      "year": 2001,
+      "note": "Third edition. Comparative statics as a method, with the envelope theorem and the properties of maximum-value functions as the organising idea rather than as afterthoughts."
+    },
+    {
+      "title": "Recursive Methods in Economic Dynamics",
+      "authors": "Nancy L. Stokey and Robert E. Lucas, Jr., with Edward C. Prescott",
+      "year": 1989,
+      "note": "The graduate standard for the last chapter of this course. Contraction mappings, the Bellman equation, and stochastic recursive competitive equilibrium; consult it once the undergraduate treatment of dynamic programming feels too small."
+    }
+  ],
   "next": [
     "microeconomics",
     "econometrics"

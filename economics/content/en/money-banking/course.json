@@ -7,11 +7,26 @@
   "order": 80,
   "tagline": "Money and payments, interest rates and bond prices, the term structure, financial intermediation, the business of banking, bank runs and crises, regulation, and central banks",
   "summary": "Money and finance connect savers with borrowers and make modern economies work — and their breakdowns cause some of the deepest recessions. This course explains what money is and how payments work, how interest rates and bond prices are determined, why banks and other intermediaries exist, how banks manage risk and why they are fragile, how they are regulated, and how central banks control the supply of money and credit.",
-  "overview": [],
+  "overview": [
+    "A payment is a promise that settles. When a shopkeeper takes a note, a deposit transfer or a mobile-money message in exchange for goods, both sides are using an institution that turns a private IOU into something the rest of the economy will accept. **Money** is that institution: a generally accepted medium of exchange, a unit of account and a store of value. **Banks** and other intermediaries stand between households who want liquid, safe claims and firms and governments who want to borrow long. **Central banks** sit at the centre of the payment system, issue the economy's most trusted settlement asset, and set the short-term interest rate that prices every other claim. This course is about those three layers and the markets that join them. It is for education only — not investment or financial advice.",
+    "The nine chapters follow the logic of a standard undergraduate money-and-banking course, with more attention to models and to the plumbing of payments and policy implementation than a principles class can afford. We begin with the functions of money and with how payments are cleared and settled. Interest rates then enter as prices of future money: present value, yield to maturity, the inverse relation between bond prices and yields, and the Fisher split between real and nominal rates. Default risk, liquidity and taxes put a risk structure on those yields; the expectations and term-premium hypotheses put a term structure on them. Financial intermediaries exist because transaction costs and asymmetric information make raw lending expensive; banks specialise in that information-intensive business, which is why their balance sheets, capital and risk management occupy two chapters of their own. Fragility is not an accident of bad management: the Diamond–Dybvig model shows how a useful liquidity-insurance contract can have a run as a second equilibrium. Regulation — deposit insurance, the lender of last resort, Basel capital and liquidity rules, macroprudential policy — is the public response to that fragility, with its own costs. The last two chapters turn to the central bank: its balance sheet, the monetary base, the money multiplier and the reasons the multiplier is no longer a reliable policy map, and then the operational frameworks (corridor and floor), open-market operations, quantitative easing and independence that implement policy in the twenty-first century.",
+    "What makes the subject hard is not the algebra, which is mostly present value and a few identities, but the need to keep several clocks and several balance sheets in view at once. A deposit is money to its holder, a liability of a bank, and a claim that the bank must fund with reserves or asset sales if it is withdrawn. A government bond is a safe asset, a duration risk, and the instrument a central bank buys when it expands its balance sheet. A policy rate is an overnight price in the interbank market and, through expectations, a shift of the whole yield curve. Read each chapter as a description of an accounting identity plus a theory of why agents accept the contracts in it. Work the numerical examples with a pencil before opening the solutions; they are invented firms and illustrative cash flows, not recommendations. Real aggregates — M2, reserve balances, credit-to-GDP, Basel ratios, policy rates — are sourced and dated (FRED, BIS, central banks) and are not forecasts. Later courses ([[business-cycles]], [[asset-pricing]], [[international-finance]]) take the monetary block built here as given."
+  ],
   "prerequisites": [
     "principles"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Distinguish the functions of money, classify commodity, fiat, inside and digital money, and describe how a payment is cleared and settled in a modern system.",
+    "Compute present values, yields to maturity and Macaulay durations, and explain why bond prices fall when yields rise.",
+    "Decompose a nominal yield into a real rate and expected inflation, and use the Fisher relation with dated data.",
+    "Read a yield curve, extract implied forward rates, and contrast the expectations, liquidity-premium and segmented-markets accounts of the term structure.",
+    "Explain why financial intermediaries exist, using transaction costs, adverse selection and moral hazard, and apply the lemons logic to a credit market.",
+    "Read a commercial-bank balance sheet, compute simple capital and liquidity ratios, and measure interest-rate risk with a duration gap.",
+    "State the assumptions of the Diamond–Dybvig model, exhibit its run and no-run equilibria, and distinguish the model from a historical crisis narrative.",
+    "Describe deposit insurance, Bagehot's lender-of-last-resort rule, Basel capital and liquidity requirements, and the idea of macroprudential policy, with their incentive costs.",
+    "Relate the central-bank balance sheet to the monetary base, derive the money-multiplier formula and state why a floor system severs the old multiplier map.",
+    "Compare corridor and floor operating systems, and explain open-market operations, interest on reserves, quantitative easing and central-bank independence as institutional designs rather than as advice."
+  ],
   "chapters": [
     {
       "slug": "money-and-payments",
@@ -86,8 +101,106 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1694,
+      "title": "The Bank of England is chartered",
+      "detail": "A joint-stock company was created to lend to the Crown and to issue notes; over the eighteenth and nineteenth centuries it became the centre of the London money market and a de facto lender of last resort, the template for later central banks.",
+      "people": ["William Paterson"]
+    },
+    {
+      "year": 1873,
+      "title": "Bagehot's Lombard Street",
+      "detail": "Walter Bagehot's Lombard Street stated the classical rule for a crisis: lend freely, at a penalty rate, against good collateral. The book remains the reference for lender-of-last-resort doctrine, even where modern facilities have modified the details.",
+      "people": ["Walter Bagehot"]
+    },
+    {
+      "year": 1913,
+      "title": "The Federal Reserve Act",
+      "detail": "The United States created a system of regional Reserve Banks and a Federal Reserve Board after the Panic of 1907, giving the country a central bank for the first time since the 1830s and a mechanism for an elastic currency.",
+      "people": ["Carter Glass", "Nelson Aldrich"]
+    },
+    {
+      "year": 1933,
+      "title": "Deposit insurance in the United States",
+      "detail": "The Banking Act of 1933 created the Federal Deposit Insurance Corporation, separating commercial and investment banking in the same statute (Glass–Steagall). Federal deposit insurance became the standard public response to retail runs.",
+      "people": ["Carter Glass", "Henry Steagall"]
+    },
+    {
+      "year": 1956,
+      "title": "Gurley and Shaw on intermediaries",
+      "detail": "John Gurley and Edward Shaw's Financial Intermediaries and the Saving-Investment Process argued that banks and non-bank intermediaries jointly transform saving into investment, shifting attention from the money stock alone to the structure of claims.",
+      "people": ["John G. Gurley", "Edward S. Shaw"]
+    },
+    {
+      "year": 1983,
+      "title": "Diamond and Dybvig on bank runs",
+      "detail": "Douglas Diamond and Philip Dybvig showed, in the Journal of Political Economy, that a demand-deposit contract which provides useful liquidity insurance can have a bank run as a second Nash equilibrium. The model is the workhorse of modern run theory.",
+      "people": ["Douglas W. Diamond", "Philip H. Dybvig"]
+    },
+    {
+      "year": 1988,
+      "title": "The Basel Capital Accord",
+      "detail": "The Basel Committee on Banking Supervision, hosted at the Bank for International Settlements, agreed a common 8 per cent risk-weighted capital standard for internationally active banks — Basel I — the first widely adopted international capital rule.",
+      "people": []
+    },
+    {
+      "year": 2008,
+      "title": "The global financial crisis",
+      "detail": "The failure of Lehman Brothers in September 2008, after a run on wholesale funding and on shadow-banking vehicles, turned a US housing bust into a global credit freeze. The episode reshaped regulation (Basel III, Dodd–Frank) and central-bank operating systems.",
+      "people": []
+    },
+    {
+      "year": 2010,
+      "title": "Basel III is published",
+      "detail": "The Basel Committee's December 2010 package raised capital quality and quantity, added a leverage ratio, and introduced the Liquidity Coverage Ratio and the Net Stable Funding Ratio — a direct response to the funding and capital failures of 2007–09.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "The Economics of Money, Banking, and Financial Markets",
+      "authors": "Frederic S. Mishkin",
+      "year": 2021,
+      "note": "Thirteenth edition. The standard undergraduate text: a unified asymmetric-information framework for markets, banks, crises and monetary policy, with many applications. Use it as a companion, not as a source to copy."
+    },
+    {
+      "title": "Money, Banking, and Financial Markets",
+      "authors": "Stephen G. Cecchetti and Kermit L. Schoenholtz",
+      "year": 2021,
+      "note": "Sixth edition. Especially clear on payments, the risk and term structure, and the post-2008 operating framework of central banks."
+    },
+    {
+      "title": "Microeconomics of Banking",
+      "authors": "Xavier Freixas and Jean-Charles Rochet",
+      "year": 2008,
+      "note": "Second edition. The graduate-level theory of why banks exist, of credit-market imperfections, and of runs, regulation and the lender of last resort. Dip into it when a chapter's model is only sketched here."
+    },
+    {
+      "title": "Monetary Theory and Policy",
+      "authors": "Carl E. Walsh",
+      "year": 2017,
+      "note": "Fourth edition. The New Keynesian and money-demand theory that sits behind the policy chapters; more formal than this course, useful for students continuing to intermediate macro."
+    },
+    {
+      "title": "Monetary Policy Operations and the Financial System",
+      "authors": "Ulrich Bindseil",
+      "year": 2014,
+      "note": "The best single account of corridor and floor systems, standing facilities and the central-bank balance sheet, written by a practitioner-theorist at the ECB."
+    },
+    {
+      "title": "Misunderstanding Financial Crises",
+      "authors": "Gary B. Gorton",
+      "year": 2012,
+      "note": "A historically grounded argument that crises are runs on short-term debt, including shadow-banking claims, rather than a sequence of idiosyncratic bank failures."
+    },
+    {
+      "title": "Lombard Street: A Description of the Money Market",
+      "authors": "Walter Bagehot",
+      "year": 1873,
+      "note": "The classical statement of the lender-of-last-resort doctrine and a vivid account of the nineteenth-century London money market. Still assigned for a reason."
+    }
+  ],
   "next": [
     "business-cycles",
     "asset-pricing"

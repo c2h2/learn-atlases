@@ -6,8 +6,8 @@
   "card_name_zh": "经济与金融图谱",
   "desc": "A detailed, interactive course through university economics and finance: from supply and demand to microeconomics and macroeconomics, econometrics, game theory, finance, trade, development and public policy. For education only, not investment advice.",
   "desc_zh": "深入、可交互的大学经济学与金融学课程：从供给与需求，到微观经济学与宏观经济学、计量经济学、博弈论、金融、国际贸易、经济发展与公共政策。仅供教育学习，不构成投资建议。",
-  "lede": "A detailed, interactive course through university economics and finance — from supply and demand to microeconomics and macroeconomics, econometrics and causal inference, game theory and market design, corporate finance and asset pricing, trade, development, and public and behavioural economics. For education only, not investment advice. This is a skeleton: the courses and chapters are mapped out, and the lessons are still to be written.",
-  "lede_zh": "深入、可交互的大学经济学与金融学课程——从供给与需求，到微观经济学与宏观经济学、计量经济学与因果推断、博弈论与市场设计、公司金融与资产定价、国际贸易、经济发展，以及公共经济学与行为经济学。仅供教育学习，不构成投资建议。目前这是一个框架：课程与章节已经规划好，课文尚待编写。",
+  "lede": "A detailed, interactive course through university economics and finance — from supply and demand to microeconomics and macroeconomics, econometrics and causal inference, game theory and market design, corporate finance and asset pricing, trade, development, and public and behavioural economics. For education only, not investment advice.",
+  "lede_zh": "深入、可交互的大学经济学与金融学课程——从供给与需求，到微观经济学与宏观经济学、计量经济学与因果推断、博弈论与市场设计、公司金融与资产定价、国际贸易、经济发展，以及公共经济学与行为经济学。仅供教育学习，不构成投资建议。",
   "foot": "a free, detailed and interactive tour of the undergraduate economics and finance curriculum, written to be read alongside lectures and textbooks. For education only — not investment or financial advice.",
   "foot_zh": "一套免费、详尽、可交互的大学本科经济学与金融学课程导览，可配合课堂和教材阅读。仅供教育学习，不构成投资或理财建议。",
   "about_lede": "Economics & Finance Atlas is a free, detailed tour of the economics and finance taught in a university degree — written to be read alongside lectures and textbooks, or on its own. It is for education only and is not investment or financial advice.",
@@ -18,8 +18,8 @@
   "timeline_title_zh": "经济学时间线",
   "timeline_lede": "The ideas behind the courses, from Smith’s division of labour and Ricardo’s comparative advantage to Keynes, game theory, rational expectations and modern finance. Coloured dots show the area; links lead to the course where the idea is taught.",
   "timeline_lede_zh": "各门课程背后的思想：从斯密的分工理论和李嘉图的比较优势，到凯恩斯、博弈论、理性预期与现代金融学。彩色圆点表示所属领域；链接指向讲授该内容的课程。",
-  "card_desc": "University economics and finance: microeconomics and macroeconomics, econometrics, game theory and market design, money, banking and corporate finance, asset pricing and derivatives, trade and development, and public and behavioural economics. For education, not investment advice. The curriculum is mapped out; the lessons are still to be written.",
-  "card_desc_zh": "大学经济学与金融学：微观经济学与宏观经济学、计量经济学、博弈论与市场设计、货币银行与公司金融、资产定价与衍生品、国际贸易与经济发展，以及公共经济学与行为经济学。仅供教育学习，不构成投资建议。课程体系已经规划好，课文尚待编写。",
+  "card_desc": "University economics and finance: microeconomics and macroeconomics, econometrics, game theory and market design, money, banking and corporate finance, asset pricing and derivatives, trade and development, and public and behavioural economics. For education, not investment advice.",
+  "card_desc_zh": "大学经济学与金融学：微观经济学与宏观经济学、计量经济学、博弈论与市场设计、货币银行与公司金融、资产定价与衍生品、国际贸易与经济发展，以及公共经济学与行为经济学。仅供教育学习，不构成投资建议。",
   "brand": "<path d=\"M4 14L34 2M4 2l30 12\" style=\"fill:none;stroke:var(--rule-2);stroke-width:1.5\"/><circle cx=\"8\" cy=\"3.6\" r=\"2.6\" style=\"fill:var(--a-finance)\"/><circle cx=\"30\" cy=\"3.6\" r=\"2.6\" style=\"fill:var(--a-macro)\"/><circle cx=\"19\" cy=\"8\" r=\"3.6\" style=\"fill:var(--a-micro)\"/>",
   "areas": [
     {

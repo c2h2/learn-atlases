@@ -7,11 +7,26 @@
   "order": 120,
   "tagline": "Potential outcomes, randomised experiments, regression and matching, instrumental variables and LATE, difference-in-differences, regression discontinuity, synthetic control and external validity",
   "summary": "Did a policy work, and by how much? This course develops the modern toolkit for answering causal questions with data: the potential-outcomes framework, randomised experiments, regression and matching under selection on observables, instrumental variables and local average treatment effects, difference-in-differences and event studies, regression discontinuity and synthetic control. The emphasis throughout is on the assumptions each method needs and how to probe them.",
-  "overview": [],
+  "overview": [
+    "A correlation between a programme and an outcome is not an effect. People who take up training already differ from those who do not; regions that adopt a tax already differ from those that wait; students who just pass an exam cutoff are not a random sample of all students. Causal inference is the set of designs and assumptions that turn such comparisons into estimates of what would have happened in a well-defined counterfactual. The language is potential outcomes: each unit has a pair $Y_i(1)$, $Y_i(0)$ according to whether it is treated, we observe only one of them, and the missing one is the object of interest.",
+    "The course is organised around identification first and estimation second. Randomised experiments make the missing potential outcome ignorable by construction. When randomisation is unavailable, we ask what else would do the same job: a rich enough set of covariates (selection on observables), an instrument that moves treatment without otherwise moving the outcome (IV and LATE), a comparison group that would have followed a parallel path (difference-in-differences), a cutoff that assigns treatment as if by a coin toss (regression discontinuity), or a weighted combination of donors that reproduces the treated unit's pre-history (synthetic control). Each design is stated with its assumptions, illustrated with a fully worked numerical example, and then confronted with a famous application — Angrist and Krueger on compulsory schooling, Card and Krueger on the New Jersey minimum wage, Lee on close elections, Abadie, Diamond and Hainmueller on California's tobacco programme — including the criticisms those papers attracted.",
+    "Two themes run through every chapter. First, the quantity being estimated is rarely “the” treatment effect: average treatment effects, effects on the treated, local effects for compliers, and effects at a cutoff answer different questions and need not agree. Second, a credible design is one whose identifying assumptions can be argued, probed with placebo and balance tests, and, when they fail, replaced by a more modest claim rather than by a more elaborate regression. The last chapter turns from internal to external validity: how far an estimate travels, why replications and pre-analysis plans matter, and how the “credibility revolution” changed applied economics without ending disagreement about what the estimates mean for policy.",
+    "The prerequisite is [[econometrics]]. Linear regression, omitted-variable bias, clustered standard errors, panel fixed effects and the mechanics of two-stage least squares are used freely; they are not re-derived. What is new is the mapping from a research design to a causal parameter. Worked examples use illustrative numbers or simulated data with a stated seed, so every coefficient in the text can be reproduced with ordinary least squares in numpy. Famous empirical results are reported with their original samples, years and caveats; they are evidence about those settings, not a recommendation of any policy."
+  ],
   "prerequisites": [
     "econometrics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "State the fundamental problem of causal inference in potential-outcomes notation and distinguish the ATE, ATT, ATU and LATE.",
+    "Decompose a naive treated–control comparison into a causal effect plus selection bias, and explain when random assignment eliminates the bias.",
+    "Analyse a randomised experiment: estimate the intention-to-treat effect, compute power, and diagnose non-compliance, attrition and spillovers.",
+    "Estimate treatment effects under selection on observables by regression, matching and inverse-probability weighting, and state the overlap and unconfoundedness conditions each requires.",
+    "Apply the LATE theorem to a binary instrument, interpret the Wald and 2SLS estimators as effects on compliers, and diagnose weak instruments.",
+    "Construct a two-period difference-in-differences estimate, state the parallel-trends assumption, read an event-study plot, and explain why staggered two-way fixed effects can have negative weights.",
+    "Estimate a sharp or fuzzy regression-discontinuity effect with a local linear specification, choose a bandwidth, and test for manipulation of the running variable.",
+    "Build a synthetic-control counterfactual from a donor pool, report the weights, and conduct placebo inference in space and time.",
+    "Evaluate the external validity of an estimate: heterogeneous effects, site selection, transportability, and the use of pre-registration and replication in programme evaluation."
+  ],
   "chapters": [
     {
       "slug": "potential-outcomes",
@@ -81,8 +96,100 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1923,
+      "title": "Neyman's potential outcomes",
+      "detail": "Jerzy Neyman's thesis on agricultural experiments defined the yield of a plot under each variety as a potential outcome and the average treatment effect as the mean difference of those unobserved pairs. The language of $Y_i(1)$ and $Y_i(0)$ used throughout this course is his.",
+      "people": ["Jerzy Neyman"]
+    },
+    {
+      "year": 1960,
+      "title": "Regression discontinuity",
+      "detail": "Donald Thistlethwaite and Donald Campbell proposed comparing students just above and just below a scholarship cutoff, arguing that near the cutoff assignment is as good as random. The design was revived in economics in the late 1990s and is now a workhorse of programme evaluation.",
+      "people": ["Donald L. Thistlethwaite", "Donald T. Campbell"]
+    },
+    {
+      "year": 1974,
+      "title": "Rubin's causal model",
+      "detail": "Donald Rubin restated Neyman's potential outcomes for observational studies, making explicit the role of the assignment mechanism. Together with Paul Holland's 1986 essay on the 'fundamental problem of causal inference', this became the standard language of applied econometrics.",
+      "people": ["Donald B. Rubin"]
+    },
+    {
+      "year": 1986,
+      "title": "LaLonde's critique of observational estimators",
+      "detail": "Robert LaLonde compared non-experimental estimators of a job-training programme with the estimate from a randomised evaluation of the same programme and found large disagreements. The paper is a founding document of the credibility revolution: a design is judged by whether it recovers a known experimental benchmark.",
+      "people": ["Robert J. LaLonde"]
+    },
+    {
+      "year": 1991,
+      "title": "Quarter of birth as an instrument",
+      "detail": "Joshua Angrist and Alan Krueger used quarter of birth, which shifts school-leaving through compulsory-attendance laws, as an instrument for years of schooling. Their IV returns were close to OLS; Bound, Jaeger and Baker (1995) later showed that the many weak quarter-of-birth interactions can reproduce that finding even when the instrument is replaced by noise.",
+      "people": ["Joshua D. Angrist", "Alan B. Krueger"]
+    },
+    {
+      "year": 1994,
+      "title": "LATE and the New Jersey minimum wage",
+      "detail": "Guido Imbens and Joshua Angrist proved that a binary instrument identifies the average effect for compliers — the local average treatment effect — not the ATE. In the same year David Card and Alan Krueger's New Jersey–Pennsylvania fast-food study found that a minimum-wage rise did not reduce employment, launching both a methods debate about difference-in-differences and an empirical debate that is still open.",
+      "people": ["Guido W. Imbens", "Joshua D. Angrist", "David Card", "Alan B. Krueger"]
+    },
+    {
+      "year": 2010,
+      "title": "Synthetic control for California's tobacco programme",
+      "detail": "Alberto Abadie, Alexis Diamond and Jens Hainmueller estimated that by 2000 Proposition 99 had reduced California cigarette sales by about 26 packs per capita relative to a weighted combination of other states. Combined with Abadie and Gardeazabal's 2003 Basque study, the paper established synthetic control as a standard tool for comparative case studies.",
+      "people": ["Alberto Abadie", "Alexis Diamond", "Jens Hainmueller"]
+    },
+    {
+      "year": 2021,
+      "title": "Nobel Prize for causal designs",
+      "detail": "The Sveriges Riksbank Prize in Economic Sciences was awarded to David Card, Joshua Angrist and Guido Imbens 'for their methodological contributions to the analysis of causal relationships'. The citation highlighted natural experiments, the LATE theorem, and the New Jersey minimum-wage study. A parallel 2019 prize had gone to Abhijit Banerjee, Esther Duflo and Michael Kremer for experimental development economics.",
+      "people": ["David Card", "Joshua D. Angrist", "Guido W. Imbens"]
+    }
+  ],
+  "references": [
+    {
+      "title": "Mostly Harmless Econometrics: An Empiricist's Companion",
+      "authors": "Joshua D. Angrist and Jörn-Steffen Pischke",
+      "year": 2009,
+      "note": "The core undergraduate-to-graduate text for this course: potential outcomes, IV and LATE, differences-in-differences, regression discontinuity, and the emphasis on research design over specification searches."
+    },
+    {
+      "title": "Mastering 'Metrics: The Path from Cause to Effect",
+      "authors": "Joshua D. Angrist and Jörn-Steffen Pischke",
+      "year": 2014,
+      "note": "A shorter, example-driven introduction covering the same five designs; useful as a first pass before Mostly Harmless."
+    },
+    {
+      "title": "Causal Inference for Statistics, Social, and Biomedical Sciences: An Introduction",
+      "authors": "Guido W. Imbens and Donald B. Rubin",
+      "year": 2015,
+      "note": "The definitive treatment of the potential-outcomes framework, randomised experiments, matching, propensity scores and instrumental variables, with careful finite-sample inference."
+    },
+    {
+      "title": "Causal Inference: The Mixtape",
+      "authors": "Scott Cunningham",
+      "year": 2021,
+      "note": "A readable tour of modern applied designs, including synthetic control and the recent staggered-adoption literature, with worked code."
+    },
+    {
+      "title": "The Effect: An Introduction to Research Design and Causality",
+      "authors": "Nick Huntington-Klein",
+      "year": 2022,
+      "note": "An undergraduate-friendly development of identification, DAGs and the standard designs, with unusually careful discussion of what each estimate is an estimate of."
+    },
+    {
+      "title": "Causal Inference: What If",
+      "authors": "Miguel A. Hernán and James M. Robins",
+      "year": 2020,
+      "note": "The epidemiological counterpart: g-methods, inverse-probability weighting and the distinction between association, intervention and counterfactual contrasts. Free online; useful for seeing the same ideas in a different notation."
+    },
+    {
+      "title": "Econometric Analysis of Cross Section and Panel Data",
+      "authors": "Jeffrey M. Wooldridge",
+      "year": 2010,
+      "note": "Second edition. The reference for the panel, IV and nonlinear estimators that the designs in this course sit on top of; more technical than Angrist and Pischke, less design-focused."
+    }
+  ],
   "next": [
     "labour-economics",
     "development-economics"

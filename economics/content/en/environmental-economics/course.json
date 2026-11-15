@@ -7,11 +7,26 @@
   "order": 210,
   "tagline": "Pollution and policy instruments, valuing the environment, cost–benefit analysis and discounting, non-renewable and renewable resources, climate economics, international agreements and green growth",
   "summary": "The environment provides resources and absorbs waste, but markets rarely price these services. This course applies economic tools to environmental problems: the choice between standards, taxes and tradable permits; the valuation of environmental goods; cost–benefit analysis and discounting over long horizons; the management of non-renewable and renewable resources such as minerals, fisheries and forests; and the economics of climate change, international environmental agreements and the energy transition.",
-  "overview": [],
+  "overview": [
+    "The atmosphere, rivers, soils, forests and mineral deposits are part of the economy: they supply energy and materials, they receive waste, and they support life. Because many of these services are unpriced, a competitive market can be efficient in the textbook sense of [[microeconomics/welfare-theorems]] and still produce too much pollution, too little conservation, and too rapid a draw-down of a common fishery. Environmental economics is the application of microeconomics, welfare theory and dynamic optimisation to that class of problems. It asks how large the gap between private and social cost is, how it can be measured, and which instruments — standards, taxes, permits, liability or property rights — close it at least cost.",
+    "The course has four movements. The first treats pollution as an externality, develops the materials-balance view of the economy, and sets out weak and strong notions of sustainability together with the green-accounting identities that try to measure them. The second turns to policy: the equimarginal principle, Pigouvian taxes, tradable permits, and Weitzman's comparison of prices and quantities under uncertainty; then the methods that put a money value on environmental goods and the cost–benefit apparatus, including the dispute over the social discount rate, in which they are used. The third studies natural resources as stocks: Hotelling's rule for non-renewables, and the Gordon–Schaefer and Faustmann models of fisheries and forests. The fourth is global and dynamic — integrated assessment of climate change, the social cost of carbon as a *model output* rather than a recommendation, international environmental agreements, carbon leakage, directed technical change and the argument over green growth.",
+    "Two difficulties run through the subject. One is empirical: environmental goods are often non-marketed, damages are delayed and uncertain, and the relevant elasticities are estimated rather than observed at a posted price. The other is ethical as well as positive: the social discount rate, the rights of future generations, and whether natural capital is substitutable are not settled by the first-order conditions of a representative-agent model. The course states the models' assumptions, reports the evidence with sources and dates, and presents competing views — Stern against Nordhaus on discounting, weak against strong sustainability, green growth against degrowth — without collapsing them into a single policy conclusion. Illustrative numbers are for education only; they are not forecasts or advice.",
+    "The prerequisite is intermediate microeconomics, especially welfare theorems and externalities. Dynamic optimisation and integration, taught in [[mathematical-economics]], are used from the resource chapters onward. Work every numerical example; the same algebra reappears as a tax, a permit price, a Hotelling rent and a social cost of carbon."
+  ],
   "prerequisites": [
     "microeconomics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Derive the condition that efficiency requires equality of marginal social cost and marginal social benefit, and compute the deadweight loss of an unpriced production or consumption externality.",
+    "Compare emission standards, Pigouvian taxes and tradable permits on cost-effectiveness, and apply Weitzman's prices-versus-quantities criterion under uncertainty about abatement costs.",
+    "Distinguish use, option and non-use values and outline how travel-cost, hedonic and stated-preference methods estimate them, including their main identification problems.",
+    "Construct the net present value of an environmental project, state the Ramsey formula for the social discount rate, and explain why Stern and Nordhaus reach different rates.",
+    "Derive Hotelling's rule for a non-renewable resource, characterise the extraction path with constant costs and with a backstop, and interpret the evidence on long-run resource prices.",
+    "Solve the Gordon–Schaefer fishery for open-access, maximum-sustainable-yield and maximum-economic-yield stocks, and obtain the Faustmann rotation for a forest.",
+    "Explain what an integrated assessment model is, treat the social cost of carbon as a model output that depends on damages, discounting and climate sensitivity, and compare carbon-pricing and quantity-based mitigation paths using IPCC and IEA figures.",
+    "Analyse free riding in a transboundary-pollution game, the internal and external stability of an international environmental agreement, and the channels of carbon leakage.",
+    "Set out the directed-technical-change argument for green innovation policy and evaluate the competing claims of relative decoupling, green growth and degrowth against the evidence."
+  ],
   "chapters": [
     {
       "slug": "environment-and-economy",
@@ -90,7 +105,99 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1920,
+      "title": "Pigou's Economics of Welfare",
+      "detail": "Arthur Cecil Pigou's The Economics of Welfare set out the divergence between private and social net product and proposed taxes and bounties — now called Pigouvian — to close it. The analysis is the starting point for the economic theory of pollution.",
+      "people": ["A. C. Pigou"]
+    },
+    {
+      "year": 1931,
+      "title": "Hotelling's exhaustible resources",
+      "detail": "Harold Hotelling's paper 'The Economics of Exhaustible Resources' in the Journal of Political Economy derived the rule that, in a competitive equilibrium, the rent on a non-renewable resource rises at the rate of interest. The result organises the modern theory of minerals, oil and the green paradox.",
+      "people": ["Harold Hotelling"]
+    },
+    {
+      "year": 1960,
+      "title": "Coase and the problem of social cost",
+      "detail": "Ronald Coase's 'The Problem of Social Cost' argued that if property rights are well defined and bargaining is costless, private negotiation can internalise an externality regardless of the initial assignment of rights. The paper redirected attention from Pigouvian taxes toward transaction costs and the design of rights.",
+      "people": ["Ronald Coase"]
+    },
+    {
+      "year": 1968,
+      "title": "Commons, property and permits",
+      "detail": "Garrett Hardin's 'The Tragedy of the Commons' in Science popularised open-access overuse; the same year J. H. Dales's Pollution, Property and Prices proposed transferable discharge permits. Together they framed the later contrast between open access, regulation and cap-and-trade.",
+      "people": ["Garrett Hardin", "J. H. Dales"]
+    },
+    {
+      "year": 1974,
+      "title": "Weitzman on prices versus quantities",
+      "detail": "Martin Weitzman's 'Prices vs. Quantities' in the Review of Economic Studies showed that, with uncertainty about costs, a tax and a quota that look equivalent under certainty deliver different expected welfare. The slope of marginal damage relative to marginal cost decides which instrument is less costly when the planner is wrong.",
+      "people": ["Martin L. Weitzman"]
+    },
+    {
+      "year": 1992,
+      "title": "UNFCCC and the DICE model",
+      "detail": "The United Nations Framework Convention on Climate Change was opened for signature at Rio de Janeiro. In the same year William Nordhaus published the DICE integrated assessment model, which became the workhorse for computing an optimal carbon price as a function of damages, discounting and climate physics.",
+      "people": ["William Nordhaus"]
+    },
+    {
+      "year": 2006,
+      "title": "The Stern Review",
+      "detail": "The Stern Review on the Economics of Climate Change, commissioned by the UK government, used a low pure rate of time preference and concluded that the present-value benefits of strong mitigation greatly exceeded the costs. The subsequent exchange with Nordhaus made the social discount rate a central, and still unsettled, dispute.",
+      "people": ["Nicholas Stern", "William Nordhaus"]
+    },
+    {
+      "year": 2015,
+      "title": "The Paris Agreement",
+      "detail": "The Paris Agreement, adopted under the UNFCCC, set the aims of holding warming well below 2 °C and pursuing 1.5 °C, through nationally determined contributions rather than a common Kyoto-style cap. It is the legal frame for the carbon-pricing, leakage and green-growth chapters of this course.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "Natural Resource and Environmental Economics",
+      "authors": "Roger Perman, Yue Ma, Michael Common, David Maddison and James McGilvray",
+      "year": 2011,
+      "note": "Fourth edition (Pearson). The standard intermediate text: welfare foundations, instruments, valuation, resources and a careful treatment of sustainability and discounting."
+    },
+    {
+      "title": "Environmental Economics",
+      "authors": "Charles D. Kolstad",
+      "year": 2010,
+      "note": "Second edition (Oxford University Press). Compact and theoretical; especially good on information, regulation and the choice of instruments."
+    },
+    {
+      "title": "A Course in Environmental Economics: Theory, Policy, and Practice",
+      "authors": "Daniel J. Phaneuf and Till Requate",
+      "year": 2017,
+      "note": "Cambridge University Press. Graduate-leaning coverage of valuation, dynamics and policy design; useful as a next step after this course."
+    },
+    {
+      "title": "Environmental and Natural Resource Economics",
+      "authors": "Tom Tietenberg and Lynne Lewis",
+      "year": 2018,
+      "note": "Eleventh edition (Routledge). Broad undergraduate survey with policy applications, from local air quality to climate and fisheries."
+    },
+    {
+      "title": "The Climate Casino",
+      "authors": "William Nordhaus",
+      "year": 2013,
+      "note": "Yale University Press. A non-technical account of integrated assessment, carbon prices and the DICE framework by its principal author."
+    },
+    {
+      "title": "The Economics of Climate Change: The Stern Review",
+      "authors": "Nicholas Stern",
+      "year": 2007,
+      "note": "Cambridge University Press. The Review that put a low discount rate and a high present-value benefit of mitigation at the centre of the policy debate; read against Nordhaus."
+    },
+    {
+      "title": "Markets and the Environment",
+      "authors": "Nathaniel O. Keohane and Sheila M. Olmstead",
+      "year": 2016,
+      "note": "Second edition (Island Press). A short, clear introduction to externalities, cost-effectiveness and resource economics, with North American policy examples."
+    }
+  ],
   "next": []
 }

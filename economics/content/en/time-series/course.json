@@ -7,11 +7,25 @@
   "order": 240,
   "tagline": "Stationarity and autocorrelation, ARMA models, forecasting, unit roots, cointegration, vector autoregressions, volatility models and tests of asset-pricing models",
   "summary": "Economic and financial data arrive as sequences in time, with trends, cycles, persistence and changing volatility. This course develops the models used to describe and forecast them — stationary ARMA processes, forecasting and its evaluation, unit roots and cointegration, vector autoregressions and impulse responses — and the econometrics of financial returns, from volatility clustering and GARCH models to tests of asset-pricing models.",
-  "overview": [],
+  "overview": [
+    "Most of the data that economists and financial econometricians actually use are sequences in time: quarterly real GDP, monthly consumer prices, daily exchange rates, minute-by-minute returns. Adjacent observations are almost never independent. Output growth is persistent; inflation inherits last month's inflation; a large move in an equity index is typically followed by a spell of further large moves. Treating such series as a random sample from a cross-section, as in [[econometrics]], produces standard errors that are too small, forecasts that ignore persistence, and regressions of one trending series on another that look spectacular and mean nothing. Time-series econometrics is the set of models, identification arguments and tests that take the dependence seriously.",
+    "The course has two halves. The first develops the classical toolkit for a single series: weak stationarity and the autocovariance function; autoregressive and moving-average models and the Box–Jenkins cycle of identification, estimation and diagnostic checking; optimal forecasting and the evaluation of forecasts; and the distinction between deterministic trends and unit-root (stochastic) trends, which leads to cointegration when several series share a common stochastic trend. The second half is multivariate and financial: vector autoregressions, Granger causality, impulse responses and the identification of structural shocks; volatility clustering and GARCH models; and the time-series and cross-sectional tests of asset-pricing models, including the generalised method of moments. Probability and statistical inference are used throughout and are developed fully in the Maths Atlas; linear regression and instrumental variables are assumed from [[econometrics]].",
+    "Two features make the subject hard, and both are worth naming at the outset. First, dependence is a modelling choice as well as a fact about the world: the same path can be described as a stationary process around a trend or as a random walk, and the two descriptions have different implications for forecasting, for inference, and for whether a regression is spurious. Second, financial applications invite a confusion between econometrics and advice. A test of the capital asset pricing model is a statement about a sample of historical returns under stated assumptions; it is not a recommendation to hold, buy or sell anything. Illustrative series in this course are simulated from known processes with fixed random seeds, or are historical data with a source and a date. None of them is a forecast of a market, and none of the worked examples is investment or financial advice.",
+    "The way through is to keep the probability model in view. Every estimator, test and forecast in these chapters is a functional of a stochastic process whose assumptions — stationarity, a unit root, a cointegrating rank, a GARCH filter, a set of moment conditions — are stated and, where possible, tested. Work the numerical examples with the same seed so that your numbers match the text; then change the seed, the sample size and the parameters and watch what breaks."
+  ],
   "prerequisites": [
     "econometrics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Define weak stationarity, compute autocovariance and autocorrelation functions, and distinguish white noise from serially correlated processes.",
+    "Derive the stationarity and invertibility conditions for ARMA processes, compute their theoretical ACF and PACF, and estimate the parameters by OLS, Yule–Walker and maximum likelihood.",
+    "Construct minimum-MSE linear forecasts from an ARMA model, form forecast intervals, and compare models by AIC, BIC and out-of-sample criteria.",
+    "Distinguish deterministic from stochastic trends, explain spurious regression, and carry out and interpret augmented Dickey–Fuller tests.",
+    "State the definition of cointegration, estimate a cointegrating vector by Engle–Granger and by Johansen's method, and write the corresponding error-correction model.",
+    "Estimate a VAR, test Granger causality, compute impulse responses and forecast-error variance decompositions, and discuss the identification of structural shocks.",
+    "Describe volatility clustering, specify and estimate ARCH and GARCH models, and compute implied conditional variances and persistence.",
+    "Test asset-pricing restrictions in the time series and the cross-section, including CAPM and multifactor regressions and Hansen's GMM, and interpret the results as econometric statements rather than as trading advice."
+  ],
   "chapters": [
     {
       "slug": "stationarity",
@@ -82,7 +96,120 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
-  "next": []
+  "history": [
+    {
+      "year": 1926,
+      "title": "Nonsense correlations",
+      "detail": "G. Udny Yule showed that two independent integrated series can display a large sample correlation, a warning that ordinary regression on trending data is not to be trusted.",
+      "people": ["G. Udny Yule"]
+    },
+    {
+      "year": 1938,
+      "title": "Wold's decomposition",
+      "detail": "Herman Wold proved that every weakly stationary purely nondeterministic process has a unique infinite moving-average representation in its innovations, the foundation of linear time-series modelling.",
+      "people": ["Herman Wold"]
+    },
+    {
+      "year": 1970,
+      "title": "Box–Jenkins ARMA modelling",
+      "detail": "George Box and Gwilym Jenkins published Time Series Analysis: Forecasting and Control, organising identification, estimation and diagnostic checking of ARMA models into a practical cycle.",
+      "people": ["George E. P. Box", "Gwilym M. Jenkins"]
+    },
+    {
+      "year": 1979,
+      "title": "Dickey–Fuller unit-root tests",
+      "detail": "David Dickey and Wayne Fuller derived the non-standard limiting distribution of the autoregressive coefficient under a unit root, making tests of stochastic trends operational.",
+      "people": ["David A. Dickey", "Wayne A. Fuller"]
+    },
+    {
+      "year": 1980,
+      "title": "Vector autoregressions",
+      "detail": "Christopher Sims argued that large-scale simultaneous-equation models imposed incredible restrictions, and proposed treating a set of macro series as a vector autoregression identified by timing and shocks.",
+      "people": ["Christopher A. Sims"]
+    },
+    {
+      "year": 1982,
+      "title": "ARCH and GMM",
+      "detail": "Robert Engle introduced autoregressive conditional heteroskedasticity to model clustering of volatility, and Lars Peter Hansen set out the generalised method of moments, which became the standard way to estimate and test asset-pricing restrictions.",
+      "people": ["Robert F. Engle", "Lars Peter Hansen"]
+    },
+    {
+      "year": 1986,
+      "title": "GARCH",
+      "detail": "Tim Bollerslev generalised ARCH to GARCH, a parsimonious model of persistent volatility that remains the workhorse of empirical finance.",
+      "people": ["Tim Bollerslev"]
+    },
+    {
+      "year": 1987,
+      "title": "Cointegration and error correction",
+      "detail": "Robert Engle and Clive Granger defined cointegration, showed that cointegrated series have an error-correction representation, and gave a residual-based test, linking long-run equilibrium to short-run dynamics.",
+      "people": ["Robert F. Engle", "Clive W. J. Granger"]
+    },
+    {
+      "year": 1988,
+      "title": "Johansen's VAR approach to cointegration",
+      "detail": "Søren Johansen developed the likelihood analysis of cointegration in a vector autoregression, providing rank tests and maximum-likelihood estimates of cointegrating vectors.",
+      "people": ["Søren Johansen"]
+    },
+    {
+      "year": 1993,
+      "title": "Common risk factors in returns",
+      "detail": "Eugene Fama and Kenneth French documented size and book-to-market factors in average stock returns, shifting empirical asset pricing from the CAPM towards multifactor time-series and cross-sectional tests.",
+      "people": ["Eugene F. Fama", "Kenneth R. French"]
+    }
+  ],
+  "references": [
+    {
+      "title": "Time Series Analysis",
+      "authors": "James D. Hamilton",
+      "year": 1994,
+      "note": "The standard graduate reference: stationarity, ARMA, forecasting, unit roots, VARs, Kalman filtering and GMM, with complete derivations."
+    },
+    {
+      "title": "Analysis of Financial Time Series",
+      "authors": "Ruey S. Tsay",
+      "year": 2010,
+      "note": "Third edition. ARMA and GARCH for returns, realised volatility, multivariate volatility and a careful treatment of high-frequency data; used as a finance-side companion."
+    },
+    {
+      "title": "Applied Econometric Time Series",
+      "authors": "Walter Enders",
+      "year": 2014,
+      "note": "Fourth edition. Accessible undergraduate-to-masters treatment of difference equations, ARMA, unit roots, cointegration and VARs, with worked numerical examples."
+    },
+    {
+      "title": "New Introduction to Multiple Time Series Analysis",
+      "authors": "Helmut Lütkepohl",
+      "year": 2005,
+      "note": "The reference for VARs, VECM, impulse responses, identification and cointegration in systems."
+    },
+    {
+      "title": "Econometrics",
+      "authors": "Fumio Hayashi",
+      "year": 2000,
+      "note": "Unified GMM treatment of OLS, IV, panel data and time series; excellent on Hansen's J-test and on the Hansen–Singleton consumption-CAPM application."
+    },
+    {
+      "title": "Asset Pricing",
+      "authors": "John H. Cochrane",
+      "year": 2005,
+      "note": "Revised edition. Stochastic discount factor, GMM tests of factor models, return predictability and the cross-section of returns; the natural bridge from this course to [[asset-pricing]]."
+    },
+    {
+      "title": "Time Series Analysis: Forecasting and Control",
+      "authors": "George E. P. Box, Gwilym M. Jenkins, Gregory C. Reinsel and Greta M. Ljung",
+      "year": 2015,
+      "note": "Fifth edition of the 1970 classic. Identification, estimation and checking of ARIMA models, and the original source of the Box–Jenkins cycle."
+    },
+    {
+      "title": "Forecasting: Principles and Practice",
+      "authors": "Rob J. Hyndman and George Athanasopoulos",
+      "year": 2021,
+      "note": "Third edition (OTexts). Modern forecast evaluation, cross-validation for time series, exponential smoothing and ARIMA in a practical register; freely available."
+    }
+  ],
+  "next": [
+    "asset-pricing",
+    "causal-inference"
+  ]
 }

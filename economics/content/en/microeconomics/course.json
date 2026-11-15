@@ -7,12 +7,27 @@
   "order": 40,
   "tagline": "Preferences and utility, consumer demand, income and substitution effects, choice under uncertainty, production and cost, competitive and general equilibrium, and welfare",
   "summary": "Microeconomics studies how households and firms make choices and how those choices interact in markets. This course develops the theory of the consumer — preferences, utility, demand, the measurement of welfare and choice under uncertainty — and of the firm — technology, cost and supply — and then combines them in competitive and general equilibrium, asking when markets allocate resources efficiently and when they fail.",
-  "overview": [],
+  "overview": [
+    "A household choosing a weekly grocery basket, a worker deciding how many hours to offer, a firm choosing a mix of machines and labour, two traders haggling in an Edgeworth box: each of these is a constrained optimisation problem, and the same mathematics — preferences or technology, a budget or a cost, a first-order condition, a demand or a supply — organises all of them. Intermediate microeconomics is the course that makes that mathematics explicit. It takes the supply-and-demand diagrams of [[principles/supply-and-demand]] and asks where the curves come from, what a movement along them conceals (income and substitution effects), and when the intersection of many such curves is not only an equilibrium but an efficient allocation.",
+    "The course has three movements. First the consumer: a preference relation, a utility function that represents it, Marshallian demand $x(\\mathbf{p}, m)$ from utility maximisation and Hicksian demand $h(\\mathbf{p}, u)$ from expenditure minimisation, Roy's identity and the Slutsky equation, welfare measured by compensating and equivalent variation, and then the same apparatus applied to labour supply, saving, and choice among lotteries. Second the firm: a production function, cost minimisation, the short-run and long-run cost curves, and profit maximisation in a competitive industry. Third the two sides together: Walrasian equilibrium in an exchange economy, the two fundamental theorems of welfare economics, and the ways externalities and public goods break the first theorem. The notation is that of Varian and of Mas-Colell, Whinston and Green: goods $\\mathbf{x}$, prices $\\mathbf{p}$, income $m$, indirect utility $v(\\mathbf{p}, m)$, expenditure $e(\\mathbf{p}, u)$.",
+    "What makes the subject hard is not any one formula but the discipline of keeping primal and dual, Marshallian and Hicksian, positive and normative, in their right places. A price change shifts both the constraint and the chosen point; the Slutsky equation says how to split the move. An equilibrium allocation is what people *do* at given prices; Pareto efficiency is a statement about what they *could* do. The way through is to compute. Every chapter works examples with numbers — Lagrangians, elasticities, compensating variations, cost functions, Edgeworth equilibria — so that the identities become things you can check rather than slogans. The mathematical tools (partial derivatives, constrained optimisation, the envelope theorem) are those of [[mathematical-economics/constrained-optimisation]] and [[mathematical-economics/comparative-statics]]; this course is about what they mean for households, firms and markets."
+  ],
   "prerequisites": [
     "principles",
     "mathematical-economics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Represent a preference relation by a utility function, compute the marginal rate of substitution, and classify Cobb–Douglas, quasi-linear, perfect-substitute and perfect-complement preferences.",
+    "Solve the consumer's utility-maximisation problem with a Lagrangian, derive Marshallian demand $x(\\mathbf{p}, m)$ and the indirect utility function $v(\\mathbf{p}, m)$, and apply Roy's identity.",
+    "Solve the expenditure-minimisation problem, derive Hicksian demand and the expenditure function, and use the Slutsky equation to decompose a price effect into substitution and income effects.",
+    "Compute compensating and equivalent variation and consumer surplus for a price change, and state when the three measures coincide.",
+    "Analyse labour–leisure choice and two-period consumption with an endowment, and determine how wages and interest rates affect labour supply and saving.",
+    "Apply expected-utility theory to lotteries, compute Arrow–Pratt coefficients, certainty equivalents and risk premia, and derive the demand for insurance.",
+    "Derive conditional factor demands and the cost function from a production function, and construct short-run and long-run cost curves.",
+    "Obtain a competitive firm's supply curve from profit maximisation, and solve for short-run and long-run industry equilibrium with free entry.",
+    "Find a Walrasian equilibrium in an Edgeworth box, and state and apply the two fundamental theorems of welfare economics.",
+    "Explain how externalities and public goods cause competitive markets to fail, and compute a Pigouvian tax or the Samuelson condition in a simple example."
+  ],
   "chapters": [
     {
       "slug": "preferences-and-utility",
@@ -92,8 +107,114 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1871,
+      "title": "The marginal revolution",
+      "detail": "William Stanley Jevons's Theory of Political Economy and Carl Menger's Grundsätze der Volkswirtschaftslehre independently based value on marginal utility rather than on labour cost, opening the modern theory of the consumer.",
+      "people": [
+        "William Stanley Jevons",
+        "Carl Menger"
+      ]
+    },
+    {
+      "year": 1874,
+      "title": "Walrasian general equilibrium",
+      "detail": "Léon Walras's Éléments d'économie politique pure wrote down a system of supply and demand for every good at once and asked whether a price vector could clear all markets simultaneously.",
+      "people": [
+        "Léon Walras"
+      ]
+    },
+    {
+      "year": 1890,
+      "title": "Marshall's Principles",
+      "detail": "Alfred Marshall's Principles of Economics gave the partial-equilibrium apparatus of supply and demand, elasticity, consumer surplus and the short run versus the long run that still organises applied microeconomics.",
+      "people": [
+        "Alfred Marshall"
+      ]
+    },
+    {
+      "year": 1915,
+      "title": "Slutsky's equation",
+      "detail": "Eugen Slutsky's paper Sulla teoria del bilancio del consumatore decomposed the effect of a price change into a substitution effect and an income effect — the identity that dual consumer theory is built around.",
+      "people": [
+        "Eugen Slutsky"
+      ]
+    },
+    {
+      "year": 1934,
+      "title": "Hicks and Allen on value",
+      "detail": "John Hicks and R. G. D. Allen's A Reconsideration of the Theory of Value recast demand in terms of indifference curves and the marginal rate of substitution, making ordinal utility the standard language of the consumer.",
+      "people": [
+        "John Hicks",
+        "R. G. D. Allen"
+      ]
+    },
+    {
+      "year": 1944,
+      "title": "Expected utility",
+      "detail": "John von Neumann and Oskar Morgenstern's Theory of Games and Economic Behavior axiomatised choice over lotteries and obtained a utility function unique up to affine transformation, the foundation of the economics of risk.",
+      "people": [
+        "John von Neumann",
+        "Oskar Morgenstern"
+      ]
+    },
+    {
+      "year": 1954,
+      "title": "Existence of competitive equilibrium",
+      "detail": "Kenneth Arrow and Gérard Debreu's Existence of an Equilibrium for a Competitive Economy proved that, under convexity and continuity, a Walrasian equilibrium exists, putting Walras's programme on a theorem.",
+      "people": [
+        "Kenneth Arrow",
+        "Gérard Debreu"
+      ]
+    },
+    {
+      "year": 1959,
+      "title": "Debreu's Theory of Value",
+      "detail": "Gérard Debreu's Theory of Value gave the complete axiomatic treatment of equilibrium and the two welfare theorems in the language of convex analysis, the reference for the modern general-equilibrium chapter.",
+      "people": [
+        "Gérard Debreu"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "title": "Intermediate Microeconomics: A Modern Approach",
+      "authors": "Hal R. Varian",
+      "year": 2014,
+      "note": "Ninth edition. The standard undergraduate treatment; chapters on the consumer, the firm and exchange match this course closely."
+    },
+    {
+      "title": "Microeconomic Analysis",
+      "authors": "Hal R. Varian",
+      "year": 1992,
+      "note": "Third edition. A compact graduate-leaning development of duality, the expenditure function and the properties of demand and cost."
+    },
+    {
+      "title": "Microeconomic Theory",
+      "authors": "Andreu Mas-Colell, Michael D. Whinston and Jerry R. Green",
+      "year": 1995,
+      "note": "The graduate reference. Use it for the precise statements of representation theorems, the welfare theorems and existence."
+    },
+    {
+      "title": "Advanced Microeconomic Theory",
+      "authors": "Geoffrey A. Jehle and Philip J. Reny",
+      "year": 2011,
+      "note": "Third edition. Clear derivations of Roy's identity, Slutsky, expected utility and general equilibrium at a level just above this course."
+    },
+    {
+      "title": "Microeconomics",
+      "authors": "Hugh Gravelle and Ray Rees",
+      "year": 2004,
+      "note": "Third edition. Especially good on labour supply, intertemporal choice and uncertainty with fully worked algebra."
+    },
+    {
+      "title": "Microeconomic Theory: Basic Principles and Extensions",
+      "authors": "Walter Nicholson and Christopher Snyder",
+      "year": 2016,
+      "note": "Twelfth edition. Many computed examples of Cobb–Douglas, CES and cost functions; a useful source of extra exercises."
+    }
+  ],
   "next": [
     "industrial-organisation",
     "public-economics",

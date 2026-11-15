@@ -7,11 +7,26 @@
   "order": 160,
   "tagline": "The balance of payments, exchange rates and interest parity, purchasing power parity, the current account, Mundell–Fleming, exchange-rate regimes, monetary unions, crises and the international monetary system",
   "summary": "How do exchange rates move, why do countries run current-account deficits, and what happens when capital flows reverse? This course covers the national accounts of an open economy, exchange rates and interest parity, purchasing power parity, the intertemporal approach to the current account, the Mundell–Fleming model, the choice of exchange-rate regime and monetary unions, currency, banking and debt crises, and the evolution of the international monetary system.",
-  "overview": [],
+  "overview": [
+    "An economy that trades goods, services and assets with the rest of the world has an extra set of prices — **exchange rates** — and an extra set of accounts — the **balance of payments**. A current-account deficit means the country is borrowing from abroad, or running down claims it already holds; a surplus means it is lending. Those stocks of claims, the **net international investment position**, move with the current account and with valuation. Exchange rates, in turn, are prices in an asset market: they jump when interest rates, expected future rates or risk premia change, and they drift in the long run with relative prices. The subject is called international finance, or open-economy macroeconomics. It is the same economy as in [[macroeconomics]], with the closed-economy assumption dropped.",
+    "The course has four movements. The first is accounting and long-run prices: the open-economy identities, the foreign-exchange market and interest parity, purchasing power parity and the Balassa–Samuelson effect, and the intertemporal approach to the current account. The second is short-run policy: the Mundell–Fleming model of output and the exchange rate, Dornbusch overshooting, and the **trilemma** that a country cannot simultaneously peg the exchange rate, set its own interest rate and allow free capital mobility. The third is institutional choice: exchange-rate regimes, capital controls, and monetary unions, with the euro as the leading case. The fourth is breakdown and history: first-, second- and third-generation crisis models, sudden stops and sovereign default, and the international monetary system from the gold standard through Bretton Woods to floating rates, reserve currencies and the IMF.",
+    "Two difficulties are worth naming at the outset. The first is **convention**. The exchange rate can be quoted as home currency per foreign or the other way round; a rise is a depreciation in one convention and an appreciation in the other. The financial account in the IMF's *Balance of Payments and International Investment Position Manual*, sixth edition (BPM6, 2009), is signed the opposite way from many textbooks. Every formula in this course states its convention, and every worked example repeats it. The second is **identification**. A current-account deficit can be optimal consumption-smoothing, a fiscal imbalance, a surge of investment, or the prelude to a sudden stop. An exchange-rate collapse can be the arithmetic of inconsistent policies, or a self-fulfilling run, or a balance-sheet spiral. The models distinguish those stories; the data do not always. Competing accounts are presented as such, with the evidence that has been offered for each.",
+    "The numbers in this course are for education only — they are not investment or financial advice, and they are not forecasts. Illustrative exchange rates, interest rates and country labels (Palmia, the rest of the world) are invented so that the arithmetic is transparent. When a real series is used — a current-account ratio from the IMF, a turnover figure from the BIS, a reserve share — it carries a source and a date, and it illustrates a concept rather than recommending a position. Work the identities with a pencil before reading the solutions, move the sliders until the diagram and the algebra agree, and treat every policy conclusion as a statement of a model's trade-offs, not as a recommendation."
+  ],
   "prerequisites": [
     "macroeconomics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Construct the open-economy national accounts and the balance of payments, and prove that the current account equals saving minus investment.",
+    "Compute covered and uncovered interest-parity relations, distinguish depreciation from devaluation, and apply the asset approach to a change in interest rates or expected future rates.",
+    "State absolute and relative purchasing power parity, measure a real exchange rate, and explain the Balassa–Samuelson effect and the PPP puzzle.",
+    "Solve a two-period small-open-economy model of the current account, and evaluate the sustainability of a path for net foreign assets.",
+    "Analyse fiscal and monetary policy in the Mundell–Fleming model under fixed and floating rates, and derive exchange-rate overshooting from sticky prices and uncovered interest parity.",
+    "State the impossible trinity, classify exchange-rate regimes, and compare capital controls with adjustment of the interest rate or the peg.",
+    "Apply the optimum-currency-area criteria to a monetary union, and evaluate the euro-area crisis using competing accounts of fundamentals and of sudden stops.",
+    "Distinguish first-, second- and third-generation crisis models, and compute the timing of a speculative attack in a first-generation setting.",
+    "Outline the gold standard, Bretton Woods and the post-1973 float, and explain the roles of a reserve currency and of the IMF."
+  ],
   "chapters": [
     {
       "slug": "balance-of-payments",
@@ -89,7 +104,105 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1752,
+      "title": "Hume's price–specie flow",
+      "detail": "David Hume's essay 'Of the Balance of Trade', in Political Discourses, argues that a trade surplus brings in specie, raises domestic prices and thereby extinguishes itself — the classical self-equilibrating mechanism of a metallic standard.",
+      "people": ["David Hume"]
+    },
+    {
+      "year": 1918,
+      "title": "Cassel and purchasing power parity",
+      "detail": "Gustav Cassel's paper 'Abnormal Deviations in International Exchanges' (Economic Journal) states purchasing power parity as a theory of exchange rates after wartime inflation; his 1922 book Money and Foreign Exchange After 1914 spread the doctrine.",
+      "people": ["Gustav Cassel"]
+    },
+    {
+      "year": 1944,
+      "title": "Bretton Woods",
+      "detail": "The United Nations Monetary and Financial Conference at Bretton Woods, New Hampshire, creates the IMF and the World Bank and designs a system of adjustable dollar pegs, with the dollar itself convertible into gold for official holders.",
+      "people": ["John Maynard Keynes", "Harry Dexter White"]
+    },
+    {
+      "year": 1961,
+      "title": "Mundell on optimum currency areas",
+      "detail": "Robert Mundell's 'A Theory of Optimum Currency Areas' (American Economic Review) asks when two regions should share a currency, and answers in terms of factor mobility as a substitute for exchange-rate adjustment.",
+      "people": ["Robert Mundell"]
+    },
+    {
+      "year": 1963,
+      "title": "The Mundell–Fleming model",
+      "detail": "Mundell's 'Capital Mobility and Stabilization Policy under Fixed and Flexible Exchange Rates' (Canadian Journal of Economics and Political Science), with J. Marcus Fleming's 1962 IMF Staff Papers article, shows that the effectiveness of monetary and fiscal policy in an open economy depends on the exchange-rate regime and on capital mobility.",
+      "people": ["Robert Mundell", "J. Marcus Fleming"]
+    },
+    {
+      "year": 1971,
+      "title": "The Nixon shock",
+      "detail": "On 15 August 1971 the United States suspends the convertibility of the dollar into gold for official counterparties, ending the central commitment of Bretton Woods; generalised floating of major currencies follows in 1973.",
+      "people": ["Richard Nixon"]
+    },
+    {
+      "year": 1976,
+      "title": "Dornbusch overshooting",
+      "detail": "Rudiger Dornbusch's 'Expectations and Exchange Rate Dynamics' (Journal of Political Economy) shows that with sticky prices and uncovered interest parity, the exchange rate must jump beyond its long-run level so that expected appreciation (or depreciation) clears the money market.",
+      "people": ["Rudiger Dornbusch"]
+    },
+    {
+      "year": 1979,
+      "title": "Krugman's first-generation crisis",
+      "detail": "Paul Krugman's 'A Model of Balance-of-Payments Crises' (Journal of Money, Credit and Banking) times a speculative attack on a peg as the moment when shadow floating would match the peg, while domestic credit still grows.",
+      "people": ["Paul Krugman"]
+    },
+    {
+      "year": 1999,
+      "title": "The euro",
+      "detail": "Eleven EU members adopt the euro as a unit of account on 1 January 1999; euro notes and coins follow on 1 January 2002. The euro-area sovereign-debt crisis of 2010–2012 then tests the incomplete architecture of the union.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "International Economics: Theory and Policy",
+      "authors": "Paul R. Krugman, Maurice Obstfeld and Marc J. Melitz",
+      "year": 2022,
+      "note": "The standard undergraduate text; the international-finance half covers the exchange rate, the current account, Mundell–Fleming, crises and the international monetary system. 12th edition."
+    },
+    {
+      "title": "International Macroeconomics",
+      "authors": "Robert C. Feenstra and Alan M. Taylor",
+      "year": 2021,
+      "note": "A clear undergraduate treatment of interest parity, PPP, the monetary approach, the trilemma and crises, with careful diagrams. 5th edition."
+    },
+    {
+      "title": "Foundations of International Macroeconomics",
+      "authors": "Maurice Obstfeld and Kenneth Rogoff",
+      "year": 1996,
+      "note": "The graduate reference for the intertemporal current account, the real exchange rate, sovereign debt and the welfare economics of the open economy."
+    },
+    {
+      "title": "International Macroeconomics: A Modern Approach",
+      "authors": "Stephanie Schmitt-Grohé, Martín Uribe and Michael Woodford",
+      "year": 2022,
+      "note": "A modern first-graduate / advanced-undergraduate treatment built on intertemporal optimisation, with complete derivations of the current account, the real exchange rate and open-economy NK models."
+    },
+    {
+      "title": "Globalizing Capital: A History of the International Monetary System",
+      "authors": "Barry Eichengreen",
+      "year": 2019,
+      "note": "The best single history of the gold standard, the interwar years, Bretton Woods and the float, written as economics rather than as chronicle. 3rd edition."
+    },
+    {
+      "title": "This Time Is Different: Eight Centuries of Financial Folly",
+      "authors": "Carmen M. Reinhart and Kenneth S. Rogoff",
+      "year": 2009,
+      "note": "A long-run empirical anatomy of sovereign default, banking crises and currency crashes, used in this course as evidence rather than as a forecasting rule."
+    },
+    {
+      "title": "Exchange Rates and International Finance",
+      "authors": "Laurence S. Copeland",
+      "year": 2014,
+      "note": "A dedicated exchange-rate text covering CIP, UIP, PPP, the monetary and portfolio approaches, and overshooting. 6th edition."
+    }
+  ],
   "next": []
 }

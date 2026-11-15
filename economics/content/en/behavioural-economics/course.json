@@ -7,11 +7,25 @@
   "order": 200,
   "tagline": "Rationality and its limits, judgement under uncertainty, prospect theory, present bias and self-control, social preferences, limited attention, behavioural game theory and behavioural policy",
   "summary": "Real people are not always the rational, self-interested optimisers of standard models. Behavioural economics brings psychology into economics with tractable models and careful evidence: biases in judging probabilities, prospect theory and loss aversion, present bias and self-control, social preferences such as fairness and reciprocity, limited attention, and behavioural game theory. The course also asks what these findings imply for markets and for policy, and where the evidence is still contested.",
-  "overview": [],
+  "overview": [
+    "Standard microeconomics treats a decision-maker as a complete, transitive preference relation maximised on a budget set, or as an expected-utility functional on lotteries, or as an exponentially discounted planner who is consistent over time. Those assumptions are powerful: they deliver demand functions, welfare theorems and a language for policy. They are also false as literal descriptions of how people choose. **Behavioural economics** keeps the modelling style of economics — agents, constraints, equilibrium — and replaces particular psychological assumptions with others that fit experiments, field data and a century of research in judgement and decision-making. The aim is not to catalogue every error. It is to write models that are as simple as the standard ones, that nest them as special cases, and that can be taken to data.",
+    "The course has four movements. First come the foundations: what rationality means in economics, which axioms are doing the work, and which laboratory and field regularities — preference reversals, framing, menu effects — first forced a revision ([[behavioural-economics/rationality-and-anomalies]]). Then come two canonical departures from expected utility and from exponential discounting: **prospect theory**, with its reference point, loss aversion and probability weighting ([[behavioural-economics/prospect-theory]]), and **present bias**, with the $\\beta$–$\\delta$ model, naivety, sophistication and commitment ([[behavioural-economics/present-bias]]). A parallel line of work drops the assumption that people care only about their own material payoffs, or that they notice every price and attribute: social preferences, limited attention and mental accounting. The last two chapters take the models into strategic interaction (level-$k$, cognitive hierarchy, quantal response) and into policy (defaults, nudges, behavioural welfare economics).",
+    "Two disciplines are in play at once, and both have to be kept in view. One is a set of tractable functional forms — a value function, a quasi-hyperbolic discount function, an inequality-aversion utility, a logit best response — together with the propositions that follow from them. The other is an empirical literature whose best results have survived replication and whose weaker ones have not. Loss aversion and default effects are as close to stylised facts as this field possesses; the jam-aisle ‘choice overload’ result and the claim of a single large ‘nudge effect’ are not. The course treats replications, failed replications and live disputes as part of the subject, not as footnotes. It is for education only: illustrative numbers describe model agents, not the reader’s own money, and nothing here is investment, tax or financial advice.",
+    "The right way to study the material is to compute. Write down the standard prediction, write down the behavioural one, and see where they differ by enough to matter. When an experiment is cited, ask what was randomised, what the effect size was, and whether a later study with more power found the same thing. The mathematics is no harder than intermediate microeconomics; the discipline is to keep the psychology, the formal model and the evidence in the same argument."
+  ],
   "prerequisites": [
     "microeconomics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "State the axioms of rational preference and the weak axiom of revealed preference, and test whether a finite choice dataset is consistent with utility maximisation.",
+    "Apply Bayes’ rule to diagnostic and base-rate problems, and identify representativeness, availability, anchoring and miscalibration in judgement data.",
+    "Evaluate lotteries with the Tversky–Kahneman value function and probability-weighting function, and explain how the Allais paradox, loss aversion and the endowment effect arise.",
+    "Solve finite-horizon consumption and effort problems under quasi-hyperbolic ($\\beta$–$\\delta$) discounting, and distinguish naive from sophisticated behaviour and from commitment.",
+    "Compute Fehr–Schmidt utilities and the implied rejection threshold in the ultimatum game, and interpret dictator, public-goods and gift-exchange evidence in that light.",
+    "Derive level-$k$ and cognitive-hierarchy guesses in a $p$-beauty contest, and contrast them with Nash equilibrium and with logit quantal response equilibrium.",
+    "Analyse inattention and mental accounting in a simple price-or-tax salience model, and predict how framing and left-digit cutoffs shift demand.",
+    "Evaluate defaults and other choice-architecture interventions using published effect sizes, including the dispute over publication bias in the nudge literature, and separate positive predictions from welfare and ethical claims."
+  ],
   "chapters": [
     {
       "slug": "rationality-and-anomalies",
@@ -81,7 +95,113 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
-  "next": []
+  "history": [
+    {
+      "year": 1953,
+      "title": "The Allais paradox",
+      "detail": "Maurice Allais published a pair of lottery choices, later called the Allais paradox, in which modal behaviour violates the independence axiom of expected-utility theory. The example became the opening exhibit for alternatives to von Neumann–Morgenstern preferences.",
+      "people": ["Maurice Allais"]
+    },
+    {
+      "year": 1955,
+      "title": "Bounded rationality",
+      "detail": "Herbert Simon’s ‘A Behavioral Model of Rational Choice’ (Quarterly Journal of Economics) argued that agents satisfice rather than optimise when information and computation are scarce. The paper named the research programme that behavioural economics later filled with specific models.",
+      "people": ["Herbert Simon"]
+    },
+    {
+      "year": 1974,
+      "title": "Heuristics and biases",
+      "detail": "Amos Tversky and Daniel Kahneman’s Science paper ‘Judgment under Uncertainty: Heuristics and Biases’ organised representativeness, availability and anchoring as systematic departures from Bayesian judgement, and became the empirical foundation for the next chapter of this course.",
+      "people": ["Amos Tversky", "Daniel Kahneman"]
+    },
+    {
+      "year": 1979,
+      "title": "Prospect theory",
+      "detail": "Kahneman and Tversky’s Econometrica paper ‘Prospect Theory: An Analysis of Decision under Risk’ replaced expected utility with a value function defined on gains and losses and a probability-weighting function. It is the single most cited paper in behavioural economics.",
+      "people": ["Daniel Kahneman", "Amos Tversky"]
+    },
+    {
+      "year": 1992,
+      "title": "Cumulative prospect theory",
+      "detail": "Tversky and Kahneman’s ‘Advances in Prospect Theory’ (Journal of Risk and Uncertainty) recast the 1979 model in rank-dependent form, estimated $\\alpha \\approx 0.88$ and $\\lambda \\approx 2.25$, and is the version used in applications today.",
+      "people": ["Amos Tversky", "Daniel Kahneman"]
+    },
+    {
+      "year": 1997,
+      "title": "Quasi-hyperbolic discounting",
+      "detail": "David Laibson’s ‘Golden Eggs and Hyperbolic Discounting’ (Quarterly Journal of Economics) imported the Phelps–Pollak $\\beta$–$\\delta$ function into personal consumption, showing how present bias creates a demand for commitment. The paper is the workhorse intertemporal model of the field.",
+      "people": ["David Laibson"]
+    },
+    {
+      "year": 1999,
+      "title": "Inequality aversion",
+      "detail": "Ernst Fehr and Klaus M. Schmidt’s ‘A Theory of Fairness, Competition, and Cooperation’ (Quarterly Journal of Economics) gave a tractable utility over own payoff and payoff differences that organises ultimatum rejections, public-goods contributions and competitive markets with a few fair-minded agents.",
+      "people": ["Ernst Fehr", "Klaus M. Schmidt"]
+    },
+    {
+      "year": 2008,
+      "title": "Nudge",
+      "detail": "Richard Thaler and Cass Sunstein’s book Nudge popularised choice architecture and ‘libertarian paternalism’. Default effects had already been measured in retirement plans (Madrian and Shea 2001); the book moved those findings into the centre of policy debate.",
+      "people": ["Richard Thaler", "Cass Sunstein"]
+    },
+    {
+      "year": 2017,
+      "title": "Thaler’s Nobel Prize",
+      "detail": "The Sveriges Riksbank Prize in Economic Sciences was awarded to Richard Thaler for ‘for his contributions to behavioural economics’, following Kahneman’s 2002 prize (shared in spirit with the late Tversky). The citation named limited rationality, social preferences and lack of self-control.",
+      "people": ["Richard Thaler"]
+    }
+  ],
+  "references": [
+    {
+      "title": "A Course in Behavioral Economics",
+      "authors": "Erik Angner",
+      "year": 2021,
+      "note": "The cleanest undergraduate treatment: short chapters, explicit axioms, and exercises that sit at the same level as this atlas. Third edition."
+    },
+    {
+      "title": "An Introduction to Behavioral Economics",
+      "authors": "Nick Wilkinson and Matthias Klaes",
+      "year": 2018,
+      "note": "Broader than Angner, with more institutional and methodological discussion; useful as a second voice on contested findings. Third edition."
+    },
+    {
+      "title": "The Foundations of Behavioral Economic Analysis",
+      "authors": "Sanjit Dhami",
+      "year": 2016,
+      "note": "The encyclopaedic graduate reference. Consult it when a derivation or a paper trail is needed; do not try to read it cover to cover in one sitting."
+    },
+    {
+      "title": "Behavioral Game Theory: Experiments in Strategic Interaction",
+      "authors": "Colin F. Camerer",
+      "year": 2003,
+      "note": "The standard source for level-$k$, cognitive hierarchy, quantal response and learning, with the laboratory regularities that those models were built to fit."
+    },
+    {
+      "title": "Prospect Theory: For Risk and Ambiguity",
+      "authors": "Peter P. Wakker",
+      "year": 2010,
+      "note": "The rigorous book-length treatment of prospect theory, rank-dependent utility and the measurement of weighting functions."
+    },
+    {
+      "title": "Thinking, Fast and Slow",
+      "authors": "Daniel Kahneman",
+      "year": 2011,
+      "note": "A readable synthesis of the heuristics-and-biases programme and of prospect theory by one of its authors. Use it for intuition; check claims against the original papers and later replications."
+    },
+    {
+      "title": "Nudge: The Final Edition",
+      "authors": "Richard H. Thaler and Cass R. Sunstein",
+      "year": 2021,
+      "note": "The policy book that named choice architecture. Read it alongside the empirical dispute over effect sizes (DellaVigna and Linos 2022; Maier et al. 2022) rather than as a manual."
+    },
+    {
+      "title": "Advances in Behavioral Economics",
+      "authors": "Colin F. Camerer, George Loewenstein and Matthew Rabin (eds.)",
+      "year": 2004,
+      "note": "A still-useful collection of the founding papers on fairness, present bias, reference dependence and behavioural game theory, several of which are discussed chapter by chapter below."
+    }
+  ],
+  "next": [
+    "public-economics"
+  ]
 }

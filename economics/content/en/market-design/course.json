@@ -7,12 +7,26 @@
   "order": 230,
   "tagline": "Auction formats, revenue equivalence, optimal auctions, common values and the winner’s curse, multi-unit and spectrum auctions, stable matching, school choice and kidney exchange",
   "summary": "Some markets are designed rather than grown: auctions for radio spectrum and government bonds, clearing houses for junior doctors, school admissions and kidney exchanges. This course develops auction theory — the standard formats, revenue equivalence, optimal auctions, common values and multi-unit auctions — and matching theory — stable matching, the deferred-acceptance algorithm, school choice and exchange without money — and shows how both have been used to design real markets.",
-  "overview": [],
+  "overview": [
+    "A **market** is a set of rules for who gets what, and at what price — or, when money is not allowed, at what terms. In a street market those rules evolved. In a spectrum auction, a medical residency match or a kidney exchange they are written down, often by economists, and then run by a computer. **Market design** is the study of those rules: which allocations they produce, which strategies they invite, and how to change them when they fail. The course has two halves that share a method. The first half is **auction theory**. Four classical formats — English, Dutch, first-price sealed-bid and second-price sealed-bid — look different and feel different to bidders, yet under independent private values they share a deep connection, the **revenue equivalence theorem**. Relaxing the assumptions one at a time produces the rest of the theory: Myerson’s optimal auction and virtual values when the seller can choose the rules; the winner’s curse and the linkage principle when values are common or affiliated; demand reduction and combinatorial bidding when several objects are sold at once. The second half is **matching theory**. When prices are forbidden or unhelpful — places at a school, seats in a medical residency, living kidneys — the design problem is to produce a **stable** assignment that participants cannot profitably block, and to do it with rules that are safe to play honestly. Gale and Shapley’s deferred-acceptance algorithm, the Roth–Peranson match, school-choice mechanisms and the top-trading-cycles algorithm for housing and kidney exchange are the tools.",
+    "Two ideas organise everything that follows. The first is **incentive compatibility**: a rule is only as good as the information it elicits, so we study the game the rule induces, not the allocation it would produce if everyone told the truth. The second is **equivalence**. Formats that look unrelated can implement the same allocation and the same expected payments; formats that look similar can differ sharply once values are affiliated, bidders are asymmetric, or several units are for sale. The course spends as much time on when two designs coincide as on when they do not.",
+    "The subject is hard because the designer’s problem is nested. Bidders and applicants are themselves solving a game of incomplete information ([[game-theory/bayesian-games]]); the designer chooses the game, subject to participation and incentive constraints that were the subject of [[information-economics/mechanism-design]]. Closed-form bids exist only in special cases (symmetric independent private values, regular virtual values, two-sided one-to-one matching with strict preferences). The rest of the time one reasons with envelopes, virtual values, and algorithms. The way through is to compute. Every chapter works a numerical auction or a small matching market to the end — who wins, what they pay or whom they are matched to, and whether anyone wants to deviate — before stating the general theorem. Real designs (the FCC’s 1994 spectrum auction, the NRMP, Boston and New York school choice, kidney exchange) are treated as applications of those theorems, with dates and sources, not as endorsements.",
+    "Worked examples use illustrative numbers and fictional bidders. Figures for spectrum proceeds, match rates and exchange volumes are historical, sourced and dated; they are not forecasts, and nothing in the course is investment, procurement or career advice. The notice that belongs on every page of this atlas applies with particular force here: **for education only — not investment or financial advice.**"
+  ],
   "prerequisites": [
     "game-theory",
     "information-economics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Derive the dominant-strategy equilibrium of the second-price auction and the symmetric Bayesian Nash equilibrium of the first-price auction under independent private values, and compute bids, expected payments and expected revenue in closed form for the uniform case.",
+    "State the revenue equivalence theorem with its assumptions, verify it on the four classical formats, and show how risk aversion, asymmetric distributions and binding budget constraints each break the conclusion.",
+    "Compute Myerson virtual values, identify the optimal reserve in a regular environment, and explain why the optimal auction may exclude the highest-value bidder or treat identical objects asymmetrically.",
+    "Explain the winner’s curse, derive the equilibrium bid that conditions on winning, and apply the linkage principle to rank English and sealed-bid formats when signals are affiliated.",
+    "Distinguish uniform-price, discriminatory and Vickrey multi-unit auctions, demonstrate demand reduction, and describe simultaneous ascending and combinatorial designs as used in spectrum sales.",
+    "Run the Gale–Shapley deferred-acceptance algorithm on a preference profile, prove that it produces a stable matching, and identify the proposer-optimal and receiver-optimal stable matchings.",
+    "Compare the Boston mechanism with student-proposing deferred acceptance on strategy-proofness and efficiency, and describe the Roth–Peranson redesign of the US medical match, including the treatment of couples.",
+    "Apply the top-trading-cycles algorithm to a housing market, prove that it is the unique core allocation, and describe pairwise kidney exchange and altruistic-donor chains as matching without money."
+  ],
   "chapters": [
     {
       "slug": "auction-formats",
@@ -82,7 +96,111 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1961,
+      "title": "Vickrey’s second-price auction",
+      "detail": "William Vickrey’s “Counterspeculation, auctions, and competitive sealed tenders” (Journal of Finance) introduced the second-price sealed-bid auction, proved that bidding one’s value is a dominant strategy, and compared its revenue with the first-price auction — the starting point of modern auction theory.",
+      "people": ["William Vickrey"]
+    },
+    {
+      "year": 1962,
+      "title": "Gale and Shapley on stable matching",
+      "detail": "David Gale and Lloyd Shapley’s “College admissions and the stability of marriage” (American Mathematical Monthly) defined stability, proved that a stable matching always exists, and gave the deferred-acceptance algorithm that constructs the proposer-optimal one.",
+      "people": ["David Gale", "Lloyd Shapley"]
+    },
+    {
+      "year": 1981,
+      "title": "Myerson’s optimal auction",
+      "detail": "Roger Myerson’s “Optimal auction design” (Mathematics of Operations Research) characterised revenue-maximising auctions by virtual values and showed that a well-chosen reserve, not a change of format, is the typical instrument.",
+      "people": ["Roger Myerson"]
+    },
+    {
+      "year": 1982,
+      "title": "Milgrom and Weber’s linkage principle",
+      "detail": "Paul Milgrom and Robert Wilson’s affiliated-values model, published as Milgrom and Weber, “A theory of auctions and competitive bidding” (Econometrica), explained the winner’s curse and ranked English, second-price, first-price and Dutch auctions by expected revenue when signals are affiliated.",
+      "people": ["Paul Milgrom", "Robert Weber"]
+    },
+    {
+      "year": 1994,
+      "title": "The FCC’s first spectrum auction",
+      "detail": "In July 1994 the US Federal Communications Commission ran Auction 1 (Nationwide Narrowband PCS) as a simultaneous multiple-round ascending auction, designed with advice from Preston McAfee, Paul Milgrom and Robert Wilson. Ten licences sold for USD 617 million (FCC Auction 1 public notice, 2 August 1994).",
+      "people": ["Paul Milgrom", "Robert Wilson", "Preston McAfee"]
+    },
+    {
+      "year": 1998,
+      "title": "Roth and Peranson redesign the NRMP",
+      "detail": "Alvin Roth and Elliott Peranson replaced the hospital-proposing algorithm of the US National Resident Matching Program with an applicant-proposing deferred-acceptance algorithm that accommodates couples. The new design was first used in the 1998 Match and described in the American Economic Review (1999).",
+      "people": ["Alvin Roth", "Elliott Peranson"]
+    },
+    {
+      "year": 2003,
+      "title": "School choice as a matching market",
+      "detail": "Atila Abdulkadiroğlu and Tayfun Sönmez’s “School choice: a mechanism design approach” (American Economic Review) compared the Boston mechanism with deferred acceptance and top trading cycles, and supplied the framework used in the redesigns of New York City (2003) and Boston (2005) high-school assignment.",
+      "people": ["Atila Abdulkadiroğlu", "Tayfun Sönmez"]
+    },
+    {
+      "year": 2004,
+      "title": "Kidney exchange",
+      "detail": "Alvin Roth, Tayfun Sönmez and Utku Ünver’s “Kidney exchange” (Quarterly Journal of Economics, 2004) modelled pairwise and cyclic exchange of living-donor kidneys as a matching market without money and proposed using the top-trading-cycles idea to organise it. New England’s paired-exchange programme began the same year.",
+      "people": ["Alvin Roth", "Tayfun Sönmez", "Utku Ünver"]
+    },
+    {
+      "year": 2012,
+      "title": "Nobel Prize for matching markets",
+      "detail": "The Sveriges Riksbank Prize in Economic Sciences was awarded to Alvin Roth and Lloyd Shapley “for the theory of stable allocations and the practice of market design”.",
+      "people": ["Alvin Roth", "Lloyd Shapley"]
+    },
+    {
+      "year": 2020,
+      "title": "Nobel Prize for auction theory",
+      "detail": "The Sveriges Riksbank Prize in Economic Sciences was awarded to Paul Milgrom and Robert Wilson “for improvements to auction theory and inventions of new auction formats”, citing in particular the simultaneous multiple-round design used for spectrum.",
+      "people": ["Paul Milgrom", "Robert Wilson"]
+    }
+  ],
+  "references": [
+    {
+      "title": "Auction Theory",
+      "authors": "Vijay Krishna",
+      "year": 2010,
+      "note": "The standard graduate-undergraduate hybrid on single-object auctions: independent private values, revenue equivalence, Myerson, affiliation and the linkage principle, with clean proofs. Second edition."
+    },
+    {
+      "title": "Putting Auction Theory to Work",
+      "authors": "Paul Milgrom",
+      "year": 2004,
+      "note": "Connects the theory to spectrum and other package auctions; the place to read about the simultaneous ascending auction, activity rules and complementarities."
+    },
+    {
+      "title": "Auctions: Theory and Practice",
+      "authors": "Paul Klemperer",
+      "year": 2004,
+      "note": "Short, applied, and particularly good on the UK 3G auction, entry, and the difference between textbook and real-world design."
+    },
+    {
+      "title": "Two-Sided Matching: A Study in Game-Theoretic Modeling and Analysis",
+      "authors": "Alvin E. Roth and Marilda A. Oliveira Sotomayor",
+      "year": 1990,
+      "note": "The classic monograph on one-to-one and many-to-one matching, stability, the lattice of stable matchings, and incentives."
+    },
+    {
+      "title": "Market Design: Auctions and Matching",
+      "authors": "Guillaume Haeringer",
+      "year": 2018,
+      "note": "An undergraduate-friendly textbook covering both halves of this course, with many small numerical examples of deferred acceptance, school choice and TTC."
+    },
+    {
+      "title": "Who Gets What — and Why",
+      "authors": "Alvin E. Roth",
+      "year": 2015,
+      "note": "A non-technical narrative of the NRMP, school choice and kidney exchange; useful for the institutional detail around the models."
+    },
+    {
+      "title": "Combinatorial Auctions",
+      "authors": "Peter Cramton, Yoav Shoham and Richard Steinberg (eds.)",
+      "year": 2006,
+      "note": "The reference collection on package bidding, the VCG mechanism in practice, and the FCC’s combinatorial clock experiments."
+    }
+  ],
   "next": []
 }

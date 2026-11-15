@@ -7,12 +7,27 @@
   "order": 110,
   "tagline": "Business-cycle facts, real business cycles, nominal rigidities, the New Keynesian model, monetary policy rules, the zero lower bound, financial frictions and fiscal stabilisation",
   "summary": "Why do economies go through booms and recessions, and what can policy do about them? This course measures business cycles, builds the dynamic models used to explain them — the real business cycle model and the New Keynesian model with sticky prices — and uses them to study monetary policy: interest-rate rules and inflation targeting, the zero lower bound and unconventional policy, the role of financial frictions, and fiscal policy over the cycle.",
-  "overview": [],
+  "overview": [
+    "Aggregate economies do not grow smoothly. Output, employment, investment and inflation swing around their longer-run paths, sometimes mildly and sometimes, as in 2008–09 or 2020, violently. A **business cycle** is that co-movement of real and nominal variables around trend — expansions and recessions that last from a few quarters to a few years. This course asks two questions that have structured modern macroeconomics since the 1970s. What shocks and what propagation mechanisms produce those co-movements? And what, if anything, can monetary and fiscal policy usefully do about them?",
+    "The course has three layers. The first is measurement: how to separate cycle from trend, how the NBER, the OECD and the IMF date turning points, and the stylised facts — relative volatilities, correlations and persistence — that any theory must confront. The second is theory, presented on its own terms rather than as a score-settling exercise. The **real business cycle** (RBC) model is a dynamic general equilibrium with flexible prices in which technology (and other real) shocks, labour supply and capital accumulation generate fluctuations. The **New Keynesian** model keeps the same intertemporal backbone but adds sticky prices; money is then non-neutral in the short run and an interest-rate rule can stabilise inflation $\\pi$ and the output gap $\\tilde y$. The third layer is policy: Taylor rules and the Taylor principle, inflation targeting and credibility, the zero lower bound, financial frictions, and fiscal policy over the cycle.",
+    "The subject is hard for two reasons. First, identification: the same correlation of hours with productivity is a success for one theory and a puzzle for another, depending on which shocks one thinks dominate. Second, policy: multipliers, the costs of inflation and the right response at the zero lower bound are live empirical disputes, not settled theorems. The course reports competing theories and the evidence on each side, with dated sources, and it separates what a model implies from the value judgements involved in using it. Worked examples are illustrative; historical series are not forecasts; nothing here is investment, tax or financial advice.",
+    "Approach the mathematics as a language for impulse responses, not as an end in itself. Log-linearise, state the assumptions, and always ask which shock is being traced and which variables are predetermined. Read the RBC and New Keynesian chapters as alternative laboratories that share a household Euler equation and differ in the price mechanism; later chapters reuse both. Keep $\\pi$ for inflation and $\\tilde y$ for the output gap throughout."
+  ],
   "prerequisites": [
     "macroeconomics",
     "money-banking"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Detrend a macroeconomic series, compute an output gap, and apply the main business-cycle dating conventions used by the NBER, the OECD and the IMF.",
+    "State the principal stylised facts of industrial-country cycles — relative volatilities, co-movement and persistence — and compare them with evidence from emerging economies.",
+    "Derive the competitive equilibrium of a real business cycle model with technology shocks, labour supply and capital accumulation, and evaluate how well a calibrated version matches the facts.",
+    "Explain menu costs, staggered contracts and Calvo pricing, and show why money is not neutral when prices are sticky.",
+    "Log-linearise the three-equation New Keynesian model (dynamic IS, New Keynesian Phillips curve, interest-rate rule) and compute the responses of $\\pi$ and $\\tilde y$ to demand, cost-push and technology shocks.",
+    "State the Taylor rule and the Taylor principle, and analyse inflation targeting, credibility and the time-inconsistency problem.",
+    "Analyse the zero lower bound, forward guidance, quantitative easing and negative policy rates as responses to a liquidity trap.",
+    "Incorporate a financial accelerator or a collateral constraint into a business-cycle model and relate credit spreads and leverage to the amplification of shocks.",
+    "Compare theoretical fiscal multipliers under flexible and sticky prices, at and away from the zero lower bound, and weigh the leading empirical estimates against one another."
+  ],
   "chapters": [
     {
       "slug": "business-cycle-facts",
@@ -84,8 +99,100 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1920,
+      "title": "The National Bureau of Economic Research",
+      "detail": "Wesley Clair Mitchell and others founded the NBER to measure the American cycle; Mitchell's Business Cycles (1913, revised 1927) and the later Burns–Mitchell chronology made turning-point dating an empirical programme rather than a metaphor.",
+      "people": ["Wesley Clair Mitchell"]
+    },
+    {
+      "year": 1936,
+      "title": "The General Theory",
+      "detail": "John Maynard Keynes's The General Theory of Employment, Interest and Money argued that aggregate demand, not only technology and preferences, could determine output and employment in the short run, and that monetary and fiscal policy could in principle close a demand gap.",
+      "people": ["John Maynard Keynes"]
+    },
+    {
+      "year": 1946,
+      "title": "Measuring Business Cycles",
+      "detail": "Arthur F. Burns and Wesley C. Mitchell published Measuring Business Cycles, the classic NBER statement of how to date peaks and troughs from a cluster of monthly series rather than from a two-quarter GDP rule.",
+      "people": ["Arthur F. Burns", "Wesley Clair Mitchell"]
+    },
+    {
+      "year": 1977,
+      "title": "Rules rather than discretion",
+      "detail": "Finn Kydland and Edward Prescott showed that a benevolent policymaker who re-optimises every period inflates too much: the time-inconsistency of optimal plans became the organising argument for rules, independent central banks and, later, inflation targeting.",
+      "people": ["Finn E. Kydland", "Edward C. Prescott"]
+    },
+    {
+      "year": 1982,
+      "title": "Time to build and aggregate fluctuations",
+      "detail": "Kydland and Prescott's RBC paper calibrated a competitive equilibrium with technology shocks and gestation lags to U.S. postwar moments, launching quantitative dynamic general equilibrium as the standard language of business-cycle research.",
+      "people": ["Finn E. Kydland", "Edward C. Prescott"]
+    },
+    {
+      "year": 1983,
+      "title": "Calvo pricing",
+      "detail": "Guillermo Calvo's staggered-price model, in which each firm resets with a constant probability, gave New Keynesian models a tractable Phillips curve relating inflation to expected inflation and real marginal cost.",
+      "people": ["Guillermo A. Calvo"]
+    },
+    {
+      "year": 1993,
+      "title": "The Taylor rule",
+      "detail": "John B. Taylor proposed a simple interest-rate rule in which the policy rate responds to inflation and the output gap with coefficients that described Federal Reserve behaviour over 1987–92 and that, more importantly, embed the Taylor principle $\\phi_\\pi > 1$.",
+      "people": ["John B. Taylor"]
+    },
+    {
+      "year": 1999,
+      "title": "The science of monetary policy",
+      "detail": "Richard Clarida, Jordi Galí and Mark Gertler's survey, together with Ben Bernanke, Mark Gertler and Simon Gilchrist's financial-accelerator chapter in the same year, set out the New Keynesian three-equation laboratory and the leading account of how credit-market frictions amplify the cycle.",
+      "people": ["Richard Clarida", "Jordi Galí", "Mark Gertler", "Ben S. Bernanke", "Simon Gilchrist"]
+    }
+  ],
+  "references": [
+    {
+      "title": "Monetary Policy, Inflation, and the Business Cycle",
+      "authors": "Jordi Galí",
+      "year": 2015,
+      "note": "The standard graduate introduction to the New Keynesian model: Calvo pricing, the three-equation system, interest-rate rules and the ZLB, with clean derivations. Second edition."
+    },
+    {
+      "title": "Advanced Macroeconomics",
+      "authors": "David Romer",
+      "year": 2019,
+      "note": "Chapters on RBC, nominal rigidity, the New Keynesian Phillips curve, and fiscal and monetary policy; the fifth edition is the usual first-year graduate (and ambitious undergraduate) text."
+    },
+    {
+      "title": "Interest and Prices: Foundations of a Theory of Monetary Policy",
+      "authors": "Michael Woodford",
+      "year": 2003,
+      "note": "The canonical treatment of monetary policy as interest-rate control in a sticky-price general equilibrium, including timeless-perspective commitment and the quadratic welfare loss in $\\pi$ and $\\tilde y$."
+    },
+    {
+      "title": "Monetary Theory and Policy",
+      "authors": "Carl E. Walsh",
+      "year": 2017,
+      "note": "A comprehensive graduate text covering money demand, New Keynesian models, optimal policy, the ZLB and empirical policy rules. Fourth edition."
+    },
+    {
+      "title": "The ABCs of RBCs: An Introduction to Dynamic Macroeconomic Models",
+      "authors": "George McCandless",
+      "year": 2008,
+      "note": "A patient, computational introduction to real business cycle models, linearisation and calibration; useful before jumping to Galí or Romer on the flexible-price side."
+    },
+    {
+      "title": "Macroeconomic Theory: A Dynamic General Equilibrium Approach",
+      "authors": "Michael Wickens",
+      "year": 2012,
+      "note": "A unified DGE treatment of growth, RBC, New Keynesian policy, fiscal policy and the open economy; second edition, good as a companion to the lecture sequence."
+    },
+    {
+      "title": "Handbook of Monetary Economics, Volume 3A–3B",
+      "authors": "Benjamin M. Friedman and Michael Woodford (eds.)",
+      "year": 2010,
+      "note": "Survey chapters on DSGE estimation (Christiano, Trabandt, Walentin), the financial accelerator, inflation targeting and the ZLB that go beyond a textbook once the three-equation model is in hand."
+    }
+  ],
   "next": [
     "international-finance"
   ]

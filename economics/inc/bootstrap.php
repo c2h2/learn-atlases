@@ -11,7 +11,7 @@ define('MA_RENDER_VERSION', 11);
 define('MA_ISSUES_URL', 'https://github.com/c2h2/learn-atlases/issues');
 /** Curriculum skeleton: the courses and chapters are mapped out and the lessons are still to be written.
  *  While true, the atlas says "skeleton" in its title. */
-define('MA_SKELETON', true);
+define('MA_SKELETON', false);
 
 mb_internal_encoding('UTF-8');
 date_default_timezone_set('UTC');

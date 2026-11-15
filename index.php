@@ -47,7 +47,7 @@ $T = [
     'Mechanical and Aerospace Engineering Atlas' => '机械与航空航天工程图谱',
     'University mechanical and aerospace engineering: solid mechanics, dynamics and vibration, thermodynamics, fluids and heat transfer, materials and manufacturing, design, control and robotics, aerodynamics, propulsion and orbits. Every lesson is written, in English and Chinese.' => '大学机械与航空航天工程：固体力学、动力学与振动、热力学、流体与传热、材料与制造、设计、控制与机器人、空气动力学、推进与轨道。全部课文均已写成，有中文和英文两种版本。',
     'Economics and Finance Atlas' => '经济与金融图谱',
-    'University economics and finance: microeconomics and macroeconomics, econometrics, game theory and market design, money, banking and corporate finance, asset pricing and derivatives, trade and development, and public and behavioural economics. For education, not investment advice. The curriculum is mapped out; the lessons are still to be written.' => '大学经济学与金融学：微观经济学与宏观经济学、计量经济学、博弈论与市场设计、货币银行与公司金融、资产定价与衍生品、国际贸易与经济发展，以及公共经济学与行为经济学。仅供教育学习，不构成投资建议。课程体系已经规划好，课文尚待编写。',
+    'University economics and finance: microeconomics and macroeconomics, econometrics, game theory and market design, money, banking and corporate finance, asset pricing and derivatives, trade and development, and public and behavioural economics. For education, not investment advice. Every English lesson is written.' => '大学经济学与金融学：微观经济学与宏观经济学、计量经济学、博弈论与市场设计、货币银行与公司金融、资产定价与衍生品、国际贸易与经济发展，以及公共经济学与行为经济学。仅供教育学习，不构成投资建议。全部英文课文已经写好。',
     'Earth and Climate Science Atlas' => '地球与气候科学图谱',
     'University Earth and climate science: the Earth system, minerals, rocks and tectonics, geophysics, landscapes and water, the atmosphere and weather, oceans and ice, Earth history, biogeochemistry and climate change. Every lesson is written, in English and Chinese.' => '大学地球与气候科学：地球系统、矿物岩石与构造、地球物理、地貌与水、大气与天气、海洋与冰冻圈、地球历史、生物地球化学与气候变化。全部课文均已写成，有中文和英文两种版本。',
     'English Language Atlas' => '英语图谱',
@@ -262,6 +262,16 @@ $css = 'assets/learn.css?v=' . base_convert((string)@filemtime(__DIR__ . '/asset
       <?= $skStats('europe') ?>
       <span class="open"><?= $h($t('Open')) ?> →</span>
     </a>
+    <a class="card" href="economics/<?= $L ?>">
+      <svg class="motif" viewBox="0 0 300 70" aria-hidden="true">
+        <path d="M14 4V62H292M30 52L70 44 110 48 150 32 190 36 230 20 270 12" class="curve"/>
+        <?= $skDots([[30, 52], [70, 44], [110, 48], [150, 32], [190, 36], [230, 20], [270, 12]], 6) ?>
+      </svg>
+      <h2><?= $h($t('Economics and Finance Atlas')) ?></h2>
+      <p><?= $h($t('University economics and finance: microeconomics and macroeconomics, econometrics, game theory and market design, money, banking and corporate finance, asset pricing and derivatives, trade and development, and public and behavioural economics. For education, not investment advice. Every English lesson is written.')) ?></p>
+      <?= $skStats('economics') ?>
+      <span class="open"><?= $h($t('Open')) ?> →</span>
+    </a>
     <a class="card" href="peptides/<?= $L ?>">
       <svg class="motif" viewBox="0 0 300 70" aria-hidden="true">
         <line x1="14" y1="40" x2="286" y2="40" class="curve"/>
@@ -344,16 +354,6 @@ $css = 'assets/learn.css?v=' . base_convert((string)@filemtime(__DIR__ . '/asset
       <h2><?= $skName('Biology Atlas') ?></h2>
       <p><?= $h($t('University biology: molecules and cells, genetics and genomics, microbes, plants and animals, neuroscience and behaviour, evolution, ecology and conservation, and quantitative biology. The curriculum is mapped out; the lessons are still to be written.')) ?></p>
       <?= $skStats('biology') ?>
-      <span class="open"><?= $h($t('Open')) ?> →</span>
-    </a>
-    <a class="card" href="economics/<?= $L ?>">
-      <svg class="motif" viewBox="0 0 300 70" aria-hidden="true">
-        <path d="M14 4V62H292M30 52L70 44 110 48 150 32 190 36 230 20 270 12" class="curve"/>
-        <?= $skDots([[30, 52], [70, 44], [110, 48], [150, 32], [190, 36], [230, 20], [270, 12]], 6) ?>
-      </svg>
-      <h2><?= $skName('Economics and Finance Atlas') ?></h2>
-      <p><?= $h($t('University economics and finance: microeconomics and macroeconomics, econometrics, game theory and market design, money, banking and corporate finance, asset pricing and derivatives, trade and development, and public and behavioural economics. For education, not investment advice. The curriculum is mapped out; the lessons are still to be written.')) ?></p>
-      <?= $skStats('economics') ?>
       <span class="open"><?= $h($t('Open')) ?> →</span>
     </a>
   </div>

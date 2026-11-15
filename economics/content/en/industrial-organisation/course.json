@@ -6,13 +6,28 @@
   "level": 3,
   "order": 130,
   "tagline": "Market structure and market power, monopoly pricing and price discrimination, Cournot and Bertrand oligopoly, product differentiation, entry, collusion, vertical relations, platforms and competition policy",
-  "summary": "Industrial organisation studies how firms compete when markets are not perfectly competitive, and what governments should do about it. This course uses game theory to analyse pricing by firms with market power and price discrimination, oligopoly and product differentiation, entry deterrence and collusion, vertical relationships, network effects and platforms, and the economics behind merger control and antitrust policy.",
-  "overview": [],
+  "summary": "Industrial organisation studies how firms compete when markets are not perfectly competitive, and how governments regulate that competition. This course uses game theory to analyse pricing by firms with market power and price discrimination, oligopoly and product differentiation, entry deterrence and collusion, vertical relationships, network effects and platforms, and the economics behind merger control and antitrust policy.",
+  "overview": [
+    "Most of the goods and services we buy are not sold in the textbook market of [[microeconomics/competitive-markets]]: a large number of firms, a homogeneous product, and a price that none of them can influence. A mobile-network operator, a supermarket chain, a jet-engine maker and a search engine all face a small number of rivals, products that are differentiated by design or by brand, and the possibility of setting a price above marginal cost. **Industrial organisation** (IO) is the part of microeconomics that studies such markets. It asks how market structure — the number and size of firms, the height of entry barriers, the degree of product differentiation — shapes conduct (prices, quantities, advertising, research, contracts with suppliers and distributors) and how that conduct in turn feeds back into structure. It also asks what, if anything, public policy should do about the resulting market power.",
+    "The modern course is built on game theory. Cournot's 1838 quantity model and Bertrand's 1883 price model are Nash equilibria of well-specified games; Stackelberg leadership is a subgame-perfect equilibrium of a sequential game; tacit collusion is an equilibrium of a repeated game; limit pricing and predation are signalling games. The payoff is that assumptions are explicit, so we can see which conclusions survive a change in timing, information or the strategy space. The cost is that the same market can be described by more than one game, and the predictions can differ sharply: with homogeneous products and constant unit costs, two firms competing in prices drive the price to marginal cost, while the same two firms competing in quantities leave a positive mark-up. Which model to use is an empirical question as much as a theoretical one.",
+    "The course has three movements. The first four chapters develop the static theory of market power: how to measure structure and power, how a monopolist prices and discriminates, how oligopolists compete in quantities or prices, and how product differentiation softens that competition. The next four chapters add dynamics, contracts and technology: entry and strategic commitment, collusion, vertical relations between manufacturers and retailers, and the network effects and two-sided pricing that characterise digital platforms. The last chapter turns to competition policy — merger control, abuse of dominance and cartel enforcement — as it is written in the United States, the European Union and China, with dated cases rather than slogans. Throughout we separate positive claims (what a model or a study finds) from normative ones (what a government might do, and at what cost).",
+    "Two habits make the subject tractable. First, work every model with a linear inverse demand and constant marginal cost until the first-order conditions are automatic; the qualitative results almost always survive more general costs and demands, and the linear case is the one you can take to a figure or a spreadsheet. Second, keep welfare accounting in view: consumer surplus, producer surplus and deadweight loss are the language in which IO evaluates a price, a merger or a vertical restraint. The mathematics is unconstrained and constrained optimisation and Nash equilibrium, as in [[mathematical-economics/unconstrained-optimisation]] and [[game-theory/nash-equilibrium]]; the new skill is to choose the game that matches the institutional facts."
+  ],
   "prerequisites": [
     "microeconomics",
     "game-theory"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Measure market concentration with concentration ratios and the Herfindahl–Hirschman index, and measure market power with the Lerner index and the inverse-elasticity mark-up rule.",
+    "Derive the monopolist's first-order condition from revenue and cost, compute the associated deadweight loss, and design first-, second- and third-degree price discrimination, two-part tariffs and bundling in simple environments.",
+    "Compute Cournot–Nash and Bertrand–Nash equilibria with homogeneous and differentiated products, and explain the Bertrand paradox and the Cournot limit theorem.",
+    "Solve the Hotelling and Salop models of spatial competition and distinguish horizontal from vertical differentiation.",
+    "Derive the Stackelberg leader–follower outcome, and analyse entry deterrence as a problem of strategic commitment, including capacity, limit pricing and the contestable-market benchmark.",
+    "Find the critical discount factor that sustains tacit collusion in a repeated oligopoly, and relate cartel stability to the number of firms, capacity, transparency and leniency.",
+    "Show how double marginalisation raises the retail price above the integrated monopoly price, and evaluate vertical restraints (two-part tariffs, resale-price maintenance, exclusive dealing) as responses to successive mark-ups, free riding and foreclosure.",
+    "Analyse network effects, critical mass and two-sided platform pricing, including the possibility that one side of the market is subsidised.",
+    "Apply the logic of merger simulation, unilateral effects and coordinated effects to a proposed concentration, and describe, with dated statutes and cases, how merger control, abuse of dominance and cartel enforcement are organised in the United States, the European Union and China."
+  ],
   "chapters": [
     {
       "slug": "market-structure",
@@ -92,8 +107,130 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1838,
+      "title": "Cournot's mathematical theory of wealth",
+      "detail": "Antoine Augustin Cournot's Recherches sur les principes mathématiques de la théorie des richesses treats output as a continuous choice and derives the duopoly equilibrium still named after him, together with the associated comparative statics.",
+      "people": [
+        "Antoine Augustin Cournot"
+      ]
+    },
+    {
+      "year": 1883,
+      "title": "Bertrand's review of Cournot",
+      "detail": "Joseph Bertrand, reviewing Cournot in the Journal des savants, argues that if duopolists set prices rather than quantities, and the product is homogeneous, the only equilibrium is the competitive price. The contrast is the Bertrand paradox.",
+      "people": [
+        "Joseph Bertrand"
+      ]
+    },
+    {
+      "year": 1890,
+      "title": "Sherman Antitrust Act",
+      "detail": "The United States Congress passes the Sherman Act, making contracts in restraint of trade and monopolisation federal offences. It is the first national competition statute of the modern type and remains the foundation of US antitrust law.",
+      "people": []
+    },
+    {
+      "year": 1929,
+      "title": "Hotelling's stability in competition",
+      "detail": "Harold Hotelling models two sellers on a line with transport costs and shows that price competition is softened by location. The paper is the starting point of spatial and horizontal-differentiation theory.",
+      "people": [
+        "Harold Hotelling"
+      ]
+    },
+    {
+      "year": 1933,
+      "title": "Monopolistic and imperfect competition",
+      "detail": "Edward Chamberlin's The Theory of Monopolistic Competition and Joan Robinson's The Economics of Imperfect Competition, both published in 1933, put product differentiation and downward-sloping firm demand at the centre of price theory.",
+      "people": [
+        "Edward Chamberlin",
+        "Joan Robinson"
+      ]
+    },
+    {
+      "year": 1934,
+      "title": "Lerner's measure of monopoly power",
+      "detail": "Abba Lerner's paper in the Review of Economic Studies defines monopoly power as the gap between price and marginal cost, divided by price, and shows that this Lerner index equals the reciprocal of the absolute value of the demand elasticity.",
+      "people": [
+        "Abba Lerner"
+      ]
+    },
+    {
+      "year": 1956,
+      "title": "Bain on barriers to new competition",
+      "detail": "Joe S. Bain's Barriers to New Competition classifies economies of scale, absolute cost advantages and product differentiation as entry barriers and links them to the persistent profits of incumbents, a cornerstone of the structure–conduct–performance programme.",
+      "people": [
+        "Joe S. Bain"
+      ]
+    },
+    {
+      "year": 1988,
+      "title": "Tirole's Theory of Industrial Organization",
+      "detail": "Jean Tirole's textbook synthesises the game-theoretic reconstruction of industrial organisation — commitment, incomplete information, vertical contracts and research — and becomes the standard graduate reference.",
+      "people": [
+        "Jean Tirole"
+      ]
+    },
+    {
+      "year": 2003,
+      "title": "Rochet and Tirole on two-sided markets",
+      "detail": "Jean-Charles Rochet and Jean Tirole's paper on platform competition characterises two-sided markets by the allocation of prices across sides, not only by the price level, and supplies the workhorse model of digital-platform pricing.",
+      "people": [
+        "Jean-Charles Rochet",
+        "Jean Tirole"
+      ]
+    },
+    {
+      "year": 2008,
+      "title": "China's Anti-Monopoly Law",
+      "detail": "The Anti-Monopoly Law of the People's Republic of China takes effect on 1 August 2008, establishing merger review, cartel prohibition and abuse-of-dominance rules for the Chinese market. A major amendment followed in 2022.",
+      "people": []
+    }
+  ],
+  "references": [
+    {
+      "title": "The Theory of Industrial Organization",
+      "authors": "Jean Tirole",
+      "year": 1988,
+      "note": "The graduate classic: game-theoretic IO from monopoly and oligopoly through vertical control, research and incomplete information. Dense, precise and still the reference for proofs."
+    },
+    {
+      "title": "Industrial Organization: Markets and Strategies",
+      "authors": "Paul Belleflamme and Martin Peitz",
+      "year": 2015,
+      "note": "Second edition. A comprehensive modern textbook covering static oligopoly, product differentiation, networks, two-sided markets and competition policy, with careful welfare analysis."
+    },
+    {
+      "title": "Introduction to Industrial Organization",
+      "authors": "Luís M. B. Cabral",
+      "year": 2017,
+      "note": "Second edition. Compact and readable; excellent on oligopoly, entry, collusion and networks, with a consistent emphasis on models that can be taken to data."
+    },
+    {
+      "title": "Competition Policy: Theory and Practice",
+      "authors": "Massimo Motta",
+      "year": 2004,
+      "note": "The standard graduate treatment of the economics of antitrust: market definition, collusion, mergers, predation and vertical restraints, written against EU and US case law."
+    },
+    {
+      "title": "Modern Industrial Organization",
+      "authors": "Dennis W. Carlton and Jeffrey M. Perloff",
+      "year": 2015,
+      "note": "Fourth edition (global). Broader and more empirical than Tirole, with chapters on advertising, research, and the measurement of market power."
+    },
+    {
+      "title": "Lectures on Antitrust Economics",
+      "authors": "Michael D. Whinston",
+      "year": 2006,
+      "note": "Short, rigorous lectures on price fixing, horizontal mergers and exclusionary vertical contracts; the place to go after Motta for the theory used in court."
+    },
+    {
+      "title": "Industrial Organization: A Strategic Approach",
+      "authors": "Jeffrey Church and Roger Ware",
+      "year": 2000,
+      "note": "Game-theoretic IO at undergraduate/MSc level, unusually careful on strategic commitment, raising rivals' costs and the welfare analysis of vertical restraints. Freely available from the authors."
+    }
+  ],
   "next": [
     "market-design"
   ]

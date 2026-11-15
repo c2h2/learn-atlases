@@ -7,9 +7,23 @@
   "order": 30,
   "tagline": "The Malthusian world, the Industrial Revolution, the great divergence, globalisation and empire, the Great Depression, post-war growth, planning and the rise of Asia",
   "summary": "Why are some countries rich and others poor, and how did the modern world economy come to be? This course traces economic life from the Malthusian world before 1800 through the Industrial Revolution, the great divergence, the first globalisation and the colonial economy, the interwar collapse and the Great Depression, the post-war golden age, central planning and transition, and late industrialisation in Asia. Throughout, data and simple economic models are used to test competing explanations.",
-  "overview": [],
+  "overview": [
+    "For most of recorded history, output per person barely moved. A harvest failure, a plague or a new crop could raise or lower living standards for a generation, but the gains were eaten by more mouths and the losses were repaired by fewer. Then, in a few north-western European economies and their offshoots, growth became sustained: incomes doubled and doubled again, and the gap between those economies and the rest of the world opened into the **great divergence**. The same centuries brought coal and steam, steamships and railways, mass migration and the gold standard, empires and the Atlantic slave trades, two world wars, a global depression, a post-war golden age, experiments with central planning, and, after 1950, industrialisations in Japan, the East Asian tigers, China and beyond that have begun to close some of the gaps. This course is about that story, told with numbers and with models simple enough to test against the numbers.",
+    "The organising question is positive, not patriotic: what changed, when, where, and by how much, and which mechanisms can account for the change? We use the Malthusian model of population and wages, growth accounting, the logic of comparative advantage and factor-price convergence, and simple open-economy and monetary models of crises. We do not treat any one school as the answer. Institutions, geography, culture, coal and high wages, useful knowledge, colonial extraction and the timing of the demographic transition all have serious advocates and serious evidence; the chapters set those views next to one another and say where the measurements distinguish them and where they do not.",
+    "The course is organised in historical order, but each chapter is a self-contained argument. We begin with the pre-industrial world and the Industrial Revolution, then the divergence of Europe from China, India and other large agrarian economies, then the first globalisation of 1870–1914 and the economics of empire. War, the interwar gold standard and the Great Depression occupy a chapter of their own, as do the post-war golden age, planned economies and their transitions, and late industrialisation in Asia. Data come from the Maddison Project, the Penn World Table, Broadberry and collaborators, Allen’s real-wage series, the World Bank and the IMF, always with a date and a unit. Competing explanations are presented even-handedly. The aim is that a student who has worked the chapters can read a historical GDP series, a wage series or a growth-accounting table and say what it can and cannot show."
+  ],
   "prerequisites": [],
-  "outcomes": [],
+  "outcomes": [
+    "Explain the Malthusian mechanism linking population, land and real wages, and use it to interpret pre-industrial wage and GDP-per-capita series.",
+    "Describe the timing, sectoral pattern and measured pace of the British Industrial Revolution, and evaluate coal, high-wage, institutional and scientific explanations of why it began there.",
+    "Compare reconstructions of GDP per capita and real wages in Western Europe, China, India, Japan and other regions, and distinguish the little divergence within Europe from the great divergence with Asia.",
+    "Account for the late-nineteenth-century collapse of transport costs, mass migration, capital flows and the gold standard, and for the resulting convergence of commodity prices and real wages across the Atlantic.",
+    "Analyse the economics of empire, colonial institutions, the slave trades and their estimated long-run effects, without collapsing the colonial experience into a single story.",
+    "Set out competing monetary, spending and gold-standard accounts of the Great Depression, and relate the timing of recovery to the timing of leaving gold.",
+    "Document the post-war golden age in Western Europe and Japan with growth-accounting decompositions, and explain the slowdown after 1973.",
+    "Compare the achievements and failures of central planning in the Soviet Union and China, and the different paths of market transition after 1978 and 1989.",
+    "Evaluate late industrialisation in East Asia and elsewhere since 1950, including the roles of policy, trade, human capital and global shocks such as 2008."
+  ],
   "chapters": [
     {
       "slug": "malthusian-world",
@@ -83,8 +97,112 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1798,
+      "title": "Malthus’s Essay on the Principle of Population",
+      "detail": "Thomas Robert Malthus published An Essay on the Principle of Population, arguing that population tends to grow faster than the food supply unless checked by misery or restraint. The essay is the starting point of the Malthusian model used in this course.",
+      "people": ["Thomas Robert Malthus"]
+    },
+    {
+      "year": 1884,
+      "title": "Toynbee names the Industrial Revolution",
+      "detail": "Arnold Toynbee’s Lectures on the Industrial Revolution of the Eighteenth Century in England were published posthumously, giving the period 1760–1830 the name and the narrative of a sudden break that later quantitative work has revised.",
+      "people": ["Arnold Toynbee"]
+    },
+    {
+      "year": 1936,
+      "title": "Keynes’s General Theory",
+      "detail": "John Maynard Keynes published The General Theory of Employment, Interest and Money, recasting the interwar slump as a failure of aggregate demand and setting the terms of the later debate with monetarist and gold-standard accounts of the Great Depression.",
+      "people": ["John Maynard Keynes"]
+    },
+    {
+      "year": 1944,
+      "title": "Bretton Woods",
+      "detail": "Allied governments meeting at Bretton Woods, New Hampshire, created the IMF and the World Bank and designed a system of adjustable pegs to the dollar, itself convertible into gold. The system framed the post-war golden age until it ended in 1971–73.",
+      "people": ["John Maynard Keynes", "Harry Dexter White"]
+    },
+    {
+      "year": 1966,
+      "title": "Kuznets on modern economic growth",
+      "detail": "Simon Kuznets’s Modern Economic Growth: Rate, Structure, and Spread set out the quantitative hallmarks of the modern era — sustained rises in product per capita, structural change out of agriculture, and the spread of the pattern from a few countries to many.",
+      "people": ["Simon Kuznets"]
+    },
+    {
+      "year": 1981,
+      "title": "North on institutions and economic change",
+      "detail": "Douglass North’s Structure and Change in Economic History argued that property rights, the state and transaction costs belong in any explanation of long-run growth, and launched the institutional research programme that later work on colonial origins developed.",
+      "people": ["Douglass C. North"]
+    },
+    {
+      "year": 2000,
+      "title": "Pomeranz’s Great Divergence",
+      "detail": "Kenneth Pomeranz’s The Great Divergence argued that the Yangzi delta and Britain were comparable in living standards and markets as late as 1750, and that coal and New World resources, rather than uniquely European institutions, explain why industrialisation began in Britain.",
+      "people": ["Kenneth Pomeranz"]
+    },
+    {
+      "year": 2001,
+      "title": "Colonial origins of comparative development",
+      "detail": "Daron Acemoglu, Simon Johnson and James Robinson published “The Colonial Origins of Comparative Development”, using settler mortality as an instrument for colonial institutions and arguing that institutional quality explains a large share of the cross-country income gap.",
+      "people": ["Daron Acemoglu", "Simon Johnson", "James A. Robinson"]
+    },
+    {
+      "year": 2015,
+      "title": "British national accounts, 1270–1870",
+      "detail": "Stephen Broadberry, Bruce Campbell, Alexander Klein, Mark Overton and Bas van Leeuwen published British Economic Growth, 1270–1870, reconstructing annual GDP from the output side and showing a slow but persistent rise in GDP per capita well before the classic industrial decades.",
+      "people": ["Stephen Broadberry", "Bruce M. S. Campbell", "Alexander Klein", "Mark Overton", "Bas van Leeuwen"]
+    }
+  ],
+  "references": [
+    {
+      "title": "The British Industrial Revolution in Global Perspective",
+      "authors": "Robert C. Allen",
+      "year": 2009,
+      "note": "The high-wage, cheap-energy account of why mechanisation paid in Britain and not in France, China or India; essential for the Industrial Revolution chapter."
+    },
+    {
+      "title": "Power and Plenty: Trade, War, and the World Economy in the Second Millennium",
+      "authors": "Ronald Findlay and Kevin H. O'Rourke",
+      "year": 2007,
+      "note": "A long-run history of trade and geopolitics from the Mongol empire to the late twentieth century; the backbone of the globalisation and empire chapters."
+    },
+    {
+      "title": "The Cambridge Economic History of Modern Europe",
+      "authors": "Stephen Broadberry and Kevin H. O'Rourke (eds.)",
+      "year": 2010,
+      "note": "Two-volume survey of European growth, living standards, trade and policy from 1700, with consistent quantitative tables."
+    },
+    {
+      "title": "An Economic History of Europe: Knowledge, Institutions and Growth, 600 to the Present",
+      "authors": "Karl Gunnar Persson and Paul Sharp",
+      "year": 2015,
+      "note": "A compact textbook, second edition, that links institutions and useful knowledge to the European record; good first reading for the whole course."
+    },
+    {
+      "title": "Golden Fetters: The Gold Standard and the Great Depression, 1919–1939",
+      "authors": "Barry Eichengreen",
+      "year": 1992,
+      "note": "The leading international account of how the interwar gold standard transmitted and deepened the Depression, and why leaving gold preceded recovery."
+    },
+    {
+      "title": "The Great Divergence: China, Europe, and the Making of the Modern World Economy",
+      "authors": "Kenneth Pomeranz",
+      "year": 2000,
+      "note": "The book that reopened the comparison of early-modern China and Europe; read against Broadberry, Allen and the Maddison Project estimates."
+    },
+    {
+      "title": "British Economic Growth, 1270–1870",
+      "authors": "Stephen Broadberry, Bruce M. S. Campbell, Alexander Klein, Mark Overton and Bas van Leeuwen",
+      "year": 2015,
+      "note": "The reconstruction of English and British national accounts used throughout the first three chapters; the source for pre-1870 British GDP per capita."
+    },
+    {
+      "title": "Contours of the World Economy, 1–2030 AD",
+      "authors": "Angus Maddison",
+      "year": 2007,
+      "note": "The classic long-run GDP and population tables, now superseded in detail by the Maddison Project Database 2023 but still the reference for how the numbers were first assembled."
+    }
+  ],
   "next": [
     "economic-growth",
     "development-economics"

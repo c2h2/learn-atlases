@@ -7,11 +7,25 @@
   "order": 100,
   "tagline": "The facts of growth, the Solow model, technology and growth accounting, convergence, optimal saving in the Ramsey model, overlapping generations, ideas and endogenous growth, and institutions",
   "summary": "Small differences in growth rates compound into vast differences in living standards. This course asks why some countries are rich and others poor, and why growth happens at all: the stylised facts, capital accumulation in the Solow model and growth accounting, convergence, optimal saving in the Ramsey–Cass–Koopmans and overlapping-generations models, the economics of ideas and endogenous growth, and the deeper roles of institutions and geography.",
-  "overview": [],
+  "overview": [
+    "Over two centuries a handful of economies broke out of millennia of near-stagnation and began to grow at one or two per cent a year. That sounds modest. Compounded, it is the difference between the world of 1820 and the world of today. The same arithmetic, applied across countries rather than across time, produces the other great fact of the subject: in 2019, real GDP per person in the United States was about 90 times that of the Central African Republic (Maddison Project Database 2023, 2011 international dollars). Growth theory is the attempt to explain both facts — sustained growth at the frontier, and enormous differences in levels — with a small number of mechanisms: capital accumulation, population, technology, and the institutions that govern them.",
+    "The course is organised as a sequence of models, each answering a question the previous one left open. The Solow–Swan model shows what diminishing returns to capital can and cannot do. Adding labour-augmenting technology delivers balanced growth and a growth-accounting residual that, in the data, accounts for much of both growth over time and income gaps across countries. Convergence — absolute, conditional, and club — is the empirical counterpart of those transitional dynamics. The Ramsey–Cass–Koopmans and Diamond overlapping-generations models endogenise saving, and they disagree about whether competitive equilibria are efficient. Endogenous-growth theory treats ideas as non-rival and asks how research, scale and competition produce the technology Solow took as given. The last chapter steps back from proximate causes (capital, labour, productivity) to candidate fundamental causes: institutions, geography and culture, where the empirical debate is live and unsettled.",
+    "What makes the subject hard is not the algebra of a Cobb–Douglas production function. It is keeping the accounting, the theory and the evidence in the same frame: a parameter that fits a steady state may fail a cross-country regression; a regression that fits the cross-section may be silent on identification; a historical narrative that is true of one country may not travel. The course takes that tension as the point. Every quantitative claim is sourced and dated — mainly to the Maddison Project Database 2023 and the Penn World Table 10.01, with World Bank and national-accounts figures where they are the right object — and competing interpretations are attributed rather than refereed into a single story.",
+    "Work the models with numbers, not only with symbols. Sketch the Solow diagram until the golden rule is a picture you can redraw. Linearise a transition and compute a half-life. Read a growth-accounting table before believing a residual. The later chapters on ideas and institutions are where the standard undergraduate syllabus meets its open questions; they are not a licence to treat any one view as settled."
+  ],
   "prerequisites": [
     "macroeconomics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Describe the long-run facts of growth using Maddison, Penn World Table and national-accounts data, including compounding, Kaldor’s stylised facts, and the world distribution of income.",
+    "Derive the intensive-form Solow–Swan equation, the steady state and the golden rule, and analyse transitional dynamics and comparative statics for the saving rate, population growth and depreciation.",
+    "Extend the Solow model to labour-augmenting technical change, characterise balanced growth, and perform growth accounting and development accounting on illustrative and published numbers.",
+    "Distinguish absolute from conditional convergence, derive the speed of convergence in the linearised Solow model, and evaluate the cross-country evidence including the augmented Solow model of Mankiw, Romer and Weil.",
+    "Solve the Ramsey–Cass–Koopmans planner problem, interpret the Euler equation and the saddle path, and compare the modified golden rule with the competitive equilibrium.",
+    "Build the Diamond overlapping-generations model, state the condition for dynamic inefficiency, and analyse pay-as-you-go pensions and public debt in that environment.",
+    "Explain non-rivalry of ideas, derive the AK and Romer growth rates, and evaluate scale effects and the Jones critique.",
+    "Contrast proximate and fundamental causes of income differences, and evaluate competing empirical claims about institutions, geography and culture without collapsing them into a single verdict."
+  ],
   "chapters": [
     {
       "slug": "growth-facts",
@@ -80,8 +94,100 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1928,
+      "title": "Ramsey on optimal saving",
+      "detail": "Frank Ramsey’s paper “A Mathematical Theory of Saving” in the Economic Journal posed the problem of how much a nation should save, and solved it with the calculus of variations. The Keynes–Ramsey rule is the Euler equation of modern optimal-growth theory.",
+      "people": ["Frank Ramsey"]
+    },
+    {
+      "year": 1956,
+      "title": "Solow and Swan",
+      "detail": "Robert Solow’s “A Contribution to the Theory of Economic Growth” (Quarterly Journal of Economics) and Trevor Swan’s contemporaneous paper in the Economic Record gave the neoclassical model of capital accumulation with diminishing returns. The steady state, the role of the saving rate, and the central role of technical change all follow from that framework.",
+      "people": ["Robert Solow", "Trevor Swan"]
+    },
+    {
+      "year": 1957,
+      "title": "Solow’s residual",
+      "detail": "Solow’s “Technical Change and the Aggregate Production Function” (Review of Economics and Statistics) decomposed US growth in 1909–1949 into contributions of capital, labour and a residual. Most of the rise in output per hour was attributed to the residual, later called total factor productivity.",
+      "people": ["Robert Solow"]
+    },
+    {
+      "year": 1961,
+      "title": "Kaldor’s stylised facts",
+      "detail": "Nicholas Kaldor, in “Capital Accumulation and Economic Growth”, listed regularities of industrial growth: roughly constant factor shares, a steady capital–output ratio, and persistent differences in growth rates across countries. They remain the first checklist for a growth model.",
+      "people": ["Nicholas Kaldor"]
+    },
+    {
+      "year": 1965,
+      "title": "Cass, Koopmans and Diamond",
+      "detail": "David Cass and Tjalling Koopmans recast Ramsey’s problem in modern optimal-control form. Peter Diamond’s “National Debt in a Neoclassical Growth Model” (American Economic Review) introduced overlapping generations and showed that a competitive equilibrium can be dynamically inefficient.",
+      "people": ["David Cass", "Tjalling Koopmans", "Peter Diamond"]
+    },
+    {
+      "year": 1986,
+      "title": "Romer’s increasing returns",
+      "detail": "Paul Romer’s “Increasing Returns and Long-Run Growth” (Journal of Political Economy) made knowledge a non-rival input and obtained sustained growth from the accumulation of ideas rather than from exogenous technical change. His 1990 paper added monopolistic competition in the research sector.",
+      "people": ["Paul Romer"]
+    },
+    {
+      "year": 1992,
+      "title": "Mankiw, Romer and Weil",
+      "detail": "N. Gregory Mankiw, David Romer and David Weil’s “A Contribution to the Empirics of Economic Growth” (Quarterly Journal of Economics) showed that an augmented Solow model with human capital fits the cross-country distribution of income much better than the textbook Solow model, and that conditional convergence is the relevant prediction.",
+      "people": ["N. Gregory Mankiw", "David Romer", "David Weil"]
+    },
+    {
+      "year": 2001,
+      "title": "Colonial origins",
+      "detail": "Daron Acemoglu, Simon Johnson and James Robinson’s “The Colonial Origins of Comparative Development” (American Economic Review) used settler mortality as an instrument for institutions and argued that property-rights institutions, not geography alone, explain much of the modern income distribution. The paper launched a still-unsettled empirical debate.",
+      "people": ["Daron Acemoglu", "Simon Johnson", "James Robinson"]
+    }
+  ],
+  "references": [
+    {
+      "title": "Introduction to Economic Growth",
+      "authors": "Charles I. Jones and Dietrich Vollrath",
+      "year": 2013,
+      "note": "Third edition. The cleanest undergraduate treatment of Solow, growth accounting, ideas and the Romer model; Jones’s 2016 handbook chapter is the companion statement of the facts."
+    },
+    {
+      "title": "Economic Growth",
+      "authors": "Robert J. Barro and Xavier Sala-i-Martin",
+      "year": 2004,
+      "note": "Second edition. The standard graduate-to-advanced-undergraduate reference for the Solow and Ramsey models, convergence empirics and endogenous growth."
+    },
+    {
+      "title": "Advanced Macroeconomics",
+      "authors": "David Romer",
+      "year": 2019,
+      "note": "Fifth edition. Chapters on the Solow, Ramsey and Diamond models and on endogenous growth are the usual next step after this course."
+    },
+    {
+      "title": "Introduction to Modern Economic Growth",
+      "authors": "Daron Acemoglu",
+      "year": 2009,
+      "note": "Graduate text that develops the Ramsey and endogenous-growth models from first principles and has a careful chapter on institutions and political economy."
+    },
+    {
+      "title": "Economic Growth",
+      "authors": "David N. Weil",
+      "year": 2013,
+      "note": "Third edition. Especially useful for the empirical chapters: population, human capital, geography, culture and the world distribution of income."
+    },
+    {
+      "title": "The Economics of Growth",
+      "authors": "Philippe Aghion and Peter Howitt",
+      "year": 2009,
+      "note": "The Schumpeterian (creative-destruction) approach to endogenous growth, with expanding-variety and quality-ladder models in one place."
+    },
+    {
+      "title": "Why Nations Fail",
+      "authors": "Daron Acemoglu and James A. Robinson",
+      "year": 2012,
+      "note": "A book-length statement of the inclusive-versus-extractive institutions thesis; read it against the geography and human-capital critiques discussed in the last chapter."
+    }
+  ],
   "next": [
     "development-economics"
   ]

@@ -8,11 +8,9 @@ same engine as [Maths Atlas](../maths/). Plain PHP, no framework and no database
 
 **For education only — not investment or financial advice.** Every page carries this notice.
 
-**Status: curriculum skeleton.** All 25 courses and 220 chapters are defined, with chapter
-summaries and prerequisites. Lessons, course overviews, outcomes, history, references, the
-timeline, the Chinese course overlays and economics-specific figures are still to be written;
-missing chapters show as "to be written". The site title says "(skeleton)" until `MA_SKELETON`
-in `inc/bootstrap.php` is set to `false`.
+**Status: English lessons written.** All 25 courses and 220 English chapters are in place, with
+course overviews, outcomes, history, references and a field timeline. Chinese lesson translations
+are still to come; missing Chinese chapters show as "to be written".
 
 | Year | Courses |
 |---|---|
@@ -44,6 +42,4 @@ tools/build.sh                                  # full build and cache warm-up
 node tools/labcheck.js [--lessons] [--zh]       # load figures and report errors
 ```
 
-`tools/check.php` lists every missing lesson and empty course field as a warning: its output is the
-to-do list (320 warnings for the skeleton — 220 lessons, and four empty fields in each of the 25
-courses).
+`tools/check.php` lists missing lessons, empty course fields, markup errors and depth shortfalls.

@@ -7,12 +7,27 @@
   "order": 220,
   "tagline": "Adverse selection, signalling, screening, moral hazard and principal–agent contracts, incentives in organisations, incomplete contracts, mechanism design and efficient mechanisms",
   "summary": "When one side of a transaction knows more than the other, markets and organisations have to be designed around the information gap. This course develops the economics of asymmetric information: adverse selection and market unravelling, signalling and screening, moral hazard and the design of incentive contracts, incentives in organisations and incomplete contracts, and mechanism design with the revelation principle — with applications to insurance, credit, labour markets and regulation.",
-  "overview": [],
+  "overview": [
+    "A used car that looks sound from the kerb may be a lemon. A worker who claims to be productive may be bluffing. An insured household may drive less carefully than an uninsured one. In each case one party to a transaction knows something the other does not, and that gap changes what gets traded, at what price, and under what contract. Information economics is the study of those gaps. It starts from the competitive and expected-utility apparatus of [[microeconomics]] and the Bayesian games of [[game-theory]], and asks what happens when information is an economic variable: it can be hidden, revealed at a cost, elicited by a menu of contracts, or designed into a mechanism.",
+    "Two distinctions organise the course. **Hidden information** (adverse selection) is about types that exist before a contract is signed — the quality of a car, the risk of an applicant, the talent of a candidate. Markets can unravel, as in Akerlof’s lemons model; agents can signal, as in Spence’s education model; or the uninformed side can screen, as in the Rothschild–Stiglitz insurance market. **Hidden action** (moral hazard) is about choices taken after a contract is signed — effort, care, investment — that the principal cannot observe. The principal–agent problem is then a constrained optimisation: share risk efficiently without destroying incentives. When several tasks, several periods or several parties are involved, the same tension reappears as multitasking, career concerns, tournaments and relational contracts. When important contingencies cannot be written down at all, contracts are incomplete and the allocation of control — property rights, the boundary of the firm — becomes the instrument.",
+    "The last two chapters recast the whole subject as a design problem. A mechanism maps reports into allocations and transfers. The revelation principle says that, without loss of generality, one may restrict attention to mechanisms in which telling the truth is an equilibrium. That reduction delivers both possibility results, notably the Vickrey–Clarke–Groves family of efficient mechanisms, and impossibility results, notably Gibbard–Satterthwaite in social choice and Myerson–Satterthwaite in bilateral trade. The same ideas reappear in [[market-design]] as auctions and matching procedures.",
+    "The mathematics is the mathematics of constrained optimisation and of Bayesian games, not of statistics: we work with types, beliefs, incentive-compatibility and participation constraints, and we compute contracts rather than estimate them. What the data say is taken seriously where the chapter makes an empirical claim, but the aim of the course is to give you a working command of the models — enough to see the information problem in an insurance form, a labour contract, a procurement auction or a merger remedy, and to compute the contract that the model recommends."
+  ],
   "prerequisites": [
     "microeconomics",
     "game-theory"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Explain how asymmetric information differs from symmetric uncertainty, and distinguish hidden-information (adverse selection) problems from hidden-action (moral hazard) problems.",
+    "Compute competitive equilibria in Akerlof-style lemons markets with discrete and continuous quality, and identify when the market unravels.",
+    "Derive separating and pooling equilibria in Spence’s job-market signalling model, apply the intuitive criterion, and evaluate how much of observed education is a signal rather than human capital.",
+    "Construct Rothschild–Stiglitz insurance contracts and monopoly screening menus that satisfy incentive compatibility and participation, and explain why a competitive pooling equilibrium cannot survive cream-skimming.",
+    "Solve the Holmström principal–agent problem in the binary-effort and linear-exponential-normal cases, and quantify the trade-off between risk sharing and incentives.",
+    "Analyse multitasking, career concerns, tournaments and relational contracts as responses to measurement and commitment problems inside organisations.",
+    "Compute the hold-up distortion under Nash bargaining and apply the Grossman–Hart–Moore property-rights criterion to a make-or-buy decision.",
+    "State the revelation principle, check incentive compatibility of a direct mechanism, and explain the Gibbard–Satterthwaite theorem as a constraint on strategy-proof social choice.",
+    "Compute Vickrey–Clarke–Groves transfers for a public-good decision and a private-good auction, and apply the Myerson–Satterthwaite theorem to bilateral trade."
+  ],
   "chapters": [
     {
       "slug": "asymmetric-information",
@@ -84,8 +99,118 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1961,
+      "title": "Vickrey’s second-price auction",
+      "detail": "William Vickrey showed that a sealed-bid auction in which the winner pays the second-highest bid elicits true values as a dominant strategy, and compared its revenue with that of the Dutch auction. The paper is the ancestor of the Vickrey–Clarke–Groves family of efficient mechanisms.",
+      "people": ["William Vickrey"]
+    },
+    {
+      "year": 1970,
+      "title": "Akerlof’s market for lemons",
+      "detail": "George Akerlof’s Quarterly Journal of Economics paper modelled a used-car market in which sellers know quality and buyers do not. Average quality is then determined by the price, and the market can unravel until only the worst cars trade. The paper also discussed health insurance, credit in developing economies and the employment of minority workers as applications of the same logic.",
+      "people": ["George Akerlof"]
+    },
+    {
+      "year": 1973,
+      "title": "Spence’s job-market signalling",
+      "detail": "Michael Spence showed that education can raise wages even if it does not raise productivity, provided it is cheaper for more able workers to obtain. Separating equilibria exist in which high-ability workers over-educate in order to distinguish themselves; pooling equilibria exist as well, and later refinements were needed to select among them.",
+      "people": ["Michael Spence"]
+    },
+    {
+      "year": 1976,
+      "title": "Rothschild and Stiglitz on competitive insurance",
+      "detail": "Michael Rothschild and Joseph Stiglitz characterised equilibrium in a competitive insurance market with hidden risk types. A pooling contract is broken by cream-skimming; the candidate equilibrium is separating, with high-risk agents fully insured and low-risk agents rationed. That equilibrium itself may fail to exist when the share of low-risk agents is large.",
+      "people": ["Michael Rothschild", "Joseph Stiglitz"]
+    },
+    {
+      "year": 1979,
+      "title": "Holmström’s informativeness principle",
+      "detail": "Bengt Holmström derived the first-order characterisation of optimal incentive contracts under moral hazard: the wage should vary with output according to the likelihood ratio of the hidden action. A signal is valuable in the contract if and only if it is informative about action, a result that organises much of later organisational economics.",
+      "people": ["Bengt Holmström"]
+    },
+    {
+      "year": 1983,
+      "title": "Myerson–Satterthwaite impossibility",
+      "detail": "Roger Myerson and Mark Satterthwaite proved that no mechanism can implement efficient bilateral trade, keep both parties willing to participate, and balance the budget, when the buyer’s value and the seller’s cost are independently drawn from overlapping intervals. Efficient trade and voluntary participation cannot be had together without an outside subsidy.",
+      "people": ["Roger Myerson", "Mark Satterthwaite"]
+    },
+    {
+      "year": 1986,
+      "title": "Grossman and Hart on property rights",
+      "detail": "Sanford Grossman and Oliver Hart modelled the firm as a collection of alienable residual control rights. When contracts cannot specify every use of an asset, ownership is the right to decide the remainder; that right protects the owner’s specific investments and determines the boundary of the firm. Hart and John Moore extended the framework in 1990.",
+      "people": ["Sanford Grossman", "Oliver Hart"]
+    },
+    {
+      "year": 2001,
+      "title": "Nobel Prize for asymmetric information",
+      "detail": "The Sveriges Riksbank Prize in Economic Sciences was awarded to George Akerlof, Michael Spence and Joseph Stiglitz for their analyses of markets with asymmetric information — lemons, signalling and screening — which had by then become the core of information economics.",
+      "people": ["George Akerlof", "Michael Spence", "Joseph Stiglitz"]
+    },
+    {
+      "year": 2007,
+      "title": "Nobel Prize for mechanism design",
+      "detail": "Leonid Hurwicz, Eric Maskin and Roger Myerson received the Prize for having laid the foundations of mechanism-design theory: incentive compatibility, the revelation principle, and implementation. The work connected social choice, auction theory and the design of regulation.",
+      "people": ["Leonid Hurwicz", "Eric Maskin", "Roger Myerson"]
+    },
+    {
+      "year": 2016,
+      "title": "Nobel Prize for contract theory",
+      "detail": "Oliver Hart and Bengt Holmström received the Prize for their contributions to contract theory: Holmström for moral hazard, teams, multitasking and career concerns; Hart for incomplete contracts and the property-rights theory of the firm.",
+      "people": ["Oliver Hart", "Bengt Holmström"]
+    }
+  ],
+  "references": [
+    {
+      "title": "Microeconomic Theory",
+      "authors": "Andreu Mas-Colell, Michael D. Whinston and Jerry R. Green",
+      "year": 1995,
+      "note": "Chapters 13–14 and 23 are the standard graduate treatment of adverse selection, signalling, screening, moral hazard and mechanism design; used here for statements of the revelation principle and Myerson–Satterthwaite."
+    },
+    {
+      "title": "Contract Theory",
+      "authors": "Patrick Bolton and Mathias Dewatripont",
+      "year": 2005,
+      "note": "The most comprehensive textbook on hidden information, hidden action, incomplete contracts and the internal organisation of the firm, with detailed expositions of Holmström, Grossman–Hart–Moore and relational contracts."
+    },
+    {
+      "title": "The Theory of Incentives: The Principal–Agent Model",
+      "authors": "Jean-Jacques Laffont and David Martimort",
+      "year": 2002,
+      "note": "A unified treatment of adverse selection and moral hazard as principal–agent problems, including mixed models and regulation; particularly clear on the revelation principle in screening."
+    },
+    {
+      "title": "The Economics of Contracts: A Primer",
+      "authors": "Bernard Salanié",
+      "year": 2005,
+      "note": "Second edition. A compact, example-driven introduction covering insurance, nonlinear pricing, moral hazard and incomplete contracts; good for first pass through the models in this course."
+    },
+    {
+      "title": "An Introduction to the Economics of Information: Incentives and Contracts",
+      "authors": "Inés Macho-Stadler and J. David Pérez-Castrillo",
+      "year": 2001,
+      "note": "Second edition. Undergraduate-to-masters treatment of adverse selection, signalling and moral hazard with fully worked numerical contracts; the source of several of the binary examples used in the lessons."
+    },
+    {
+      "title": "The Theory of Corporate Finance",
+      "authors": "Jean Tirole",
+      "year": 2006,
+      "note": "Applies moral hazard, adverse selection and incomplete contracts to credit, control rights and the organisation of the firm; the natural continuation of this course toward finance."
+    },
+    {
+      "title": "Intermediate Microeconomics: A Modern Approach",
+      "authors": "Hal R. Varian",
+      "year": 2014,
+      "note": "Ninth edition. Chapters on asymmetric information, signalling and moral hazard are the standard undergraduate preview of the models developed here."
+    },
+    {
+      "title": "Auction Theory",
+      "authors": "Vijay Krishna",
+      "year": 2010,
+      "note": "Second edition. The reference for Vickrey–Clarke–Groves mechanisms, revenue equivalence and the Myerson optimal auction, taken up again in the market-design course."
+    }
+  ],
   "next": [
     "market-design"
   ]

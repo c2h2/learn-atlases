@@ -7,9 +7,24 @@
   "order": 10,
   "tagline": "Scarcity and trade, supply and demand, elasticity, markets and welfare, firms and market power, and a first look at the macroeconomy",
   "summary": "Economics studies how people, firms and governments choose when resources are scarce. This course introduces the economic way of thinking: opportunity cost and the gains from trade, supply and demand, elasticity, the efficiency of markets and why they sometimes fail, and the behaviour of firms under competition and monopoly. It ends with a first look at the economy as a whole — national income, inflation, unemployment, money and economic policy.",
-  "overview": [],
+  "overview": [
+    "Economics is the study of choice under **scarcity**. Time, land, labour, machines and attention are limited; wants are not. Every decision therefore has an **opportunity cost** — the next-best alternative that is given up. The same logic applies whether the decision-maker is a student allocating an evening, a firm choosing an output, or a government drafting a budget. This course builds that logic into a set of models that can be written down, solved and confronted with evidence. The models are deliberately simple. Their purpose is not to describe every detail of a market but to isolate a mechanism — a relative price, an incentive, a constraint — so that we can see what follows from it and what would change if the mechanism were different.",
+    "The course has three movements. The first is the economic way of thinking and the gains from specialisation and trade: opportunity cost, comparative advantage, and why voluntary exchange can make both sides better off. The second is markets. Demand and supply determine prices; elasticities say how quantities respond; consumer and producer surplus measure the gains from trade in a single market; taxes, subsidies and price controls redistribute those gains and typically leave a deadweight loss; externalities and public goods show when private markets misallocate resources. Firms then enter: production and cost in the short and long run, price-taking under perfect competition, and price-setting under monopoly and imperfect competition. The third movement is a first look at the economy as a whole: how national income, inflation and unemployment are measured, and how monetary and fiscal policy act on aggregate demand and supply in the short run.",
+    "Two habits make the subject hard, and both are worth acquiring early. The first is to keep **positive** claims (what a model or a study finds) separate from **normative** claims (what ought to be done). Efficiency, equity and other goals can conflict; stating the trade-off is part of the analysis, choosing among goals is not a theorem. The second is to treat every diagram as a claim with assumptions. A demand curve holds other things equal; a competitive supply curve assumes price-taking; a deadweight-loss triangle assumes that the unregulated quantity was the efficient one. When the assumptions fail, the picture changes — and later courses, from [[microeconomics]] to [[public-economics]] and [[macroeconomics]], are largely about those failures. Work the numerical examples with a pencil before reading the solutions, move the sliders on the figures until the algebra and the picture agree, and attempt the exercises, including the ones that ask you to derive a result rather than plug in a number."
+  ],
   "prerequisites": [],
-  "outcomes": [],
+  "outcomes": [
+    "Explain scarcity, opportunity cost and marginal reasoning, and apply them to a concrete allocation of time or resources.",
+    "Construct a production possibility frontier, compute absolute and comparative advantage, and show how specialisation and trade can raise consumption for both parties.",
+    "Solve for a competitive market equilibrium from linear demand and supply, and predict how the equilibrium price and quantity change when either curve shifts.",
+    "Calculate price, income and cross-price elasticities from data, and use them to determine the effect of a price change on expenditure and on tax incidence.",
+    "Compute consumer surplus, producer surplus and deadweight loss, and evaluate the efficiency and distributional effects of a tax, subsidy or price control.",
+    "Identify an externality or a public good, and compare corrective taxes, regulation, private bargaining and public provision as responses.",
+    "Derive a competitive firm's cost curves from a production function, and find the profit-maximising output and the short-run shutdown decision.",
+    "Find a monopolist's price and quantity from a demand curve and a cost curve, and compute the associated deadweight loss.",
+    "Distinguish nominal from real GDP, construct a simple price index, and compute an unemployment rate from labour-force data.",
+    "Use aggregate demand and aggregate supply to analyse a short-run fluctuation, and explain the instruments and limits of monetary and fiscal policy."
+  ],
   "chapters": [
     {
       "slug": "thinking-like-an-economist",
@@ -92,8 +107,112 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1776,
+      "title": "Smith's Wealth of Nations",
+      "detail": "Adam Smith publishes An Inquiry into the Nature and Causes of the Wealth of Nations, arguing that specialisation and voluntary exchange, coordinated by prices, raise a nation's produce, and analysing the division of labour, capital accumulation and the role of government.",
+      "people": ["Adam Smith"]
+    },
+    {
+      "year": 1817,
+      "title": "Ricardo on comparative advantage",
+      "detail": "David Ricardo's On the Principles of Political Economy and Taxation states the theory of comparative advantage: two countries can gain from trade even when one is more productive in every good, provided opportunity costs differ.",
+      "people": ["David Ricardo"]
+    },
+    {
+      "year": 1871,
+      "title": "The marginal revolution",
+      "detail": "William Stanley Jevons's The Theory of Political Economy and Carl Menger's Grundsätze der Volkswirtschaftslehre independently recast value as arising from the marginal utility of a good rather than from the labour embodied in it. Léon Walras's Éléments d'économie politique pure (1874) added a mathematical account of general equilibrium.",
+      "people": ["William Stanley Jevons", "Carl Menger", "Léon Walras"]
+    },
+    {
+      "year": 1890,
+      "title": "Marshall's Principles",
+      "detail": "Alfred Marshall publishes Principles of Economics, which made supply and demand, elasticity, consumer surplus and the distinction between the short run and the long run the working language of undergraduate economics.",
+      "people": ["Alfred Marshall"]
+    },
+    {
+      "year": 1920,
+      "title": "Pigou on externalities",
+      "detail": "A. C. Pigou's The Economics of Welfare analyses divergences between private and social cost and argues for taxes and subsidies to correct them — the origin of the Pigouvian tax.",
+      "people": ["A. C. Pigou"]
+    },
+    {
+      "year": 1936,
+      "title": "Keynes's General Theory",
+      "detail": "John Maynard Keynes publishes The General Theory of Employment, Interest and Money, arguing that aggregate demand can fall short of full-employment output and that fiscal and monetary policy can close the gap.",
+      "people": ["John Maynard Keynes"]
+    },
+    {
+      "year": 1948,
+      "title": "Samuelson's Economics",
+      "detail": "Paul Samuelson's textbook Economics, first published in 1948, synthesised Keynesian macroeconomics with Marshallian microeconomics and became the template for the modern principles course.",
+      "people": ["Paul Samuelson"]
+    },
+    {
+      "year": 1954,
+      "title": "Samuelson on public goods",
+      "detail": "Paul Samuelson's paper 'The Pure Theory of Public Expenditure' (Review of Economics and Statistics) defines a pure public good by non-rivalry and gives the Samuelson condition that the sum of marginal rates of substitution should equal marginal cost.",
+      "people": ["Paul Samuelson"]
+    },
+    {
+      "year": 1960,
+      "title": "Coase on social cost",
+      "detail": "Ronald Coase's 'The Problem of Social Cost' (Journal of Law and Economics) argues that if property rights are well defined and bargaining is costless, private parties can internalise an externality; when transaction costs are high, the assignment of rights matters.",
+      "people": ["Ronald Coase"]
+    },
+    {
+      "year": 1970,
+      "title": "Akerlof's market for lemons",
+      "detail": "George Akerlof's 'The Market for \"Lemons\"' (Quarterly Journal of Economics) shows how asymmetric information can unravel a market, opening the modern study of adverse selection.",
+      "people": ["George Akerlof"]
+    }
+  ],
+  "references": [
+    {
+      "title": "Principles of Economics",
+      "authors": "N. Gregory Mankiw",
+      "year": 2024,
+      "note": "The most widely used English-language principles text; clear on opportunity cost, supply and demand, and the first look at macro. 10th edition."
+    },
+    {
+      "title": "Economics",
+      "authors": "Paul Krugman and Robin Wells",
+      "year": 2021,
+      "note": "A narrative principles text with careful diagrams and a strong treatment of market failure and the open economy. 6th edition."
+    },
+    {
+      "title": "Economics",
+      "authors": "Daron Acemoglu, David Laibson and John A. List",
+      "year": 2022,
+      "note": "Principles organised around data and empirical examples, including randomised evaluations. 3rd edition."
+    },
+    {
+      "title": "The Economy",
+      "authors": "The CORE Team",
+      "year": 2017,
+      "note": "A free, historically informed introduction that puts inequality, the firm and the environment at the centre of the first course. Oxford University Press."
+    },
+    {
+      "title": "Principles of Economics 3e",
+      "authors": "OpenStax",
+      "year": 2022,
+      "note": "An open textbook covering the standard syllabus; useful as a second exposition and for additional exercises."
+    },
+    {
+      "title": "Macroeconomics",
+      "authors": "Olivier Blanchard",
+      "year": 2021,
+      "note": "The natural next step after the last two chapters: IS–LM, the Phillips curve and policy in an open economy. 8th edition."
+    },
+    {
+      "title": "Intermediate Microeconomics: A Modern Approach",
+      "authors": "Hal R. Varian",
+      "year": 2014,
+      "note": "Where this course leads on the micro side: utility, cost, welfare and market structure with more mathematics. 9th edition."
+    }
+  ],
   "next": [
     "microeconomics",
     "macroeconomics"

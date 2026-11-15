@@ -7,11 +7,27 @@
   "order": 60,
   "tagline": "Economic data, simple and multiple regression, inference, functional form and specification, heteroskedasticity, binary outcomes, panel data and instrumental variables",
   "summary": "Econometrics uses data to measure economic relationships and test economic theories. This course develops linear regression from first principles — estimation by ordinary least squares, its statistical properties, hypothesis tests and confidence intervals — and then the tools that real data demand: functional form and dummy variables, heteroskedasticity and robust inference, models for binary outcomes, panel data and instrumental variables. Probability and statistical inference are reviewed briefly; their full treatment is in the Maths Atlas.",
-  "overview": [],
+  "overview": [
+    "A theory of wages, of consumption, or of growth is a statement about how one economic quantity depends on others. To take such a statement to data we need more than a scatter plot: we need a model of how the data were generated, a method of estimation, and a way of saying how precise the estimates are. **Econometrics** is that toolkit. The workhorse is the linear regression model $y = \\beta_0 + \\beta_1 x + u$, estimated by ordinary least squares $\\hat{\\boldsymbol\\beta} = (X\\T X)^{-1}X\\T\\mathbf{y}$. Under stated assumptions the estimator is unbiased and, among linear unbiased estimators, has the smallest variance (the Gauss–Markov theorem). Those assumptions fail in many economic settings, and the later chapters develop the repairs — robust standard errors, dummy variables and nonlinear functional form, models for binary outcomes, panel methods that difference out unobserved heterogeneity, and instrumental variables for endogenous regressors.",
+    "The course is organised as a single argument. We begin with the kinds of economic data and the distinction between correlation and causation, reviewing the probability that the rest of the course uses. Simple regression with one explanatory variable makes the algebra and the interpretation of coefficients concrete; multiple regression then introduces partial effects, omitted-variable bias and the matrix formula. Inference — $t$ and $F$ tests, confidence intervals, and large-sample approximations — turns estimates into statements with uncertainty. The remaining chapters treat the problems that real data pose: functional form, dummy variables and specification tests; heteroskedasticity and clustered standard errors; binary outcomes estimated by maximum likelihood; repeated observations of the same units (panel data); and endogenous regressors handled with instruments.",
+    "Two habits make the subject tractable. First, **state the assumptions**. Unbiasedness of OLS, the Gauss–Markov theorem, the $t$ distribution of a coefficient, and the consistency of an instrumental-variables estimator each rest on a short list of conditions; if a condition fails, the claimed property need not hold. Second, **compute**. Every numerical example in this course can be reproduced with a pencil or with `numpy` (ordinary least squares is a few lines of linear algebra; this atlas does not use statistical packages as black boxes). Simulated data use a fixed seed so that the numbers in the text match what you obtain. Probability, sampling distributions, hypothesis tests and the linear algebra of least squares are developed fully in the Maths Atlas; we use them freely and link to the relevant chapters.",
+    "Econometrics is for measuring relationships and testing theories, not for recommending investments, policies or personal financial decisions. Illustrative data sets are constructed so that the arithmetic is transparent; when real studies are cited, they are dated, sourced, and treated as evidence about a particular setting rather than as a forecast."
+  ],
   "prerequisites": [
     "mathematical-economics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Distinguish cross-section, time-series and panel data, and explain why a correlation between two variables need not be a causal effect.",
+    "Derive the ordinary least squares estimator in the simple regression model, interpret $\\hat\\beta_0$ and $\\hat\\beta_1$, and compute fitted values, residuals and $R^2$ by hand and with numpy.",
+    "Write the multiple regression model in matrix form, compute $\\hat{\\boldsymbol\\beta} = (X\\T X)^{-1}X\\T\\mathbf{y}$, and use the Frisch–Waugh–Lovell theorem to interpret partial effects.",
+    "State the Gauss–Markov assumptions and prove that OLS is the best linear unbiased estimator under those assumptions.",
+    "Construct $t$ and $F$ tests and confidence intervals for regression coefficients, and distinguish statistical significance from economic magnitude.",
+    "Specify logarithmic, quadratic and interaction models, encode qualitative factors with dummy variables, and apply basic specification tests.",
+    "Diagnose heteroskedasticity, compute heteroskedasticity-robust and clustered standard errors, and compare OLS with weighted least squares.",
+    "Estimate linear probability, probit and logit models for binary outcomes and interpret marginal effects.",
+    "Implement pooled, first-difference, fixed-effects and random-effects estimators on panel data, and explain what each does with unobserved heterogeneity.",
+    "Identify an endogenous regressor, construct the instrumental-variables and two-stage least squares estimators, and state the relevance and exclusion conditions they require."
+  ],
   "chapters": [
     {
       "slug": "economic-data",
@@ -89,8 +105,106 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1805,
+      "title": "Legendre publishes least squares",
+      "detail": "Adrien-Marie Legendre's Nouvelles méthodes pour la détermination des orbites des comètes introduces the method of least squares as a way of combining inconsistent astronomical observations by minimising the sum of squared residuals.",
+      "people": ["Adrien-Marie Legendre"]
+    },
+    {
+      "year": 1809,
+      "title": "Gauss gives a probabilistic justification",
+      "detail": "Carl Friedrich Gauss's Theoria motus corporum coelestium derives least squares from the assumption of normally distributed errors and claims to have used the method since 1795. In the 1820s he proved its optimality among linear unbiased estimators — the result later associated with Andrey Markov.",
+      "people": ["Carl Friedrich Gauss"]
+    },
+    {
+      "year": 1886,
+      "title": "Galton names regression",
+      "detail": "Francis Galton's paper 'Regression Towards Mediocrity in Hereditary Stature' in the Journal of the Anthropological Institute documents that the heights of adult children regress toward the population mean, giving the method its name.",
+      "people": ["Francis Galton"]
+    },
+    {
+      "year": 1933,
+      "title": "The Cowles Commission is founded",
+      "detail": "Alfred Cowles founds the Cowles Commission for Research in Economics (Colorado Springs; later Chicago and Yale), which becomes the centre of work on simultaneous-equation models and the probability approach to economic data.",
+      "people": ["Alfred Cowles"]
+    },
+    {
+      "year": 1944,
+      "title": "Haavelmo's probability approach",
+      "detail": "Trygve Haavelmo's monograph 'The Probability Approach in Econometrics', published as a supplement to Econometrica, argues that economic observations should be treated as realisations of a probability model, providing the statistical foundation of modern econometrics.",
+      "people": ["Trygve Haavelmo"]
+    },
+    {
+      "year": 1978,
+      "title": "Hausman's specification test",
+      "detail": "Jerry Hausman's Econometrica paper 'Specification Tests in Econometrics' gives a general comparison of two estimators, one consistent under a broader set of assumptions, as a test of those extra assumptions — now the standard test of fixed versus random effects.",
+      "people": ["Jerry A. Hausman"]
+    },
+    {
+      "year": 1980,
+      "title": "White's heteroskedasticity-robust standard errors",
+      "detail": "Halbert White's Econometrica paper 'A Heteroskedasticity-Consistent Covariance Matrix Estimator and a Direct Test for Heteroskedasticity' shows how to estimate the sampling variance of OLS without assuming constant error variance, a calculation now routine in applied work.",
+      "people": ["Halbert White"]
+    },
+    {
+      "year": 1991,
+      "title": "Angrist and Krueger's quarter-of-birth instrument",
+      "detail": "Joshua Angrist and Alan Krueger's Quarterly Journal of Economics paper 'Does Compulsory School Attendance Affect Schooling and Earnings?' uses quarter of birth as an instrument for years of schooling, becoming a canonical illustration of instrumental variables in labour economics.",
+      "people": ["Joshua D. Angrist", "Alan B. Krueger"]
+    },
+    {
+      "year": 2009,
+      "title": "Mostly Harmless Econometrics",
+      "detail": "Joshua Angrist and Jörn-Steffen Pischke's Mostly Harmless Econometrics recasts the undergraduate and applied toolkit around the potential-outcomes framework and research designs that identify causal effects, influencing a generation of empirical work.",
+      "people": ["Joshua D. Angrist", "Jörn-Steffen Pischke"]
+    }
+  ],
+  "references": [
+    {
+      "title": "Introductory Econometrics: A Modern Approach",
+      "authors": "Jeffrey M. Wooldridge",
+      "year": 2020,
+      "note": "The standard undergraduate text; this course follows its notation (y = β0 + β1 x + u) and its sequence from simple regression through IV. Seventh edition."
+    },
+    {
+      "title": "Introduction to Econometrics",
+      "authors": "James H. Stock and Mark W. Watson",
+      "year": 2020,
+      "note": "A parallel undergraduate treatment with a strong emphasis on causal questions, robust standard errors from the start, and applications. Fourth edition."
+    },
+    {
+      "title": "Mostly Harmless Econometrics: An Empiricist's Companion",
+      "authors": "Joshua D. Angrist and Jörn-Steffen Pischke",
+      "year": 2009,
+      "note": "The applied research-design companion: potential outcomes, LATE, differences-in-differences and regression discontinuity, written for readers who already know OLS."
+    },
+    {
+      "title": "Mastering 'Metrics: The Path from Cause to Effect",
+      "authors": "Joshua D. Angrist and Jörn-Steffen Pischke",
+      "year": 2014,
+      "note": "A shorter, more elementary introduction to the same identification strategies, useful as a first pass before the later chapters of this course and before Causal Inference."
+    },
+    {
+      "title": "Econometric Analysis",
+      "authors": "William H. Greene",
+      "year": 2018,
+      "note": "A comprehensive graduate reference for maximum likelihood, generalised least squares, limited dependent variables and panel methods. Eighth edition."
+    },
+    {
+      "title": "Econometrics",
+      "authors": "Fumio Hayashi",
+      "year": 2000,
+      "note": "A compact graduate treatment organised around the generalised method of moments; excellent on large-sample theory and on the unified view of OLS, IV and GLS as GMM estimators."
+    },
+    {
+      "title": "Microeconometrics: Methods and Applications",
+      "authors": "A. Colin Cameron and Pravin K. Trivedi",
+      "year": 2005,
+      "note": "The standard reference for nonlinear models, panel data and clustered inference with cross-section and panel micro data."
+    }
+  ],
   "next": [
     "causal-inference",
     "time-series"

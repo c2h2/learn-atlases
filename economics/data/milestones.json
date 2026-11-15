@@ -1,4 +1,288 @@
 {
   "_doc": "Field-wide milestones for the timeline (course-specific events live in each course.json). year < 0 means BC.",
-  "milestones": []
+  "milestones": [
+    {
+      "year": 1776,
+      "title": "The Wealth of Nations",
+      "detail": "Adam Smith’s Inquiry into the Nature and Causes of the Wealth of Nations organised the argument that specialisation and competitive markets raise living standards, and that the division of labour is limited by the extent of the market.",
+      "people": [
+        "Adam Smith"
+      ],
+      "area": "micro"
+    },
+    {
+      "year": 1798,
+      "title": "An Essay on the Principle of Population",
+      "detail": "Thomas Malthus argued that population tends to grow faster than the means of subsistence, so that living standards in a pre-industrial world revert to a subsistence floor. The essay is the usual starting point for models of stagnation before modern growth.",
+      "people": [
+        "Thomas Robert Malthus"
+      ],
+      "area": "global"
+    },
+    {
+      "year": 1817,
+      "title": "On the Principles of Political Economy and Taxation",
+      "detail": "David Ricardo stated the theory of comparative advantage and a labour theory of value, and analysed rents, wages and profits as the distribution of a growing product.",
+      "people": [
+        "David Ricardo"
+      ],
+      "area": "global"
+    },
+    {
+      "year": 1838,
+      "title": "A mathematical theory of wealth",
+      "detail": "Antoine Augustin Cournot’s Recherches sur les principes mathématiques de la théorie des richesses treated quantity as a continuous choice and derived the duopoly equilibrium that still bears his name.",
+      "people": [
+        "Antoine Augustin Cournot"
+      ],
+      "area": "strategy"
+    },
+    {
+      "year": 1871,
+      "title": "The marginal revolution",
+      "detail": "William Stanley Jevons’s Theory of Political Economy and Carl Menger’s Principles of Economics independently based value on marginal utility rather than on labour cost, opening the way to modern demand theory.",
+      "people": [
+        "William Stanley Jevons",
+        "Carl Menger"
+      ],
+      "area": "micro"
+    },
+    {
+      "year": 1874,
+      "title": "Éléments d'économie politique pure",
+      "detail": "Léon Walras set out a system of simultaneous equations for a competitive economy and asked whether a set of prices exists that clears every market at once.",
+      "people": [
+        "Léon Walras"
+      ],
+      "area": "micro"
+    },
+    {
+      "year": 1890,
+      "title": "Principles of Economics",
+      "detail": "Alfred Marshall’s textbook put supply and demand on one diagram, with quantity on the horizontal axis and price on the vertical, and developed partial-equilibrium analysis of industries.",
+      "people": [
+        "Alfred Marshall"
+      ],
+      "area": "micro"
+    },
+    {
+      "year": 1930,
+      "title": "The Theory of Interest",
+      "detail": "Irving Fisher defined real and nominal interest through expected inflation, and treated the interest rate as the price that equilibrates saving and investment over time.",
+      "people": [
+        "Irving Fisher"
+      ],
+      "area": "finance"
+    },
+    {
+      "year": 1936,
+      "title": "The General Theory of Employment, Interest and Money",
+      "detail": "John Maynard Keynes argued that aggregate demand can fall short of full-employment output and that monetary and fiscal policy can close the gap. The book reorganised macroeconomics around that possibility.",
+      "people": [
+        "John Maynard Keynes"
+      ],
+      "area": "macro"
+    },
+    {
+      "year": 1937,
+      "title": "Mr Keynes and the Classics",
+      "detail": "John Hicks’s IS–LM diagram gave Keynes’s argument a simultaneous-equation form that could be taught and estimated, and it remains the workhorse short-run model of undergraduate macroeconomics.",
+      "people": [
+        "John Hicks"
+      ],
+      "area": "macro"
+    },
+    {
+      "year": 1944,
+      "title": "Theory of Games and Economic Behavior",
+      "detail": "John von Neumann and Oskar Morgenstern axiomatised expected utility and defined games of strategy, giving economics a language for conflict, cooperation and risk.",
+      "people": [
+        "John von Neumann",
+        "Oskar Morgenstern"
+      ],
+      "area": "strategy"
+    },
+    {
+      "year": 1947,
+      "title": "Foundations of Economic Analysis",
+      "detail": "Paul Samuelson recast economic theory as constrained optimisation and comparative statics, and made the correspondence between maximisation and observable restrictions a research programme.",
+      "people": [
+        "Paul Samuelson"
+      ],
+      "area": "methods"
+    },
+    {
+      "year": 1950,
+      "title": "Equilibrium points in n-person games",
+      "detail": "John Nash proved that every finite game has an equilibrium in mixed strategies. The idea became the default solution concept of non-cooperative game theory.",
+      "people": [
+        "John Nash"
+      ],
+      "area": "strategy"
+    },
+    {
+      "year": 1952,
+      "title": "Portfolio selection",
+      "detail": "Harry Markowitz defined portfolio risk as the variance of return and showed that diversification is a statement about covariance, not about holding many names.",
+      "people": [
+        "Harry Markowitz"
+      ],
+      "area": "finance"
+    },
+    {
+      "year": 1954,
+      "title": "Existence of a competitive equilibrium",
+      "detail": "Kenneth Arrow and Gérard Debreu proved that, under convexity and continuity assumptions, a competitive economy has an equilibrium price vector that clears every market.",
+      "people": [
+        "Kenneth Arrow",
+        "Gérard Debreu"
+      ],
+      "area": "micro"
+    },
+    {
+      "year": 1956,
+      "title": "A contribution to the theory of economic growth",
+      "detail": "Robert Solow’s model separated capital accumulation from technical change and showed that, with diminishing returns, the saving rate affects the level of output per worker but not its long-run growth rate.",
+      "people": [
+        "Robert Solow"
+      ],
+      "area": "macro"
+    },
+    {
+      "year": 1958,
+      "title": "The cost of capital and corporation finance",
+      "detail": "Franco Modigliani and Merton Miller showed that, in a frictionless market, the value of a firm is independent of its mix of debt and equity. Capital structure matters only when the frictions they shut off are restored.",
+      "people": [
+        "Franco Modigliani",
+        "Merton Miller"
+      ],
+      "area": "finance"
+    },
+    {
+      "year": 1960,
+      "title": "The problem of social cost",
+      "detail": "Ronald Coase argued that if parties can bargain without cost over an externality, they can reach an efficient allocation regardless of who holds the legal right — and that they often cannot, which is why the assignment of rights matters.",
+      "people": [
+        "Ronald Coase"
+      ],
+      "area": "policy"
+    },
+    {
+      "year": 1964,
+      "title": "Capital asset prices",
+      "detail": "William Sharpe’s capital asset pricing model related an asset’s expected excess return to its covariance with the market portfolio, giving a benchmark that later empirical work has tested and extended.",
+      "people": [
+        "William F. Sharpe"
+      ],
+      "area": "finance"
+    },
+    {
+      "year": 1968,
+      "title": "The natural rate of unemployment",
+      "detail": "Milton Friedman’s presidential address argued that monetary policy cannot permanently trade inflation for unemployment, because expectations adjust. The same year Edmund Phelps published a closely related argument.",
+      "people": [
+        "Milton Friedman",
+        "Edmund Phelps"
+      ],
+      "area": "macro"
+    },
+    {
+      "year": 1970,
+      "title": "The market for lemons",
+      "detail": "George Akerlof showed that when sellers know quality and buyers do not, adverse selection can thin a market or shut it. Asymmetric information became a field rather than a footnote.",
+      "people": [
+        "George Akerlof"
+      ],
+      "area": "micro"
+    },
+    {
+      "year": 1973,
+      "title": "The pricing of options",
+      "detail": "Fischer Black and Myron Scholes, and independently Robert Merton, priced a European option by no-arbitrage replication. The formula became the language of derivatives markets and of corporate liabilities.",
+      "people": [
+        "Fischer Black",
+        "Myron Scholes",
+        "Robert C. Merton"
+      ],
+      "area": "finance"
+    },
+    {
+      "year": 1976,
+      "title": "Econometric policy evaluation: a critique",
+      "detail": "Robert Lucas argued that estimated policy rules are not invariant to the policy itself, because agents’ expectations change with the rule. The critique reshaped how macroeconomists specify and use models.",
+      "people": [
+        "Robert Lucas"
+      ],
+      "area": "macro"
+    },
+    {
+      "year": 1979,
+      "title": "Prospect theory",
+      "detail": "Daniel Kahneman and Amos Tversky replaced expected-utility evaluation of final wealth with a value function over gains and losses and a nonlinear weighting of probabilities. The paper is the usual starting point of behavioural economics.",
+      "people": [
+        "Daniel Kahneman",
+        "Amos Tversky"
+      ],
+      "area": "policy"
+    },
+    {
+      "year": 1979,
+      "title": "Sample selection bias as a specification error",
+      "detail": "James Heckman’s two-step estimator showed how to recover behavioural parameters when the sample is selected by a prior choice, such as labour-force participation. Selection became a standard specification problem rather than a footnote.",
+      "people": [
+        "James Heckman"
+      ],
+      "area": "methods"
+    },
+    {
+      "year": 1982,
+      "title": "Time to build and aggregate fluctuations",
+      "detail": "Finn Kydland and Edward Prescott calibrated a competitive equilibrium with technology shocks and showed that it could generate business-cycle moments. Real-business-cycle theory made quantitative general equilibrium a macroeconomic method.",
+      "people": [
+        "Finn Kydland",
+        "Edward Prescott"
+      ],
+      "area": "macro"
+    },
+    {
+      "year": 1984,
+      "title": "The evolution of the labor market for medical interns",
+      "detail": "Alvin Roth described the hospital–intern match as a stable-matching problem and, with later collaborators, redesigned the algorithm that assigns residents. Market design became a field that builds as well as studies markets.",
+      "people": [
+        "Alvin E. Roth"
+      ],
+      "area": "strategy"
+    },
+    {
+      "year": 1991,
+      "title": "Does compulsory school attendance affect schooling and earnings?",
+      "detail": "Joshua Angrist and Alan Krueger used quarter of birth as an instrument for years of schooling in the United States. The paper became a template for credible causal inference with natural experiments.",
+      "people": [
+        "Joshua Angrist",
+        "Alan Krueger"
+      ],
+      "area": "methods"
+    },
+    {
+      "year": 1994,
+      "title": "Minimum wages and employment in New Jersey",
+      "detail": "David Card and Alan Krueger compared fast-food employment in New Jersey and Pennsylvania after New Jersey raised its minimum wage, and did not find the employment drop that a simple competitive model predicted. The study reopened a live empirical dispute.",
+      "people": [
+        "David Card",
+        "Alan Krueger"
+      ],
+      "area": "policy"
+    },
+    {
+      "year": 2001,
+      "title": "The colonial origins of comparative development",
+      "detail": "Daron Acemoglu, Simon Johnson and James Robinson used settler mortality as an instrument for institutions and argued that property-rights institutions, rather than geography alone, explain much of the cross-country income gap.",
+      "people": [
+        "Daron Acemoglu",
+        "Simon Johnson",
+        "James Robinson"
+      ],
+      "area": "global"
+    }
+  ]
 }

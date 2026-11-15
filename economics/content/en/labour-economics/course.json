@@ -7,12 +7,26 @@
   "order": 190,
   "tagline": "Labour supply and demand, equilibrium and minimum wages, human capital and the returns to education, compensating differentials, discrimination, wage inequality, unions and migration, and job search",
   "summary": "Most people’s income comes from work, so the labour market matters for nearly everyone. This course studies how labour supply and demand determine wages and employment; how people invest in education and skills; why wages differ between jobs and between groups; the effects of minimum wages, unions and migration; and how job search shapes unemployment — always confronting theory with empirical evidence.",
-  "overview": [],
+  "overview": [
+    "Wages, hours, who has a job and who does not are among the most closely watched numbers in any economy, and for a simple reason: for most households, labour earnings are the main source of income. **Labour economics** asks how those outcomes are determined. A worker choosing hours and whether to participate at all, a firm choosing how many people to hire and which mix of skills to use, a union bargaining over a wage, a migrant choosing a destination, an unemployed person deciding which offers to accept — each of these is a constrained choice, and together they add up to the wage structure, the employment rate and the unemployment rate that we read in the statistical releases.",
+    "The course is organised around that sequence of choices. It begins with labour supply and labour demand as they come out of the standard models of the household and the firm, and then puts the two sides together in competitive and monopsonistic equilibrium, with a careful look at the theory and evidence on minimum wages. It then asks why wages differ: because people invest differently in **human capital**, because jobs differ in risk and amenities, because employers or customers treat groups differently, and because technology, trade and institutions have pulled the wage distribution apart. The last two chapters treat collective bargaining and migration, and the search-and-matching account of unemployment.",
+    "What makes the subject hard is not the mathematics — most of the models are rearrangements of consumer and producer theory, plus a little dynamic programming in the search chapter — but the empirical work. Labour data are not an experiment. Ability is unobserved, migrants are not randomly assigned to cities, and a rise in the minimum wage is usually accompanied by other changes. The course therefore spends as much time on identification — instrumental variables for the return to schooling, difference-in-differences for minimum wages, audit studies for discrimination — as on the theory, and it presents competing studies on the live disputes rather than a single preferred number. The material is for education only; it is not investment, career or financial advice."
+  ],
   "prerequisites": [
     "microeconomics",
     "econometrics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Derive labour supply from the labour–leisure model, decompose a wage change into income and substitution effects, and distinguish the extensive and intensive margins.",
+    "Obtain the firm’s short-run and long-run labour demand from profit maximisation, and apply the Hicks–Marshall laws of derived demand.",
+    "Solve for competitive and monopsonistic labour-market equilibrium, and evaluate the predicted employment effects of a minimum wage against the Card–Krueger literature and its critics.",
+    "Set out the human-capital and signalling models of schooling, and interpret OLS, IV and sibling estimates of the return to education.",
+    "Use the hedonic-wage model to price job amenities and to recover a value of a statistical life from wage–risk gradients.",
+    "Distinguish taste-based from statistical discrimination, implement an Oaxaca–Blinder decomposition, and read audit and correspondence studies.",
+    "Account for the rise in wage inequality with skill-biased and task-based technical change, trade and labour-market institutions.",
+    "Compare monopoly-union and efficient-bargaining models, and weigh the Borjas and Peri evidence on how immigration affects native wages.",
+    "Solve a McCall search problem for a reservation wage, describe the Diamond–Mortensen–Pissarides matching equilibrium, and analyse unemployment insurance in that framework."
+  ],
   "chapters": [
     {
       "slug": "labour-supply",
@@ -89,7 +103,114 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
-  "next": []
+  "history": [
+    {
+      "year": 1776,
+      "title": "Compensating differentials in The Wealth of Nations",
+      "detail": "Adam Smith argued that wages must compensate for the hardship, dirtiness and risk of an occupation, and for the cost of acquiring the skill it requires — the starting point of both compensating-differential and human-capital theory.",
+      "people": ["Adam Smith"]
+    },
+    {
+      "year": 1890,
+      "title": "Labour as a derived demand",
+      "detail": "Alfred Marshall’s Principles of Economics treated the demand for labour as derived from the demand for the product, and stated the four rules that Hicks later formalised as the laws of derived demand.",
+      "people": ["Alfred Marshall"]
+    },
+    {
+      "year": 1932,
+      "title": "Hicks’s Theory of Wages",
+      "detail": "John Hicks set out the substitution and scale effects that determine the elasticity of labour demand, analysed bargaining between employers and unions, and gave the Marshall–Hicks conditions a precise form.",
+      "people": ["John Hicks"]
+    },
+    {
+      "year": 1957,
+      "title": "The Economics of Discrimination",
+      "detail": "Gary Becker modelled prejudice as a taste for not employing, working with or buying from a particular group, and showed how competitive markets can punish discriminating employers — a framework still used, and still contested, today.",
+      "people": ["Gary Becker"]
+    },
+    {
+      "year": 1964,
+      "title": "Human Capital",
+      "detail": "Becker’s Human Capital treated schooling and on-the-job training as investment, with a rate of return comparable to that on physical capital. Jacob Mincer’s earnings function (1958, 1974) gave the framework its empirical workhorse.",
+      "people": ["Gary Becker", "Jacob Mincer"]
+    },
+    {
+      "year": 1973,
+      "title": "Job-market signalling",
+      "detail": "Michael Spence showed that education can raise wages by signalling ability even if it teaches nothing, provided the cost of schooling is lower for more able workers. The human-capital and signalling views have been in tension ever since.",
+      "people": ["Michael Spence"]
+    },
+    {
+      "year": 1974,
+      "title": "Hedonic wages and implicit markets",
+      "detail": "Sherwin Rosen’s model of hedonic prices showed how the wage–amenity gradient traces out the joint envelope of firms’ offer curves and workers’ indifference curves, giving a market theory of compensating differentials.",
+      "people": ["Sherwin Rosen"]
+    },
+    {
+      "year": 1990,
+      "title": "The Mariel boatlift and immigration empirics",
+      "detail": "David Card’s study of the 1980 Mariel boatlift found little effect on native wages in Miami, while George Borjas later argued that national skill-cell comparisons show more adverse effects. The disagreement still structures the immigration literature.",
+      "people": ["David Card", "George Borjas"]
+    },
+    {
+      "year": 1994,
+      "title": "Card and Krueger on the New Jersey minimum wage",
+      "detail": "David Card and Alan Krueger compared fast-food employment in New Jersey and Pennsylvania after New Jersey’s 1992 minimum-wage rise and found no employment decline. The paper, and the critiques that followed, recast both minimum-wage research and empirical labour economics.",
+      "people": ["David Card", "Alan Krueger"]
+    },
+    {
+      "year": 2010,
+      "title": "Nobel prize for search theory",
+      "detail": "Peter Diamond, Dale Mortensen and Christopher Pissarides received the Nobel prize for the search-and-matching theory of unemployment, in which vacancies and job-seekers take time to meet and wages are bargained in bilateral meetings rather than set on a spot market.",
+      "people": ["Peter Diamond", "Dale Mortensen", "Christopher Pissarides"]
+    }
+  ],
+  "references": [
+    {
+      "title": "Labor Economics",
+      "authors": "George J. Borjas",
+      "year": 2020,
+      "note": "The standard North American undergraduate text (8th ed.): clear theory, continuous contact with US evidence, and careful chapters on immigration, discrimination and inequality. Title uses American spelling."
+    },
+    {
+      "title": "Modern Labor Economics: Theory and Public Policy",
+      "authors": "Ronald G. Ehrenberg, Robert S. Smith and Kevin F. Hallock",
+      "year": 2022,
+      "note": "Undergraduate text (14th ed.) with unusually thorough policy chapters on education, discrimination, unions and unemployment insurance."
+    },
+    {
+      "title": "Labor Economics",
+      "authors": "Pierre Cahuc, Stéphane Carcillo and André Zylberberg",
+      "year": 2014,
+      "note": "Graduate and advanced undergraduate text (2nd ed., MIT Press): matching, bargaining and European institutions treated at a higher technical level than Borjas."
+    },
+    {
+      "title": "Monopsony in Motion: Imperfect Competition in Labor Markets",
+      "authors": "Alan Manning",
+      "year": 2003,
+      "note": "The modern statement of dynamic monopsony: why labour supply to the firm is not infinitely elastic, and what that implies for wages, minimum wages and search."
+    },
+    {
+      "title": "Equilibrium Unemployment Theory",
+      "authors": "Christopher A. Pissarides",
+      "year": 2000,
+      "note": "The canonical matching-model monograph (2nd ed.): matching functions, wage bargaining, unemployment dynamics and policy in the Diamond–Mortensen–Pissarides framework."
+    },
+    {
+      "title": "Mostly Harmless Econometrics",
+      "authors": "Joshua D. Angrist and Jörn-Steffen Pischke",
+      "year": 2009,
+      "note": "Not a labour text, but the applied econometrics that modern labour papers actually use: IV, differences-in-differences, regression discontinuity, with labour examples throughout."
+    },
+    {
+      "title": "Handbook of Labor Economics",
+      "authors": "Orley Ashenfelter and David Card (eds.)",
+      "year": 2011,
+      "note": "Volumes 4A–4B collect survey chapters on inequality, immigration, education and personnel economics; earlier volumes (1999) remain useful for labour supply and demand."
+    }
+  ],
+  "next": [
+    "behavioural-economics",
+    "development-economics"
+  ]
 }

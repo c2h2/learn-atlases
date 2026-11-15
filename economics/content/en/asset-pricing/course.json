@@ -7,12 +7,27 @@
   "order": 140,
   "tagline": "Returns and risk aversion, mean–variance portfolio choice, the CAPM, factor models, market efficiency, the stochastic discount factor, consumption-based pricing, fixed income and behavioural finance",
   "summary": "Why do some assets earn higher average returns than others? This course develops the theory and evidence of asset pricing: expected utility and risk aversion, mean–variance portfolio choice, the capital asset pricing model and multifactor models, market efficiency and its anomalies, the stochastic discount factor that unifies the theory, the equity premium puzzle, the term structure of interest rates, and the limits to arbitrage.",
-  "overview": [],
+  "overview": [
+    "Asset pricing asks a deceptively short question: what is the right price of a claim to risky future cash? A share, a government bond, a defaultable corporate note and a consumption stream all have to be valued, and they have to be valued consistently with one another. The working hypothesis of the field is that differences in average returns are compensation for risk that cannot be diversified away — but which risk, measured how, and priced by whom, is the whole subject. The models in this course are tools for organising that question. They are not forecasts of next year's market, and nothing here is a recommendation to buy, sell or hold any security.",
+    "The course is organised around a single object that appears, in different clothes, in every chapter: a way of converting a risky payoff into a present value. Chapters 1–2 develop the ingredients — how returns are measured, how risk aversion is formalised, and how a mean–variance investor chooses a portfolio. Chapters 3–4 put many such investors into equilibrium and obtain the capital asset pricing model and its factor-model descendants, including the arbitrage pricing theory. Chapter 5 asks whether prices already incorporate available information, and records both the supporting evidence and the anomalies. Chapters 6–7 rewrite the whole theory as a stochastic discount factor and specialise it to consumption, where the equity-premium and risk-free-rate puzzles live. Chapter 8 treats bonds and the term structure. Chapter 9 asks what happens when some traders are not the rational mean–variance agents of the earlier chapters, and why the trades that would correct them can fail.",
+    "Two difficulties are worth naming at the outset. The first is empirical: average returns are estimated noisily, so a spread that looks like a risk premium in one sample can vanish in the next, and a test of a model is always a joint test of the model and of the information used to implement it. The second is conceptual: an equilibrium restriction such as the CAPM is a claim about the *market* portfolio of all invested wealth, which is not the same object as a stock-market index. Keep the assumptions in view, treat historical averages as history rather than as expected returns, and work the examples with pencil and paper until the algebra and the pictures agree. The interactive figures are for exploration, not for prediction."
+  ],
   "prerequisites": [
     "corporate-finance",
     "econometrics"
   ],
-  "outcomes": [],
+  "outcomes": [
+    "Compute simple, log and excess returns from a price series, and relate sample means, variances, covariances and Sharpe ratios to the corresponding population objects.",
+    "Derive the Arrow–Pratt measures of risk aversion from expected utility, and compute a certainty equivalent and a risk premium for a stated lottery.",
+    "Construct the mean–variance frontier for two or more risky assets, locate the global minimum-variance and tangency portfolios, and state the two-fund separation theorem with its assumptions.",
+    "Derive the CAPM security-market line from mean–variance equilibrium, compute beta from a covariance, and interpret time-series and cross-sectional tests of the model, including the joint-hypothesis problem.",
+    "State the arbitrage pricing theory, estimate a factor model by time-series regression, and distinguish a risk-based reading of size, value and momentum from a mispricing reading.",
+    "Define weak, semi-strong and strong informational efficiency, outline an event study, and evaluate return-predictability and anomaly evidence without treating either side as settled.",
+    "Write the fundamental pricing equation $p = \\E[mx]$, connect it to state prices and risk-neutral probabilities, and apply the Hansen–Jagannathan bound.",
+    "Derive the consumption-CAPM Euler equation, reproduce the equity-premium and risk-free-rate puzzles with power utility, and compare habit and long-run-risk responses.",
+    "Bootstrap a yield curve from coupon bonds, compute Macaulay and modified duration and convexity, and distinguish expectations, liquidity-premium and preferred-habitat accounts of the term structure.",
+    "Explain noise-trader risk and the limits to arbitrage, and connect prospect theory and related behavioural hypotheses to specific pricing anomalies without converting them into trading advice."
+  ],
   "chapters": [
     {
       "slug": "returns-and-risk",
@@ -92,8 +107,112 @@
       ]
     }
   ],
-  "history": [],
-  "references": [],
+  "history": [
+    {
+      "year": 1738,
+      "title": "Bernoulli's expected log wealth",
+      "detail": "Daniel Bernoulli's *Specimen theoriae novae de mensura sortis*, published in the St Petersburg Academy's *Commentarii*, proposes that the value of a gamble is the expected logarithm of wealth rather than expected wealth, resolving the St Petersburg paradox and introducing diminishing marginal utility of wealth.",
+      "people": ["Daniel Bernoulli"]
+    },
+    {
+      "year": 1952,
+      "title": "Markowitz's portfolio selection",
+      "detail": "Harry Markowitz's 'Portfolio Selection' in the *Journal of Finance* treats an investor's problem as a trade-off between the mean and the variance of portfolio return, and derives the efficient frontier of risky assets.",
+      "people": ["Harry Markowitz"]
+    },
+    {
+      "year": 1958,
+      "title": "Tobin's two-fund separation",
+      "detail": "James Tobin's 'Liquidity Preference as Behavior Towards Risk' in the *Review of Economic Studies* shows that, with a risk-free asset, every mean–variance investor holds a combination of that asset and a single tangency portfolio of risky assets.",
+      "people": ["James Tobin"]
+    },
+    {
+      "year": 1964,
+      "title": "Sharpe's capital asset pricing model",
+      "detail": "William Sharpe's 'Capital Asset Prices: A Theory of Market Equilibrium under Conditions of Risk' in the *Journal of Finance* obtains a linear relation between expected return and market beta. John Lintner (1965) and Jan Mossin (1966) give independent derivations.",
+      "people": ["William Sharpe"]
+    },
+    {
+      "year": 1970,
+      "title": "Fama's efficient-market taxonomy",
+      "detail": "Eugene Fama's 'Efficient Capital Markets: A Review of Theory and Empirical Work' in the *Journal of Finance* defines weak, semi-strong and strong informational efficiency and surveys the early empirical tests.",
+      "people": ["Eugene Fama"]
+    },
+    {
+      "year": 1976,
+      "title": "Ross's arbitrage pricing theory",
+      "detail": "Stephen Ross's 'The Arbitrage Theory of Capital Asset Pricing' in the *Journal of Economic Theory* derives approximate linear factor pricing from the absence of asymptotic arbitrage, without requiring mean–variance preferences or a market portfolio.",
+      "people": ["Stephen Ross"]
+    },
+    {
+      "year": 1978,
+      "title": "Lucas's exchange-economy asset prices",
+      "detail": "Robert Lucas's 'Asset Prices in an Exchange Economy' in *Econometrica* prices claims to fruit from a stochastic endowment tree, giving the consumption Euler equation that is the core of consumption-based asset pricing. Douglas Breeden (1979) develops the consumption CAPM in continuous time.",
+      "people": ["Robert Lucas"]
+    },
+    {
+      "year": 1985,
+      "title": "The equity-premium puzzle",
+      "detail": "Rajnish Mehra and Edward Prescott's 'The Equity Premium: A Puzzle' in the *Journal of Monetary Economics* shows that, over 1889–1978 in the United States, representative-agent models with moderate risk aversion cannot match a realised equity premium of about six percentage points.",
+      "people": ["Rajnish Mehra", "Edward Prescott"]
+    },
+    {
+      "year": 1992,
+      "title": "Fama and French on the cross-section",
+      "detail": "Eugene Fama and Kenneth French's 'The Cross-Section of Expected Stock Returns' in the *Journal of Finance* finds that, in US data for 1963–1990, size and book-to-market absorb the cross-sectional variation associated with beta, leverage and earnings yields, and that the beta–return relation is flat once size is controlled. Their 1993 paper constructs the SMB and HML factors.",
+      "people": ["Eugene Fama", "Kenneth French"]
+    }
+  ],
+  "references": [
+    {
+      "title": "Asset Pricing",
+      "authors": "John H. Cochrane",
+      "year": 2005,
+      "note": "Revised edition. The standard graduate treatment organised around the stochastic discount factor; the first half is the natural next step after this course, and the empirical chapters are the place to learn GMM tests of pricing models."
+    },
+    {
+      "title": "Financial Decisions and Markets",
+      "authors": "John Y. Campbell",
+      "year": 2018,
+      "note": "A modern one-volume graduate text covering portfolio choice, equilibrium pricing, the equity premium, return predictability and behavioural finance, with careful attention to the evidence."
+    },
+    {
+      "title": "Investments",
+      "authors": "Zvi Bodie, Alex Kane and Alan J. Marcus",
+      "year": 2021,
+      "note": "Twelfth edition. The standard undergraduate treatment of mean–variance theory, the CAPM, factor models and market efficiency, with many worked numerical examples."
+    },
+    {
+      "title": "The Econometrics of Financial Markets",
+      "authors": "John Y. Campbell, Andrew W. Lo and A. Craig MacKinlay",
+      "year": 1997,
+      "note": "The reference for event studies, GMM tests of the CAPM and APT, and the econometrics of the term structure; still the place to look up how a test was actually run."
+    },
+    {
+      "title": "Dynamic Asset Pricing Theory",
+      "authors": "Darrell Duffie",
+      "year": 2001,
+      "note": "Third edition. Continuous-time pricing in complete and incomplete markets, for readers who want the martingale and PDE treatments that sit behind the discrete-time arguments of this course."
+    },
+    {
+      "title": "Inefficient Markets: An Introduction to Behavioral Finance",
+      "authors": "Andrei Shleifer",
+      "year": 2000,
+      "note": "The Clarendon Lectures: noise traders, the closed-end fund puzzle, and the limits-to-arbitrage argument that organises the last chapter of this course."
+    },
+    {
+      "title": "Financial Asset Pricing Theory",
+      "authors": "Claus Munk",
+      "year": 2013,
+      "note": "A clear graduate text that develops discrete- and continuous-time pricing from the SDF, with fully worked derivations of the CAPM, CCAPM and affine term-structure models."
+    },
+    {
+      "title": "Foundations for Financial Economics",
+      "authors": "Chi-fu Huang and Robert H. Litzenberger",
+      "year": 1988,
+      "note": "A compact, rigorous development of expected utility, portfolio choice and equilibrium pricing in finite state spaces; still unmatched for the two-date, complete-market arguments used here."
+    }
+  ],
   "next": [
     "derivatives",
     "time-series"

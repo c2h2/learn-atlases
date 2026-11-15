@@ -11,7 +11,7 @@ page_head(site_name(), 'index');
   <section class="intro">
     <div>
       <h1 class="display"><?= h(site_name()) ?></h1>
-      <p class="lede"><?= h(t('A detailed, interactive course through university economics and finance — from supply and demand to microeconomics and macroeconomics, econometrics and causal inference, game theory and market design, corporate finance and asset pricing, trade, development, and public and behavioural economics. For education only, not investment advice. This is a skeleton: the courses and chapters are mapped out, and the lessons are still to be written.')) ?></p>
+      <p class="lede"><?= h(t('A detailed, interactive course through university economics and finance — from supply and demand to microeconomics and macroeconomics, econometrics and causal inference, game theory and market design, corporate finance and asset pricing, trade, development, and public and behavioural economics. For education only, not investment advice.')) ?></p>
     </div>
     <dl class="tally">
       <div><dt><?= h(t('Courses')) ?></dt><dd><?= fmt_num($tot['courses']) ?></dd></div>
