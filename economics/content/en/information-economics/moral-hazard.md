@@ -189,6 +189,16 @@ Once the agent has several actions, or several periods, or several agents, the b
 
 The same first-order condition [[#eq-likelihood]] reappears in mechanism design when the hidden object is a type rather than an action: the likelihood ratio is replaced by a virtual valuation. Seeing both as “pay according to how much the observation changes the principal’s inference” is the right unification.
 
+::: quiz
+In Holmström's informativeness principle, a signal $s$ should enter the wage if and only if
+- [ ] $s$ is correlated with output $x$
+- [x] $s$ is informative about effort given $x$ (it shifts the likelihood ratio)
+- [ ] $s$ is observed by the agent
+::: solution
+The wage can depend on $x$ already. An extra $s$ is useful only if, given $x$, it still changes the posterior on effort — i.e. if $f(s,x\mid e)$ is not a product $g(s,x)\,h(x\mid e)$ that makes $s$ a garbling of $x$. Correlation with $x$ is neither necessary nor sufficient. Observation by the *principal* (and verifiability) is required for contracting; observation by the agent alone is not.
+:::
+:::
+
 ::: history
 The phrase “moral hazard” is from the nineteenth-century insurance industry. The modern principal–agent model is due to James Mirrlees (notes from the 1970s; published 1999), Steven Shavell (1979), and Bengt Holmström’s “Moral Hazard and Observability” (*Bell Journal of Economics*, 1979), which gave the likelihood-ratio characterisation and the informativeness principle. Sanford Grossman and Oliver Hart (1983) recast the problem as a two-stage optimisation — implementability of actions, then the cost of each action — which is the organisation of [[#prop-binary]]. Holmström and Paul Milgrom (1987) derived linear contracts in continuous time, and their 1991 multitask paper, taken up in the next chapter, showed why the LEN $\beta$ can be zero even when a signal exists. Holmström shared the 2016 Nobel Prize with Hart.
 :::

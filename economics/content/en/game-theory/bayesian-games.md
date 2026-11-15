@@ -137,6 +137,16 @@ A player with cost $c$ who contributes pays $c$ and gets $2$ for sure (the good 
 
 Auctions as a design problem — reserve prices, the revelation principle, revenue equivalence and its failures — are [[market-design]]. Signalling games, in which the informed player moves *first* and the uninformed updates, need beliefs off the equilibrium path and are the next chapter. Adverse selection in markets (Akerlof) is [[information-economics/asymmetric-information]].
 
+::: quiz
+In a first-price IPV auction with two bidders and values uniform on $[0,1]$, the Bayesian–Nash bid of a bidder with value $v$ is
+- [ ] $v$ (bid your value)
+- [x] $v/2$
+- [ ] $0$ (bid nothing and hope)
+::: solution
+Shading is $b(v) = v/2$ in this environment ([[game-theory/bayesian-games]] first-price calculation). Bidding $v$ would win more often but earn zero on every win. Bidding $0$ never wins against a rival who shades. The formula is for this prior and $n=2$; it is not a bidding recommendation in a real auction.
+:::
+:::
+
 ::: history
 John Harsanyi's three papers "Games with incomplete information played by 'Bayesian' players" (*Management Science*, 1967–68) introduced types and the common prior. William Vickrey's "Counterspeculation, auctions, and competitive sealed tenders" (*Journal of Finance*, 1961) solved the second-price auction and the uniform IPV first-price auction, before the language of BNE existed. Riley and Samuelson (1981) and Myerson (1981) proved revenue equivalence and characterised optimal auctions. Wilson (1977) and Milgrom and Weber (1982) developed common-value and affiliated-value models. Harsanyi's purification theorem (1973) connected mixed and Bayesian equilibria.
 :::

@@ -113,6 +113,13 @@ The US EPA (2023) reports a central SCC of USD $190$ (2020 dollars) for 2020 emi
 
 A global SCC is not a global tax unless countries cooperate. [[environmental-economics/international-agreements]] is about why they may not, and about leakage when some do. [[environmental-economics/green-growth]] is about the MAC curve shifting down through directed technical change — which IAMs often treat as exogenous, and which is the long-run alternative to a high carbon price on a static MAC.
 
+::: example A constant tax versus a budget {#ex-tax-vs-budget}
+A remaining carbon budget is $200$ Gt. Unconstrained emissions would be $40$ Gt a year. A constant carbon tax is expected, in a cartoon MAC, to cut emissions to $25$ Gt a year. In what year is the budget exhausted under the tax, and what quantity instrument would keep the stock inside $200$ Gt for certain if MAC is uncertain?
+::: solution
+Annual cut under the tax is $15$ Gt versus BAU $40$, so $25$ Gt a year. $200/25 = 8$ years to exhaustion at that rate. If MAC is *flatter* than expected, the same tax cuts less and the budget is breached sooner; if MAC is steeper, the tax over-complies. A cumulative cap of $200$ Gt (or a cap path) hits the budget by construction and lets the *price* vary — Weitzman's quantity instrument when the constraint is a stock. A hybrid (tax plus a quantity backstop) bounds both mistakes. The $25$ Gt is a cartoon, not an IEA scenario.
+:::
+:::
+
 ::: history
 **1992, William Nordhaus.** "An Optimal Transition Path for Controlling Greenhouse Gases" (*Science*) and the first DICE papers made the SCC a computable object. Nordhaus was awarded the 2018 Nobel Prize in part for this programme.
 

@@ -141,6 +141,13 @@ The folk theorem is an existence result for *many* SPE payoffs, not uniqueness. 
 
 Imperfect monitoring, asymmetric information, and renegotiation-proofness are the next theoretical steps (Fudenberg and Tirole, *Game Theory*, 1991, ch. 5). Applications to collusion are [[industrial-organisation/collusion]]; to climate agreements, [[environmental-economics]]; to employment, the relational-contract chapter of [[labour-economics]]. Reputation, in which one player is a hidden type, mixes this chapter with [[game-theory/bayesian-games]].
 
+::: example Tit-for-tat is not grim {#ex-tft}
+Payoffs $(T,R,P,S)=(5,3,1,0)$, $\delta = 0.6$. Grim trigger is an SPE at this $\delta$ because $0.6 > 1/2$. Tit-for-tat starts at $C$ and copies the opponent's last move. After a one-shot deviation to $D$ against a tit-for-tat opponent, play cycles $(D,C)$, $(C,D)$, $(D,C)$, \ldots forever. Is the one-shot deviation profitable against tit-for-tat?
+::: solution
+On-path value of always $C$ is $3$. After a one-shot $D$, the deviant gets $5$ this period, then $0$ and $5$ in alternation (she is punished next period with $S=0$, then she punishes with $T=5$, and so on). The continuation after the first $D$ is $0 + 0.6\cdot 5 + 0.6^2\cdot 0 + \cdots = 5\delta/(1-\delta^2) = 5\cdot 0.6 / (1-0.36) = 3/0.64 \approx 4.69$ in present value *from next period*, so the deviation value is $(1-\delta)5 + \delta \times$ that continuation using the normalised $v = (1-\delta)\sum \delta^t u_t$ convention of the chapter: $v_{\mathrm{dev}} = (1-0.6)\cdot 5 + 0.6\cdot 0 + 0.6^2\cdot 5 + 0.6^3\cdot 0 + \cdots = 2 + 5\cdot 0.36/(1-0.36) = 2 + 1.8/0.64 \approx 4.81 > 3$. The one-shot deviation *is* profitable. Tit-for-tat is too forgiving (or too weakly punishing) to sustain cooperation at this $\delta$ against a one-shot cheat; grim trigger, which switches to $P=1$ forever, is not. Folk-theorem constructions use the harsh punishment, not tit-for-tat.
+:::
+:::
+
 ::: history
 The "folk" theorem was folklore in the 1950s–60s; Friedman (1971, *Review of Economic Studies*) published the Nash-reversion version. Aumann and Shapley (1976, later published) and Rubinstein (1977) treated the undiscounted case. Fudenberg and Maskin (1986, *Econometrica*) proved the discounted folk theorem with minmax payoffs and full dimensionality. Axelrod's *The Evolution of Cooperation* (1984) popularised tit-for-tat, from a tournament rather than an equilibrium derivation. Green and Porter (1984) and Rotemberg and Saloner (1986) brought imperfect monitoring and demand shocks into cartel theory. Kreps, Milgrom, Roberts and Wilson (1982) showed how a little incomplete information undoes finite-horizon unravelling.
 :::

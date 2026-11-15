@@ -191,6 +191,13 @@ Signalling is the informed party’s answer to Akerlof’s problem: spend resour
 
 With more than two types, or a continuum, the Riley ladder of binding incentive constraints becomes a differential equation, the same equation that appears in monopoly screening and in mechanism design. The revelation principle of [[information-economics/mechanism-design]] will say that any signalling equilibrium can be recast as a direct mechanism in which the worker reports a type and is assigned an $(e, w)$ pair; the assignment must be incentive-compatible. Signalling, screening and mechanism design are three languages for one constraint.
 
+::: example Least-cost education in numbers {#ex-lcs-num}
+$\theta_L = 1$, $\theta_H = 2$, wages equal productivity, $c(e,\theta)=e/\theta$. The least-cost separating education for the high type is the $e_H^*$ that makes the low type indifferent between $(0,\theta_L)$ and $(e_H^*,\theta_H)$. Compute $e_H^*$ and the high type's payoff relative to pooling at $e=0$ with $\bar\theta = 1.5$.
+::: solution
+Low type at $(0,1)$: payoff $1$. At $(e,2)$: $2 - e/1 = 2-e$. Indifference: $2-e=1$, $e_H^*=1$. High type at $(1,2)$: $2-1/2=1.5$, equal to the pooling wage $1.5$ at $e=0$. She is indifferent between least-cost separating and pooling-at-zero in this knife-edge $\bar\theta$. If the share of high types were lower, $\bar\theta < 1.5$ and she would strictly prefer to separate. The $e_H^*=\theta_L(\theta_H-\theta_L)=1$ formula of the Spence chapter is this indifference.
+:::
+:::
+
 ::: history
 Michael Spence’s “Job Market Signaling” appeared in the *Quarterly Journal of Economics* in 1973, from his Harvard PhD thesis; a book, *Market Signaling*, followed in 1974. A. Michael Spence was then at Harvard and later at Stanford. The multiplicity of equilibria was recognised immediately; Riley (1975, 1979) proposed the least-cost separating outcome as the natural selection, and Cho and Kreps (1987) gave that selection a non-equilibrium-belief foundation, the intuitive criterion, in a paper whose leading application was Spence’s game. Parallel work on insurance (Rothschild and Stiglitz 1976) and on education as human capital (Becker, Mincer) meant that from the mid-1970s onwards the return to schooling was read in two incompatible ways. Spence shared the 2001 Nobel Prize with Akerlof and Stiglitz.
 :::

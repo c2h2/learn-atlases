@@ -129,6 +129,13 @@ A cement kiln is a sunk cost; contestability is a poor description, Stackelberg�
 
 Collusion, the next chapter, is another dynamic constraint on oligopoly prices, this time among incumbents rather than between incumbents and entrants. The same discount factor that makes reputation for toughness valuable makes a cartel stable. Vertical contracts in [[industrial-organisation/vertical-relations]] can be a commitment device (exclusive dealing as a way to deny an entrant scale, in the spirit of Rasmusen, Ramseyer and Wiley 1991 and of the foreclosure models). Competition policy treats some of the conduct in this chapter — exclusive dealing, predation, some forms of capacity hoarding — as possible abuses of dominance; the models supply the theories of harm and the efficiencies, not the verdicts.
 
+::: example A blockaded versus deterred entry {#ex-blockade}
+Inverse demand $p = 12-q$, $c=0$ for the incumbent, sunk entry cost $F$ for a potential rival who would then play Cournot. Monopoly profit is $36$. Two-firm Cournot profit per firm is $16$. For which $F$ is entry blockaded (the incumbent's unconstrained monopoly already deters), and for which $F$ must the incumbent expand output to deter?
+::: solution
+A Cournot entrant earns $16-F$. Entry is blockaded if $16-F \le 0$, i.e. $F \ge 16$: even Cournot duopoly is not worth $F$, so monopoly quantity already deters. If $F < 16$, the incumbent must hold a *limit* quantity that leaves the entrant $\le 0$, which typically means producing more than monopoly (Sylos–Labini / Dixit). If that limit profit exceeds the duopoly incumbent profit, she deters; if not, she accommodates. The cut at $F=16$ is this demand curve's arithmetic, not a general threshold.
+:::
+:::
+
 ::: history
 **1934, Heinrich von Stackelberg.** *Marktform und Gleichgewicht*: sequential quantity leadership.
 

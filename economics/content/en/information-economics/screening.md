@@ -193,6 +193,13 @@ Screening and signalling are two extensive forms for the same incentive-compatib
 
 Hidden information is only half of the course. The next chapter turns to hidden *action*: the agent’s type is known, but her effort is not, and the contract has to pay for output in order to buy effort. The same words — incentive compatibility, information rent, second best — reappear with a different timing.
 
+::: example No distortion at the top {#ex-ndat}
+A monopolist screens two types, $\theta_H > \theta_L$, with $u=\theta q - P$ and cost $c(q)=q^2/2$. At the optimum the high type's quality satisfies $\theta_H = c'(q_H)=q_H$, so $q_H=\theta_H$. The low type is distorted down. If $\theta_H=4$ and $\theta_L=2$, and the high type's IC binds with $q_L=1$, what is $P_H$?
+::: solution
+High type's IR is slack; IC binds: $\theta_H q_H - P_H = \theta_H q_L - P_L$. Efficient $q_H=4$. The low type is typically held to IR: $2\cdot 1 - P_L = 0$, so $P_L=2$. Then $4\cdot 4 - P_H = 4\cdot 1 - 2$, $16 - P_H = 2$, $P_H=14$. High-type surplus is $16-14=2$, which equals the information rent $(\theta_H-\theta_L)q_L=2$. No distortion at the top: $q_H$ is efficient; the rent is delivered by leaving $q_L$ positive. If the monopolist excluded the low type ($q_L=0$), the rent would vanish and $P_H=16$, but she would lose the low-type profit. Which is better is a comparison of those two profits; the example only illustrates the binding IC.
+:::
+:::
+
 ::: history
 Michael Rothschild and Joseph Stiglitz published “Equilibrium in Competitive Insurance Markets: An Essay on the Economics of Imperfect Information” in the *Quarterly Journal of Economics* in 1976. The non-existence result was as influential as the separating pair: it showed that the competitive model, taken literally, can fail to predict anything. Michael Mussa and Sherwin Rosen’s 1978 *Journal of Economic Theory* paper, “Monopoly and Product Quality”, and Eric Maskin and John Riley’s 1984 *RAND* paper on monopoly with incomplete information, gave the profit-maximising menu its modern shape — virtual valuations, no distortion at the top, exclusion of the bottom. James Mirrlees’s 1971 optimal-income-tax paper had already solved the continuum version of the same problem for a planner; the monopoly papers imported his first-order approach into industrial organisation. Stiglitz shared the 2001 Nobel Prize with Akerlof and Spence; Maskin shared the 2007 Prize with Hurwicz and Myerson.
 :::

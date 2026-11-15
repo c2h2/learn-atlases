@@ -102,6 +102,13 @@ The surprising comparative static of [[#prop-barrett]]: large gains (Nash far fr
 :::
 :::
 
+::: example Free-riding in a three-country club {#ex-three-club}
+Three symmetric countries. Payoffs: all three cooperate, $12$ each; a pair cooperates and the outsider free-rides, $4$ each for the pair and $13$ for the outsider; all play Nash, $1$ each. Is the grand coalition internally stable? Is a coalition of two?
+::: solution
+Leave the grand coalition: payoff $13 > 12$, so the grand coalition is not internally stable. Stay in a pair: $4 > 1$ (Nash), so a pair is internally stable. This is Barrett's shape: the ambitious coalition is the one a member wants to leave; a small coalition is stable. The value of full cooperation ($12$ versus $1$) is large, and that is exactly why leaving a grand coalition pays.
+:::
+:::
+
 ::: history
 **1979, Geneva Convention on Long-Range Transboundary Air Pollution.** The first regional air-pollution treaty; later protocols (Helsinki, Oslo, Gothenburg) cut sulphur in Europe.
 

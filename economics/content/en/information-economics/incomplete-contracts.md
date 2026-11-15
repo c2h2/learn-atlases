@@ -130,6 +130,20 @@ Incomplete contracts are the reason ownership matters. They are also the reason 
 
 The next two chapters step back from the firm and ask a more abstract question. If we can choose any mapping from reports to allocations — a **mechanism** — what can we implement, and when is efficient trade possible? The revelation principle will recast signalling, screening and the principal–agent problem as special cases. The Myerson–Satterthwaite theorem will then say that, in a bilateral trade with incomplete information and voluntary participation, even the best mechanism cannot be efficient. Hold-up is one reason markets fail to realise gains from trade; hidden information, in a complete mechanism, is another.
 
+::: example A hold-up in two numbers {#ex-holdup-num}
+A supplier can invest $I \in \{0, 10\}$. Investment $10$ raises the buyer's value from $12$ to $24$ and has no outside use. After investment they Nash-bargain, splitting the surplus equally. The supplier's outside option is $0$. Will she invest?
+::: solution
+If she invests, surplus is $24$, she gets $12$, net of $I$ that is $2$. If she does not, surplus is $12$, she gets $6$. She does *not* invest: $2 < 6$. Hold-up: she captures only half of the $12$ value increase, which is $6$, less than $I=10$. Joint surplus would be $24-10=14 > 12$, so the investment is efficient and is not made. Ownership of the tool that assigned her the residual would change the split; a complete contract on $I$ would too.
+:::
+:::
+
+::: example Integration versus non-integration {#ex-gh-own}
+In the Grossman–Hart–Moore 2-by-2, whoever owns the asset bargains with a stronger outside option. If only the supplier's investment matters, who should own the asset?
+::: solution
+The party whose investment is more important should own: ownership protects that party's residual return and so encourages the investment. If only the supplier invests, the supplier should own. If both invest, ownership is a trade-off — one party's incentive rises, the other's falls — and the model compares those two second-bests. That is the GHM answer to Coase: the firm is a bundle of residual control rights, allocated to protect the more important investment.
+:::
+:::
+
 ::: history
 Ronald Coase’s “The Nature of the Firm” (1937) asked why firms exist; Oliver Williamson’s *Markets and Hierarchies* (1975) and *The Economic Institutions of Capitalism* (1985) made specificity and opportunism the working answer. Benjamin Klein, Robert Crawford and Armen Alchian (1978) put hold-up at the centre of vertical integration, with Fisher Body as the illustration. Sanford Grossman and Oliver Hart, “The Costs and Benefits of Ownership” (*Journal of Political Economy*, 1986), and Hart and John Moore (1990), shifted the question from “integrate or not” to “who should own the residual rights”, which is the theory of this chapter. Hart’s 1995 book *Firms, Contracts, and Financial Structure* is the canonical exposition. Hart shared the 2016 Nobel Prize with Bengt Holmström.
 :::

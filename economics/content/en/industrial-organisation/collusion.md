@@ -128,6 +128,20 @@ The boom raises $\pi^d - \pi^c$ today; the punishment is the expected future, wh
 
 Vertical relations can help or hinder collusion: resale-price maintenance can make retail prices more transparent (and so help monitoring) or can be a response to free-riding that has nothing to do with a cartel. Platforms and networks, in the next-but-one chapter, change the monitoring technology again (posted digital prices are very transparent; personalised discounts are not). Competition policy’s cartel chapter is the enforcement counterpart of [[#eq-delta]]: fines raise $\pi^n$’s opportunity cost, leniency raises $\pi^d$ for the reporter, and dawn raids improve monitoring *by the agency*, which is not the same as monitoring by the cartel.
 
+::: example Multimarket contact in two numbers {#ex-mmc}
+Two firms meet in two identical Bertrand markets. In each market $\pi^c = 4$, $\pi^d = 8$, $\pi^n = 0$, so a *single*-market grim threshold is $\delta^* = 1/2$. They pool incentive constraints: a deviation in one market is punished in both. If $\delta = 0.4$, can they sustain collusion in both markets?
+::: solution
+Deviation in one market: gain $8-4 = 4$ once, then lose $4+4 = 8$ of collusive profit per period in the two markets (versus Nash $0$). The ICC is $4 \le \delta \cdot 8 / (1-\delta)$. At $\delta = 0.4$, right-hand side $= 0.4\cdot 8 / 0.6 \approx 5.33 > 4$. Yes. Pooling the two constraints is Bernheim–Whinston: the extra punishment market supplies the slack that $\delta = 0.4 < 1/2$ lacked in isolation. The example assumes simultaneous punishment is credible in both markets.
+:::
+:::
+
+::: example A leniency prize {#ex-leniency-num}
+Two grim-trigger colluders, $\pi^c = 5$, $\pi^d = 9$, $\pi^n = 1$, $\delta = 0.6$. Without leniency, $\delta^* = (9-5)/(9-1) = 1/2$, so collusion is an SPE. A leniency programme pays the first confessor a prize that raises her deviation payoff to $\pi^d_L = 12$ (the extra $3$ is the expected fine saved). Is grim trigger still an SPE?
+::: solution
+New $\delta^* = (12-5)/(12-1) = 7/11 \approx 0.636 > 0.6$. Collusion fails. Leniency raised $\pi^d$ enough to break the ICC. The $3$ is a cartoon of a fine reduction, not a recommended policy parameter.
+:::
+:::
+
 ::: history
 **1964, George J. Stigler.** “A theory of oligopoly”, *Journal of Political Economy* 72: the detection of secret price cutting as the binding constraint on collusion, and the list of structural factors still in use.
 

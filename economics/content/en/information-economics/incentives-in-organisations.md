@@ -141,6 +141,16 @@ Career concerns have a clean prediction about age and effort, and about the *kin
 
 The next chapter takes the contract itself as incomplete: not because a court cannot see $y$, but because the parties cannot describe the relevant future states. Ownership, rather than a bonus, becomes the instrument, and the boundary of the firm is the question.
 
+::: quiz
+Holmström's budget-breaker result for a partnership says that
+- [ ] partners can share the whole output and still implement first-best effort
+- [x] if every partner's share of output sums to one, Nash effort is too low; a third party who absorbs a residual can restore incentives
+- [ ] tournaments cannot work in teams
+::: solution
+With a balanced budget $\sum s_i(x)=x$, each partner internalises only her share of the marginal product, so effort is too low. Breaking the budget — a principal who pays bonuses that do not sum to $x$ in every state — can implement the first-best. Tournaments are a different instrument (relative performance) and can work in teams; they are not the budget-breaker theorem.
+:::
+:::
+
 ::: history
 Edward Lazear and Sherwin Rosen’s “Rank-Order Tournaments as Optimum Labor Contracts” appeared in the *Journal of Political Economy* in 1981. Bengt Holmström’s “Moral Hazard in Teams” (*Bell Journal*, 1982) proved the budget-breaking theorem, and his career-concerns paper, circulating from 1982, was published in the *Review of Economic Studies* in 1999. Holmström and Paul Milgrom’s “Multitask Principal–Agent Analyses” (*Journal of Law, Economics, & Organization*, 1991) is the origin of balanced incentives and of the modern case for low-powered pay in complex jobs. Shapiro and Stiglitz’s efficiency-wage model is from 1984; Jonathan Levin’s characterisation of relational contracts is from the *American Economic Review*, 2003. Holmström’s half of the 2016 Nobel Prize covered this whole cluster: teams, multitasking, career concerns.
 :::

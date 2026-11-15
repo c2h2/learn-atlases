@@ -196,6 +196,13 @@ $A/(pq) = 0.2/4 = 0.05$. The ratio $0.8$ would be the product of the elasticitie
 
 Differentiation is the demand side of almost everything that follows. Entry in [[industrial-organisation/entry-and-deterrence]] is entry *into a location or a quality*. Collusion in [[industrial-organisation/collusion]] is easier to sustain when products are homogeneous (a deviation is more profitable, but detection is also easier — the net effect is discussed there). Vertical restraints in [[industrial-organisation/vertical-relations]] are often a response to retailers’ incentives to free-ride on each other’s point-of-sale service, a horizontal-differentiation problem in the downstream market. Platforms in [[industrial-organisation/platforms-and-networks]] differentiate on both sides. Merger simulation in [[industrial-organisation/competition-policy]] is, in current agency practice, more often a differentiated-Bertrand exercise than a Cournot one, and the diversion ratios that feed those simulations are the empirical version of $\hat x$ and $\varepsilon_A$.
 
+::: example A quadratic-transport Hotelling duopoly {#ex-quad-hotelling}
+Two firms at the ends of $[0,1]$, prices $p_1, p_2$, quadratic transport $t(x-z)^2$ with $t=1$, costs $0$. Demand for firm 1 is $x^* = (p_2-p_1+1)/2$. If $p_2 = 1$, what is firm 1's best-response price, and what is the symmetric Nash price?
+::: solution
+Profit $\pi_1 = p_1(p_2-p_1+1)/2$. FOC: $(p_2-p_1+1)/2 - p_1/2 = 0$, so $p_2+1 = 2p_1$, $p_1 = (p_2+1)/2$. At $p_2=1$, $p_1=1$. Symmetric Nash: $p = (p+1)/2 \Rightarrow p=1$. Quadratic transport with maximal differentiation yields a unit mark-up here; linear transport would give a different $p$. The calculation is the standard quadratic-Hotelling best response, not a recommended posted price.
+:::
+:::
+
 ::: history
 **1929, Harold Hotelling.** “Stability in competition”, *Economic Journal* 39: two sellers on a line, the demand effect of location, and the (subsequently qualified) principle of minimum differentiation.
 

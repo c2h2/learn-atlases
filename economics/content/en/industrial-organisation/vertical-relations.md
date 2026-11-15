@@ -119,6 +119,13 @@ The welfare comparison is case-by-case. A metering tie can be a two-part tariff 
 
 Platforms in [[industrial-organisation/platforms-and-networks]] are vertical structures with two (or more) downstream sides and cross-group externalities; the two-part tariff of this chapter becomes a pair of prices, one of which may be negative. Competition policy treats vertical mergers, exclusive dealing, RPM and tying under abuse-of-dominance and merger control; the US, EU and Chinese texts are not identical, and they are dated in [[industrial-organisation/competition-policy]]. The modelling habit to take there is the one practised here: name the externality (double margin, free-riding, secret contracts, scale) before naming the clause.
 
+::: example A two-part tariff that undoes double marginalisation {#ex-two-part}
+Upstream cost $c=2$, downstream faces $p=12-q$, no extra cost. Linear wholesale $w$ produced $q=2.5$, $p=9.5$ in the successive-monopoly formula of this chapter. What two-part tariff $(w, F)$ restores the integrated monopoly, and what $F$ captures the whole downstream rent if the upstream firm makes a take-it-or-leave-it offer?
+::: solution
+Integrated monopoly: $q=5$, $p=7$, profit $25$. Set $w=c=2$. Downstream then faces MC $=2$ and chooses $q=5$, $p=7$, profit $25$. Upstream charges $F=25$ and earns $F=25$; downstream is left at $0$. The efficient quantity is restored and the rent goes upstream. If bargaining splits $F$, quantity stays at $5$ and only the division of the $25$ changes. A linear $w>c$ was the cause of double marginalisation; the fixed fee is the instrument that removes it.
+:::
+:::
+
 ::: history
 **1950, Joseph J. Spengler.** “Vertical integration and antitrust policy”, *Journal of Political Economy* 58: double marginalisation as an argument *for* integration.
 

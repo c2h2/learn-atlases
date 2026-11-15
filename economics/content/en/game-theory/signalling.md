@@ -115,6 +115,20 @@ A ban on $e$ forces pooling at $0$, wage $\bar\theta = 2$ (with $\lambda = 1/2$)
 
 Refinements (intuitive criterion, divinity, universal divinity) are the next theoretical step; Cho and Kreps (1987) is the starting point. Screening and mechanism design reverse the order of moves ([[information-economics]], [[market-design]]). Reputation, as a signalling game played over time, links this chapter to [[game-theory/repeated-games]]. Spence's labour market is one application; others include advertising as a quality signal (Milgrom and Roberts 1986), dividends as a signal of cash flow (Bhattacharya 1979), and warranties.
 
+::: example A warranty as a signal {#ex-warranty}
+A high-quality firm has expected repair cost $1$ per unit; a low-quality firm has expected repair cost $8$. A full warranty costs the firm its repair cost and is worth $6$ to every buyer. The product without a warranty sells at the pooling price $10$ if quality is not observed. Can a full warranty separate, if the high type's price with a warranty is $16$ and the low type would then have to match that price to mimic?
+::: solution
+High type's profit with warranty: $16 - 1 = 15$ per unit versus $10$ without, so she prefers to warrant. Low type mimicking: $16 - 8 = 8 < 10$, so she prefers to stay silent. The cost of the signal (the warranty) is *higher* for the low type, which is Spence's single-crossing. Separation works. The numbers are a cartoon of Milgrom–Roberts advertising/warranty logic, not a recommended warranty policy.
+:::
+:::
+
+::: example Cheap talk with two types {#ex-cheap-talk-two}
+A sender has type $\theta \in \{L, H\}$ equally likely. A receiver chooses action $a \in \{0, 1\}$. Payoffs: the receiver wants $a=1$ iff $\theta=H$; the sender wants $a=1$ regardless of type. Messages are cheap. Is a separating cheap-talk PBE possible?
+::: solution
+No. After a message that is supposed to mean $H$, the receiver would play $a=1$. The $L$ sender then prefers to send that message too, because she also wants $a=1$. Cheap talk cannot separate when both types rank the receiver's actions the same way. Crawford–Sobel need *partial* conflict (a sender who wants a slightly higher action) for a partition equilibrium. This is the babbling case of the chapter's cheap-talk section.
+:::
+:::
+
 ::: history
 Michael Spence's "Job Market Signaling" (*Quarterly Journal of Economics*, 1973) and his 1974 book set out the education model; he shared the 2001 Nobel Prize with Akerlof and Stiglitz. Perfect Bayesian equilibrium was formalised in the 1980s; Fudenberg and Tirole (1991, ch. 8) is the standard treatment. Cho and Kreps (1987, *Quarterly Journal of Economics*) introduced the intuitive criterion. Crawford and Sobel (1982, *Econometrica*) is the cheap-talk paper. Akerlof's "Market for Lemons" (1970) is the adverse-selection counterpart, in which there is no signal and the market can unravel; it is taught in [[information-economics/asymmetric-information]].
 :::
